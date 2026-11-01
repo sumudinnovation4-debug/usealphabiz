@@ -2,5 +2,5 @@ name = "alphabiz-sites"
 main = "worker/index.js"
 compatibility_date = "2026-10-01"
 [vars]
-SUPABASE_URL = "https://YOUR-PROJECT.supabase.co"
-SUPABASE_ANON = "YOUR-ANON-KEY"
+SUPABASE_URL = "https://fcdfkfweqqmitteesbqv.supabase.co"
+SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobGF4aHNuY3F3cXpodW1ybXZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1Njc0MDUsImV4cCI6MjEwOTE0MzQwNX0.DiwOd4z4J9CnEUxL0A244zEMunIXL6VaPJhplRlUoR0"
