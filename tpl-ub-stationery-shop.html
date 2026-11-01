@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFAoAQ.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFOoAQw3Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5fIjFAoAQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #151515;
+  --color-3: #6b6b6b;
+  --color-4: #f3f3f3;
+  --color-5: #d7a6e5;
+  --color-6: #242424;
+  --color-7: #e2e2e2;
+  --color-8: #a8a8a8;
+  --font-1: "Stack Sans Headline", "Stack Sans Headline Fallback", Arial, sans-serif;
+  --font-2: "Stack Sans Text", "Stack Sans Text Fallback", Arial, sans-serif;
+  --radius-1: 8px;
+  --radius-2: 16px;
+  --radius-3: 28px;
+  --space-1: clamp(16px, 1.6vw, 20px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Stack Sans Headline Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.6%; ascent-override: 96.5%; descent-override: 28.9%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 108.3%; ascent-override: 92.3%; descent-override: 27.7%; line-gap-override: 0%; }
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body {
+    margin: 0;
+    background: var(--color-1);
+    color: var(--color-2);
+    font-family: var(--font-2);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+  }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 13.2vw, 128px); font-weight: 500; line-height: 0.92; letter-spacing: -0.055em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(36px, 5.4vw, 74px); font-weight: 500; line-height: 0.98; letter-spacing: -0.045em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: clamp(22px, 2.2vw, 30px); font-weight: 500; line-height: 1.12; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+
+.m-text-6 { font-family: var(--font-2); font-size: clamp(18px, 1.5vw, 21px); font-weight: 400; line-height: 1.45; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-tone { color: var(--color-3); }
+
+.m-tone-2 { color: var(--color-8); }
+
+.m-btn { display: inline-flex; gap: 2px; text-decoration: none; color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; text-transform: none; font-style: normal; border: 0; padding: 0; background: none; cursor: pointer; border-radius: var(--radius-1); }
+.m-btn__label, .m-btn__arrow {
+  display: flex; align-items: center; height: 40px; border-radius: var(--radius-1);
+  background: var(--color-5) linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 0 / 0% 100%;
+  transition: background-size .5s cubic-bezier(.6, 0, .2, 1), color .3s;
+}
+.m-btn__label { padding: 0 14px; white-space: nowrap; }
+.m-btn__arrow { justify-content: center; width: 40px; transition-delay: .07s; }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__label, .m-btn:hover .m-btn__arrow { background-size: 100% 100%; color: var(--color-1); }
+}
+
+.m-btn-2 { display: flex; width: 100%; border: 0; padding: 0; cursor: pointer; color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; text-transform: none; font-style: normal; border-radius: var(--radius-1); background: none; }
+.m-btn-2__label { flex: 1; display: flex; justify-content: center; align-items: center; height: 48px; border-radius: var(--radius-1); background: var(--color-5) linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 0 / 0% 100%; transition: background-size .5s cubic-bezier(.6, 0, .2, 1), color .3s; }
+@media (hover: hover) { .m-btn-2:hover .m-btn-2__label { background-size: 100% 100%; color: var(--color-1); } }
+
+.m-btn-3 { display: flex; gap: 2px; text-decoration: none; color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; text-transform: none; font-style: normal; border-radius: var(--radius-1); }
+.m-btn-3__label, .m-btn-3__arrow {
+  display: flex; align-items: center; min-height: 48px; border-radius: var(--radius-1);
+  background: var(--color-5) linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 0 / 0% 100%;
+  transition: background-size .7s cubic-bezier(.6, 0, .2, 1), color .3s;
+}
+.m-btn-3__label { flex: 1; padding: 8px 14px; }
+.m-btn-3__arrow { flex: none; justify-content: center; width: 48px; transition-delay: .1s; }
+@media (hover: hover) {
+  .m-btn-3:hover .m-btn-3__label, .m-btn-3:hover .m-btn-3__arrow { background-size: 100% 100%; color: var(--color-1); }
+}
+
+.m-link {
+  display: inline; color: inherit; text-decoration: none; font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; text-transform: none; font-style: normal;
+  padding-bottom: 2px;
+  background:
+    linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0% 1px,
+    linear-gradient(color-mix(in srgb, currentColor 30%, transparent), color-mix(in srgb, currentColor 30%, transparent)) no-repeat 0 100% / 100% 1px;
+  transition: background-size .5s cubic-bezier(.6, 0, .2, 1);
+}
+@media (hover: hover) { .m-link:hover { background-size: 100% 1px, 100% 1px; } }
+
+.m-link-2 {
+  display: inline-block; color: var(--color-3); text-decoration: none; font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.3; letter-spacing: -0.01em; text-transform: none; font-style: normal;
+  padding-bottom: 2px;
+  background: linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 100% / 0% 1px;
+  transition: background-size .5s cubic-bezier(.6, 0, .2, 1), color .3s;
+}
+@media (hover: hover) { .m-link-2:hover { color: var(--color-2); background-size: 100% 1px; } }
+
+.m-icon {
+  display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; cursor: pointer; color: var(--color-2); border-radius: var(--radius-1);
+  background: var(--color-5) linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 100% / 100% 0%;
+  transition: background-size .45s cubic-bezier(.6, 0, .2, 1), color .3s;
+}
+@media (hover: hover) { .m-icon:hover { background-size: 100% 100%; color: var(--color-1); } }
+
+.m-btn-4 { display: inline-flex; gap: 2px; text-decoration: none; color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; text-transform: none; font-style: normal; border-radius: var(--radius-1); }
+.m-btn-4__label, .m-btn-4__arrow {
+  display: flex; align-items: center; height: 40px; border-radius: var(--radius-1);
+  background: var(--color-2) linear-gradient(var(--color-1), var(--color-1)) no-repeat 0 0 / 0% 100%;
+  transition: background-size .5s cubic-bezier(.6, 0, .2, 1), color .3s;
+}
+.m-btn-4__label { padding: 0 14px; white-space: nowrap; }
+.m-btn-4__arrow { justify-content: center; width: 40px; transition-delay: .07s; }
+@media (hover: hover) {
+  .m-btn-4:hover .m-btn-4__label, .m-btn-4:hover .m-btn-4__arrow { background-size: 100% 100%; color: var(--color-2); }
+}
+.m-surface { background: var(--color-4); color: var(--color-2); border-radius: var(--radius-2); }
+
+.m-surface-2 { position: relative; isolation: isolate; overflow: clip; background: var(--color-2); color: var(--color-1); border-radius: var(--radius-3); }
+.m-surface-2::before, .m-surface-2::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1; border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--color-1) 9%, transparent);
+}
+.m-surface-2::before { width: 120%; right: -62%; top: -10%; }
+.m-surface-2::after { width: 90%; right: -50%; top: 18%; }
+
+.m-surface-3 { background: var(--color-6); color: var(--color-1); border-radius: var(--radius-2); }
+
+.m-badge { display: inline-flex; align-items: center; gap: 7px; padding: 6px 9px; border-radius: 6px; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+.m-badge::before { content: ""; width: 7px; height: 7px; border-radius: 1px; background: var(--color-5); }
+
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field__control { width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid transparent; border-radius: var(--radius-1); background: var(--color-4); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.4; }
+.m-field__control::placeholder { color: var(--color-3); }
+.m-field__control:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; }
+textarea.m-field__control { min-height: 140px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .l-gutter { padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; inset: 0 0 auto 0; z-index: 40; }
+  #navigation .nav__bar {
+    display: flex; align-items: center; gap: 14px; height: 64px; padding: 0 var(--space-1);
+    background: var(--color-1); transition: transform .5s cubic-bezier(.3, .7, .2, 1);
+  }
+  #navigation[data-hidden] .nav__bar { transform: translateY(-100%); }
+  #navigation .nav__logo { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-family: var(--font-1); font-weight: 500; font-size: 25px; line-height: 1; letter-spacing: -0.05em; }
+  #navigation .nav__mark { position: relative; width: 22px; height: 18px; border-radius: 2px; background: var(--color-2); }
+  #navigation .nav__mark::after { content: ""; position: absolute; left: 4px; right: 4px; top: 8px; height: 2px; background: var(--color-5); }
+  #navigation .nav__pill { margin-left: 18px; padding: 6px 14px; border-radius: var(--radius-1); background: var(--color-4); }
+  #navigation .nav__pill ul { display: flex; gap: 18px; }
+  #navigation .nav__pill .m-link-2 { background-image: linear-gradient(var(--color-2), var(--color-2)); }
+  #navigation .nav__cta { margin-left: auto; }
+  #navigation .nav__menu { display: none; }
+  #navigation .menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; gap: 32px; padding: 20px var(--space-1) 32px; background: var(--color-2); color: var(--color-1); overflow-y: auto; }
+  #navigation .menu[hidden] { display: none; }
+  #navigation .menu__top { display: flex; justify-content: space-between; align-items: center; }
+  #navigation .menu__word { font-family: var(--font-1); font-weight: 500; font-size: 25px; letter-spacing: -0.05em; }
+  #navigation .menu__links { display: grid; gap: 6px; }
+  #navigation .menu__links a { font-family: var(--font-1); font-weight: 500; font-size: 40px; line-height: 1.1; letter-spacing: -0.04em; text-decoration: none; }
+  #navigation .menu :focus-visible { outline-color: var(--color-5); }
+  #navigation .menu__foot { margin-top: auto; color: var(--color-8); }
+  @media (max-width: 1023px) {
+    #navigation .nav__pill { display: none; }
+    #navigation .nav__menu { display: inline-grid; }
+  }
+  @media (max-width: 380px) {
+    #navigation .nav__bar { gap: 8px; }
+    #navigation .nav__cta .m-btn__label { padding: 0 10px; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; overflow-x: clip; }
+  #opening .op-first {
+    position: relative; isolation: isolate; background: var(--color-1);
+    min-height: 100svh; display: flex; flex-direction: column; gap: 12px;
+    padding: 112px var(--space-1) var(--space-1);
+  }
+  #opening .op-title { padding-bottom: clamp(16px, 2.6vw, 34px); }
+  #opening .op-line, #opening .op-line__in { display: block; }
+  #opening .op-bento { flex: 1; min-height: 230px; display: grid; grid-template-columns: 36fr 22fr 40fr; gap: var(--space-1); }
+  #opening .op-tile { position: relative; margin: 0; min-height: 0; }
+  #opening .op-tile__in { height: 100%; }
+  #opening .op-card { display: flex; flex-direction: column; justify-content: space-between; gap: 18px; padding: clamp(20px, 2.3vw, 30px); }
+  #opening .op-card__lead { max-width: 20ch; }
+  #opening .op-card__foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; padding-top: 14px; border-top: 1px solid var(--color-7); }
+  #opening .op-card__hours { color: var(--color-3); }
+  #opening .op-photo { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); }
+  #opening .op-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #opening .op-second {
+    position: relative; margin: 0 var(--space-1); min-height: 100svh;
+    display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto 1fr; gap: 28px var(--space-1);
+    padding: clamp(28px, 4.4vw, 60px); border-radius: var(--radius-3); background: var(--color-5); color: var(--color-2);
+  }
+  #opening .op-statement { grid-column: 1 / span 10; max-width: 19ch; }
+  #opening .op-story { grid-column: 1 / span 5; align-self: end; display: grid; gap: 22px; max-width: 44ch; }
+  #opening .op-story__links { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  #opening .op-shot { grid-column: 7 / span 6; align-self: end; position: relative; margin: 0; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-2); }
+  #opening .op-shot img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op-line__in { animation: op-rise .95s cubic-bezier(.2, .75, .2, 1) backwards; }
+    #opening .op-line:nth-child(2) .op-line__in { animation-delay: .07s; }
+    #opening .op-tile__in { animation: op-rise-tile .9s cubic-bezier(.2, .75, .2, 1) backwards; }
+    #opening .op-tile:nth-child(2) .op-tile__in { animation-delay: .09s; }
+    #opening .op-tile:nth-child(3) .op-tile__in { animation-delay: .18s; }
+    #opening .op-photo img { animation: op-pan-b 6s ease-in-out infinite alternate; }
+    #opening .op-tile--a .op-photo img { animation-name: op-pan-a; animation-duration: 7s; }
+    #opening .op-first[data-still] .op-photo img { animation-play-state: paused; }
+    @keyframes op-rise { from { transform: translateY(.32em); } }
+    @keyframes op-rise-tile { from { transform: translateY(36px); } }
+    @keyframes op-pan-a { from { transform: scale(1.18) translateY(-6%); } to { transform: scale(1.18) translateY(6%); } }
+    @keyframes op-pan-b { from { transform: scale(1.16) translateX(-7%); } to { transform: scale(1.16) translateX(7%); } }
+  }
+  @media (max-width: 767px) {
+    #opening .op-first { padding-top: 84px; gap: 10px; }
+    #opening .op-bento { grid-template-columns: 1fr 1fr; grid-template-rows: auto minmax(150px, 1fr); gap: 10px; }
+    #opening .op-tile--card { grid-column: 1 / -1; }
+    #opening .op-card { gap: 14px; }
+    #opening .op-second { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; align-content: start; padding: 28px 20px; }
+    #opening .op-statement, #opening .op-story, #opening .op-shot { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:shelves">
+@layer sections {
+  #shelves { padding: clamp(96px, 12vw, 168px) var(--space-1) clamp(72px, 9vw, 128px); }
+  #shelves .sh-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px var(--space-1); margin-bottom: clamp(48px, 6vw, 88px); }
+  #shelves .sh-head h2 { grid-column: 1 / span 7; }
+  #shelves .sh-lead { grid-column: 9 / span 4; align-self: end; color: var(--color-3); }
+  #shelves .sh-body { display: grid; grid-template-columns: 5fr 7fr; gap: var(--space-1) clamp(24px, 4vw, 64px); align-items: start; }
+  #shelves .sh-plate { position: sticky; top: 84px; aspect-ratio: 4 / 5; max-height: calc(100svh - 108px); overflow: hidden; border-radius: var(--radius-2); background: var(--color-4); }
+  #shelves .sh-shot { position: absolute; inset: 0; margin: 0; overflow: hidden; clip-path: inset(0% 0% 0% 0%); }
+  #shelves .sh-shot img { width: 100%; height: 100%; object-fit: cover; }
+  #shelves .sh-list { border-bottom: 1px solid var(--color-7); }
+  #shelves .sh-row { position: relative; display: grid; align-content: start; gap: 14px; min-height: clamp(190px, 27svh, 260px); padding: 26px 0 44px; }
+  #shelves .sh-rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-7); }
+  #shelves .sh-title { color: var(--color-3); transition: color .5s ease; }
+  #shelves .sh-row[data-current] .sh-title { color: var(--color-2); }
+  #shelves .sh-note { max-width: 46ch; color: var(--color-3); }
+  @media (max-width: 767px) {
+    #shelves .sh-head, #shelves .sh-body { grid-template-columns: minmax(0, 1fr); }
+    #shelves .sh-head h2, #shelves .sh-lead { grid-column: 1; }
+    #shelves .sh-plate { top: 72px; z-index: 2; aspect-ratio: auto; height: 34svh; }
+    #shelves .sh-row { min-height: 36svh; }
+  }
+}
+</style>
+<style data-8b-part="section:paper">
+@layer sections {
+  #paper { padding: clamp(24px, 4vw, 48px) var(--space-1); }
+  #paper .pa-panel { display: grid; gap: clamp(36px, 5vw, 72px); padding: clamp(28px, 5vw, 72px) clamp(20px, 4.4vw, 64px); }
+  #paper .pa-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px var(--space-1); }
+  #paper .pa-head h2 { grid-column: 1 / span 7; }
+  #paper .pa-lead { grid-column: 9 / span 4; align-self: end; color: var(--color-8); }
+  #paper .pa-body { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1) clamp(20px, 3vw, 48px); align-items: start; }
+  #paper .pa-tabs { display: grid; gap: 4px; padding: 10px; }
+  #paper .pa-tab {
+    display: grid; gap: 8px; padding: 16px; border: 0; border-radius: var(--radius-1); text-align: left; cursor: pointer; color: var(--color-3);
+    background: linear-gradient(var(--color-1), var(--color-1)) no-repeat 0 0 / 0% 100%;
+    transition: background-size .5s cubic-bezier(.6, 0, .2, 1), color .3s;
+  }
+  #paper .pa-tab[aria-selected="true"] { background-size: 100% 100%; color: var(--color-2); }
+  @media (hover: hover) { #paper .pa-tab:hover { background-size: 100% 100%; color: var(--color-2); } }
+  #paper .pa-frame { position: relative; margin: 0; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); background: var(--color-6); }
+  #paper .pa-stack { position: absolute; left: 0; right: 0; top: -6%; height: 112%; }
+  #paper .pa-stack img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s ease; }
+  #paper .pa-stack img:first-child { opacity: 1; }
+  #paper .pa-stack[data-ready] img { opacity: 0; }
+  #paper .pa-stack[data-ready] img[data-active] { opacity: 1; }
+  #paper .pa-details { display: grid; gap: 48px; }
+  #paper .pa-detail { display: grid; gap: 26px; }
+  #paper .pa-detail[hidden] { display: none; }
+  #paper .pa-specs { border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+  #paper .pa-specs > div { display: grid; grid-template-columns: 9ch minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+  #paper .pa-specs dt { color: var(--color-8); }
+  #paper .pa-panel :focus-visible { outline-color: var(--color-5); }
+  #paper .pa-tabs :focus-visible { outline-color: var(--color-2); }
+  @media (max-width: 1023px) {
+    #paper .pa-body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    #paper .pa-details { grid-column: 1 / -1; }
+  }
+  @media (max-width: 767px) {
+    #paper .pa-head, #paper .pa-body { grid-template-columns: minmax(0, 1fr); }
+    #paper .pa-head h2, #paper .pa-lead { grid-column: 1; }
+    #paper .pa-frame { aspect-ratio: 4 / 3; }
+  }
+}
+</style>
+<style data-8b-part="section:arrivals">
+@layer sections {
+  #arrivals { padding: clamp(96px, 12vw, 168px) var(--space-1) clamp(64px, 8vw, 120px); overflow-x: clip; }
+  #arrivals .ar-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 560px) minmax(0, 1fr); gap: var(--space-1) clamp(24px, 4vw, 56px); align-items: start; }
+  #arrivals .ar-side { position: sticky; top: 96px; display: grid; gap: 22px; justify-items: start; }
+  #arrivals .ar-note { color: var(--color-3); max-width: 32ch; }
+  #arrivals .ar-list { display: grid; gap: clamp(56px, 7vw, 96px); padding-bottom: 8vh; }
+  #arrivals .ar-card { display: grid; gap: 16px; }
+  #arrivals .ar-shot { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-2); background: var(--color-4); }
+  #arrivals .ar-shot img { width: 100%; height: 100%; object-fit: cover; }
+  #arrivals .ar-meta { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: baseline; }
+  #arrivals .ar-price { justify-self: end; }
+  #arrivals .ar-maker, #arrivals .ar-date { color: var(--color-3); }
+  #arrivals .ar-date { justify-self: end; }
+  @media (max-width: 1023px) {
+    #arrivals .ar-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+  }
+  @media (max-width: 767px) {
+    #arrivals .ar-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+    #arrivals .ar-side { position: static; }
+  }
+}
+</style>
+<style data-8b-part="section:makers">
+@layer sections {
+  #makers { padding: clamp(40px, 5vw, 72px) var(--space-1) clamp(96px, 12vw, 168px); }
+  #makers .mk-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px var(--space-1); margin-bottom: clamp(32px, 4vw, 56px); }
+  #makers .mk-head h2 { grid-column: 1 / span 8; }
+  #makers .mk-head p { grid-column: 10 / span 3; align-self: end; color: var(--color-3); }
+  #makers .mk-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+  #makers .mk-tile { display: grid; align-content: space-between; gap: 36px; min-height: clamp(132px, 13vw, 180px); padding: 20px; border: 1px solid var(--color-7); border-radius: var(--radius-1); }
+  #makers .mk-tile:nth-child(odd) { background: var(--color-4); border-color: var(--color-4); }
+  #makers .mk-place { color: var(--color-3); }
+  @media (max-width: 1023px) { #makers .mk-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 767px) {
+    #makers .mk-head { grid-template-columns: minmax(0, 1fr); }
+    #makers .mk-head h2, #makers .mk-head p { grid-column: 1; }
+    #makers .mk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    #makers .mk-tile { padding: 16px; gap: 24px; }
+    #makers .mk-tile:nth-child(odd) { background: transparent; border-color: var(--color-7); }
+    #makers .mk-tile:nth-child(4n + 1), #makers .mk-tile:nth-child(4n) { background: var(--color-4); border-color: var(--color-4); }
+  }
+}
+</style>
+<style data-8b-part="section:press">
+@layer sections {
+  #press { padding: clamp(64px, 8vw, 120px) 0; }
+  #press .pr-row { display: grid; gap: clamp(36px, 5vw, 64px); }
+  #press .pr-intro { display: grid; gap: 22px; justify-items: start; max-width: 760px; padding: 0 var(--space-1); }
+  #press .pr-intro .m-text-6 { color: var(--color-3); max-width: 42ch; }
+  #press .pr-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-1); padding: 0 var(--space-1); }
+  #press .pr-step { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; border-radius: var(--radius-2); background: var(--color-4); }
+  #press .pr-shot { position: relative; margin: 0; min-height: 320px; overflow: hidden; }
+  #press .pr-shot img { position: absolute; top: 0; left: -6%; width: 112%; height: 100%; object-fit: cover; }
+  #press .pr-copy { display: grid; align-content: space-between; gap: 28px; padding: clamp(20px, 2.4vw, 32px); }
+  #press .pr-copy > div { display: grid; gap: 14px; }
+  #press .pr-num { color: var(--color-3); }
+  #press .pr-copy .m-text { color: var(--color-3); }
+  @media (max-width: 767px) {
+    #press .pr-track { grid-template-columns: minmax(0, 1fr); }
+    #press .pr-step { grid-template-columns: minmax(0, 1fr); }
+    #press .pr-shot { min-height: 0; aspect-ratio: 4 / 3; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:press">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #press[data-track] { padding: 0; }
+    #press[data-track] .pr-stage { height: 100svh; overflow: hidden; display: flex; align-items: center; }
+    #press[data-track] .pr-row { display: flex; width: max-content; gap: var(--space-1); padding: 40px var(--space-1) 0; align-items: stretch; }
+    #press[data-track] .pr-intro { width: min(36vw, 480px); padding: 0 24px 0 0; align-content: center; }
+    #press[data-track] .pr-track { display: flex; gap: var(--space-1); padding: 0; }
+    #press[data-track] .pr-step { width: min(64vw, 820px); height: min(66svh, 520px); }
+    #press[data-track] .pr-shot { min-height: 0; }
+    @media (max-width: 767px) {
+      #press[data-track] .pr-row { padding-top: 56px; }
+      #press[data-track] .pr-intro { width: 84vw; padding: 0; }
+      #press[data-track] .pr-step { width: 84vw; height: min(74svh, 620px); grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; }
+      #press[data-track] .pr-shot { aspect-ratio: auto; }
+    }
+  }
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+  #club { padding: clamp(24px, 4vw, 48px) var(--space-1); }
+  #club .cl-panel { display: grid; gap: clamp(36px, 5vw, 64px); padding: clamp(28px, 5vw, 72px) clamp(20px, 4.4vw, 64px); }
+  #club .cl-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px var(--space-1); }
+  #club .cl-head h2 { grid-column: 1 / span 7; }
+  #club .cl-lead { grid-column: 9 / span 4; align-self: end; color: var(--color-8); }
+  #club .cl-tiers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); }
+  #club .cl-tier { display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 18px; justify-items: start; padding: clamp(20px, 2.4vw, 32px); }
+  #club .cl-tier--lead { background: var(--color-5); color: var(--color-2); }
+  #club .cl-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; width: 100%; }
+  #club .cl-price { display: flex; align-items: baseline; gap: 10px; }
+  #club .cl-desc { color: var(--color-8); }
+  #club .cl-tier--lead .cl-desc { color: var(--color-2); }
+  #club .cl-list { display: grid; gap: 10px; width: 100%; padding-top: 18px; border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+  #club .cl-list li { display: flex; gap: 12px; align-items: baseline; }
+  #club .cl-list li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 1px; background: var(--color-5); translate: 0 -2px; }
+  #club .cl-tier--lead .cl-list li::before { background: var(--color-2); }
+  #club .cl-panel :focus-visible { outline-color: var(--color-5); }
+  #club .cl-tier--lead :focus-visible { outline-color: var(--color-2); }
+  @media (max-width: 900px) {
+    #club .cl-head, #club .cl-tiers { grid-template-columns: minmax(0, 1fr); }
+    #club .cl-head h2, #club .cl-lead { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:evenings">
+@layer sections {
+  #evenings { padding: clamp(96px, 12vw, 168px) var(--space-1) clamp(64px, 8vw, 120px); }
+  #evenings .ev-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px var(--space-1); margin-bottom: clamp(40px, 5vw, 72px); }
+  #evenings .ev-head h2 { grid-column: 1 / span 6; }
+  #evenings .ev-lead { grid-column: 8 / span 5; align-self: end; }
+  #evenings .ev-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); align-items: start; }
+  #evenings .ev-card { display: grid; padding: 10px; }
+  #evenings .ev-shot { position: relative; margin: 0; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); }
+  #evenings .ev-shot img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; }
+  #evenings .ev-body { display: grid; gap: 12px; padding: 20px 10px 10px; }
+  #evenings .ev-when { color: var(--color-3); }
+  #evenings .ev-body > .m-text { color: var(--color-3); }
+  #evenings .ev-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; margin-top: 8px; padding-top: 14px; border-top: 1px solid var(--color-7); }
+  @media (max-width: 900px) {
+    #evenings .ev-head, #evenings .ev-cards { grid-template-columns: minmax(0, 1fr); }
+    #evenings .ev-head h2, #evenings .ev-lead { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { display: grid; grid-template-columns: 5fr 7fr; gap: 32px clamp(24px, 4vw, 64px); align-items: start; padding: clamp(64px, 8vw, 120px) var(--space-1); }
+  #faq .fq-side { position: sticky; top: 96px; display: grid; gap: 20px; }
+  #faq .fq-side .m-text { color: var(--color-3); max-width: 34ch; }
+  #faq .fq-list { border-top: 1px solid var(--color-7); }
+  #faq .fq-item { position: relative; }
+  #faq .fq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+  #faq .fq-item summary::-webkit-details-marker { display: none; }
+  #faq .fq-icon {
+    position: relative; flex: none; width: 32px; height: 32px; border-radius: var(--radius-1);
+    background: var(--color-4) linear-gradient(var(--color-2), var(--color-2)) no-repeat 0 100% / 100% 0%;
+    transition: background-size .45s cubic-bezier(.6, 0, .2, 1);
+  }
+  #faq .fq-icon::before, #faq .fq-icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.5px; background: var(--color-2); translate: -50% -50%; transition: rotate .4s ease, background-color .3s; }
+  #faq .fq-icon::after { rotate: 90deg; }
+  #faq .fq-item[open] .fq-icon::after { rotate: 0deg; }
+  @media (hover: hover) {
+    #faq .fq-item summary:hover .fq-icon { background-size: 100% 100%; }
+    #faq .fq-item summary:hover .fq-icon::before, #faq .fq-item summary:hover .fq-icon::after { background-color: var(--color-1); }
+  }
+  #faq .fq-answer { max-width: 60ch; padding: 0 52px 26px 0; color: var(--color-3); }
+  #faq .fq-rule { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-7); }
+  #faq .fq-side a { white-space: nowrap; }
+  @media (max-width: 767px) {
+    #faq { grid-template-columns: minmax(0, 1fr); }
+    #faq .fq-side { position: static; }
+    #faq .fq-answer { padding-right: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+  #visit { padding: clamp(64px, 8vw, 120px) var(--space-1) clamp(48px, 6vw, 96px); overflow-x: clip; }
+  #visit .vi-mark { position: relative; margin-bottom: clamp(40px, 5vw, 72px); }
+  #visit .vi-address { line-height: .9; }
+  #visit .vi-line { display: block; white-space: nowrap; font-size: min(24vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.5))); }
+  #visit .vi-body { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px var(--space-1); }
+  #visit .vi-info { grid-column: 1 / span 6; display: grid; gap: 32px; align-content: start; }
+  #visit .vi-shot { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius-2); background: var(--color-4); }
+  #visit .vi-shot img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; }
+  #visit .vi-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px var(--space-1); }
+  #visit .vi-facts dt { color: var(--color-3); margin-bottom: 8px; }
+  #visit .vi-facts dd { display: grid; gap: 4px; }
+  #visit .vi-form { grid-column: 8 / span 5; display: grid; gap: 18px; align-self: start; padding: clamp(20px, 2.4vw, 32px); }
+  #visit .vi-form .m-field__control { background: var(--color-1); }
+  #visit .vi-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px var(--space-1); }
+  #visit .vi-status { padding: 12px 14px; border-radius: var(--radius-1); background: var(--color-5); }
+  #visit .vi-status[hidden] { display: none; }
+  @media (max-width: 900px) {
+    #visit .vi-body { grid-template-columns: minmax(0, 1fr); }
+    #visit .vi-info, #visit .vi-form { grid-column: 1; }
+  }
+  @media (max-width: 520px) {
+    #visit .vi-facts, #visit .vi-pair { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="scene-style:visit">
+@layer scenes {
+  #visit .vi-twin { position: absolute; inset: 0; z-index: 0; color: var(--color-5); pointer-events: none; }
+  #visit .vi-mark > .vi-address:not(.vi-twin) { position: relative; z-index: 1; }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: 0 var(--space-1) var(--space-1); }
+  #footer .ft-panel { display: grid; gap: clamp(32px, 4vw, 56px); padding: clamp(28px, 4.4vw, 60px) clamp(20px, 4.4vw, 60px) clamp(20px, 3vw, 36px); }
+  #footer .ft-word { line-height: .8; font-size: min(34vw, calc((100vw - 2 * var(--space-1) - 2 * clamp(20px, 4.4vw, 60px)) / (var(--len) * 0.48))); }
+  #footer .ft-cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px var(--space-1); }
+  #footer .ft-col { position: relative; display: grid; gap: 14px; align-content: start; padding-top: 16px; }
+  #footer .ft-rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: color-mix(in srgb, var(--color-1) 18%, transparent); }
+  #footer .ft-label, #footer .ft-tag { color: var(--color-8); }
+  #footer .ft-col ul { display: grid; gap: 8px; }
+  #footer .ft-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; color: var(--color-8); }
+  #footer :focus-visible { outline-color: var(--color-5); }
+  @media (max-width: 767px) { #footer .ft-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening { padding-top: calc(64px + var(--space-1)); }
+@media (min-width: 768px) { #opening .op-story { align-self: start; } }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-second, #opening .op-statement, #opening .op-story { animation: op-rise-tile .9s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .op-statement { animation-delay: .08s; }
+  #opening .op-story { animation-delay: .16s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening"><span aria-hidden="true" class="nav__mark"></span><span class="nav__word">{{t1|⟦name⟧}}</span></a>
+<nav aria-label="Main" class="nav__pill">
+<ul>
+{{#nv_shelves}}<li><a class="m-link-2" href="#shelves">{{t2|Shelves}}</a></li>{{/nv_shelves}}
+{{#nv_paper}}<li><a class="m-link-2" href="#paper">{{t3|Paper library}}</a></li>{{/nv_paper}}
+{{#nv_arrivals}}<li><a class="m-link-2" href="#arrivals">{{t4|New in}}</a></li>{{/nv_arrivals}}
+{{#nv_press}}<li><a class="m-link-2" href="#press">{{t5|Printing}}</a></li>{{/nv_press}}
+{{#nv_club}}<li><a class="m-link-2" href="#club">{{t6|The club}}</a></li>{{/nv_club}}
+{{#nv_evenings}}<li><a class="m-link-2" href="#evenings">{{t7|Evenings}}</a></li>{{/nv_evenings}}
+</ul>
+</nav>
+<a class="m-btn nav__cta" href="#visit"><span class="m-btn__label">{{t8|Visit the shop}}</span><span aria-hidden="true" class="m-btn__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon nav__menu" type="button"><svg aria-hidden="true" height="16" viewbox="0 0 16 16" width="16"><path d="M2 5h12M2 11h12" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></button>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="menu__word">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-icon menu__close" type="button"><svg aria-hidden="true" height="16" viewbox="0 0 16 16" width="16"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></button>
+</div>
+<ul class="menu__links">
+{{#nv_shelves}}<li><a href="#shelves">{{t2|Shelves}}</a></li>{{/nv_shelves}}
+{{#nv_paper}}<li><a href="#paper">{{t3|Paper library}}</a></li>{{/nv_paper}}
+{{#nv_arrivals}}<li><a href="#arrivals">{{t4|New in}}</a></li>{{/nv_arrivals}}
+{{#nv_press}}<li><a href="#press">{{t5|Printing}}</a></li>{{/nv_press}}
+{{#nv_club}}<li><a href="#club">{{t6|The club}}</a></li>{{/nv_club}}
+{{#nv_evenings}}<li><a href="#evenings">{{t7|Evenings}}</a></li>{{/nv_evenings}}
+{{#nv_visit}}<li><a href="#visit">{{t9|Visit}}</a></li>{{/nv_visit}}
+</ul>
+<p class="m-text menu__foot">{{t10|27 Ash Row, Enugu. Open Tuesday to Sunday.}}</p>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-second">
+<h1 class="m-text-3 op-statement" id="opening-title">{{t11|We stock what we would write with ourselves, and you can try all of it before it goes in the bag.}}</h1>
+<div class="op-story">
+<p class="m-text-6">{{t12|⟦name⟧ began in 2014 as one shelf of Italian notebooks inside a bookshop on Leith Walk. Today it fills a whole shopfront on Ash Row: cotton papers, pencils from three continents, a wall of inks and a counter where every nib can be tested. Nothing goes on a shelf until one of us has filled a page with it.}}</p>
+<div class="op-story__links">
+<a class="m-btn-4" href="#shelves"><span class="m-btn-4__label">{{t13|See the shelves}}</span><span aria-hidden="true" class="m-btn-4__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+<a class="m-link" href="#evenings">{{t14|Thursday evenings at the shop}}</a>
+</div>
+</div>
+<figure class="op-shot" data-8b-motion="drift">
+<img alt="A long wall of shelves filled with jars of coloured pens and pencils" height="1067" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1704742689831-98f4eeb7d50a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c3RhdGlvbmVyeSUyMHNob3AlMjBzaGVsdmVzfGVufDF8MHx8fDE3OTE0NjY4ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60}}" style="background:#735940" width="1600"/>
+</figure>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_shelves}}<section aria-labelledby="shelves-title" data-8b-section="shelves" id="shelves">
+<div class="sh-head">
+<h2 class="m-text-3" id="shelves-title">{{t15|Five shelves,}} <span class="m-tone" data-8b-motion="ink">{{t16|chosen by hand.}}</span></h2>
+<p class="m-text-6 sh-lead">{{t17|Everything in the shop sits on one of five shelves. We keep each small enough to know by heart, and restock it from makers we have met.}}</p>
+</div>
+<div class="sh-body">
+<div class="sh-plate" data-8b-sticky-under-nav="">
+<figure class="sh-shot"><img alt="A fanned stack of thick white cotton paper with a textured surface" height="1600" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1693592772086-e80960b134ed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZG1hZGUlMjBwYXBlcnxlbnwxfDJ8fHwxNzkxNDY2OTE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<figure class="sh-shot"><img alt="A bottle of black ink beside a pale fountain pen on white cloth" height="2400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1600025281679-e24ffc0deaab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aW5rJTIwYm90dGxlfGVufDF8MXx8fDE3OTE0NjY4OTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<figure class="sh-shot"><img alt="Three hand-bound notebooks with orange, black and red covers stacked on a table" height="2133" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1706314180277-c6f985d48c09?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bm90ZWJvb2tzJTIwc3RhY2t8ZW58MXwxfHx8MTc5MTQ2Njg4OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<figure class="sh-shot"><img alt="White envelopes sealed with red wax on a wooden desk beside a wax warmer" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1774891937529-7160a03edd61?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZW52ZWxvcGVzJTIwbGV0dGVycyUyMHdheCUyMHNlYWx8ZW58MXwwfHx8MTc5MTQ2NjkwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=930&q=60}}" style="background:#59260c" width="1600"/></figure>
+<figure class="sh-shot"><img alt="Fine paint brushes laid beside a white porcelain palette" height="2000" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1723763877789-12dbf4a87d59?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d2F0ZXJjb2xvciUyMHBhaW50cyUyMGJydXNoZXN8ZW58MXwxfHx8MTc5MTQ2NjkyMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#c0d9d9" width="1600"/></figure>
+</div>
+<ol class="sh-list">
+<li class="sh-row"><span aria-hidden="true" class="sh-rule" data-8b-motion="rule"></span><h3 class="m-text-3 sh-title">{{t18|Paper & card}}</h3><p class="m-text sh-note">{{t19|Cotton rag, laid, kraft and Japanese papers by the sheet, card from 120 to 600 gsm and envelopes to match.}}</p></li>
+<li class="sh-row"><span aria-hidden="true" class="sh-rule" data-8b-motion="rule"></span><h3 class="m-text-3 sh-title">{{t20|Pens & ink}}</h3><p class="m-text sh-note">{{t21|Fountain pens to try at the counter, dip pens, fineliners and a wall of forty bottled inks.}}</p></li>
+<li class="sh-row"><span aria-hidden="true" class="sh-rule" data-8b-motion="rule"></span><h3 class="m-text-3 sh-title">{{t22|Notebooks}}</h3><p class="m-text sh-note">{{t23|Hand-bound, stitched and lay-flat books in every ruling: plain, lined, squared and dotted.}}</p></li>
+<li class="sh-row"><span aria-hidden="true" class="sh-rule" data-8b-motion="rule"></span><h3 class="m-text-3 sh-title">{{t24|Post & sealing}}</h3><p class="m-text sh-note">{{t25|Writing sets, envelopes, sealing wax, brass seals and stamps for the letters people keep.}}</p></li>
+<li class="sh-row"><span aria-hidden="true" class="sh-rule" data-8b-motion="rule"></span><h3 class="m-text-3 sh-title">{{t26|Paint & drawing}}</h3><p class="m-text sh-note">{{t27|Pencils in every grade, watercolour pans, sable brushes and sketchbooks that take a wash.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_shelves}}
+
+{{#sec_paper}}<section aria-labelledby="paper-title" data-8b-section="paper" id="paper">
+<div class="m-surface-2 pa-panel">
+<div class="pa-head">
+<h2 class="m-text-3" id="paper-title">{{t28|The paper library.}} <span class="m-tone-2" data-8b-motion="ink">{{t29|Touch before you buy.}}</span></h2>
+<p class="m-text-6 pa-lead">{{t30|Forty papers live in flat drawers behind the counter. Ask for a drawer and we lay the sheets out for you, with a pen to try them.}}</p>
+</div>
+<div class="pa-body">
+<div aria-label="Papers in the library" class="m-surface pa-tabs" role="tablist">
+<button aria-controls="pa-panel-1" aria-selected="true" class="pa-tab" id="pa-tab-1" role="tab" type="button"><span class="m-text-4">{{t31|Cotton rag}}</span><span class="m-text-5">{{t32|300 gsm, deckle edge}}</span></button>
+<button aria-controls="pa-panel-2" aria-selected="false" class="pa-tab" id="pa-tab-2" role="tab" type="button"><span class="m-text-4">{{t33|Kraft & recycled}}</span><span class="m-text-5">{{t34|120 gsm, by the sheet or roll}}</span></button>
+<button aria-controls="pa-panel-3" aria-selected="false" class="pa-tab" id="pa-tab-3" role="tab" type="button"><span class="m-text-4">{{t35|Marbled}}</span><span class="m-text-5">{{t36|90 gsm, no two alike}}</span></button>
+<button aria-controls="pa-panel-4" aria-selected="false" class="pa-tab" id="pa-tab-4" role="tab" type="button"><span class="m-text-4">{{t37|Washi}}</span><span class="m-text-5">{{t38|40 to 70 gsm, long fibre}}</span></button>
+</div>
+<figure class="pa-frame" data-8b-motion="drift">
+<div class="pa-stack">
+<img alt="Six swatches of handmade cotton paper in white and pale pink with torn edges" height="1742" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1740324974165-d5a075315e43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8aGFuZG1hZGUlMjBwYXBlcnxlbnwxfDJ8fHwxNzkxNDY2OTE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=500&q=60}}" style="background:#d9d9d9" width="1600"/>
+<img alt="A close view of brown kraft paper with a soft mottled texture" height="1600" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1737032958868-42ad072414e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHBhcGVyJTIwc3RhY2slMjB0ZXh0dXJlfGVufDF8Mnx8fDE3OTE0NjY4ODh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=500&q=60}}" style="background:#a68c73" width="1600"/>
+<img alt="Red and pink marbled paper combed into feathered vertical patterns" height="1067" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1759783644690-ea0f956424e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGJvb2tiaW5kaW5nfGVufDF8MHx8fDE3OTE0NjY5MTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60}}" style="background:#a64040" width="1600"/>
+<img alt="Overlapping sheets of blue, gold and plum Japanese paper printed with patterns" height="1600" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1693592322106-efad975eb8ee?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGFuZG1hZGUlMjBwYXBlcnxlbnwxfDJ8fHwxNzkxNDY2OTE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=500&q=60}}" style="background:#40598c" width="1600"/>
+</div>
+</figure>
+<div class="pa-details">
+<div aria-labelledby="pa-tab-1" class="pa-detail" id="pa-panel-1" role="tabpanel">
+<p class="m-text-6">{{t39|Made from cotton linters at a small mill in Somerset. Soft, strong and forgiving under a wet nib; the deckle is left as it came off the mould.}}</p>
+<dl class="pa-specs"><div><dt class="m-text-5">{{t40|Sizes}}</dt><dd class="m-text">{{t41|A4, A3 and half imperial}}</dd></div><div><dt class="m-text-5">{{t42|Best for}}</dt><dd class="m-text">{{t43|Fountain pens, watercolour, invitations}}</dd></div><div><dt class="m-text-5">{{t44|Price}}</dt><dd class="m-text">{{t45|₦1,000 a sheet}}</dd></div></dl>
+</div>
+<div aria-labelledby="pa-tab-2" class="pa-detail" id="pa-panel-2" role="tabpanel">
+<p class="m-text-6">{{t46|Unbleached and honest. Takes pencil, brush pen and stamps beautifully, and wraps a parcel well enough to make it worth the post.}}</p>
+<dl class="pa-specs"><div><dt class="m-text-5">{{t40|Sizes}}</dt><dd class="m-text">{{t47|A3 sheets, 10 m rolls}}</dd></div><div><dt class="m-text-5">{{t42|Best for}}</dt><dd class="m-text">{{t48|Sketching, wrapping, notebook covers}}</dd></div><div><dt class="m-text-5">{{t44|Price}}</dt><dd class="m-text">{{t49|₦300 a sheet, ₦4,500 a roll}}</dd></div></dl>
+</div>
+<div aria-labelledby="pa-tab-3" class="pa-detail" id="pa-panel-3" role="tabpanel">
+<p class="m-text-6">{{t50|Every sheet floated by hand on a bath of size in Florence, so no two are the same. Ask to see the drawer: there are usually around thirty.}}</p>
+<dl class="pa-specs"><div><dt class="m-text-5">{{t40|Sizes}}</dt><dd class="m-text">{{t51|50 × 70 cm}}</dd></div><div><dt class="m-text-5">{{t42|Best for}}</dt><dd class="m-text">{{t52|Endpapers, covers, boxes}}</dd></div><div><dt class="m-text-5">{{t44|Price}}</dt><dd class="m-text">{{t53|₦4,500 a sheet}}</dd></div></dl>
+</div>
+<div aria-labelledby="pa-tab-4" class="pa-detail" id="pa-panel-4" role="tabpanel">
+<p class="m-text-6">{{t54|Long-fibred Japanese paper, thin enough to see light through and still hard to tear. Some sheets carry gold leaf pressed in at the mill.}}</p>
+<dl class="pa-specs"><div><dt class="m-text-5">{{t40|Sizes}}</dt><dd class="m-text">{{t55|64 × 94 cm}}</dd></div><div><dt class="m-text-5">{{t42|Best for}}</dt><dd class="m-text">{{t56|Bookbinding, lampshades, wrapping}}</dd></div><div><dt class="m-text-5">{{t44|Price}}</dt><dd class="m-text">{{t57|From ₦3,000 a sheet}}</dd></div></dl>
+</div>
+</div>
+</div>
+</div>
+</section>{{/sec_paper}}
+
+{{#sec_arrivals}}<section aria-labelledby="arrivals-title" data-8b-section="arrivals" id="arrivals">
+<div class="ar-grid">
+<div class="ar-side" data-8b-sticky-under-nav="">
+<h2 class="m-text-3" id="arrivals-title">{{t58|New on}} <span class="m-tone" data-8b-motion="ink">{{t59|the shelves.}}</span></h2>
+<p class="m-text ar-note">{{t60|Four things that came in over the last fortnight. Runs are small: when they are gone, we wait for the maker's next batch.}}</p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t61|Ask us to hold one}}</span><span aria-hidden="true" class="m-btn__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+</div>
+<ul class="ar-list">
+<li class="ar-card">
+<figure class="ar-shot"><img alt="The corner of a black cloth-bound notebook with a leather bookmark between the pages" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1709158997589-c547225f86f3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Ym9va2JpbmRpbmd8ZW58MXwwfHx8MTc5MTQ2NjkxM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#8c7373" width="1600"/></figure>
+<div class="ar-meta"><h3 class="m-text-4">{{t62|Linen-bound A5 notebook}}</h3><p class="m-text-4 ar-price">{{t63|₦12,000}}</p><p class="m-text-5 ar-maker">{{t64|Hollin Bindery, Ibadan}}</p><p class="m-text-5 ar-date"><time datetime="2026-10-06">{{t65|In since 6 October}}</time></p></div>
+</li>
+<li class="ar-card">
+<figure class="ar-shot"><img alt="A sharpened black pencil lying across an ochre notebook" height="1067" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1664260820887-c71c216fc995?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGVuY2lscyUyMGRlc2t8ZW58MXwwfHx8MTc5MTQ2NjkwNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+<div class="ar-meta"><h3 class="m-text-4">{{t66|Graphite set, six grades}}</h3><p class="m-text-4 ar-price">{{t67|₦7,000}}</p><p class="m-text-5 ar-maker">{{t68|Orba, Lisbon}}</p><p class="m-text-5 ar-date"><time datetime="2026-10-03">{{t69|In since 3 October}}</time></p></div>
+</li>
+<li class="ar-card">
+<figure class="ar-shot"><img alt="Three white envelopes closed with red wax seals on a dark wooden table" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1774891937498-6020acda63f3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZW52ZWxvcGVzJTIwbGV0dGVycyUyMHdheCUyMHNlYWx8ZW58MXwwfHx8MTc5MTQ2NjkwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#a6a6a6" width="1600"/></figure>
+<div class="ar-meta"><h3 class="m-text-4">{{t70|Wax and brass seal kit}}</h3><p class="m-text-4 ar-price">{{t71|₦16,000}}</p><p class="m-text-5 ar-maker">{{t72|Merrow & Lane, Abeokuta}}</p><p class="m-text-5 ar-date"><time datetime="2026-10-01">{{t73|In since 1 October}}</time></p></div>
+</li>
+<li class="ar-card">
+<figure class="ar-shot"><img alt="An open tin of watercolour pans with a brush and a jar of water" height="2133" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1654105731580-19fc989c7132?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d2F0ZXJjb2xvciUyMHBhaW50cyUyMGJydXNoZXN8ZW58MXwxfHx8MTc5MTQ2NjkyMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<div class="ar-meta"><h3 class="m-text-4">{{t74|Travel watercolour tin}}</h3><p class="m-text-4 ar-price">{{t75|₦19,000}}</p><p class="m-text-5 ar-maker">{{t76|Studio Kesh, Porto}}</p><p class="m-text-5 ar-date"><time datetime="2026-09-29">{{t77|In since 29 September}}</time></p></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_arrivals}}
+
+{{#sec_makers}}<section aria-labelledby="makers-title" data-8b-section="makers" id="makers">
+<div class="mk-head">
+<h2 class="m-text-3" id="makers-title">{{t78|Ten of our thirty-one makers,}} <span class="m-tone">{{t79|most of them small.}}</span></h2>
+<p class="m-text">{{t80|We buy direct, in small batches, from people who make one thing well.}}</p>
+</div>
+<ul class="mk-grid">
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t81|Hollin Bindery}}</p><p class="m-text-5 mk-place">{{t82|Ibadan, notebooks}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t83|Orba}}</p><p class="m-text-5 mk-place">{{t84|Lisbon, pencils}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t85|Merrow & Lane}}</p><p class="m-text-5 mk-place">{{t86|Bath, sealing wax}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t87|Studio Kesh}}</p><p class="m-text-5 mk-place">{{t88|Porto, watercolour}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t89|Tidewell Mill}}</p><p class="m-text-5 mk-place">{{t90|Somerset, cotton paper}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t91|Fenwick Inks}}</p><p class="m-text-5 mk-place">{{t92|Kaduna, bottled ink}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t93|Okabe Shiki}}</p><p class="m-text-5 mk-place">{{t94|Kyoto, washi}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t95|Atelier Brune}}</p><p class="m-text-5 mk-place">{{t96|Lyon, marbled paper}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t97|Hartshorn}}</p><p class="m-text-5 mk-place">{{t98|Jos, fountain pens}}</p></li>
+<li class="mk-tile"><p class="m-text-4" data-8b-motion="ink">{{t99|Saltmarsh Press}}</p><p class="m-text-5 mk-place">{{t100|Leith, greeting cards}}</p></li>
+</ul>
+</section>{{/sec_makers}}
+
+{{#sec_press}}<section aria-labelledby="press-title" data-8b-section="press" id="press">
+<div class="pr-stage">
+<div class="pr-row">
+<div class="pr-intro">
+<h2 class="m-text-3" id="press-title">{{t101|Printed to order,}} <span class="m-tone" data-8b-motion="ink">{{t102|in the back room.}}</span></h2>
+<p class="m-text-6">{{t103|Letterpress cards, invitations and notepaper on a 1960s platen press. Small runs from fifty sheets, in four steps.}}</p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t104|Start a print order}}</span><span aria-hidden="true" class="m-btn__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+</div>
+<ol class="pr-track">
+<li class="pr-step">
+<figure class="pr-shot"><img alt="Mirrored metal type spelling a word, locked up and ready for the press" height="1067" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1699662585308-fcb113a0a4ba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bGV0dGVycHJlc3MlMjBwcmludGluZ3xlbnwxfDB8fHwxNzkxNDY2OTA5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#402626" width="1600"/></figure>
+<div class="pr-copy"><p class="m-text-5 pr-num">{{t105|Step 1}}</p><div><h3 class="m-text-4">{{t106|Choose a stock, set the type}}</h3><p class="m-text">{{t107|Pick a board from the paper library. We set your words in metal or wood type, or make a plate from your own drawing.}}</p></div></div>
+</li>
+<li class="pr-step">
+<figure class="pr-shot"><img alt="Rows of wooden letters set in the bed of a printing press" height="1071" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1650341083170-dd771d4c1a35?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGV0dGVycHJlc3MlMjBwcmludGluZ3xlbnwxfDB8fHwxNzkxNDY2OTA5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="pr-copy"><p class="m-text-5 pr-num">{{t108|Step 2}}</p><div><h3 class="m-text-4">{{t109|Proof and adjust}}</h3><p class="m-text">{{t110|A proof reaches you within three working days. We change spacing, colour and position until it is right.}}</p></div></div>
+</li>
+<li class="pr-step">
+<figure class="pr-shot"><img alt="Large wooden type inked and locked into the bed of a press" height="1071" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1650341083304-7a151bc64f7a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGV0dGVycHJlc3MlMjBwcmludGluZ3xlbnwxfDB8fHwxNzkxNDY2OTA5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="pr-copy"><p class="m-text-5 pr-num">{{t111|Step 3}}</p><div><h3 class="m-text-4">{{t112|Print by hand}}</h3><p class="m-text">{{t113|Every sheet is fed into the press by hand, one colour at a time. Expect a soft, deep bite into the paper.}}</p></div></div>
+</li>
+<li class="pr-step">
+<figure class="pr-shot"><img alt="Kraft boxes tied with red and white twine and a handwritten tag" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1766512442064-0ffc39ce866f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8a3JhZnQlMjBwYXBlciUyMHBhcmNlbHxlbnwxfDB8fHwxNzkxNDY2OTIwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#8c5940" width="1600"/></figure>
+<div class="pr-copy"><p class="m-text-5 pr-num">{{t114|Step 4}}</p><div><h3 class="m-text-4">{{t115|Wrap and collect}}</h3><p class="m-text">{{t116|Wrapped in tissue and kraft, ready to collect on Ash Row, or posted anywhere in the Nigeria.}}</p></div></div>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_press}}
+
+{{#sec_club}}<section aria-labelledby="club-title" data-8b-section="club" id="club">
+<div class="m-surface-2 cl-panel">
+<div class="cl-head">
+<h2 class="m-text-3" id="club-title">{{t117|The Monthly ⟦name⟧.}} <span class="m-tone-2" data-8b-motion="ink">{{t118|Paper by post.}}</span></h2>
+<p class="m-text-6 cl-lead">{{t119|A parcel of paper, ink and one small surprise, posted on the first Friday of every month. Pause or stop it whenever you like.}}</p>
+</div>
+<ul class="cl-tiers">
+<li class="m-surface-3 cl-tier">
+<div class="cl-top"><h3 class="m-text-4">{{t120|Pocket}}</h3></div>
+<p class="cl-price"><span class="m-text-3">{{t121|₦6,000}}</span><span class="m-text-5">{{t122|a month}}</span></p>
+<p class="m-text cl-desc">{{t123|Something small to write in, every month.}}</p>
+<ul class="cl-list"><li class="m-text">{{t124|An A6 notebook or pad}}</li><li class="m-text">{{t125|A pen refill or a pencil}}</li><li class="m-text">{{t126|A set of four postcards}}</li></ul>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t127|Choose Pocket}}</span><span aria-hidden="true" class="m-btn__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+</li>
+<li class="m-surface-3 cl-tier cl-tier--lead">
+<div class="cl-top"><h3 class="m-text-4">{{t128|Desk}}</h3><span class="m-badge">{{t129|Most chosen}}</span></div>
+<p class="cl-price"><span class="m-text-3">{{t63|₦12,000}}</span><span class="m-text-5">{{t122|a month}}</span></p>
+<p class="m-text cl-desc">{{t130|The full parcel, for a desk that gets used.}}</p>
+<ul class="cl-list"><li class="m-text">{{t131|An A5 notebook}}</li><li class="m-text">{{t132|A bottle of ink or a pen}}</li><li class="m-text">{{t133|Ten sheets from the paper library}}</li><li class="m-text">{{t134|10% off everything in the shop}}</li></ul>
+<a class="m-btn-4" href="#visit"><span class="m-btn-4__label">{{t135|Choose Desk}}</span><span aria-hidden="true" class="m-btn-4__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+</li>
+<li class="m-surface-3 cl-tier">
+<div class="cl-top"><h3 class="m-text-4">{{t136|Studio}}</h3></div>
+<p class="cl-price"><span class="m-text-3">{{t137|₦22,500}}</span><span class="m-text-5">{{t122|a month}}</span></p>
+<p class="m-text cl-desc">{{t138|For people who make things out of paper.}}</p>
+<ul class="cl-list"><li class="m-text">{{t139|Everything in Desk}}</li><li class="m-text">{{t140|A letterpress print each season}}</li><li class="m-text">{{t141|One Thursday evening a quarter}}</li><li class="m-text">{{t142|First pick of new arrivals}}</li></ul>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t143|Choose Studio}}</span><span aria-hidden="true" class="m-btn__arrow"><svg height="16" viewbox="0 0 16 16" width="16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></span></a>
+</li>
+</ul>
+</div>
+</section>{{/sec_club}}
+
+{{#sec_evenings}}<section aria-labelledby="evenings-title" data-8b-section="evenings" id="evenings">
+<div class="ev-head">
+<h2 class="m-text-3" id="evenings-title">{{t144|Thursday evenings}} <span class="m-tone">{{t145|at the shop.}}</span></h2>
+<p class="m-text-6 ev-lead" data-8b-motion="ink">{{t146|Once a week we push the tables together, put the kettle on and teach one thing properly. Eight places, every material included.}}</p>
+</div>
+<ul class="ev-cards">
+<li class="m-surface ev-card">
+<figure class="ev-shot"><img alt="A hand writing tall black letters with a broad nib on brown paper" height="1067" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1597401989360-07ff2c24c8d2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2FsbGlncmFwaHklMjB3b3Jrc2hvcHxlbnwxfDB8fHwxNzkxNDY2OTExfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#8c7359" width="1600"/></figure>
+<div class="ev-body">
+<p class="m-text-5 ev-when"><time datetime="2026-10-15T18:30">{{t147|Thursday 15 October, 6.30 pm}}</time></p>
+<h3 class="m-text-4">{{t148|An italic hand for beginners}}</h3>
+<p class="m-text">{{t149|Broad nibs, guidelines and patient repetition. You leave with a pen and a page you are proud of.}}</p>
+<div class="ev-foot"><p class="m-text">{{t150|₦17,500 eight places}}</p><a class="m-link" href="#visit">{{t151|Book a place}}</a></div>
+</div>
+</li>
+<li class="m-surface ev-card">
+<figure class="ev-shot"><img alt="A tall stack of hand-stitched booklets with red-edged spines" height="1067" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1730998043691-2f47aabf24c7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGJvb2tiaW5kaW5nfGVufDF8MHx8fDE3OTE0NjY5MTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#594026" width="1600"/></figure>
+<div class="ev-body">
+<p class="m-text-5 ev-when"><time datetime="2026-10-22T18:30">{{t152|Thursday 22 October, 6.30 pm}}</time></p>
+<h3 class="m-text-4">{{t153|Stitch a Coptic notebook}}</h3>
+<p class="m-text">{{t154|Fold, punch and sew a lay-flat book with an exposed spine, covered in a paper of your choice.}}</p>
+<div class="ev-foot"><p class="m-text">{{t155|₦24,000 eight places}}</p><a class="m-link" href="#visit">{{t151|Book a place}}</a></div>
+</div>
+</li>
+<li class="m-surface ev-card">
+<figure class="ev-shot"><img alt="A watercolour sketch of red flowers on white paper beside a jar of water" height="2400" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1605972714437-d15729197593?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d2F0ZXJjb2xvciUyMHBhaW50cyUyMGJydXNoZXN8ZW58MXwxfHx8MTc5MTQ2NjkyMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<div class="ev-body">
+<p class="m-text-5 ev-when"><time datetime="2026-10-29T18:30">{{t156|Thursday 29 October, 6.30 pm}}</time></p>
+<h3 class="m-text-4">{{t157|A watercolour field journal}}</h3>
+<p class="m-text">{{t158|Mix a travel palette, learn three washes and start a sketchbook you will actually carry.}}</p>
+<div class="ev-foot"><p class="m-text">{{t159|₦20,000 eight places}}</p><a class="m-link" href="#visit">{{t151|Book a place}}</a></div>
+</div>
+</li>
+</ul>
+</section>{{/sec_evenings}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-side" data-8b-sticky-under-nav="">
+<h2 class="m-text-3" id="faq-title">{{t160|Questions}} <span class="m-tone">{{t161|at the counter.}}</span></h2>
+<p class="m-text">{{t162|Anything else: call}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t163|⟦phone⟧}}</a> {{t164|or write to}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t165|hello@quire.example}}</a>.</p>
+</div>
+<div class="fq-list">
+<details class="fq-item"><summary><span class="m-text-4">{{t166|Can I try a pen before I buy it?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t167|Yes. Every pen we sell has a tester at the counter, with a pad of the papers we stock. Bring your own notebook if you want to see how a nib behaves on it.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+<details class="fq-item"><summary><span class="m-text-4">{{t168|Do you post outside the Nigeria?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t169|We post across the Nigeria in two to three working days and to most of Europe in about a week. Bottled ink cannot fly, so it travels by road only.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+<details class="fq-item"><summary><span class="m-text-4">{{t170|Can you repair a fountain pen?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t171|We clean, flush and adjust nibs in the shop, usually while you wait. Older pens that need new sacs or parts go to a restorer we trust in Jos.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+<details class="fq-item"><summary><span class="m-text-4">{{t172|Can I pause the Monthly ⟦name⟧?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t173|Pause, skip or stop it by email before the last Monday of the month. Nothing is charged for a month you skip.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+<details class="fq-item"><summary><span class="m-text-4">{{t174|How small can a print run be?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t175|Fifty cards or sheets is our smallest run. Most wedding orders fall between eighty and two hundred.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+<details class="fq-item"><summary><span class="m-text-4">{{t176|Are the evenings for complete beginners?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-answer">{{t177|Yes. Every evening starts from the first stroke, and every material is included in the price.}}</p><span aria-hidden="true" class="fq-rule" data-8b-motion="rule"></span></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" data-8b-section="visit" id="visit">
+<div class="vi-mark">
+<h2 class="m-text-3 vi-address" id="visit-title"><span class="vi-line" style="--len:11">{{t178|27 Ash Row,}}</span><span class="vi-line" style="--len:10">{{t179|Enugu.}}</span></h2>
+</div>
+<div class="vi-body">
+<div class="vi-info">
+<figure class="vi-shot" data-8b-motion="drift"><img alt="The back room of a busy paper workshop, with a woman working at a long desk among presses and stacked books" height="900" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1785482465334-cb980df4980c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJvb2tiaW5kaW5nfGVufDF8MHx8fDE3OTE0NjY5MTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=760&q=60}}" style="background:#260c0c" width="1600"/></figure>
+<dl class="vi-facts">
+<div><dt class="m-text-5">{{t180|Opening hours}}</dt><dd class="m-text"><span>{{t181|Tuesday to Saturday, 10 to 6}}</span><span>{{t182|Sunday, 11 to 4}}</span><span>{{t183|Closed on Mondays}}</span></dd></div>
+<div><dt class="m-text-5">{{t184|Find us}}</dt><dd class="m-text"><span>{{t185|27 Ash Row, Enugu}}</span><span>{{t186|Five minutes from the top of Leith Walk}}</span></dd></div>
+<div><dt class="m-text-5">{{t187|Call}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t163|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-5">{{t188|Write}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t165|hello@quire.example}}</a></dd></div>
+</dl>
+</div>
+
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Stationery Shop by <a href="https://github.com/8bsite/stationery-shop-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="m-surface-2 ft-panel">
+<p class="m-text-3 ft-word" style="--len:5">{{t1|⟦name⟧}}</p>
+<div class="ft-cols">
+<div class="ft-col"><span aria-hidden="true" class="ft-rule" data-8b-motion="rule"></span><p class="m-text-6 ft-tag">{{t189|Stationers on Ash Row, Enugu, since 2014.}}</p></div>
+<div class="ft-col"><span aria-hidden="true" class="ft-rule" data-8b-motion="rule"></span><p class="m-text-5 ft-label">{{t190|Shop}}</p><ul>{{#nv_shelves}}<li><a class="m-link" href="#shelves">{{t191|The shelves}}</a></li>{{/nv_shelves}}{{#nv_paper}}<li><a class="m-link" href="#paper">{{t3|Paper library}}</a></li>{{/nv_paper}}{{#nv_arrivals}}<li><a class="m-link" href="#arrivals">{{t4|New in}}</a></li>{{/nv_arrivals}}{{#nv_makers}}<li><a class="m-link" href="#makers">{{t192|Our makers}}</a></li>{{/nv_makers}}</ul></div>
+<div class="ft-col"><span aria-hidden="true" class="ft-rule" data-8b-motion="rule"></span><p class="m-text-5 ft-label">{{t193|Services}}</p><ul>{{#nv_press}}<li><a class="m-link" href="#press">{{t194|Letterpress printing}}</a></li>{{/nv_press}}{{#nv_club}}<li><a class="m-link" href="#club">{{t195|The Monthly ⟦name⟧}}</a></li>{{/nv_club}}{{#nv_evenings}}<li><a class="m-link" href="#evenings">{{t144|Thursday evenings}}</a></li>{{/nv_evenings}}{{#nv_faq}}<li><a class="m-link" href="#faq">{{t160|Questions}}</a></li>{{/nv_faq}}</ul></div>
+<div class="ft-col"><span aria-hidden="true" class="ft-rule" data-8b-motion="rule"></span><p class="m-text-5 ft-label">{{t9|Visit}}</p><ul>{{#nv_visit}}<li><a class="m-link" href="#visit">{{t196|27 Ash Row}}</a></li>{{/nv_visit}}<li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t163|⟦phone⟧}}</a></li><li><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t165|hello@quire.example}}</a></li></ul></div>
+</div>
+<div class="ft-base"><p class="m-text-5">{{t197|© 2026 ⟦name⟧ Stationers Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t198|8B}}</a></p><a class="m-link" href="#opening">{{t199|Back to the top}}</a></div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  if (!root) return;
+  let last = scrollY, travel = 0, hidden = false;
+  const setHidden = value => { if (value === hidden) return; hidden = value; root.toggleAttribute('data-hidden', value); };
+  addEventListener('scroll', () => {
+    const y = scrollY, step = y - last;
+    last = y;
+    if (!step) return;
+    travel = Math.sign(step) === Math.sign(travel) ? travel + step : step;
+    if (y < 160) setHidden(false);
+    else if (travel > 24) setHidden(true);
+    else if (travel < -24) setHidden(false);
+  }, { passive: true });
+  root.addEventListener('focusin', () => setHidden(false));
+  const button = root.querySelector('.nav__menu');
+  const menu = root.querySelector('.menu');
+  const close = menu.querySelector('.menu__close');
+  const setOpen = (open, refocus = true) => {
+    menu.hidden = !open;
+    button.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); menu.querySelector('a')?.focus(); }
+    else { window.lenis?.start(); if (refocus) button.focus(); }
+  };
+  button.addEventListener('click', () => setOpen(menu.hidden));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false, false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setOpen(false); });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="section-script:paper">
+(() => {
+  const section = document.getElementById('paper');
+  if (!section) return;
+  const tabs = [...section.querySelectorAll('.pa-tab')];
+  const panels = [...section.querySelectorAll('.pa-detail')];
+  const stack = section.querySelector('.pa-stack');
+  const images = stack ? [...stack.querySelectorAll('img')] : [];
+  const select = (index, focus) => {
+    tabs.forEach((tab, i) => {
+      const on = i === index;
+      tab.setAttribute('aria-selected', String(on));
+      tab.tabIndex = on ? 0 : -1;
+      if (panels[i]) panels[i].hidden = !on;
+    });
+    images.forEach((image, i) => image.toggleAttribute('data-active', i === index));
+    if (focus) tabs[index].focus();
+  };
+  const keys = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 };
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(index));
+    tab.addEventListener('keydown', event => {
+      if (event.key in keys) { event.preventDefault(); select((index + keys[event.key] + tabs.length) % tabs.length, true); }
+      else if (event.key === 'Home') { event.preventDefault(); select(0, true); }
+      else if (event.key === 'End') { event.preventDefault(); select(tabs.length - 1, true); }
+    });
+  });
+  if (stack) stack.setAttribute('data-ready', '');
+  select(0);
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vi-form');
+  if (!form) return;
+  const status = form.querySelector('.vi-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    form.reset();
+    if (status) status.hidden = false;
+  });
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function placeSticky() {
+  const top = navHeight() + (innerWidth < 768 ? 8 : 24);
+  document.querySelectorAll('[data-8b-sticky-under-nav]').forEach(element => { element.style.top = `${top}px`; });
+}
+placeSticky();
+addEventListener('resize', placeSticky);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+function groundOf(element) {
+  for (let node = element; node && node.nodeType === 1; node = node.parentElement) {
+    const color = getComputedStyle(node).backgroundColor;
+    if (color && color !== 'transparent' && !/rgba\(.*,\s*0\)$/.test(color)) return color;
+  }
+  return getComputedStyle(document.body).backgroundColor;
+}
+const effects = {
+  ink(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'words', wordsClass: 'ink-word' });
+    const ground = groundOf(element);
+    const colors = split.words.map(word => getComputedStyle(word).color);
+    const timeline = gsap.timeline(vars);
+    timeline.data = { split };
+    timeline.fromTo(split.words,
+      { color: index => gsap.utils.interpolate(ground, colors[index], 0.24) },
+      { color: index => colors[index], ease: 'none', duration: 0.5, stagger: { amount: 1 } });
+    return timeline;
+  },
+  rule(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0 }, { scaleX: 1, transformOrigin: '0% 50%', ease: 'power3.out', duration: 1.1 });
+  },
+  drift(frame, vars = {}) {
+    const image = frame.firstElementChild;
+    return gsap.timeline(vars).fromTo(image, { yPercent: -7 }, { yPercent: 0, ease: 'none', duration: 1 });
+  }
+};
+const bindings = {
+  ink: () => ({ start: 'top 90%', end: 'center 60%', scrub: 0.6 }),
+  rule: () => ({ start: 'top 94%', once: true }),
+  drift: () => ({ start: 'top bottom', end: 'center 55%', scrub: 0.6 })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(bindings).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => {
+      gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+        const splits = [];
+        elements.forEach((element, index) => {
+          const animation = effects[name](element);
+          if (animation.data && animation.data.split) splits.push(animation.data.split);
+          ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, animation, ...bindings[name](element) });
+        });
+        return () => splits.forEach(split => split.revert());
+      });
+    }, { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:shelves">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('shelves');
+    const rows = [...section.querySelectorAll('.sh-row')];
+    const shots = [...section.querySelectorAll('.sh-shot')];
+    rows.forEach((row, index) => {
+      ScrollTrigger.create({ id: `shelves:row-${index + 1}`, trigger: row, start: 'top 60%', end: 'bottom 60%', onToggle: self => row.toggleAttribute('data-current', self.isActive) });
+      const shot = shots[index];
+      if (!shot || index === 0) return;
+      gsap.timeline({ scrollTrigger: { id: `shelves:shot-${index + 1}`, trigger: row, start: 'top 92%', end: 'top 60%', scrub: 0.5 } })
+        .fromTo(shot, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power1.inOut', duration: 1 }, 0)
+        .fromTo(shot.querySelector('img'), { scale: 1.2 }, { scale: 1, ease: 'none', duration: 1 }, 0);
+    });
+    return () => rows.forEach(row => row.removeAttribute('data-current'));
+  });
+}, { id: 'scene:shelves' });
+</script>
+<script data-8b-part="scene:arrivals">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', phone: '(max-width: 767px)' }, context => {
+    if (!context.conditions.motion) return;
+    const k = context.conditions.phone ? 0.4 : 1;
+    const section = document.getElementById('arrivals');
+    section.querySelectorAll('.ar-card').forEach((card, index) => {
+      const side = index % 2 ? 1 : -1;
+      gsap.timeline({ scrollTrigger: { id: `arrivals:card-${index + 1}`, trigger: card, start: 'top bottom', end: 'center 52%', scrub: 0.6 } })
+        .fromTo(card, { x: 150 * side * k, rotation: 9 * side * k }, { x: 0, rotation: 0, ease: 'power2.out', duration: 1 }, 0)
+        .fromTo(card.querySelector('img'), { scale: 1.16 }, { scale: 1, ease: 'none', duration: 1 }, 0);
+    });
+  });
+}, { id: 'scene:arrivals' });
+</script>
+<script data-8b-part="scene:press">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('press');
+    const stage = section.querySelector('.pr-stage');
+    const row = section.querySelector('.pr-row');
+    section.setAttribute('data-track', '');
+    const distance = () => Math.max(0, row.scrollWidth - stage.clientWidth);
+    const track = gsap.to(row, {
+      x: () => -distance(), ease: 'none',
+      scrollTrigger: { id: 'press', trigger: stage, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    section.querySelectorAll('.pr-step').forEach((step, index) => {
+      gsap.fromTo(step.querySelector('.pr-shot img'), { xPercent: -10 }, {
+        xPercent: 0, ease: 'none',
+        scrollTrigger: { id: `press:step-${index + 1}`, trigger: step, containerAnimation: track, start: 'left right', end: 'center center', scrub: true }
+      });
+    });
+    return () => section.removeAttribute('data-track');
+  });
+}, { id: 'scene:press' });
+</script>
+<script data-8b-part="scene:club">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', phone: '(max-width: 900px)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('club');
+    const list = section.querySelector('.cl-tiers');
+    const tiers = [...list.querySelectorAll('.cl-tier')];
+    const folded = { rotationX: -68, transformPerspective: 1300, transformOrigin: '50% 0%' };
+    if (context.conditions.phone) {
+      tiers.forEach((tier, index) => gsap.fromTo(tier, folded, {
+        rotationX: 0, ease: 'power2.out',
+        scrollTrigger: { id: `club:tier-${index + 1}`, trigger: tier, start: 'top 96%', end: 'top 58%', scrub: 0.6 }
+      }));
+    } else {
+      gsap.timeline({ scrollTrigger: { id: 'club', trigger: list, start: 'top 94%', end: 'top 40%', scrub: 0.6 } })
+        .fromTo(tiers, folded, { rotationX: 0, ease: 'power2.out', duration: 1, stagger: 0.28 });
+    }
+  });
+}, { id: 'scene:club' });
+</script>
+<script data-8b-part="scene:evenings">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', phone: '(max-width: 900px)' }, context => {
+    if (!context.conditions.motion) return;
+    const k = context.conditions.phone ? 0.45 : 1;
+    const section = document.getElementById('evenings');
+    const list = section.querySelector('.ev-cards');
+    const cards = [...list.querySelectorAll('.ev-card')];
+    gsap.timeline({ scrollTrigger: { id: 'evenings', trigger: list, start: 'top bottom', end: context.conditions.phone ? 'top 30%' : 'center 58%', scrub: 0.6 } })
+      .fromTo(cards, { y: index => index * 130 * k }, { y: 0, ease: 'power1.out', duration: 1 }, 0)
+      .fromTo(cards.map(card => card.querySelector('img')), { yPercent: index => -5 - index * 2 }, { yPercent: 0, ease: 'none', duration: 1 }, 0);
+  });
+}, { id: 'scene:evenings' });
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', phone: '(max-width: 767px)' }, context => {
+    if (!context.conditions.motion) return;
+    const shift = context.conditions.phone ? 0.07 : 0.1;
+    const section = document.getElementById('visit');
+    const mark = section.querySelector('.vi-mark');
+    const address = mark.querySelector('.vi-address');
+    const twin = address.cloneNode(true);
+    twin.removeAttribute('id');
+    twin.setAttribute('aria-hidden', 'true');
+    twin.classList.add('vi-twin');
+    mark.prepend(twin);
+    const lines = address.querySelectorAll('.vi-line');
+    const twinLines = twin.querySelectorAll('.vi-line');
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out', duration: 1 }, scrollTrigger: { id: 'visit', trigger: mark, start: 'top 96%', end: 'bottom 55%', scrub: 0.6, invalidateOnRefresh: true } });
+    lines.forEach((line, index) => timeline.fromTo(line, { x: () => innerWidth * shift * (index % 2 ? -1 : 1) }, { x: 0 }, 0));
+    twinLines.forEach((line, index) => timeline.fromTo(line, { x: () => innerWidth * shift * 1.5 * (index % 2 ? -1 : 1) }, { x: 0 }, 0));
+    timeline.fromTo(twin, { x: -14, y: 12, opacity: 1 }, { x: 0, y: 0 }, 0).to(twin, { opacity: 0, duration: 0.2 }, 0.85);
+    return () => twin.remove();
+  });
+}, { id: 'scene:visit' });
+</script>
+</body>
+</html>

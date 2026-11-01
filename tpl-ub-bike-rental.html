@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFAoAQ.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFOoAQw3Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFAoAQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #e1e3e2;
+  --color-2: #0d0f0f;
+  --color-3: #d4ff1e;
+  --color-4: #ffffff;
+  --color-5: #555c5e;
+  --color-6: #27333a;
+  --color-7: #a9b1b3;
+  --font-1: "Stack Sans Headline", "Stack Sans Headline Fallback", Arial, sans-serif;
+  --font-2: "Stack Sans Text", "Stack Sans Text Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(16px, 2.2vw, 32px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Stack Sans Headline Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.9%; ascent-override: 96.2%; descent-override: 28.9%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 99%; ascent-override: 101.1%; descent-override: 30.3%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+h1, h2, h3, strong, dt, summary { font-weight: inherit; font-size: inherit; }
+ul, ol { padding: 0; list-style: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--color-3); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+[data-8b-section] { scroll-margin-top: 0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(60px, 13vw, 212px); font-weight: 400; line-height: .86; letter-spacing: -.045em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(40px, 6.2vw, 96px); font-weight: 400; line-height: .96; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .02em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(19px, 1.6vw, 23px); font-weight: 400; line-height: 1.38; letter-spacing: -.01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(30px, 3.6vw, 54px); font-weight: 400; line-height: 1; letter-spacing: -.03em; text-transform: none; font-style: normal; }
+.m-rule { display: block; height: 9px; border-top: 4px solid currentColor; border-bottom: 1px solid currentColor; }
+.m-mark { position: relative; display: inline-block; width: 1em; height: 1em; background: var(--color-2); vertical-align: baseline; flex: none; }
+.m-mark__plus { position: absolute; left: 84%; top: 50%; width: .62em; height: .62em; translate: -50% -50%; }
+.m-mark__plus::before, .m-mark__plus::after { content: ""; position: absolute; background: var(--color-3); }
+.m-mark__plus::before { left: 0; right: 0; top: 50%; height: .09em; translate: 0 -50%; }
+.m-mark__plus::after { top: 0; bottom: 0; left: 50%; width: .09em; translate: -50% 0; }
+.m-mark-2 { position: relative; display: inline-block; width: 1em; height: 1em; background: var(--color-1); vertical-align: baseline; flex: none; }
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-4); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; transition: color .35s .1s; }
+.m-btn::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; background: var(--color-3); clip-path: inset(0 calc(100% - 48px) 0 0 round 999px); translate: -110% 0; transition: translate .35s cubic-bezier(.3,.7,.2,1), clip-path .45s .2s cubic-bezier(.5,0,.2,1); }
+.m-btn__label { position: relative; }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; color: var(--color-4); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; transition: color .35s .1s; }
+.m-btn-2::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; background: var(--color-3); clip-path: inset(0 calc(100% - 48px) 0 0 round 999px); translate: -110% 0; transition: translate .35s cubic-bezier(.3,.7,.2,1), clip-path .45s .2s cubic-bezier(.5,0,.2,1); }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn-2:hover { color: var(--color-2); }
+  .m-btn:hover::before, .m-btn-2:hover::before { translate: 0 0; clip-path: inset(0 0 0 0 round 999px); }
+}
+.m-link { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; padding-bottom: 8px; background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 0% 3px, 100% 1px; background-position: 0 calc(100% - 4px), 0 100%; transition: background-size .45s cubic-bezier(.5,0,.2,1); }
+.m-link-2 { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.25; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; padding-bottom: 6px; background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 0% 2px, 0% 1px; background-position: 0 calc(100% - 3px), 0 100%; transition: background-size .45s cubic-bezier(.5,0,.2,1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 3px, 100% 1px; }
+  .m-link-2:hover { background-size: 100% 2px, 100% 1px; }
+}
+.m-disc { display: inline-grid; place-items: center; width: var(--m-disc-size, 64px); aspect-ratio: 1; border: 0; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); text-decoration: none; cursor: pointer; padding: 0; }
+.m-disc__face { display: grid; place-items: center; width: 100%; height: 100%; transition: transform .7s cubic-bezier(.3,.7,.2,1); }
+.m-disc__arrow { width: 40%; height: 40%; fill: none; stroke: currentColor; stroke-width: 1.4; }
+@media (hover: hover) { .m-disc:hover .m-disc__face { transform: rotate(-405deg); } }
+.m-badge { display: inline-flex; align-items: center; min-height: 24px; padding: 4px 11px 3px; border: 1px solid currentColor; border-radius: var(--radius-1); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.1; letter-spacing: .02em; text-transform: uppercase; font-style: normal; }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .02em; text-transform: uppercase; color: var(--color-5); }
+.m-field__input { width: 100%; min-height: 48px; padding: 10px 0 8px; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0; background: transparent; font-family: var(--font-2); font-size: 18px; font-weight: 400; line-height: 1.3; color: var(--color-2); appearance: none; }
+select.m-field__input { background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(-45deg, transparent 50%, currentColor 50%); background-size: 6px 6px; background-position: calc(100% - 10px) 55%, calc(100% - 4px) 55%; background-repeat: no-repeat; padding-right: 28px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; border-bottom-width: 3px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-wrap { padding-inline: var(--space-1); }
+.l-head { display: grid; gap: clamp(18px, 2.4vw, 32px); }
+.l-head__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 22rem); gap: 24px 40px; align-items: end; }
+.l-head__title .m-mark, .l-head__title .m-mark-2 { width: .7em; height: .7em; margin-right: .3em; }
+.l-head__note { justify-self: end; max-width: 22rem; }
+@media (max-width: 760px) {
+  .l-head__row { grid-template-columns: 1fr; }
+  .l-head__note { justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav .nav__bar { position: fixed; z-index: 50; top: 0; left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr 1fr auto; align-items: start; gap: 24px; padding: 16px var(--space-1) 14px; background: var(--color-1); color: var(--color-2); transition: translate .5s cubic-bezier(.3,.7,.2,1); }
+#nav .nav__bar.is-hidden { translate: 0 -100%; }
+#nav .nav__logo { display: inline-flex; width: 36px; height: 36px; color: var(--color-2); }
+#nav .nav__logo svg { width: 100%; height: 100%; fill: currentColor; transition: rotate .8s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) { #nav .nav__logo:hover svg { rotate: 90deg; } }
+#nav .nav__links { display: contents; }
+#nav .nav__col { display: grid; align-content: start; }
+#nav .nav__col li { line-height: 0; }
+#nav .nav__menu { display: grid; place-items: center; width: 44px; height: 36px; margin-right: -6px; padding: 0; border: 0; background: none; color: var(--color-2); cursor: pointer; }
+#nav .nav__lines { display: block; width: 32px; height: 7px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transition: width .4s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) { #nav .nav__menu:hover .nav__lines { width: 22px; } }
+#nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: 18px var(--space-1) 28px; background: var(--color-2); color: var(--color-1); overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__list { align-self: center; display: grid; gap: 6px; }
+#nav .menu__list a { display: inline-block; text-decoration: none; padding: 2px 0; }
+#nav .menu__list .m-text-3 { font-size: clamp(38px, 7vw, 88px); }
+@media (hover: hover) { #nav .menu__list a:hover { color: var(--color-3); } }
+#nav .menu__close { --m-disc-size: 56px; }
+#nav .menu__close .m-disc__arrow { rotate: -90deg; }
+@media (max-width: 760px) {
+  #nav .nav__bar { grid-template-columns: 1fr auto; padding-block: 14px 12px; }
+  #nav .nav__col { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:start">
+@layer sections {
+#start { position: relative; background: var(--color-2); }
+#start .start__one { position: relative; height: 100svh; min-height: 560px; background: var(--color-1); overflow: clip; }
+#start .start__field { position: absolute; left: 0; right: 0; top: 0; bottom: 44%; display: flex; align-items: flex-end; padding: 0 var(--space-1) clamp(20px, 3.4svh, 40px); }
+#start .start__word { display: inline-block; white-space: nowrap; }
+#start .start__mark { width: .72em; height: .72em; margin-right: .2em; }
+#start .start__band { position: absolute; left: 0; right: 0; bottom: 0; top: calc(56% - 26svh); clip-path: polygon(0 calc(26svh - var(--start-rise, 0px)), 100% 26svh, 100% 100%, 0 100%); }
+#start .start__pan { position: absolute; inset: 0; overflow: hidden; }
+#start .start__pan img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+#start .start__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .8; }
+#start .start__horizon { position: absolute; left: 0; right: 0; top: calc(56% - 12px); color: var(--color-2); transform-origin: 100% 50%; }
+#start .start__rule { height: 12px; border-top-width: 5px; }
+#start .start__marks { position: absolute; left: var(--space-1); right: var(--space-1); top: calc(56% + 26px); display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#start .start__m { display: block; font-size: clamp(20px, 2vw, 28px); }
+#start .start__m--dash { width: 22px; height: 6px; background: var(--color-3); }
+#start .start__m--bar { width: 7px; height: 26px; background: var(--color-3); }
+#start .start__m--dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-3); }
+#start .start__disc { position: absolute; right: 9%; top: calc(56% - var(--m-disc-size) * .32); --m-disc-size: clamp(112px, 15.5vw, 212px); }
+#start .start__disc .m-disc__arrow { stroke-width: 1.1; }
+#start .start__foot { position: absolute; left: var(--space-1); right: var(--space-1); bottom: clamp(18px, 3.4svh, 34px); display: flex; justify-content: space-between; align-items: flex-end; gap: 24px 48px; color: var(--color-4); }
+#start .start__tags { display: flex; gap: 8px; margin-bottom: 12px; }
+#start .start__lede { max-width: 46ch; color: var(--color-3); }
+#start .start__note { max-width: 42ch; text-align: right; }
+#start .start__two { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto auto 1fr auto; column-gap: clamp(16px, 2vw, 32px); min-height: 100svh; padding: clamp(110px, 15svh, 160px) var(--space-1) clamp(40px, 7svh, 72px); color: var(--color-1); overflow: clip; }
+#start .start__stairs { grid-column: 1 / 9; grid-row: 1; }
+#start .start__line { display: block; }
+#start .start__line:last-child { color: var(--color-3); }
+#start .start__lead { grid-column: 1 / 7; grid-row: 2; margin-top: clamp(28px, 4svh, 48px); max-width: 36ch; }
+#start .start__facts { grid-column: 1 / 7; grid-row: 3; align-self: end; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 36px; color: var(--color-7); }
+#start .start__facts li { padding: 10px 0 12px; border-top: 1px solid var(--color-7); }
+#start .start__actions { grid-column: 1 / 7; grid-row: 4; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 32px; }
+#start .start__street { grid-column: 9 / 13; grid-row: 1 / 5; align-self: end; position: relative; aspect-ratio: 4 / 5; clip-path: polygon(0 var(--start-cut, 0%), 100% 0, 100% 100%, 0 100%); }
+#start .start__street img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+#start .start__street figcaption { position: absolute; left: 14px; bottom: 12px; color: var(--color-4); }
+#start .start__street::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, color-mix(in oklab, var(--color-2) 70%, transparent)); }
+#start .start__street figcaption { z-index: 1; }
+@media (max-width: 760px) {
+  #start .start__field { bottom: 48%; }
+  #start .start__word { font-size: clamp(56px, 17.5vw, 96px); white-space: normal; }
+  #start .start__mark { display: block; margin: 0 0 .14em; }
+  #start .start__band { top: calc(52% - 22svh); clip-path: polygon(0 calc(22svh - var(--start-rise, 0px)), 100% 22svh, 100% 100%, 0 100%); }
+  #start .start__horizon { top: calc(52% - 12px); }
+  #start .start__marks { top: calc(52% + 22px); }
+  #start .start__m { font-size: 20px; }
+  #start .start__m--bar { height: 20px; }
+  #start .start__disc { right: 6%; top: calc(52% - var(--m-disc-size) * .3); }
+  #start .start__foot { flex-direction: column; align-items: flex-start; gap: 14px; }
+  #start .start__note { text-align: left; }
+  #start .start__two { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; padding-top: 96px; }
+  #start .start__stairs, #start .start__lead, #start .start__facts, #start .start__actions, #start .start__street { grid-column: 1; grid-row: auto; }
+  #start .start__street { aspect-ratio: 4 / 5; margin-top: 28px; }
+  #start .start__lead { margin-top: 24px; }
+  #start .start__facts { grid-template-columns: 1fr; margin-top: 24px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #start .start__rule { transform-origin: 0 50%; animation: start-draw 1s cubic-bezier(.6,0,.2,1) backwards; }
+  #start .start__word { animation: start-rise .9s .05s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__marks { animation: start-slide 1s .15s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__disc-in { animation: start-pop .85s .25s cubic-bezier(.3,1.3,.5,1) backwards; }
+  #start .start__foot > * { animation: start-up .8s .3s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__pan img { animation: start-pan 7s ease-in-out infinite alternate; }
+  #start .start__mark .m-mark__plus { animation: start-plus 2.6s ease-in-out infinite alternate; }
+  #start .start__one.is-paused :is(.start__pan img, .m-mark__plus) { animation-play-state: paused; }
+  @keyframes start-draw { from { transform: scaleX(0); } }
+  @keyframes start-rise { from { transform: translateY(.3em); } }
+  @keyframes start-slide { from { transform: translateX(-14vw); opacity: 0; } }
+  @keyframes start-pop { from { transform: scale(.2) rotate(-160deg); } }
+  @keyframes start-up { from { transform: translateY(26px); opacity: 0; } }
+  @keyframes start-pan { from { transform: translate3d(-44px, 0, 0) scale(1.14); } to { transform: translate3d(44px, 0, 0) scale(1.14); } }
+  @keyframes start-plus { from { translate: -50% -50%; } to { translate: -95% -50%; } }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: 0 var(--space-1) 28px; background: var(--color-2); color: var(--color-1); }
+#footer .m-rule { color: var(--color-1); }
+#footer .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-top: clamp(40px, 6vw, 72px); }
+#footer .footer__brand { display: inline-flex; align-items: baseline; gap: .18em; text-decoration: none; color: var(--color-1); }
+#footer .footer__brand .m-mark-2 { width: .72em; height: .72em; margin-right: .2em; }
+#footer .footer__col { display: grid; align-content: start; gap: 4px; }
+#footer .footer__col li { line-height: 0; }
+#footer .footer__head { color: var(--color-7); margin-bottom: 10px; }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: clamp(48px, 8vw, 110px); padding-top: 14px; border-top: 1px solid var(--color-7); color: var(--color-7); }
+@media (max-width: 760px) {
+  #footer .footer__grid { grid-template-columns: 1fr 1fr; }
+  #footer .footer__brand { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:fleet">
+@layer sections {
+#fleet { padding: var(--space-2) 0 calc(var(--space-2) * .5); }
+#fleet .fleet__track { margin-top: clamp(40px, 6vw, 80px); }
+#fleet .fleet__list { display: grid; padding-inline: var(--space-1); }
+#fleet .fleet__bike { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 24px clamp(24px, 4vw, 64px); padding: 24px 0 56px; border-top: 1px solid var(--color-2); }
+#fleet .fleet__photo { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--color-6); clip-path: inset(0 0 0 var(--fleet-cut, 0%)); }
+#fleet .fleet__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#fleet .fleet__text { display: grid; align-content: start; gap: 14px; }
+#fleet .fleet__kind { color: var(--color-5); }
+#fleet .fleet__text .m-text { max-width: 40ch; }
+#fleet .fleet__specs { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--color-2); }
+#fleet .fleet__specs dt { color: var(--color-5); }
+#fleet .fleet__tabs { position: relative; display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; margin-bottom: clamp(16px, 3svh, 28px); border-bottom: 1px solid var(--color-2); }
+#fleet .fleet__marker { position: absolute; left: 0; bottom: -4px; width: 56px; height: 7px; background: var(--color-2); }
+#fleet .fleet__marker::after { content: ""; position: absolute; right: -6px; top: 50%; width: 18px; height: 18px; translate: 0 -50%; border-radius: var(--radius-1); background: var(--color-3); }
+@media (max-width: 760px) {
+  #fleet .fleet__bike { grid-template-columns: minmax(0, 1fr); padding-bottom: 40px; }
+}
+}
+</style>
+<style data-8b-part="section:stands">
+@layer sections {
+#stands { padding: var(--space-2) 0; background: var(--color-2); color: var(--color-1); }
+#stands .stands__strip { position: relative; height: clamp(220px, 34svh, 360px); margin-top: clamp(40px, 6vw, 72px); overflow: hidden; }
+#stands .stands__strip img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+#stands .stands__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .7; }
+#stands .stands__line { position: absolute; left: 0; right: 0; bottom: clamp(18px, 3svh, 32px); display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#stands .stands__dash { width: clamp(28px, 4vw, 56px); height: 8px; background: var(--color-3); }
+#stands .stands__dot { width: 14px; height: 14px; border-radius: var(--radius-1); background: var(--color-3); }
+#stands .stands__list { display: grid; }
+#stands .stands__row { display: grid; grid-template-columns: 4rem minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr); gap: 12px clamp(20px, 3vw, 48px); align-items: baseline; padding: 22px 0 26px; border-bottom: 1px solid var(--color-7); }
+#stands .stands__code { color: var(--color-3); }
+#stands .stands__row .m-text { color: var(--color-7); max-width: 46ch; }
+#stands .stands__meta { color: var(--color-1); text-align: right; }
+@media (max-width: 900px) {
+  #stands .stands__row { grid-template-columns: 3rem minmax(0, 1fr); }
+  #stands .stands__row .m-text, #stands .stands__meta { grid-column: 2; text-align: left; }
+}
+}
+</style>
+<style data-8b-part="section:routes">
+@layer sections {
+#routes { padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+#routes .routes__stage { padding-top: clamp(40px, 6vw, 72px); }
+#routes .routes__rail { position: relative; margin-bottom: 28px; }
+#routes .routes__fill { position: absolute; left: var(--space-1); right: var(--space-1); top: 0; height: 4px; background: var(--color-3); transform-origin: 0 50%; }
+#routes .routes__wheel { position: absolute; left: var(--space-1); top: -14px; width: 32px; height: 32px; border-radius: var(--radius-1); background: var(--color-3); border: 2px solid var(--color-2); }
+#routes .routes__wheel::before { content: ""; position: absolute; left: 50%; top: 4px; bottom: 4px; width: 2px; translate: -50% 0; background: var(--color-2); }
+#routes .routes__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px clamp(20px, 3vw, 40px); padding-inline: var(--space-1); }
+#routes .routes__panel { display: grid; grid-template-rows: auto auto; gap: 18px; }
+#routes .routes__photo { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-6); }
+#routes .routes__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#routes .routes__text { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 10px 32px; align-items: start; }
+#routes .routes__facts { color: var(--color-5); grid-column: 1; }
+#routes .routes__text .m-text { grid-column: 2; grid-row: 1 / 3; max-width: 40ch; }
+@media (max-width: 760px) {
+  #routes .routes__row { grid-template-columns: minmax(0, 1fr); }
+  #routes .routes__text { grid-template-columns: minmax(0, 1fr); }
+  #routes .routes__text .m-text { grid-column: 1; grid-row: auto; }
+}
+}
+</style>
+<style data-8b-part="section:hire">
+@layer sections {
+#hire { padding: var(--space-2) 0; background: var(--color-6); color: var(--color-4); }
+#hire .hire__body { position: relative; margin-top: clamp(48px, 7vw, 96px); }
+#hire .hire__line { position: relative; height: 9px; }
+#hire .hire__track { position: absolute; inset: 0; border-top: 4px solid var(--color-7); border-bottom: 1px solid var(--color-7); }
+#hire .hire__fill { position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--color-3); transform-origin: 0 50%; }
+#hire .hire__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px clamp(24px, 3vw, 48px); padding-top: 28px; }
+#hire .hire__step { display: grid; align-content: start; gap: 16px; }
+#hire .hire__num { color: var(--color-3); }
+#hire .hire__step .m-text { color: var(--color-7); max-width: 34ch; }
+@media (max-width: 760px) {
+  #hire .hire__body { padding-left: calc(var(--space-1) + 26px); }
+  #hire .hire__line { position: absolute; left: var(--space-1); top: 0; bottom: 0; width: 9px; height: auto; }
+  #hire .hire__track { border-top: 0; border-bottom: 0; border-left: 4px solid var(--color-7); border-right: 1px solid var(--color-7); }
+  #hire .hire__fill { right: auto; bottom: 0; width: 4px; height: auto; transform-origin: 50% 0; }
+  #hire .hire__steps { grid-template-columns: minmax(0, 1fr); padding-top: 0; gap: 48px; }
+}
+}
+</style>
+<style data-8b-part="section:kit">
+@layer sections {
+#kit { padding: var(--space-2) 0; }
+#kit .kit__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); }
+#kit .kit__photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-6); }
+#kit .kit__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; }
+#kit .kit__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 48px); align-content: start; }
+#kit .kit__item { display: grid; gap: 10px; padding: 18px 0 28px; border-top: 1px solid var(--color-2); }
+#kit .kit__item .m-text { color: var(--color-5); max-width: 30ch; }
+@media (max-width: 760px) {
+  #kit .kit__body { grid-template-columns: minmax(0, 1fr); }
+  #kit .kit__photo { aspect-ratio: 4 / 3; }
+  #kit .kit__list { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:rides">
+@layer sections {
+#rides { padding: calc(var(--space-2) * .6) 0 var(--space-2); background: var(--color-2); color: var(--color-4); overflow: clip; }
+#rides .rides__stage { position: relative; display: grid; place-items: center; height: clamp(460px, 88svh, 860px); }
+#rides .rides__band { position: absolute; inset: 0; overflow: hidden; clip-path: inset(0 var(--rides-cut, 0%) 0 var(--rides-cut, 0%)); }
+#rides .rides__band img { width: 100%; height: 100%; object-fit: cover; }
+#rides .rides__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .78; }
+#rides .rides__title { position: relative; display: flex; justify-content: space-between; align-items: baseline; width: 100%; padding-inline: var(--space-1); font-size: clamp(54px, 11vw, 176px); }
+#rides .rides__half { display: block; }
+#rides .rides__half:last-child { color: var(--color-3); }
+#rides .rides__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px clamp(32px, 5vw, 80px); margin-top: clamp(48px, 7vw, 96px); }
+#rides .rides__lead { max-width: 30ch; }
+#rides .rides__dates { display: grid; }
+#rides .rides__date { display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 8px 24px; align-items: baseline; padding: 18px 0 20px; border-top: 1px solid var(--color-7); }
+#rides .rides__date .m-text-6 { font-size: clamp(24px, 2.4vw, 34px); }
+#rides .rides__date .m-text-4 { color: var(--color-7); }
+#rides .rides__join { grid-column: 2; justify-self: start; }
+@media (max-width: 760px) {
+  #rides .rides__stage { height: 72svh; }
+  #rides .rides__title { flex-direction: column; align-items: flex-start; gap: .1em; }
+  #rides .rides__half:last-child { align-self: flex-end; }
+  #rides .rides__body { grid-template-columns: minmax(0, 1fr); }
+  #rides .rides__date { grid-template-columns: minmax(0, 1fr); }
+  #rides .rides__join { grid-column: 1; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { padding: var(--space-2) 0; }
+#prices .prices__body { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 40px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); align-items: start; }
+#prices .prices__table { width: 100%; border-collapse: collapse; }
+#prices .prices__table th, #prices .prices__table td { padding: 16px 12px 16px 0; text-align: left; vertical-align: baseline; border-bottom: 1px solid var(--color-2); }
+#prices .prices__table thead th { color: var(--color-5); border-bottom: 5px double var(--color-2); padding-top: 0; }
+#prices .prices__table td { white-space: nowrap; }
+#prices .prices__pass { display: grid; gap: 16px; justify-items: start; padding: 24px; background: var(--color-3); }
+@media (max-width: 760px) {
+  #prices .prices__body { grid-template-columns: minmax(0, 1fr); }
+  #prices .prices__table th, #prices .prices__table td { padding-right: 6px; }
+  #prices .prices__table .m-text-6 { font-size: 22px; }
+  #prices .prices__table .m-text-5 { font-size: 17px; }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { padding: var(--space-2) 0; background: var(--color-3); color: var(--color-2); overflow: clip; }
+#reviews .reviews__lanes { display: grid; margin-top: clamp(40px, 6vw, 80px); padding-inline: var(--space-1); }
+#reviews .reviews__lane { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 12px 40px; align-items: end; padding: 26px 0 30px; border-bottom: 1px solid var(--color-2); }
+#reviews .reviews__lane:nth-child(even) { grid-template-columns: 16rem minmax(0, 1fr); }
+#reviews .reviews__lane:nth-child(even) blockquote { grid-column: 2; grid-row: 1; text-align: right; }
+#reviews .reviews__lane blockquote { font-size: clamp(26px, 3.2vw, 46px); line-height: 1.08; max-width: 26ch; }
+#reviews .reviews__lane:nth-child(even) blockquote { justify-self: end; }
+@media (max-width: 760px) {
+  #reviews .reviews__lane, #reviews .reviews__lane:nth-child(even) { grid-template-columns: minmax(0, 1fr); }
+  #reviews .reviews__lane:nth-child(even) blockquote { grid-column: 1; grid-row: auto; text-align: left; justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: var(--space-2) 0; }
+#faq .faq__list { margin-top: clamp(40px, 6vw, 80px); border-top: 1px solid var(--color-2); }
+#faq .faq__item { border-bottom: 1px solid var(--color-2); }
+#faq .faq__item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__item summary .m-text-6 { font-size: clamp(24px, 2.6vw, 38px); }
+#faq .faq__sign { position: relative; flex: none; width: 36px; height: 36px; border-radius: var(--radius-1); background: var(--color-2); transition: background-color .3s, rotate .5s cubic-bezier(.3,.7,.2,1); }
+#faq .faq__sign::before, #faq .faq__sign::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2px; translate: -50% -50%; background: var(--color-3); }
+#faq .faq__sign::after { rotate: 90deg; }
+#faq .faq__item[open] .faq__sign { rotate: 45deg; }
+#faq .faq__item p { max-width: 62ch; padding: 0 0 26px; color: var(--color-5); }
+@media (hover: hover) { #faq .faq__item summary:hover .faq__sign { rotate: 90deg; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding-top: var(--space-2); }
+#contact .contact__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); }
+#contact .contact__details { display: grid; align-content: start; gap: 6px; font-style: normal; }
+#contact .contact__label { color: var(--color-5); margin-top: 18px; }
+#contact .contact__label:first-child { margin-top: 0; }
+#contact .contact__big { font-size: inherit; letter-spacing: 0; text-transform: none; font-weight: 400; font-family: inherit; }
+#contact .contact__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; align-content: start; }
+#contact .contact__send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+#contact .contact__band { position: relative; height: clamp(320px, 56svh, 560px); margin-top: var(--space-2); overflow: clip; background: var(--color-6); }
+#contact .contact__band img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+#contact .contact__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .55; }
+#contact .contact__marks { position: absolute; left: var(--space-1); right: var(--space-1); top: 28px; display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#contact .contact__m { display: block; font-size: clamp(20px, 2vw, 28px); }
+#contact .contact__m--dash { width: 22px; height: 6px; background: var(--color-3); }
+#contact .contact__m--bar { width: 7px; height: 26px; background: var(--color-3); }
+#contact .contact__m--dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-3); }
+#contact .contact__top { position: absolute; right: var(--space-1); bottom: var(--space-1); --m-disc-size: clamp(88px, 10vw, 140px); }
+#contact .contact__top .m-disc__arrow { rotate: 180deg; }
+@media (max-width: 760px) {
+  #contact .contact__body { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__m { font-size: 20px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:fleet">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #fleet.is-staged .fleet__track { height: calc(100svh + (var(--fleet-n, 4) - 1) * 78svh); }
+  #fleet.is-staged .fleet__stage { position: sticky; top: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); height: 100svh; padding: clamp(88px, 12svh, 112px) var(--space-1) clamp(24px, 4svh, 40px); }
+  #fleet.is-staged .fleet__list { position: relative; padding: 0; }
+  #fleet.is-staged .fleet__bike { position: absolute; inset: 0; padding: 0; border: 0; align-items: stretch; }
+  #fleet.is-staged .fleet__photo { aspect-ratio: auto; height: 100%; }
+  #fleet.is-staged .fleet__text { align-content: end; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #fleet.is-staged .fleet__stage { padding-top: 80px; }
+  #fleet.is-staged .fleet__bike { grid-template-rows: minmax(0, 1fr) auto; gap: 16px; }
+  #fleet.is-staged .fleet__photo { height: auto; min-height: 0; }
+  #fleet.is-staged .fleet__text { gap: 10px; min-height: 236px; align-content: start; }
+  #fleet.is-staged .fleet__text .m-text { font-size: 15px; line-height: 1.4; }
+  #fleet.is-staged .fleet__specs { display: none; }
+}
+}
+</style>
+<style data-8b-part="scene-style:routes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #routes.is-tracked .routes__track { height: calc(100svh + var(--routes-run, 0px)); }
+  #routes.is-tracked .routes__stage { position: sticky; top: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); height: 100svh; padding-top: clamp(96px, 13svh, 120px); padding-bottom: clamp(24px, 5svh, 48px); overflow: hidden; }
+  #routes.is-tracked .routes__row { display: flex; gap: clamp(20px, 3vw, 40px); width: max-content; }
+  #routes.is-tracked .routes__panel { width: min(62vw, 1000px); grid-template-rows: minmax(0, 1fr) auto; }
+  #routes.is-tracked .routes__photo { aspect-ratio: auto; height: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #routes.is-tracked .routes__stage { padding-top: 84px; }
+  #routes.is-tracked .routes__panel { width: 84vw; }
+  #routes.is-tracked .routes__text .m-text { font-size: 15px; line-height: 1.4; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@media (prefers-reduced-motion: no-preference) {
+  #start .start__line { --rw-step: 7.5vw; animation: rw-stair 1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__line:nth-child(1) { --rw-n: 2; }
+  #start .start__line:nth-child(2) { --rw-n: 1; animation-delay: .07s; }
+  #start .start__line:nth-child(3) { --rw-n: 0; animation-delay: .14s; }
+  #start .start__street { animation: rw-level 1.1s .15s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__lead, #start .start__facts, #start .start__actions { animation: start-up .8s .25s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__facts { animation-delay: .35s; }
+  #start .start__actions { animation-delay: .45s; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #start .start__line { --rw-step: 6vw; }
+}
+@keyframes rw-stair { from { translate: calc(var(--rw-n) * var(--rw-step)) 0; opacity: 0; } 40% { opacity: 1; } }
+@keyframes rw-level { from { clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%); } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<div data-8b-section="navigation" id="nav">
+<header class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#start"><svg aria-hidden="true" viewbox="0 0 40 40"><path d="M20 1 22.6 14.4 33.4 6.6 25.6 17.4 39 20 25.6 22.6 33.4 33.4 22.6 25.6 20 39 17.4 25.6 6.6 33.4 14.4 22.6 1 20 14.4 17.4 6.6 6.6 17.4 14.4Z"></path></svg></a>
+<nav aria-label="Main" class="nav__links">
+<ul class="nav__col">
+{{#nv_fleet}}<li><a class="m-link-2" href="#fleet">{{t1|The bikes}}</a></li>{{/nv_fleet}}
+{{#nv_stands}}<li><a class="m-link-2" href="#stands">{{t2|Five stands}}</a></li>{{/nv_stands}}
+{{#nv_routes}}<li><a class="m-link-2" href="#routes">{{t3|Routes}}</a></li>{{/nv_routes}}
+{{#nv_rides}}<li><a class="m-link-2" href="#rides">{{t4|Saturday rides}}</a></li>{{/nv_rides}}
+</ul>
+<ul class="nav__col">
+{{#nv_hire}}<li><a class="m-link-2" href="#hire">{{t5|How hire works}}</a></li>{{/nv_hire}}
+{{#nv_prices}}<li><a class="m-link-2" href="#prices">{{t6|Prices}}</a></li>{{/nv_prices}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t7|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t8|Book & contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<button aria-controls="menu" aria-expanded="false" class="nav__menu" type="button"><span class="sr">{{t9|Open the menu}}</span><span aria-hidden="true" class="nav__lines"></span></button>
+</header>
+<div class="menu on-dark" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="m-text-4">{{t10|Menu}}</span>
+<button aria-label="Close the menu" class="m-disc menu__close" type="button"><span class="m-disc__face"><svg aria-hidden="true" class="m-disc__arrow" viewbox="0 0 24 24"><path d="M6 6 18 18M18 8.5V18H8.5"></path></svg></span></button>
+</div>
+<nav aria-label="Menu" class="menu__list">
+<a href="#fleet"><span class="m-text-3">{{t1|The bikes}}</span></a>
+<a href="#stands"><span class="m-text-3">{{t2|Five stands}}</span></a>
+<a href="#routes"><span class="m-text-3">{{t3|Routes}}</span></a>
+<a href="#hire"><span class="m-text-3">{{t5|How hire works}}</span></a>
+<a href="#rides"><span class="m-text-3">{{t4|Saturday rides}}</span></a>
+<a href="#prices"><span class="m-text-3">{{t6|Prices}}</span></a>
+<a href="#contact"><span class="m-text-3">{{t11|Book a bike}}</span></a>
+</nav>
+<p class="m-text-4">{{t12|Open every day · 8:00–20:00}}</p>
+</div>
+</div>
+<main>
+
+{{#sec_start}}<section data-8b-section="opening" id="start">
+<div class="start__two on-dark">
+<h1 class="m-text-3 start__stairs"><span class="start__line">{{t13|Ibadan climbs}}</span><span class="start__line">{{t14|seven hills.}}</span><span class="start__line">{{t15|You just pedal.}}</span></h1>
+<p class="m-text-5 start__lead">{{t16|Every ⟦name⟧ bike adds up to 250 watts the moment your foot turns the crank. Walkley, Wuse 2, the long drag up Maitama Road: they all ride like the riverside.}}</p>
+<ul class="start__facts m-text-4">
+<li>{{t17|Assist to 15.5 mph, then it is all you}}</li>
+<li>{{t18|About 80 km on one battery}}</li>
+<li>{{t19|Batteries swapped free at any stand}}</li>
+<li>{{t20|Helmet, lock and lights in every hire}}</li>
+</ul>
+<div class="start__actions">
+<a class="m-btn-2" href="#contact"><span class="m-btn__label">{{t11|Book a bike}}</span></a>
+<a class="m-link" href="#fleet">{{t21|See the four bikes}}</a>
+</div>
+<figure class="start__street">
+<img alt="A steep cobbled back street climbing between terraced houses" height="1071" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1576154048140-9d508976d5b2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHN0ZWVwJTIwdGVycmFjZWQlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTU2NzYwMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1060&q=60}}" style="background:#594026" width="1600"/>
+<figcaption class="m-text-4">{{t22|A one-in-six back street, ridden seated}}</figcaption>
+</figure>
+</div>
+</section>{{/sec_start}}
+
+{{#sec_fleet}}<section data-8b-section="fleet" id="fleet">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t23|Four bikes, one push}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t24|Every bike has the same motor rules: assist while you pedal, up to 15.5 mph. What changes is the frame, the load and the range.}}</p>
+</div>
+</header>
+<div class="fleet__track">
+<div class="fleet__stage">
+<div class="fleet__list">
+<article class="fleet__bike">
+<figure class="fleet__photo"><img alt="A rider on a teal step-through e-bike with a front basket outside a café" height="1067" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1665731734325-2849f05a619e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NTgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#40260c" width="1600"/></figure>
+<div class="fleet__text">
+<p class="m-text-4 fleet__kind">{{t25|Step-through · 21 kg · riders 150–195 cm}}</p>
+<h3 class="m-text-6">{{t26|Town}}</h3>
+<p class="m-text">{{t27|The everyday one: a low frame you step through, an upright seat and a front basket that takes a full shopping bag. Most hires go out on a Town.}}</p>
+<dl class="fleet__specs m-text-4"><dt>{{t28|Range}}</dt><dd>{{t29|About 80 km}}</dd><dt>{{t30|Gears}}</dt><dd>{{t31|Seven, plus three assist levels}}</dd><dt>{{t32|From}}</dt><dd>{{t33|₦4,500 an hour}}</dd></dl>
+</div>
+</article>
+<article class="fleet__bike">
+<figure class="fleet__photo"><img alt="A black fat-tyre e-bike standing under white concrete arches" height="1028" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1618987688327-dc0b28888fe4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NTgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=710&q=60}}" style="background:#404040" width="1600"/></figure>
+<div class="fleet__text">
+<p class="m-text-4 fleet__kind">{{t34|Fat tyres · 85 Nm motor · two batteries}}</p>
+<h3 class="m-text-6">{{t35|Climber}}</h3>
+<p class="m-text">{{t36|More torque and a second battery for the edges of the Peak: Stanage, Ladybower and back without stopping for a swap. Wide tyres keep it calm on gravel and wet setts.}}</p>
+<dl class="fleet__specs m-text-4"><dt>{{t28|Range}}</dt><dd>{{t37|About 140 km}}</dd><dt>{{t30|Gears}}</dt><dd>{{t38|Nine, plus three assist levels}}</dd><dt>{{t32|From}}</dt><dd>{{t39|₦7,000 an hour}}</dd></dl>
+</div>
+</article>
+<article class="fleet__bike">
+<figure class="fleet__photo"><img alt="A parent riding a longtail cargo bike with a child on the back and another on a tag-along" height="1200" loading="lazy" src="{{i4|https://images.unsplash.com/flagged/photo-1576934848835-f72df622a04b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2FyZ28lMjBiaWtlfGVufDF8MHx8fDE3OTE1Njc1ODR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="fleet__text">
+<p class="m-text-4 fleet__kind">{{t40|Longtail cargo · two child seats · 60 kg on the deck}}</p>
+<h3 class="m-text-6">{{t41|Hauler}}</h3>
+<p class="m-text">{{t42|A long rear deck with two seats and footboards, or two big panniers for a market run. A low first gear and the strongest assist for loaded hills.}}</p>
+<dl class="fleet__specs m-text-4"><dt>{{t28|Range}}</dt><dd>{{t43|About 70 km loaded}}</dd><dt>{{t44|Seats}}</dt><dd>{{t45|Two, ages one to seven}}</dd><dt>{{t32|From}}</dt><dd>{{t46|₦8,000 an hour}}</dd></dl>
+</div>
+</article>
+<article class="fleet__bike">
+<figure class="fleet__photo"><img alt="A compact folding e-bike against a pale wall and a blue sky" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1719885959196-03139e36d22c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Zm9sZGluZyUyMGJpa2V8ZW58MXwwfHx8MTc5MTU2NzU4NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#8c8c8c" width="1600"/></figure>
+<div class="fleet__text">
+<p class="m-text-4 fleet__kind">{{t47|Folding · 17 kg · folds to 80 × 40 cm}}</p>
+<h3 class="m-text-6">{{t48|Pocket}}</h3>
+<p class="m-text">{{t49|Folds in ten seconds into a car boot or a train's luggage rack. Take it to Hope on the Hope Valley line and ride back over the tops.}}</p>
+<dl class="fleet__specs m-text-4"><dt>{{t28|Range}}</dt><dd>{{t50|About 50 km}}</dd><dt>{{t30|Gears}}</dt><dd>{{t51|Three, plus three assist levels}}</dd><dt>{{t32|From}}</dt><dd>{{t52|₦5,500 an hour}}</dd></dl>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>{{/sec_fleet}}
+
+{{#sec_stands}}<section class="on-dark" data-8b-section="stands" id="stands">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark-2" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t53|Five stands, one line}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t54|Collect at one stand and leave the bike at any other. Every stand swaps batteries and keeps helmets in three sizes.}}</p>
+</div>
+</header>
+<figure class="stands__strip">
+<img alt="Bicycle racks under a lit timber canopy at night" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1595510305533-184dbe886f11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmlrZSUyMHJhY2slMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTU2NzYwNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#260c0c" width="1600"/>
+<span aria-hidden="true" class="stands__tint"></span>
+<div aria-hidden="true" class="stands__line l-wrap"><span class="stands__dash"></span><span class="m-text-3">{{t55|A}}</span><span class="m-text-3">{{t56|B}}</span><span class="m-text-3">{{t57|C}}</span><span class="m-text-3">{{t58|D}}</span><span class="m-text-3">{{t59|E}}</span><span class="stands__dot"></span></div>
+</figure>
+<ol class="stands__list l-wrap">
+<li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">{{t55|A}}</span><h3 class="m-text-6">{{t60|Station Arches}}</h3><p class="m-text">{{t61|1 Admiralty Way. Opposite the station's front steps; our office and workshop.}}</p><p class="m-text-4 stands__meta">{{t62|Every day 8:00–20:00 · all four bikes}}</p></li>
+<li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">{{t56|B}}</span><h3 class="m-text-6">{{t63|Surulere Island}}</h3><p class="m-text">{{t64|Alma Street, by the weir footbridge. The start of the Five Weirs ride.}}</p><p class="m-text-4 stands__meta">{{t65|Every day 8:00–20:00 · Town, Pocket, Hauler}}</p></li>
+<li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">{{t57|C}}</span><h3 class="m-text-6">{{t66|Division Street}}</h3><p class="m-text">{{t67|In the yard behind the old fire station, a minute from West Street tram stop.}}</p><p class="m-text-4 stands__meta">{{t68|Every day 9:00–19:00 · Town, Pocket}}</p></li>
+<li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">{{t58|D}}</span><h3 class="m-text-6">{{t69|Endcliffe Park}}</h3><p class="m-text">{{t70|At the park gates on Rustlings Road, where the Porter valley climb begins.}}</p><p class="m-text-4 stands__meta">{{t71|Every day 8:00–19:00 · Town, Climber, Hauler}}</p></li>
+<li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">{{t59|E}}</span><h3 class="m-text-6">{{t72|Gwarinpa}}</h3><p class="m-text">{{t73|Beside the Middlewood Road tram stop, the nearest stand to the reservoirs.}}</p><p class="m-text-4 stands__meta">{{t74|Every day 9:00–18:00 · Town, Climber}}</p></li>
+</ol>
+</section>{{/sec_stands}}
+
+{{#sec_routes}}<section data-8b-section="routes" id="routes">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t75|Four rides from the stands}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t76|All four are loaded on the bike's screen. Distance, climb and time are at an easy pace on the middle assist level.}}</p>
+</div>
+</header>
+<div class="routes__track">
+<div class="routes__stage">
+<div aria-hidden="true" class="routes__rail l-wrap"><span class="m-rule routes__rule"></span><span class="routes__fill"></span><span class="routes__wheel"></span></div>
+<div class="routes__row">
+<article class="routes__panel">
+<figure class="routes__photo"><img alt="A river running between trees and brick buildings in the city" height="1067" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1755005616177-90761b770659?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Y2FuYWwlMjB0b3dwYXRoJTIwYmljeWNsZXxlbnwxfDB8fHwxNzkxNTY3NjAyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="routes__text">
+<h3 class="m-text-6">{{t77|Five Weirs}}</h3>
+<p class="m-text-4 routes__facts">{{t78|From stand B · 11 km · 40 m of climb · about an hour}}</p>
+<p class="m-text">{{t79|Down the River Don past the old steelworks and five weirs to Meadowhall, back on the other bank. Flat enough for a first ride.}}</p>
+</div>
+</article>
+<article class="routes__panel">
+<figure class="routes__photo"><img alt="Narrowboats moored along a canal towpath beside new flats" height="900" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1779447326844-9f8cb91c81d0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2FuYWwlMjB0b3dwYXRoJTIwYmljeWNsZXxlbnwxfDB8fHwxNzkxNTY3NjAyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=660&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="routes__text">
+<h3 class="m-text-6">{{t80|Canal basin}}</h3>
+<p class="m-text-4 routes__facts">{{t81|From stand A · 9 km · 20 m of climb · 50 minutes}}</p>
+<p class="m-text">{{t82|From the station to Victoria Quays, then the towpath east to the Tinsley locks. Narrowboats, herons and one café barge.}}</p>
+</div>
+</article>
+<article class="routes__panel">
+<figure class="routes__photo"><img alt="A cyclist with an orange backpack riding across misty moorland" height="1065" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1789952309869-4b1da44b82a9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9vcmxhbmQlMjByb2FkJTIwY3ljbGluZ3xlbnwxfDB8fHwxNzkxNTY3NjAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#a6a6a6" width="1600"/></figure>
+<div class="routes__text">
+<h3 class="m-text-6">{{t83|The Edge}}</h3>
+<p class="m-text-4 routes__facts">{{t84|From stand D · 32 km · 480 m of climb · three hours}}</p>
+<p class="m-text">{{t85|Up the Porter valley and out of the city onto the moor below Stanage Edge. The one climb people come back to brag about.}}</p>
+</div>
+</article>
+<article class="routes__panel">
+<figure class="routes__photo"><img alt="An autumn reservoir between wooded hills under a wide sky" height="929" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1762199339651-32bb7c984903?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cmVzZXJ2b2lyJTIwaGlsbHMlMjByb2FkfGVufDF8MHx8fDE3OTE1Njc2MDR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#8ca6a6" width="1600"/></figure>
+<div class="routes__text">
+<h3 class="m-text-6">{{t86|Ladybower}}</h3>
+<p class="m-text-4 routes__facts">{{t87|From stand E · 46 km · 620 m of climb · four hours}}</p>
+<p class="m-text">{{t88|Out along the Loxley valley, round the reservoirs and back. Take a Climber: two batteries cover it with room to spare.}}</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>{{/sec_routes}}
+
+{{#sec_hire}}<section class="on-dark" data-8b-section="hire" id="hire">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark-2" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t89|Three steps to a ride}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t90|Book online or walk up to any stand: we keep a few bikes back every morning for walk-ups.}}</p>
+</div>
+</header>
+<div class="hire__body l-wrap">
+<div aria-hidden="true" class="hire__line"><span class="hire__track"></span><span class="hire__fill"></span></div>
+<ol class="hire__steps">
+<li class="hire__step"><span class="m-text-3 hire__num">{{t91|1}}</span><h3 class="m-text-6">{{t92|Book a slot}}</h3><p class="m-text">{{t93|Choose a bike, a stand and a start time. You pay when you collect, and you can cancel free up to an hour before.}}</p></li>
+<li class="hire__step"><span class="m-text-3 hire__num">{{t94|2}}</span><h3 class="m-text-6">{{t95|Collect and set up}}</h3><p class="m-text">{{t96|Show your booking and a photo ID. We fit the helmet, set the saddle and walk you through the three assist levels in five minutes.}}</p></li>
+<li class="hire__step"><span class="m-text-3 hire__num">{{t97|3}}</span><h3 class="m-text-6">{{t98|Ride, return anywhere}}</h3><p class="m-text">{{t99|Leave the bike at any of the five stands before it closes. Battery getting low on the way? Swap it at whichever stand you pass.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_hire}}
+
+{{#sec_kit}}<section data-8b-section="kit" id="kit">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t100|In every basket}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t101|Nothing to add at the counter: every hire leaves the stand with the same six things.}}</p>
+</div>
+</header>
+<div class="kit__body l-wrap">
+<figure class="kit__photo" data-8b-motion="rise"><img alt="A red cycle helmet hung on the handlebars of a silver bike" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1611485100985-cb332cd79671?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmljeWNsZSUyMGhlbG1ldCUyMGxvY2t8ZW58MXwwfHx8MTc5MTU2NzYwN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#a6a68c" width="1600"/></figure>
+<ul class="kit__list">
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t102|Helmet}}</h3><p class="m-text">{{t103|Three sizes at every stand, fitted before you ride off.}}</p></li>
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t104|D-lock}}</h3><p class="m-text">{{t105|A gold-rated lock with its key on the bike's own ring.}}</p></li>
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t106|Lights}}</h3><p class="m-text">{{t107|Front and back, wired to the battery and on after dusk.}}</p></li>
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t108|Phone mount}}</h3><p class="m-text">{{t109|With the four rides and every stand already loaded.}}</p></li>
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t110|Pannier}}</h3><p class="m-text">{{t111|Twenty waterproof litres for a coat, a picnic or the shopping.}}</p></li>
+<li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">{{t112|Puncture cover}}</h3><p class="m-text">{{t113|Inside the ring road we bring a fresh bike to you within the hour.}}</p></li>
+</ul>
+</div>
+</section>{{/sec_kit}}
+
+{{#sec_rides}}<section class="on-dark" data-8b-section="rides" id="rides">
+<div class="rides__stage">
+<figure class="rides__band"><img alt="Seen from above, a group of cyclists riding across sunlit tarmac with long shadows" height="1083" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1787058835509-e3bb95bd4854?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z3JvdXAlMjBjeWNsaW5nJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NjA2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1430&q=60}}" style="background:#c0c0a6" width="1600"/><span aria-hidden="true" class="rides__tint"></span></figure>
+<h2 class="m-text-3 rides__title"><span class="rides__half">{{t114|Saturday}}</span> <span class="rides__half">{{t115|rides}}</span></h2>
+</div>
+<div class="rides__body l-wrap">
+<p class="m-text-5 rides__lead" data-8b-motion="rise">{{t116|Every Saturday at 9:30 from stand A. Free with any day hire: a leader at the front, a sweeper at the back and a café stop halfway.}}</p>
+<ul class="rides__dates">
+<li class="rides__date" data-8b-motion="rise"><span class="m-text-4">{{t117|Sat 10 Oct}}</span><span class="m-text-6">{{t118|Five Weirs and the Wicker}}</span><span class="m-text-4">{{t119|18 km · easy}}</span></li>
+<li class="rides__date" data-8b-motion="rise"><span class="m-text-4">{{t120|Sat 17 Oct}}</span><span class="m-text-6">{{t121|Porter valley to Ringinglow}}</span><span class="m-text-4">{{t122|26 km · steady}}</span></li>
+<li class="rides__date" data-8b-motion="rise"><span class="m-text-4">{{t123|Sat 24 Oct}}</span><span class="m-text-6">{{t124|The Bradfield loop}}</span><span class="m-text-4">{{t125|38 km · hills}}</span></li>
+<li class="rides__date" data-8b-motion="rise"><span class="m-text-4">{{t126|Sat 31 Oct}}</span><span class="m-text-6">{{t127|Tinsley canal at dusk}}</span><span class="m-text-4">{{t128|15 km · lights on}}</span></li>
+</ul>
+<a class="m-btn-2 rides__join" href="#contact"><span class="m-btn__label">{{t129|Join a ride}}</span></a>
+</div>
+</section>{{/sec_rides}}
+
+{{#sec_prices}}<section data-8b-section="prices" id="prices">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t6|Prices}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t130|Helmet, lock, lights and pannier are always included. Damage cover comes with every hire, with a ₦25,000 excess.}}</p>
+</div>
+</header>
+<div class="prices__body l-wrap">
+<table class="prices__table" data-8b-motion="rise">
+<caption class="sr">{{t131|Hire prices by bike and length of hire}}</caption>
+<thead><tr><th class="m-text-4" scope="col">{{t132|Bike}}</th><th class="m-text-4" scope="col">{{t133|1 hour}}</th><th class="m-text-4" scope="col">{{t134|Half day}}</th><th class="m-text-4" scope="col">{{t135|Day}}</th><th class="m-text-4" scope="col">{{t136|Week}}</th></tr></thead>
+<tbody>
+<tr><th class="m-text-6" scope="row">{{t26|Town}}</th><td class="m-text-5">{{t137|₦4,500}}</td><td class="m-text-5">{{t138|₦11,000}}</td><td class="m-text-5">{{t139|₦16,000}}</td><td class="m-text-5">{{t140|₦60,000}}</td></tr>
+<tr><th class="m-text-6" scope="row">{{t48|Pocket}}</th><td class="m-text-5">{{t141|₦5,500}}</td><td class="m-text-5">{{t142|₦13,000}}</td><td class="m-text-5">{{t143|₦19,000}}</td><td class="m-text-5">{{t144|₦70,000}}</td></tr>
+<tr><th class="m-text-6" scope="row">{{t35|Climber}}</th><td class="m-text-5">{{t145|₦7,000}}</td><td class="m-text-5">{{t146|₦17,000}}</td><td class="m-text-5">{{t147|₦24,000}}</td><td class="m-text-5">{{t148|₦90,000}}</td></tr>
+<tr><th class="m-text-6" scope="row">{{t41|Hauler}}</th><td class="m-text-5">{{t149|₦8,000}}</td><td class="m-text-5">{{t143|₦19,000}}</td><td class="m-text-5">{{t150|₦27,000}}</td><td class="m-text-5">{{t151|₦97,500}}</td></tr>
+</tbody>
+</table>
+<div class="prices__pass" data-8b-motion="rise">
+<p class="m-text-6">{{t152|Monthly pass}}</p>
+<p class="m-text">{{t153|A Town bike whenever you want it, collected and returned at any stand, battery swaps included: ₦39,500 a month, cancel any time.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t154|Ask about a pass}}</span></a>
+</div>
+</div>
+</section>{{/sec_prices}}
+
+{{#sec_reviews}}<section data-8b-section="reviews" id="reviews">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t155|Riders}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t156|From the comment cards at the stands this summer.}}</p>
+</div>
+</header>
+<ul class="reviews__lanes">
+<li class="reviews__lane"><blockquote class="m-text-6">{{t157|“I had given up riding to work because of the hill up to Wuse 2. Now I get there before the bus does.”}}</blockquote><p class="m-text-4">{{t158|Priya, Walkley · monthly pass}}</p></li>
+<li class="reviews__lane"><blockquote class="m-text-6">{{t159|“Two kids on the back of the Hauler and a picnic in the panniers, park to Botanical Gardens without one grumble.”}}</blockquote><p class="m-text-4">{{t160|Tom, Nether Edge · day hire}}</p></li>
+<li class="reviews__lane"><blockquote class="m-text-6">{{t161|“Ladybower on two Climbers with a swap at Gwarinpa. Sixty kilometres and we could still walk to the pub.”}}</blockquote><p class="m-text-4">{{t162|Ana and Jules, visiting from Abuja}}</p></li>
+</ul>
+</section>{{/sec_reviews}}
+
+{{#sec_faq}}<section data-8b-section="faq" id="faq">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t7|Questions}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t163|Anything else: ring the Station Arches stand, someone is in the workshop all day.}}</p>
+</div>
+</header>
+<div class="faq__list l-wrap">
+<details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">{{t164|Do I need to be fit to ride one?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t165|No. The motor helps as soon as you pedal, so you choose how much effort to put in. On the highest assist level most riders climb our steepest streets seated.}}</p></details>
+<details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">{{t166|How old do riders have to be?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t167|Sixteen or over to ride on your own. Children from one to seven can ride on the Hauler's seats with a parent pedalling.}}</p></details>
+<details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">{{t168|What if the battery runs low?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t169|The screen shows the range left. Ride to any stand and we swap the battery in a minute, free. A flat battery still leaves you a normal bike with light gears.}}</p></details>
+<details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">{{t170|Can I take a bike on the train?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t171|The Pocket folds and travels as luggage on every train. The other bikes go on Northern services outside the rush hours, space permitting.}}</p></details>
+<details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">{{t172|Do you take a deposit?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t173|We hold ₦100,000 on a card while the bike is out and release it when you return it. Nothing is taken unless there is damage beyond the ₦25,000 excess.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section data-8b-section="contact" id="contact">
+<header class="l-head l-wrap">
+<span class="m-rule" data-8b-motion="rule"></span>
+<div class="l-head__row">
+<h2 class="m-text-3 l-head__title"><span aria-hidden="true" class="m-mark" data-8b-motion="roll"><span class="m-mark__plus"></span></span>{{t11|Book a bike}}</h2>
+<p class="m-text-4 l-head__note" data-8b-motion="rise">{{t174|Send a request and we confirm by e-mail within the hour, 8:00–20:00. Same-day bookings are fine.}}</p>
+</div>
+</header>
+<div class="contact__body l-wrap">
+<address class="contact__details">
+<p class="m-text-4 contact__label">{{t175|Stand A and office}}</p>
+<p class="m-text-5">{{t176|1 Admiralty Way}}<br/>{{t177|Ibadan}}</p>
+<p class="m-text-4 contact__label">{{t178|Phone}}</p>
+<p class="m-text-5"><a class="m-link contact__big" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t179|⟦phone⟧}}</a></p>
+<p class="m-text-4 contact__label">{{t180|E-mail}}</p>
+<p class="m-text-5"><a class="m-link contact__big" data-8b-placeholder="email" href="#ub-contact">{{t181|ride@kickstand.example}}</a></p>
+<p class="m-text-4 contact__label">{{t182|Hours}}</p>
+<p class="m-text">{{t183|Every day 8:00–20:00, March to October; 8:00–18:00 in winter.}}</p>
+</address>
+
+</div>
+<div class="contact__band on-dark">
+<img alt="A cyclist passing a lit station at night, blurred by the long exposure" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1729767616557-3b29c5e08a1e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGJpY3ljbGUlMjBvdmVycGFzcyUyMGNpdHl8ZW58MXwwfHx8MTc5MTU2NzY3OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#0c2626" width="1600"/>
+<span aria-hidden="true" class="contact__tint"></span>
+<div aria-hidden="true" class="contact__marks">
+<span class="contact__m contact__m--dash"></span>
+<span class="contact__m contact__m--bar"></span>
+<span class="contact__m m-text-6">{{t55|A}}</span>
+<span class="contact__m m-text-6">{{t56|B}}</span>
+<span class="contact__m contact__m--dot"></span>
+<span class="contact__m m-text-6">{{t57|C}}</span>
+<span class="contact__m m-text-6">{{t58|D}}</span>
+<span class="contact__m m-text-6">{{t59|E}}</span>
+</div>
+<a aria-label="Back to the top" class="m-disc contact__top" href="#start"><span class="m-disc__face"><svg aria-hidden="true" class="m-disc__arrow" viewbox="0 0 24 24"><path d="M6 6 18 18M18 8.5V18H8.5"></path></svg></span></a>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Bike Rental by <a href="https://github.com/8bsite/bike-rental-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="on-dark" data-8b-section="footer" id="footer">
+<span class="m-rule"></span>
+<div class="footer__grid">
+<a aria-label="{{name}}, back to the top" class="footer__brand" href="#start"><span class="m-text-6"><span aria-hidden="true" class="m-mark-2"><span class="m-mark__plus"></span></span>{{t184|⟦name⟧}}</span></a>
+<ul class="footer__col">
+<li class="m-text-4 footer__head">{{t185|Ride}}</li>
+{{#nv_fleet}}<li><a class="m-link-2" href="#fleet">{{t1|The bikes}}</a></li>{{/nv_fleet}}
+{{#nv_routes}}<li><a class="m-link-2" href="#routes">{{t3|Routes}}</a></li>{{/nv_routes}}
+{{#nv_rides}}<li><a class="m-link-2" href="#rides">{{t4|Saturday rides}}</a></li>{{/nv_rides}}
+</ul>
+<ul class="footer__col">
+<li class="m-text-4 footer__head">{{t186|Hire}}</li>
+{{#nv_hire}}<li><a class="m-link-2" href="#hire">{{t5|How hire works}}</a></li>{{/nv_hire}}
+{{#nv_prices}}<li><a class="m-link-2" href="#prices">{{t6|Prices}}</a></li>{{/nv_prices}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t7|Questions}}</a></li>{{/nv_faq}}
+</ul>
+<ul class="footer__col">
+<li class="m-text-4 footer__head">{{t187|Follow}}</li>
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.instagram.com/">{{t188|Instagram}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.strava.com/">{{t189|Strava club}}</a></li>
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t190|Newsletter}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+<div class="footer__legal m-text-4">
+<p>{{t191|© 2026 ⟦name⟧ Cycle Hire Ltd · registered in Nigeria · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t192|8B}}</a></p>
+<p>{{t193|Riders must be 16 or over · assist limited to 15.5 mph by law}}</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() {
+  const bar = document.querySelector('#nav .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .09, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rule(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1.1, ease: 'power3.inOut' });
+  },
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { y: 28, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .8, ease: 'power3.out' });
+  },
+  roll(element, vars = {}) {
+    const size = element.offsetWidth || 40;
+    const distance = size * 2.5;
+    return gsap.timeline(vars).fromTo(element, { x: -distance, rotation: -distance / (size / 2) * 57.2958 }, { x: 0, rotation: 0, duration: 1.1, ease: 'power3.out' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const group = element.parentElement ? [...element.parentElement.children].filter(child => child.matches(`[data-8b-motion~="${name}"]`)) : [element];
+        const order = Math.max(0, group.indexOf(element));
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 90%', once: true, animation: effects[name](element, { paused: true, delay: Math.min(order, 6) * .08 }) });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:fleet">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fleet');
+    const track = section.querySelector('.fleet__track');
+    const stage = section.querySelector('.fleet__stage');
+    const bikes = [...section.querySelectorAll('.fleet__bike')];
+    if (bikes.length < 2) return;
+    const tabs = document.createElement('div');
+    tabs.className = 'fleet__tabs';
+    tabs.setAttribute('aria-hidden', 'true');
+    const tabEls = bikes.map(bike => {
+      const tab = document.createElement('span');
+      tab.className = 'm-text-4 fleet__tab';
+      tab.textContent = bike.querySelector('h3').textContent;
+      tabs.append(tab);
+      return tab;
+    });
+    const marker = document.createElement('span');
+    marker.className = 'fleet__marker';
+    tabs.append(marker);
+    stage.prepend(tabs);
+    section.classList.add('is-staged');
+    section.style.setProperty('--fleet-n', bikes.length);
+    gsap.set(tabEls, { opacity: index => index === 0 ? 1 : .4 });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'fleet', trigger: track, start: 'top top', end: 'bottom bottom', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.to({}, { duration: .3 });
+    bikes.forEach((bike, index) => {
+      if (!index) return;
+      const at = .3 + (index - 1) * 1.5;
+      const before = bikes[index - 1];
+      timeline
+        .fromTo(bike.querySelector('.fleet__photo'), { '--fleet-cut': '100%' }, { '--fleet-cut': '0%', duration: 1, ease: 'power2.inOut' }, at)
+        .fromTo(before.querySelector('.fleet__text'), { autoAlpha: 1, y: 0 }, { autoAlpha: 0, y: -36, duration: .45, ease: 'power2.in', immediateRender: false }, at)
+        .fromTo(bike.querySelector('.fleet__text'), { autoAlpha: 0, y: 36 }, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, at + .5)
+        .fromTo(marker, { x: () => tabEls[index - 1].offsetLeft }, { x: () => tabEls[index].offsetLeft, duration: 1, ease: 'power2.inOut', immediateRender: false }, at)
+        .fromTo(tabEls[index - 1], { opacity: 1 }, { opacity: .4, duration: .5, immediateRender: false }, at)
+        .fromTo(tabEls[index], { opacity: .4 }, { opacity: 1, duration: .5, immediateRender: false }, at + .5);
+    });
+    timeline.to({}, { duration: .5 });
+    return () => {
+      tabs.remove();
+      section.classList.remove('is-staged');
+      section.style.removeProperty('--fleet-n');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:routes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('routes');
+    const track = section.querySelector('.routes__track');
+    const stage = section.querySelector('.routes__stage');
+    const row = section.querySelector('.routes__row');
+    const rail = section.querySelector('.routes__rail');
+    const fill = section.querySelector('.routes__fill');
+    const wheel = section.querySelector('.routes__wheel');
+    section.classList.add('is-tracked');
+    const run = () => Math.max(0, row.scrollWidth - stage.clientWidth);
+    const measure = () => section.style.setProperty('--routes-run', run() + 'px');
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const roll = () => Math.max(0, rail.clientWidth - wheel.offsetWidth - wheel.offsetLeft * 2);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'routes', trigger: track, start: 'top top', end: 'bottom bottom', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(row, { x: 0 }, { x: () => -run(), duration: 1 }, 0)
+      .fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0)
+      .fromTo(wheel, { x: 0, rotation: 0 }, { x: () => roll(), rotation: () => roll() / (wheel.offsetWidth / 2) * 57.2958, duration: 1 }, 0);
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.classList.remove('is-tracked');
+      section.style.removeProperty('--routes-run');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:hire">
+queueMotion(() => {
+  const section = document.getElementById('hire');
+  const fill = section.querySelector('.hire__fill');
+  const steps = [...section.querySelectorAll('.hire__step')];
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    if (context.conditions.wide) {
+      const timeline = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: 'hire', trigger: section.querySelector('.hire__body'), start: 'top 88%', end: 'top 42%', scrub: .5 }
+      });
+      timeline.fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0);
+      steps.forEach((step, index) => {
+        timeline
+          .fromTo(step, { opacity: .25 }, { opacity: 1, duration: .25 }, index * .33)
+          .fromTo(step.querySelector('.hire__num'), { x: -40 }, { x: 0, duration: .3, ease: 'power2.out' }, index * .33);
+      });
+    } else {
+      gsap.fromTo(fill, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { id: 'hire:line', trigger: section.querySelector('.hire__steps'), start: 'top 75%', end: 'bottom 60%', scrub: .5 } });
+      steps.forEach((step, index) => {
+        gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `hire:step-${index}`, trigger: step, start: 'top 85%', end: 'top 58%', scrub: .5 } })
+          .fromTo(step, { opacity: .25 }, { opacity: 1, duration: 1 }, 0)
+          .fromTo(step.querySelector('.hire__num'), { x: -32 }, { x: 0, duration: 1, ease: 'power2.out' }, 0);
+      });
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:rides">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    const section = document.getElementById('rides');
+    const stage = section.querySelector('.rides__stage');
+    const band = section.querySelector('.rides__band');
+    const halves = [...section.querySelectorAll('.rides__half')];
+    const toward = (half, side) => {
+      const middle = stage.clientWidth / 2;
+      const gap = stage.clientWidth * .05;
+      const left = half.offsetLeft, right = left + half.offsetWidth;
+      return side < 0 ? Math.max(0, middle - gap - right) : Math.min(0, middle + gap - left);
+    };
+    const narrow = context.conditions.narrow;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'rides', trigger: stage, start: 'top 92%', end: 'center 52%', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(band, { '--rides-cut': narrow ? '36%' : '45%' }, { '--rides-cut': '0%', duration: 1, ease: 'power2.inOut' }, 0);
+    if (!narrow) {
+      timeline
+        .fromTo(halves[0], { x: () => toward(halves[0], -1) }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(halves[1], { x: () => toward(halves[1], 1) }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0);
+    } else {
+      timeline
+        .fromTo(halves[0], { x: () => stage.clientWidth * .18 }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(halves[1], { x: () => -stage.clientWidth * .18 }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0);
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:reviews">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const list = section.querySelector('.reviews__lanes');
+    const lanes = [...section.querySelectorAll('.reviews__lane')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'reviews', trigger: list, start: 'top 95%', end: 'center 58%', scrub: .5, invalidateOnRefresh: true }
+    });
+    lanes.forEach((lane, index) => {
+      timeline.fromTo(lane, { x: () => (index % 2 ? -1 : 1) * innerWidth * (innerWidth < 761 ? .35 : .45) }, { x: 0, duration: 1, ease: 'power3.out' }, index * .12);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const band = section.querySelector('.contact__band');
+    const photo = band.querySelector('img');
+    const marks = [...band.querySelectorAll('.contact__m')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact', trigger: band, start: 'top bottom', end: 'center 55%', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(photo, { yPercent: -14, scale: 1.2 }, { yPercent: 0, scale: 1, duration: 1, ease: 'power2.out' }, 0);
+    marks.forEach((mark, index) => {
+      const side = index - (marks.length - 1) / 2;
+      timeline.fromTo(mark, {
+        x: () => -side * band.clientWidth * .045,
+        y: () => (index % 2 ? 1 : -1) * band.clientHeight * (.12 + (index % 3) * .06) + band.clientHeight * .18,
+        rotation: (index % 2 ? 1 : -1) * (40 + index * 12)
+      }, { x: 0, y: 0, rotation: 0, duration: .8, ease: 'power3.out' }, .2 * Math.abs(side) / marks.length);
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  const date = form.querySelector('input[type="date"]');
+  date.min = new Date().toISOString().slice(0, 10);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.querySelector('button[type="submit"]').disabled = true;
+  });
+})();
+</script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const root = document.getElementById('nav');
+  const bar = root.querySelector('.nav__bar');
+  const open = root.querySelector('.nav__menu');
+  const menu = root.querySelector('.menu');
+  const close = menu.querySelector('.menu__close');
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (!menu.hidden) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 120 || travel < -24) bar.classList.remove('is-hidden');
+    else if (travel > 48) bar.classList.add('is-hidden');
+  }, { passive: true });
+  const setMenu = state => {
+    menu.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { bar.classList.remove('is-hidden'); window.lenis?.stop(); close.focus(); }
+    else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('.menu__list a')) { menu.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+</body>
+</html>

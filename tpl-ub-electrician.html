@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f8f6f1;
+  --color-2: #212320;
+  --color-3: #575953;
+  --color-4: #e0dcd3;
+  --color-5: #a4e6f4;
+  --color-6: #10231a;
+  --color-7: #a6b8ac;
+  --color-8: #1c3428;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 18px;
+  --radius-2: 10px;
+  --radius-3: 6px;
+  --shadow-1: 0 10px 30px -12px rgb(16 35 26 / .35);
+  --space-1: clamp(10px, 6vw, 88px);
+  --space-2: clamp(18px, 3.6vw, 52px);
+  --space-3: clamp(8px, 1.6vw, 24px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104.6%; ascent-override: 97.5%; descent-override: 30.6%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 96px; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-6); color: var(--color-1); font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ol, ul, figure, blockquote, dl, dd { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.u-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(36px, 4.2vw, 62px); font-weight: 340; line-height: 1.08; letter-spacing: -0.028em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(30px, 3.3vw, 48px); font-weight: 340; line-height: 1.1; letter-spacing: -0.022em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(19px, 1.65vw, 24px); font-weight: 420; line-height: 1.25; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: 0.005em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-3); }
+.m-text-7 { font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-7); }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px; border: 0; border-radius: var(--radius-3); background: var(--color-5); color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: inset(0 0 100% 100%); transition: clip-path .5s cubic-bezier(.65, 0, .25, 1); }
+.m-btn__label { position: relative; transition: color .3s; }
+.m-btn__arrow { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; transition: color .3s, transform .4s cubic-bezier(.65, 0, .25, 1); }
+.m-btn:focus-visible { outline-color: var(--color-2); }
+@media (hover: hover) {
+  .m-btn:hover::before { clip-path: inset(0 0 0 0); }
+  .m-btn:hover { color: var(--color-1); }
+  .m-btn:hover .m-btn__arrow { transform: translateX(3px); }
+}
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 9px 16px; border: 1px solid color-mix(in srgb, var(--color-2) 22%, transparent); border-radius: var(--radius-3); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-5); clip-path: inset(0 0 100% 100%); transition: clip-path .5s cubic-bezier(.65, 0, .25, 1); }
+.m-btn-2__label { position: relative; }
+@media (hover: hover) {
+  .m-btn-2:hover::before { clip-path: inset(0 0 0 0); }
+  .m-btn-2:hover { border-color: var(--color-2); }
+}
+.m-link { position: relative; display: inline-block; padding: 4px 0; color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 450; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: var(--color-2); transform: scaleX(0); transform-origin: 100% 50%; transition: transform .45s cubic-bezier(.65, 0, .25, 1); }
+.m-link[aria-current="true"]::after { background: var(--color-5); transform: scaleX(1); }
+@media (hover: hover) {
+  .m-link:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+}
+.m-link-2 { position: relative; display: inline-block; padding: 4px 0; color: var(--color-1); font-family: var(--font-1); font-size: 15px; font-weight: 450; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: var(--color-5); transform: scaleX(0); transform-origin: 100% 50%; transition: transform .45s cubic-bezier(.65, 0, .25, 1); }
+.m-link-2:focus-visible { outline-color: var(--color-5); }
+@media (hover: hover) {
+  .m-link-2:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+}
+.m-icon-btn { position: relative; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px; border: 1px solid color-mix(in srgb, var(--color-2) 22%, transparent); border-radius: var(--radius-3); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-icon-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-5); clip-path: inset(0 0 100% 100%); transition: clip-path .5s cubic-bezier(.65, 0, .25, 1); }
+.m-icon-btn__lines { position: relative; width: 16px; height: 8px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; }
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__lines { height: 0; border-bottom: 0; transform: rotate(45deg); }
+@media (hover: hover) {
+  .m-icon-btn:hover::before { clip-path: inset(0 0 0 0); }
+}
+.m-surface { background: var(--color-1); color: var(--color-2); border-radius: var(--radius-1); }
+.m-surface-2 { background: var(--color-5); color: var(--color-2); border-radius: var(--radius-1); }
+.m-rule { border-left: 1px solid color-mix(in srgb, currentColor 24%, transparent); padding-left: clamp(14px, 1.4vw, 20px); }
+.m-notch { --m-notch-gap: clamp(10px, 1.1vw, 16px); position: relative; margin: 0; border-radius: var(--radius-2); overflow: hidden; background: var(--color-4); }
+.m-notch > img { width: 100%; height: 100%; object-fit: cover; }
+.m-notch__tab { position: absolute; top: -1px; right: -1px; padding: 1px 1px var(--m-notch-gap) var(--m-notch-gap); background: var(--color-1); color: var(--color-2); border-bottom-left-radius: var(--radius-2); }
+.m-notch__tab::before, .m-notch__tab::after { content: ""; position: absolute; width: var(--radius-2); height: var(--radius-2); background: radial-gradient(circle at 0 100%, transparent calc(var(--radius-2) - .6px), var(--color-1) var(--radius-2)); pointer-events: none; }
+.m-notch__tab::before { top: 0; right: 100%; }
+.m-notch__tab::after { top: 100%; right: 0; }
+.m-notch-2 { --m-notch-gap: clamp(10px, 1.1vw, 16px); position: relative; margin: 0; border-radius: var(--radius-2); overflow: hidden; background: var(--color-8); }
+.m-notch-2 > img { width: 100%; height: 100%; object-fit: cover; }
+.m-notch-2__tab { position: absolute; top: -1px; right: -1px; padding: 1px 1px var(--m-notch-gap) var(--m-notch-gap); background: var(--color-6); color: var(--color-1); border-bottom-left-radius: var(--radius-2); }
+.m-notch-2__tab::before, .m-notch-2__tab::after { content: ""; position: absolute; width: var(--radius-2); height: var(--radius-2); background: radial-gradient(circle at 0 100%, transparent calc(var(--radius-2) - .6px), var(--color-6) var(--radius-2)); pointer-events: none; }
+.m-notch-2__tab::before { top: 0; right: 100%; }
+.m-notch-2__tab::after { top: 100%; right: 0; }
+.m-badge { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 12px; border: 1px solid var(--color-3); border-radius: var(--radius-3); color: var(--color-3); font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-badge-2 { display: inline-flex; align-items: center; min-height: 28px; padding: 3px 12px; border: 1px solid var(--color-5); border-radius: var(--radius-3); background: var(--color-5); color: var(--color-2); font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-field { display: grid; gap: 6px; color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field__input { width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); border-radius: var(--radius-3); background: var(--color-1); color: var(--color-2); font-size: 16px; font-weight: 400; line-height: 1.4; }
+textarea.m-field__input { resize: vertical; min-height: 110px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.u-ground { background: var(--color-6); color: var(--color-1); }
+.u-ground :focus-visible { outline-color: var(--color-5); }
+.u-sheet { margin: var(--space-3) var(--space-3) 0; padding: var(--space-2); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; z-index: 50; inset: 0 0 auto 0; pointer-events: none; transition: transform .55s cubic-bezier(.3, .7, .2, 1); }
+#navigation[data-floating] { transform: translateY(calc(-1 * var(--space-1))); }
+#navigation[data-hidden] { transform: translateY(calc(-100% - 24px)); }
+#navigation[data-menu-open] { transform: none; transition: none; }
+#navigation .nav__bar { pointer-events: auto; display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); margin: calc(var(--space-1) + clamp(8px, 1.2vw, 18px)) var(--space-1) 0; padding: 14px var(--space-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); transition: background-color .3s, box-shadow .3s; }
+#navigation[data-floating] .nav__bar { background: var(--color-1); box-shadow: var(--shadow-1); }
+#navigation .nav__logo { display: inline-flex; align-items: center; gap: 9px; font-size: 22px; font-weight: 500; letter-spacing: -0.02em; line-height: 1; padding: 6px 0; }
+#navigation .nav__mark { width: 22px; height: 22px; fill: var(--color-2); }
+#navigation .nav__links { margin-left: clamp(24px, 9vw, 150px); }
+#navigation .nav__links ul { display: flex; gap: clamp(18px, 2.4vw, 36px); }
+#navigation .nav__end { display: flex; align-items: center; gap: 22px; margin-left: auto; }
+#navigation .nav__menu { display: none; margin-left: auto; }
+#navigation .menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; gap: 28px; padding: 22px var(--space-3) 32px; background: var(--color-1); color: var(--color-2); overflow-y: auto; pointer-events: auto; }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__top { display: flex; justify-content: space-between; align-items: center; padding: 0 8px; }
+#navigation .menu__links { display: grid; gap: 6px; padding: 0 8px; }
+#navigation .menu__links a { display: block; padding: 6px 0; border-bottom: 1px solid var(--color-4); }
+#navigation .menu__end { display: grid; gap: 16px; justify-items: start; padding: 0 8px; margin-top: auto; }
+@media (max-width: 900px) {
+  #navigation .nav__links, #navigation .nav__end { display: none; }
+  #navigation .nav__menu { display: inline-flex; }
+  #navigation .nav__bar { margin-top: calc(var(--space-1) + 4px); padding: 10px 12px 10px 16px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { --op-aside: clamp(240px, 24vw, 340px); position: relative; }
+#opening .op-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+#opening .op-ground { position: absolute; inset: 0; overflow: hidden; background: var(--color-6); }
+#opening .op-ground__drift { position: absolute; inset: -60px; }
+#opening .op-ground__drift picture, #opening .op-ground__drift img { display: block; width: 100%; height: 100%; object-fit: cover; }
+#opening .op-dusk { position: absolute; inset: 0; background: var(--color-6); opacity: 0; pointer-events: none; }
+#opening .op-sheet { position: absolute; inset: var(--space-1); isolation: isolate; overflow: hidden; display: flex; flex-direction: column; padding: clamp(96px, 11vw, 160px) var(--space-2) 0; }
+#opening .op-hero { position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1fr) var(--op-aside); gap: clamp(24px, 4vw, 64px); align-items: start; padding-bottom: clamp(28px, 4.2vw, 64px); }
+#opening .op-title { max-width: 13.5em; }
+#opening .op-aside { display: grid; gap: 14px; padding-top: 4px; padding-bottom: 12px; }
+#opening .op-photo { flex: 1 1 auto; min-height: 200px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+#opening .op-photo > img { position: absolute; inset: 0; object-position: 50% 42%; }
+#opening .op-photo .m-notch__tab { width: calc(var(--op-aside) + var(--m-notch-gap)); }
+#opening .op-photo .m-btn { position: relative; z-index: 3; width: 100%; justify-content: center; }
+#opening .op-flood { display: none; position: absolute; inset: 0; z-index: 2; background: var(--color-5); pointer-events: none; }
+#opening[data-flooding] .op-flood { display: block; }
+#opening .op-second { position: relative; z-index: 1; min-height: 100vh; min-height: 100svh; padding: var(--space-1); display: flex; }
+#opening .op-second__sheet { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(40px, 6vw, 96px); padding: clamp(96px, 11vw, 160px) var(--space-2) var(--space-2); }
+#opening .op-second__head { display: grid; grid-template-columns: minmax(0, 1fr) var(--op-aside); gap: clamp(24px, 4vw, 64px); align-items: start; }
+#opening .op-second__title { max-width: 12em; }
+#opening .op-second__note { display: grid; gap: 14px; justify-items: start; padding-top: 4px; }
+#opening .op-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(20px, 3vw, 48px); counter-reset: op-step; }
+#opening .op-step { display: grid; gap: 10px; align-content: start; counter-increment: op-step; }
+#opening .op-step__no::before { content: counter(op-step); }
+#opening .op-step__no { display: inline-grid; place-items: center; width: 30px; height: 30px; border: 1px solid currentColor; border-radius: 50%; margin-bottom: 6px; }
+@media (max-width: 900px) {
+  #opening .op-sheet { padding-top: 92px; }
+  #opening .op-hero, #opening .op-second__head { grid-template-columns: 1fr; }
+  #opening .op-hero { gap: 18px; padding-bottom: 22px; }
+  #opening .op-photo .m-notch__tab { width: min(78%, 260px); }
+  #opening .op-second__sheet { padding-top: 92px; }
+}
+@media (max-width: 900px) and (max-height: 700px) {
+  #opening .op-aside p { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-title-wrap { animation: op-rise .95s cubic-bezier(.2, .7, .2, 1) .05s backwards; }
+  #opening .op-aside-wrap { animation: op-rise .95s cubic-bezier(.2, .7, .2, 1) .16s backwards; }
+  #opening .op-photo > img { animation: op-settle 1.1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-ground__drift { animation: op-drift 8s ease-in-out infinite alternate; }
+  #opening[data-offscreen] .op-ground__drift { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(26px); } }
+@keyframes op-settle { from { transform: scale(1.07); } }
+@keyframes op-drift { from { transform: translate3d(-44px, -32px, 0); } to { transform: translate3d(44px, 32px, 0); } }
+}
+</style>
+<style data-8b-part="section:rooms">
+@layer sections {
+#rooms .rooms__sheet { margin-top: var(--space-3); }
+#rooms .rooms__head { display: grid; grid-template-columns: minmax(0, 1fr) clamp(240px, 26vw, 360px); gap: clamp(24px, 4vw, 64px); align-items: end; padding: clamp(24px, 4vw, 56px) 0 clamp(32px, 5vw, 64px); border-bottom: 1px solid var(--color-4); }
+#rooms .rooms__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: clamp(24px, 5vw, 80px); align-items: start; }
+#rooms .rooms__row { display: grid; align-content: start; gap: 14px; min-height: clamp(240px, 44vh, 440px); padding: clamp(28px, 4vw, 48px) 0; border-bottom: 1px solid var(--color-4); }
+#rooms .rooms__row:last-child { border-bottom: 0; }
+#rooms .rooms__row p { max-width: 30em; }
+#rooms .rooms__frame { position: sticky; top: max(172px, 22vh); display: grid; height: min(66vh, 600px); margin-top: clamp(28px, 4vw, 48px); }
+#rooms .rooms__photo { grid-area: 1 / 1; height: 100%; }
+#rooms .rooms__photo:first-child { z-index: 1; }
+#rooms .rooms__photo .m-notch__tab span { display: block; padding: 10px 6px 0 12px; }
+@media (max-width: 900px) {
+  #rooms .rooms__head, #rooms .rooms__body { grid-template-columns: 1fr; }
+  #rooms .rooms__head { align-items: start; padding-top: 18px; }
+  #rooms .rooms__frame { top: auto; bottom: 10px; z-index: 2; height: 40vh; height: 40svh; margin-top: 0; }
+  #rooms .rooms__row { min-height: 38vh; min-height: 38svh; }
+}
+}
+</style>
+<style data-8b-part="section:tidy">
+@layer sections {
+#tidy { padding: clamp(80px, 11vw, 160px) calc(var(--space-3) + var(--space-2)); }
+#tidy .tidy__title { max-width: 14em; margin-bottom: clamp(40px, 6vw, 88px); }
+#tidy .tidy__grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: clamp(20px, 3vw, 44px) clamp(24px, 4vw, 64px); align-items: start; }
+#tidy .tidy__wide { grid-row: span 2; aspect-ratio: 4 / 3; }
+#tidy .tidy__wide .m-notch-2__tab span { display: block; padding: 10px 6px 0 12px; }
+#tidy .tidy__small { width: 72%; aspect-ratio: 4 / 5; }
+#tidy .tidy__notes { display: grid; gap: 28px; }
+#tidy .tidy__notes li { display: grid; gap: 8px; }
+@media (max-width: 900px) {
+  #tidy .tidy__grid { grid-template-columns: 1fr; }
+  #tidy .tidy__wide { grid-row: auto; }
+  #tidy .tidy__small { width: 64%; justify-self: end; }
+}
+}
+</style>
+<style data-8b-part="section:charge">
+@layer sections {
+#charge { padding: var(--space-3) var(--space-3) 0; }
+#charge .charge__panel { position: relative; display: flex; align-items: flex-end; min-height: 118vh; padding: var(--space-2); overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); }
+#charge .charge__view { position: absolute; inset: 0; }
+#charge .charge__view img { width: 100%; height: 100%; object-fit: cover; }
+#charge .charge__sheet { position: relative; display: grid; gap: 18px; justify-items: start; width: min(100%, 560px); padding: var(--space-2); }
+#charge .charge__list { width: 100%; }
+#charge .charge__list li { padding: 11px 0; border-top: 1px solid var(--color-4); }
+#charge .charge__list li:last-child { border-bottom: 1px solid var(--color-4); }
+#charge .charge__tab { position: absolute; top: 0; left: calc(100% + 14px); display: grid; gap: 4px; width: 250px; padding: 22px 24px; }
+@media (max-width: 900px) {
+  #charge .charge__panel { min-height: 0; padding: 46vh 10px 10px; }
+  #charge .charge__sheet { width: 100%; }
+  #charge .charge__tab { top: auto; left: auto; right: 0; bottom: calc(100% + 10px); width: min(250px, 80%); padding: 16px 18px; }
+}
+}
+</style>
+<style data-8b-part="section:landlords">
+@layer sections {
+#landlords .ll__sheet { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 110px); margin-top: var(--space-3); padding-block: clamp(48px, 7vw, 110px); }
+#landlords .ll__intro { position: sticky; top: 120px; display: grid; gap: 24px; align-content: start; justify-items: start; }
+#landlords .ll__row { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: clamp(18px, 2.4vw, 30px) 0; border-bottom: 1px solid var(--color-4); }
+#landlords .ll__row:first-child { border-top: 1px solid var(--color-4); }
+#landlords .ll__fill { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--color-2); transform-origin: 0 50%; }
+#landlords .ll__state { flex: none; }
+#landlords .ll__due { display: none; }
+#landlords[data-checking] .ll__row:not([data-passed]) .ll__due { display: inline-flex; }
+#landlords[data-checking] .ll__row:not([data-passed]) .ll__done { display: none; }
+@media (max-width: 900px) {
+  #landlords .ll__sheet { grid-template-columns: 1fr; }
+  #landlords .ll__intro { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { padding: clamp(80px, 11vw, 160px) calc(var(--space-3) + var(--space-2)); }
+#prices .prices__head { display: grid; grid-template-columns: minmax(0, 1fr) clamp(240px, 26vw, 360px); gap: clamp(24px, 4vw, 64px); align-items: end; }
+#prices .prices__head h2 { max-width: 12em; }
+#prices .prices__list { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(32px, 5vw, 80px); margin-top: clamp(36px, 5vw, 72px); }
+#prices .prices__row { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "job amount" "inc inc"; gap: 6px 20px; padding: 22px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 18%, transparent); }
+#prices .prices__job { grid-area: job; }
+#prices .prices__inc { grid-area: inc; }
+#prices .prices__amount { grid-area: amount; white-space: nowrap; }
+@media (max-width: 760px) {
+  #prices .prices__head, #prices .prices__list { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:team">
+@layer sections {
+#team .team__sheet { margin-top: var(--space-3); }
+#team .team__head { display: grid; grid-template-columns: minmax(0, 1fr) clamp(240px, 26vw, 360px); gap: clamp(24px, 4vw, 64px); align-items: end; padding: clamp(24px, 4vw, 56px) 0 clamp(32px, 5vw, 64px); }
+#team .team__grid { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); }
+#team .team__member { display: grid; gap: 4px; align-content: start; }
+#team .team__photo { aspect-ratio: 3 / 4; margin-bottom: 10px; }
+#team .team__photo .m-notch__tab span { display: block; padding: 8px 6px 0 12px; }
+@media (max-width: 900px) {
+  #team .team__head { grid-template-columns: 1fr; align-items: start; }
+  #team .team__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq .faq__sheet { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 110px); margin-top: var(--space-3); padding-block: clamp(48px, 7vw, 110px); }
+#faq .faq__head { position: sticky; top: 120px; align-self: start; display: grid; gap: 24px; }
+#faq .faq__item { border-bottom: 1px solid var(--color-4); }
+#faq .faq__item:first-child { border-top: 1px solid var(--color-4); }
+#faq summary { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; list-style: none; cursor: pointer; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary::after { content: ""; flex: none; width: 14px; height: 14px; margin-top: 6px; background: linear-gradient(currentColor 0 0) center / 100% 1.5px no-repeat, linear-gradient(currentColor 0 0) center / 1.5px 100% no-repeat; transition: transform .35s; }
+#faq details[open] summary::after { transform: rotate(45deg); }
+#faq .faq__item p { max-width: 36em; padding-bottom: 22px; }
+@media (max-width: 900px) {
+  #faq .faq__sheet { grid-template-columns: 1fr; }
+  #faq .faq__head { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:night">
+@layer sections {
+#night { position: relative; margin-top: var(--space-3); }
+#night .night__stage { position: sticky; top: 0; display: flex; align-items: center; min-height: 100vh; min-height: 100svh; padding: var(--space-3); overflow: hidden; }
+#night .night__grid { display: none; position: absolute; inset: var(--space-3); gap: 6px; }
+#night .night__panel { position: relative; z-index: 1; display: grid; gap: 22px; justify-items: start; max-width: 620px; margin-left: clamp(0px, 5vw, 80px); padding: var(--space-2); border-radius: var(--radius-1); background: var(--color-6); }
+#night .night__phone { padding: 6px 0; }
+@media (max-width: 900px) {
+  #night .night__stage { align-items: flex-end; }
+  #night .night__panel { margin-left: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:night">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #night[data-lit] { height: 230vh; }
+  #night[data-lit] .night__grid { display: grid; grid-template-columns: repeat(var(--night-cols), 1fr); grid-template-rows: repeat(var(--night-rows), 1fr); }
+  #night .night__cell { border-radius: var(--radius-3); background: var(--color-5); opacity: .08; }
+  #night .night__cell[data-tone="light"] { background: var(--color-1); }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews .reviews__sheet { margin-top: var(--space-3); overflow: hidden; }
+#reviews .reviews__head { display: grid; grid-template-columns: minmax(0, 1fr) clamp(240px, 26vw, 360px); gap: clamp(24px, 4vw, 64px); align-items: end; padding-top: clamp(24px, 4vw, 56px); }
+#reviews .reviews__track { display: grid; gap: clamp(14px, 1.6vw, 22px); margin-top: clamp(32px, 5vw, 64px); }
+#reviews .reviews__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(14px, 1.6vw, 22px); }
+#reviews .reviews__card { display: grid; align-content: space-between; gap: 18px; min-height: 210px; padding: clamp(20px, 2vw, 28px); border: 1px solid var(--color-4); border-radius: var(--radius-2); }
+@media (max-width: 900px) {
+  #reviews .reviews__head { grid-template-columns: 1fr; align-items: start; }
+  #reviews .reviews__card { min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:reviews">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #reviews[data-rows] .reviews__list { display: flex; width: max-content; }
+  #reviews[data-rows] .reviews__card { width: clamp(270px, 34vw, 430px); }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding: var(--space-3) var(--space-3) 0; }
+#contact .contact__panel { position: relative; overflow: hidden; padding: clamp(80px, 13vw, 220px) var(--space-1) var(--space-1); border-radius: var(--radius-1); background: var(--color-8); }
+#contact .contact__view { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#contact .contact__sheet { position: relative; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); gap: clamp(28px, 4vw, 72px); padding: var(--space-2); }
+#contact .contact__head { grid-column: 1 / -1; display: grid; gap: 14px; max-width: 40em; }
+#contact .contact__form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: end; }
+#contact .contact__wide { grid-column: 1 / -1; }
+#contact .contact__form .m-btn { justify-self: start; }
+#contact .contact__details { display: grid; gap: 10px; align-content: start; justify-items: start; }
+#contact .contact__details h3 { margin-bottom: 4px; }
+@media (max-width: 900px) {
+  #contact .contact__panel { padding: 38vh 10px 10px; }
+  #contact .contact__sheet, #contact .contact__form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: clamp(64px, 9vw, 140px) calc(var(--space-3) + var(--space-2)) 28px; }
+#footer .footer__word { margin-bottom: clamp(40px, 6vw, 80px); font-family: var(--font-1); font-size: min(30vw, calc((100vw - 2 * (var(--space-3) + var(--space-2))) / (var(--len) * .56))); font-weight: 340; line-height: .92; letter-spacing: -0.045em; color: var(--color-1); white-space: nowrap; }
+#footer .footer__cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding-bottom: clamp(40px, 6vw, 72px); }
+#footer .footer__col { display: grid; gap: 8px; align-content: start; justify-items: start; }
+#footer .footer__col ul { display: grid; gap: 4px; }
+#footer .footer__small { padding-top: 22px; border-top: 1px solid var(--color-8); }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-second__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 4px; }
+#opening .op-second__cta .m-btn-2 { min-height: 48px; padding: 12px 22px; border-color: var(--color-2); background: var(--color-2); color: var(--color-1); font-size: 15px; }
+@media (hover: hover) { #opening .op-second__cta .m-btn-2:hover { color: var(--color-2); } }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-second__head > *, #opening .op-step { animation: op-rise .95s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-second__note { animation-delay: .12s; }
+  #opening .op-step:nth-child(1) { animation-delay: .22s; }
+  #opening .op-step:nth-child(2) { animation-delay: .3s; }
+  #opening .op-step:nth-child(3) { animation-delay: .38s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">
+<svg aria-hidden="true" class="nav__mark" viewbox="0 0 24 24"><path d="M0 6Q0 0 6 0H10Q13 0 13 3V8Q13 11 16 11H21Q24 11 24 14V18Q24 24 18 24H6Q0 24 0 18Z"></path></svg>
+<span class="nav__word">{{t1|⟦name⟧}}</span>
+</a>
+<nav aria-label="Main" class="nav__links">
+<ul>
+{{#nv_rooms}}<li><a class="m-link" href="#rooms">{{t2|Services}}</a></li>{{/nv_rooms}}
+{{#nv_prices}}<li><a class="m-link" href="#prices">{{t3|Prices}}</a></li>{{/nv_prices}}
+{{#nv_landlords}}<li><a class="m-link" href="#landlords">{{t4|Landlords}}</a></li>{{/nv_landlords}}
+{{#nv_team}}<li><a class="m-link" href="#team">{{t5|About}}</a></li>{{/nv_team}}
+</ul>
+</nav>
+<div class="nav__end">
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t6|⟦phone⟧}}</a>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t7|Book a visit}}</span></a>
+</div>
+<button aria-controls="menu" aria-expanded="false" class="m-icon-btn nav__menu" type="button"><span class="m-icon-btn__label">{{t8|Menu}}</span><span aria-hidden="true" class="m-icon-btn__lines"></span></button>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="m-text-4">{{t1|⟦name⟧}}</span>
+<button aria-controls="menu" aria-expanded="true" class="m-icon-btn menu__close" type="button"><span class="m-icon-btn__label">{{t9|Close}}</span><span aria-hidden="true" class="m-icon-btn__lines"></span></button>
+</div>
+<nav aria-label="Menu">
+<ul class="menu__links">
+{{#nv_rooms}}<li><a class="m-text-3" href="#rooms">{{t2|Services}}</a></li>{{/nv_rooms}}
+{{#nv_prices}}<li><a class="m-text-3" href="#prices">{{t3|Prices}}</a></li>{{/nv_prices}}
+{{#nv_landlords}}<li><a class="m-text-3" href="#landlords">{{t4|Landlords}}</a></li>{{/nv_landlords}}
+{{#nv_team}}<li><a class="m-text-3" href="#team">{{t5|About}}</a></li>{{/nv_team}}
+{{#nv_contact}}<li><a class="m-text-3" href="#contact">{{t10|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<div class="menu__end">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t7|Book a visit}}</span><svg aria-hidden="true" class="m-btn__arrow" viewbox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t6|⟦phone⟧}}</a>
+</div>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-second">
+<div class="op-second__sheet m-surface-2">
+<div class="op-second__head">
+<h1 class="m-text-2 op-second__title" id="opening-title">{{t11|From first look to final certificate}}</h1>
+<div class="op-second__note m-rule">
+<p class="m-text">{{t12|Every job runs the same three steps, whether it is one socket or a whole house, with the same small team from the first call to the last test.}}</p>
+<div class="op-second__cta"><a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t7|Book a visit}}</span></a><a class="m-link" href="#prices">{{t13|See fixed prices}}</a></div>
+</div>
+</div>
+<ol class="op-steps">
+<li class="op-step m-rule">
+<span aria-hidden="true" class="op-step__no m-text-5"></span>
+<h3 class="m-text-4">{{t14|We come and look}}</h3>
+<p class="m-text">{{t15|A free visit of about forty minutes. We test what is there, listen to what you want and note anything that changes the price.}}</p>
+</li>
+<li class="op-step m-rule">
+<span aria-hidden="true" class="op-step__no m-text-5"></span>
+<h3 class="m-text-4">{{t16|You get one fixed price}}</h3>
+<p class="m-text">{{t17|An itemised quote within two working days. No day rates, and nothing added halfway through unless you ask for it.}}</p>
+</li>
+<li class="op-step m-rule">
+<span aria-hidden="true" class="op-step__no m-text-5"></span>
+<h3 class="m-text-4">{{t18|We fit, test and sign off}}</h3>
+<p class="m-text">{{t19|Tidy work, tested circuit by circuit, with your certificate emailed before we drive away.}}</p>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_rooms}}<section aria-labelledby="rooms-title" data-8b-section="rooms" id="rooms">
+<div class="rooms__sheet m-surface u-sheet">
+<div class="rooms__head">
+<h2 class="m-text-2" data-8b-motion="lines" id="rooms-title">{{t20|Room by room}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-6">{{t21|Most calls start with one room. Here is what we do in each of them, from a single extra socket to a full rewire while you live in the house.}}</p>
+</div>
+</div>
+<div class="rooms__body">
+<ol class="rooms__list">
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t22|Kitchen}}</h3>
+<p class="m-text-6">{{t23|Extra sockets at worktop height, lighting under the cabinets and a circuit of its own for the oven and the hob.}}</p>
+</li>
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t24|Bathroom}}</h3>
+<p class="m-text-6">{{t25|Quiet extractor fans, shaver points, heated towel rails and lit mirrors, all placed by the zones that keep water and power apart.}}</p>
+</li>
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t26|Living rooms}}</h3>
+<p class="m-text-6">{{t27|Dimmers, wall lights, cables hidden behind a mounted television and a data point where the router actually needs to be.}}</p>
+</li>
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t28|Outside}}</h3>
+<p class="m-text-6">{{t29|Garden and path lighting, outdoor sockets, and power to a shed or a garden office on its own buried cable.}}</p>
+</li>
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t30|Garage and drive}}</h3>
+<p class="m-text-6">{{t31|Car chargers, garage circuits and the supply upgrade a heat pump or a workshop needs before anything is plugged in.}}</p>
+</li>
+<li class="rooms__row">
+<h3 class="m-text-3 rooms__name">{{t32|The fuse board}}</h3>
+<p class="m-text-6">{{t33|A modern board with protection on every circuit, so one fault switches off one room instead of the whole house.}}</p>
+</li>
+</ol>
+<div class="rooms__frame">
+<figure class="m-notch rooms__photo">
+<img alt="A pale kitchen with lighting glowing under the wall cabinets" height="1500" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1643949915197-2984de8bbd92?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8a2l0Y2hlbiUyMHBlbmRhbnQlMjBsaWdodHMlMjBpbnRlcmlvcnxlbnwxfDF8fHwxNzkxNDEzMzk1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#a68c8c" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t34|Most asked: worktop sockets}}</span></div>
+</figure>
+<figure class="m-notch rooms__photo">
+<img alt="A bathroom basin under a round mirror lit from behind" height="1500" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1642755623069-eb720c326553?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8YmF0aHJvb20lMjBpbnRlcmlvciUyMGxpZ2h0aW5nfGVufDF8MXx8fDE3OTE0MTMzOTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9c08c" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t35|Most asked: a lit mirror}}</span></div>
+</figure>
+<figure class="m-notch rooms__photo">
+<img alt="A living room in the evening, lamps lit beside a sofa and tall windows" height="1796" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1698870157085-11632d2ddef8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MXx8fDE3OTE0MTMzOTd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#260c0c" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t36|Most asked: wall lights}}</span></div>
+</figure>
+<figure class="m-notch rooms__photo">
+<img alt="A stone house at dusk with outdoor lights glowing along its walls" height="1800" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1788894499164-2df2512adaed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z2FyZGVuJTIwbGlnaHRzJTIwZHVzayUyMGhvdXNlfGVufDF8MXx8fDE3OTE0MTMzOTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#262626" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t37|Most asked: path lights}}</span></div>
+</figure>
+<figure class="m-notch rooms__photo">
+<img alt="A white electric car plugged into a wall charger beside a green wall" height="1800" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1765272088009-100c96a4cd4e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjBjYXIlMjBjaGFyZ2luZyUyMGhvbWUlMjBkcml2ZXdheXxlbnwxfDF8fHwxNzkxNDEzNDE5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t38|Most asked: a car charger}}</span></div>
+</figure>
+<figure class="m-notch rooms__photo">
+<img alt="An electrician in a cap working inside an open fuse board" height="675" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1660330590022-9f4ff56b63f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZWxlY3RyaWNpYW4lMjB3b3JraW5nJTIwaG9tZXxlbnwxfDB8fHwxNzkxNDEzMzg2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=960&q=60}}" style="background:#262640" width="1200"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t39|Most asked: a board upgrade}}</span></div>
+</figure>
+</div>
+</div>
+</div>
+</section>{{/sec_rooms}}
+
+{{#sec_tidy}}<section aria-labelledby="tidy-title" class="u-ground" data-8b-section="tidy" id="tidy">
+<h2 class="m-text-2 tidy__title" data-8b-motion="lines" id="tidy-title">{{t40|We leave the place tidier than we found it}}</h2>
+<div class="tidy__grid">
+<figure class="m-notch-2 tidy__wide" data-8b-motion="notch">
+<img alt="A finished room with a pale wood floor and freshly painted white walls" height="933" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1721395286594-8913b06056eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGVtcHR5JTIwYnJpZ2h0JTIwcm9vbSUyMHJlbm92YXRpb258ZW58MXwwfHx8MTc5MTQxMzQyMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=750&q=60}}" style="background:#d9d9d9" width="1400"/>
+<div class="m-notch-2__tab"><span class="m-text-5">{{t41|A rewire, day seven}}</span></div>
+</figure>
+<figure class="m-notch-2 tidy__small" data-8b-motion="notch">
+<img alt="An electrician hanging a pendant light against a slatted wooden wall" height="1125" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1788855865596-6507bff9fa8b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8ZWxlY3RyaWNpYW4lMjBpbnN0YWxsaW5nJTIwbGlnaHR8ZW58MXwxfHx8MTc5MTQxMzM4N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=350&q=60}}" style="background:#d9d9c0" width="900"/>
+</figure>
+<ul class="tidy__notes">
+<li class="m-rule" data-8b-motion="rule">
+<h3 class="m-text-4">{{t42|Floors covered from the door in}}</h3>
+<p class="m-text-7">{{t43|Dust sheets and boot covers go down before the first tool comes out of the van.}}</p>
+</li>
+<li class="m-rule" data-8b-motion="rule">
+<h3 class="m-text-4">{{t44|Every chase filled and sanded}}</h3>
+<p class="m-text-7">{{t45|Cuts in the plaster are filled and sanded flush, ready for paint rather than for another trade.}}</p>
+</li>
+<li class="m-rule" data-8b-motion="rule">
+<h3 class="m-text-4">{{t46|Hoovered before we go}}</h3>
+<p class="m-text-7">{{t47|Offcuts, boxes and dust leave with us, so the rooms go back to being rooms each evening.}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_tidy}}
+
+{{#sec_charge}}<section aria-labelledby="charge-title" data-8b-section="charge" id="charge">
+<div class="charge__panel">
+<div class="charge__view">
+<img alt="A village seen from above, its roofs and drives between winding roads" height="1350" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1763327374244-157b04b597d5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YWVyaWFsJTIwdmlldyUyMGhvdXNlcyUyMHJvb2Z0b3BzfGVufDF8MHx8fDE3OTE0MTMzNjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1800&q=60}}" style="background:#262626" width="1800"/>
+</div>
+<div class="charge__sheet m-surface">
+<h2 class="m-text-3" id="charge-title">{{t48|Plug in on the drive, wake up full}}</h2>
+<p class="m-text-6">{{t49|Car chargers, solar panels and home batteries, fitted by the same team that checks your supply first. We size the charger to your house, not to a brochure.}}</p>
+<ul class="charge__list">
+<li class="m-text">{{t50|A 7 kW charger matched to your supply}}</li>
+<li class="m-text">{{t51|Load balancing, so the car and the oven can share}}</li>
+<li class="m-text">{{t52|Off-peak charging set up on your phone before we leave}}</li>
+<li class="m-text">{{t53|Ready for solar and a battery whenever you are}}</li>
+</ul>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t54|Get a charger quote}}</span><svg aria-hidden="true" class="m-btn__arrow" viewbox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a>
+<aside aria-label="Charger price" class="charge__tab m-surface-2">
+<span class="m-text-5">{{t55|Chargers fitted from}}</span>
+<strong class="m-text-3">{{t56|₦447,500}}</strong>
+<span class="m-text-6">{{t57|with the supply check and certificate}}</span>
+</aside>
+</div>
+</div>
+</section>{{/sec_charge}}
+
+{{#sec_landlords}}<section aria-labelledby="landlords-title" data-8b-section="landlords" id="landlords">
+<div class="ll__sheet m-surface u-sheet">
+<div class="ll__intro">
+<h2 class="m-text-3" data-8b-motion="lines" id="landlords-title">{{t58|Landlord certificates without the chasing}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-6">{{t59|A rented home needs an electrical condition report every five years. We book around your tenants, test everything on the list and send the report to you and your agent the same day.}}</p>
+</div>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t60|Book a landlord check}}</span><svg aria-hidden="true" class="m-btn__arrow" viewbox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a>
+</div>
+<ol aria-label="What a landlord check covers" class="ll__list">
+<li class="ll__row"><span class="m-text-4 ll__item">{{t61|Fuse board and trip times}}</span><span class="ll__state"><span class="m-badge ll__due">{{t62|Due}}</span><span class="m-badge-2 ll__done">{{t63|Passed}}</span></span><span aria-hidden="true" class="ll__fill"></span></li>
+<li class="ll__row"><span class="m-text-4 ll__item">{{t64|Earthing and bonding to gas and water}}</span><span class="ll__state"><span class="m-badge ll__due">{{t62|Due}}</span><span class="m-badge-2 ll__done">{{t63|Passed}}</span></span><span aria-hidden="true" class="ll__fill"></span></li>
+<li class="ll__row"><span class="m-text-4 ll__item">{{t65|Every socket, switch and light fitting}}</span><span class="ll__state"><span class="m-badge ll__due">{{t62|Due}}</span><span class="m-badge-2 ll__done">{{t63|Passed}}</span></span><span aria-hidden="true" class="ll__fill"></span></li>
+<li class="ll__row"><span class="m-text-4 ll__item">{{t66|Smoke and heat alarms, linked}}</span><span class="ll__state"><span class="m-badge ll__due">{{t62|Due}}</span><span class="m-badge-2 ll__done">{{t63|Passed}}</span></span><span aria-hidden="true" class="ll__fill"></span></li>
+<li class="ll__row"><span class="m-text-4 ll__item">{{t67|Report sent to you the same day}}</span><span class="ll__state"><span class="m-badge ll__due">{{t62|Due}}</span><span class="m-badge-2 ll__done">{{t63|Passed}}</span></span><span aria-hidden="true" class="ll__fill"></span></li>
+</ol>
+</div>
+</section>{{/sec_landlords}}
+
+{{#sec_prices}}<section aria-labelledby="prices-title" class="u-ground" data-8b-section="prices" id="prices">
+<div class="prices__head">
+<h2 class="m-text-3" data-8b-motion="lines" id="prices-title">{{t68|Fixed prices for the jobs we do most}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-7">{{t69|Prices include parts, testing, the certificate and VAT. Anything bigger gets a written quote after a free visit.}}</p>
+</div>
+</div>
+<dl class="prices__list">
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t70|Extra double socket}}</dt><dd class="m-text-7 prices__inc">{{t71|On an existing circuit, chased in and made good}}</dd><dd class="m-text-4 prices__amount">{{t72|from ₦47,500}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t73|Light fitting changed}}</dt><dd class="m-text-7 prices__inc">{{t74|Per fitting, where the wiring is already there}}</dd><dd class="m-text-4 prices__amount">{{t75|from ₦22,500}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t76|Outdoor socket}}</dt><dd class="m-text-7 prices__inc">{{t77|Weatherproof, on its own protected circuit}}</dd><dd class="m-text-4 prices__amount">{{t78|from ₦70,000}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t79|Smoke alarms, linked}}</dt><dd class="m-text-7 prices__inc">{{t80|Three mains alarms with battery back-up}}</dd><dd class="m-text-4 prices__amount">{{t81|from ₦120,000}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t82|Fuse board upgrade}}</dt><dd class="m-text-7 prices__inc">{{t83|A protected circuit for every room, surge protection included}}</dd><dd class="m-text-4 prices__amount">{{t84|from ₦292,500}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t85|Car charger fitted}}</dt><dd class="m-text-7 prices__inc">{{t86|A 7 kW charger and up to ten metres of cable}}</dd><dd class="m-text-4 prices__amount">{{t87|from ₦447,500}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t88|Landlord report}}</dt><dd class="m-text-7 prices__inc">{{t89|For a home of up to three bedrooms}}</dd><dd class="m-text-4 prices__amount">{{t90|₦80,000}}</dd></div>
+<div class="prices__row" data-8b-motion="rule" data-rule-axis="x"><dt class="m-text-4 prices__job">{{t91|Full rewire, three-bed semi}}</dt><dd class="m-text-7 prices__inc">{{t92|Usually seven working days, room by room}}</dd><dd class="m-text-4 prices__amount">{{t93|from ₦2,700,000}}</dd></div>
+</dl>
+</section>{{/sec_prices}}
+
+{{#sec_team}}<section aria-labelledby="team-title" data-8b-section="team" id="team">
+<div class="team__sheet m-surface u-sheet">
+<div class="team__head">
+<h2 class="m-text-3" data-8b-motion="lines" id="team-title">{{t94|The people who come round}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-6">{{t95|Nine electricians, all employed by us and none subcontracted. The person who quotes is usually the person who fits, and they will still be here when you call next year.}}</p>
+</div>
+</div>
+<ul class="team__grid">
+<li class="team__member">
+<figure class="m-notch team__photo">
+<img alt="Jess Okafor in patchwork overalls in front of a wall of tools" height="1080" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1782592273846-f5c5a336a926?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZmVtYWxlJTIwZW5naW5lZXIlMjBwb3J0cmFpdCUyMHdvcmt3ZWFyfGVufDF8MXx8fDE3OTE0MTM0NTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#0c260c" width="800"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t96|Lighting}}</span></div>
+</figure>
+<h3 class="m-text-4">{{t97|Jess Okafor}}</h3>
+<p class="m-text-6">{{t98|Lighting and smart homes}}</p>
+</li>
+<li class="team__member">
+<figure class="m-notch team__photo">
+<img alt="Dan Whitlow smiling in work overalls, sitting on stone steps" height="1200" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1791164080237-9940a2657f38?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8d29ya2VyJTIwcG9ydHJhaXQlMjBzbWlsaW5nJTIwb3ZlcmFsbHN8ZW58MXwxfHx8MTc5MTQxMzQzM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#402626" width="800"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t99|Rewires}}</span></div>
+</figure>
+<h3 class="m-text-4">{{t100|Dan Whitlow}}</h3>
+<p class="m-text-6">{{t101|Rewires and fuse boards}}</p>
+</li>
+<li class="team__member">
+<figure class="m-notch team__photo">
+<img alt="Ray Brennan in blue workwear standing in a garage workshop" height="981" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1783323260513-fb1857ac515c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHdvcmtlciUyMHBvcnRyYWl0JTIwc21pbGluZyUyMG92ZXJhbGxzfGVufDF8MXx8fDE3OTE0MTM0MzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#404026" width="800"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t102|Testing}}</span></div>
+</figure>
+<h3 class="m-text-4">{{t103|Ray Brennan}}</h3>
+<p class="m-text-6">{{t104|Landlord reports and testing}}</p>
+</li>
+<li class="team__member">
+<figure class="m-notch team__photo">
+<img alt="Tom Lau smiling in a blue work jacket, leaning on a hand truck" height="1422" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1782105208181-c5b3b8996ad8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya2VyJTIwcG9ydHJhaXQlMjBzbWlsaW5nJTIwb3ZlcmFsbHN8ZW58MXwxfHx8MTc5MTQxMzQzM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#262626" width="800"/>
+<div class="m-notch__tab"><span class="m-text-5">{{t105|Chargers}}</span></div>
+</figure>
+<h3 class="m-text-4">{{t106|Tom Lau}}</h3>
+<p class="m-text-6">{{t107|Car chargers and solar}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_team}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="faq__sheet m-surface u-sheet">
+<div class="faq__head">
+<h2 class="m-text-3" data-8b-motion="lines" id="faq-title">{{t108|Questions we get asked at the door}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-6">{{t109|Something else? Call}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t6|⟦phone⟧}}</a> {{t110|and whoever answers can usually tell you straight away.}}</p>
+</div>
+</div>
+<div class="faq__list">
+<details class="faq__item"><summary class="m-text-4">{{t111|Do you charge for the first visit?}}</summary><p class="m-text-6">{{t112|No. The visit and the written quote are free, and there is no obligation to book the work.}}</p></details>
+<details class="faq__item"><summary class="m-text-4">{{t113|Are you registered and insured?}}</summary><p class="m-text-6">{{t114|Yes. Work that has to be notified to building control is notified by us, every job comes with its certificate, and we carry five million pounds of public liability cover.}}</p></details>
+<details class="faq__item"><summary class="m-text-4">{{t115|Can we stay in the house during a rewire?}}</summary><p class="m-text-6">{{t116|Most families do. We work room by room, keep power on in the rooms you use each night and plan the kitchen and bathroom days with you.}}</p></details>
+<details class="faq__item"><summary class="m-text-4">{{t117|Will you make good after cutting into walls?}}</summary><p class="m-text-6">{{t118|Yes. Chases and holes are filled and sanded flush, ready for paint. We do not decorate, but we can recommend people who do.}}</p></details>
+<details class="faq__item"><summary class="m-text-4">{{t119|Which areas do you cover?}}</summary><p class="m-text-6">{{t120|Ibadan and the villages around it, out to Hathersage, Stocksbridge and Dronfield. Ask if you are a little further out.}}</p></details>
+<details class="faq__item"><summary class="m-text-4">{{t121|Can you work alongside my builder or kitchen fitter?}}</summary><p class="m-text-6">{{t122|Often. We do the first fix before the plasterer, come back for the second fix and talk to your other trades directly, so you do not have to carry messages.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_night}}<section aria-labelledby="night-title" class="u-ground" data-8b-section="night" id="night">
+<div class="night__stage">
+<div aria-hidden="true" class="night__grid"></div>
+<div class="night__panel">
+<h2 class="m-text-2" id="night-title">{{t123|Lights out at 2 a.m.?}}</h2>
+<p class="m-text-7">{{t124|One of us answers the out-of-hours line, not a call centre. Most callouts in Ibadan are reached within the hour, and we make the house safe before we talk about anything else.}}</p>
+<a class="m-link-2 night__phone" data-8b-placeholder="phone" href="tel:{{telraw}}"><span class="m-text-3">{{t6|⟦phone⟧}}</span></a>
+<p class="m-text-5">{{t125|Emergency callout ₦47,500 the first hour included}}</p>
+</div>
+</div>
+</section>{{/sec_night}}
+
+{{#sec_reviews}}<section aria-labelledby="reviews-title" data-8b-section="reviews" id="reviews">
+<div class="reviews__sheet m-surface u-sheet">
+<div class="reviews__head">
+<h2 class="m-text-3" data-8b-motion="lines" id="reviews-title">{{t126|What the neighbours say}}</h2>
+<div class="m-rule" data-8b-motion="rule">
+<p class="m-text-6">{{t127|From reviews left after jobs this year, kept short and unedited.}}</p>
+</div>
+</div>
+<div class="reviews__track">
+<ul class="reviews__list">
+<li class="reviews__card"><blockquote class="m-text">{{t128|“They found the fault in twenty minutes after two other firms had given up on it.”}}</blockquote><p class="m-text-6">{{t129|Priya, Wuse 2 · fault finding}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t130|“Full rewire with two kids at home. Every evening the rooms were usable and swept.”}}</blockquote><p class="m-text-6">{{t131|Mark, Walkley · rewire}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t132|“The quote was the bill. Not a pound more, and they explained every line of it.”}}</blockquote><p class="m-text-6">{{t133|Hannah, Nether Edge · fuse board}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t134|“Charger on the drive in half a day, and they set the cheap night rate up for me.”}}</blockquote><p class="m-text-6">{{t135|Colin, Dore · car charger}}</p></li>
+</ul>
+<ul class="reviews__list">
+<li class="reviews__card"><blockquote class="m-text">{{t136|“Six flats tested in one morning, reports in my inbox by tea time.”}}</blockquote><p class="m-text-6">{{t137|Amrit, landlord · reports}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t138|“Jess sorted the kitchen lighting and made it look like it had always been there.”}}</blockquote><p class="m-text-6">{{t139|Ellie, Gwarinpa · lighting}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t140|“Answered at midnight, here by quarter to one, power back on by two.”}}</blockquote><p class="m-text-6">{{t141|Sam, Heeley · emergency}}</p></li>
+<li class="reviews__card"><blockquote class="m-text">{{t142|“Garden lights and a socket for the shed. Tidy trench, no mess on the lawn.”}}</blockquote><p class="m-text-6">{{t143|Ruth, Totley · outside}}</p></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_reviews}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="contact__panel">
+<img alt="Rows of terraced houses and their roofs seen from above" class="contact__view" height="1200" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1597117393249-ffa2374d54de?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dGVycmFjZWQlMjBob3VzZXMlMjBmcm9tJTIwYWJvdmV8ZW58MXwwfHx8MTc5MTQxMzQ1NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1800&q=60}}" style="background:#737373" width="1800"/>
+<div class="contact__sheet m-surface">
+<div class="contact__head">
+<h2 class="m-text-2" data-8b-motion="lines" id="contact-title">{{t7|Book a visit}}</h2>
+<p class="m-text-6">{{t144|Tell us what needs doing and when suits you. We reply within two working hours with a time for the free visit.}}</p>
+</div>
+
+<div class="contact__details m-rule" data-8b-motion="rule">
+<h3 class="m-text-4">{{t145|Call or write}}</h3>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t6|⟦phone⟧}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t146|hello@ohmstead.example}}</a>
+<p class="m-text-6">{{t147|Monday to Friday 7:30–18:00, Saturday 8:00–13:00. Out of hours: ⟦phone⟧.}}</p>
+<p class="m-text-6">{{t148|1 Admiralty Way, Ibadan}}</p>
+</div>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Electrician by <a href="https://github.com/8bsite/electrician-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="u-ground" data-8b-section="footer" id="footer">
+<p aria-hidden="true" class="footer__word" data-8b-motion="lines" style="--len:8">{{t1|⟦name⟧}}</p>
+<div class="footer__cols">
+<div class="footer__col m-rule" data-8b-motion="rule">
+<h2 class="m-text-4">{{t149|⟦name⟧ Electrical}}</h2>
+<p class="m-text-7">{{t150|Home electricians for Ibadan and the villages around it.}}</p>
+</div>
+<nav aria-label="Footer" class="footer__col m-rule" data-8b-motion="rule">
+<ul>
+{{#nv_rooms}}<li><a class="m-link-2" href="#rooms">{{t2|Services}}</a></li>{{/nv_rooms}}
+{{#nv_prices}}<li><a class="m-link-2" href="#prices">{{t3|Prices}}</a></li>{{/nv_prices}}
+{{#nv_landlords}}<li><a class="m-link-2" href="#landlords">{{t4|Landlords}}</a></li>{{/nv_landlords}}
+{{#nv_team}}<li><a class="m-link-2" href="#team">{{t5|About}}</a></li>{{/nv_team}}
+</ul>
+</nav>
+<div class="footer__col m-rule" data-8b-motion="rule">
+<a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t6|⟦phone⟧}}</a>
+<a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t146|hello@ohmstead.example}}</a>
+<a class="m-link-2" href="#contact">{{t7|Book a visit}}</a>
+</div>
+</div>
+<p class="footer__small m-text-7">{{t151|© 2026 ⟦name⟧ Electrical Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t152|8B}}</a></p>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const openBtn = root.querySelector('.nav__menu');
+  const closeBtn = root.querySelector('.menu__close');
+  let last = window.scrollY;
+  const onScroll = () => {
+    const y = window.scrollY;
+    const delta = y - last;
+    if (Math.abs(delta) < 4) return;
+    root.toggleAttribute('data-floating', y > 60);
+    root.toggleAttribute('data-hidden', delta > 0 && y > 160);
+    last = y;
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  const setMenu = open => {
+    menu.hidden = !open;
+    root.toggleAttribute('data-menu-open', open);
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeBtn.focus(); } else { window.lenis?.start(); openBtn.focus({ preventScroll: true }); }
+  };
+  openBtn.addEventListener('click', () => setMenu(true));
+  closeBtn.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) setMenu(false); });
+  const links = [...root.querySelectorAll('.nav__links a')];
+  const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window && targets.length) {
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const link = links.find(a => a.getAttribute('href') === '#' + entry.target.id);
+        if (link) link.toggleAttribute('aria-current', entry.isIntersecting);
+        if (link && entry.isIntersecting) link.setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    targets.forEach(t => spy.observe(t));
+  }
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navOffset() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? bar.offsetHeight + 24 : 0;
+}
+function refreshScroll() {
+  if (window.lenis) window.lenis.options.anchors = { offset: -navOffset() };
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  lines(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete: () => split.revert() })
+      .from(split.lines, { yPercent: 105, duration: 0.9, ease: 'power3.out', stagger: 0.09 });
+  },
+  rule(element, vars = {}) {
+    const across = element.dataset.ruleAxis === 'x';
+    return gsap.timeline(vars)
+      .fromTo(element, { clipPath: across ? 'inset(0% 100% 0% 0%)' : 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.9, ease: 'power2.inOut', clearProps: 'clipPath' })
+      .from(element.children, { x: across ? 0 : -14, y: across ? 10 : 0, duration: 0.8, ease: 'power2.out', stagger: 0.06, clearProps: 'transform' }, 0.15);
+  },
+  notch(element, vars = {}) {
+    const img = element.querySelector('img');
+    return gsap.timeline(vars)
+      .fromTo(element, { clipPath: 'inset(0% 0% 100% 100%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.1, ease: 'power3.inOut', clearProps: 'clipPath' })
+      .fromTo(img, { scale: 1.16 }, { scale: 1, duration: 1.4, ease: 'power3.out', clearProps: 'transform' }, 0);
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, i) => ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top 88%', once: true, animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:rooms">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('rooms');
+    const rows = [...section.querySelectorAll('.rooms__row')];
+    const photos = [...section.querySelectorAll('.rooms__photo')];
+    const count = Math.min(rows.length, photos.length);
+    const css = getComputedStyle(document.documentElement);
+    const ink = css.getPropertyValue('--color-2').trim();
+    const dim = gsap.utils.interpolate(css.getPropertyValue('--color-1').trim(), ink, 0.4);
+    section.setAttribute('data-touring', '');
+    photos.forEach((photo, i) => gsap.set(photo, { zIndex: i + 1 }));
+    for (let i = 1; i < count; i++) {
+      gsap.timeline({ scrollTrigger: { id: `rooms:photo-${i}`, trigger: rows[i], start: 'top 70%', end: 'top 38%', scrub: 0.5 } })
+        .fromTo(photos[i], { clipPath: 'inset(0% 0% 100% 100%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power2.inOut' }, 0)
+        .fromTo(photos[i].querySelector('img'), { scale: 1.2 }, { scale: 1, ease: 'power2.out' }, 0);
+    }
+    rows.forEach((row, i) => {
+      const name = row.querySelector('.rooms__name');
+      const tl = gsap.timeline({ scrollTrigger: { id: `rooms:name-${i}`, trigger: row, start: 'top 78%', end: 'bottom 40%', scrub: true } });
+      tl.fromTo(name, { color: dim }, { color: ink, duration: 0.3, ease: 'none' }, 0);
+      if (i < count - 1) tl.to(name, { color: dim, duration: 0.3, ease: 'none' }, 0.7);
+      else tl.set({}, {}, 1);
+    });
+    return () => section.removeAttribute('data-touring');
+  });
+}, { id: 'scene:rooms' });
+</script>
+<script data-8b-part="scene:charge">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('charge');
+    const panel = section.querySelector('.charge__panel');
+    const sheet = section.querySelector('.charge__sheet');
+    const tab = section.querySelector('.charge__tab');
+    const travel = () => panel.clientWidth - (sheet.offsetLeft + tab.offsetLeft) + 24;
+    gsap.timeline({ scrollTrigger: { id: 'charge', trigger: panel, start: 'top 80%', end: 'bottom 96%', scrub: 0.6, invalidateOnRefresh: true } })
+      .fromTo(section.querySelector('.charge__view img'), { scale: 1.55 }, { scale: 1, ease: 'power1.out', duration: 1 }, 0)
+      .fromTo(sheet, { y: () => 0.32 * innerHeight }, { y: 0, ease: 'power2.out', duration: 0.7 }, 0)
+      .fromTo(tab, { x: travel }, { x: 0, ease: 'power3.out', duration: 0.45 }, 0.5);
+  });
+}, { id: 'scene:charge' });
+</script>
+<script data-8b-part="scene:landlords">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('landlords');
+    const rows = [...section.querySelectorAll('.ll__row')];
+    const css = getComputedStyle(document.documentElement);
+    const dim = css.getPropertyValue('--color-3').trim();
+    const ink = css.getPropertyValue('--color-2').trim();
+    section.setAttribute('data-checking', '');
+    rows.forEach((row, i) => {
+      const mark = self => row.toggleAttribute('data-passed', self.progress > 0.9);
+      gsap.timeline({ scrollTrigger: { id: `landlords:row-${i}`, trigger: row, start: 'top 82%', end: 'top 56%', scrub: 0.4, onUpdate: mark, onRefresh: mark } })
+        .fromTo(row.querySelector('.ll__fill'), { scaleX: 0 }, { scaleX: 1, ease: 'none' }, 0)
+        .fromTo(row.querySelector('.ll__item'), { color: dim }, { color: ink, ease: 'none' }, 0);
+    });
+    return () => { section.removeAttribute('data-checking'); rows.forEach(row => row.removeAttribute('data-passed')); };
+  });
+}, { id: 'scene:landlords' });
+</script>
+<script data-8b-part="scene:team">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('team');
+    const grid = section.querySelector('.team__grid');
+    const members = [...grid.querySelectorAll('.team__member')];
+    const turns = [-9, 5, -4, 8, -6, 3];
+    const dx = member => grid.clientWidth / 2 - (member.offsetLeft + member.offsetWidth / 2);
+    const dy = member => Math.min(grid.clientHeight, innerHeight) / 2 - (member.offsetTop + member.offsetHeight / 2);
+    const tl = gsap.timeline({ scrollTrigger: { id: 'team', trigger: grid, start: 'top bottom', end: 'top 48%', scrub: 0.6, invalidateOnRefresh: true } });
+    members.forEach((member, i) => {
+      tl.fromTo(member, { x: () => dx(member), y: () => dy(member), rotation: turns[i % turns.length], scale: 0.9 }, { x: 0, y: 0, rotation: 0, scale: 1, ease: 'power2.inOut', duration: 1 }, i * 0.05);
+    });
+  });
+}, { id: 'scene:team' });
+</script>
+<script data-8b-part="scene:night">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('night');
+    const grid = section.querySelector('.night__grid');
+    const origin = section.querySelector('.night__phone');
+    section.setAttribute('data-lit', '');
+    const size = innerWidth < 700 ? 46 : 66;
+    const cols = Math.max(4, Math.round(grid.clientWidth / size));
+    const rows = Math.max(4, Math.round(grid.clientHeight / size));
+    grid.style.setProperty('--night-cols', cols);
+    grid.style.setProperty('--night-rows', rows);
+    const cells = Array.from({ length: cols * rows }, (_, i) => {
+      const cell = document.createElement('i');
+      cell.className = 'night__cell';
+      if (i % 9 === 4) cell.dataset.tone = 'light';
+      return cell;
+    });
+    grid.append(...cells);
+    const g = grid.getBoundingClientRect(), o = origin.getBoundingClientRect();
+    const ox = o.left + o.width / 2 - g.left, oy = o.top + o.height / 2 - g.top;
+    const cw = g.width / cols, ch = g.height / rows;
+    const dist = cells.map((_, i) => Math.hypot((i % cols + 0.5) * cw - ox, (Math.floor(i / cols) + 0.5) * ch - oy));
+    const far = Math.max(...dist) || 1;
+    const tl = gsap.timeline({ scrollTrigger: { id: 'night', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.5 } });
+    cells.forEach((cell, i) => {
+      const near = 1 - dist[i] / far;
+      const level = (cell.dataset.tone === 'light' ? 0.5 : 0.28) + near * 0.66 + ((i * 53) % 7) / 7 * 0.06;
+      tl.fromTo(cell, { opacity: 0.08 }, { opacity: level, duration: 0.14, ease: 'none' }, (dist[i] / far) * 0.82 + ((i * 37) % 13) / 13 * 0.04);
+    });
+    return () => { section.removeAttribute('data-lit'); grid.replaceChildren(); grid.style.removeProperty('--night-cols'); grid.style.removeProperty('--night-rows'); };
+  });
+}, { id: 'scene:night' });
+</script>
+<script data-8b-part="scene:reviews">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const track = section.querySelector('.reviews__track');
+    const lists = [...section.querySelectorAll('.reviews__list')];
+    section.setAttribute('data-rows', '');
+    const over = list => Math.max(0, list.scrollWidth - track.clientWidth);
+    const lead = () => track.clientWidth * 0.22;
+    const tl = gsap.timeline({ scrollTrigger: { id: 'reviews', trigger: track, start: 'top bottom', end: 'bottom top', scrub: 0.6, invalidateOnRefresh: true } });
+    lists.forEach((list, i) => {
+      const a = i % 2 ? () => -over(list) : lead;
+      const b = i % 2 ? lead : () => -over(list);
+      tl.fromTo(list, { x: a }, { x: 0, ease: 'power1.out', duration: 0.45 }, 0)
+        .to(list, { x: b, ease: 'power1.in', duration: 0.45 }, 0.55);
+    });
+    return () => section.removeAttribute('data-rows');
+  });
+}, { id: 'scene:reviews' });
+</script>
+</body>
+</html>

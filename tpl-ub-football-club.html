@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jWK79w.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNre5Y.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jW-792RZ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jWa792RZ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jW6792RZ.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jWG792RZ.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jWy792RZ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 700 800;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70GjyYdl_WLNKb6P3NQcLsvUCb5T2_7jWK79w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNke5av2g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNle5av2g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNre5Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #141414;
+  --color-2: #ff4d1f;
+  --color-3: #ece6d8;
+  --color-4: #f6f3ec;
+  --color-5: #5c5a55;
+  --color-6: #a7a194;
+  --font-1: "Pliant", "Pliant Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Reddit Sans", "Reddit Sans Fallback", Arial, sans-serif;
+  --shadow-1: 0 0 0 1px color-mix(in srgb, var(--color-1) 12%, transparent);
+  --shadow-2: 0 4px 0 -1px var(--color-2);
+  --shadow-3: 0 0 0 1px color-mix(in srgb, var(--color-6) 30%, transparent);
+  --radius-1: 999px;
+  --radius-2: 18px;
+  --space-1: clamp(18px, 4.4vw, 64px);
+  --space-2: clamp(88px, 11vw, 160px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* font fallbacks */
+@font-face { font-family: "Pliant Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 106.1%; ascent-override: 89.5%; descent-override: 23.6%; line-gap-override: 0%; }
+@font-face { font-family: "Pliant Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 116.6%; ascent-override: 81.4%; descent-override: 21.4%; line-gap-override: 0%; }
+@font-face { font-family: "Reddit Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95%; ascent-override: 106.3%; descent-override: 30.5%; line-gap-override: 0%; }
+@font-face { font-family: "Reddit Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 99.4%; ascent-override: 101.7%; descent-override: 29.2%; line-gap-override: 0%; }
+/* end font fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-4); color: var(--color-1); font-family: var(--font-2); font-size: 17px; line-height: 1.5; font-weight: 400; overflow-x: clip; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4, p, figure, ul, ol, dl, dd, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-1); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; left: 12px; top: -80px; z-index: 100; padding: 12px 18px; background: var(--color-1); color: var(--color-4); border-radius: var(--radius-1); text-decoration: none; font-weight: 700; }
+.skip-link:focus-visible { top: 12px; outline-color: var(--color-1); }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; line-height: 1.5; font-weight: 400; letter-spacing: normal; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(46px, 8.2vw, 128px); line-height: .9; font-weight: 800; letter-spacing: -.035em; text-transform: uppercase; font-style: normal; font-stretch: 125%; }
+.m-text-2 .line { display: block; width: fit-content; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(22px, 2vw, 28px); line-height: 1; font-weight: 800; letter-spacing: -.015em; text-transform: uppercase; font-style: normal; font-stretch: 125%; }
+
+.m-text-4 { font-family: var(--font-2); font-size: 15px; line-height: 1.25; font-weight: 700; letter-spacing: normal; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(25px, 3.1vw, 46px); line-height: 1.08; font-weight: 700; letter-spacing: -.02em; text-transform: none; font-style: normal; font-stretch: 125%; }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(19px, 1.7vw, 24px); line-height: 1.15; font-weight: 700; letter-spacing: -.01em; text-transform: none; font-style: normal; font-stretch: 125%; }
+
+.m-text-6 { font-family: var(--font-2); font-size: 14px; line-height: 1.4; font-weight: 500; letter-spacing: normal; text-transform: none; font-style: normal; }
+
+.m-btn, .m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 6px 6px 24px; border: 0; border-radius: var(--radius-1); font-family: var(--font-2); font-size: 16px; font-weight: 700; line-height: 1; text-decoration: none; cursor: pointer; overflow: hidden; transition: color .45s cubic-bezier(.6,0,.2,1); }
+.m-btn { background: var(--color-2); color: var(--color-1); }
+.m-btn::before, .m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; transform: scaleX(0); transition: transform .5s cubic-bezier(.6,0,.2,1); }
+.m-btn::before { background: var(--color-1); }
+.m-btn__mark, .m-btn-2__mark { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-1); color: var(--color-3); transition: background-color .45s, color .45s; }
+.m-btn__mark svg, .m-btn-2__mark svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn:focus-visible { color: var(--color-3); }
+  .m-btn:hover::before, .m-btn:focus-visible::before { transform: scaleX(1); }
+  .m-btn:hover .m-btn__mark { background: var(--color-2); color: var(--color-1); }
+}
+
+.m-btn-2 { background: var(--color-1); color: var(--color-3); }
+.m-btn-2::before { background: var(--color-4); }
+.m-btn-2__mark { background: var(--color-2); color: var(--color-1); }
+@media (hover: hover) {
+  .m-btn-2:hover, .m-btn-2:focus-visible { color: var(--color-1); }
+  .m-btn-2:hover::before, .m-btn-2:focus-visible::before { transform: scaleX(1); }
+}
+
+.m-link { position: relative; display: inline-block; padding-bottom: 3px; font-weight: 700; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 2px no-repeat; }
+@media (hover: hover) {
+  .m-link:hover, .m-link:focus-visible { animation: m-link-pass .7s cubic-bezier(.6,0,.2,1); }
+}
+@keyframes m-link-pass {
+  0% { background-size: 100% 2px; background-position: 100% 100%; }
+  45% { background-size: 0% 2px; background-position: 100% 100%; }
+  46% { background-size: 0% 2px; background-position: 0 100%; }
+  100% { background-size: 100% 2px; background-position: 0 100%; }
+}
+
+.m-link-2 { display: inline-block; padding-bottom: 2px; font-weight: 700; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0% 2px no-repeat; transition: background-size .45s cubic-bezier(.6,0,.2,1); }
+@media (hover: hover) {
+  .m-link-2:hover, .m-link-2:focus-visible { background-size: 100% 2px; }
+}
+
+.m-icon { position: relative; isolation: isolate; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 2px solid currentColor; border-radius: 50%; overflow: hidden; color: inherit; background: none; cursor: pointer; }
+.m-icon::before { content: ""; position: absolute; inset: 0; z-index: -1; background: currentColor; transform: translateY(101%); transition: transform .45s cubic-bezier(.6,0,.2,1); }
+.m-icon svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; transition: transform .45s cubic-bezier(.6,0,.2,1), stroke .3s; }
+@media (hover: hover) {
+  .m-icon:hover::before, .m-icon:focus-visible::before { transform: translateY(0); }
+  .m-icon:hover svg, .m-icon:focus-visible svg { transform: rotate(45deg); mix-blend-mode: difference; stroke: var(--color-4); }
+}
+
+.m-tag { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 13px; border: 1.5px solid currentColor; border-radius: var(--radius-1); font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.1; }
+
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-2); font-size: 14px; font-weight: 700; line-height: 1.3; }
+.m-field__input { width: 100%; min-height: 52px; padding: 12px 0; border: 0; border-bottom: 2px solid var(--color-6); border-radius: 0; background: transparent; font-size: 18px; font-weight: 500; appearance: none; transition: border-color .3s; }
+.m-field__input:focus-visible { outline: none; border-bottom-color: var(--color-2); box-shadow: var(--shadow-2); }
+select.m-field__input { background: linear-gradient(45deg, transparent 50%, currentColor 50%) right 6px center / 7px 7px no-repeat; cursor: pointer; }
+select.m-field__input option { color: var(--color-1); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; z-index: 50; top: 10px; left: 0; right: 0; margin-inline: auto; width: min(1180px, calc(100% - 20px)); transition: transform .5s cubic-bezier(.6,0,.2,1); }
+#nav.is-hidden { transform: translateY(calc(-100% - 20px)); }
+#nav .nav__bar { display: flex; align-items: center; gap: 24px; min-height: 64px; padding: 8px 8px 8px 22px; border-radius: var(--radius-1); background: var(--color-4); color: var(--color-1); box-shadow: var(--shadow-1); }
+#nav .nav__brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+#nav .nav__mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: var(--color-2); color: var(--color-1); }
+#nav .nav__mark svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.6; }
+#nav .nav__name { font-family: var(--font-1); font-size: 19px; font-weight: 800; letter-spacing: -.02em; text-transform: uppercase; font-stretch: 125%; line-height: 1; }
+#nav .nav__links { display: flex; gap: 22px; }
+#nav .nav__links a { font-size: 15px; }
+#nav .nav__menu { display: none; }
+#nav .nav__cta { min-height: 48px; padding-left: 20px; font-size: 15px; }
+#nav .nav__cta .m-btn-2__mark { width: 36px; height: 36px; }
+#nav #menu { position: fixed; inset: 0; z-index: 60; display: grid; align-content: space-between; gap: 32px; padding: 96px var(--space-1) 32px; background: var(--color-1); color: var(--color-3); overflow-y: auto; }
+#nav #menu[hidden] { display: none; }
+#nav #menu .menu__links a { display: block; padding: 6px 0; font-family: var(--font-1); font-size: clamp(30px, 9vw, 56px); font-weight: 800; letter-spacing: -.03em; text-transform: uppercase; font-stretch: 125%; line-height: 1; text-decoration: none; }
+#nav #menu .menu__close { position: absolute; top: 20px; right: 20px; color: var(--color-3); }
+#nav #menu :focus-visible { outline-color: var(--color-3); }
+@media (max-width: 1080px) {
+  #nav .nav__links { display: none; }
+  #nav .nav__menu { display: inline-grid; }
+}
+@media (max-width: 560px) {
+  #nav .nav__bar { gap: 10px; padding-left: 14px; min-height: 58px; }
+  #nav .nav__name { font-size: 15px; }
+  #nav .nav__cta { min-height: 44px; padding-left: 14px; font-size: 14px; gap: 8px; }
+  #nav .nav__cta .m-btn-2__mark { display: none; }
+  #nav .nav__cta { padding-right: 14px; }
+}
+@media (max-width: 380px) {
+  #nav .nav__name { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-1); color: var(--color-3); }
+#opening .opening__stage { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); min-height: 100vh; min-height: 100svh; overflow: hidden; container-type: inline-size; }
+#opening .opening__field { grid-row: 1; z-index: 0; }
+#opening .opening__field--1 { grid-column: 1; background: var(--color-2); }
+#opening .opening__field--2 { grid-column: 2; z-index: 1; background: var(--color-1); }
+#opening .opening__field--3 { grid-column: 3; background: var(--color-3); }
+#opening .opening__col { grid-row: 1; position: relative; z-index: 2; display: flex; flex-direction: column; padding: 104px 28px 30px; }
+#opening .opening__col--1 { grid-column: 1; color: var(--color-1); }
+#opening .opening__col--2 { grid-column: 2; color: var(--color-3); }
+#opening .opening__col--3 { grid-column: 3; color: var(--color-1); }
+#opening .opening__intro { display: flex; flex-direction: column; flex: 1; gap: 22px; }
+#opening .opening__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+#opening .opening__head { display: grid; gap: 16px; justify-items: start; }
+#opening .opening__age { display: block; margin-top: 4px; font-weight: 500; }
+#opening .opening__window { flex: none; height: min(21vh, 200px); height: min(21svh, 200px); aspect-ratio: 4 / 5; overflow: hidden; border-radius: 12px; background: var(--color-5); }
+#opening .opening__window img { width: 100%; height: 132%; object-fit: cover; }
+#opening .opening__bottom { margin-top: auto; display: grid; gap: 18px; justify-items: start; }
+#opening .opening__note { max-width: 30ch; }
+#opening .opening__title { position: absolute; z-index: 3; left: 0; right: 0; bottom: 178px; padding: 0 var(--space-1); font-family: var(--font-1); font-size: min(13vw, 19svh, calc((100vw - 2 * var(--space-1)) * 2 / (var(--len) * .75))); line-height: .88; font-weight: 800; letter-spacing: -.045em; text-transform: uppercase; font-stretch: 125%;
+  --opening-b1: 33.333%; --opening-b2: 66.667%; --opening-split: 0%; color: transparent; pointer-events: none; }
+#opening .opening__line { display: block; transform: translateX(var(--opening-x, 0px));
+  background: linear-gradient(90deg, var(--color-1) 0 var(--opening-b1), var(--color-3) var(--opening-b1) var(--opening-b2), var(--color-1) var(--opening-b2) 100%) no-repeat;
+  background-size: 100vw 100%; background-size: 100cqw 100%; background-position: calc(-1 * (var(--space-1) + var(--opening-x, 0px))) 0;
+  -webkit-background-clip: text; background-clip: text; }
+#opening .opening__line--2 { text-align: right; }
+#opening .opening__second { position: relative; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 20px; align-content: start; min-height: 100vh; min-height: 100svh; padding: 132px var(--space-1) var(--space-1); background: var(--color-1); color: var(--color-3); }
+#opening .opening__club { grid-column: 1 / 4; color: var(--color-6); padding-top: .55em; }
+#opening .opening__statement { grid-column: 4 / -1; max-width: 25em; }
+#opening .opening__actions { grid-column: 4 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 32px; margin-top: 40px; }
+#opening .opening__huddle { clip-path: inset(0% 0% 0% 0% round 18px); grid-column: 1 / -1; margin-top: clamp(48px, 7vw, 96px); height: clamp(260px, 44svh, 520px); overflow: hidden; border-radius: var(--radius-2); background: var(--color-5); }
+#opening .opening__huddle img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+#opening .opening__col--2 :focus-visible, #opening .opening__second :focus-visible { outline-color: var(--color-3); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__intro { animation: opening-rise .75s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__col--2 .opening__intro { animation-delay: .08s; }
+  #opening .opening__col--3 .opening__intro { animation-delay: .16s; }
+  #opening .opening__window { animation: opening-open .8s cubic-bezier(.6,0,.2,1) .15s backwards; }
+  #opening .opening__col--2 .opening__window { animation-delay: .25s; }
+  #opening .opening__col--3 .opening__window { animation-delay: .35s; }
+  #opening .opening__title { animation: opening-slide .9s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__window img { animation: opening-drift 6s ease-in-out infinite alternate; }
+  #opening .opening__col--2 .opening__window img { animation-delay: -2s; }
+  #opening .opening__col--3 .opening__window img { animation-delay: -4s; }
+  #opening.is-offscreen .opening__window img { animation-play-state: paused; }
+}
+@keyframes opening-rise { from { transform: translateY(28px); } }
+@keyframes opening-open { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes opening-slide { from { transform: translateX(-5vw); } }
+@keyframes opening-drift { from { transform: translateY(0); } to { transform: translateY(-24%); } }
+@media (max-width: 760px) {
+  #opening .opening__stage { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+  #opening .opening__field--1, #opening .opening__col--1 { grid-row: 1; grid-column: 1; }
+  #opening .opening__field--2, #opening .opening__col--2 { grid-row: 2; grid-column: 1; }
+  #opening .opening__field--3, #opening .opening__col--3 { grid-row: 3; grid-column: 1; }
+  #opening .opening__col { padding: 22px var(--space-1) 22px; }
+  #opening .opening__col--1 { padding-top: 88px; }
+  #opening .opening__col--3 { padding-bottom: calc(28vw + 48px); }
+  #opening .opening__intro { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; gap: 12px 16px; }
+  #opening .opening__top { grid-column: 1; }
+  #opening .opening__head .m-icon { display: none; }
+  #opening .opening__top { display: contents; }
+  #opening .opening__head { grid-column: 1; grid-row: 1; }
+  #opening .opening__window { grid-column: 2; grid-row: 1 / 3; width: 84px; height: auto; border-radius: 10px; }
+  #opening .opening__bottom { grid-column: 1; grid-row: 2; margin-top: 0; gap: 14px; }
+  #opening .opening__note { font-size: 16px; }
+  #opening .opening__title { font-size: min(16vw, calc((100vw - 2 * var(--space-1)) * 2 / (var(--len) * .75))); bottom: 26px; }
+  #opening .opening__line { background: linear-gradient(180deg, var(--color-3) 0 var(--opening-split), var(--color-1) var(--opening-split) 100%) no-repeat; background-size: 100% 200%; background-position: 0 0; -webkit-background-clip: text; background-clip: text; }
+  #opening .opening__line--2 { background-position: 0 100%; }
+  #opening .opening__col--1, #opening .opening__col--3 { z-index: 0; }
+  #opening .opening__second { grid-template-columns: 1fr; padding-top: 104px; }
+  #opening .opening__club, #opening .opening__statement, #opening .opening__actions, #opening .opening__huddle { grid-column: 1; }
+  #opening .opening__club { padding: 0 0 18px; }
+  #opening .opening__actions { margin-top: 28px; }
+  #opening .opening__huddle { height: 52svh; margin-top: 40px; }
+}
+}
+</style>
+<style data-8b-part="section:squads">
+@layer sections {
+#squads { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-4); color: var(--color-1); overflow-x: clip; }
+#squads .squads__head { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: clamp(48px, 6vw, 88px); }
+#squads .squads__intro { max-width: 34ch; color: var(--color-5); }
+#squads .squads__deck { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+#squads .squads__card { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 20px 20px 22px; border-radius: var(--radius-2); }
+#squads .squads__card:nth-child(4n + 1) { background: var(--color-2); color: var(--color-1); }
+#squads .squads__card:nth-child(4n + 2) { background: var(--color-1); color: var(--color-3); }
+#squads .squads__card:nth-child(4n + 3) { background: var(--color-3); color: var(--color-1); }
+#squads .squads__card:nth-child(4n + 4) { background: var(--color-1); color: var(--color-3); }
+#squads .squads__name { margin-bottom: 4px; }
+#squads .squads__photo { aspect-ratio: 4 / 5; overflow: hidden; border-radius: 12px; background: var(--color-5); }
+#squads .squads__photo img { width: 100%; height: 100%; object-fit: cover; }
+#squads .squads__days { padding-top: 4px; }
+#squads .squads__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; }
+@media (max-width: 1080px) { #squads .squads__deck { grid-template-columns: repeat(2, minmax(0, 1fr)); } #squads .squads__photo { aspect-ratio: 3 / 2; } }
+@media (max-width: 760px) { #squads .squads__head { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { #squads .squads__deck { grid-template-columns: 1fr; } #squads .squads__photo { aspect-ratio: 4 / 3; } }
+}
+</style>
+<style data-8b-part="section:week">
+@layer sections {
+#week { position: relative; padding: var(--space-2) 0; background: var(--color-1); color: var(--color-3); overflow: clip; }
+#week :focus-visible { outline-color: var(--color-3); }
+#week .week__rail { padding: 0 var(--space-1); }
+#week .week__head { display: grid; gap: 24px; max-width: 760px; margin-bottom: clamp(48px, 6vw, 88px); }
+#week .week__intro { max-width: 40ch; color: var(--color-6); }
+#week .week__track { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px 20px; }
+#week .week__day { position: relative; display: grid; align-content: start; gap: 10px; padding-top: clamp(40px, 5vw, 64px); }
+#week .week__big { position: absolute; top: 0; left: -4px; z-index: 0; font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; letter-spacing: -.04em; line-height: .8; font-size: clamp(64px, 8vw, 120px); color: transparent; -webkit-text-stroke: 1.5px var(--color-6); pointer-events: none; }
+#week .week__photo { position: relative; z-index: 1; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); background: var(--color-5); }
+#week .week__day:nth-child(even) .week__photo { aspect-ratio: 1 / 1; }
+#week .week__photo img { width: 100%; height: 100%; object-fit: cover; }
+#week .week__label { position: relative; z-index: 1; color: var(--color-2); margin-top: 6px; }
+#week .week__title, #week .week__text { position: relative; z-index: 1; }
+#week .week__text { color: var(--color-6); max-width: 32ch; }
+@media (max-width: 1080px) { #week .week__track { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { #week .week__track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 14px; } #week .week__big { font-size: 56px; } }
+@media (max-width: 420px) { #week .week__track { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="scene-style:week">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #week.is-tracking { padding: 0; }
+  #week.is-tracking .week__stage { display: flex; align-items: center; height: 100vh; height: 100svh; overflow: hidden; }
+  #week.is-tracking .week__rail { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 36px); width: max-content; padding: 0 var(--space-1); }
+  #week.is-tracking .week__head { flex: none; width: min(560px, 82vw); margin: 0 clamp(16px, 4vw, 72px) 0 0; }
+  #week.is-tracking .week__track { display: flex; align-items: center; gap: clamp(20px, 2.4vw, 36px); }
+  #week.is-tracking .week__day { flex: none; width: clamp(250px, 26vw, 360px); }
+  #week.is-tracking .week__day:nth-child(even) { margin-top: 12vh; }
+  #week.is-tracking .week__photo { max-height: 48svh; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #week.is-tracking .week__day { width: 74vw; }
+  #week.is-tracking .week__day:nth-child(even) { margin-top: 0; }
+  #week.is-tracking .week__photo { max-height: 42svh; }
+}
+}
+</style>
+<style data-8b-part="section:promises">
+@layer sections {
+#promises { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); color: var(--color-1); }
+#promises .promises__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: clamp(48px, 6vw, 96px); }
+#promises .promises__intro { max-width: 36ch; }
+#promises .promises__item { --promises-p: -100; --promises-a: clamp(0%, calc(var(--promises-p) * 1%), 100%); --promises-b: clamp(0%, calc((var(--promises-p) + 100) * 1%), 100%);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 48px; padding: clamp(22px, 3vw, 36px) 0; border-top: 2px solid var(--color-1); }
+#promises .promises__item:last-child { border-bottom: 2px solid var(--color-1); }
+#promises .promises__band { position: relative; grid-column: 1 / -1; }
+#promises .promises__field { position: absolute; inset: -.06em -10px; z-index: 0; background: var(--color-1); border-radius: 6px; clip-path: inset(0 calc(100% - var(--promises-b)) 0 var(--promises-a)); }
+#promises .promises__line { position: relative; z-index: 1; font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; letter-spacing: -.04em; line-height: .92; font-size: min(10vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .74)));
+  background: linear-gradient(90deg, var(--color-1) 0 var(--promises-a), var(--color-3) var(--promises-a) var(--promises-b), var(--color-1) var(--promises-b) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+#promises .promises__text { grid-column: 2; max-width: 38ch; }
+#promises :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 760px) { #promises .promises__head, #promises .promises__item { grid-template-columns: 1fr; } #promises .promises__text { grid-column: 1; } #promises .promises__line { font-size: 12.4vw; } }
+}
+</style>
+<style data-8b-part="section:fixtures">
+@layer sections {
+#fixtures { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-4); color: var(--color-1); }
+#fixtures .fixtures__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: clamp(40px, 5vw, 72px); }
+#fixtures .fixtures__intro { max-width: 38ch; color: var(--color-5); }
+#fixtures .fixtures__table { width: 100%; border-collapse: collapse; }
+#fixtures thead th { padding: 0 12px 14px 0; text-align: left; color: var(--color-5); border-bottom: 2px solid var(--color-1); }
+#fixtures tbody th, #fixtures tbody td { padding: 18px 12px 18px 0; text-align: left; vertical-align: middle; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 22%, transparent); }
+#fixtures tbody td:nth-child(3) { font-weight: 700; white-space: nowrap; }
+#fixtures tbody td:last-child { text-align: right; padding-right: 0; }
+@media (min-width: 761px) { #fixtures tbody th { width: 30%; } #fixtures tbody td:nth-child(3) { width: 16%; } #fixtures tbody td:last-child { width: 18%; } }
+#fixtures thead th:last-child { text-align: right; padding-right: 0; }
+@media (max-width: 760px) {
+  #fixtures .fixtures__head { grid-template-columns: 1fr; }
+  #fixtures thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  #fixtures tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 16px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 22%, transparent); }
+  #fixtures tbody th, #fixtures tbody td { display: block; padding: 0; border: 0; }
+  #fixtures tbody td:nth-child(2) { grid-column: 1; grid-row: 2; }
+  #fixtures tbody td:nth-child(3) { grid-column: 2; grid-row: 1; text-align: right; }
+  #fixtures tbody td:last-child { grid-column: 2; grid-row: 2; }
+}
+}
+</style>
+<style data-8b-part="section:coaches">
+@layer sections {
+#coaches { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-1); color: var(--color-3); overflow: clip; }
+#coaches :focus-visible { outline-color: var(--color-3); }
+#coaches .coaches__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: clamp(40px, 6vw, 88px); }
+#coaches .coaches__intro { max-width: 38ch; color: var(--color-6); }
+#coaches .coaches__row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 20px 40px; padding: clamp(28px, 4vw, 48px) 0; border-top: 1px solid color-mix(in srgb, var(--color-6) 45%, transparent); }
+#coaches .coaches__row:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-6) 45%, transparent); }
+#coaches .coaches__name { position: relative; grid-column: 1 / -1; grid-row: 1; align-self: center; display: grid; grid-template-columns: subgrid; align-items: center; font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; letter-spacing: -.04em; line-height: .9; font-size: clamp(44px, 7.2vw, 110px); }
+#coaches .coaches__first, #coaches .coaches__last { display: block; }
+#coaches .coaches__first { grid-column: 1; }
+#coaches .coaches__last { grid-column: 3; }
+#coaches .coaches__photo { grid-column: 2; grid-row: 1; justify-self: center; width: clamp(130px, 15vw, 210px); aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); clip-path: inset(0% 0% 0% 0% round 18px); background: var(--color-5); }
+#coaches .coaches__photo img { width: 100%; height: 100%; object-fit: cover; }
+#coaches .coaches__role { grid-column: 1 / 3; max-width: 34ch; color: var(--color-6); }
+#coaches .coaches__quote { grid-column: 2 / -1; justify-self: end; max-width: 36ch; }
+@media (max-width: 760px) {
+  #coaches .coaches__head { grid-template-columns: 1fr; }
+  #coaches .coaches__row { grid-template-columns: minmax(0, 1fr) 84px; gap: 14px 14px; }
+  #coaches .coaches__name { grid-column: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 0; font-size: min(10.4vw, 54px); }
+  #coaches .coaches__photo { grid-column: 2; width: 84px; justify-self: end; border-radius: 12px; clip-path: inset(0% 0% 0% 0% round 12px); }
+  #coaches .coaches__role, #coaches .coaches__quote { grid-column: 1 / -1; justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:join">
+@layer sections {
+#join { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); color: var(--color-1); }
+#join .join__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: clamp(40px, 6vw, 88px); }
+#join .join__intro { max-width: 34ch; }
+#join .join__steps { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--color-1); }
+#join .join__step { position: relative; display: grid; align-content: start; gap: 12px; padding: 28px 24px 12px; border-left: 1px solid var(--color-1); }
+#join .join__step:first-child { border-left: 0; padding-left: 0; }
+#join .join__num { justify-self: start; margin-bottom: 18px; font-family: var(--font-1); font-weight: 800; font-stretch: 125%; line-height: .8; letter-spacing: -.05em; font-size: clamp(96px, 13vw, 196px); }
+#join .join__text { max-width: 28ch; }
+#join :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 1080px) { #join .join__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } #join .join__step:nth-child(3) { border-left: 0; padding-left: 0; } #join .join__step:nth-child(n + 3) { border-top: 1px solid var(--color-1); } }
+@media (max-width: 760px) { #join .join__head { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  #join .join__steps { grid-template-columns: 1fr; }
+  #join .join__step { grid-template-columns: 96px minmax(0, 1fr); column-gap: 18px; padding: 22px 0; border-left: 0; }
+  #join .join__step + .join__step { border-top: 1px solid var(--color-1); }
+  #join .join__num { grid-row: 1 / 3; margin: 0; font-size: 92px; }
+}
+}
+</style>
+<style data-8b-part="section:voices">
+@layer sections {
+#voices { position: relative; padding: var(--space-2) 0; background: var(--color-4); color: var(--color-1); overflow: clip; }
+#voices .voices__head { padding: 0 var(--space-1); margin-bottom: clamp(40px, 5vw, 72px); }
+#voices .voices__row { padding: 0 var(--space-1); }
+#voices .voices__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+#voices .voices__card { display: flex; flex-direction: column; gap: 14px; min-height: 340px; padding: 26px 26px 24px; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-3); }
+#voices .voices__card:nth-child(3n + 2) { background: var(--color-2); color: var(--color-1); }
+#voices .voices__quote { font-size: clamp(20px, 1.9vw, 26px); margin-bottom: auto; }
+#voices .voices__role { color: var(--color-6); }
+#voices .voices__card:nth-child(3n + 2) .voices__role { color: var(--color-1); }
+#voices .voices__track.is-looping { display: flex; width: max-content; gap: 16px; }
+#voices .voices__track.is-looping .voices__card { width: clamp(280px, 30vw, 400px); flex: none; }
+@media (max-width: 960px) { #voices .voices__track { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { #voices .voices__track { grid-template-columns: 1fr; } #voices .voices__card { min-height: 0; } #voices .voices__track.is-looping .voices__card { width: 80vw; } }
+}
+</style>
+<style data-8b-part="section:fees">
+@layer sections {
+#fees { position: relative; padding: var(--space-2) 0; background: var(--color-1); color: var(--color-3); overflow: clip; }
+#fees :focus-visible { outline-color: var(--color-3); }
+#fees .fees__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; padding: 0 var(--space-1); margin-bottom: clamp(40px, 6vw, 88px); }
+#fees .fees__intro { max-width: 38ch; color: var(--color-6); }
+#fees .fees__stage { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: hidden; }
+#fees .fees__field { grid-row: 1; z-index: 0; }
+#fees .fees__field--1 { grid-column: 1; background: var(--color-2); }
+#fees .fees__field--2 { grid-column: 2; z-index: 1; background: var(--color-1); box-shadow: var(--shadow-3); }
+#fees .fees__field--3 { grid-column: 3; background: var(--color-3); }
+#fees .fees__col { grid-row: 1; position: relative; z-index: 2; display: flex; flex-direction: column; gap: 16px; min-height: min(72vh, 620px); padding: clamp(28px, 3vw, 44px) 28px; }
+#fees .fees__col--1 { grid-column: 1; color: var(--color-1); }
+#fees .fees__col--2 { grid-column: 2; color: var(--color-3); }
+#fees .fees__col--3 { grid-column: 3; color: var(--color-1); }
+#fees .fees__price { display: flex; align-items: baseline; gap: 10px; margin-top: auto; }
+#fees .fees__amount { font-family: var(--font-1); font-weight: 800; font-stretch: 125%; letter-spacing: -.04em; line-height: .9; font-size: clamp(56px, 7vw, 104px); }
+#fees .fees__list li { padding: 10px 0; border-top: 1px solid color-mix(in srgb, currentColor 35%, transparent); }
+#fees .fees__bursary { display: grid; grid-template-columns: minmax(0, 1.6fr) auto; align-items: end; gap: 28px 48px; margin: clamp(48px, 6vw, 88px) var(--space-1) 0; }
+@media (max-width: 760px) {
+  #fees .fees__head, #fees .fees__bursary { grid-template-columns: 1fr; }
+  #fees .fees__stage { grid-template-columns: 1fr; }
+  #fees .fees__field--1, #fees .fees__col--1 { grid-row: 1; grid-column: 1; }
+  #fees .fees__field--2, #fees .fees__col--2 { grid-row: 2; grid-column: 1; }
+  #fees .fees__field--3, #fees .fees__col--3 { grid-row: 3; grid-column: 1; }
+  #fees .fees__col { min-height: 0; padding: 28px var(--space-1); }
+  #fees .fees__col--1, #fees .fees__col--3 { z-index: 0; }
+  #fees .fees__price { margin-top: 8px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-3); color: var(--color-1); }
+#faq .faq__inner { display: grid; gap: clamp(40px, 5vw, 72px); }
+#faq .faq__list { width: min(100%, 880px); margin-left: auto; }
+#faq .faq__item { border-top: 2px solid var(--color-1); }
+#faq .faq__item:last-child { border-bottom: 2px solid var(--color-1); }
+#faq .faq__q { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq .faq__q::-webkit-details-marker { display: none; }
+#faq .faq__icon { display: grid; place-items: center; flex: none; width: 38px; height: 38px; border: 2px solid currentColor; border-radius: 50%; transition: transform .45s cubic-bezier(.6,0,.2,1), background-color .3s, color .3s; }
+#faq .faq__icon svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+#faq .faq__item[open] .faq__icon { transform: rotate(45deg); background: var(--color-1); color: var(--color-3); }
+#faq .faq__a { max-width: 60ch; padding: 0 58px 26px 0; }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; padding: var(--space-2) 0 clamp(72px, 9vw, 128px); background: var(--color-1); color: var(--color-3); overflow: clip; }
+#contact :focus-visible { outline-color: var(--color-3); }
+#contact .contact__rows { display: grid; gap: .06em; padding: 0 var(--space-1); font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; letter-spacing: -.045em; line-height: .9; }
+#contact .contact__row { position: relative; display: block; white-space: nowrap; font-size: min(11vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .74))); }
+#contact .contact__row--1 { color: var(--color-2); }
+#contact .contact__row--2 { color: var(--color-3); }
+#contact .contact__row--3 { color: transparent; -webkit-text-stroke: 2px var(--color-3); }
+#contact .contact__body { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 56px 80px; margin-top: clamp(56px, 7vw, 104px); padding: 0 var(--space-1); }
+#contact .contact__form { display: grid; gap: 30px; justify-items: start; }
+#contact .contact__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 28px; width: 100%; }
+#contact .contact__status { color: var(--color-2); }
+#contact .contact__info { display: grid; gap: 28px; align-content: start; }
+#contact .contact__label { margin-bottom: 8px; color: var(--color-6); }
+#contact address { font-style: normal; }
+#contact .contact__times li + li { margin-top: 4px; }
+@media (max-width: 860px) { #contact .contact__body { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { #contact .contact__fields { grid-template-columns: 1fr; } #contact .contact__row { white-space: normal; font-size: 14vw; } #contact .contact__row--3 { -webkit-text-stroke-width: 1.5px; } }
+}
+</style>
+<style data-8b-part="scene-style:contact">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #contact.is-drifting .contact__row { display: flex; gap: .35em; width: max-content; white-space: nowrap; margin-left: var(--contact-lead, 0px); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; padding: var(--space-2) var(--space-1) 28px; background: var(--color-1); color: var(--color-3); overflow: hidden; }
+#footer :focus-visible { outline-color: var(--color-3); }
+#footer .footer__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding-bottom: clamp(48px, 7vw, 96px); }
+#footer .footer__head { margin-bottom: 14px; color: var(--color-6); }
+#footer .footer__list { display: grid; gap: 8px; }
+#footer address { font-style: normal; }
+#footer .footer__mark { display: block; font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; letter-spacing: -.05em; line-height: .8; font-size: calc((100vw - 2 * var(--space-1)) / (var(--len) * .63)); white-space: nowrap; color: var(--color-3); }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; margin-top: 28px; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-6) 40%, transparent); color: var(--color-6); }
+#footer .footer__legal ul { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+@media (max-width: 860px) { #footer .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { #footer .footer__cols { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__club, #opening .opening__statement, #opening .opening__actions { animation: opening-rise .75s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__statement { animation-delay: .08s; }
+  #opening .opening__actions { animation-delay: .16s; }
+  #opening .opening__huddle { animation: opening-open .8s cubic-bezier(.6,0,.2,1) .25s backwards; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="skip-link" href="#main">{{t1|Skip to content}}</a>
+
+<header data-8b-section="navigation" id="nav">
+<nav aria-label="Main" class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__brand" href="#opening">
+<span aria-hidden="true" class="nav__mark"><svg viewbox="0 0 20 20"><path d="M4 13 10 7l6 6"></path></svg></span>
+<span class="nav__name">{{t2|⟦name⟧}}</span>
+</a>
+<ul class="nav__links">
+{{#nv_squads}}<li><a class="m-link-2" href="#squads">{{t3|Squads}}</a></li>{{/nv_squads}}
+{{#nv_week}}<li><a class="m-link-2" href="#week">{{t4|The week}}</a></li>{{/nv_week}}
+{{#nv_promises}}<li><a class="m-link-2" href="#promises">{{t5|Promises}}</a></li>{{/nv_promises}}
+{{#nv_coaches}}<li><a class="m-link-2" href="#coaches">{{t6|Coaches}}</a></li>{{/nv_coaches}}
+{{#nv_fees}}<li><a class="m-link-2" href="#fees">{{t7|Fees}}</a></li>{{/nv_fees}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t8|FAQ}}</a></li>{{/nv_faq}}
+</ul>
+<a class="m-btn-2 nav__cta" href="#contact"><span class="m-btn-2__label">{{t9|Free session}}</span><span aria-hidden="true" class="m-btn-2__mark"><svg viewbox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"></path></svg></span></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open menu" class="m-icon nav__menu" type="button"><svg aria-hidden="true" viewbox="0 0 16 16"><path d="M2 5h12M2 11h12"></path></svg></button>
+</nav>
+<div data-lenis-prevent="" hidden="" id="menu">
+<button aria-label="Close menu" class="m-icon menu__close" type="button"><svg aria-hidden="true" viewbox="0 0 16 16"><path d="M3 3l10 10M13 3 3 13"></path></svg></button>
+<ul class="menu__links">
+{{#nv_squads}}<li><a href="#squads">{{t3|Squads}}</a></li>{{/nv_squads}}
+{{#nv_week}}<li><a href="#week">{{t4|The week}}</a></li>{{/nv_week}}
+{{#nv_promises}}<li><a href="#promises">{{t5|Promises}}</a></li>{{/nv_promises}}
+{{#nv_fixtures}}<li><a href="#fixtures">{{t10|Fixtures}}</a></li>{{/nv_fixtures}}
+{{#nv_coaches}}<li><a href="#coaches">{{t6|Coaches}}</a></li>{{/nv_coaches}}
+{{#nv_join}}<li><a href="#join">{{t11|Join in}}</a></li>{{/nv_join}}
+{{#nv_fees}}<li><a href="#fees">{{t7|Fees}}</a></li>{{/nv_fees}}
+{{#nv_faq}}<li><a href="#faq">{{t8|FAQ}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a href="#contact">{{t12|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="opening__second">
+<p class="m-text-4 opening__club">{{t13|⟦name⟧ · Armley, Abuja · since 1987}}</p>
+<h1 class="m-text-5 opening__statement" id="opening-title">{{t14|We’re a community football club for 480 boys and girls between five and eighteen. Nobody is cut, nobody spends a season on the bench, and every coach on our touchline is a trained volunteer who stays.}}</h1>
+<div class="opening__actions">
+<a class="m-btn" href="#squads"><span class="m-btn__label">{{t15|Find your squad}}</span><span aria-hidden="true" class="m-btn__mark"><svg viewbox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"></path></svg></span></a>
+<a class="m-link" href="#promises">{{t16|Read our four promises}}</a>
+</div>
+<figure class="opening__huddle"><img alt="A girls' team in a huddle on the pitch before kick-off" height="4000" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1529929344488-5e812ddb6e2a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8dGVhbSUyMGh1ZGRsZSUyMHNvY2NlcnxlbnwxfDB8fHwxNzkxNDYyNTgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1170&q=60}}" style="background:#405940" width="6000"/></figure>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_squads}}<section aria-labelledby="squads-title" data-8b-section="squads" id="squads">
+<div class="squads__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="squads-title"><span class="line">{{t17|Find your}}</span> <span class="line">{{t18|squad}}</span></h2>
+<p class="m-text squads__intro">{{t19|Squads are grouped by school year, never by talent. Pick your child’s age and come along to the next session: the first one is always free.}}</p>
+</div>
+<ol class="squads__deck">
+<li class="squads__card">
+<p class="m-text-4 squads__age">{{t20|Under 6 to under 8}}</p>
+<h3 class="m-text-3 squads__name">{{t21|Mini Colts}}</h3>
+<figure class="squads__photo"><img alt="Young children in orange bibs chasing the ball on a dusty pitch" height="6336" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1680024439029-d7d4b7f4cba1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29jY2VyJTIwY29hY2glMjBraWRzfGVufDF8MHx8fDE3OTE0NjI1MTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#8c7359" width="9504"/></figure>
+<p class="m-text-6 squads__days">{{t22|Saturdays 9:00 · Wednesdays 17:30}}</p>
+<p class="m-text squads__text">{{t23|Fun-first football in tiny teams, on short pitches with soft balls and a lot of noise.}}</p>
+<ul class="squads__tags"><li class="m-tag">{{t24|Mixed}}</li><li class="m-tag">{{t25|4 v 4}}</li><li class="m-tag">{{t26|No league}}</li></ul>
+</li>
+<li class="squads__card">
+<p class="m-text-4 squads__age">{{t27|Under 9 to under 12}}</p>
+<h3 class="m-text-3 squads__name">{{t28|Juniors}}</h3>
+<figure class="squads__photo"><img alt="A boy in a blue shirt dribbling between players in red" height="3456" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1609422644211-a85c36ee36a7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hpbGRyZW4lMjBmb290YmFsbCUyMHRlYW18ZW58MXwwfHx8MTc5MTQ2MjUxM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#262626" width="5184"/></figure>
+<p class="m-text-6 squads__days">{{t29|Saturdays 10:30 · Tuesdays 18:00}}</p>
+<p class="m-text squads__text">{{t30|Our first league teams. Everyone plays at least half of every match, every single week.}}</p>
+<ul class="squads__tags"><li class="m-tag">{{t24|Mixed}}</li><li class="m-tag">{{t31|7 v 7 to 9 v 9}}</li><li class="m-tag">{{t32|League}}</li></ul>
+</li>
+<li class="squads__card">
+<p class="m-text-4 squads__age">{{t33|Under 13 to under 16}}</p>
+<h3 class="m-text-3 squads__name">{{t34|Youth}}</h3>
+<figure class="squads__photo"><img alt="Teenage players in orange and white contesting the ball in a match" height="3670" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1621998014874-a6edfb5f9bc7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8eW91dGglMjBmb290YmFsbCUyMG1hdGNofGVufDF8MHx8fDE3OTE0NjI1MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#738c59" width="5496"/></figure>
+<p class="m-text-6 squads__days">{{t35|Sundays 11:00 · Thursdays 18:30}}</p>
+<p class="m-text squads__text">{{t36|Eleven-a-side with real tactics, county cup runs and a coach who knows your name.}}</p>
+<ul class="squads__tags"><li class="m-tag">{{t37|11 v 11}}</li><li class="m-tag">{{t38|County cup}}</li><li class="m-tag">{{t39|Two levels}}</li></ul>
+</li>
+<li class="squads__card">
+<p class="m-text-4 squads__age">{{t40|Under 10 to under 18}}</p>
+<h3 class="m-text-3 squads__name">{{t41|Girls}}</h3>
+<figure class="squads__photo"><img alt="A girls’ team in white celebrating a goal together" height="4000" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1567989995326-46ed902b0494?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGVhbSUyMGh1ZGRsZSUyMHNvY2NlcnxlbnwxfDB8fHwxNzkxNDYyNTgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#8ca673" width="6000"/></figure>
+<p class="m-text-6 squads__days">{{t42|Mondays 18:00 · Sundays 10:00}}</p>
+<p class="m-text squads__text">{{t43|Six girls-only teams, a girl-led committee and the loudest touchline in Abuja.}}</p>
+<ul class="squads__tags"><li class="m-tag">{{t44|Girls only}}</li><li class="m-tag">{{t45|Six teams}}</li><li class="m-tag">{{t46|Beginners welcome}}</li></ul>
+</li>
+</ol>
+</section>{{/sec_squads}}
+
+{{#sec_week}}<section aria-labelledby="week-title" data-8b-section="week" id="week">
+<div class="week__stage">
+<div class="week__rail">
+<div class="week__head">
+<h2 class="m-text-2" id="week-title"><span class="line">{{t47|Seven days}}</span> <span class="line">{{t48|at Kilnfield}}</span></h2>
+<p class="m-text week__intro">{{t49|The floodlights are on six nights a week. This is what a week at the ground looks like, from the first cones to the last huddle.}}</p>
+</div>
+<ol class="week__track">
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t50|Mon}}</p>
+<figure class="week__photo"><img alt="A girl in a black kit striking the ball on an artificial pitch" height="6000" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1615912022073-91312960eff3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2lybHMlMjBzb2NjZXJ8ZW58MXwxfHx8MTc5MTQ2MjUxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#597340" width="4000"/></figure>
+<p class="m-text-4 week__label">{{t51|Monday}}</p>
+<h3 class="m-text-3 week__title">{{t52|Girls’ night}}</h3>
+<p class="m-text week__text">{{t53|Six girls’ teams train under the lights, one after another until nine.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t54|Tue}}</p>
+<figure class="week__photo"><img alt="A teenage goalkeeper in a green shirt holding the ball out in both gloves" height="6000" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1597630907602-356d09900200?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z29hbGtlZXBlciUyMGdsb3Zlc3xlbnwxfDF8fHwxNzkxNDYyNTg2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#598c26" width="4000"/></figure>
+<p class="m-text-4 week__label">{{t55|Tuesday}}</p>
+<h3 class="m-text-3 week__title">{{t56|Keeper school}}</h3>
+<p class="m-text week__text">{{t57|One hour, two coaches, every goalkeeper from under 9 up and far too many dives.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t58|Wed}}</p>
+<figure class="week__photo"><img alt="Orange training cones on the grass beside a player’s boots" height="3629" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1569242595722-23f071ac6991?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Zm9vdGJhbGwlMjB0cmFpbmluZyUyMGNvbmVzfGVufDF8MHx8fDE3OTE0NjI1ODN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1050&q=60}}" style="background:#405940" width="5443"/></figure>
+<p class="m-text-4 week__label">{{t59|Wednesday}}</p>
+<h3 class="m-text-3 week__title">{{t21|Mini Colts}}</h3>
+<p class="m-text week__text">{{t60|Cones out at half five. Forty minis, four pitches, nobody standing in a queue.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t61|Thu}}</p>
+<figure class="week__photo"><img alt="A pile of colourful used football boots" height="4000" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1724414450740-58299b203161?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bXVkZHklMjBmb290YmFsbCUyMGJvb3RzfGVufDF8MHx8fDE3OTE0NjI1ODR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=750&q=60}}" style="background:#260c0c" width="5333"/></figure>
+<p class="m-text-4 week__label">{{t62|Thursday}}</p>
+<h3 class="m-text-3 week__title">{{t63|Boot swap}}</h3>
+<p class="m-text week__text">{{t64|Outgrown boots come in, the right size goes out. No money changes hands.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t65|Fri}}</p>
+<figure class="week__photo"><img alt="Teenagers celebrating together on a floodlit pitch at night" height="3648" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1710789020364-a76c9517ea7e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c29jY2VyJTIwY2VsZWJyYXRpb24lMjBraWRzfGVufDF8MHx8fDE3OTE0NjI1ODh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1050&q=60}}" style="background:#262626" width="5472"/></figure>
+<p class="m-text-4 week__label">{{t66|Friday}}</p>
+<h3 class="m-text-3 week__title">{{t67|Futsal night}}</h3>
+<p class="m-text week__text">{{t68|Indoor five-a-side for under 13s and up, with music and the tuck shop open.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t69|Sat}}</p>
+<figure class="week__photo"><img alt="A player in an orange bib taking a throw-in" height="4000" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1598907518593-3c70d5f36130?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c29jY2VyJTIwY29hY2glMjBraWRzfGVufDF8MHx8fDE3OTE0NjI1MTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=840&q=60}}" style="background:#737326" width="6000"/></figure>
+<p class="m-text-4 week__label">{{t70|Saturday}}</p>
+<h3 class="m-text-3 week__title">{{t71|Matchday}}</h3>
+<p class="m-text week__text">{{t72|Fourteen home games from nine till two, and tea at the hatch all day.}}</p>
+</li>
+<li class="week__day">
+<p aria-hidden="true" class="week__big">{{t73|Sun}}</p>
+<figure class="week__photo"><img alt="Players’ hands, one in a goalkeeper glove, stacked in a huddle" height="2624" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1670299160449-58cccb9545ff?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8dGVhbSUyMGh1ZGRsZSUyMHNvY2NlcnxlbnwxfDB8fHwxNzkxNDYyNTgyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1050&q=60}}" style="background:#26260c" width="3936"/></figure>
+<p class="m-text-4 week__label">{{t74|Sunday}}</p>
+<h3 class="m-text-3 week__title">{{t75|Hands in}}</h3>
+<p class="m-text week__text">{{t76|Youth and girls’ league games, then the nets come down and the pitch gets a rest.}}</p>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_week}}
+
+{{#sec_promises}}<section aria-labelledby="promises-title" data-8b-section="promises" id="promises">
+<div class="promises__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="promises-title"><span class="line">{{t77|Four}}</span> <span class="line">{{t78|promises}}</span></h2>
+<p class="m-text promises__intro">{{t79|Written by parents in 1987 and still pinned to the clubhouse door. Every coach signs them before their first session.}}</p>
+</div>
+<ol class="promises__list">
+<li class="promises__item">
+<div class="promises__band"><span aria-hidden="true" class="promises__field"></span><p class="promises__line" style="--len:16">{{t80|Everybody plays.}}</p></div>
+<p class="m-text promises__text">{{t81|Up to under 12, every child gets equal minutes. After that, nobody plays less than half a match.}}</p>
+</li>
+<li class="promises__item">
+<div class="promises__band"><span aria-hidden="true" class="promises__field"></span><p class="promises__line" style="--len:19">{{t82|No trials under 13.}}</p></div>
+<p class="m-text promises__text">{{t83|You don’t earn a place in a squad. You turn up, you train, and you’re in the team.}}</p>
+</li>
+<li class="promises__item">
+<div class="promises__band"><span aria-hidden="true" class="promises__field"></span><p class="promises__line" style="--len:18">{{t84|First kit is free.}}</p></div>
+<p class="m-text promises__text">{{t85|Shirt, shorts and socks are on us for the first season. Boots come from the Thursday swap.}}</p>
+</li>
+<li class="promises__item">
+<div class="promises__band"><span aria-hidden="true" class="promises__field"></span><p class="promises__line" style="--len:17">{{t86|Coaches who stay.}}</p></div>
+<p class="m-text promises__text">{{t87|Our coaches stay with their squad for at least two seasons, and most stay a lot longer.}}</p>
+</li>
+</ol>
+</section>{{/sec_promises}}
+
+{{#sec_fixtures}}<section aria-labelledby="fixtures-title" data-8b-section="fixtures" id="fixtures">
+<div class="fixtures__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="fixtures-title"><span class="line">{{t88|This}}</span> <span class="line">{{t89|weekend}}</span></h2>
+<p class="m-text fixtures__intro">{{t90|Saturday 11 and Sunday 12 October. Home games are at the Kilnfield on Ozumba Mbadiwe Avenue; away grounds are listed in the league app.}}</p>
+</div>
+<div class="fixtures__wrap" data-8b-motion="rise">
+<table class="fixtures__table m-text">
+<caption class="visually-hidden">{{t91|Fixtures for the weekend of 11 and 12 October}}</caption>
+<thead class="m-text-6"><tr><th scope="col">{{t92|Team}}</th><th scope="col">{{t93|Opponent}}</th><th scope="col">{{t94|Kick-off}}</th><th scope="col">{{t95|Ground}}</th></tr></thead>
+<tbody>
+<tr><th class="m-text-3" scope="row">{{t96|Under 9 Reds}}</th><td>{{t97|Stanningley Wasps}}</td><td><time datetime="2026-10-11T09:00">{{t98|Sat 9:00}}</time></td><td>{{t99|Home, pitch 2}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t100|Under 10 Blues}}</th><td>{{t101|Gotts Park Rangers}}</td><td><time datetime="2026-10-11T09:00">{{t98|Sat 9:00}}</time></td><td>{{t102|Away}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t103|Under 11 Girls}}</th><td>{{t104|Wyther Vale}}</td><td><time datetime="2026-10-11T10:30">{{t105|Sat 10:30}}</time></td><td>{{t106|Home, pitch 1}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t107|Under 12 Reds}}</th><td>{{t108|Tong Road Athletic}}</td><td><time datetime="2026-10-11T10:30">{{t105|Sat 10:30}}</time></td><td>{{t109|Home, pitch 3}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t110|Under 13}}</th><td>{{t111|Raynville Juniors}}</td><td><time datetime="2026-10-11T12:00">{{t112|Sat 12:00}}</time></td><td>{{t102|Away}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t113|Under 14 Girls}}</th><td>{{t114|Hollin Park}}</td><td><time datetime="2026-10-12T10:00">{{t115|Sun 10:00}}</time></td><td>{{t106|Home, pitch 1}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t116|Under 16}}</th><td>{{t117|Bell Lane Saints}}</td><td><time datetime="2026-10-12T11:00">{{t118|Sun 11:00}}</time></td><td>{{t106|Home, pitch 1}}</td></tr>
+<tr><th class="m-text-3" scope="row">{{t119|Under 18}}</th><td>{{t120|Upper Wortley}}</td><td><time datetime="2026-10-12T13:00">{{t121|Sun 13:00}}</time></td><td>{{t102|Away}}</td></tr>
+</tbody>
+</table>
+</div>
+</section>{{/sec_fixtures}}
+
+{{#sec_coaches}}<section aria-labelledby="coaches-title" data-8b-section="coaches" id="coaches">
+<div class="coaches__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="coaches-title"><span class="line">{{t122|The}}</span> <span class="line">{{t123|coaches}}</span></h2>
+<p class="m-text coaches__intro">{{t124|Thirty-two volunteers, every one with an FA coaching badge, a safeguarding certificate and a DBS check. Here are four of them.}}</p>
+</div>
+<ul class="coaches__list">
+<li class="coaches__row">
+<h3 class="coaches__name"><span class="coaches__first">{{t125|Karim}}</span> <span class="coaches__last">{{t126|Haddad}}</span></h3>
+<figure class="coaches__photo"><img alt="Portrait of Karim Haddad, a bearded coach in a grey training top, arms folded" height="9504" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1652400744403-8f29705bd6a5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Zm9vdGJhbGwlMjBjb2FjaCUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0NjI1Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#262626" width="6336"/></figure>
+<p class="m-text-6 coaches__role">{{t127|Head of youth football · UEFA C licence · coaching here since 2009}}</p>
+<p class="m-text coaches__quote">{{t128|I want them still loving Saturday mornings when they’re forty.}}</p>
+</li>
+<li class="coaches__row">
+<h3 class="coaches__name"><span class="coaches__first">{{t129|Sam}}</span> <span class="coaches__last">{{t130|Hartley}}</span></h3>
+<figure class="coaches__photo"><img alt="Portrait of Sam Hartley in a white polo shirt, standing in front of a goal" height="4331" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1595165386661-a1157d171638?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Zm9vdGJhbGwlMjBjb2FjaCUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0NjI1Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#404026" width="3347"/></figure>
+<p class="m-text-6 coaches__role">{{t131|Mini Colts lead · FA Introduction to Coaching}}</p>
+<p class="m-text coaches__quote">{{t132|Nobody queues at my sessions. If a child is waiting, I planned it wrong.}}</p>
+</li>
+<li class="coaches__row">
+<h3 class="coaches__name"><span class="coaches__first">{{t133|Megan}}</span> <span class="coaches__last">{{t134|Price}}</span></h3>
+<figure class="coaches__photo"><img alt="Portrait of Megan Price in a blue sports top" height="6016" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1660542533997-3ded9fc480f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8d29tYW4lMjBjb2FjaCUyMHNwb3J0c3xlbnwxfDF8fHwxNzkxNDYyNTc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#0c260c" width="4016"/></figure>
+<p class="m-text-6 coaches__role">{{t135|Girls’ section lead · UEFA B licence}}</p>
+<p class="m-text coaches__quote">{{t136|The loudest touchline in Abuja belongs to the girls, and they earned it.}}</p>
+</li>
+<li class="coaches__row">
+<h3 class="coaches__name"><span class="coaches__first">{{t137|Tom}}</span> <span class="coaches__last">{{t138|Ashworth}}</span></h3>
+<figure class="coaches__photo"><img alt="Portrait of Tom Ashworth in a red jumper, leaning on the pitch fence" height="5228" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1581093685913-6a6fcad6ea5c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8Zm9vdGJhbGwlMjBjb2FjaCUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0NjI1Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#0c260c" width="3485"/></figure>
+<p class="m-text-6 coaches__role">{{t139|Goalkeeper coach · FA Level 2 goalkeeping}}</p>
+<p class="m-text coaches__quote">{{t140|Every keeper gets a proper warm-up, even the under 9s on a wet Tuesday.}}</p>
+</li>
+</ul>
+</section>{{/sec_coaches}}
+
+{{#sec_join}}<section aria-labelledby="join-title" data-8b-section="join" id="join">
+<div class="join__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="join-title"><span class="line">{{t141|How to}}</span> <span class="line">{{t142|join in}}</span></h2>
+<p class="m-text join__intro">{{t143|From the first email to the first match usually takes about two weeks, and nothing in it costs a penny.}}</p>
+</div>
+<ol class="join__steps">
+<li class="join__step">
+<p class="join__num">{{t144|1}}</p>
+<h3 class="m-text-3 join__title">{{t145|Book a session}}</h3>
+<p class="m-text join__text">{{t146|Pick your child’s age group and a day. No forms, no fee and no commitment.}}</p>
+</li>
+<li class="join__step">
+<p class="join__num">{{t147|2}}</p>
+<h3 class="m-text-3 join__title">{{t148|Come and play}}</h3>
+<p class="m-text join__text">{{t149|Bring shin pads and a water bottle. We lend boots and bibs to anyone who needs them.}}</p>
+</li>
+<li class="join__step">
+<p class="join__num">{{t150|3}}</p>
+<h3 class="m-text-3 join__title">{{t151|Meet the squad}}</h3>
+<p class="m-text join__text">{{t152|The coach introduces your child to the team and walks you through the season.}}</p>
+</li>
+<li class="join__step">
+<p class="join__num">{{t153|4}}</p>
+<h3 class="m-text-3 join__title">{{t154|First match}}</h3>
+<p class="m-text join__text">{{t155|Kit is handed over in the clubhouse, then it’s straight out onto the pitch.}}</p>
+</li>
+</ol>
+</section>{{/sec_join}}
+
+{{#sec_voices}}<section aria-labelledby="voices-title" data-8b-section="voices" id="voices">
+<div class="voices__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="voices-title"><span class="line">{{t156|From the}}</span> <span class="line">{{t157|touchline}}</span></h2>
+</div>
+<div class="voices__row">
+<ul class="voices__track" data-8b-motion="marquee">
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t158|“My daughter went from hiding behind my legs to captaining the under 11 girls in two seasons.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t159|Aisha Rahman}}</p>
+<p class="m-text-6 voices__role">{{t160|Parent, under 11 girls}}</p>
+</li>
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t161|“Nobody ever asked if he was good enough. They only asked if he’d brought his shin pads.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t162|Mark Feeney}}</p>
+<p class="m-text-6 voices__role">{{t163|Parent, under 9 reds}}</p>
+</li>
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t164|“I joined at six and now I coach the minis. The clubhouse tea is still terrible.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t165|Ellis Barker}}</p>
+<p class="m-text-6 voices__role">{{t166|Former player, Mini Colts coach}}</p>
+</li>
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t167|“Equal minutes sounded soft to me. Then I watched every kid on that pitch get better.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t168|Joanne Whitaker}}</p>
+<p class="m-text-6 voices__role">{{t169|Parent, under 12 blues}}</p>
+</li>
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t170|“The best Saturday mornings of my week, and I’m only the one who washes the bibs.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t171|Priya Shah}}</p>
+<p class="m-text-6 voices__role">{{t172|Volunteer kit manager}}</p>
+</li>
+<li class="voices__card">
+<blockquote class="m-text-7 voices__quote"><p>{{t173|“They lent us boots on day one and never once made it awkward.”}}</p></blockquote>
+<p class="m-text-4 voices__who">{{t174|Daniel Okoro}}</p>
+<p class="m-text-6 voices__role">{{t175|Parent, under 7 Mini Colts}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_voices}}
+
+{{#sec_fees}}<section aria-labelledby="fees-title" data-8b-section="fees" id="fees">
+<div class="fees__head">
+<h2 class="m-text-2" data-8b-motion="shift" id="fees-title"><span class="line">{{t176|What it}}</span> <span class="line">{{t177|costs}}</span></h2>
+<p class="m-text fees__intro">{{t178|Fees cover pitch hire, referees, league entries and insurance. Nobody on the committee is paid, and nothing is added on top.}}</p>
+</div>
+<div class="fees__stage">
+<div aria-hidden="true" class="fees__field fees__field--1"></div>
+<div aria-hidden="true" class="fees__field fees__field--2"></div>
+<div aria-hidden="true" class="fees__field fees__field--3"></div>
+<div class="fees__col fees__col--1">
+<p class="m-text-4">{{t179|Foundation · under 6 to under 10}}</p>
+<p class="fees__price"><span class="fees__amount">{{t180|₦6,000}}</span> <span class="m-text-6">{{t181|a month}}</span></p>
+<ul class="fees__list m-text"><li>{{t182|Two sessions a week}}</li><li>{{t183|Every match and festival}}</li><li>{{t184|First kit included}}</li></ul>
+</div>
+<div class="fees__col fees__col--2">
+<p class="m-text-4">{{t185|Development · under 11 to under 14}}</p>
+<p class="fees__price"><span class="fees__amount">{{t186|₦9,000}}</span> <span class="m-text-6">{{t181|a month}}</span></p>
+<ul class="fees__list m-text"><li>{{t182|Two sessions a week}}</li><li>{{t187|League fees and referees}}</li><li>{{t184|First kit included}}</li></ul>
+</div>
+<div class="fees__col fees__col--3">
+<p class="m-text-4">{{t188|Performance · under 15 to under 18}}</p>
+<p class="fees__price"><span class="fees__amount">{{t189|₦11,000}}</span> <span class="m-text-6">{{t181|a month}}</span></p>
+<ul class="fees__list m-text"><li>{{t190|Two sessions and futsal night}}</li><li>{{t191|League and cup entries}}</li><li>{{t184|First kit included}}</li></ul>
+</div>
+</div>
+<div class="fees__bursary" data-8b-motion="rise">
+<p class="m-text-5">{{t192|Money never decides who plays. One in five Colts is on a bursary, and nobody else ever knows.}}</p>
+<a class="m-btn" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t193|Ask about a bursary}}</span><span aria-hidden="true" class="m-btn__mark"><svg viewbox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"></path></svg></span></a>
+</div>
+</section>{{/sec_fees}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="faq__inner">
+<h2 class="m-text-2" data-8b-motion="shift" id="faq-title"><span class="line">{{t194|Parents}}</span> <span class="line">{{t195|ask}}</span></h2>
+<div class="faq__list">
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t196|My child has never played. Is that a problem?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t197|Not at all. Most Mini Colts have never kicked a ball in a team, and every session starts with games that need no skill whatsoever.}}</p>
+</details>
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t198|What should they bring to the first session?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t199|Shin pads, a water bottle and trainers or boots. We lend boots, bibs and shin pads to anyone who needs them, no questions asked.}}</p>
+</details>
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t200|Do you hold trials?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t201|Not below under 13. From under 13 the youth section runs two levels, and players move between them through the season.}}</p>
+</details>
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t202|How are the coaches checked?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t203|Every coach holds an FA badge, an in-date DBS check and the FA safeguarding certificate. Two adults are at every session.}}</p>
+</details>
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t204|Can parents stay and watch?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t205|Please do. The touchline is behind the rope, the tea hatch opens at nine and the covered stand is there for wet days.}}</p>
+</details>
+<details class="faq__item" data-8b-motion="rise">
+<summary class="faq__q"><span class="m-text-7">{{t206|How can I help the club?}}</span><span aria-hidden="true" class="faq__icon"><svg viewbox="0 0 14 14"><path d="M7 1v12M1 7h12"></path></svg></span></summary>
+<p class="m-text faq__a">{{t207|Run a line, wash a kit bag, staff the hatch or take a coaching badge on us. Every role is voluntary and every hour counts.}}</p>
+</details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<h2 class="contact__rows" id="contact-title">
+<span class="contact__row contact__row--1" style="--len:14"><span class="contact__text">{{t208|Come and play.}}</span></span>
+<span class="contact__row contact__row--2" style="--len:19"><span class="contact__text">{{t209|First session free.}}</span></span>
+<span class="contact__row contact__row--3" style="--len:17"><span class="contact__text">{{t210|See you Saturday.}}</span></span>
+</h2>
+<div class="contact__body">
+
+<div class="contact__info">
+<div>
+<p class="m-text-4 contact__label">{{t211|The ground}}</p>
+<address class="m-text">{{t212|Kilnfield Recreation Ground}}<br/>{{t213|Ozumba Mbadiwe Avenue, Armley}}<br/>{{t214|Abuja}}</address>
+</div>
+<div>
+<p class="m-text-4 contact__label">{{t215|Talk to us}}</p>
+<p class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t216|⟦phone⟧}}</a></p>
+<p class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t217|hello@kilnfield.example}}</a></p>
+</div>
+<div>
+<p class="m-text-4 contact__label">{{t218|Clubhouse hours}}</p>
+<ul class="m-text contact__times"><li>{{t219|Monday to Friday, 17:00 to 21:00}}</li><li>{{t220|Saturday, 8:30 to 15:00}}</li><li>{{t221|Sunday, 9:30 to 14:00}}</li></ul>
+</div>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Football Club by <a href="https://github.com/8bsite/football-club-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="footer__cols">
+<div data-8b-motion="rise">
+<p class="m-text-4 footer__head">{{t222|Club}}</p>
+<ul class="footer__list m-text">
+{{#nv_squads}}<li><a class="m-link-2" href="#squads">{{t3|Squads}}</a></li>{{/nv_squads}}
+{{#nv_week}}<li><a class="m-link-2" href="#week">{{t4|The week}}</a></li>{{/nv_week}}
+{{#nv_coaches}}<li><a class="m-link-2" href="#coaches">{{t6|Coaches}}</a></li>{{/nv_coaches}}
+{{#nv_fees}}<li><a class="m-link-2" href="#fees">{{t223|Fees and bursaries}}</a></li>{{/nv_fees}}
+</ul>
+</div>
+<div data-8b-motion="rise">
+<p class="m-text-4 footer__head">{{t194|Parents}}</p>
+<ul class="footer__list m-text">
+{{#nv_fixtures}}<li><a class="m-link-2" href="#fixtures">{{t10|Fixtures}}</a></li>{{/nv_fixtures}}
+{{#nv_join}}<li><a class="m-link-2" href="#join">{{t224|How to join}}</a></li>{{/nv_join}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t225|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t226|Volunteer with us}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+<div data-8b-motion="rise">
+<p class="m-text-4 footer__head">{{t227|Follow}}</p>
+<ul class="footer__list m-text">
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.instagram.com/">{{t228|Instagram}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.facebook.com/">{{t229|Facebook}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.youtube.com/">{{t230|YouTube}}</a></li>
+</ul>
+</div>
+</div>
+<p aria-hidden="true" class="footer__mark" style="--len:9">{{t231|Kilnfield}}</p>
+<div class="footer__legal m-text-6">
+<p>{{t232|© 2026 ⟦name⟧ · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t233|8B}}</a>{{t234|. Run by volunteers since 1987.}}</p>
+<ul>
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t235|Safeguarding}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t236|Privacy}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+let resizeSettle = 0;
+window.addEventListener('resize', () => { clearTimeout(resizeSettle); resizeSettle = setTimeout(refreshScroll, 350); });
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('nav');
+  const lenis = window.lenis = new Lenis({ lerp: .11, anchors: { offset: -(nav ? nav.offsetHeight + 10 : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  shift(heading, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    heading.querySelectorAll('.line').forEach((line, index) => {
+      timeline.fromTo(line, { xPercent: index % 2 ? 14 : -14 }, { xPercent: 0, ease: 'power2.out', duration: 1 }, 0);
+    });
+    return timeline;
+  },
+  marquee(track, distance, vars = {}) {
+    return gsap.fromTo(track, { x: 0 }, { x: -distance, duration: distance / 55, ease: 'none', repeat: -1, ...vars });
+  },
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element,
+      { clipPath: 'inset(100% 0% 0% 0%)', y: 28 },
+      { clipPath: 'inset(0% 0% 0% 0%)', y: 0, duration: .9, ease: 'power3.out', clearProps: 'clipPath' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const shifts = section.querySelectorAll('[data-8b-motion~="shift"]');
+  if (shifts.length) {
+    const id = `effect:shift:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      shifts.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 96%', end: 'top 50%', scrub: true, animation: effects.shift(element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  }
+  const rises = section.querySelectorAll('[data-8b-motion~="rise"]');
+  if (rises.length) {
+    const id = `effect:rise:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      rises.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 92%', once: true, animation: effects.rise(element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  }
+  const loops = section.querySelectorAll('[data-8b-motion~="marquee"]');
+  if (loops.length) {
+    const id = `effect:marquee:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      const undo = [];
+      loops.forEach((track, index) => {
+        track.classList.add('is-looping');
+        const originals = [...track.children];
+        const clones = originals.map(item => {
+          const clone = item.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          clone.setAttribute('inert', '');
+          clone.querySelectorAll('[id]').forEach(node => node.removeAttribute('id'));
+          track.appendChild(clone);
+          return clone;
+        });
+        const tween = effects.marquee(track, clones[0].offsetLeft - originals[0].offsetLeft, { paused: true });
+        let visible = false, held = false;
+        const sync = () => (visible && !held ? tween.play() : tween.pause());
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: track, start: 'top bottom', end: 'bottom top', onToggle: self => { visible = self.isActive; sync(); } });
+        const hold = () => { held = true; sync(); };
+        const point = event => { if (event.pointerType === 'mouse' && (event.movementX || event.movementY)) hold(); };
+        const release = () => requestAnimationFrame(() => { held = track.matches(':hover') || track.contains(document.activeElement); sync(); });
+        const leave = () => { held = false; sync(); };
+        track.addEventListener('pointermove', point);
+        track.addEventListener('pointerleave', leave);
+        track.addEventListener('focusin', hold);
+        track.addEventListener('focusout', release);
+        undo.push(() => {
+          track.removeEventListener('pointermove', point);
+          track.removeEventListener('pointerleave', leave);
+          track.removeEventListener('focusin', hold);
+          track.removeEventListener('focusout', release);
+          clones.forEach(clone => clone.remove());
+          track.classList.remove('is-looping');
+        });
+      });
+      return () => undo.forEach(fn => fn());
+    }), { near: section, id });
+  }
+});
+</script>
+<script data-8b-part="scene:squads">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 1081px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 1080px)' }, context => {
+    const section = document.getElementById('squads');
+    const deck = section.querySelector('.squads__deck');
+    const cards = [...deck.querySelectorAll('.squads__card')];
+    if (context.conditions.wide) {
+      const turns = [-7, 5, -3, 8];
+      const deal = gsap.timeline({ defaults: { ease: 'power2.inOut', duration: 1 }, scrollTrigger: {
+        id: 'squads', trigger: deck, start: 'center center', end: '+=120%', pin: true, scrub: true, invalidateOnRefresh: true
+      }});
+      cards.forEach((card, index) => {
+        gsap.set(card, { zIndex: cards.length - index });
+        deal.fromTo(card, {
+          x: () => deck.offsetWidth / 2 - (card.offsetLeft + card.offsetWidth / 2),
+          y: () => 26 + index * 6, rotation: turns[index % turns.length], scale: .9
+        }, { x: 0, y: 0, rotation: 0, scale: 1 }, .15 + index * .62);
+      });
+      deal.to({}, { duration: .3 });
+    } else {
+      cards.forEach((card, index) => {
+        const side = index % 2 ? 1 : -1;
+        gsap.fromTo(card, { xPercent: side * 70, rotation: side * 9 }, { xPercent: 0, rotation: 0, ease: 'power2.out', scrollTrigger: {
+          id: `squads:card-${index}`, trigger: card, start: 'top 98%', end: 'top 55%', scrub: true
+        }});
+      });
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:week">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('week');
+    const stage = section.querySelector('.week__stage');
+    const rail = section.querySelector('.week__rail');
+    const bigs = [...section.querySelectorAll('.week__big')];
+    section.classList.add('is-tracking');
+    const distance = () => Math.max(0, rail.scrollWidth - stage.clientWidth);
+    const days = bigs.map(big => ({ big, card: big.closest('.week__day'), set: gsap.quickSetter(big, 'x', 'px') }));
+    const lag = () => {
+      const left = stage.getBoundingClientRect().left;
+      const half = stage.clientWidth / 2;
+      const shift = gsap.getProperty(rail, 'x');
+      const travelled = distance();
+      const offsets = days.map(({ card }) => {
+        const box = card.getBoundingClientRect();
+        const centre = box.left - left + box.width / 2;
+        const start = centre - shift;
+        const rest = gsap.utils.clamp(start - travelled, start, half);
+        return gsap.utils.clamp(-1.6, 1.6, (centre - rest) / half) * -box.width * .32;
+      });
+      days.forEach(({ set }, index) => set(offsets[index]));
+    };
+    const travel = gsap.timeline({ defaults: { ease: 'none', duration: 1 }, onUpdate: lag, scrollTrigger: {
+      id: 'week', trigger: stage, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: true, invalidateOnRefresh: true, onRefresh: lag
+    }});
+    travel.fromTo(rail, { x: 0 }, { x: () => -distance() }, 0);
+    lag();
+    return () => { section.classList.remove('is-tracking'); bigs.forEach(big => big.style.removeProperty('transform')); };
+  });
+});
+</script>
+<script data-8b-part="scene:promises">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('promises');
+    section.querySelectorAll('.promises__item').forEach((item, index) => {
+      const band = item.querySelector('.promises__band');
+      gsap.timeline({ scrollTrigger: { id: `promises:${index}`, trigger: band, start: 'top 80%', end: 'bottom 22%', scrub: true } })
+        .fromTo(item, { '--promises-p': -100 }, { '--promises-p': 0, ease: 'power2.out', duration: 1 })
+        .to(item, { '--promises-p': 0, duration: .7 })
+        .to(item, { '--promises-p': 100, ease: 'power2.in', duration: 1 })
+        .set(item, { '--promises-p': -100 });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:coaches">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    const section = document.getElementById('coaches');
+    section.querySelectorAll('.coaches__row').forEach((row, index) => {
+      const name = row.querySelector('.coaches__name');
+      const first = row.querySelector('.coaches__first');
+      const last = row.querySelector('.coaches__last');
+      const photo = row.querySelector('.coaches__photo');
+      const timeline = gsap.timeline({ defaults: { ease: 'power2.out', duration: 1 }, scrollTrigger: {
+        id: `coaches:${index}`, trigger: row, start: 'top 92%', end: 'top 36%', scrub: true, invalidateOnRefresh: true
+      }});
+      if (context.conditions.wide) {
+        timeline.fromTo(first, { x: () => name.offsetWidth / 2 - (first.offsetLeft + first.offsetWidth) - 8 }, { x: 0 }, 0)
+          .fromTo(last, { x: () => name.offsetWidth / 2 - last.offsetLeft + 8 }, { x: 0 }, 0)
+          .fromTo(photo, { clipPath: 'inset(0% 50% 0% 50% round 18px)' }, { clipPath: 'inset(0% 0% 0% 0% round 18px)' }, .12);
+      } else {
+        timeline.fromTo(first, { xPercent: -70 }, { xPercent: 0 }, 0)
+          .fromTo(last, { xPercent: 70 }, { xPercent: 0 }, 0)
+          .fromTo(photo, { clipPath: 'inset(50% 0% 50% 0% round 12px)' }, { clipPath: 'inset(0% 0% 0% 0% round 12px)' }, .12);
+      }
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:join">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 1081px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 1080px)' }, context => {
+    const section = document.getElementById('join');
+    const list = section.querySelector('.join__steps');
+    const steps = [...list.querySelectorAll('.join__step')];
+    if (context.conditions.wide) {
+      const timeline = gsap.timeline({ scrollTrigger: { id: 'join', trigger: list, start: 'center center', end: '+=230%', pin: true, scrub: true, invalidateOnRefresh: true } });
+      steps.forEach((step, index) => {
+        const number = step.querySelector('.join__num');
+        const words = step.querySelectorAll('.join__title, .join__text');
+        const at = index * 1.15;
+        timeline.fromTo(number, { autoAlpha: index ? 0 : 1 }, { autoAlpha: 1, duration: .2, ease: 'none' }, at)
+          .fromTo(number, {
+            x: () => list.offsetWidth / 2 - (step.offsetLeft + number.offsetLeft + number.offsetWidth / 2),
+            y: () => list.offsetHeight / 2 - (step.offsetTop + number.offsetTop + number.offsetHeight / 2),
+            scale: 3
+          }, { x: 0, y: 0, scale: 1, duration: .8, ease: 'power3.inOut' }, at + .2);
+        words.forEach((word, order) => timeline.fromTo(word, { autoAlpha: 0, y: 26 }, { autoAlpha: 1, y: 0, duration: .35, ease: 'power2.out' }, at + .8 + order * .08));
+      });
+      timeline.to({}, { duration: .4 });
+    } else {
+      steps.forEach((step, index) => {
+        const number = step.querySelector('.join__num');
+        gsap.fromTo(number, { scale: 2.2, xPercent: 45, transformOrigin: '0% 50%' }, { scale: 1, xPercent: 0, ease: 'power2.out', scrollTrigger: {
+          id: `join:step-${index}`, trigger: step, start: 'top 95%', end: 'top 50%', scrub: true
+        }});
+      });
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:fees">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    const section = document.getElementById('fees');
+    const stage = section.querySelector('.fees__stage');
+    const field = section.querySelector('.fees__field--2');
+    const timeline = gsap.timeline({ defaults: { ease: 'none', duration: 1 }, scrollTrigger: {
+      id: 'fees', trigger: stage, start: 'top 92%', end: 'center 52%', scrub: true, invalidateOnRefresh: true
+    }});
+    if (context.conditions.wide) {
+      timeline.fromTo(field, { scaleX: () => stage.offsetWidth / field.offsetWidth, x: () => stage.offsetWidth / 2 - (field.offsetLeft + field.offsetWidth / 2) }, { scaleX: 1, x: 0 }, 0)
+        .fromTo(section.querySelector('.fees__col--1'), { xPercent: -100 }, { xPercent: 0 }, 0)
+        .fromTo(section.querySelector('.fees__col--3'), { xPercent: 100 }, { xPercent: 0 }, 0);
+    } else {
+      timeline.fromTo(field, { scaleY: () => stage.offsetHeight / field.offsetHeight, y: () => stage.offsetHeight / 2 - (field.offsetTop + field.offsetHeight / 2) }, { scaleY: 1, y: 0 }, 0);
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const block = section.querySelector('.contact__rows');
+    const rows = [...block.querySelectorAll('.contact__row')];
+    const copies = [];
+    section.classList.add('is-drifting');
+    rows.forEach(row => {
+      const text = row.querySelector('.contact__text');
+      const before = text.cloneNode(true);
+      const after = text.cloneNode(true);
+      [before, after].forEach(copy => { copy.setAttribute('aria-hidden', 'true'); copies.push(copy); });
+      row.prepend(before);
+      row.append(after);
+    });
+    const lead = () => rows.forEach(row => {
+      row.style.setProperty('--contact-lead', '0px');
+      const text = row.querySelector('.contact__text:not([aria-hidden])');
+      row.style.setProperty('--contact-lead', `${-(text.offsetLeft - row.offsetLeft)}px`);
+    });
+    lead();
+    const drift = gsap.timeline({ defaults: { ease: 'none', duration: 1 }, scrollTrigger: {
+      id: 'contact', trigger: block, start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true, onRefreshInit: lead
+    }});
+    rows.forEach((row, index) => {
+      const side = index % 2 ? -1 : 1;
+      drift.fromTo(row, { x: () => -side * innerWidth * .16 }, { x: () => side * innerWidth * .16 }, 0);
+    });
+    return () => {
+      copies.forEach(copy => copy.remove());
+      rows.forEach(row => row.style.removeProperty('--contact-lead'));
+      section.classList.remove('is-drifting');
+    };
+  });
+});
+</script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const menu = document.getElementById('menu');
+  const openButton = nav.querySelector('.nav__menu');
+  const closeButton = menu.querySelector('.menu__close');
+  let lastY = window.scrollY;
+  let ticking = false;
+  const update = () => {
+    const y = window.scrollY;
+    const delta = y - lastY;
+    if (Math.abs(delta) > 3) {
+      nav.classList.toggle('is-hidden', delta > 0 && y > 160 && menu.hidden);
+      lastY = y;
+    }
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  const setMenu = open => {
+    menu.hidden = !open;
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); } else { window.lenis?.start(); openButton.focus(); }
+  };
+  openButton.addEventListener('click', () => setMenu(true));
+  closeButton.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; openButton.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>

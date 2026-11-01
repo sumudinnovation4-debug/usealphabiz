@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #141713;
+  --color-3: #eef48b;
+  --color-4: #525a50;
+  --color-5: #1f3d2c;
+  --color-6: #e5eae2;
+  --color-7: #d57d4f;
+  --color-8: #dce7ed;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: clamp(14px, 1.5vw, 22px);
+  --radius-2: 999px;
+  --space-1: clamp(10px, 1.3vw, 18px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95.2%; ascent-override: 107.1%; descent-override: 33.6%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104%; ascent-override: 98%; descent-override: 30.8%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 17px;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: fixed; left: 12px; top: -80px; z-index: 50; padding: 10px 16px; background: var(--color-2); color: var(--color-1); border-radius: var(--radius-2); text-decoration: none; }
+.skip:focus-visible { top: 12px; }
+@media (max-width: 700px) { body { font-size: 16px; } }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+@property --plot-x { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-r { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-tlw { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-tlh { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-trw { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-trh { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-brw { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-brh { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-blw { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --plot-blh { syntax: '<length>'; inherits: false; initial-value: 0px; }
+
+.m-plot {
+  /* --plot-r rounds the outer corners, --plot-n every corner of a notch; a notch smaller than its corners widens to fit
+     them, so a notch growing from nothing or closing to nothing stays rounded and never folds over itself. */
+  --plot-r: var(--radius-1);
+  --plot-n: var(--radius-1);
+  --plot-rtl: min(var(--plot-n), var(--plot-tlh) / 2);
+  --plot-rtr: min(var(--plot-n), var(--plot-trh) / 2);
+  --plot-rbr: min(var(--plot-n), var(--plot-brh) / 2);
+  --plot-rbl: min(var(--plot-n), var(--plot-blh) / 2);
+  --plot-etl: max(var(--plot-r), var(--plot-rtl));
+  --plot-etr: max(var(--plot-r), var(--plot-rtr));
+  --plot-ebr: max(var(--plot-r), var(--plot-rbr));
+  --plot-ebl: max(var(--plot-r), var(--plot-rbl));
+  --plot-wtl: max(var(--plot-tlw), var(--plot-etl) + var(--plot-rtl));
+  --plot-wtr: max(var(--plot-trw), var(--plot-etr) + var(--plot-rtr));
+  --plot-wbr: max(var(--plot-brw), var(--plot-ebr) + var(--plot-rbr));
+  --plot-wbl: max(var(--plot-blw), var(--plot-ebl) + var(--plot-rbl));
+  clip-path: inset(0 var(--plot-x) round var(--plot-r));
+}
+/* Only where shape() exists: a declaration with var() is never dropped while parsing, so an unknown shape() would
+   leave no clip at all instead of the rounded inset above. */
+@supports (clip-path: shape(from 0 0, line to 1px 1px)) {
+.m-plot {
+  clip-path: shape(
+    from var(--plot-x) calc(var(--plot-tlh) + var(--plot-etl)),
+    arc to calc(var(--plot-x) + var(--plot-etl)) var(--plot-tlh) of var(--plot-etl) cw,
+    hline to calc(var(--plot-x) + var(--plot-wtl) - var(--plot-rtl)),
+    arc to calc(var(--plot-x) + var(--plot-wtl)) calc(var(--plot-tlh) - var(--plot-rtl)) of var(--plot-rtl) ccw,
+    vline to var(--plot-rtl),
+    arc to calc(var(--plot-x) + var(--plot-wtl) + var(--plot-rtl)) 0 of var(--plot-rtl) cw,
+    hline to calc(100% - var(--plot-x) - var(--plot-wtr) - var(--plot-rtr)),
+    arc to calc(100% - var(--plot-x) - var(--plot-wtr)) var(--plot-rtr) of var(--plot-rtr) cw,
+    vline to calc(var(--plot-trh) - var(--plot-rtr)),
+    arc to calc(100% - var(--plot-x) - var(--plot-wtr) + var(--plot-rtr)) var(--plot-trh) of var(--plot-rtr) ccw,
+    hline to calc(100% - var(--plot-x) - var(--plot-etr)),
+    arc to calc(100% - var(--plot-x)) calc(var(--plot-trh) + var(--plot-etr)) of var(--plot-etr) cw,
+    vline to calc(100% - var(--plot-brh) - var(--plot-ebr)),
+    arc to calc(100% - var(--plot-x) - var(--plot-ebr)) calc(100% - var(--plot-brh)) of var(--plot-ebr) cw,
+    hline to calc(100% - var(--plot-x) - var(--plot-wbr) + var(--plot-rbr)),
+    arc to calc(100% - var(--plot-x) - var(--plot-wbr)) calc(100% - var(--plot-brh) + var(--plot-rbr)) of var(--plot-rbr) ccw,
+    vline to calc(100% - var(--plot-rbr)),
+    arc to calc(100% - var(--plot-x) - var(--plot-wbr) - var(--plot-rbr)) 100% of var(--plot-rbr) cw,
+    hline to calc(var(--plot-x) + var(--plot-wbl) + var(--plot-rbl)),
+    arc to calc(var(--plot-x) + var(--plot-wbl)) calc(100% - var(--plot-rbl)) of var(--plot-rbl) cw,
+    vline to calc(100% - var(--plot-blh) + var(--plot-rbl)),
+    arc to calc(var(--plot-x) + var(--plot-wbl) - var(--plot-rbl)) calc(100% - var(--plot-blh)) of var(--plot-rbl) ccw,
+    hline to calc(var(--plot-x) + var(--plot-ebl)),
+    arc to var(--plot-x) calc(100% - var(--plot-blh) - var(--plot-ebl)) of var(--plot-ebl) cw,
+    close);
+}
+}
+/* A notch's content (.m-plot__tab with its corner: --tl, --tr, --br or --bl) has no ground of its own where shape() cuts
+   the notch, so it never covers the notch's rounded corners: the page or the panel's .m-plot__ground shows through.
+   Without shape() the panel stays a plain rounded field and the tab takes the page ground over its corner. */
+@supports not (clip-path: shape(from 0 0, line to 1px 1px)) {
+  .m-plot__tab { background: var(--color-1); }
+  .m-plot__tab--tl { border-radius: 0 0 var(--radius-1) 0; }
+  .m-plot__tab--tr { border-radius: 0 0 0 var(--radius-1); }
+  .m-plot__tab--br { border-radius: var(--radius-1) 0 0 0; }
+  .m-plot__tab--bl { border-radius: 0 var(--radius-1) 0 0; }
+}
+/* The wrapper of a panel that passes over other content (positioned, the size of the panel): its page ground fills the
+   notches, so their content stays on the page ground and their corners stay rounded over whatever lies beneath. In a
+   stack the ground reaches --plot-lift above the panel, at least the step between stacked panels, so the panel beneath
+   never shows a slice over this one's stepped top. */
+.m-plot__ground { isolation: isolate; }
+.m-plot__ground::before {
+  content: ""; position: absolute; z-index: -1; inset: calc(-1 * var(--plot-lift, 0px)) 0 0 0;
+  background: var(--color-1); border-radius: var(--radius-1);
+}
+
+.m-surface { background: var(--color-3); color: var(--color-2); }
+
+.m-surface-2 { background: var(--color-5); color: var(--color-1); }
+
+.m-surface-3 { background: var(--color-6); color: var(--color-2); }
+
+.m-surface-4 { background: var(--color-2); color: var(--color-1); }
+.m-surface-4 :focus-visible, .m-surface-2 :focus-visible { outline-color: var(--color-3); }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(30px, 3.9vw, 58px); font-weight: 400; line-height: 1.12; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(40px, 5.4vw, 78px); font-weight: 400; line-height: 1.02; letter-spacing: -0.038em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(32px, 4vw, 58px); font-weight: 400; line-height: 1.04; letter-spacing: -0.032em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(18px, 1.5vw, 21px); font-weight: 400; line-height: 1.42; letter-spacing: -0.008em; text-transform: none; font-style: normal; }
+
+.m-text-6 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 27px); font-weight: 500; line-height: 1.15; letter-spacing: -0.018em; text-transform: none; font-style: normal; }
+
+.m-btn {
+  position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 52px; padding: 0 26px; border: 0; border-radius: var(--radius-2);
+  background: var(--color-2); color: var(--color-1); text-decoration: none; cursor: pointer;
+  font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: 0;
+  overflow: hidden; transition: color .35s ease;
+}
+.m-btn::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3);
+  clip-path: inset(100% 100% 0 0 round var(--radius-1)); transition: clip-path .5s cubic-bezier(.6, 0, .2, 1);
+}
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-2); }
+  .m-btn:hover::before { clip-path: inset(0 0 0 0 round var(--radius-1)); }
+}
+
+.m-btn-2 {
+  position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 8px;
+  min-height: 42px; padding: 0 18px 0 14px; border: 1.5px dashed currentColor; border-radius: var(--radius-2);
+  background: transparent; color: inherit; text-decoration: none; cursor: pointer;
+  font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1; letter-spacing: 0; white-space: nowrap;
+  transition: border-color .3s ease, color .3s ease;
+}
+.m-btn-2::before {
+  content: ""; position: absolute; inset: -1.5px; z-index: -1; border-radius: var(--radius-2); background: var(--color-2);
+  clip-path: inset(100% 100% 0 0 round var(--radius-1)); transition: clip-path .5s cubic-bezier(.6, 0, .2, 1);
+}
+.m-btn-2__icon {
+  display: grid; place-items: center; width: 20px; height: 20px; border: 1.5px solid currentColor; border-radius: 50%;
+}
+.m-btn-2__icon::before {
+  content: ""; width: 7px; height: 7px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor;
+  transform: translate(-1px, 1px) rotate(0deg); transition: transform .4s ease;
+}
+@media (hover: hover) {
+  .m-btn-2:hover { border-style: solid; border-color: var(--color-2); color: var(--color-3); }
+  .m-btn-2:hover::before { clip-path: inset(0 0 0 0 round var(--radius-1)); }
+  .m-btn-2:hover .m-btn-2__icon::before { transform: translate(-1px, 1px) rotate(45deg); }
+}
+
+.m-link {
+  color: inherit; text-decoration: none; font-weight: 500;
+  background-image: linear-gradient(90deg, currentColor 0 100%), repeating-linear-gradient(90deg, currentColor 0 5px, transparent 5px 9px);
+  background-size: 0% 1.5px, 100% 1.5px; background-position: 0 100%, 0 100%; background-repeat: no-repeat;
+  padding-bottom: 3px; transition: background-size .45s cubic-bezier(.6, 0, .2, 1);
+}
+@media (hover: hover) { .m-link:hover { background-size: 100% 1.5px, 100% 1.5px; } }
+
+.m-link-2 {
+  display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none;
+  font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal;
+  background-image: linear-gradient(90deg, currentColor 0 100%), repeating-linear-gradient(90deg, currentColor 0 5px, transparent 5px 9px);
+  background-size: 0% 1.5px, 0% 1.5px; background-position: 0 100%, 0 100%; background-repeat: no-repeat;
+  padding: 4px 0; transition: background-size .45s cubic-bezier(.6, 0, .2, 1);
+}
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 1.5px, 100% 1.5px; } }
+
+.m-round {
+  position: relative; isolation: isolate; display: inline-grid; place-items: center; width: 48px; height: 48px; padding: 0;
+  border: 1.5px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; overflow: hidden;
+  transition: color .3s ease;
+}
+.m-round::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2);
+  clip-path: inset(100% 100% 0 0 round 50%); transition: clip-path .5s cubic-bezier(.6, 0, .2, 1);
+}
+.m-round__icon { width: 12px; height: 12px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: translate(-2px, 2px); transition: transform .45s cubic-bezier(.6, 0, .2, 1); }
+.m-round[data-icon="close"] .m-round__icon { width: 18px; height: 18px; border: 0; transform: none; background: linear-gradient(45deg, transparent calc(50% - .75px), currentColor calc(50% - .75px) calc(50% + .75px), transparent calc(50% + .75px)), linear-gradient(-45deg, transparent calc(50% - .75px), currentColor calc(50% - .75px) calc(50% + .75px), transparent calc(50% + .75px)); }
+@media (hover: hover) {
+  .m-round:hover { color: var(--color-3); }
+  .m-round:hover::before { clip-path: inset(0 0 0 0 round 50%); }
+  .m-round:hover .m-round__icon { transform: translate(-2px, 2px) rotate(45deg); }
+  .m-round[data-icon="close"]:hover .m-round__icon { transform: rotate(90deg); }
+}
+
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.35; }
+.m-field__input {
+  width: 100%; min-height: 50px; padding: 12px 16px; border: 1.5px dashed var(--color-2); border-radius: calc(var(--radius-1) * .7);
+  background: var(--color-1); color: var(--color-2); font-size: 16px; line-height: 1.4; transition: border-color .3s ease;
+}
+textarea.m-field__input { min-height: 120px; resize: vertical; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-style: solid; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation {
+  position: fixed; z-index: 30; top: var(--space-1); left: var(--space-1); right: var(--space-1);
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 64px; padding: 0 18px 0 0;
+  border-radius: var(--radius-1); transition: transform .5s cubic-bezier(.6, 0, .2, 1), background-color .3s ease;
+}
+#navigation[data-state="float"] { background: var(--color-1); outline: 1px solid var(--color-6); outline-offset: -1px; }
+#navigation[data-state="hidden"] { transform: translateY(calc(-100% - var(--space-1) - 4px)); }
+#navigation .nav__logo {
+  justify-self: start; display: flex; align-items: center; height: 64px; padding: 0 24px;
+  font-size: 31px; font-weight: 750; letter-spacing: -0.05em; line-height: 1; text-decoration: none;
+}
+#navigation .nav__links { display: flex; gap: 30px; }
+#navigation .nav__chev { display: grid; place-items: center; width: 16px; height: 16px; border: 1.5px solid currentColor; border-radius: 50%; }
+#navigation .nav__chev::before { content: ""; width: 5px; height: 5px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-1px) rotate(45deg); }
+#navigation .nav__cta { justify-self: end; }
+#navigation .nav__menu { display: none; justify-self: end; }
+#navigation .menu {
+  position: fixed; inset: 0; z-index: 40; display: grid; grid-template-rows: auto 1fr auto; gap: 24px;
+  padding: calc(var(--space-1) + 8px) 24px 32px; background: var(--color-3); color: var(--color-2);
+}
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .menu__logo { font-size: 31px; font-weight: 750; letter-spacing: -0.05em; line-height: 1; }
+#navigation .menu__links { display: grid; align-content: center; gap: 6px; }
+#navigation .menu__links a { font-size: 44px; line-height: 1.12; letter-spacing: -0.035em; text-decoration: none; }
+@media (max-width: 860px) {
+  #navigation { grid-template-columns: 1fr auto; padding-right: 12px; height: 56px; }
+  #navigation .nav__logo { height: 56px; font-size: 27px; padding: 0 18px; }
+  #navigation .nav__links, #navigation .nav__cta { display: none; }
+  #navigation .nav__menu { display: inline-flex; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening {
+  position: relative; container-type: inline-size;
+  padding-bottom: var(--space-1);
+}
+#opening .op__field-wrap { height: max(46svh, 330px); padding: var(--space-1) var(--space-1) 0; }
+#opening .op__field {
+  --plot-tlw: 158px; --plot-tlh: 64px;
+  height: 100%; display: flex; align-items: flex-end; padding: 0 8.4cqw max(5.2svh, 34px);
+}
+#opening .op__title { max-width: 15em; }
+#opening .op__line { display: block; }
+#opening .op__sprout { display: inline-block; vertical-align: -0.08em; width: 0.84em; height: 0.84em; margin-right: 0.14em; }
+#opening .op__sprout svg { width: 100%; height: 100%; overflow: visible; }
+#opening .op__plot { position: relative; height: calc(max(154svh, 970px) - 3 * var(--space-1)); margin-top: var(--space-1); }
+#opening .op__photo {
+  --plot-x: var(--space-1);
+  --plot-trw: 33cqw; --plot-trh: 108px;
+  --plot-blw: calc(50cqw - var(--space-1)); --plot-blh: max(58svh, 420px);
+  position: absolute; inset: 0; z-index: 1; background: var(--color-5);
+}
+#opening .op__sticky { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+#opening .op__pan { position: absolute; inset: -32px -56px; }
+#opening .op__pan img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+#opening .op__note {
+  position: absolute; z-index: 2; top: 0; right: var(--space-1); width: 33cqw; height: 108px;
+  padding: 20px 6px 0 30px; color: var(--color-4); font-size: 15px; line-height: 1.45;
+}
+#opening .op__second {
+  position: absolute; z-index: 2; left: var(--space-1); bottom: 0; width: calc(50cqw - var(--space-1)); height: max(58svh, 420px);
+}
+#opening .op__panel {
+  position: absolute; left: 0; bottom: 0; right: var(--space-1); top: var(--space-1); border-radius: var(--radius-1);
+  display: flex; flex-direction: column; justify-content: space-between; gap: 28px; padding: clamp(28px, 3.4vw, 48px);
+}
+#opening .op__statement { font-size: clamp(28px, 3.2vw, 46px); max-width: 16em; }
+#opening .op__sline { display: block; text-wrap: balance; }
+@supports (clip-path: shape(from 0 0, line to 1px 1px)) {
+  #opening .op__note, #opening .op__second { z-index: 0; }
+}
+#opening .op__foot { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px 32px; }
+#opening .op__never { display: grid; gap: 2px; }
+#opening .op__never li { display: flex; align-items: center; gap: 10px; }
+#opening .op__never li::before { content: ""; width: 14px; height: 1.5px; background: currentColor; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__title { animation: op-rise 1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__plot { animation: op-lift 1.1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__field { animation: op-tab .9s .15s cubic-bezier(.5, 0, .1, 1) backwards; }
+  #opening .op__pan { animation: op-pan 9s ease-in-out infinite alternate; }
+  #opening .op__sprout svg { animation: op-sway 2.6s ease-in-out infinite alternate; transform-origin: 50% 90%; }
+  #opening[data-loops="off"] .op__pan, #opening[data-loops="off"] .op__sprout svg { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(0.45em); } }
+@keyframes op-lift { from { transform: translateY(56px); } }
+@keyframes op-tab { from { --plot-tlw: 40px; --plot-tlh: 20px; } }
+@keyframes op-pan { from { transform: translate3d(-44px, 10px, 0) scale(1.02); } to { transform: translate3d(44px, -14px, 0) scale(1.06); } }
+@keyframes op-sway { from { transform: rotate(-12deg); } to { transform: rotate(12deg); } }
+@media (max-width: 700px) {
+  #opening .op__field-wrap { height: max(56svh, 400px); }
+  #opening .op__field { --plot-tlw: 118px; --plot-tlh: 56px; padding: 0 20px 26px; }
+  #opening .op__title { font-size: clamp(36px, 10.6vw, 46px); }
+  #opening .op__plot { height: calc(max(144svh, 1080px) - 3 * var(--space-1)); }
+  #opening .op__photo { --plot-trw: 62cqw; --plot-trh: 132px; --plot-blw: calc(100cqw - 2 * var(--space-1) - 52px); --plot-blh: max(60svh, 480px); }
+  #opening .op__note { width: 62cqw; height: 132px; padding: 16px 4px 0 22px; font-size: 14.5px; }
+  #opening .op__second { width: calc(100cqw - 2 * var(--space-1) - 52px); height: max(60svh, 480px); }
+  #opening .op__panel { padding: 28px 22px 24px; }
+  #opening .op__statement { font-size: 31px; }
+}
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-head {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 24px 6vw;
+  padding: 0 calc(var(--space-1) + 3.4vw); margin-bottom: clamp(36px, 5vw, 72px);
+}
+.l-head > p { max-width: 30em; }
+@media (max-width: 860px) {
+  .l-head { grid-template-columns: 1fr; padding: 0 calc(var(--space-1) + 10px); }
+}
+}
+</style>
+<style data-8b-part="section:principles">
+@layer sections {
+#principles { padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+#principles .pr__bands { display: grid; gap: var(--space-1); padding: 0 var(--space-1); }
+#principles .pr__band { position: relative; }
+#principles .pr__inner { position: relative; }
+#principles .pr__panel {
+  --plot-tlw: 172px; --plot-tlh: 50px;
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); align-items: start; gap: 24px 5vw;
+  min-height: clamp(300px, 36svh, 380px); padding: 74px calc(3.4vw) clamp(32px, 3.4vw, 48px);
+}
+#principles .pr__title { font-size: clamp(36px, 4.6vw, 66px); max-width: 11em; }
+#principles .pr__text { max-width: 30em; align-self: end; }
+#principles .pr__tab {
+  position: absolute; left: 0; top: 0; width: 172px; height: 50px; display: flex; align-items: center; gap: 10px; padding-left: 4px;
+}
+#principles .pr__tab::before { content: ""; width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid currentColor; }
+@media (max-width: 700px) {
+  #principles .pr__panel { --plot-tlw: 140px; --plot-tlh: 46px; grid-template-columns: 1fr; min-height: 0; padding: 74px 22px 26px; }
+  #principles .pr__title { font-size: clamp(32px, 9.4vw, 40px); }
+  #principles .pr__tab { width: 140px; height: 46px; }
+}
+}
+</style>
+<style data-8b-part="section:services">
+@layer sections {
+#services { padding: calc(var(--space-2) * .6) 0 var(--space-2); }
+#services .sv__board {
+  position: relative; height: min(80svh, 740px); min-height: 520px; margin: 0 calc(var(--space-1) - 5px); container-type: size;
+}
+#services .sv__bed {
+  position: absolute; inset: 0;
+  clip-path: inset(calc(var(--sv-t) * 1% + 5px) calc(var(--sv-r) * 1% + 5px) calc(var(--sv-b) * 1% + 5px) calc(var(--sv-l) * 1% + 5px) round var(--radius-1));
+}
+#services .sv__bed--1 { --sv-t: 0; --sv-r: 50; --sv-b: 50; --sv-l: 0; }
+#services .sv__bed--2 { --sv-t: 0; --sv-r: 0; --sv-b: 50; --sv-l: 50; }
+#services .sv__bed--3 { --sv-t: 50; --sv-r: 50; --sv-b: 0; --sv-l: 0; }
+#services .sv__bed--4 { --sv-t: 50; --sv-r: 0; --sv-b: 0; --sv-l: 50; }
+#services .sv__img { position: absolute; width: 68%; height: 74%; object-fit: cover; }
+#services .sv__bed--1 .sv__img { left: 0; top: 0; }
+#services .sv__bed--2 .sv__img { left: 32%; top: 0; }
+#services .sv__bed--3 .sv__img { left: 0; top: 26%; }
+#services .sv__bed--4 .sv__img { left: 32%; top: 26%; object-position: 50% 22%; }
+#services .sv__card {
+  position: absolute; left: 0; top: 0; display: grid; justify-items: start; gap: 6px; width: min(340px, calc(30cqw - 44px));
+  transform: translate(calc(var(--sv-l) * 1cqw + 19px), calc(var(--sv-t) * 1cqh + 19px));
+}
+#services .sv__name {
+  display: inline-flex; align-items: center; gap: 12px; padding: 10px 18px 10px 12px;
+  border-radius: var(--radius-2); background: var(--color-1);
+}
+#services .sv__step {
+  display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--color-3);
+  font-size: 13px; font-weight: 600; letter-spacing: 0;
+}
+#services .sv__text { padding: 12px 16px; border-radius: calc(var(--radius-1) * .75); background: var(--color-1); }
+@media (max-width: 700px) {
+  #services .sv__board { height: 78svh; min-height: 560px; }
+  #services .sv__img { left: 0; width: 100%; height: 52%; }
+  #services .sv__bed--1 .sv__img { top: 0; }
+  #services .sv__bed--2 .sv__img { left: 0; top: 16%; }
+  #services .sv__bed--3 .sv__img { top: 32%; }
+  #services .sv__bed--4 .sv__img { left: 0; top: 48%; }
+  #services .sv__bed--1 { --sv-t: 0; --sv-r: 0; --sv-b: 75; --sv-l: 0; }
+  #services .sv__bed--2 { --sv-t: 25; --sv-r: 0; --sv-b: 50; --sv-l: 0; }
+  #services .sv__bed--3 { --sv-t: 50; --sv-r: 0; --sv-b: 25; --sv-l: 0; }
+  #services .sv__bed--4 { --sv-t: 75; --sv-r: 0; --sv-b: 0; --sv-l: 0; }
+  #services .sv__card { width: calc(100cqw - 34px); transform: translate(calc(var(--sv-l) * 1cqw + 16px), calc(var(--sv-t) * 1cqh + 16px)); gap: 4px; }
+  #services .sv__name { padding: 6px 14px 6px 8px; font-size: 19px; }
+  #services .sv__step { width: 26px; height: 26px; }
+  #services .sv__text { padding: 8px 12px; font-size: 14.5px; line-height: 1.4; }
+}
+}
+</style>
+<style data-8b-part="scene-style:services">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #services[data-board="on"] .sv__stage { height: 430svh; }
+  #services[data-board="on"] .sv__board { position: sticky; top: calc(50svh - min(40svh, 370px) + 34px); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+  #services[data-board="on"] .sv__stage { height: 400svh; }
+  #services[data-board="on"] .sv__board { top: calc(11svh + 30px); }
+}
+}
+</style>
+<style data-8b-part="section:wildlife">
+@layer sections {
+#wildlife { padding: 0 var(--space-1); }
+#wildlife .wl__plot { position: relative; container-type: inline-size; }
+#wildlife .wl__panel {
+  --plot-tlw: 300px; --plot-tlh: 64px; --plot-brw: min(48cqw, 560px); --plot-brh: 112px;
+  padding: clamp(110px, 12vw, 160px) 7cqw clamp(170px, 16vw, 210px);
+}
+#wildlife .wl__label { position: absolute; left: 0; top: 0; width: 300px; height: 64px; display: flex; align-items: center; padding-left: 6px; }
+#wildlife .wl__sentence { max-width: 21em; }
+#wildlife .wl__pill {
+  display: inline-block; position: relative; width: 2.3em; height: 0.92em; margin: 0 0.06em; vertical-align: -0.13em;
+  border-radius: var(--radius-2); overflow: hidden; background: var(--color-3); clip-path: inset(0% 0% 0% 0% round 999px);
+}
+#wildlife .wl__pill img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#wildlife .wl__foot {
+  position: absolute; right: 0; bottom: 0; width: min(48cqw, 560px); height: 112px;
+  display: grid; align-content: end; gap: 8px; padding: 0 4px 6px 30px; color: var(--color-4);
+}
+#wildlife .wl__foot .m-link { justify-self: start; color: var(--color-2); }
+@media (max-width: 700px) {
+  #wildlife .wl__panel { --plot-tlw: 210px; --plot-tlh: 54px; --plot-brw: 86cqw; --plot-brh: 150px; padding: 92px 20px 186px; }
+  #wildlife .wl__label { width: 210px; height: 54px; }
+  #wildlife .wl__foot { width: 86cqw; height: 150px; padding: 0 2px 4px 22px; }
+}
+}
+</style>
+<style data-8b-part="section:gardens">
+@layer sections {
+#gardens { padding: var(--space-2) 0 calc(var(--space-2) * .5); }
+#gardens .gd__list { display: grid; gap: max(22svh, 150px); padding: 0 var(--space-1); }
+#gardens .gd__item { position: relative; height: max(min(70svh, 640px), 460px); container-type: inline-size; }
+#gardens .gd__inner { position: absolute; inset: 0; transform-origin: 50% 0; }
+#gardens .gd__frame {
+  --plot-tlw: min(46cqw, 470px); --plot-tlh: 104px; --plot-brw: min(60cqw, 660px); --plot-brh: 104px;
+  position: absolute; inset: 0; background: var(--color-5); overflow: hidden;
+}
+#gardens .gd__img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; }
+#gardens .gd__shade { position: absolute; inset: 0; background: var(--color-2); opacity: 0; pointer-events: none; }
+#gardens .gd__name {
+  position: absolute; left: 0; top: 0; width: min(46cqw, 470px); height: 104px; display: grid; align-content: center; gap: 4px; padding: 0 24px 0 6px;
+}
+#gardens .gd__name p { color: var(--color-4); }
+#gardens .gd__facts {
+  position: absolute; right: 0; bottom: 0; width: min(60cqw, 660px); height: 104px; display: grid; grid-template-columns: 1fr 1fr 1.6fr; gap: 20px;
+  align-content: end; padding: 0 6px 6px 30px;
+}
+#gardens .gd__facts dt { color: var(--color-4); }
+#gardens .gd__facts dd { font-size: 17px; line-height: 1.35; }
+@media (max-width: 700px) {
+  #gardens .gd__item { height: max(64svh, 500px); }
+  #gardens .gd__frame { --plot-tlw: 78cqw; --plot-tlh: 90px; --plot-brw: 92cqw; --plot-brh: 150px; }
+  #gardens .gd__name { width: 78cqw; height: 90px; padding-right: 12px; }
+  #gardens .gd__facts { width: 92cqw; height: 150px; grid-template-columns: 1fr 1fr; gap: 10px 16px; padding: 0 4px 6px 20px; }
+  #gardens .gd__facts > div:last-child { grid-column: 1 / -1; }
+  #gardens .gd__facts dd { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:gardens">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #gardens[data-stack="on"] .gd__inner { --plot-lift: 24px; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+  #gardens[data-stack="on"] .gd__inner { --plot-lift: 18px; }
+}
+}
+</style>
+<style data-8b-part="section:materials">
+@layer sections {
+#materials { padding: calc(var(--space-2) * .8) 0 var(--space-2); }
+#materials .mt__list { padding: 0 calc(var(--space-1) + 3.4vw); }
+#materials .mt__row {
+  display: grid; grid-template-columns: 180px minmax(0, 4fr) minmax(0, 6fr) minmax(0, 2fr); align-items: center; gap: 20px 3vw;
+  padding: 18px 0; border-top: 1.5px dashed var(--color-2);
+}
+#materials .mt__row:last-child { border-bottom: 1.5px dashed var(--color-2); }
+#materials .mt__thumb { position: relative; aspect-ratio: 16 / 10; border-radius: calc(var(--radius-1) * .8); overflow: hidden; background: var(--color-6); }
+#materials .mt__thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#materials .mt__from { justify-self: end; text-align: right; color: var(--color-4); }
+@media (max-width: 860px) {
+  #materials .mt__list { padding: 0 calc(var(--space-1) + 10px); }
+  #materials .mt__row { grid-template-columns: 112px minmax(0, 1fr); gap: 4px 16px; align-items: start; }
+  #materials .mt__thumb { grid-row: span 3; }
+  #materials .mt__from { justify-self: start; text-align: left; }
+}
+}
+</style>
+<style data-8b-part="section:seasons">
+@layer sections {
+#seasons { padding: calc(var(--space-2) * .6) 0 var(--space-2); }
+#seasons .ss__track { display: grid; gap: var(--space-1); padding: 0 var(--space-1); }
+#seasons .ss__panel {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 4vw; align-items: stretch;
+  min-height: min(76svh, 680px); padding: clamp(16px, 1.6vw, 22px); border-radius: var(--radius-1);
+}
+#seasons .ss__panel--spring { background: var(--color-3); color: var(--color-2); }
+#seasons .ss__panel--summer { background: var(--color-5); color: var(--color-1); }
+#seasons .ss__panel--autumn { background: var(--color-7); color: var(--color-2); }
+#seasons .ss__panel--winter { background: var(--color-8); color: var(--color-2); }
+#seasons .ss__photo { --plot-brw: 132px; --plot-brh: 56px; position: relative; min-height: 340px; overflow: hidden; background: var(--color-6); }
+#seasons .ss__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#seasons .ss__body { display: grid; align-content: space-between; gap: 32px; padding: clamp(12px, 2.4vw, 36px) clamp(8px, 2vw, 28px) clamp(8px, 1.4vw, 18px) 0; }
+#seasons .ss__name { font-size: clamp(48px, 7vw, 108px); }
+#seasons .ss__months { margin-top: 10px; }
+#seasons .ss__visits { display: grid; gap: 0; max-width: 32em; }
+#seasons .ss__visits li { display: grid; grid-template-columns: 26px 1fr; padding: 12px 0; border-top: 1.5px dashed currentColor; }
+#seasons .ss__visits li::before { content: ""; width: 9px; height: 9px; margin-top: .55em; border-radius: 50%; border: 1.5px solid currentColor; }
+@media (max-width: 860px) {
+  #seasons .ss__panel { grid-template-columns: 1fr; gap: 22px; min-height: 0; }
+  #seasons .ss__photo { min-height: 0; aspect-ratio: 4 / 3; }
+  #seasons .ss__body { padding: 0 6px 6px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:seasons">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #seasons[data-track="on"] .ss__pin { height: 100svh; display: flex; align-items: center; overflow: hidden; background: var(--color-3); color: var(--color-2); }
+  #seasons[data-track="on"] .ss__track { display: flex; width: max-content; gap: 3vw; padding: 0 calc(var(--space-1) + 3.4vw); }
+  #seasons[data-track="on"] .ss__panel { width: min(64vw, 900px); height: min(76svh, 660px); min-height: 0; background: transparent; color: inherit; padding: 0; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 860px) {
+  #seasons[data-track="on"] .ss__track { gap: 16px; padding: 0 20px; }
+  #seasons[data-track="on"] .ss__panel { width: 84vw; height: auto; }
+}
+}
+</style>
+<style data-8b-part="section:voices">
+@layer sections {
+#voices { padding: calc(var(--space-2) * .4) 0 var(--space-2); overflow-x: clip; }
+#voices .vc__list { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); padding: 0 var(--space-1); }
+#voices .vc__card { position: relative; container-type: inline-size; min-height: clamp(380px, 46svh, 460px); }
+#voices .vc__panel {
+  --plot-trw: 46cqw; --plot-trh: 96px;
+  position: absolute; inset: 0; display: grid; align-content: space-between; gap: 28px; padding: 120px 30px 28px;
+}
+#voices .vc__panel--1 { background: var(--color-3); color: var(--color-2); }
+#voices .vc__panel--2 { background: var(--color-6); color: var(--color-2); }
+#voices .vc__panel--3 { background: var(--color-5); color: var(--color-1); }
+#voices .vc__who { display: grid; gap: 2px; }
+#voices .vc__panel--3 .vc__place { color: var(--color-3); }
+#voices .vc__place { color: var(--color-4); }
+#voices .vc__thumb {
+  position: absolute; right: 0; top: 0; width: calc(46cqw - 10px); height: 86px; border-radius: calc(var(--radius-1) * .8); overflow: hidden; background: var(--color-6);
+}
+#voices .vc__thumb img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 860px) {
+  #voices .vc__list { grid-template-columns: 1fr; }
+  #voices .vc__card { min-height: 360px; }
+  #voices .vc__panel { padding: 112px 22px 24px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: var(--space-2) calc(var(--space-1) + 3.4vw); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px 6vw; }
+#faq .fq__head { display: grid; align-content: start; gap: 22px; }
+#faq .fq__head p { max-width: 24em; color: var(--color-4); }
+#faq .fq__list { border-bottom: 1.5px dashed var(--color-2); }
+#faq .fq__item { border-top: 1.5px dashed var(--color-2); }
+#faq .fq__item summary {
+  display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none;
+}
+#faq .fq__item summary::-webkit-details-marker { display: none; }
+#faq .fq__mark { flex: none; position: relative; width: 34px; height: 34px; border: 1.5px solid currentColor; border-radius: 50%; transition: background-color .3s ease; }
+#faq .fq__mark::before, #faq .fq__mark::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.5px; background: currentColor; transform: translate(-50%, -50%); transition: transform .35s ease; }
+#faq .fq__mark::after { transform: translate(-50%, -50%) rotate(90deg); }
+#faq .fq__item[open] .fq__mark { background: var(--color-3); }
+#faq .fq__item[open] .fq__mark::after { transform: translate(-50%, -50%) rotate(0deg); }
+#faq .fq__item p { max-width: 38em; padding: 0 60px 26px 0; color: var(--color-4); }
+@media (hover: hover) { #faq .fq__item summary:hover .fq__mark { background: var(--color-3); } }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: 1fr; padding: var(--space-2) calc(var(--space-1) + 10px); }
+  #faq .fq__item p { padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding: 0 var(--space-1) var(--space-1); }
+#contact .ct__plot { position: relative; container-type: inline-size; }
+#contact .ct__panel {
+  --plot-trw: min(34cqw, 420px); --plot-trh: 248px;
+  display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 40px 5vw; padding: clamp(40px, 5vw, 72px);
+}
+#contact .ct__intro { display: grid; align-content: start; gap: 24px; max-width: 34em; }
+#contact .ct__title { font-size: clamp(44px, 6vw, 92px); }
+#contact .ct__form { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px 20px; padding-top: 12px; }
+#contact .ct__form .m-field { grid-column: span 2; }
+#contact .ct__form .ct__wide { grid-column: span 4; }
+#contact .ct__form .ct__full { grid-column: 1 / -1; }
+#contact .ct__send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+#contact .ct__status { min-height: 1.4em; }
+#contact .ct__tab {
+  position: absolute; right: 0; top: 0; width: min(34cqw, 420px); height: 248px; display: grid; align-content: start; gap: 14px; padding: 6px 4px 0 34px;
+}
+#contact .ct__tab dt { color: var(--color-4); }
+#contact .ct__tab dd { font-size: 17px; line-height: 1.4; }
+#contact .ct__tab dd a { text-decoration: none; }
+@media (max-width: 860px) {
+  #contact .ct__panel { --plot-trw: 0px; --plot-trh: 0px; grid-template-columns: 1fr; padding: 34px 20px 28px; }
+  #contact .ct__tab { position: static; width: auto; height: auto; padding: 20px 6px 0; }
+  #contact .ct__form { grid-template-columns: 1fr; }
+  #contact .ct__form .m-field, #contact .ct__form .ct__wide { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: var(--space-1); padding-top: 0; }
+#footer .ft__panel { --plot-tlw: 0px; display: grid; gap: 48px; padding: clamp(36px, 4.4vw, 64px) clamp(24px, 3.4vw, 48px) 24px; container-type: inline-size; }
+#footer .ft__cols { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr) minmax(0, 4fr); gap: 32px 4vw; }
+#footer .ft__about { display: grid; justify-items: start; gap: 24px; max-width: 26em; }
+#footer .ft__nav { display: grid; align-content: start; justify-items: start; gap: 6px; }
+#footer address { font-style: normal; display: grid; align-content: start; gap: 6px; }
+#footer address a { text-decoration: none; }
+#footer .ft__word {
+  font-size: calc(100cqw / (var(--len) * 0.535)); font-weight: 750; letter-spacing: -0.035em; line-height: .8;
+  margin: 0 0 0 -0.045em; color: var(--color-3); white-space: nowrap; pointer-events: none;
+}
+#footer .ft__small { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 18px; border-top: 1.5px dashed currentColor; }
+@media (max-width: 860px) {
+  #footer .ft__cols { grid-template-columns: 1fr 1fr; }
+  #footer .ft__about { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#navigation[data-state="top"] { background: var(--color-1); outline: 1px solid var(--color-6); outline-offset: -1px; }
+#opening { --op-top: calc(64px + 2 * var(--space-1)); padding-top: var(--op-top); }
+#opening .op__plot { height: max(calc(100svh - var(--op-top) - var(--space-1)), 640px); margin-top: 0; }
+#opening .op__photo { --plot-trw: 0px; --plot-trh: 0px; }
+#opening .op__sticky { position: absolute; inset: 0; height: auto; }
+#opening .op__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+@media (max-width: 860px) {
+  #opening { --op-top: calc(56px + 2 * var(--space-1)); }
+  #opening .op__plot { height: max(calc(100svh - var(--op-top) - var(--space-1)), 600px); }
+}
+@media (max-width: 700px) {
+  #opening .op__foot { gap: 16px; }
+  #opening .op__cta { gap: 10px 20px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__sline { animation: op-rise 1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__sline:nth-child(2) { animation-delay: .08s; }
+  #opening .op__sline:nth-child(3) { animation-delay: .16s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="skip" href="#main">{{t1|Skip to content}}</a>
+
+<header data-8b-section="navigation" data-state="top" id="navigation">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">{{t2|⟦name⟧}}</a>
+<nav aria-label="Main" class="nav__links">
+<a class="m-link-2" href="#services">{{t3|How we work}} <span aria-hidden="true" class="nav__chev"></span></a>
+<a class="m-link-2" href="#gardens">{{t4|Gardens}}</a>
+<a class="m-link-2" href="#seasons">{{t5|Aftercare}}</a>
+</nav>
+<a class="m-btn-2 nav__cta" href="#contact"><span aria-hidden="true" class="m-btn-2__icon"></span><span class="m-btn-2__label">{{t6|Book a site visit}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-btn-2 nav__menu" type="button"><span class="m-btn-2__label">{{t7|Menu}}</span></button>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="menu__logo">{{t2|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-round menu__close" data-icon="close" type="button"><span aria-hidden="true" class="m-round__icon"></span></button>
+</div>
+<nav aria-label="Menu" class="menu__links">
+<a href="#services">{{t3|How we work}}</a>
+<a href="#gardens">{{t4|Gardens}}</a>
+<a href="#seasons">{{t5|Aftercare}}</a>
+<a href="#faq">{{t8|Questions}}</a>
+</nav>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t6|Book a site visit}}</span></a>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op__plot">
+<div class="op__photo m-plot">
+<div class="op__sticky">
+<div class="op__pan">
+<img alt="A gravel path between deep summer borders of salvia, achillea and echinacea, leading to a red door in an old garden wall" fetchpriority="high" height="2187" src="{{i1|https://images.unsplash.com/photo-1776004481053-a260805421a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGdhcmRlbmVycyUyMHBsYW50aW5nJTIwZ2FyZGVuJTIwYm9yZGVyfGVufDF8MHx8fDE3OTE0MTA2NjR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a68c73" width="3280"/>
+</div>
+</div>
+</div>
+<div class="op__second">
+<div class="op__panel m-surface">
+<h1 class="m-text-3 op__statement" id="opening-title"><span class="op__sline">{{t9|A garden is never finished.}}</span> <span class="op__sline">{{t10|We design it, build it, plant it}}</span> <span class="op__sline">{{t11|and stay for the seasons after.}}</span></h1>
+<div class="op__foot">
+<ul aria-label="What we never use" class="op__never m-text-4">
+<li>{{t12|No peat, ever}}</li>
+<li>{{t13|No plastic lawns}}</li>
+<li>{{t14|No chemical feeds}}</li>
+</ul>
+<div class="op__cta"><a class="m-btn" href="#contact"><span class="m-btn__label">{{t6|Book a site visit}}</span></a><a class="m-link" href="#principles">{{t15|How we garden}}</a></div>
+</div>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_principles}}<section aria-labelledby="principles-title" data-8b-section="principles" id="principles">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="principles-title">{{t16|Soil first. Everything else follows.}}</h2>
+<p class="m-text-5">{{t17|Four rules every ⟦name⟧ garden is built on, whether it is a courtyard behind a terrace or three acres on the edge of the Downs.}}</p>
+</div>
+<ol class="pr__bands">
+<li class="pr__band">
+<div class="pr__inner m-plot__ground">
+<div class="pr__panel m-plot m-surface">
+<h3 class="m-text-2 pr__title">{{t18|Feed the soil, not the plant.}}</h3>
+<p class="m-text pr__text">{{t19|We mulch with compost made from our own green waste, never peat, and leave out chemical feeds. Living soil holds water, stores carbon and does the feeding for you.}}</p>
+</div>
+<span class="pr__tab m-plot__tab m-plot__tab--tl m-text-4">{{t20|Compost}}</span>
+</div>
+</li>
+<li class="pr__band">
+<div class="pr__inner m-plot__ground">
+<div class="pr__panel m-plot m-surface-2">
+<h3 class="m-text-2 pr__title">{{t21|Keep every drop that falls.}}</h3>
+<p class="m-text pr__text">{{t22|Rain gardens, gravel instead of tarmac and a water butt on every downpipe. A ⟦name⟧ garden sends almost nothing into the drain and needs little watering by its second summer.}}</p>
+</div>
+<span class="pr__tab m-plot__tab m-plot__tab--tl m-text-4">{{t23|Rainwater}}</span>
+</div>
+</li>
+<li class="pr__band">
+<div class="pr__inner m-plot__ground">
+<div class="pr__panel m-plot m-surface-3">
+<h3 class="m-text-2 pr__title">{{t24|Plant for the whole food web.}}</h3>
+<p class="m-text pr__text">{{t25|Native hedges, borders that flower from March to November and seedheads left standing through winter: food and shelter in every month of the year.}}</p>
+</div>
+<span class="pr__tab m-plot__tab m-plot__tab--tl m-text-4">{{t26|Habitat}}</span>
+</div>
+</li>
+<li class="pr__band">
+<div class="pr__inner m-plot__ground">
+<div class="pr__panel m-plot m-surface-4">
+<h3 class="m-text-2 pr__title">{{t27|Build from close by.}}</h3>
+<p class="m-text pr__text">{{t28|Sussex flint, local oak and reclaimed brick from within thirty miles. No plastic edging, no imported stone, nothing that will not age well.}}</p>
+</div>
+<span class="pr__tab m-plot__tab m-plot__tab--tl m-text-4">{{t29|Local}}</span>
+</div>
+</li>
+</ol>
+</section>{{/sec_principles}}
+
+{{#sec_services}}<section aria-labelledby="services-title" data-8b-section="services" id="services">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="services-title">{{t30|How a garden gets made}}</h2>
+<p class="m-text-5">{{t31|Four stages and one team. The people who draw your plan are the people who lay the path, set out the plants and come back to cut the meadow in August.}}</p>
+</div>
+<div class="sv__stage">
+<div class="sv__board">
+<article class="sv__bed sv__bed--1">
+<img alt="A hand-coloured garden plan with round beds, trees and winding paths" class="sv__img" height="3264" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1599110906632-28d25094470f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z2FyZGVuJTIwZGVzaWduJTIwcGxhbiUyMHNrZXRjaHxlbnwxfDB8fHwxNzkxNDEwNjY1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=860&q=60}}" style="background:#a6a6a6" width="4896"/>
+<div class="sv__card">
+<h3 class="sv__name m-text-6"><span class="sv__step">{{t32|01}}</span>{{t33|Design}}</h3>
+<p class="sv__text m-text">{{t34|Survey, scaled plan and a planting list made for your soil and light.}}</p>
+</div>
+</article>
+<article class="sv__bed sv__bed--2">
+<img alt="Stone slabs being laid on sand between timber edging for a new garden path" class="sv__img" height="3456" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1622743057549-4532e4b49633?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGF5aW5nJTIwc3RvbmUlMjBnYXJkZW4lMjBwYXRofGVufDF8MHx8fDE3OTE0MTA2NjZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=860&q=60}}" style="background:#a6a6a6" width="5184"/>
+<div class="sv__card">
+<h3 class="sv__name m-text-6"><span class="sv__step">{{t35|02}}</span>{{t36|Build}}</h3>
+<p class="sv__text m-text">{{t37|Paths, walls and ponds laid by our own crew from local materials.}}</p>
+</div>
+</article>
+<article class="sv__bed sv__bed--3">
+<img alt="Gloved hands firming a young plant into dark soil beside a trowel" class="sv__img" height="5387" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1782386963665-b83ce1d6752e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHBsYW50aW5nJTIwc2VlZGxpbmdzJTIwZ2FyZGVufGVufDF8MHx8fDE3OTE0MTA2NzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=860&q=60}}" style="background:#737359" width="8076"/>
+<div class="sv__card">
+<h3 class="sv__name m-text-6"><span class="sv__step">{{t38|03}}</span>{{t39|Plant}}</h3>
+<p class="sv__text m-text">{{t40|Peat-free, Sussex-grown plants, set out by the people who chose them.}}</p>
+</div>
+</article>
+<article class="sv__bed sv__bed--4">
+<img alt="Secateurs pruning a rose stem among fresh green leaves" class="sv__img" height="2848" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1680124744811-f779e4ad6985?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cHJ1bmluZyUyMGdhcmRlbiUyMHNoZWFycyUyMGhlZGdlfGVufDF8MHx8fDE3OTE0MTA2Njd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=860&q=60}}" style="background:#f3d9d9" width="4272"/>
+<div class="sv__card">
+<h3 class="sv__name m-text-6"><span class="sv__step">{{t41|04}}</span>{{t42|Tend}}</h3>
+<p class="sv__text m-text">{{t43|Seasonal visits that edit, prune and feed, so the garden keeps improving.}}</p>
+</div>
+</article>
+</div>
+</div>
+</section>{{/sec_services}}
+
+{{#sec_wildlife}}<section aria-labelledby="wildlife-title" data-8b-section="wildlife" id="wildlife">
+<div class="wl__plot">
+<h2 class="wl__label m-plot__tab m-plot__tab--tl m-text-6" id="wildlife-title">{{t44|Room for wildlife}}</h2>
+<div class="wl__panel m-plot m-surface-2">
+<p class="m-text-7 wl__sentence">{{t45|Every garden we make keeps a gap under the fence}} <span class="wl__pill"><img alt="" height="3024" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1637088433741-cd2dc5626dc8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8aGVkZ2Vob2d8ZW58MXwwfHx8MTc5MTQxMDY3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60}}" style="background:#8ca640" width="4032"/></span> {{t46|for hedgehogs, open water}} <span class="wl__pill"><img alt="" height="3264" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1556010117-29c6a0a69e0f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2FyZGVuJTIwcG9uZHxlbnwxfDB8fHwxNzkxNDEwNjc2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60}}" style="background:#f3f3f3" width="4928"/></span> {{t47|for frogs and newts, flowers from March to November}} <span class="wl__pill"><img alt="" height="2937" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1685563183278-865d96363e6b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGJlZSUyMG9uJTIwZmxvd2VyfGVufDF8MHx8fDE3OTE0MTA2Nzd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60}}" style="background:#595926" width="5020"/></span> {{t48|for the bees, and seedheads}} <span class="wl__pill"><img alt="" height="3456" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1610025094613-eb1464690db6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8c2VlZGhlYWRzJTIwd2ludGVyfGVufDF8MHx8fDE3OTE0MTA2Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60}}" style="background:#8c8c8c" width="5184"/></span> {{t49|left standing for the winter finches.}}</p>
+</div>
+<div class="wl__foot m-plot__tab m-plot__tab--br">
+<p class="m-text">{{t50|Last year our camera traps caught hedgehogs in 23 of the 41 gardens we look after.}}</p>
+<a class="m-link" href="#seasons">{{t51|What aftercare involves}}</a>
+</div>
+</div>
+</section>{{/sec_wildlife}}
+
+{{#sec_gardens}}<section aria-labelledby="gardens-title" data-8b-section="gardens" id="gardens">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="gardens-title">{{t52|Gardens we have made}}</h2>
+<p class="m-text-5">{{t53|Three of the forty-one gardens we built and still look after. Each one is visited at least four times a year by the team that planted it.}}</p>
+</div>
+<div class="gd__list">
+<article class="gd__item">
+<div class="gd__inner m-plot__ground">
+<div class="gd__frame m-plot">
+<img alt="Deep mixed borders of crimson, pink and blue perennials in front of an old brick barn" class="gd__img" height="4000" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1789333833167-350d65aef648?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2FyZGVuJTIwYm9yZGVyJTIwcGVyZW5uaWFsc3xlbnwxfDB8fHwxNzkxNDEwNjc4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1440&q=60}}" style="background:#0c260c" width="6000"/>
+<div class="gd__shade"></div>
+</div>
+<div class="gd__name m-plot__tab m-plot__tab--tl">
+<h3 class="m-text-6">{{t54|The brick barn borders}}</h3>
+<p class="m-text-4">{{t55|Ringmer · built in 2023}}</p>
+</div>
+<dl class="gd__facts m-plot__tab m-plot__tab--br">
+<div><dt class="m-text-4">{{t56|Size}}</dt><dd>{{t57|1,400 m²}}</dd></div>
+<div><dt class="m-text-4">{{t36|Build}}</dt><dd>{{t58|11 weeks}}</dd></div>
+<div><dt class="m-text-4">{{t59|Planted}}</dt><dd>{{t60|2,300 perennials, 140 m of hedge}}</dd></div>
+</dl>
+</div>
+</article>
+<article class="gd__item">
+<div class="gd__inner m-plot__ground">
+<div class="gd__frame m-plot">
+<img alt="A small walled courtyard with clipped box, flagstones, terracotta pots and climbing plants on painted brick" class="gd__img" height="2592" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1615478397266-d94a8f153a8a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y291cnR5YXJkJTIwZ2FyZGVufGVufDF8MHx8fDE3OTE0MTA2Nzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1440&q=60}}" style="background:#a6a6a6" width="3872"/>
+<div class="gd__shade"></div>
+</div>
+<div class="gd__name m-plot__tab m-plot__tab--tl">
+<h3 class="m-text-6">{{t61|A townhouse courtyard}}</h3>
+<p class="m-text-4">{{t62|Lewes · built in 2024}}</p>
+</div>
+<dl class="gd__facts m-plot__tab m-plot__tab--br">
+<div><dt class="m-text-4">{{t56|Size}}</dt><dd>{{t63|64 m²}}</dd></div>
+<div><dt class="m-text-4">{{t36|Build}}</dt><dd>{{t64|4 weeks}}</dd></div>
+<div><dt class="m-text-4">{{t65|Reused}}</dt><dd>{{t66|Every flagstone, 900 old bricks}}</dd></div>
+</dl>
+</div>
+</article>
+<article class="gd__item">
+<div class="gd__inner m-plot__ground">
+<div class="gd__frame m-plot">
+<img alt="Stepping stones climbing through a shaded garden of ferns, moss and clipped shrubs towards a lit doorway" class="gd__img" height="6336" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1734830586944-645144ba72b9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Y291cnR5YXJkJTIwZ2FyZGVufGVufDF8MHx8fDE3OTE0MTA2Nzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1440&q=60}}" style="background:#0c260c" width="9504"/>
+<div class="gd__shade"></div>
+</div>
+<div class="gd__name m-plot__tab m-plot__tab--tl">
+<h3 class="m-text-6">{{t67|The shade garden}}</h3>
+<p class="m-text-4">{{t68|Ditchling · built in 2022}}</p>
+</div>
+<dl class="gd__facts m-plot__tab m-plot__tab--br">
+<div><dt class="m-text-4">{{t56|Size}}</dt><dd>{{t69|520 m²}}</dd></div>
+<div><dt class="m-text-4">{{t36|Build}}</dt><dd>{{t70|7 weeks}}</dd></div>
+<div><dt class="m-text-4">{{t71|Drained}}</dt><dd>{{t72|A wet slope turned into a rain garden}}</dd></div>
+</dl>
+</div>
+</article>
+</div>
+</section>{{/sec_gardens}}
+
+{{#sec_materials}}<section aria-labelledby="materials-title" data-8b-section="materials" id="materials">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="materials-title">{{t73|What we build with}}</h2>
+<p class="m-text-5">{{t74|Nothing travels further than it has to. Most of what goes into a ⟦name⟧ garden comes from within thirty miles of it.}}</p>
+</div>
+<ul class="mt__list">
+<li class="mt__row">
+<div class="mt__thumb" data-8b-motion="plot"><img alt="A wall of knapped flints set in lime mortar" height="4160" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1725473777564-101b802f8b42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZmxpbnQlMjB3YWxsfGVufDF8MHx8fDE3OTE0MTA2ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#404040" width="6240"/></div>
+<h3 class="m-text-6">{{t75|Knapped flint}}</h3>
+<p class="m-text">{{t76|For walls and edging, from Downland farms and the rubble of old barns.}}</p>
+<p class="m-text-4 mt__from">{{t77|Within 8 miles}}</p>
+</li>
+<li class="mt__row">
+<div class="mt__thumb" data-8b-motion="plot"><img alt="Sawn oak beams stacked side by side" height="4000" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1599004082088-dd8261d80bdc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8b2FrJTIwdGltYmVyfGVufDF8MHx8fDE3OTE0MTA2ODd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#d9a673" width="6000"/></div>
+<h3 class="m-text-6">{{t78|Sussex oak}}</h3>
+<p class="m-text">{{t79|Green oak for raised beds, benches and pergolas, left to silver with age.}}</p>
+<p class="m-text-4 mt__from">{{t80|Within 22 miles}}</p>
+</li>
+<li class="mt__row">
+<div class="mt__thumb" data-8b-motion="plot"><img alt="Weathered red bricks in an old wall" height="2268" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1646385916686-9952380523d2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHJlY2xhaW1lZCUyMGJyaWNrfGVufDF8MHx8fDE3OTE0MTA2ODh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#a67340" width="3023"/></div>
+<h3 class="m-text-6">{{t81|Reclaimed brick}}</h3>
+<p class="m-text">{{t82|Paths and low walls in bricks saved from local demolitions, cleaned by hand.}}</p>
+<p class="m-text-4 mt__from">{{t83|Within 30 miles}}</p>
+</li>
+<li class="mt__row">
+<div class="mt__thumb" data-8b-motion="plot"><img alt="Wooden compost bays filled with garden clippings" height="2252" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1716903282677-3a1b5c936b41?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y29tcG9zdHxlbnwxfDB8fHwxNzkxNDEwNjg5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#a6a6a6" width="4000"/></div>
+<h3 class="m-text-6">{{t84|Our own compost}}</h3>
+<p class="m-text">{{t85|Three bays at the yard turn every clipping we take away into next year's mulch.}}</p>
+<p class="m-text-4 mt__from">{{t86|At our yard}}</p>
+</li>
+<li class="mt__row">
+<div class="mt__thumb" data-8b-motion="plot"><img alt="A pale gravel path curving between low planting and a tall hedge" height="4500" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1776757979931-73fc57866fed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z3JhdmVsJTIwcGF0aCUyMGdhcmRlbnxlbnwxfDB8fHwxNzkxNDEwNjg5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#d9f3f3" width="6000"/></div>
+<h3 class="m-text-6">{{t87|Hoggin and gravel}}</h3>
+<p class="m-text">{{t88|Paths that let rain through, bound with clay instead of cement.}}</p>
+<p class="m-text-4 mt__from">{{t89|Within 25 miles}}</p>
+</li>
+</ul>
+</section>{{/sec_materials}}
+
+{{#sec_seasons}}<section aria-labelledby="seasons-title" data-8b-section="seasons" id="seasons">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="seasons-title">{{t90|Aftercare, all year round}}</h2>
+<p class="m-text-5">{{t91|Most new gardens fail in their third year, when nobody is looking. Ours are visited every season by the people who planted them.}}</p>
+</div>
+<div class="ss__pin">
+<div class="ss__track">
+<article class="ss__panel ss__panel--spring" data-ground="spring">
+<div class="ss__photo m-plot"><img alt="Red and yellow tulips under young trees in spring sunshine" height="5848" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1685113351753-762cc0852bd4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c3ByaW5nJTIwZ2FyZGVuJTIwdHVsaXBzfGVufDF8MXx8fDE3OTE0MTA2OTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#26260c" width="3865"/></div>
+<div class="ss__body">
+<div>
+<h3 class="m-text-2 ss__name">{{t92|Spring}}</h3>
+<p class="m-text-4 ss__months">{{t93|March to May · three visits}}</p>
+</div>
+<ul class="ss__visits m-text">
+<li>{{t94|Cut back last year's stems once the insects have left them}}</li>
+<li>{{t95|Mulch every bed with compost from our yard}}</li>
+<li>{{t96|Lift and divide crowded perennials}}</li>
+</ul>
+</div>
+</article>
+<article class="ss__panel ss__panel--summer" data-ground="summer">
+<div class="ss__photo m-plot"><img alt="A summer border of pink gaura, purple salvia and grasses in full flower" height="5641" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1752776132465-39ff6d6d7132?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3VtbWVyJTIwZ2FyZGVuJTIwbWVhZG93JTIwZmxvd2Vyc3xlbnwxfDF8fHwxNzkxNDEwNjkxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#26260c" width="4284"/></div>
+<div class="ss__body">
+<div>
+<h3 class="m-text-2 ss__name">{{t97|Summer}}</h3>
+<p class="m-text-4 ss__months">{{t98|June to August · two visits}}</p>
+</div>
+<ul class="ss__visits m-text">
+<li>{{t99|Cut meadow paths and the first hay in late July}}</li>
+<li>{{t100|Deadhead for a second flush, leave the rest to seed}}</li>
+<li>{{t101|Check ponds, butts and new trees through dry spells}}</li>
+</ul>
+</div>
+</article>
+<article class="ss__panel ss__panel--autumn" data-ground="autumn">
+<div class="ss__photo m-plot"><img alt="Orange maple leaves lit by low autumn sun" height="4896" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1636428974444-61ef698d8f33?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGF1dHVtbiUyMGdhcmRlbiUyMGxlYXZlc3xlbnwxfDF8fHwxNzkxNDEwNjkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#f3c073" width="3264"/></div>
+<div class="ss__body">
+<div>
+<h3 class="m-text-2 ss__name">{{t102|Autumn}}</h3>
+<p class="m-text-4 ss__months">{{t103|September to November · two visits}}</p>
+</div>
+<ul class="ss__visits m-text">
+<li>{{t104|Plant bulbs, bare-root hedging and new trees}}</li>
+<li>{{t105|Rake leaves onto the beds instead of the bonfire}}</li>
+<li>{{t106|Sow yellow rattle into lawns turning to meadow}}</li>
+</ul>
+</div>
+</article>
+<article class="ss__panel ss__panel--winter" data-ground="winter">
+<div class="ss__photo m-plot"><img alt="Frost on grasses and clipped shrubs along a stone path in a winter garden" height="8256" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1579847198181-412a0d0487d0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8ZnJvc3QlMjBnYXJkZW4lMjB3aW50ZXJ8ZW58MXwxfHx8MTc5MTQxMDY5M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#f3f3f3" width="5504"/></div>
+<div class="ss__body">
+<div>
+<h3 class="m-text-2 ss__name">{{t107|Winter}}</h3>
+<p class="m-text-4 ss__months">{{t108|December to February · one visit}}</p>
+</div>
+<ul class="ss__visits m-text">
+<li>{{t109|Prune fruit trees and lay the hedges}}</li>
+<li>{{t110|Leave seedheads and hollow stems standing}}</li>
+<li>{{t111|Walk the garden with you and plan the year}}</li>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</section>{{/sec_seasons}}
+
+{{#sec_voices}}<section aria-labelledby="voices-title" data-8b-section="voices" id="voices">
+<div class="l-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="voices-title">{{t112|What it is like to have us around}}</h2>
+<p class="m-text-5">{{t113|From people whose gardens we made, and still look after.}}</p>
+</div>
+<ul class="vc__list">
+<li class="vc__card">
+<figure class="vc__panel vc__panel--1 m-plot">
+<blockquote><p class="m-text-5">{{t114|“They talked us out of a lawn we did not need and into a meadow we now cannot stop walking through.”}}</p></blockquote>
+<figcaption class="vc__who"><span class="m-text-6">{{t115|Priya and Tom Hale}}</span><span class="m-text-4 vc__place">{{t116|Kingston near Lewes}}</span></figcaption>
+</figure>
+<div class="vc__thumb"><img alt="A white bench under a rose arch in a summer garden" height="3000" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1654073324856-3bd171d1f5fe?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z2FyZGVuJTIwYmVuY2glMjBwbGFudGluZ3xlbnwxfDB8fHwxNzkxNDEwNjk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=260&q=60}}" style="background:#0c260c" width="4000"/></div>
+</li>
+<li class="vc__card">
+<figure class="vc__panel vc__panel--2 m-plot">
+<blockquote><p class="m-text-5">{{t117|“Four years on, the same two gardeners still come every month. The garden is better each spring than the last.”}}</p></blockquote>
+<figcaption class="vc__who"><span class="m-text-6">{{t118|Margaret Ellison}}</span><span class="m-text-4 vc__place">{{t119|Ditchling}}</span></figcaption>
+</figure>
+<div class="vc__thumb"><img alt="A cottage garden path between full borders of pale flowers" height="4271" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1723049492083-de2b02c48e81?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y290dGFnZSUyMGdhcmRlbiUyMGZsb3dlcnN8ZW58MXwwfHx8MTc5MTQxMDY3NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=260&q=60}}" style="background:#737359" width="5979"/></div>
+</li>
+<li class="vc__card">
+<figure class="vc__panel vc__panel--3 m-plot">
+<blockquote><p class="m-text-5">{{t120|“We expected a building site for three months. They were gone in seven weeks and left the hedge full of nests.”}}</p></blockquote>
+<figcaption class="vc__who"><span class="m-text-6">{{t121|Owen Ward}}</span><span class="m-text-4 vc__place">{{t122|Seaford}}</span></figcaption>
+</figure>
+<div class="vc__thumb"><img alt="A narrow back garden with a stone path, low hedges and a blue shed" height="2592" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1615478494918-1a49c8ecd568?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y291cnR5YXJkJTIwZ2FyZGVufGVufDF8MHx8fDE3OTE0MTA2Nzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=260&q=60}}" style="background:#f3f3f3" width="3872"/></div>
+</li>
+</ul>
+</section>{{/sec_voices}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="faq-title">{{t123|Questions we are asked}}</h2>
+<p class="m-text">{{t124|Anything else, ask us on the walk round. The first visit is free within twenty miles of Lewes.}}</p>
+</div>
+<div class="fq__list">
+<details class="fq__item">
+<summary><span class="m-text-6">{{t125|How much does a new garden cost?}}</span><span aria-hidden="true" class="fq__mark"></span></summary>
+<p class="m-text">{{t126|Most of our builds fall between ₦9,000,000 and ₦45,000,000. Design on its own starts at ₦700,000 for a small garden, and the fee comes off the build if we make it.}}</p>
+</details>
+<details class="fq__item">
+<summary><span class="m-text-6">{{t127|Where do you work?}}</span><span aria-hidden="true" class="fq__mark"></span></summary>
+<p class="m-text">{{t128|Within about forty minutes of our yard in Lewes: Ikoyi and Hove, Seaford, Uckfield and the edge of the Weald. Aftercare keeps us close, so we do not travel further.}}</p>
+</details>
+<details class="fq__item">
+<summary><span class="m-text-6">{{t129|How long until it looks established?}}</span><span aria-hidden="true" class="fq__mark"></span></summary>
+<p class="m-text">{{t130|Borders fill out in their second summer; hedges and trees take three to five years. We plan the first year so the garden never looks bare.}}</p>
+</details>
+<details class="fq__item">
+<summary><span class="m-text-6">{{t131|Can you take over a garden someone else made?}}</span><span aria-hidden="true" class="fq__mark"></span></summary>
+<p class="m-text">{{t132|Yes. We look after it as it is for a full season first, then suggest changes once we know what thrives there.}}</p>
+</details>
+<details class="fq__item">
+<summary><span class="m-text-6">{{t133|Will you reuse what is already there?}}</span><span aria-hidden="true" class="fq__mark"></span></summary>
+<p class="m-text">{{t134|Always, if it is healthy. Soil, stone, paving and plants on site are used before anything new is bought.}}</p>
+</details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="ct__plot">
+<div class="ct__panel m-plot m-surface">
+<div class="ct__intro">
+<h2 class="m-text-2 ct__title" id="contact-title">{{t135|Let’s walk your garden}}</h2>
+<p class="m-text-5">{{t136|Tell us a little about the space. One of our designers will call within two working days to arrange a site visit.}}</p>
+</div>
+
+</div>
+<dl class="ct__tab m-plot__tab m-plot__tab--tr">
+<div><dt class="m-text-4">{{t137|Call}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t138|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-4">{{t139|Write}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t140|hello@⟦name⟧.example}}</a></dd></div>
+<div><dt class="m-text-4">{{t141|Yard}}</dt><dd>{{t142|1 Admiralty Way, Lewes}}</dd></div>
+<div><dt class="m-text-4">{{t143|Hours}}</dt><dd>{{t144|Monday to Friday, 8 to 5}}</dd></div>
+</dl>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Landscaping by <a href="https://github.com/8bsite/landscaping-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft__panel m-plot m-surface-4">
+<div class="ft__cols">
+<div class="ft__about">
+<p class="m-text-5">{{t145|Landscape gardeners for East Sussex. Design, build, planting and aftercare, from a yard in Lewes since 2011.}}</p>
+<a class="m-btn-2" href="#contact"><span aria-hidden="true" class="m-btn-2__icon"></span><span class="m-btn-2__label">{{t6|Book a site visit}}</span></a>
+</div>
+<nav aria-label="Footer" class="ft__nav">
+<a class="m-link-2" href="#principles">{{t146|Soil first}}</a>
+<a class="m-link-2" href="#services">{{t3|How we work}}</a>
+<a class="m-link-2" href="#gardens">{{t4|Gardens}}</a>
+<a class="m-link-2" href="#seasons">{{t5|Aftercare}}</a>
+<a class="m-link-2" href="#faq">{{t8|Questions}}</a>
+</nav>
+<address class="m-text">
+<span>{{t147|1 Admiralty Way}}<br/>{{t148|Lewes}}</span>
+<a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t138|⟦phone⟧}}</a>
+<a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t140|hello@⟦name⟧.example}}</a>
+</address>
+</div>
+<p aria-hidden="true" class="ft__word" style="--len:4">{{t2|⟦name⟧}}</p>
+<div class="ft__small m-text-4"><span>{{t149|© 2026 ⟦name⟧ garden makers Ltd · Registered in Nigeria and Nigeria no. 00000000 · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t150|8B}}</a></span><a class="m-link-2" href="#opening">{{t151|Back to the top}}</a></div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const toggle = nav.querySelector('.nav__menu');
+  const close = menu.querySelector('.menu__close');
+  let last = window.scrollY, travel = 0;
+  const update = () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    if (y < 80) { nav.dataset.state = 'top'; travel = 0; return; }
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (travel > 24) nav.dataset.state = 'hidden';
+    else if (travel < -24) nav.dataset.state = 'float';
+    else if (nav.dataset.state === 'top') nav.dataset.state = 'float';
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+  nav.addEventListener('focusin', () => { if (nav.dataset.state === 'hidden') nav.dataset.state = 'float'; });
+  const setMenu = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const opening = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => { opening.dataset.loops = entry.isIntersecting ? 'on' : 'off'; }).observe(opening);
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navOffset() {
+  return (document.getElementById('navigation')?.offsetHeight || 0) + 8;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines', linesClass: 'rise-line' });
+    return gsap.timeline({ onComplete: () => split.revert() })
+      .from(split.lines, { yPercent: 105, duration: 0.9, ease: 'power3.out', stagger: 0.09 });
+  },
+  plot(element) {
+    const radius = getComputedStyle(element).borderTopLeftRadius;
+    return gsap.timeline({ onComplete: () => gsap.set(element, { clearProps: 'clipPath' }) })
+      .fromTo(element, { clipPath: `inset(0% 100% 100% 0% round ${radius})` }, { clipPath: `inset(0% 0% 0% 0% round ${radius})`, duration: 1.1, ease: 'power3.inOut' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true, animation: effects[name](element)
+      }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  const status = form.querySelector('.ct__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const missing = [...form.querySelectorAll('[required]')].some(field => !field.value.trim());
+    status.textContent = missing ? status.dataset.missing : status.dataset.sent;
+    if (!missing) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:principles">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('principles');
+    const bands = [...section.querySelectorAll('.pr__band')];
+    bands.forEach((band, index) => {
+      if (!index) return;
+      const inner = band.querySelector('.pr__inner');
+      gsap.fromTo(inner, { y: () => -inner.offsetHeight * (innerWidth <= 700 ? 0.42 : 0.5), rotate: index % 2 ? 1.6 : -1.6 }, {
+        y: 0, rotate: 0, ease: 'none',
+        scrollTrigger: { id: `principles:band-${index}`, trigger: band, start: 'top bottom', end: 'top 50%', scrub: 0.5, invalidateOnRefresh: true }
+      });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:services">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 701px)',
+    phone: '(prefers-reduced-motion: no-preference) and (max-width: 700px)'
+  }, context => {
+    const section = document.getElementById('services');
+    const stage = section.querySelector('.sv__stage');
+    const board = section.querySelector('.sv__board');
+    const beds = [...board.querySelectorAll('.sv__bed')];
+    const texts = beds.map(bed => bed.querySelector('.sv__text'));
+    const phone = context.conditions.phone;
+    const write = (bed, t, r, b, l) => {
+      bed.style.setProperty('--sv-t', t); bed.style.setProperty('--sv-r', r);
+      bed.style.setProperty('--sv-b', b); bed.style.setProperty('--sv-l', l);
+    };
+    const seams = phone ? { a: 25, b: 50, c: 75 } : { x: 50, yl: 50, yr: 50 };
+    const apply = phone
+      ? () => { const { a, b, c } = seams; write(beds[0], 0, 0, 100 - a, 0); write(beds[1], a, 0, 100 - b, 0); write(beds[2], b, 0, 100 - c, 0); write(beds[3], c, 0, 0, 0); }
+      : () => { const { x, yl, yr } = seams; write(beds[0], 0, 100 - x, 100 - yl, 0); write(beds[1], 0, 0, 100 - yr, x); write(beds[2], yl, 100 - x, 0, 0); write(beds[3], yr, 0, 0, x); };
+    const states = phone
+      ? [{ a: 52, b: 68, c: 84 }, { a: 16, b: 68, c: 84 }, { a: 16, b: 32, c: 84 }, { a: 16, b: 32, c: 48 }, { a: 25, b: 50, c: 75 }]
+      : [{ x: 68, yl: 74, yr: 50 }, { x: 32, yl: 50, yr: 74 }, { x: 68, yl: 26, yr: 50 }, { x: 32, yl: 50, yr: 26 }, { x: 50, yl: 50, yr: 50 }];
+    section.dataset.board = 'on';
+    const top = () => parseFloat(getComputedStyle(board).top) || 0;
+    const timeline = gsap.timeline({
+      defaults: { duration: 1, ease: 'power2.inOut' },
+      onUpdate: apply,
+      scrollTrigger: { id: 'services', trigger: stage, start: () => `top ${top()}px`, end: () => `bottom ${top() + board.offsetHeight}px`, scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline.to({}, { duration: 0.35 });
+    states.forEach((state, index) => {
+      timeline.addLabel(`state-${index}`).to(seams, { ...state }, `state-${index}`);
+      if (phone) texts.forEach((text, j) => {
+        const shown = index === states.length - 1 || j === index;
+        timeline.to(text, { autoAlpha: shown ? 1 : 0, duration: 0.5 }, `state-${index}+=${shown ? 0.45 : 0}`);
+      });
+      timeline.to({}, { duration: index === states.length - 1 ? 0.35 : 0.6 });
+    });
+    return () => {
+      delete section.dataset.board;
+      beds.forEach(bed => ['--sv-t', '--sv-r', '--sv-b', '--sv-l'].forEach(name => bed.style.removeProperty(name)));
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:wildlife">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('wildlife');
+    const sentence = section.querySelector('.wl__sentence');
+    const split = SplitText.create(sentence, { type: 'words', wordsClass: 'wl__word' });
+    const items = [...sentence.querySelectorAll('.wl__word, .wl__pill')];
+    const step = 1 / items.length;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'wildlife', trigger: sentence, start: 'top 84%', end: 'bottom 64%', scrub: 0.4 }
+    });
+    items.forEach((item, index) => {
+      const at = index * step;
+      if (item.classList.contains('wl__pill')) {
+        timeline.fromTo(item, { clipPath: 'inset(0% 50% 0% 50% round 999px)' }, { clipPath: 'inset(0% 0% 0% 0% round 999px)', duration: step * 4, ease: 'power2.out' }, at);
+        timeline.fromTo(item.querySelector('img'), { scale: 1.6 }, { scale: 1, duration: step * 6 }, at);
+      } else {
+        timeline.fromTo(item, { opacity: 0.2 }, { opacity: 1, duration: step * 2.5 }, at);
+      }
+    });
+    return () => split.revert();
+  });
+}, { near: document.getElementById('wildlife') });
+</script>
+<script data-8b-part="scene:gardens">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('gardens');
+    const items = [...section.querySelectorAll('.gd__item')];
+    const last = items[items.length - 1];
+    const offset = index => (innerWidth <= 700 ? 70 + index * 14 : 92 + index * 20);
+    section.dataset.stack = 'on';
+    items.forEach((item, index) => {
+      const next = items[index + 1];
+      const img = item.querySelector('.gd__img');
+      gsap.fromTo(img, { yPercent: -4 }, {
+        yPercent: 4, ease: 'none',
+        scrollTrigger: { id: `gardens:drift-${index}`, trigger: item, start: 'top bottom', end: () => `top ${offset(index)}px`, scrub: true, invalidateOnRefresh: true }
+      });
+      if (!next) return;
+      ScrollTrigger.create({
+        id: `gardens:hold-${index}`, trigger: item, start: () => `top ${offset(index)}px`,
+        endTrigger: last, end: () => `top ${offset(items.length - 1)}px`, pin: true, pinSpacing: false, invalidateOnRefresh: true
+      });
+      gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `gardens:cover-${index}`, trigger: next, start: 'top bottom', end: () => `top ${offset(index + 1)}px`, scrub: true, invalidateOnRefresh: true }
+      })
+        .fromTo(item.querySelector('.gd__inner'), { scale: 1 }, { scale: 0.93 }, 0)
+        .fromTo(item.querySelector('.gd__shade'), { opacity: 0 }, { opacity: 0.45 }, 0);
+    });
+    return () => { delete section.dataset.stack; };
+  });
+});
+</script>
+<script data-8b-part="scene:seasons">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('seasons');
+    const pin = section.querySelector('.ss__pin');
+    const track = section.querySelector('.ss__track');
+    const panels = [...track.querySelectorAll('.ss__panel')];
+    const grounds = panels.map(panel => { const style = getComputedStyle(panel); return { backgroundColor: style.backgroundColor, color: style.color }; });
+    section.dataset.track = 'on';
+    const distance = () => Math.max(0, track.scrollWidth - pin.clientWidth);
+    gsap.set(pin, grounds[0]);
+    gsap.to(track, {
+      x: () => -distance(), ease: 'none',
+      scrollTrigger: { id: 'seasons', trigger: pin, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    const ground = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'seasons:ground', trigger: pin, start: 'top top', end: () => `+=${distance()}`, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    const span = 1 / (panels.length - 1);
+    grounds.forEach(({ backgroundColor, color }, index) => {
+      if (!index) return;
+      const at = (index - 0.62) * span, length = span * 0.3;
+      ground.to(pin, { backgroundColor, duration: length }, at)
+        .to(pin, { color, duration: 0.001 }, at + length * 0.62);
+    });
+    ground.to({}, { duration: 0.001 }, 1);
+    return () => { delete section.dataset.track; };
+  });
+});
+</script>
+<script data-8b-part="scene:voices">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('voices');
+    const list = section.querySelector('.vc__list');
+    const cards = [...list.querySelectorAll('.vc__card')];
+    const tilt = [-7, 4, 9];
+    const centre = card => ({ x: card.offsetLeft + card.offsetWidth / 2, y: card.offsetTop + card.offsetHeight / 2 });
+    const pile = () => innerWidth <= 860 ? centre(cards[0]) : { x: list.clientWidth / 2, y: list.clientHeight / 2 };
+    cards.forEach((card, index) => {
+      gsap.fromTo(card, {
+        x: () => pile().x - centre(card).x, y: () => pile().y - centre(card).y + 60, rotate: tilt[index % tilt.length]
+      }, {
+        x: 0, y: 0, rotate: 0, ease: 'power1.out',
+        scrollTrigger: { id: `voices:deal-${index}`, trigger: list, start: 'top 82%', end: 'top 30%', scrub: 0.5, invalidateOnRefresh: true }
+      });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 861px)',
+    phone: '(prefers-reduced-motion: no-preference) and (max-width: 860px)'
+  }, context => {
+    const section = document.getElementById('contact');
+    const panel = section.querySelector('.ct__panel');
+    const tab = section.querySelector('.ct__tab');
+    const title = section.querySelector('.ct__title');
+    const rest = Number(getComputedStyle(title).fontWeight) || 400;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact', trigger: section, start: 'top 90%', end: 'top 20%', scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(title, { fontWeight: 720 }, { fontWeight: rest }, 0);
+    if (context.conditions.wide) {
+      timeline
+        .fromTo(panel, { '--plot-trw': '0px', '--plot-trh': '0px' }, { '--plot-trw': () => `${tab.offsetWidth}px`, '--plot-trh': () => `${tab.offsetHeight}px`, ease: 'power2.inOut' }, 0)
+        .fromTo(tab, { x: () => -tab.offsetWidth * 0.35 }, { x: 0, ease: 'power2.out' }, 0);
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+name = "alphabiz-sites"
+main = "worker/index.js"
+compatibility_date = "2026-10-01"
+[vars]
+SUPABASE_URL = "https://YOUR-PROJECT.supabase.co"
+SUPABASE_ANON = "YOUR-ANON-KEY"

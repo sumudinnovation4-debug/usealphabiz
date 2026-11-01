@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01oVTw.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* vietnamese */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01UVTyX-.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01QVTyX-.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01oVTw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #eef0f2;
+  --color-2: #0c0d10;
+  --color-3: #070a0f;
+  --color-4: #ffffff;
+  --color-5: #ff8a1f;
+  --color-6: #545a63;
+  --color-7: #a1a8b2;
+  --color-8: #11161e;
+  --font-1: "National Park", "National Park Fallback", Arial, sans-serif;
+  --radius-1: 22px;
+  --radius-2: 14px;
+  --radius-3: 999px;
+  --space-1: 8px;
+  --shadow-1: 0 30px 60px -24px color-mix(in oklab, var(--color-3) 80%, transparent);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "National Park Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 98.6%; ascent-override: 104.5%; descent-override: 30.4%; line-gap-override: 0%; }
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--color-1);
+    color: var(--color-2);
+    font-family: var(--font-1);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  h1, h2, h3 { text-wrap: balance; }
+  ul, ol { padding: 0; list-style: none; }
+  button, input { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+  .m-text {
+    font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.5;
+    letter-spacing: -0.005em; text-transform: none; font-style: normal;
+  }
+  .m-text-2 {
+    font-family: var(--font-1); font-size: clamp(52px, min(8vw, 13svh), 116px); font-weight: 300; line-height: 1;
+    letter-spacing: -0.045em; text-transform: none; font-style: normal;
+  }
+  .m-text-3 {
+    font-family: var(--font-1); font-size: clamp(38px, 4.6vw, 64px); font-weight: 300; line-height: 1.06;
+    letter-spacing: -0.035em; text-transform: none; font-style: normal;
+  }
+  .m-text-4 {
+    font-family: var(--font-1); font-size: 24px; font-weight: 400; line-height: 1.2;
+    letter-spacing: -0.02em; text-transform: none; font-style: normal;
+  }
+  .m-text-5 {
+    font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.3;
+    letter-spacing: 0.01em; text-transform: none; font-style: normal;
+  }
+  .m-text-6 {
+    font-family: var(--font-1); font-size: clamp(28px, 3.6vw, 52px); font-weight: 300; line-height: 1.16;
+    letter-spacing: -0.03em; text-transform: none; font-style: normal;
+  }
+  .m-text-7 {
+    font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.45;
+    letter-spacing: 0; text-transform: none; font-style: normal;
+  }
+
+  .m-btn, .m-btn-2 {
+    display: inline-flex; align-items: center; gap: 6px; text-decoration: none; cursor: pointer;
+    border: 0; padding: 0; background: none; border-radius: var(--radius-3);
+    font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.005em;
+    text-transform: none; font-style: normal;
+  }
+  .m-btn__label {
+    display: inline-grid; align-items: center; height: 52px; padding: 0 26px; border-radius: var(--radius-3);
+    background: var(--color-4); color: var(--color-2); perspective: 300px; white-space: nowrap;
+    transition: background-color .45s cubic-bezier(.3,.7,.2,1);
+  }
+  .m-btn__face { grid-area: 1 / 1; backface-visibility: hidden; transition: transform .55s cubic-bezier(.3,.7,.2,1); }
+  .m-btn__face--next { transform: rotateY(90deg); }
+  .m-btn__icon {
+    display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+    background: var(--color-4); color: var(--color-2); transition: background-color .45s cubic-bezier(.3,.7,.2,1);
+  }
+  .m-btn__icon svg, .m-link svg, .m-icon svg {
+    width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+    transition: transform .55s cubic-bezier(.3,.7,.2,1);
+  }
+  .m-btn-2 .m-btn__label, .m-btn-2 .m-btn__icon { background: var(--color-2); color: var(--color-4); }
+  .m-btn:focus-visible { outline-color: var(--color-5); }
+  @media (hover: hover) {
+    .m-btn:hover .m-btn__label, .m-btn:hover .m-btn__icon,
+    .m-btn-2:hover .m-btn__label, .m-btn-2:hover .m-btn__icon { background: var(--color-5); color: var(--color-2); }
+    .m-btn:hover .m-btn__face, .m-btn-2:hover .m-btn__face { transform: rotateY(-90deg); }
+    .m-btn:hover .m-btn__face--next, .m-btn-2:hover .m-btn__face--next { transform: none; }
+    .m-btn:hover .m-btn__icon svg, .m-btn-2:hover .m-btn__icon svg { transform: rotate(45deg); }
+  }
+
+  .m-link {
+    display: inline-flex; align-items: center; gap: 6px; padding-bottom: 4px; text-decoration: none;
+    font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: -0.005em;
+    text-transform: none; font-style: normal;
+    background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat;
+  }
+  @media (hover: hover) {
+    .m-link:hover { animation: m-link-run .7s cubic-bezier(.5,0,.2,1); }
+    .m-link:hover svg { transform: rotate(45deg); }
+  }
+  @keyframes m-link-run {
+    0% { background-size: 100% 1px; background-position: 100% 100%; }
+    45% { background-size: 0% 1px; background-position: 100% 100%; }
+    55% { background-size: 0% 1px; background-position: 0 100%; }
+    100% { background-size: 100% 1px; background-position: 0 100%; }
+  }
+
+  .m-icon {
+    display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; padding: 0; border-radius: 50%;
+    border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; text-decoration: none;
+    transition: background-color .45s cubic-bezier(.3,.7,.2,1), border-color .45s, color .45s;
+  }
+  @media (hover: hover) {
+    .m-icon:hover { background: var(--color-5); border-color: var(--color-5); color: var(--color-2); }
+    .m-icon:hover svg { transform: rotate(45deg); }
+  }
+
+  .m-surface {
+    background: var(--color-8); color: var(--color-4); border-radius: var(--radius-2);
+    border: 1px solid color-mix(in oklab, var(--color-4) 12%, transparent);
+  }
+  .m-surface-2 { background: var(--color-4); color: var(--color-2); border-radius: var(--radius-2); }
+  .m-photo { position: relative; overflow: hidden; border-radius: var(--radius-2); background: var(--color-8); }
+  .m-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .m-text-8 {
+    font-family: var(--font-1); font-size: 30px; font-weight: 300; line-height: 1;
+    letter-spacing: 0.16em; text-transform: uppercase; font-style: normal;
+  }
+  .m-field { display: grid; gap: 14px; }
+  .m-field__label { opacity: 0.85; }
+  .m-field__row {
+    display: flex; align-items: center; gap: 12px; padding-bottom: 12px;
+    border-bottom: 1px solid color-mix(in oklab, currentColor 40%, transparent);
+  }
+  .m-field__input {
+    flex: 1; min-width: 0; height: 46px; padding: 0 4px; border: 0; background: transparent; color: inherit;
+    font-family: var(--font-1); font-size: 19px; font-weight: 300; letter-spacing: -0.01em;
+  }
+  .m-field__input::placeholder { color: inherit; opacity: 0.62; }
+  .m-badge {
+    display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: var(--radius-3);
+    border: 1px solid color-mix(in oklab, currentColor 55%, transparent);
+    font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0.01em;
+    text-transform: none; font-style: normal; white-space: nowrap;
+  }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; inset: 0 0 auto; z-index: 50; transition: transform .5s cubic-bezier(.3,.7,.2,1); }
+  #navigation.is-hidden { transform: translateY(-110%); }
+  #navigation .nav__bar {
+    position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: start;
+    height: 64px; padding: 0 calc(var(--space-1) + clamp(16px, 3vw, 40px));
+    color: var(--color-4); transition: color .4s, background-color .4s;
+  }
+  #navigation .nav__bar::after {
+    content: ""; position: absolute; inset: 0; z-index: -2; background: var(--color-1);
+    opacity: 0; transition: opacity .4s;
+  }
+  #navigation.is-solid .nav__bar { color: var(--color-2); }
+  #navigation.is-solid .nav__bar::after { opacity: 1; }
+  #navigation .nav__menu { display: contents; }
+  #navigation .nav__list { display: flex; align-items: center; justify-content: space-around; height: 64px; }
+  #navigation .nav__list--a { grid-column: 1; grid-row: 1; }
+  #navigation .nav__list--b { grid-column: 3; grid-row: 1; }
+  #navigation .nav__link {
+    position: relative; display: inline-flex; align-items: center; gap: 6px; padding: 8px 2px; text-decoration: none;
+    font-size: 16px; font-weight: 500; letter-spacing: -0.005em;
+  }
+  #navigation .nav__link svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; transition: transform .5s cubic-bezier(.3,.7,.2,1); }
+  #navigation .nav__link::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 3px; height: 1px; background: currentColor;
+    transform: scaleX(0); transform-origin: 100% 50%; transition: transform .5s cubic-bezier(.3,.7,.2,1);
+  }
+  @media (hover: hover) {
+    #navigation .nav__link:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+    #navigation .nav__link:hover svg { transform: rotate(45deg); }
+  }
+  #navigation :focus-visible { outline-color: var(--color-5); }
+  #navigation .nav__logo {
+    grid-column: 2; grid-row: 1; position: relative; display: block; padding: 13px 64px 17px; color: var(--color-2);
+    text-decoration: none;
+  }
+  #navigation .nav__logo::before {
+    content: ""; position: absolute; inset: 0 0 -6px; z-index: -1; background: var(--color-1);
+    border-radius: 0 0 var(--radius-1) var(--radius-1);
+    transform: perspective(70px) rotateX(-9deg); transform-origin: 50% 0;
+  }
+  #navigation .nav__toggle { display: none; }
+  @media (max-width: 900px) {
+    #navigation .nav__bar { grid-template-columns: auto 1fr auto; align-items: start; padding: 0 calc(var(--space-1) + 12px) 0 var(--space-1); }
+    #navigation .nav__logo { grid-column: 1; padding: 14px 40px 16px 26px; font-size: 24px; }
+    #navigation .nav__logo::before { transform-origin: 0 0; border-radius: 0 0 var(--radius-1) 0; }
+    #navigation .nav__toggle {
+      grid-column: 3; display: inline-flex; align-items: center; height: 44px; margin-top: 10px; padding: 0 18px;
+      border-radius: var(--radius-3); border: 1px solid currentColor; background: none; cursor: pointer;
+      font-size: 15px; font-weight: 500;
+    }
+    #navigation .nav__menu {
+      position: fixed; inset: 0; z-index: -3; display: none; flex-direction: column; justify-content: center; gap: 8px;
+      padding: 96px 28px 40px; background: var(--color-3); color: var(--color-4); overflow-y: auto;
+    }
+    #navigation.is-open .nav__menu { display: flex; }
+    #navigation.is-open .nav__bar { color: var(--color-4); }
+    #navigation.is-open .nav__bar::after { opacity: 0; }
+    #navigation .nav__list { display: block; height: auto; }
+    #navigation .nav__link { padding: 6px 0; font-size: 34px; font-weight: 300; letter-spacing: -0.03em; }
+    #navigation .nav__link svg { width: 24px; height: 24px; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; }
+  #opening .op__frame {
+    position: relative; margin: var(--space-1); border-radius: var(--radius-1); overflow: clip;
+    background: var(--color-3); color: var(--color-4);
+  }
+  #opening .op__stage { position: sticky; top: 0; z-index: 0; height: 100svh; margin-bottom: -100svh; overflow: hidden; }
+  #opening .op__photo, #opening .op__intro, #opening .op__zoom, #opening .op__shade, #opening .op__deep { position: absolute; inset: 0; }
+  #opening .op__zoom { transform: scale(1.24); transform-origin: 62% 58%; }
+  #opening .op__drift { position: absolute; inset: 0 -4%; }
+  #opening .op__drift img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+  #opening .op__shade {
+    background: linear-gradient(180deg,
+      color-mix(in oklab, var(--color-3) 55%, transparent) 0%,
+      color-mix(in oklab, var(--color-3) 10%, transparent) 30%,
+      color-mix(in oklab, var(--color-3) 15%, transparent) 55%,
+      color-mix(in oklab, var(--color-3) 70%, transparent) 100%);
+  }
+  #opening .op__deep { background: var(--color-3); opacity: 0; }
+
+  #opening .op__first {
+    position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center;
+    min-height: calc(100svh - var(--space-1)); padding: clamp(118px, 17svh, 150px) 24px 0; text-align: center;
+  }
+  #opening .op__title { max-width: 12ch; }
+  #opening .op__line { display: block; overflow: clip; padding: 0.06em 0.08em 0.14em; margin: -0.06em -0.08em -0.14em; }
+  #opening .op__in { display: block; }
+  #opening .op__sub { max-width: 35em; margin-top: 26px; font-size: 18px; color: var(--color-4); }
+  #opening .op__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; margin-top: 32px; }
+
+  #opening .op__ring {
+    --w: clamp(140px, min(14.5vw, 23svh), 220px);
+    --h: calc(var(--w) * 1.2);
+    --r: calc(var(--w) * 2.8);
+    position: absolute; left: 0; right: 0; bottom: 2svh; height: calc(var(--h) + 6svh); pointer-events: none;
+  }
+  #opening .ring__view { position: absolute; inset: 0; perspective: 1700px; perspective-origin: 50% 40%; }
+  #opening .ring__rise, #opening .ring__back, #opening .ring__tilt, #opening .ring__turn, #opening .ring__spin {
+    position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d;
+  }
+  #opening .ring__rise { left: 0; top: 0; width: 100%; height: 100%; }
+  #opening .ring__back { transform: translateZ(calc(var(--r) * -1)); }
+  #opening .ring__tilt { --lay: 0; --spread: 1; }
+  #opening .ring__card {
+    position: absolute; left: calc(var(--w) / -2); top: calc(var(--h) / -2); width: var(--w); height: var(--h);
+    border-radius: var(--radius-2); overflow: hidden; backface-visibility: hidden; background: var(--color-8);
+    transform: rotateY(calc(var(--i) * 25.7143deg)) translateZ(calc(var(--r) * var(--spread))) rotateX(calc(var(--lay) * 90deg));
+  }
+  #opening .ring__card img { width: 100%; height: 100%; object-fit: cover; }
+
+  #opening .op__second {
+    position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center;
+    min-height: 100svh; padding: 120px clamp(22px, 7vw, 112px) 56px;
+    background: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--color-3) 50%, transparent) 30%, color-mix(in oklab, var(--color-3) 62%, transparent) 100%);
+  }
+  #opening .op__statement { max-width: 21em; }
+  #opening .op__chip {
+    display: inline-block; width: 2.3em; height: 0.92em; margin: 0 0.06em; vertical-align: -0.08em; overflow: hidden;
+    border-radius: var(--radius-3); clip-path: inset(0% 0% 0% 0% round 999px); background: var(--color-8);
+  }
+  #opening .op__chip img { width: 100%; height: 100%; object-fit: cover; }
+  #opening .op__facts {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 18px 48px; margin-top: clamp(40px, 8svh, 80px);
+    padding-top: 26px; border-top: 1px solid color-mix(in oklab, var(--color-4) 24%, transparent);
+  }
+  #opening .op__rating { display: flex; align-items: center; gap: 12px; }
+  #opening .op__stars { display: flex; gap: 3px; color: var(--color-5); }
+  #opening .op__stars svg { width: 16px; height: 16px; fill: currentColor; }
+  #opening .op__facts .m-text { max-width: 26em; }
+  #opening .op__facts .m-link { margin-left: auto; }
+  #opening :focus-visible { outline-color: var(--color-5); }
+
+  @media (max-width: 700px) {
+    #opening .op__first { padding-top: 112px; }
+    #opening .op__sub { font-size: 17px; }
+    #opening .op__ring { --w: clamp(124px, 38vw, 164px); --r: calc(var(--w) * 2.6); bottom: 2svh; }
+    #opening .ring__view { perspective: 1100px; }
+    #opening .op__second { padding: 96px 22px 40px; }
+    #opening .op__facts { gap: 18px 28px; }
+    #opening .op__facts .m-link { margin-left: 0; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op__intro { animation: op-settle 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+    #opening .op__in { animation: op-rise .95s cubic-bezier(.2,.75,.2,1) backwards; }
+    #opening .op__line + .op__line .op__in { animation-delay: .08s; }
+    #opening .op__sub { animation: op-up .8s .22s cubic-bezier(.2,.7,.2,1) backwards; }
+    #opening .op__actions { animation: op-up .8s .3s cubic-bezier(.2,.7,.2,1) backwards; }
+    #opening .op__ring { animation: op-up .9s .2s cubic-bezier(.2,.7,.2,1) backwards; }
+    #opening .ring__spin { animation: ring-spin 64s linear infinite; }
+    #opening .op__drift { animation: op-drift 9s ease-in-out infinite alternate; }
+    #opening.is-away .ring__spin, #opening.is-away .op__drift { animation-play-state: paused; }
+  }
+  @keyframes op-settle { from { transform: scale(1.07); } }
+  @keyframes op-rise { from { transform: translateY(104%); } }
+  @keyframes op-up { from { transform: translateY(36px); opacity: 0; } }
+  @keyframes ring-spin { to { transform: rotateY(-360deg); } }
+  @keyframes op-drift { from { transform: translateX(-3.2%); } to { transform: translateX(3.2%); } }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .u-panel {
+    margin: 0 var(--space-1); border-radius: var(--radius-1); overflow: clip;
+    background: var(--color-3); color: var(--color-4);
+  }
+  .u-drift img { height: 112%; }
+}
+</style>
+<style data-8b-part="section:trips">
+@layer sections {
+  #trips { padding: var(--space-1) 0; }
+  #trips .trips__panel { padding: clamp(72px, 9vw, 128px) clamp(18px, 4.4vw, 64px); }
+  #trips :focus-visible { outline-color: var(--color-5); }
+  #trips .trips__head {
+    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px 8vw; align-items: end;
+    margin-bottom: clamp(48px, 6vw, 88px);
+  }
+  #trips .trips__title { max-width: 11ch; }
+  #trips .trips__aside { display: grid; gap: 28px; justify-items: start; }
+  #trips .trips__aside .m-text { color: var(--color-7); max-width: 30em; }
+  #trips .trips__rows { display: grid; gap: 18px; }
+  #trips .trip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(clamp(320px, 30vw, 400px), auto); gap: 18px; }
+  #trips .trip--flip .trip__card { order: 3; }
+  #trips .trip__card { display: flex; flex-direction: column; gap: 18px; padding: clamp(22px, 2.2vw, 32px); }
+  #trips .trip__line { color: var(--color-7); }
+  #trips .trip__facts { display: grid; grid-template-columns: auto 1fr; gap: 10px 22px; padding-top: 18px; border-top: 1px solid color-mix(in oklab, var(--color-4) 12%, transparent); }
+  #trips .trip__facts div { display: contents; }
+  #trips .trip__facts dd { color: var(--color-7); }
+  #trips .trip__foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 20px; margin-top: auto; }
+  #trips .trip__price { display: flex; align-items: baseline; gap: 8px; }
+  #trips .trip__price .m-text-7 { color: var(--color-7); }
+  #trips .trip__photo { height: 100%; }
+  #trips .trip__photo img { position: absolute; top: 0; left: -8%; width: 116%; max-width: none; height: 100%; }
+  @media (max-width: 760px) {
+    #trips .trips__head { grid-template-columns: 1fr; }
+    #trips .trip { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 10px; }
+    #trips .trip__card, #trips .trip--flip .trip__card { grid-column: 1 / -1; order: 0; min-height: 0; }
+    #trips .trip__photo { aspect-ratio: 4 / 5; height: auto; }
+    #trips .trips__rows { gap: 34px; }
+  }
+}
+</style>
+<style data-8b-part="section:route">
+@layer sections {
+  #route { padding: clamp(88px, 10vw, 140px) 0 clamp(72px, 8vw, 120px); overflow: clip; }
+  #route .route__head {
+    display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px 8vw;
+    padding: 0 clamp(20px, 5vw, 72px); margin-bottom: clamp(36px, 5vw, 64px);
+  }
+  #route .route__head .m-text { max-width: 27em; color: var(--color-6); }
+  #route .route__track {
+    display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; padding: 0 clamp(20px, 5vw, 72px);
+  }
+  #route .place__lift { display: grid; gap: 16px; }
+  #route .place__photo { aspect-ratio: 4 / 5; }
+  #route .place__over {
+    position: absolute; inset: auto 0 0; display: grid; gap: 10px; justify-items: start; padding: 64px 18px 18px;
+    color: var(--color-4);
+    background: linear-gradient(180deg, transparent 0, color-mix(in oklab, var(--color-3) 72%, transparent) 58px, color-mix(in oklab, var(--color-3) 88%, transparent) 100%);
+  }
+  #route .place__text { color: var(--color-6); padding-right: 8px; }
+  @media (max-width: 1000px) {
+    #route .route__track { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
+  }
+  @media (max-width: 560px) {
+    #route .route__track { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:route">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #route.is-track { padding-top: clamp(64px, 9svh, 96px); padding-bottom: clamp(40px, 6svh, 72px); }
+    #route.is-track .route__track {
+      display: flex; width: max-content; gap: clamp(16px, 2.2vw, 32px); padding: 3svh clamp(20px, 6vw, 96px);
+    }
+    #route.is-track .place { flex: none; width: clamp(240px, min(30vw, 44svh), 400px); }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+    #route.is-track .place { width: min(74vw, 44svh); }
+  }
+}
+</style>
+<style data-8b-part="section:fleet">
+@layer sections {
+  #fleet { padding: clamp(96px, 11vw, 160px) clamp(20px, 5vw, 72px); }
+  #fleet .fleet__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 24px 8vw; align-items: end; margin-bottom: clamp(48px, 6vw, 88px); }
+  #fleet .fleet__head .m-text { color: var(--color-6); max-width: 30em; }
+  #fleet .boat {
+    display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 28px clamp(28px, 4vw, 64px); align-items: center;
+    padding: clamp(28px, 3.4vw, 48px) 0; border-top: 1px solid color-mix(in oklab, var(--color-2) 16%, transparent);
+  }
+  #fleet .boat:nth-child(even) .boat__photo { order: 2; }
+  #fleet .boat__photo { aspect-ratio: 16 / 10; }
+  #fleet .boat__text { display: grid; gap: 22px; }
+  #fleet .boat__name { font-size: clamp(56px, 7.4vw, 108px); }
+  #fleet .boat__text > .m-text { max-width: 28em; }
+  #fleet .boat__facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
+  #fleet .boat__facts dt { color: var(--color-6); margin-bottom: 4px; }
+  @media (max-width: 760px) {
+    #fleet .fleet__head, #fleet .boat { grid-template-columns: 1fr; }
+    #fleet .boat:nth-child(even) .boat__photo { order: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:onboard">
+@layer sections {
+  #onboard { padding: var(--space-1) 0; }
+  #onboard .onboard__panel { padding: clamp(64px, 8vw, 112px) clamp(18px, 4.4vw, 64px); }
+  #onboard .onboard__stage { display: flex; align-items: center; min-height: calc(100svh - 2 * var(--space-1)); }
+  #onboard .onboard__title { display: flex; flex-direction: column; width: 100%; font-size: clamp(42px, 6.6vw, 100px); }
+  #onboard .onboard__line { display: block; }
+  #onboard .onboard__line--b { align-self: flex-end; text-align: right; }
+  #onboard .onboard__window {
+    display: block; width: 100%; height: clamp(240px, 50svh, 560px); margin: 0.12em 0;
+    clip-path: inset(0px 0px 0px 0px round 14px);
+  }
+  #onboard .onboard__notes {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px clamp(20px, 2.6vw, 40px);
+    margin-top: clamp(40px, 5vw, 72px); padding-top: 28px; border-top: 1px solid color-mix(in oklab, var(--color-4) 16%, transparent);
+  }
+  #onboard .onboard__notes li { display: grid; gap: 10px; align-content: start; }
+  #onboard .onboard__notes .m-text-7 { color: var(--color-7); }
+  @media (max-width: 900px) { #onboard .onboard__notes { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) {
+    #onboard .onboard__notes { grid-template-columns: 1fr; }
+    #onboard .onboard__window { height: clamp(220px, 46svh, 420px); }
+  }
+}
+</style>
+<style data-8b-part="section:crew">
+@layer sections {
+  #crew { padding: clamp(96px, 11vw, 160px) clamp(20px, 5vw, 72px); }
+  #crew .crew__title { max-width: 19ch; margin-bottom: clamp(44px, 5.4vw, 80px); }
+  #crew .mate {
+    display: grid; grid-template-columns: clamp(120px, 12vw, 176px) minmax(0, 0.9fr) minmax(0, 1.5fr); gap: 20px clamp(24px, 3.6vw, 56px);
+    align-items: start; padding: 28px 0; border-top: 1px solid color-mix(in oklab, var(--color-2) 16%, transparent);
+  }
+  #crew .mate__photo { aspect-ratio: 4 / 5; }
+  #crew .mate__photo img { filter: grayscale(1) contrast(1.05); }
+  #crew .mate__name { display: grid; gap: 6px; }
+  #crew .mate__name .m-text-5 { color: var(--color-6); }
+  #crew .mate__words { display: grid; gap: 14px; }
+  #crew .mate__words .m-text-7 { color: var(--color-6); }
+  @media (max-width: 760px) {
+    #crew .mate { grid-template-columns: 104px minmax(0, 1fr); }
+    #crew .mate__words { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:charter">
+@layer sections {
+  #charter { padding: clamp(96px, 11vw, 160px) clamp(20px, 5vw, 72px); }
+  #charter .charter__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 24px 8vw; align-items: end; margin-bottom: clamp(44px, 5vw, 72px); }
+  #charter .charter__head .m-text { color: var(--color-6); max-width: 30em; }
+  #charter .charter__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+  #charter .charter__frame { position: sticky; top: 96px; z-index: 1; }
+  #charter .charter__photos { aspect-ratio: 4 / 5; max-height: calc(100svh - 140px); width: 100%; }
+  #charter .charter__photos img { position: absolute; inset: 0; clip-path: inset(0% 0% 0% 0%); }
+  #charter .charter__list { display: grid; }
+  #charter .occasion {
+    display: grid; gap: 14px; align-content: center; min-height: 52svh; padding: 32px 0;
+    border-top: 1px solid color-mix(in oklab, var(--color-2) 16%, transparent);
+  }
+  #charter .occasion .m-text { color: var(--color-6); max-width: 30em; }
+  #charter .occasion__price { color: var(--color-2); }
+  #charter .charter__action { margin-top: clamp(32px, 4vw, 56px); }
+  @media (max-width: 760px) {
+    #charter .charter__head, #charter .charter__body { grid-template-columns: 1fr; }
+    #charter .charter__frame { background: var(--color-1); padding-bottom: 12px; }
+    #charter .charter__photos { aspect-ratio: auto; height: 32svh; }
+    #charter .occasion { min-height: 34svh; }
+  }
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+  #reviews { padding: var(--space-1) 0; }
+  #reviews .reviews__panel { padding: clamp(72px, 9vw, 120px) clamp(18px, 4.4vw, 64px); }
+  #reviews .reviews__head h2 { max-width: 11ch; }
+  #reviews .reviews__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 20px 8vw; align-items: end; margin-bottom: clamp(40px, 5vw, 72px); }
+  #reviews .reviews__head .m-text { color: var(--color-7); max-width: 28em; }
+  #reviews .reviews__deck { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  #reviews .quote { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; padding: clamp(24px, 3vw, 44px); }
+  #reviews .quote__text { font-size: clamp(24px, 2.3vw, 32px); }
+  #reviews .quote__by { display: grid; gap: 4px; }
+  #reviews .quote__by .m-text-5 { color: var(--color-7); }
+  #reviews .quote__mark { display: flex; gap: 3px; color: var(--color-5); }
+  #reviews .quote__mark svg { width: 15px; height: 15px; fill: currentColor; }
+  @media (max-width: 760px) {
+    #reviews .reviews__head, #reviews .reviews__deck { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:reviews">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #reviews.is-deck .reviews__deck { grid-template-columns: minmax(0, 1fr); max-width: 860px; margin: 0 auto; }
+    #reviews.is-deck .quote { grid-area: 1 / 1; min-height: clamp(300px, 46svh, 420px); }
+    #reviews.is-deck .quote:nth-child(1) { z-index: 4; }
+    #reviews.is-deck .quote:nth-child(2) { z-index: 3; }
+    #reviews.is-deck .quote:nth-child(3) { z-index: 2; }
+    #reviews.is-deck .quote:nth-child(4) { z-index: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; padding: clamp(96px, 11vw, 160px) clamp(20px, 5vw, 72px); }
+  #faq .faq__side { position: sticky; top: 96px; display: grid; gap: 32px; }
+  #faq .faq__photo { aspect-ratio: 4 / 5; max-height: 62svh; }
+  #faq .faq__ask { position: absolute; left: 16px; right: 16px; bottom: 16px; display: grid; gap: 10px; padding: 24px; }
+  #faq .faq__ask .m-text-7 { color: var(--color-6); }
+  #faq .faq__ask .m-link { justify-self: start; margin-top: 6px; }
+  #faq .faq__list { display: grid; gap: 10px; }
+  #faq .faq__item { padding: 0 24px; }
+  #faq .faq__item summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none;
+  }
+  #faq .faq__item summary::-webkit-details-marker { display: none; }
+  #faq .faq__plus { position: relative; flex: none; width: 18px; height: 18px; transition: transform .5s cubic-bezier(.3,.7,.2,1); }
+  #faq .faq__plus::before, #faq .faq__plus::after { content: ""; position: absolute; left: 0; top: 8.25px; width: 18px; height: 1.5px; background: currentColor; }
+  #faq .faq__plus::after { transform: rotate(90deg); transition: transform .5s cubic-bezier(.3,.7,.2,1); }
+  #faq .faq__item[open] .faq__plus { transform: rotate(180deg); }
+  #faq .faq__item[open] .faq__plus::after { transform: rotate(0deg); }
+  #faq .faq__item .m-text { padding: 0 0 24px; color: var(--color-6); max-width: 36em; }
+  @media (hover: hover) { #faq .faq__item summary:hover .faq__plus { transform: rotate(90deg); } }
+  @media (max-width: 860px) {
+    #faq { grid-template-columns: 1fr; }
+    #faq .faq__side { position: static; }
+    #faq .faq__photo { aspect-ratio: 4 / 3; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding: var(--space-1) 0 0; }
+  #contact .contact__panel {
+    display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.6fr) minmax(0, 0.9fr); gap: 48px clamp(28px, 4vw, 64px);
+    align-items: start; padding: clamp(72px, 9vw, 128px) clamp(18px, 4.4vw, 64px) clamp(48px, 5vw, 72px);
+    border-radius: var(--radius-1) var(--radius-1) 0 0;
+  }
+  #contact :focus-visible { outline-color: var(--color-5); }
+  #contact .contact__title { font-size: clamp(46px, 5.6vw, 84px); max-width: 10ch; }
+  #contact .contact__form { margin-top: clamp(36px, 4vw, 56px); max-width: 460px; }
+  #contact .contact__cards { position: relative; height: clamp(260px, 26vw, 360px); }
+  #contact .contact__swing { position: absolute; width: 78%; }
+  #contact .contact__swing--a { left: 0; top: 0; }
+  #contact .contact__swing--b { right: 0; bottom: 0; }
+  #contact .contact__card { aspect-ratio: 4 / 5; box-shadow: var(--shadow-1); }
+  #contact .contact__swing--a .contact__card { transform: rotate(-5deg); }
+  #contact .contact__swing--b .contact__card { transform: rotate(4deg); }
+  #contact .contact__details { display: grid; grid-template-columns: 1fr; gap: 26px; }
+  #contact .contact__details dt { color: var(--color-7); margin-bottom: 8px; }
+  #contact .contact__details a { text-decoration: none; }
+  @media (hover: hover) { #contact .contact__details a:hover { text-decoration: underline; text-underline-offset: 4px; } }
+  @media (max-width: 960px) {
+    #contact .contact__panel { grid-template-columns: 1fr 1fr; }
+    #contact .contact__lead { grid-column: 1 / -1; }
+  }
+  @media (max-width: 600px) {
+    #contact .contact__panel { grid-template-columns: 1fr; }
+    #contact .contact__cards { height: 300px; max-width: 340px; }
+    #contact .contact__details { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: 0 0 var(--space-1); }
+  #footer .footer__panel { padding: 0 clamp(18px, 4.4vw, 64px); border-radius: 0 0 var(--radius-1) var(--radius-1); }
+  #footer :focus-visible { outline-color: var(--color-5); }
+  #footer .footer__top {
+    display: grid; grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 0.6fr)); gap: 32px;
+    padding: 40px 0 56px; border-top: 1px solid color-mix(in oklab, var(--color-4) 14%, transparent);
+  }
+  #footer .footer__small { color: var(--color-7); max-width: 22em; }
+  #footer .footer__col { display: grid; gap: 14px; align-content: start; }
+  #footer .footer__col .m-text-5 { color: var(--color-7); }
+  #footer .footer__col ul { display: grid; gap: 10px; justify-items: start; }
+  #footer .footer__col .m-link { font-size: 15px; background-size: 0% 1px; }
+  @media (hover: hover) { #footer .footer__col .m-link:hover { animation: none; background-size: 100% 1px; transition: background-size .5s cubic-bezier(.3,.7,.2,1); } }
+  #footer .footer__mark {
+    display: block; padding: 0.1em 0 0.12em; color: color-mix(in oklab, var(--color-4) 42%, var(--color-3));
+    font-size: min(24vw, calc((100vw - 2 * var(--space-1) - 2 * clamp(18px, 4.4vw, 64px)) / (var(--len) * 0.69)));
+    line-height: 0.9; white-space: nowrap; text-align: center; margin-right: -0.16em;
+  }
+  #footer .footer__legal {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px;
+    padding: 24px 0 32px; border-top: 1px solid color-mix(in oklab, var(--color-4) 14%, transparent); color: var(--color-7);
+  }
+  #footer .footer__legal .m-link { font-size: 14px; }
+  @media (max-width: 860px) {
+    #footer .footer__top { grid-template-columns: 1fr 1fr; }
+    #footer .footer__brand { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op__zoom { transform: none; }
+#opening .op__deep { opacity: .3; }
+#opening .op__second .op__actions { justify-content: flex-start; margin-top: clamp(28px, 4svh, 40px); }
+#opening .op__second .op__facts { margin-top: clamp(32px, 6svh, 64px); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__statement { animation: op-up .9s .1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__chip { animation: rw-chip .7s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .op__chip:nth-of-type(1) { animation-delay: .7s; }
+  #opening .op__chip:nth-of-type(2) { animation-delay: .8s; }
+  #opening .op__chip:nth-of-type(3) { animation-delay: .9s; }
+  #opening .op__facts { animation: op-up .8s .4s cubic-bezier(.2, .7, .2, 1) backwards; }
+}
+@keyframes rw-chip { from { clip-path: inset(0% 50% 0% 50% round 999px); } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header class="nav" data-8b-section="navigation" id="navigation">
+<nav aria-label="Main" class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo m-text-8" href="#opening">{{t1|⟦name⟧}}</a>
+<div class="nav__menu" data-lenis-prevent="" id="menu">
+<ul class="nav__list nav__list--a">
+{{#nv_trips}}<li><a class="nav__link" href="#trips">{{t2|Trips}}</a></li>{{/nv_trips}}
+{{#nv_route}}<li><a class="nav__link" href="#route">{{t3|Route}}</a></li>{{/nv_route}}
+{{#nv_fleet}}<li><a class="nav__link" href="#fleet">{{t4|Fleet}}</a></li>{{/nv_fleet}}
+{{#nv_charter}}<li><a class="nav__link" href="#charter">{{t5|Charter}}</a></li>{{/nv_charter}}
+</ul>
+<ul class="nav__list nav__list--b">
+{{#nv_crew}}<li><a class="nav__link" href="#crew">{{t6|Crew}}</a></li>{{/nv_crew}}
+{{#nv_faq}}<li><a class="nav__link" href="#faq">{{t7|FAQ}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="nav__link" href="#contact">{{t8|Contact}}</a></li>{{/nv_contact}}
+{{#nv_contact}}<li><a class="nav__link" href="#contact">{{t9|Book a seat}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a></li>{{/nv_contact}}
+</ul>
+</div>
+<button aria-controls="menu" aria-expanded="false" class="nav__toggle" type="button"><span class="nav__toggle-label" data-close="Close">{{t10|Menu}}</span></button>
+</nav>
+</header>
+<main>
+
+{{#sec_opening}}<section class="op" data-8b-section="opening" id="opening">
+<div class="op__frame">
+<div class="op__stage">
+<div class="op__photo">
+<div class="op__intro"><div class="op__zoom"><div class="op__drift">
+<img alt="The harbour at dusk: two boats moored inside the breakwater, its red light lit at the end" fetchpriority="high" height="1125" src="{{i1|https://images.unsplash.com/photo-1786748947427-696995c74157?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Ym9hdCUyMGxlYXZpbmclMjBoYXJib3VyJTIwZXZlbmluZ3xlbnwxfDB8fHwxNzkxNDYyNjQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=2000&q=60}}" style="background:#0c4073" width="2000"/>
+</div></div></div>
+<div class="op__shade"></div>
+<div class="op__deep"></div>
+</div>
+</div>
+<div class="op__second">
+<h1 class="m-text-6 op__statement">{{t11|We leave the quay}} <span class="op__chip"><img alt="" height="144" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1565105155105-c0ad37142d8e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29vZGVuJTIwbW90b3IlMjBsYXVuY2glMjBib2F0JTIwY2xhc3NpY3xlbnwxfDB8fHwxNzkxNDYyNzAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#405940" width="360"/></span> {{t12|on the turn of the tide, round the light at Gull Point}} <span class="op__chip"><img alt="" height="144" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1723471729529-d26411c7a2f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bGlnaHRob3VzZSUyMHRhbGwlMjB3aGl0ZXxlbnwxfDF8fHwxNzkxNDYyNzM3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#738cc0" width="360"/></span> {{t13|and bring you home}} <span class="op__chip"><img alt="" height="144" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1693849480741-ba208e584742?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Ym9hdCUyMHdha2UlMjBhZXJpYWwlMjBzZWF8ZW58MXwxfHx8MTc5MTQ2MjY2OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#0c2626" width="360"/></span> {{t14|with salt on your sleeves.}}</h1>
+<div class="op__actions">
+<a class="m-btn" href="#trips"><span class="m-btn__label">{{t9|Book a seat}}</span><span aria-hidden="true" class="m-btn__icon"><svg viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></span></a>
+</div>
+<div class="op__facts">
+<div class="op__rating">
+<span aria-hidden="true" class="op__stars"><svg viewbox="0 0 20 20"><path d="m10 1.8 2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8l-4.3-4 5.8-.7z"></path></svg><svg viewbox="0 0 20 20"><path d="m10 1.8 2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8l-4.3-4 5.8-.7z"></path></svg><svg viewbox="0 0 20 20"><path d="m10 1.8 2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8l-4.3-4 5.8-.7z"></path></svg><svg viewbox="0 0 20 20"><path d="m10 1.8 2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8l-4.3-4 5.8-.7z"></path></svg><svg viewbox="0 0 20 20"><path d="m10 1.8 2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8l-4.3-4 5.8-.7z"></path></svg></span>
+<p class="m-text-5">{{t15|Rated 4.9 out of 5 by 3,100 passengers}}</p>
+</div>
+<p class="m-text">{{t16|Nine departures a day from Pier 3, April to October, and weekends through the winter.}}</p>
+<a class="m-link" href="#crew">{{t17|Meet the skippers}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_trips}}<section class="trips" data-8b-section="trips" id="trips">
+<div class="trips__panel u-panel">
+<div class="trips__head">
+<h2 class="m-text-3 trips__title" data-8b-motion="lines">{{t18|Three ways out of the harbour}}</h2>
+<div class="trips__aside">
+<p class="m-text">{{t19|Every trip leaves from Pier 3 on North Quay. Tickets online or at the kiosk on the day; children under four sail free on a lap.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t20|Plan your trip}}</span><span aria-hidden="true" class="m-btn__icon"><svg viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></span></a>
+</div>
+</div>
+<div class="trips__rows">
+<article class="trip">
+<div class="trip__card m-surface">
+<h3 class="m-text-4">{{t21|Harbour Loop}}</h3>
+<p class="m-text-7 trip__line">{{t22|Fifty minutes round the moorings, under the swing bridge and along the fish quay, with the skipper naming every hull you pass.}}</p>
+<dl class="trip__facts">
+<div><dt class="m-text-5">{{t23|Boat}}</dt><dd class="m-text-7">{{t24|Marigold, open deck}}</dd></div>
+<div><dt class="m-text-5">{{t25|Leaves}}</dt><dd class="m-text-7">{{t26|10:00, 11:30, 13:00, 14:30 and 16:00}}</dd></div>
+</dl>
+<div class="trip__foot">
+<p class="trip__price"><span class="m-text-4">{{t27|₦8,000}}</span><span class="m-text-7">{{t28|per adult, ₦4,500 per child}}</span></p>
+<a class="m-link" href="#contact">{{t29|Book the Loop}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a>
+</div>
+</div>
+<figure class="trip__photo m-photo"><img alt="Masts and flags of the fishing fleet crowded along the quay" height="900" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1588346540031-bb06f709ddb9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZmlzaCUyMG1hcmtldCUyMHF1YXklMjBib2F0c3xlbnwxfDB8fHwxNzkxNDYyNjk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#d9d9d9" width="900"/></figure>
+<figure class="trip__photo m-photo"><img alt="Small fishing boats resting on the harbour floor at low tide" height="900" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1790875341884-eaf1cddaa836?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y29sb3VyZnVsJTIwZmlzaGluZyUyMGJvYXRzJTIwbW9vcmVkJTIwaGFyYm91cnxlbnwxfDF8fHwxNzkxNDYyNjY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#d9d9d9" width="900"/></figure>
+</article>
+<article class="trip trip--flip">
+<div class="trip__card m-surface">
+<h3 class="m-text-4">{{t30|Lighthouse & Seals}}</h3>
+<p class="m-text-7 trip__line">{{t31|Two hours out past the breakwater to Gull Point Light and the ledges where grey seals haul out. Binoculars on every bench.}}</p>
+<dl class="trip__facts">
+<div><dt class="m-text-5">{{t23|Boat}}</dt><dd class="m-text-7">{{t32|Kittiwake, covered and heated}}</dd></div>
+<div><dt class="m-text-5">{{t25|Leaves}}</dt><dd class="m-text-7">{{t33|10:30 and 14:00}}</dd></div>
+</dl>
+<div class="trip__foot">
+<p class="trip__price"><span class="m-text-4">{{t34|₦16,000}}</span><span class="m-text-7">{{t35|per adult, ₦9,000 per child}}</span></p>
+<a class="m-link" href="#contact">{{t36|Book the Light}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a>
+</div>
+</div>
+<figure class="trip__photo m-photo"><img alt="A red and white lighthouse on a cliff above calm blue sea" height="900" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1745357796003-66cf3de702b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGlnaHRob3VzZSUyMHJvY2t5JTIwcG9pbnQlMjBzZWF8ZW58MXwwfHx8MTc5MTQ2MjY5M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#d9f3f3" width="900"/></figure>
+<figure class="trip__photo m-photo"><img alt="Seals lying on weed-covered rocks at low water" height="900" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1711216809575-1eeb5d69cbe5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2VhbHMlMjBseWluZyUyMG9uJTIwcm9ja3N8ZW58MXwwfHx8MTc5MTQ2MjY5NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#8c7359" width="900"/></figure>
+</article>
+<article class="trip">
+<div class="trip__card m-surface">
+<h3 class="m-text-4">{{t37|Sundown Sail}}</h3>
+<p class="m-text-7 trip__line">{{t38|Ninety minutes under tan sails on the ketch Hesper, timed so the sun drops behind the town while you are out. One drink from the bar included.}}</p>
+<dl class="trip__facts">
+<div><dt class="m-text-5">{{t23|Boat}}</dt><dd class="m-text-7">{{t39|Hesper, twelve guests}}</dd></div>
+<div><dt class="m-text-5">{{t25|Leaves}}</dt><dd class="m-text-7">{{t40|An hour before sunset, Thursday to Sunday}}</dd></div>
+</dl>
+<div class="trip__foot">
+<p class="trip__price"><span class="m-text-4">{{t41|₦19,000}}</span><span class="m-text-7">{{t42|per guest, twelve and over}}</span></p>
+<a class="m-link" href="#contact">{{t43|Book the Sail}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a>
+</div>
+</div>
+<figure class="trip__photo m-photo"><img alt="A ketch with red sails on a flat evening sea" height="900" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1660681371349-4a39fea59f4c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Z2FmZiUyMHJpZ2dlZCUyMHNhaWxpbmclMjBib2F0fGVufDF8MHx8fDE3OTE0NjI3MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#c0d9f3" width="900"/></figure>
+<figure class="trip__photo m-photo"><img alt="Passengers on deck watching the sun go down over the islands" height="900" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1763815271717-e8d2db8e47f0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZnJpZW5kcyUyMGRyaW5raW5nJTIwb24lMjBib2F0JTIwc3Vuc2V0fGVufDF8MHx8fDE3OTE0NjI3MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#d9d9d9" width="900"/></figure>
+</article>
+</div>
+</div>
+</section>{{/sec_trips}}
+
+{{#sec_route}}<section class="route" data-8b-section="route" id="route">
+<div class="route__head">
+<h2 class="m-text-3" data-8b-motion="lines">{{t44|The water we cover}}</h2>
+<p class="m-text">{{t45|Five places you will pass, depending on the trip. Every skipper has a favourite; ask on the way out.}}</p>
+</div>
+<div class="route__track">
+<article class="place"><div class="place__lift">
+<figure class="place__photo m-photo"><img alt="A blue fishing boat settled on the mud beside the quay at low tide" height="950" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1780397255043-dba5ee2fee00?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y29sb3VyZnVsJTIwZmlzaGluZyUyMGJvYXRzJTIwbW9vcmVkJTIwaGFyYm91cnxlbnwxfDF8fHwxNzkxNDYyNjY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#a6a6a6" width="760"/>
+<figcaption class="place__over"><span class="m-badge">{{t46|Loop}}</span><h3 class="m-text-4">{{t47|Fish Quay}}</h3></figcaption></figure>
+<p class="m-text-7 place__text">{{t48|The trawlers settle on the mud at low water; at high tide the morning's catch comes ashore right beside you.}}</p>
+</div></article>
+<article class="place"><div class="place__lift">
+<figure class="place__photo m-photo"><img alt="Market stalls under umbrellas above boats moored at the steps" height="950" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1672729524875-5c9d8c5c732d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZmlzaCUyMG1hcmtldCUyMHF1YXklMjBib2F0c3xlbnwxfDB8fHwxNzkxNDYyNjk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#262626" width="760"/>
+<figcaption class="place__over"><span class="m-badge">{{t49|Loop, Saturdays}}</span><h3 class="m-text-4">{{t50|Market Steps}}</h3></figcaption></figure>
+<p class="m-text-7 place__text">{{t51|Stalls run down to the water at the weekend. Wave to the oyster sellers; they always wave back.}}</p>
+</div></article>
+<article class="place"><div class="place__lift">
+<figure class="place__photo m-photo"><img alt="A tall white lighthouse rising above sand dunes and dry grass" height="950" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1786392413422-f8a1064f068b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGlnaHRob3VzZSUyMHRhbGwlMjB3aGl0ZXxlbnwxfDF8fHwxNzkxNDYyNzM3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#d9d9d9" width="760"/>
+<figcaption class="place__over"><span class="m-badge">{{t52|Light}}</span><h3 class="m-text-4">{{t53|Gull Point Light}}</h3></figcaption></figure>
+<p class="m-text-7 place__text">{{t54|Lit since 1871 and still working. We hold off the rocks long enough for every camera on board.}}</p>
+</div></article>
+<article class="place"><div class="place__lift">
+<figure class="place__photo m-photo"><img alt="A seal asleep on pale rocks in the sun" height="950" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1625632449423-0a70da3f9616?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2VhbHMlMjBseWluZyUyMG9uJTIwcm9ja3N8ZW58MXwwfHx8MTc5MTQ2MjY5NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#c0d9f3" width="760"/>
+<figcaption class="place__over"><span class="m-badge">{{t55|Light, low tide}}</span><h3 class="m-text-4">{{t56|The Seal Ledges}}</h3></figcaption></figure>
+<p class="m-text-7 place__text">{{t57|Grey seals haul out here when the water drops. We cut the engine and drift; they rarely mind.}}</p>
+</div></article>
+<article class="place"><div class="place__lift">
+<figure class="place__photo m-photo"><img alt="A small white boat at anchor in a clear cove under a rock wall" height="950" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1731074699126-9555a4e22d34?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c21hbGwlMjBpc2xhbmQlMjBiZWFjaCUyMGNvdmUlMjBib2F0fGVufDF8MHx8fDE3OTE0NjI2OTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#404040" width="760"/>
+<figcaption class="place__over"><span class="m-badge">{{t58|Sundown}}</span><h3 class="m-text-4">{{t59|Tern Cove}}</h3></figcaption></figure>
+<p class="m-text-7 place__text">{{t60|A sheltered bay where Hesper drops anchor while the sun goes down behind the town.}}</p>
+</div></article>
+</div>
+</section>{{/sec_route}}
+
+{{#sec_fleet}}<section class="fleet" data-8b-section="fleet" id="fleet">
+<div class="fleet__head">
+<h2 class="m-text-3" data-8b-motion="lines">{{t61|Three boats, all older than their skippers}}</h2>
+<p class="m-text">{{t62|We keep them on the slip every winter and paint them every spring. Each one does the trip it was built for.}}</p>
+</div>
+<div class="fleet__list">
+<article class="boat">
+<figure class="boat__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Marigold, a wooden launch with a white canopy, full of passengers" height="750" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1575328514791-2e51500c5779?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFyYm91ciUyMHRvdXIlMjBib2F0JTIwcGFzc2VuZ2Vyc3xlbnwxfDB8fHwxNzkxNDYyNzI5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#f3f3f3" width="1200"/></figure>
+<div class="boat__text">
+<h3 class="m-text-2 boat__name">{{t63|Marigold}}</h3>
+<p class="m-text">{{t64|A wooden launch with an open deck and a brass bell. She runs the Loop all day and knows every mooring by name.}}</p>
+<dl class="boat__facts">
+<div><dt class="m-text-5">{{t65|Built}}</dt><dd class="m-text-7">{{t66|1958, on this quay}}</dd></div>
+<div><dt class="m-text-5">{{t67|Seats}}</dt><dd class="m-text-7">{{t68|36 under a canopy aft}}</dd></div>
+<div><dt class="m-text-5">{{t69|Runs}}</dt><dd class="m-text-7">{{t70|The Harbour Loop}}</dd></div>
+<div><dt class="m-text-5">{{t71|Boarding}}</dt><dd class="m-text-7">{{t72|Two steps down, a hand offered}}</dd></div>
+</dl>
+</div>
+</article>
+<article class="boat">
+<figure class="boat__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Kittiwake, a white excursion boat with a covered saloon, at her berth" height="750" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1783809338564-675bb3fd277b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aGFyYm91ciUyMHRvdXIlMjBib2F0JTIwcGFzc2VuZ2Vyc3xlbnwxfDB8fHwxNzkxNDYyNzI5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="1200"/></figure>
+<div class="boat__text">
+<h3 class="m-text-2 boat__name">{{t73|Kittiwake}}</h3>
+<p class="m-text">{{t74|A covered cruiser with a heated saloon, big windows and a top deck for the brave. She takes the Light run twice a day.}}</p>
+<dl class="boat__facts">
+<div><dt class="m-text-5">{{t65|Built}}</dt><dd class="m-text-7">{{t75|1974, Falmouth}}</dd></div>
+<div><dt class="m-text-5">{{t67|Seats}}</dt><dd class="m-text-7">{{t76|60, half of them inside}}</dd></div>
+<div><dt class="m-text-5">{{t69|Runs}}</dt><dd class="m-text-7">{{t77|Lighthouse and seals}}</dd></div>
+<div><dt class="m-text-5">{{t71|Boarding}}</dt><dd class="m-text-7">{{t78|Step-free ramp, toilet on board}}</dd></div>
+</dl>
+</div>
+</article>
+<article class="boat">
+<figure class="boat__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Hesper, a varnished wooden ketch, tied up along a pontoon" height="750" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1670711226713-599750185024?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Z2FmZiUyMHJpZ2dlZCUyMHNhaWxpbmclMjBib2F0fGVufDF8MHx8fDE3OTE0NjI3MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#8c8c8c" width="1200"/></figure>
+<div class="boat__text">
+<h3 class="m-text-2 boat__name">{{t79|Hesper}}</h3>
+<p class="m-text">{{t80|A gaff-rigged ketch that sails twelve guests at a time into the evening. Ask the skipper and you can take the helm.}}</p>
+<dl class="boat__facts">
+<div><dt class="m-text-5">{{t65|Built}}</dt><dd class="m-text-7">{{t81|1936, as a pilot's tender}}</dd></div>
+<div><dt class="m-text-5">{{t67|Seats}}</dt><dd class="m-text-7">{{t82|12 on deck, with blankets}}</dd></div>
+<div><dt class="m-text-5">{{t69|Runs}}</dt><dd class="m-text-7">{{t83|Evenings under sail}}</dd></div>
+<div><dt class="m-text-5">{{t71|Boarding}}</dt><dd class="m-text-7">{{t84|Over the rail from the pontoon}}</dd></div>
+</dl>
+</div>
+</article>
+</div>
+</section>{{/sec_fleet}}
+
+{{#sec_onboard}}<section class="onboard" data-8b-section="onboard" id="onboard">
+<div class="onboard__panel u-panel">
+<div class="onboard__stage">
+<h2 class="m-text-2 onboard__title">
+<span class="onboard__line onboard__line--a">{{t85|Everything you need}}</span>
+<span aria-hidden="true" class="onboard__window m-photo"><img alt="" height="1200" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1575328517132-d7f6d028ee4a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8aGFyYm91ciUyMHRvdXIlMjBib2F0JTIwcGFzc2VuZ2Vyc3xlbnwxfDB8fHwxNzkxNDYyNzI5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1160&q=60}}" style="background:#595940" width="1800"/></span>
+<span class="onboard__line onboard__line--b">{{t86|is already on board}}</span>
+</h2>
+</div>
+<ul class="onboard__notes">
+<li><h3 class="m-text-4">{{t87|Blankets under every bench}}</h3><p class="m-text-7">{{t88|Wool, and washed after every trip. The wind is always colder once you are out past the light.}}</p></li>
+<li><h3 class="m-text-4">{{t89|Tea, coffee and a small bar}}</h3><p class="m-text-7">{{t90|Hot drinks on every boat; local beer, wine and cider on Kittiwake and Hesper.}}</p></li>
+<li><h3 class="m-text-4">{{t91|A warm saloon}}</h3><p class="m-text-7">{{t92|When the weather turns, Kittiwake seats thirty inside behind wide windows.}}</p></li>
+<li><h3 class="m-text-4">{{t93|Step-free at Pier 3}}</h3><p class="m-text-7">{{t94|Tell us when you book and we will keep the seats nearest the ramp for you.}}</p></li>
+</ul>
+</div>
+</section>{{/sec_onboard}}
+
+{{#sec_crew}}<section class="crew" data-8b-section="crew" id="crew">
+<h2 class="m-text-3 crew__title" data-8b-motion="lines">{{t95|Three skippers, one rule: home before the tide turns}}</h2>
+<ol class="crew__list">
+<li class="mate">
+<figure class="mate__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Ros Pennick sitting on the bow of a blue boat by the sea" height="600" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1667249789780-59108690712e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29tYW4lMjBzYWlsb3IlMjBwb3J0cmFpdCUyMGJvYXR8ZW58MXwxfHx8MTc5MTQ2MjczMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#a6d9d9" width="480"/></figure>
+<div class="mate__name"><h3 class="m-text-4">{{t96|Ros Pennick}}</h3><p class="m-text-5">{{t97|Skipper of Marigold since 1996}}</p></div>
+<div class="mate__words">
+<p class="m-text">{{t98|“I learned to row in this harbour before I could ride a bike. The Loop still surprises me most mornings.”}}</p>
+<p class="m-text-7">{{t99|Her stretch: the fish quay at first light}}</p>
+</div>
+</li>
+<li class="mate">
+<figure class="mate__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Jonah Reyes leaning out of a window on the side of a boat" height="600" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1606991641918-ba6afbb9e0df?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjBzYWlsb3IlMjBwb3J0cmFpdCUyMGJvYXR8ZW58MXwxfHx8MTc5MTQ2MjczMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#a6c0c0" width="480"/></figure>
+<div class="mate__name"><h3 class="m-text-4">{{t100|Jonah Reyes}}</h3><p class="m-text-5">{{t101|Skipper of Kittiwake since 2017}}</p></div>
+<div class="mate__words">
+<p class="m-text">{{t102|“The seals know the sound of our engine. Cut it at the right moment and they come up to look at you.”}}</p>
+<p class="m-text-7">{{t103|His stretch: the ledges on a falling tide}}</p>
+</div>
+</li>
+<li class="mate">
+<figure class="mate__photo m-photo u-drift" data-8b-motion="reveal drift"><img alt="Tomas Kerrow sitting by the water in a white shirt and waistcoat" height="600" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1713019239099-912e56d7f9cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZmlzaGVybWFuJTIwcG9ydHJhaXQlMjB3ZWF0aGVyZWR8ZW58MXwxfHx8MTc5MTQ2MjczMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#f3f3f3" width="480"/></figure>
+<div class="mate__name"><h3 class="m-text-4">{{t104|Tomas Kerrow}}</h3><p class="m-text-5">{{t105|Skipper of Hesper since 1981}}</p></div>
+<div class="mate__words">
+<p class="m-text">{{t106|“Hesper is older than me and better behaved. Give her a breath of wind and she does the rest.”}}</p>
+<p class="m-text-7">{{t107|His stretch: Tern Cove as the sun goes}}</p>
+</div>
+</li>
+</ol>
+</section>{{/sec_crew}}
+
+{{#sec_charter}}<section class="charter" data-8b-section="charter" id="charter">
+<div class="charter__head">
+<h2 class="m-text-3" data-8b-motion="lines">{{t108|Take the whole boat}}</h2>
+<p class="m-text">{{t109|Private hire for up to sixty, with your own skipper and your own route. Prices are for the boat, not per head.}}</p>
+</div>
+<div class="charter__body">
+<div class="charter__frame" data-8b-sticky-under-nav="">
+<div class="charter__photos m-photo">
+<img alt="Friends gathered under a boat's canopy against the evening sun" height="1250" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1634919688593-59a1fcaec50e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZnJpZW5kcyUyMGRyaW5raW5nJTIwb24lMjBib2F0JTIwc3Vuc2V0fGVufDF8MHx8fDE3OTE0NjI3MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#260c0c" width="1000"/>
+<img alt="Colleagues on the open deck and stairs of a passenger boat" height="1250" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1785754139598-da065f6258c4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZmFtaWx5JTIwb24lMjBib2F0JTIwdHJpcCUyMHNlYXxlbnwxfDB8fHwxNzkxNDYyNzMzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#737373" width="1000"/>
+<img alt="Two people at the rail as the sun sets over the water" height="1250" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1475488805518-f2efa1097a8f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZnJpZW5kcyUyMGRyaW5raW5nJTIwb24lMjBib2F0JTIwc3Vuc2V0fGVufDF8MHx8fDE3OTE0NjI3MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#260c0c" width="1000"/>
+<img alt="A group in life vests at the bow of a boat at dusk" height="1250" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1751568928805-c8b7b439020b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZnJpZW5kcyUyMGRyaW5raW5nJTIwb24lMjBib2F0JTIwc3Vuc2V0fGVufDF8MHx8fDE3OTE0NjI3MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#8c7373" width="1000"/>
+</div>
+</div>
+<ol class="charter__list">
+<li class="occasion">
+<h3 class="m-text-4">{{t110|Birthdays and anniversaries}}</h3>
+<p class="m-text">{{t111|Bring a cake and we bring the plates. Marigold is the one for a party that wants to see the whole harbour.}}</p>
+<p class="m-text-5 occasion__price">{{t112|Marigold from ₦210,000 for two hours}}</p>
+</li>
+<li class="occasion">
+<h3 class="m-text-4">{{t113|Office afternoons}}</h3>
+<p class="m-text">{{t114|Kittiwake's saloon takes a slideshow if you must; most teams end up on the top deck instead.}}</p>
+<p class="m-text-5 occasion__price">{{t115|Kittiwake from ₦340,000 for two hours}}</p>
+</li>
+<li class="occasion">
+<h3 class="m-text-4">{{t116|Proposals at the light}}</h3>
+<p class="m-text">{{t117|Just two of you and a skipper who has done this before. We know exactly where to hold Hesper still.}}</p>
+<p class="m-text-5 occasion__price">{{t118|Hesper from ₦260,000 for an evening}}</p>
+</li>
+<li class="occasion">
+<h3 class="m-text-4">{{t119|School and club trips}}</h3>
+<p class="m-text">{{t120|Lifejackets for every size, a skipper who answers every question, and a quiz sheet for the way home.}}</p>
+<p class="m-text-5 occasion__price">{{t121|Kittiwake from ₦4,500 a head on weekdays}}</p>
+</li>
+</ol>
+</div>
+<a class="m-btn-2 charter__action" href="#contact"><span class="m-btn__label">{{t122|Ask about a charter}}</span><span aria-hidden="true" class="m-btn__icon"><svg viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></span></a>
+</section>{{/sec_charter}}
+
+{{#sec_reviews}}<section class="reviews" data-8b-section="reviews" id="reviews">
+<div class="reviews__panel u-panel">
+<div class="reviews__head">
+<h2 class="m-text-3" data-8b-motion="lines">{{t123|Heard on the way back in}}</h2>
+<p class="m-text">{{t124|From the comment cards we hand out at the gangway, copied out as they were written.}}</p>
+</div>
+<div class="reviews__deck">
+<figure class="quote m-surface">
+<blockquote class="m-text-6 quote__text"><p>{{t125|“We went for the seals and came back talking about the skipper. Jonah knew every buoy and half the people waving from the quay.”}}</p></blockquote>
+<figcaption class="quote__by"><span class="m-text-4">{{t126|Hannah Lowe}}</span><span class="m-text-5">{{t127|Lighthouse and seals, in August}}</span></figcaption>
+</figure>
+<figure class="quote m-surface">
+<blockquote class="m-text-6 quote__text"><p>{{t128|“Booked the evening sail for my dad's seventieth. He took the helm for ten minutes and has not stopped telling people.”}}</p></blockquote>
+<figcaption class="quote__by"><span class="m-text-4">{{t129|Marcus Bell}}</span><span class="m-text-5">{{t130|Sundown on Hesper, in June}}</span></figcaption>
+</figure>
+<figure class="quote m-surface">
+<blockquote class="m-text-6 quote__text"><p>{{t131|“The children were wrapped in blankets with hot chocolate and their noses on the glass all the way to the light.”}}</p></blockquote>
+<figcaption class="quote__by"><span class="m-text-4">{{t132|Priya Nair}}</span><span class="m-text-5">{{t133|Kittiwake to the light, in October}}</span></figcaption>
+</figure>
+<figure class="quote m-surface">
+<blockquote class="m-text-6 quote__text"><p>{{t134|“Fifty minutes, sixteen pounds, and I finally understand the harbour I have lived beside for twenty years.”}}</p></blockquote>
+<figcaption class="quote__by"><span class="m-text-4">{{t135|Tom Ashdown}}</span><span class="m-text-5">{{t136|Marigold's loop, in May}}</span></figcaption>
+</figure>
+</div>
+</div>
+</section>{{/sec_reviews}}
+
+{{#sec_faq}}<section class="faq" data-8b-section="faq" id="faq">
+<div class="faq__side" data-8b-sticky-under-nav="">
+<h2 class="m-text-3" data-8b-motion="lines">{{t137|Before you come aboard}}</h2>
+<div class="faq__photo m-photo u-drift" data-8b-motion="drift">
+<img alt="Dark rocks running out into a calm sea at dusk" height="1125" loading="lazy" src="{{i27|https://images.unsplash.com/photo-1777222524319-88fd14485430?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2VhbCUyMHJlc3RpbmclMjBvbiUyMHJvY2tzJTIwc2VhfGVufDF8MXx8fDE3OTE0NjI2Njh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#0c2626" width="900"/>
+<div class="faq__ask m-surface-2">
+<h3 class="m-text-4">{{t138|Ask the kiosk}}</h3>
+<p class="m-text-7">{{t139|Whoever is on the kiosk at Pier 3 picks up from half past eight until the last boat is in.}}</p>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t140|Call ⟦phone⟧}}<svg aria-hidden="true" viewbox="0 0 20 20"><path d="M6 14 14 6M7 6h7v7"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="faq__list">
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t141|What should I bring?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t142|Something warm, even in August. We have blankets, but a hat and a windproof layer make the run to the light far nicer.}}</p>
+</details>
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t143|Do you sail in bad weather?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t144|In light rain, yes: Kittiwake is covered. If the harbour master closes the bar or the swell is too big, we text you by eight in the morning and refund in full.}}</p>
+</details>
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t145|Can I bring my dog?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t146|Dogs on leads are welcome on Marigold and Kittiwake. Hesper is too small for them, sorry.}}</p>
+</details>
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t147|Is it all right for small children?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t148|Yes. There are lifejackets in every size on board, and under-fours sail free on a lap.}}</p>
+</details>
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t149|Where exactly do we meet?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t150|At the kiosk on Pier 3, North Quay, ten minutes' walk from the station. Please be there a quarter of an hour before you sail.}}</p>
+</details>
+<details class="faq__item m-surface-2">
+<summary class="m-text-4">{{t151|Can I change my booking?}}<span aria-hidden="true" class="faq__plus"></span></summary>
+<p class="m-text">{{t152|Up to a day before departure, free of charge, online or at the kiosk.}}</p>
+</details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section class="contact" data-8b-section="contact" id="contact">
+<div class="contact__panel u-panel">
+<div class="contact__lead">
+<h2 class="m-text-2 contact__title" data-8b-motion="lines">{{t153|Your seat is waiting at Pier 3}}</h2>
+
+</div>
+<div aria-hidden="true" class="contact__cards">
+<div class="contact__swing contact__swing--a"><figure class="contact__card m-photo"><img alt="" height="750" loading="lazy" src="{{i28|https://images.unsplash.com/photo-1775772057212-154611eac243?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c21hbGwlMjBpc2xhbmQlMjBiZWFjaCUyMGNvdmUlMjBib2F0fGVufDF8MHx8fDE3OTE0NjI2OTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=460&q=60}}" style="background:#737373" width="600"/></figure></div>
+<div class="contact__swing contact__swing--b"><figure class="contact__card m-photo"><img alt="" height="750" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1588933333019-877118c1c9dc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c21hbGwlMjBpc2xhbmQlMjBiZWFjaCUyMGNvdmUlMjBib2F0fGVufDF8MHx8fDE3OTE0NjI2OTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#8cc0f3" width="600"/></figure></div>
+</div>
+<dl class="contact__details">
+<div><dt class="m-text-5">{{t154|Ticket kiosk}}</dt><dd class="m-text">{{t155|Pier 3, North Quay, Kelmouth}}</dd></div>
+<div><dt class="m-text-5">{{t156|Phone}}</dt><dd class="m-text"><a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t157|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-5">{{t158|Email}}</dt><dd class="m-text"><a data-8b-placeholder="email" href="#ub-contact">{{t159|hello@pierhead.example}}</a></dd></div>
+<div><dt class="m-text-5">{{t160|Kiosk hours}}</dt><dd class="m-text">{{t161|8:30 until the last boat is in}}</dd></div>
+</dl>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Boat Tour by <a href="https://github.com/8bsite/boat-tour-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="footer" data-8b-section="footer" id="footer">
+<div class="footer__panel u-panel">
+<div class="footer__top">
+<div class="footer__brand"><p class="m-text-7 footer__small">{{t162|⟦name⟧ Boat Trips is a family firm on North Quay, licensed by the Kelmouth harbour authority and sailing since 1961.}}</p></div>
+<div class="footer__col"><p class="m-text-5">{{t163|Sail}}</p><ul>
+{{#nv_trips}}<li><a class="m-link" href="#trips">{{t164|Timetable and fares}}</a></li>{{/nv_trips}}
+{{#nv_route}}<li><a class="m-link" href="#route">{{t165|Where we go}}</a></li>{{/nv_route}}
+{{#nv_charter}}<li><a class="m-link" href="#charter">{{t166|Private hire}}</a></li>{{/nv_charter}}
+</ul></div>
+<div class="footer__col"><p class="m-text-5">{{t167|Visit}}</p><ul>
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t168|Finding Pier 3}}</a></li>{{/nv_faq}}
+{{#nv_onboard}}<li><a class="m-link" href="#onboard">{{t169|Access on board}}</a></li>{{/nv_onboard}}
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t170|Gift vouchers}}</a></li>{{/nv_contact}}
+</ul></div>
+<div class="footer__col"><p class="m-text-5">{{t171|Follow}}</p><ul>
+<li><a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/">{{t172|Instagram}}</a></li>
+<li><a class="m-link" data-8b-placeholder="social" href="https://www.facebook.com/">{{t173|Facebook}}</a></li>
+<li><a class="m-link" data-8b-placeholder="social" href="https://www.youtube.com/">{{t174|YouTube}}</a></li>
+</ul></div>
+</div>
+<p class="m-text-8 footer__mark" data-8b-motion="lines" style="--len:8">{{t1|⟦name⟧}}</p>
+<div class="footer__legal"><p class="m-text-5">{{t175|© 2026 ⟦name⟧ Boat Trips Ltd, Kelmouth · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t176|8B}}</a></p><a class="m-link" href="#footer">{{t177|Privacy and terms of carriage}}</a></div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function refreshScroll() {
+  const offset = navHeight() + 24;
+  document.querySelectorAll('[data-8b-sticky-under-nav]').forEach(element => { element.style.top = `${offset}px`; });
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.075, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  lines(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete() { split.revert(); } })
+      .from(split.lines, { yPercent: 110, duration: 1.05, ease: 'power3.out', stagger: 0.09 });
+  },
+  reveal(frame, vars = {}) {
+    const picture = frame.querySelector('img');
+    return gsap.timeline(vars)
+      .fromTo(frame, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.1, ease: 'power3.inOut', clearProps: 'clipPath' }, 0)
+      .fromTo(picture, { scale: 1.16 }, { scale: 1, duration: 1.5, ease: 'power3.out' }, 0);
+  },
+  drift(frame, vars = {}) {
+    const picture = frame.querySelector('img');
+    return gsap.timeline(vars).fromTo(picture, { yPercent: -10 }, { yPercent: 0, duration: 1, ease: 'none' });
+  }
+};
+const effectBindings = {
+  lines: element => ({ start: 'top 88%', once: true, animation: effects.lines(element) }),
+  reveal: element => ({ start: 'top 92%', once: true, animation: effects.reveal(element) }),
+  drift: element => ({ start: 'top bottom', end: 'center center', scrub: 0.5, animation: effects.drift(element) })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const elements = [...section.querySelectorAll('[data-8b-motion]')];
+  if (!elements.length) return;
+  queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    elements.forEach((element, index) => {
+      element.getAttribute('data-8b-motion').split(/\s+/).filter(Boolean).forEach(name => {
+        ScrollTrigger.create({ id: `effect:${name}:${section.id}:${index + 1}`, trigger: element, ...effectBindings[name](element) });
+      });
+    });
+  }), section.getBoundingClientRect().top < innerHeight ? { first: true, id: `effects:${section.id}` } : { near: section, id: `effects:${section.id}` });
+});
+</script>
+<script data-8b-part="scene:trips">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('trips');
+    section.querySelectorAll('.trip').forEach((row, index) => {
+      const side = index % 2 ? 1 : -1;
+      const cells = [...row.children];
+      const ranked = cells.map(cell => ({ cell, box: cell.getBoundingClientRect() }))
+        .sort((p, q) => (Math.round(p.box.top) - Math.round(q.box.top)) || (p.box.left - q.box.left)).map(entry => entry.cell);
+      const timeline = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `trips:row-${index + 1}`, trigger: row, start: 'top bottom', end: wide ? 'center 55%' : 'top 30%', scrub: 0.6 }
+      });
+      cells.forEach(cell => {
+        const rank = ranked.indexOf(cell);
+        const step = side < 0 ? cells.length - 1 - rank : rank;
+        timeline.fromTo(cell, { xPercent: side * (wide ? 40 + step * 27 : 24 + step * 14) }, { xPercent: 0, duration: 1 }, 0);
+        const picture = cell.querySelector('img');
+        if (picture) timeline.fromTo(picture, { xPercent: -side * 6 }, { xPercent: 0, duration: 1 }, 0);
+      });
+    });
+  });
+}, { near: document.getElementById('trips') });
+</script>
+<script data-8b-part="scene:route">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', context => {
+    const section = document.getElementById('route');
+    const track = section.querySelector('.route__track');
+    const lifts = [...section.querySelectorAll('.place__lift')];
+    section.classList.add('is-track');
+    const setY = lifts.map(lift => gsap.quickSetter(lift, 'y', 'px'));
+    const setTurn = lifts.map(lift => gsap.quickSetter(lift, 'rotation', 'deg'));
+    let centres = [];
+    const distance = () => Math.max(0, track.scrollWidth - document.documentElement.clientWidth);
+    const measure = () => { centres = lifts.map(lift => lift.offsetLeft + lift.offsetWidth / 2); };
+    const swell = progress => {
+      const shift = -distance() * progress;
+      const height = Math.min(54, innerHeight * 0.06);
+      const envelope = Math.sin(Math.PI * progress);
+      lifts.forEach((lift, i) => {
+        const offset = centres[i] + shift - innerWidth / 2;
+        const calm = Math.min(1, Math.max(0, (Math.abs(offset) - innerWidth * 0.1) / (innerWidth * 0.25)));
+        const phase = (offset / innerWidth) * Math.PI * 2.2 - progress * Math.PI * 1.5;
+        setY[i](Math.sin(phase) * height * envelope * calm);
+        setTurn[i](Math.cos(phase) * 2.4 * envelope * calm);
+      });
+    };
+    measure();
+    gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        id: 'route', trigger: section, start: 'top top', end: () => `+=${distance() * 1.15}`, pin: true, scrub: 0.8,
+        invalidateOnRefresh: true, onRefresh: self => { measure(); swell(self.progress); }, onUpdate: self => swell(self.progress)
+      }
+    }).fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 });
+    return () => { section.classList.remove('is-track'); gsap.set(lifts, { clearProps: 'transform' }); };
+  });
+});
+</script>
+<script data-8b-part="scene:onboard">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('onboard');
+    const stage = section.querySelector('.onboard__stage');
+    const windowFrame = section.querySelector('.onboard__window');
+    const picture = windowFrame.querySelector('img');
+    const [lineA, lineB] = section.querySelectorAll('.onboard__line');
+    const chip = () => {
+      const size = parseFloat(getComputedStyle(lineA).fontSize);
+      const width = windowFrame.offsetWidth, height = windowFrame.offsetHeight;
+      const chipW = Math.min(width * 0.8, size * 2.6), chipH = Math.min(height * 0.8, size * 1.04);
+      return { x: (width - chipW) / 2, y: (height - chipH) / 2 };
+    };
+    const centreShift = line => windowFrame.offsetLeft + windowFrame.offsetWidth / 2 - (line.offsetLeft + line.offsetWidth / 2);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'onboard', trigger: stage, start: 'center center', end: () => `+=${innerHeight * 0.95}`, pin: true, scrub: 0.7, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(windowFrame, { clipPath: () => `inset(${chip().y}px ${chip().x}px ${chip().y}px ${chip().x}px round 999px)` },
+        { clipPath: 'inset(0px 0px 0px 0px round 14px)', duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(picture, { scale: 1.6 }, { scale: 1, duration: 1, ease: 'power1.out' }, 0)
+      .fromTo(lineA, { x: () => centreShift(lineA), y: () => chip().y }, { x: 0, y: 0, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(lineB, { x: () => centreShift(lineB), y: () => -chip().y }, { x: 0, y: 0, duration: 1, ease: 'power2.inOut' }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:charter">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('charter');
+    const items = [...section.querySelectorAll('.occasion')];
+    const pictures = [...section.querySelectorAll('.charter__photos img')];
+    const clamp = gsap.utils.clamp(0, 1);
+    items.forEach((item, index) => {
+      const setInk = gsap.quickSetter(item, 'opacity');
+      const ink = () => {
+        const box = item.getBoundingClientRect();
+        const enter = index === 0 ? 1 : clamp((innerHeight * 0.82 - box.top) / (innerHeight * 0.32));
+        const leave = index === items.length - 1 ? 1 : clamp((box.bottom - innerHeight * 0.16) / (innerHeight * 0.3));
+        setInk(0.28 + 0.72 * Math.min(enter, leave));
+      };
+      ScrollTrigger.create({ id: `charter:ink-${index + 1}`, trigger: item, start: 'top bottom', end: 'bottom top', onUpdate: ink, onRefresh: ink });
+      if (index > 0 && pictures[index]) {
+        gsap.fromTo(pictures[index], { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none',
+          scrollTrigger: { id: `charter:in-${index + 1}`, trigger: item, start: 'top 82%', end: 'top 50%', scrub: 0.5 } });
+      }
+    });
+    return () => gsap.set(items, { clearProps: 'opacity' });
+  });
+}, { near: document.getElementById('charter') });
+</script>
+<script data-8b-part="scene:reviews">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const cards = [...section.querySelectorAll('.quote')];
+    section.classList.add('is-deck');
+    cards.forEach((card, i) => { if (i) gsap.set(card, { y: i * 16, scale: 1 - i * 0.035, transformOrigin: '50% 100%' }); });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'power1.inOut' },
+      scrollTrigger: { id: 'reviews', trigger: section, start: 'center center', end: () => `+=${innerHeight * 0.55 * (cards.length - 1)}`, pin: true, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    cards.slice(0, -1).forEach((card, i) => {
+      timeline.to(card, { xPercent: i % 2 ? 115 : -115, y: -40, rotation: i % 2 ? 9 : -9, duration: 1 }, i)
+        .to(card, { opacity: 0, duration: 0.45, ease: 'none' }, i + 0.4);
+      cards.slice(i + 1).forEach((next, j) => timeline.to(next, { y: j * 16, scale: 1 - j * 0.035, duration: 1 }, i));
+    });
+    return () => { section.classList.remove('is-deck'); gsap.set(cards, { clearProps: 'transform,opacity' }); };
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const [first, second] = section.querySelectorAll('.contact__swing');
+    gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact', trigger: section, start: 'top bottom', end: 'top 30%', scrub: 0.7, invalidateOnRefresh: true }
+    })
+      .fromTo(first, { x: () => -Math.min(120, innerWidth * 0.08), y: 120, rotation: -22 }, { x: 0, y: 0, rotation: 0, duration: 1 }, 0)
+      .fromTo(second, { x: () => Math.min(120, innerWidth * 0.08), y: 220, rotation: 24 }, { x: 0, y: 0, rotation: 0, duration: 1 }, 0);
+  });
+}, { near: document.getElementById('contact') });
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav__toggle');
+  const label = toggle.querySelector('.nav__toggle-label');
+  const openText = label.textContent;
+  let lastY = scrollY;
+  let travel = 0;
+  const onScroll = () => {
+    const y = scrollY;
+    const delta = y - lastY;
+    lastY = y;
+    nav.classList.toggle('is-solid', y > 24);
+    if (nav.classList.contains('is-open')) return;
+    travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta;
+    if (y < 120) nav.classList.remove('is-hidden');
+    else if (travel > 48) nav.classList.add('is-hidden');
+    else if (travel < -48) nav.classList.remove('is-hidden');
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setOpen = open => {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    label.textContent = open ? label.dataset.close : openText;
+    if (open) window.lenis?.stop(); else window.lenis?.start();
+  };
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+  nav.querySelectorAll('.nav__menu a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); toggle.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.classList.toggle('is-away', !entry.isIntersecting)).observe(section);
+})();
+</script>
+<script data-8b-part="atom-script:m-btn">
+document.querySelectorAll('.m-btn__label').forEach(label => {
+  const face = document.createElement('span');
+  face.className = 'm-btn__face';
+  face.textContent = label.textContent;
+  const next = face.cloneNode(true);
+  next.classList.add('m-btn__face--next');
+  next.setAttribute('aria-hidden', 'true');
+  label.replaceChildren(face, next);
+});
+</script>
+</body>
+</html>

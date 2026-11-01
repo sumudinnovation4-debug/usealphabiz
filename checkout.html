@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Checkout – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="https://js.paystack.co/v1/inline.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script></head><body>
+<main class="wrap"><h1>Checkout</h1><p class="mut">Complete your purchase to launch your website</p><div class="grid g2">
+<div class="card"><h2>Order Summary</h2><div class="row"><span>Template</span><b id="t"></b></div><div class="row"><span>Domain</span><b id="d"></b></div>
+<div class="row"><span>Domain + SSL + hosting (1 year)</span><b>₦26,999</b></div><div class="row"><span>Tax</span><b>₦0</b></div>
+<div class="row"><b>Total today</b><span class="tot">₦26,999</span></div><p class="mut">Renews yearly. Cancel anytime.</p></div>
+<div><h2>Payment Options</h2><div class="card"><b>Pay with Card</b><p class="mut">Secure payment via Paystack</p><button class="btn block" id="pay">Pay ₦26,999 with Paystack</button></div><br>
+<div class="card"><b>QR Code Payment</b><p class="mut">Scan to pay with your bank app</p><button class="btn out block" id="qb">Generate QR Code for Payment</button></div><br>
+<div class="card"><b>Bank Transfer</b><p class="mut">Pay via bank transfer</p><button class="btn out block" id="bt">Show Bank Transfer Details</button></div><br><div class="card"><b>International (Stripe)</b><p class="mut">$29.99/year, billed yearly</p><button class="btn out block" id="st">Pay $29.99 with Stripe</button></div></div></div></main>
+<div class="modal" id="m"><div class="card"><h3 id="mt"></h3><div id="mq" style="display:inline-block"></div><p class="mut" id="mp"></p><button class="btn sm" onclick="m.classList.remove('on')">Close</button></div></div>
+<script src="app.js"></script><script>
+const o=S.get('order',{}),dr=S.get('draft',{});$('#t').textContent=o.category||'-';$('#d').textContent=o.domain||'-';
+const USD=CFG.PAYSTACK_USD&&Intl.DateTimeFormat().resolvedOptions().timeZone!=='Africa/Lagos';if(USD)$('#pay').textContent='Pay $29.99 with Paystack';if(!CFG.STRIPE)$('#st').closest('.card').style.display='none';
+const sid=S.get('sid',null)||(()=>{const x=crypto.randomUUID();S.set('sid',x);return x})(),real=!CFG.PAYSTACK_PK.includes('xxxx'),sb=CFG.SUPABASE_URL&&supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON);
+async function done(ref){
+ if(real&&sb)await fetch(CFG.API+'/verify?ref='+ref).catch(()=>{});
+ const sites=S.get('sites',[]);sites.push({id:sid,domain:o.domain,category:o.category,cat:dr.cat,variant:dr.variant,data:dr.data,live:!real,status:real?'paid':'live'});S.set('sites',sites);
+ S.set('paid',{ref,date:new Date().toISOString()});S.set('sid',null);S.set('draft',null);location.href='success.html?site='+sid}
+$('#pay').onclick=async()=>{const em=(S.get('user',{}).email)||prompt('Your email for the receipt:');if(!em)return;if(!real)return done('DEMO');
+ if(sb){const {error}=await sb.from('sites').upsert({id:sid,category:o.category,variant:dr.variant,data:dr.data,domain:o.domain});if(error)return alert('Log in first, then pay. '+error.message)}
+ PaystackPop.setup({key:CFG.PAYSTACK_PK,email:em,amount:USD?2999:PRICE*100,currency:USD?'USD':'NGN',metadata:{site:sid},callback:r=>{done(r.reference)},onClose(){}}).openIframe()};
+$('#st').onclick=async()=>{if(!sb)return alert('Stripe needs Supabase set up first.');const {error}=await sb.from('sites').upsert({id:sid,category:o.category,variant:dr.variant,data:dr.data,domain:o.domain});if(error)return alert('Log in first, then pay. '+error.message);const r=await(await fetch(CFG.API+'/stripe-checkout?site='+sid)).json();r.url?location.href=r.url:alert('Stripe error')};
+function modal(t,txt,p){$('#mt').textContent=t;$('#mq').innerHTML='';if(txt)qr($('#mq'),txt);$('#mp').innerHTML=p;m.classList.add('on')}
+$('#qb').onclick=()=>modal('Scan to pay','https://paystack.com/pay/your-page','Put your Paystack payment page link here (create one in the Paystack dashboard).');
+$('#bt').onclick=()=>modal('Bank transfer','','Paystack "Pay with Transfer" account details appear here.');
+</script></body></html>

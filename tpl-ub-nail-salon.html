@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmS-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnj-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnx-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AE, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F8D0-1F8D8, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FAC6, U+1FAC8, U+1FACC-1FADD, U+1FADF-1FAEB, U+1FAEF-1FAFA, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmR-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #a6968f;
+  --color-2: #62504c;
+  --color-3: #fbf5f0;
+  --color-4: #23171a;
+  --color-5: #f2671f;
+  --color-6: #ffc49b;
+  --color-7: #98320c;
+  --color-8: #bcb0a9;
+  --font-1: "Gabarito", "Gabarito Fallback", "Arial", sans-serif;
+  --font-2: "Onest", "Onest Fallback", "Arial", sans-serif;
+  --radius-1: 5px;
+  --shadow-1: inset 0 1px 0 0 color-mix(in oklab, var(--color-3) 34%, transparent);
+  --shadow-2: inset 0 1px 0 0 color-mix(in oklab, var(--color-3) 34%, transparent), 0 40px 70px -40px color-mix(in oklab, var(--color-4) 70%, transparent);
+  --space-1: clamp(18px, 5vw, 72px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 90.9%; ascent-override: 103.4%; descent-override: 28.6%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.5%; ascent-override: 91.9%; descent-override: 29.4%; line-gap-override: 0%; }
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 1rem; line-height: 1.6; font-weight: 400; overflow-x: clip; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip { position: fixed; left: 12px; top: 12px; z-index: 100; padding: 10px 16px; background: var(--color-4); color: var(--color-3); border-radius: var(--radius-1); transform: translateY(-160%); }
+.skip:focus-visible { transform: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 1rem; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(2.4rem, 5vw, 4.6rem); font-weight: 700; line-height: .94; letter-spacing: .005em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: .76rem; font-weight: 600; line-height: 1.3; letter-spacing: .14em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: clamp(1.08rem, 1.35vw, 1.3rem); font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(1.15rem, 1.6vw, 1.45rem); font-weight: 600; line-height: 1.05; letter-spacing: .03em; text-transform: uppercase; font-style: normal; }
+
+.m-surface { position: relative; isolation: isolate; color: var(--color-3); background: color-mix(in oklab, var(--color-4) 30%, transparent); border: 1px solid color-mix(in oklab, var(--color-3) 36%, transparent); border-radius: var(--radius-1); box-shadow: var(--shadow-1); -webkit-backdrop-filter: blur(26px) saturate(1.25); backdrop-filter: blur(26px) saturate(1.25); }
+.m-surface-2 { position: relative; isolation: isolate; color: var(--color-4); background: color-mix(in oklab, var(--color-6) 58%, transparent); border: 1px solid color-mix(in oklab, var(--color-3) 55%, transparent); border-radius: var(--radius-1); box-shadow: var(--shadow-1); -webkit-backdrop-filter: blur(26px) saturate(1.2); backdrop-filter: blur(26px) saturate(1.2); }
+.m-surface-3 { position: relative; isolation: isolate; color: var(--color-4); background: color-mix(in oklab, var(--color-3) 34%, transparent); border: 1px solid color-mix(in oklab, var(--color-3) 70%, transparent); border-radius: var(--radius-1); box-shadow: var(--shadow-1); -webkit-backdrop-filter: blur(22px) saturate(1.15); backdrop-filter: blur(22px) saturate(1.15); }
+.m-surface::after, .m-surface-2::after, .m-surface-3::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: linear-gradient(105deg, transparent calc(var(--surface-glint, -40%) - 14%), color-mix(in oklab, var(--color-3) 26%, transparent) var(--surface-glint, -40%), transparent calc(var(--surface-glint, -40%) + 14%)); }
+
+.m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .85em 1.7em; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; font-family: var(--font-1); font-size: .76rem; font-weight: 600; line-height: 1; letter-spacing: .14em; text-transform: uppercase; font-style: normal; white-space: nowrap; transition: color .45s cubic-bezier(.2,.7,.2,1), border-color .45s; }
+.m-btn::before { content: ""; position: absolute; z-index: -1; left: 0; top: 50%; width: 160%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 34% 30%, var(--color-6), var(--color-5) 48%, var(--color-7) 92%); transform: translate(-58%, -50%) scale(0); transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover { color: var(--color-4); border-color: var(--color-5); } .m-btn:hover::before { transform: translate(-22%, -50%) scale(1); } }
+.m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .95em 2em; border: 1px solid var(--color-4); border-radius: var(--radius-1); background: var(--color-4); color: var(--color-3); font-family: var(--font-1); font-size: .78rem; font-weight: 600; line-height: 1; letter-spacing: .14em; text-transform: uppercase; font-style: normal; white-space: nowrap; transition: color .45s cubic-bezier(.2,.7,.2,1); }
+.m-btn-2::before { content: ""; position: absolute; z-index: -1; left: 0; top: 50%; width: 160%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 34% 30%, var(--color-6), var(--color-5) 48%, var(--color-7) 92%); transform: translate(-58%, -50%) scale(0); transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.m-btn-2__label { position: relative; }
+@media (hover: hover) { .m-btn-2:hover { color: var(--color-4); } .m-btn-2:hover::before { transform: translate(-22%, -50%) scale(1); } }
+.m-link { display: inline-block; padding-block: .35em; font-family: var(--font-2); font-size: 1rem; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; background-image: linear-gradient(90deg, var(--color-6), var(--color-5)), linear-gradient(currentColor, currentColor); background-size: 0 2px, 100% 1px; background-position: 0 100%, 0 100%; background-repeat: no-repeat; transition: background-size .55s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 2px, 100% 1px; } }
+.m-link-2 { display: inline-block; padding-block: .5em; font-family: var(--font-1); font-size: .76rem; font-weight: 600; line-height: 1.2; letter-spacing: .13em; text-transform: uppercase; font-style: normal; background-image: linear-gradient(90deg, var(--color-6), var(--color-5)); background-size: 0 2px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .55s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 2px; } }
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 46px; height: 46px; padding: 0; border: 1px solid color-mix(in oklab, currentColor 55%, transparent); border-radius: 50%; background: transparent; }
+.m-icon-btn::before { content: ""; position: absolute; inset: -1px; border-radius: 50%; padding: 2px; background: conic-gradient(from 0deg, var(--color-6), var(--color-5), var(--color-7), transparent 70%); -webkit-mask: linear-gradient(var(--color-4) 0 0) content-box exclude, linear-gradient(var(--color-4) 0 0); mask: linear-gradient(var(--color-4) 0 0) content-box exclude, linear-gradient(var(--color-4) 0 0); opacity: 0; transform: rotate(-90deg); transition: opacity .3s, transform .7s cubic-bezier(.2,.7,.2,1); }
+.m-icon-btn__icon { position: relative; width: 18px; height: 8px; border-block: 1.5px solid currentColor; }
+@media (hover: hover) { .m-icon-btn:hover::before { opacity: 1; transform: rotate(180deg); } }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: .72rem; font-weight: 600; line-height: 1.2; letter-spacing: .14em; text-transform: uppercase; font-style: normal; }
+.m-field__control { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid color-mix(in oklab, var(--color-4) 60%, transparent); border-radius: var(--radius-1); background: color-mix(in oklab, var(--color-3) 30%, transparent); color: var(--color-4); font-family: var(--font-2); font-size: 1rem; font-weight: 400; line-height: 1.4; }
+.m-field__control:focus-visible { outline: 2px solid var(--color-4); outline-offset: 2px; }
+textarea.m-field__control { min-height: 92px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { width: min(100% - 2 * var(--space-1), 1240px); margin-inline: auto; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto; z-index: 50; pointer-events: none; }
+#nav .nav__bar { pointer-events: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-inline: 12vw; padding: 3.2svh 3.6vw 0; border: 1px solid transparent; border-radius: var(--radius-1); transform: translateY(14svh); transition: transform .6s cubic-bezier(.2,.7,.2,1), background-color .4s, border-color .4s, padding .4s; }
+#nav.is-floating .nav__bar { padding: 10px 18px 10px 22px; transform: translateY(12px); background: color-mix(in oklab, var(--color-4) 55%, transparent); border-color: color-mix(in oklab, var(--color-3) 30%, transparent); -webkit-backdrop-filter: blur(20px) saturate(1.2); backdrop-filter: blur(20px) saturate(1.2); }
+#nav.is-floating.is-hidden .nav__bar { transform: translateY(-140%); }
+#nav .nav__logo { display: inline-flex; align-items: baseline; gap: 10px; padding-block: 6px; }
+#nav .nav__mark { font-family: var(--font-1); font-weight: 700; font-size: 1.25rem; letter-spacing: .1em; line-height: 1; text-transform: uppercase; }
+#nav .nav__sub { font-family: var(--font-1); font-weight: 600; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; line-height: 1; }
+#nav .nav__links { display: flex; align-items: center; }
+#nav .nav__links .m-link-2 + .m-link-2 { margin-left: 2.1vw; position: relative; }
+#nav .nav__links .m-link-2 + .m-link-2::before { content: ""; position: absolute; left: -1.05vw; top: 50%; width: 1px; height: .95em; background: color-mix(in oklab, currentColor 70%, transparent); transform: translateY(-50%); }
+#nav .nav__toggle { display: none; }
+#nav .menu { position: fixed; inset: 0; z-index: 60; pointer-events: auto; display: grid; align-content: space-between; padding: 22px 20px 40px; color: var(--color-3); background: color-mix(in oklab, var(--color-4) 72%, transparent); -webkit-backdrop-filter: blur(28px); backdrop-filter: blur(28px); overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__list { display: grid; gap: 4px; margin-block: 48px; }
+#nav .menu__list a { font-family: var(--font-1); font-weight: 700; font-size: clamp(2rem, 10vw, 3.4rem); line-height: 1.1; text-transform: uppercase; letter-spacing: .01em; }
+#nav .menu__foot { display: grid; gap: 6px; }
+@media (max-width: 860px) {
+  #nav .nav__bar { margin-inline: 18px; padding: 16px 16px 0 22px; transform: translateY(9svh); }
+  #nav .nav__links { display: none; }
+  #nav .nav__toggle { display: inline-grid; }
+  #nav.is-floating .nav__bar { padding: 8px 10px 8px 18px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; color: var(--color-3); }
+#opening .opening__field { perspective: 900px; position: sticky; top: 0; height: 100vh; height: 100svh; margin-bottom: -100vh; margin-bottom: -100svh; overflow: clip; background: linear-gradient(180deg, var(--color-1) 0%, color-mix(in oklab, var(--color-1) 55%, var(--color-2)) 45%, var(--color-2) 100%); }
+#opening .orb, #opening .ring { position: absolute; display: block; aspect-ratio: 1; }
+#opening .orb__move { position: absolute; inset: 0; }
+#opening .orb__body { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 33% 28%, var(--color-6) 0%, var(--color-5) 40%, color-mix(in oklab, var(--color-5) 55%, var(--color-7)) 70%, var(--color-7) 100%); }
+#opening .ring__body { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 36% 30%, var(--color-6), var(--color-5) 55%, var(--color-7) 100%); -webkit-mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); transform: rotateX(62deg) rotateY(-14deg); }
+#opening .orb--big { width: 26vw; left: calc(96vw - 13vw); top: calc(17.2svh + 62px); }
+#opening .orb--left { width: 7vw; left: calc(12vw - 3.5vw); top: calc(52vh - 3.5vw); }
+#opening .orb--low { width: 21vw; left: calc(16vw - 10.5vw); top: calc(93vh - 10.5vw); }
+#opening .ring--top { width: 19vw; left: calc(39vw - 9.5vw); top: calc(17vh - 9.5vw); }
+#opening .ring--low { width: 15vw; left: calc(57vw - 7.5vw); top: calc(87vh - 7.5vw); }
+#opening .opening__screen { position: relative; z-index: 1; height: 100vh; height: 100svh; }
+#opening .opening__pane { position: absolute; left: 12vw; right: 12vw; top: 14svh; bottom: 16svh; display: flex; align-items: flex-end; justify-content: flex-end; padding: 0 3.6vw 7svh; }
+#opening .opening__copy { display: grid; justify-items: end; text-align: right; max-width: 34rem; }
+#opening .opening__title { font-size: clamp(2.6rem, 5vw, 5.4rem); }
+#opening .opening__line { display: inline-block; }
+#opening .opening__lead { margin-top: 18px; max-width: 30rem; font-size: .95rem; }
+#opening .opening__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 14px 26px; margin-top: 26px; }
+#opening .opening__screen--second { display: block; }
+#opening .opening__photo { position: absolute; z-index: 1; left: 46vw; right: 10vw; top: 15svh; bottom: 13svh; overflow: hidden; border-radius: var(--radius-1); }
+#opening .opening__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 55%; }
+#opening .opening__pane2 { position: absolute; z-index: 2; left: 8vw; width: 44vw; top: 21svh; bottom: 21svh; display: grid; align-content: center; gap: 22px; padding: 4vw; }
+#opening .opening__pane2 .m-text-2 { font-size: clamp(2.2rem, 4.2vw, 4.4rem); }
+#opening .opening__pane2 .m-text { max-width: 32rem; }
+#opening .opening__pane2 .m-link { justify-self: start; }
+@media (max-width: 860px) {
+  #opening .orb--big { width: 56vw; left: calc(98vw - 28vw); top: calc(31vh - 28vw); }
+  #opening .orb--left { width: 13vw; left: calc(4vw - 6.5vw); top: calc(40vh - 6.5vw); }
+  #opening .orb--low { width: 38vw; left: calc(14vw - 19vw); top: calc(99vh - 19vw); }
+  #opening .ring--top { width: 30vw; left: calc(62vw - 15vw); top: calc(15vh - 15vw); }
+  #opening .ring--low { width: 22vw; left: calc(84vw - 11vw); top: calc(94vh - 11vw); }
+  #opening .opening__pane { left: 18px; right: 18px; top: 9svh; bottom: 6svh; justify-content: flex-start; padding: 0 22px 5svh; }
+  #opening .opening__copy { justify-items: start; text-align: left; }
+  #opening .opening__title { font-size: clamp(2.6rem, 14vw, 4.4rem); }
+  #opening .opening__line { display: block; }
+  #opening .opening__actions { justify-content: flex-start; }
+  #opening .opening__photo { left: 8vw; right: 8vw; top: 50svh; bottom: 5svh; }
+  #opening .opening__pane2 { left: 18px; right: 18px; width: auto; top: 6svh; bottom: auto; padding: 26px 22px 30px; gap: 16px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__pane { animation: opening-pane 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__line { animation: opening-line .95s .08s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__line + .opening__line { animation-delay: .16s; }
+  #opening .orb__body { animation: opening-orb-in 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .orb { animation: opening-float 5.5s ease-in-out 1.1s infinite alternate; }
+  #opening .orb--big { animation-duration: 5s; }
+  #opening .orb--left { animation-duration: 4.2s; }
+  #opening .ring__body { animation: opening-orb-in 1.1s cubic-bezier(.2,.7,.2,1) backwards, opening-turn 14s linear 0s infinite; }
+  #opening .ring--low .ring__body { animation-direction: normal, reverse; animation-duration: 1.1s, 11s; }
+  #opening .opening__field.is-paused .orb, #opening .opening__field.is-paused .ring__body { animation-play-state: paused; }
+}
+@keyframes opening-pane { from { transform: translateY(26px) scale(.985); } }
+@keyframes opening-line { from { transform: translateY(55%); clip-path: inset(-10% -4% 100% -4%); } to { clip-path: inset(-10% -4% -12% -4%); } }
+@keyframes opening-orb-in { from { scale: .78; } }
+@keyframes opening-float { to { translate: 0 -46px; } }
+@keyframes opening-turn { to { rotate: 360deg; } }
+}
+</style>
+<style data-8b-part="section:finishes">
+@layer sections {
+#finishes { position: relative; padding: 16vh 0 12vh; background: var(--color-2); color: var(--color-3); }
+#finishes .finishes__head { display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px 6vw; align-items: end; margin-bottom: 9vh; }
+#finishes .finishes__head .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#finishes .finishes__head .m-text-4 { max-width: 30rem; justify-self: end; text-align: right; }
+#finishes .finishes__track { width: min(100% - 2 * var(--space-1), 1240px); margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 7vh 3vw; }
+#finishes .finish { display: grid; align-content: start; gap: 14px; }
+#finishes .finish__photo { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-1); }
+#finishes .finish__photo img { width: 100%; height: 100%; object-fit: cover; }
+#finishes .finish__text { display: grid; gap: 8px; padding-right: 8%; }
+#finishes .finish__price { color: var(--color-6); }
+#finishes .finishes__frost { display: none; }
+@media (max-width: 860px) {
+  #finishes .finishes__head { grid-template-columns: 1fr; }
+  #finishes .finishes__head .m-text-4 { justify-self: start; text-align: left; }
+  #finishes .finishes__track { grid-template-columns: repeat(2, 1fr); gap: 5vh 16px; }
+}
+@media (max-width: 520px) { #finishes .finishes__track { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="scene-style:finishes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #finishes.is-track { padding: 0; }
+  #finishes.is-track .finishes__stage { position: relative; height: 100vh; height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; padding-top: 10vh; overflow: clip; }
+  #finishes.is-track .finishes__head { margin-bottom: 0; }
+  #finishes.is-track .finishes__track { align-self: center; width: max-content; margin: 0; display: flex; gap: var(--finishes-gap); padding-inline: calc(50vw - var(--finishes-card) / 2); }
+  #finishes.is-track .finish { width: var(--finishes-card); flex: none; }
+  #finishes.is-track .finishes__frost { display: block; position: absolute; left: 0; right: 0; top: var(--finishes-band-top); height: var(--finishes-band-h); pointer-events: none; }
+  #finishes.is-track .finishes__glass { position: absolute; top: 0; bottom: 0; background: color-mix(in oklab, var(--color-2) 40%, transparent); -webkit-backdrop-filter: blur(16px) saturate(1.1); backdrop-filter: blur(16px) saturate(1.1); }
+  #finishes.is-track .finishes__glass--left { left: 0; right: calc(50% + var(--finishes-window) / 2); border-right: 1px solid color-mix(in oklab, var(--color-3) 45%, transparent); }
+  #finishes.is-track .finishes__glass--right { right: 0; left: calc(50% + var(--finishes-window) / 2); border-left: 1px solid color-mix(in oklab, var(--color-3) 45%, transparent); }
+  #finishes.is-track .finishes__frame { position: absolute; top: 0; bottom: 0; left: calc(50% - var(--finishes-window) / 2); width: var(--finishes-window); border-block: 1px solid color-mix(in oklab, var(--color-3) 45%, transparent); }
+  #finishes.is-track .finish__photo img { scale: 1.16; }
+  @media (max-width: 860px) { #finishes.is-track .finishes__stage { padding-top: 12vh; } #finishes.is-track .finishes__head .m-text-4 { font-size: 1rem; } }
+}
+}
+</style>
+<style data-8b-part="section:layers">
+@layer sections {
+#layers { position: relative; overflow: clip; padding-top: 16vh; background: var(--color-4); color: var(--color-3); }
+#layers .layers__intro { display: grid; grid-template-columns: 1fr minmax(0, 27rem); gap: 20px 6vw; align-items: end; margin-bottom: 10vh; }
+#layers .layers__intro .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#layers .layers__stage { position: relative; height: 100vh; height: 100svh; display: grid; grid-template-columns: 52% 1fr; align-items: center; }
+#layers .layers__photo { position: relative; height: 100%; overflow: hidden; }
+#layers .layers__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+#layers .layers__sheets { position: relative; z-index: 1; display: grid; margin-left: -8vw; padding-right: var(--space-1); }
+#layers .sheet { display: grid; gap: 8px; width: min(40vw, 38rem); padding: 24px 34px 32px calc(8vw + 34px); box-shadow: var(--shadow-2); }
+#layers .sheet .m-text-5 { font-size: clamp(1.3rem, 2vw, 1.9rem); }
+#layers .sheet + .sheet { margin-top: -18px; }
+#layers .sheet:nth-child(2) { margin-left: 3vw; }
+#layers .sheet:nth-child(3) { margin-left: 6vw; }
+#layers .sheet:nth-child(4) { margin-left: 9vw; }
+#layers .sheet .m-text-3 { color: var(--color-6); }
+@media (max-width: 860px) {
+  #layers .layers__intro { grid-template-columns: 1fr; margin-bottom: 6vh; }
+  #layers .layers__stage { height: auto; grid-template-columns: 1fr; }
+  #layers .layers__photo { height: 52svh; }
+  #layers .layers__sheets { margin: 22px 0 0; padding: 0 18px 12vh; }
+  #layers .sheet { width: auto; padding: 18px 22px 26px; }
+  #layers .sheet:nth-child(2) { margin-left: 12px; }
+  #layers .sheet:nth-child(3) { margin-left: 24px; }
+  #layers .sheet:nth-child(4) { margin-left: 36px; }
+}
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+#studio { position: relative; padding: 16vh 0 14vh; background: var(--color-8); color: var(--color-4); }
+#studio .studio__grid { display: grid; grid-template-columns: 40% 1fr; align-items: start; }
+#studio .studio__notes { position: relative; z-index: 2; padding-top: 4vh; }
+#studio .studio__intro { display: grid; gap: 18px; max-width: 30rem; margin-bottom: 20vh; }
+#studio .studio__intro .m-text-2 { font-size: clamp(2.4rem, 4.6vw, 4.8rem); }
+#studio .studio__list { display: grid; gap: 34vh; padding-bottom: 22vh; }
+#studio .note { display: grid; gap: 10px; width: calc(100% + 7vw); padding: 26px calc(7vw + 30px) 30px 30px; }
+#studio .studio__frame-col { align-self: stretch; }
+#studio .studio__frame { position: sticky; top: 12vh; height: 76vh; overflow: hidden; border-radius: var(--radius-1); }
+#studio .studio__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; }
+@media (max-width: 860px) {
+  #studio .studio__grid { grid-template-columns: 1fr; }
+  #studio .studio__frame-col { order: -1; position: sticky; top: 0; z-index: 3; margin-inline: calc(-1 * var(--space-1)); }
+  #studio .studio__frame { position: relative; top: 0; height: 40svh; border-radius: 0; }
+  #studio .studio__notes { padding-top: 6vh; }
+  #studio .studio__intro { margin-bottom: 10vh; }
+  #studio .studio__list { gap: 16vh; }
+  #studio .note { width: auto; padding: 22px; }
+}
+}
+</style>
+<style data-8b-part="section:artists">
+@layer sections {
+#artists { position: relative; overflow: clip; padding: 16vh 0 14vh; background: var(--color-2); color: var(--color-3); }
+#artists .artists__orb { position: absolute; z-index: 0; right: -6vw; top: 6vh; width: 24vw; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 33% 28%, var(--color-6), var(--color-5) 42%, var(--color-7) 100%); }
+#artists .artists__head { position: relative; z-index: 1; display: grid; gap: 18px; max-width: 38rem; margin-bottom: 12vh; }
+#artists .artists__head .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#artists .artists__list { position: relative; z-index: 1; display: grid; gap: 9vh; }
+#artists .artist { position: relative; display: grid; }
+#artists .artist__photo { position: relative; z-index: 0; width: 30%; aspect-ratio: 4 / 3; margin-left: auto; margin-right: 6%; margin-bottom: -9%; overflow: hidden; border-radius: var(--radius-1); }
+#artists .artist:nth-child(even) .artist__photo { margin-left: 6%; margin-right: auto; }
+#artists .artist__photo img { width: 100%; height: 100%; object-fit: cover; }
+#artists .artist__strip { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr; gap: 10px; padding: 30px 40% 30px 34px; }
+#artists .artist:nth-child(even) .artist__strip { padding: 30px 34px 30px 40%; text-align: right; justify-items: end; }
+#artists .artist__name { font-size: clamp(2rem, 4.2vw, 4rem); }
+#artists .artist__meta { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+#artists .artist__meta .m-text-3 { color: var(--color-6); }
+@media (max-width: 860px) {
+  #artists .artists__orb { width: 40vw; right: -14vw; }
+  #artists .artist__photo, #artists .artist:nth-child(even) .artist__photo { width: 78%; margin: 0 auto -44px; }
+  #artists .artist__strip, #artists .artist:nth-child(even) .artist__strip { padding: 62px 22px 24px; text-align: left; justify-items: start; }
+}
+}
+</style>
+<style data-8b-part="section:file">
+@layer sections {
+#file { position: relative; padding: 16vh 0 10vh; background: var(--color-6); color: var(--color-4); }
+#file .file__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: start; }
+#file .file__lead { position: sticky; top: 14vh; display: grid; gap: 20px; }
+#file .file__lead .m-text-2 { font-size: clamp(2.4rem, 4.8vw, 5rem); }
+#file .file__photo { margin-top: 12px; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius-1); }
+#file .file__photo img { width: 100%; height: 100%; object-fit: cover; }
+#file .file__care { position: relative; padding-block: 18vh 26vh; }
+#file .file__ring { position: sticky; top: calc(50vh - 75px); z-index: 1; display: block; width: 150px; height: 150px; margin-bottom: -150px; margin-left: -34px; pointer-events: none; }
+#file .file__ring-body { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 210deg, var(--color-6), var(--color-5) 30%, var(--color-7) 55%, var(--color-5) 80%, var(--color-6)); -webkit-mask: radial-gradient(circle closest-side, transparent 70%, var(--color-4) 71.5%, var(--color-4) 98%, transparent 100%); mask: radial-gradient(circle closest-side, transparent 70%, var(--color-4) 71.5%, var(--color-4) 98%, transparent 100%); }
+#file .file__notes { display: grid; gap: 30vh; }
+#file .care { display: grid; grid-template-columns: 82px 1fr; gap: 6px 20px; align-items: baseline; }
+#file .care__step { grid-row: span 2; justify-self: center; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid currentColor; font-size: .9rem; letter-spacing: 0; }
+#file .care .m-text { grid-column: 2; max-width: 26rem; }
+@media (max-width: 860px) {
+  #file .file__grid { grid-template-columns: 1fr; }
+  #file .file__lead { position: relative; top: 0; }
+  #file .file__care { padding-block: 10vh 30vh; }
+  #file .file__ring { width: 100px; height: 100px; top: calc(50vh - 50px); margin-bottom: -100px; margin-left: -15px; }
+  #file .care { grid-template-columns: 70px 1fr; gap: 6px 12px; }
+  #file .file__notes { gap: 26vh; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { position: relative; overflow: clip; padding: 16vh 0 16vh; background: var(--color-8); color: var(--color-4); }
+#prices .prices__orb, #prices .prices__ring { position: absolute; z-index: 0; aspect-ratio: 1; border-radius: 50%; }
+#prices .prices__orb { background: radial-gradient(circle at 33% 28%, var(--color-6), var(--color-5) 42%, var(--color-7) 100%); }
+#prices .prices__orb--a { width: 22vw; right: 6vw; top: 22vh; }
+#prices .prices__orb--b { width: 13vw; left: 4vw; bottom: 12vh; }
+#prices .prices__ring { width: 16vw; left: 9vw; top: 34vh; border-radius: 0; }
+#prices .prices__ring-body { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 36% 30%, var(--color-6), var(--color-5) 55%, var(--color-7) 100%); -webkit-mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); transform: rotateX(58deg) rotate(-20deg); }
+#prices .prices__inner { position: relative; z-index: 1; }
+#prices .prices__head { display: grid; grid-template-columns: 1fr minmax(0, 28rem); gap: 20px 6vw; align-items: end; margin-bottom: 8vh; }
+#prices .prices__head .m-text-2 { font-size: clamp(2.6rem, 7vw, 7.4rem); }
+#prices .prices__sheet { display: grid; grid-template-columns: 1fr 1fr; gap: 5vh 6vw; margin-left: 14vw; padding: 5vh 4vw 6vh; }
+#prices .prices__group { display: grid; gap: 14px; align-content: start; }
+#prices .prices__group + .prices__group { margin-top: 0; }
+#prices .prices__col { display: grid; gap: 6vh; align-content: start; }
+#prices .price { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding-block: 10px; border-bottom: 1px solid color-mix(in oklab, var(--color-4) 22%, transparent); }
+#prices .price dd { font-weight: 500; white-space: nowrap; }
+@media (max-width: 860px) {
+  #prices .prices__head { grid-template-columns: 1fr; }
+  #prices .prices__sheet { grid-template-columns: 1fr; margin-left: 0; padding: 26px 20px 30px; }
+  #prices .prices__orb--a { width: 44vw; right: -12vw; top: 30vh; }
+  #prices .prices__orb--b { width: 28vw; left: -8vw; bottom: 8vh; }
+  #prices .prices__ring { width: 34vw; left: -6vw; top: 52vh; }
+}
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+#club { position: relative; overflow: clip; background: var(--color-2); color: var(--color-3); }
+#club .club__stage { position: relative; min-height: 100vh; min-height: 100svh; padding: 14vh 0 12vh; display: grid; align-content: center; }
+#club .club__orb { position: absolute; z-index: 0; display: none; width: 22vw; aspect-ratio: 1; right: 5vw; top: 46%; border-radius: 50%; background: radial-gradient(circle at 33% 28%, var(--color-6), var(--color-5) 42%, var(--color-7) 100%); }
+#club .club__head { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr minmax(0, 26rem); gap: 18px 6vw; align-items: end; margin-bottom: 7vh; }
+#club .club__head .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#club .club__cards { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 32rem)); justify-content: center; gap: 4vw; }
+#club .club__card { display: grid; align-content: space-between; gap: 22px; min-height: 22rem; padding: 34px 36px; box-shadow: var(--shadow-2); }
+#club .club__brand { display: flex; justify-content: space-between; align-items: center; }
+#club .club__price { display: flex; align-items: baseline; gap: 14px; }
+#club .club__price .m-text-2 { font-size: clamp(3.4rem, 6vw, 6rem); }
+#club .club__perks { display: grid; gap: 8px; }
+#club .club__perks li { padding-left: 22px; position: relative; }
+#club .club__perks li::before { content: ""; position: absolute; left: 0; top: .62em; width: 10px; height: 10px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--color-6), var(--color-5)); }
+#club .club__cta { position: relative; z-index: 1; display: flex; justify-content: center; margin-top: 5vh; }
+@media (max-width: 860px) {
+  #club .club__head { grid-template-columns: 1fr; }
+  #club .club__cards { grid-template-columns: 1fr; gap: 20px; }
+  #club .club__card { min-height: 0; padding: 26px 22px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:club">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #club.is-turning .club__cards { grid-template-columns: minmax(0, 34rem); }
+  #club.is-turning .club__card { grid-area: 1 / 1; min-height: 24rem; }
+  #club.is-turning .club__orb { display: block; }
+  @media (max-width: 860px) { #club.is-turning .club__cards { grid-template-columns: 1fr; } #club.is-turning .club__card { min-height: 22rem; } #club.is-turning .club__orb { display: none; } }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; overflow: clip; padding: 16vh 0 14vh; background: var(--color-8); color: var(--color-4); }
+#faq .faq__orb { position: absolute; z-index: 0; width: 18vw; aspect-ratio: 1; right: 12vw; top: 34%; border-radius: 50%; background: radial-gradient(circle at 33% 28%, var(--color-6), var(--color-5) 42%, var(--color-7) 100%); }
+#faq .faq__grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 6vh 6vw; align-items: start; }
+#faq .faq__head { position: sticky; top: 16vh; display: grid; gap: 18px; }
+#faq .faq__head .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#faq .faq__list { display: grid; gap: 12px; }
+#faq .faq__item summary { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 22px 26px; cursor: pointer; list-style: none; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__item summary::after { content: ""; flex: none; width: 14px; height: 14px; background: linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat, linear-gradient(currentColor, currentColor) center / 1.5px 100% no-repeat; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+#faq .faq__item[open] summary::after { transform: rotate(45deg); }
+#faq .faq__item .m-text { padding: 0 26px 24px; max-width: 36rem; }
+@media (max-width: 860px) {
+  #faq .faq__grid { grid-template-columns: 1fr; }
+  #faq .faq__head { position: relative; top: 0; }
+  #faq .faq__orb { width: 44vw; left: auto; right: -14vw; top: 52%; }
+  #faq .faq__item summary { padding: 18px 20px; }
+  #faq .faq__item .m-text { padding: 0 20px 20px; }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { position: relative; overflow: clip; padding: 18vh 0; background: linear-gradient(180deg, var(--color-1), var(--color-2)); color: var(--color-4); }
+#visit .visit__field { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+#visit .visit__orb, #visit .visit__ring, #visit .visit__dot { position: absolute; display: block; aspect-ratio: 1; border-radius: 50%; }
+#visit .visit__orb, #visit .visit__dot { background: radial-gradient(circle at 33% 28%, var(--color-6), var(--color-5) 42%, var(--color-7) 100%); }
+#visit .visit__orb { width: 28vw; right: 4vw; bottom: 4vh; }
+#visit .visit__dot { width: 7vw; left: 5vw; top: 16vh; }
+#visit .visit__ring { width: 17vw; left: 3vw; bottom: 12vh; border-radius: 0; }
+#visit .visit__ring-body { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 36% 30%, var(--color-6), var(--color-5) 55%, var(--color-7) 100%); -webkit-mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); mask: radial-gradient(circle closest-side, transparent 62%, var(--color-4) 63.5%, var(--color-4) 98%, transparent 100%); transform: rotateX(60deg) rotate(24deg); }
+#visit .visit__pane { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1.05fr; gap: 5vh 5vw; padding: 6vh 4vw; }
+#visit .visit__info { display: grid; gap: 22px; align-content: start; }
+#visit .visit__info .m-text-2 { font-size: clamp(2.4rem, 5vw, 5.2rem); }
+#visit .visit__facts { display: grid; gap: 18px; margin-top: 10px; }
+#visit .visit__facts div { display: grid; gap: 4px; }
+#visit .visit__form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; align-content: start; }
+#visit .visit__form .visit__wide { grid-column: 1 / -1; }
+#visit .visit__form .m-btn-2 { justify-self: start; }
+#visit .visit__status:empty { display: none; }
+@media (max-width: 860px) {
+  #visit { padding: 12vh 0; }
+  #visit .visit__pane { grid-template-columns: 1fr; padding: 28px 20px; }
+  #visit .visit__form { grid-template-columns: 1fr; }
+  #visit .visit__orb { width: 56vw; right: -16vw; bottom: 2vh; }
+  #visit .visit__dot { width: 14vw; left: -4vw; top: 8vh; }
+  #visit .visit__ring { width: 32vw; left: -8vw; bottom: 40vh; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; overflow: clip; background: var(--color-4); color: var(--color-3); padding: 12vh 0 40px; }
+#footer .footer__mark { font-family: var(--font-1); font-weight: 700; text-transform: uppercase; line-height: .8; letter-spacing: .01em; font-size: min(30vw, (100vw - 2 * var(--space-1)) / (var(--len) * .74)); margin-bottom: 7vh; }
+#footer .footer__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 32px; align-items: start; }
+#footer .footer__links { display: grid; gap: 2px; justify-items: start; }
+#footer .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 8vh; padding-top: 20px; border-top: 1px solid color-mix(in oklab, var(--color-3) 25%, transparent); }
+@media (max-width: 760px) { #footer .footer__grid { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#nav.is-docked .nav__bar { transform: none; color: var(--color-4); }
+#opening .opening__field { background: radial-gradient(130% 115% at 30% 0%, var(--color-6) 0%, color-mix(in oklab, var(--color-6) 45%, var(--color-5)) 34%, var(--color-5) 72%, color-mix(in oklab, var(--color-5) 78%, var(--color-7)) 100%); }
+#opening .orb--big { display: none; }
+#opening .orb--left { left: calc(31vw - 3.5vw); top: calc(20vh - 3.5vw); }
+#opening .orb--low { width: 13vw; left: calc(93vw - 6.5vw); top: calc(92vh - 6.5vw); }
+#opening .ring--top { left: calc(7vw - 9.5vw); top: calc(74vh - 9.5vw); transform: rotate(-70deg) rotateX(-38deg); }
+#opening .ring--low { left: calc(50vw - 7.5vw); top: calc(90vh - 7.5vw); transform: rotate(50deg) rotateX(-30deg); }
+#opening .opening__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; }
+@media (max-width: 860px) {
+  #opening .orb--left { left: calc(10vw - 6.5vw); top: calc(96vh - 6.5vw); }
+  #opening .orb--low { width: 27vw; left: calc(92vw - 13.5vw); top: calc(50vh - 13.5vw); }
+  #opening .ring--top { left: calc(10vw - 15vw); top: calc(48vh - 15vw); }
+  #opening .ring--low { left: calc(80vw - 11vw); top: calc(97vh - 11vw); }
+  #opening .opening__pane2 { top: 84px; }
+  #opening .opening__photo { top: 54svh; }
+  #opening .opening__cta { gap: 10px 22px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__pane2 { animation: opening-pane 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__photo { animation: opening-pane 1.3s .12s cubic-bezier(.2,.7,.2,1) backwards; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="skip m-text-3" href="#main">{{t1|Skip to content}}</a>
+
+<header class="nav is-docked" data-8b-section="navigation" id="nav">
+<div class="nav__bar">
+<a class="nav__logo" href="#opening"><span class="nav__mark">{{t2|⟦name⟧}}</span><span class="nav__sub">{{t3|nail studio}}</span></a>
+<nav aria-label="Main" class="nav__links">
+<a class="m-link-2" href="#finishes">{{t4|Finishes}}</a>
+<a class="m-link-2" href="#layers">{{t5|Layers}}</a>
+<a class="m-link-2" href="#studio">{{t6|Studio}}</a>
+<a class="m-link-2" href="#prices">{{t7|Prices}}</a>
+<a class="m-link-2" href="#visit">{{t8|Visit}}</a>
+</nav>
+<button aria-controls="site-menu" aria-expanded="false" class="m-icon-btn nav__toggle" type="button"><span aria-hidden="true" class="m-icon-btn__icon"></span><span class="sr-only">{{t9|Open menu}}</span></button>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="site-menu">
+<div class="menu__top">
+<span class="nav__mark">{{t2|⟦name⟧}}</span>
+<button class="m-icon-btn menu__close" type="button"><span aria-hidden="true" class="m-icon-btn__icon"></span><span class="sr-only">{{t10|Close menu}}</span></button>
+</div>
+<nav aria-label="Menu" class="menu__list">
+<a href="#finishes">{{t4|Finishes}}</a>
+<a href="#layers">{{t5|Layers}}</a>
+<a href="#studio">{{t6|Studio}}</a>
+<a href="#prices">{{t7|Prices}}</a>
+<a href="#visit">{{t8|Visit}}</a>
+</nav>
+<div class="menu__foot">
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t11|⟦phone⟧}}</a>
+<p class="m-text">{{t12|1 Admiralty Way, Lagos E8}}</p>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" class="opening" data-8b-section="opening" id="opening">
+<div aria-hidden="true" class="opening__field" data-loop="">
+<span class="orb orb--low"><span class="orb__move"><span class="orb__body"></span></span></span>
+<span class="ring ring--top"><span class="ring__body"></span></span>
+<span class="orb orb--big"><span class="orb__move"><span class="orb__body"></span></span></span>
+<span class="orb orb--left"><span class="orb__move"><span class="orb__body"></span></span></span>
+<span class="ring ring--low"><span class="ring__body"></span></span>
+</div>
+<div class="opening__screen opening__screen--second">
+<figure class="opening__photo"><img alt="Hands resting on torn denim, every nail in glossy orange gel" height="1067" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1635791283756-f1b4fbd920ae?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8b3JhbmdlJTIwbmFpbHN8ZW58MXwwfHx8MTc5MTQxMDM0NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#d9c0a6" width="1600"/></figure>
+<div class="opening__pane2 m-surface-2">
+<h1 class="m-text-2" id="opening-title">{{t13|Layers, not coats}}</h1>
+<p class="m-text">{{t14|A coat of polish sits on top of the nail. A layer of gel becomes part of it: brushed thin, cured for sixty seconds, then the next. Six to nine of them make a set that stays glassy for three weeks and comes off without taking the nail with it.}}</p>
+<div class="opening__cta"><a class="m-btn" href="#visit"><span class="m-btn__label">{{t15|Book a chair}}</span></a><a class="m-link" href="#layers">{{t16|How a set is built}}</a></div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_finishes}}<section class="finishes" data-8b-section="finishes" id="finishes">
+<div class="finishes__stage">
+<div class="wrap finishes__head">
+<h2 class="m-text-2" data-8b-motion="rise">{{t17|Six finishes, one gloss}}</h2>
+<p class="m-text-4">{{t18|Every set starts on the same clear base. What changes is what we lay inside the glass, and how many layers it takes.}}</p>
+</div>
+<ol class="finishes__track">
+<li class="finish">
+<figure class="finish__photo"><img alt="Long almond nails in deep glossy red against a black ground" height="1800" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1645566372784-7d017ad7643b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cmVkJTIwbmFpbHN8ZW58MXwxfHx8MTc5MTQxMDQxMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#c0a68c" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t19|Glass}}</h3><p class="m-text">{{t20|Sheer, high-shine colour in three passes, so the light goes through it and back.}}</p><p class="m-text-3 finish__price">{{t21|From ₦21,000}}</p></div>
+</li>
+<li class="finish">
+<figure class="finish__photo"><img alt="A hand with silver chrome almond nails in front of orange marigolds" height="1800" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1736434518489-0eb84070017f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bWFuaWN1cmV8ZW58MXwxfHx8MTc5MTQxMDQxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#26260c" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t22|Chrome}}</h3><p class="m-text">{{t23|Pigment powder buffed into the last layer: liquid metal, sealed completely flat.}}</p><p class="m-text-3 finish__price">{{t24|From ₦26,000}}</p></div>
+</li>
+<li class="finish">
+<figure class="finish__photo"><img alt="Two hands in white sleeves with milky white nails and small painted hearts" height="1500" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1754799670410-b282791342c3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTh8fG1hbmljdXJlfGVufDF8MXx8fDE3OTE0MTA0MTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#c0c0c0" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t25|Milk}}</h3><p class="m-text">{{t26|Soft white suspended in clear gel, with hand-painted details floating on top.}}</p><p class="m-text-3 finish__price">{{t27|From ₦24,000}}</p></div>
+</li>
+<li class="finish">
+<figure class="finish__photo"><img alt="A relaxed hand with short nude nails resting on white fur" height="1915" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1643648854897-7b5845b4c04c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fG1hbmljdXJlfGVufDF8MXx8fDE3OTE0MTA0MTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#d9d9c0" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t28|Bare}}</h3><p class="m-text">{{t29|Builder gel tinted to your own nail: strength and shape without looking done.}}</p><p class="m-text-3 finish__price">{{t30|From ₦22,500}}</p></div>
+</li>
+<li class="finish">
+<figure class="finish__photo"><img alt="Hands with nails in navy, gold and white, each one different" height="1500" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1754799670312-8e7da8e40ad7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG1hbmljdXJlfGVufDF8MXx8fDE3OTE0MTA0MTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#c0c0c0" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t31|Duo}}</h3><p class="m-text">{{t32|Two colours on each hand, set side by side or one laid inside the other.}}</p><p class="m-text-3 finish__price">{{t33|From ₦25,000}}</p></div>
+</li>
+<li class="finish">
+<figure class="finish__photo"><img alt="Long sculpted pointed nails with red ombre and fine silver lines" height="855" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1777287852750-53eb2ca506e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG5haWwlMjBhcnR8ZW58MXwwfHx8MTc5MTQxMDM4MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1140&q=60}}" style="background:#c0c0c0" width="1200"/></figure>
+<div class="finish__text"><h3 class="m-text-5">{{t34|Sculpt}}</h3><p class="m-text">{{t35|Length built in gel on a form, filed by hand, then painted layer by layer.}}</p><p class="m-text-3 finish__price">{{t36|From ₦34,000}}</p></div>
+</li>
+</ol>
+<div aria-hidden="true" class="finishes__frost"><span class="finishes__glass finishes__glass--left"></span><span class="finishes__frame"></span><span class="finishes__glass finishes__glass--right"></span></div>
+</div>
+</section>{{/sec_finishes}}
+
+{{#sec_layers}}<section class="layers" data-8b-section="layers" id="layers">
+<div class="wrap layers__intro">
+<h2 class="m-text-2" data-8b-motion="rise">{{t37|Built in four layers}}</h2>
+<p class="m-text-4">{{t38|A set takes fifty to eighty minutes. Most of it is waiting for the lamp, and we never rush the lamp.}}</p>
+</div>
+<div class="layers__stage">
+<figure class="layers__photo"><img alt="A nail artist brushing pale gel onto a client's nails, her own nails in teal" height="798" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1659391542239-9648f307c0b1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bmFpbCUyMHRlY2huaWNpYW58ZW58MXwwfHx8MTc5MTQxMDM4Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1210&q=60}}" style="background:#264040" width="1200"/></figure>
+<ol class="layers__sheets">
+<li class="sheet m-surface"><span class="m-text-3">{{t39|Layer 1}}</span><h3 class="m-text-5">{{t40|Prep}}</h3><p class="m-text">{{t41|Cuticles pushed back, never cut. The surface buffed just enough for gel to hold.}}</p></li>
+<li class="sheet m-surface"><span class="m-text-3">{{t42|Layer 2}}</span><h3 class="m-text-5">{{t43|Base}}</h3><p class="m-text">{{t44|A thin structured base levels each nail and carries its shape.}}</p></li>
+<li class="sheet m-surface"><span class="m-text-3">{{t45|Layer 3}}</span><h3 class="m-text-5">{{t46|Colour}}</h3><p class="m-text">{{t47|Two or three sheer passes, each cured for sixty seconds before the next.}}</p></li>
+<li class="sheet m-surface"><span class="m-text-3">{{t48|Layer 4}}</span><h3 class="m-text-5">{{t49|Seal}}</h3><p class="m-text">{{t50|A clear top layer cured twice and buffed to a glass edge. Nothing sticky left.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_layers}}
+
+{{#sec_studio}}<section class="studio" data-8b-section="studio" id="studio">
+<div class="wrap studio__grid">
+<div class="studio__notes">
+<div class="studio__intro">
+<h2 class="m-text-2" data-8b-motion="rise">{{t51|The room on Admiralty Way}}</h2>
+<p class="m-text-4">{{t52|Six tables along one long window, a low sofa for waiting and nothing louder than a murmur. Weekday mornings from ten to eleven are talk-free.}}</p>
+</div>
+<ol class="studio__list">
+<li class="note m-surface-3"><h3 class="m-text-5">{{t53|The sofa}}</h3><p class="m-text">{{t54|Wait here with tea, or bring a friend along: the second chair at every table is for them.}}</p></li>
+<li class="note m-surface-3"><h3 class="m-text-5">{{t55|The side table}}</h3><p class="m-text">{{t56|Pot tea, oat milk and a dish of clementines. Your hands stay free while the lamp does its work.}}</p></li>
+<li class="note m-surface-3"><h3 class="m-text-5">{{t57|The long window}}</h3><p class="m-text">{{t58|Daylight from nine until four, so the colour you choose is the colour you will see outside.}}</p></li>
+</ol>
+</div>
+<div class="studio__frame-col"><figure class="studio__frame"><img alt="The studio's waiting corner: a pale sofa with orange cushions, a small table with a cup and a tall plant by the window" height="1087" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1611211235015-e2e3a7d09e97?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8YmVhdXR5JTIwc2Fsb24lMjBpbnRlcmlvcnxlbnwxfDB8fHwxNzkxNDEwMzgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=900&q=60}}" style="background:#c0a68c" width="1600"/></figure></div>
+</div>
+</section>{{/sec_studio}}
+
+{{#sec_artists}}<section class="artists" data-8b-section="artists" id="artists">
+<span aria-hidden="true" class="artists__orb" data-8b-motion="drift" data-depth="1.6"></span>
+<div class="wrap">
+<div class="artists__head">
+<h2 class="m-text-2" data-8b-motion="rise">{{t59|Four people, six tables}}</h2>
+<p class="m-text-4">{{t60|Each artist keeps her own lamp and her own regulars. Book one by name, or tell us the finish and we will match you.}}</p>
+</div>
+<ul class="artists__list">
+<li class="artist">
+<figure class="artist__photo"><img alt="Nails hand-painted with white winter trees on blue and grey" height="933" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1735236007245-9dc6e28bbe56?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bmFpbCUyMGFydHxlbnwxfDB8fHwxNzkxNDEwMzgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#c08c73" width="1200"/></figure>
+<div class="artist__strip m-surface" data-8b-motion="glint"><h3 class="m-text-2 artist__name">{{t61|Mara Osei}}</h3><div class="artist__meta"><p class="m-text-3">{{t62|Hand-painting and fine line}}</p><p class="m-text-3">{{t63|Tuesday to Saturday}}</p></div></div>
+</li>
+<li class="artist">
+<figure class="artist__photo"><img alt="Almond nails in black, silver and gold metallic patterns, with chunky gold rings" height="724" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1777288390469-828f8816231c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fG5haWwlMjBhcnR8ZW58MXwwfHx8MTc5MTQxMDM4MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#c0c0c0" width="1200"/></figure>
+<div class="artist__strip m-surface" data-8b-motion="glint"><h3 class="m-text-2 artist__name">{{t64|Juno Bell}}</h3><div class="artist__meta"><p class="m-text-3">{{t65|Chrome and metallics}}</p><p class="m-text-3">{{t66|Wednesday to Sunday}}</p></div></div>
+</li>
+<li class="artist">
+<figure class="artist__photo"><img alt="Soft white ombre nails beside two pink orchid flowers" height="800" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1704757671022-e023c45c9d2f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZnJlbmNoJTIwbWFuaWN1cmV8ZW58MXwwfHx8MTc5MTQxMDM4MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#c0c0c0" width="1200"/></figure>
+<div class="artist__strip m-surface" data-8b-motion="glint"><h3 class="m-text-2 artist__name">{{t67|Ines Varga}}</h3><div class="artist__meta"><p class="m-text-3">{{t68|Nail health and bare sets}}</p><p class="m-text-3">{{t69|Tuesday to Friday}}</p></div></div>
+</li>
+<li class="artist">
+<figure class="artist__photo"><img alt="Two hands with short glossy red nails against a pale wall" height="1800" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1748163432725-454f46f68340?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjZ8fG1hbmljdXJlfGVufDF8MXx8fDE3OTE0MTA0MTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#d9d9d9;object-position: 50% 30%" width="1200"/></figure>
+<div class="artist__strip m-surface" data-8b-motion="glint"><h3 class="m-text-2 artist__name">{{t70|Theo Lam}}</h3><div class="artist__meta"><p class="m-text-3">{{t71|Sculpted length}}</p><p class="m-text-3">{{t72|Thursday to Sunday}}</p></div></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_artists}}
+
+{{#sec_file}}<section class="file" data-8b-section="file" id="file">
+<div class="wrap file__grid">
+<div class="file__lead">
+<h2 class="m-text-2" data-8b-motion="rise">{{t73|Your file is yours}}</h2>
+<p class="m-text-4">{{t74|Your first visit ends with a glass file etched with your initials. It waits in a drawer here between visits, or goes home with you. Never shared, never thrown away.}}</p>
+<figure class="file__photo"><img alt="A nail artist shaping a client's red nails with a lilac file" height="800" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1706040285481-28cc91e92c36?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bmFpbCUyMGZpbGV8ZW58MXwwfHx8MTc5MTQxMDQwN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#595959" width="1200"/></figure>
+</div>
+<div class="file__care">
+<span aria-hidden="true" class="file__ring"><span class="file__ring-body"></span></span>
+<ol class="file__notes">
+<li class="care"><span class="m-text-3 care__step">{{t75|1}}</span><h3 class="m-text-5">{{t76|Oil at night}}</h3><p class="m-text">{{t77|A drop of cuticle oil before bed keeps the edges sealed and stops them lifting.}}</p></li>
+<li class="care"><span class="m-text-3 care__step">{{t78|2}}</span><h3 class="m-text-5">{{t79|File one way}}</h3><p class="m-text">{{t80|Short strokes in one direction with your own glass file. Sawing back and forth splits the edge.}}</p></li>
+<li class="care"><span class="m-text-3 care__step">{{t81|3}}</span><h3 class="m-text-5">{{t82|Gloves at the sink}}</h3><p class="m-text">{{t83|Hot water and washing-up liquid soften gel faster than anything else you will do all week.}}</p></li>
+<li class="care"><span class="m-text-3 care__step">{{t84|4}}</span><h3 class="m-text-5">{{t85|Back at three weeks}}</h3><p class="m-text">{{t86|Refill before the gap at the cuticle reaches a millimetre and a half, and the set stays level.}}</p></li>
+</ol>
+</div>
+</div>
+</section>{{/sec_file}}
+
+{{#sec_prices}}<section class="prices" data-8b-section="prices" id="prices">
+<span aria-hidden="true" class="prices__orb prices__orb--a" data-8b-motion="drift" data-depth="1.5"></span>
+<span aria-hidden="true" class="prices__ring" data-8b-motion="drift" data-depth="2.2"><span class="prices__ring-body"></span></span>
+<span aria-hidden="true" class="prices__orb prices__orb--b" data-8b-motion="drift" data-depth="-1"></span>
+<div class="wrap prices__inner">
+<div class="prices__head">
+<h2 class="m-text-2" data-8b-motion="rise">{{t7|Prices}}</h2>
+<p class="m-text-4">{{t87|Every price includes soaking off our own gel and a short hand massage. Card or phone payment only.}}</p>
+</div>
+<div class="prices__sheet m-surface-3" data-8b-motion="glint">
+<div class="prices__group">
+<h3 class="m-text-5">{{t88|Hands}}</h3>
+<dl class="prices__list">
+<div class="price"><dt class="m-text">{{t89|Glass gel manicure}}</dt><dd class="m-text">{{t90|₦21,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t91|Milk with painted detail}}</dt><dd class="m-text">{{t92|₦24,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t93|Duo, two colours a hand}}</dt><dd class="m-text">{{t94|₦25,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t22|Chrome}}</dt><dd class="m-text">{{t95|₦26,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t96|Bare builder set}}</dt><dd class="m-text">{{t97|₦22,500}}</dd></div>
+<div class="price"><dt class="m-text">{{t71|Sculpted length}}</dt><dd class="m-text">{{t98|₦34,000–85}}</dd></div>
+<div class="price"><dt class="m-text">{{t99|Refill within four weeks}}</dt><dd class="m-text">{{t100|₦19,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t101|Removal and tidy}}</dt><dd class="m-text">{{t102|₦7,500}}</dd></div>
+</dl>
+</div>
+<div class="prices__col">
+<div class="prices__group">
+<h3 class="m-text-5">{{t103|Feet}}</h3>
+<dl class="prices__list">
+<div class="price"><dt class="m-text">{{t104|Gel pedicure}}</dt><dd class="m-text">{{t92|₦24,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t105|Bare pedicure, no colour}}</dt><dd class="m-text">{{t106|₦18,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t107|Hands and feet together}}</dt><dd class="m-text">{{t108|₦41,000}}</dd></div>
+</dl>
+</div>
+<div class="prices__group">
+<h3 class="m-text-5">{{t109|Extras}}</h3>
+<dl class="prices__list">
+<div class="price"><dt class="m-text">{{t110|Hand-painted art, per nail}}</dt><dd class="m-text">{{t111|₦1,500–8}}</dd></div>
+<div class="price"><dt class="m-text">{{t112|Repair, one nail}}</dt><dd class="m-text">{{t113|₦3,000}}</dd></div>
+<div class="price"><dt class="m-text">{{t114|Paraffin hand soak}}</dt><dd class="m-text">{{t115|₦5,000}}</dd></div>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</section>{{/sec_prices}}
+
+{{#sec_club}}<section class="club" data-8b-section="club" id="club">
+<div class="club__stage">
+<span aria-hidden="true" class="club__orb"></span>
+<div class="wrap club__head">
+<h2 class="m-text-2" data-8b-motion="rise">{{t116|The three-week club}}</h2>
+<p class="m-text-4">{{t117|Your next set booked before you leave, every time, for one monthly price.}}</p>
+</div>
+<div class="wrap club__cards">
+<article class="club__card club__card--front m-surface">
+<div class="club__brand"><span class="m-text-5">{{t118|⟦name⟧ club}}</span><span class="m-text-3">{{t119|Card one of two}}</span></div>
+<p class="club__price"><span class="m-text-2">{{t120|₦19,500}}</span><span class="m-text-3">{{t121|a month}}</span></p>
+<p class="m-text">{{t122|A refill or a new colour every twenty-one days, at a table held in your name.}}</p>
+</article>
+<article class="club__card club__card--back m-surface">
+<div class="club__brand"><h3 class="m-text-5">{{t123|What it includes}}</h3><span class="m-text-3">{{t124|Card two of two}}</span></div>
+<ul class="club__perks">
+<li class="m-text">{{t125|A refill or new colour every three weeks}}</li>
+<li class="m-text">{{t126|First pick of the Saturday tables}}</li>
+<li class="m-text">{{t127|Your glass file kept here and cleaned each visit}}</li>
+<li class="m-text">{{t128|10% off hand-painting and pedicures}}</li>
+<li class="m-text">{{t129|Pause any month, leave any time}}</li>
+</ul>
+</article>
+</div>
+<div class="wrap club__cta"><a class="m-btn" href="#visit"><span class="m-btn__label">{{t130|Join at your visit}}</span></a></div>
+</div>
+</section>{{/sec_club}}
+
+{{#sec_faq}}<section class="faq" data-8b-section="faq" id="faq">
+<span aria-hidden="true" class="faq__orb" data-8b-motion="drift" data-depth="1.8"></span>
+<div class="wrap faq__grid">
+<div class="faq__head">
+<h2 class="m-text-2" data-8b-motion="rise">{{t131|Before you come}}</h2>
+<p class="m-text-4">{{t132|Anything else, ask at the desk or write to us. We answer the same day.}}</p>
+</div>
+<div class="faq__list">
+<details class="faq__item m-surface-3"><summary class="m-text-5">{{t133|How long does a set last?}}</summary><p class="m-text">{{t134|Three weeks on most nails, up to four for a bare builder set. Refill before the growth gap reaches a millimetre and a half.}}</p></details>
+<details class="faq__item m-surface-3"><summary class="m-text-5">{{t135|Will gel damage my nails?}}</summary><p class="m-text">{{t136|Careless removal does, not the gel. We soak and lift, never drill into your own nail, and Ines runs bare sets for nails that need a rest.}}</p></details>
+<details class="faq__item m-surface-3"><summary class="m-text-5">{{t137|Can I bring my own design?}}</summary><p class="m-text">{{t138|Yes. Add a photo to your booking note so we can set aside time for the painting and pick the right artist.}}</p></details>
+<details class="faq__item m-surface-3"><summary class="m-text-5">{{t139|What if a nail chips?}}</summary><p class="m-text">{{t140|Come back within seven days and we repair it free, no questions asked.}}</p></details>
+<details class="faq__item m-surface-3"><summary class="m-text-5">{{t141|Do you take walk-ins?}}</summary><p class="m-text">{{t142|When a table is free. Ring ahead and we will tell you honestly how long the wait is.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_visit}}<section class="visit" data-8b-section="visit" id="visit">
+<div aria-hidden="true" class="visit__field">
+<span class="visit__dot"></span>
+<span class="visit__ring"><span class="visit__ring-body"></span></span>
+<span class="visit__orb"></span>
+</div>
+<div class="wrap">
+<div class="visit__pane m-surface-2">
+<div class="visit__info">
+<h2 class="m-text-2" data-8b-motion="rise">{{t15|Book a chair}}</h2>
+<p class="m-text-4">{{t143|Send a request and we call back within the day with a time. Or ring us, or simply come in.}}</p>
+<dl class="visit__facts">
+<div><dt class="m-text-3">{{t6|Studio}}</dt><dd class="m-text">{{t144|1 Admiralty Way, Lagos, five minutes from Surulere Central}}</dd></div>
+<div><dt class="m-text-3">{{t145|Hours}}</dt><dd class="m-text">{{t146|Tuesday to Friday 10–20, Saturday 9–18, Sunday 11–17, Monday closed}}</dd></div>
+<div><dt class="m-text-3">{{t147|Talk to us}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t11|⟦phone⟧}}</a> · <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t148|hello@glaze.example}}</a></dd></div>
+</dl>
+</div>
+
+</div>
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Nail Salon by <a href="https://github.com/8bsite/nail-salon-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="footer" data-8b-section="footer" id="footer">
+<div class="wrap">
+<p class="footer__mark" data-8b-motion="rise" style="--len:5">{{t2|⟦name⟧}}</p>
+<div class="footer__grid">
+<div>
+<p class="m-text-5">{{t149|⟦name⟧ nail studio}}</p>
+<p class="m-text">{{t150|1 Admiralty Way, Lagos}}</p>
+<p class="m-text">{{t151|Tuesday to Saturday 10–20, Sunday 11–17}}</p>
+</div>
+<nav aria-label="Footer" class="footer__links">
+<a class="m-link-2" href="#finishes">{{t4|Finishes}}</a>
+<a class="m-link-2" href="#layers">{{t5|Layers}}</a>
+<a class="m-link-2" href="#studio">{{t6|Studio}}</a>
+<a class="m-link-2" href="#prices">{{t7|Prices}}</a>
+<a class="m-link-2" href="#visit">{{t8|Visit}}</a>
+</nav>
+<div class="footer__links">
+<a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t11|⟦phone⟧}}</a>
+<a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t148|hello@glaze.example}}</a>
+<a class="m-link-2" data-8b-placeholder="social" href="https://www.instagram.com/">{{t152|Instagram}}</a>
+</div>
+</div>
+<div class="footer__base m-text-3"><span>{{t153|© 2026 ⟦name⟧ nail studio · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t154|8B}}</a></span><a class="m-link-2" href="#opening">{{t155|Back to the top}}</a></div>
+</div>
+</footer>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav__toggle');
+  const menu = document.getElementById('site-menu');
+  const close = menu.querySelector('.menu__close');
+  let lastY = scrollY, travel = 0, frame = 0;
+  const update = () => {
+    frame = 0;
+    const y = scrollY, delta = y - lastY;
+    lastY = y;
+    if (y < 24) { nav.classList.add('is-docked'); nav.classList.remove('is-floating', 'is-hidden'); travel = 0; return; }
+    nav.classList.remove('is-docked'); nav.classList.add('is-floating');
+    if (!delta) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (travel > 6 && !nav.contains(document.activeElement)) nav.classList.add('is-hidden');
+    else if (travel < -6) nav.classList.remove('is-hidden');
+  };
+  addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(update); }, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  update();
+  const setMenu = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); menu.querySelector('a').focus(); }
+    else { window.lenis?.start(); }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => { setMenu(false); toggle.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setMenu(false); toggle.focus(); } });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const bar = document.querySelector('#nav .nav__bar');
+  const lenis = window.lenis = new Lenis({ lerp: .085, anchors: { offset: -(bar ? bar.offsetHeight + 24 : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  drift(element, vars = {}) {
+    const depth = parseFloat(element.dataset.depth || '1');
+    return gsap.fromTo(element, { y: () => innerHeight * .3 * depth }, { y: 0, ease: 'none', ...vars });
+  },
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    const timeline = gsap.timeline({ ...vars, onComplete: () => split.revert() });
+    split.lines.forEach((line, index) => timeline.from(line, { yPercent: 110, duration: .95, ease: 'power3.out' }, index * .09));
+    return timeline;
+  },
+  glint(element, vars = {}) {
+    return gsap.fromTo(element, { '--surface-glint': '-40%' }, { '--surface-glint': '140%', duration: 1.4, ease: 'power2.inOut', ...vars });
+  }
+};
+const loopObserver = new IntersectionObserver(entries => entries.forEach(entry => entry.target.classList.toggle('is-paused', !entry.isIntersecting)));
+document.querySelectorAll('[data-loop]').forEach(element => loopObserver.observe(element));
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const first = () => section.getBoundingClientRect().top < innerHeight;
+  const drift = section.querySelectorAll('[data-8b-motion~="drift"]');
+  if (drift.length) {
+    const id = `effect:drift:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      drift.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top bottom', end: 'center 55%', scrub: .8, invalidateOnRefresh: true, animation: effects.drift(element) }));
+    }), { first: first(), id });
+  }
+  const rise = section.querySelectorAll('[data-8b-motion~="rise"]');
+  if (rise.length) {
+    const id = `effect:rise:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      rise.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true, animation: effects.rise(element, { paused: true }) }));
+    }), { first: first(), id });
+  }
+  const glint = section.querySelectorAll('[data-8b-motion~="glint"]');
+  if (glint.length) {
+    const id = `effect:glint:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      glint.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 75%', once: true, animation: effects.glint(element, { paused: true }) }));
+    }), { first: first(), id });
+  }
+});
+</script>
+<script data-8b-part="scene:finishes">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 861px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 860px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const narrow = context.conditions.narrow;
+    const section = document.getElementById('finishes');
+    const stage = section.querySelector('.finishes__stage');
+    const track = section.querySelector('.finishes__track');
+    const cards = [...track.querySelectorAll('.finish')];
+    const images = cards.map(card => card.querySelector('img'));
+    section.classList.add('is-track');
+    const measure = () => {
+      const head = section.querySelector('.finishes__head');
+      const room = innerHeight - head.getBoundingClientRect().bottom + stage.getBoundingClientRect().top - (narrow ? 200 : 210);
+      const card = Math.max(180, Math.min(narrow ? innerWidth * .64 : Math.max(innerWidth * .25, 280), narrow ? 300 : 360, room / 1.25));
+      const margin = narrow ? 14 : 64;
+      stage.style.setProperty('--finishes-card', card + 'px');
+      stage.style.setProperty('--finishes-gap', (narrow ? card * .26 : card * .42) + 'px');
+      stage.style.setProperty('--finishes-window', (card + margin * 2) + 'px');
+      const photo = cards[0].querySelector('.finish__photo');
+      stage.style.setProperty('--finishes-band-top', (photo.getBoundingClientRect().top - stage.getBoundingClientRect().top - 16) + 'px');
+      stage.style.setProperty('--finishes-band-h', (photo.offsetHeight + 32) + 'px');
+    };
+    measure();
+    const distance = () => track.scrollWidth - innerWidth;
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'finishes', trigger: stage, start: 'top top', end: () => '+=' + distance() * (narrow ? 1.7 : 1.5), pin: true, scrub: .6, invalidateOnRefresh: true, onRefreshInit: measure
+    }});
+    timeline.fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 }, 0);
+    images.forEach(image => timeline.fromTo(image, { xPercent: 6 }, { xPercent: -6, duration: 1 }, 0));
+    return () => { section.classList.remove('is-track'); ['--finishes-card', '--finishes-gap', '--finishes-window', '--finishes-band-top', '--finishes-band-h'].forEach(name => stage.style.removeProperty(name)); };
+  });
+});
+</script>
+<script data-8b-part="scene:layers">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 861px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 860px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const section = document.getElementById('layers');
+    const stage = section.querySelector('.layers__stage');
+    const sheets = [...section.querySelectorAll('.sheet')];
+    const image = section.querySelector('.layers__photo img');
+    if (context.conditions.narrow) {
+      sheets.forEach((sheet, index) => {
+        gsap.timeline({ scrollTrigger: { id: 'layers:sheet-' + index, trigger: sheet, start: 'top bottom', end: 'top 55%', scrub: .6 } })
+          .fromTo(sheet, { y: () => innerHeight * .22, rotation: index % 2 ? -4 : 4, xPercent: 8 }, { y: 0, rotation: 0, xPercent: 0, ease: 'power2.out', duration: 1 }, 0)
+          .add(effects.glint(sheet, { duration: .5 }), .55);
+      });
+      gsap.fromTo(image, { scale: 1.14 }, { scale: 1, ease: 'none', scrollTrigger: { id: 'layers:photo', trigger: section, start: 'top bottom', end: 'center center', scrub: true } });
+      return;
+    }
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'layers', trigger: stage, start: 'top top', end: () => '+=' + innerHeight * 2, pin: true, scrub: .6, invalidateOnRefresh: true
+    }});
+    timeline.fromTo(image, { scale: 1.16 }, { scale: 1, duration: 4 }, 0);
+    sheets.forEach((sheet, index) => {
+      timeline.fromTo(sheet, { y: () => innerHeight * .95, rotation: index % 2 ? -5 : 5, xPercent: 10 }, { y: 0, rotation: 0, xPercent: 0, ease: 'power3.out', duration: .8 }, index * .9)
+        .add(effects.glint(sheet, { duration: .5 }), index * .9 + .6);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('studio');
+    const image = section.querySelector('.studio__frame img');
+    const list = section.querySelector('.studio__list');
+    const focus = [{ scale: 1.55, xPercent: 17, yPercent: 4 }, { scale: 1.75, xPercent: -6, yPercent: 6 }, { scale: 1.6, xPercent: -18, yPercent: 16 }];
+    const timeline = gsap.timeline({ defaults: { ease: 'power1.inOut', duration: 1 }, scrollTrigger: {
+      id: 'studio', trigger: list, start: 'top 70%', end: 'bottom 30%', scrub: .8
+    }});
+    timeline.set(image, { transformOrigin: '50% 50%' }, 0);
+    focus.forEach((state, index) => timeline.to(image, state, index * 1.25));
+    timeline.to(image, { scale: 1, xPercent: 0, yPercent: 0 }, focus.length * 1.25);
+  });
+});
+</script>
+<script data-8b-part="scene:file">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('file');
+    const ring = section.querySelector('.file__ring-body');
+    const notes = [...section.querySelectorAll('.care')];
+    const token = name => getComputedStyle(section).getPropertyValue(name).trim();
+    const ink = token('--color-4'), ember = token('--color-7'), orange = token('--color-5');
+    gsap.to(ring, { rotation: 540, ease: 'none', scrollTrigger: { id: 'file:ring', trigger: section.querySelector('.file__care'), start: 'top 35%', end: 'bottom 65%', scrub: .6 } });
+    notes.forEach((note, index) => {
+      const step = note.querySelector('.care__step');
+      const title = note.querySelector('.m-text-5');
+      const copy = note.querySelectorAll('.m-text-5, .m-text');
+      gsap.timeline({ defaults: { ease: 'power1.inOut', duration: 1 }, scrollTrigger: { id: 'file:note-' + index, trigger: step, start: 'center 75%', end: 'center 25%', scrub: .5 } })
+        .fromTo(copy, { x: 0 }, { x: 18 }, 0).to(copy, { x: 0 }, 1)
+        .fromTo(title, { color: ink }, { color: ember }, 0).to(title, { color: ink }, 1)
+        .fromTo(step, { backgroundColor: 'transparent' }, { backgroundColor: orange }, 0).to(step, { backgroundColor: 'transparent' }, 1);
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  const status = form.querySelector('.visit__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.textContent = form.dataset.sent;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:club">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('club');
+    const stage = section.querySelector('.club__stage');
+    const front = section.querySelector('.club__card--front');
+    const back = section.querySelector('.club__card--back');
+    const orb = section.querySelector('.club__orb');
+    section.classList.add('is-turning');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'club', trigger: stage, start: 'top top', end: () => '+=' + innerHeight * 1.6, pin: true, scrub: .7, invalidateOnRefresh: true
+    }});
+    timeline
+      .fromTo(front, { rotationX: 58, y: () => innerHeight * .2, scale: .82, transformPerspective: 1100, transformOrigin: '50% 100%' }, { rotationX: 0, y: 0, scale: 1, transformPerspective: 1100, ease: 'power2.out', duration: 1 }, 0)
+      .fromTo(orb, { y: () => innerHeight * .3, x: 0, scale: .7 }, { y: 0, x: () => -innerWidth * .03, scale: 1, duration: 3 }, 0)
+      .fromTo(front, { rotationY: 0 }, { rotationY: -90, ease: 'power2.in', duration: .7, immediateRender: false }, 1.4)
+      .fromTo(back, { rotationY: 90, transformPerspective: 1100 }, { rotationY: 0, transformPerspective: 1100, ease: 'power2.out', duration: .7 }, 2.1)
+      .add(effects.glint(back, { duration: .5 }), 2.6);
+    return () => section.classList.remove('is-turning');
+  });
+});
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const orb = section.querySelector('.visit__orb');
+    const ring = section.querySelector('.visit__ring');
+    const dot = section.querySelector('.visit__dot');
+    gsap.timeline({ defaults: { ease: 'none', duration: 1 }, scrollTrigger: { id: 'visit', trigger: section, start: 'top bottom', end: 'bottom bottom', scrub: .8, invalidateOnRefresh: true } })
+      .fromTo(orb, { y: () => -section.offsetHeight * .85, x: () => -innerWidth * .18, scale: .6 }, { y: 0, x: 0, scale: 1, ease: 'power1.inOut' }, 0)
+      .fromTo(ring, { x: () => innerWidth * .9, rotation: 200 }, { x: 0, rotation: 0, ease: 'power2.out' }, 0);
+    gsap.fromTo(dot, { y: () => innerHeight * .5 }, { y: 0, ease: 'power1.out', scrollTrigger: { id: 'visit:dot', trigger: section, start: 'top bottom', end: 'top 15%', scrub: .8, invalidateOnRefresh: true } });
+  });
+});
+</script>
+</body>
+</html>

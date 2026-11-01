@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f4f5f7;
+  --color-2: #15161c;
+  --color-3: #cfe0ea;
+  --color-4: #d03e33;
+  --color-5: #f7d02c;
+  --color-6: #19437f;
+  --color-7: #1e1f36;
+  --color-8: #ffffff;
+  --color-9: #575c6b;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 4px;
+  --radius-2: 999px;
+  --space-1: clamp(20px, 3.75vw, 48px);
+  --space-2: clamp(96px, 12vw, 176px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 94%; ascent-override: 108.5%; descent-override: 34%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 97.6%; ascent-override: 104.5%; descent-override: 32.8%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+.lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(2.5rem, 7vw, 6.5rem); font-weight: 400; line-height: 0.96; letter-spacing: -0.03em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 0.78125rem; font-weight: 500; line-height: 1.35; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(1.125rem, 1.4vw, 1.3125rem); font-weight: 400; line-height: 1.42; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(1.375rem, 2vw, 1.75rem); font-weight: 700; line-height: 1.06; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: 0.9375rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-9); }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.5rem; border: 0; border-radius: var(--radius-1); background: var(--color-7); color: var(--color-8); font-family: var(--font-1); font-size: 0.9375rem; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; white-space: nowrap; overflow: hidden; isolation: isolate; transition: color .35s ease; }
+.m-btn::before { content: ""; position: absolute; z-index: -1; left: 0; top: 50%; width: 140%; aspect-ratio: 1; border-radius: 50%; background: var(--color-3); transform: translate(-60%, -50%) scale(0); transform-origin: 50% 50%; transition: transform .55s cubic-bezier(.3, .7, .2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover { color: var(--color-2); } .m-btn:hover::before { transform: translate(-30%, -50%) scale(1); } }
+.m-btn:focus-visible { color: var(--color-2); }
+.m-btn:focus-visible::before { transform: translate(-30%, -50%) scale(1); }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 1.25rem; border: 0; border-radius: var(--radius-1); background: var(--color-8); color: var(--color-2); font-family: var(--font-1); font-size: 0.9375rem; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; white-space: nowrap; overflow: hidden; isolation: isolate; }
+.m-btn-2::before { content: ""; position: absolute; z-index: -1; left: 0; top: 50%; width: 140%; aspect-ratio: 1; border-radius: 50%; background: var(--color-5); transform: translate(-60%, -50%) scale(0); transition: transform .55s cubic-bezier(.3, .7, .2, 1); }
+.m-btn-2__label { position: relative; }
+@media (hover: hover) { .m-btn-2:hover::before { transform: translate(-30%, -50%) scale(1); } }
+.m-btn-2:focus-visible { outline-color: var(--color-8); }
+.m-btn-2:focus-visible::before { transform: translate(-30%, -50%) scale(1); }
+
+.m-link { position: relative; display: inline-block; padding-bottom: 3px; font-weight: 500; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: currentColor; transform-origin: 0 50%; }
+@media (hover: hover) { .m-link:hover::after { animation: m-draw .55s cubic-bezier(.3, .7, .2, 1); } }
+.m-link:focus-visible::after { animation: m-draw .55s cubic-bezier(.3, .7, .2, 1); }
+@keyframes m-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.m-link-2 { position: relative; display: inline-grid; place-items: center; width: 13.5rem; aspect-ratio: 220 / 90; font-family: var(--font-1); font-size: 0.78125rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; text-align: center; }
+.m-link-2__label { position: relative; z-index: 1; padding: 0 1.5rem; }
+.m-link-2__loop { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.m-link-2__line, .m-link-2__again { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.m-link-2__again { stroke-dashoffset: 1; transition: stroke-dashoffset .7s cubic-bezier(.3, .7, .2, 1); }
+@media (hover: hover) { .m-link-2:hover .m-link-2__again { stroke-dashoffset: 0; } }
+.m-link-2:focus-visible .m-link-2__again { stroke-dashoffset: 0; }
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-8); }
+.m-icon-btn svg { width: 18px; height: 18px; fill: currentColor; }
+.m-icon-btn::after { content: ""; position: absolute; inset: -5px; border-radius: var(--radius-2); border: 2px solid var(--color-2); border-right-color: transparent; border-bottom-color: transparent; transform: rotate(-45deg); transition: transform .6s cubic-bezier(.3, .7, .2, 1); }
+@media (hover: hover) { .m-icon-btn:hover::after { transform: rotate(315deg); } }
+.m-icon-btn:focus-visible::after { transform: rotate(315deg); }
+
+.m-surface { background: var(--color-6); color: var(--color-8); border-radius: 0; }
+.m-surface-2 { background: var(--color-4); color: var(--color-8); border-radius: 0; }
+.m-surface-3 { background: var(--color-3); color: var(--color-2); border-radius: 0; }
+.m-surface-4 { background: var(--color-5); color: var(--color-2); border-radius: 0; }
+.m-surface-5 { background: var(--color-8); color: var(--color-2); border-radius: 0; }
+
+.m-frame { position: relative; overflow: hidden; border-radius: var(--radius-2); aspect-ratio: 1; background: var(--color-3); }
+.m-frame > img { width: 100%; height: 100%; object-fit: cover; }
+.m-frame-2 { position: relative; overflow: hidden; border-radius: 0 var(--radius-2) var(--radius-2) 0; background: var(--color-4); }
+.m-frame-2 > img { width: 100%; height: 100%; object-fit: cover; }
+.m-frame-3 { position: relative; overflow: hidden; border-radius: var(--radius-2) var(--radius-2) 0 0; background: var(--color-6); }
+.m-frame-3 > img { width: 100%; height: 100%; object-fit: cover; }
+.m-frame-4 { position: relative; overflow: hidden; border-radius: 0; background: var(--color-2); }
+.m-frame-4 > img { width: 100%; height: 100%; object-fit: cover; }
+.m-plus { display: block; aspect-ratio: 1; background: var(--color-5); clip-path: polygon(34% 0, 66% 0, 66% 34%, 100% 34%, 100% 66%, 66% 66%, 66% 100%, 34% 100%, 34% 66%, 0 66%, 0 34%, 34% 34%); }
+.m-mark { overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.m-mark path { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.m-badge { display: inline-flex; align-items: center; min-height: 26px; padding: 0 .7rem; border: 1.5px solid currentColor; border-radius: var(--radius-2); font-family: var(--font-1); font-size: 0.71875rem; font-weight: 600; line-height: 1; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-field { display: grid; gap: .45rem; }
+.m-field__label { font-family: var(--font-1); font-size: 0.78125rem; font-weight: 500; line-height: 1.35; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; }
+.m-field__input { width: 100%; min-height: 50px; padding: .75rem .9rem; border: 1.5px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-8); color: var(--color-2); font-size: 1rem; line-height: 1.4; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; }
+textarea.m-field__input { min-height: 112px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { width: 100%; max-width: 1440px; margin-inline: auto; padding-inline: var(--space-1); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; z-index: 50; inset: 0 0 auto; transition: transform .45s cubic-bezier(.3, .7, .2, 1), background-color .3s ease; }
+#navigation.is-solid { background: var(--color-1); }
+#navigation.is-hidden { transform: translateY(-100%); }
+#navigation .nav__bar { display: flex; align-items: center; gap: 2rem; height: 84px; }
+#navigation .nav__brand { font-size: 1.5rem; font-weight: 700; line-height: 1; letter-spacing: -0.01em; text-transform: uppercase; }
+#navigation .nav__links { display: flex; gap: clamp(1.25rem, 3vw, 3rem); margin-left: clamp(2rem, 6vw, 6rem); }
+#navigation .nav__link { position: relative; padding: .5rem 0; }
+#navigation .nav__link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; }
+@media (hover: hover) { #navigation .nav__link:hover::after { animation: m-draw .55s cubic-bezier(.3, .7, .2, 1) forwards; } }
+#navigation .nav__link:focus-visible::after { transform: scaleX(1); }
+#navigation .nav__end { display: flex; align-items: center; gap: 1.75rem; margin-left: auto; }
+#navigation .nav__login { text-transform: none; letter-spacing: 0; font-size: .875rem; }
+#navigation .nav__menu { display: none; }
+#navigation .menu { position: fixed; z-index: 2; inset: 0; display: flex; flex-direction: column; padding: 1.25rem var(--space-1) 2rem; background: var(--color-3); overflow-y: auto; }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__top { display: flex; justify-content: space-between; align-items: center; height: 44px; }
+#navigation .menu__list { display: grid; gap: .35rem; margin-top: 2.5rem; }
+#navigation .menu__list a { display: block; padding: .2rem 0; font-size: clamp(2.5rem, 12vw, 4rem); }
+#navigation .menu__foot { margin-top: auto; padding-top: 2rem; display: grid; gap: 1rem; justify-items: start; }
+@media (max-width: 899px) {
+  #navigation .nav__bar { height: 64px; gap: .75rem; }
+  #navigation .nav__links, #navigation .nav__login { display: none; }
+  #navigation .nav__end { gap: .75rem; }
+  #navigation .nav__btn { min-height: 40px; padding: 0 1rem; font-size: .875rem; }
+  #navigation .nav__menu { display: inline-grid; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; overflow: clip; background: var(--color-1); }
+#opening .op-a { --u: min(1vw, 1.6svh); position: relative; z-index: 1; min-height: max(100svh, calc(var(--u) * 62)); padding: calc(var(--u) * 12.6) var(--space-1) calc(var(--u) * 4) 17.8vw; }
+#opening .op-reel { position: absolute; z-index: 5; left: var(--space-1); top: calc(var(--u) * 13.4); display: grid; gap: .6rem; justify-items: start; }
+#opening .op-reel__icon { width: 18px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+#opening .op-reel span { position: relative; }
+#opening .op-title { position: relative; z-index: 5; font-size: calc(var(--u) * 7.6); line-height: .98; }
+#opening .op-line { display: block; width: max-content; }
+#opening .op-line__in { display: inline-flex; align-items: center; gap: calc(var(--u) * 2); }
+#opening .op-arrow { width: calc(var(--u) * 9); height: auto; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+#opening .op-lead { position: relative; z-index: 5; max-width: 19em; margin-top: calc(var(--u) * 3.4); color: var(--color-9); }
+#opening .op-proof { position: absolute; z-index: 5; left: var(--space-1); top: calc(var(--u) * 48); display: flex; align-items: center; gap: calc(17.8vw - var(--space-1) - 6.4rem); }
+#opening .op-proof__mark { flex: none; width: 6.4rem; font-size: 2.6rem; font-weight: 700; line-height: .8; letter-spacing: -0.06em; }
+#opening .op-proof__mark small { display: block; font-size: .3em; letter-spacing: .02em; line-height: 1.2; font-weight: 600; text-transform: uppercase; }
+#opening .op-proof__text { max-width: 12em; font-size: calc(var(--u) * 1.9); font-weight: 400; line-height: 1.12; letter-spacing: -0.01em; }
+
+#opening .op-stage { position: absolute; right: 4vw; top: calc(var(--u) * 9); width: calc(var(--u) * 41.5); height: calc(var(--u) * 53); }
+#opening .op-stage > * { position: absolute; }
+#opening .op-disc { z-index: 1; left: calc(var(--u) * 20.2); top: 0; width: calc(var(--u) * 20.1); aspect-ratio: 1; }
+#opening .op-disc__in, #opening .op-disc__body { width: 100%; height: 100%; }
+#opening .op-disc__body { position: relative; display: grid; place-items: center; border-radius: var(--radius-2); background: var(--color-3); }
+#opening .op-disc__arc { position: absolute; inset: 8%; width: 84%; height: 84%; overflow: visible; fill: none; stroke: var(--color-8); stroke-width: 4.2; stroke-linecap: round; }
+#opening .op-disc__text { position: relative; text-align: center; font-size: calc(var(--u) * 2.15); }
+#opening .op-scribble { z-index: 3; left: calc(var(--u) * 16.6); top: calc(var(--u) * 0.9); width: calc(var(--u) * 12.8); color: var(--color-2); stroke-width: 1.5; clip-path: inset(0 0 0 0); }
+#opening .op-d { z-index: 2; left: calc(var(--u) * 12.2); top: calc(var(--u) * 15.1); width: calc(var(--u) * 20.1); height: calc(var(--u) * 20.5); }
+#opening .op-d__in { position: relative; width: 100%; height: 100%; }
+#opening .op-d__frame { width: 100%; height: 100%; }
+#opening .op-d__frame img { object-position: 46% 18%; }
+#opening .op-wave { position: absolute; left: calc(var(--u) * 7.6); top: calc(var(--u) * 12.9); display: flex; align-items: center; gap: calc(var(--u) * .9); }
+#opening .op-play { width: calc(var(--u) * 3.3); height: calc(var(--u) * 3.3); min-width: 34px; min-height: 34px; }
+#opening .op-play svg { width: 40%; height: 40%; }
+#opening .op-play .op-play__on { display: none; }
+#opening .op-play[aria-pressed="true"] .op-play__on { display: block; }
+#opening .op-play[aria-pressed="true"] .op-play__off { display: none; }
+#opening .op-bars { display: flex; align-items: center; gap: calc(var(--u) * .42); height: calc(var(--u) * 3.2); }
+#opening .op-bars i { display: block; width: max(2px, calc(var(--u) * .22)); height: calc(var(--h) * 1%); border-radius: 2px; background: var(--color-2); }
+#opening .op-plus { z-index: 3; left: calc(var(--u) * 36.4); top: calc(var(--u) * 20.5); width: calc(var(--u) * 5); }
+#opening .op-card { z-index: 3; left: 0; top: calc(var(--u) * 30.7); width: calc(var(--u) * 16.9); height: calc(var(--u) * 22.4); transition: background-color .35s ease; }
+#opening .op-card__in { position: relative; display: block; width: 100%; height: 100%; overflow: hidden; }
+#opening .op-card__title { position: absolute; z-index: 1; left: calc(var(--u) * 1.6); top: calc(var(--u) * 1.5); font-size: calc(var(--u) * 1.55); }
+#opening .op-card__date { position: absolute; z-index: 1; left: calc(var(--u) * 1.6); top: calc(var(--u) * 4.1); font-size: max(10px, calc(var(--u) * .82)); }
+#opening .op-card__photo { position: absolute; right: 0; bottom: 0; width: 78%; height: 66%; }
+#opening .op-card__photo img { object-position: 50% 12%; }
+#opening .op-card__mark { position: absolute; z-index: 1; left: calc(var(--u) * 1.6); bottom: calc(var(--u) * 1.6); width: calc(var(--u) * 2.2); color: var(--color-8); stroke-width: 2.4; }
+@media (hover: hover) { #opening .op-card:hover { background: var(--color-7); } }
+#opening .op-cta { z-index: 4; left: calc(var(--u) * 21.1); top: calc(var(--u) * 39.2); width: calc(var(--u) * 16.4); }
+
+#opening .op-b { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 4vw; min-height: 100svh; padding: calc(var(--u, 12px) * 9) var(--space-1) calc(var(--u, 12px) * 5) 17.8vw; background: var(--color-3); --u: min(1vw, 1.6svh); }
+#opening .op-b__copy { display: grid; gap: 1.6rem; justify-items: start; max-width: 34rem; }
+#opening .op-b__title { font-size: calc(var(--u) * 5.6); }
+#opening .op-ring { --s: 19%; position: relative; justify-self: center; width: min(calc(var(--u) * 46), 100%); aspect-ratio: 1; }
+#opening .op-ring__line { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; stroke: var(--color-8); stroke-width: 1.6; transform: rotate(-90deg); }
+#opening .op-ring__line circle { stroke-dasharray: 1; stroke-dashoffset: 0; }
+#opening .op-face { --a: calc(-90deg + var(--i) * 45deg); position: absolute; left: calc(50% + cos(var(--a)) * 50%); top: calc(50% + sin(var(--a)) * 50%); width: var(--s); margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2); border: 4px solid var(--color-8); }
+#opening .op-face img { filter: grayscale(1) contrast(1.05); mix-blend-mode: multiply; }
+#opening .op-face:nth-child(4n + 2) { background: var(--color-5); }
+#opening .op-face:nth-child(4n + 3) { background: var(--color-3); }
+#opening .op-face:nth-child(4n + 4) { background: var(--color-4); }
+#opening .op-face:nth-child(4n + 5) { background: var(--color-8); }
+#opening .op-ring__label { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 62%; text-align: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-line__in { animation: op-rise .8s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #opening .op-line:nth-child(2) .op-line__in { animation-delay: .07s; }
+  #opening .op-line:nth-child(3) .op-line__in { animation-delay: .14s; }
+  #opening .op-arrow path { stroke-dasharray: 1; animation: op-draw .9s .3s cubic-bezier(.4, 0, .2, 1) backwards; }
+  #opening .op-disc__in { animation: op-pop .9s cubic-bezier(.2, .9, .25, 1.2) backwards, op-sway 4.6s 1s ease-in-out infinite; }
+  #opening .op-d__in { animation: op-pop .9s .08s cubic-bezier(.2, .9, .25, 1.2) backwards; }
+  #opening .op-card__in { animation: op-pop .9s .16s cubic-bezier(.2, .9, .25, 1.2) backwards; }
+  #opening .op-plus__in { animation: op-pop .9s .22s cubic-bezier(.2, .9, .25, 1.2) backwards, op-rock 3.2s 1.1s ease-in-out infinite; }
+  #opening .op-scribble path { animation: op-draw 1s .25s cubic-bezier(.4, 0, .2, 1) backwards; }
+  #opening .op-cta .m-link-2__line { animation: op-draw 1s .35s cubic-bezier(.4, 0, .2, 1) backwards; }
+  #opening .op-bars i { animation: op-bar .52s calc(var(--k) * -.11s) ease-in-out infinite alternate; transform-origin: 50% 50%; }
+  #opening .op-bars[data-paused] i, #opening [data-loop][data-paused] { animation-play-state: paused; }
+  #opening .op-bars.is-stopped i { animation-play-state: paused; }
+}
+@keyframes op-rise { from { translate: 0 .32em; } }
+@keyframes op-draw { from { stroke-dashoffset: 1; } }
+@keyframes op-pop { from { scale: .84; } }
+@keyframes op-sway { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: calc(var(--u) * -2) calc(var(--u) * .8); rotate: -7deg; } }
+@keyframes op-rock { 0%, 100% { rotate: 0deg; translate: 0 0; } 50% { rotate: 18deg; translate: 0 calc(var(--u) * -1.6); } }
+@keyframes op-bar { from { scale: 1 .35; } to { scale: 1 1; } }
+
+@media (max-width: 899px) {
+  #opening .op-a { --u: calc((100vw - 2 * var(--space-1)) / 41.5); display: flex; flex-direction: column; min-height: 100svh; padding: 92px var(--space-1) 48px; }
+  #opening .op-title { order: 1; font-size: min(18vw, 5.4rem); }
+  #opening .op-lead { order: 2; max-width: 22em; margin-top: 1rem; font-size: 1.0625rem; }
+  #opening .op-stage { order: 3; position: relative; right: auto; top: auto; flex: none; margin-top: 1.75rem; }
+  #opening .op-proof { order: 4; position: relative; left: auto; top: auto; gap: 1rem; margin-top: 1.5rem; }
+  #opening .op-proof__mark { width: auto; font-size: 2.2rem; }
+  #opening .op-proof__text { font-size: 1.125rem; }
+  #opening .op-reel { order: 5; position: relative; left: auto; top: auto; display: flex; align-items: center; margin-top: 1.25rem; }
+  #opening .op-b { grid-template-columns: 1fr; align-content: center; gap: 2.25rem; padding: 88px var(--space-1) 40px; --u: 1vw; }
+  #opening .op-b__title { font-size: min(11.5vw, 3.4rem); }
+  #opening .op-b__copy { gap: 1.1rem; }
+  #opening .op-ring { width: min(80vw, 42svh); }
+}
+}
+</style>
+<style data-8b-part="section:styles">
+@layer sections {
+#styles { position: relative; padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+#styles .st__head { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 4vw; align-items: end; padding-left: calc(17.8vw - var(--space-1)); }
+#styles .st__title { font-size: min(7.4vw, 7.5rem); }
+#styles .st__lead { max-width: 26em; color: var(--color-9); }
+#styles .st__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4vw; margin-top: clamp(56px, 7vw, 112px); }
+#styles .st__list { counter-reset: none; }
+#styles .st__item { display: grid; align-content: center; gap: 1rem; min-height: 46svh; padding: 3.5rem 0; border-top: 1.5px solid var(--color-2); }
+#styles .st__item:last-child { border-bottom: 1.5px solid var(--color-2); }
+#styles .st__name { position: relative; width: max-content; max-width: 100%; font-size: min(5.3vw, 5.4rem); }
+#styles .st__loop { position: absolute; left: -6%; top: -32%; width: 112%; height: 164%; color: var(--color-4); stroke-width: 2.2; }
+#styles .st__loop path { stroke-dashoffset: 1; }
+#styles .st__text { max-width: 30em; }
+#styles .st__meta { color: var(--color-2); }
+#styles .st__stage { position: sticky; top: 10svh; height: 80svh; }
+#styles .st__cast { position: relative; width: 100%; height: 100%; }
+#styles .st__cast > * { position: absolute; }
+#styles .st__floor { left: 33%; top: 30%; width: 36%; aspect-ratio: 1; display: grid; place-items: center; padding: 8%; border-radius: var(--radius-2); text-align: center; }
+#styles .st__floor p { font-size: clamp(1rem, 1.5vw, 1.375rem); }
+#styles .st__plus { left: 64%; top: 30%; width: 6%; }
+#styles .st__photo { z-index: 1; }
+#styles .st__photo:nth-of-type(1) { left: 0; top: 3%; width: 38%; height: 33%; }
+#styles .st__photo:nth-of-type(2) { left: 41%; top: 0; width: 26%; height: auto; }
+#styles .st__photo:nth-of-type(3) { left: 73%; top: 6%; width: 27%; height: 40%; }
+#styles .st__photo:nth-of-type(4) { left: 3%; top: 48%; width: 27%; height: 46%; }
+#styles .st__photo:nth-of-type(5) { left: 36%; top: 69%; width: 30%; height: auto; }
+#styles .st__photo:nth-of-type(6) { left: 69%; top: 56%; width: 31%; height: 31%; }
+#styles .st__photo:nth-of-type(2) img { object-position: 50% 40%; }
+#styles .st__photo:nth-of-type(4) img { object-position: 40% 50%; }
+@media (max-width: 899px) {
+  #styles .st__head { grid-template-columns: 1fr; padding-left: 0; gap: 1.25rem; }
+  #styles .st__title { font-size: min(13vw, 4rem); }
+  #styles .st__body { grid-template-columns: 1fr; gap: 0; margin-top: 2.5rem; }
+  #styles .st__stage { order: -1; top: 0; z-index: 2; height: 46svh; padding: 12px 0; background: var(--color-1); }
+  #styles .st__item { min-height: 44svh; padding: 2.5rem 0; }
+  #styles .st__name { font-size: min(11vw, 3.4rem); }
+}
+}
+</style>
+<style data-8b-part="section:first-class">
+@layer sections {
+#first-class { position: relative; padding: calc(var(--space-2) * .6) 0 var(--space-2); }
+#first-class .fc__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: end; padding-left: calc(17.8vw - var(--space-1)); }
+#first-class .fc__title { font-size: min(6vw, 6rem); max-width: 9em; }
+#first-class .fc__map { position: relative; margin-top: clamp(40px, 5vw, 80px); aspect-ratio: 1200 / 860; }
+#first-class .fc__path { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--color-2); stroke-width: 2; }
+#first-class .fc__line { display: none; }
+#first-class .fc__walker { position: absolute; z-index: 3; left: 97.5%; top: 93.02%; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: var(--radius-2); background: var(--color-4); }
+#first-class .fc__steps { position: absolute; inset: 0; }
+#first-class .fc__step { position: absolute; z-index: 2; left: var(--x); top: var(--y); width: 0; height: 0; }
+#first-class .fc__num { position: absolute; left: -30px; top: -30px; display: grid; place-items: center; width: 60px; height: 60px; border: 2px solid var(--color-2); border-radius: var(--radius-2); background: var(--color-4); color: var(--color-8); font-size: 1.375rem; transition: background-color .3s ease; }
+#first-class .fc__step.is-waiting .fc__num { background: var(--color-1); color: var(--color-2); }
+#first-class .fc__text { position: absolute; left: 52px; top: -26px; display: grid; gap: .5rem; width: min(25vw, 330px); }
+#first-class .fc__name { font-size: clamp(1.375rem, 2vw, 1.875rem); }
+#first-class .fc__photo { position: absolute; left: 1%; top: 68.6%; width: 22%; height: 30%; }
+#first-class .fc__photo img { object-position: 50% 30%; }
+@media (max-width: 899px) {
+  #first-class .fc__head { grid-template-columns: 1fr; justify-items: start; padding-left: 0; }
+  #first-class .fc__title { font-size: min(12vw, 3.6rem); }
+  #first-class .fc__map { aspect-ratio: auto; display: grid; gap: 2rem; padding-left: 56px; }
+  #first-class .fc__path { display: none; }
+  #first-class .fc__line { display: block; position: absolute; left: 21px; top: 30px; bottom: 30px; width: 2px; background: var(--color-2); transform-origin: 50% 0; }
+  #first-class .fc__walker { left: 22px; top: calc(100% - 30px); }
+  #first-class .fc__steps { position: relative; display: grid; gap: 2.5rem; }
+  #first-class .fc__step { position: relative; left: auto; top: auto; width: auto; height: auto; }
+  #first-class .fc__num { left: -64px; top: -6px; width: 48px; height: 48px; font-size: 1.125rem; }
+  #first-class .fc__text { position: static; width: auto; }
+  #first-class .fc__photo { position: relative; left: auto; top: auto; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+}
+}
+</style>
+<style data-8b-part="section:timetable">
+@layer sections {
+#timetable { position: relative; padding: var(--space-2) 0; background: var(--color-8); }
+#timetable .tt__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4vw; align-items: end; padding-left: calc(17.8vw - var(--space-1)); }
+#timetable .tt__title { font-size: min(6vw, 6rem); }
+#timetable .tt__lead { max-width: 28em; color: var(--color-9); }
+#timetable .tt__plus { position: absolute; right: 7vw; top: calc(var(--space-2) * .55); width: clamp(40px, 4.4vw, 64px); }
+#timetable .tt__week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; margin-top: clamp(48px, 6vw, 96px); }
+#timetable .tt__day { display: grid; align-content: start; gap: 10px; }
+#timetable .tt__day > h3 { padding: 0 0 .6rem; border-bottom: 1.5px solid var(--color-2); }
+#timetable .tt__class { display: grid; gap: .35rem; min-height: 168px; align-content: start; padding: 1rem .9rem 1.1rem; }
+#timetable .tt__class.m-surface-5 { border: 1.5px solid var(--color-2); }
+#timetable .tt__style { font-weight: 600; line-height: 1.15; }
+#timetable .tt__who { margin-top: auto; padding-top: .9rem; }
+#timetable .tt__class--wide { min-height: 346px; }
+#timetable .tt__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; margin-top: 2.5rem; padding-left: calc(17.8vw - var(--space-1)); }
+@media (max-width: 1100px) {
+  #timetable .tt__week { grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: 2rem; }
+  #timetable .tt__class--wide { min-height: 168px; }
+}
+@media (max-width: 899px) {
+  #timetable .tt__head { grid-template-columns: 1fr; padding-left: 0; gap: 1.25rem; }
+  #timetable .tt__title { font-size: min(12vw, 3.6rem); }
+  #timetable .tt__plus { top: 40px; }
+  #timetable .tt__week { grid-template-columns: 1fr; gap: 1.75rem; }
+  #timetable .tt__day { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #timetable .tt__day > h3 { grid-column: 1 / -1; }
+  #timetable .tt__class { min-height: 0; }
+  #timetable .tt__class--wide { grid-column: 1 / -1; }
+  #timetable .tt__foot { padding-left: 0; }
+}
+}
+</style>
+<style data-8b-part="section:teachers">
+@layer sections {
+#teachers { position: relative; padding: var(--space-2) 0; }
+#teachers .te__head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 4vw; align-items: end; padding-left: calc(17.8vw - var(--space-1)); }
+#teachers .te__title { font-size: min(6vw, 6rem); }
+#teachers .te__lead { max-width: 26em; color: var(--color-9); }
+#teachers .te__line { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(16px, 2.2vw, 36px); margin-top: clamp(56px, 7vw, 112px); }
+#teachers .te__card { display: grid; align-content: start; gap: .6rem; }
+#teachers .te__card:nth-child(2) { margin-top: 9vw; }
+#teachers .te__card:nth-child(3) { margin-top: 3vw; }
+#teachers .te__card:nth-child(4) { margin-top: 11vw; }
+#teachers .te__card:nth-child(5) { margin-top: 5vw; }
+#teachers .te__visual { position: relative; aspect-ratio: 3 / 4; margin-bottom: 1.4rem; }
+#teachers .te__block { position: absolute; left: 22%; top: 14%; width: 90%; height: 90%; }
+#teachers .te__card:nth-child(5n + 1) .te__block { border-radius: 0 var(--radius-2) var(--radius-2) 0; }
+#teachers .te__card:nth-child(5n + 2) .te__block { left: 42%; top: 42%; width: 64%; height: 64%; }
+#teachers .te__card:nth-child(5n + 3) .te__block { left: -14%; top: 10%; border-radius: var(--radius-2) 0 0 var(--radius-2); }
+#teachers .te__card:nth-child(5n + 4) .te__block { left: 18%; top: 16%; width: 92%; height: 90%; }
+#teachers .te__card:nth-child(5n + 5) .te__block { border-radius: var(--radius-2) var(--radius-2) 0 0; left: 14%; top: 30%; height: 72%; }
+#teachers .te__photo { position: relative; width: 100%; height: 100%; }
+#teachers .te__card:nth-child(5n + 5) .te__photo { height: auto; margin-top: 12%; }
+#teachers .te__name { font-size: clamp(1.5rem, 2.2vw, 2.125rem); }
+@media (max-width: 899px) {
+  #teachers .te__head { grid-template-columns: 1fr; padding-left: 0; gap: 1.25rem; }
+  #teachers .te__title { font-size: min(12vw, 3.6rem); }
+  #teachers .te__line { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 3rem; column-gap: 20px; }
+  #teachers .te__card:nth-child(n) { margin-top: 0; }
+  #teachers .te__card:nth-child(even) { margin-top: 3.5rem; }
+  #teachers .te__visual { margin-right: 12%; }
+}
+}
+</style>
+<style data-8b-part="section:showcase">
+@layer sections {
+#showcase { position: relative; background: var(--color-2); color: var(--color-8); }
+#showcase :focus-visible { outline-color: var(--color-8); }
+#showcase .sh__pin { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: clamp(32px, 4vw, 56px); padding: var(--space-2) 0; overflow: clip; }
+#showcase .sh__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4vw; align-items: end; padding: 0 var(--space-1) 0 17.8vw; }
+#showcase .sh__title { font-size: min(7vw, 7rem); }
+#showcase .sh__lead { max-width: 24em; color: var(--color-3); }
+#showcase .sh__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0 var(--space-1); }
+#showcase .sh__item { display: grid; align-content: start; gap: .8rem; }
+#showcase .sh__item figure { width: 100%; aspect-ratio: 4 / 5; }
+#showcase .sh__item:nth-child(2) figure { aspect-ratio: 1; }
+#showcase .sh__item:nth-child(3) figure { aspect-ratio: 5 / 4; }
+#showcase .sh__item:nth-child(5) figure { aspect-ratio: 1; }
+#showcase .sh__item p { color: var(--color-3); }
+#showcase .sh__info { display: grid; align-content: space-between; gap: 1.5rem; min-height: 100%; padding: 1.75rem; }
+#showcase .sh__info h3 { font-size: clamp(1.75rem, 2.6vw, 2.5rem); }
+#showcase .sh__info dl { display: grid; grid-template-columns: auto 1fr; gap: .45rem 1.25rem; }
+#showcase .sh__info dt { color: var(--color-3); }
+#showcase .sh__bars { display: flex; align-items: center; gap: 5px; height: 40px; }
+#showcase .sh__bars i { display: block; width: 4px; height: calc(var(--h) * 1%); border-radius: 2px; background: var(--color-5); transform-origin: 50% 50%; }
+@media (max-width: 899px) {
+  #showcase .sh__head { grid-template-columns: 1fr; padding-left: var(--space-1); gap: 1.25rem; }
+  #showcase .sh__title { font-size: min(13vw, 4rem); }
+  #showcase .sh__track { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:showcase">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #showcase[data-sh-live] .sh__pin { height: 100svh; padding: clamp(80px, 11svh, 120px) 0 clamp(24px, 5svh, 56px); grid-template-rows: auto minmax(0, 1fr); }
+  #showcase[data-sh-live] .sh__track { display: flex; align-items: center; gap: clamp(28px, 4vw, 64px); width: max-content; height: 100%; padding: 0 var(--space-1) 0 17.8vw; }
+  #showcase[data-sh-live] .sh__item { width: auto; }
+  #showcase[data-sh-live] .sh__item figure { width: auto; height: min(46svh, 34vw); }
+  #showcase[data-sh-live] .sh__item:nth-child(even) figure { height: min(38svh, 28vw); }
+  #showcase[data-sh-live] .sh__info { width: min(380px, 80vw); height: min(52svh, 440px); min-height: 0; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+  #showcase[data-sh-live] .sh__track { padding-left: var(--space-1); }
+  #showcase[data-sh-live] .sh__item figure { height: 40svh; }
+  #showcase[data-sh-live] .sh__item:nth-child(even) figure { height: 32svh; }
+}
+}
+</style>
+<style data-8b-part="section:voices">
+@layer sections {
+#voices { position: relative; overflow: clip; padding: var(--space-2) 0; }
+#voices .vo__title { padding-left: calc(17.8vw - var(--space-1)); font-size: min(6vw, 6rem); }
+#voices .vo__disc { position: absolute; right: -8vw; top: 32%; width: min(46vw, 640px); aspect-ratio: 1; border-radius: var(--radius-2); background: var(--color-3); }
+#voices .vo__plus { position: absolute; left: 6vw; bottom: 12%; width: clamp(44px, 5vw, 72px); }
+#voices .vo__list { position: relative; display: grid; gap: clamp(64px, 8vw, 128px); margin-top: clamp(56px, 7vw, 104px); }
+#voices .vo__quote { display: grid; gap: 1.25rem; max-width: 34ch; }
+#voices .vo__quote:nth-child(1) { margin-left: calc(17.8vw - var(--space-1)); }
+#voices .vo__quote:nth-child(2) { justify-self: end; margin-right: 4vw; }
+#voices .vo__quote:nth-child(3) { margin-left: 30vw; }
+#voices .vo__quote blockquote p { font-size: clamp(1.625rem, 3vw, 2.875rem); }
+#voices .vo__mark { position: relative; white-space: nowrap; }
+#voices .vo__loop { position: absolute; left: -7%; top: -26%; width: 114%; height: 152%; color: var(--color-4); stroke-width: 2.4; pointer-events: none; }
+#voices .vo__who { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; }
+@media (max-width: 899px) {
+  #voices .vo__title { padding-left: 0; font-size: min(12vw, 3.6rem); }
+  #voices .vo__disc { right: -30vw; top: 40%; width: 90vw; }
+  #voices .vo__quote:nth-child(n) { margin: 0; justify-self: start; }
+
+}
+}
+</style>
+<style data-8b-part="section:pricing">
+@layer sections {
+#pricing { position: relative; overflow-x: clip; padding: var(--space-2) 0; background: var(--color-8); }
+#pricing .pr__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4vw; align-items: end; padding-left: calc(17.8vw - var(--space-1)); }
+#pricing .pr__title { font-size: min(6vw, 6rem); }
+#pricing .pr__lead { max-width: 26em; color: var(--color-9); }
+#pricing .pr__passes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); margin-top: clamp(56px, 7vw, 104px); }
+#pricing .pr__pass { display: grid; grid-template-rows: auto auto auto 1fr auto; gap: .9rem; min-height: 460px; padding: 1.75rem 1.5rem 1.5rem; }
+#pricing .pr__pass.m-surface-5 { border: 1.5px solid var(--color-2); }
+#pricing .pr__price { position: relative; width: max-content; font-size: clamp(3.5rem, 6vw, 5.75rem); line-height: .9; }
+#pricing .pr__loop { position: absolute; left: -16%; top: -30%; width: 132%; height: 160%; color: var(--color-4); stroke-width: 2.6; }
+#pricing .pr__pass .m-btn, #pricing .pr__pass .m-btn-2 { justify-self: start; }
+@media (max-width: 1100px) { #pricing .pr__passes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 899px) {
+  #pricing .pr__head { grid-template-columns: 1fr; padding-left: 0; gap: 1.25rem; }
+  #pricing .pr__title { font-size: min(12vw, 3.6rem); }
+  #pricing .pr__passes { grid-template-columns: 1fr; }
+  #pricing .pr__pass { min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; padding: var(--space-2) 0; }
+#faq .fq__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 5vw; padding-left: calc(17.8vw - var(--space-1)); }
+#faq .fq__side { position: relative; align-self: start; }
+#faq .fq__title { font-size: min(5vw, 5rem); }
+#faq .fq__word { position: relative; white-space: nowrap; }
+#faq .fq__loop { position: absolute; left: -6%; top: -18%; width: 112%; height: 136%; color: var(--color-4); stroke-width: 2.4; }
+#faq .fq__plus { width: clamp(40px, 4vw, 60px); margin-top: 2.5rem; }
+#faq .fq__list { border-top: 1.5px solid var(--color-2); }
+#faq details { border-bottom: 1.5px solid var(--color-2); }
+#faq summary { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.4rem 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary .m-text-5 { font-size: clamp(1.25rem, 1.8vw, 1.625rem); }
+#faq .fq__icon { position: relative; flex: none; width: 28px; height: 28px; border-radius: var(--radius-2); background: var(--color-2); transition: transform .4s cubic-bezier(.3, .7, .2, 1); }
+#faq .fq__icon::before, #faq .fq__icon::after { content: ""; position: absolute; left: 8px; right: 8px; top: 13px; height: 2px; background: var(--color-8); }
+#faq .fq__icon::after { transform: rotate(90deg); }
+#faq details[open] .fq__icon { transform: rotate(135deg); }
+#faq details p { max-width: 36em; padding: 0 0 1.6rem; }
+@media (max-width: 899px) {
+  #faq .fq__grid { grid-template-columns: 1fr; padding-left: 0; gap: 2.5rem; }
+  #faq .fq__title { font-size: min(11vw, 3.4rem); }
+  #faq .fq__plus { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; overflow: clip; padding: var(--space-2) 0; }
+#contact .ct__grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5vw; padding-left: calc(17.8vw - var(--space-1)); }
+#contact .ct__side { position: relative; display: grid; align-content: start; gap: 1.75rem; }
+#contact .ct__disc { position: absolute; z-index: 0; left: -9vw; top: -7vw; width: min(36vw, 520px); aspect-ratio: 1; border-radius: var(--radius-2); background: var(--color-3); }
+#contact .ct__arc { position: absolute; inset: 8%; width: 84%; height: 84%; overflow: visible; fill: none; stroke: var(--color-8); stroke-width: 3.2; stroke-linecap: round; }
+#contact .ct__plus { position: absolute; z-index: 0; right: 0; bottom: -2rem; width: clamp(40px, 4.4vw, 64px); }
+#contact .ct__side > :not(.ct__disc, .ct__plus) { position: relative; z-index: 1; }
+#contact .ct__title { font-size: min(6.4vw, 6.5rem); }
+#contact .ct__info { display: grid; grid-template-columns: auto 1fr; gap: .6rem 1.5rem; margin-top: 1rem; }
+#contact .ct__info dt { padding-top: .25rem; }
+#contact .ct__form { position: relative; z-index: 1; display: grid; gap: 1.1rem; align-content: start; padding: clamp(24px, 3vw, 44px); border: 1.5px solid var(--color-2); }
+#contact .ct__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+#contact .ct__form .m-btn { justify-self: start; margin-top: .4rem; }
+#contact .ct__done { padding: 1rem 1.1rem; background: var(--color-5); color: var(--color-2); }
+@media (max-width: 899px) {
+  #contact .ct__grid { grid-template-columns: 1fr; padding-left: 0; gap: 3rem; }
+  #contact .ct__title { font-size: min(13vw, 4rem); }
+  #contact .ct__disc { left: -24vw; top: -16vw; width: 78vw; }
+  #contact .ct__plus { right: 0; bottom: -2.5rem; }
+  #contact .ct__row { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; overflow: clip; padding: clamp(72px, 9vw, 128px) 0 2rem; background: var(--color-2); color: var(--color-8); }
+#footer :focus-visible { outline-color: var(--color-8); }
+#footer .ft__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+#footer .ft__col { display: grid; gap: .7rem; align-content: start; }
+#footer .ft__col h2 { opacity: 1; color: var(--color-3); }
+#footer .ft__col a { width: max-content; }
+#footer .ft__col p { color: var(--color-8); }
+#footer .ft__word { --k: .62; display: block; margin-top: clamp(56px, 8vw, 120px); font-size: min(34vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * var(--k)))); font-weight: 700; line-height: .78; letter-spacing: -0.05em; text-transform: uppercase; white-space: nowrap; }
+#footer .ft__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--color-9); color: var(--color-3); }
+@media (max-width: 899px) { #footer .ft__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.5rem; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@property --rw-spread { syntax: '<number>'; inherits: true; initial-value: 1; }
+@media (min-width: 900px) { #opening .op-ring { width: min(calc(var(--u) * 46), 82%); } } /* the faces at 3 o'clock reached past the screen edge */
+#opening .op-b__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: .4rem; }
+#opening .op-face { --a: calc(-90deg + (var(--i) - 3.5) * 9deg + (var(--i) * 45deg - (var(--i) - 3.5) * 9deg) * var(--rw-spread)); }
+@media (max-width: 899px) {
+  #opening .op-b__cta { gap: 10px 22px; margin-top: .2rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-b__copy > * { animation: rw-up .9s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #opening .op-b__copy > :nth-child(2) { animation-delay: .08s; }
+  #opening .op-b__copy > :nth-child(3) { animation-delay: .16s; }
+  #opening .op-b__copy > :nth-child(4) { animation-delay: .24s; }
+  #opening .op-ring__line circle { animation: op-draw 1.3s .2s cubic-bezier(.4, 0, .2, 1) backwards; }
+  #opening .op-ring { animation: rw-spread 1.5s .25s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .op-face { animation: op-pop 1.5s .25s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .op-ring__label { animation: rw-up .8s .9s cubic-bezier(.2, .8, .2, 1) backwards; }
+}
+@keyframes rw-up { from { translate: 0 24px; opacity: 0; } }
+@keyframes rw-spread { from { --rw-spread: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<div class="nav__bar wrap">
+<a aria-label="{{name}}, back to the top" class="nav__brand" href="#opening">{{t1|⟦name⟧}}</a>
+<nav aria-label="Main" class="nav__links">
+<a class="nav__link m-text-3" href="#styles">{{t2|Styles}}</a>
+<a class="nav__link m-text-3" href="#first-class">{{t3|First class}}</a>
+<a class="nav__link m-text-3" href="#teachers">{{t4|Teachers}}</a>
+<a class="nav__link m-text-3" href="#pricing">{{t5|Prices}}</a>
+</nav>
+<div class="nav__end">
+<a class="nav__link nav__login m-text-3" href="#timetable">{{t6|Timetable}}</a>
+<a class="m-btn nav__btn" href="#contact"><span class="m-btn__label">{{t7|Free first class}}</span></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon-btn nav__menu" type="button"><svg aria-hidden="true" viewbox="0 0 20 20"><rect height="2" width="16" x="2" y="5"></rect><rect height="2" width="16" x="2" y="13"></rect></svg></button>
+</div>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="nav__brand">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-icon-btn menu__close" type="button"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M4.2 2.8 10 8.6l5.8-5.8 1.4 1.4L11.4 10l5.8 5.8-1.4 1.4L10 11.4l-5.8 5.8-1.4-1.4L8.6 10 2.8 4.2z"></path></svg></button>
+</div>
+<nav aria-label="Menu" class="menu__list">
+<a class="m-text-2" href="#styles">{{t2|Styles}}</a>
+<a class="m-text-2" href="#first-class">{{t3|First class}}</a>
+<a class="m-text-2" href="#timetable">{{t6|Timetable}}</a>
+<a class="m-text-2" href="#teachers">{{t4|Teachers}}</a>
+<a class="m-text-2" href="#pricing">{{t5|Prices}}</a>
+<a class="m-text-2" href="#faq">{{t8|Questions}}</a>
+</nav>
+<div class="menu__foot">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t9|Book a free first class}}</span></a>
+<p class="m-text-6">{{t10|Unit 1, Example Mills, Abuja LS9}}</p>
+</div>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-b-track">
+<div class="op-b">
+<div class="op-b__copy">
+<h1 class="op-b__title m-text-2" id="opening-title">{{t11|Come alone. Leave with a crew.}}</h1>
+<p class="m-text">{{t12|Every class starts in a circle, and partners change with every song. By the cool-down you have danced with the whole room, and nobody stands at the side watching.}}</p>
+<p class="m-text-6">{{t13|Classes of 12 to 20 · ages 18 to 80 · trainers and water, nothing else to buy}}</p>
+<div class="op-b__cta"><a class="m-btn" href="#contact"><span class="m-btn__label">{{t9|Book a free first class}}</span></a><a class="m-link" href="#first-class">{{t14|How a first class goes}}</a></div>
+</div>
+<div class="op-ring">
+<svg aria-hidden="true" class="op-ring__line" viewbox="0 0 100 100"><circle cx="50" cy="50" pathlength="1" r="49"></circle></svg>
+<figure class="op-face m-frame" style="--i:0"><img alt="Smiling student, Tuesday salsa" height="889" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1657152042407-64b755c7558a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#d9d9d9" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:1"><img alt="Laughing student, Thursday swing" height="822" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1702207761808-ed9844a23b8c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#262626" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:2"><img alt="Student smiling over her shoulder, heels class" height="780" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1621802480244-412824a13680?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#262626" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:3"><img alt="Student in a crew-neck T-shirt, Monday hip-hop" height="800" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1622012070740-4f753ebb9bad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#262626" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:4"><img alt="Student laughing with her eyes closed, bachata" height="869" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1669334179658-7098a164bdea?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#262626" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:5"><img alt="Student with long hair, contemporary" height="800" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1711206367381-b464d4a738a4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bGF1Z2hpbmclMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#d9a68c" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:6"><img alt="Student with long fair hair, salsa" height="800" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1658932447761-8a59cd02d201?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cG9ydHJhaXQlMjBvbGRlciUyMHdvbWFuJTIwc21pbGluZyUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#f3f3f3" width="800"/></figure>
+<figure class="op-face m-frame" style="--i:7"><img alt="Student with her hands near her face, swing" height="800" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1768247695912-ed8f44d62649?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cG9ydHJhaXQlMjBvbGRlciUyMHdvbWFuJTIwc21pbGluZyUyMHN0dWRpb3xlbnwxfDJ8fHwxNzkxNDA1MDY4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=90&q=60}}" style="background:#262626" width="800"/></figure>
+<p class="op-ring__label m-text-3">{{t15|Partners change every song}}</p>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_styles}}<section aria-labelledby="styles-title" data-8b-section="styles" id="styles">
+<div class="wrap">
+<div class="st__head">
+<h2 class="st__title m-text-2" id="styles-title">{{t16|Six styles, one floor}}</h2>
+<p class="st__lead m-text-4">{{t17|Pick the music you already move to in the kitchen. Every style has a beginners' class each week, and you can switch whenever you like.}}</p>
+</div>
+<div class="st__body">
+<ol class="st__list">
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t18|Hip-hop}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t19|Grooves, bounces and short routines to new and old-school tracks. Loud, sweaty and very forgiving.}}</p>
+<p class="st__meta m-text-3">{{t20|Beginners Mon 18:30 · Improvers Wed 19:45}}</p>
+</li>
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t21|Salsa}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t22|Cuban-style salsa in a rotating circle, so you dance with everyone. Basic step by minute ten, first turn by minute twenty.}}</p>
+<p class="st__meta m-text-3">{{t23|Beginners Mon 19:45 · Improvers Thu 19:45}}</p>
+</li>
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t24|Contemporary}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t25|Floor work, swings and slow phrases. The calmest hour of the week, and the hardest on your thighs.}}</p>
+<p class="st__meta m-text-3">{{t26|Open level Tue 18:30 · Beginners Sat 11:00}}</p>
+</li>
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t27|Heels}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t28|Walks, poses and a full routine in heels or trainers, your choice. Confidence is the actual subject.}}</p>
+<p class="st__meta m-text-3">{{t29|Beginners Wed 18:30 · Improvers Sat 12:30}}</p>
+</li>
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t30|Swing}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t31|Lindy hop to big-band records. Bouncy, social and impossible to do with a straight face.}}</p>
+<p class="st__meta m-text-3">{{t32|Beginners Thu 18:30 · Open level Sun 11:00}}</p>
+</li>
+<li class="st__item">
+<h3 class="st__name m-text-2">{{t33|Bachata}}<svg aria-hidden="true" class="st__loop m-mark" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M38 20 C80 6 170 6 200 26 C222 42 204 72 140 80 C76 88 14 76 12 50 C10 26 62 12 120 12 C168 12 212 22 214 44" pathlength="1"></path></svg></h3>
+<p class="st__text m-text">{{t34|Close, slow and musical. We teach both leading and following to everyone, whichever role you pick on the night.}}</p>
+<p class="st__meta m-text-3">{{t35|Beginners Tue 19:45 · Improvers Sun 12:30}}</p>
+</li>
+</ol>
+<div class="st__stage">
+<div class="st__cast">
+<div class="st__floor m-surface-3"><p class="m-text-5">{{t36|Take the middle when it's your turn}}</p></div>
+<span aria-hidden="true" class="st__plus m-plus"></span>
+<figure class="st__photo m-frame-2"><img alt="A hip-hop dancer in sunglasses kicking out one leg" height="2400" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1761882628233-1e23102da76d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c3RyZWV0JTIwZGFuY2UlMjBzdHVkaW98ZW58MXwxfHx8MTc5MTQwNTA0N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<figure class="st__photo m-frame"><img alt="A salsa couple in white mid-turn" height="900" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1561310666-b4c550415625?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8YWR1bHRzJTIwZGFuY2UlMjBjbGFzc3xlbnwxfDB8fHwxNzkxNDA1MDI2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<figure class="st__photo m-frame-3"><img alt="A contemporary dancer bending low under a spotlight" height="2400" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1690267590629-2fe06a978cd5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fGNvbnRlbXBvcmFyeSUyMGRhbmNlcnxlbnwxfDF8fHwxNzkxNDA1MDI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#262626" width="1600"/></figure>
+<figure class="st__photo m-frame-4"><img alt="A dancer in a red dress and red heels mid-step" height="2400" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1686668572519-1793f1f5f37f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGVlbHMlMjBkYW5jZSUyMHdvbWFufGVufDF8MXx8fDE3OTE0MDUwNDZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#d90c0c" width="1600"/></figure>
+<figure class="st__photo m-frame"><img alt="A swing couple spinning, her pink skirt flaring" height="2400" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1733347950164-069ba0a97848?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c3dpbmclMjBkYW5jZSUyMGNvdXBsZXxlbnwxfDF8fHwxNzkxNDA1MDI3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#260c0c" width="1600"/></figure>
+<figure class="st__photo m-frame-2"><img alt="A bachata couple holding hands in a dark room" height="2400" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1634274203792-7caa82c34342?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHNhbHNhJTIwY291cGxlJTIwZGFuY2luZ3xlbnwxfDF8fHwxNzkxNDA1MDI2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#262626" width="1600"/></figure>
+</div>
+</div>
+</div>
+</div>
+</section>{{/sec_styles}}
+
+{{#sec_first_class}}<section aria-labelledby="first-class-title" data-8b-section="first-class" id="first-class">
+<div class="wrap">
+<div class="fc__head">
+<h2 class="fc__title m-text-2" id="first-class-title">{{t37|Your first class, step by step}}</h2>
+<a class="fc__cta m-btn" href="#contact"><span class="m-btn__label">{{t38|Book your free first class}}</span></a>
+</div>
+<div class="fc__map">
+<svg aria-hidden="true" class="fc__path m-mark" viewbox="0 0 1200 860"><path d="M20 90 C80 80 140 150 168 200 C196 250 200 330 250 350 C300 370 330 330 300 315 C270 300 250 360 330 385 C480 420 640 400 720 360 C770 335 790 300 816 280 C830 330 860 420 900 430 C950 440 960 400 930 395 C890 390 880 470 800 470 C680 470 500 440 420 455 C380 462 350 495 360 520 C370 560 360 640 400 680 C440 720 480 690 455 670 C430 650 420 730 520 735 C620 740 700 720 760 650 C790 700 780 780 860 795 C960 812 1080 790 1170 800" pathlength="1"></path></svg>
+<span aria-hidden="true" class="fc__line"></span>
+<span aria-hidden="true" class="fc__walker"></span>
+<ol class="fc__steps">
+<li class="fc__step" style="--x:14%;--y:23.26%">
+<span class="fc__num m-text-5">{{t39|1}}</span>
+<div class="fc__text"><h3 class="fc__name m-text-5">{{t40|Walk in on your own}}</h3><p class="m-text">{{t41|Most people do. Say hi at the desk, leave your coat in a locker and keep your trainers on.}}</p></div>
+</li>
+<li class="fc__step" style="--x:68%;--y:32.56%">
+<span class="fc__num m-text-5">{{t42|2}}</span>
+<div class="fc__text"><h3 class="fc__name m-text-5">{{t43|Warm up in the circle}}</h3><p class="m-text">{{t44|Ten easy minutes to the night's playlist. Everybody is busy with their own feet, so nobody is looking at yours.}}</p></div>
+</li>
+<li class="fc__step" style="--x:30%;--y:60.47%">
+<span class="fc__num m-text-5">{{t45|3}}</span>
+<div class="fc__text"><h3 class="fc__name m-text-5">{{t46|Learn eight counts}}</h3><p class="m-text">{{t47|The teacher breaks one short routine into eight beats and repeats it until it sticks, then puts the music back on.}}</p></div>
+</li>
+<li class="fc__step" style="--x:63.33%;--y:75.58%">
+<span class="fc__num m-text-5">{{t48|4}}</span>
+<div class="fc__text"><h3 class="fc__name m-text-5">{{t49|Dance it, swap, again}}</h3><p class="m-text">{{t50|Once with the lights up, once with them down, a new partner each time. Then tea, and usually a plan for next week.}}</p></div>
+</li>
+</ol>
+<figure class="fc__photo m-frame-2"><img alt="A class of adult beginners dancing together in a bright studio" height="1067" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1702648158754-484755fadf79?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YWR1bHRzJTIwZGFuY2UlMjBjbGFzc3xlbnwxfDB8fHwxNzkxNDA1MDI2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+</div>
+</div>
+</section>{{/sec_first_class}}
+
+{{#sec_timetable}}<section aria-labelledby="timetable-title" data-8b-section="timetable" id="timetable">
+<span aria-hidden="true" class="tt__plus m-plus" data-8b-motion="spinIn"></span>
+<div class="wrap">
+<div class="tt__head">
+<h2 class="tt__title m-text-2" id="timetable-title">{{t51|This week on the floor}}</h2>
+<p class="tt__lead m-text-4">{{t52|Fourteen classes and one open night. Beginners' classes need no experience at all; improvers' classes suit anyone with a term behind them.}}</p>
+</div>
+<div class="tt__week" data-8b-motion="beatIn">
+<div class="tt__day">
+<h3 class="m-text-3">{{t53|Monday}}</h3>
+<article class="tt__class m-surface"><p class="m-text-3">{{t54|18:30–19:30}}</p><p class="tt__style m-text-4">{{t18|Hip-hop}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t56|with Kofi}}</p></article>
+<article class="tt__class m-surface-2"><p class="m-text-3">{{t57|19:45–20:45}}</p><p class="tt__style m-text-4">{{t21|Salsa}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t58|with Marco}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t59|Tuesday}}</h3>
+<article class="tt__class m-surface-3"><p class="m-text-3">{{t54|18:30–19:30}}</p><p class="tt__style m-text-4">{{t24|Contemporary}}</p><p class="m-text-3">{{t60|Open level}}</p><p class="tt__who m-text-3">{{t61|with Ines}}</p></article>
+<article class="tt__class m-surface-2"><p class="m-text-3">{{t57|19:45–20:45}}</p><p class="tt__style m-text-4">{{t33|Bachata}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t58|with Marco}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t62|Wednesday}}</h3>
+<article class="tt__class m-surface-4"><p class="m-text-3">{{t54|18:30–19:30}}</p><p class="tt__style m-text-4">{{t27|Heels}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t63|with Tash}}</p></article>
+<article class="tt__class m-surface"><p class="m-text-3">{{t57|19:45–20:45}}</p><p class="tt__style m-text-4">{{t18|Hip-hop}}</p><p class="m-text-3">{{t64|Improvers}}</p><p class="tt__who m-text-3">{{t56|with Kofi}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t65|Thursday}}</h3>
+<article class="tt__class m-surface-5"><p class="m-text-3">{{t54|18:30–19:30}}</p><p class="tt__style m-text-4">{{t30|Swing}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t66|with Dev}}</p></article>
+<article class="tt__class m-surface-2"><p class="m-text-3">{{t57|19:45–20:45}}</p><p class="tt__style m-text-4">{{t21|Salsa}}</p><p class="m-text-3">{{t64|Improvers}}</p><p class="tt__who m-text-3">{{t58|with Marco}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t67|Friday}}</h3>
+<article class="tt__class tt__class--wide m-surface"><p class="m-text-3">{{t68|19:00–21:00}}</p><p class="tt__style m-text-4">{{t69|Open class}}</p><p class="m-text-3">{{t70|All styles, all levels}}</p><p class="tt__who m-text-3">{{t71|with the whole team}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t72|Saturday}}</h3>
+<article class="tt__class m-surface-3"><p class="m-text-3">{{t73|11:00–12:00}}</p><p class="tt__style m-text-4">{{t24|Contemporary}}</p><p class="m-text-3">{{t55|Beginners}}</p><p class="tt__who m-text-3">{{t61|with Ines}}</p></article>
+<article class="tt__class m-surface-4"><p class="m-text-3">{{t74|12:30–13:30}}</p><p class="tt__style m-text-4">{{t27|Heels}}</p><p class="m-text-3">{{t64|Improvers}}</p><p class="tt__who m-text-3">{{t63|with Tash}}</p></article>
+</div>
+<div class="tt__day">
+<h3 class="m-text-3">{{t75|Sunday}}</h3>
+<article class="tt__class m-surface-5"><p class="m-text-3">{{t73|11:00–12:00}}</p><p class="tt__style m-text-4">{{t30|Swing}}</p><p class="m-text-3">{{t60|Open level}}</p><p class="tt__who m-text-3">{{t66|with Dev}}</p></article>
+<article class="tt__class m-surface-2"><p class="m-text-3">{{t74|12:30–13:30}}</p><p class="tt__style m-text-4">{{t33|Bachata}}</p><p class="m-text-3">{{t64|Improvers}}</p><p class="tt__who m-text-3">{{t58|with Marco}}</p></article>
+</div>
+</div>
+<div class="tt__foot">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t76|Book a class}}</span></a>
+<p class="m-text-6">{{t77|Classes run all year except 24 December to 2 January.}}</p>
+</div>
+</div>
+</section>{{/sec_timetable}}
+
+{{#sec_teachers}}<section aria-labelledby="teachers-title" data-8b-section="teachers" id="teachers">
+<div class="wrap">
+<div class="te__head">
+<h2 class="te__title m-text-2" id="teachers-title">{{t78|The people who count you in}}</h2>
+<p class="te__lead m-text-4">{{t79|Five teachers who still remember their own first class. They teach the whole room, not the front row.}}</p>
+</div>
+<ul class="te__line">
+<li class="te__card">
+<div class="te__visual"><span aria-hidden="true" class="te__block m-surface-2"></span><figure class="te__photo m-frame-3"><img alt="Kofi dancing in a loose jacket and trainers" height="2400" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1761882636448-cf48b733786f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mjl8fGNvbnRlbXBvcmFyeSUyMGRhbmNlcnxlbnwxfDF8fHwxNzkxNDA1MDI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#d9d9d9" width="1600"/></figure></div>
+<h3 class="te__name m-text-5">{{t80|Kofi}}</h3>
+<p class="m-text-3">{{t18|Hip-hop}}</p>
+<p class="m-text-6">{{t81|Learnt in a church hall in Chapeltown and still warms up to Motown. Judges battles at weekends.}}</p>
+</li>
+<li class="te__card">
+<div class="te__visual"><span aria-hidden="true" class="te__block m-plus"></span><figure class="te__photo m-frame-2"><img alt="Marco mid-step in black clothes against a grey wall" height="2400" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1558717501-a5c52f98333d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8eW91bmclMjBtYW4lMjBkYW5jZXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDA0OTg2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#404040" width="1600"/></figure></div>
+<h3 class="te__name m-text-5">{{t82|Marco}}</h3>
+<p class="m-text-3">{{t83|Salsa and bachata}}</p>
+<p class="m-text-6">{{t84|Ten years of Cuban salsa in Abuja. Rotates partners faster than anyone, himself included.}}</p>
+</li>
+<li class="te__card">
+<div class="te__visual"><span aria-hidden="true" class="te__block m-surface-3"></span><figure class="te__photo m-frame-4"><img alt="Ines dancing with her hair flying" height="2413" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1779400203775-3baef1c33090?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29tYW4lMjBkYW5jaW5nJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTE0MDQ5ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#c0c0c0" width="1600"/></figure></div>
+<h3 class="te__name m-text-5">{{t85|Ines}}</h3>
+<p class="m-text-3">{{t24|Contemporary}}</p>
+<p class="m-text-6">{{t86|Danced with two touring companies; now teaches floor work to accountants and nurses.}}</p>
+</li>
+<li class="te__card">
+<div class="te__visual"><span aria-hidden="true" class="te__block m-surface"></span><figure class="te__photo m-frame-3"><img alt="Tash in heels kicking one leg high against a wall" height="2000" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1642804479877-03311d91a15a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fGhlZWxzJTIwZGFuY2UlMjB3b21hbnxlbnwxfDF8fHwxNzkxNDA1MDQ2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#d9d9d9" width="1600"/></figure></div>
+<h3 class="te__name m-text-5">{{t87|Tash}}</h3>
+<p class="m-text-3">{{t27|Heels}}</p>
+<p class="m-text-6">{{t88|Dances in music videos and believes everyone has a walk in them, including you.}}</p>
+</li>
+<li class="te__card">
+<div class="te__visual"><span aria-hidden="true" class="te__block m-surface-2"></span><figure class="te__photo m-frame"><img alt="Dev kicking out a leg on a concrete floor" height="2400" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1596518997952-3bcbf6583301?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8eW91bmclMjBtYW4lMjBkYW5jZXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDA0OTg2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#737373" width="1600"/></figure></div>
+<h3 class="te__name m-text-5">{{t89|Dev}}</h3>
+<p class="m-text-3">{{t30|Swing}}</p>
+<p class="m-text-6">{{t90|Found lindy hop at thirty and never stopped bouncing. Runs the Sunday social upstairs.}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_teachers}}
+
+{{#sec_showcase}}<section aria-labelledby="showcase-title" data-8b-section="showcase" id="showcase">
+<div class="sh__pin">
+<div class="sh__head">
+<h2 class="sh__title m-text-2" id="showcase-title">{{t91|On stage in June}}</h2>
+<p class="sh__lead m-text-4">{{t92|Twice a year every class performs its routine on a real stage, lights and all. Bring your mum. Bring your boss.}}</p>
+</div>
+<ul class="sh__track">
+<li class="sh__item"><figure class="m-frame-2"><img alt="A hip-hop crew in green and white shirts on a purple-lit stage" height="1122" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1621976360623-004223992275?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZGFuY2UlMjBwZXJmb3JtYW5jZSUyMHN0YWdlJTIwYXVkaWVuY2V8ZW58MXwwfHx8MTc5MTQwNTA0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=990&q=60}}" style="background:#260c26" width="1600"/></figure><p class="m-text-3">{{t93|Hip-hop improvers, June 2025}}</p></li>
+<li class="sh__item"><figure class="m-frame"><img alt="A dancer in a white dress turning under a warm spotlight" height="2400" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1602800805409-f40cc632bb05?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjR8fGNvbnRlbXBvcmFyeSUyMGRhbmNlcnxlbnwxfDF8fHwxNzkxNDA1MDI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#260c0c" width="1600"/></figure><p class="m-text-3">{{t94|Contemporary solo, December 2025}}</p></li>
+<li class="sh__item"><figure class="m-frame-4"><img alt="Three dancers in pink dresses leaping across a red stage" height="900" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1591162689269-a3fcdab967e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGRhbmNlJTIwcGVyZm9ybWFuY2UlMjBzdGFnZSUyMGF1ZGllbmNlfGVufDF8MHx8fDE3OTE0MDUwNDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=790&q=60}}" style="background:#260c0c" width="1600"/></figure><p class="m-text-3">{{t95|Heels beginners, June 2025}}</p></li>
+<li class="sh__item"><figure class="m-frame-3"><img alt="A dancer in a white vest dropping to the floor on a dark stage" height="1068" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1589460562162-847ebc689d7a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjB8fGRhbmNlJTIwcGVyZm9ybWFuY2UlMjBzdGFnZSUyMGF1ZGllbmNlfGVufDF8MHx8fDE3OTE0MDUwNDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#262640" width="1600"/></figure><p class="m-text-3">{{t96|Hip-hop beginners, December 2025}}</p></li>
+<li class="sh__item"><figure class="m-frame"><img alt="A large group performing a routine in a row of lights" height="900" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1560088161-ca82e528afc9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGRhbmNlJTIwcGVyZm9ybWFuY2UlMjBzdGFnZSUyMGF1ZGllbmNlfGVufDF8MHx8fDE3OTE0MDUwNDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=990&q=60}}" style="background:#262626" width="1600"/></figure><p class="m-text-3">{{t97|Open class finale, June 2025}}</p></li>
+<li class="sh__item"><figure class="m-frame-2"><img alt="A crowd of dancers lit in blue, arms raised" height="1067" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1651329660382-5d5220c25367?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGRhbmNlJTIwcGVyZm9ybWFuY2UlMjBzdGFnZSUyMGF1ZGllbmNlfGVufDF8MHx8fDE3OTE0MDUwNDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#260c0c" width="1600"/></figure><p class="m-text-3">{{t98|Everyone, December 2025}}</p></li>
+<li class="sh__item sh__info m-surface">
+<h3 class="m-text-5">{{t99|Summer Showcase}}</h3>
+<dl class="m-text">
+<dt class="m-text-3">{{t100|When}}</dt><dd>{{t101|Saturday 13 June 2026, 19:30}}</dd>
+<dt class="m-text-3">{{t102|Where}}</dt><dd>{{t103|Holbeck Hall, Abuja}}</dd>
+<dt class="m-text-3">{{t104|Tickets}}</dt><dd>{{t105|₦4,000 students in the show free}}</dd>
+</dl>
+<span aria-hidden="true" class="sh__bars"><i style="--h:40"></i><i style="--h:75"></i><i style="--h:100"></i><i style="--h:60"></i><i style="--h:85"></i><i style="--h:35"></i><i style="--h:70"></i><i style="--h:95"></i><i style="--h:50"></i><i style="--h:80"></i><i style="--h:30"></i><i style="--h:65"></i><i style="--h:90"></i><i style="--h:45"></i></span>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t106|Ask for tickets}}</span></a>
+</li>
+</ul>
+</div>
+</section>{{/sec_showcase}}
+
+{{#sec_voices}}<section aria-labelledby="voices-title" data-8b-section="voices" id="voices">
+<span aria-hidden="true" class="vo__disc" data-8b-motion="spinIn"></span>
+<span aria-hidden="true" class="vo__plus m-plus" data-8b-motion="spinIn"></span>
+<div class="wrap">
+<h2 class="vo__title m-text-2" id="voices-title">{{t107|Heard after class}}</h2>
+<div class="vo__list">
+<figure class="vo__quote">
+<blockquote><p class="m-text-5">{{t108|“I came to one salsa class to get my steps up. That was two years and about}} <span class="vo__mark">{{t109|four hundred partners}}<svg aria-hidden="true" class="vo__loop m-mark" data-8b-motion="loopDraw" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M30 22 C80 4 176 8 204 30 C224 48 200 76 132 82 C70 88 12 74 12 50 C12 28 66 12 124 14 C170 16 206 26 212 40" pathlength="1"></path></svg></span> {{t110|ago.”}}</p></blockquote>
+<figcaption class="vo__who"><span class="m-text-5">{{t111|Priya}}</span><span class="m-badge">{{t112|Salsa since 2024}}</span></figcaption>
+</figure>
+<figure class="vo__quote">
+<blockquote><p class="m-text-5">{{t113|“Nobody looked when I got it wrong, because everyone was getting it wrong}} <span class="vo__mark">{{t114|at the same time}}<svg aria-hidden="true" class="vo__loop m-mark" data-8b-motion="loopDraw" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M30 22 C80 4 176 8 204 30 C224 48 200 76 132 82 C70 88 12 74 12 50 C12 28 66 12 124 14 C170 16 206 26 212 40" pathlength="1"></path></svg></span>.”</p></blockquote>
+<figcaption class="vo__who"><span class="m-text-5">{{t115|Gareth}}</span><span class="m-badge">{{t116|Hip-hop since 2025}}</span></figcaption>
+</figure>
+<figure class="vo__quote">
+<blockquote><p class="m-text-5">{{t117|“Heels on a Wednesday is the one hour of the week I}} <span class="vo__mark">{{t118|forget my phone}}<svg aria-hidden="true" class="vo__loop m-mark" data-8b-motion="loopDraw" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M30 22 C80 4 176 8 204 30 C224 48 200 76 132 82 C70 88 12 74 12 50 C12 28 66 12 124 14 C170 16 206 26 212 40" pathlength="1"></path></svg></span> {{t119|exists.”}}</p></blockquote>
+<figcaption class="vo__who"><span class="m-text-5">{{t120|Amaka}}</span><span class="m-badge">{{t121|Heels since 2023}}</span></figcaption>
+</figure>
+</div>
+</div>
+</section>{{/sec_voices}}
+
+{{#sec_pricing}}<section aria-labelledby="pricing-title" data-8b-section="pricing" id="pricing">
+<div class="wrap">
+<div class="pr__head">
+<h2 class="pr__title m-text-2" id="pricing-title">{{t122|Pick a pass}}</h2>
+<p class="pr__lead m-text-4">{{t123|Start free, pay per class, or come every night. Passes work for every style and every teacher.}}</p>
+</div>
+<div class="pr__passes">
+<article class="pr__pass m-surface-4">
+<h3 class="m-text-3">{{t3|First class}}</h3>
+<p class="pr__price m-text-2">{{t124|Free}}<svg aria-hidden="true" class="pr__loop m-mark" data-8b-motion="loopDraw" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M30 22 C80 4 176 8 204 30 C224 48 200 76 132 82 C70 88 12 74 12 50 C12 28 66 12 124 14 C170 16 206 26 212 40" pathlength="1"></path></svg></p>
+<p class="m-text-3">{{t125|once, any beginners' class}}</p>
+<p class="m-text">{{t126|No card needed. Come early, tell the desk it is your first time and we will find you a spot in the circle.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t127|Book it}}</span></a>
+</article>
+<article class="pr__pass m-surface-5">
+<h3 class="m-text-3">{{t128|Drop-in}}</h3>
+<p class="pr__price m-text-2">{{t129|₦6,000}}</p>
+<p class="m-text-3">{{t130|per class}}</p>
+<p class="m-text">{{t131|One class, any style, any night. Pay at the desk or book ahead when the class is busy.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t76|Book a class}}</span></a>
+</article>
+<article class="pr__pass m-surface-2">
+<h3 class="m-text-3">{{t132|Ten classes}}</h3>
+<p class="pr__price m-text-2">{{t133|₦47,500}}</p>
+<p class="m-text-3">{{t134|₦5,000 a class}}</p>
+<p class="m-text">{{t135|Valid for four months and shareable with a friend, so you can bring someone along.}}</p>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t136|Buy ten}}</span></a>
+</article>
+<article class="pr__pass m-surface">
+<h3 class="m-text-3">{{t137|Unlimited}}</h3>
+<p class="pr__price m-text-2">{{t138|₦34,500}}</p>
+<p class="m-text-3">{{t139|a month}}</p>
+<p class="m-text">{{t140|Every class, every week, plus the Friday open class. Stop any time with a month's notice.}}</p>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t141|Go unlimited}}</span></a>
+</article>
+</div>
+</div>
+</section>{{/sec_pricing}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="wrap">
+<div class="fq__grid">
+<div class="fq__side">
+<h2 class="fq__title m-text-2" id="faq-title">{{t142|Asked before the}} <span class="fq__word">{{t143|first class}}<svg aria-hidden="true" class="fq__loop m-mark" data-8b-motion="loopDraw" preserveaspectratio="none" viewbox="0 0 220 90"><path d="M30 22 C80 4 176 8 204 30 C224 48 200 76 132 82 C70 88 12 74 12 50 C12 28 66 12 124 14 C170 16 206 26 212 40" pathlength="1"></path></svg></span></h2>
+<span aria-hidden="true" class="fq__plus m-plus" data-8b-motion="spinIn"></span>
+</div>
+<div class="fq__list" data-8b-motion="beatIn">
+<details><summary><span class="m-text-5">{{t144|I have never danced. Is that a problem?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t145|That is exactly who the beginners' classes are for. About half of every class started with us in the last six months.}}</p></details>
+<details><summary><span class="m-text-5">{{t146|Do I need a partner?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t147|No. In salsa, bachata and swing partners rotate every song, and the other styles are danced solo in a group.}}</p></details>
+<details><summary><span class="m-text-5">{{t148|What should I wear?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t149|Clothes you can move in and clean trainers or socks. For heels, bring a pair with a strap or borrow one of ours.}}</p></details>
+<details><summary><span class="m-text-5">{{t150|How do I book?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t151|Use the form below for your free class. After that, book any class ahead or pay at the desk if there is space.}}</p></details>
+<details><summary><span class="m-text-5">{{t152|Is there an age limit?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t153|Classes are for adults over 18. Our oldest regular started swing at seventy-four.}}</p></details>
+<details><summary><span class="m-text-5">{{t154|Is the studio accessible?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p class="m-text">{{t155|Both rooms are on the ground floor with step-free access, and there is an accessible toilet next to the changing rooms.}}</p></details>
+</div>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="wrap">
+<div class="ct__grid">
+<div class="ct__side">
+<span aria-hidden="true" class="ct__disc"><svg class="ct__arc" viewbox="0 0 100 100"><path d="M6 56 A44 44 0 0 0 94 56"></path></svg></span>
+<span aria-hidden="true" class="ct__plus m-plus"></span>
+<h2 class="ct__title m-text-2" id="contact-title">{{t156|See you on the floor}}</h2>
+<p class="m-text-4">{{t157|Tell us which style and which night, and we will save you a place in your first class. It is free, and you only need trainers.}}</p>
+<dl class="ct__info m-text">
+<dt class="m-text-3">{{t158|Studio}}</dt><dd>{{t10|Unit 1, Example Mills, Abuja LS9}}</dd>
+<dt class="m-text-3">{{t159|Open}}</dt><dd>{{t160|Mon–Fri 17:30–22:00, Sat–Sun 10:00–16:00}}</dd>
+<dt class="m-text-3">{{t161|Phone}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t162|⟦phone⟧}}</a></dd>
+<dt class="m-text-3">{{t163|Email}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t164|hello@twirl.example}}</a></dd>
+</dl>
+</div>
+
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Dance Studio by <a href="https://github.com/8bsite/dance-studio-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="wrap">
+<div class="ft__cols" data-8b-motion="beatIn">
+<div class="ft__col">
+<h2 class="m-text-3">{{t158|Studio}}</h2>
+<p class="m-text">{{t165|Unit 1, Example Mills}}<br/>{{t166|Abuja LS9}}</p>
+</div>
+<div class="ft__col">
+<h2 class="m-text-3">{{t159|Open}}</h2>
+<p class="m-text">{{t167|Mon–Fri 17:30–22:00}}<br/>{{t168|Sat–Sun 10:00–16:00}}</p>
+</div>
+<div class="ft__col">
+<h2 class="m-text-3">{{t169|Explore}}</h2>
+<a class="m-link" href="#styles">{{t2|Styles}}</a>
+<a class="m-link" href="#timetable">{{t6|Timetable}}</a>
+<a class="m-link" href="#pricing">{{t5|Prices}}</a>
+</div>
+<div class="ft__col">
+<h2 class="m-text-3">{{t170|Say hello}}</h2>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t164|hello@twirl.example}}</a>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t162|⟦phone⟧}}</a>
+</div>
+</div>
+<p aria-hidden="true" class="ft__word" style="--len:5">{{t1|⟦name⟧}}</p>
+<div class="ft__base m-text-3">
+<span>{{t171|© 2026 ⟦name⟧ Dance Studio Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t172|8B}}</a></span>
+<a class="m-link" href="#opening">{{t173|Back to the top}}</a>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -(nav ? nav.querySelector('.nav__bar').offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  loopDraw(element, vars = {}) {
+    const paths = element.querySelectorAll('path');
+    return gsap.timeline(vars).fromTo(paths, { strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 1.1, ease: 'power2.inOut', stagger: 0.25 });
+  },
+  beatIn(element, vars = {}) {
+    const items = element.children;
+    return gsap.timeline(vars).from(items, { y: 34, rotation: -2.5, duration: 0.55, ease: 'back.out(2.4)', stagger: 0.125 });
+  },
+  spinIn(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { rotation: -150, scale: 0.35 }, { rotation: 0, scale: 1, ease: 'power2.out' });
+  }
+};
+const bindings = {
+  loopDraw: element => ({ trigger: element, start: 'top 82%', once: true }),
+  beatIn: element => ({ trigger: element, start: 'top 86%', once: true }),
+  spinIn: element => ({ trigger: element, start: 'top bottom', end: 'center 55%', scrub: 0.6 })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(bindings).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const config = bindings[name](element);
+        const animation = effects[name](element, { paused: !config.scrub });
+        ScrollTrigger.create({ id: `${id}:${index}`, ...config, animation });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:styles">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 899px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const section = document.getElementById('styles');
+    const list = section.querySelector('.st__list');
+    const cast = section.querySelector('.st__cast');
+    const photos = [...cast.querySelectorAll('.st__photo')];
+    const loops = [...section.querySelectorAll('.st__loop path')];
+    const line = context.conditions.phone ? '72%' : '55%';
+    const target = photo => {
+      const cw = cast.offsetWidth, ch = cast.offsetHeight;
+      const w = photo.offsetWidth, h = photo.offsetHeight;
+      const scale = Math.min((cw * (context.conditions.phone ? 0.5 : 0.6)) / w, (ch * 0.62) / h);
+      return { x: cw / 2 - (photo.offsetLeft + w / 2), y: ch / 2 - (photo.offsetTop + h / 2), scale };
+    };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'power2.inOut' },
+      scrollTrigger: { id: 'styles', trigger: list, start: `top ${line}`, end: `bottom ${line}`, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    photos.forEach((photo, i) => {
+      timeline
+        .set(photo, { zIndex: 4 }, i + 0.05)
+        .to(photo, { x: () => target(photo).x, y: () => target(photo).y, scale: () => target(photo).scale, rotation: i % 2 ? 4 : -4, duration: 0.32 }, i + 0.05)
+        .to(photo, { x: 0, y: 0, scale: 1, rotation: 0, duration: 0.3 }, i + 0.66)
+        .set(photo, { zIndex: 1 }, i + 0.97);
+      if (loops[i]) timeline
+        .fromTo(loops[i], { strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 0.3, ease: 'power1.out', immediateRender: false }, i + 0.12)
+        .to(loops[i], { strokeDashoffset: 1, autoRound: false, duration: 0.25, ease: 'power1.in' }, i + 0.7);
+    });
+    timeline.set({}, {}, photos.length);
+    return () => gsap.set(photos, { clearProps: 'zIndex' });
+  });
+});
+</script>
+<script data-8b-part="scene:first-class">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 899px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const section = document.getElementById('first-class');
+    const map = section.querySelector('.fc__map');
+    const walker = section.querySelector('.fc__walker');
+    const steps = [...section.querySelectorAll('.fc__step')];
+    const marks = steps.map(step => step.querySelector('.fc__num'));
+    let reach = [];
+    const mark = progress => steps.forEach((step, i) => step.classList.toggle('is-waiting', progress < (reach[i] ?? 0) - 0.005));
+    const trigger = { trigger: map, start: 'top 70%', end: 'bottom 75%', scrub: 0.5, invalidateOnRefresh: true };
+    if (context.conditions.desk) {
+      const svg = section.querySelector('.fc__path');
+      const path = svg.querySelector('path');
+      const total = path.getTotalLength();
+      const samples = Array.from({ length: 161 }, (_, s) => path.getPointAtLength((total * s) / 160));
+      const measure = () => {
+        const box = svg.getBoundingClientRect();
+        const sx = 1200 / box.width, sy = 860 / box.height;
+        reach = marks.map(m => {
+          const r = m.getBoundingClientRect();
+          const px = (r.left + r.width / 2 - box.left) * sx, py = (r.top + r.height / 2 - box.top) * sy;
+          let best = 0, bestD = Infinity;
+          samples.forEach((p, s) => {
+            const d = (p.x - px) ** 2 + (p.y - py) ** 2;
+            if (d < bestD) { bestD = d; best = s / 160; }
+          });
+          return best;
+        });
+      };
+      measure();
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'first-class', ...trigger, onRefreshInit: measure, onUpdate: self => mark(self.progress) } });
+      timeline
+        .fromTo(path, { strokeDashoffset: 1 }, { strokeDashoffset: 0, autoRound: false, duration: 1 }, 0)
+        .to(walker, { motionPath: { path, align: path, alignOrigin: [0.5, 0.5], start: 0, end: 1 }, duration: 1, immediateRender: true }, 0);
+      mark(timeline.scrollTrigger.progress);
+    } else {
+      const bar = section.querySelector('.fc__line');
+      const measure = () => {
+        const top = bar.offsetTop, height = bar.offsetHeight, origin = map.getBoundingClientRect().top;
+        reach = marks.map(m => { const r = m.getBoundingClientRect(); return Math.min(1, Math.max(0, (r.top + r.height / 2 - origin - top) / height)); });
+      };
+      measure();
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'first-class', ...trigger, onRefreshInit: measure, onUpdate: self => mark(self.progress) } });
+      timeline
+        .fromTo(bar, { scaleY: 0 }, { scaleY: 1, duration: 1 }, 0)
+        .fromTo(walker, { y: () => -bar.offsetHeight }, { y: 0, duration: 1 }, 0);
+      mark(timeline.scrollTrigger.progress);
+    }
+    return () => steps.forEach(step => step.classList.remove('is-waiting'));
+  });
+});
+</script>
+<script data-8b-part="scene:teachers">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('teachers');
+    section.querySelectorAll('.te__card').forEach((card, i) => {
+      const block = card.querySelector('.te__block');
+      const photo = card.querySelector('.te__photo');
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `teachers:card-${i}`, trigger: card, start: 'top 98%', end: 'top 38%', scrub: 0.6 } })
+        .fromTo(block, { rotation: 0 }, { rotation: i % 2 ? -360 : 360, transformOrigin: '50% 50%', ease: 'power1.inOut', duration: 1 }, 0)
+        .fromTo(photo, { y: 70, rotation: i % 2 ? 5 : -5 }, { y: 0, rotation: 0, ease: 'power2.out', duration: 0.8 }, 0);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:showcase">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('showcase');
+    const pin = section.querySelector('.sh__pin');
+    const track = section.querySelector('.sh__track');
+    const items = [...track.querySelectorAll('.sh__item')];
+    const bars = [...section.querySelectorAll('.sh__bars i')];
+    section.setAttribute('data-sh-live', '');
+    const distance = () => Math.max(0, track.scrollWidth - pin.clientWidth);
+    const beats = 3;
+    const bob = gsap.utils.toArray(items).map(item => gsap.quickSetter(item, 'y', 'px'));
+    const pulse = bars.map(bar => gsap.quickSetter(bar, 'scaleY'));
+    const amp = () => Math.min(40, innerHeight * 0.045);
+    const dance = progress => {
+      const a = amp();
+      items.forEach((item, i) => bob[i](Math.sin(progress * Math.PI * 2 * beats) * a * (i % 2 ? -1 : 1)));
+      bars.forEach((bar, i) => pulse[i](1 - 0.6 * Math.abs(Math.sin(progress * Math.PI * 2 * beats + i * 0.7)) * Math.sin(progress * Math.PI)));
+    };
+    gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        id: 'showcase', trigger: section, start: 'top top', end: () => '+=' + distance(), pin, scrub: 0.4,
+        invalidateOnRefresh: true, onUpdate: self => dance(self.progress), onRefresh: self => dance(self.progress)
+      }
+    }).to(track, { x: () => -distance(), duration: 1 });
+    dance(0);
+    return () => {
+      section.removeAttribute('data-sh-live');
+      gsap.set(items.concat(bars), { clearProps: 'transform' });
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:pricing">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('pricing');
+    const grid = section.querySelector('.pr__passes');
+    const passes = [...grid.querySelectorAll('.pr__pass')];
+    const fan = [-9, -3, 4, 10];
+    const lead = passes[0];
+    gsap.set(passes, { zIndex: i => passes.length - i, position: 'relative' });
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'pricing', trigger: grid, start: 'top 92%', end: 'top 30%', scrub: 0.6, invalidateOnRefresh: true } });
+    passes.forEach((pass, i) => {
+      timeline.fromTo(pass,
+        { x: () => lead.offsetLeft - pass.offsetLeft + i * 14, y: () => lead.offsetTop - pass.offsetTop + i * 10, rotation: fan[i % fan.length] },
+        { x: 0, y: 0, rotation: 0, duration: 1 }, i * 0.12);
+    });
+    return () => gsap.set(passes, { clearProps: 'zIndex,position' });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const disc = section.querySelector('.ct__disc');
+    const plus = section.querySelector('.ct__plus');
+    const roll = () => { let x = 0, node = disc; while (node && node !== section) { x += node.offsetLeft; node = node.offsetParent; } return section.offsetWidth - x; };
+    gsap.timeline({ defaults: { ease: 'power1.out' }, scrollTrigger: { id: 'contact', trigger: section, start: 'top 85%', end: 'top 15%', scrub: 0.6, invalidateOnRefresh: true } })
+      .fromTo(disc, { x: () => roll(), rotation: () => roll() / (disc.offsetWidth * Math.PI) * 360 }, { x: 0, rotation: 0, duration: 1 }, 0)
+      .fromTo(plus, { y: () => -0.5 * innerHeight, rotation: -270 }, { y: 0, rotation: 0, duration: 0.8 }, 0.2);
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  const done = form.querySelector('.ct__done');
+  const error = form.querySelector('.ct__error');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.elements.name.value.trim() && /.+@.+\..+/.test(form.elements.email.value);
+    error.hidden = Boolean(ok);
+    if (!ok) { (form.elements.name.value.trim() ? form.elements.email : form.elements.name).focus(); return; }
+    done.hidden = false;
+    form.querySelector('button[type="submit"]').disabled = true;
+  });
+})();
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const openButton = nav.querySelector('.nav__menu');
+  const closeButton = menu.querySelector('.menu__close');
+  let last = window.scrollY, travel = 0;
+  const onScroll = () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    nav.classList.toggle('is-solid', y > 8);
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 120) nav.classList.remove('is-hidden');
+    else if (travel > 24) nav.classList.add('is-hidden');
+    else if (travel < -24) nav.classList.remove('is-hidden');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setMenu = open => {
+    menu.hidden = !open;
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); } else { window.lenis?.start(); openButton.focus(); }
+  };
+  openButton.addEventListener('click', () => setMenu(true));
+  closeButton.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; openButton.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+})();
+</script>
+</body>
+</html>

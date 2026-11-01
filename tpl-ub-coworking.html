@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6TDYsmgQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #eceeef;
+  --color-2: #14171b;
+  --color-3: #4a5059;
+  --color-4: #fbfcfc;
+  --color-5: #d3d6d9;
+  --color-6: #93d9e4;
+  --color-7: #155386;
+  --color-8: #f6d88c;
+  --color-9: #e2580e;
+  --color-10: #cdbef2;
+  --color-11: #8b3887;
+  --font-1: "Funnel Display", "Funnel Display Fallback", Arial, sans-serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --shadow-1: 0 0 0 0 var(--color-6), 0 0 0 0 var(--color-7), 0 0 0 0 var(--color-6);
+  --shadow-2: 0 0 0 3px var(--color-6), 0 0 0 6px var(--color-7), 0 0 0 9px var(--color-6);
+  --shadow-3: 0 1.4rem 2.6rem -1.2rem color-mix(in oklab, var(--color-2) 45%, transparent), 0 .2rem .5rem color-mix(in oklab, var(--color-2) 12%, transparent);
+  --shadow-4: inset 0 0 0 3px var(--color-6), inset 0 0 0 6px var(--color-7);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Funnel Display Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 97.5%; ascent-override: 102.6%; descent-override: 25.6%; line-gap-override: 0%; }
+@font-face { font-family: "Funnel Display Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 108.8%; ascent-override: 91.9%; descent-override: 23%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.6%; ascent-override: 98.4%; descent-override: 30.9%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95.9%; ascent-override: 106.4%; descent-override: 33.4%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis-smooth { scroll-behavior: auto; }
+.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis-stopped { overflow: clip; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-2);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(3rem, 7.4vw, 7.25rem); font-weight: 500; line-height: .94; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(2.3rem, 4.8vw, 4.4rem); font-weight: 500; line-height: 1; letter-spacing: -.03em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: .875rem; font-weight: 600; line-height: 1.35; letter-spacing: .01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(1.15rem, 1.6vw, 1.375rem); font-weight: 400; line-height: 1.45; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(1.5rem, 2.3vw, 2.15rem); font-weight: 500; line-height: 1.05; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+
+.m-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+  min-height: 3rem; padding: .7rem 1.5rem;
+  border: 0; border-radius: var(--radius-1);
+  background: var(--color-2); color: var(--color-4);
+  font-family: var(--font-2); font-size: 1rem; font-weight: 600; line-height: 1.1; letter-spacing: 0; text-decoration: none;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  transition: box-shadow .45s steps(3, end), background-color .3s;
+}
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover { box-shadow: var(--shadow-2); background: var(--color-7); } }
+.m-btn-2 {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+  min-height: 3rem; padding: .7rem 1.5rem;
+  border: 1.5px solid currentColor; border-radius: var(--radius-1);
+  background: transparent; color: inherit;
+  font-family: var(--font-2); font-size: 1rem; font-weight: 600; line-height: 1.1; letter-spacing: 0; text-decoration: none;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  transition: box-shadow .45s steps(3, end);
+}
+@media (hover: hover) { .m-btn-2:hover { box-shadow: var(--shadow-2); } }
+.m-link {
+  color: inherit; text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat;
+  padding-bottom: .12em;
+  transition: background-size .36s steps(3, end);
+}
+@media (hover: hover) { .m-link:hover { background-size: 100% .3em; } }
+.m-iconbtn {
+  display: inline-grid; place-items: center;
+  width: 3rem; height: 3rem; padding: 0;
+  border: 1.5px solid currentColor; border-radius: 50%;
+  background: transparent; color: inherit; cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow .4s steps(2, end);
+}
+.m-iconbtn__icon { width: 1.1rem; height: .7rem; border-block: 2px solid currentColor; }
+@media (hover: hover) { .m-iconbtn:hover { box-shadow: var(--shadow-4); } }
+.m-badge, .m-badge-2, .m-badge-3 {
+  display: inline-flex; align-items: center; gap: .55em;
+  padding: .3em .8em .3em .35em;
+  border-radius: var(--radius-1);
+  background: var(--color-4); color: var(--color-2);
+  font-family: var(--font-2); font-size: .8125rem; font-weight: 600; line-height: 1.2; letter-spacing: .01em; white-space: nowrap;
+}
+.m-badge__swatch { width: 1.3em; height: 1.3em; border-radius: 50%; background: radial-gradient(circle at 38% 36%, var(--color-7) 0 30%, color-mix(in oklab, var(--color-7) 50%, var(--color-6)) 30% 58%, var(--color-6) 58%); }
+.m-badge-2 .m-badge__swatch { background: radial-gradient(circle at 38% 36%, var(--color-9) 0 30%, color-mix(in oklab, var(--color-9) 50%, var(--color-8)) 30% 58%, var(--color-8) 58%); }
+.m-badge-3 .m-badge__swatch { background: radial-gradient(circle at 38% 36%, var(--color-11) 0 30%, color-mix(in oklab, var(--color-11) 50%, var(--color-10)) 30% 58%, var(--color-10) 58%); }
+
+.m-well, .m-well-2, .m-well-3 { --well-rim: var(--color-6); --well-core: var(--color-7); display: block; }
+.m-well-2 { --well-rim: var(--color-8); --well-core: var(--color-9); }
+.m-well-3 { --well-rim: var(--color-10); --well-core: var(--color-11); }
+.m-well__band { fill: color-mix(in oklab, var(--well-core) calc(var(--well-d) * 100%), var(--well-rim)); }
+
+.m-cutout { mix-blend-mode: multiply; }
+.m-cutout img { width: 100%; height: 100%; object-fit: cover; filter: brightness(1.07) contrast(1.06); }
+.m-print { position: relative; transform-origin: 50% 0; }
+.m-print__sheet { position: relative; overflow: hidden; background: var(--color-4); box-shadow: var(--shadow-3); }
+.m-print__clip { position: absolute; z-index: 2; top: -.3rem; width: .95rem; height: .75rem; border-radius: .12rem; background: var(--color-2); }
+.m-print__clip:nth-of-type(1) { left: 6%; }
+.m-print__clip:nth-of-type(2) { right: 6%; }
+.m-print__clip::before { content: ""; position: absolute; left: calc(50% - .5px); bottom: 100%; width: 1px; height: 160vh; background: color-mix(in oklab, var(--color-2) 55%, transparent); }
+.m-print__clip::after { content: ""; position: absolute; left: 20%; right: 20%; bottom: 100%; height: .45rem; border: 1.5px solid var(--color-2); border-bottom: 0; border-radius: .3rem .3rem 0 0; }
+.m-field {
+  display: block; width: 100%; min-height: 3rem; padding: .7rem 1rem;
+  border: 1.5px solid var(--color-2); border-radius: .6rem;
+  background: var(--color-4); color: var(--color-2);
+  font-family: var(--font-2); font-size: 1rem; font-weight: 400; line-height: 1.3; letter-spacing: 0;
+}
+.m-field:focus-visible { outline: 2px solid var(--color-7); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.shell { width: min(100% - 2.5rem, 84rem); margin-inline: auto; }
+@media (min-width: 760px) { .shell { width: min(100% - 6vw, 84rem); } }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; z-index: 30; inset: 0 0 auto; background: var(--color-1); border-bottom: 1px solid color-mix(in oklab, var(--color-2) 12%, transparent); transition: translate .45s cubic-bezier(.3,.7,.2,1); }
+#navigation[data-hidden] { translate: 0 -105%; }
+#navigation .nav__bar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4.25rem; }
+#navigation .nav__brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--font-1); font-weight: 600; font-size: 1.45rem; letter-spacing: -.03em; }
+#navigation .nav__mark { width: 1.9rem; height: 1.9rem; }
+#navigation .nav__links { display: none; gap: 1.6rem; }
+#navigation .nav__links a { font-size: .95rem; font-weight: 500; }
+#navigation .nav__cta { display: none; min-height: 2.6rem; padding: .5rem 1.15rem; font-size: .95rem; }
+#navigation .nav__menu { width: 2.75rem; height: 2.75rem; }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 40; display: none; flex-direction: column; gap: 2rem; padding: 1.25rem 1.25rem 2rem; background: var(--color-1); overflow-y: auto; }
+#navigation .nav__overlay[data-open] { display: flex; }
+#navigation .nav__overlay-top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .nav__overlay-links { display: grid; gap: .4rem; }
+#navigation .nav__overlay-links a { font-family: var(--font-1); font-size: 2.4rem; font-weight: 500; letter-spacing: -.03em; line-height: 1.15; text-decoration: none; }
+#navigation .nav__close .m-iconbtn__icon { height: 0; border-block-width: 1px; border-top: 2px solid currentColor; border-bottom: 0; rotate: 45deg; position: relative; }
+#navigation .nav__close .m-iconbtn__icon::after { content: ""; position: absolute; inset: -2px 0 auto; border-top: 2px solid currentColor; rotate: -90deg; }
+@media (min-width: 1000px) {
+  #navigation .nav__links { display: flex; }
+  #navigation .nav__cta { display: inline-flex; }
+  #navigation .nav__menu { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .opening__stage { position: sticky; top: 0; height: 100vh; overflow: clip; background: var(--color-1); }
+#opening .opening__well { position: absolute; right: -6vw; top: -10vh; width: 64vw; height: 120vh; overflow: visible; }
+#opening .opening__well .m-well__band { transform-box: view-box; transform-origin: 77% 36.4%; }
+#opening .opening__figure { position: absolute; left: 39vw; bottom: 0; height: 64vh; aspect-ratio: 4 / 5; mix-blend-mode: multiply; }
+#opening .opening__figure-move { width: 100%; height: 100%; }
+#opening .opening__figure img { object-position: 61% 60%; }
+#opening .opening__first { position: relative; margin-top: -100vh; min-height: 100vh; display: grid; align-content: center; padding-block: 7.5rem 4rem; }
+#opening .opening__copy { max-width: 37rem; }
+#opening .opening__title { max-width: 9.5em; }
+#opening .opening__lede { margin-top: 1.6rem; max-width: 27rem; color: var(--color-3); }
+#opening .opening__actions { margin-top: 2.2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.6rem; }
+#opening .opening__second { position: relative; min-height: 100vh; display: grid; align-content: center; padding-block: 8rem 5rem; background: var(--color-7); color: var(--color-4); }
+#opening .opening__statement { max-width: 15em; font-size: clamp(2.5rem, 5.6vw, 5.4rem); }
+#opening .opening__note { margin-top: 2rem; max-width: 33rem; }
+#opening .opening__depths { margin-top: 3rem; display: flex; flex-wrap: wrap; gap: .8rem 2.4rem; }
+#opening .opening__depths a { font-family: var(--font-1); font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 500; letter-spacing: -.02em; }
+#opening .opening__second :focus-visible { outline-color: var(--color-4); }
+@media (max-width: 759px) {
+  #opening .opening__well { right: -14vw; top: 1vh; width: 128vw; height: 60vh; }
+  #opening .opening__figure { left: 0; top: 21vh; bottom: auto; height: 31vh; }
+  #opening .opening__first { align-content: end; padding-block: 52vh 2.2rem; }
+  #opening .opening__title { font-size: clamp(2.6rem, 12.4vw, 3.6rem); }
+  #opening .opening__lede { margin-top: 1rem; font-size: 1.05rem; }
+  #opening .opening__actions { margin-top: 1.3rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__well .m-well__band { animation: opening-unfold .9s cubic-bezier(.16,.8,.24,1) calc((1 - var(--well-d)) * .25s) backwards, opening-breathe 6s ease-in-out calc(1.2s + var(--well-d) * 1.8s) infinite; }
+  #opening[data-offscreen] .opening__well .m-well__band { animation-play-state: paused; }
+  #opening .opening__figure { animation: opening-settle 1s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .opening__title { animation: opening-lift .9s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .opening__lede, #opening .opening__actions { animation: opening-arrive .8s cubic-bezier(.2,.75,.2,1) .2s backwards; }
+  @keyframes opening-unfold { from { scale: .82; } }
+  @keyframes opening-breathe { 50% { scale: 1.055; } }
+  @keyframes opening-settle { from { scale: 1.06; } }
+  @keyframes opening-lift { from { translate: 0 .3em; } }
+  @keyframes opening-arrive { from { translate: 0 1rem; opacity: 0; } }
+}
+}
+</style>
+<style data-8b-part="section:depths">
+@layer sections {
+#depths { position: relative; background: linear-gradient(var(--color-5), color-mix(in oklab, var(--color-5) 70%, var(--color-1))); padding-block: 7rem 6rem; }
+#depths .depths__head { display: grid; gap: 1.4rem; max-width: 40rem; }
+#depths .depths__head p { color: var(--color-3); }
+#depths .depths__wall { position: relative; overflow: hidden; margin-top: 2.5rem; padding-top: 14vh; padding-bottom: 2rem; }
+#depths .depths__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4vw; align-items: start; }
+#depths .depths__item:nth-child(2) { padding-top: 10vh; }
+#depths .depths__item:nth-child(3) { padding-top: 20vh; }
+#depths .depths__sheet { aspect-ratio: 3 / 4; }
+#depths .poster__well { position: absolute; inset: 0; width: 100%; height: 100%; }
+#depths .depths__figure { position: absolute; }
+#depths .depths__item:nth-child(1) .depths__figure { left: 2%; bottom: 0; width: 66%; height: 66%; }
+#depths .depths__item:nth-child(1) .depths__figure img { object-position: 52% 30%; }
+#depths .depths__item:nth-child(2) .depths__figure { right: -6%; top: 34%; width: 78%; height: 60%; }
+#depths .depths__item:nth-child(2) .depths__figure img { object-position: 48% 50%; }
+#depths .depths__item:nth-child(3) .depths__figure { left: 0; bottom: 0; width: 86%; height: 62%; }
+#depths .depths__item:nth-child(3) .depths__figure img { object-position: 64% 20%; }
+#depths .depths__caption { margin-top: 1.6rem; display: grid; gap: .55rem; justify-items: start; }
+#depths .depths__caption p { color: var(--color-3); max-width: 24rem; }
+@media (max-width: 759px) {
+  #depths { padding-block: 5rem 4rem; }
+  #depths .depths__wall { padding-top: 9vh; }
+  #depths .depths__list { grid-template-columns: 1fr; gap: 4.5rem; }
+  #depths .depths__item:nth-child(n) { padding-top: 0; width: 84%; }
+  #depths .depths__item:nth-child(2) { justify-self: end; }
+  #depths .m-print__clip::before { height: 5.5rem; background: linear-gradient(to top, color-mix(in oklab, var(--color-2) 55%, transparent) 40%, transparent); }
+}
+}
+</style>
+<style data-8b-part="section:day">
+@layer sections {
+#day { padding-block: 7rem; }
+#day .day__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5vw; align-items: start; }
+#day .day__dial { position: sticky; top: 12vh; height: 76vh; display: grid; place-items: center; }
+#day .day__well { width: min(100%, 76vh); height: auto; aspect-ratio: 1; }
+#day .day__head { display: grid; gap: 1.3rem; margin-bottom: 3.5rem; }
+#day .day__head p { color: var(--color-3); }
+#day .day__list { display: grid; }
+#day .day__row { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1.2rem; padding-block: 2rem; border-top: 1px solid color-mix(in oklab, var(--color-2) 18%, transparent); }
+#day .day__time { font-family: var(--font-1); font-size: 1.6rem; font-weight: 500; letter-spacing: -.02em; line-height: 1.1; }
+#day .day__body { display: grid; gap: .5rem; justify-items: start; }
+#day .day__body p { color: var(--color-3); }
+@media (max-width: 759px) {
+  #day { padding-block: 5rem; }
+  #day .day__grid { grid-template-columns: 1fr; gap: 0; }
+  #day .day__dial { top: 4.4rem; height: 34vh; z-index: 1; background: var(--color-1); padding-block: 1rem; order: 0; }
+  #day .day__well { width: auto; height: 100%; }
+  #day .day__head { order: -1; margin-bottom: 1rem; }
+  #day .day__row { grid-template-columns: 4.5rem minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:rooms">
+@layer sections {
+#rooms { padding-block: 7rem; }
+#rooms .rooms__head { display: grid; gap: 1.3rem; max-width: 42rem; margin-bottom: 3.5rem; }
+#rooms .rooms__head p { color: var(--color-3); }
+#rooms .rooms__list { display: grid; }
+#rooms .rooms__row { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2.4rem; align-items: start; padding-block: 2.4rem 2.8rem; border-top: 1px solid color-mix(in oklab, var(--color-2) 18%, transparent); }
+#rooms .rooms__row:nth-child(1) { margin-left: 0; }
+#rooms .rooms__row:nth-child(2) { margin-left: 12%; }
+#rooms .rooms__row:nth-child(3) { margin-left: 22%; }
+#rooms .rooms__row:nth-child(4) { margin-left: 32%; }
+#rooms .rooms__print { margin-top: .6rem; }
+#rooms .rooms__print .m-print__sheet { aspect-ratio: 4 / 5; }
+#rooms .rooms__print img { width: 100%; height: 100%; object-fit: cover; }
+#rooms .rooms__print .m-print__clip::before { height: .8rem; }
+#rooms .rooms__body { display: grid; gap: .8rem; justify-items: start; max-width: 34rem; }
+#rooms .rooms__name { font-size: clamp(2rem, 3.6vw, 3.2rem); }
+#rooms .rooms__body p { color: var(--color-3); }
+@media (max-width: 759px) {
+  #rooms { padding-block: 5rem; }
+  #rooms .rooms__row { grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1.2rem; }
+  #rooms .rooms__row:nth-child(2) { margin-left: 4%; }
+  #rooms .rooms__row:nth-child(3) { margin-left: 8%; }
+  #rooms .rooms__row:nth-child(4) { margin-left: 12%; }
+}
+}
+</style>
+<style data-8b-part="section:rules">
+@layer sections {
+#rules { padding-block: 7rem 6rem; }
+#rules .rules__head { display: grid; gap: 1.3rem; max-width: 40rem; margin-bottom: 3rem; }
+#rules .rules__head p { color: var(--color-3); }
+#rules .rules__stage { position: relative; }
+#rules .rules__strata { position: absolute; inset: 0; z-index: 1; display: grid; grid-template-rows: repeat(9, 1fr); pointer-events: none; }
+#rules .rules__row { position: relative; display: flex; justify-content: space-between; }
+#rules .rules__half { width: calc((1 - var(--rules-open)) * 50%); height: 100%; }
+#rules .rules__row:nth-child(1) .rules__half { background: var(--color-8); }
+#rules .rules__row:nth-child(2) .rules__half { background: color-mix(in oklab, var(--color-9) 50%, var(--color-8)); }
+#rules .rules__row:nth-child(3) .rules__half { background: var(--color-9); }
+#rules .rules__row:nth-child(4) .rules__half { background: var(--color-6); }
+#rules .rules__row:nth-child(5) .rules__half { background: color-mix(in oklab, var(--color-7) 50%, var(--color-6)); }
+#rules .rules__row:nth-child(6) .rules__half { background: var(--color-7); }
+#rules .rules__row:nth-child(7) .rules__half { background: var(--color-10); }
+#rules .rules__row:nth-child(8) .rules__half { background: color-mix(in oklab, var(--color-11) 50%, var(--color-10)); }
+#rules .rules__row:nth-child(9) .rules__half { background: var(--color-11); }
+#rules .rules__list { position: relative; display: grid; }
+#rules .rules__rule { min-height: 27vh; display: grid; place-content: center; justify-items: center; gap: .8rem; text-align: center; padding-block: 1.5rem; }
+#rules .rules__rule:nth-child(1) .m-text-6 { max-width: 26vw; }
+#rules .rules__rule:nth-child(2) .m-text-6 { max-width: 22vw; }
+#rules .rules__rule:nth-child(3) .m-text-6 { max-width: 15vw; }
+#rules .rules__rule .m-text-6 { font-size: clamp(1.6rem, 2.6vw, 2.5rem); }
+#rules .rules__rule p.m-text { color: var(--color-3); max-width: 19rem; font-size: .95rem; }
+#rules .rules__rule:nth-child(3) p.m-text { max-width: 14vw; }
+@media (max-width: 759px) {
+  #rules { padding-block: 5rem 4rem; }
+  #rules .rules__half { width: calc((1 - var(--rules-open)) * 34%); }
+  #rules .rules__rule { min-height: 30vh; }
+  #rules .rules__rule:nth-child(1) .m-text-6, #rules .rules__rule:nth-child(1) p.m-text { max-width: 60vw; }
+  #rules .rules__rule:nth-child(2) .m-text-6, #rules .rules__rule:nth-child(2) p.m-text { max-width: 54vw; }
+  #rules .rules__rule:nth-child(3) .m-text-6, #rules .rules__rule:nth-child(3) p.m-text { max-width: 44vw; }
+}
+}
+</style>
+<style data-8b-part="section:members">
+@layer sections {
+#members { padding-block: 7rem; background: var(--color-4); }
+#members .members__head { display: grid; gap: 1.3rem; max-width: 40rem; margin-bottom: 4rem; }
+#members .members__head p { color: var(--color-3); }
+#members .members__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3vw; align-items: start; }
+#members .members__item[data-level="2"] { padding-top: 5rem; }
+#members .members__item[data-level="1"] { padding-top: 10rem; }
+#members .members__portrait { position: relative; aspect-ratio: 4 / 5; }
+#members .member__well { position: absolute; left: 7%; top: 0; width: 86%; height: auto; aspect-ratio: 1; }
+#members .members__figure { position: absolute; inset: 30% 0 0; mask-image: linear-gradient(to top, transparent, var(--color-2) 20%); }
+#members .members__item:nth-child(4) .members__figure img { filter: brightness(1.2) contrast(1.08); }
+#members .members__item:nth-child(1) .members__figure img { object-position: 48% 20%; }
+#members .members__item:nth-child(2) .members__figure img { object-position: 60% 60%; }
+#members .members__item:nth-child(3) .members__figure img { object-position: 52% 10%; }
+#members .members__item:nth-child(4) .members__figure { inset: 38% 8% 0; }
+#members .members__item:nth-child(4) .members__figure img { object-position: 50% 30%; }
+#members .members__body { margin-top: 1.4rem; display: grid; gap: .5rem; justify-items: start; }
+#members .members__trade { color: var(--color-3); }
+#members .members__quote { margin-top: .4rem; }
+@media (max-width: 899px) {
+  #members .members__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 1.25rem; }
+  #members .members__item[data-level] { padding-top: 0; }
+  #members .members__item:nth-child(even) { padding-top: 3.5rem; }
+}
+@media (max-width: 759px) { #members { padding-block: 5rem; } }
+}
+</style>
+<style data-8b-part="section:evenings">
+@layer sections {
+#evenings { padding-block: 7rem 0; }
+#evenings .evenings__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 4vw; align-items: end; margin-bottom: 3.5rem; }
+#evenings .evenings__text { display: grid; gap: 1.3rem; }
+#evenings .evenings__text p { color: var(--color-3); }
+#evenings .evenings__print { width: min(100%, 27rem); justify-self: end; rotate: 1.5deg; }
+#evenings .evenings__print .m-print__sheet { aspect-ratio: 3 / 2; }
+#evenings .evenings__print img { width: 100%; height: 100%; object-fit: cover; }
+#evenings .evenings__print .m-print__clip::before { height: 1rem; }
+#evenings .evenings__list { display: grid; }
+#evenings .evenings__row { background: var(--color-7); color: var(--color-4); border-top: 1px solid color-mix(in oklab, var(--color-6) 40%, transparent); }
+#evenings .evenings__inner { display: grid; grid-template-columns: 11rem minmax(0, 1fr) 14rem; gap: 2rem; align-items: start; padding-block: 3.2rem; }
+#evenings .evenings__date { display: grid; gap: .2rem; }
+#evenings .evenings__day { font-family: var(--font-1); font-size: 2.6rem; font-weight: 500; letter-spacing: -.03em; line-height: 1; }
+#evenings .evenings__title { font-size: clamp(1.7rem, 3vw, 2.6rem); }
+#evenings .evenings__meta { display: grid; gap: .3rem; justify-items: start; }
+#evenings .evenings__row :focus-visible { outline-color: currentColor; }
+@media (max-width: 759px) {
+  #evenings { padding-block: 5rem 0; }
+  #evenings .evenings__head { grid-template-columns: 1fr; }
+  #evenings .evenings__print { justify-self: start; width: 80%; }
+  #evenings .evenings__inner { grid-template-columns: 1fr; gap: 1rem; padding-block: 2.4rem; }
+}
+}
+</style>
+<style data-8b-part="section:made">
+@layer sections {
+#made { padding-block: 7rem; }
+#made .made__head { display: grid; gap: 1.3rem; max-width: 40rem; margin-bottom: 3rem; }
+#made .made__head p { color: var(--color-3); }
+#made .made__table { width: 100%; border-collapse: collapse; }
+#made .made__table th { text-align: left; font-weight: 600; font-size: .875rem; color: var(--color-3); padding: 0 1rem .9rem 0; }
+#made .made__table td { padding: 1.3rem 1rem 1.3rem 0; border-top: 1px solid color-mix(in oklab, var(--color-2) 18%, transparent); vertical-align: middle; }
+#made .made__work { font-size: clamp(1.35rem, 2vw, 1.85rem); }
+#made .made__kind, #made .made__maker { color: var(--color-3); }
+#made .made__swatch { display: inline-flex; gap: 3px; align-items: center; margin-right: .6rem; vertical-align: -.15em; }
+#made .made__swatch span { width: .5rem; height: 1.1rem; border-radius: 2px; }
+#made .made__swatch[data-level="3"] span:nth-child(1) { background: var(--color-8); }
+#made .made__swatch[data-level="3"] span:nth-child(2) { background: color-mix(in oklab, var(--color-9) 50%, var(--color-8)); }
+#made .made__swatch[data-level="3"] span:nth-child(3) { background: var(--color-9); }
+#made .made__swatch[data-level="2"] span:nth-child(1) { background: var(--color-6); }
+#made .made__swatch[data-level="2"] span:nth-child(2) { background: color-mix(in oklab, var(--color-7) 50%, var(--color-6)); }
+#made .made__swatch[data-level="2"] span:nth-child(3) { background: var(--color-7); }
+#made .made__swatch[data-level="1"] span:nth-child(1) { background: var(--color-10); }
+#made .made__swatch[data-level="1"] span:nth-child(2) { background: color-mix(in oklab, var(--color-11) 50%, var(--color-10)); }
+#made .made__swatch[data-level="1"] span:nth-child(3) { background: var(--color-11); }
+@media (max-width: 759px) {
+  #made { padding-block: 5rem; }
+  #made .made__table thead { display: none; }
+  #made .made__table, #made .made__table tbody, #made .made__table tr, #made .made__table td { display: block; }
+  #made .made__table tr { padding-block: 1.2rem; border-top: 1px solid color-mix(in oklab, var(--color-2) 18%, transparent); }
+  #made .made__table td { border: 0; padding: .1rem 0; }
+}
+}
+</style>
+<style data-8b-part="section:plans">
+@layer sections {
+#plans { padding-block: 7rem; background: var(--color-4); }
+#plans .plans__head { display: grid; gap: 1.3rem; max-width: 42rem; margin-bottom: 3.5rem; }
+#plans .plans__head p { color: var(--color-3); }
+#plans .plans__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3vw; }
+#plans .plans__item { display: grid; grid-template-rows: auto 1fr; gap: 1.8rem; }
+#plans .plan__well { width: 100%; height: auto; aspect-ratio: 1; }
+#plans .plans__body { display: grid; gap: 1rem; align-content: start; justify-items: start; }
+#plans .plans__price { font-family: var(--font-1); font-size: clamp(2.2rem, 3.4vw, 3rem); font-weight: 500; letter-spacing: -.03em; line-height: 1; }
+#plans .plans__price small { font-family: var(--font-2); font-size: 1rem; font-weight: 400; letter-spacing: 0; color: var(--color-3); }
+#plans .plans__features { display: grid; gap: .45rem; padding-left: 1.1rem; list-style: disc; color: var(--color-3); }
+#plans .plans__body .m-btn, #plans .plans__body .m-btn-2 { margin-top: .6rem; }
+@media (max-width: 899px) {
+  #plans .plans__list { grid-template-columns: 1fr; gap: 3.5rem; }
+  #plans .plans__item { grid-template-columns: 9rem minmax(0, 1fr); grid-template-rows: auto; gap: 1.4rem; align-items: start; }
+}
+@media (max-width: 759px) { #plans { padding-block: 5rem; } }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { padding-block: 7rem; }
+#visit .visit__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 5vw; align-items: start; }
+#visit .visit__head { display: grid; gap: 1.3rem; }
+#visit .visit__head p { color: var(--color-3); }
+#visit .visit__facts { margin-top: 2.4rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem 2rem; }
+#visit .visit__facts dt { color: var(--color-3); margin-bottom: .3rem; }
+#visit .visit__map { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 1rem; background: var(--color-4); }
+#visit .visit__map-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+#visit .visit__iso path { fill: none; stroke-width: 1.4; stroke: color-mix(in oklab, var(--color-7) calc(var(--well-d) * 100%), var(--color-6)); }
+#visit .visit__pin { position: absolute; left: 37.5%; top: 38.3%; translate: -50% -100%; display: grid; justify-items: center; gap: .3rem; }
+#visit .visit__pin::after { content: ""; width: .8rem; height: .8rem; border-radius: 50%; background: var(--color-2); outline: .35rem solid var(--color-4); }
+#visit .visit__pin span { background: var(--color-2); color: var(--color-4); padding: .3rem .7rem; border-radius: var(--radius-1); }
+#visit .visit__form { margin-top: 2.4rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem 1.2rem; }
+#visit .visit__form label { display: grid; gap: .4rem; }
+#visit .visit__levels { grid-column: 1 / -1; border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+#visit .visit__levels legend { padding: 0; margin-bottom: .5rem; }
+#visit .visit__levels label { display: inline-flex; align-items: center; gap: .5rem; }
+#visit .visit__levels input { width: 1.15rem; height: 1.15rem; accent-color: var(--color-2); }
+#visit .visit__submit { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem; }
+#visit .visit__status { color: var(--color-3); }
+@media (max-width: 899px) {
+  #visit .visit__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 759px) {
+  #visit { padding-block: 5rem; }
+  #visit .visit__facts { grid-template-columns: 1fr; }
+  #visit .visit__form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding-block: 4rem 2rem; background: var(--color-2); color: var(--color-4); overflow: hidden; }
+#footer .footer__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; }
+#footer .footer__links { display: flex; flex-wrap: wrap; gap: .8rem 1.8rem; }
+#footer .footer__word { margin-top: 3rem; font-family: var(--font-1); font-weight: 600; letter-spacing: -.05em; line-height: .8; font-size: min(30vw, calc((100vw - 6vw) / (var(--len) * .54))); }
+#footer .footer__fine { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: color-mix(in oklab, var(--color-4) 75%, var(--color-2)); }
+#footer :focus-visible { outline-color: var(--color-4); }
+}
+</style>
+<style data-8b-part="scene-style:day-dial">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #day .day__row { transition: opacity .4s; }
+  #day[data-dialing] .day__row:not([data-now]) { opacity: .5; }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<div class="shell nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__brand" href="#opening">
+<svg aria-hidden="true" class="nav__mark m-well" focusable="false" viewbox="0 0 100 100"><g class="m-well__band" style="--well-d:0"><path d="M2 50a48 48 0 1 0 96 0a48 48 0 1 0 -96 0Z"></path></g><g class="m-well__band" style="--well-d:.4"><path d="M11 42a33 33 0 1 0 66 0a33 33 0 1 0 -66 0Z"></path></g><g class="m-well__band" style="--well-d:.75"><path d="M21 36a19 19 0 1 0 38 0a19 19 0 1 0 -38 0Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M29 32a8 8 0 1 0 16 0a8 8 0 1 0 -16 0Z"></path></g></svg>
+<span>{{t1|⟦name⟧}}</span>
+</a>
+<nav aria-label="Main" class="nav__links">
+<a class="m-link" href="#depths">{{t2|Depths}}</a>
+<a class="m-link" href="#day">{{t3|The day}}</a>
+<a class="m-link" href="#rooms">{{t4|Rooms}}</a>
+<a class="m-link" href="#rules">{{t5|Rules}}</a>
+<a class="m-link" href="#members">{{t6|Members}}</a>
+<a class="m-link" href="#plans">{{t7|Plans}}</a>
+<a class="m-link" href="#visit">{{t8|Visit}}</a>
+</nav>
+<a class="m-btn nav__cta" href="#plans"><span class="m-btn__label">{{t9|Book a day}}</span></a>
+<button aria-controls="nav-overlay" aria-expanded="false" aria-label="Open the menu" class="m-iconbtn nav__menu" type="button"><span aria-hidden="true" class="m-iconbtn__icon"></span></button>
+</div>
+<div aria-label="Menu" aria-modal="true" class="nav__overlay" data-lenis-prevent="" id="nav-overlay" role="dialog">
+<div class="nav__overlay-top">
+<span class="m-text-6">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-iconbtn nav__close" type="button"><span aria-hidden="true" class="m-iconbtn__icon"></span></button>
+</div>
+<nav aria-label="Menu" class="nav__overlay-links">
+<a href="#depths">{{t2|Depths}}</a>
+<a href="#day">{{t3|The day}}</a>
+<a href="#rooms">{{t4|Rooms}}</a>
+<a href="#rules">{{t5|Rules}}</a>
+<a href="#members">{{t6|Members}}</a>
+<a href="#plans">{{t7|Plans}}</a>
+<a href="#visit">{{t8|Visit}}</a>
+</nav>
+<a class="m-btn" href="#plans"><span class="m-btn__label">{{t9|Book a day}}</span></a>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section data-8b-section="opening" id="opening">
+<div class="opening__stage">
+<svg aria-hidden="true" class="m-well opening__well" focusable="false" preserveaspectratio="xMidYMid slice" viewbox="0 0 1000 1100"><g class="m-well__band" style="--well-d:0"><path d="M120 -140C303.3 -210 970 -280 1140 -140C1310 0 1166.7 516.7 1140 700C1113.3 883.3 1053.3 897.5 980 960C906.7 1022.5 793.3 1068.3 700 1075C606.7 1081.7 500.8 1042.5 420 1000C339.2 957.5 270.8 893.3 215 820C159.2 746.7 114.2 650 85 560C55.8 470 34.2 396.7 40 280C45.8 163.3 -63.3 -70 120 -140Z"></path></g><g class="m-well__band" style="--well-d:0.07"><path d="M170.4 -101.2C340 -165.9 957 -230.7 1114.4 -101.2C1271.7 28.4 1139 506.6 1114.4 676.3C1089.7 845.9 1034.1 859 966.3 916.9C898.4 974.7 793.5 1017.1 707.1 1023.3C620.8 1029.5 522.8 993.2 448 953.9C373.2 914.6 310 855.2 258.3 787.3C206.6 719.4 165 630 138 546.7C111 463.4 90.9 395.5 96.3 287.5C101.7 179.6 0.7 -36.4 170.4 -101.2Z"></path></g><g class="m-well__band" style="--well-d:0.13"><path d="M215.3 -66.5C372.8 -126.6 945.4 -186.8 1091.5 -66.5C1237.5 53.8 1114.4 497.6 1091.5 655.1C1068.6 812.6 1017 824.7 954 878.4C891 932.1 793.7 971.5 713.5 977.2C633.3 982.9 542.4 949.3 473 912.8C403.5 876.3 344.8 821.1 296.9 758.1C248.9 695.2 210.3 612.1 185.2 534.8C160.2 457.5 141.5 394.5 146.6 294.3C151.6 194.1 57.8 -6.4 215.3 -66.5Z"></path></g><g class="m-well__band" style="--well-d:0.2"><path d="M258.4 -33.3C404.2 -88.9 934.3 -144.6 1069.5 -33.3C1204.7 78.1 1090.7 489 1069.5 634.8C1048.3 780.5 1000.6 791.8 942.3 841.5C884 891.2 793.8 927.7 719.6 933C645.4 938.3 561.2 907.1 496.9 873.3C432.7 839.5 378.3 788.5 333.9 730.2C289.5 671.9 253.7 595 230.5 523.4C207.3 451.8 190.1 393.5 194.7 300.7C199.4 208 112.6 22.4 258.4 -33.3Z"></path></g><g class="m-well__band" style="--well-d:0.27"><path d="M300.3 -0.9C434.7 -52.3 923.5 -103.6 1048.2 -0.9C1172.8 101.7 1067.7 480.6 1048.2 615C1028.6 749.4 984.6 759.8 930.9 805.6C877.1 851.4 794 885.1 725.6 889.9C657.1 894.8 579.5 866.1 520.3 834.9C461 803.8 410.9 756.7 369.9 703C329 649.2 296 578.3 274.6 512.3C253.2 446.3 237.3 392.6 241.6 307C245.9 221.5 165.9 50.4 300.3 -0.9Z"></path></g><g class="m-well__band" style="--well-d:0.33"><path d="M341.4 30.8C464.6 -16.3 912.9 -63.4 1027.3 30.8C1141.6 124.9 1045.2 472.3 1027.3 595.6C1009.3 718.9 969 728.4 919.7 770.4C870.4 812.5 794.1 843.3 731.4 847.8C668.6 852.3 597.5 825.9 543.1 797.3C488.7 768.8 442.8 725.6 405.2 676.3C367.7 627 337.4 562 317.8 501.5C298.2 440.9 283.6 391.6 287.6 313.2C291.5 234.7 218.1 77.8 341.4 30.8Z"></path></g><g class="m-well__band" style="--well-d:0.4"><path d="M381.8 61.9C494.1 19.1 902.5 -23.8 1006.7 61.9C1110.8 147.7 1023 464.2 1006.7 576.5C990.3 688.9 953.6 697.5 908.6 735.8C863.7 774.1 794.3 802.2 737.1 806.3C679.9 810.4 615.1 786.4 565.6 760.3C516.1 734.3 474.2 695 440 650.1C405.8 605.1 378.2 545.9 360.4 490.8C342.5 435.6 329.2 390.7 332.8 319.2C336.4 247.8 269.5 104.8 381.8 61.9Z"></path></g><g class="m-well__band" style="--well-d:0.47"><path d="M421.7 92.7C523.2 54 892.2 15.2 986.3 92.7C1080.5 170.2 1001.1 456.2 986.3 557.7C971.6 659.2 938.4 667.1 897.8 701.7C857.2 736.3 794.4 761.6 742.8 765.3C691.1 769 632.5 747.3 587.8 723.8C543 700.3 505.2 664.8 474.3 624.2C443.4 583.6 418.5 530 402.3 480.2C386.2 430.4 374.2 389.8 377.4 325.2C380.6 260.6 320.2 131.5 421.7 92.7Z"></path></g><g class="m-well__band" style="--well-d:0.53"><path d="M461.1 123.1C551.9 88.5 882.1 53.8 966.3 123.1C1050.5 192.5 979.5 448.3 966.3 539.1C953.1 629.9 923.3 636.9 887 667.9C850.7 698.8 794.6 721.5 748.4 724.8C702.1 728.2 649.7 708.8 609.7 687.7C569.7 666.7 535.8 634.9 508.2 598.6C480.5 562.2 458.2 514.4 443.8 469.8C429.3 425.2 418.6 388.9 421.5 331.1C424.4 273.4 370.3 157.8 461.1 123.1Z"></path></g><g class="m-well__band" style="--well-d:0.6"><path d="M500.2 153.2C580.4 122.6 872 92 946.4 153.2C1020.8 214.5 958 440.5 946.4 520.7C934.7 600.9 908.5 607.1 876.4 634.5C844.3 661.8 794.7 681.9 753.9 684.8C713.1 687.7 666.8 670.6 631.4 652C596 633.4 566.1 605.3 541.7 573.2C517.3 541.1 497.6 498.8 484.8 459.5C472.1 420.1 462.6 388 465.2 337C467.7 285.9 420 183.9 500.2 153.2Z"></path></g><g class="m-well__band" style="--well-d:0.67"><path d="M538.8 183.1C608.6 156.5 862 129.9 926.7 183.1C991.3 236.3 936.8 432.8 926.7 502.5C916.5 572.2 893.7 577.6 865.8 601.3C838 625.1 794.9 642.5 759.4 645.1C723.9 647.6 683.6 632.7 652.9 616.5C622.2 600.4 596.2 576 575 548.1C553.7 520.2 536.6 483.5 525.5 449.2C514.5 415 506.2 387.1 508.4 342.8C510.7 298.4 469.1 209.7 538.8 183.1Z"></path></g><g class="m-well__band" style="--well-d:0.73"><path d="M577.2 212.7C636.5 190.1 852.1 167.4 907.1 212.7C962.1 258 915.7 425.1 907.1 484.4C898.5 543.7 879.1 548.2 855.4 568.5C831.7 588.7 795 603.5 764.8 605.7C734.6 607.8 700.4 595.1 674.3 581.4C648.1 567.7 626 546.9 608 523.2C589.9 499.5 575.3 468.2 565.9 439.1C556.5 410 549.5 386.3 551.4 348.5C553.2 310.8 517.9 235.3 577.2 212.7Z"></path></g><g class="m-well__band" style="--well-d:0.8"><path d="M615.3 242.1C664.3 223.4 842.3 204.7 887.7 242.1C933.1 279.5 894.8 417.4 887.7 466.4C880.6 515.4 864.6 519.1 845 535.8C825.4 552.5 795.1 564.8 770.2 566.5C745.3 568.3 717 557.9 695.5 546.5C673.9 535.2 655.6 518 640.7 498.4C625.8 478.9 613.8 453 606 429C598.2 405 592.4 385.4 594 354.2C595.5 323.1 566.4 260.8 615.3 242.1Z"></path></g><g class="m-well__band" style="--well-d:0.87"><path d="M653.2 271.3C691.9 256.5 832.6 241.8 868.4 271.3C904.3 300.8 874.1 409.9 868.4 448.5C862.8 487.2 850.1 490.2 834.7 503.4C819.2 516.6 795.3 526.3 775.6 527.7C755.9 529.1 733.6 520.8 716.5 511.9C699.4 502.9 685 489.3 673.2 473.9C661.5 458.4 652 438 645.8 419C639.7 400 635.1 384.5 636.3 359.9C637.5 335.3 614.5 286.1 653.2 271.3Z"></path></g><g class="m-well__band" style="--well-d:0.93"><path d="M690.8 300.3C719.3 289.4 822.9 278.6 849.3 300.3C875.7 322.1 853.4 402.3 849.3 430.8C845.1 459.3 835.8 461.5 824.4 471.2C813 480.9 795.4 488 780.9 489.1C766.4 490.1 750 484 737.4 477.4C724.9 470.8 714.2 460.8 705.6 449.4C696.9 438.1 689.9 423 685.4 409.1C680.8 395.1 677.5 383.7 678.4 365.6C679.3 347.4 662.3 311.2 690.8 300.3Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M728.2 329.2C746.6 322.2 813.2 315.2 830.2 329.2C847.2 343.2 832.9 394.8 830.2 413.2C827.6 431.5 821.6 432.9 814.2 439.2C806.9 445.4 795.6 450 786.2 450.7C776.9 451.3 766.3 447.4 758.2 443.2C750.1 438.9 743.3 432.5 737.7 425.2C732.1 417.8 727.6 408.2 724.7 399.2C721.8 390.2 719.6 382.8 720.2 371.2C720.8 359.5 709.9 336.2 728.2 329.2Z"></path></g></svg>
+<div class="opening__figure">
+<div class="opening__figure-move m-cutout">
+<img alt="A man leans far back in an office chair, legs stretched out, eyes closed, thinking" fetchpriority="high" height="2160" src="{{i1|https://images.unsplash.com/photo-1758523907019-9ee0ce38f822?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWFuJTIwc2l0dGluZyUyMGNoYWlyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTEyOTUxMzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#f3f3f3" width="3840"/>
+</div>
+</div>
+</div>
+<div class="opening__first shell">
+<div class="opening__copy">
+<h1 class="m-text-2 opening__title">{{t10|Work at your own depth.}}</h1>
+<p class="m-text-5 opening__lede">{{t11|⟦name⟧ is a workspace built in layers. Talk on the top floor, flow on the middle one, and go quiet all the way down.}}</p>
+<div class="opening__actions">
+<a class="m-btn" href="#plans"><span class="m-btn__label">{{t12|Book a day pass}}</span></a>
+<a class="m-link" href="#depths">{{t13|Walk the three floors}}</a>
+</div>
+</div>
+</div>
+<div class="opening__second" id="manifesto">
+<div class="shell">
+<p class="m-text-2 opening__statement" data-line="">{{t14|Most offices are built for interruption. We built ours like a well.}}</p>
+<p class="m-text-5 opening__note" data-line="">{{t15|Three floors, each quieter than the one above it. You choose how far down to go each morning, and the building keeps everyone else at their own depth.}}</p>
+<ul aria-label="The three depths" class="opening__depths" data-line="">
+<li><a class="m-link" href="#depths">{{t16|Shallow, level 3}}</a></li>
+<li><a class="m-link" href="#depths">{{t17|Flow, level 2}}</a></li>
+<li><a class="m-link" href="#depths">{{t18|Deep, level 1}}</a></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_depths}}<section data-8b-section="depths" id="depths">
+<div class="shell">
+<div class="depths__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t19|Three depths. Pick one each morning.}}</h2>
+<p class="m-text-5">{{t20|Every floor has one colour and one rule about sound. The lower you sit, the deeper the colour and the quieter the room.}}</p>
+</div>
+<div class="depths__wall">
+<ul class="depths__list">
+<li class="depths__item">
+<div class="depths__hang">
+<figure class="m-print depths__poster">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet depths__sheet">
+<svg aria-hidden="true" class="m-well-2 poster__well" focusable="false" preserveaspectratio="xMidYMid slice" viewbox="0 0 600 800"><g class="m-well__band" style="--well-d:0"><path d="M150 -70C244.2 -106.7 583.3 -175 670 -70C756.7 35 688.3 431.7 670 560C651.7 688.3 600 678.3 560 700C520 721.7 468.3 711.7 430 690C391.7 668.3 368.3 597.5 330 570C291.7 542.5 241.7 541.7 200 525C158.3 508.3 104.2 502.5 80 470C55.8 437.5 50.8 383.3 55 330C59.2 276.7 89.2 216.7 105 150C120.8 83.3 55.8 -33.3 150 -70Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M181.7 -54.7C268.5 -88.5 580.9 -151.5 660.8 -54.7C740.6 42 677.7 407.4 660.8 525.7C643.9 643.9 596.3 634.7 559.4 654.7C522.6 674.6 475 665.4 439.7 645.4C404.3 625.5 382.8 560.2 347.5 534.9C312.2 509.5 266.2 508.8 227.8 493.4C189.4 478.1 139.5 472.7 117.2 442.8C94.9 412.8 90.3 362.9 94.2 313.8C98 264.6 125.7 209.4 140.2 147.9C154.8 86.5 94.9 -21 181.7 -54.7Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M211.2 -40.5C291.1 -71.6 578.7 -129.6 652.2 -40.5C725.7 48.5 667.7 384.9 652.2 493.7C636.6 602.5 592.8 594 558.9 612.4C525 630.8 481.2 622.3 448.7 603.9C416.2 585.5 396.4 525.5 363.9 502.2C331.4 478.8 289 478.1 253.6 464C218.3 449.9 172.4 444.9 151.9 417.4C131.4 389.8 127.2 343.9 130.7 298.7C134.2 253.4 159.7 202.6 173.1 146C186.5 89.5 131.4 -9.4 211.2 -40.5Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M240 -26.7C313.1 -55.2 576.5 -108.2 643.8 -26.7C711.1 54.9 658 362.9 643.8 462.5C629.6 562.2 589.4 554.4 558.4 571.2C527.3 588.1 487.2 580.3 457.4 563.5C427.7 546.6 409.6 491.6 379.8 470.3C350 448.9 311.2 448.3 278.8 435.3C246.5 422.4 204.4 417.9 185.7 392.6C166.9 367.4 163 325.3 166.2 283.9C169.5 242.5 192.8 195.9 205.1 144.2C217.4 92.4 166.9 1.8 240 -26.7Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M268.3 -13.1C334.8 -39 574.4 -87.2 635.6 -13.1C696.8 61.1 648.5 341.2 635.6 431.9C622.6 522.5 586.1 515.5 557.9 530.8C529.6 546.1 493.1 539 466.1 523.7C439 508.4 422.5 458.4 395.4 438.9C368.4 419.5 333.1 418.9 303.6 407.2C274.2 395.4 235.9 391.3 218.9 368.3C201.8 345.4 198.3 307.1 201.2 269.4C204.2 231.8 225.3 189.4 236.5 142.3C247.7 95.2 201.8 12.8 268.3 -13.1Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M296.2 0.4C356.2 -23 572.2 -66.5 627.4 0.4C682.6 67.3 639.1 319.9 627.4 401.6C615.8 483.4 582.9 477 557.4 490.8C531.9 504.6 499 498.2 474.6 484.4C450.2 470.6 435.3 425.5 410.9 408C386.5 390.5 354.6 390 328.1 379.3C301.6 368.7 267.1 365 251.7 344.3C236.3 323.6 233.1 289.1 235.7 255.1C238.4 221.2 257.5 183 267.6 140.5C277.7 98 236.3 23.7 296.2 0.4Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M323.9 13.7C377.4 -7.1 570.1 -46 619.4 13.7C668.6 73.4 629.8 298.8 619.4 371.7C609 444.6 579.6 438.9 556.9 451.2C534.2 463.5 504.8 457.9 483 445.6C461.2 433.2 448 393 426.2 377.4C404.4 361.7 376 361.3 352.3 351.8C328.6 342.3 297.9 339 284.1 320.5C270.4 302.1 267.6 271.3 269.9 241C272.3 210.7 289.3 176.6 298.3 138.7C307.3 100.8 270.4 34.5 323.9 13.7Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M351.3 26.9C398.4 8.5 568.1 -25.6 611.4 26.9C654.8 79.4 620.6 277.8 611.4 342C602.2 406.2 576.4 401.2 556.4 412C536.4 422.8 510.5 417.8 491.4 407C472.2 396.2 460.5 360.7 441.4 347C422.2 333.2 397.2 332.8 376.3 324.5C355.5 316.1 328.4 313.2 316.3 297C304.2 280.7 301.7 253.6 303.8 226.9C305.9 200.3 320.9 170.3 328.8 136.9C336.7 103.6 304.2 45.2 351.3 26.9Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M378.6 40C419.3 24.1 566 -5.4 603.5 40C641 85.4 611.4 257 603.5 312.5C595.6 368 573.2 363.7 555.9 373.1C538.6 382.4 516.3 378.1 499.7 368.7C483.1 359.4 473 328.7 456.4 316.8C439.8 304.9 418.2 304.6 400.2 297.4C382.2 290.1 358.7 287.6 348.3 273.6C337.8 259.5 335.7 236.1 337.5 213C339.3 189.9 352.2 164 359.1 135.2C365.9 106.3 337.8 55.9 378.6 40Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M405.6 53C440 39.6 563.9 14.7 595.6 53C627.3 91.4 602.3 236.3 595.6 283.2C588.9 330.1 570 326.4 555.4 334.3C540.8 342.3 521.9 338.6 507.9 330.7C493.9 322.8 485.4 296.9 471.4 286.8C457.4 276.8 439.1 276.5 423.9 270.4C408.7 264.3 388.9 262.2 380 250.3C371.2 238.4 369.4 218.6 370.9 199.2C372.4 179.7 383.4 157.8 389.2 133.4C395 109 371.2 66.4 405.6 53Z"></path></g><g class="m-well__band" style="--well-d:0.77"><path d="M432.5 66C460.6 55 561.9 34.6 587.8 66C613.6 97.3 593.2 215.7 587.8 254.1C582.3 292.4 566.9 289.4 554.9 295.8C543 302.3 527.6 299.3 516.1 292.9C504.7 286.4 497.7 265.2 486.3 257C474.8 248.8 459.9 248.6 447.5 243.6C435 238.6 418.8 236.9 411.6 227.2C404.4 217.5 402.9 201.3 404.2 185.4C405.4 169.5 414.4 151.5 419.1 131.6C423.8 111.7 404.4 76.9 432.5 66Z"></path></g><g class="m-well__band" style="--well-d:0.85"><path d="M459.3 78.8C481.2 70.3 559.9 54.5 580 78.8C600.1 103.2 584.2 195.3 580 225.1C575.7 254.8 563.7 252.5 554.5 257.5C545.2 262.6 533.2 260.3 524.3 255.2C515.4 250.2 510 233.8 501.1 227.4C492.2 221 480.6 220.8 470.9 216.9C461.2 213.1 448.7 211.7 443.1 204.2C437.4 196.6 436.3 184.1 437.3 171.7C438.2 159.3 445.2 145.4 448.9 129.9C452.5 114.4 437.4 87.4 459.3 78.8Z"></path></g><g class="m-well__band" style="--well-d:0.92"><path d="M486 91.7C501.6 85.6 557.8 74.3 572.2 91.7C586.6 109.1 575.3 174.9 572.2 196.2C569.2 217.5 560.6 215.8 554 219.4C547.3 223 538.8 221.4 532.4 217.8C526 214.2 522.2 202.4 515.8 197.9C509.5 193.3 501.2 193.2 494.3 190.4C487.3 187.6 478.4 186.7 474.3 181.3C470.3 175.9 469.5 166.9 470.2 158C470.9 149.2 475.9 139.2 478.5 128.2C481.1 117.1 470.3 97.8 486 91.7Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M512.5 104.5C521.9 100.8 555.8 93.9 564.5 104.5C573.2 115 566.3 154.6 564.5 167.5C562.7 180.3 557.5 179.3 553.5 181.5C549.5 183.6 544.3 182.6 540.5 180.5C536.7 178.3 534.3 171.2 530.5 168.5C526.7 165.7 521.7 165.6 517.5 164C513.3 162.3 507.9 161.7 505.5 158.5C503.1 155.2 502.6 149.8 503 144.5C503.4 139.1 506.4 133.1 508 126.5C509.6 119.8 503.1 108.1 512.5 104.5Z"></path></g></svg>
+<div class="depths__figure m-cutout"><img alt="A woman in headphones laughs while checking her phone" height="4000" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1727407204985-7d723b6f14c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8aGVhZHBob25lcyUyMHBlcnNvbiUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjk1MTU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#f3f3f3" width="6000"/></div>
+</div>
+</figure>
+<div class="depths__caption">
+<span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span>
+<h3 class="m-text-6">{{t22|Shallow}}</h3>
+<p class="m-text">{{t23|Calls, coffee and talk. The floor for starting the day, meeting people and coming back up after a long stretch.}}</p>
+</div>
+</div>
+</li>
+<li class="depths__item">
+<div class="depths__hang">
+<figure class="m-print depths__poster">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet depths__sheet">
+<svg aria-hidden="true" class="m-well poster__well" focusable="false" preserveaspectratio="xMidYMid slice" viewbox="0 0 600 800"><g class="m-well__band" style="--well-d:0"><path d="M-70 -70C-3.3 -190 251.7 -95 330 -70C408.3 -45 384.2 25 400 80C415.8 135 414.2 203.3 425 260C435.8 316.7 465 369.2 465 420C465 470.8 455 519.2 425 565C395 610.8 337.5 668.3 285 695C232.5 721.7 169.2 732.5 110 725C50.8 717.5 -40 782.5 -70 650C-100 517.5 -136.7 50 -70 -70Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M-60.9 -55.2C0.8 -166.1 236.6 -78.3 309 -55.2C381.5 -32.1 359.1 32.7 373.8 83.5C388.4 134.4 386.9 197.6 396.9 250C406.9 302.4 433.9 351 433.9 398C433.9 445 424.6 489.7 396.9 532.1C369.2 574.5 316 627.6 267.4 652.3C218.9 677 160.3 687 105.6 680C50.9 673.1 -33.1 733.2 -60.9 610.7C-88.6 488.1 -122.5 55.8 -60.9 -55.2Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M-52.4 -41.4C4.6 -143.9 222.6 -62.7 289.5 -41.4C356.5 -20 335.8 39.8 349.4 86.9C362.9 133.9 361.5 192.3 370.7 240.7C380 289.1 404.9 334 404.9 377.5C404.9 420.9 396.4 462.2 370.7 501.4C345.1 540.6 295.9 589.7 251.1 612.5C206.2 635.3 152.1 644.6 101.5 638.1C50.9 631.7 -26.7 687.3 -52.4 574C-78 460.8 -109.3 61.2 -52.4 -41.4Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M-44.1 -27.9C8.4 -122.3 208.9 -47.6 270.5 -27.9C332.1 -8.2 313.1 46.8 325.6 90.1C338 133.3 336.7 187.1 345.2 231.6C353.7 276.2 376.7 317.5 376.7 357.5C376.7 397.4 368.8 435.5 345.2 471.5C321.6 507.5 276.4 552.8 235.1 573.7C193.8 594.7 144 603.2 97.5 597.3C51 591.4 -20.5 642.5 -44.1 538.3C-67.7 434.1 -96.5 66.5 -44.1 -27.9Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M-35.9 -14.7C12 -101 195.5 -32.6 251.8 -14.7C308.2 3.3 290.8 53.7 302.2 93.2C313.6 132.8 312.4 182 320.1 222.7C327.9 263.5 348.9 301.2 348.9 337.8C348.9 374.4 341.7 409.1 320.1 442.1C298.6 475.1 257.2 516.4 219.4 535.6C181.7 554.8 136.1 562.6 93.6 557.2C51 551.8 -14.3 598.6 -35.9 503.3C-57.5 407.9 -83.9 71.7 -35.9 -14.7Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M-27.9 -1.6C15.7 -80 182.2 -17.9 233.3 -1.6C284.5 14.7 268.7 60.4 279.1 96.4C289.4 132.3 288.3 176.9 295.4 213.9C302.5 250.9 321.5 285.2 321.5 318.4C321.5 351.6 315 383.2 295.4 413.1C275.8 443 238.2 480.6 204 498C169.7 515.4 128.3 522.5 89.7 517.6C51 512.7 -8.3 555.1 -27.9 468.6C-47.5 382.1 -71.4 76.8 -27.9 -1.6Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M-19.9 11.3C19.3 -59.1 169.1 -3.3 215.1 11.3C261.1 26 246.9 67.2 256.2 99.5C265.5 131.8 264.5 171.9 270.9 205.2C277.2 238.5 294.4 269.3 294.4 299.2C294.4 329 288.5 357.4 270.9 384.4C253.3 411.3 219.5 445.1 188.6 460.7C157.8 476.4 120.6 482.8 85.8 478.4C51.1 473.9 -2.3 512.1 -19.9 434.3C-37.5 356.5 -59.1 81.8 -19.9 11.3Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M-12 24.2C22.8 -38.5 156 11.1 196.9 24.2C237.9 37.2 225.2 73.8 233.5 102.5C241.8 131.3 240.9 167 246.6 196.6C252.2 226.2 267.5 253.6 267.5 280.1C267.5 306.7 262.2 331.9 246.6 355.9C230.9 379.8 200.9 409.9 173.4 423.8C146 437.7 112.9 443.4 82 439.5C51.1 435.5 3.7 469.5 -12 400.3C-27.7 331.1 -46.8 86.9 -12 24.2Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M-4.2 36.9C26.4 -18 143.1 25.5 178.9 36.9C214.8 48.4 203.7 80.4 211 105.6C218.2 130.8 217.5 162 222.4 188C227.4 213.9 240.7 237.9 240.7 261.2C240.7 284.5 236.2 306.6 222.4 327.6C208.7 348.6 182.4 374.9 158.3 387.1C134.3 399.3 105.3 404.3 78.2 400.8C51.2 397.4 9.6 427.2 -4.2 366.5C-17.9 305.8 -34.7 91.8 -4.2 36.9Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M3.6 49.6C29.9 2.3 130.2 39.7 161.1 49.6C191.9 59.4 182.4 87 188.6 108.6C194.8 130.3 194.2 157.1 198.4 179.4C202.7 201.8 214.2 222.4 214.2 242.4C214.2 262.4 210.3 281.4 198.4 299.5C186.6 317.5 164 340.2 143.4 350.6C122.7 361.1 97.8 365.4 74.5 362.5C51.2 359.5 15.4 385.1 3.6 332.9C-8.2 280.8 -22.6 96.8 3.6 49.6Z"></path></g><g class="m-well__band" style="--well-d:0.77"><path d="M11.4 62.2C33.4 22.6 117.4 53.9 143.3 62.2C169.1 70.4 161.1 93.5 166.4 111.6C171.6 129.8 171 152.3 174.6 171C178.2 189.7 187.8 207 187.8 223.7C187.8 240.5 184.5 256.4 174.6 271.5C164.7 286.6 145.7 305.6 128.4 314.4C111.1 323.2 90.2 326.8 70.7 324.3C51.2 321.8 21.3 343.2 11.4 299.6C1.5 255.9 -10.6 101.7 11.4 62.2Z"></path></g><g class="m-well__band" style="--well-d:0.85"><path d="M19.1 74.7C36.8 42.7 104.7 68 125.6 74.7C146.4 81.3 140 100 144.2 114.6C148.4 129.3 148 147.4 150.9 162.5C153.8 177.6 161.5 191.6 161.5 205.1C161.5 218.7 158.9 231.5 150.9 243.7C142.9 255.9 127.6 271.2 113.6 278.3C99.6 285.4 82.8 288.3 67 286.3C51.3 284.3 27.1 301.6 19.1 266.3C11.1 231.1 1.4 106.6 19.1 74.7Z"></path></g><g class="m-well__band" style="--well-d:0.92"><path d="M26.8 87.2C40.3 62.8 92.1 82.1 108 87.2C123.9 92.2 119 106.4 122.2 117.6C125.4 128.8 125 142.6 127.2 154.1C129.4 165.6 135.4 176.3 135.4 186.6C135.4 196.9 133.3 206.7 127.2 216C121.2 225.3 109.5 237 98.8 242.4C88.2 247.8 75.3 250 63.3 248.5C51.3 247 32.9 260.2 26.8 233.3C20.7 206.4 13.2 111.5 26.8 87.2Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M34.4 99.6C43.8 82.8 79.5 96.1 90.4 99.6C101.4 103.1 98 112.9 100.2 120.6C102.4 128.3 102.2 137.8 103.7 145.8C105.2 153.7 109.3 161 109.3 168.2C109.3 175.3 107.9 182.1 103.7 188.5C99.5 194.9 91.5 202.9 84.1 206.7C76.8 210.4 67.9 211.9 59.6 210.9C51.3 209.8 38.6 218.9 34.4 200.4C30.2 181.8 25.1 116.4 34.4 99.6Z"></path></g></svg>
+<div class="depths__figure m-cutout"><img alt="A woman sits cross-legged on the floor with a laptop on her knees" height="3840" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1672818989862-9e183f21a2a9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fHdvbWFuJTIwc2l0dGluZyUyMGZsb29yJTIwbGFwdG9wfGVufDF8MHx8fDE3OTEyOTUxMTd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#f3f3f3" width="5760"/></div>
+</div>
+</figure>
+<div class="depths__caption">
+<span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t24|Level 2}}</span>
+<h3 class="m-text-6">{{t25|Flow}}</h3>
+<p class="m-text">{{t26|Long desks and low voices. Questions are whispered or written down, headphones are welcome, laptops stay open.}}</p>
+</div>
+</div>
+</li>
+<li class="depths__item">
+<div class="depths__hang">
+<figure class="m-print depths__poster">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet depths__sheet">
+<svg aria-hidden="true" class="m-well-3 poster__well" focusable="false" preserveaspectratio="xMidYMid slice" viewbox="0 0 600 800"><g class="m-well__band" style="--well-d:0"><path d="M240 -50C306.6 -50 386 -21.2 439.8 22.6C493.7 66.3 542.8 141.8 563.4 212.6C583.9 283.4 583.9 376.6 563.4 447.4C542.8 518.2 493.7 593.7 439.8 637.4C386 681.2 306.6 710 240 710C173.4 710 94 681.2 40.2 637.4C-13.7 593.7 -62.8 518.2 -83.4 447.4C-103.9 376.6 -103.9 283.4 -83.4 212.6C-62.8 141.8 -13.7 66.3 40.2 22.6C94 -21.2 173.4 -50 240 -50Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M225.1 -27.8C286.6 -27.8 359.9 -1.2 409.6 39.2C459.3 79.6 504.6 149.3 523.6 214.6C542.6 280 542.6 366 523.6 431.4C504.6 496.8 459.3 566.4 409.6 606.8C359.9 647.2 286.6 673.8 225.1 673.8C163.6 673.8 90.4 647.2 40.7 606.8C-9.1 566.4 -54.3 496.8 -73.3 431.4C-92.3 366 -92.3 280 -73.3 214.6C-54.3 149.3 -9.1 79.6 40.7 39.2C90.4 -1.2 163.6 -27.8 225.1 -27.8Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M211.3 -7C268 -7 335.5 17.5 381.4 54.8C427.3 92 469 156.2 486.6 216.5C504.1 276.8 504.1 356.2 486.6 416.5C469 476.7 427.3 541 381.4 578.2C335.5 615.5 268 640 211.3 640C154.6 640 87 615.5 41.1 578.2C-4.7 541 -46.5 476.7 -64 416.5C-81.5 356.2 -81.5 276.8 -64 216.5C-46.5 156.2 -4.7 92 41.1 54.8C87 17.5 154.6 -7 211.3 -7Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M197.8 13.2C249.8 13.2 311.8 35.7 354 69.9C396.1 104.1 434.4 163 450.5 218.4C466.6 273.7 466.6 346.6 450.5 401.9C434.4 457.2 396.1 516.2 354 550.4C311.8 584.6 249.8 607.1 197.8 607.1C145.7 607.1 83.7 584.6 41.6 550.4C-0.5 516.2 -38.8 457.2 -54.9 401.9C-71 346.6 -71 273.7 -54.9 218.4C-38.8 163 -0.5 104.1 41.6 69.9C83.7 35.7 145.7 13.2 197.8 13.2Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M184.5 33C232 33 288.6 53.6 327 84.8C365.4 116 400.3 169.7 415 220.2C429.7 270.7 429.7 337.1 415 387.6C400.3 438.1 365.4 491.8 327 523C288.6 554.2 232 574.8 184.5 574.8C137 574.8 80.5 554.2 42.1 523C3.7 491.8 -31.3 438.1 -46 387.6C-60.6 337.1 -60.6 270.7 -46 220.2C-31.3 169.7 3.7 116 42.1 84.8C80.5 53.6 137 33 184.5 33Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M171.4 52.6C214.4 52.6 265.6 71.2 300.3 99.4C335.1 127.7 366.7 176.3 380 222C393.3 267.7 393.3 327.8 380 373.5C366.7 419.1 335.1 467.8 300.3 496C265.6 524.2 214.4 542.8 171.4 542.8C128.5 542.8 77.3 524.2 42.5 496C7.8 467.8 -23.9 419.1 -37.1 373.5C-50.4 327.8 -50.4 267.7 -37.1 222C-23.9 176.3 7.8 127.7 42.5 99.4C77.3 71.2 128.5 52.6 171.4 52.6Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M158.4 72C196.9 72 242.8 88.7 273.9 114C305.1 139.3 333.4 182.9 345.3 223.8C357.2 264.7 357.2 318.6 345.3 359.5C333.4 400.4 305.1 444 273.9 469.3C242.8 494.6 196.9 511.2 158.4 511.2C120 511.2 74.1 494.6 43 469.3C11.8 444 -16.5 400.4 -28.4 359.5C-40.3 318.6 -40.3 264.7 -28.4 223.8C-16.5 182.9 11.8 139.3 43 114C74.1 88.7 120 72 158.4 72Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M145.6 91.3C179.6 91.3 220.2 106 247.8 128.4C275.3 150.8 300.4 189.3 310.9 225.5C321.4 261.7 321.4 309.4 310.9 345.6C300.4 381.8 275.3 420.4 247.8 442.7C220.2 465.1 179.6 479.8 145.6 479.8C111.5 479.8 71 465.1 43.4 442.7C15.9 420.4 -9.2 381.8 -19.7 345.6C-30.3 309.4 -30.3 261.7 -19.7 225.5C-9.2 189.3 15.9 150.8 43.4 128.4C71 106 111.5 91.3 145.6 91.3Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M132.8 110.4C162.5 110.4 197.8 123.2 221.8 142.7C245.8 162.2 267.6 195.8 276.8 227.3C285.9 258.8 285.9 300.3 276.8 331.8C267.6 363.4 245.8 396.9 221.8 416.4C197.8 435.9 162.5 448.7 132.8 448.7C103.2 448.7 67.8 435.9 43.9 416.4C19.9 396.9 -2 363.4 -11.1 331.8C-20.3 300.3 -20.3 258.8 -11.1 227.3C-2 195.8 19.9 162.2 43.9 142.7C67.8 123.2 103.2 110.4 132.8 110.4Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M120.1 129.4C145.4 129.4 175.5 140.3 196 156.9C216.4 173.5 235 202.2 242.8 229C250.6 255.9 250.6 291.3 242.8 318.1C235 345 216.4 373.6 196 390.2C175.5 406.9 145.4 417.8 120.1 417.8C94.8 417.8 64.7 406.9 44.3 390.2C23.8 373.6 5.2 345 -2.6 318.1C-10.4 291.3 -10.4 255.9 -2.6 229C5.2 202.2 23.8 173.5 44.3 156.9C64.7 140.3 94.8 129.4 120.1 129.4Z"></path></g><g class="m-well__band" style="--well-d:0.77"><path d="M107.5 148.3C128.4 148.3 153.4 157.3 170.3 171.1C187.2 184.8 202.6 208.5 209.1 230.8C215.6 253 215.6 282.3 209.1 304.5C202.6 326.8 187.2 350.5 170.3 364.2C153.4 378 128.4 387 107.5 387C86.6 387 61.7 378 44.7 364.2C27.8 350.5 12.4 326.8 5.9 304.5C-0.5 282.3 -0.5 253 5.9 230.8C12.4 208.5 27.8 184.8 44.7 171.1C61.7 157.3 86.6 148.3 107.5 148.3Z"></path></g><g class="m-well__band" style="--well-d:0.85"><path d="M94.9 167.1C111.5 167.1 131.3 174.2 144.7 185.1C158.2 196.1 170.4 214.8 175.5 232.5C180.6 250.1 180.6 273.4 175.5 291C170.4 308.6 158.2 327.4 144.7 338.3C131.3 349.2 111.5 356.4 94.9 356.4C78.4 356.4 58.6 349.2 45.2 338.3C31.7 327.4 19.5 308.6 14.4 291C9.3 273.4 9.3 250.1 14.4 232.5C19.5 214.8 31.7 196.1 45.2 185.1C58.6 174.2 78.4 167.1 94.9 167.1Z"></path></g><g class="m-well__band" style="--well-d:0.92"><path d="M82.4 185.8C94.7 185.8 109.4 191.1 119.3 199.2C129.2 207.2 138.3 221.1 142.1 234.2C145.9 247.3 145.9 264.5 142.1 277.5C138.3 290.6 129.2 304.5 119.3 312.6C109.4 320.6 94.7 325.9 82.4 325.9C70.2 325.9 55.5 320.6 45.6 312.6C35.6 304.5 26.6 290.6 22.8 277.5C19 264.5 19 247.3 22.8 234.2C26.6 221.1 35.6 207.2 45.6 199.2C55.5 191.1 70.2 185.8 82.4 185.8Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M70 204.4C78 204.4 87.5 207.9 94 213.1C100.4 218.4 106.3 227.4 108.8 235.9C111.3 244.4 111.3 255.6 108.8 264.1C106.3 272.6 100.4 281.6 94 286.9C87.5 292.1 78 295.6 70 295.6C62 295.6 52.5 292.1 46 286.9C39.6 281.6 33.7 272.6 31.2 264.1C28.7 255.6 28.7 244.4 31.2 235.9C33.7 227.4 39.6 218.4 46 213.1C52.5 207.9 62 204.4 70 204.4Z"></path></g></svg>
+<div class="depths__figure m-cutout"><img alt="A woman in a white shirt rests her chin on her hand, lost in thought" height="4128" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1770918655026-c2204eb65ae9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGVyc29uJTIwdGhpbmtpbmclMjB3aGl0ZSUyMHN0dWRpbyUyMGJhY2tncm91bmR8ZW58MXwwfHx8MTc5MTI5NTEzNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#f3f3f3" width="6192"/></div>
+</div>
+</figure>
+<div class="depths__caption">
+<span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span>
+<h3 class="m-text-6">{{t28|Deep}}</h3>
+<p class="m-text">{{t29|Single carrels and sealed booths. Phones sleep in lockers by the stairs, and nobody taps a shoulder.}}</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_depths}}
+
+{{#sec_day}}<section data-8b-section="day" id="day">
+<div class="shell day__grid">
+<div aria-hidden="true" class="day__dial">
+<svg aria-hidden="true" class="m-well-2 day__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 1000 1000"><g class="m-well__band" style="--well-d:0"><path d="M980 500C980 580 955.7 670.7 915.7 740C875.7 809.3 809.3 875.7 740 915.7C670.7 955.7 580 980 500 980C420 980 329.3 955.7 260 915.7C190.7 875.7 124.3 809.3 84.3 740C44.3 670.7 20 580 20 500C20 420 44.3 329.3 84.3 260C124.3 190.7 190.7 124.3 260 84.3C329.3 44.3 420 20 500 20C580 20 670.7 44.3 740 84.3C809.3 124.3 875.7 190.7 915.7 260C955.7 329.3 980 420 980 500Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M934.3 487.8C934.3 561.6 911.9 645.3 875 709.3C838 773.2 776.7 834.5 712.8 871.5C648.8 908.4 565.1 930.8 491.3 930.8C417.4 930.8 333.7 908.4 269.7 871.5C205.8 834.5 144.5 773.2 107.6 709.3C70.6 645.3 48.2 561.6 48.2 487.8C48.2 413.9 70.6 330.2 107.6 266.2C144.5 202.3 205.8 141 269.7 104.1C333.7 67.1 417.4 44.7 491.3 44.7C565.1 44.7 648.8 67.1 712.8 104.1C776.7 141 838 202.3 875 266.2C911.9 330.2 934.3 413.9 934.3 487.8Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M891.7 476.3C891.7 544.5 871.1 621.7 837 680.7C802.9 739.7 746.4 796.2 687.4 830.2C628.4 864.3 551.2 885 483.1 885C415 885 337.8 864.3 278.8 830.2C219.8 796.2 163.3 739.7 129.2 680.7C95.2 621.7 74.5 544.5 74.5 476.3C74.5 408.2 95.2 331 129.2 272C163.3 213 219.8 156.5 278.8 122.5C337.8 88.4 415 67.7 483.1 67.7C551.2 67.7 628.4 88.4 687.4 122.5C746.4 156.5 802.9 213 837 272C871.1 331 891.7 408.2 891.7 476.3Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M850.3 465.2C850.3 527.8 831.3 598.6 800 652.8C768.8 706.9 716.9 758.8 662.7 790.1C608.6 821.3 537.7 840.3 475.2 840.3C412.6 840.3 341.8 821.3 287.6 790.1C233.5 758.8 181.6 706.9 150.3 652.8C119.1 598.6 100.1 527.8 100.1 465.2C100.1 402.7 119.1 331.8 150.3 277.7C181.6 223.5 233.5 171.6 287.6 140.4C341.8 109.1 412.6 90.1 475.2 90.1C537.7 90.1 608.6 109.1 662.7 140.4C716.9 171.6 768.8 223.5 800 277.7C831.3 331.8 850.3 402.7 850.3 465.2Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M809.5 454.3C809.5 511.3 792.2 576 763.7 625.4C735.2 674.8 687.8 722.1 638.4 750.6C589 779.1 524.4 796.4 467.4 796.4C410.3 796.4 345.7 779.1 296.3 750.6C246.9 722.1 199.6 674.8 171.1 625.4C142.5 576 125.2 511.3 125.2 454.3C125.2 397.3 142.5 332.6 171.1 283.2C199.6 233.9 246.9 186.5 296.3 158C345.7 129.5 410.3 112.2 467.4 112.2C524.4 112.2 589 129.5 638.4 158C687.8 186.5 735.2 233.9 763.7 283.2C792.2 332.6 809.5 397.3 809.5 454.3Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M769.2 443.5C769.2 495.1 753.6 553.6 727.8 598.3C702 643 659.1 685.8 614.5 711.6C569.8 737.4 511.3 753.1 459.7 753.1C408.1 753.1 349.5 737.4 304.9 711.6C260.2 685.8 217.3 643 191.5 598.3C165.7 553.6 150.1 495.1 150.1 443.5C150.1 391.9 165.7 333.4 191.5 288.7C217.3 244 260.2 201.2 304.9 175.4C349.5 149.6 408.1 133.9 459.7 133.9C511.3 133.9 569.8 149.6 614.5 175.4C659.1 201.2 702 244 727.8 288.7C753.6 333.4 769.2 391.9 769.2 443.5Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M729.4 432.8C729.4 479.1 715.3 531.5 692.2 571.5C669.1 611.6 630.7 649.9 590.7 673C550.7 696.2 498.3 710.2 452 710.2C405.8 710.2 353.4 696.2 313.3 673C273.3 649.9 234.9 611.6 211.8 571.5C188.7 531.5 174.7 479.1 174.7 432.8C174.7 386.6 188.7 334.2 211.8 294.2C234.9 254.1 273.3 215.7 313.3 192.6C353.4 169.5 405.8 155.5 452 155.5C498.3 155.5 550.7 169.5 590.7 192.6C630.7 215.7 669.1 254.1 692.2 294.2C715.3 334.2 729.4 386.6 729.4 432.8Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M689.9 422.2C689.9 463.1 677.4 509.5 657 544.9C636.5 580.4 602.6 614.3 567.2 634.8C531.7 655.2 485.4 667.6 444.5 667.6C403.6 667.6 357.2 655.2 321.8 634.8C286.3 614.3 252.4 580.4 231.9 544.9C211.5 509.5 199.1 463.1 199.1 422.2C199.1 381.3 211.5 335 231.9 299.5C252.4 264.1 286.3 230.2 321.8 209.7C357.2 189.3 403.6 176.8 444.5 176.8C485.4 176.8 531.7 189.3 567.2 209.7C602.6 230.2 636.5 264.1 657 299.5C677.4 335 689.9 381.3 689.9 422.2Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M650.6 411.7C650.6 447.3 639.8 487.7 622 518.6C604.2 549.4 574.6 579 543.8 596.8C512.9 614.6 472.6 625.4 436.9 625.4C401.3 625.4 361 614.6 330.1 596.8C299.3 579 269.7 549.4 251.9 518.6C234.1 487.7 223.3 447.3 223.3 411.7C223.3 376.1 234.1 335.7 251.9 304.9C269.7 274.1 299.3 244.5 330.1 226.7C361 208.9 401.3 198.1 436.9 198.1C472.6 198.1 512.9 208.9 543.8 226.7C574.6 244.5 604.2 274.1 622 304.9C639.8 335.7 650.6 376.1 650.6 411.7Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M611.6 401.3C611.6 431.6 602.4 466.1 587.2 492.3C572 518.6 546.8 543.8 520.6 559C494.3 574.2 459.8 583.4 429.5 583.4C399.1 583.4 364.7 574.2 338.4 559C312.1 543.8 286.9 518.6 271.7 492.3C256.6 466.1 247.3 431.6 247.3 401.3C247.3 370.9 256.6 336.5 271.7 310.2C286.9 283.9 312.1 258.7 338.4 243.5C364.7 228.4 399.1 219.1 429.5 219.1C459.8 219.1 494.3 228.4 520.6 243.5C546.8 258.7 572 283.9 587.2 310.2C602.4 336.5 611.6 370.9 611.6 401.3Z"></path></g><g class="m-well__band" style="--well-d:0.77"><path d="M572.8 390.9C572.8 416 565.2 444.5 552.6 466.3C540.1 488 519.2 508.9 497.5 521.5C475.7 534 447.2 541.7 422.1 541.7C396.9 541.7 368.4 534 346.7 521.5C324.9 508.9 304 488 291.5 466.3C278.9 444.5 271.3 416 271.3 390.9C271.3 365.8 278.9 337.3 291.5 315.5C304 293.7 324.9 272.9 346.7 260.3C368.4 247.7 396.9 240.1 422.1 240.1C447.2 240.1 475.7 247.7 497.5 260.3C519.2 272.9 540.1 293.7 552.6 315.5C565.2 337.3 572.8 365.8 572.8 390.9Z"></path></g><g class="m-well__band" style="--well-d:0.85"><path d="M534.3 380.5C534.3 400.5 528.2 423.1 518.2 440.3C508.3 457.6 491.7 474.1 474.5 484.1C457.2 494.1 434.6 500.1 414.7 500.1C394.7 500.1 372.1 494.1 354.9 484.1C337.6 474.1 321.1 457.6 311.1 440.3C301.1 423.1 295.1 400.5 295.1 380.5C295.1 360.6 301.1 338 311.1 320.8C321.1 303.5 337.6 286.9 354.9 277C372.1 267 394.7 261 414.7 261C434.6 261 457.2 267 474.5 277C491.7 286.9 508.3 303.5 518.2 320.8C528.2 338 534.3 360.6 534.3 380.5Z"></path></g><g class="m-well__band" style="--well-d:0.92"><path d="M495.9 370.3C495.9 385 491.4 401.7 484 414.5C476.6 427.3 464.4 439.5 451.6 446.9C438.8 454.3 422.1 458.8 407.3 458.8C392.6 458.8 375.8 454.3 363.1 446.9C350.3 439.5 338 427.3 330.7 414.5C323.3 401.7 318.8 385 318.8 370.3C318.8 355.5 323.3 338.8 330.7 326C338 313.2 350.3 301 363.1 293.6C375.8 286.2 392.6 281.7 407.3 281.7C422.1 281.7 438.8 286.2 451.6 293.6C464.4 301 476.6 313.2 484 326C491.4 338.8 495.9 355.5 495.9 370.3Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M457.6 360C457.6 369.6 454.7 380.5 449.9 388.8C445.1 397.1 437.1 405.1 428.8 409.9C420.5 414.7 409.6 417.6 400 417.6C390.4 417.6 379.5 414.7 371.2 409.9C362.9 405.1 354.9 397.1 350.1 388.8C345.3 380.5 342.4 369.6 342.4 360C342.4 350.4 345.3 339.5 350.1 331.2C354.9 322.9 362.9 314.9 371.2 310.1C379.5 305.3 390.4 302.4 400 302.4C409.6 302.4 420.5 305.3 428.8 310.1C437.1 314.9 445.1 322.9 449.9 331.2C454.7 339.5 457.6 350.4 457.6 360Z"></path></g></svg>
+</div>
+<div class="day__main">
+<div class="day__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t30|The building has a day of its own.}}</h2>
+<p class="m-text-5">{{t31|The floors open in order and the quiet moves through them. Here is a weekday, from the first key to the last light.}}</p>
+</div>
+<ol class="day__list">
+<li class="day__row">
+<time class="day__time" datetime="07:30">{{t32|7:30}}</time>
+<div class="day__body"><span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span><h3 class="m-text-6">{{t33|Doors and coffee}}</h3><p class="m-text">{{t34|The top floor opens first. Say hello now; it is the loudest the building gets.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="09:00">{{t35|9:00}}</time>
+<div class="day__body"><span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t24|Level 2}}</span><h3 class="m-text-6">{{t36|Quiet hours begin}}</h3><p class="m-text">{{t37|Flow fills up. Voices drop to a whisper and the long desks go still.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="10:30">{{t38|10:30}}</time>
+<div class="day__body"><span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span><h3 class="m-text-6">{{t39|The deep block}}</h3><p class="m-text">{{t40|Phones go into lockers at the stairs. Booths are held for three hours, no knocking.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="13:30">{{t41|13:30}}</time>
+<div class="day__body"><span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span><h3 class="m-text-6">{{t42|Up for lunch}}</h3><p class="m-text">{{t43|One long table on the roof. Talk about anything except what you are working on.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="15:00">{{t44|15:00}}</time>
+<div class="day__body"><span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span><h3 class="m-text-6">{{t45|Second descent}}</h3><p class="m-text">{{t46|The afternoon block. Most members say this is when the real work happens.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="18:30">{{t47|18:30}}</time>
+<div class="day__body"><span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span><h3 class="m-text-6">{{t48|Surfacing}}</h3><p class="m-text">{{t49|Lights warm up, the roof opens, and on Thursdays someone talks about how they finished something.}}</p></div>
+</li>
+<li class="day__row">
+<time class="day__time" datetime="21:00">{{t50|21:00}}</time>
+<div class="day__body"><span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t51|All levels}}</span><h3 class="m-text-6">{{t52|Last light}}</h3><p class="m-text">{{t53|The building closes from the bottom up. Residents keep a key to their booth.}}</p></div>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_day}}
+
+{{#sec_rooms}}<section data-8b-section="rooms" id="rooms">
+<div class="shell">
+<div class="rooms__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t54|Rooms, in order of descent.}}</h2>
+<p class="m-text-5">{{t55|Four places to sit, listed the way you reach them: from the roof, down the stairs, to the carrels at the bottom.}}</p>
+</div>
+<ul class="rooms__list">
+<li class="rooms__row">
+<figure class="m-print rooms__print" data-8b-motion="hang">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet"><img alt="A roof terrace with benches, folded parasols and the city behind a glass rail" height="3072" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1777113310184-140ff530f4dd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cm9vZnRvcCUyMHRlcnJhY2UlMjBjaGFpcnMlMjBjaXR5JTIwZXZlbmluZ3xlbnwxfDB8fHwxNzkxMjk1MjE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#d9d9f3" width="4080"/></div>
+</figure>
+<div class="rooms__body">
+<span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span>
+<h3 class="m-text-6 rooms__name">{{t56|The Roof}}</h3>
+<p class="m-text">{{t57|Benches, a long lunch table and the only place in the building for phone calls. Open from spring to the first frost.}}</p>
+</div>
+</li>
+<li class="rooms__row">
+<figure class="m-print rooms__print" data-8b-motion="hang">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet"><img alt="A man works alone at a long table in a room full of low sunlight" height="2773" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1763890965393-1cea435581ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8YnJpZ2h0JTIwY293b3JraW5nJTIwbG9uZyUyMHRhYmxlfGVufDF8MHx8fDE3OTEyOTU1MTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60}}" style="background:#f3f3f3" width="4160"/></div>
+</figure>
+<div class="rooms__body">
+<span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t24|Level 2}}</span>
+<h3 class="m-text-6 rooms__name">{{t58|The Long Room}}</h3>
+<p class="m-text">{{t59|Forty seats along two oak tables under west windows. Bring headphones; the afternoon light does the rest.}}</p>
+</div>
+</li>
+<li class="rooms__row">
+<figure class="m-print rooms__print" data-8b-motion="hang">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet"><img alt="A pale landing with a wooden rail around the stairwell and two windows" height="4160" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1665507299406-5a29d0e7d1df?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bG9uZyUyMHdvb2RlbiUyMHRhYmxlJTIwZW1wdHklMjByb29tJTIwd2luZG93fGVufDF8MHx8fDE3OTEyOTUyMTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60}}" style="background:#c0c0c0" width="6240"/></div>
+</figure>
+<div class="rooms__body">
+<span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t60|Between levels}}</span>
+<h3 class="m-text-6 rooms__name">{{t61|The Stairs}}</h3>
+<p class="m-text">{{t62|The landing where you leave your phone and your voice. Lockers, water, and a bench for deciding how far down to go.}}</p>
+</div>
+</li>
+<li class="rooms__row">
+<figure class="m-print rooms__print" data-8b-motion="hang">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet"><img alt="A white study carrel with a desk, a black chair and a round clock" height="4338" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1637095937545-7d8c1edf4d2b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YWNvdXN0aWMlMjBib290aCUyMG9mZmljZXxlbnwxfDB8fHwxNzkxMjk1MjEzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#c0c0c0" width="6288"/></div>
+</figure>
+<div class="rooms__body">
+<span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span>
+<h3 class="m-text-6 rooms__name">{{t63|The Carrels}}</h3>
+<p class="m-text">{{t64|Twenty-two white carrels and six sealed booths. One clock per room, no screens on the walls, nothing to look at but the work.}}</p>
+</div>
+</li>
+</ul>
+</div>
+</section>{{/sec_rooms}}
+
+{{#sec_rules}}<section data-8b-section="rules" id="rules">
+<div class="shell">
+<div class="rules__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t65|Three rules, posted at the stairs.}}</h2>
+<p class="m-text-5">{{t66|Each floor has exactly one. They get shorter as you go down.}}</p>
+</div>
+<div class="rules__stage">
+<div aria-hidden="true" class="rules__strata">
+<div class="rules__row" style="--rules-open:.66"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.62"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.58"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.54"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.5"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.46"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.42"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.38"><span class="rules__half"></span><span class="rules__half"></span></div>
+<div class="rules__row" style="--rules-open:.34"><span class="rules__half"></span><span class="rules__half"></span></div>
+</div>
+<ol class="rules__list">
+<li class="rules__rule">
+<span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span>
+<p class="m-text-6">{{t67|Talk is fine. Calls go up on the roof.}}</p>
+<p class="m-text">{{t68|Meetings, laughter and coffee orders all belong up here.}}</p>
+</li>
+<li class="rules__rule">
+<span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t24|Level 2}}</span>
+<p class="m-text-6">{{t69|Whisper, or write it down.}}</p>
+<p class="m-text">{{t70|Every desk has a notepad for questions.}}</p>
+</li>
+<li class="rules__rule">
+<span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span>
+<p class="m-text-6">{{t71|Phones sleep upstairs.}}</p>
+<p class="m-text">{{t72|Lockers wait on the landing.}}</p>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_rules}}
+
+{{#sec_members}}<section data-8b-section="members" id="members">
+<div class="shell">
+<div class="members__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t73|Who works down here.}}</h2>
+<p class="m-text-5">{{t74|Four of our two hundred members, each standing at the edge of the depth they keep coming back to.}}</p>
+</div>
+<ul class="members__list">
+<li class="members__item" data-level="3">
+<div class="members__portrait" data-8b-motion="ripple">
+<svg aria-hidden="true" class="m-well-2 member__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.11"><path d="M359.1 237.2C349.2 269.2 325 303.5 298.1 323.5C271.3 343.6 231.6 357.2 198.1 357.6C164.6 358.1 124.5 345.7 97.1 326.4C69.7 307.1 44.6 273.5 33.7 241.8C22.9 210 22.3 168.1 32.3 136.1C42.2 104 66.3 69.7 93.2 49.7C120 29.6 159.7 16.1 193.2 15.6C226.7 15.1 266.8 27.5 294.2 46.8C321.6 66.1 346.8 99.7 357.6 131.5C368.4 163.2 369 205.1 359.1 237.2Z"></path></g><g class="m-well__band" style="--well-d:0.22"><path d="M336.4 218.9C327.6 247.3 306.2 277.6 282.4 295.4C258.6 313.2 223.4 325.2 193.8 325.6C164.1 326.1 128.6 315.1 104.3 298C80 280.8 57.8 251.1 48.2 223C38.6 194.9 38.1 157.7 46.9 129.3C55.6 101 77.1 70.6 100.8 52.8C124.6 35 159.8 23 189.5 22.6C219.2 22.2 254.7 33.2 278.9 50.3C303.2 67.4 325.5 97.2 335 125.3C344.6 153.4 345.1 190.5 336.4 218.9Z"></path></g><g class="m-well__band" style="--well-d:0.33"><path d="M314.3 201.1C306.6 225.9 287.9 252.5 267.1 268C246.3 283.6 215.5 294.1 189.6 294.5C163.6 294.8 132.5 285.2 111.3 270.3C90.1 255.3 70.6 229.3 62.3 204.7C53.9 180.1 53.4 147.6 61.1 122.8C68.8 98 87.5 71.4 108.3 55.9C129.1 40.3 159.8 29.8 185.8 29.5C211.8 29.1 242.8 38.7 264 53.7C285.2 68.6 304.7 94.7 313.1 119.2C321.5 143.8 321.9 176.3 314.3 201.1Z"></path></g><g class="m-well__band" style="--well-d:0.44"><path d="M292.5 183.6C285.9 204.9 269.8 227.8 252 241.1C234.1 254.5 207.7 263.5 185.4 263.8C163.1 264.1 136.4 255.9 118.2 243C100 230.2 83.3 207.8 76.1 186.7C68.9 165.6 68.5 137.7 75.1 116.4C81.7 95.1 97.8 72.3 115.6 58.9C133.5 45.5 159.9 36.5 182.2 36.2C204.5 35.9 231.2 44.2 249.4 57C267.6 69.9 284.3 92.2 291.5 113.3C298.7 134.4 299.1 162.3 292.5 183.6Z"></path></g><g class="m-well__band" style="--well-d:0.56"><path d="M271.1 166.4C265.5 184.2 252.1 203.3 237.1 214.5C222.1 225.7 200 233.3 181.3 233.5C162.6 233.8 140.3 226.9 125 216.1C109.8 205.4 95.8 186.6 89.7 169C83.7 151.3 83.4 127.9 88.9 110C94.4 92.2 107.9 73.1 122.9 61.9C137.8 50.7 159.9 43.2 178.6 42.9C197.3 42.6 219.6 49.5 234.9 60.3C250.2 71.1 264.2 89.8 270.2 107.5C276.2 125.2 276.6 148.5 271.1 166.4Z"></path></g><g class="m-well__band" style="--well-d:0.67"><path d="M249.8 149.3C245.3 163.7 234.4 179.2 222.4 188.2C210.3 197.3 192.4 203.4 177.3 203.6C162.2 203.8 144.1 198.2 131.8 189.5C119.4 180.8 108.1 165.7 103.3 151.4C98.4 137.1 98.1 118.2 102.6 103.8C107 89.3 117.9 73.9 130 64.8C142.1 55.8 160 49.7 175.1 49.5C190.2 49.3 208.3 54.9 220.6 63.6C232.9 72.3 244.3 87.4 249.1 101.7C254 116 254.3 134.9 249.8 149.3Z"></path></g><g class="m-well__band" style="--well-d:0.78"><path d="M228.7 132.4C225.3 143.4 217 155.2 207.7 162.1C198.5 169 184.8 173.7 173.3 173.9C161.7 174 147.9 169.7 138.5 163.1C129 156.4 120.4 144.9 116.7 133.9C112.9 123 112.7 108.6 116.1 97.5C119.6 86.5 127.9 74.7 137.1 67.8C146.4 60.8 160.1 56.2 171.6 56C183.1 55.9 197 60.1 206.4 66.8C215.8 73.4 224.5 85 228.2 95.9C231.9 106.9 232.1 121.3 228.7 132.4Z"></path></g><g class="m-well__band" style="--well-d:0.89"><path d="M207.8 115.5C205.4 123.2 199.6 131.4 193.2 136.2C186.8 141 177.3 144.2 169.3 144.4C161.3 144.5 151.7 141.5 145.1 136.9C138.6 132.3 132.6 124.2 130 116.6C127.4 109 127.2 99 129.6 91.3C132 83.7 137.8 75.5 144.2 70.7C150.6 65.9 160.1 62.6 168.1 62.5C176.1 62.4 185.7 65.4 192.3 70C198.8 74.6 204.9 82.6 207.4 90.2C210 97.8 210.2 107.9 207.8 115.5Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M187 98.8C185.7 103.1 182.4 107.7 178.8 110.4C175.2 113.2 169.8 115 165.3 115C160.8 115.1 155.4 113.4 151.7 110.8C148 108.2 144.6 103.7 143.2 99.4C141.7 95.2 141.7 89.5 143 85.2C144.3 80.9 147.6 76.3 151.2 73.6C154.8 70.8 160.2 69 164.7 69C169.2 68.9 174.6 70.6 178.3 73.2C182 75.8 185.4 80.3 186.8 84.6C188.3 88.8 188.3 94.5 187 98.8Z"></path></g></svg>
+<div class="members__figure m-cutout"><img alt="Ines smiles with both hands on her headphones" height="4672" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1655468289134-bb764181b0e4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMHBlcnNvbiUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjk1MTU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#f3f3f3" width="7008"/></div>
+</div>
+<div class="members__body">
+<span class="m-badge-2"><span aria-hidden="true" class="m-badge__swatch"></span>{{t21|Level 3}}</span>
+<h3 class="m-text-6">{{t75|Ines Varga}}</h3>
+<p class="m-text-4 members__trade">{{t76|Sound designer}}</p>
+<p class="m-text members__quote">{{t77|“I mix on the roof and listen back in a booth. The stairs between them are my best edit.”}}</p>
+</div>
+</li>
+<li class="members__item" data-level="2">
+<div class="members__portrait" data-8b-motion="ripple">
+<svg aria-hidden="true" class="m-well member__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.11"><path d="M368.4 237.7C358.5 269.7 334.3 304 307.4 324C280.6 344.1 240.9 357.7 207.4 358.1C173.9 358.6 133.8 346.2 106.4 326.9C79 307.6 53.9 274 43.1 242.3C32.2 210.5 31.6 168.6 41.6 136.6C51.5 104.5 75.6 70.2 102.5 50.2C129.3 30.1 169 16.5 202.5 16.1C236 15.6 276.1 28 303.5 47.3C330.9 66.6 356.1 100.2 366.9 131.9C377.7 163.7 378.3 205.6 368.4 237.7Z"></path></g><g class="m-well__band" style="--well-d:0.22"><path d="M354.3 219.9C345.6 248.2 324.1 278.6 300.4 296.4C276.6 314.2 241.4 326.2 211.7 326.6C182 327 146.5 316 122.3 298.9C98 281.8 75.7 252 66.2 223.9C56.6 195.8 56.1 158.7 64.8 130.3C73.6 101.9 95 71.6 118.8 53.8C142.6 36 177.8 24 207.4 23.6C237.1 23.2 272.6 34.1 296.9 51.3C321.2 68.4 343.4 98.1 353 126.2C362.6 154.3 363.1 191.5 354.3 219.9Z"></path></g><g class="m-well__band" style="--well-d:0.33"><path d="M340.7 202.5C333 227.3 314.3 253.9 293.5 269.5C272.7 285 241.9 295.5 216 295.9C190 296.2 158.9 286.6 137.7 271.7C116.5 256.7 97 230.7 88.7 206.1C80.3 181.5 79.8 149 87.5 124.2C95.2 99.4 113.9 72.8 134.7 57.3C155.5 41.7 186.3 31.3 212.2 30.9C238.2 30.5 269.2 40.1 290.4 55.1C311.7 70 331.1 96.1 339.5 120.7C347.9 145.2 348.3 177.7 340.7 202.5Z"></path></g><g class="m-well__band" style="--well-d:0.44"><path d="M327.2 185.5C320.6 206.8 304.6 229.6 286.7 243C268.8 256.3 242.4 265.3 220.1 265.7C197.8 266 171.2 257.7 152.9 244.9C134.7 232 118 209.7 110.8 188.6C103.6 167.5 103.2 139.5 109.8 118.2C116.4 96.9 132.5 74.1 150.3 60.8C168.2 47.4 194.6 38.4 216.9 38.1C239.2 37.8 265.9 46 284.1 58.9C302.3 71.7 319 94.1 326.2 115.2C333.4 136.3 333.8 164.2 327.2 185.5Z"></path></g><g class="m-well__band" style="--well-d:0.56"><path d="M314 168.7C308.4 186.5 295 205.6 280 216.8C265.1 228 242.9 235.6 224.2 235.8C205.6 236.1 183.2 229.2 167.9 218.4C152.7 207.6 138.7 188.9 132.6 171.2C126.6 153.6 126.3 130.2 131.8 112.3C137.3 94.5 150.8 75.4 165.8 64.2C180.7 53 202.9 45.4 221.5 45.2C240.2 44.9 262.6 51.8 277.8 62.6C293.1 73.4 307.1 92.1 313.1 109.8C319.1 127.4 319.5 150.8 314 168.7Z"></path></g><g class="m-well__band" style="--well-d:0.67"><path d="M300.8 152C296.4 166.4 285.5 181.9 273.4 190.9C261.3 200 243.4 206.1 228.3 206.3C213.2 206.5 195.1 200.9 182.8 192.2C170.5 183.5 159.1 168.4 154.3 154.1C149.4 139.8 149.1 120.9 153.6 106.5C158.1 92.1 169 76.6 181 67.6C193.1 58.5 211 52.4 226.1 52.2C241.2 52 259.3 57.6 271.6 66.3C284 75 295.3 90.1 300.2 104.4C305 118.7 305.3 137.6 300.8 152Z"></path></g><g class="m-well__band" style="--well-d:0.78"><path d="M287.8 135.5C284.4 146.5 276.1 158.3 266.8 165.3C257.6 172.2 243.9 176.8 232.3 177C220.8 177.2 207 172.9 197.5 166.2C188.1 159.6 179.4 148 175.7 137.1C172 126.2 171.8 111.7 175.2 100.7C178.6 89.6 187 77.8 196.2 70.9C205.4 64 219.1 59.3 230.7 59.2C242.2 59 256 63.3 265.5 69.9C274.9 76.6 283.6 88.2 287.3 99.1C291 110 291.2 124.5 287.8 135.5Z"></path></g><g class="m-well__band" style="--well-d:0.89"><path d="M274.9 119.1C272.5 126.8 266.7 135 260.3 139.8C253.9 144.6 244.4 147.8 236.3 147.9C228.3 148 218.7 145.1 212.2 140.5C205.6 135.8 199.6 127.8 197 120.2C194.4 112.6 194.3 102.6 196.7 94.9C199 87.3 204.8 79 211.2 74.2C217.7 69.4 227.2 66.2 235.2 66.1C243.2 66 252.8 68.9 259.4 73.6C265.9 78.2 271.9 86.2 274.5 93.8C277.1 101.4 277.2 111.4 274.9 119.1Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M262 102.8C260.7 107.1 257.4 111.7 253.8 114.4C250.2 117.2 244.8 119 240.3 119C235.8 119.1 230.4 117.4 226.7 114.8C223 112.2 219.6 107.7 218.2 103.4C216.7 99.2 216.7 93.5 218 89.2C219.3 84.9 222.6 80.3 226.2 77.6C229.8 74.8 235.2 73 239.7 73C244.2 72.9 249.6 74.6 253.3 77.2C257 79.8 260.4 84.3 261.8 88.6C263.3 92.8 263.3 98.5 262 102.8Z"></path></g></svg>
+<div class="members__figure m-cutout"><img alt="Maren holds two orange pencils and looks straight at the camera" height="3595" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1590518226506-4c9b077392cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjB3cml0aW5nJTIwbm90ZWJvb2slMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MXwwfHx8MTc5MTI5NTE1OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#f3f3f3" width="5393"/></div>
+</div>
+<div class="members__body">
+<span class="m-badge"><span aria-hidden="true" class="m-badge__swatch"></span>{{t24|Level 2}}</span>
+<h3 class="m-text-6">{{t78|Maren Holt}}</h3>
+<p class="m-text-4 members__trade">{{t79|Illustrator}}</p>
+<p class="m-text members__quote">{{t80|“Drew a whole picture book at the long table. Nobody asked what I was making until it was done.”}}</p>
+</div>
+</li>
+<li class="members__item" data-level="1">
+<div class="members__portrait" data-8b-motion="ripple">
+<svg aria-hidden="true" class="m-well-3 member__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.11"><path d="M357.2 238.1C347.3 270.2 323.1 304.5 296.3 324.5C269.5 344.6 229.7 358.2 196.2 358.6C162.7 359.1 122.6 346.7 95.2 327.4C67.8 308.1 42.7 274.5 31.9 242.8C21.1 211 20.5 169.1 30.4 137.1C40.3 105 64.5 70.7 91.3 50.7C118.1 30.6 157.9 17 191.4 16.6C224.9 16.1 265 28.5 292.4 47.8C319.8 67.1 344.9 100.7 355.7 132.4C366.5 164.2 367.1 206.1 357.2 238.1Z"></path></g><g class="m-well__band" style="--well-d:0.22"><path d="M332.8 220.8C324 249.2 302.6 279.6 278.8 297.4C255 315.1 219.9 327.1 190.2 327.5C160.5 328 125 317 100.7 299.9C76.4 282.8 54.2 253 44.6 224.9C35 196.8 34.5 159.6 43.3 131.3C52 102.9 73.5 72.5 97.2 54.7C121 36.9 156.2 25 185.9 24.5C215.6 24.1 251.1 35.1 275.3 52.2C299.6 69.3 321.9 99.1 331.4 127.2C341 155.3 341.5 192.5 332.8 220.8Z"></path></g><g class="m-well__band" style="--well-d:0.33"><path d="M309 203.9C301.3 228.7 282.6 255.3 261.8 270.9C241 286.4 210.2 296.9 184.3 297.3C158.3 297.6 127.3 288 106 273.1C84.8 258.1 65.3 232.1 57 207.5C48.6 182.9 48.1 150.4 55.8 125.6C63.5 100.8 82.2 74.3 103 58.7C123.8 43.1 154.6 32.7 180.5 32.3C206.5 31.9 237.5 41.5 258.7 56.5C280 71.5 299.4 97.5 307.8 122.1C316.2 146.6 316.6 179.1 309 203.9Z"></path></g><g class="m-well__band" style="--well-d:0.44"><path d="M285.6 187.3C279 208.6 262.9 231.5 245 244.8C227.2 258.2 200.8 267.2 178.5 267.5C156.2 267.8 129.5 259.6 111.3 246.7C93.1 233.9 76.3 211.5 69.1 190.4C61.9 169.3 61.6 141.4 68.1 120.1C74.7 98.8 90.8 76 108.7 62.6C126.5 49.2 153 40.2 175.2 39.9C197.5 39.6 224.2 47.9 242.4 60.7C260.7 73.6 277.4 95.9 284.6 117C291.8 138.1 292.2 166 285.6 187.3Z"></path></g><g class="m-well__band" style="--well-d:0.56"><path d="M262.5 171C256.9 188.8 243.5 207.9 228.5 219.1C213.6 230.3 191.4 237.8 172.7 238.1C154.1 238.4 131.7 231.5 116.5 220.7C101.2 209.9 87.2 191.2 81.2 173.5C75.1 155.8 74.8 132.5 80.3 114.6C85.8 96.8 99.3 77.7 114.3 66.5C129.2 55.3 151.4 47.7 170 47.5C188.7 47.2 211.1 54.1 226.3 64.9C241.6 75.6 255.6 94.4 261.6 112C267.7 129.7 268 153.1 262.5 171Z"></path></g><g class="m-well__band" style="--well-d:0.67"><path d="M239.6 154.7C235.1 169.2 224.2 184.6 212.2 193.7C200.1 202.7 182.2 208.8 167.1 209C152 209.2 133.9 203.6 121.6 194.9C109.2 186.2 97.9 171.1 93 156.8C88.2 142.5 87.9 123.6 92.4 109.2C96.8 94.8 107.7 79.3 119.8 70.3C131.9 61.2 149.8 55.1 164.9 54.9C180 54.7 198 60.3 210.4 69C222.7 77.7 234.1 92.8 238.9 107.1C243.8 121.4 244.1 140.3 239.6 154.7Z"></path></g><g class="m-well__band" style="--well-d:0.78"><path d="M216.9 138.7C213.5 149.7 205.2 161.5 195.9 168.4C186.7 175.3 173 180 161.5 180.2C149.9 180.3 136.1 176 126.7 169.4C117.2 162.7 108.6 151.2 104.8 140.2C101.1 129.3 100.9 114.9 104.3 103.8C107.7 92.8 116.1 81 125.3 74.1C134.6 67.1 148.2 62.5 159.8 62.3C171.3 62.2 185.1 66.4 194.6 73.1C204 79.7 212.7 91.3 216.4 102.2C220.1 113.2 220.3 127.6 216.9 138.7Z"></path></g><g class="m-well__band" style="--well-d:0.89"><path d="M194.4 122.7C192 130.3 186.2 138.5 179.8 143.4C173.4 148.2 163.9 151.4 155.9 151.5C147.9 151.6 138.3 148.7 131.7 144C125.2 139.4 119.1 131.4 116.6 123.8C114 116.2 113.8 106.2 116.2 98.5C118.6 90.8 124.4 82.6 130.8 77.8C137.2 73 146.7 69.8 154.7 69.7C162.7 69.6 172.3 72.5 178.9 77.1C185.4 81.8 191.4 89.8 194 97.4C196.6 105 196.8 115 194.4 122.7Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M172 106.8C170.7 111.1 167.4 115.7 163.8 118.4C160.2 121.2 154.8 123 150.3 123C145.8 123.1 140.4 121.4 136.7 118.8C133 116.2 129.6 111.7 128.2 107.4C126.7 103.2 126.7 97.5 128 93.2C129.3 88.9 132.6 84.3 136.2 81.6C139.8 78.8 145.2 77 149.7 77C154.2 76.9 159.6 78.6 163.3 81.2C167 83.8 170.4 88.3 171.8 92.6C173.3 96.8 173.3 102.5 172 106.8Z"></path></g></svg>
+<div class="members__figure m-cutout"><img alt="Teodor, bearded, in a blue checked shirt over a black T-shirt, stands with his arms crossed" height="3024" loading="lazy" src="{{i11|https://images.unsplash.com/flagged/photo-1567514650496-be446ae38bdb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWFuJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MXwwfHx8MTc5MTM3NjAxNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60}}" style="background:#f3f3f3" width="4032"/></div>
+</div>
+<div class="members__body">
+<span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span>
+<h3 class="m-text-6">{{t81|Teodor Lund}}</h3>
+<p class="m-text-4 members__trade">{{t82|Novelist}}</p>
+<p class="m-text members__quote">{{t83|“Booth four, every morning for two winters. The book has the same number of chapters as there are bands on the wall.”}}</p>
+</div>
+</li>
+<li class="members__item" data-level="1">
+<div class="members__portrait" data-8b-motion="ripple">
+<svg aria-hidden="true" class="m-well-3 member__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.11"><path d="M367.7 236.9C357.8 268.9 333.7 303.2 306.8 323.3C280 343.4 240.3 356.9 206.8 357.4C173.3 357.9 133.2 345.5 105.8 326.1C78.4 306.8 53.2 273.2 42.4 241.5C31.6 209.8 31 167.8 40.9 135.8C50.8 103.8 75 69.5 101.9 49.4C128.7 29.3 168.4 15.8 201.9 15.3C235.4 14.9 275.5 27.3 302.9 46.6C330.3 65.9 355.4 99.5 366.3 131.2C377.1 162.9 377.7 204.9 367.7 236.9Z"></path></g><g class="m-well__band" style="--well-d:0.22"><path d="M353.1 218.4C344.4 246.8 322.9 277.2 299.2 295C275.4 312.7 240.2 324.7 210.5 325.2C180.8 325.6 145.3 314.6 121.1 297.5C96.8 280.4 74.5 250.6 65 222.5C55.4 194.4 54.9 157.2 63.6 128.9C72.4 100.5 93.8 70.1 117.6 52.3C141.4 34.5 176.6 22.6 206.2 22.1C235.9 21.7 271.4 32.7 295.7 49.8C320 66.9 342.2 96.7 351.8 124.8C361.4 152.9 361.9 190.1 353.1 218.4Z"></path></g><g class="m-well__band" style="--well-d:0.33"><path d="M338.9 200.4C331.2 225.2 312.5 251.8 291.7 267.3C270.9 282.9 240.2 293.4 214.2 293.7C188.2 294.1 157.2 284.5 136 269.5C114.8 254.6 95.3 228.6 86.9 204C78.5 179.4 78.1 146.9 85.7 122.1C93.4 97.3 112.1 70.7 132.9 55.2C153.7 39.6 184.5 29.1 210.4 28.8C236.4 28.4 267.5 38 288.7 53C309.9 67.9 329.4 94 337.7 118.5C346.1 143.1 346.6 175.6 338.9 200.4Z"></path></g><g class="m-well__band" style="--well-d:0.44"><path d="M324.9 182.7C318.3 204 302.2 226.8 284.4 240.2C266.5 253.6 240.1 262.6 217.8 262.9C195.5 263.2 168.8 254.9 150.6 242.1C132.4 229.2 115.7 206.9 108.5 185.8C101.3 164.7 100.9 136.8 107.5 115.5C114.1 94.2 130.2 71.3 148 58C165.9 44.6 192.3 35.6 214.6 35.3C236.9 35 263.6 43.2 281.8 56.1C300 68.9 316.7 91.3 323.9 112.4C331.1 133.5 331.5 161.4 324.9 182.7Z"></path></g><g class="m-well__band" style="--well-d:0.56"><path d="M311.1 165.2C305.6 183.1 292.1 202.2 277.1 213.4C262.2 224.6 240.1 232.1 221.4 232.4C202.7 232.7 180.4 225.7 165.1 215C149.8 204.2 135.8 185.5 129.8 167.8C123.8 150.1 123.4 126.7 128.9 108.9C134.5 91 147.9 71.9 162.9 60.7C177.9 49.5 200 42 218.7 41.7C237.4 41.5 259.7 48.4 275 59.2C290.2 69.9 304.2 88.6 310.3 106.3C316.3 124 316.6 147.4 311.1 165.2Z"></path></g><g class="m-well__band" style="--well-d:0.67"><path d="M297.4 147.9C293 162.4 282.1 177.8 270 186.9C257.9 195.9 240 202 224.9 202.2C209.8 202.4 191.7 196.8 179.4 188.1C167.1 179.4 155.7 164.3 150.9 150C146 135.7 145.7 116.8 150.2 102.4C154.7 88 165.6 72.5 177.6 63.5C189.7 54.4 207.6 48.3 222.7 48.1C237.8 47.9 255.9 53.5 268.2 62.2C280.6 70.9 291.9 86 296.7 100.3C301.6 114.6 301.9 133.5 297.4 147.9Z"></path></g><g class="m-well__band" style="--well-d:0.78"><path d="M283.9 130.8C280.4 141.8 272.1 153.6 262.9 160.5C253.6 167.5 239.9 172.1 228.4 172.3C216.9 172.4 203 168.2 193.6 161.5C184.2 154.9 175.5 143.3 171.8 132.4C168.1 121.4 167.9 107 171.3 95.9C174.7 84.9 183 73.1 192.3 66.2C201.5 59.3 215.2 54.6 226.7 54.4C238.3 54.3 252.1 58.6 261.5 65.2C271 71.9 279.6 83.4 283.3 94.4C287.1 105.3 287.3 119.7 283.9 130.8Z"></path></g><g class="m-well__band" style="--well-d:0.89"><path d="M270.4 113.7C268 121.4 262.2 129.6 255.8 134.4C249.4 139.2 239.9 142.5 231.9 142.6C223.9 142.7 214.3 139.7 207.7 135.1C201.2 130.5 195.1 122.4 192.6 114.8C190 107.3 189.8 97.2 192.2 89.6C194.6 81.9 200.4 73.7 206.8 68.9C213.2 64.1 222.7 60.8 230.7 60.7C238.7 60.6 248.3 63.6 254.9 68.2C261.4 72.8 267.4 80.9 270 88.4C272.6 96 272.8 106.1 270.4 113.7Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M257 96.8C255.7 101.1 252.4 105.7 248.8 108.4C245.2 111.2 239.8 113 235.3 113C230.8 113.1 225.4 111.4 221.7 108.8C218 106.2 214.6 101.7 213.2 97.4C211.7 93.2 211.7 87.5 213 83.2C214.3 78.9 217.6 74.3 221.2 71.6C224.8 68.8 230.2 67 234.7 67C239.2 66.9 244.6 68.6 248.3 71.2C252 73.8 255.4 78.3 256.8 82.6C258.3 86.8 258.3 92.5 257 96.8Z"></path></g></svg>
+<div class="members__figure m-cutout"><img alt="Arun, an older man with heavy black glasses, looks straight ahead" height="3456" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1606595704310-edb61efaafd4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8b2xkZXIlMjBtYW4lMjBnbGFzc2VzJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MXwwfHx8MTc5MTI5NTU0NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60}}" style="background:#d9d9d9" width="5184"/></div>
+</div>
+<div class="members__body">
+<span class="m-badge-3"><span aria-hidden="true" class="m-badge__swatch"></span>{{t27|Level 1}}</span>
+<h3 class="m-text-6">{{t84|Arun Desai}}</h3>
+<p class="m-text-4 members__trade">{{t85|Translator}}</p>
+<p class="m-text members__quote">{{t86|“At eighty-one I finally have an office with no telephone. I translate a page a day and leave at four.”}}</p>
+</div>
+</li>
+</ul>
+</div>
+</section>{{/sec_members}}
+
+{{#sec_evenings}}<section data-8b-section="evenings" id="evenings">
+<div class="shell evenings__head">
+<div class="evenings__text">
+<h2 class="m-text-3" data-8b-motion="rise">{{t87|Surfacing, on Thursday evenings.}}</h2>
+<p class="m-text-5">{{t88|Once a week the building comes up for air. A member talks for twenty minutes about how they finished something, then the roof opens.}}</p>
+</div>
+<figure class="m-print evenings__print">
+<span aria-hidden="true" class="m-print__clip"></span><span aria-hidden="true" class="m-print__clip"></span>
+<div class="m-print__sheet"><img alt="A small audience in a bright room listens to a talk" height="2832" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1655337690778-694dda7f4454?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHNtYWxsJTIwYXVkaWVuY2UlMjBsaXN0ZW5pbmclMjB0YWxrfGVufDF8MHx8fDE3OTEyOTUyMTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=460&q=60}}" style="background:#d9d9d9" width="4240"/></div>
+</figure>
+</div>
+<ol class="evenings__list">
+<li class="evenings__row">
+<div class="shell evenings__inner">
+<p class="evenings__date"><span class="evenings__day">{{t89|16 Oct}}</span><span class="m-text-4">{{t90|Thursday, 18:30}}</span></p>
+<div><h3 class="m-text-6 evenings__title">{{t91|How to end a long book}}</h3><p class="m-text">{{t92|Teodor Lund on the last forty pages and the two winters it took to reach them.}}</p></div>
+<div class="evenings__meta"><span class="m-text-4">{{t93|On the roof}}</span><a class="m-link" href="#visit">{{t94|Save a seat}}</a></div>
+</div>
+</li>
+<li class="evenings__row">
+<div class="shell evenings__inner">
+<p class="evenings__date"><span class="evenings__day">{{t95|23 Oct}}</span><span class="m-text-4">{{t90|Thursday, 18:30}}</span></p>
+<div><h3 class="m-text-6 evenings__title">{{t96|Silence is a material}}</h3><p class="m-text">{{t97|Ines Varga plays the rooms of the building back to us, one recording per floor.}}</p></div>
+<div class="evenings__meta"><span class="m-text-4">{{t21|Level 3}}</span><a class="m-link" href="#visit">{{t94|Save a seat}}</a></div>
+</div>
+</li>
+<li class="evenings__row">
+<div class="shell evenings__inner">
+<p class="evenings__date"><span class="evenings__day">{{t98|30 Oct}}</span><span class="m-text-4">{{t90|Thursday, 18:30}}</span></p>
+<div><h3 class="m-text-6 evenings__title">{{t99|A page a day for forty years}}</h3><p class="m-text">{{t100|Arun Desai on slowness, dictionaries and the joy of an office without a phone.}}</p></div>
+<div class="evenings__meta"><span class="m-text-4">{{t21|Level 3}}</span><a class="m-link" href="#visit">{{t94|Save a seat}}</a></div>
+</div>
+</li>
+<li class="evenings__row">
+<div class="shell evenings__inner">
+<p class="evenings__date"><span class="evenings__day">{{t101|6 Nov}}</span><span class="m-text-4">{{t90|Thursday, 18:30}}</span></p>
+<div><h3 class="m-text-6 evenings__title">{{t102|Drawing without an audience}}</h3><p class="m-text">{{t103|Maren Holt shows the sketchbooks behind a picture book nobody saw until it was finished.}}</p></div>
+<div class="evenings__meta"><span class="m-text-4">{{t93|On the roof}}</span><a class="m-link" href="#visit">{{t94|Save a seat}}</a></div>
+</div>
+</li>
+</ol>
+</section>{{/sec_evenings}}
+
+{{#sec_made}}<section data-8b-section="made" id="made">
+<div class="shell">
+<div class="made__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t104|Finished at depth.}}</h2>
+<p class="m-text-5">{{t105|Some of the things members have completed in the building, and the floor where each one was finished.}}</p>
+</div>
+<table class="made__table">
+<caption class="visually-hidden">{{t106|Works completed at ⟦name⟧, with their makers and the level where they were finished}}</caption>
+<thead><tr><th scope="col">{{t107|Work}}</th><th scope="col">{{t108|Kind}}</th><th scope="col">{{t109|Maker}}</th><th scope="col">{{t110|Finished on}}</th></tr></thead>
+<tbody>
+<tr><td class="m-text-6 made__work">{{t111|The Salt Year}}</td><td class="m-text made__kind">{{t112|Novel}}</td><td class="m-text made__maker">{{t81|Teodor Lund}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="1"><span></span><span></span><span></span></span>{{t27|Level 1}}</td></tr>
+<tr><td class="m-text-6 made__work">{{t113|Small Hours}}</td><td class="m-text made__kind">{{t114|Album, eight tracks}}</td><td class="m-text made__maker">{{t75|Ines Varga}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="3"><span></span><span></span><span></span></span>{{t21|Level 3}}</td></tr>
+<tr><td class="m-text-6 made__work">{{t115|Where the Fox Sleeps}}</td><td class="m-text made__kind">{{t116|Picture book}}</td><td class="m-text made__maker">{{t78|Maren Holt}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="2"><span></span><span></span><span></span></span>{{t24|Level 2}}</td></tr>
+<tr><td class="m-text-6 made__work">{{t117|Tidewater Grotesk}}</td><td class="m-text made__kind">{{t118|Typeface, four weights}}</td><td class="m-text made__maker">{{t119|Pell Okafor}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="2"><span></span><span></span><span></span></span>{{t24|Level 2}}</td></tr>
+<tr><td class="m-text-6 made__work">{{t120|The Collected Letters of R. Anand}}</td><td class="m-text made__kind">{{t121|Translation}}</td><td class="m-text made__maker">{{t84|Arun Desai}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="1"><span></span><span></span><span></span></span>{{t27|Level 1}}</td></tr>
+<tr><td class="m-text-6 made__work">{{t122|Soil Memory}}</td><td class="m-text made__kind">{{t123|Doctoral thesis}}</td><td class="m-text made__maker">{{t124|Lise Brandt}}</td><td class="m-text-4"><span aria-hidden="true" class="made__swatch" data-8b-motion="step" data-level="1"><span></span><span></span><span></span></span>{{t27|Level 1}}</td></tr>
+</tbody>
+</table>
+</div>
+</section>{{/sec_made}}
+
+{{#sec_plans}}<section data-8b-section="plans" id="plans">
+<div class="shell">
+<div class="plans__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t125|How deep a membership goes.}}</h2>
+<p class="m-text-5">{{t126|Every plan opens the top floors. The deeper the plan, the further down your key works.}}</p>
+</div>
+<ul class="plans__list">
+<li class="plans__item">
+<svg aria-hidden="true" class="m-well-2 plan__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M366.7 248C356.4 281.2 331.4 316.7 303.6 337.5C275.8 358.3 234.6 372.3 199.9 372.8C165.2 373.3 123.6 360.5 95.2 340.5C66.9 320.5 40.8 285.6 29.6 252.8C18.4 219.9 17.8 176.4 28.1 143.3C38.3 110.1 63.4 74.5 91.2 53.7C119 32.9 160.1 18.9 194.9 18.4C229.6 17.9 271.1 30.8 299.5 50.8C327.9 70.8 353.9 105.6 365.1 138.5C376.3 171.3 376.9 214.8 366.7 248Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M351.1 239.9C341.6 270.5 318.5 303.2 292.9 322.4C267.2 341.6 229.3 354.5 197.2 355C165.2 355.4 126.9 343.6 100.7 325.1C74.6 306.7 50.5 274.6 40.2 244.3C29.9 213.9 29.3 173.8 38.8 143.2C48.2 112.7 71.4 79.9 97 60.7C122.6 41.5 160.6 28.6 192.6 28.1C224.6 27.7 263 39.5 289.1 58C315.3 76.4 339.3 108.5 349.7 138.8C360 169.2 360.6 209.3 351.1 239.9Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M335.9 231.9C327.2 260 306 290.1 282.5 307.7C258.9 325.3 224.1 337.2 194.7 337.6C165.3 338 130.1 327.1 106.1 310.2C82.1 293.3 60 263.8 50.5 236C41 208.1 40.5 171.3 49.2 143.2C57.9 115.2 79.1 85.1 102.6 67.5C126.2 49.8 161 38 190.4 37.6C219.8 37.1 255 48 279 65C303 81.9 325.1 111.4 334.6 139.2C344.1 167 344.6 203.8 335.9 231.9Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M321 224.1C313 249.7 293.7 277.2 272.2 293.3C250.7 309.3 219 320.1 192.1 320.5C165.3 320.9 133.3 311 111.3 295.5C89.4 280.1 69.3 253.2 60.7 227.8C52 202.4 51.5 168.9 59.5 143.2C67.4 117.6 86.7 90.2 108.2 74.1C129.7 58 161.5 47.2 188.3 46.8C215.1 46.5 247.2 56.4 269.1 71.8C291 87.3 311.1 114.2 319.8 139.6C328.4 164.9 328.9 198.5 321 224.1Z"></path></g></svg>
+<div class="plans__body">
+<h3 class="m-text-6">{{t127|Day pass}}</h3>
+<p class="plans__price">{{t128|€24}} <small>{{t129|a day}}</small></p>
+<ul class="plans__features m-text">
+<li>{{t130|Levels 3 and 2}}</li>
+<li>{{t131|Lunch on the roof}}</li>
+<li>{{t132|Bookable a week ahead}}</li>
+</ul>
+<a class="m-btn-2" href="#visit"><span class="m-btn-2__label">{{t9|Book a day}}</span></a>
+</div>
+</li>
+<li class="plans__item">
+<svg aria-hidden="true" class="m-well plan__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M371.9 248.9C361.7 282 336.6 317.6 308.8 338.4C281 359.2 239.9 373.2 205.1 373.7C170.4 374.2 128.9 361.4 100.5 341.3C72.1 321.3 46.1 286.5 34.9 253.6C23.7 220.8 23.1 177.3 33.3 144.1C43.6 111 68.6 75.4 96.4 54.6C124.2 33.8 165.4 19.8 200.1 19.3C234.8 18.8 276.4 31.7 304.8 51.7C333.1 71.7 359.2 106.5 370.4 139.4C381.6 172.2 382.2 215.7 371.9 248.9Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M361.2 241.5C351.8 272.1 328.6 304.9 303 324.1C277.4 343.3 239.4 356.2 207.4 356.7C175.4 357.1 137 345.3 110.9 326.8C84.7 308.4 60.7 276.3 50.3 245.9C40 215.6 39.4 175.5 48.9 144.9C58.4 114.3 81.5 81.6 107.1 62.4C132.8 43.2 170.7 30.3 202.8 29.8C234.8 29.3 273.1 41.2 299.3 59.7C325.4 78.1 349.5 110.2 359.8 140.5C370.1 170.9 370.7 211 361.2 241.5Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M350.8 234.4C342.1 262.5 320.9 292.6 297.4 310.2C273.8 327.8 239 339.7 209.6 340.1C180.2 340.5 145 329.6 121 312.7C97 295.7 74.9 266.3 65.4 238.4C55.9 210.6 55.4 173.8 64.1 145.7C72.8 117.6 94 87.6 117.5 69.9C141.1 52.3 175.9 40.5 205.3 40C234.7 39.6 269.9 50.5 293.9 67.4C317.9 84.4 340 113.9 349.5 141.7C359 169.5 359.5 206.3 350.8 234.4Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M340.5 227.4C332.6 253 313.3 280.4 291.8 296.5C270.3 312.6 238.5 323.4 211.7 323.8C184.9 324.2 152.8 314.2 130.9 298.8C109 283.3 88.9 256.5 80.2 231.1C71.6 205.7 71.1 172.1 79 146.5C87 120.9 106.3 93.4 127.8 77.4C149.3 61.3 181 50.5 207.9 50.1C234.7 49.7 266.7 59.6 288.7 75.1C310.6 90.6 330.7 117.4 339.3 142.8C348 168.2 348.5 201.8 340.5 227.4Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M330.4 220.5C323.2 243.6 305.7 268.5 286.3 283C266.9 297.5 238.1 307.3 213.9 307.7C189.6 308 160.6 299 140.7 285.1C120.9 271.1 102.7 246.8 94.9 223.8C87.1 200.8 86.6 170.4 93.8 147.3C101 124.1 118.5 99.3 137.9 84.7C157.3 70.2 186.1 60.4 210.3 60C234.6 59.7 263.6 68.7 283.5 82.7C303.3 96.6 321.5 121 329.3 143.9C337.1 166.9 337.6 197.3 330.4 220.5Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M320.4 213.6C314 234.4 298.3 256.6 280.9 269.6C263.5 282.7 237.7 291.4 216 291.7C194.2 292.1 168.2 284 150.5 271.5C132.7 259 116.4 237.2 109.4 216.6C102.4 196 102 168.8 108.4 148C114.8 127.3 130.5 105 147.9 92C165.3 79 191.1 70.2 212.8 69.9C234.6 69.6 260.6 77.6 278.3 90.1C296.1 102.7 312.4 124.5 319.4 145C326.4 165.6 326.8 192.8 320.4 213.6Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M310.4 206.8C304.8 225.2 290.9 244.9 275.5 256.4C260.1 267.9 237.3 275.7 218.1 275.9C198.8 276.2 175.8 269.1 160.1 258C144.4 246.9 129.9 227.6 123.7 209.4C117.5 191.2 117.2 167.1 122.9 148.8C128.6 130.4 142.4 110.7 157.8 99.2C173.2 87.7 196 79.9 215.3 79.6C234.5 79.4 257.5 86.5 273.2 97.6C288.9 108.6 303.4 127.9 309.6 146.1C315.8 164.3 316.1 188.4 310.4 206.8Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M300.6 200C295.6 216 283.5 233.2 270.1 243.2C256.7 253.2 236.9 260 220.1 260.2C203.4 260.5 183.3 254.3 169.7 244.6C156 235 143.4 218.2 138 202.3C132.6 186.5 132.3 165.5 137.3 149.5C142.2 133.5 154.3 116.4 167.7 106.4C181.1 96.3 201 89.6 217.7 89.3C234.4 89.1 254.5 95.3 268.2 104.9C281.9 114.6 294.4 131.4 299.8 147.2C305.2 163.1 305.5 184 300.6 200Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M290.8 193.3C286.5 207 276.2 221.6 264.8 230.1C253.4 238.7 236.5 244.4 222.2 244.6C207.9 244.8 190.8 239.6 179.2 231.3C167.5 223.1 156.8 208.8 152.2 195.3C147.6 181.8 147.3 163.9 151.6 150.3C155.8 136.6 166.1 122 177.5 113.5C188.9 104.9 205.8 99.1 220.1 98.9C234.4 98.7 251.5 104 263.1 112.3C274.8 120.5 285.5 134.8 290.1 148.3C294.7 161.8 295 179.7 290.8 193.3Z"></path></g></svg>
+<div class="plans__body">
+<h3 class="m-text-6">{{t133|Member}}</h3>
+<p class="plans__price">{{t134|€190}} <small>{{t135|a month}}</small></p>
+<ul class="plans__features m-text">
+<li>{{t136|All three levels, weekdays}}</li>
+<li>{{t137|Two booth blocks a week}}</li>
+<li>{{t138|Thursday evenings included}}</li>
+</ul>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t139|Become a member}}</span></a>
+</div>
+</li>
+<li class="plans__item">
+<svg aria-hidden="true" class="m-well-3 plan__well" focusable="false" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 400"><g class="m-well__band" style="--well-d:0"><path d="M383.4 256.7C372.3 292.7 345.2 331.2 315 353.7C284.9 376.3 240.3 391.4 202.7 392C165.1 392.5 120.1 378.6 89.4 356.9C58.6 335.2 30.4 297.5 18.3 261.9C6.1 226.3 5.5 179.2 16.6 143.3C27.7 107.3 54.8 68.8 85 46.3C115.1 23.7 159.7 8.6 197.3 8C234.9 7.5 279.9 21.4 310.6 43.1C341.4 64.8 369.6 102.5 381.7 138.1C393.9 173.7 394.5 220.8 383.4 256.7Z"></path></g><g class="m-well__band" style="--well-d:0.08"><path d="M368.4 255.9C358.2 289 333.1 324.6 305.3 345.4C277.5 366.2 236.4 380.2 201.6 380.7C166.9 381.2 125.4 368.3 97 348.3C68.6 328.3 42.6 293.5 31.4 260.6C20.2 227.8 19.6 184.3 29.8 151.1C40.1 118 65.1 82.4 92.9 61.6C120.7 40.8 161.9 26.8 196.6 26.3C231.3 25.8 272.9 38.6 301.3 58.7C329.6 78.7 355.7 113.5 366.9 146.4C378.1 179.2 378.7 222.7 368.4 255.9Z"></path></g><g class="m-well__band" style="--well-d:0.15"><path d="M354.5 255.1C345 285.7 321.9 318.4 296.3 337.6C270.6 356.8 232.6 369.7 200.6 370.2C168.6 370.7 130.3 358.8 104.1 340.3C77.9 321.9 53.9 289.8 43.6 259.5C33.3 229.1 32.7 189 42.2 158.5C51.6 127.9 74.7 95.1 100.4 75.9C126 56.7 164 43.8 196 43.3C228 42.9 266.3 54.7 292.5 73.2C318.7 91.6 342.7 123.7 353 154.1C363.4 184.4 363.9 224.5 354.5 255.1Z"></path></g><g class="m-well__band" style="--well-d:0.23"><path d="M340.9 254.3C332.2 282.4 311 312.4 287.4 330.1C263.9 347.7 229 359.5 199.6 360C170.2 360.4 135.1 349.5 111.1 332.6C87 315.6 65 286.1 55.5 258.3C46 230.5 45.5 193.7 54.2 165.6C62.9 137.5 84.1 107.4 107.6 89.8C131.1 72.2 166 60.3 195.4 59.9C224.8 59.5 260 70.4 284 87.3C308 104.3 330.1 133.7 339.5 161.6C349 189.4 349.5 226.2 340.9 254.3Z"></path></g><g class="m-well__band" style="--well-d:0.31"><path d="M327.5 253.5C319.6 279.1 300.2 306.6 278.7 322.6C257.3 338.7 225.5 349.5 198.7 349.9C171.9 350.3 139.8 340.4 117.9 324.9C96 309.4 75.8 282.6 67.2 257.2C58.5 231.8 58.1 198.2 66 172.6C73.9 147 93.3 119.6 114.7 103.5C136.2 87.4 168 76.6 194.8 76.2C221.6 75.8 253.7 85.8 275.6 101.2C297.5 116.7 317.6 143.5 326.3 168.9C334.9 194.3 335.4 227.9 327.5 253.5Z"></path></g><g class="m-well__band" style="--well-d:0.38"><path d="M314.3 252.7C307.1 275.9 289.6 300.7 270.2 315.3C250.7 329.8 222 339.6 197.7 340C173.5 340.3 144.4 331.3 124.6 317.3C104.8 303.4 86.6 279 78.7 256.1C70.9 233.1 70.5 202.7 77.7 179.5C84.8 156.4 102.3 131.5 121.8 117C141.2 102.5 170 92.7 194.2 92.3C218.5 92 247.5 101 267.3 114.9C287.2 128.9 305.4 153.2 313.2 176.2C321 199.2 321.4 229.6 314.3 252.7Z"></path></g><g class="m-well__band" style="--well-d:0.46"><path d="M301.2 252C294.8 272.7 279.1 295 261.7 308C244.3 321 218.5 329.8 196.8 330.1C175 330.4 149 322.4 131.3 309.9C113.5 297.3 97.2 275.5 90.2 255C83.2 234.4 82.8 207.2 89.2 186.4C95.6 165.6 111.3 143.4 128.7 130.4C146.1 117.3 171.9 108.6 193.6 108.3C215.4 107.9 241.4 116 259.1 128.5C276.9 141 293.2 162.8 300.2 183.4C307.2 204 307.6 231.2 301.2 252Z"></path></g><g class="m-well__band" style="--well-d:0.54"><path d="M288.2 251.2C282.5 269.6 268.7 289.3 253.3 300.8C237.9 312.3 215.1 320.1 195.8 320.4C176.6 320.6 153.6 313.5 137.9 302.4C122.2 291.4 107.7 272.1 101.5 253.9C95.3 235.7 95 211.6 100.7 193.2C106.4 174.8 120.2 155.1 135.6 143.6C151 132.1 173.8 124.3 193.1 124.1C212.3 123.8 235.3 130.9 251 142C266.7 153.1 281.2 172.4 287.4 190.6C293.6 208.8 293.9 232.9 288.2 251.2Z"></path></g><g class="m-well__band" style="--well-d:0.62"><path d="M275.3 250.5C270.4 266.5 258.3 283.6 244.9 293.6C231.5 303.7 211.6 310.4 194.9 310.7C178.2 310.9 158.1 304.7 144.4 295.1C130.8 285.4 118.2 268.6 112.8 252.8C107.4 236.9 107.1 216 112 200C117 184 129.1 166.8 142.5 156.8C155.9 146.8 175.7 140 192.5 139.8C209.2 139.5 229.3 145.7 242.9 155.4C256.6 165 269.2 181.8 274.6 197.7C280 213.5 280.3 234.5 275.3 250.5Z"></path></g><g class="m-well__band" style="--well-d:0.69"><path d="M262.6 249.7C258.3 263.4 248 278 236.6 286.5C225.2 295.1 208.3 300.9 194 301.1C179.7 301.3 162.6 296 151 287.7C139.3 279.5 128.6 265.2 124 251.7C119.4 238.2 119.1 220.3 123.3 206.7C127.6 193 137.9 178.4 149.3 169.9C160.7 161.3 177.6 155.6 191.9 155.4C206.2 155.2 223.3 160.4 234.9 168.7C246.6 176.9 257.3 191.2 261.9 204.7C266.5 218.2 266.8 236.1 262.6 249.7Z"></path></g><g class="m-well__band" style="--well-d:0.77"><path d="M249.8 249C246.3 260.3 237.8 272.4 228.3 279.5C218.9 286.5 204.9 291.3 193.1 291.5C181.2 291.7 167.1 287.3 157.4 280.5C147.8 273.7 138.9 261.8 135.1 250.6C131.3 239.4 131.1 224.6 134.6 213.4C138.1 202.1 146.6 190 156.1 182.9C165.5 175.8 179.5 171 191.4 170.9C203.2 170.7 217.3 175.1 227 181.9C236.6 188.7 245.5 200.5 249.3 211.7C253.1 222.9 253.3 237.7 249.8 249Z"></path></g><g class="m-well__band" style="--well-d:0.85"><path d="M237.2 248.3C234.4 257.2 227.6 266.8 220.1 272.4C212.6 278 201.5 281.8 192.1 282C182.8 282.1 171.6 278.6 163.9 273.2C156.2 267.8 149.2 258.4 146.2 249.6C143.2 240.7 143 228.9 145.8 220C148.5 211 155.3 201.4 162.8 195.8C170.3 190.2 181.4 186.4 190.8 186.3C200.2 186.2 211.4 189.6 219 195C226.7 200.4 233.7 209.8 236.7 218.7C239.8 227.6 239.9 239.3 237.2 248.3Z"></path></g><g class="m-well__band" style="--well-d:0.92"><path d="M224.6 247.5C222.5 254.2 217.5 261.3 212 265.4C206.4 269.6 198.2 272.4 191.2 272.5C184.3 272.6 176 270 170.3 266C164.7 262 159.4 255.1 157.2 248.5C155 241.9 154.9 233.2 156.9 226.6C159 220 164 212.9 169.5 208.7C175.1 204.6 183.3 201.8 190.2 201.7C197.2 201.6 205.5 204.1 211.1 208.1C216.8 212.1 222 219.1 224.3 225.7C226.5 232.2 226.6 240.9 224.6 247.5Z"></path></g><g class="m-well__band" style="--well-d:1"><path d="M212 246.8C210.7 251.1 207.4 255.7 203.8 258.4C200.2 261.2 194.8 263 190.3 263C185.8 263.1 180.4 261.4 176.7 258.8C173 256.2 169.6 251.7 168.2 247.4C166.7 243.2 166.7 237.5 168 233.2C169.3 228.9 172.6 224.3 176.2 221.6C179.8 218.8 185.2 217 189.7 217C194.2 216.9 199.6 218.6 203.3 221.2C207 223.8 210.4 228.3 211.8 232.6C213.3 236.8 213.3 242.5 212 246.8Z"></path></g></svg>
+<div class="plans__body">
+<h3 class="m-text-6">{{t140|Resident}}</h3>
+<p class="plans__price">{{t141|€340}} <small>{{t135|a month}}</small></p>
+<ul class="plans__features m-text">
+<li>{{t142|Your own carrel on Level 1}}</li>
+<li>{{t143|A key to the building, seven days}}</li>
+<li>{{t144|A locker that stays yours}}</li>
+</ul>
+<a class="m-btn-2" href="#visit"><span class="m-btn-2__label">{{t145|Ask about a carrel}}</span></a>
+</div>
+</li>
+</ul>
+</div>
+</section>{{/sec_plans}}
+
+{{#sec_visit}}<section data-8b-section="visit" id="visit">
+<div class="shell visit__grid">
+<div>
+<div class="visit__head">
+<h2 class="m-text-3" data-8b-motion="rise">{{t146|Come down for a day.}}</h2>
+<p class="m-text-5">{{t147|Ask for a tour and we will walk you from the roof to the carrels in fifteen minutes, quietly on the way down.}}</p>
+</div>
+<dl class="visit__facts">
+<div><dt class="m-text-4">{{t148|Address}}</dt><dd class="m-text">{{t149|14 Wren Yard}}<br/>{{t150|Abuja}}</dd></div>
+<div><dt class="m-text-4">{{t151|Hours}}</dt><dd class="m-text">{{t152|Weekdays 7:30 to 21:00}}<br/>{{t153|Residents every day}}</dd></div>
+<div><dt class="m-text-4">{{t154|Phone}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t155|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-4">{{t156|Email}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t157|hello@isoline.example}}</a></dd></div>
+</dl>
+</div>
+<div>
+<div class="visit__map" data-8b-motion="ripple">
+<svg aria-hidden="true" class="visit__map-lines" focusable="false" preserveaspectratio="xMidYMid slice" viewbox="0 0 800 600"><g class="visit__iso"><path d="M-60 -60C36.7 -120 410 -90 520 -60C630 -30 593.3 55 600 120C606.7 185 588.3 271.7 560 330C531.7 388.3 485 438.3 430 470C375 501.7 295 520 230 520C165 520 88.3 506.7 40 470C-8.3 433.3 -43.3 388.3 -60 300C-76.7 211.7 -156.7 0 -60 -60Z" style="--well-d:0"></path><path d="M-23 -30.4C63.8 -84.2 398.8 -57.3 497.5 -30.4C596.2 -3.5 563.3 72.8 569.3 131.1C575.3 189.5 558.8 267.3 533.4 319.6C508 372 466.1 416.8 416.7 445.3C367.4 473.7 295.6 490.1 237.3 490.1C178.9 490.1 110.1 478.2 66.7 445.3C23.4 412.3 -8 372 -23 292.7C-38 213.4 -109.8 23.5 -23 -30.4Z" style="--well-d:0.08"></path><path d="M9 -4.7C87.2 -53.3 389.1 -29 478 -4.7C567 19.5 537.3 88.2 542.7 140.8C548.1 193.4 533.3 263.4 510.4 310.6C487.5 357.8 449.7 398.2 405.3 423.8C360.8 449.4 296.1 464.2 243.5 464.2C191 464.2 129 453.5 89.9 423.8C50.8 394.2 22.5 357.8 9 286.4C-4.4 214.9 -69.1 43.8 9 -4.7Z" style="--well-d:0.17"></path><path d="M39.4 19.6C109.5 -23.9 379.9 -2.1 459.5 19.6C539.2 41.3 512.7 102.9 517.5 150C522.3 197 509 259.8 488.5 302.1C468 344.3 434.2 380.5 394.4 403.5C354.5 426.4 296.6 439.7 249.5 439.7C202.4 439.7 146.9 430 111.9 403.5C76.9 376.9 51.5 344.3 39.4 280.3C27.4 216.4 -30.6 63 39.4 19.6Z" style="--well-d:0.25"></path><path d="M68.8 43.1C131 4.5 371 23.8 441.7 43.1C512.4 62.4 488.8 117 493.1 158.8C497.4 200.6 485.6 256.3 467.4 293.8C449.2 331.3 419.2 363.5 383.8 383.8C348.5 404.2 297 416 255.3 416C213.5 416 164.2 407.4 133.1 383.8C102.1 360.2 79.6 331.3 68.8 274.5C58.1 217.7 6.7 81.7 68.8 43.1Z" style="--well-d:0.33"></path><path d="M97.5 66C152 32.2 362.3 49.1 424.3 66C486.2 82.9 465.6 130.8 469.3 167.5C473.1 204.1 462.8 252.9 446.8 285.8C430.8 318.6 404.5 346.8 373.6 364.6C342.6 382.5 297.5 392.8 260.9 392.8C224.3 392.8 181.1 385.3 153.8 364.6C126.6 344 106.9 318.6 97.5 268.9C88.1 219.1 43 99.8 97.5 66Z" style="--well-d:0.42"></path><path d="M125.6 88.5C172.5 59.4 353.8 74 407.2 88.5C460.6 103.1 442.8 144.4 446 175.9C449.3 207.5 440.4 249.6 426.6 277.9C412.9 306.2 390.2 330.5 363.5 345.9C336.8 361.2 297.9 370.1 266.4 370.1C234.8 370.1 197.6 363.7 174.1 345.9C150.7 328.1 133.7 306.2 125.6 263.3C117.5 220.4 78.6 117.7 125.6 88.5Z" style="--well-d:0.5"></path><path d="M153.2 110.6C192.7 86.1 345.4 98.4 390.4 110.6C435.4 122.9 420.4 157.7 423.1 184.2C425.9 210.8 418.4 246.3 406.8 270.1C395.2 294 376.1 314.4 353.6 327.4C331.1 340.3 298.4 347.8 271.8 347.8C245.2 347.8 213.9 342.4 194.1 327.4C174.3 312.4 160 294 153.2 257.9C146.4 221.7 113.7 135.2 153.2 110.6Z" style="--well-d:0.58"></path><path d="M180.4 132.4C212.7 112.4 337.2 122.4 373.9 132.4C410.5 142.4 398.3 170.8 400.5 192.4C402.8 214.1 396.7 243 387.2 262.5C377.8 281.9 362.2 298.6 343.8 309.2C325.5 319.7 298.8 325.9 277.1 325.9C255.5 325.9 229.9 321.4 213.8 309.2C197.7 296.9 186 281.9 180.4 252.5C174.9 223 148.2 152.4 180.4 132.4Z" style="--well-d:0.67"></path><path d="M207.3 153.9C232.3 138.4 329 146.2 357.5 153.9C386 161.7 376.5 183.7 378.2 200.5C380 217.4 375.2 239.8 367.9 254.9C360.5 270 348.5 283 334.2 291.2C320 299.4 299.2 304.1 282.4 304.1C265.6 304.1 245.7 300.7 233.2 291.2C220.7 281.7 211.6 270 207.3 247.2C203 224.3 182.3 169.5 207.3 153.9Z" style="--well-d:0.75"></path><path d="M233.9 175.2C251.8 164.1 321 169.6 341.4 175.2C361.7 180.8 354.9 196.5 356.2 208.6C357.4 220.6 354 236.7 348.8 247.5C343.5 258.3 334.9 267.5 324.7 273.4C314.5 279.3 299.7 282.7 287.6 282.7C275.6 282.7 261.4 280.2 252.4 273.4C243.5 266.6 237 258.3 233.9 241.9C230.8 225.5 216 186.3 233.9 175.2Z" style="--well-d:0.83"></path><path d="M260.2 196.3C271.1 189.5 313 192.9 325.4 196.3C337.7 199.6 333.6 209.2 334.3 216.5C335.1 223.8 333 233.5 329.8 240.1C326.7 246.6 321.4 252.2 315.2 255.8C309.1 259.4 300.1 261.4 292.8 261.4C285.5 261.4 276.9 259.9 271.4 255.8C266 251.7 262.1 246.6 260.2 236.7C258.3 226.8 249.4 203 260.2 196.3Z" style="--well-d:0.92"></path><path d="M286.3 217.2C290.2 214.7 305.1 216 309.5 217.2C313.9 218.3 312.4 221.8 312.7 224.4C313 227 312.2 230.4 311.1 232.8C310 235.1 308.1 237.1 305.9 238.4C303.7 239.6 300.5 240.4 297.9 240.4C295.3 240.4 292.2 239.8 290.3 238.4C288.4 236.9 287 235.1 286.3 231.6C285.6 228 282.4 219.6 286.3 217.2Z" style="--well-d:1"></path></g><g class="visit__iso"><path d="M560 260C596.7 226.7 670 200 720 200C770 200 833.3 216.7 860 260C886.7 303.3 890 396.7 880 460C870 523.3 846.7 606.7 800 640C753.3 673.3 653.3 673.3 600 660C546.7 646.7 496.7 603.3 480 560C463.3 516.7 486.7 450 500 400C513.3 350 523.3 293.3 560 260Z" style="--well-d:0"></path><path d="M580.5 287.7C611.8 259.2 674.6 236.3 717.3 236.3C760.1 236.3 814.3 250.6 837.1 287.7C859.9 324.7 862.7 404.6 854.2 458.7C845.6 512.9 825.7 584.2 785.8 612.7C745.8 641.2 660.3 641.2 614.7 629.8C569.1 618.4 526.3 581.3 512.1 544.3C497.8 507.2 517.8 450.2 529.2 407.4C540.6 364.7 549.1 316.2 580.5 287.7Z" style="--well-d:0.13"></path><path d="M598.2 311.6C625 287.3 678.5 267.8 715 267.8C751.5 267.8 797.8 280 817.2 311.6C836.7 343.3 839.1 411.4 831.8 457.6C824.5 503.9 807.5 564.7 773.4 589.1C739.4 613.4 666.4 613.4 627.4 603.7C588.5 593.9 552 562.3 539.8 530.7C527.7 499 544.7 450.3 554.4 413.8C564.2 377.3 571.5 336 598.2 311.6Z" style="--well-d:0.25"></path><path d="M615.1 334.4C637.5 314 682.3 297.7 712.8 297.7C743.4 297.7 782.1 307.9 798.4 334.4C814.7 360.9 816.7 417.9 810.6 456.6C804.5 495.3 790.3 546.2 761.7 566.6C733.2 587 672.1 587 639.5 578.8C606.9 570.7 576.3 544.2 566.2 517.7C556 491.2 570.2 450.5 578.4 419.9C586.5 389.4 592.6 354.7 615.1 334.4Z" style="--well-d:0.38"></path><path d="M631.3 356.4C649.5 339.8 685.9 326.6 710.7 326.6C735.5 326.6 767 334.8 780.2 356.4C793.4 377.9 795.1 424.2 790.1 455.6C785.2 487 773.6 528.4 750.4 544.9C727.3 561.5 677.6 561.5 651.2 554.9C624.7 548.2 599.9 526.7 591.6 505.2C583.4 483.7 594.9 450.6 601.6 425.8C608.2 401 613.1 372.9 631.3 356.4Z" style="--well-d:0.5"></path><path d="M647.2 377.8C661.3 365 689.5 354.7 708.7 354.7C727.9 354.7 752.2 361.1 762.5 377.8C772.7 394.4 774 430.3 770.1 454.6C766.3 479 757.3 511 739.4 523.8C721.5 536.6 683.1 536.6 662.6 531.5C642.1 526.4 622.9 509.7 616.5 493.1C610 476.4 619 450.8 624.1 431.6C629.3 412.4 633.1 390.6 647.2 377.8Z" style="--well-d:0.63"></path><path d="M662.7 398.8C672.8 389.6 692.9 382.3 706.6 382.3C720.4 382.3 737.7 386.9 745.1 398.8C752.4 410.7 753.3 436.3 750.6 453.7C747.8 471.1 741.4 493.9 728.6 503.1C715.8 512.2 688.4 512.2 673.7 508.6C659.1 504.9 645.4 493 640.8 481.1C636.2 469.2 642.6 450.9 646.3 437.2C649.9 423.5 652.7 407.9 662.7 398.8Z" style="--well-d:0.75"></path><path d="M678 419.4C684.1 413.9 696.3 409.5 704.7 409.5C713 409.5 723.5 412.2 728 419.4C732.4 426.7 733 442.2 731.3 452.7C729.6 463.3 725.7 477.1 718 482.7C710.2 488.2 693.6 488.2 684.7 486C675.8 483.8 667.5 476.6 664.7 469.4C661.9 462.2 665.8 451.1 668 442.7C670.3 434.4 671.9 425 678 419.4Z" style="--well-d:0.88"></path><path d="M693.1 439.8C695.3 437.8 699.7 436.2 702.7 436.2C705.7 436.2 709.5 437.2 711.1 439.8C712.7 442.4 712.9 448 712.3 451.8C711.7 455.6 710.3 460.6 707.5 462.6C704.7 464.6 698.7 464.6 695.5 463.8C692.3 463 689.3 460.4 688.3 457.8C687.3 455.2 688.7 451.2 689.5 448.2C690.3 445.2 690.9 441.8 693.1 439.8Z" style="--well-d:1"></path></g></svg>
+<p class="visit__pin m-text-4"><span>{{t158|⟦name⟧, 14 Wren Yard}}</span></p>
+</div>
+
+</div>
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Coworking by <a href="https://github.com/8bsite/coworking-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="shell">
+<div class="footer__top">
+<p class="m-text">{{t159|A workspace built in layers of quiet.}}<br/>{{t160|14 Wren Yard, Abuja.}}</p>
+<nav aria-label="Footer" class="footer__links">
+<a class="m-link" href="#depths">{{t2|Depths}}</a>
+<a class="m-link" href="#rooms">{{t4|Rooms}}</a>
+<a class="m-link" href="#plans">{{t7|Plans}}</a>
+<a class="m-link" href="#visit">{{t8|Visit}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t161|Email us}}</a>
+</nav>
+</div>
+<p aria-hidden="true" class="footer__word" style="--len:7">{{t1|⟦name⟧}}</p>
+<div class="footer__fine m-text-4">
+<span>{{t162|© 2026 ⟦name⟧ Workrooms Ltd. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t163|8B}}</a></span>
+<span>{{t152|Weekdays 7:30 to 21:00}}</span>
+</div>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const header = document.getElementById('navigation');
+  const openBtn = header.querySelector('.nav__menu');
+  const closeBtn = header.querySelector('.nav__close');
+  const overlay = header.querySelector('.nav__overlay');
+  let last = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (overlay.hasAttribute('data-open')) { last = y; return; }
+    if (y > last + 2 && y > 160) header.setAttribute('data-hidden', '');
+    else if (y < last - 2 || y < 80) header.removeAttribute('data-hidden');
+    last = y;
+  }, { passive: true });
+  header.addEventListener('focusin', () => header.removeAttribute('data-hidden'));
+  const setOpen = open => {
+    overlay.toggleAttribute('data-open', open);
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); overlay.querySelector('a')?.focus(); }
+    else { window.lenis?.start(); openBtn.focus(); }
+  };
+  openBtn.addEventListener('click', () => setOpen(true));
+  closeBtn.addEventListener('click', () => setOpen(false));
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) { overlay.removeAttribute('data-open'); openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && overlay.hasAttribute('data-open')) setOpen(false); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.toggleAttribute('data-offscreen', !entry.isIntersecting)).observe(section);
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  const status = form.querySelector('.visit__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.elements.name.value.trim() && /.+@.+\..+/.test(form.elements.email.value);
+    status.textContent = ok ? status.dataset.sent : status.dataset.missing;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navOffset() { return document.getElementById('navigation').offsetHeight; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .085, wheelMultiplier: .95, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 200); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines', linesClass: 'rise-line' });
+    return gsap.timeline({ ...vars, onComplete: () => split.revert() })
+      .from(split.lines, { yPercent: 110, duration: .9, ease: 'power3.out', stagger: .09 });
+  },
+  hang(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { rotation: -7, transformOrigin: '50% 0%' }, { rotation: 0, duration: 1.8, ease: 'elastic.out(1, .38)' });
+  },
+  ripple(element, vars = {}) {
+    const paths = [...element.querySelectorAll('path')];
+    return gsap.timeline(vars)
+      .from(paths.reverse(), { scale: .15, opacity: 0, transformOrigin: '50% 50%', duration: .9, ease: 'power2.out', stagger: .045 });
+  },
+  step(element, vars = {}) {
+    return gsap.timeline(vars)
+      .from(element.children, { scaleY: 0, transformOrigin: '50% 100%', duration: .35, ease: 'steps(3)', stagger: .14 });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const animation = effects[name](element, { paused: true });
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true, animation });
+      });
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening-fall">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const stage = section.querySelector('.opening__stage');
+    const svg = section.querySelector('.opening__well');
+    const paths = [...svg.querySelectorAll('.m-well__band path')];
+    const depths = paths.map(path => parseFloat(path.parentNode.style.getPropertyValue('--well-d')) || 0);
+    const core = paths[paths.length - 1];
+    const box = core.getBBox();
+    const origin = `${box.x + box.width / 2} ${box.y + box.height / 2}`;
+    const figure = section.querySelector('.opening__figure-move');
+    const holder = figure.parentNode;
+    const lines = section.querySelectorAll('.opening__second [data-line]');
+    const copy = section.querySelector('.opening__copy');
+    const geometry = () => {
+      const ctm = svg.getScreenCTM();
+      const stageBox = stage.getBoundingClientRect();
+      const k = ctm.a;
+      const cx = ctm.e + (box.x + box.width / 2) * k - stageBox.left;
+      const cy = ctm.f + (box.y + box.height / 2) * k - stageBox.top;
+      const w = stageBox.width, h = stageBox.height;
+      const reach = Math.max(Math.hypot(cx, cy), Math.hypot(w - cx, cy), Math.hypot(cx, h - cy), Math.hypot(w - cx, h - cy));
+      const radius = Math.min(box.width, box.height) * k * .42;
+      return { cx, cy, scale: reach / radius * 1.08 };
+    };
+    let g = geometry();
+    const second = section.querySelector('.opening__second');
+    const ground = getComputedStyle(second).backgroundColor;
+    const clear = ground.startsWith('rgba') ? ground.replace(/[\d.]+\)$/, '0)') : ground.replace('rgb(', 'rgba(').replace(')', ', 0)');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        id: 'opening-fall', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .6, invalidateOnRefresh: true,
+        onRefreshInit: () => { g = geometry(); }
+      }
+    });
+    timeline
+      .to(paths, { scale: i => 1 + (g.scale - 1) * Math.pow(depths[i], 2.4), rotation: i => -16 * depths[i], svgOrigin: origin, duration: .74, ease: 'power3.in' }, 0)
+      .to(copy, { y: () => -innerHeight * .16, opacity: 0, duration: .34, ease: 'power1.in' }, .04)
+      .to(figure, {
+        x: () => (g.cx - (holder.offsetLeft + holder.offsetWidth / 2)) * .8,
+        y: () => (g.cy - (holder.offsetTop + holder.offsetHeight / 2)) * .8,
+        scale: .22, duration: .5, ease: 'power1.in'
+      }, 0)
+      .to(figure, { opacity: 0, duration: .12 }, .44)
+      .fromTo(second, { backgroundColor: clear }, { backgroundColor: ground, duration: .03 }, .74)
+      .set(paths.slice(0, -1), { scale: 1, rotation: 0, svgOrigin: origin }, .78)
+      .from(lines, { y: 70, opacity: 0, duration: .2, stagger: .06, ease: 'power2.out' }, .7);
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:depths-lower">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 760px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 759px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('depths');
+    const wall = section.querySelector('.depths__wall');
+    const items = [...section.querySelectorAll('.depths__item')];
+    const parts = items.map(item => ({
+      item,
+      hang: item.querySelector('.depths__hang'),
+      print: item.querySelector('.m-print'),
+      bands: [...item.querySelectorAll('.m-well__band path')].slice(2)
+    }));
+    const swing = i => (i % 2 ? [3.2, -1.8, .8, 0] : [-3.2, 1.8, -.8, 0]);
+    if (context.conditions.wide) {
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+        id: 'depths-lower', trigger: wall, start: 'top 82%', end: 'bottom 72%', scrub: .8, invalidateOnRefresh: true
+      } });
+      parts.forEach(({ item, hang, print, bands }, i) => {
+        const span = .5 + i * .1;
+        timeline
+          .fromTo(hang, { y: () => -(parseFloat(getComputedStyle(item).paddingTop) + innerHeight * .1) }, { y: 0, duration: span, ease: 'power1.inOut' }, i * .04)
+          .to(print, { keyframes: swing(i).map(r => ({ rotation: r })), duration: span, ease: 'sine.inOut', transformOrigin: '50% 0%' }, i * .04);
+        bands.forEach((band, j) => timeline.fromTo(band, { opacity: 0 }, { opacity: 1, duration: .04 }, i * .04 + .04 + j * (span - .12) / bands.length));
+      });
+      timeline.set({}, {}, 1);
+    } else {
+      parts.forEach(({ hang, print, bands }, i) => {
+        const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+          id: `depths-lower:poster-${i}`, trigger: print, start: 'top 95%', end: 'top 35%', scrub: .6, invalidateOnRefresh: true
+        } });
+        timeline
+          .fromTo(hang, { y: () => -innerHeight * .05 }, { y: 0, duration: 1, ease: 'power1.inOut' }, 0)
+          .to(print, { keyframes: swing(i).map(r => ({ rotation: r })), duration: 1, ease: 'sine.inOut', transformOrigin: '50% 0%' }, 0);
+        bands.forEach((band, j) => timeline.fromTo(band, { opacity: 0 }, { opacity: 1, duration: .05 }, .05 + j * .85 / bands.length));
+      });
+    }
+  });
+}, { near: document.getElementById('depths') });
+</script>
+<script data-8b-part="scene:day-dial">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('day');
+    const dial = section.querySelector('.day__well');
+    const list = section.querySelector('.day__list');
+    const rows = [...list.querySelectorAll('.day__row')];
+    const paths = [...dial.querySelectorAll('.m-well__band path')];
+    const depth = paths.map(path => Math.pow(parseFloat(path.parentNode.style.getPropertyValue('--well-d')) || 0, 1.3));
+    const css = getComputedStyle(document.documentElement);
+    const token = n => css.getPropertyValue(`--color-${n}`).trim();
+    section.setAttribute('data-dialing', '');
+    const mark = progress => {
+      const now = Math.min(rows.length - 1, Math.floor(progress * rows.length));
+      rows.forEach((row, i) => row.toggleAttribute('data-now', i === now));
+    };
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'day-dial', trigger: list, start: 'top 62%', end: 'bottom 62%', scrub: .5,
+      onUpdate: self => mark(self.progress), onRefresh: self => mark(self.progress)
+    } });
+    const bands = paths.map(path => path.parentNode);
+    const ways = [[8, 9], [6, 7], [10, 11], [8, 9]];
+    ways.slice(1).forEach(([rim, core], step) => bands.forEach((band, i) => {
+      const [fromRim, fromCore] = ways[step];
+      timeline.fromTo(band, { '--well-rim': token(fromRim), '--well-core': token(fromCore) }, { '--well-rim': token(rim), '--well-core': token(core), duration: .22, ease: 'power1.inOut', immediateRender: step === 0 }, step + .45 + (1 - depth[i]) * .3);
+    }));
+    timeline
+      .fromTo(paths, { x: i => -190 * depth[i] }, { x: 0, duration: 1.2 }, 0)
+      .fromTo(paths, { y: i => 150 * depth[i] }, { y: 0, duration: 1.2, ease: 'sine.out' }, 0)
+      .to(paths, { x: i => 190 * depth[i], duration: 1.2 }, 1.8)
+      .to(paths, { y: i => 150 * depth[i], duration: 1.2, ease: 'sine.in' }, 1.8);
+    return () => { section.removeAttribute('data-dialing'); rows.forEach(row => row.removeAttribute('data-now')); };
+  });
+}, { near: document.getElementById('day') });
+</script>
+<script data-8b-part="scene:rules-dig">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('rules');
+    const stage = section.querySelector('.rules__stage');
+    const rows = [...section.querySelectorAll('.rules__row')];
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'rules-dig', trigger: stage, start: 'top 78%', end: 'bottom 88%', scrub: .6, invalidateOnRefresh: true
+    } });
+    rows.forEach((row, i) => {
+      const [left, right] = row.children;
+      const gap = () => row.offsetWidth - left.offsetWidth - right.offsetWidth;
+      timeline
+        .fromTo(left, { x: () => gap() / 2 + 1 }, { x: 0, duration: 1 }, i * .13)
+        .fromTo(right, { x: () => -gap() / 2 - 1 }, { x: 0, duration: 1 }, i * .13);
+    });
+  });
+}, { near: document.getElementById('rules') });
+</script>
+<script data-8b-part="scene:evenings-surface">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('evenings');
+    const css = getComputedStyle(document.documentElement);
+    const token = n => css.getPropertyValue(`--color-${n}`).trim();
+    section.querySelectorAll('.evenings__row').forEach((row, i) => {
+      const date = row.querySelector('.evenings__date');
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+        id: `evenings-surface:row-${i}`, trigger: row, start: 'top bottom', end: 'bottom top', scrub: true
+      } })
+        .fromTo(row, { backgroundColor: token(11), color: token(4) }, { backgroundColor: token(7), color: token(4), duration: 1 }, 0)
+        .to(row, { backgroundColor: token(6), color: token(2), duration: .65, ease: 'power1.in' }, 1.35)
+        .fromTo(date, { y: 36 }, { y: -36, duration: 2 }, 0);
+    });
+  });
+}, { near: document.getElementById('evenings') });
+</script>
+<script data-8b-part="scene:plans-deepen">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('plans');
+    const wells = [...section.querySelectorAll('.plan__well')];
+    const length = Math.max(...wells.map(well => well.querySelectorAll('.m-well__band').length));
+    wells.forEach((well, w) => {
+      const bands = [...well.querySelectorAll('.m-well__band path')].slice(1);
+      gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: {
+        id: `plans-deepen:well-${w}`, trigger: well, start: 'top 82%', end: 'bottom 50%', scrub: .5
+      } })
+        .fromTo(bands, { opacity: 0, scale: .86, transformOrigin: '50% 50%' }, { opacity: 1, scale: 1, duration: .6, stagger: 1 }, 0)
+        .set({}, {}, length);
+    });
+  });
+}, { near: document.getElementById('plans') });
+</script>
+</body>
+</html>

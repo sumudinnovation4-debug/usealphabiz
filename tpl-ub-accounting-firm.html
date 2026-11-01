@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #0b0b0b;
+  --color-3: #f2f2f2;
+  --color-4: #6b6b6b;
+  --color-5: #8f8f8f;
+  --color-6: #d12a1e;
+  --color-8: #dadada;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --shadow-1: 0 0 0 1.5px var(--color-1);
+  --shadow-2: inset 0 0 0 1px var(--color-2);
+  --shadow-3: inset 0 0 0 1px var(--color-8);
+  --space-1: clamp(16px, 2.4vw, 32px);
+  --space-2: max(var(--space-1), 31vw - 110px);
+  --space-3: max(112px, 40vw - 40px);
+  --space-4: clamp(10px, 1.1vw, 16px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallback faces */
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101.7%; ascent-override: 100.3%; descent-override: 31.5%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 96.5%; ascent-override: 105.7%; descent-override: 33.2%; line-gap-override: 0%; }
+/* end fallback faces */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: -0.005em; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-6); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+main { position: relative; z-index: 1; display: block; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(34px, 6.25vw, 112px); font-weight: 500; line-height: 0.88; letter-spacing: -0.05em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 12px; font-weight: 600; line-height: 1.25; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(19px, 1.75vw, 28px); font-weight: 500; line-height: 1.12; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 15px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; text-decoration: none; overflow: hidden; isolation: isolate; cursor: pointer; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-6); transform: scaleX(0); transform-origin: 37% 50%; transition: transform 0.55s cubic-bezier(0.7, 0, 0.2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover::before { transform: scaleX(1); } }
+.m-btn-3 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 34px; padding: 0 16px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); box-shadow: var(--shadow-1); font-family: var(--font-1); font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; overflow: hidden; isolation: isolate; cursor: pointer; }
+.m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-6); transform: scaleX(0); transform-origin: 37% 50%; transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1); }
+.m-btn-3__label { position: relative; }
+@media (hover: hover) { .m-btn-3:hover::before { transform: scaleX(1); } }
+.m-link { color: var(--color-2); font-weight: 600; text-decoration: none; background-image: linear-gradient(var(--color-2), var(--color-2)), linear-gradient(var(--color-3), var(--color-3)); background-repeat: no-repeat; background-position: 0 100%, 0 100%; background-size: 100% 1px, 100% 0%; padding: 0 1px 1px; transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 1px, 100% 100%; } }
+.m-link-2 { color: var(--color-1); font-weight: 600; text-decoration: none; background-image: linear-gradient(var(--color-1), var(--color-1)), linear-gradient(var(--color-6), var(--color-6)); background-repeat: no-repeat; background-position: 0 100%, 0 100%; background-size: 100% 1px, 100% 0%; padding: 0 1px 1px; transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 1px, 100% 100%; } }
+.m-link-3 { color: var(--color-2); font-family: var(--font-1); font-size: clamp(34px, 5vw, 76px); font-weight: 500; line-height: 0.95; letter-spacing: -0.05em; text-transform: none; font-style: normal; text-decoration: none; background-image: linear-gradient(var(--color-2), var(--color-2)), linear-gradient(var(--color-3), var(--color-3)); background-repeat: no-repeat; background-position: 0 100%, 0 100%; background-size: 100% 2px, 100% 0%; transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) { .m-link-3:hover { background-size: 100% 2px, 100% 100%; } }
+.m-icon { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); overflow: hidden; isolation: isolate; cursor: pointer; padding: 0; }
+.m-icon::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: scaleX(0); transition: transform 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+.m-icon__glyph { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; transition: color 0.3s; }
+@media (hover: hover) { .m-icon:hover::before { transform: scaleX(1); } .m-icon:hover { color: var(--color-1); } }
+.m-surface { background: var(--color-3); color: var(--color-2); }
+.m-surface-2 { background: var(--color-1); color: var(--color-2); box-shadow: var(--shadow-2); }
+.m-surface-3 { background: var(--color-2); color: var(--color-1); }
+.m-photo { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.04); background: var(--color-3); }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 12px; font-weight: 600; line-height: 1.25; letter-spacing: 0; }
+.m-field__input { width: 100%; padding: 8px 0 9px; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0; background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.3; resize: vertical; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-6); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-a, .l-b { display: block; }
+.l-a { margin-left: var(--space-2); }
+.l-b { margin-left: calc(var(--space-3) + var(--space-4)); }
+.l-left { display: inline-block; width: calc(var(--space-3) - var(--space-4)); margin-right: calc(var(--space-4) * 2); text-align: right; }
+.l-rule { position: absolute; top: 0; bottom: 0; left: var(--space-3); width: 1px; background: var(--color-2); }
+.l-ledger { display: grid; grid-template-columns: var(--space-2) calc(var(--space-3) - var(--space-2)) minmax(0, 1fr) minmax(120px, 15vw); padding-right: var(--space-1); }
+.l-ledger > :first-child { padding-left: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 40; height: 64px; pointer-events: none; transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1); }
+#nav.is-hidden { transform: translateY(-110%); }
+#nav .nav__logo { position: absolute; top: 14px; left: var(--space-2); display: block; width: 38px; height: 38px; pointer-events: auto; }
+#nav .nav__mark { position: absolute; inset: 0; border-radius: 50%; background: var(--color-2); box-shadow: var(--shadow-1); }
+#nav .nav__mark::before { content: ""; position: absolute; left: 22%; right: 22%; top: calc(50% - 1.5px); height: 3px; background: var(--color-1); }
+#nav .nav__mark::after { content: ""; position: absolute; left: calc(50% - 3.5px); top: calc(50% - 3.5px); width: 7px; height: 7px; border-radius: 50%; background: var(--color-6); }
+#nav .nav__menu { position: absolute; top: 16px; right: var(--space-1); pointer-events: auto; }
+#nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; background: var(--color-1); pointer-events: auto; overflow-y: auto; padding: 18px var(--space-1) 24px 0; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__rule { position: absolute; top: 0; bottom: 0; left: var(--space-3); width: 1px; background: var(--color-2); }
+#nav .menu__top { display: flex; justify-content: flex-end; }
+#nav .menu__list { align-self: center; display: grid; gap: clamp(6px, 1.4vh, 14px); padding: 32px 0; }
+#nav .menu__list li:nth-child(odd) { margin-left: var(--space-2); }
+#nav .menu__list li:nth-child(even) { margin-left: calc(var(--space-3) + var(--space-4)); }
+#nav .menu__list li:nth-child(odd) .m-link-3 { background-color: var(--color-1); }
+#nav .menu__foot { margin-left: calc(var(--space-3) + var(--space-4)); display: grid; gap: 4px; }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; overflow-x: clip; }
+#opening .op-one { position: relative; min-height: 100svh; display: flex; flex-direction: column; padding: 20px var(--space-1) calc(clamp(44px, 6.25vw, 112px) * 0.9 + 34px) 0; }
+#opening .op-rule { transform-origin: 50% 0; }
+#opening .op-where { display: grid; gap: 2px; margin-top: 2px; }
+#opening .op-head { margin-top: auto; padding-top: 40px; }
+#opening .op-name { display: grid; grid-template-columns: var(--space-3) minmax(0, 1fr); align-items: end; }
+#opening .op-what { padding: 0 var(--space-4) 4px var(--space-2); }
+#opening .op-h1 { padding-left: var(--space-4); }
+#opening .ln { display: block; }
+#opening .ln__i { display: inline-block; position: relative; }
+#opening .op-sub { margin-top: 0.12em; }
+#opening .op-a .ln__i { background: var(--color-1); padding-right: 0.08em; }
+#opening .op-in { padding-left: 1.6em; }
+#opening .op-foot { display: grid; grid-template-columns: var(--space-3) minmax(0, 1fr); align-items: center; margin-top: clamp(22px, 4vh, 40px); }
+#opening .op-actions { margin-left: var(--space-4); display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; }
+#opening .op-level { position: relative; margin: 0 var(--space-4) 0 var(--space-2); height: 26px; border: 1px solid var(--color-2); border-radius: var(--radius-1); --op-travel: max(18px, calc((var(--space-3) - var(--space-2) - var(--space-4)) / 2 - 22px)); }
+#opening .op-level::before, #opening .op-level::after { content: ""; position: absolute; top: 4px; bottom: 4px; width: 1px; background: var(--color-2); }
+#opening .op-level::before { left: calc(50% - 14px); }
+#opening .op-level::after { left: calc(50% + 14px); }
+#opening .op-level__bubble { position: absolute; top: 5px; left: calc(50% - 8px); width: 16px; height: 14px; border-radius: 50%; background: var(--color-6); }
+#opening .op-two { position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(28px, 6vh, 64px); padding: clamp(72px, 13vh, 132px) var(--space-1) clamp(48px, 9vh, 96px) 0; color: var(--color-1); background: var(--color-2); clip-path: inset(0 0 0 0); --op-tile: clamp(112px, 13vw, 220px); }
+#opening .op-two > * { position: relative; }
+#opening .op-tiles { height: var(--op-tile); }
+#opening .op-tile { position: absolute; top: 0; width: var(--op-tile); height: var(--op-tile); overflow: hidden; }
+#opening .op-tile:nth-child(1) { left: var(--space-1); }
+#opening .op-tile:nth-child(2) { left: calc(var(--space-3) + var(--space-4)); }
+#opening .op-tile:nth-child(3) { left: calc(var(--space-3) + var(--space-4) + var(--op-tile) + 10px); }
+#opening .op-tile:nth-child(4) { right: 0; }
+#opening .op-para { max-width: 40ch; margin-right: var(--space-1); }
+#opening .op-para .m-link-2 { margin-left: 0.2em; }
+#opening .op-say { white-space: nowrap; }
+@media (max-width: 700px) {
+  #opening .op-foot { grid-template-columns: var(--space-3) minmax(0, 1fr); align-items: start; }
+  #opening .op-level { margin-top: 11px; }
+  #opening .op-actions { flex-direction: column; align-items: flex-start; }
+  #opening .op-tiles { height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-left: var(--space-1); }
+  #opening .op-tile { position: relative; left: auto; right: auto; width: auto; height: auto; aspect-ratio: 1; }
+  #opening .op-tile:nth-child(n) { left: auto; right: auto; }
+  #opening .op-para { margin-left: var(--space-1); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-rule { animation: op-draw 1s cubic-bezier(0.7, 0, 0.2, 1) backwards; }
+  #opening .op-one .ln { animation: op-from-rule-r 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+  #opening .op-one .op-a { animation-name: op-from-rule-l; }
+  #opening .op-h1 .ln:nth-child(2) { animation-delay: 0.06s; }
+  #opening .op-sub .ln:nth-child(1) { animation-delay: 0.12s; }
+  #opening .op-sub .ln:nth-child(2) { animation-delay: 0.18s; }
+  #opening .op-sub .ln:nth-child(3) { animation-delay: 0.24s; }
+  #opening .op-sub .ln:nth-child(4) { animation-delay: 0.3s; }
+  #opening .op-foot { animation: op-rise 0.8s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+  #opening .op-level__bubble { animation: op-level 5.4s ease-in-out infinite; }
+  #opening .op-level.is-paused .op-level__bubble { animation-play-state: paused; }
+}
+@keyframes op-draw { from { transform: scaleY(0); } }
+@keyframes op-from-rule-r { from { transform: translateX(-44px); } }
+@keyframes op-from-rule-l { from { transform: translateX(44px); } }
+@keyframes op-rise { from { transform: translateY(14px); } }
+@keyframes op-level {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(calc(var(--op-travel) * -1)); }
+  45% { transform: translateX(calc(var(--op-travel) * 0.75)); }
+  65% { transform: translateX(calc(var(--op-travel) * -0.35)); }
+  82% { transform: translateX(calc(var(--op-travel) * 0.12)); }
+}
+}
+</style>
+<style data-8b-part="section:services">
+@layer sections {
+#services { position: relative; overflow-x: clip; padding: clamp(110px, 18vh, 200px) 0 clamp(90px, 14vh, 160px); }
+#services .sv-h { margin-bottom: clamp(48px, 9vh, 96px); }
+#services .sv-in { padding-left: 1.4em; }
+#services .sv-ledger { position: relative; }
+#services .sv-rule { transform-origin: 50% 0; }
+#services .sv-head { color: var(--color-4); padding-bottom: 14px; }
+#services .sv-head span:nth-child(2) { text-align: right; padding-right: var(--space-4); }
+#services .sv-head span:nth-child(3) { padding-left: var(--space-4); }
+#services .sv-head span:nth-child(4) { text-align: right; }
+#services .sv-row { position: relative; padding-top: 22px; padding-bottom: 30px; }
+#services .sv-line { position: absolute; top: 0; left: var(--space-1); right: var(--space-1); height: 1px; background: var(--color-8); transform-origin: 0 50%; }
+#services .sv-name { padding-right: 18px; }
+#services .sv-send { text-align: right; padding-right: var(--space-4); }
+#services .sv-return { padding-left: var(--space-4); padding-right: 24px; max-width: 46ch; }
+#services .sv-often { text-align: right; padding-top: 4px; }
+@media (max-width: 700px) {
+  #services .sv-rule { left: 50%; }
+  #services .l-ledger { grid-template-columns: 1fr 1fr; }
+  #services .sv-head { display: none; }
+  #services .sv-name { grid-column: 1; padding-bottom: 10px; background: var(--color-1); justify-self: start; position: relative; padding-right: 8px; }
+  #services .sv-often { grid-column: 2; grid-row: 1; padding-left: var(--space-4); }
+  #services .sv-send { grid-column: 1; grid-row: 2; }
+  #services .sv-return { grid-column: 2; grid-row: 2; padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:month">
+@layer sections {
+#month { position: relative; height: 320vh; }
+#month .mo-stage { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; justify-content: center; gap: clamp(32px, 7vh, 72px); padding: 64px var(--space-1) clamp(56px, 12vh, 120px) 0; }
+#month .mo-board { position: relative; margin-left: var(--space-2); }
+#month .mo-scale { position: relative; height: 34px; border-right: 1px solid var(--color-2); background:
+  linear-gradient(var(--color-2), var(--color-2)) 0 100% / 100% 1px no-repeat,
+  repeating-linear-gradient(to right, var(--color-2) 0 1px, transparent 1px calc(100% / 4)) 0 100% / 100% 30px no-repeat,
+  repeating-linear-gradient(to right, var(--color-2) 0 1px, transparent 1px calc(100% / 28)) 0 100% / 100% 12px no-repeat; }
+#month .mo-fill { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--color-6); transform-origin: 0 50%; }
+#month .mo-marker { position: absolute; top: -12px; bottom: 0; right: -1px; width: 2px; background: var(--color-6); }
+#month .mo-tasks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+#month .mo-task { padding: 22px clamp(14px, 2vw, 32px) 0 0; display: grid; align-content: start; gap: 8px; transition: color 0.3s; }
+#month .mo-day { color: var(--color-6); transition: color 0.3s; }
+#month .mo-task .m-text { max-width: 30ch; }
+#month .mo-note { margin-top: -8px; }
+@media (max-width: 700px) {
+  #month { height: 300vh; }
+  #month .mo-stage { gap: 26px; padding-bottom: 76px; }
+  #month .mo-board { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 14px; }
+  #month .mo-scale { height: auto; border-right: 0; border-bottom: 1px solid var(--color-2); background:
+    linear-gradient(var(--color-2), var(--color-2)) 0 0 / 1px 100% no-repeat,
+    repeating-linear-gradient(to bottom, var(--color-2) 0 1px, transparent 1px calc(100% / 4)) 0 0 / 22px 100% no-repeat,
+    repeating-linear-gradient(to bottom, var(--color-2) 0 1px, transparent 1px calc(100% / 28)) 0 0 / 9px 100% no-repeat; }
+  #month .mo-fill { top: 0; bottom: 0; left: -1px; right: auto; width: 3px; height: auto; transform-origin: 50% 0; }
+  #month .mo-marker { top: auto; left: -6px; right: 0; bottom: 0; width: auto; height: 2px; }
+  #month .mo-tasks { grid-template-columns: 1fr; grid-auto-rows: 1fr; }
+  #month .mo-task { padding: 0 0 16px; gap: 4px; }
+  #month .mo-task .m-text { font-size: 14px; line-height: 1.38; }
+}
+}
+</style>
+<style data-8b-part="section:clients">
+@layer sections {
+#clients { position: relative; height: 340vh; }
+#clients .cl-stage { position: sticky; top: 0; height: 100svh; overflow: hidden; perspective: 1500px; }
+#clients .cl-title { position: absolute; left: 0; right: 0; top: 50%; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 0 var(--space-1); transform: translateY(-50%); font-size: clamp(34px, 5vw, 88px); white-space: nowrap; pointer-events: none; }
+#clients .cl-half { display: inline-block; }
+#clients .cl-globe { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; --cl-r: clamp(150px, 19vw, 300px); --cl-w: clamp(70px, 9.6vw, 150px); --cl-h: calc(var(--cl-w) * 0.76); }
+#clients .cl-card { position: absolute; left: calc(var(--cl-w) / -2); top: calc(var(--cl-h) / -2); width: var(--cl-w); height: var(--cl-h); transform-style: preserve-3d; transform: rotateY(var(--lon)) rotateX(var(--lat)) translateZ(var(--cl-r)); }
+#clients .cl-face { position: absolute; inset: 0; overflow: hidden; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 8px; }
+#clients .cl-face:has(img) { padding: 0; }
+#clients .cl-card::after { content: ""; position: absolute; inset: 0; background: var(--color-1); box-shadow: var(--shadow-3); transform: rotateY(180deg) translateZ(1px); backface-visibility: hidden; }
+#clients .cl-trade { color: var(--color-4); font-weight: 500; }
+#clients .cl-note { position: absolute; left: calc(var(--space-3) + var(--space-4)); bottom: clamp(64px, 12vh, 120px); }
+@media (max-width: 700px) {
+  #clients { height: 300vh; }
+  #clients .cl-title { top: 0; bottom: 0; transform: none; display: block; padding: 0; }
+  #clients .cl-half { position: absolute; }
+  #clients .cl-half--a { left: var(--space-1); top: 88px; }
+  #clients .cl-half--b { right: var(--space-1); bottom: 118px; }
+  #clients .cl-globe { --cl-r: 118px; --cl-w: 62px; }
+  #clients .cl-face { padding: 5px; }
+  #clients .cl-face .m-text-3 { font-size: 8px; }
+  #clients .cl-note { left: var(--space-1); bottom: 84px; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { position: relative; overflow-x: clip; padding: clamp(110px, 18vh, 200px) 0 clamp(90px, 14vh, 160px); }
+#prices .pr-h { margin-bottom: clamp(48px, 9vh, 96px); }
+#prices .pr-cols { color: var(--color-4); padding-bottom: 12px; }
+#prices .pr-cols span:nth-child(3) { padding-left: var(--space-4); }
+#prices .pr-cols span:nth-child(4) { text-align: right; }
+#prices .pr-plan { position: relative; padding-top: 20px; padding-bottom: 34px; }
+#prices .pr-rule { position: absolute; top: 0; left: var(--space-1); right: var(--space-1); height: 1px; background: var(--color-2); transform-origin: 0 50%; }
+#prices .pr-for { padding-right: 20px; color: var(--color-4); }
+#prices .pr-items { padding-left: var(--space-4); padding-right: 24px; }
+#prices .pr-items li { padding: 3px 0 4px; border-bottom: 1px solid var(--color-8); }
+#prices .pr-fee { text-align: right; }
+#prices .pr-fee .m-text-3 { display: block; margin-top: 4px; color: var(--color-4); }
+#prices .pr-note { margin-top: 36px; max-width: 52ch; }
+@media (max-width: 700px) {
+  #prices .pr-cols { display: none; }
+  #prices .l-ledger { grid-template-columns: minmax(0, 1fr) auto; row-gap: 10px; padding-left: var(--space-1); }
+  #prices .l-ledger > :first-child { padding-left: 0; }
+  #prices .pr-for { grid-column: 1 / -1; grid-row: 2; }
+  #prices .pr-items { grid-column: 1 / -1; padding: 0; }
+  #prices .pr-fee { grid-column: 2; grid-row: 1; }
+  #prices .pr-note { margin-left: var(--space-1); margin-right: var(--space-1); }
+}
+}
+</style>
+<style data-8b-part="section:switch">
+@layer sections {
+#switch { position: relative; height: 260vh; }
+#switch .sw-stage { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; justify-content: center; gap: clamp(36px, 7vh, 72px); padding: 64px var(--space-1) clamp(64px, 13vh, 130px) 0; }
+#switch .sw-body { position: relative; display: grid; grid-template-columns: var(--space-3) minmax(0, 1fr); }
+#switch .sw-rule { top: -24px; bottom: -24px; }
+#switch .sw-old { padding: 0 var(--space-4) 0 var(--space-2); text-align: right; display: grid; gap: 10px; align-content: start; }
+#switch .sw-old .m-text-3 { color: var(--color-4); }
+#switch .sw-tiles { display: flex; gap: 10px; padding-left: var(--space-4); }
+#switch .sw-tile { position: relative; width: clamp(170px, 17vw, 270px); aspect-ratio: 1; display: flex; flex-direction: column; gap: 8px; padding: 16px; transition: background-color 0.35s, color 0.35s; }
+#switch .sw-ring { width: 40px; height: 40px; margin-bottom: auto; transform: rotate(-90deg); }
+#switch .sw-ring circle { fill: none; stroke-width: 2.5; }
+#switch .sw-ring__track { stroke: var(--color-5); }
+#switch .sw-ring__arc { stroke: var(--color-6); stroke-dasharray: 1; stroke-dashoffset: 0; }
+#switch .sw-text { opacity: 1; }
+@media (max-width: 900px) {
+  #switch .sw-body { grid-template-columns: 1fr; gap: 22px; }
+  #switch .sw-rule { display: none; }
+  #switch .sw-old { text-align: left; padding: 0 0 0 var(--space-1); }
+  #switch .sw-tiles { flex-direction: column; padding-left: var(--space-1); gap: 8px; }
+  #switch .sw-tile { width: auto; aspect-ratio: auto; display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 14px; row-gap: 2px; padding: 12px 14px; }
+  #switch .sw-ring { grid-row: 1 / 3; margin: 0; }
+  #switch .sw-text { font-size: 14px; line-height: 1.35; }
+}
+}
+</style>
+<style data-8b-part="section:team">
+@layer sections {
+#team { position: relative; padding: clamp(110px, 18vh, 200px) 0 clamp(90px, 14vh, 160px); }
+#team .tm-h { margin-bottom: clamp(48px, 9vh, 96px); }
+#team .tm-row { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(10px, 1.4vw, 20px); margin: 0 var(--space-1) 0 var(--space-2); }
+#team .tm-card { display: grid; align-content: start; gap: 8px; background: var(--color-1); }
+#team .tm-photo { aspect-ratio: 3 / 4; overflow: hidden; margin-bottom: 8px; }
+#team .tm-role { color: var(--color-4); }
+#team .tm-card .m-text { max-width: 32ch; }
+@media (max-width: 700px) {
+  #team .tm-row { grid-template-columns: 1fr 1fr; row-gap: 32px; margin-left: var(--space-1); }
+  #team .tm-photo { aspect-ratio: 4 / 5; }
+  #team .tm-card .m-text { font-size: 14px; line-height: 1.38; }
+}
+}
+</style>
+<style data-8b-part="section:principle">
+@layer sections {
+#principle { position: relative; padding: clamp(110px, 20vh, 220px) var(--space-1) clamp(110px, 20vh, 220px) 0; overflow-x: clip; }
+#principle .pc-cap { margin-bottom: 28px; color: var(--color-4); }
+#principle .pc-q { font-size: clamp(38px, 8.6vw, 156px); line-height: 0.9; }
+#principle .pc-l { white-space: nowrap; }
+#principle .pc-in { padding-left: 1.2em; }
+#principle .pc-dot { display: inline-block; color: var(--color-6); }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; padding: clamp(110px, 18vh, 200px) 0 clamp(90px, 14vh, 160px); }
+#faq .fq-h { margin-bottom: clamp(48px, 9vh, 96px); }
+#faq .fq-list { margin: 0 var(--space-1) 0 calc(var(--space-3) + var(--space-4)); }
+#faq .fq-item { position: relative; }
+#faq .fq-line { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--color-2); transform-origin: 0 50%; }
+#faq .fq-q { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 20px 0 22px; cursor: pointer; list-style: none; }
+#faq .fq-q::-webkit-details-marker { display: none; }
+#faq .fq-icon { position: relative; flex: none; width: 18px; height: 18px; margin-top: 4px; }
+#faq .fq-icon::before, #faq .fq-icon::after { content: ""; position: absolute; left: 0; right: 0; top: calc(50% - 1px); height: 2px; background: var(--color-2); transition: transform 0.35s cubic-bezier(0.7, 0, 0.2, 1); }
+#faq .fq-icon::after { transform: rotate(90deg); }
+#faq details[open] .fq-icon::after { transform: rotate(0deg); }
+#faq .fq-a { max-width: 58ch; padding: 0 0 26px; }
+@media (max-width: 700px) {
+  #faq .fq-list { margin-left: var(--space-1); }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { position: relative; padding: clamp(110px, 18vh, 200px) 0 clamp(60px, 10vh, 120px); }
+#reviews .rv-h { margin-bottom: clamp(48px, 9vh, 96px); }
+#reviews .rv-stack { position: relative; margin: 0 var(--space-1) 0 var(--space-2); }
+#reviews .rv-sheet { position: sticky; top: calc(12vh + var(--i) * 16px); min-height: min(62vh, 560px); display: flex; flex-direction: column; justify-content: space-between; gap: 32px; padding: clamp(22px, 3vw, 44px); margin-bottom: 18vh; }
+#reviews .rv-sheet:last-child { margin-bottom: 0; }
+#reviews .rv-quote { font-size: clamp(24px, 3.2vw, 50px); line-height: 1.05; letter-spacing: -0.035em; max-width: 22ch; }
+#reviews .rv-who { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+#reviews .rv-who span + span { color: var(--color-4); }
+@media (max-width: 700px) {
+  #reviews .rv-stack { margin-left: var(--space-1); }
+  #reviews .rv-sheet { top: calc(80px + var(--i) * 12px); min-height: 56vh; margin-bottom: 14vh; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; overflow-x: clip; padding: clamp(110px, 18vh, 200px) 0 clamp(90px, 14vh, 160px); }
+#contact .ct-clock { display: flex; justify-content: space-between; align-items: center; padding: 0 var(--space-1); white-space: nowrap; }
+#contact .ct-frame { flex: none; width: clamp(92px, 11vw, 180px); aspect-ratio: 3 / 4; background: var(--color-2); overflow: hidden; }
+#contact .ct-days { margin: 18px 0 clamp(72px, 14vh, 140px); text-align: center; }
+#contact .ct-grid { position: relative; display: grid; grid-template-columns: var(--space-3) minmax(0, 1fr); }
+#contact .ct-rule { top: 0; bottom: 0; }
+#contact .ct-lines { padding: 6px var(--space-4) 0 var(--space-2); display: grid; gap: 20px; align-content: start; }
+#contact .ct-lines dt { color: var(--color-4); margin-bottom: 4px; }
+#contact .ct-lines dd { font-weight: 500; }
+#contact .ct-right { padding: 0 var(--space-1) 0 var(--space-4); }
+#contact .ct-h { margin-bottom: clamp(36px, 6vh, 60px); }
+#contact .ct-form { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 28px; max-width: 760px; }
+#contact .ct-wide { grid-column: 1 / -1; }
+#contact .ct-send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+#contact .ct-thanks { color: var(--color-2); }
+@media (max-width: 700px) {
+  #contact .ct-clock { font-size: 30px; }
+  #contact .ct-frame { width: 70px; }
+  #contact .ct-grid { grid-template-columns: 1fr; gap: 48px; }
+  #contact .ct-rule { display: none; }
+  #contact .ct-lines { padding: 0 var(--space-1); order: 2; }
+  #contact .ct-right { padding-left: var(--space-1); }
+  #contact .ct-form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; padding: clamp(60px, 10vh, 110px) 0 0; }
+#footer .ft-inner { position: relative; z-index: 1; padding: 0 var(--space-1); }
+#footer .ft-top { position: relative; display: grid; grid-template-columns: calc(var(--space-3) - var(--space-1)) minmax(0, 1fr) auto; align-items: start; gap: 24px 0; border-top: 1px solid var(--color-2); padding-top: 22px; }
+#footer .ft-tag { padding-right: var(--space-4); }
+#footer .ft-links { display: flex; flex-wrap: wrap; gap: 10px 22px; padding-left: var(--space-4); }
+#footer .ft-icons { display: flex; gap: 8px; }
+#footer .ft-word { display: flex; margin-top: clamp(48px, 10vh, 110px); font-size: min(34vw, (100vw - 2 * var(--space-1)) / (var(--len) * 0.45)); line-height: 0.8; white-space: nowrap; }
+#footer .ft-a, #footer .ft-b { display: inline-block; }
+#footer .ft-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; padding: 16px 0 20px; }
+#footer .ghost { position: fixed; left: 0; right: 0; bottom: 0; z-index: 0; display: flex; justify-content: space-between; padding: 0 var(--space-1) 14px; color: var(--color-5); font-size: clamp(44px, 6.25vw, 112px); pointer-events: none; overflow: hidden; }
+#footer .ghost span { display: inline-block; line-height: 0.82; }
+@media (max-width: 700px) {
+  #footer .ft-top { grid-template-columns: 1fr auto; }
+  #footer .ft-links { grid-column: 1 / -1; grid-row: 2; padding-left: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:month">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #month[data-month] .mo-task:not(.is-on) { color: var(--color-4); }
+  #month[data-month] .mo-task:not(.is-on) .mo-day { color: var(--color-4); }
+}
+}
+</style>
+<style data-8b-part="scene-style:switch">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #switch[data-switch] .sw-tile:not(.is-done) { background: var(--color-3); color: var(--color-2); }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header class="nav" data-8b-section="navigation" id="nav">
+<a class="nav__logo" href="#opening"><span aria-hidden="true" class="nav__mark"></span><span class="sr-only">{{t1|⟦name⟧, back to the top}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-btn-3 nav__menu" type="button"><span class="m-btn-3__label">{{t2|Menu}}</span></button>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<span aria-hidden="true" class="menu__rule"></span>
+<div class="menu__top">
+<button aria-label="Close menu" class="m-icon menu__close" type="button"><svg aria-hidden="true" class="m-icon__glyph" viewbox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"></path></svg></button>
+</div>
+<nav aria-label="Main">
+<ul class="menu__list">
+{{#nv_services}}<li><a class="m-link-3" href="#services">{{t3|Services}}</a></li>{{/nv_services}}
+{{#nv_month}}<li><a class="m-link-3" href="#month">{{t4|A month}}</a></li>{{/nv_month}}
+{{#nv_clients}}<li><a class="m-link-3" href="#clients">{{t5|Clients}}</a></li>{{/nv_clients}}
+{{#nv_prices}}<li><a class="m-link-3" href="#prices">{{t6|Prices}}</a></li>{{/nv_prices}}
+{{#nv_team}}<li><a class="m-link-3" href="#team">{{t7|Team}}</a></li>{{/nv_team}}
+{{#nv_faq}}<li><a class="m-link-3" href="#faq">{{t8|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-3" href="#contact">{{t9|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<div class="menu__foot">
+<p class="m-text-3">{{t10|1 Admiralty Way, Kano}}</p>
+<p class="m-text-3"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t11|⟦phone⟧}}</a></p>
+</div>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section class="op" data-8b-section="opening" id="opening">
+<div class="op-one">
+<span aria-hidden="true" class="l-rule op-rule"></span>
+<p class="m-text-3 op-where l-b"><span>{{t12|Kano, since 2009}}</span><span>{{t13|Accountants to 340 small firms}}</span></p>
+<div class="op-head">
+<div class="op-name">
+<p class="m-text-3 op-what">{{t14|Bookkeeping, tax returns & payroll}}</p>
+<h1 class="m-text-2 op-h1"><span class="ln"><span class="ln__i">{{t15|⟦name⟧}}</span></span> <span class="ln"><span class="ln__i">{{t16|Accountants}}</span></span></h1>
+</div>
+<p class="m-text-2 op-sub">
+<span class="ln l-a op-a"><span class="ln__i">{{t17|Books kept}}</span></span>
+<span class="ln l-a op-a"><span class="ln__i">{{t18|level,}}</span></span>
+<span class="ln l-b"><span class="ln__i">{{t19|tax filed}}</span></span>
+<span class="ln l-b op-in"><span class="ln__i">{{t20|on time.}}</span></span>
+</p>
+<div class="op-foot">
+<div aria-hidden="true" class="op-level"><span class="op-level__bubble"></span></div>
+<div class="op-actions">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t21|Book a free call}}</span></a>
+<a class="m-link" href="#prices">{{t22|See our fixed fees}}</a>
+</div>
+</div>
+</div>
+</div>
+<div class="op-two">
+<ul class="op-tiles">
+<li class="op-tile"><img alt="Receipts, a cheque book and a calculator on a desk" class="m-photo" height="1254" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1649209979970-f01d950cc5ed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cmVjZWlwdHMlMjBjYWxjdWxhdG9yfGVufDF8MHx8fDE3OTEzNjU3MjN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#260c0c" width="1600"/></li>
+<li class="op-tile"><img alt="Hands holding a tax form beside a calculator" class="m-photo" height="1067" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1772588627342-5ec373e236d8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHJlY2VpcHRzJTIwY2FsY3VsYXRvcnxlbnwxfDB8fHwxNzkxMzY1NzIzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#a6a6a6" width="1600"/></li>
+<li class="op-tile"><img alt="A calculator resting on a sheet of figures" class="m-photo" height="1067" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1710776531873-fa1c10b7a68f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cmVjZWlwdHMlMjBjYWxjdWxhdG9yfGVufDF8MHx8fDE3OTEzNjU3MjN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#c0c0c0" width="1600"/></li>
+<li class="op-tile"><img alt="Printed forms and a pen on a wooden table" class="m-photo" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1632152133952-98b268dc4b86?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTl8fGFjY291bnRhbnQlMjBwYXBlcndvcmslMjBkZXNrfGVufDF8MHx8fDE3OTEzNjU3MjR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#d9d9d9" width="1600"/></li>
+</ul>
+<p class="m-text op-para l-b">{{t23|We keep the books of 340 shops, studios and trades in and around Kano — every month the same way, on the same day, so nothing about your numbers ever surprises you.}} <a class="m-link-2" href="#month">{{t24|See how a month goes}}</a></p>
+<p class="m-text-2 op-say">
+<span class="ln"><span class="ln__i l-left">{{t25|the}}</span><span class="ln__i">{{t26|best}}</span></span>
+<span class="ln l-a"><span class="ln__i">{{t27|books are the}}</span></span>
+<span class="ln l-a"><span class="ln__i">{{t28|boring ones.}}</span></span>
+</p>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_services}}<section class="sv" data-8b-section="services" id="services">
+<h2 class="m-text-2 sv-h"><span class="l-a">{{t29|Four things}}</span><span class="l-b">{{t30|we keep}}</span><span class="l-b sv-in">{{t31|for you.}}</span></h2>
+<div class="sv-ledger">
+<span aria-hidden="true" class="l-rule sv-rule" data-8b-motion="rule"></span>
+<div aria-hidden="true" class="l-ledger sv-head m-text-3"><span>{{t32|Service}}</span><span>{{t33|You send}}</span><span>{{t34|We return}}</span><span>{{t35|How often}}</span></div>
+<ul class="sv-rows">
+<li class="l-ledger sv-row">
+<h3 class="m-text-4 sv-name">{{t36|Bookkeeping}}</h3>
+<p class="m-text sv-send" data-8b-motion="post"><span class="sr-only">{{t37|You send:}} </span>{{t38|Receipts by photo, invoices by email, read-only access to your bank.}}</p>
+<p class="m-text sv-return" data-8b-motion="post" data-post="right"><span class="sr-only">{{t39|We return:}} </span>{{t40|Reconciled books every month and a one-page report you can read in two minutes.}}</p>
+<p class="m-text-3 sv-often">{{t41|Monthly}}</p>
+<span aria-hidden="true" class="sv-line" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger sv-row">
+<h3 class="m-text-4 sv-name">{{t42|VAT & tax returns}}</h3>
+<p class="m-text sv-send" data-8b-motion="post"><span class="sr-only">{{t37|You send:}} </span>{{t43|Nothing new. We work from the books we already keep.}}</p>
+<p class="m-text sv-return" data-8b-motion="post" data-post="right"><span class="sr-only">{{t39|We return:}} </span>{{t44|VAT returns filed through Making Tax Digital, and your self-assessment filed by December.}}</p>
+<p class="m-text-3 sv-often">{{t45|Quarterly}}</p>
+<span aria-hidden="true" class="sv-line" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger sv-row">
+<h3 class="m-text-4 sv-name">{{t46|Payroll}}</h3>
+<p class="m-text sv-send" data-8b-motion="post"><span class="sr-only">{{t37|You send:}} </span>{{t47|Hours, starters and leavers by the 20th.}}</p>
+<p class="m-text sv-return" data-8b-motion="post" data-post="right"><span class="sr-only">{{t39|We return:}} </span>{{t48|Payslips, pensions and the FIRS submission, on the same day every month.}}</p>
+<p class="m-text-3 sv-often">{{t41|Monthly}}</p>
+<span aria-hidden="true" class="sv-line" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger sv-row">
+<h3 class="m-text-4 sv-name">{{t49|Year-end accounts}}</h3>
+<p class="m-text sv-send" data-8b-motion="post"><span class="sr-only">{{t37|You send:}} </span>{{t50|A short questionnaire in month eleven.}}</p>
+<p class="m-text sv-return" data-8b-motion="post" data-post="right"><span class="sr-only">{{t39|We return:}} </span>{{t51|Statutory accounts and corporation tax, signed off a month before the deadline.}}</p>
+<p class="m-text-3 sv-often">{{t52|Yearly}}</p>
+<span aria-hidden="true" class="sv-line" data-8b-motion="rule"></span>
+</li>
+</ul>
+</div>
+</section>{{/sec_services}}
+
+{{#sec_month}}<section class="mo" data-8b-section="month" id="month">
+<div class="mo-stage">
+<h2 class="m-text-2 mo-h"><span class="l-a">{{t4|A month}}</span><span class="l-b">{{t53|on the books}}</span></h2>
+<div class="mo-board">
+<div aria-hidden="true" class="mo-scale"><span class="mo-fill"></span></div><span aria-hidden="true" class="mo-marker"></span>
+<ol class="mo-tasks">
+<li class="mo-task"><p class="m-text-3 mo-day">{{t54|Day 1}}</p><h3 class="m-text-4">{{t55|Bank feeds in}}</h3><p class="m-text">{{t56|Last month's transactions arrive by themselves. You do nothing.}}</p></li>
+<li class="mo-task"><p class="m-text-3 mo-day">{{t57|Day 8}}</p><h3 class="m-text-4">{{t58|Receipts matched}}</h3><p class="m-text">{{t59|Every photo you sent is matched to a payment; we ask about the rest in one email.}}</p></li>
+<li class="mo-task"><p class="m-text-3 mo-day">{{t60|Day 15}}</p><h3 class="m-text-4">{{t61|Payroll checked}}</h3><p class="m-text">{{t62|Hours, starters and leavers checked before the run, so pay day never moves.}}</p></li>
+<li class="mo-task"><p class="m-text-3 mo-day">{{t63|Day 22}}</p><h3 class="m-text-4">{{t64|One page for you}}</h3><p class="m-text">{{t65|Profit, cash, tax set aside and what is due next, on a single page.}}</p></li>
+</ol>
+</div>
+<p class="m-text-3 mo-note l-b">{{t66|Every month, February included.}}</p>
+</div>
+</section>{{/sec_month}}
+
+{{#sec_clients}}<section class="cl" data-8b-section="clients" id="clients">
+<div class="cl-stage">
+<h2 class="m-text-2 cl-title"><span class="cl-half cl-half--a">{{t5|Clients}}</span> <span class="cl-half cl-half--b">{{t67|since 2009}}</span></h2>
+<ul aria-label="Some of the businesses whose books we keep" class="cl-globe">
+<li class="cl-card" style="--lat:74.6deg;--lon:0.0deg"><div class="cl-face m-surface"><span class="m-text-3">{{t68|Hollis & Daughter}}</span><span class="m-text-3 cl-trade">{{t69|Bakers}}</span></div></li>
+<li class="cl-card" style="--lat:63.2deg;--lon:137.5deg"><div class="cl-face"><img alt="Pastries on the counter of a client bakery" class="m-photo" height="1491" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1591538519435-4578c3ba26d6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmFrZXJ5JTIwc3RvcmVmcm9udHxlbnwxfDJ8fHwxNzkxMzY1NzEwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=140&q=60}}" style="background:#262626" width="1600"/></div></li>
+<li class="cl-card" style="--lat:55.2deg;--lon:275.0deg"><div class="cl-face m-surface"><span class="m-text-3">{{t70|Marlow Cycles}}</span><span class="m-text-3 cl-trade">{{t71|Bike repairs}}</span></div></li>
+<li class="cl-card" style="--lat:48.6deg;--lon:52.5deg"><div class="cl-face m-surface"><span class="m-text-3">{{t72|Fern Street Flowers}}</span><span class="m-text-3 cl-trade">{{t73|Florist}}</span></div></li>
+<li class="cl-card" style="--lat:42.7deg;--lon:190.0deg"><div class="cl-face"><img alt="A barber at work in a client's shop" class="m-photo" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1593702295094-aea22597af65?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fGJhcmJlciUyMHNob3B8ZW58MXwwfHx8MTc5MTM2NTcyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60}}" style="background:#d9d9d9" width="1600"/></div></li>
+<li class="cl-card" style="--lat:37.4deg;--lon:327.5deg"><div class="cl-face m-surface"><span class="m-text-3">{{t74|Quayside Barbers}}</span><span class="m-text-3 cl-trade">{{t75|Barbers}}</span></div></li>
+<li class="cl-card" style="--lat:32.4deg;--lon:105.0deg"><div class="cl-face m-surface"><span class="m-text-3">{{t76|Kiln Lane Pottery}}</span><span class="m-text-3 cl-trade">{{t77|Ceramics studio}}</span></div></li>
+<li class="cl-card" style="--lat:27.7deg;--lon:242.6deg"><div class="cl-face"><img alt="A tailor sewing at her machine" class="m-photo" height="1067" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1673201229733-69d19c5c4a87?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGFpbG9yJTIwd29ya3Nob3B8ZW58MXwwfHx8MTc5MTM2NTcyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=130&q=60}}" style="background:#f3f3f3" width="1600"/></div></li>
+<li class="cl-card" style="--lat:23.1deg;--lon:20.1deg"><div class="cl-face m-surface"><span class="m-text-3">{{t78|Albion Books}}</span><span class="m-text-3 cl-trade">{{t79|Bookshop}}</span></div></li>
+<li class="cl-card" style="--lat:18.7deg;--lon:157.6deg"><div class="cl-face"><img alt="Bouquets for sale at a florist's stall" class="m-photo" height="1600" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1779694540389-2e150caf6590?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZmxvcmlzdCUyMHNob3B8ZW58MXwyfHx8MTc5MTM2NTcxMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#262626" width="1600"/></div></li>
+<li class="cl-card" style="--lat:14.5deg;--lon:295.1deg"><div class="cl-face m-surface"><span class="m-text-3">{{t80|Second Shot}}</span><span class="m-text-3 cl-trade">{{t81|Coffee}}</span></div></li>
+<li class="cl-card" style="--lat:10.3deg;--lon:72.6deg"><div class="cl-face m-surface"><span class="m-text-3">{{t82|Redland Motors}}</span><span class="m-text-3 cl-trade">{{t83|Garage}}</span></div></li>
+<li class="cl-card" style="--lat:6.2deg;--lon:210.1deg"><div class="cl-face"><img alt="A bicycle wheel in a repair workshop" class="m-photo" height="1734" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1627881032258-599944eab8a1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmljeWNsZSUyMHJlcGFpciUyMHdvcmtzaG9wfGVufDF8Mnx8fDE3OTEzNjU3MTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#404040" width="1600"/></div></li>
+<li class="cl-card" style="--lat:2.0deg;--lon:347.6deg"><div class="cl-face m-surface"><span class="m-text-3">{{t84|Pressed}}</span><span class="m-text-3 cl-trade">{{t85|Dry cleaning}}</span></div></li>
+<li class="cl-card" style="--lat:-2.0deg;--lon:125.1deg"><div class="cl-face m-surface"><span class="m-text-3">{{t86|Northfield Hardware}}</span><span class="m-text-3 cl-trade">{{t87|Hardware}}</span></div></li>
+<li class="cl-card" style="--lat:-6.2deg;--lon:262.6deg"><div class="cl-face"><img alt="Hands shaping clay on a potter's wheel" class="m-photo" height="1067" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1760018861921-43af85ea6c4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cG90dGVyeSUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMzY1NzIzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=150&q=60}}" style="background:#734026" width="1600"/></div></li>
+<li class="cl-card" style="--lat:-10.3deg;--lon:40.1deg"><div class="cl-face m-surface"><span class="m-text-3">{{t88|Totterdown Physio}}</span><span class="m-text-3 cl-trade">{{t89|Physiotherapy}}</span></div></li>
+<li class="cl-card" style="--lat:-14.5deg;--lon:177.6deg"><div class="cl-face m-surface"><span class="m-text-3">{{t90|Cole & Pike}}</span><span class="m-text-3 cl-trade">{{t91|Joinery}}</span></div></li>
+<li class="cl-card" style="--lat:-18.7deg;--lon:315.1deg"><div class="cl-face"><img alt="A barista pouring milk into a cup" class="m-photo" height="1061" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1633420840567-d5c4cbdffe57?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29mZmVlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTM2NTcyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=160&q=60}}" style="background:#0c260c" width="1600"/></div></li>
+<li class="cl-card" style="--lat:-23.1deg;--lon:92.7deg"><div class="cl-face m-surface"><span class="m-text-3">{{t92|Harbour Yoga}}</span><span class="m-text-3 cl-trade">{{t93|Yoga studio}}</span></div></li>
+<li class="cl-card" style="--lat:-27.7deg;--lon:230.2deg"><div class="cl-face m-surface"><span class="m-text-3">{{t94|Little Wren}}</span><span class="m-text-3 cl-trade">{{t95|Nursery}}</span></div></li>
+<li class="cl-card" style="--lat:-32.4deg;--lon:7.7deg"><div class="cl-face"><img alt="Shelves of an independent bookshop" class="m-photo" height="1200" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1630147351247-8d7b39d7e681?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Ym9va3Nob3AlMjBpbnRlcmlvcnxlbnwxfDB8fHwxNzkxMzY1NzIzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=150&q=60}}" style="background:#262626" width="1600"/></div></li>
+<li class="cl-card" style="--lat:-37.4deg;--lon:145.2deg"><div class="cl-face m-surface"><span class="m-text-3">{{t96|Halfpenny Deli}}</span><span class="m-text-3 cl-trade">{{t97|Delicatessen}}</span></div></li>
+<li class="cl-card" style="--lat:-42.7deg;--lon:282.7deg"><div class="cl-face m-surface"><span class="m-text-3">{{t98|Linden Opticians}}</span><span class="m-text-3 cl-trade">{{t99|Opticians}}</span></div></li>
+<li class="cl-card" style="--lat:-48.6deg;--lon:60.2deg"><div class="cl-face"><img alt="A mechanic working in a small garage" class="m-photo" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1676018366904-c083ed678e60?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2FyJTIwbWVjaGFuaWMlMjBnYXJhZ2V8ZW58MXwwfHx8MTc5MTM2NTcyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=130&q=60}}" style="background:#262626" width="1600"/></div></li>
+<li class="cl-card" style="--lat:-55.2deg;--lon:197.7deg"><div class="cl-face m-surface"><span class="m-text-3">{{t100|Gable Roofing}}</span><span class="m-text-3 cl-trade">{{t101|Roofers}}</span></div></li>
+<li class="cl-card" style="--lat:-63.2deg;--lon:335.2deg"><div class="cl-face"><img alt="A customer at the counter of a dry cleaner" class="m-photo" height="1600" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1788905761561-d47d8df41edf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c21hbGwlMjBzaG9wJTIwb3duZXIlMjBjb3VudGVyfGVufDF8Mnx8fDE3OTEzNjU3MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=160&q=60}}" style="background:#594026" width="1600"/></div></li>
+<li class="cl-card" style="--lat:-74.6deg;--lon:112.7deg"><div class="cl-face m-surface"><span class="m-text-3">{{t102|Southville Vets}}</span><span class="m-text-3 cl-trade">{{t103|Vets}}</span></div></li>
+</ul>
+<p class="m-text-3 cl-note">{{t104|340 businesses. Twenty-eight of them are here.}}</p>
+</div>
+</section>{{/sec_clients}}
+
+{{#sec_prices}}<section class="pr" data-8b-section="prices" id="prices">
+<h2 class="m-text-2 pr-h"><span class="pr-l1"><span class="l-left">{{t105|Fixed}}</span>{{t106|fees,}}</span><span class="l-a">{{t107|paid monthly.}}</span></h2>
+<div class="pr-table">
+<div aria-hidden="true" class="l-ledger pr-cols m-text-3"><span>{{t108|Plan}}</span><span>{{t109|For}}</span><span>{{t110|What is in it}}</span><span>{{t111|Fee}}</span></div>
+<ul class="pr-plans">
+<li class="l-ledger pr-plan">
+<h3 class="m-text-4 pr-name">{{t112|Sole trader}}</h3>
+<p class="m-text pr-for">{{t113|Freelancers and one-person trades}}</p>
+<ul class="pr-items"><li class="m-text">{{t114|Monthly bookkeeping}}</li><li class="m-text">{{t115|Self-assessment return}}</li><li class="m-text">{{t116|VAT returns, if registered}}</li></ul>
+<p class="m-text-4 pr-fee" data-8b-motion="post" data-post="right">{{t117|₦30,000}}<span class="m-text-3">{{t118|a month}}</span></p>
+<span aria-hidden="true" class="pr-rule" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger pr-plan">
+<h3 class="m-text-4 pr-name">{{t119|Small company}}</h3>
+<p class="m-text pr-for">{{t120|Limited companies up to ₦250,000k turnover}}</p>
+<ul class="pr-items"><li class="m-text">{{t114|Monthly bookkeeping}}</li><li class="m-text">{{t121|VAT returns}}</li><li class="m-text">{{t122|Payroll for up to five}}</li><li class="m-text">{{t123|Year-end accounts and corporation tax}}</li></ul>
+<p class="m-text-4 pr-fee" data-8b-motion="post" data-post="right">{{t124|₦70,000}}<span class="m-text-3">{{t118|a month}}</span></p>
+<span aria-hidden="true" class="pr-rule" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger pr-plan">
+<h3 class="m-text-4 pr-name">{{t125|Growing team}}</h3>
+<p class="m-text pr-for">{{t126|Companies with staff and stock}}</p>
+<ul class="pr-items"><li class="m-text">{{t127|Everything in Small company}}</li><li class="m-text">{{t128|Payroll for up to twenty-five}}</li><li class="m-text">{{t129|A monthly call about the numbers}}</li></ul>
+<p class="m-text-4 pr-fee" data-8b-motion="post" data-post="right">{{t130|₦130,000}}<span class="m-text-3">{{t118|a month}}</span></p>
+<span aria-hidden="true" class="pr-rule" data-8b-motion="rule"></span>
+</li>
+<li class="l-ledger pr-plan">
+<h3 class="m-text-4 pr-name">{{t131|Catch-up}}</h3>
+<p class="m-text pr-for">{{t132|Books a year or more behind}}</p>
+<ul class="pr-items"><li class="m-text">{{t133|One clean-up of the missing years}}</li><li class="m-text">{{t134|Every overdue return filed}}</li></ul>
+<p class="m-text-4 pr-fee" data-8b-motion="post" data-post="right">{{t135|from ₦240,000}}<span class="m-text-3">{{t136|once}}</span></p>
+<span aria-hidden="true" class="pr-rule" data-8b-motion="rule"></span>
+</li>
+</ul>
+<p class="m-text pr-note l-b">{{t137|Prices exclude VAT. No set-up fee and no notice period — leave in any month and we hand everything over.}}</p>
+</div>
+</section>{{/sec_prices}}
+
+{{#sec_switch}}<section class="sw" data-8b-section="switch" id="switch">
+<div class="sw-stage">
+<h2 class="m-text-2 sw-h"><span class="l-a">{{t138|Moving to us}}</span><span class="l-b">{{t139|takes one}}</span><span class="l-b">{{t140|afternoon.}}</span></h2>
+<div class="sw-body">
+<span aria-hidden="true" class="l-rule sw-rule"></span>
+<div class="sw-old">
+<p class="m-text-3">{{t141|From your old accountant}}</p>
+<p class="m-text">{{t142|You sign one letter. We do the asking, the chasing and the moving, and tell you when it is done.}}</p>
+</div>
+<ol class="sw-tiles">
+<li class="sw-tile m-surface-3"><svg aria-hidden="true" class="sw-ring" viewbox="0 0 40 40"><circle class="sw-ring__track" cx="20" cy="20" r="17"></circle><circle class="sw-ring__arc" cx="20" cy="20" pathlength="1" r="17"></circle></svg><h3 class="m-text-4">{{t143|Sign one letter}}</h3><p class="m-text sw-text">{{t144|A letter of authority, signed on your phone in a minute.}}</p></li>
+<li class="sw-tile m-surface-3"><svg aria-hidden="true" class="sw-ring" viewbox="0 0 40 40"><circle class="sw-ring__track" cx="20" cy="20" r="17"></circle><circle class="sw-ring__arc" cx="20" cy="20" pathlength="1" r="17"></circle></svg><h3 class="m-text-4">{{t145|We ask for the files}}</h3><p class="m-text sw-text">{{t146|Last year's accounts and papers, straight from your old firm.}}</p></li>
+<li class="sw-tile m-surface-3"><svg aria-hidden="true" class="sw-ring" viewbox="0 0 40 40"><circle class="sw-ring__track" cx="20" cy="20" r="17"></circle><circle class="sw-ring__arc" cx="20" cy="20" pathlength="1" r="17"></circle></svg><h3 class="m-text-4">{{t147|Your feeds connect}}</h3><p class="m-text sw-text">{{t148|Bank, payroll and tax accounts linked by the end of the day.}}</p></li>
+</ol>
+</div>
+</div>
+</section>{{/sec_switch}}
+
+{{#sec_team}}<section class="tm" data-8b-section="team" id="team">
+<h2 class="m-text-2 tm-h"><span class="l-a">{{t149|Four people,}}</span><span class="l-b">{{t150|one desk.}}</span></h2>
+<ul class="tm-row">
+<li class="tm-card"><div class="tm-photo"><img alt="Portrait of Maya Lindqvist" class="m-photo" height="2400" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBsYWluJTIwYmFja2dyb3VuZHxlbnwxfDF8fHwxNzkxMzY1NzEwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#404040" width="1600"/></div><h3 class="m-text-4">{{t151|Maya Lindqvist}}</h3><p class="m-text-3 tm-role">{{t152|Founder · chartered accountant}}</p><p class="m-text">{{t153|Started ⟦name⟧ in 2009 with two clients and a borrowed desk.}}</p></li>
+<li class="tm-card"><div class="tm-photo"><img alt="Portrait of Tom Hale" class="m-photo" height="2400" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1676989880574-6be39345d345?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cG9ydHJhaXQlMjBtYW4lMjBvZmZpY2UlMjBwbGFpbiUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTM2NTcxMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#f3f3f3" width="1600"/></div><h3 class="m-text-4">{{t154|Tom Hale}}</h3><p class="m-text-3 tm-role">{{t46|Payroll}}</p><p class="m-text">{{t155|Runs nineteen hundred payslips a month and has never moved a pay day.}}</p></li>
+<li class="tm-card"><div class="tm-photo"><img alt="Portrait of Ann Whitcombe" class="m-photo" height="2400" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1652226825940-46ad2a55d132?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8b2xkZXIlMjB3b21hbiUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDF8fHwxNzkxMzY1Nzk2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#f3f3f3" width="1600"/></div><h3 class="m-text-4">{{t156|Ann Whitcombe}}</h3><p class="m-text-3 tm-role">{{t157|Tax returns}}</p><p class="m-text">{{t158|Thirty years of self-assessment. Still reads every letter from FIRS first.}}</p></li>
+<li class="tm-card"><div class="tm-photo"><img alt="Portrait of Sami Rahman" class="m-photo" height="1969" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1770510067230-1059f0776b3a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cG9ydHJhaXQlMjBtYW4lMjBvZmZpY2UlMjBwbGFpbiUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTM2NTcxMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#d9d9d9" width="1600"/></div><h3 class="m-text-4">{{t159|Sami Rahman}}</h3><p class="m-text-3 tm-role">{{t36|Bookkeeping}}</p><p class="m-text">{{t160|Matches receipts faster than you can lose them.}}</p></li>
+</ul>
+</section>{{/sec_team}}
+
+{{#sec_principle}}<section class="pc" data-8b-section="principle" id="principle">
+<p class="m-text-3 pc-cap l-b">{{t161|The one rule we have kept since 2009}}</p>
+<blockquote class="m-text-2 pc-q">
+<span class="pc-l l-a">{{t162|Every business}}</span>
+<span class="pc-l l-b">{{t163|that lasts}}</span>
+<span class="pc-l l-a">{{t164|first kept}}</span>
+<span class="pc-l l-b pc-in">{{t165|its receipts}}<span class="pc-dot">.</span></span>
+</blockquote>
+</section>{{/sec_principle}}
+
+{{#sec_faq}}<section class="fq" data-8b-section="faq" id="faq">
+<h2 class="m-text-2 fq-h"><span class="l-a">{{t8|Questions}}</span><span class="l-b">{{t166|we hear}}</span><span class="l-b">{{t167|every week.}}</span></h2>
+<div class="fq-list">
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t168|Do I need an accountant if I use bookkeeping software?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t169|The software records; it does not decide. We check what it has matched, fix what it guessed and file what it cannot.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t170|Can you take over halfway through the year?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t171|Yes. Most clients join mid-year. We pick up from your last filed return and bring the books up to date in the first month.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t172|What if my books are behind?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t173|We start with a catch-up at one fixed price, file every overdue return, and then move you onto a monthly plan.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t174|Do you deal with FIRS for me?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t175|Yes. Once you sign the letter of authority, FIRS writes to us and we answer — you get a copy and a plain-English note.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t176|Will I always talk to the same person?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t177|Yes. Every client has one named accountant and their direct number. Holidays are covered by someone who already knows your file.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-line" data-8b-motion="rule"></span><details><summary class="m-text-4 fq-q"><span>{{t178|Can I leave?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t179|In any month. There is no notice period; we hand your records to whoever comes next, tidy and complete.}}</p></details></div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_reviews}}<section class="rv" data-8b-section="reviews" id="reviews">
+<h2 class="m-text-2 rv-h"><span class="l-a">{{t180|What our}}</span><span class="l-b">{{t181|clients say.}}</span></h2>
+<ol class="rv-stack">
+<li class="rv-sheet m-surface" style="--i:0"><blockquote><p class="m-text-4 rv-quote">{{t182|“Three years in, I have never once wondered whether my VAT went in. That is the whole review.”}}</p></blockquote><p class="m-text-3 rv-who"><span>{{t183|Priya Nair}}</span><span>{{t72|Fern Street Flowers}}</span></p></li>
+<li class="rv-sheet m-surface-2" style="--i:1"><blockquote><p class="m-text-4 rv-quote">{{t184|“They found four thousand pounds of expenses my old accountant never asked about. Then they filed a month early.”}}</p></blockquote><p class="m-text-3 rv-who"><span>{{t185|Dan Cole}}</span><span>{{t186|Cole & Pike Joinery}}</span></p></li>
+<li class="rv-sheet m-surface" style="--i:2"><blockquote><p class="m-text-4 rv-quote">{{t187|“I send photos of receipts from the van. On the 22nd I get one page that tells me how we are doing.”}}</p></blockquote><p class="m-text-3 rv-who"><span>{{t188|Lewis Marsh}}</span><span>{{t82|Redland Motors}}</span></p></li>
+<li class="rv-sheet m-surface-2" style="--i:3"><blockquote><p class="m-text-4 rv-quote">{{t189|“Payroll for nine people, and I have not thought about it once since the day we switched.”}}</p></blockquote><p class="m-text-3 rv-who"><span>{{t190|Hana Wells}}</span><span>{{t191|Second Shot Coffee}}</span></p></li>
+</ol>
+</section>{{/sec_reviews}}
+
+{{#sec_contact}}<section class="ct" data-8b-section="contact" id="contact">
+<p class="m-text-2 ct-clock"><span aria-hidden="true">(</span><span>{{t192|08:30}}</span><span class="sr-only"> {{t193|to}} </span><span class="ct-frame"><img alt="A key in the lock of our office door" class="m-photo" height="2400" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1602529079830-c217d8f2eda5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8b2ZmaWNlJTIwa2V5c3xlbnwxfDF8fHwxNzkxMzY1Nzk2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=150&q=60}}" style="background:#0c2626" width="1600"/></span><span>{{t194|17:30}}</span><span aria-hidden="true">)</span></p>
+<p class="m-text-3 ct-days">{{t195|Open Monday to Friday · 1 Admiralty Way, Kano}}</p>
+<div class="ct-grid">
+<span aria-hidden="true" class="l-rule ct-rule"></span>
+<dl class="ct-lines">
+<div data-8b-motion="post"><dt class="m-text-3">{{t196|Phone}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t11|⟦phone⟧}}</a></dd></div>
+<div data-8b-motion="post"><dt class="m-text-3">{{t197|Email}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t198|hello@evenkeel.example}}</a></dd></div>
+<div data-8b-motion="post"><dt class="m-text-3">{{t199|Office}}</dt><dd class="m-text">{{t10|1 Admiralty Way, Kano}}</dd></div>
+<div data-8b-motion="post"><dt class="m-text-3">{{t200|First call}}</dt><dd class="m-text">{{t201|Twenty minutes, free, with the accountant who would keep your books.}}</dd></div>
+</dl>
+<div class="ct-right">
+<h2 class="m-text-2 ct-h"><span>{{t202|Book a free}}</span> <span class="ct-h2">{{t203|first call.}}</span></h2>
+
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Accounting Firm by <a href="https://github.com/8bsite/accounting-firm-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="ft" data-8b-section="footer" id="footer">
+<div class="ft-inner">
+<div class="ft-top">
+<p class="m-text-3 ft-tag">{{t204|⟦name⟧ Accountants}}<br/>{{t205|Bookkeeping, tax and payroll for small businesses in Kano}}</p>
+<nav aria-label="Footer">
+<ul class="ft-links m-text">
+{{#nv_services}}<li><a class="m-link" href="#services">{{t3|Services}}</a></li>{{/nv_services}}
+{{#nv_month}}<li><a class="m-link" href="#month">{{t4|A month}}</a></li>{{/nv_month}}
+{{#nv_clients}}<li><a class="m-link" href="#clients">{{t5|Clients}}</a></li>{{/nv_clients}}
+{{#nv_prices}}<li><a class="m-link" href="#prices">{{t6|Prices}}</a></li>{{/nv_prices}}
+{{#nv_team}}<li><a class="m-link" href="#team">{{t7|Team}}</a></li>{{/nv_team}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t8|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t9|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<ul class="ft-icons">
+<li><a aria-label="Call us" class="m-icon" data-8b-placeholder="phone" href="tel:{{telraw}}"><svg aria-hidden="true" class="m-icon__glyph" viewbox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.3a10 10 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"></path></svg></a></li>
+<li><a aria-label="Write to us" class="m-icon" data-8b-placeholder="email" href="#ub-contact"><svg aria-hidden="true" class="m-icon__glyph" viewbox="0 0 24 24"><path d="M3.5 6.5h17v11h-17z M3.5 7l8.5 6.5L20.5 7"></path></svg></a></li>
+<li><a aria-label="Find the office on a map" class="m-icon" data-8b-placeholder="map" href="https://www.google.com/maps/search/?api=1&amp;query={{address}}"><svg aria-hidden="true" class="m-icon__glyph" viewbox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path></svg></a></li>
+</ul>
+</div>
+<p class="m-text-2 ft-word" style="--len:8"><span class="ft-a">{{t206|even}}</span><span class="ft-b">{{t207|keel}}</span></p>
+<div class="ft-bottom m-text-3"><span>{{t208|© 2026 ⟦name⟧ Accountants Ltd · Company no. 00000000 · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t209|8B}}</a></span><a class="m-link" href="#opening">{{t210|Back to the top}}</a></div>
+</div>
+<div aria-hidden="true" class="ghost m-text-2"><span class="ghost__a">{{t206|even}}</span><span class="ghost__b">{{t207|keel}}</span></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const button = nav.querySelector('.nav__menu');
+  const menu = document.getElementById('menu');
+  const close = menu.querySelector('.menu__close');
+  let last = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (Math.abs(y - last) < 4) return;
+    nav.classList.toggle('is-hidden', y > last && y > 140);
+    last = y;
+  }, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  const open = () => {
+    menu.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+    window.lenis?.stop();
+    menu.querySelector('a')?.focus();
+  };
+  const shut = (focus = true) => {
+    menu.hidden = true;
+    button.setAttribute('aria-expanded', 'false');
+    window.lenis?.start();
+    if (focus) button.focus();
+  };
+  button.addEventListener('click', open);
+  close.addEventListener('click', () => shut());
+  menu.addEventListener('keydown', event => { if (event.key === 'Escape') shut(); });
+  menu.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', event => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    event.stopPropagation();
+    shut(false);
+    if (window.lenis) window.lenis.scrollTo(target); else target.scrollIntoView();
+  }));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const level = document.querySelector('#opening .op-level');
+  if (!level || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => level.classList.toggle('is-paused', !entry.isIntersecting)).observe(level);
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  const thanks = form.querySelector('.ct-thanks');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    thanks.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('nav');
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -(nav ? nav.offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rule(element, vars = {}) {
+    const tall = element.offsetHeight > element.offsetWidth;
+    return gsap.fromTo(element, tall ? { scaleY: 0 } : { scaleX: 0 }, { ...(tall ? { scaleY: 1 } : { scaleX: 1 }), transformOrigin: tall ? '50% 0%' : '0% 50%', duration: 1.1, ease: 'power3.inOut', ...vars });
+  },
+  post(element, vars = {}) {
+    const side = element.dataset.post === 'right' ? 1 : -1;
+    return gsap.fromTo(element, { x: 36 * side, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', ...vars });
+  },
+  weigh(element, vars = {}) {
+    return gsap.fromTo(element, { fontWeight: 300 }, { fontWeight: 500, ease: 'none', ...vars });
+  }
+};
+['rule', 'post'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, i) => ScrollTrigger.create({
+        id: `${id}:${i}`, trigger: element, start: 'top 90%', once: true,
+        animation: effects[name](element, { paused: true, delay: element.dataset.post === 'right' ? 0.12 : 0 })
+      }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const two = section.querySelector('.op-two');
+    const rule = section.querySelector('.op-rule');
+    const left = section.querySelectorAll('.op-one .op-a .ln__i');
+    const right = section.querySelectorAll('.op-one .op-h1 .ln__i, .op-one .op-sub .l-b .ln__i');
+    const rows = [...section.querySelectorAll('.op-say .l-a')];
+    const tiles = section.querySelectorAll('.op-tile');
+    const para = section.querySelector('.op-para');
+    const slit = () => {
+      const width = two.clientWidth;
+      const l = rule.offsetLeft / width * 100;
+      return `inset(0% ${(100 - l - 100 / width).toFixed(3)}% 0% ${l.toFixed(3)}%)`;
+    };
+    const rise = [150, 240, 190, 280];
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'opening', trigger: section, start: 'top top', end: () => `+=${two.offsetTop}`, scrub: 0.6, invalidateOnRefresh: true
+    } });
+    timeline
+      .to(left, { x: () => -innerWidth * 0.08, ease: 'power2.in', duration: 0.6 }, 0)
+      .to(right, { x: () => innerWidth * 0.08, ease: 'power2.in', duration: 0.6 }, 0)
+      .fromTo(two, { clipPath: slit }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power2.inOut', duration: 0.7 }, 0.12)
+      .fromTo(tiles, { y: i => rise[i % rise.length] }, { y: 0, ease: 'power2.out', duration: 0.62 }, 0.3)
+      .fromTo(para, { y: 70 }, { y: 0, ease: 'power2.out', duration: 0.5 }, 0.42)
+      .fromTo(rows.map(row => row.firstElementChild), { x: i => rule.offsetLeft - rows[i].offsetLeft }, { x: 0, ease: 'power3.out', duration: 0.42, stagger: 0.08 }, 0.5);
+  });
+}, { first: true, id: 'scene:opening' });
+</script>
+<script data-8b-part="scene:month">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 701px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 700px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('month');
+    const board = section.querySelector('.mo-board');
+    const fill = section.querySelector('.mo-fill');
+    const marker = section.querySelector('.mo-marker');
+    const tasks = [...section.querySelectorAll('.mo-task')];
+    section.setAttribute('data-month', '');
+    const mark = progress => tasks.forEach((task, i) => task.classList.toggle('is-on', progress >= i / tasks.length + 0.012));
+    const timeline = gsap.timeline({
+      onUpdate() { mark(this.progress()); },
+      scrollTrigger: { id: 'month', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(fill, wide ? { scaleX: 0 } : { scaleY: 0 }, wide ? { scaleX: 1, ease: 'none', duration: 1 } : { scaleY: 1, ease: 'none', duration: 1 }, 0)
+      .fromTo(marker, wide ? { x: () => -board.clientWidth } : { y: () => -board.clientHeight }, wide ? { x: 0, ease: 'none', duration: 1 } : { y: 0, ease: 'none', duration: 1 }, 0);
+    mark(timeline.progress());
+    return () => { section.removeAttribute('data-month'); tasks.forEach(task => task.classList.remove('is-on')); };
+  });
+}, { id: 'scene:month' });
+</script>
+<script data-8b-part="scene:clients">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 701px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 700px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('clients');
+    const title = section.querySelector('.cl-title');
+    const globe = section.querySelector('.cl-globe');
+    const a = section.querySelector('.cl-half--a');
+    const b = section.querySelector('.cl-half--b');
+    const gap = () => parseFloat(getComputedStyle(title).fontSize) * 0.26;
+    const together = () => {
+      const cx = title.clientWidth / 2;
+      if (wide) {
+        const start = cx - (a.offsetWidth + gap() + b.offsetWidth) / 2;
+        return { ax: start - a.offsetLeft, bx: start + a.offsetWidth + gap() - b.offsetLeft, ay: 0, by: 0 };
+      }
+      const cy = title.clientHeight / 2;
+      return { ax: cx - a.offsetWidth / 2 - a.offsetLeft, bx: cx - b.offsetWidth / 2 - b.offsetLeft, ay: cy - a.offsetHeight - a.offsetTop, by: cy - b.offsetTop };
+    };
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'clients', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.8, invalidateOnRefresh: true
+    } });
+    timeline
+      .fromTo(globe, { y: () => innerHeight * 0.8 }, { y: 0, ease: 'power2.out', duration: 0.5 }, 0)
+      .fromTo(globe, { rotationY: -330, rotationX: 22 }, { rotationY: 0, rotationX: 0, ease: 'power1.out', duration: 1 }, 0)
+      .fromTo(a, { x: () => together().ax, y: () => together().ay }, { x: 0, y: 0, ease: 'power2.inOut', duration: 0.42 }, 0.1)
+      .fromTo(b, { x: () => together().bx, y: () => together().by }, { x: 0, y: 0, ease: 'power2.inOut', duration: 0.42 }, 0.1);
+  });
+}, { id: 'scene:clients' });
+</script>
+<script data-8b-part="scene:switch">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('switch');
+    const tiles = [...section.querySelectorAll('.sw-tile')];
+    section.setAttribute('data-switch', '');
+    const timeline = gsap.timeline({
+      onUpdate() { const p = this.progress(); tiles.forEach((tile, i) => tile.classList.toggle('is-done', p >= (i + 1) / tiles.length - 0.03)); },
+      scrollTrigger: { id: 'switch', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.4 }
+    });
+    tiles.forEach((tile, i) => timeline.fromTo(tile.querySelector('.sw-ring__arc'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, ease: 'none', duration: 1 }, i));
+    return () => { section.removeAttribute('data-switch'); tiles.forEach(tile => tile.classList.remove('is-done')); };
+  });
+}, { id: 'scene:switch' });
+</script>
+<script data-8b-part="scene:team">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('team');
+    const row = section.querySelector('.tm-row');
+    const cards = [...row.querySelectorAll('.tm-card')];
+    const tilt = [-7, 5, -3, 8, -5, 3];
+    const middle = (cards.length - 1) / 2;
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'team', trigger: row, start: 'top 92%', end: 'center 52%', scrub: 0.6, invalidateOnRefresh: true
+    } });
+    cards.forEach((card, i) => timeline.fromTo(card, {
+      x: () => row.clientWidth / 2 - (card.offsetLeft + card.offsetWidth / 2) + (i - middle) * 16,
+      y: () => row.clientHeight / 2 - (card.offsetTop + card.offsetHeight / 2) + (i % 2 ? -12 : 12),
+      rotation: () => tilt[i % tilt.length]
+    }, { x: 0, y: 0, rotation: 0, ease: 'power2.inOut', duration: 1 }, i * 0.08));
+  });
+}, { id: 'scene:team' });
+</script>
+<script data-8b-part="scene:principle">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('principle');
+    const lines = [...section.querySelectorAll('.pc-l')];
+    lines.forEach((line, i) => effects.weigh(line, { scrollTrigger: {
+      id: `principle:l${i}`, trigger: line, start: 'top 92%', end: 'top 46%', scrub: 0.3
+    } }));
+    const last = lines[lines.length - 1];
+    gsap.fromTo(section.querySelector('.pc-dot'), { scale: 0, transformOrigin: '50% 80%' }, { scale: 1, ease: 'back.out(3)', transformOrigin: '50% 80%', scrollTrigger: {
+      id: 'principle:dot', trigger: last, start: 'top 62%', end: 'top 46%', scrub: 0.3
+    } });
+  });
+}, { id: 'scene:principle' });
+</script>
+<script data-8b-part="scene:reviews">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const stack = section.querySelector('.rv-stack');
+    const sheets = [...stack.querySelectorAll('.rv-sheet')];
+    const flowTop = index => sheets.slice(0, index).reduce((sum, sheet) => sum + sheet.offsetHeight + parseFloat(getComputedStyle(sheet).marginBottom), 0);
+    sheets.slice(0, -1).forEach((sheet, i) => {
+      const next = sheets[i + 1];
+      gsap.fromTo(sheet, { scale: 1, transformOrigin: '50% 0%' }, { scale: 0.92, ease: 'none', transformOrigin: '50% 0%', scrollTrigger: {
+        id: `reviews:s${i}`, trigger: stack, scrub: true, invalidateOnRefresh: true,
+        start: () => `top+=${flowTop(i + 1)} bottom`,
+        end: () => `top+=${flowTop(i + 1)} ${parseFloat(getComputedStyle(next).top) || 0}px`
+      } });
+    });
+  });
+}, { id: 'scene:reviews' });
+</script>
+<script data-8b-part="scene:footer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    const word = footer.querySelector('.ft-word');
+    const halves = [footer.querySelector('.ft-a'), footer.querySelector('.ft-b')];
+    const ghosts = [footer.querySelector('.ghost__a'), footer.querySelector('.ghost__b')];
+    const ratio = () => parseFloat(getComputedStyle(ghosts[0]).fontSize) / parseFloat(getComputedStyle(word).fontSize);
+    gsap.timeline({ scrollTrigger: {
+      id: 'footer', trigger: word, start: 'top bottom', end: () => ScrollTrigger.maxScroll(window), scrub: 0.6, invalidateOnRefresh: true
+    } })
+      .to(ghosts, { yPercent: 130, ease: 'power2.in', duration: 0.35 }, 0)
+      .fromTo(halves[0], { scale: ratio, transformOrigin: '0% 100%' }, { scale: 1, transformOrigin: '0% 100%', ease: 'power2.inOut', duration: 0.75 }, 0.25)
+      .fromTo(halves[1], { scale: ratio, transformOrigin: '100% 100%' }, { scale: 1, transformOrigin: '100% 100%', ease: 'power2.inOut', duration: 0.75 }, 0.25);
+  });
+}, { id: 'scene:footer' });
+</script>
+</body>
+</html>

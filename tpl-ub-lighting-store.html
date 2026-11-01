@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ececec;
+  --color-2: #121212;
+  --color-3: #ffffff;
+  --color-4: #ffd000;
+  --color-5: #555555;
+  --color-6: #a3a3a3;
+  --font-1: "Geist", "Geist Fallback", "Arial", sans-serif;
+  --space-1: 56px;
+  --space-2: clamp(20px, 3.4vw, 52px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Geist Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 98.5%; ascent-override: 102.6%; descent-override: 30.5%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101.7%; ascent-override: 99.3%; descent-override: 29.5%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; overflow-x: clip; }
+h1, h2, h3, h4, p, ul, ol, figure, dl, dd, blockquote { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 5.7vw, 84px); font-weight: 300; line-height: 0.98; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 13px; font-weight: 400; line-height: 1.45; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 26px); font-weight: 400; line-height: 1.2; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; display: inline-grid; place-items: center; min-width: 13.5em; min-height: 3.9em; padding: 0 2.2em; font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.01em; text-decoration: none; color: inherit; background: none; border: 0; cursor: pointer; isolation: isolate; }
+.m-btn::before, .m-btn::after { content: ""; position: absolute; left: 0; right: 0; border-radius: 50%; border: 1px solid currentColor; transition: transform .5s cubic-bezier(.2,.7,.2,1), background-color .5s; }
+.m-btn::before { top: 0; bottom: 6%; z-index: -1; background: radial-gradient(closest-side, var(--color-4), transparent) center / 0% 0% no-repeat; transition: transform .5s cubic-bezier(.2,.7,.2,1), background-size .5s cubic-bezier(.2,.7,.2,1); }
+.m-btn::after { top: 6%; bottom: 0; }
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: scaleY(1.32); background-size: 100% 100%; }
+  .m-btn:hover::after { transform: scaleY(1.18); }
+}
+
+.m-link { font-family: var(--font-1); font-size: inherit; font-weight: 500; line-height: inherit; letter-spacing: 0; text-decoration: none; color: var(--color-2); background-image: linear-gradient(var(--color-2), var(--color-2)); background-repeat: no-repeat; background-position: 0 100%; background-size: 100% 1px; padding: 0.05em 0.1em; margin: 0 -0.1em; transition: background-size .45s cubic-bezier(.2,.7,.2,1), color .3s; }
+@media (hover: hover) { .m-link:hover { background-size: 100% 100%; color: var(--color-1); } }
+.m-link-2 { font-family: var(--font-1); font-size: inherit; font-weight: 500; line-height: inherit; letter-spacing: 0; text-decoration: none; color: var(--color-3); background-image: linear-gradient(var(--color-4), var(--color-4)); background-repeat: no-repeat; background-position: 0 100%; background-size: 100% 1px; padding: 0.05em 0.1em; margin: 0 -0.1em; transition: background-size .45s cubic-bezier(.2,.7,.2,1), color .3s; }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 100%; color: var(--color-2); } }
+
+.m-icon { display: inline-grid; place-items: center; width: 58px; height: 58px; background: var(--color-2); color: var(--color-3); text-decoration: none; transition: background-color .35s, color .35s; }
+.m-icon svg { width: 46%; height: 46%; fill: none; stroke: currentColor; stroke-width: 1.4; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .m-icon:hover { background: var(--color-4); color: var(--color-2); } .m-icon:hover svg { transform: translateY(12%); } }
+.m-icon-2 { display: inline-grid; place-items: center; width: 48px; height: 40px; background: transparent; color: var(--color-2); border: 0; padding: 0; cursor: pointer; transition: background-color .35s; }
+@media (hover: hover) { .m-icon-2:hover { background: var(--color-4); } }
+
+.m-field { display: block; width: 100%; font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.4; letter-spacing: 0; color: var(--color-2); background: transparent; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0; padding: 10px 0 9px; appearance: none; }
+.m-field:focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto 0; z-index: 50; height: var(--space-1); background: var(--color-3); color: var(--color-2); transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+#navigation.is-hidden { transform: translateY(-101%); }
+#navigation .nav-bar { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 var(--space-2); }
+#navigation .nav-mark { font-family: var(--font-1); font-size: 19px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; line-height: 1; padding: 6px 0; }
+#navigation .nav-right { display: flex; align-items: center; gap: clamp(18px, 3vw, 44px); }
+#navigation .nav-links { display: flex; gap: clamp(18px, 3vw, 44px); }
+#navigation .nav-links a { font-size: 13px; }
+#navigation .nav-toggle span, #navigation .nav-close span { display: block; width: 26px; height: 1.5px; background: currentColor; }
+#navigation .nav-toggle { gap: 6px; align-content: center; }
+#navigation .nav-menu { position: fixed; inset: 0; z-index: 60; background: var(--color-2); color: var(--color-3); display: grid; grid-template-rows: auto 1fr auto; padding: 0 var(--space-2) var(--space-2); }
+#navigation .nav-menu[hidden] { display: none; }
+#navigation .nav-menu__top { height: var(--space-1); display: flex; align-items: center; justify-content: space-between; }
+#navigation .nav-close { color: var(--color-3); position: relative; }
+#navigation .nav-close span { position: absolute; left: 11px; top: 19px; }
+#navigation .nav-close span:first-child { transform: rotate(45deg); }
+#navigation .nav-close span:last-child { transform: rotate(-45deg); }
+#navigation .nav-close:hover { color: var(--color-2); }
+#navigation .nav-menu__list { align-self: center; display: grid; gap: 0.1em; font-size: clamp(36px, 6.4vw, 76px); }
+#navigation .nav-menu__list a { font-size: inherit; line-height: 1.12; }
+#navigation .nav-menu__meta { color: var(--color-6); display: flex; flex-wrap: wrap; gap: 8px 32px; }
+@media (max-width: 899px) { #navigation .nav-links { display: none; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .op-day { position: sticky; top: 0; z-index: 1; height: 100vh; height: 100svh; overflow: hidden; }
+#opening .op-glow { position: absolute; left: 4vw; bottom: -23vw; width: 46vw; height: 46vw; pointer-events: none; }
+#opening .op-glow__drift { width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(closest-side, var(--color-4) 22%, color-mix(in oklab, var(--color-4) 62%, transparent) 52%, transparent 100%); }
+#opening .op-cols { position: relative; display: grid; grid-template-columns: 34vw 38vw 34vw; height: 100%; padding-top: var(--space-1); }
+#opening .op-col { position: relative; min-width: 0; padding: clamp(28px, 7.5vh, 76px) var(--space-2) 0; }
+#opening .op-col + .op-col::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--color-2); transform-origin: 50% 0; }
+#opening .op-intro { display: flex; flex-direction: column; padding-bottom: clamp(22px, 5.5vh, 56px); }
+#opening .op-title { max-width: 4.6em; }
+#opening .op-lede { margin-top: clamp(18px, 5vh, 52px); max-width: 23em; font-size: 15px; }
+#opening .op-actions { margin-top: clamp(22px, 5.5vh, 56px); display: flex; flex-direction: column; align-items: flex-start; gap: clamp(22px, 5vh, 52px); flex: 1 1 auto; }
+#opening .op-actions .m-btn { min-width: 15.5em; min-height: 4.6em; }
+#opening .op-late { margin-top: auto; display: grid; grid-template-columns: auto auto; align-items: end; column-gap: 18px; text-decoration: none; color: var(--color-2); width: 100%; }
+#opening .op-late__day { grid-row: 1 / 3; font-size: clamp(44px, 4.6vw, 68px); font-weight: 300; line-height: 0.82; letter-spacing: -0.03em; }
+#opening .op-late__text { align-self: start; }
+#opening .op-late__arrow { grid-column: 2; display: flex; align-items: center; gap: 10px; }
+#opening .op-late__arrow svg { width: 64px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.3; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { #opening .op-late:hover .op-late__arrow svg { transform: translateX(10px); } }
+#opening .op-room__title { font-size: clamp(44px, 5.7vw, 84px); max-width: 3.8em; }
+#opening .op-squiggle { position: absolute; fill: none; stroke: var(--color-2); stroke-width: 1.1; stroke-linecap: round; overflow: visible; }
+#opening .op-squiggle--a { width: 22px; height: 64px; left: 46%; top: 34%; }
+#opening .op-squiggle--b { width: 70px; height: 32px; left: 64%; top: 30%; }
+#opening .op-squiggle--c { width: 96px; height: 40px; left: 26%; top: 32%; }
+#opening .op-room__strip { position: absolute; left: 0; bottom: 0; width: 13%; height: 34%; background: linear-gradient(to top, var(--color-4) 30%, transparent); }
+#opening .op-room__media { position: absolute; left: 13%; right: 0; bottom: 0; height: 57%; overflow: hidden; background: var(--color-5); }
+#opening .op-room__media img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; }
+#opening .op-room__badge { position: absolute; left: 0; top: 0; z-index: 1; }
+#opening .op-room--b .op-room__media { right: auto; width: 40vw; }
+#opening .op-room--b .op-room__media img { object-position: 35% 50%; }
+
+#opening .op-night { position: relative; z-index: 2; min-height: 100vh; min-height: 100svh; background: var(--color-2); color: var(--color-3); display: grid; grid-template-columns: 34fr 38fr 28fr; grid-template-rows: auto 1fr auto; padding: calc(var(--space-1) + clamp(28px, 6vh, 64px)) 0 clamp(36px, 8vh, 80px); }
+#opening .op-night > * { position: relative; z-index: 1; }
+#opening .op-night > .op-night__lanes { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+#opening .op-night__rule { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--color-6); opacity: 0.45; transform-origin: 50% 0; transform: scaleY(var(--rule, 1)); }
+#opening .op-night__rule:nth-child(1) { left: 34%; }
+#opening .op-night__rule:nth-child(2) { left: 72%; }
+#opening .op-night__media { grid-column: 1; grid-row: 1 / 3; position: relative; z-index: 0; margin: 0 var(--space-2) clamp(32px, 6vh, 64px); align-self: start; }
+#opening .op-night__pool { position: absolute; left: 50%; top: 50%; width: 46vw; height: 46vw; margin: -23vw 0 0 -23vw; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, var(--color-4) 42%, color-mix(in oklab, var(--color-4) 50%, transparent) 58%, transparent 74%); pointer-events: none; }
+#opening .op-night__media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 48% 50%; }
+#opening .op-night__title { grid-column: 2 / 4; grid-row: 1; padding: 0 var(--space-2); font-size: clamp(40px, 6.2vw, 96px); max-width: 10.5em; text-wrap: balance; }
+#opening .op-night__list { grid-column: 1 / 4; grid-row: 3; display: grid; grid-template-columns: subgrid; }
+#opening .op-night__item { padding: 0 var(--space-2); display: grid; gap: 12px; align-content: start; }
+#opening .op-night__item p { color: var(--color-6); max-width: 26em; }
+#opening .op-night__item .m-link-2 { justify-self: start; }
+
+@media (max-width: 899px) {
+  #opening .op-glow { left: -30vw; bottom: auto; top: 30%; width: 110vw; height: 110vw; }
+  #opening .op-cols { grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; }
+  #opening .op-intro { grid-column: 1 / -1; padding-bottom: 22px; }
+  #opening .op-col { padding-top: 22px; }
+  #opening .op-intro { padding-top: 26px; }
+  #opening .op-title { font-size: clamp(44px, 13.4vw, 64px); }
+  #opening .op-lede { margin-top: 16px; }
+  #opening .op-actions { margin-top: 20px; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; flex: none; }
+  #opening .op-actions .m-btn { min-width: 0; width: 11.8em; min-height: 3.8em; padding: 0 1em; }
+  #opening .op-late { margin-top: 0; width: auto; grid-template-columns: auto; row-gap: 4px; }
+  #opening .op-late__day { display: none; }
+  #opening .op-late__arrow { grid-column: 1; }
+  #opening .op-late__arrow svg { width: 48px; }
+  #opening .op-room { border-top: 1px solid var(--color-2); }
+  #opening .op-intro + .op-col::before { display: none; }
+  #opening .op-room__title { font-size: clamp(26px, 7.6vw, 36px); }
+  #opening .op-squiggle { display: none; }
+  #opening .op-room__media { left: 16%; top: calc(22px + 2.1em + 16px); height: auto; font-size: clamp(26px, 7.6vw, 36px); }
+  #opening .op-room--b .op-room__media { width: auto; right: 0; }
+  #opening .op-room__strip { width: 16%; height: 40%; }
+  #opening .op-room__badge { width: 40px; height: 40px; }
+  #opening .op-night { grid-template-columns: 1fr; grid-template-rows: auto; padding-top: calc(var(--space-1) + 32px); row-gap: 32px; }
+  #opening .op-night__lanes { display: none; }
+  #opening .op-night__title { grid-column: 1; grid-row: auto; font-size: clamp(36px, 10.4vw, 52px); }
+  #opening .op-night__media { grid-column: 1; grid-row: auto; margin: 0 var(--space-2); width: 64%; }
+  #opening .op-night__pool { width: 104vw; height: 104vw; margin: -52vw 0 0 -52vw; }
+  #opening .op-night__list { grid-column: 1; grid-row: auto; grid-template-columns: 1fr; gap: 28px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-col + .op-col::before { animation: op-rule 1s cubic-bezier(.3,.7,.2,1) backwards; }
+  #opening .op-title-wrap, #opening .op-room__head { animation: op-lift .9s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-room__head { animation-delay: .12s; }
+  #opening .op-room--b .op-room__head { animation-delay: .22s; }
+  #opening .op-room__frame { animation: op-open 1.1s cubic-bezier(.3,.7,.2,1) .05s backwards; }
+  #opening .op-room--b .op-room__frame { animation-delay: .18s; }
+  #opening .op-btn-wrap { animation: op-disc .9s cubic-bezier(.2,.7,.2,1) .25s backwards; }
+  #opening .op-glow__drift { animation: op-drift 7s ease-in-out infinite alternate; }
+  #opening .op-squiggle-wrap { animation: op-sway 5.5s ease-in-out infinite alternate; }
+  #opening .op-day.is-paused .op-glow__drift, #opening .op-day.is-paused .op-squiggle-wrap { animation-play-state: paused; }
+}
+@keyframes op-rule { from { transform: scaleY(0); } }
+@keyframes op-lift { from { transform: translateY(0.3em); clip-path: inset(0 0 45% 0); } }
+@keyframes op-open { from { clip-path: inset(32% 0 0 0); transform: scale(1.05); } }
+@keyframes op-disc { from { transform: scaleY(0.35); } }
+@keyframes op-drift { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(7vw, -5vh) scale(1.1); } 100% { transform: translate(-3vw, -9vh) scale(0.94); } }
+@keyframes op-sway { 0% { transform: translate(0, 0) rotate(0deg); } 100% { transform: translate(14px, -10px) rotate(7deg); } }
+}
+</style>
+<style data-8b-part="scene-style:lights-on">
+@layer scenes {
+#opening .op-night__dome, #opening .op-night__ring { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-night.is-dusk .op-night__dome, #opening .op-night.is-dusk .op-night__ring { display: block; position: absolute; left: 0; width: 100%; height: 44vh; top: -22vh; border-radius: 50%; pointer-events: none; }
+  #opening .op-night.is-dusk .op-night__dome { background: var(--color-2); }
+  #opening .op-night.is-dusk .op-night__ring { border: 1px solid var(--color-2); top: calc(-22vh - 14px); }
+  #opening .op-night.is-dusk .op-night__dome, #opening .op-night.is-dusk .op-night__ring { z-index: 0; }
+  @media (max-width: 899px) { #opening .op-night.is-dusk .op-night__dome { height: 24vh; top: -12vh; } #opening .op-night.is-dusk .op-night__ring { height: 24vh; top: calc(-12vh - 10px); } }
+}
+}
+</style>
+<style data-8b-part="section:rooms">
+@layer sections {
+#rooms { position: relative; background: var(--color-1); border-top: 1px solid var(--color-2); }
+#rooms .rm-track { display: grid; grid-template-columns: repeat(3, 1fr); }
+#rooms .rm-col { position: relative; min-height: 92vh; min-height: 92svh; padding: calc(var(--space-1) + clamp(20px, 5vh, 52px)) var(--space-2) 0; border-left: 1px solid var(--color-2); border-bottom: 1px solid var(--color-2); overflow: hidden; }
+#rooms .rm-col:nth-child(3n+1) { border-left: 0; }
+#rooms .rm-head .m-text-2 { max-width: 5em; }
+#rooms .rm-head p { margin-top: clamp(18px, 4vh, 40px); max-width: 23em; }
+#rooms .rm-head__note { margin-top: clamp(22px, 5vh, 48px); display: flex; align-items: center; gap: 12px; }
+#rooms .rm-head__note svg { width: 64px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.3; }
+#rooms .rm-room__title { font-size: clamp(40px, 4.6vw, 68px); }
+#rooms .rm-room__text { margin-top: clamp(14px, 3vh, 28px); max-width: 23em; }
+#rooms .rm-room__link { display: inline-block; margin-top: 14px; }
+#rooms .rm-room__squiggle { position: absolute; right: 12%; top: calc(var(--space-1) + clamp(24px, 6vh, 60px)); width: 76px; height: 34px; fill: none; stroke: var(--color-2); stroke-width: 1.1; stroke-linecap: round; }
+#rooms .rm-room__strip { position: absolute; left: 0; bottom: 0; width: 13%; height: 30%; background: linear-gradient(to top, var(--color-4) 30%, transparent); transform-origin: 50% 100%; }
+#rooms .rm-room__media { position: absolute; left: 13%; right: 0; bottom: 0; height: 44%; overflow: hidden; background: var(--color-5); }
+#rooms .rm-room__media img { width: 100%; height: 100%; object-fit: cover; }
+#rooms .rm-end { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: clamp(20px, 4vh, 36px); padding-bottom: clamp(40px, 8vh, 80px); }
+#rooms .rm-end .m-text-2 { font-size: clamp(36px, 3.8vw, 56px); max-width: 7em; }
+#rooms .rm-end p { max-width: 22em; }
+@media (max-width: 899px) {
+  #rooms .rm-track { grid-template-columns: 1fr; }
+  #rooms .rm-col { border-left: 0; min-height: 0; padding-top: 44px; padding-bottom: 36px; }
+  #rooms .rm-room { min-height: 168vw; }
+  #rooms .rm-room__squiggle { top: 52px; right: 8%; }
+  #rooms .rm-room__media { height: 52%; }
+  #rooms .rm-room__strip { height: 34%; }
+}
+}
+</style>
+<style data-8b-part="scene-style:rooms">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #rooms.is-track { overflow: hidden; }
+  #rooms.is-track .rm-track { display: flex; flex-wrap: nowrap; width: max-content; height: 100vh; height: 100svh; }
+  #rooms.is-track .rm-col { flex: none; width: 34vw; height: 100%; min-height: 0; border-bottom: 0; border-left: 1px solid var(--color-2); }
+  #rooms.is-track .rm-col:first-child { border-left: 0; }
+  @media (max-width: 899px) {
+    #rooms.is-track .rm-col { width: 86vw; padding-top: calc(var(--space-1) + 24px); }
+  }
+}
+}
+</style>
+<style data-8b-part="section:collection">
+@layer sections {
+#collection { position: relative; padding: clamp(80px, 14vh, 150px) var(--space-2) clamp(60px, 10vh, 110px); }
+#collection .cl-head { display: grid; grid-template-columns: 34fr 66fr; gap: 0 var(--space-2); align-items: end; margin-bottom: clamp(36px, 8vh, 80px); }
+#collection .cl-head p { max-width: 26em; }
+#collection .cl-list { position: relative; counter-reset: none; }
+#collection .cl-row { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 22em) clamp(120px, 16vw, 220px); gap: 8px var(--space-2); align-items: start; padding: clamp(20px, 3.5vh, 36px) 0; border-top: 1px solid var(--color-2); }
+#collection .cl-row__name { font-size: clamp(38px, 4.8vw, 72px); }
+#collection .cl-row__meta { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; margin-top: 4px; }
+#collection .cl-row__text { grid-column: 2; grid-row: 1; }
+#collection .cl-row__lamp { display: none; }
+#collection .cl-shot { grid-column: 3; grid-row: 1 / 3; margin: 0; }
+#collection .cl-shot__stick, #collection .cl-shot__move { overflow: hidden; }
+#collection .cl-shot__stick { aspect-ratio: 4 / 5; background: var(--color-5); }
+#collection .cl-shot__move, #collection .cl-shot img { width: 100%; height: 100%; }
+#collection .cl-shot img { object-fit: cover; }
+@media (max-width: 899px) {
+  #collection .cl-head { grid-template-columns: 1fr; gap: 16px; }
+  #collection .cl-row { grid-template-columns: minmax(0, 1fr) 96px; }
+  #collection .cl-row__name { grid-column: 1; }
+  #collection .cl-row__text, #collection .cl-row__meta { grid-column: 1; grid-row: auto; }
+  #collection .cl-shot { grid-column: 2; grid-row: 1 / 4; }
+}
+}
+</style>
+<style data-8b-part="scene-style:collection">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #collection.is-index .cl-list { padding-right: calc(40% + var(--space-2)); }
+  #collection.is-index .cl-row { grid-template-columns: minmax(0, 1fr); min-height: 58vh; position: static; }
+  #collection.is-index .cl-row__text, #collection.is-index .cl-row__meta { grid-column: 1; grid-row: auto; }
+  #collection.is-index .cl-row__name { position: relative; }
+  #collection.is-index .cl-row__lamp { display: block; position: absolute; left: calc(-1 * var(--space-2)); top: 0; width: 6px; height: 100%; background: var(--color-4); transform-origin: 50% 100%; }
+  #collection.is-index .cl-shot { position: absolute; top: 0; bottom: 0; right: 0; width: 40%; pointer-events: none; }
+  #collection.is-index .cl-shot__stick { position: sticky; top: calc(var(--space-1) + 6vh); height: calc(100vh - var(--space-1) - 14vh); aspect-ratio: auto; background: transparent; }
+  #collection.is-rows .cl-row__lamp { display: block; position: absolute; left: -14px; top: 0; width: 4px; height: 100%; background: var(--color-4); transform-origin: 50% 100%; }
+}
+}
+</style>
+<style data-8b-part="section:plans">
+@layer sections {
+#plans { position: relative; display: grid; grid-template-columns: 34fr 66fr; border-top: 1px solid var(--color-2); }
+#plans .pl-head { padding: clamp(64px, 12vh, 130px) var(--space-2) clamp(48px, 8vh, 90px); }
+#plans .pl-head p { margin-top: clamp(18px, 4vh, 36px); max-width: 24em; }
+#plans .pl-media { margin-top: clamp(28px, 6vh, 56px); }
+#plans .pl-media img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+#plans .pl-body { border-left: 1px solid var(--color-2); padding: clamp(64px, 12vh, 130px) 0 clamp(48px, 8vh, 90px); display: flex; flex-direction: column; }
+#plans .pl-step { position: relative; display: grid; grid-template-columns: clamp(80px, 11vw, 160px) minmax(0, 1fr); gap: 8px var(--space-2); padding: clamp(26px, 5vh, 48px) var(--space-2); }
+#plans .pl-step + .pl-step::before, #plans .pl-step:first-child::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-2); transform: scaleX(var(--rule, 1)); transform-origin: 0 50%; }
+#plans .pl-step__no { grid-row: 1 / 3; font-size: clamp(56px, 7vw, 104px); line-height: 0.8; }
+#plans .pl-step p { max-width: 30em; }
+#plans .pl-cta { margin: clamp(20px, 4vh, 40px) var(--space-2) 0; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 32px; }
+#plans .pl-cta p { color: var(--color-5); max-width: 22em; }
+@media (max-width: 899px) {
+  #plans { grid-template-columns: 1fr; }
+  #plans .pl-head { padding-bottom: 24px; }
+  #plans .pl-body { border-left: 0; padding-top: 0; }
+  #plans .pl-step { grid-template-columns: 64px minmax(0, 1fr); }
+  #plans .pl-step__no { font-size: 56px; }
+}
+}
+</style>
+<style data-8b-part="section:makers">
+@layer sections {
+#makers { position: relative; background: var(--color-3); display: grid; grid-template-columns: 34fr 66fr; }
+#makers .mk-head { padding: clamp(64px, 12vh, 130px) var(--space-2); }
+#makers .mk-head__in { position: sticky; top: calc(var(--space-1) + 6vh); }
+#makers .mk-head p { margin-top: clamp(18px, 4vh, 36px); max-width: 22em; }
+#makers .mk-list { border-left: 1px solid var(--color-2); padding: clamp(64px, 12vh, 130px) 0; }
+#makers .mk-row { --heat: 0; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 12em); gap: 4px var(--space-2); align-items: baseline; padding: clamp(14px, 2.6vh, 26px) var(--space-2); }
+#makers .mk-row::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: color-mix(in oklab, var(--color-4) calc(var(--heat) * 100%), var(--color-2)); transform: scaleY(calc(1 + var(--heat) * 3)); transform-origin: 50% 0; }
+#makers .mk-name { font-family: var(--font-1); font-size: clamp(34px, 5vw, 76px); font-weight: 300; line-height: 1.02; letter-spacing: -0.03em; }
+#makers .mk-where { display: grid; gap: 2px; color: var(--color-5); }
+#makers .mk-where strong { color: var(--color-2); font-weight: 500; }
+@media (max-width: 899px) {
+  #makers { grid-template-columns: 1fr; }
+  #makers .mk-head { padding-bottom: 20px; }
+  #makers .mk-list { border-left: 0; padding-top: 12px; }
+  #makers .mk-row { grid-template-columns: 1fr; }
+  #makers .mk-name { font-size: clamp(32px, 10vw, 48px); }
+}
+}
+</style>
+<style data-8b-part="section:try">
+@layer sections {
+#try { position: relative; display: grid; grid-template-columns: 34fr 38fr 28fr; border-top: 1px solid var(--color-2); }
+#try .tr-intro { grid-column: 1; grid-row: 1; padding: clamp(64px, 12vh, 130px) var(--space-2) clamp(36px, 6vh, 64px); display: flex; flex-direction: column; align-items: flex-start; }
+#try .tr-intro .m-text-2 { max-width: 6.2em; }
+#try .tr-intro p { margin-top: clamp(18px, 4vh, 36px); max-width: 22em; }
+#try .tr-intro .m-btn { margin-top: clamp(26px, 5vh, 48px); }
+#try .tr-intro .tr-note { margin-top: 16px; color: var(--color-5); }
+#try .tr-stage { grid-column: 2 / 4; grid-row: 1; position: relative; border-left: 1px solid var(--color-2); min-height: min(78vh, 760px); }
+#try .tr-strip { position: absolute; left: 0; bottom: 0; width: 7%; height: 40%; background: linear-gradient(to top, var(--color-4) 30%, transparent); }
+#try .tr-media { position: absolute; left: 7%; right: 0; top: clamp(64px, 12vh, 130px); bottom: 0; margin: 0; overflow: hidden; background: var(--color-5); }
+#try .tr-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+#try .tr-days { grid-column: 1 / -1; grid-row: 2; display: grid; grid-template-columns: subgrid; border-top: 1px solid var(--color-2); }
+#try .tr-day { position: relative; padding: clamp(28px, 5vh, 52px) var(--space-2) clamp(40px, 8vh, 80px); display: grid; gap: 14px; align-content: start; }
+#try .tr-day + .tr-day { border-left: 1px solid var(--color-2); }
+#try .tr-day::before { content: ""; position: absolute; left: var(--space-2); top: -3px; width: 48px; height: 6px; background: var(--color-4); transform: scaleX(var(--rule, 1)); transform-origin: 0 50%; }
+#try .tr-day__name { font-size: clamp(36px, 4.2vw, 62px); }
+#try .tr-day p { max-width: 22em; }
+@media (max-width: 899px) {
+  #try { grid-template-columns: 1fr; }
+  #try .tr-intro { padding-bottom: 32px; }
+  #try .tr-stage { grid-column: 1; grid-row: 2; border-left: 0; min-height: 0; height: 118vw; }
+  #try .tr-media { top: 0; left: 12%; }
+  #try .tr-strip { width: 12%; }
+  #try .tr-days { grid-column: 1; grid-row: 3; grid-template-columns: 1fr; }
+  #try .tr-day + .tr-day { border-left: 0; border-top: 1px solid var(--color-2); }
+  #try .tr-day { padding-bottom: 32px; }
+}
+}
+</style>
+<style data-8b-part="section:repairs">
+@layer sections {
+#repairs { position: relative; display: grid; grid-template-columns: 34fr 38fr 28fr; border-top: 1px solid var(--color-2); padding: clamp(64px, 12vh, 130px) 0; }
+#repairs .rp-text { padding: 0 var(--space-2); display: flex; flex-direction: column; align-items: flex-start; }
+#repairs .rp-text .m-text-2 { font-size: clamp(40px, 4.4vw, 66px); max-width: 7em; }
+#repairs .rp-text p { margin-top: clamp(18px, 4vh, 36px); max-width: 24em; }
+#repairs .rp-price { color: var(--color-5); }
+#repairs .rp-text .m-btn { margin-top: clamp(26px, 5vh, 48px); }
+#repairs .rp-frame { position: relative; margin: 0 var(--space-2); overflow: hidden; aspect-ratio: 4 / 5; align-self: start; background: var(--color-5); }
+#repairs .rp-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#repairs .rp-before { filter: grayscale(1) brightness(0.78) contrast(0.92); }
+#repairs .rp-after, #repairs .rp-after__in { position: absolute; inset: 0; overflow: hidden; }
+#repairs .rp-line { display: none; }
+#repairs .rp-steps { position: relative; display: grid; grid-auto-rows: 1fr; align-self: stretch; }
+#repairs .rp-step { --lit: 1; position: relative; padding: 0 var(--space-2) 18px; display: grid; gap: 6px; align-content: start; color: color-mix(in oklab, var(--color-2) calc(var(--lit) * 100%), var(--color-5)); }
+#repairs .rp-step__no { display: flex; align-items: center; gap: 10px; }
+#repairs .rp-step__no::after { content: ""; width: 40px; height: 6px; background: var(--color-4); transform: scaleX(var(--lit)); transform-origin: 0 50%; }
+#repairs .rp-step p { max-width: 20em; }
+@media (max-width: 899px) {
+  #repairs { grid-template-columns: 1fr; row-gap: 36px; }
+  #repairs .rp-steps { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; row-gap: 22px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:repairs">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #repairs.is-restoring .rp-line { display: block; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--color-4); pointer-events: none; z-index: 2; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; display: grid; grid-template-columns: 34fr 66fr; border-top: 1px solid var(--color-2); }
+#faq .fq-head { padding: clamp(64px, 12vh, 130px) var(--space-2) 32px; }
+#faq .fq-head .m-text-2 { max-width: 6em; }
+#faq .fq-head p { margin-top: clamp(18px, 4vh, 36px); max-width: 22em; }
+#faq .fq-list { border-left: 1px solid var(--color-2); padding: clamp(64px, 12vh, 130px) 0 clamp(48px, 8vh, 90px); }
+#faq .fq-item { position: relative; }
+#faq .fq-item::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-2); transform: scaleX(var(--rule, 1)); transform-origin: 0 50%; }
+#faq .fq-item summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) 28px; gap: 16px; align-items: center; padding: 24px var(--space-2); }
+#faq .fq-item summary::-webkit-details-marker { display: none; }
+#faq .fq-item summary::after { content: ""; width: 28px; height: 28px; background: linear-gradient(currentColor, currentColor) center / 100% 1.5px no-repeat, linear-gradient(currentColor, currentColor) center / 1.5px 100% no-repeat; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+#faq .fq-item[open] summary::after { transform: rotate(45deg); }
+#faq .fq-item p { padding: 0 var(--space-2) 28px; max-width: 40em; }
+#faq .fq-item summary:focus-visible { outline-offset: -4px; }
+@media (max-width: 899px) {
+  #faq { grid-template-columns: 1fr; }
+  #faq .fq-list { border-left: 0; padding-top: 8px; }
+}
+}
+</style>
+<style data-8b-part="section:thursdays">
+@layer sections {
+#thursdays { position: relative; overflow: hidden; background: var(--color-2); color: var(--color-3); padding: clamp(80px, 14vh, 150px) var(--space-2); display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); grid-template-rows: auto auto auto; row-gap: clamp(28px, 5vh, 56px); column-gap: clamp(40px, 5vw, 90px); }
+#thursdays .th-title { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 1em; font-size: clamp(42px, 6vw, 92px); }
+#thursdays .th-line { display: block; }
+#thursdays .th-disc { grid-column: 2; position: relative; width: min(64vh, 44vw); aspect-ratio: 1; }
+#thursdays .th-ring { position: absolute; inset: -18px; border: 1px solid var(--color-6); border-radius: 50%; }
+#thursdays .th-ring--b { inset: -18px -18px -40px; }
+#thursdays .th-media { position: absolute; inset: 0; margin: 0; clip-path: ellipse(50% 50% at 50% 50%); }
+#thursdays .th-media img { width: 100%; height: 100%; object-fit: cover; }
+#thursdays .th-info { grid-column: 3; grid-row: 2; align-self: end; justify-self: end; display: grid; gap: 14px; max-width: 24em; }
+#thursdays .th-info .m-text-3 { color: var(--color-6); }
+#thursdays .th-info a { justify-self: start; }
+#thursdays .th-side { grid-column: 1; grid-row: 2; align-self: start; color: var(--color-6); max-width: 14em; }
+@media (max-width: 899px) {
+  #thursdays { grid-template-columns: 1fr; }
+  #thursdays .th-title { flex-direction: column; }
+  #thursdays .th-line--b { align-self: flex-end; }
+  #thursdays .th-disc { grid-column: 1; width: min(78vw, 56vh); justify-self: center; margin: 18px 0; }
+  #thursdays .th-info { grid-column: 1; grid-row: auto; justify-self: start; }
+  #thursdays .th-side { grid-column: 1; grid-row: auto; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; display: grid; grid-template-columns: 34fr 66fr; overflow: hidden; }
+#contact .ct-info { position: relative; padding: clamp(72px, 13vh, 140px) var(--space-2) clamp(56px, 9vh, 100px); }
+#contact .ct-glow { position: absolute; left: -16vw; bottom: -20vw; width: 52vw; height: 52vw; border-radius: 50%; background: radial-gradient(closest-side, var(--color-4) 18%, color-mix(in oklab, var(--color-4) 55%, transparent) 50%, transparent 100%); pointer-events: none; }
+#contact .ct-info > :not(.ct-glow) { position: relative; }
+#contact .ct-info .m-text-2 { max-width: 5.6em; }
+#contact .ct-address { margin-top: clamp(26px, 5vh, 48px); font-style: normal; }
+#contact .ct-hours { margin-top: 20px; display: grid; grid-template-columns: auto auto; justify-content: start; gap: 2px 20px; }
+#contact .ct-hours dd { margin: 0; }
+#contact .ct-reach { margin-top: 20px; display: grid; gap: 4px; justify-items: start; }
+#contact .ct-form { position: relative; border-left: 1px solid var(--color-2); padding: clamp(72px, 13vh, 140px) var(--space-2) clamp(56px, 9vh, 100px); display: grid; grid-template-columns: 1fr 1fr; gap: 30px var(--space-2); align-content: start; }
+#contact .ct-form > p:first-child { grid-column: 1 / -1; max-width: 30em; }
+#contact .ct-field { display: grid; gap: 4px; }
+#contact .ct-field--wide { grid-column: 1 / -1; }
+#contact .ct-field textarea { resize: vertical; min-height: 120px; }
+#contact .ct-send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+#contact .ct-status { color: var(--color-2); }
+@media (max-width: 899px) {
+  #contact { grid-template-columns: 1fr; }
+  #contact .ct-glow { left: -40vw; bottom: -50vw; width: 130vw; height: 130vw; }
+  #contact .ct-form { border-left: 0; border-top: 1px solid var(--color-2); grid-template-columns: 1fr; padding-top: 44px; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-2); color: var(--color-3); padding: clamp(64px, 11vh, 120px) var(--space-2) 28px; overflow: hidden; }
+#footer .ft-cols { display: grid; grid-template-columns: 34fr 38fr 28fr; gap: 28px var(--space-2); color: var(--color-6); }
+#footer .ft-cols ul, #footer .ft-reach { display: grid; gap: 6px; justify-items: start; }
+#footer .ft-cols h2 { color: var(--color-3); margin-bottom: 12px; }
+#footer .ft-mark { margin-top: clamp(48px, 10vh, 110px); font-family: var(--font-1); font-size: min(46vw, calc((100vw - 2 * var(--space-2)) / (var(--len) * 0.46))); font-weight: 700; line-height: 0.78; letter-spacing: -0.045em; text-transform: none; font-style: normal; white-space: nowrap; pointer-events: none; color: color-mix(in oklab, var(--color-4) calc(var(--sign, 1) * 100%), var(--color-6)); }
+#footer .ft-meta { margin-top: 32px; padding-top: 18px; border-top: 1px solid color-mix(in oklab, var(--color-6) 40%, transparent); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--color-6); }
+@media (max-width: 899px) { #footer .ft-cols { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-night__cta { grid-column: 2 / 4; grid-row: 2; align-self: start; padding: clamp(26px, 5vh, 52px) var(--space-2) 0; }
+#opening .op-night__cta .m-btn { min-width: 15.5em; min-height: 4.6em; }
+@media (max-width: 899px) {
+  #opening .op-night__cta { grid-column: 1; grid-row: auto; padding-top: 0; }
+  #opening .op-night__cta .m-btn { min-width: 0; width: 12.5em; min-height: 4em; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-night__rule { animation: op-rule 1.1s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .op-night__rule:nth-child(2) { animation-delay: .1s; }
+  #opening .op-night__title { animation: op-lift .9s cubic-bezier(.2, .7, .2, 1) .05s backwards; }
+  #opening .op-night__cta .m-btn { animation: op-disc .9s cubic-bezier(.2, .7, .2, 1) .25s backwards; }
+  #opening .op-night__media img { animation: op-open 1.1s cubic-bezier(.3, .7, .2, 1) .1s backwards; }
+  #opening .op-night__pool { animation: op-drift 7s ease-in-out infinite alternate; }
+  #opening .op-night__item { animation: op-lift .9s cubic-bezier(.2, .7, .2, 1) .3s backwards; }
+  #opening .op-night__item:nth-child(2) { animation-delay: .38s; }
+  #opening .op-night__item:nth-child(3) { animation-delay: .46s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<nav aria-label="Main" class="nav-bar">
+<a aria-label="{{name}}, back to the top" class="nav-mark" href="#opening">{{t1|⟦name⟧}}</a>
+<div class="nav-right">
+<ul class="nav-links">
+{{#nv_rooms}}<li><a class="m-link m-text-3" href="#rooms">{{t2|Rooms}}</a></li>{{/nv_rooms}}
+{{#nv_collection}}<li><a class="m-link m-text-3" href="#collection">{{t3|Lamps}}</a></li>{{/nv_collection}}
+{{#nv_plans}}<li><a class="m-link m-text-3" href="#plans">{{t4|Lighting plans}}</a></li>{{/nv_plans}}
+{{#nv_repairs}}<li><a class="m-link m-text-3" href="#repairs">{{t5|Repairs}}</a></li>{{/nv_repairs}}
+{{#nv_contact}}<li><a class="m-link m-text-3" href="#contact">{{t6|Visit}}</a></li>{{/nv_contact}}
+</ul>
+<button aria-controls="site-menu" aria-expanded="false" aria-label="Open the menu" class="m-icon-2 nav-toggle" type="button"><span></span><span></span></button>
+</div>
+</nav>
+<div class="nav-menu" hidden="" id="site-menu">
+<div class="nav-menu__top">
+<span aria-hidden="true" class="nav-mark">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-icon-2 nav-close" type="button"><span></span><span></span></button>
+</div>
+<ul class="nav-menu__list">
+{{#nv_rooms}}<li><a class="m-link-2" href="#rooms">{{t7|Light by room}}</a></li>{{/nv_rooms}}
+{{#nv_collection}}<li><a class="m-link-2" href="#collection">{{t8|The lamps}}</a></li>{{/nv_collection}}
+{{#nv_plans}}<li><a class="m-link-2" href="#plans">{{t4|Lighting plans}}</a></li>{{/nv_plans}}
+{{#nv_try}}<li><a class="m-link-2" href="#try">{{t9|Borrow a lamp}}</a></li>{{/nv_try}}
+{{#nv_repairs}}<li><a class="m-link-2" href="#repairs">{{t5|Repairs}}</a></li>{{/nv_repairs}}
+{{#nv_thursdays}}<li><a class="m-link-2" href="#thursdays">{{t10|Late Thursdays}}</a></li>{{/nv_thursdays}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t11|Visit and contact}}</a></li>{{/nv_contact}}
+</ul>
+<p class="nav-menu__meta m-text-3"><span>{{t12|1 Admiralty Way, Kaduna}}</span><a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t13|⟦phone⟧}}</a></p>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-night">
+<span aria-hidden="true" class="op-night__ring"></span>
+<span aria-hidden="true" class="op-night__dome"></span>
+<div aria-hidden="true" class="op-night__lanes"><span class="op-night__rule"></span><span class="op-night__rule"></span></div>
+<h1 class="m-text-2 op-night__title" id="opening-title">{{t14|Daylight sets the room. Lamps finish it.}}</h1>
+<div class="op-night__cta"><a class="m-btn" href="#collection"><span class="m-btn__label">{{t15|Shop lamps}}</span></a></div>
+<figure class="op-night__media">
+<span aria-hidden="true" class="op-night__pool"></span>
+<img alt="A yellow lamp shade glowing beside a dark curtain at night" height="4989" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1717944443951-b5086c3fc417?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGFtcCUyMGdsb3dpbmclMjBkYXJrJTIwcm9vbXxlbnwxfDB8fHwxNzkxNDA3ODc4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=750&q=60}}" style="background:#40260c" width="7483"/>
+</figure>
+<ul class="op-night__list">
+<li class="op-night__item">
+<h3 class="m-text-4">{{t3|Lamps}}</h3>
+<p class="m-text">{{t16|Pendants, table, floor and wall lights from small studios, in the showroom and online.}}</p>
+<a class="m-link-2 m-text" href="#collection">{{t17|Browse the lamps →}}</a>
+</li>
+<li class="op-night__item">
+<h3 class="m-text-4">{{t4|Lighting plans}}</h3>
+<p class="m-text">{{t18|Send a floor plan and two photos. We draw where every light goes, free with orders over ₦300,000.}}</p>
+<a class="m-link-2 m-text" href="#plans">{{t19|Start a plan →}}</a>
+</li>
+<li class="op-night__item">
+<h3 class="m-text-4">{{t5|Repairs}}</h3>
+<p class="m-text">{{t20|Old lamps rewired, re-switched and made safe in our workshop, usually within ten days.}}</p>
+<a class="m-link-2 m-text" href="#repairs">{{t21|Book a repair →}}</a>
+</li>
+</ul>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_rooms}}<section aria-labelledby="rooms-title" data-8b-section="rooms" id="rooms">
+<div class="rm-track">
+<div class="rm-col rm-head">
+<h2 class="m-text-2" id="rooms-title">{{t22|Light, room by room}}</h2>
+<p class="m-text">{{t23|Every room asks for something different once the sun is down. Six short briefs from our lighting plans, each with the lamps that answer it.}}</p>
+<p class="rm-head__note m-text-3"><span>{{t24|Six rooms}}</span><svg aria-hidden="true" viewbox="0 0 64 22"><path d="M0 11h62M52 1l10 10-10 10"></path></svg></p>
+</div>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t25|Kitchen}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M2 24c10 2 16-12 28-14s20 12 32 8 10-8 12-10"></path></svg>
+<p class="m-text rm-room__text">{{t26|Work light under the cabinets, one low pendant over the table and a dimmer on both, so dinner never happens in the glare of the worktop.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t27|Kitchen pendants →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A white kitchen with four glass pendants over an island and wooden stools" height="2800" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1708426045546-8911cfea6162?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bWluaW1hbCUyMGtpdGNoZW4lMjBwZW5kYW50JTIwbGFtcHxlbnwxfDF8fHwxNzkxNDA3NzU1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#c0c0c0" width="2500"/></div>
+</article>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t28|Bath}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M4 30c18 2 34-2 44-12S64 4 74 4"></path></svg>
+<p class="m-text rm-room__text">{{t29|A mirror light at face height rather than above it, and something soft and splash-rated for the long bath with the big light off.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t30|Bathroom wall lights →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A white marble basin under a large mirror with a brass frame" height="6000" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1719782758789-7dbf0ed54b11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bWluaW1hbCUyMGJhdGhyb29tJTIwbWFyYmxlfGVufDF8MXx8fDE3OTE0MDc3Njd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#c0c0c0" width="4000"/></div>
+</article>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t31|Bedroom}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M2 10c8 0 12 14 22 16s16-18 28-18 14 10 22 12"></path></svg>
+<p class="m-text rm-room__text">{{t32|Two lights at pillow height that dim right down, and a ceiling light you hardly use. Warm bulbs only, and a switch you can reach from bed.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t33|Bedside lights →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A white bedroom with a black wall lamp above a wooden bedside table" height="3780" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1758803275226-1bfc87aa6660?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YmVkcm9vbSUyMGJlZHNpZGUlMjBsYW1wJTIwbWluaW1hbHxlbnwxfDF8fHwxNzkxNDA3NzY3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="3024"/></div>
+</article>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t34|Living}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M6 4c6 8-2 14 6 20s20 6 30 2 18-6 30-2"></path></svg>
+<p class="m-text rm-room__text">{{t35|Three pools of light at three heights: a floor lamp by the chair, a table lamp across the room and something low on a shelf.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t36|Floor and table lamps →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A grey armchair beside a black tripod floor lamp and a small side table" height="2800" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1759722667550-81316a23d723?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGZsb29yJTIwbGFtcCUyMG1pbmltYWx8ZW58MXwxfHx8MTc5MTQwNzc4Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="2500"/></div>
+</article>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t37|Study}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M2 18c14-12 26-12 34 0s22 12 38-6"></path></svg>
+<p class="m-text rm-room__text">{{t38|One arm lamp you can aim at the page and a softer light behind the screen, so your eyes are not working against the dark.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t39|Desk lamps →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A black and chrome arm lamp on a desk against a white wall" height="7609" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1582737068506-19cfa00233ee?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGRlc2slMjBsYW1wJTIwc3R1ZHklMjBtaW5pbWFsfGVufDF8MXx8fDE3OTE0MDc3ODd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="5073"/></div>
+</article>
+<article class="rm-col rm-room">
+<h3 class="m-text-2 rm-room__title">{{t40|Hall}}</h3>
+<svg aria-hidden="true" class="rm-room__squiggle" viewbox="0 0 76 34"><path d="M4 28c10-20 20-24 30-12s14 14 22 2 10-10 16-8"></path></svg>
+<p class="m-text rm-room__text">{{t41|A welcome at the door: a wall light on a sensor, and a small lamp on the console for the hours when nobody is home.}}</p>
+<a class="m-link m-text rm-room__link" href="#collection">{{t42|Wall lights →}}</a>
+<span aria-hidden="true" class="rm-room__strip"></span>
+<div class="rm-room__media"><img alt="A round mirror and a brass wall light above a slim wooden console in a hallway" height="5836" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1785535573604-62e31f0fd341?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZW50cnl3YXklMjBjb25zb2xlJTIwbGFtcHxlbnwxfDF8fHwxNzkxNDA3ODE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#a6a6a6" width="3891"/></div>
+</article>
+<div class="rm-col rm-end">
+<h3 class="m-text-2">{{t43|Your room is not on the list?}}</h3>
+<p class="m-text">{{t44|Lofts, stairwells, shop counters, a bathroom with no window. Send it to a planner and we will draw the light for it.}}</p>
+<a class="m-btn" href="#plans"><span class="m-btn__label">{{t45|Start a plan}}</span></a>
+</div>
+</div>
+</section>{{/sec_rooms}}
+
+{{#sec_collection}}<section aria-labelledby="collection-title" data-8b-section="collection" id="collection">
+<div class="cl-head">
+<h2 class="m-text-2" id="collection-title">{{t46|Six ways to light a room}}</h2>
+<p class="m-text">{{t47|Around six hundred lamps from small studios, sorted the way you look for them: by where the light comes from. Everything can be seen switched on in the showroom.}}</p>
+</div>
+<ol class="cl-list">
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t48|Pendants}}</h3>
+<p class="m-text cl-row__text">{{t49|Glass, paper and spun metal, hung at the height we measure for your table or your stair.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t50|From ₦42,500}}</span><a class="m-link" href="#contact">{{t51|Ask about pendants →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="A white globe pendant on a black rod hanging from a pale ceiling" height="4093" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1764757137717-78be1702848a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cGVuZGFudCUyMGxhbXAlMjB3aGl0ZSUyMGNlaWxpbmd8ZW58MXwxfHx8MTc5MTQwNzgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#d9d9c0" width="2729"/></div></div></figure>
+</li>
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t52|Table lamps}}</h3>
+<p class="m-text cl-row__text">{{t53|Ceramic, stone and brass bases, with linen shades made to order in three weeks.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t54|From ₦32,000}}</span><a class="m-link" href="#contact">{{t55|Ask about table lamps →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="A patterned ceramic table lamp with a white shade on a woven side table" height="6240" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1655151418942-2bf9df1cfdf3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fGNlcmFtaWMlMjB0YWJsZSUyMGxhbXB8ZW58MXwxfHx8MTc5MTQwNzg3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#c0c0a6" width="3876"/></div></div></figure>
+</li>
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t56|Floor lamps}}</h3>
+<p class="m-text cl-row__text">{{t57|Arcs, tripods and readers that stand where no ceiling point and no socket can reach.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t58|From ₦70,000}}</span><a class="m-link" href="#contact">{{t59|Ask about floor lamps →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="A slim black floor lamp leaning over a pale chaise by tall curtains" height="6246" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1787676560635-2567cc0d6dd9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTl8fGxpdmluZyUyMHJvb20lMjBmbG9vciUyMGxhbXAlMjBtaW5pbWFsfGVufDF8MXx8fDE3OTE0MDc3ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#f3f3f3" width="4672"/></div></div></figure>
+</li>
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t60|Wall lights}}</h3>
+<p class="m-text cl-row__text">{{t61|Plug-in or wired, for halls, bedheads and mirrors, with the cable tidied into the wall or a neat run.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t62|From ₦29,000}}</span><a class="m-link" href="#contact">{{t63|Ask about wall lights →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="A pleated white fabric wall light with a brass frame on a white wall" height="6240" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1655153382868-6f284ebd4aa9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d2FsbCUyMHNjb25jZSUyMG1pbmltYWx8ZW58MXwxfHx8MTc5MTQwNzgxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#d9d9d9" width="3866"/></div></div></figure>
+</li>
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t64|Outdoor}}</h3>
+<p class="m-text cl-row__text">{{t65|Lanterns for the door and posts for the path, rated for a Kaduna winter.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t66|From ₦36,000}}</span><a class="m-link" href="#contact">{{t67|Ask about outdoor lights →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="An old black wall lantern on a scrolled bracket against a pale wall" height="11648" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1770394644068-c1fd69dda1c6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3V0ZG9vciUyMHdhbGwlMjBsYW50ZXJuJTIwZmFjYWRlfGVufDF8MXx8fDE3OTE0MDc4MTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#8c8c8c" width="8736"/></div></div></figure>
+</li>
+<li class="cl-row">
+<span aria-hidden="true" class="cl-row__lamp"></span>
+<h3 class="m-text-2 cl-row__name">{{t68|Bulbs and dimmers}}</h3>
+<p class="m-text cl-row__text">{{t69|Warm filament and LED bulbs in every fitting, and the dimmers that will not make them flicker.}}</p>
+<p class="cl-row__meta m-text-3"><span>{{t70|From ₦3,000}}</span><a class="m-link" href="#contact">{{t71|Ask about bulbs →}}</a></p>
+<figure class="cl-shot"><div class="cl-shot__stick"><div class="cl-shot__move"><img alt="A clear bulb glowing under a brass shade against a dark background" height="5472" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1749026731003-5ef32cf691a4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGxpZ2h0JTIwYnVsYiUyMGZpbGFtZW50JTIwZGFya3xlbnwxfDF8fHwxNzkxNDA3ODEzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#260c0c" width="3648"/></div></div></figure>
+</li>
+</ol>
+</section>{{/sec_collection}}
+
+{{#sec_plans}}<section aria-labelledby="plans-title" data-8b-section="plans" id="plans">
+<div class="pl-head">
+<div data-8b-motion="rise">
+<h2 class="m-text-2" id="plans-title">{{t72|A plan before a single hole is drilled}}</h2>
+<p class="m-text">{{t73|Most rooms are lit by one light in the middle of the ceiling, because nobody planned otherwise. Our planners draw the light first and choose the lamps after.}}</p>
+</div>
+<figure class="pl-media"><img alt="A lighting drawing of a room on a desk with a pen and material samples" data-8b-motion="switchOn" height="2384" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1628900941064-ba8df8b51e4a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YXJjaGl0ZWN0JTIwZmxvb3IlMjBwbGFuJTIwZHJhd2luZyUyMGRlc2t8ZW58MXwwfHx8MTc5MTQwNzg3NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60}}" style="background:#d9d9d9" width="4240"/></figure>
+</div>
+<div class="pl-body">
+<ol class="pl-steps">
+<li class="pl-step" data-8b-motion="rule">
+<span class="pl-step__no m-text-2">{{t74|1}}</span>
+<h3 class="m-text-4">{{t75|Send us the room}}</h3>
+<p class="m-text">{{t76|A floor plan or a sketch with measurements, two photos, and what you do in the room after dark.}}</p>
+</li>
+<li class="pl-step" data-8b-motion="rule">
+<span class="pl-step__no m-text-2">{{t77|2}}</span>
+<h3 class="m-text-4">{{t78|We draw the light}}</h3>
+<p class="m-text">{{t79|Within a week you get a drawing marking every lamp, switch and socket, and a list that fits your budget.}}</p>
+</li>
+<li class="pl-step" data-8b-motion="rule">
+<span class="pl-step__no m-text-2">{{t80|3}}</span>
+<h3 class="m-text-4">{{t81|We hang it}}</h3>
+<p class="m-text">{{t82|Order the list and our electrician fits it in a day, plug-in lamps placed and dimmers set.}}</p>
+</li>
+</ol>
+<div class="pl-cta">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t45|Start a plan}}</span></a>
+<p class="m-text-3">{{t83|Free with orders over ₦300,000. Otherwise ₦45,000 which comes off the lamps you buy from the plan.}}</p>
+</div>
+</div>
+</section>{{/sec_plans}}
+
+{{#sec_makers}}<section aria-labelledby="makers-title" data-8b-section="makers" id="makers">
+<div class="mk-head">
+<div class="mk-head__in">
+<h2 class="m-text-2" id="makers-title">{{t84|Made by hands, not lines}}</h2>
+<p class="m-text">{{t85|We buy from workshops small enough to answer the phone. Most make fewer than a hundred lamps a year, and we can tell you whose hands wired yours.}}</p>
+</div>
+</div>
+<ul class="mk-list">
+<li class="mk-row"><span class="mk-name">{{t86|Atelier Vass}}</span><span class="mk-where m-text-3"><strong>{{t87|Porto}}</strong><span>{{t88|Spun aluminium pendants}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t89|Halden Works}}</span><span class="mk-where m-text-3"><strong>{{t90|Bergen}}</strong><span>{{t91|Oak and paper floor lamps}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t92|Morrow & Pike}}</span><span class="mk-where m-text-3"><strong>{{t93|Abuja}}</strong><span>{{t94|Enamel wall lights}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t95|Studio Kiln}}</span><span class="mk-where m-text-3"><strong>{{t96|Stoke-on-Trent}}</strong><span>{{t97|Ceramic table lamps}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t98|Oro Lume}}</span><span class="mk-where m-text-3"><strong>{{t99|Milan}}</strong><span>{{t100|Brass reading lights}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t101|Fenwick Glass}}</span><span class="mk-where m-text-3"><strong>{{t102|Enugu}}</strong><span>{{t103|Blown glass shades}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t104|Tallow}}</span><span class="mk-where m-text-3"><strong>{{t105|Copenhagen}}</strong><span>{{t106|Pleated linen shades}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t107|Ninefold}}</span><span class="mk-where m-text-3"><strong>{{t108|Lisbon}}</strong><span>{{t109|Folded steel sconces}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t110|Brae Metalworks}}</span><span class="mk-where m-text-3"><strong>{{t111|Dundee}}</strong><span>{{t112|Outdoor lanterns}}</span></span></li>
+<li class="mk-row"><span class="mk-name">{{t113|Kasa Lab}}</span><span class="mk-where m-text-3"><strong>{{t114|Rotterdam}}</strong><span>{{t115|Dimmers and switches}}</span></span></li>
+</ul>
+</section>{{/sec_makers}}
+
+{{#sec_try}}<section aria-labelledby="try-title" data-8b-section="try" id="try">
+<div class="tr-intro">
+<div data-8b-motion="rise">
+<h2 class="m-text-2" id="try-title">{{t116|Borrow a lamp for the weekend}}</h2>
+<p class="m-text">{{t117|A lamp looks different at home, at night, next to your own sofa. So take it home first and decide there.}}</p>
+</div>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t9|Borrow a lamp}}</span></a>
+<p class="tr-note m-text-3">{{t118|One lamp at a time per household, Kaduna addresses only.}}</p>
+</div>
+<div class="tr-stage">
+<span aria-hidden="true" class="tr-strip"></span>
+<figure class="tr-media"><img alt="A white ceramic table lamp beside an armchair in front of a marble wall" data-8b-motion="switchOn" height="6000" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1785535573662-417e82193598?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2VyYW1pYyUyMHRhYmxlJTIwbGFtcHxlbnwxfDF8fHwxNzkxNDA3ODczfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=790&q=60}}" style="background:#a6a6a6" width="4000"/></figure>
+</div>
+<ol class="tr-days">
+<li class="tr-day" data-8b-motion="rule"><h3 class="m-text-2 tr-day__name">{{t119|Friday}}</h3><p class="m-text">{{t120|Choose any table or floor lamp in the showroom. We pack it and lend you the right bulb.}}</p></li>
+<li class="tr-day" data-8b-motion="rule"><h3 class="m-text-2 tr-day__name">{{t121|The weekend}}</h3><p class="m-text">{{t122|Live with it. Try it by the chair, on the dresser, and after dark, when it matters.}}</p></li>
+<li class="tr-day" data-8b-motion="rule"><h3 class="m-text-2 tr-day__name">{{t123|Monday}}</h3><p class="m-text">{{t124|Bring it back and the ₦10,000 deposit comes back too, or keep it and the deposit comes off the price.}}</p></li>
+</ol>
+</section>{{/sec_try}}
+
+{{#sec_repairs}}<section aria-labelledby="repairs-title" data-8b-section="repairs" id="repairs">
+<div class="rp-text">
+<h2 class="m-text-2" id="repairs-title">{{t125|Bring us the lamp you cannot throw away}}</h2>
+<p class="m-text">{{t126|A grandmother's brass reader, a market find, the lamp that came with the flat. We rewire it, replace what is unsafe, keep what is beautiful and test it before it goes home.}}</p>
+<p class="m-text-3 rp-price">{{t127|Rewiring from ₦22,500 back in about ten days}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t128|Book a repair}}</span></a>
+</div>
+<figure class="rp-frame">
+<img alt="A vintage brass lamp with a pleated shade glowing against a yellow wall" class="rp-before" height="4484" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1774916698642-258ea43637e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dmludGFnZSUyMGJyYXNzJTIwbGFtcHxlbnwxfDF8fHwxNzkxNDA3Nzg4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#40260c" width="2989"/>
+<div aria-hidden="true" class="rp-after"><div class="rp-after__in"><img alt="" height="4484" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1774916698642-258ea43637e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dmludGFnZSUyMGJyYXNzJTIwbGFtcHxlbnwxfDF8fHwxNzkxNDA3Nzg4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#40260c" width="2989"/></div></div>
+</figure>
+<span aria-hidden="true" class="rp-line"></span>
+<ol class="rp-steps">
+<li class="rp-step"><span class="rp-step__no m-text-3">{{t129|Step 1}}</span><h3 class="m-text-4">{{t130|Strip it down}}</h3><p class="m-text-3">{{t131|Old flex, perished rubber and the brittle lampholder come out.}}</p></li>
+<li class="rp-step"><span class="rp-step__no m-text-3">{{t132|Step 2}}</span><h3 class="m-text-4">{{t133|Rewire}}</h3><p class="m-text-3">{{t134|New cord, earthed wherever the metal needs it, with proper strain relief.}}</p></li>
+<li class="rp-step"><span class="rp-step__no m-text-3">{{t135|Step 3}}</span><h3 class="m-text-4">{{t136|Switch and plug}}</h3><p class="m-text-3">{{t137|A new switch where your hand expects it, and a fused plug.}}</p></li>
+<li class="rp-step"><span class="rp-step__no m-text-3">{{t138|Step 4}}</span><h3 class="m-text-4">{{t139|Shade and test}}</h3><p class="m-text-3">{{t140|The shade cleaned or remade, then a safety test and a dated label.}}</p></li>
+</ol>
+</section>{{/sec_repairs}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-head" data-8b-motion="rise">
+<h2 class="m-text-2" id="faq-title">{{t141|Before the lamps arrive}}</h2>
+<p class="m-text">{{t142|Short answers to what people ask at the counter. Anything else,}} <a class="m-link" href="#contact">{{t143|write to us}}</a>.</p>
+</div>
+<div class="fq-list">
+<details class="fq-item" data-8b-motion="rule"><summary class="m-text-4">{{t144|Do you deliver, and how fast?}}</summary><p class="m-text">{{t145|Across the Nigeria in three to five working days, packed in paper and card. Kaduna orders over ₦75,000 come in our own van, often the next day.}}</p></details>
+<details class="fq-item" data-8b-motion="rule"><summary class="m-text-4">{{t146|Can you fit the lamps as well?}}</summary><p class="m-text">{{t147|Yes. Our electrician fits pendants and wall lights across Kaduna from ₦32,500 a visit. Plug-in lamps need nobody.}}</p></details>
+<details class="fq-item" data-8b-motion="rule"><summary class="m-text-4">{{t148|What does a lighting plan cost?}}</summary><p class="m-text">{{t149|Nothing with an order over ₦300,000. Otherwise it is ₦45,000 and the ₦45,000 comes off any lamps you buy from the plan within a year.}}</p></details>
+<details class="fq-item" data-8b-motion="rule"><summary class="m-text-4">{{t150|Which bulb should I buy?}}</summary><p class="m-text">{{t151|For living rooms and bedrooms, warm white and dimmable. Bring the old bulb in or send a photo of the fitting, and we will match the base and the light.}}</p></details>
+<details class="fq-item" data-8b-motion="rule"><summary class="m-text-4">{{t152|Can I return a lamp?}}</summary><p class="m-text">{{t153|Within thirty days, unused and in its box. Made-to-order shades and repaired lamps cannot come back, and we say so before you pay.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_thursdays}}<section aria-labelledby="thursdays-title" data-8b-section="thursdays" id="thursdays">
+<h2 class="m-text-2 th-title" id="thursdays-title"><span class="th-line th-line--a">{{t154|Open till nine}}</span> <span class="th-line th-line--b">{{t155|on Thursdays}}</span></h2>
+<p class="th-side m-text-3">{{t156|Thursdays 17:00 to 21:00. Tea on the counter and a lighting planner on the floor.}}</p>
+<div class="th-disc">
+<span aria-hidden="true" class="th-ring th-ring--a"></span>
+<span aria-hidden="true" class="th-ring th-ring--b"></span>
+<figure class="th-media"><img alt="Glass and brass pendant lamps lit in a dark showroom" height="2192" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1578490343589-ec110a8694b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGlnaHRpbmclMjBzaG9wJTIwc2hvd3Jvb20lMjBsYW1wc3xlbnwxfDB8fHwxNzkxNDA3Nzg5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=730&q=60}}" style="background:#260c0c" width="3126"/></figure>
+</div>
+<div class="th-info">
+<p class="m-text">{{t157|Every Thursday the showroom stays open into the evening, with the daylight gone and every lamp switched on. It is the honest way to see how a shade throws its light: after dark, the way you will use it.}}</p>
+<a class="m-link-2 m-text" href="#contact">{{t158|Plan a Thursday visit →}}</a>
+</div>
+</section>{{/sec_thursdays}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="ct-info">
+<span aria-hidden="true" class="ct-glow" data-8b-motion="glow"></span>
+<div data-8b-motion="rise">
+<h2 class="m-text-2" id="contact-title">{{t159|Come and see them lit}}</h2>
+<address class="ct-address m-text">{{t160|⟦name⟧ Lighting}}<br/>{{t161|1 Admiralty Way}}<br/>{{t162|Kaduna}}</address>
+</div>
+<dl class="ct-hours m-text">
+<dt>{{t163|Tuesday to Saturday}}</dt><dd>{{t164|10:00 to 18:00}}</dd>
+<dt>{{t165|Thursday}}</dt><dd>{{t166|until 21:00}}</dd>
+<dt>{{t167|Sunday}}</dt><dd>{{t168|12:00 to 17:00}}</dd>
+<dt>{{t123|Monday}}</dt><dd>{{t169|closed}}</dd>
+</dl>
+<p class="ct-reach m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t13|⟦phone⟧}}</a><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t170|hello@glim.example}}</a></p>
+</div>
+
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Lighting Store by <a href="https://github.com/8bsite/lighting-store-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft-cols">
+<nav aria-label="Footer">
+<h2 class="m-text-3">{{t171|Shop}}</h2>
+<ul>
+{{#nv_collection}}<li><a class="m-link-2 m-text" href="#collection">{{t8|The lamps}}</a></li>{{/nv_collection}}
+{{#nv_rooms}}<li><a class="m-link-2 m-text" href="#rooms">{{t7|Light by room}}</a></li>{{/nv_rooms}}
+{{#nv_plans}}<li><a class="m-link-2 m-text" href="#plans">{{t4|Lighting plans}}</a></li>{{/nv_plans}}
+{{#nv_try}}<li><a class="m-link-2 m-text" href="#try">{{t9|Borrow a lamp}}</a></li>{{/nv_try}}
+{{#nv_repairs}}<li><a class="m-link-2 m-text" href="#repairs">{{t5|Repairs}}</a></li>{{/nv_repairs}}
+</ul>
+</nav>
+<div>
+<h2 class="m-text-3">{{t172|Showroom}}</h2>
+<p class="m-text">{{t12|1 Admiralty Way, Kaduna}}<br/>{{t173|Tuesday to Sunday, Thursdays until 21:00}}</p>
+</div>
+<div>
+<h2 class="m-text-3">{{t174|Ask us}}</h2>
+<p class="ft-reach m-text"><a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t13|⟦phone⟧}}</a><a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t170|hello@glim.example}}</a></p>
+</div>
+</div>
+<p aria-hidden="true" class="ft-mark" style="--len:5">{{t1|⟦name⟧}}</p>
+<div class="ft-meta m-text-3"><span>{{t175|© 2026 ⟦name⟧ Lighting Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t176|8B}}</a></span><a class="m-link-2" href="#opening">{{t177|Back to the top ↑}}</a></div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = nav.querySelector('.nav-menu');
+  const close = nav.querySelector('.nav-close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    nav.classList.toggle('is-open', open);
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => { setOpen(false); toggle.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setOpen(false); toggle.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  if (!form) return;
+  const status = form.querySelector('.ct-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const valid = form.checkValidity();
+    if (status) status.textContent = valid ? status.dataset.sent : status.dataset.invalid;
+    if (valid) form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() { const nav = document.getElementById('navigation'); return nav ? nav.offsetHeight : 0; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const items = element.children.length ? [...element.children] : [element];
+    const timeline = gsap.timeline(vars);
+    items.forEach((item, index) => timeline.from(item, { y: 26, opacity: 0, duration: 0.9, ease: 'power3.out' }, index * 0.09));
+    return timeline;
+  },
+  rule(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { '--rule': 0 }, { '--rule': 1, duration: 1.1, ease: 'power2.inOut' });
+  },
+  squiggle(element, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    element.querySelectorAll('path').forEach((path, index) => {
+      const length = Math.ceil(path.getTotalLength()) + 2;
+      timeline.fromTo(path, { strokeDasharray: length, strokeDashoffset: length }, { strokeDashoffset: 0, duration: 1.2, ease: 'power2.inOut' }, index * 0.15);
+    });
+    return timeline;
+  },
+  switchOn(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { filter: 'brightness(0.42) grayscale(0.85)' }, { filter: 'brightness(1) grayscale(0)', duration: 1, ease: 'none' });
+  },
+  glow(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scale: 0.35, opacity: 0.3 }, { scale: 1, opacity: 1, duration: 1, ease: 'none' });
+  },
+  thicken(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { fontWeight: 200 }, { fontWeight: 700, duration: 1, ease: 'none' });
+  }
+};
+const onceEffects = ['rise', 'rule', 'squiggle'];
+const scrubEffects = ['switchOn', 'glow'];
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  [...onceEffects, ...scrubEffects].forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        if (onceEffects.includes(name)) {
+          const animation = effects[name](element, { paused: true });
+          ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true, animation });
+        } else {
+          ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top bottom', end: 'center 45%', scrub: 0.5, animation: effects[name](element) });
+        }
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const trigger = ScrollTrigger.create({ id: 'effect:header:navigation', start: 0, end: 'max', onUpdate: self => {
+    if (nav.classList.contains('is-open')) return;
+    nav.classList.toggle('is-hidden', self.direction === 1 && self.scroll() > 140);
+  } });
+  return () => { trigger.kill(); nav.classList.remove('is-hidden'); };
+}), { first: true, id: 'effect:header:navigation' });
+</script>
+<script data-8b-part="scene:rooms">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('rooms');
+    const track = section.querySelector('.rm-track');
+    const rooms = [...track.querySelectorAll('.rm-room')];
+    section.classList.add('is-track');
+    const distance = () => Math.max(0, track.scrollWidth - document.documentElement.clientWidth);
+    const slide = gsap.to(track, {
+      x: () => -distance(),
+      ease: 'none',
+      scrollTrigger: { id: 'rooms', trigger: section, start: 'top top', end: () => '+=' + Math.round(distance() * 0.85), pin: true, scrub: 0.7, invalidateOnRefresh: true }
+    });
+    rooms.forEach((room, index) => {
+      const strip = room.querySelector('.rm-room__strip');
+      const photo = room.querySelector('.rm-room__media img');
+      const squiggle = room.querySelector('.rm-room__squiggle');
+      const lit = gsap.timeline({ defaults: { ease: 'none' } });
+      if (strip) lit.fromTo(strip, { scaleY: 0 }, { scaleY: 1, duration: 1 }, 0);
+      if (photo) lit.add(effects.switchOn(photo), 0);
+      if (squiggle) lit.add(effects.squiggle(squiggle), 0);
+      ScrollTrigger.create({ id: `rooms:room-${index + 1}`, trigger: room, containerAnimation: slide, start: 'left 78%', end: 'center 50%', scrub: true, animation: lit });
+    });
+    return () => section.classList.remove('is-track');
+  });
+});
+</script>
+<script data-8b-part="scene:collection">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 900px)' }, context => {
+    if (!context.conditions.motion) return;
+    const wide = context.conditions.wide;
+    const section = document.getElementById('collection');
+    const rows = [...section.querySelectorAll('.cl-row')];
+    const mode = wide ? 'is-index' : 'is-rows';
+    section.classList.add(mode);
+    rows.forEach((row, index) => {
+      const move = row.querySelector('.cl-shot__move');
+      const photo = move ? move.querySelector('img') : null;
+      const lamp = row.querySelector('.cl-row__lamp');
+      const timeline = gsap.timeline({ defaults: { ease: 'none' } });
+      if ((index > 0 || !wide) && move && photo) {
+        timeline.fromTo(move, { yPercent: 100 }, { yPercent: 0, duration: 0.3, ease: 'power1.inOut' }, 0)
+          .fromTo(photo, { yPercent: -100 }, { yPercent: 0, duration: 0.3, ease: 'power1.inOut' }, 0);
+      }
+      if (lamp) {
+        timeline.fromTo(lamp, { scaleY: 0 }, { scaleY: 1, duration: 0.25 }, 0.05)
+          .to(lamp, { scaleY: 0, duration: 0.2 }, 0.8);
+      }
+      timeline.set({}, {}, 1);
+      ScrollTrigger.create({ id: `collection:row-${index + 1}`, trigger: row, start: wide ? 'top 82%' : 'top 92%', end: wide ? 'bottom 30%' : 'bottom 35%', scrub: 0.5, animation: timeline });
+    });
+    return () => section.classList.remove(mode);
+  });
+});
+</script>
+<script data-8b-part="scene:makers">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('makers');
+    const list = section.querySelector('.mk-list');
+    const rows = [...list.querySelectorAll('.mk-row')];
+    const names = rows.map(row => row.querySelector('.mk-name'));
+    let centres = [];
+    const measure = () => {
+      centres = rows.map(row => { const box = row.getBoundingClientRect(); return box.top + window.scrollY + box.height / 2; });
+    };
+    const paint = () => {
+      const middle = window.scrollY + innerHeight / 2;
+      const reach = innerHeight * 0.4;
+      rows.forEach((row, index) => {
+        const near = Math.max(0, 1 - Math.abs(centres[index] - middle) / reach);
+        const heat = near * near * (3 - 2 * near);
+        if (names[index]) names[index].style.fontWeight = String(Math.round(300 + heat * 400));
+        row.style.setProperty('--heat', heat.toFixed(3));
+      });
+    };
+    ScrollTrigger.create({ id: 'makers', trigger: list, start: 'top bottom', end: 'bottom top', onRefresh: () => { measure(); paint(); }, onUpdate: paint });
+    measure();
+    paint();
+    return () => {
+      names.forEach(name => name && name.style.removeProperty('font-weight'));
+      rows.forEach(row => row.style.removeProperty('--heat'));
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:repairs">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('repairs');
+    const frame = section.querySelector('.rp-frame');
+    const after = frame.querySelector('.rp-after');
+    const inner = frame.querySelector('.rp-after__in');
+    const line = section.querySelector('.rp-line');
+    const steps = [...section.querySelectorAll('.rp-step')];
+    section.classList.add('is-restoring');
+    const place = () => {
+      const wide = innerWidth >= 900;
+      gsap.set(line, { left: frame.offsetLeft, top: frame.offsetTop, width: wide ? section.clientWidth - frame.offsetLeft : frame.offsetWidth, right: 'auto' });
+    };
+    place();
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'repairs', trigger: frame, start: 'top 72%', end: 'bottom 42%', scrub: 0.5, invalidateOnRefresh: true, onRefresh: place }
+    });
+    timeline
+      .fromTo(after, { yPercent: -100 }, { yPercent: 0, duration: 1 }, 0)
+      .fromTo(inner, { yPercent: 100 }, { yPercent: 0, duration: 1 }, 0)
+      .fromTo(line, { y: 0, opacity: 1 }, { y: () => frame.offsetHeight, duration: 1 }, 0)
+      .to(line, { opacity: 0, duration: 0.06 }, 0.97);
+    steps.forEach((step, index) => {
+      timeline.fromTo(step, { '--lit': 0 }, { '--lit': 1, duration: 0.1 }, Math.max(0, (index + 0.5) / steps.length - 0.08));
+    });
+    return () => section.classList.remove('is-restoring');
+  });
+});
+</script>
+<script data-8b-part="scene:thursdays">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('thursdays');
+    const disc = section.querySelector('.th-disc');
+    const media = disc.querySelector('.th-media');
+    const photo = media.querySelector('img');
+    const rings = [...disc.querySelectorAll('.th-ring')];
+    const first = section.querySelector('.th-line--a');
+    const second = section.querySelector('.th-line--b');
+    const shift = () => innerWidth * (innerWidth >= 900 ? 0.12 : 0.06);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'thursdays', trigger: disc, start: 'top 92%', end: 'center 52%', scrub: 0.6, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(media, { clipPath: 'ellipse(50% 5% at 50% 50%)' }, { clipPath: 'ellipse(50% 50% at 50% 50%)', duration: 1, ease: 'power1.in' }, 0)
+      .fromTo(photo, { scale: 1.3 }, { scale: 1, duration: 1 }, 0);
+    rings.forEach(ring => timeline.fromTo(ring, { scaleY: 0.1 }, { scaleY: 1, duration: 1, ease: 'power1.in' }, 0));
+    if (first) timeline.fromTo(first, { x: () => shift() }, { x: 0, duration: 0.7, ease: 'power1.out' }, 0);
+    if (second) timeline.fromTo(second, { x: () => -shift() }, { x: 0, duration: 0.7, ease: 'power1.out' }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:sign">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    const mark = footer.querySelector('.ft-mark');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'sign', trigger: mark, start: 'top bottom', end: 'bottom bottom', scrub: 0.6 }
+    });
+    timeline.add(effects.thicken(mark), 0)
+      .fromTo(mark, { '--sign': 0 }, { '--sign': 1, duration: 1 }, 0);
+  });
+});
+</script>
+</body>
+</html>

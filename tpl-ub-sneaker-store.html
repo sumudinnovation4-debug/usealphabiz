@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Iayoxdg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f4f7ec;
+  --color-2: #121411;
+  --color-3: #c6ef4e;
+  --color-4: #e5eadb;
+  --color-5: #cfd6c3;
+  --color-6: #ffffff;
+  --color-7: #737869;
+  --color-8: #a9ae9f;
+  --color-9: #1f231d;
+  --color-10: #5d6254;
+  --font-1: "Schibsted Grotesk", "Schibsted Grotesk Fallback", Arial, sans-serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 24px;
+  --radius-2: 999px;
+  --radius-3: 14px;
+  --space-1: clamp(16px, 3.4vw, 48px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* font fallbacks */
+  @font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 102.4%; ascent-override: 95.7%; descent-override: 25.4%; line-gap-override: 0%; }
+  @font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 97.1%; ascent-override: 100.9%; descent-override: 26.8%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.9%; ascent-override: 98.2%; descent-override: 30.8%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95.1%; ascent-override: 107.2%; descent-override: 33.6%; line-gap-override: 0%; }
+  /* end font fallbacks */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  .lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; line-height: 1.5; overflow-x: clip; }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button, input, textarea, select { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-stretch: 100%; font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(40px, 6.4vw, 88px); font-weight: 600; font-stretch: 100%; line-height: .92; letter-spacing: 0; text-transform: uppercase; font-style: normal; text-wrap: balance; }
+.m-text-4 { font-family: var(--font-2); font-stretch: 100%; font-size: 12px; font-weight: 600; line-height: 1.2; letter-spacing: .04em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-weight: 700; font-stretch: 100%; line-height: .82; letter-spacing: 0; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 22px; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: color .35s; }
+.m-btn::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+.m-btn:has(.m-btn__icon) { padding-right: 5px; }
+.m-btn__icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: var(--radius-2); background: var(--color-6); color: var(--color-2); font-size: 15px; }
+.m-btn:focus-visible { outline-color: var(--color-2); }
+@media (hover: hover) { .m-btn:hover { color: var(--color-3); } .m-btn:hover::before { clip-path: inset(0 0); } }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border: 1px solid currentColor; border-radius: var(--radius-2); background: transparent; color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: color .35s, border-color .35s; }
+.m-btn-2::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-btn-2:hover { color: var(--color-2); border-color: var(--color-3); } .m-btn-2:hover::before { clip-path: inset(0 0); } }
+.m-btn-3 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border: 1px solid var(--color-6); border-radius: var(--radius-2); background: var(--color-6); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: border-color .35s; }
+.m-btn-3::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-btn-3:hover { border-color: var(--color-3); } .m-btn-3:hover::before { clip-path: inset(0 0); } }
+.m-link { display: inline-flex; align-items: center; gap: 8px; color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 600; line-height: 1.2; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; }
+.m-link__label { background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 3px; }
+.m-link__arrow { font-size: 16px; }
+@media (hover: hover) { .m-link:hover .m-link__label { animation: m-link-draw .6s cubic-bezier(.65,0,.35,1); } .m-link:hover .m-link__arrow { transform: translate(2px, -2px); } }
+.m-link__arrow { transition: transform .35s; }
+.m-link-2 { color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; padding-bottom: 2px; transition: background-size .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 1px; } }
+.m-link-3 { color: inherit; font-family: var(--font-1); font-size: clamp(26px, 2.6vw, 36px); font-weight: 600; font-stretch: 100%; line-height: 1.05; letter-spacing: 0; text-transform: uppercase; font-style: normal; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat; padding-bottom: 3px; overflow-wrap: anywhere; transition: background-size .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-link-3:hover { background-size: 100% 2px; } }
+@keyframes m-link-draw { from { background-size: 0 1px; } }
+.m-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--radius-2); background: var(--color-4); color: var(--color-2); transition: background-color .3s, color .3s; }
+.m-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s cubic-bezier(.3,1.6,.5,1); }
+@media (hover: hover) { .m-icon:hover { background: var(--color-2); color: var(--color-3); } .m-icon:hover svg { transform: translateY(-3px); } }
+.m-badge { display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 11px; font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; vertical-align: top; }
+.m-surface { background: var(--color-6); color: var(--color-2); border-radius: var(--radius-3); }
+.m-frame { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); }
+.m-frame > img { width: 100%; height: 100%; object-fit: cover; }
+.m-field { display: block; width: 100%; min-height: 48px; padding: 12px 16px; border: 1px solid var(--color-5); border-radius: var(--radius-3); background: var(--color-6); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; transition: border-color .3s; }
+.m-field:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-color: var(--color-2); }
+textarea.m-field { resize: vertical; }
+}
+</style>
+<style data-8b-part="section:top-nav">
+@layer sections {
+  #top-nav { position: fixed; inset: 0 0 auto; z-index: 50; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding: 14px var(--space-1); background: var(--color-1); transition: transform .45s cubic-bezier(.65,0,.35,1); }
+  #top-nav[data-hidden] { transform: translateY(-100%); }
+  #top-nav .nav__logo { justify-self: start; font-family: var(--font-1); font-size: 30px; font-weight: 700; font-stretch: 100%; letter-spacing: .01em; line-height: 1; text-decoration: none; }
+  #top-nav .nav__links { display: flex; gap: clamp(18px, 3vw, 40px); }
+  #top-nav .nav__icons { justify-self: end; display: flex; gap: 8px; }
+  @media (max-width: 640px) {
+    #top-nav { grid-template-columns: auto 1fr auto; padding-block: 10px; gap: 12px; }
+    #top-nav .nav__logo { font-size: 24px; }
+    #top-nav .nav__links { justify-content: center; gap: 14px; }
+    #top-nav .nav__links .m-link-2 { font-size: 14px; }
+    #top-nav .nav__icons { gap: 6px; }
+    #top-nav .nav__icons .m-icon:not(:last-child) { display: none; }
+  }
+  @media (max-width: 389px) {
+    #top-nav { gap: 8px; padding-inline: 12px; }
+    #top-nav .nav__logo { font-size: 20px; }
+    #top-nav .nav__links { gap: 10px; }
+    #top-nav .nav__links .m-link-2 { font-size: 13px; }
+  }
+}
+</style>
+<style data-8b-part="section:drop">
+@layer sections {
+  #drop { position: relative; overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); }
+  #drop .drop__head { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: end; margin-bottom: clamp(28px, 5vh, 56px); }
+  #drop .drop__head h2 { grid-column: 1 / span 7; }
+  #drop .drop__head h2 .ln { display: block; }
+  #drop .drop__head p { grid-column: 9 / span 4; }
+  #drop .drop__body { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: start; }
+  #drop .drop__photo { grid-column: 1 / span 7; aspect-ratio: 4 / 3; }
+  #drop .drop__photo > img { object-position: 50% 60%; }
+  #drop .drop__side { grid-column: 8 / span 5; display: grid; gap: 24px; }
+  #drop .drop__specs { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px dashed var(--color-5); border-left: 1px dashed var(--color-5); }
+  #drop .drop__specs > div { padding: 16px 18px 22px; border-right: 1px dashed var(--color-5); border-bottom: 1px dashed var(--color-5); }
+  #drop .drop__specs > div:first-child { grid-column: 1 / -1; }
+  #drop .drop__specs dt { margin-bottom: 8px; color: var(--color-10); }
+  #drop .drop__specs dd.drop__price { font-family: var(--font-1); font-size: 44px; font-weight: 600; font-stretch: 100%; line-height: 1; }
+  #drop .drop__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  @media (max-width: 899.98px) {
+    #drop .drop__head, #drop .drop__body { grid-template-columns: 1fr; row-gap: 18px; }
+    #drop .drop__head h2, #drop .drop__head p, #drop .drop__photo, #drop .drop__side { grid-column: 1; }
+    #drop .drop__side { margin-top: 10px; }
+  }
+}
+</style>
+<style data-8b-part="section:lookbook">
+@layer sections {
+  #lookbook { position: relative; overflow-x: clip; padding: clamp(60px, 10vh, 120px) 0; }
+  #lookbook .look__track { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 2.4vw, 32px); padding: 0 var(--space-1); }
+  #lookbook .look__intro { display: grid; align-content: start; gap: 20px; }
+  #lookbook .look__intro h2 { font-size: clamp(40px, 4.5vw, 66px); }
+  #lookbook .look__intro h2 .ln { display: block; }
+  #lookbook .look__intro p { max-width: 30ch; }
+  #lookbook .look__card { display: grid; gap: 14px; align-content: start; }
+  #lookbook .look__photo { aspect-ratio: 3 / 4; }
+  #lookbook .look__name { font-family: var(--font-1); font-size: clamp(24px, 2.6vw, 36px); font-weight: 600; font-stretch: 100%; line-height: .95; text-transform: uppercase; }
+  #lookbook .look__items li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px dashed var(--color-5); }
+  @media (max-width: 899.98px) {
+    #lookbook .look__track { grid-template-columns: 1fr 1fr; }
+    #lookbook .look__intro { grid-column: 1 / -1; }
+  }
+  @media (max-width: 560px) {
+    #lookbook .look__track { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:wear-test">
+@layer sections {
+  #wear-test { overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 40px; align-items: start; }
+  #wear-test .wt__head { grid-column: 1 / span 7; display: grid; gap: 22px; }
+  #wear-test .wt__head h2 { font-size: clamp(40px, 5vw, 80px); }
+  #wear-test .wt__head h2 .ln { display: block; }
+  #wear-test .wt__head p { max-width: 52ch; }
+  #wear-test .wt__photo { grid-column: 9 / span 4; grid-row: 1 / span 2; aspect-ratio: 4 / 5; }
+  #wear-test .wt__photo img { object-position: 40% 50%; }
+  #wear-test .wt__log { grid-column: 1 / span 7; width: 100%; border-collapse: collapse; }
+  #wear-test .wt__log th { padding: 10px 12px 10px 0; text-align: left; color: var(--color-10); border-bottom: 1px solid var(--color-2); }
+  #wear-test .wt__log td { padding: 14px 12px 14px 0; vertical-align: top; border-bottom: 1px dashed var(--color-5); }
+  #wear-test .wt__log td:first-child { font-weight: 600; }
+  #wear-test .wt__log td:first-child span { display: block; font-weight: 400; color: var(--color-10); }
+  @media (max-width: 899.98px) {
+    #wear-test { grid-template-columns: 1fr; }
+    #wear-test .wt__head, #wear-test .wt__log { grid-column: 1; }
+    #wear-test .wt__photo { grid-column: 1; grid-row: 2; width: 82%; }
+    #wear-test .wt__head h2 { font-size: clamp(28px, 8.6vw, 60px); }
+    #wear-test .wt__log th:nth-child(3), #wear-test .wt__log td:nth-child(3) { display: none; }
+  }
+}
+</style>
+<style data-8b-part="section:repair">
+@layer sections {
+  #repair { position: relative; overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); }
+  #repair .rep__head { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: end; margin-bottom: clamp(36px, 7vh, 80px); }
+  #repair .rep__head h2 { grid-column: 1 / span 6; }
+  #repair .rep__head h2 .ln { display: block; }
+  #repair .rep__head div { grid-column: 8 / span 5; display: grid; gap: 20px; justify-items: start; }
+  #repair .rep__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 28px); }
+  #repair .rep__card { display: grid; gap: 14px; align-content: start; padding: 12px 12px 22px; }
+  #repair .rep__card .m-frame { aspect-ratio: 4 / 3; border-radius: var(--radius-3); }
+  #repair .rep__step { padding: 0 8px; font-family: var(--font-1); font-size: clamp(26px, 2.4vw, 34px); font-weight: 600; font-stretch: 100%; line-height: 1; text-transform: uppercase; }
+  #repair .rep__card p { padding: 0 8px; }
+  @media (max-width: 899.98px) {
+    #repair .rep__head { grid-template-columns: 1fr; row-gap: 20px; }
+    #repair .rep__head h2, #repair .rep__head div { grid-column: 1; }
+    #repair .rep__cards { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:stores">
+@layer sections {
+  #stores { overflow-x: clip; padding: clamp(60px, 10vh, 120px) var(--space-1) clamp(80px, 14vh, 150px); }
+  #stores > h2 { margin-bottom: clamp(36px, 6vh, 70px); }
+  #stores > h2 .ln { display: block; }
+  #stores .st__list { display: grid; gap: clamp(40px, 8vh, 90px); }
+  #stores .st__store { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: center; padding-top: clamp(24px, 4vh, 40px); border-top: 1px dashed var(--color-5); }
+  #stores .st__photo { grid-column: 1 / span 6; aspect-ratio: 3 / 2; }
+  #stores .st__info { grid-column: 8 / span 5; display: grid; gap: 16px; justify-items: start; }
+  #stores .st__store:nth-child(even) .st__photo { grid-column: 7 / span 6; grid-row: 1; }
+  #stores .st__store:nth-child(even) .st__info { grid-column: 1 / span 5; grid-row: 1; }
+  #stores .st__name { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; font-family: var(--font-1); font-size: clamp(38px, 4.4vw, 64px); font-weight: 600; font-stretch: 100%; line-height: .9; text-transform: uppercase; }
+  #stores .st__hours { border-collapse: collapse; }
+  #stores .st__hours th { padding: 4px 24px 4px 0; text-align: left; font-weight: 500; color: var(--color-10); }
+  #stores .st__hours td { padding: 4px 0; font-weight: 600; }
+  @media (max-width: 899.98px) {
+    #stores .st__store { grid-template-columns: 1fr; row-gap: 20px; }
+    #stores .st__photo, #stores .st__info, #stores .st__store:nth-child(even) .st__photo, #stores .st__store:nth-child(even) .st__info { grid-column: 1; grid-row: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+  #club { padding: 0 var(--space-1); }
+  #club .club__panel { position: relative; overflow: hidden; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: clamp(28px, 5vh, 56px); padding: clamp(28px, 4vw, 56px); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-6); }
+  #club .club__head { grid-column: 1 / span 6; display: grid; gap: 20px; justify-items: start; align-content: start; }
+  #club .club__head h2 .ln { display: block; }
+  #club .club__head p { max-width: 44ch; color: var(--color-8); }
+  #club .club__photo { grid-column: 8 / span 5; aspect-ratio: 16 / 10; }
+  #club .club__lanes { grid-column: 1 / -1; }
+  #club .club__lane { overflow: hidden; border-top: 1px dashed var(--color-9); padding: clamp(10px, 2vh, 18px) 0; }
+  #club .club__lane:last-child { border-bottom: 1px dashed var(--color-9); }
+  #club .club__run { display: flex; align-items: baseline; gap: clamp(16px, 3vw, 40px); width: max-content; max-width: 100%; font-family: var(--font-1); font-size: clamp(34px, 4.3vw, 80px); font-weight: 600; font-stretch: 100%; line-height: 1; text-transform: uppercase; }
+  #club .club__pace { color: var(--color-3); }
+  #club :focus-visible { outline-color: var(--color-3); }
+  #club .club__group { font-family: var(--font-2); font-size: 14px; font-weight: 600; font-stretch: 100%; letter-spacing: .04em; color: var(--color-8); }
+  @media (max-width: 899.98px) {
+    #club .club__panel { grid-template-columns: 1fr; }
+    #club .club__head, #club .club__photo, #club .club__lanes { grid-column: 1; }
+    #club .club__run { display: grid; gap: 4px; width: auto; font-size: clamp(30px, 9vw, 56px); }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 32px; }
+  #faq > h2 { grid-column: 1 / span 4; align-self: start; }
+  #faq > h2 .ln { display: block; }
+  #faq .faq__list { grid-column: 6 / span 7; border-top: 1px solid var(--color-2); }
+  #faq details { border-bottom: 1px dashed var(--color-5); }
+  #faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; cursor: pointer; list-style: none; font-family: var(--font-1); font-size: clamp(22px, 2.2vw, 30px); font-weight: 600; font-stretch: 100%; line-height: 1.05; text-transform: uppercase; }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq summary::after { content: '+'; flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: var(--radius-2); background: var(--color-4); font-family: var(--font-2); font-size: 22px; font-weight: 400; transition: transform .35s, background-color .35s; }
+  #faq details[open] summary::after { transform: rotate(45deg); background: var(--color-3); }
+  #faq details p { max-width: 60ch; padding: 0 0 22px; }
+  @media (max-width: 899.98px) {
+    #faq { grid-template-columns: 1fr; }
+    #faq > h2, #faq .faq__list { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { position: relative; overflow-x: clip; padding: clamp(60px, 10vh, 120px) var(--space-1) clamp(60px, 10vh, 110px); border-top: 1px dashed var(--color-5); }
+  #contact .contact__mark { font-size: min(340px, calc((100vw - 2 * var(--space-1)) / (var(--len) * .61))); text-align: center; }
+  #contact .contact__mark .cm__word { display: inline-block; }
+  #contact .contact__body { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 32px; margin-top: clamp(28px, 6vh, 64px); }
+  #contact .contact__details { grid-column: 1 / span 5; display: grid; gap: 24px; align-content: start; }
+  #contact .contact__lines { display: grid; gap: 14px; }
+  #contact .contact__lines dt { color: var(--color-10); }
+  #contact .contact__form { grid-column: 7 / span 6; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  #contact .contact__form label { display: grid; gap: 6px; }
+  #contact .contact__form .is-wide { grid-column: 1 / -1; }
+  #contact .contact__status { grid-column: 1 / -1; font-weight: 600; }
+  @media (max-width: 899.98px) {
+    #contact .contact__body { grid-template-columns: 1fr; }
+    #contact .contact__details, #contact .contact__form { grid-column: 1; }
+  }
+  @media (max-width: 520px) { #contact .contact__form { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="scene-style:drop">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #drop .drop__photo[data-tiled] { overflow: visible; background: transparent; }
+    #drop .drop__photo[data-tiled] > img { visibility: hidden; }
+    #drop .drop__photo[data-tiled][data-set] { overflow: hidden; }
+    #drop .drop__photo[data-tiled][data-set] > img { visibility: visible; }
+    #drop .drop__photo[data-set] .drop__tiles { visibility: hidden; }
+    #drop .drop__tiles { position: absolute; inset: 0; pointer-events: none; }
+    #drop .drop__tile { position: absolute; overflow: hidden; }
+    #drop .drop__tile img { position: absolute; max-width: none; object-fit: cover; object-position: 50% 60%; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:lookbook">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #lookbook[data-rail] { padding: 0; }
+    #lookbook[data-rail] .look__pin { height: 100svh; display: flex; align-items: center; overflow: hidden; }
+    #lookbook[data-rail] .look__track { display: flex; flex-wrap: nowrap; align-items: center; width: max-content; padding-top: 48px; }
+    #lookbook[data-rail] .look__intro { flex: none; width: clamp(260px, 26vw, 380px); }
+    #lookbook[data-rail] .look__card { flex: none; width: clamp(240px, min(28vw, 50svh), 400px); }
+    #lookbook[data-rail] .look__photo img { width: 116%; max-width: none; margin-left: -8%; }
+    @media (max-width: 899.98px) {
+      #lookbook[data-rail] .look__intro { width: 78vw; }
+      #lookbook[data-rail] .look__card { width: min(72vw, 46svh); }
+    }
+  }
+}
+</style>
+<style data-8b-part="scene-style:contact">
+@layer scenes {
+  #contact .cm__letter { display: inline-block; }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { position: relative; overflow: hidden; margin: 0 var(--space-1) var(--space-1); padding: clamp(32px, 5vw, 64px); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-6); }
+  #footer .foot__top { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 28px; align-items: start; }
+  #footer .foot__logo { grid-column: 1 / span 4; font-family: var(--font-1); font-size: clamp(56px, 6.4vw, 120px); font-weight: 700; font-stretch: 100%; line-height: .82; text-decoration: none; }
+  #footer nav { grid-column: 6 / span 3; }
+  #footer nav ul { display: grid; gap: 10px; }
+  #footer .foot__visit { grid-column: 10 / span 3; display: grid; gap: 14px; color: var(--color-8); }
+  #footer .foot__visit strong { display: block; font-weight: 600; color: var(--color-6); }
+  #footer .foot__small { margin-top: clamp(36px, 6vh, 64px); padding-top: 18px; border-top: 1px dashed var(--color-9); color: var(--color-8); }
+  #footer :focus-visible { outline-color: var(--color-3); }
+  @media (max-width: 899.98px) {
+    #footer .foot__top { grid-template-columns: 1fr 1fr; }
+    #footer .foot__logo { grid-column: 1 / -1; }
+    #footer nav { grid-column: 1; }
+    #footer .foot__visit { grid-column: 2; }
+  }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#drop .drop__head, #drop .drop__side { position: relative; z-index: 1; }
+#drop .drop__head h1 { grid-column: 1 / span 7; }
+#drop .drop__head h1 .ln { display: block; }
+@media (max-width: 899.98px) {
+  #drop .drop__head h1 { grid-column: 1; }
+  #drop .drop__side { display: contents; }
+  #drop .drop__cta { order: -1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #drop .drop__photo:not([data-tiled]) > img { animation: rw-hold 1.2s steps(1, end) both; }
+  #drop .drop__head p { animation: rw-rise .9s cubic-bezier(.2, .75, .2, 1) .2s backwards; }
+}
+@keyframes rw-hold { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rw-rise { from { transform: translateY(24px); opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="top-nav">
+<a class="nav__logo" href="#drop">{{t1|⟦name⟧}}</a>
+<nav aria-label="Main">
+<ul class="nav__links">
+{{#nv_drop}}<li><a class="m-link-2" href="#drop">{{t2|Shop}}</a></li>{{/nv_drop}}
+{{#nv_repair}}<li><a class="m-link-2" href="#repair">{{t3|Repairs}}</a></li>{{/nv_repair}}
+{{#nv_stores}}<li><a class="m-link-2" href="#stores">{{t4|Stores}}</a></li>{{/nv_stores}}
+</ul>
+</nav>
+<div class="nav__icons">
+<a aria-label="Saved looks" class="m-icon" href="#lookbook"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></a>
+<a aria-label="Your bag" class="m-icon" href="#drop"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg></a>
+<a aria-label="Members" class="m-icon" href="#club"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"></path></svg></a>
+</div>
+</header>
+<main>
+
+{{#sec_drop}}<section data-8b-section="drop" id="drop">
+<div class="drop__head">
+<h1 class="m-text-3" data-8b-motion="slab" id="drop-title"><span class="ln">{{t5|Drop 07:}}</span> <span class="ln">{{t6|Concrete Low}}</span></h1>
+<p class="m-text">{{t7|A low-top in recycled suede and ripstop on a stitched gum sole, made by a two-person workshop in Porto. Three hundred pairs, no restock.}}</p>
+</div>
+<div class="drop__body">
+<figure class="drop__photo m-frame"><img alt="Brown suede sneakers with gum soles and mismatched laces on a brick pavement" height="800" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1788029011405-b7e732ed6b44?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3VlZGUlMjBzbmVha2VyJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkxMzIzMTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=780&q=60}}" style="background:#735959" width="1200"/></figure>
+<div class="drop__side">
+<dl class="drop__specs">
+<div><dt class="m-text-4">{{t8|Release}}</dt><dd class="m-text-2">{{t9|Saturday 18 October, 10:00, in both stores and online}}</dd></div>
+<div><dt class="m-text-4">{{t10|Price}}</dt><dd class="drop__price">{{t11|€145}}</dd></div>
+<div><dt class="m-text-4">{{t12|Sizes}}</dt><dd class="m-text-2">{{t13|EU 38 to 47, true to size}}</dd></div>
+<div><dt class="m-text-4">{{t14|Upper}}</dt><dd class="m-text-2">{{t15|Recycled suede with ripstop panels}}</dd></div>
+<div><dt class="m-text-4">{{t16|Sole}}</dt><dd class="m-text-2">{{t17|Gum rubber, stitched, resoled free at our bench}}</dd></div>
+</dl>
+<div class="drop__cta"><a class="m-btn" href="#contact"><span class="m-btn__label">{{t18|Get a reminder}}</span></a><span class="m-badge" data-8b-motion="pop">{{t19|300 pairs}}</span></div>
+</div>
+</div>
+</section>{{/sec_drop}}
+
+{{#sec_lookbook}}<section data-8b-section="lookbook" id="lookbook">
+<div class="look__pin">
+<div class="look__track">
+<div class="look__intro">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t20|Five ways}}</span> <span class="ln">{{t21|to wear}}</span> <span class="ln">{{t22|October}}</span></h2>
+<p class="m-text">{{t23|Shot on the morning commute, the night bus and a wet market Saturday. Every piece is on the rails now.}}</p>
+</div>
+<article class="look__card">
+<figure class="look__photo m-frame"><img alt="A man in a black zip jacket and sunglasses leaning on a graffiti wall" height="1050" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1586231912972-d0970f9ce787?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c3RyZWV0d2VhciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEzMjE4MDB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#E1E3E7" width="700"/></figure>
+<h3 class="look__name">{{t24|Commute}}</h3>
+<ul class="look__items m-text-2"><li><span>{{t25|Twill zip jacket}}</span><span>{{t26|€149}}</span></li><li><span>{{t27|Wide black chinos}}</span><span>{{t28|€95}}</span></li><li><span>{{t6|Concrete Low}}</span><span>{{t11|€145}}</span></li></ul>
+</article>
+<article class="look__card">
+<figure class="look__photo m-frame"><img alt="A man in a long dark green coat under station lights at night" height="1244" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1731589802956-b4693dae884b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c3RyZWV0JTIwc3R5bGUlMjBmYXNoaW9uJTIwY2l0eXxlbnwxfDF8fHwxNzkxMzIxODAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#0c2626" width="700"/></figure>
+<h3 class="look__name">{{t29|Night bus}}</h3>
+<ul class="look__items m-text-2"><li><span>{{t30|Wool car coat}}</span><span>{{t31|€239}}</span></li><li><span>{{t32|Red heavy tee}}</span><span>{{t33|€39}}</span></li><li><span>{{t34|Pleated trousers}}</span><span>{{t35|€110}}</span></li></ul>
+</article>
+<article class="look__card">
+<figure class="look__photo m-frame"><img alt="A woman in a black blazer and jeans sitting on a bollard in the street" height="1050" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1597621784730-4ad9816d71bc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHN0cmVldHdlYXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxMzIxODAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#262626" width="700"/></figure>
+<h3 class="look__name">{{t36|Market Saturday}}</h3>
+<ul class="look__items m-text-2"><li><span>{{t37|Boxy blazer}}</span><span>{{t38|€169}}</span></li><li><span>{{t39|Straight jeans}}</span><span>{{t40|€99}}</span></li><li><span>{{t41|Leather loafers}}</span><span>{{t42|€135}}</span></li></ul>
+</article>
+<article class="look__card">
+<figure class="look__photo m-frame"><img alt="A woman in a cropped tee and wide jeans on a concrete block by the river" height="1048" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1788200587577-bdf2a13fa521?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHN0cmVldCUyMHN0eWxlJTIwZmFzaGlvbiUyMGNpdHl8ZW58MXwxfHx8MTc5MTMyMTgwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#40738c" width="700"/></figure>
+<h3 class="look__name">{{t43|Waterfront}}</h3>
+<ul class="look__items m-text-2"><li><span>{{t44|Cropped heavy tee}}</span><span>{{t45|€35}}</span></li><li><span>{{t46|Baggy light jeans}}</span><span>{{t47|€105}}</span></li><li><span>{{t48|Round sunglasses}}</span><span>{{t49|€65}}</span></li></ul>
+</article>
+<article class="look__card">
+<figure class="look__photo m-frame"><img alt="Two friends dressed head to toe in white walking past a stone facade" height="875" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1634921276069-c24ba5d6b35c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c3RyZWV0JTIwc3R5bGUlMjBmYXNoaW9uJTIwY2l0eXxlbnwxfDF8fHwxNzkxMzIxODAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#404040" width="700"/></figure>
+<h3 class="look__name">{{t50|Sunday white}}</h3>
+<ul class="look__items m-text-2"><li><span>{{t51|Ribbed knit set}}</span><span>{{t52|€129}}</span></li><li><span>{{t53|Wide white trousers}}</span><span>{{t54|€115}}</span></li><li><span>{{t55|Chunky boots}}</span><span>{{t56|€189}}</span></li></ul>
+</article>
+</div>
+</div>
+</section>{{/sec_lookbook}}
+
+{{#sec_wear_test}}<section data-8b-section="wear-test" id="wear-test">
+<div class="wt__head">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t57|Worn on the city}}</span> <span class="ln">{{t58|before it is sold}}</span></h2>
+<p class="m-text">{{t59|Every new label sends us samples first. Our staff wear them to work, in the rain and on the bike for a month. What survives goes on the rail; what does not goes back to the maker with our notes.}}</p>
+</div>
+<figure class="wt__photo m-frame" data-8b-motion="open"><img alt="Looking up at a person in a denim jacket leaning on a railing between glass towers" height="600" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1521802307647-0093e93e2c46?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWFuJTIwc2l0dGluZyUyMHN0YWlycyUyMGNpdHklMjBqYWNrZXR8ZW58MXwwfHx8MTc5MTMyMTg0M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#f3f3f3" width="900"/></figure>
+<table class="wt__log m-text-2">
+<caption class="sr-only">{{t60|Wear-test log for September 2026}}</caption>
+<thead><tr><th class="m-text-4" scope="col">{{t61|Piece}}</th><th class="m-text-4" scope="col">{{t62|Worn for}}</th><th class="m-text-4" scope="col">{{t63|Through}}</th><th class="m-text-4" scope="col">{{t64|Verdict}}</th></tr></thead>
+<tbody>
+<tr><td>{{t65|Cord overshirt}}<span>{{t66|Grauwerk}}</span></td><td>{{t67|31 days}}</td><td>{{t68|Rain, two washes, the bike commute}}</td><td><span class="m-badge">{{t69|Racked}}</span></td></tr>
+<tr><td>{{t70|Ripstop cargo trousers}}<span>{{t71|Odd Mile}}</span></td><td>{{t72|28 days}}</td><td>{{t73|Knees and seams checked every week}}</td><td><span class="m-badge">{{t69|Racked}}</span></td></tr>
+<tr><td>{{t74|Merino crew}}<span>{{t75|Kanto}}</span></td><td>{{t76|30 days}}</td><td>{{t77|Pilled at the cuffs by week three}}</td><td>{{t78|Back to maker}}</td></tr>
+<tr><td>{{t79|Waxed field jacket}}<span>{{t80|Halde}}</span></td><td>{{t81|35 days}}</td><td>{{t82|Two storms, one torn pocket mended}}</td><td><span class="m-badge">{{t69|Racked}}</span></td></tr>
+<tr><td>{{t6|Concrete Low}}<span>{{t83|Sola Lab}}</span></td><td>{{t84|40 days}}</td><td>{{t85|212 km on foot, one resole}}</td><td><span class="m-badge">{{t69|Racked}}</span></td></tr>
+</tbody>
+</table>
+</section>{{/sec_wear_test}}
+
+{{#sec_repair}}<section data-8b-section="repair" id="repair">
+<div class="rep__head">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t3|Repairs}}</span> <span class="ln">{{t86|for life}}</span></h2>
+<div>
+<p class="m-text">{{t87|Anything bought at ⟦name⟧ is mended free at our bench for as long as you wear it. When you are done with it, we take it back, resell it and give you store credit.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t88|Book a repair}}</span></a>
+</div>
+</div>
+<ol class="rep__cards">
+<li class="rep__card m-surface"><figure class="m-frame"><img alt="The selvedge edge of raw denim folded over a pale lining" height="533" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1592115654397-9117a2d021c4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWVuZGluZyUyMGRlbmltJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTMyMTg4MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#262640" width="800"/></figure><h3 class="rep__step">{{t89|1. Bring it in}}</h3><p class="m-text-2">{{t90|Drop the piece at either store. We look at the damage together and give you a date.}}</p></li>
+<li class="rep__card m-surface"><figure class="m-frame"><img alt="Hands guiding a pair of jeans through a sewing machine" height="533" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1634626857321-deb416dcdb00?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bWVuZGluZyUyMGRlbmltJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTMyMTg4MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#262640" width="800"/></figure><h3 class="rep__step">{{t91|2. We mend it}}</h3><p class="m-text-2">{{t92|Seams, zips, holes and soles. Most repairs are ready within a week.}}</p></li>
+<li class="rep__card m-surface"><figure class="m-frame"><img alt="A man in a denim jacket and red hoodie standing by palm trees" height="1200" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1550967155-97a1ebf16bd2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHN0cmVldCUyMHN0eWxlJTIwZmFzaGlvbiUyMGNpdHl8ZW58MXwxfHx8MTc5MTMyMTgwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#262626" width="800"/></figure><h3 class="rep__step">{{t93|3. Wear or trade}}</h3><p class="m-text-2">{{t94|Collect it mended, or trade it in for credit; we clean it and put it back on the rail.}}</p></li>
+</ol>
+</section>{{/sec_repair}}
+
+{{#sec_stores}}<section data-8b-section="stores" id="stores">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t95|Two stores,}}</span> <span class="ln">{{t96|one repair bench}}</span></h2>
+<div class="st__list">
+<article class="st__store">
+<figure class="st__photo m-frame" data-8b-motion="open"><img alt="Racks of clothes in a dim store with tall windows onto the street" height="667" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1766934587163-186d20bf3d40?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2xvdGhpbmclMjBzdG9yZSUyMGludGVyaW9yJTIwcmFja3xlbnwxfDB8fHwxNzkxMzIxODgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#262626" width="1000"/></figure>
+<div class="st__info">
+<h3 class="st__name">{{t97|Kade}} <span class="m-badge" data-8b-motion="pop">{{t98|Repair bench}}</span></h3>
+<p class="m-text">{{t99|Admiralty Way 1, 3000 AA Rotterdam. The flagship by the harbour, with the repair bench and the run club's bag drop.}}</p>
+<table class="st__hours m-text-2"><caption class="sr-only">{{t100|Opening hours of Kade}}</caption><tbody><tr><th scope="row">{{t101|Monday to Wednesday}}</th><td>{{t102|10:00–19:00}}</td></tr><tr><th scope="row">{{t103|Thursday}}</th><td>{{t104|10:00–21:00}}</td></tr><tr><th scope="row">{{t105|Friday and Saturday}}</th><td>{{t102|10:00–19:00}}</td></tr><tr><th scope="row">{{t106|Sunday}}</th><td>{{t107|12:00–17:00}}</td></tr></tbody></table>
+<a class="m-link" data-8b-placeholder="map" href="https://maps.google.com/?q=Rotterdam"><span class="m-link__label">{{t108|Directions}}</span><span aria-hidden="true" class="m-link__arrow">↗</span></a>
+</div>
+</article>
+<article class="st__store">
+<figure class="st__photo m-frame" data-8b-motion="open"><img alt="Clothes hanging on rails above a blue floor in a bright store" height="667" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1761682719763-a35758bbe4a7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2xvdGhpbmclMjBzdG9yZSUyMGludGVyaW9yJTIwcmFja3xlbnwxfDB8fHwxNzkxMzIxODgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#8ca6a6" width="1000"/></figure>
+<div class="st__info">
+<h3 class="st__name">{{t109|Binnenweg}} <span class="m-badge" data-8b-motion="pop">{{t110|Late Thursdays}}</span></h3>
+<p class="m-text">{{t111|Admiralty Way 2, 3000 AA Rotterdam. The smaller shop for sneakers, caps and the newest drop.}}</p>
+<table class="st__hours m-text-2"><caption class="sr-only">{{t112|Opening hours of Binnenweg}}</caption><tbody><tr><th scope="row">{{t101|Monday to Wednesday}}</th><td>{{t113|11:00–19:00}}</td></tr><tr><th scope="row">{{t103|Thursday}}</th><td>{{t114|11:00–22:00}}</td></tr><tr><th scope="row">{{t105|Friday and Saturday}}</th><td>{{t102|10:00–19:00}}</td></tr><tr><th scope="row">{{t106|Sunday}}</th><td>{{t115|Closed}}</td></tr></tbody></table>
+<a class="m-link" data-8b-placeholder="map" href="https://maps.google.com/?q=Rotterdam"><span class="m-link__label">{{t108|Directions}}</span><span aria-hidden="true" class="m-link__arrow">↗</span></a>
+</div>
+</article>
+</div>
+</section>{{/sec_stores}}
+
+{{#sec_club}}<section data-8b-section="club" id="club">
+<div class="club__panel">
+<div class="club__head">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t116|Saturday}}</span> <span class="ln">{{t117|run club}}</span></h2>
+<p class="m-text">{{t118|Every Saturday at 07:30 from the Kade store. Three pace groups, a bag drop and coffee at the bench after. Free, no sign-up, any shoes.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t119|Join a run}}</span></a>
+</div>
+<figure class="club__photo m-frame"><img alt="A group of runners on a city street at night under orange lights" height="563" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1720799533866-1aa6a60fb031?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bmlnaHQlMjBydW4lMjBjaXR5JTIwZ3JvdXB8ZW58MXwwfHx8MTc5MTMyMTg4Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#260c0c" width="1000"/></figure>
+<ol class="club__lanes">
+<li class="club__lane"><p class="club__run"><span class="club__pace">{{t120|4:45/km}}</span><span>{{t121|Harbour loop, 10 km}}</span><span class="club__group">{{t122|Fast group}}</span></p></li>
+<li class="club__lane"><p class="club__run"><span class="club__pace">{{t123|5:45/km}}</span><span>{{t124|Bridges, 8 km}}</span><span class="club__group">{{t125|Steady group}}</span></p></li>
+<li class="club__lane"><p class="club__run"><span class="club__pace">{{t126|Walk}}</span><span>{{t127|Market and back, 4 km}}</span><span class="club__group">{{t128|Easy group}}</span></p></li>
+</ol>
+</div>
+</section>{{/sec_club}}
+
+{{#sec_faq}}<section data-8b-section="faq" id="faq">
+<h2 class="m-text-3" data-8b-motion="slab"><span class="ln">{{t129|Before}}</span> <span class="ln">{{t130|you ask}}</span></h2>
+<div class="faq__list">
+<details><summary>{{t131|How fast do you ship?}}</summary><p class="m-text">{{t132|Orders placed before 15:00 leave the Kade store the same day. Delivery in the Netherlands takes one to two working days, the rest of the EU three to five.}}</p></details>
+<details><summary>{{t133|Can I return something?}}</summary><p class="m-text">{{t134|Within 30 days, unworn and with tags. Returns are free in either store; by post we send you a prepaid label.}}</p></details>
+<details><summary>{{t135|How do your sizes run?}}</summary><p class="m-text">{{t136|Every piece lists the maker's measurements next to ours. In store we can measure something you already own and match it.}}</p></details>
+<details><summary>{{t137|What does the free repair cover?}}</summary><p class="m-text">{{t138|Seams, zips, buttons, holes and resoles on anything bought at ⟦name⟧, for as long as you own it. Cuts and burns are quoted first.}}</p></details>
+<details><summary>{{t139|How do I get the Concrete Low?}}</summary><p class="m-text">{{t140|Half the pairs are held for the stores and half go online at 10:00 on release day. Set a reminder and we email you ten minutes before.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section data-8b-section="contact" id="contact">
+<h2 class="contact__mark m-text-5" style="--len:9"><span class="cm__word">{{t141|Say}}</span> <span class="cm__word">{{t142|hello}}</span></h2>
+<div class="contact__body">
+<div class="contact__details">
+<p class="m-text">{{t143|A question about a size, a repair or the next drop? Write or call; someone from the store answers within a day.}}</p>
+<dl class="contact__lines">
+<div><dt class="m-text-4">{{t144|Email}}</dt><dd><a class="m-link-3" data-8b-placeholder="email" href="#ub-contact">{{t145|hello@strade.example}}</a></dd></div>
+<div><dt class="m-text-4">{{t146|Phone}}</dt><dd><a class="m-link-3" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t147|+31 10 000 0000}}</a></dd></div>
+</dl>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Sneaker Store by <a href="https://github.com/8bsite/sneaker-store-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="foot__top">
+<a class="foot__logo" href="#drop">{{t1|⟦name⟧}}</a>
+<nav aria-label="Footer">
+<ul>
+{{#nv_drop}}<li><a class="m-link-2" href="#drop">{{t148|The drop}}</a></li>{{/nv_drop}}
+{{#nv_lookbook}}<li><a class="m-link-2" href="#lookbook">{{t149|Lookbook}}</a></li>{{/nv_lookbook}}
+{{#nv_repair}}<li><a class="m-link-2" href="#repair">{{t3|Repairs}}</a></li>{{/nv_repair}}
+{{#nv_club}}<li><a class="m-link-2" href="#club">{{t150|Run club}}</a></li>{{/nv_club}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t151|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t152|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<div class="foot__visit m-text-2">
+<p><strong>{{t97|Kade}}</strong>{{t153|Admiralty Way 1, Rotterdam}}</p>
+<p><strong>{{t109|Binnenweg}}</strong>{{t154|Admiralty Way 2, Rotterdam}}</p>
+</div>
+</div>
+<p class="foot__small m-text-2">{{t155|© 2026 ⟦name⟧, Rotterdam · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t156|8B}}</a>{{t157|. Prices include VAT.}}</p>
+</footer>
+<script data-8b-part="section-script:top-nav">
+(() => {
+  const nav = document.getElementById('top-nav');
+  if (!nav) return;
+  let last = window.scrollY, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY, delta = y - last;
+    if (Math.abs(delta) < 4) return;
+    if (delta > 0 && y > nav.offsetHeight * 2) nav.setAttribute('data-hidden', '');
+    else if (delta < 0) nav.removeAttribute('data-hidden');
+    last = y;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function measureNav() {
+  const nav = document.querySelector('[data-8b-section="navigation"]');
+  const opening = document.getElementById('opening');
+  const height = nav ? nav.offsetHeight : 0;
+  if (opening) opening.style.setProperty('--opening-nav', height + 'px');
+  return height;
+}
+function refreshScroll() {
+  measureNav();
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+measureNav();
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .085, anchors: { offset: -measureNav() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  slab(element, vars = {}) {
+    const lines = element.querySelectorAll('.ln');
+    const targets = lines.length ? [...lines] : [element];
+    return gsap.timeline(vars).fromTo(targets,
+      { xPercent: index => (index % 2 ? 22 : -22), clipPath: index => (index % 2 ? 'inset(-15% 0% -15% 100%)' : 'inset(-15% 100% -15% 0%)') },
+      { xPercent: 0, clipPath: 'inset(-15% 0% -15% 0%)', duration: .9, ease: 'power3.out', stagger: .09, clearProps: 'clipPath' });
+  },
+  pop(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scale: 0, rotation: -35 }, { scale: 1, rotation: 0, duration: .6, ease: 'back.out(2.2)', clearProps: 'transform' });
+  },
+  open(element, vars = {}) {
+    const radius = getComputedStyle(element).borderTopLeftRadius || '0px';
+    const image = element.querySelector('img');
+    const timeline = gsap.timeline(vars).fromTo(element, { clipPath: `inset(0% 44% 0% 44% round ${radius})` }, { clipPath: `inset(0% 0% 0% 0% round ${radius})`, duration: 1.1, ease: 'power3.inOut', clearProps: 'clipPath' }, 0);
+    if (image) timeline.fromTo(image, { scale: 1.25 }, { scale: 1, duration: 1.3, ease: 'power3.out', clearProps: 'transform' }, 0);
+    return timeline;
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 90%', once: true, animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:drop">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 899.98px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const { desk } = context.conditions;
+    const frame = document.querySelector('#drop .drop__photo');
+    const source = frame.querySelector('img');
+    const cols = desk ? 4 : 3, rows = 3;
+    const radius = getComputedStyle(frame).borderTopLeftRadius;
+    const layer = document.createElement('div');
+    layer.className = 'drop__tiles';
+    layer.setAttribute('aria-hidden', 'true');
+    const tiles = [];
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const tile = document.createElement('div');
+        tile.className = 'drop__tile';
+        tile.style.left = (c * 100 / cols) + '%';
+        tile.style.top = (r * 100 / rows) + '%';
+        tile.style.width = (100 / cols) + '%';
+        tile.style.height = (100 / rows) + '%';
+        if (r === 0 && c === 0) tile.style.borderTopLeftRadius = radius;
+        if (r === 0 && c === cols - 1) tile.style.borderTopRightRadius = radius;
+        if (r === rows - 1 && c === 0) tile.style.borderBottomLeftRadius = radius;
+        if (r === rows - 1 && c === cols - 1) tile.style.borderBottomRightRadius = radius;
+        const copy = document.createElement('img');
+        copy.alt = '';
+        copy.decoding = 'async';
+        copy.src = source.currentSrc || source.src;
+        copy.style.width = (cols * 100) + '%';
+        copy.style.height = (rows * 100) + '%';
+        copy.style.left = (-c * 100) + '%';
+        copy.style.top = (-r * 100) + '%';
+        tile.append(copy);
+        layer.append(tile);
+        tiles.push({ tile, c, r });
+      }
+    }
+    frame.append(layer);
+    frame.setAttribute('data-tiled', '');
+    const spread = desk ? 1 : .55;
+    gsap.timeline({ delay: .2, onComplete: () => frame.setAttribute('data-set', '') }).fromTo(tiles.map(item => item.tile), {
+      xPercent: i => ((((tiles[i].c * 7 + tiles[i].r * 3) % 5) - 2) * 55 + (tiles[i].c - (cols - 1) / 2) * 45) * spread,
+      yPercent: i => ((((tiles[i].c * 3 + tiles[i].r * 5) % 5) - 2) * 50 + (tiles[i].r - 1) * 60) * spread,
+      rotation: i => (((tiles[i].c + tiles[i].r * 2) % 5) - 2) * 5
+    }, { xPercent: 0, yPercent: 0, rotation: 0, ease: 'power2.out', duration: 1, stagger: { each: .025, from: 'center' } }, 0);
+    return () => { layer.remove(); frame.removeAttribute('data-tiled'); frame.removeAttribute('data-set'); };
+  });
+}, { first: true, id: 'scene:drop' });
+</script>
+<script data-8b-part="scene:lookbook">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('lookbook');
+    const pin = section.querySelector('.look__pin');
+    const track = section.querySelector('.look__track');
+    section.setAttribute('data-rail', '');
+    const distance = () => Math.max(0, track.scrollWidth - pin.clientWidth);
+    gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'lookbook', trigger: pin, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: .6, invalidateOnRefresh: true, anticipatePin: 1 }
+    })
+      .fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 }, 0)
+      .fromTo(track.querySelectorAll('.look__photo img'), { xPercent: 6 }, { xPercent: 0, duration: 1 }, 0);
+    return () => section.removeAttribute('data-rail');
+  });
+});
+</script>
+<script data-8b-part="scene:repair">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 899.98px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const { desk } = context.conditions;
+    const list = document.querySelector('#repair .rep__cards');
+    const cards = [...list.children];
+    if (cards.length < 2) return;
+    const anchor = desk ? cards[Math.floor(cards.length / 2)] : cards[0];
+    const turns = [-8, 4, 9, -5, 6];
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'repair', trigger: list, start: desk ? 'top 90%' : 'top 85%', end: desk ? 'center 52%' : 'top 22%', scrub: .5, invalidateOnRefresh: true }
+    });
+    cards.forEach((card, i) => timeline.fromTo(card, {
+      x: () => desk ? (anchor.offsetLeft - card.offsetLeft) * .9 : (i % 2 ? 12 : -12),
+      y: () => desk ? Math.abs(i - 1) * 16 : (anchor.offsetTop - card.offsetTop) * .9,
+      rotation: turns[i % turns.length]
+    }, { x: 0, y: 0, rotation: 0, ease: 'power2.inOut', duration: 1 }, i * .05));
+  });
+});
+</script>
+<script data-8b-part="scene:club">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('club');
+    const lanes = [...section.querySelectorAll('.club__lane')];
+    const runs = lanes.map(lane => lane.querySelector('.club__run'));
+    const shares = [.9, .6, .32];
+    gsap.timeline({
+      scrollTrigger: { id: 'club', trigger: section.querySelector('.club__lanes'), start: 'top 96%', end: 'bottom 72%', scrub: .5, invalidateOnRefresh: true }
+    }).fromTo(runs, { x: i => lanes[i].clientWidth * (shares[i] ?? .3) }, { x: 0, ease: 'power1.out', duration: 1 }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const heading = document.querySelector('#contact .contact__mark');
+    const words = [...heading.querySelectorAll('.cm__word')];
+    const originals = words.map(word => word.textContent);
+    heading.setAttribute('aria-label', heading.textContent.replace(/\s+/g, ' ').trim());
+    const letters = [];
+    words.forEach(word => {
+      const text = word.textContent;
+      word.textContent = '';
+      [...text].forEach(character => {
+        const letter = document.createElement('span');
+        letter.className = 'cm__letter';
+        letter.setAttribute('aria-hidden', 'true');
+        letter.textContent = character;
+        word.append(letter);
+        letters.push(letter);
+      });
+    });
+    const middle = (letters.length - 1) / 2;
+    gsap.timeline({
+      scrollTrigger: { id: 'contact', trigger: heading, start: 'top 98%', end: 'top 30%', scrub: .5, invalidateOnRefresh: true }
+    }).fromTo(letters, {
+      x: i => (i - middle) * innerWidth * .04,
+      y: i => (((i * 37) % 7) - 3) * innerHeight * .03,
+      rotation: i => (((i * 5) % 7) - 3) * 4
+    }, { x: 0, y: 0, rotation: 0, ease: 'power2.out', duration: 1 }, 0);
+    return () => { words.forEach((word, i) => { word.textContent = originals[i]; }); heading.removeAttribute('aria-label'); };
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  if (!form) return;
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    form.reset();
+    if (status) status.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

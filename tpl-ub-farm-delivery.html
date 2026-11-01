@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #c9e36b;
+  --color-2: #131512;
+  --color-3: #ffffff;
+  --color-4: #c4c7be;
+  --color-5: #5c6257;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --shadow-1: 0 50px 90px -30px color-mix(in srgb, var(--color-2) 70%, transparent);
+  --space-1: clamp(20px, 4vw, 56px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallback faces */
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 94.3%; ascent-override: 108.2%; descent-override: 33.9%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.8%; ascent-override: 99.2%; descent-override: 31.1%; line-gap-override: 0%; }
+/* end fallback faces */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-3); color: var(--color-2); overflow-x: clip; }
+  img, svg { display: block; max-width: 100%; }
+  img { height: auto; }
+  h1, h2, h3, p, figure, blockquote, ol, ul, dl, dd { margin: 0; }
+  ol, ul { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration: none; }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: clamp(15px, 0.35vw + 13.6px, 17px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: 96px; font-weight: 400; line-height: 0.98; letter-spacing: -0.045em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(34px, 4.6vw, 72px); font-weight: 400; line-height: 1.02; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.35; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(18px, 0.9vw + 12px, 23px); font-weight: 400; line-height: 1.38; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(21px, 1.1vw + 15px, 30px); font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(28px, 3vw, 48px); font-weight: 400; line-height: 1; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+
+.m-btn { display: inline-flex; align-items: center; gap: 0.6em; min-height: 40px; padding: 0.7em 1.05em 0.7em 1.25em; border: 0; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 600; line-height: 1; letter-spacing: 0; white-space: nowrap; transition: background-color .35s ease; }
+.m-btn__star { width: 0.95em; height: 0.95em; flex: none; transition: transform .6s cubic-bezier(.3,1.5,.5,1); }
+.m-btn:focus-visible { outline: 2px solid var(--color-1); outline-offset: 3px; }
+@media (hover: hover) {
+  .m-btn:hover { background: var(--color-3); }
+  .m-btn:hover .m-btn__star { transform: rotate(60deg); }
+}
+.m-btn-2 { display: inline-flex; align-items: center; gap: 0.6em; min-height: 40px; padding: 0.7em 1.05em 0.7em 1.25em; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-3); font-family: var(--font-1); font-size: 14px; font-weight: 600; line-height: 1; letter-spacing: 0; white-space: nowrap; transition: background-color .35s ease, color .35s ease; }
+.m-btn-2__star { width: 0.95em; height: 0.95em; flex: none; color: var(--color-1); transition: transform .6s cubic-bezier(.3,1.5,.5,1); }
+.m-btn-2:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+@media (hover: hover) {
+  .m-btn-2:hover .m-btn-2__star { transform: rotate(60deg); }
+}
+.m-link { position: relative; display: inline-block; padding-bottom: 3px; font-weight: 500; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: 0% 50%; }
+@media (hover: hover) {
+  .m-link:hover::after { animation: m-link-redraw .7s cubic-bezier(.6,0,.2,1); }
+}
+@keyframes m-link-redraw { 0% { transform-origin: 100% 50%; transform: scaleX(1); } 45% { transform-origin: 100% 50%; transform: scaleX(0); } 46% { transform-origin: 0% 50%; transform: scaleX(0); } 100% { transform-origin: 0% 50%; transform: scaleX(1); } }
+.m-link-2 { position: relative; display: inline-block; justify-self: start; padding-bottom: 3px; font-weight: 500; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: 100% 50%; transform: scaleX(0); transition: transform .45s cubic-bezier(.6,0,.2,1); }
+@media (hover: hover) {
+  .m-link-2:hover::after { transform-origin: 0% 50%; transform: scaleX(1); }
+}
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid currentColor; border-radius: 50%; background: transparent; color: var(--color-2); isolation: isolate; transition: color .35s ease; }
+.m-icon-btn::before { content: ""; position: absolute; inset: -1px; border-radius: 50%; background: var(--color-2); transform: scale(0); transition: transform .45s cubic-bezier(.3,1.3,.5,1); z-index: -1; }
+.m-icon-btn svg { width: 20px; height: 20px; }
+.m-icon-btn:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+@media (hover: hover) {
+  .m-icon-btn:hover { color: var(--color-1); }
+  .m-icon-btn:hover::before { transform: scale(1); }
+}
+.m-field { min-height: 44px; padding: 10px 18px; border: 1.5px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1.2; }
+.m-field::placeholder { color: var(--color-5); }
+.m-field:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.m-choice { position: relative; display: grid; gap: 8px; align-content: start; justify-items: start; padding: 16px 16px 18px; border: 1.5px solid var(--color-2); color: var(--color-2); cursor: pointer; transition: background-color .3s ease, color .3s ease; }
+.m-choice input { appearance: none; -webkit-appearance: none; position: absolute; top: 14px; right: 14px; width: 18px; height: 18px; margin: 0; border: 1.5px solid currentColor; border-radius: 50%; background: transparent; cursor: pointer; }
+.m-choice input:checked { background: radial-gradient(currentColor 38%, transparent 42%); }
+.m-choice input:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.m-choice:has(input:checked) { background: var(--color-2); color: var(--color-3); }
+@media (hover: hover) {
+  .m-choice:hover { background: color-mix(in srgb, var(--color-2) 10%, transparent); }
+  .m-choice:has(input:checked):hover { background: var(--color-2); }
+}
+.m-choice-2 { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 8px 16px 8px 12px; border: 1.5px solid var(--color-2); border-radius: var(--radius-1); color: var(--color-2); font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.2; cursor: pointer; transition: background-color .3s ease, color .3s ease; }
+.m-choice-2 input { appearance: none; -webkit-appearance: none; width: 16px; height: 16px; margin: 0; flex: none; border: 1.5px solid currentColor; border-radius: 50%; background: transparent; cursor: pointer; }
+.m-choice-2 input:checked { background: radial-gradient(currentColor 38%, transparent 42%); }
+.m-choice-2 input:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.m-choice-2:has(input:checked) { background: var(--color-2); color: var(--color-3); }
+@media (hover: hover) {
+  .m-choice-2:hover { background: color-mix(in srgb, var(--color-2) 10%, transparent); }
+  .m-choice-2:has(input:checked):hover { background: var(--color-2); }
+}
+.m-phase { display: grid; grid-template-columns: repeat(8, 1em); gap: 0.22em 0.26em; font-size: 24px; color: var(--color-4); }
+.m-phase i { display: block; width: 1em; height: 1em; border-radius: 50%; background: currentColor; -webkit-mask: radial-gradient(circle 0.52em at calc(50% - (var(--p, 1) * var(--k, 1) + var(--f, 0) * (1 - var(--p, 1))) * 1.06em) 50%, transparent 97%, currentColor 100%); mask: radial-gradient(circle 0.52em at calc(50% - (var(--p, 1) * var(--k, 1) + var(--f, 0) * (1 - var(--p, 1))) * 1.06em) 50%, transparent 97%, currentColor 100%); }
+.m-star { display: block; width: 100%; height: auto; color: var(--color-3); overflow: visible; }
+.m-surface { background: var(--color-1); color: var(--color-2); padding: clamp(20px, 2.4vw, 32px); }
+.m-surface-2 { background: var(--color-2); color: var(--color-3); padding: clamp(22px, 3vw, 44px); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; }
+#nav .nav__bar { display: flex; align-items: center; gap: 24px; padding: 14px var(--space-1); transition: transform .55s cubic-bezier(.3,.7,.2,1), background-color .3s ease; }
+#nav.is-solid .nav__bar { background: var(--color-1); }
+#nav.is-hidden .nav__bar { transform: translateY(-110%); }
+#nav .nav__logo { font-family: var(--font-1); font-size: 24px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+#nav .nav__links { display: flex; gap: clamp(18px, 2.2vw, 34px); margin: 0 auto; font-size: 14px; }
+#nav .nav__end { display: flex; align-items: center; gap: 10px; }
+#nav .nav__menu { display: none; }
+#nav .menu { position: fixed; inset: 0; z-index: 2; display: flex; flex-direction: column; background: var(--color-1); color: var(--color-2); padding: 14px var(--space-1) 32px; overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; align-items: center; justify-content: space-between; }
+#nav .menu__links { display: grid; gap: 6px; margin: auto 0; padding: 40px 0; }
+#nav .menu__links a { font-size: clamp(34px, 9vw, 56px); }
+#nav .menu .m-btn-2 { align-self: flex-start; }
+@media (max-width: 900px) {
+  #nav .nav__links { display: none; }
+  #nav .nav__end { margin-left: auto; }
+  #nav .nav__menu { display: inline-grid; }
+}
+@media (max-width: 330px) {
+  #nav .nav__cta { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-2); }
+#opening .op-ground { position: absolute; inset: 0; z-index: 0; }
+#opening .op-ground__hold { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+#opening .op-ground__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+#opening .op-stage { position: relative; z-index: 2; }
+#opening .op-card { position: relative; height: 100vh; height: 100svh; min-height: 560px; display: grid; grid-template-rows: 54fr 46fr; background: var(--color-1); overflow: hidden; }
+#opening .op-hero { position: relative; overflow: hidden; display: flex; align-items: flex-end; min-height: 0; padding: 92px var(--space-1) clamp(26px, 4.6vh, 50px); }
+#opening .op-title { position: relative; z-index: 1; font-size: min(9.4vw, 15vh); max-width: 8.3em; }
+#opening .op-title__in { display: block; }
+#opening .op-star { position: absolute; width: min(44vw, 80vh); aspect-ratio: 1; right: max(-9vw, -15vh); bottom: max(-17vw, -31vh); }
+#opening .op-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
+#opening .op-panel { display: flex; flex-direction: column; justify-content: space-between; gap: 18px; min-height: 0; padding-top: clamp(22px, 4.4vh, 44px); padding-bottom: clamp(22px, 4.4vh, 44px); padding-left: var(--space-1); }
+#opening .op-dots { font-size: clamp(14px, 3vh, 26px); }
+#opening .op-copy { max-width: 26em; }
+#opening .op-photo { position: relative; overflow: hidden; min-height: 0; }
+#opening .op-photo__in, #opening .op-photo img { position: absolute; inset: 0; width: 100%; height: 100%; }
+#opening .op-photo img { object-fit: cover; object-position: 50% 30%; }
+#opening .op-second { position: relative; z-index: 1; min-height: 100vh; min-height: 100svh; display: grid; grid-template-rows: auto 1fr auto; padding: clamp(104px, 15vh, 150px) var(--space-1) var(--space-1); }
+#opening .op-second__title { max-width: 12em; font-size: clamp(34px, 5.2vw, 84px); }
+#opening .op-slip { grid-row: 3; justify-self: end; max-width: 420px; display: grid; gap: 16px; justify-items: start; }
+@media (max-width: 760px) {
+  #opening .op-card { grid-template-rows: 49fr 51fr; min-height: 600px; }
+  #opening .op-hero { padding: 84px 20px 22px; }
+  #opening .op-title { font-size: min(13.2vw, 7.4vh); }
+  #opening .op-star { width: 76vw; right: -26vw; bottom: -30vw; }
+  #opening .op-split { grid-template-columns: 60fr 40fr; }
+  #opening .op-panel { gap: 12px; padding: 18px 16px 18px 20px; }
+  #opening .op-dots { font-size: 12px; }
+  #opening .op-copy { font-size: 14px; line-height: 1.4; }
+  #opening .op-photo img { object-position: 76% 30%; }
+  #opening .op-second__title { font-size: min(9.4vw, 44px); }
+  #opening .op-slip { justify-self: stretch; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-title__in { animation: op-rise 1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-star__in { animation: op-star-in 1.15s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-photo__in { animation: op-photo-in 1.2s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-star__spin { animation: op-spin 36s linear infinite; }
+  #opening.is-off .op-star__spin { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(0.32em); } }
+@keyframes op-star-in { from { transform: scale(0.72) rotate(-40deg); } }
+@keyframes op-photo-in { from { transform: scale(1.1); } }
+@keyframes op-spin { to { transform: rotate(360deg); } }
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening.is-staged .op-stage { height: 160vh; height: 160svh; }
+  #opening.is-staged .op-card { position: sticky; top: 0; box-shadow: var(--shadow-1); }
+}
+}
+</style>
+<style data-8b-part="section:box">
+@layer sections {
+#box { background: var(--color-3); color: var(--color-2); padding: clamp(84px, 11vw, 160px) var(--space-1) clamp(80px, 10vw, 140px); }
+#box .bx-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; margin-bottom: clamp(40px, 6vw, 84px); }
+#box .bx-lead { color: var(--color-5); max-width: 28em; }
+#box { overflow: clip; }
+#box .bx-field { perspective: 1000px; perspective-origin: 50% 0%; }
+#box .bx-rows { border-bottom: 1px solid var(--color-2); }
+#box .bx-row { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 0.55fr) clamp(120px, 13vw, 190px); align-items: center; gap: 24px; padding: 12px 0; border-top: 1px solid var(--color-2); }
+#box .bx-name { font-size: clamp(30px, 3.7vw, 56px); }
+#box .bx-meta { display: grid; gap: 3px; }
+#box .bx-meta span + span { color: var(--color-5); }
+#box .bx-photo { aspect-ratio: 3 / 2; overflow: hidden; }
+#box .bx-photo img { width: 100%; height: 100%; object-fit: cover; }
+#box .bx-note { margin-top: 22px; color: var(--color-5); max-width: 40em; }
+@media (max-width: 760px) {
+  #box .bx-head { grid-template-columns: 1fr; }
+  #box .bx-row { grid-template-columns: minmax(0, 1fr) 104px; gap: 4px 16px; padding: 14px 0; }
+  #box .bx-name { grid-column: 1; font-size: 32px; }
+  #box .bx-meta { grid-column: 1; grid-row: 2; }
+  #box .bx-when { grid-column: 1; grid-row: 3; }
+  #box .bx-photo { grid-column: 2; grid-row: 1 / span 3; }
+}
+}
+</style>
+<style data-8b-part="section:growers">
+@layer sections {
+#growers { background: var(--color-1); color: var(--color-2); padding: clamp(84px, 11vw, 150px) var(--space-1) clamp(64px, 8vw, 110px); }
+#growers .gr-head { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; margin-bottom: clamp(40px, 6vw, 72px); }
+#growers .gr-stack { display: grid; gap: clamp(20px, 3vw, 32px); }
+#growers .gr-card__inner { position: relative; display: grid; grid-template-columns: 1fr 1fr; min-height: min(72vh, 620px); overflow: hidden; transform-origin: 50% 0%; }
+#growers .gr-card__text { display: flex; flex-direction: column; gap: 14px; }
+#growers .gr-meta { color: var(--color-4); }
+#growers .gr-quote { margin-top: auto; max-width: 20em; }
+#growers .gr-grows { color: var(--color-4); max-width: 30em; }
+#growers .gr-card__photo { position: relative; overflow: hidden; min-height: 0; }
+#growers .gr-card__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#growers .gr-card__shade { position: absolute; inset: 0; background: var(--color-2); opacity: 0; pointer-events: none; }
+@media (max-width: 760px) {
+  #growers .gr-head { grid-template-columns: 1fr; }
+  #growers .gr-card__inner { grid-template-columns: 1fr; grid-template-rows: 34vh auto; min-height: 0; }
+  #growers .gr-card__photo { grid-row: 1; }
+  #growers .gr-quote { margin-top: 8px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:growers-stack">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #growers.is-stacked .gr-card { position: sticky; top: 84px; }
+  #growers.is-stacked .gr-stack { gap: 12vh; }
+}
+}
+</style>
+<style data-8b-part="section:day">
+@layer sections {
+#day { background: color-mix(in srgb, var(--color-3) 70%, var(--color-1)); color: var(--color-2); overflow: hidden; }
+#day .dy-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: clamp(84px, 10vw, 140px) var(--space-1); }
+#day .dy-intro { grid-column: 1 / -1; display: grid; gap: 20px; max-width: 32em; align-content: start; margin-bottom: 20px; }
+#day .dy-step { display: grid; grid-template-rows: auto 1fr; background: var(--color-3); color: var(--color-2); }
+#day .dy-photo { aspect-ratio: 4 / 3; overflow: hidden; }
+#day .dy-photo img { width: 100%; height: 100%; object-fit: cover; }
+#day .dy-card { display: grid; gap: 10px; align-content: start; padding: 18px 22px 22px; }
+#day .dy-time { color: var(--color-5); }
+@media (max-width: 760px) {
+  #day .dy-track { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:day-track">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #day.is-track { height: 100vh; height: 100svh; }
+  #day.is-track .dy-track { display: flex; align-items: center; gap: clamp(16px, 2vw, 28px); width: max-content; height: 100%; padding: 84px var(--space-1) 36px; }
+  #day.is-track .dy-intro { flex: none; width: min(40vw, 540px); margin: 0 4vw 0 0; }
+  #day.is-track .dy-step { flex: none; width: clamp(280px, 29vw, 400px); height: min(66vh, 540px); grid-template-rows: minmax(0, 1fr) auto; }
+  #day.is-track .dy-photo { aspect-ratio: auto; min-height: 0; }
+  #day.is-track .dy-card { min-height: 11.5em; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #day.is-track .dy-intro { width: 78vw; }
+  #day.is-track .dy-step { width: 78vw; }
+}
+}
+</style>
+<style data-8b-part="section:returns">
+@layer sections {
+#returns { display: grid; grid-template-columns: 1fr 1fr; min-height: min(90vh, 760px); background: var(--color-2); }
+#returns .rt-photo { position: relative; overflow: hidden; }
+#returns .rt-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#returns .rt-panel { display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: clamp(56px, 8vw, 110px) var(--space-1); }
+#returns .rt-dots { margin-bottom: 8px; }
+#returns .rt-copy { max-width: 28em; }
+@media (max-width: 760px) {
+  #returns { grid-template-columns: 1fr; }
+  #returns .rt-photo { aspect-ratio: 4 / 3; }
+  #returns .rt-dots { font-size: 16px; }
+}
+}
+</style>
+<style data-8b-part="section:promises">
+@layer sections {
+#promises { position: relative; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); background: var(--color-1); color: var(--color-2); }
+#promises .pr-mark { position: relative; }
+#promises .pr-mark__hold { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+#promises .pr-star { position: absolute; top: 50%; left: 0; width: min(90vh, 64vw); margin-top: calc(min(90vh, 64vw) / -2); margin-left: calc(min(90vh, 64vw) / -2.8); }
+#promises .pr-body { padding: clamp(110px, 12vw, 170px) var(--space-1) clamp(90px, 10vw, 150px) 0; }
+#promises .pr-list { display: grid; gap: clamp(56px, 11vh, 110px); margin-top: clamp(56px, 8vw, 100px); }
+#promises .pr-item { display: grid; gap: 12px; max-width: 28em; transition: opacity .45s ease; }
+@media (max-width: 760px) {
+  #promises { grid-template-columns: 1fr; }
+  #promises .pr-mark { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  #promises .pr-star { left: auto; right: 0; width: 96vw; margin-top: -48vw; margin-left: 0; margin-right: -52vw; }
+  #promises .pr-body { position: relative; z-index: 1; padding: 96px 20px 88px; }
+  #promises .pr-item { max-width: 21em; }
+}
+}
+</style>
+<style data-8b-part="scene-style:promises-dial">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #promises.is-reading .pr-item:not(.is-on) { opacity: 0.3; }
+}
+}
+</style>
+<style data-8b-part="section:boxes">
+@layer sections {
+#boxes { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 36px clamp(32px, 6vw, 96px); align-items: start; padding: clamp(90px, 12vw, 160px) var(--space-1); background: var(--color-3); color: var(--color-2); }
+#boxes .bo-head { display: grid; gap: 22px; }
+#boxes .bo-lead { color: var(--color-5); max-width: 24em; }
+#boxes .bo-slip { display: grid; gap: 28px; }
+#boxes .bo-group { display: grid; gap: 12px; min-width: 0; margin: 0; padding: 0; border: 0; }
+#boxes .bo-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+#boxes .bo-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+#boxes .bo-dot { grid-template-columns: 1em; font-size: 30px; color: inherit; }
+#boxes .bo-total { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px 24px; padding-top: 22px; border-top: 1px solid var(--color-2); }
+#boxes .bo-sum { display: grid; gap: 4px; }
+#boxes .bo-price { font-size: clamp(34px, 3.4vw, 50px); }
+@media (max-width: 860px) {
+  #boxes { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  #boxes .bo-options { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:recipes">
+@layer sections {
+#recipes { background: var(--color-2); color: var(--color-3); padding: clamp(90px, 12vw, 160px) var(--space-1); overflow: hidden; }
+#recipes .rc-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: 20px 56px; align-items: end; margin-bottom: clamp(40px, 6vw, 72px); }
+#recipes .rc-lead { color: var(--color-4); max-width: 26em; }
+#recipes .rc-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 1.6vw, 24px); }
+#recipes .rc-card { display: grid; grid-template-rows: auto 1fr; background: var(--color-3); color: var(--color-2); }
+#recipes .rc-photo { aspect-ratio: 4 / 5; overflow: hidden; }
+#recipes .rc-photo img { width: 100%; height: 100%; object-fit: cover; }
+#recipes .rc-text { display: grid; gap: 10px; align-content: start; padding: 18px 18px 22px; }
+#recipes .rc-meta { color: var(--color-5); }
+@media (max-width: 1000px) {
+  #recipes .rc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #recipes .rc-head { grid-template-columns: 1fr; }
+}
+@media (max-width: 540px) {
+  #recipes .rc-grid { grid-template-columns: 1fr; }
+  #recipes .rc-photo { aspect-ratio: 4 / 3; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 32px clamp(32px, 6vw, 96px); padding: clamp(90px, 12vw, 160px) var(--space-1); background: var(--color-3); color: var(--color-2); }
+#faq .fq-head { display: grid; gap: 20px; align-content: start; }
+#faq .fq-head p { color: var(--color-5); }
+#faq .fq-head .m-link { color: var(--color-2); }
+#faq .fq-list { border-bottom: 1px solid var(--color-2); }
+#faq .fq-rule { display: block; height: 1px; background: var(--color-2); }
+#faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq .fq-mark { width: 22px; height: 22px; flex: none; transition: transform .6s cubic-bezier(.3,1.5,.5,1); }
+#faq details[open] .fq-mark { transform: rotate(60deg); }
+#faq .fq-answer { max-width: 36em; padding: 0 0 26px; color: var(--color-5); }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; display: grid; align-items: end; min-height: 100vh; min-height: 100svh; padding: clamp(110px, 12vw, 160px) var(--space-1) var(--space-1); background: var(--color-2); overflow: hidden; }
+#contact .ct-media { position: absolute; inset: 0; overflow: hidden; }
+#contact .ct-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+#contact .ct-slip { position: relative; z-index: 2; isolation: isolate; display: grid; gap: 22px; max-width: 640px; padding: clamp(22px, 3vw, 40px); color: var(--color-2); }
+#contact .ct-slip__ground { position: absolute; inset: 0; z-index: -1; background: var(--color-1); transform-origin: 0 0; }
+#contact .ct-form { display: grid; gap: 10px; }
+#contact .ct-row { display: flex; flex-wrap: wrap; gap: 10px; }
+#contact .ct-row .m-field { flex: 1 1 200px; }
+#contact .ct-status p { margin-top: 4px; }
+#contact .ct-areas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 24px; }
+#contact .ct-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; padding-top: 18px; border-top: 1px solid var(--color-2); }
+#contact .ct-details div { display: grid; gap: 2px; }
+@media (max-width: 560px) {
+  #contact { padding: 120px 12px 12px; }
+  #contact .ct-areas, #contact .ct-details { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { display: grid; gap: clamp(40px, 6vw, 72px); padding: clamp(64px, 8vw, 110px) var(--space-1) 28px; background: var(--color-2); color: var(--color-3); overflow: hidden; }
+#footer .ft-top { display: grid; grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr)); gap: 32px; }
+#footer .ft-say { display: grid; gap: 22px; align-content: start; max-width: 24em; }
+#footer .ft-col { display: grid; gap: 10px; align-content: start; }
+#footer .ft-col h2 { color: var(--color-4); }
+#footer .ft-rule { display: block; height: 1px; background: var(--color-4); }
+#footer .ft-mark { font-family: var(--font-1); font-weight: 700; line-height: 0.78; letter-spacing: -0.035em; color: var(--color-1); font-size: min(29vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.7))); white-space: nowrap; }
+#footer .ft-small { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; color: var(--color-4); }
+@media (max-width: 760px) {
+  #footer .ft-top { grid-template-columns: 1fr 1fr; }
+  #footer .ft-say { grid-column: 1 / -1; }
+  #footer .ft-dots { font-size: 16px; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#nav .nav__bar { background: var(--color-1); }
+#opening .op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-second__title { animation: rw-rise 1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-slip { animation: rw-rise 1s cubic-bezier(.2, .7, .2, 1) .2s backwards; }
+  #opening .op-ground__img { animation: op-photo-in 1.6s cubic-bezier(.2, .7, .2, 1) backwards; }
+}
+@keyframes rw-rise { from { transform: translateY(40px); opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="nav">
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">{{t1|⟦NAME⟧}}</a>
+<nav aria-label="Main" class="nav__links">
+<a class="m-link-2" href="#box">{{t2|The box}}</a>
+<a class="m-link-2" href="#growers">{{t3|Growers}}</a>
+<a class="m-link-2" href="#day">{{t4|The day}}</a>
+<a class="m-link-2" href="#promises">{{t5|Promises}}</a>
+<a class="m-link-2" href="#boxes">{{t6|Prices}}</a>
+<a class="m-link-2" href="#faq">{{t7|FAQ}}</a>
+</nav>
+<div class="nav__end">
+<a class="m-btn-2 nav__cta" href="#boxes"><span class="m-btn-2__label">{{t8|Start a box}}</span><svg aria-hidden="true" class="m-btn-2__star" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="38" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(60)" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(120)" width="200" x="-100" y="-19"></rect></g></svg></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon-btn nav__menu" type="button"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M3 8h18M3 16h18" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button>
+</div>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span aria-hidden="true" class="nav__logo">{{t1|⟦NAME⟧}}</span>
+<button aria-label="Close the menu" class="m-icon-btn menu__close" type="button"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button>
+</div>
+<nav aria-label="Menu" class="menu__links">
+<a class="m-link-2 m-text-3" href="#box">{{t2|The box}}</a>
+<a class="m-link-2 m-text-3" href="#growers">{{t3|Growers}}</a>
+<a class="m-link-2 m-text-3" href="#day">{{t4|The day}}</a>
+<a class="m-link-2 m-text-3" href="#promises">{{t5|Promises}}</a>
+<a class="m-link-2 m-text-3" href="#boxes">{{t6|Prices}}</a>
+<a class="m-link-2 m-text-3" href="#faq">{{t7|FAQ}}</a>
+<a class="m-link-2 m-text-3" href="#contact">{{t9|Contact}}</a>
+</nav>
+<a class="m-btn-2" href="#boxes"><span class="m-btn-2__label">{{t8|Start a box}}</span><svg aria-hidden="true" class="m-btn-2__star" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="38" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(60)" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(120)" width="200" x="-100" y="-19"></rect></g></svg></a>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div aria-hidden="true" class="op-ground">
+<div class="op-ground__hold">
+<img alt="" class="op-ground__img" decoding="async" fetchpriority="low" height="1067" src="{{i1|https://images.unsplash.com/photo-1785125048359-c7d4ea464c2e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZmFybSUyMGZpZWxkJTIwcm93cyUyMHNreXxlbnwxfDB8fHwxNzkxNDEwNzA4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#8c8c59" width="1600"/>
+</div>
+</div>
+<div class="op-second">
+<h1 class="m-text-3 op-second__title" id="opening-title">{{t10|Every box starts as a row in somebody's field.}}</h1>
+<div class="op-slip m-surface">
+<p class="m-text">{{t11|We keep no warehouse. We keep a list of growers, a few electric vans and a timetable that starts at five in the morning.}}</p>
+<div class="op-actions"><a class="m-btn-2" href="#boxes"><span class="m-btn-2__label">{{t12|Build your box}}</span><svg aria-hidden="true" class="m-btn-2__star" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="38" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(60)" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(120)" width="200" x="-100" y="-19"></rect></g></svg></a><a class="m-link" href="#growers">{{t13|Meet the growers}}</a></div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_box}}<section aria-labelledby="box-title" data-8b-section="box" id="box">
+<div class="bx-head">
+<h2 class="m-text-3" data-8b-motion="rows" id="box-title">{{t14|In the box this week}}</h2>
+<p class="m-text-5 bx-lead">{{t15|Seven things, all from the farms below, most of them cut on Monday or Tuesday morning.}}</p>
+</div>
+<div class="bx-field">
+<ol class="bx-rows">
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t16|Carrots}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t17|Nantes, tops left on}}</span><span class="m-text-4">{{t18|Hollow Lane Farm, Cranbrook}}</span></p>
+<p class="m-text-4 bx-when">{{t19|Cut Monday}}</p>
+<figure class="bx-photo"><img alt="Bunched carrots with their green tops" height="1066" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1633380110125-f6e685676160?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2Fycm90cyUyMHdpdGglMjB0b3BzfGVufDF8MHx8fDE3OTE0MTA3NTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#26400c" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t20|Beetroot}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t21|Boltardy, in a bunch}}</span><span class="m-text-4">{{t22|Wickham Fields, Rye}}</span></p>
+<p class="m-text-4 bx-when">{{t19|Cut Monday}}</p>
+<figure class="bx-photo"><img alt="Beetroot tied in a bunch by their red stems" height="1067" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1533231040102-5ec7a63e6d0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmVldHJvb3QlMjBmcmVzaHxlbnwxfDB8fHwxNzkxNDEwNzUxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#c08c8c" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t23|Cavolo nero}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t24|The dark Tuscan kale}}</span><span class="m-text-4">{{t25|Ashdown Growers, Forest Row}}</span></p>
+<p class="m-text-4 bx-when">{{t26|Cut Tuesday}}</p>
+<figure class="bx-photo"><img alt="A curly kale plant growing in a field" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1669062265384-7be1b176fdef?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8a2FsZSUyMGxlYXZlc3xlbnwxfDB8fHwxNzkxNDEwNzUyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#73c059" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t27|Crown Prince squash}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t28|Cured on the farm}}</span><span class="m-text-4">{{t29|Little Hoath, Ticehurst}}</span></p>
+<p class="m-text-4 bx-when">{{t30|Cut in September}}</p>
+<figure class="bx-photo"><img alt="An orange squash ripening among broad leaves" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1570142056130-9f6b59c6287a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHNxdWFzaCUyMHB1bXBraW4lMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0MTA3NTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#a6c073" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t31|Pink Fir potatoes}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t32|Knobbly and waxy}}</span><span class="m-text-4">{{t29|Little Hoath, Ticehurst}}</span></p>
+<p class="m-text-4 bx-when">{{t33|Lifted Monday}}</p>
+<figure class="bx-photo"><img alt="Freshly lifted potatoes lying on dark soil" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1573196444577-af471298e034?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG90YXRvZXMlMjBzb2lsJTIwaGFydmVzdHxlbnwxfDB8fHwxNzkxNDEwNzU0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#404040" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t34|Rainbow chard}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t35|Stems and all}}</span><span class="m-text-4">{{t22|Wickham Fields, Rye}}</span></p>
+<p class="m-text-4 bx-when">{{t26|Cut Tuesday}}</p>
+<figure class="bx-photo"><img alt="Chard leaves with bright orange and red stems" height="1071" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1555694758-3d2012e37ab8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmFpbmJvdyUyMGNoYXJkfGVufDF8MHx8fDE3OTE0MTA3NTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#260c0c" width="1600"/></figure>
+</li>
+<li class="bx-row">
+<h3 class="m-text-7 bx-name">{{t36|Red onions}}</h3>
+<p class="bx-meta"><span class="m-text-4">{{t37|Dried in the barn}}</span><span class="m-text-4">{{t18|Hollow Lane Farm, Cranbrook}}</span></p>
+<p class="m-text-4 bx-when">{{t38|Lifted in August}}</p>
+<figure class="bx-photo"><img alt="A pile of red onions with papery skins" height="1066" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1668295037469-8b0e8d11cd2a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmVkJTIwb25pb25zfGVufDF8MHx8fDE3OTE0MTA3NTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#730c26" width="1600"/></figure>
+</li>
+</ol>
+</div>
+<p class="m-text bx-note">{{t39|The list changes every Friday with whatever is ready. Swap up to three things, or mark what you never want, until Sunday midnight.}}</p>
+</section>{{/sec_box}}
+
+{{#sec_growers}}<section aria-labelledby="growers-title" data-8b-section="growers" id="growers">
+<div class="gr-head">
+<h2 class="m-text-3" data-8b-motion="rows" id="growers-title">{{t40|Twenty-seven growers. Four of them filled this box.}}</h2>
+<p class="m-text-5">{{t41|Each farm is certified organic, within forty miles of the packhouse, and names its own price at the start of the season.}}</p>
+</div>
+<ol class="gr-stack">
+<li class="gr-card">
+<article class="gr-card__inner">
+<div class="gr-card__text m-surface-2">
+<h3 class="m-text-7">{{t42|Maya Okafor}}</h3>
+<p class="m-text-4 gr-meta">{{t18|Hollow Lane Farm, Cranbrook}}</p>
+<blockquote class="m-text-5 gr-quote">{{t43|“We plant in rows because a hoe fits between them. Everything else follows from that.”}}</blockquote>
+<p class="m-text gr-grows">{{t44|Carrots, onions and salad leaves on twelve acres of heavy clay.}}</p>
+</div>
+<figure class="gr-card__photo"><img alt="Maya walking a dirt track between polytunnels and planted beds" height="1068" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1646082276306-9e9c0880a7b3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8eW91bmclMjBmYXJtZXIlMjBncmVlbmhvdXNlfGVufDF8MHx8fDE3OTE0MTA4MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<span aria-hidden="true" class="gr-card__shade"></span>
+</article>
+</li>
+<li class="gr-card">
+<article class="gr-card__inner">
+<div class="gr-card__text m-surface-2">
+<h3 class="m-text-7">{{t45|Tom Ashby}}</h3>
+<p class="m-text-4 gr-meta">{{t25|Ashdown Growers, Forest Row}}</p>
+<blockquote class="m-text-5 gr-quote">{{t46|“Kale doesn't mind the cold. I mind it a lot. That's the deal we have.”}}</blockquote>
+<p class="m-text gr-grows">{{t47|Kale, cabbages and winter greens under four tunnels that are never heated.}}</p>
+</div>
+<figure class="gr-card__photo"><img alt="Tom checking plants inside an unheated polytunnel" height="1069" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1761839257946-4616bcfafec7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8eW91bmclMjBmYXJtZXIlMjBncmVlbmhvdXNlfGVufDF8MHx8fDE3OTE0MTA4MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<span aria-hidden="true" class="gr-card__shade"></span>
+</article>
+</li>
+<li class="gr-card">
+<article class="gr-card__inner">
+<div class="gr-card__text m-surface-2">
+<h3 class="m-text-7">{{t48|Ruth Penfold}}</h3>
+<p class="m-text-4 gr-meta">{{t22|Wickham Fields, Rye}}</p>
+<blockquote class="m-text-5 gr-quote">{{t49|“Beetroot tells you when it's ready. You pull one, you taste it, you send the rest.”}}</blockquote>
+<p class="m-text gr-grows">{{t50|Beetroot, chard and herbs on river silt at the edge of the marsh.}}</p>
+</div>
+<figure class="gr-card__photo"><img alt="Ruth kneeling in a bare field beside a basket of greens" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1709207517323-a8fd737c5498?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8ZmFybWVyJTIwaG9sZGluZyUyMGNyYXRlJTIwdmVnZXRhYmxlc3xlbnwxfDB8fHwxNzkxNDEwNzI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#8c7359" width="1600"/></figure>
+<span aria-hidden="true" class="gr-card__shade"></span>
+</article>
+</li>
+<li class="gr-card">
+<article class="gr-card__inner">
+<div class="gr-card__text m-surface-2">
+<h3 class="m-text-7">{{t51|Gerald Hayes}}</h3>
+<p class="m-text-4 gr-meta">{{t29|Little Hoath, Ticehurst}}</p>
+<blockquote class="m-text-5 gr-quote">{{t52|“Forty-one harvests on this hill, and the squash still surprises me most years.”}}</blockquote>
+<p class="m-text gr-grows">{{t53|Squash, potatoes and drying beans, organic since before it had a label.}}</p>
+</div>
+<figure class="gr-card__photo"><img alt="Gerald walking between raised beds under a slatted roof" height="1067" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1735504646259-6842de921fe0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8ZmFybWVyJTIwaG9sZGluZyUyMGNyYXRlJTIwdmVnZXRhYmxlc3xlbnwxfDB8fHwxNzkxNDEwNzI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#a68c73" width="1600"/></figure>
+<span aria-hidden="true" class="gr-card__shade"></span>
+</article>
+</li>
+</ol>
+</section>{{/sec_growers}}
+
+{{#sec_day}}<section aria-labelledby="day-title" data-8b-section="day" id="day">
+<div class="dy-track">
+<div class="dy-intro">
+<h2 class="m-text-3" id="day-title">{{t54|One day, from the row to your door}}</h2>
+<p class="m-text-5">{{t55|Nothing waits overnight in a cold store. This is a Tuesday, start to finish.}}</p>
+</div>
+<article class="dy-step">
+<figure class="dy-photo"><img alt="Mist lifting off a field at sunrise" height="900" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1729254379657-18908366f904?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8c3VucmlzZSUyMGZhcm0lMjBmaWVsZCUyMG1pc3R8ZW58MXwwfHx8MTc5MTQxMDc3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60}}" style="background:#595940" width="1600"/></figure>
+<div class="dy-card"><h3 class="m-text-6">{{t56|Cut in the rows}}</h3><p class="m-text">{{t57|Leaves first, while they are still cold, then the roots, lifted and bunched by hand.}}</p><p class="m-text-4 dy-time"><time>{{t58|05:00}}</time>{{t59|, in the field}}</p></div>
+</article>
+<article class="dy-step">
+<figure class="dy-photo"><img alt="Carrots and squash rinsed under a cold tap" height="1067" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1578338244251-6258f907691b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d2FzaGluZyUyMHZlZ2V0YWJsZXMlMjBmYXJtfGVufDF8MHx8fDE3OTE0MTA3NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#404040" width="1600"/></figure>
+<div class="dy-card"><h3 class="m-text-6">{{t60|Washed, only just}}</h3><p class="m-text">{{t61|A cold rinse takes the soil off. Nothing is waxed, trimmed for looks or bagged.}}</p><p class="m-text-4 dy-time"><time>{{t62|09:00}}</time>{{t63|, at the farm}}</p></div>
+</article>
+<article class="dy-step">
+<figure class="dy-photo"><img alt="Hands packing mushrooms, carrots and onions into a crate" height="1200" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1718128305898-4d139ebcce6b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2luZyUyMHZlZ2V0YWJsZSUyMGJveGVzfGVufDF8MHx8fDE3OTE0MTA3NzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="dy-card"><h3 class="m-text-6">{{t64|Packed to order}}</h3><p class="m-text">{{t65|Heaviest at the bottom, leaves on top, this week's recipe card in the lid.}}</p><p class="m-text-4 dy-time"><time>{{t66|12:00}}</time>{{t67|, at the packhouse}}</p></div>
+</article>
+<article class="dy-step">
+<figure class="dy-photo"><img alt="A white van on a narrow lane under trees" height="1067" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1784039855351-e34f9720fe25?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZGVsaXZlcnklMjB2YW4lMjBjb3VudHJ5c2lkZSUyMHJvYWR8ZW58MXwwfHx8MTc5MTQxMDc3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="dy-card"><h3 class="m-text-6">{{t68|Out on the lanes}}</h3><p class="m-text">{{t69|Six electric vans leave together and split by postcode. The drivers know which gates stick.}}</p><p class="m-text-4 dy-time"><time>{{t70|15:00}}</time>{{t71|, on the road}}</p></div>
+</article>
+<article class="dy-step">
+<figure class="dy-photo"><img alt="Crates of beetroot, sweetcorn and butternut squash" height="1067" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1757513671709-4fd8acfc588b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aGFydmVzdCUyMGJveCUyMHZlZ2V0YWJsZXMlMjBmaWVsZHxlbnwxfDB8fHwxNzkxNDEwNzI4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="dy-card"><h3 class="m-text-6">{{t72|On your step}}</h3><p class="m-text">{{t73|Before supper, with a text when it lands. Leave last week's crate out for us.}}</p><p class="m-text-4 dy-time">{{t74|By}} <time>{{t75|19:00}}</time>{{t76|, at your door}}</p></div>
+</article>
+</div>
+</section>{{/sec_day}}
+
+{{#sec_returns}}<section aria-labelledby="returns-title" data-8b-section="returns" id="returns">
+<figure class="rt-photo"><img alt="Wooden crates stacked in a yard beside green plants" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1598147437026-897ee3a7d6e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29vZGVuJTIwY3JhdGVzJTIwc3RhY2tlZCUyMGZhcm18ZW58MXwwfHx8MTc5MTQxMDc3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1080&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="rt-panel m-surface-2">
+<div aria-hidden="true" class="m-phase rt-dots" data-8b-motion="phase"><i style="--p:1"></i><i style="--p:.93"></i><i style="--p:.8"></i><i style="--p:.66"></i><i style="--p:.52"></i><i style="--p:.38"></i><i style="--p:.24"></i><i style="--p:.12"></i><i style="--p:1"></i><i style="--p:.93"></i><i style="--p:.8"></i><i style="--p:.66"></i><i style="--p:.52"></i><i style="--p:.38"></i><i style="--p:.24"></i><i style="--p:.12"></i><i style="--p:1"></i><i style="--p:.93"></i><i style="--p:.8"></i><i style="--p:.66"></i><i style="--p:.52"></i><i style="--p:.38"></i><i style="--p:.24"></i><i style="--p:.12"></i></div>
+<h2 class="m-text-3" data-8b-motion="rows" id="returns-title">{{t77|The box comes back.}}</h2>
+<p class="m-text rt-copy">{{t78|Leave last week's crate on the step and the driver takes it home. We wash it, stack it and send it out again; a crate does about forty trips before it is mended or chipped for mulch.}}</p>
+<div><a class="m-link" href="#faq">{{t79|How returns work}}</a></div>
+</div>
+</section>{{/sec_returns}}
+
+{{#sec_promises}}<section aria-labelledby="promises-title" data-8b-section="promises" id="promises">
+<div aria-hidden="true" class="pr-mark">
+<div class="pr-mark__hold">
+<div class="pr-star"><svg aria-hidden="true" class="m-star" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><g><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g><g transform="rotate(300)"><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g><g transform="rotate(60)"><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g><g transform="rotate(240)"><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g><g transform="rotate(120)"><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g><g transform="rotate(180)"><rect class="m-star__arm" height="34" width="102" x="-2" y="-17"></rect></g></g></svg></div>
+</div>
+</div>
+<div class="pr-body">
+<h2 class="m-text-3" data-8b-motion="rows" id="promises-title">{{t80|The asterisk is the promise, not the small print.}}</h2>
+<ol class="pr-list">
+<li class="pr-item"><h3 class="m-text-6">{{t81|Nothing flown in.}}</h3><p class="m-text">{{t82|If it can't come by road from within forty miles, it isn't in the box. That's why there are no bananas.}}</p></li>
+<li class="pr-item"><h3 class="m-text-6">{{t83|Nothing heated under glass.}}</h3><p class="m-text">{{t84|Tunnels keep the rain off; they never burn gas. Tomatoes arrive in July, not in March.}}</p></li>
+<li class="pr-item"><h3 class="m-text-6">{{t85|No plastic, not even the tape.}}</h3><p class="m-text">{{t86|Paper bags, a waxed cotton wrap for the leaves, and a crate that comes back.}}</p></li>
+<li class="pr-item"><h3 class="m-text-6">{{t87|Growers set the price.}}</h3><p class="m-text">{{t88|Each farm names its price before the season starts, and the box price is built up from there.}}</p></li>
+<li class="pr-item"><h3 class="m-text-6">{{t89|Picked the day it travels.}}</h3><p class="m-text">{{t90|Leaves and roots leave the field the morning they reach you. Only squash and onions are cured, on the farm.}}</p></li>
+<li class="pr-item"><h3 class="m-text-6">{{t91|Skip or stop any week.}}</h3><p class="m-text">{{t92|No contract and no minimum. Pause for a holiday from your account up to Sunday midnight.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_promises}}
+
+{{#sec_boxes}}<section aria-labelledby="boxes-title" data-8b-section="boxes" id="boxes">
+<div class="bo-head">
+<h2 class="m-text-3" data-8b-motion="rows" id="boxes-title">{{t93|Choose a box. Change it any week.}}</h2>
+<p class="m-text-5 bo-lead">{{t94|Prices include delivery and the crate. Your delivery day depends on your postcode.}}</p>
+</div>
+
+</section>{{/sec_boxes}}
+
+{{#sec_recipes}}<section aria-labelledby="recipes-title" data-8b-section="recipes" id="recipes">
+<div class="rc-head">
+<h2 class="m-text-3" data-8b-motion="rows" id="recipes-title">{{t95|Cook the box}}</h2>
+<p class="m-text-5 rc-lead">{{t96|Four suppers from this week's rows, printed on the card inside the lid.}}</p>
+</div>
+<ul class="rc-grid">
+<li class="rc-card">
+<figure class="rc-photo"><img alt="Roasted squash and onions in a black pan" height="1067" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1606791422814-b32c705e3e2f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cm9hc3RlZCUyMHZlZ2V0YWJsZXMlMjB0cmF5fGVufDF8MHx8fDE3OTE0MTA3OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="rc-text"><h3 class="m-text-6">{{t97|Squash and red onion, roasted hard}}</h3><p class="m-text-4 rc-meta">{{t98|50 minutes, with squash, red onions and cavolo nero}}</p></div>
+</li>
+<li class="rc-card">
+<figure class="rc-photo"><img alt="Beetroot salad with leaves in a ceramic bowl" height="1100" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1595574446720-ca5f6736b8fb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YmVldHJvb3QlMjBzYWxhZHxlbnwxfDB8fHwxNzkxNDEwNzk4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="rc-text"><h3 class="m-text-6">{{t99|Raw beetroot with its leaves}}</h3><p class="m-text-4 rc-meta">{{t100|20 minutes, with beetroot and chard}}</p></div>
+</li>
+<li class="rc-card">
+<figure class="rc-photo"><img alt="Two bowls of broth with carrots, peas and broccoli" height="1067" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1643786661490-966f1877effa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dmVnZXRhYmxlJTIwc291cCUyMGJvd2x8ZW58MXwwfHx8MTc5MTQxMDc5N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#260c0c" width="1600"/></figure>
+<div class="rc-text"><h3 class="m-text-6">{{t101|Green broth with carrots}}</h3><p class="m-text-4 rc-meta">{{t102|35 minutes, with carrots, kale and potatoes}}</p></div>
+</li>
+<li class="rc-card">
+<figure class="rc-photo"><img alt="Four long tarts with roasted vegetable toppings" height="1059" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1771154136171-97481a26728b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8dmVnZXRhYmxlJTIwdGFydHxlbnwxfDB8fHwxNzkxNDEwNzk5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#c0a6a6" width="1600"/></figure>
+<div class="rc-text"><h3 class="m-text-6">{{t103|Market tarts, four ways}}</h3><p class="m-text-4 rc-meta">{{t104|40 minutes, with onions, chard and squash}}</p></div>
+</li>
+</ul>
+</section>{{/sec_recipes}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-head">
+<h2 class="m-text-3" data-8b-motion="rows" id="faq-title">{{t105|Questions, answered plainly}}</h2>
+<p class="m-text">{{t106|Anything else, write to}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t107|hello@furrow.example}}</a></p>
+</div>
+<div class="fq-list">
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t108|When does my box arrive?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t109|Each area has one delivery day a week, Tuesday to Friday. Check your postcode below; vans usually reach you between three and seven in the evening.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t110|What if I'm out?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t111|Tell us a safe place when you sign up: a porch, a neighbour, behind the bins. Boxes are packed to sit outside for an evening, even in summer.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t112|Can I choose what goes in?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t113|The box follows what is ready, but you can swap up to three things a week and keep a list of what you never want sent.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t114|How do returns work?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t115|Leave last week's crate on the step; the driver folds it and takes it back. If one goes missing nothing happens, we would just like it back.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t116|Is everything certified organic?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t117|Yes. Every farm we buy from is certified, and each grower's licence number is printed on the recipe card with their name.}}</p></details></div>
+<div class="fq-item"><span aria-hidden="true" class="fq-rule" data-8b-motion="furrow"></span><details><summary><span class="m-text-6">{{t118|How do I pause or cancel?}}</span><svg aria-hidden="true" class="fq-mark" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="28" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(60)" width="200" x="-100" y="-14"></rect><rect height="28" transform="rotate(120)" width="200" x="-100" y="-14"></rect></g></svg></summary><p class="m-text fq-answer">{{t119|From your account, any time up to Sunday midnight for the next week. No calls and no forms.}}</p></details></div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<figure class="ct-media"><img alt="A white barn lit by the last sun at dusk" height="999" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1783172600929-4569ceb4550c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmFybSUyMGZpZWxkJTIwZHVzayUyMGdvbGRlbnxlbnwxfDB8fHwxNzkxNDEwODAyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#8ca6c0" width="1600"/></figure>
+<div class="ct-slip">
+<span aria-hidden="true" class="ct-slip__ground"></span>
+<h2 class="m-text-3" data-8b-motion="rows" id="contact-title">{{t120|Do our vans come down your lane?}}</h2>
+
+<ul aria-label="Where we deliver" class="ct-areas">
+<li class="m-text-4" data-day="Tuesday" data-prefix="SE">{{t121|SE, south-east Lagos: Tuesdays}}</li>
+<li class="m-text-4" data-day="Wednesday" data-prefix="SW">{{t122|SW, south-west Lagos: Wednesdays}}</li>
+<li class="m-text-4" data-day="Tuesday" data-prefix="TN">{{t123|TN, Tunbridge Wells and the Weald: Tuesdays}}</li>
+<li class="m-text-4" data-day="Thursday" data-prefix="ME">{{t124|ME, Medway and Maidstone: Thursdays}}</li>
+<li class="m-text-4" data-day="Thursday" data-prefix="RH">{{t125|RH, Crawley and Horsham: Thursdays}}</li>
+<li class="m-text-4" data-day="Friday" data-prefix="BN">{{t126|BN, Ikoyi and Lewes: Fridays}}</li>
+</ul>
+<div class="ct-details">
+<div><span class="m-text-4">{{t127|Write}}</span><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t107|hello@furrow.example}}</a></div>
+<div><span class="m-text-4">{{t128|Call}}</span><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t129|⟦phone⟧}}</a></div>
+<div><span class="m-text-4">{{t130|Packhouse}}</span><span class="m-text">{{t131|1 Admiralty Way, Cranbrook}}</span></div>
+<div><span class="m-text-4">{{t132|Phones answered}}</span><span class="m-text">{{t133|Monday to Friday, 8 to 5}}</span></div>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Farm Delivery by <a href="https://github.com/8bsite/farm-delivery-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft-top">
+<div class="ft-say">
+<div aria-hidden="true" class="m-phase ft-dots" data-8b-motion="phase"><i style="--p:.12"></i><i style="--p:.24"></i><i style="--p:.38"></i><i style="--p:.52"></i><i style="--p:.66"></i><i style="--p:.8"></i><i style="--p:.93"></i><i style="--p:1"></i></div>
+<p class="m-text-5">{{t134|Organic veg from the rows to your step, the same day. Order by Sunday midnight for this week's box.}}</p>
+<div><a class="m-btn" href="#boxes"><span class="m-btn__label">{{t8|Start a box}}</span><svg aria-hidden="true" class="m-btn__star" focusable="false" viewbox="-100 -100 200 200"><g fill="currentColor"><rect height="38" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(60)" width="200" x="-100" y="-19"></rect><rect height="38" transform="rotate(120)" width="200" x="-100" y="-19"></rect></g></svg></a></div>
+</div>
+<nav aria-label="Footer" class="ft-col">
+<h2 class="m-text-4">{{t135|On this page}}</h2>
+<a class="m-link-2" href="#box">{{t2|The box}}</a>
+<a class="m-link-2" href="#growers">{{t3|Growers}}</a>
+<a class="m-link-2" href="#day">{{t4|The day}}</a>
+<a class="m-link-2" href="#promises">{{t5|Promises}}</a>
+<a class="m-link-2" href="#boxes">{{t6|Prices}}</a>
+<a class="m-link-2" href="#faq">{{t7|FAQ}}</a>
+</nav>
+<div class="ft-col">
+<h2 class="m-text-4">{{t136|Get in touch}}</h2>
+<a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t107|hello@furrow.example}}</a>
+<a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t129|⟦phone⟧}}</a>
+<a class="m-link-2" href="#contact">{{t137|Check your postcode}}</a>
+<p class="m-text">{{t131|1 Admiralty Way, Cranbrook}}</p>
+</div>
+</div>
+<span aria-hidden="true" class="ft-rule" data-8b-motion="furrow"></span>
+<p aria-hidden="true" class="ft-mark" style="--len:6">{{t1|⟦NAME⟧}}</p>
+<div class="ft-small m-text-4">
+<p>{{t138|© 2026 ⟦name⟧ Growers Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t139|8B}}</a></p>
+<p>{{t140|Certified organic produce from certified farms.}}</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const menu = document.getElementById('menu');
+  const open = nav.querySelector('.nav__menu');
+  const close = nav.querySelector('.menu__close');
+  let last = window.scrollY, travel = 0;
+  const onScroll = () => {
+    const y = window.scrollY, d = y - last;
+    last = y;
+    nav.classList.toggle('is-solid', y > 24);
+    if (y < 80) { nav.classList.remove('is-hidden'); travel = 0; return; }
+    if (d > 0) { travel = 0; nav.classList.add('is-hidden'); }
+    else if (d < 0) { travel -= d; if (travel > 12) nav.classList.remove('is-hidden'); }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setMenu = state => {
+    menu.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="section-script:boxes">
+(() => {
+  const form = document.querySelector('#boxes .bo-slip');
+  if (!form) return;
+  const price = form.querySelector('.bo-price');
+  const when = form.querySelector('.bo-when');
+  const fit = form.querySelector('.bo-fit');
+  const money = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' });
+  const update = () => {
+    const size = form.querySelector('input[name="size"]:checked');
+    const often = form.querySelector('input[name="often"]:checked');
+    let total = parseFloat(size?.dataset.price || '0');
+    form.querySelectorAll('input[name="extra"]:checked').forEach(extra => { total += parseFloat(extra.dataset.price || '0'); });
+    price.textContent = money.format(total);
+    if (often) when.textContent = often.dataset.label;
+    if (size) fit.textContent = size.dataset.fit;
+  };
+  form.addEventListener('change', update);
+  form.addEventListener('submit', event => event.preventDefault());
+  update();
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  if (!form) return;
+  const input = form.querySelector('input[name="postcode"]');
+  const states = [...form.querySelectorAll('[data-state]')];
+  const areas = [...document.querySelectorAll('#contact .ct-areas [data-prefix]')];
+  const show = (name, day) => states.forEach(state => {
+    state.hidden = state.dataset.state !== name;
+    const slot = state.querySelector('[data-slot="day"]');
+    if (slot && day) slot.textContent = day;
+  });
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const code = input.value.trim().toUpperCase();
+    if (!code) { show('empty'); input.focus(); return; }
+    const letters = (code.match(/^[A-Z]{1,2}/) || [''])[0];
+    const area = areas.find(item => item.dataset.prefix === letters);
+    if (area) show('yes', area.dataset.day); else show('no');
+  });
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() { return document.querySelector('#nav .nav__bar')?.offsetHeight || 0; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rows(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    const timeline = gsap.timeline({ ...vars, onComplete() { split.revert(); } });
+    split.lines.forEach((line, index) => {
+      timeline.from(line, { yPercent: 110, x: (index % 2 ? 1 : -1) * 36, duration: 0.95, ease: 'power3.out' }, index * 0.1);
+    });
+    return timeline;
+  },
+  furrow(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1.1, ease: 'power2.inOut' });
+  },
+  phase(grid, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    const columns = getComputedStyle(grid).gridTemplateColumns.split(' ').length || 8;
+    grid.querySelectorAll('i').forEach((dot, index) => {
+      timeline.fromTo(dot, { '--k': 0 }, { '--k': 1, duration: 0.5, ease: 'none' }, (index % columns) * 0.07 + Math.floor(index / columns) * 0.03);
+    });
+    return timeline;
+  }
+};
+const bindingOptions = {
+  rows: { start: 'top 86%', once: true },
+  furrow: { start: 'top 92%', once: true },
+  phase: { start: 'top 92%', end: 'top 45%', scrub: 0.6 }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(bindingOptions).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const { once, scrub, start, end } = bindingOptions[name];
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start, end, once, scrub, toggleActions: scrub ? undefined : 'play none none none', animation: effects[name](element, { paused: !scrub }) });
+      });
+    }), { first: section.getBoundingClientRect().top < window.innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:box-field">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', phone: '(max-width: 760px)' }, context => {
+    const { motion, phone } = context.conditions;
+    if (!motion) return;
+    const section = document.getElementById('box');
+    const field = section.querySelector('.bx-field');
+    const rows = section.querySelector('.bx-rows');
+    const photos = [...section.querySelectorAll('.bx-photo')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'box-field', trigger: field, start: 'top 100%', end: phone ? 'top 20%' : 'top 16%', scrub: 0.6 }
+    });
+    timeline.fromTo(rows, { rotateX: phone ? 48 : 60, transformOrigin: '50% 0%' }, { rotateX: 0, duration: 1, ease: 'power1.inOut' }, 0);
+    photos.forEach((photo, index) => {
+      timeline.fromTo(photo, { clipPath: 'inset(86% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.45, ease: 'power2.out' }, 0.3 + index * 0.05);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:growers-stack">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('growers');
+    const cards = [...section.querySelectorAll('.gr-card')];
+    section.classList.add('is-stacked');
+    cards.forEach((card, index) => {
+      const photo = card.querySelector('.gr-card__photo img');
+      gsap.fromTo(photo, { scale: 1.18 }, { scale: 1, ease: 'none', scrollTrigger: { id: `growers-stack:photo-${index}`, trigger: card, start: 'top bottom', end: 'top 84px', scrub: 0.5 } });
+      const next = cards[index + 1];
+      if (!next) return;
+      const timeline = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `growers-stack:${index}`, trigger: next, start: 'top bottom', end: 'top 84px', scrub: 0.5 }
+      });
+      timeline
+        .to(card.querySelector('.gr-card__inner'), { scale: 0.92, y: -26 }, 0)
+        .to(card.querySelector('.gr-card__shade'), { opacity: 0.55 }, 0);
+    });
+    return () => section.classList.remove('is-stacked');
+  });
+});
+</script>
+<script data-8b-part="scene:day-track">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('day');
+    const track = section.querySelector('.dy-track');
+    const tokens = getComputedStyle(document.documentElement);
+    const lime = tokens.getPropertyValue('--color-1').trim();
+    const night = tokens.getPropertyValue('--color-2').trim();
+    const white = tokens.getPropertyValue('--color-3').trim();
+    const mix = (a, b, share) => gsap.utils.interpolate(a, b, share);
+    const grounds = [mix(lime, night, 0.0), mix(lime, night, 0.35), mix(lime, night, 0.72), night];
+    section.classList.add('is-track');
+    const distance = () => Math.max(0, track.scrollWidth - window.innerWidth);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'day-track', trigger: section, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 }, 0);
+    timeline.fromTo(section, { backgroundColor: mix(white, lime, 0.3) }, { backgroundColor: grounds[0], duration: 0.25 }, 0);
+    grounds.slice(1).forEach((color, index) => timeline.to(section, { backgroundColor: color, duration: 0.25 }, 0.25 * (index + 1)));
+    return () => section.classList.remove('is-track');
+  });
+});
+</script>
+<script data-8b-part="scene:promises-dial">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('promises');
+    const list = section.querySelector('.pr-list');
+    const items = [...section.querySelectorAll('.pr-item')];
+    const arms = [...section.querySelectorAll('.pr-star .m-star__arm')];
+    const star = section.querySelector('.pr-star');
+    section.classList.add('is-reading');
+    gsap.fromTo(star, { rotate: -60 }, { rotate: 60, ease: 'none', scrollTrigger: { id: 'promises-dial', trigger: list, start: 'top 75%', end: 'bottom 45%', scrub: 0.6 } });
+    items.forEach((item, index) => {
+      ScrollTrigger.create({ id: `promises-dial:item-${index}`, trigger: item, start: 'top 58%', end: 'bottom 42%', toggleClass: { targets: item, className: 'is-on' } });
+      const arm = arms[index];
+      if (!arm) return;
+      gsap.fromTo(arm, { scaleX: 0.04 }, { scaleX: 1, ease: 'power2.out', transformOrigin: '2% 50%', scrollTrigger: { id: `promises-dial:arm-${index}`, trigger: item, start: 'top 85%', end: 'top 50%', scrub: 0.6 } });
+    });
+    return () => section.classList.remove('is-reading');
+  });
+});
+</script>
+<script data-8b-part="scene:recipes-deal">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('recipes');
+    const grid = section.querySelector('.rc-grid');
+    const cards = [...grid.querySelectorAll('.rc-card')];
+    if (!cards.length) return;
+    const offset = card => {
+      const first = cards[0];
+      const oneColumn = Math.abs(cards[cards.length - 1].offsetLeft - first.offsetLeft) < 2;
+      if (oneColumn) return { x: 0, y: first.offsetTop - card.offsetTop };
+      const centreX = grid.clientWidth / 2;
+      return { x: centreX - (card.offsetLeft - grid.offsetLeft + card.offsetWidth / 2), y: first.offsetTop - card.offsetTop };
+    };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'recipes-deal', trigger: grid, start: 'top 92%', end: 'top 30%', scrub: 0.6, invalidateOnRefresh: true }
+    });
+    cards.forEach((card, index) => {
+      const turn = (index - (cards.length - 1) / 2) * 6;
+      timeline.fromTo(card, { x: () => offset(card).x, y: () => offset(card).y + index * 8, rotate: turn }, { x: 0, y: 0, rotate: 0, duration: 1, ease: 'power2.inOut' }, index * 0.1);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact-open">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const slip = section.querySelector('.ct-slip');
+    const ground = slip.querySelector('.ct-slip__ground');
+    const photo = section.querySelector('.ct-media img');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact-open', trigger: section, start: 'top 80%', end: 'top 5%', scrub: 0.6, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(ground, {
+        x: () => -slip.offsetLeft,
+        y: () => -slip.offsetTop,
+        scaleX: () => section.clientWidth / slip.offsetWidth,
+        scaleY: () => section.clientHeight / slip.offsetHeight
+      }, { x: 0, y: 0, scaleX: 1, scaleY: 1, duration: 1, ease: 'power2.inOut' }, 0.15)
+      .fromTo(photo, { scale: 1.25 }, { scale: 1, duration: 1.15 }, 0);
+  });
+});
+</script>
+</body>
+</html>

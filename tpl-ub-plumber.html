@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GwevMToedPibnq0SZe1Q.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 88%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GwevMToedPibnq0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 88%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GwevMToedPibnq0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f2f2f2;
+  --color-2: #0e0e0e;
+  --color-3: #ff5b1f;
+  --color-4: #c63d00;
+  --color-5: #ffffff;
+  --color-6: #2a4cff;
+  --color-7: #c9c9c9;
+  --color-8: #5c5c5c;
+  --font-1: "Instrument Sans", "Instrument Sans Fallback", "Arial Narrow", Arial, sans-serif;
+  --font-2: "Geist", "Geist Fallback", Arial, sans-serif;
+  --radius-1: 26px;
+  --radius-2: 999px;
+  --space-1: clamp(14px, 2vw, 28px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 81.2%; ascent-override: 119.4%; descent-override: 30.8%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.9%; ascent-override: 98.2%; descent-override: 29.2%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; line-height: 1.5; font-weight: 400; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-6); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: 120px; font-weight: 400; font-stretch: 88%; line-height: 0.86; letter-spacing: -0.01em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-2); font-size: clamp(18px, 1.8vw, 24px); font-weight: 500; line-height: 1.05; letter-spacing: -0.02em; text-transform: none; font-style: normal; color: var(--color-4); }
+.m-text-4 { font-family: var(--font-2); font-size: 13px; font-weight: 400; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(26px, 3vw, 40px); font-weight: 400; font-stretch: 88%; line-height: 0.95; letter-spacing: -0.005em; text-transform: uppercase; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(18px, 1.6vw, 22px); font-weight: 400; line-height: 1.35; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: inset(50% 0 50% 0 round var(--radius-2)); transition: clip-path .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label, .m-btn__icon { transition: color .3s, stroke .3s; }
+.m-btn__icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; flex: none; }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 18px; border: 0; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-5); font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1; letter-spacing: -0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(50% 0 50% 0 round var(--radius-2)); transition: clip-path .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-2 > span { transition: color .3s; }
+.m-btn-3 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 16px; border: 1px solid var(--color-7); border-radius: var(--radius-2); background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 14px; font-weight: 400; line-height: 1; letter-spacing: -0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; }
+.m-btn-3::before { content: ""; position: absolute; inset: -1px; z-index: -1; background: var(--color-2); clip-path: inset(50% 0 50% 0 round var(--radius-2)); transition: clip-path .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-3 > span { transition: color .3s; }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before, .m-btn-3:hover::before { clip-path: inset(0 0 0 0 round var(--radius-2)); }
+  .m-btn:hover { color: var(--color-5); }
+  .m-btn-2:hover { color: var(--color-2); }
+  .m-btn-3:hover { color: var(--color-5); }
+}
+.m-link { color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; transition: background-size .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 0 1px; background-position: 100% 100%; }
+}
+.m-icon-btn { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--color-7); border-radius: var(--radius-2); background: var(--color-5); color: var(--color-2); cursor: pointer; }
+.m-icon-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-icon-btn:hover svg { transform: rotate(90deg); }
+}
+.m-badge { font-stretch: normal; display: inline-flex; align-items: center; min-height: 28px; padding: 0 12px; border: 1px solid currentColor; border-radius: var(--radius-2); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.m-badge-2 { font-stretch: normal; display: inline-flex; align-items: center; min-height: 28px; padding: 0 12px; border-radius: var(--radius-2); background: var(--color-6); color: var(--color-5); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.m-badge-3 { font-stretch: normal; display: inline-flex; align-items: center; min-height: 28px; padding: 0 12px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.m-band { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-2); }
+.m-band > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.m-star { display: block; width: 120px; height: 120px; overflow: visible; fill: none; stroke: var(--color-3); stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.m-star path { vector-effect: non-scaling-stroke; }
+.m-surface { background: var(--color-5); color: var(--color-2); border: 1px solid var(--color-7); border-radius: var(--radius-1); padding: clamp(20px, 2.4vw, 32px); }
+.m-field { display: block; width: 100%; min-height: 52px; padding: 14px 16px; border: 1px solid var(--color-7); border-radius: 14px; background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: 0; appearance: none; }
+textarea.m-field { min-height: 120px; resize: vertical; }
+.m-field-2 { position: relative; display: inline-flex; align-items: center; }
+.m-field-2__select { min-height: 40px; padding: 0 36px 0 16px; border: 1px solid var(--color-7); border-radius: var(--radius-2); background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 14px; font-weight: 400; line-height: 1; letter-spacing: -0.005em; appearance: none; cursor: pointer; }
+.m-field-2__icon { position: absolute; right: 12px; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; pointer-events: none; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-gutter { padding-inline: var(--space-1); }
+.l-clip { overflow-x: clip; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto; z-index: 50; padding: 12px var(--space-1); transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+#navigation.is-hidden { transform: translateY(calc(-100% - 6px)); }
+#navigation .nav__bar { display: flex; align-items: center; gap: 6px; }
+#navigation .nav__brand { font-size: 16px; font-weight: 500; padding: 0 14px; border-radius: 10px; }
+#navigation .nav__brand::before { border-radius: 10px; clip-path: inset(50% 0 50% 0 round 10px); }
+#navigation .nav__brand sup { font-size: .6em; margin-left: 1px; }
+#navigation .nav__area { margin-left: clamp(8px, 9vw, 150px); }
+#navigation .nav__group { display: flex; gap: 4px; margin: 0 auto; }
+#navigation .nav__menu { display: none; }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 60; background: var(--color-1); padding: 12px var(--space-1) 32px; display: flex; flex-direction: column; gap: 28px; overflow-y: auto; }
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__overlay-top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .nav__overlay-links { display: grid; gap: 4px; }
+#navigation .nav__overlay-links a { text-decoration: none; font-size: clamp(44px, 13vw, 64px); }
+#navigation .nav__overlay-foot { margin-top: auto; display: grid; gap: 12px; justify-items: start; }
+@media (max-width: 1080px) {
+  #navigation .nav__phone { display: none; }
+}
+@media (max-width: 880px) {
+  #navigation .nav__group, #navigation .nav__area { display: none; }
+  #navigation .nav__menu { display: inline-flex; }
+  #navigation .nav__bar > .nav__book { margin-left: auto; }
+}
+@media (hover: hover) {
+  #navigation .nav__brand:hover::before { clip-path: inset(0 0 0 0 round 10px); }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; overflow-x: clip; }
+#opening .op__first { position: sticky; top: 0; z-index: 1; height: 100svh; min-height: 540px; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: 0 var(--space-1) var(--space-1); }
+#opening .op__spacer { height: var(--op-nav, 64px); }
+#opening .op__frame { position: relative; z-index: 2; min-height: 150px; }
+#opening .op__band { position: absolute; inset: 0; overflow: hidden; border-radius: var(--radius-1); background: var(--color-2); }
+#opening .op__drift { position: absolute; inset: 0; transform: scale(1.08); }
+#opening .op__drift > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#opening .op__shade { position: absolute; inset: 0; opacity: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--color-2) 20%, transparent) 0%, color-mix(in srgb, var(--color-2) 40%, transparent) 40%, color-mix(in srgb, var(--color-2) 82%, transparent) 78%); pointer-events: none; }
+#opening .op__type { position: relative; z-index: 1; container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; padding-top: 14px; }
+#opening .op__title { display: contents; }
+#opening .op__line { display: block; white-space: nowrap; font-size: min(calc(100cqw / 10.2), calc(var(--op-box) / (var(--len) * 0.51))); }
+#opening .op__line > span { display: block; }
+#opening .op__l1 { --op-box: 100cqw; grid-column: 1 / -1; grid-row: 1; }
+#opening .op__l2 { --op-box: 82cqw; grid-column: 3 / -1; grid-row: 2; justify-self: end; }
+#opening .op__l3 { --op-box: 49cqw; grid-column: 1 / 7; grid-row: 3; }
+#opening .op__tag { grid-column: 1 / 3; grid-row: 2; align-self: center; display: grid; gap: 6px; padding-top: .4em; }
+#opening .op__tag .m-text-4 { color: var(--color-4); }
+#opening .op__note { grid-column: 7 / 10; grid-row: 3; align-self: center; max-width: 30ch; color: var(--color-4); position: relative; z-index: 1; }
+#opening .op__star { grid-column: 9 / 11; grid-row: 3; justify-self: center; align-self: center; width: clamp(80px, 11cqw, 150px); aspect-ratio: 1; margin-bottom: -4%; }
+#opening .op__star .m-star { width: 100%; height: 100%; }
+#opening .op__cta { grid-column: 10 / -1; grid-row: 3; justify-self: end; align-self: end; position: relative; z-index: 1; }
+
+#opening .op__second { position: relative; z-index: 2; min-height: 100svh; display: grid; align-content: end; padding: calc(var(--op-nav, 64px) + 24px) var(--space-1) var(--space-1); background: var(--color-2); color: var(--color-5); overflow: hidden; isolation: isolate; }
+#opening .op__second :focus-visible { outline-color: var(--color-5); }
+#opening .op__title2 { display: contents; }
+#opening .op__m1 { --op-box: 100cqw; grid-column: 1 / -1; grid-row: 1; }
+#opening .op__m2 { --op-box: 82cqw; grid-column: 3 / -1; grid-row: 2; justify-self: end; }
+#opening .op__m3 { --op-box: 40cqw; grid-column: 1 / 6; grid-row: 3; }
+#opening .op__tag2 { grid-column: 1 / 3; grid-row: 2; align-self: center; color: var(--color-5); padding-top: .4em; }
+#opening .op__sides { grid-column: 6 / -1; grid-row: 3; display: grid; grid-template-columns: 1fr 1fr auto; gap: 16px 24px; align-items: end; }
+#opening .op__side { display: grid; gap: 10px; justify-items: start; max-width: 28ch; }
+#opening .op__more { justify-self: end; white-space: nowrap; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__frame { animation: op-frame 1.1s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__line > span { animation: op-rise .9s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__l2 > span { animation-delay: .08s; }
+  #opening .op__l3 > span { animation-delay: .16s; }
+  #opening .op__tag > *, #opening .op__note > span, #opening .op__cta > span { animation: op-rise .8s .25s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__drift { animation: op-drift 7s ease-in-out infinite alternate; }
+  #opening .op__star .m-star { animation: op-spin 24s linear infinite; }
+  #opening.is-off .op__drift, #opening.is-off .op__star .m-star { animation-play-state: paused; }
+}
+@keyframes op-frame { from { clip-path: inset(6% 4% 6% 4% round var(--radius-1)); transform: translateY(18px); } to { clip-path: inset(0 0 0 0 round var(--radius-1)); transform: none; } }
+@keyframes op-rise { from { transform: translateY(.35em); } }
+@keyframes op-drift { from { transform: scale(1.08) translateX(-2.6%); } to { transform: scale(1.08) translateX(2.6%); } }
+@keyframes op-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 760px) {
+  #opening .op__first { min-height: 600px; }
+  #opening .op__type { column-gap: 10px; row-gap: 0; }
+  #opening .op__line { font-size: min(calc(100cqw / 6.6), calc(100cqw / (var(--len) * 0.53))); }
+  #opening .op__l1 { font-size: calc(100cqw / 6.6); white-space: normal; }
+  #opening .op__l2 { grid-column: 1 / -1; }
+  #opening .op__l3 { grid-column: 1 / 10; }
+  #opening .op__star { grid-column: 10 / -1; grid-row: 3; width: 100%; max-width: 72px; justify-self: end; margin: 0; }
+  #opening .op__tag { grid-column: 1 / 8; grid-row: 4; padding-top: 14px; }
+  #opening .op__cta { grid-column: 8 / -1; grid-row: 4; align-self: end; min-height: 44px; padding: 0 16px; }
+  #opening .op__note { grid-column: 1 / -1; grid-row: 5; max-width: none; padding-top: 10px; }
+  #opening .op__m1 { font-size: calc(100cqw / 6.6); white-space: normal; }
+  #opening .op__m2 { grid-column: 1 / -1; }
+  #opening .op__m3 { grid-column: 1 / -1; }
+  #opening .op__tag2 { grid-column: 1 / -1; grid-row: 4; padding-top: 14px; }
+  #opening .op__sides { grid-column: 1 / -1; grid-row: 5; grid-template-columns: 1fr 1fr; padding-top: 18px; gap: 14px 16px; }
+  #opening .op__more { grid-column: 1 / -1; justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening.is-staged .op__band { overflow: visible; border-radius: 0; background: transparent; }
+  #opening.is-staged .op__drift > img, #opening.is-staged .op__shade { inset: auto; max-width: none; object-fit: fill; }
+  #opening.is-staged .op__second { background: transparent; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-2); color: var(--color-5); padding: clamp(48px, 7vw, 96px) var(--space-1) var(--space-1); border-radius: var(--radius-1) var(--radius-1) 0 0; }
+#footer :focus-visible { outline-color: var(--color-3); }
+#footer .ft__top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+#footer .ft__lead { max-width: 30ch; }
+#footer .ft__links { display: grid; gap: 6px; }
+#footer .ft__addr { font-style: normal; display: grid; gap: 6px; color: var(--color-7); }
+#footer .ft__addr a { color: var(--color-5); }
+#footer .ft__rule { height: 1px; background: var(--color-7); margin: clamp(40px, 6vw, 80px) 0 18px; transform-origin: 0 50%; opacity: .5; }
+#footer .ft__mark { container-type: inline-size; }
+#footer .ft__mark span { display: block; font-size: min(42vw, calc(100cqw / (var(--len) * 0.535))); white-space: nowrap; }
+#footer .ft__base { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; color: var(--color-7); padding-top: 18px; }
+@media (max-width: 760px) {
+  #footer .ft__top { grid-template-columns: 1fr 1fr; }
+  #footer .ft__lead { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:services">
+@layer sections {
+#services { padding: clamp(88px, 11vw, 168px) var(--space-1) clamp(64px, 8vw, 120px); }
+#services .sv__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin-bottom: clamp(36px, 5vw, 72px); }
+#services .sv__title { grid-column: 1 / 9; display: grid; }
+#services .sv__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(64cqw / (var(--len) * 0.53))); }
+#services .sv__title > span:nth-child(2) { justify-self: end; }
+#services .sv__lead { grid-column: 9 / -1; max-width: 32ch; padding-bottom: .4em; }
+#services .sv__list { container-type: inline-size; border-top: 1px solid var(--color-7); }
+#services .sv__row { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr); column-gap: clamp(16px, 2vw, 28px); align-items: center; padding: 14px 0; border-bottom: 1px solid var(--color-7); }
+#services .sv__word { white-space: nowrap; font-size: min(8.6cqw, calc(45cqw / (var(--len) * 0.53))); }
+#services .sv__word > span { display: inline-block; }
+#services .sv__info { display: grid; gap: 10px; justify-items: start; max-width: 34ch; }
+#services .sv__info .m-badge { color: var(--color-4); }
+#services .sv__pic { aspect-ratio: 2.6 / 1; }
+#services .sv__pic img[data-pos="top"] { object-position: 50% 12%; }
+@media (max-width: 760px) {
+  #services .sv__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #services .sv__title, #services .sv__lead { grid-column: 1 / -1; }
+  #services .sv__title > span { font-size: min(15cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #services .sv__row { grid-template-columns: 1fr; row-gap: 12px; padding: 18px 0 20px; }
+  #services .sv__word { font-size: min(17cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #services .sv__pic { aspect-ratio: 2.3 / 1; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { padding: clamp(72px, 9vw, 140px) var(--space-1); }
+#prices .pr__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+#prices .pr__side { position: sticky; top: 96px; display: grid; gap: 28px; container-type: inline-size; }
+#prices .pr__title > span { display: block; white-space: nowrap; font-size: min(17cqw, calc(100cqw / (var(--len) * 0.53))); }
+#prices .pr__title > span:nth-child(2) { padding-left: 12cqw; }
+#prices .pr__lead { max-width: 34ch; }
+#prices .pr__mark { display: grid; grid-template-columns: 72px 1fr; gap: 16px; align-items: center; max-width: 40ch; color: var(--color-8); }
+#prices .pr__mark .m-star { width: 72px; height: 72px; }
+#prices .pr__board { border-top: 1px solid var(--color-2); }
+#prices .pr__row { display: grid; grid-template-columns: auto minmax(24px, 1fr) auto; column-gap: 14px; row-gap: 6px; align-items: baseline; padding: 20px 0 18px; border-bottom: 1px solid var(--color-7); }
+#prices .pr__name { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+#prices .pr__dots { height: 6px; align-self: center; transform-origin: 0 50%; background-image: radial-gradient(circle, var(--color-8) 1.3px, transparent 1.8px); background-size: 9px 6px; background-repeat: repeat-x; background-position: 0 50%; }
+#prices .pr__price { white-space: nowrap; }
+#prices .pr__price small { font-family: var(--font-2); font-stretch: normal; font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--color-8); margin-right: 6px; vertical-align: middle; }
+#prices .pr__note { grid-column: 1 / -1; color: var(--color-8); max-width: 52ch; }
+@media (max-width: 860px) {
+  #prices .pr__grid { grid-template-columns: 1fr; }
+  #prices .pr__side { position: static; }
+  #prices .pr__title > span { font-size: min(15cqw, calc(100cqw / (var(--len) * 0.53))); }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { padding: clamp(72px, 9vw, 140px) var(--space-1); }
+#visit .vi__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin-bottom: clamp(48px, 7vw, 100px); }
+#visit .vi__title { grid-column: 1 / 9; display: grid; }
+#visit .vi__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(66cqw / (var(--len) * 0.53))); }
+#visit .vi__title > span:nth-child(2) { padding-left: 24cqw; }
+#visit .vi__lead { grid-column: 9 / -1; max-width: 30ch; padding-bottom: .4em; }
+#visit .vi__track { position: relative; max-width: 1180px; margin: 0 auto; }
+#visit .vi__line { position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; margin-left: -2px; border-radius: var(--radius-2); background: var(--color-7); overflow: hidden; }
+#visit .vi__fill { position: absolute; inset: 0; border-radius: var(--radius-2); background: linear-gradient(180deg, var(--color-6), var(--color-3)); transform-origin: 50% 0; }
+#visit .vi__steps { display: grid; gap: clamp(40px, 6vw, 88px); }
+#visit .vi__step { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr); align-items: start; }
+#visit .vi__num { grid-column: 2; justify-self: center; display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--radius-2); border: 2px solid var(--color-2); background: var(--color-5); font-family: var(--font-2); font-size: 16px; font-weight: 500; position: relative; z-index: 1; transition: background-color .4s, color .4s, border-color .4s; }
+#visit .vi__body { display: grid; gap: 12px; grid-row: 1; max-width: 46ch; }
+#visit .vi__step:nth-child(odd) .vi__body { grid-column: 1; justify-self: end; text-align: right; justify-items: end; }
+#visit .vi__step:nth-child(even) .vi__body { grid-column: 3; }
+#visit .vi__body .m-text { color: var(--color-8); }
+#visit .vi__step.is-done .vi__num { background: var(--color-2); color: var(--color-5); }
+@media (prefers-reduced-motion: no-preference) {
+  #visit .is-pending .vi__step:not(.is-done) .vi__body { color: var(--color-8); }
+  #visit .is-pending .vi__step:not(.is-done) .vi__num { border-color: var(--color-7); color: var(--color-8); }
+}
+@media (max-width: 760px) {
+  #visit .vi__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #visit .vi__title, #visit .vi__lead { grid-column: 1 / -1; }
+  #visit .vi__title > span { font-size: min(16cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #visit .vi__title > span:nth-child(2) { padding-left: 0; justify-self: end; }
+  #visit .vi__line { left: 26px; }
+  #visit .vi__step { grid-template-columns: 52px minmax(0, 1fr); column-gap: 18px; }
+  #visit .vi__num { grid-column: 1; }
+  #visit .vi__step:nth-child(odd) .vi__body, #visit .vi__step:nth-child(even) .vi__body { grid-column: 2; justify-self: start; text-align: left; justify-items: start; }
+}
+}
+</style>
+<style data-8b-part="section:work">
+@layer sections {
+#work { padding: clamp(72px, 9vw, 140px) var(--space-1) clamp(48px, 6vw, 96px); }
+#work .wk__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin-bottom: clamp(36px, 5vw, 64px); }
+#work .wk__title { grid-column: 1 / 8; display: grid; }
+#work .wk__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(56cqw / (var(--len) * 0.53))); }
+#work .wk__title > span:nth-child(2) { justify-self: end; }
+#work .wk__lead { grid-column: 9 / -1; max-width: 30ch; padding-bottom: .4em; }
+#work .wk__stack { display: grid; gap: clamp(20px, 3vw, 40px); }
+#work .wk__card { position: sticky; top: 16px; display: grid; grid-template-rows: auto auto; gap: 18px; padding: 12px 12px 22px; border-radius: calc(var(--radius-1) + 12px); background: var(--color-5); border: 1px solid var(--color-7); overflow: hidden; }
+#work .wk__card:nth-child(2) { top: 30px; }
+#work .wk__card:nth-child(3) { top: 44px; }
+#work .wk__card:nth-child(4) { top: 58px; }
+#work .wk__card:nth-child(5) { top: 72px; }
+#work .wk__band { height: min(54vh, 44vw); min-height: 220px; }
+#work .wk__band img { transform: scale(1.12); }
+#work .wk__meta { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr); gap: 12px 24px; align-items: start; padding: 0 10px; }
+#work .wk__tags { display: flex; flex-wrap: wrap; gap: 6px; }
+#work .wk__meta .m-text-4 { color: var(--color-8); }
+#work .wk__dim { position: absolute; inset: 0; background: var(--color-2); opacity: 0; pointer-events: none; }
+@media (max-width: 760px) {
+  #work .wk__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #work .wk__title, #work .wk__lead { grid-column: 1 / -1; }
+  #work .wk__title > span { font-size: min(18cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #work .wk__band { height: 42vh; min-height: 200px; }
+  #work .wk__meta { grid-template-columns: 1fr; padding: 0 4px; }
+}
+}
+</style>
+<style data-8b-part="section:team">
+@layer sections {
+#team { padding: clamp(72px, 9vw, 140px) var(--space-1); }
+#team .tm__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin-bottom: clamp(40px, 6vw, 88px); }
+#team .tm__title { grid-column: 1 / 9; display: grid; }
+#team .tm__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(66cqw / (var(--len) * 0.53))); }
+#team .tm__title > span:nth-child(2) { padding-left: 30cqw; }
+#team .tm__lead { grid-column: 9 / -1; max-width: 32ch; padding-bottom: .4em; }
+#team .tm__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); align-items: start; }
+#team .tm__card { display: grid; gap: 14px; }
+#team .tm__card:nth-child(even) { margin-top: clamp(40px, 8vw, 120px); }
+#team .tm__pic { position: relative; aspect-ratio: 5 / 8; border-radius: var(--radius-2); overflow: hidden; background: var(--color-7); }
+#team .tm__pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#team .tm__facts { display: flex; flex-wrap: wrap; gap: 6px; }
+#team .tm__card .m-text-4 { color: var(--color-8); max-width: 30ch; }
+@media (max-width: 860px) {
+  #team .tm__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #team .tm__title, #team .tm__lead { grid-column: 1 / -1; }
+  #team .tm__title > span { font-size: min(16cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #team .tm__title > span:nth-child(2) { padding-left: 0; justify-self: end; }
+  #team .tm__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #team .tm__card:nth-child(even) { margin-top: 56px; }
+}
+}
+</style>
+<style data-8b-part="section:heat">
+@layer sections {
+#heat { padding: clamp(72px, 9vw, 140px) var(--space-1); }
+#heat .ht__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin-bottom: clamp(36px, 5vw, 72px); }
+#heat .ht__title { grid-column: 1 / 9; display: grid; }
+#heat .ht__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(66cqw / (var(--len) * 0.53))); }
+#heat .ht__title > span:nth-child(2) { justify-self: end; }
+#heat .ht__lead { grid-column: 9 / -1; max-width: 30ch; padding-bottom: .4em; }
+#heat .ht__stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 12px; }
+#heat .ht__half { position: relative; z-index: 1; display: grid; align-content: space-between; gap: 32px; min-height: min(74vh, 640px); padding: clamp(22px, 2.6vw, 36px); border-radius: var(--radius-1); }
+#heat .ht__half--cold { background: var(--color-6); color: var(--color-5); }
+#heat .ht__half--hot { background: var(--color-3); color: var(--color-2); }
+#heat .ht__half--cold :focus-visible { outline-color: var(--color-5); }
+#heat .ht__half h3 { margin-top: 18px; }
+#heat .ht__list li { padding: 12px 0; border-top: 1px solid currentColor; }
+#heat .ht__pic { min-height: 320px; }
+@media (max-width: 860px) {
+  #heat .ht__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #heat .ht__title, #heat .ht__lead { grid-column: 1 / -1; }
+  #heat .ht__title > span { font-size: min(16cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #heat .ht__stage { grid-template-columns: 1fr; }
+  #heat .ht__half { min-height: 0; }
+  #heat .ht__pic { min-height: 0; aspect-ratio: 4 / 3; }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { padding: clamp(72px, 9vw, 140px) 0; }
+#reviews .rv__head { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; margin: 0 var(--space-1) clamp(36px, 5vw, 64px); }
+#reviews .rv__title { grid-column: 1 / 9; display: grid; }
+#reviews .rv__title > span { display: block; white-space: nowrap; font-size: min(10cqw, calc(66cqw / (var(--len) * 0.53))); }
+#reviews .rv__title > span:nth-child(2) { justify-self: end; }
+#reviews .rv__lead { grid-column: 9 / -1; max-width: 30ch; padding-bottom: .4em; }
+#reviews .rv__viewport { padding: 0 var(--space-1); }
+#reviews .rv__row { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+#reviews .rv__card { height: 100%; display: grid; align-content: space-between; gap: 28px; }
+#reviews .rv__card .m-text-4 { color: var(--color-8); }
+#reviews .rv__who { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+@media (prefers-reduced-motion: no-preference) {
+  #reviews .rv__viewport.is-looping { overflow: hidden; padding: 0; }
+  #reviews .is-looping .rv__row { display: flex; gap: 0; width: max-content; animation: rv-loop 70s linear infinite; }
+  #reviews .is-looping .rv__item { width: clamp(280px, 30vw, 400px); padding-left: 14px; }
+  #reviews .is-looping:hover .rv__row, #reviews .is-looping:focus-within .rv__row, #reviews .is-looping.is-off .rv__row { animation-play-state: paused; }
+}
+@keyframes rv-loop { to { transform: translateX(-50%); } }
+@media (max-width: 760px) {
+  #reviews .rv__head { grid-template-columns: 1fr; row-gap: 18px; }
+  #reviews .rv__title, #reviews .rv__lead { grid-column: 1 / -1; }
+  #reviews .rv__title > span { font-size: min(15cqw, calc(100cqw / (var(--len) * 0.53))); }
+}
+}
+</style>
+<style data-8b-part="section:emergency">
+@layer sections {
+#emergency { background: var(--color-2); color: var(--color-5); padding: clamp(80px, 10vw, 150px) var(--space-1) clamp(56px, 7vw, 100px); border-radius: var(--radius-1); }
+#emergency :focus-visible { outline-color: var(--color-3); }
+#emergency .em__top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end; }
+#emergency .em__title { max-width: 22ch; }
+#emergency .em__tag { color: var(--color-3); text-align: right; display: flex; align-items: center; gap: 14px; }
+#emergency .em__tag .m-star { width: 56px; height: 56px; flex: none; }
+#emergency .em__number { display: block; container-type: inline-size; margin: clamp(18px, 3vw, 40px) 0 clamp(36px, 5vw, 64px); color: var(--color-3); text-decoration: none; }
+#emergency .em__number > span { display: block; white-space: nowrap; font-size: calc(100cqw / (var(--len) * 0.45)); transform-origin: 0% 100%; }
+#emergency .em__foot { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr); gap: clamp(20px, 3vw, 44px); align-items: start; padding-top: 28px; border-top: 1px solid var(--color-8); }
+#emergency .em__tips { display: grid; gap: 16px; counter-reset: none; }
+#emergency .em__tips li { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; }
+#emergency .em__tips .m-badge { color: var(--color-3); }
+#emergency .em__pic { aspect-ratio: 1.7 / 1; }
+@media (max-width: 860px) {
+  #emergency .em__top { grid-template-columns: 1fr; }
+  #emergency .em__tag { text-align: left; }
+  #emergency .em__foot { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: clamp(80px, 10vw, 150px) var(--space-1) clamp(56px, 7vw, 100px); }
+#faq .fq__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+#faq .fq__side { position: sticky; top: 96px; display: grid; gap: 24px; container-type: inline-size; }
+#faq .fq__title > span { display: block; white-space: nowrap; font-size: min(17cqw, calc(100cqw / (var(--len) * 0.53))); }
+#faq .fq__title > span:nth-child(2) { padding-left: 18cqw; }
+#faq .fq__side .m-text-6 { max-width: 30ch; }
+#faq .fq__list { border-bottom: 1px solid var(--color-7); }
+#faq .fq__q { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 40px; gap: 20px; align-items: center; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq .fq__q::-webkit-details-marker { display: none; }
+#faq .fq__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-7); transform-origin: 0 50%; }
+#faq .fq__q .m-star { width: 34px; height: 34px; justify-self: end; transition: transform .5s cubic-bezier(.7, 0, .2, 1), fill .3s; }
+#faq details[open] .fq__q .m-star { transform: rotate(30deg); fill: var(--color-3); }
+#faq .fq__a { padding: 0 60px 26px 0; max-width: 62ch; color: var(--color-8); }
+@media (hover: hover) {
+  #faq .fq__q:hover .m-star { transform: rotate(30deg); }
+}
+@media (max-width: 860px) {
+  #faq .fq__grid { grid-template-columns: 1fr; }
+  #faq .fq__side { position: static; }
+  #faq .fq__title > span { font-size: min(15cqw, calc(100cqw / (var(--len) * 0.53))); }
+  #faq .fq__a { padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding: clamp(96px, 11vw, 160px) var(--space-1) clamp(56px, 7vw, 100px); }
+#contact .ct__frame { position: relative; }
+#contact .ct__band { aspect-ratio: 3.6 / 1; }
+#contact .ct__type { container-type: inline-size; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 12px; align-items: end; padding-top: 16px; }
+#contact .ct__title { display: contents; }
+#contact .ct__title > span { display: block; white-space: nowrap; font-size: min(calc(100cqw / 8.5), calc(var(--ct-box) / (var(--len) * 0.53))); }
+#contact .ct__l1 { --ct-box: 100cqw; grid-column: 1 / -1; grid-row: 1; }
+#contact .ct__l2 { --ct-box: 100cqw; grid-column: 1 / -1; grid-row: 2; justify-self: end; }
+#contact .ct__l3 { --ct-box: 50cqw; grid-column: 1 / 7; grid-row: 3; }
+#contact .ct__tag { grid-column: 8 / -1; grid-row: 3; align-self: center; justify-self: end; display: grid; gap: 6px; padding-top: .4em; }
+#contact .ct__tag .m-text-4 { color: var(--color-4); }
+#contact .ct__body { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(20px, 3vw, 44px); margin-top: clamp(36px, 5vw, 64px); align-items: start; }
+#contact .ct__ways { display: grid; gap: 8px; justify-items: start; }
+#contact .ct__ways .m-text-4 { color: var(--color-8); margin-top: 10px; max-width: 34ch; }
+#contact .ct__form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+#contact .ct__field { display: grid; gap: 6px; }
+#contact .ct__field--wide { grid-column: 1 / -1; }
+#contact .ct__field .m-text-4 { color: var(--color-8); }
+#contact .ct__send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+#contact .ct__status { color: var(--color-4); }
+@media (max-width: 760px) {
+  #contact .ct__band { aspect-ratio: 1.8 / 1; }
+  #contact .ct__title > span { font-size: min(calc(100cqw / 6.6), calc(100cqw / (var(--len) * 0.53))); }
+  #contact .ct__l1 { white-space: normal; font-size: calc(100cqw / 6.6); }
+  #contact .ct__l2, #contact .ct__l3 { grid-column: 1 / -1; }
+  #contact .ct__tag { grid-column: 1 / -1; grid-row: 4; padding-top: 16px; justify-self: start; }
+  #contact .ct__body { grid-template-columns: 1fr; }
+  #contact .ct__form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:contact">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #contact .ct__band.is-staged { overflow: visible; border-radius: 0; background: transparent; }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<nav aria-label="Main" class="nav__bar">
+<a class="m-btn-3 nav__brand" href="#opening"><span>{{t1|⟦name⟧}}<sup>®</sup></span></a>
+<label class="m-field-2 nav__area"><span class="visually-hidden">{{t2|Your area}}</span><select class="m-field-2__select" data-area-select="">
+<option selected="" value="Ibadan">{{t3|Ibadan}}</option>
+<option value="Rotherham">{{t4|Rotherham}}</option>
+<option value="Barnsley">{{t5|Barnsley}}</option>
+<option value="Chesterfield">{{t6|Chesterfield}}</option>
+<option value="Doncaster">{{t7|Doncaster}}</option>
+</select><svg aria-hidden="true" class="m-field-2__icon" viewbox="0 0 24 24"><path d="m7 10 5 5 5-5"></path></svg></label>
+<ul class="nav__group">
+{{#nv_services}}<li><a class="m-btn-3" href="#services"><span>{{t8|Services}}</span></a></li>{{/nv_services}}
+{{#nv_prices}}<li><a class="m-btn-3" href="#prices"><span>{{t9|Prices}}</span></a></li>{{/nv_prices}}
+{{#nv_work}}<li><a class="m-btn-3" href="#work"><span>{{t10|Work}}</span></a></li>{{/nv_work}}
+{{#nv_faq}}<li><a class="m-btn-3" href="#faq"><span>{{t11|FAQ}}</span></a></li>{{/nv_faq}}
+</ul>
+<a class="m-btn-3 nav__phone" data-8b-placeholder="phone" href="tel:{{telraw}}"><span>{{t12|⟦phone⟧}}</span></a>
+<a class="m-btn-2 nav__book" href="#contact"><span>{{t13|Book a visit}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-btn-3 nav__menu" type="button"><span>{{t14|Menu}}</span></button>
+</nav>
+<div class="nav__overlay" data-lenis-prevent="" hidden="" id="menu">
+<div class="nav__overlay-top">
+<a class="m-btn-3 nav__brand" href="#opening"><span>{{t1|⟦name⟧}}<sup>®</sup></span></a>
+<button aria-label="Close menu" class="m-icon-btn nav__close" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg></button>
+</div>
+<ul class="nav__overlay-links" data-8b-items=":scope &gt; li">
+{{#nv_services}}<li><a class="m-text-2" href="#services">{{t8|Services}}</a></li>{{/nv_services}}
+{{#nv_prices}}<li><a class="m-text-2" href="#prices">{{t9|Prices}}</a></li>{{/nv_prices}}
+{{#nv_visit}}<li><a class="m-text-2" href="#visit">{{t15|How a visit goes}}</a></li>{{/nv_visit}}
+{{#nv_work}}<li><a class="m-text-2" href="#work">{{t10|Work}}</a></li>{{/nv_work}}
+{{#nv_faq}}<li><a class="m-text-2" href="#faq">{{t11|FAQ}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-text-2" href="#contact">{{t16|Contact}}</a></li>{{/nv_contact}}
+</ul>
+<div class="nav__overlay-foot">
+<a class="m-btn-3" data-8b-placeholder="phone" href="tel:{{telraw}}"><span>{{t12|⟦phone⟧}}</span></a>
+<a class="m-btn-2" href="#contact"><span>{{t13|Book a visit}}</span></a>
+</div>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" class="l-clip" data-8b-section="opening" id="opening">
+<div class="op__first">
+<div aria-hidden="true" class="op__spacer"></div>
+<div class="op__frame">
+<div class="op__band">
+<div class="op__drift"><img alt="Copper pipes branching into a cross over a turquoise wall" class="op__img" fetchpriority="high" height="900" src="{{i1|https://images.unsplash.com/photo-1769376695235-d3253548a5d7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y29wcGVyJTIwcGlwZXN8ZW58MXwwfHx8MTc5MTQwNDk5MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1330&q=60}}" style="background:#26a6c0" width="1600"/></div>
+<div aria-hidden="true" class="op__shade"></div>
+</div>
+</div>
+<div class="op__type">
+<h1 class="op__title m-text-2" id="opening-title">
+<span class="op__line op__l1" style="--len:20"><span>{{t17|Plumbing and heating}}</span></span>
+<span class="op__line op__l2" style="--len:13"><span>{{t18|engineers for}}</span></span>
+<span class="op__line op__l3" style="--len:9"><span>{{t3|Ibadan}}</span></span>
+</h1>
+<div class="op__tag">
+<p class="m-text-3">{{t19|Same-day callouts,}}<br/>{{t20|fixed prices}}</p>
+<p class="m-text-4">{{t21|Engineers out across}} <span data-area-text="">{{t3|Ibadan}}</span> {{t22|every day.}}</p>
+</div>
+<p class="op__note m-text-4"><span>{{t23|Boilers, radiators, underfloor heating, leaks, bathrooms and hot water — fitted, serviced and repaired by Gas Safe engineers who quote in writing before they start.}}</span></p>
+<div class="op__star"><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></div>
+<a class="m-btn op__cta" href="#contact"><span class="m-btn__label">{{t13|Book a visit}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+</div>
+</div>
+<div class="op__second">
+<div class="op__type">
+<h2 class="op__title2 m-text-2">
+<span class="op__line op__m1" style="--len:18"><span>{{t24|Everything between}}</span></span>
+<span class="op__line op__m2" style="--len:16"><span>{{t25|the stopcock and}}</span></span>
+<span class="op__line op__m3" style="--len:9"><span>{{t26|the flue.}}</span></span>
+</h2>
+<p class="op__tag2 m-text-3">{{t27|Two trades, one engineer, one invoice.}}</p>
+<div class="op__sides">
+<div class="op__side"><span class="m-badge-2">{{t28|Cold side}}</span><p class="m-text-4">{{t29|Taps, toilets, showers, leaks, stopcocks, water mains and hot water cylinders.}}</p></div>
+<div class="op__side"><span class="m-badge-3">{{t30|Hot side}}</span><p class="m-text-4">{{t31|Boilers, radiators, underfloor heating, heat pumps, flues and smart controls.}}</p></div>
+<a class="m-link op__more m-text-4" href="#services">{{t32|Every service, with prices}}</a>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_services}}<section aria-labelledby="services-title" class="l-clip" data-8b-section="services" id="services">
+<div class="sv__head">
+<h2 class="sv__title m-text-2" data-8b-motion="relay" id="services-title"><span style="--len:11">{{t33|What we fix}}</span><span style="--len:7">{{t34|and fit}}</span></h2>
+<p class="sv__lead m-text-6">{{t35|Seven kinds of work, one firm and one phone number. Each one starts with a survey and a quote in writing.}}</p>
+</div>
+<ol class="sv__list" data-8b-items=":scope &gt; li">
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:7"><span>{{t36|Boilers}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t37|Combi, system and regular boilers fitted, serviced and repaired, with the manufacturer's warranty registered for you.}}</p><span class="m-badge">{{t38|From ₦1,225,000 fitted}}</span></div>
+<figure class="sv__pic m-band"><img alt="Copper flow and return pipes packed around a boiler's pump" height="1067" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1667264921635-0fdd6bab6174?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Ym9pbGVyJTIwaW5zdGFsbGF0aW9ufGVufDF8MHx8fDE3OTE0MDUwOTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#262626" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:9"><span>{{t39|Radiators}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t40|New radiators and valves, cold spots chased down, systems balanced so every room warms at the same pace.}}</p><span class="m-badge">{{t41|From ₦95,000 a swap}}</span></div>
+<figure class="sv__pic m-band"><img alt="A white panel radiator under a window in a quiet room" height="1065" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1669725341213-7379ff6c90d5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmFkaWF0b3J8ZW58MXwwfHx8MTc5MTQwNjE2MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#c0a6a6" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:10"><span>{{t42|Underfloor}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t43|Wet underfloor heating laid in screed or on overlay boards, with a thermostat for every room.}}</p><span class="m-badge">{{t44|Priced per room}}</span></div>
+<figure class="sv__pic m-band"><img alt="Blue and red underfloor heating pipes clipped across a floor before the screed" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1667491295131-c6ccecd35f65?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8dW5kZXJmbG9vciUyMGhlYXRpbmclMjBwaXBlc3xlbnwxfDB8fHwxNzkxNDA1MDEzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#c0c0a6" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:5"><span>{{t45|Leaks}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t46|From a dripping trap to a burst main: traced, isolated and fixed, usually on the first visit.}}</p><span class="m-badge">{{t47|From ₦70,000}}</span></div>
+<figure class="sv__pic m-band"><img alt="A drop of water hanging from a chrome tap against a brick wall" data-pos="top" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1637939157381-fe0d03755314?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZHJpcHBpbmclMjB0YXB8ZW58MXwwfHx8MTc5MTQwNjE2Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#594040" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:9"><span>{{t48|Bathrooms}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t49|Showers, baths, toilets and full refits, with the pipework finished before the tiler arrives.}}</p><span class="m-badge">{{t50|Quoted after a survey}}</span></div>
+<figure class="sv__pic m-band"><img alt="A brass hand shower spraying water across a tiled wall" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1685949546169-0d6e2505acae?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d2Fsay1pbiUyMHNob3dlcnxlbnwxfDB8fHwxNzkxNDA2MTYzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:9"><span>{{t51|Cylinders}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t52|Vented and unvented hot water cylinders swapped in a day, with the G3 paperwork done.}}</p><span class="m-badge">{{t53|From ₦825,000}}</span></div>
+<figure class="sv__pic m-band"><img alt="A copper hot water cylinder mounted on a pale wall" height="2000" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1594233078955-e1f73a02ebb2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Ym9pbGVyfGVufDF8MXx8fDE3OTE0MDUwNjR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="1600"/></figure>
+</li>
+<li class="sv__row">
+<h3 class="sv__word m-text-2" style="--len:10"><span>{{t54|Heat pumps}}</span></h3>
+<div class="sv__info"><p class="m-text-4">{{t55|Air source surveys and installs, sized room by room, with the ₦3,750,000 grant application handled.}}</p><span class="m-badge">{{t56|Survey free}}</span></div>
+<figure class="sv__pic m-band"><img alt="An air source heat pump on the lawn beside a modern stone-clad house" height="1203" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1776860150272-653efc74193c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGVhdCUyMHB1bXAlMjBvdXRkb29yJTIwdW5pdHxlbnwxfDB8fHwxNzkxNDA0OTk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#d9c0c0" width="1600"/></figure>
+</li>
+</ol>
+</section>{{/sec_services}}
+
+{{#sec_prices}}<section aria-labelledby="prices-title" class="l-clip" data-8b-section="prices" id="prices">
+<div class="pr__grid">
+<div class="pr__side">
+<h2 class="pr__title m-text-2" data-8b-motion="relay" id="prices-title"><span style="--len:9">{{t57|Prices we}}</span><span style="--len:14">{{t58|put in writing}}</span></h2>
+<p class="pr__lead m-text-6">{{t59|The number on the quote is the number on the invoice. No padded callouts, no surprises once the floorboards are up.}}</p>
+<div class="pr__mark"><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg><p class="m-text-4">{{t60|Prices include VAT and the parts named. If we find something else, we stop, show you and quote it before going on.}}</p></div>
+</div>
+<dl class="pr__board" data-8b-items=":scope &gt; .pr__row">
+<div class="pr__row"><dt class="pr__name m-text-5">{{t61|Boiler service}} <span class="m-badge-3">{{t62|Most booked}}</span></dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t63|₦47,500}}</dd><dd class="pr__note m-text-4">{{t64|Annual service with flue gas analysis and the warranty stamp.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t65|Landlord gas certificate}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t66|₦39,500}}</dd><dd class="pr__note m-text-4">{{t67|CP12 for one boiler and up to three gas appliances.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t68|Callout, first hour}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t69|₦42,500}}</dd><dd class="pr__note m-text-4">{{t70|Then ₦10,000 a quarter hour. The same rate at weekends.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t71|Leak trace and repair}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t72|₦70,000}}</dd><dd class="pr__note m-text-4">{{t73|Most leaks found and fixed inside two hours.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t74|Radiator swap}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t75|₦95,000}}</dd><dd class="pr__note m-text-4">{{t76|Like for like: drain down, new radiator and valves, refill and balance.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t77|Power flush}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t78|₦210,000}}</dd><dd class="pr__note m-text-4">{{t79|Up to ten radiators, inhibitor and a magnetic filter check.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t80|Unvented cylinder}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5">{{t81|₦825,000}}</dd><dd class="pr__note m-text-4">{{t82|Fitted in a day and certified.}}</dd></div>
+<div class="pr__row"><dt class="pr__name m-text-5">{{t83|Combi boiler, fitted}}</dt><dd aria-hidden="true" class="pr__dots" data-8b-motion="leader"></dd><dd class="pr__price m-text-5"><small>{{t84|from}}</small>{{t85|₦1,225,000}}</dd><dd class="pr__note m-text-4">{{t86|Old boiler out, system flushed, filter and smart thermostat in, ten-year warranty.}}</dd></div>
+</dl>
+</div>
+</section>{{/sec_prices}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" class="l-clip" data-8b-section="visit" id="visit">
+<div class="vi__head">
+<h2 class="vi__title m-text-2" data-8b-motion="relay" id="visit-title"><span style="--len:11">{{t87|How a visit}}</span><span style="--len:4">{{t88|goes}}</span></h2>
+<p class="vi__lead m-text-6">{{t89|Five steps, the same on a dripping tap as on a new heating system.}}</p>
+</div>
+<div class="vi__track">
+<div aria-hidden="true" class="vi__line"><div class="vi__fill"></div></div>
+<ol class="vi__steps" data-8b-items=":scope &gt; li">
+<li class="vi__step"><span class="vi__num">{{t90|1}}</span><div class="vi__body"><h3 class="m-text-5">{{t91|You call or book}}</h3><p class="m-text">{{t92|A person answers from 7 a.m. to 9 p.m. Tell us what's wrong, send a photo if you can, and pick a two-hour slot.}}</p></div></li>
+<li class="vi__step"><span class="vi__num">{{t93|2}}</span><div class="vi__body"><h3 class="m-text-5">{{t94|We look first}}</h3><p class="m-text">{{t95|The engineer finds the cause, measures and photographs it, and shows you what they've found before touching anything.}}</p></div></li>
+<li class="vi__step"><span class="vi__num">{{t96|3}}</span><div class="vi__body"><h3 class="m-text-5">{{t97|A quote in writing}}</h3><p class="m-text">{{t98|Small jobs are priced on the spot; bigger ones arrive by email within a working day, itemised, with dates.}}</p></div></li>
+<li class="vi__step"><span class="vi__num">{{t99|4}}</span><div class="vi__body"><h3 class="m-text-5">{{t100|The work}}</h3><p class="m-text">{{t101|Dust sheets down, water and heating off only as long as needed, old parts taken away, the room left as we found it.}}</p></div></li>
+<li class="vi__step"><span class="vi__num">{{t102|5}}</span><div class="vi__body"><h3 class="m-text-5">{{t103|Tested and signed off}}</h3><p class="m-text">{{t104|Pressure and flue tests, the certificate and warranty registered in your name, and a walk round the controls.}}</p></div></li>
+</ol>
+</div>
+</section>{{/sec_visit}}
+
+{{#sec_work}}<section aria-labelledby="work-title" class="l-clip" data-8b-section="work" id="work">
+<div class="wk__head">
+<h2 class="wk__title m-text-2" data-8b-motion="relay" id="work-title"><span style="--len:6">{{t105|Recent}}</span><span style="--len:4">{{t106|jobs}}</span></h2>
+<p class="wk__lead m-text-6">{{t107|Four jobs from the last month, photographed on the day we finished.}}</p>
+</div>
+<ol class="wk__stack" data-8b-items=":scope &gt; li">
+<li class="wk__card">
+<figure class="wk__band m-band"><img alt="A finished bathroom with a freestanding bath, a black-framed shower screen and a floating vanity" height="1067" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1721825157088-1cf9e64ddba5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGJhdGhyb29tJTIwcmVub3ZhdGlvbnxlbnwxfDB8fHwxNzkxNDA1MDkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1350&q=60}}" style="background:#8c8c8c" width="1600"/></figure>
+<div class="wk__meta"><h3 class="m-text-5">{{t108|Bathroom refit, Nether Edge}}</h3><ul class="wk__tags"><li class="m-badge">{{t48|Bathrooms}}</li><li class="m-badge">{{t109|6 days}}</li><li class="m-badge">{{t110|S7}}</li></ul><p class="m-text-4">{{t111|Freestanding bath and walk-in shower; old lead pipework replaced back to the stopcock.}}</p></div>
+<div aria-hidden="true" class="wk__dim"></div>
+</li>
+<li class="wk__card">
+<figure class="wk__band m-band"><img alt="A plant room of insulated pipes, valves, gauges and a pump above an orange boiler" height="1064" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1650551182991-b07558247564?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Ym9pbGVyJTIwaW5zdGFsbGF0aW9ufGVufDF8MHx8fDE3OTE0MDUwOTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1350&q=60}}" style="background:#8c5926" width="1600"/></figure>
+<div class="wk__meta"><h3 class="m-text-5">{{t112|Plant room, Surulere Island}}</h3><ul class="wk__tags"><li class="m-badge">{{t113|Heating}}</li><li class="m-badge">{{t114|9 days}}</li><li class="m-badge">{{t115|S3}}</li></ul><p class="m-text-4">{{t116|Two boilers on one header for a block of twelve flats, with a pump that turns itself down at night.}}</p></div>
+<div aria-hidden="true" class="wk__dim"></div>
+</li>
+<li class="wk__card">
+<figure class="wk__band m-band"><img alt="Curved rows of underfloor heating pipe laid across a large floor" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1596652832618-c1b013dd5cfd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dW5kZXJmbG9vciUyMGhlYXRpbmclMjBwaXBlc3xlbnwxfDB8fHwxNzkxNDA1MDEzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1350&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+<div class="wk__meta"><h3 class="m-text-5">{{t117|Underfloor, Dore}}</h3><ul class="wk__tags"><li class="m-badge">{{t42|Underfloor}}</li><li class="m-badge">{{t118|4 days}}</li><li class="m-badge">{{t119|S17}}</li></ul><p class="m-text-4">{{t120|An open-plan extension on six zones, laid before the screed and pressure-tested overnight.}}</p></div>
+<div aria-hidden="true" class="wk__dim"></div>
+</li>
+<li class="wk__card">
+<figure class="wk__band m-band"><img alt="A white kitchen with a steel sink and a tall chrome tap under the window" height="1067" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1646592491489-ebdf758b9d11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8a2l0Y2hlbiUyMHNpbmslMjBwbHVtYmluZ3xlbnwxfDB8fHwxNzkxNDA1MDk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1350&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+<div class="wk__meta"><h3 class="m-text-5">{{t121|Kitchen move, Walkley}}</h3><ul class="wk__tags"><li class="m-badge">{{t122|Plumbing}}</li><li class="m-badge">{{t123|2 days}}</li><li class="m-badge">{{t124|S6}}</li></ul><p class="m-text-4">{{t125|Sink, dishwasher and washing machine moved to the other wall, with a new stopcock you can actually reach.}}</p></div>
+<div aria-hidden="true" class="wk__dim"></div>
+</li>
+</ol>
+</section>{{/sec_work}}
+
+{{#sec_team}}<section aria-labelledby="team-title" class="l-clip" data-8b-section="team" id="team">
+<div class="tm__head">
+<h2 class="tm__title m-text-2" data-8b-motion="relay" id="team-title"><span style="--len:9">{{t126|Who turns}}</span><span style="--len:2">{{t127|up}}</span></h2>
+<p class="tm__lead m-text-6">{{t128|Four engineers, all employed by us, all Gas Safe registered. You get a name and a photo the evening before.}}</p>
+</div>
+<ul class="tm__list" data-8b-items=":scope &gt; li">
+<li class="tm__card">
+<figure class="tm__pic" data-8b-motion="strip"><img alt="Kwame Mensah in a hard hat and orange high-visibility jacket, smiling" height="2400" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1688841747582-41097036109d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmVtYWxlJTIwZW5naW5lZXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDA1MDkwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#262626" width="1600"/></figure>
+<h3 class="m-text-5">{{t129|Kwame Mensah}}</h3>
+<ul class="tm__facts"><li class="m-badge">{{t113|Heating}}</li><li class="m-badge">{{t130|14 years}}</li></ul>
+<p class="m-text-4">{{t131|Boilers and system design. Gas Safe 000000.}}</p>
+</li>
+<li class="tm__card">
+<figure class="tm__pic" data-8b-motion="strip"><img alt="Aisha Rahman in orange workwear and a white hard hat, holding a set of drawings" height="2406" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1690166444493-b3f5fbcd4762?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZmVtYWxlJTIwZW5naW5lZXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDA1MDkwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#268ca6" width="1600"/></figure>
+<h3 class="m-text-5">{{t132|Aisha Rahman}}</h3>
+<ul class="tm__facts"><li class="m-badge">{{t54|Heat pumps}}</li><li class="m-badge">{{t133|8 years}}</li></ul>
+<p class="m-text-4">{{t134|Surveys, heat loss and the grant paperwork. Gas Safe 000000.}}</p>
+</li>
+<li class="tm__card">
+<figure class="tm__pic" data-8b-motion="strip"><img alt="Tom Hallam in a blue shirt, smiling, against a white wall" height="2400" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1728516687003-58347d3412b3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHRyYWRlc21hbiUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0MDUwNjl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<h3 class="m-text-5">{{t135|Tom Hallam}}</h3>
+<ul class="tm__facts"><li class="m-badge">{{t122|Plumbing}}</li><li class="m-badge">{{t136|11 years}}</li></ul>
+<p class="m-text-4">{{t137|Bathrooms, cylinders and anything wet.}}</p>
+</li>
+<li class="tm__card">
+<figure class="tm__pic" data-8b-motion="strip"><img alt="Callum Reid, bearded, in overalls and a bowler hat" height="2844" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1768421433981-46bb7881e3dd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3dlYXIlMjBwb3J0cmFpdCUyMG1hbnxlbnwxfDF8fHwxNzkxNDA1MDkxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#262626" width="1600"/></figure>
+<h3 class="m-text-5">{{t138|Callum Reid}}</h3>
+<ul class="tm__facts"><li class="m-badge">{{t139|Callouts}}</li><li class="m-badge">{{t140|19 years}}</li></ul>
+<p class="m-text-4">{{t141|The night line, leaks and breakdowns. Gas Safe 000000.}}</p>
+</li>
+</ul>
+</section>{{/sec_team}}
+
+{{#sec_heat}}<section aria-labelledby="heat-title" class="l-clip" data-8b-section="heat" id="heat">
+<div class="ht__head">
+<h2 class="ht__title m-text-2" data-8b-motion="relay" id="heat-title"><span style="--len:9">{{t142|Boiler or}}</span><span style="--len:10">{{t143|heat pump?}}</span></h2>
+<p class="ht__lead m-text-6">{{t144|We fit both, so we can tell you straight which one suits your house.}}</p>
+</div>
+<div class="ht__stage">
+<div class="ht__half ht__half--cold">
+<div><span class="m-badge">{{t145|Keep a boiler}}</span><h3 class="m-text-5">{{t146|If the house leaks heat faster than it holds it}}</h3></div>
+<ul class="ht__list m-text" data-8b-items=":scope &gt; li">
+<li>{{t147|Solid walls, single glazing or a loft you can't insulate yet.}}</li>
+<li>{{t148|Small radiators you'd rather not change.}}</li>
+<li>{{t149|Nowhere outside for a unit the size of a washing machine.}}</li>
+</ul>
+</div>
+<figure class="ht__pic m-band"><img alt="An air source heat pump between shrubs beside a brick house" height="1067" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1776860150305-108ed577d7d4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGVhdCUyMHB1bXAlMjBvdXRkb29yJTIwdW5pdHxlbnwxfDB8fHwxNzkxNDA0OTk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=890&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="ht__half ht__half--hot">
+<div><span class="m-badge">{{t150|Switch to a heat pump}}</span><h3 class="m-text-5">{{t151|If the house is snug and you want gas gone}}</h3></div>
+<ul class="ht__list m-text" data-8b-items=":scope &gt; li">
+<li>{{t152|Cavity walls filled, a loft with a thick blanket of insulation.}}</li>
+<li>{{t153|Room for a hot water cylinder and a unit outside.}}</li>
+<li>{{t154|You qualify for the ₦3,750,000 grant; we check and apply for you.}}</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_heat}}
+
+{{#sec_reviews}}<section aria-labelledby="reviews-title" class="l-clip" data-8b-section="reviews" id="reviews">
+<div class="rv__head">
+<h2 class="rv__title m-text-2" data-8b-motion="relay" id="reviews-title"><span style="--len:8">{{t155|What the}}</span><span style="--len:14">{{t156|neighbours say}}</span></h2>
+<p class="rv__lead m-text-6">{{t157|Rated 4.9 out of 5 from 612 reviews on Google and Checkatrade.}}</p>
+</div>
+<div class="rv__viewport" data-loop-row="">
+<ul class="rv__row" data-8b-items=":scope &gt; li">
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t158|“Boiler died on a Sunday night. Callum was here before ten and we had heating by midnight.”}}</p><section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Plumber by <a href="https://github.com/8bsite/plumber-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="rv__who"><span class="m-text-4">{{t159|Hannah, Wuse 2}}</span><span class="m-badge">{{t160|Breakdown}}</span></footer></blockquote></li>
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t161|“The quote was itemised to the last valve, and the invoice matched it exactly.”}}</p><footer class="rv__who"><span class="m-text-4">{{t162|Richard, Maitama}}</span><span class="m-badge">{{t163|New boiler}}</span></footer></blockquote></li>
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t164|“Aisha walked us through the heat loss room by room before selling us anything.”}}</p><footer class="rv__who"><span class="m-text-4">{{t165|Sam and Priya, Totley}}</span><span class="m-badge">{{t166|Heat pump}}</span></footer></blockquote></li>
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t167|“Six days, as promised. They even hoovered the loft hatch.”}}</p><footer class="rv__who"><span class="m-text-4">{{t168|Mark, Nether Edge}}</span><span class="m-badge">{{t169|Bathroom}}</span></footer></blockquote></li>
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t170|“Found a leak two other firms had missed, under the bath, in forty minutes.”}}</p><footer class="rv__who"><span class="m-text-4">{{t171|Joan, Gwarinpa}}</span><span class="m-badge">{{t172|Leak}}</span></footer></blockquote></li>
+<li class="rv__item"><blockquote class="rv__card m-surface"><p class="m-text-6">{{t173|“Twelve flats, two boilers, no tenant without hot water for more than a morning.”}}</p><footer class="rv__who"><span class="m-text-4">{{t174|Surulere Lofts management}}</span><span class="m-badge">{{t175|Plant room}}</span></footer></blockquote></li>
+</ul>
+</div>
+</section>{{/sec_reviews}}
+
+{{#sec_emergency}}<section aria-labelledby="emergency-title" class="l-clip" data-8b-section="emergency" id="emergency">
+<div class="em__top">
+<h2 class="em__title m-text-5" id="emergency-title">{{t176|Burst pipe, no heat, no hot water? Call us, day or night.}}</h2>
+<p class="em__tag m-text-3"><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg><span>{{t177|Every hour of every day}}</span></p>
+</div>
+<a class="em__number m-text-2" data-8b-placeholder="phone" href="tel:{{telraw}}"><span style="--len:13">{{t12|⟦phone⟧}}</span></a>
+<div class="em__foot">
+<p class="m-text-6">{{t178|An engineer at most Ibadan postcodes within 90 minutes, at the same hourly rate at 3 a.m. as at 3 p.m.}}</p>
+<ol class="em__tips" data-8b-items=":scope &gt; li">
+<li><span class="m-badge">{{t90|1}}</span><p class="m-text">{{t179|Turn the stopcock clockwise until it stops. It's usually under the kitchen sink.}}</p></li>
+<li><span class="m-badge">{{t93|2}}</span><p class="m-text">{{t180|Switch the boiler off at its fused spur and leave any lights off that water has reached.}}</p></li>
+<li><span class="m-badge">{{t96|3}}</span><p class="m-text">{{t181|Lift what you can off the floor, put towels down and call us. We'll talk you through the rest.}}</p></li>
+</ol>
+<figure class="em__pic m-band"><img alt="A ring of blue gas flames in the dark" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1622308023558-2130696ec5cd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Ymx1ZSUyMGdhcyUyMGZsYW1lfGVufDF8MHx8fDE3OTE0MDUwMTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#0c2640" width="1600"/></figure>
+</div>
+</section>{{/sec_emergency}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" class="l-clip" data-8b-section="faq" id="faq">
+<div class="fq__grid">
+<div class="fq__side">
+<h2 class="fq__title m-text-2" data-8b-motion="relay" id="faq-title"><span style="--len:6">{{t182|Before}}</span><span style="--len:7">{{t183|you ask}}</span></h2>
+<p class="m-text-6">{{t184|Anything else,}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t185|call ⟦phone⟧}}</a> {{t186|and a person will answer.}}</p>
+</div>
+<div class="fq__list" data-8b-items=":scope &gt; details">
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t187|Do you charge for quotes?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t188|No. Surveys and written quotes are free anywhere inside the ring road and ₦22,500 beyond it, taken off the bill if you go ahead.}}</p></div></details>
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t189|Is everyone Gas Safe registered?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t190|Every engineer who works on gas is, and their number is on the text we send the evening before. Ask to see the card at the door; they expect it.}}</p></div></details>
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t191|How long does a new boiler take?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t192|A like-for-like combi swap is one day. Moving it or converting from a system boiler is two. You're never left without hot water overnight.}}</p></div></details>
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t193|Do you work weekends?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t194|Saturdays for booked work, and the emergency line runs every hour of every day at the same rate.}}</p></div></details>
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t195|Can you sort the heat pump grant?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t196|Yes. We're an accredited installer, so we check you qualify, apply for you and take the grant off the price before you pay.}}</p></div></details>
+<details class="fq__item"><summary class="fq__q"><span aria-hidden="true" class="fq__rule" data-8b-motion="leader"></span><span class="m-text-5">{{t197|What guarantee do I get?}}</span><svg aria-hidden="true" class="m-star" viewbox="-60 -60 120 120"><path d="M-13 -22.52L-13 -44A13 13 0 0 1 13 -44L13 -22.52L31.61 -33.26A13 13 0 0 1 44.61 -10.74L26 0L44.61 10.74A13 13 0 0 1 31.61 33.26L13 22.52L13 44A13 13 0 0 1 -13 44L-13 22.52L-31.61 33.26A13 13 0 0 1 -44.61 10.74L-26 0L-44.61 -10.74A13 13 0 0 1 -31.61 -33.26Z"></path></svg></summary><div class="fq__a"><p class="m-text">{{t198|Two years on our workmanship for everything, and up to ten on boilers through the manufacturer, registered in your name on the day.}}</p></div></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" class="l-clip" data-8b-section="contact" id="contact">
+<div class="ct__frame"><figure class="ct__band m-band"><img alt="A red valve wheel on a blue pipe running down a white wall" height="900" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1696154994502-93dd97495a4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y29wcGVyJTIwcGlwZSUyMGJsdWV8ZW58MXwwfHx8MTc5MTQwNTAxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1230&q=60}}" style="background:#c0c0c0" width="1600"/></figure></div>
+<div class="ct__type">
+<h2 class="ct__title m-text-2" id="contact-title"><span class="ct__l1" style="--len:14">{{t199|Tell us what's}}</span><span class="ct__l2" style="--len:16">{{t200|leaking, banging}}</span><span class="ct__l3" style="--len:7">{{t201|or cold}}</span></h2>
+<div class="ct__tag"><p class="m-text-3">{{t202|We call back within}}<br/>{{t203|the working hour}}</p><p class="m-text-4">{{t204|Monday to Saturday, 7 a.m. to 9 p.m.}}</p></div>
+</div>
+<div class="ct__body">
+<div class="ct__ways">
+<a class="m-btn-3" data-8b-placeholder="phone" href="tel:{{telraw}}"><span>{{t12|⟦phone⟧}}</span></a>
+<a class="m-btn-3" data-8b-placeholder="email" href="#ub-contact"><span>{{t205|hello@ferrule.example}}</span></a>
+<p class="m-text-4">{{t206|1 Admiralty Way, Ibadan. Emergencies any hour on the same number.}}</p>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<footer data-8b-section="footer" id="footer">
+<div class="ft__top">
+<p class="ft__lead m-text-6">{{t207|⟦name⟧ Plumbing & Heating. Gas Safe engineers for Ibadan and South Oyo State since 2011.}}</p>
+<ul class="ft__links m-text" data-8b-items=":scope &gt; li">
+{{#nv_services}}<li><a class="m-link" href="#services">{{t8|Services}}</a></li>{{/nv_services}}
+{{#nv_prices}}<li><a class="m-link" href="#prices">{{t9|Prices}}</a></li>{{/nv_prices}}
+{{#nv_visit}}<li><a class="m-link" href="#visit">{{t15|How a visit goes}}</a></li>{{/nv_visit}}
+{{#nv_work}}<li><a class="m-link" href="#work">{{t208|Recent work}}</a></li>{{/nv_work}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t209|Questions}}</a></li>{{/nv_faq}}
+</ul>
+<address class="ft__addr m-text">
+<span>{{t210|1 Admiralty Way}}<br/>{{t3|Ibadan}}</span>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t12|⟦phone⟧}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t205|hello@ferrule.example}}</a>
+</address>
+</div>
+<div aria-hidden="true" class="ft__rule" data-8b-motion="leader"></div>
+<p aria-label="{{name}}" class="ft__mark m-text-2"><span style="--len:7">{{t1|⟦name⟧}}</span></p>
+<div class="ft__base m-text-4">
+<span>{{t211|© 2026 ⟦name⟧ Plumbing & Heating Ltd. Registered in Nigeria, no. 00000000. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t212|8B}}</a></span>
+<span>{{t213|Gas Safe register 000000}}</span>
+<a class="m-link" href="#contact">{{t13|Book a visit}}</a>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const header = document.getElementById('navigation');
+  const toggle = header.querySelector('.nav__menu');
+  const overlay = header.querySelector('.nav__overlay');
+  const close = header.querySelector('.nav__close');
+  const setMenu = open => {
+    overlay.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => { setMenu(false); toggle.focus(); });
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) { setMenu(false); toggle.focus(); } });
+  let last = window.scrollY, travel = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, step = y - last;
+    last = y;
+    if (!step) return;
+    travel = Math.sign(step) === Math.sign(travel) ? travel + step : step;
+    if (y < 80 || travel < -24) header.classList.remove('is-hidden');
+    else if (travel > 24 && !header.contains(document.activeElement)) header.classList.add('is-hidden');
+  }, { passive: true });
+  header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
+  const select = header.querySelector('[data-area-select]');
+  select.addEventListener('change', () => {
+    document.querySelectorAll('[data-area-text]').forEach(node => { node.textContent = select.value; });
+  });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  const header = document.getElementById('navigation');
+  const setNav = () => section.style.setProperty('--op-nav', header.querySelector('.nav__bar').offsetHeight + 24 + 'px');
+  setNav();
+  new ResizeObserver(setNav).observe(header.querySelector('.nav__bar'));
+  new IntersectionObserver(([entry]) => section.classList.toggle('is-off', !entry.isIntersecting)).observe(section.querySelector('.op__first'));
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const navOffset = () => -(document.querySelector('#navigation .nav__bar').offsetHeight + 12);
+  const lenis = window.lenis = new Lenis({ lerp: 0.1, anchors: { offset: navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  leader(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1, ease: 'power2.out' });
+  },
+  relay(element, vars = {}) {
+    const tl = gsap.timeline(vars);
+    [...element.children].forEach((line, i) => tl.fromTo(line, { xPercent: i % 2 ? 36 : -36, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 0.8, ease: 'power3.out' }, i * 0.14));
+    return tl;
+  },
+  strip(element, vars = {}) {
+    const img = element.querySelector('img');
+    const r = getComputedStyle(element).borderTopLeftRadius;
+    const tl = gsap.timeline(vars).fromTo(element, { clipPath: `inset(44% 0% 44% 0% round ${r})` }, { clipPath: `inset(0% 0% 0% 0% round ${r})`, duration: 1.1, ease: 'power3.inOut' }, 0);
+    if (img) tl.fromTo(img, { scale: 1.22 }, { scale: 1, duration: 1.4, ease: 'power2.out' }, 0);
+    return tl.set(element, { clipPath: 'none' }, 1.1);
+  }
+};
+document.querySelectorAll('[data-loop-row]').forEach(viewport => {
+  queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const row = viewport.querySelector('[data-8b-items]');
+    const copies = [...row.children].map(item => {
+      const copy = item.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      copy.inert = true;
+      row.append(copy);
+      return copy;
+    });
+    viewport.classList.add('is-looping');
+    const observer = new IntersectionObserver(([entry]) => viewport.classList.toggle('is-off', !entry.isIntersecting));
+    observer.observe(viewport);
+    return () => { observer.disconnect(); copies.forEach(copy => copy.remove()); viewport.classList.remove('is-looping', 'is-off'); };
+  }), { id: 'loop:' + viewport.closest('[data-8b-section]').id });
+});
+const bindings = {
+  leader: element => ({ start: 'top 92%', once: true }),
+  relay: element => ({ start: 'top 96%', end: 'top 58%', scrub: true }),
+  strip: element => ({ start: 'top 88%', once: true })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(bindings).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach(element => ScrollTrigger.create({ id, trigger: element, ...bindings[name](element), animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const first = section.querySelector('.op__first');
+    const band = section.querySelector('.op__band');
+    const img = band.querySelector('.op__img');
+    const shade = band.querySelector('.op__shade');
+    const lines = section.querySelectorAll('.op__title .op__line');
+    const asides = section.querySelectorAll('.op__tag, .op__note, .op__cta');
+    const star = section.querySelector('.op__star');
+    const lines2 = section.querySelectorAll('.op__title2 .op__line');
+    const rest2 = section.querySelectorAll('.op__tag2, .op__sides');
+    const radius = parseFloat(getComputedStyle(band).borderTopLeftRadius) || 0;
+    const ease = gsap.parseEase('power2.inOut');
+    const g = {};
+    let staged = false;
+    const place = () => {
+      gsap.set(img, { width: g.W, height: g.H, left: (g.vw - g.W) / 2 - g.bl, top: (g.vh - g.H) / 2 - g.bt });
+      gsap.set(shade, { width: g.vw, height: g.vh, left: -g.bl, top: -g.bt });
+    };
+    const measure = () => {
+      const vw = first.clientWidth, vh = first.clientHeight;
+      const frame = band.parentElement;
+      const bl = frame.offsetLeft, bt = frame.offsetTop, bw = frame.offsetWidth, bh = frame.offsetHeight;
+      const ratio = Number(img.getAttribute('width')) / Number(img.getAttribute('height'));
+      const W = Math.max(vw, vh * ratio), H = W / ratio;
+      Object.assign(g, { vw, vh, bl, bt, bw, bh, W, H, s0: Math.max(bw, bh * ratio) / W, x0: bl + bw / 2 - vw / 2, y0: bt + bh / 2 - vh / 2 });
+      if (staged) place();
+    };
+    const stage = on => {
+      staged = on;
+      section.classList.toggle('is-staged', on);
+      if (on) place();
+      else {
+        gsap.set(img, { clearProps: 'width,height,left,top,x,y,scale' });
+        gsap.set(shade, { clearProps: 'width,height,left,top' });
+        band.style.clipPath = '';
+      }
+    };
+    const render = time => {
+      if ((time > 0.0005) !== staged) stage(time > 0.0005);
+      if (!staged) return;
+      const q = ease(Math.min(1, time / 0.6));
+      const k = 1 - gsap.utils.clamp(0, 1, (time - 0.3) / 0.3);
+      gsap.set(img, { x: g.x0 * (1 - q), y: g.y0 * (1 - q), scale: g.s0 + (1 - g.s0) * q });
+      band.style.clipPath = `inset(${-q * g.bt}px ${-q * (g.vw - g.bl - g.bw)}px ${-q * (g.vh - g.bt - g.bh)}px ${-q * g.bl}px round ${k * radius}px)`;
+    };
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const tl = gsap.timeline({
+      defaults: { ease: 'none' },
+      onUpdate() { render(this.time()); },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: () => '+=' + first.offsetHeight, scrub: true, invalidateOnRefresh: true }
+    });
+    tl.fromTo(shade, { opacity: 0 }, { opacity: 1, duration: 0.45 }, 0.25)
+      .fromTo(star, { rotation: 0, scale: 1, opacity: 1 }, { rotation: 150, scale: 2.6, opacity: 0, duration: 0.45, ease: 'power1.in' }, 0);
+    lines.forEach((line, i) => tl.fromTo(line, { xPercent: 0 }, { xPercent: i % 2 ? 115 : -115, duration: 0.4, ease: 'power2.in' }, i * 0.04));
+    asides.forEach((node, i) => tl.fromTo(node, { y: 0, opacity: 1 }, { y: 50, opacity: 0, duration: 0.22 }, i * 0.03));
+    lines2.forEach((line, i) => tl.fromTo(line, { xPercent: i % 2 ? 70 : -70, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }, 0.55 + i * 0.06));
+    rest2.forEach((node, i) => tl.fromTo(node, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: 'power2.out' }, 0.75 + i * 0.05));
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      stage(false);
+    };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:services">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('services');
+    const root = getComputedStyle(document.documentElement);
+    const dark = root.getPropertyValue('--color-2').trim();
+    const grey = root.getPropertyValue('--color-8').trim();
+    section.querySelectorAll('.sv__row').forEach((row, i) => {
+      const word = row.querySelector('.sv__word > span');
+      const pic = row.querySelector('.sv__pic');
+      const img = pic.querySelector('img');
+      const r = getComputedStyle(pic).borderTopLeftRadius;
+      const closed = `inset(46% 0% 46% 0% round ${r})`, open = `inset(0% 0% 0% 0% round ${r})`;
+      const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: { id: `services:row-${i + 1}`, trigger: row, start: 'top bottom', end: 'bottom top', scrub: true } });
+      tl.fromTo(pic, { clipPath: closed }, { clipPath: open, duration: 0.16 }, 0.25)
+        .fromTo(img, { scale: 1.25 }, { scale: 1, duration: 0.16 }, 0.25)
+        .fromTo(word, { x: 0, color: grey }, { x: () => Math.min(48, innerWidth * 0.03), color: dark, duration: 0.16 }, 0.25)
+        .set(pic, { clipPath: 'none' }, 0.41)
+        .fromTo(pic, { clipPath: open }, { clipPath: closed, duration: 0.16, immediateRender: false }, 0.62)
+        .fromTo(img, { scale: 1 }, { scale: 1.25, duration: 0.16, immediateRender: false }, 0.62)
+        .fromTo(word, { color: dark }, { color: grey, duration: 0.16, immediateRender: false }, 0.62)
+        .set({}, {}, 1);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const track = section.querySelector('.vi__track');
+    const fill = track.querySelector('.vi__fill');
+    const steps = [...track.querySelectorAll('.vi__step')];
+    let marks = [];
+    const measure = () => { marks = steps.map(step => (step.offsetTop + 26) / track.offsetHeight); };
+    measure();
+    track.classList.add('is-pending');
+    const update = progress => steps.forEach((step, i) => step.classList.toggle('is-done', progress >= marks[i] - 0.001));
+    gsap.fromTo(fill, { clipPath: 'inset(0% 0% 100% 0%)' }, {
+      clipPath: 'inset(0% 0% 0% 0%)', ease: 'none',
+      scrollTrigger: { id: 'visit', trigger: track, start: 'top 62%', end: 'bottom 62%', scrub: true, onRefresh: self => { measure(); update(self.progress); }, onUpdate: self => update(self.progress) }
+    });
+    update(0);
+    return () => { track.classList.remove('is-pending'); steps.forEach(step => step.classList.remove('is-done')); };
+  });
+});
+</script>
+<script data-8b-part="scene:work">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const cards = [...document.querySelectorAll('#work .wk__card')];
+    cards.forEach((card, i) => {
+      const img = card.querySelector('.wk__band img');
+      const prev = cards[i - 1];
+      const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `work:card-${i + 1}`, trigger: card, start: 'top bottom', end: () => 'top ' + (parseFloat(getComputedStyle(card).top) || 0), scrub: true, invalidateOnRefresh: true } });
+      tl.fromTo(img, { yPercent: -7 }, { yPercent: 0, duration: 1 }, 0);
+      if (prev) {
+        tl.fromTo(prev, { scale: 1 }, { scale: 0.93, transformOrigin: '50% 0%', duration: 1 }, 0)
+          .fromTo(prev.querySelector('.wk__dim'), { opacity: 0 }, { opacity: 0.4, duration: 1 }, 0);
+      }
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  const status = form.querySelector('.ct__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { status.textContent = status.dataset.invalid; form.querySelector(':invalid')?.focus(); return; }
+    status.textContent = status.dataset.done;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:heat">
+queueMotion(() => {
+  const build = axis => () => {
+    const section = document.getElementById('heat');
+    const stage = section.querySelector('.ht__stage');
+    const cold = stage.querySelector('.ht__half--cold');
+    const hot = stage.querySelector('.ht__half--hot');
+    const pic = stage.querySelector('.ht__pic');
+    const img = pic.querySelector('img');
+    const gap = () => parseFloat(getComputedStyle(stage).rowGap) || 0;
+    const size = () => (axis === 'x' ? pic.offsetWidth : pic.offsetHeight) / 2 + gap();
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'heat', trigger: stage, start: 'top 82%', end: axis === 'x' ? 'center 52%' : 'top 12%', scrub: true, invalidateOnRefresh: true } });
+    tl.fromTo(cold, { [axis]: () => size() }, { [axis]: 0, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(hot, { [axis]: () => -size() }, { [axis]: 0, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(img, { scale: 1.3 }, { scale: 1, duration: 1 }, 0);
+  };
+  const mm = gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference) and (min-width: 861px)', build('x'));
+  mm.add('(prefers-reduced-motion: no-preference) and (max-width: 860px)', build('y'));
+});
+</script>
+<script data-8b-part="scene:emergency">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('emergency');
+    const root = getComputedStyle(document.documentElement);
+    const token = name => root.getPropertyValue(name).trim();
+    const number = section.querySelector('.em__number > span');
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'emergency', trigger: section, start: 'top 95%', end: 'top 30%', scrub: true } });
+    tl.fromTo(section, { backgroundColor: token('--color-1') }, { backgroundColor: token('--color-2'), duration: 0.7 }, 0)
+      .fromTo(section.querySelector('.em__title'), { color: token('--color-2') }, { color: token('--color-5'), duration: 0.5 }, 0.2)
+      .fromTo(number, { scale: 0.62, color: token('--color-2') }, { scale: 1, color: token('--color-3'), duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(section.querySelector('.em__tag .m-star'), { rotation: -120 }, { rotation: 0, duration: 1 }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const band = document.querySelector('#contact .ct__band');
+    const img = band.querySelector('img');
+    const radius = getComputedStyle(band).borderTopLeftRadius;
+    const g = {};
+    const measure = () => {
+      const rect = band.getBoundingClientRect();
+      g.x = rect.left; g.y = band.offsetHeight * 0.16;
+      g.s = Math.max((band.offsetWidth + 2 * g.x) / band.offsetWidth, (band.offsetHeight + 2 * g.y) / band.offsetHeight) * 1.04;
+    };
+    measure();
+    const clip = { p: 1 };
+    const apply = () => {
+      const on = clip.p > 0.0005;
+      band.classList.toggle('is-staged', on);
+      band.style.clipPath = on ? `inset(${-g.y * clip.p}px ${-g.x * clip.p}px ${-g.y * clip.p}px ${-g.x * clip.p}px round calc(${radius} * ${1 - clip.p}))` : '';
+    };
+    const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' }, onUpdate: apply, scrollTrigger: { id: 'contact', trigger: band, start: 'top 92%', end: 'top 34%', scrub: true, invalidateOnRefresh: true, onRefreshInit: measure } });
+    tl.fromTo(clip, { p: 1 }, { p: 0, duration: 1 }, 0)
+      .fromTo(img, { scale: () => g.s }, { scale: 1, duration: 1 }, 0);
+    apply();
+    return () => { band.classList.remove('is-staged'); band.style.clipPath = ''; };
+  });
+});
+</script>
+</body>
+</html>

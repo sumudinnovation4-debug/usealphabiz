@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reset password – UseAlphaBiz</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head><body>
+<main class="wrap" style="max-width:460px"><div class="card"><h1>Reset password</h1><p class="mut">Enter your email and we will send a reset link.</p><input id="em" type="email" placeholder="you@example.com"><button class="btn block" id="go">Send reset link</button><p id="m" class="mut" style="text-align:center"></p></div></main>
+<script src="app.js"></script><script>
+$('#go').onclick=async()=>{const sb=SB();if(!sb)return $('#m').textContent='Add your Supabase keys in app.js first.';const {error}=await sb.auth.resetPasswordForEmail($('#em').value,{redirectTo:location.origin+'/reset.html'});$('#m').textContent=error?error.message:'Check your email for the reset link.'}
+</script></body></html>

@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* fallback */
+@font-face {
+  font-family: 'Playwrite US Trad';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playwriteustrad/v11/fdNX9tyHsnVPjW9trmV7wQ0stdwRBYclCsCdzOb1-cd1E8tgig.woff2) format('woff2');
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #121212;
+  --color-3: #f3c03e;
+  --color-4: #5c5c5c;
+  --color-5: #e4e4e4;
+  --color-6: #ff6a21;
+  --color-7: #187a44;
+  --color-8: #3a96e0;
+  --color-9: #a6dcb4;
+  --color-10: #0d5c4c;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --font-2: "Playwrite US Trad", "Playwrite US Trad Fallback", Georgia, Arial, cursive;
+  --shadow-1: 0 1px 0 var(--color-5);
+  --radius-1: 999px;
+  --radius-2: 18px;
+  --radius-3: 12px;
+  --space-1: clamp(88px, 11vw, 150px);
+  --space-2: clamp(16px, 4.7vw, 60px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* fallback faces */
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95.4%; ascent-override: 106.9%; descent-override: 33.5%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.7%; ascent-override: 99.3%; descent-override: 31.2%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 82.1%; ascent-override: 124.2%; descent-override: 39%; line-gap-override: 0%; }
+  @font-face { font-family: "Playwrite US Trad Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 131.7%; ascent-override: 108.6%; descent-override: 38%; line-gap-override: 0%; }
+  /* end fallback faces */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+  h1, h2, h3, h4, p, figure, blockquote, ol, ul, dl, dd { margin: 0; }
+  ol, ul { padding: 0; list-style: none; }
+  img, svg { display: block; max-width: 100%; }
+  img { height: auto; }
+  a { color: inherit; text-decoration: none; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  [hidden] { display: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+  .m-text { font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: normal; text-transform: none; font-style: normal; }
+  .m-text-2 { font-family: var(--font-1); font-size: clamp(38px, 4.8vw, 64px); font-weight: 700; line-height: 1.04; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+  .m-text-3 { font-family: var(--font-1); font-size: clamp(19px, 1.6vw, 22px); font-weight: 600; line-height: 1.22; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+  .m-text-4 { font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.35; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+  .m-text-5 { font-family: var(--font-1); font-size: clamp(44px, 4.4vw, 58px); font-weight: 300; line-height: 1; letter-spacing: -0.04em; text-transform: none; font-style: normal; }
+  .m-text-6 { font-family: var(--font-2); font-size: 18px; font-weight: 400; line-height: 1.5; letter-spacing: normal; text-transform: none; font-style: normal; }
+  .m-text-7 { font-family: var(--font-1); font-size: clamp(18px, 1.5vw, 21px); font-weight: 400; line-height: 1.45; letter-spacing: -0.008em; text-transform: none; font-style: normal; }
+
+  .m-text-8 { font-family: var(--font-1); font-size: clamp(22px, 2.3vw, 31px); font-weight: 500; line-height: 1.28; letter-spacing: -0.022em; text-transform: none; font-style: normal; }
+  .m-btn, .m-btn-3 { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 26px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.005em; white-space: nowrap; overflow: hidden; isolation: isolate; cursor: pointer; transition: color .35s ease; }
+  .m-btn::before, .m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: circle(0% at 50% 100%); transition: clip-path .5s cubic-bezier(.3,.7,.2,1); }
+  .m-btn-3::before { background: var(--color-1); }
+  .m-btn__label, .m-btn-2__label, .m-btn-3__label { position: relative; }
+  .m-btn__icon, .m-btn-3__icon { width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+  .m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 30px; border: 1.5px solid currentColor; border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1; letter-spacing: -0.005em; white-space: nowrap; overflow: hidden; isolation: isolate; cursor: pointer; transition: color .35s ease; }
+  .m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: circle(0% at 50% 100%); transition: clip-path .5s cubic-bezier(.3,.7,.2,1); }
+  @media (hover: hover) {
+    .m-btn:hover, .m-btn-3:hover { color: var(--color-2); }
+    .m-btn:hover::before, .m-btn-3:hover::before, .m-btn-2:hover::before { clip-path: circle(140% at 50% 100%); }
+    .m-btn-2:hover { color: var(--color-1); }
+  }
+
+  .m-link, .m-link-2 { display: inline; padding: 0.06em 0.1em; margin: 0 -0.1em; background-image: linear-gradient(color-mix(in srgb, currentColor 16%, transparent), color-mix(in srgb, currentColor 16%, transparent)), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-position: 0 100%, 0 100%; background-size: 100% 0%, 100% 1px; font-family: var(--font-1); font-size: inherit; font-weight: 500; line-height: inherit; letter-spacing: normal; text-transform: none; font-style: normal; transition: background-size .4s cubic-bezier(.3,.7,.2,1); }
+  .m-link-2 { background-size: 100% 0%, 100% 0px; }
+  @media (hover: hover) {
+    .m-link:hover, .m-link-2:hover { background-size: 100% 100%, 100% 1px; }
+  }
+
+  .m-icon, .m-icon-2 { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; padding: 0; background: transparent; color: var(--color-2); isolation: isolate; cursor: pointer; transition: color .3s ease; }
+  .m-icon::before, .m-icon-2::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; background: var(--color-2); transform: scale(0); transition: transform .4s cubic-bezier(.3,.7,.2,1); }
+  .m-icon svg, .m-icon-2 svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .m-icon-2 { background: var(--color-2); color: var(--color-1); }
+  .m-icon-2::before { background: var(--color-3); }
+  @media (hover: hover) {
+    .m-icon:hover { color: var(--color-1); }
+    .m-icon-2:hover { color: var(--color-2); }
+    .m-icon:hover::before, .m-icon-2:hover::before { transform: scale(1); }
+  }
+
+  .m-tab, .m-tab-2, .m-tab-3, .m-tab-4 { --m-tab-r: var(--radius-2); --m-tab-h: 16px; position: relative; overflow: hidden; border-radius: var(--m-tab-r); }
+  .m-tab { --m-tab-at: 64%; }
+  .m-tab-2 { --m-tab-at: 36%; }
+  .m-tab-4 { --m-tab-at: 40%; --m-tab-w: 132px; }
+  @supports (clip-path: shape(from 0 0, line to 100% 0)) {
+    .m-tab { border-radius: 0; clip-path: shape(from 0 var(--m-tab-r), arc to var(--m-tab-r) 0 of var(--m-tab-r) cw, hline to calc(var(--m-tab-at) - var(--m-tab-r)), curve to calc(var(--m-tab-at) + var(--m-tab-r)) var(--m-tab-h) with var(--m-tab-at) 0 / var(--m-tab-at) var(--m-tab-h), hline to calc(100% - var(--m-tab-r)), arc to 100% calc(var(--m-tab-h) + var(--m-tab-r)) of var(--m-tab-r) cw, vline to calc(100% - var(--m-tab-r)), arc to calc(100% - var(--m-tab-r)) 100% of var(--m-tab-r) cw, hline to var(--m-tab-r), arc to 0 calc(100% - var(--m-tab-r)) of var(--m-tab-r) cw, close); }
+    .m-tab-2 { border-radius: 0; clip-path: shape(from 0 calc(var(--m-tab-h) + var(--m-tab-r)), arc to var(--m-tab-r) var(--m-tab-h) of var(--m-tab-r) cw, hline to calc(var(--m-tab-at) - var(--m-tab-r)), curve to calc(var(--m-tab-at) + var(--m-tab-r)) 0 with var(--m-tab-at) var(--m-tab-h) / var(--m-tab-at) 0, hline to calc(100% - var(--m-tab-r)), arc to 100% var(--m-tab-r) of var(--m-tab-r) cw, vline to calc(100% - var(--m-tab-r)), arc to calc(100% - var(--m-tab-r)) 100% of var(--m-tab-r) cw, hline to var(--m-tab-r), arc to 0 calc(100% - var(--m-tab-r)) of var(--m-tab-r) cw, close); }
+    .m-tab-4 { border-radius: 0; clip-path: shape(from 0 calc(var(--m-tab-h) + var(--m-tab-r)), arc to var(--m-tab-r) var(--m-tab-h) of var(--m-tab-r) cw, hline to calc(var(--m-tab-at) - var(--m-tab-r)), curve to calc(var(--m-tab-at) + var(--m-tab-r)) 0 with var(--m-tab-at) var(--m-tab-h) / var(--m-tab-at) 0, hline to calc(var(--m-tab-at) + var(--m-tab-w) - var(--m-tab-r)), curve to calc(var(--m-tab-at) + var(--m-tab-w) + var(--m-tab-r)) var(--m-tab-h) with calc(var(--m-tab-at) + var(--m-tab-w)) 0 / calc(var(--m-tab-at) + var(--m-tab-w)) var(--m-tab-h), hline to calc(100% - var(--m-tab-r)), arc to 100% calc(var(--m-tab-h) + var(--m-tab-r)) of var(--m-tab-r) cw, vline to calc(100% - var(--m-tab-r)), arc to calc(100% - var(--m-tab-r)) 100% of var(--m-tab-r) cw, hline to var(--m-tab-r), arc to 0 calc(100% - var(--m-tab-r)) of var(--m-tab-r) cw, close); }
+  }
+  .m-tab > img, .m-tab-2 > img, .m-tab-3 > img { width: 100%; height: 100%; object-fit: cover; }
+
+  .m-mark { padding: 0 0.15em; margin: 0 -0.15em; background-image: linear-gradient(color-mix(in srgb, var(--color-3) 70%, var(--color-1)), color-mix(in srgb, var(--color-3) 70%, var(--color-1))); background-repeat: no-repeat; background-position: 0 78%; background-size: 100% 0.62em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+  .m-badge { display: inline-flex; align-items: center; min-height: 26px; padding: 0 11px; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 12.5px; font-weight: 600; line-height: 1; letter-spacing: 0.01em; text-transform: none; font-style: normal; white-space: nowrap; }
+
+  .m-field { display: grid; gap: 8px; }
+  .m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: 0.01em; color: var(--color-2); }
+  .m-field__input { width: 100%; min-height: 54px; padding: 0 18px; border: 1.5px solid color-mix(in srgb, var(--color-2) 42%, var(--color-1)); border-radius: var(--radius-3); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; font-weight: 400; appearance: none; transition: border-color .25s ease; }
+  select.m-field__input { padding-right: 44px; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 24px) 50%, calc(100% - 18px) 50%; background-size: 6px 6px; background-repeat: no-repeat; }
+  .m-field__input:focus-visible { border-color: var(--color-2); outline: 3px solid var(--color-2); outline-offset: 2px; }
+  @media (hover: hover) { .m-field__input:hover { border-color: var(--color-4); } }
+
+  .m-choice { position: relative; display: inline-flex; isolation: isolate; cursor: pointer; }
+  .m-choice__input { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; margin: 0; border: 1.5px solid var(--color-2); border-radius: var(--radius-1); background: transparent; appearance: none; -webkit-appearance: none; cursor: pointer; transition: background-color .25s ease; }
+  .m-choice__label { position: relative; display: inline-flex; align-items: center; min-height: 46px; padding: 0 21px; font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1; letter-spacing: normal; pointer-events: none; transition: color .25s ease; }
+  .m-choice__input:checked { background: var(--color-2); }
+  .m-choice__input:checked + .m-choice__label { color: var(--color-1); }
+  .m-choice__input:focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+  @media (hover: hover) { .m-choice:hover .m-choice__input { background: color-mix(in srgb, var(--color-2) 10%, transparent); } .m-choice:hover .m-choice__input:checked { background: var(--color-2); } }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .wrap { width: min(100%, 1280px); margin-inline: auto; padding-inline: var(--space-2); }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+  #site-nav { position: fixed; inset: 0 0 auto; z-index: 50; transition: transform .45s cubic-bezier(.3,.7,.2,1), background-color .3s ease, box-shadow .3s ease; }
+  #site-nav[data-hidden] { transform: translateY(-100%); }
+  #site-nav[data-scrolled] { background: var(--color-1); box-shadow: var(--shadow-1); }
+  #site-nav .nav__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 84px; }
+  #site-nav .nav__brand { justify-self: start; font-family: var(--font-1); font-size: 22px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; padding: 6px 0; }
+  #site-nav .nav__links { display: flex; gap: clamp(20px, 2.6vw, 36px); }
+  #site-nav .nav__links a { font-size: 15px; }
+  #site-nav .nav__tools { justify-self: end; display: flex; align-items: center; gap: 4px; }
+  #site-nav .nav__tools .m-btn-2 { margin-left: 12px; }
+  #site-nav .nav__menu { display: none; }
+  #site-nav .menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; padding: 18px var(--space-2) 32px; background: var(--color-3); color: var(--color-2); overflow-y: auto; }
+  #site-nav .menu[hidden] { display: none; }
+  #site-nav .menu__top { display: flex; justify-content: space-between; align-items: center; min-height: 48px; }
+  #site-nav .menu__links { display: grid; gap: 6px; margin-top: 40px; }
+  #site-nav .menu__links a { font-family: var(--font-1); font-size: clamp(36px, 10vw, 54px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.15; }
+  #site-nav .menu__foot { margin-top: auto; padding-top: 32px; display: grid; justify-items: start; gap: 6px; }
+  @media (max-width: 1023px) {
+    #site-nav .nav__bar { grid-template-columns: 1fr auto; min-height: 68px; }
+    #site-nav .nav__bar > nav, #site-nav .nav__tools .m-btn-2, #site-nav .nav__search { display: none; }
+    #site-nav .nav__menu { display: inline-flex; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; isolation: isolate; }
+  #opening .opening__flood { display: none; }
+  #opening .opening__first { position: relative; display: flex; flex-direction: column; min-height: 100svh; padding-top: clamp(92px, 13.5svh, 118px); padding-bottom: 28px; }
+  #opening .hero__head { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr auto 1fr; grid-template-areas: "badge title crowd"; align-items: start; }
+  #opening .hero__title { grid-area: title; font-size: clamp(42px, 5.3vw, 72px); line-height: 1.04; text-align: center; }
+  #opening .hero__line { display: block; }
+  #opening .hero__badge { grid-area: badge; justify-self: start; position: relative; width: 92px; height: 92px; margin: -4px 0 0 4%; color: var(--color-2); border-radius: 50%; }
+  #opening .hero__ring { width: 100%; height: 100%; font-family: var(--font-1); font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em; fill: currentColor; }
+  #opening .hero__play { position: absolute; inset: 30px; display: grid; place-items: center; border-radius: 50%; }
+  #opening .hero__play svg { width: 14px; height: 14px; fill: currentColor; transform: translateX(1px); }
+  #opening .hero__crowd { grid-area: crowd; justify-self: end; display: flex; align-items: center; margin: 14px 3% 0 0; }
+  #opening .hero__faces { display: flex; }
+  #opening .hero__faces li { width: 40px; height: 40px; margin-right: -10px; border-radius: 50%; overflow: hidden; border: 2px solid var(--color-1); background: var(--color-9); }
+  #opening .hero__faces li:nth-child(2) { background: var(--color-3); }
+  #opening .hero__faces li:nth-child(3) { background: var(--color-8); }
+  #opening .hero__faces img { width: 100%; height: 100%; object-fit: cover; }
+  #opening .hero__crowd .m-icon-2 { width: 40px; height: 40px; border: 2px solid var(--color-1); }
+  #opening .hero__crowd .m-icon-2 svg { width: 18px; height: 18px; }
+
+  #opening .sky { --sky-h: clamp(340px, min(35vw, 100svh - 376px), 560px); position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); gap: clamp(10px, 1.2vw, 16px); height: var(--sky-h); margin-top: calc(-1 * clamp(26px, 3vw, 42px)); }
+  #opening .sky__col { position: relative; z-index: 0; height: 100%; min-height: 0; }
+  #opening .sky__in, #opening .sky__bob { height: 100%; }
+  #opening .sky__bob { position: relative; display: flex; flex-direction: column; gap: 4.6%; }
+  #opening .sky__card { width: 100%; flex: none; min-height: 0; }
+  #opening .sky__card--tall { height: 65.4%; }
+  #opening .sky__card--short { flex: 1; }
+  #opening .sky__card--full { height: 86%; margin-top: auto; }
+  #opening .sky__col--1 .sky__card--tall { background: var(--color-6); }
+  #opening .sky__col--1 .sky__card--short { background: var(--color-3); }
+  #opening .sky__col--2 .sky__card { background: var(--color-7); }
+  #opening .sky__col--4 .sky__card { background: var(--color-8); }
+  #opening .sky__col--5 .sky__card--tall { background: var(--color-10); }
+  #opening .sky__col--5 .sky__card--short { background: var(--color-9); }
+  #opening .sky__col--1 .sky__card--short img { object-position: 50% 62%; }
+  #opening .sky__col--5 .sky__card--short img { object-position: 50% 45%; }
+  #opening .sky__col--3 .sky__bob { align-items: center; gap: 0; }
+  #opening .sky__mark { width: 30px; height: 30px; margin-top: 15%; color: var(--color-6); }
+  #opening .sky__mark svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+  #opening .sky__card--centre { height: 57%; margin-top: auto; background: var(--color-3); }
+  #opening .sky__cta { margin-top: 4.6%; width: 100%; min-height: 0; height: 11.6%; padding: 0 14px; }
+
+  #opening .hero__strip { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; margin-top: clamp(28px, 4.4svh, 44px); }
+  #opening .hero__quote { display: grid; grid-template-columns: minmax(0, 340px); gap: 10px; padding-left: 0.5%; }
+  #opening .hero__qmark { width: 26px; height: 22px; fill: var(--color-5); }
+  #opening .hero__quote-text { font-size: 14px; line-height: 1.5; color: var(--color-2); }
+  #opening .hero__quote figcaption { justify-self: end; margin-top: -2px; }
+  #opening .hero__next { justify-self: end; display: grid; grid-template-columns: auto 1fr auto; grid-template-areas: "num label arrow" "title title title"; column-gap: 12px; row-gap: 12px; align-items: end; width: min(100%, 290px); }
+  #opening .hero__num { grid-area: num; }
+  #opening .hero__next-label { grid-area: label; padding-bottom: 4px; }
+  #opening .hero__next-title { grid-area: title; }
+  #opening .hero__next svg { grid-area: arrow; align-self: start; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; transition: transform .4s cubic-bezier(.3,.7,.2,1); }
+  @media (hover: hover) { #opening .hero__next:hover svg { transform: translateX(6px); } }
+
+  #opening .opening__second { position: relative; z-index: 2; min-height: 100svh; background: var(--color-3); padding-block: clamp(104px, 15svh, 140px) clamp(48px, 9svh, 88px); }
+  #opening .how__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: end; min-height: calc(100svh - 240px); }
+  #opening .how__head { display: grid; gap: 22px; align-self: start; }
+  #opening .how__title { font-size: clamp(40px, 5vw, 66px); max-width: 9ch; }
+  #opening .how__lead { max-width: 30em; }
+  #opening .how__head .m-btn-3 { justify-self: start; margin-top: 8px; }
+  #opening .how__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 1.2vw, 16px); align-items: end; height: clamp(320px, 52svh, 440px); }
+  #opening .how__step { display: flex; flex-direction: column; gap: 10px; padding: 34px 22px 24px; background: var(--color-1); color: var(--color-2); height: 100%; }
+  #opening .how__step:nth-child(2) { height: 80%; }
+  #opening .how__step:nth-child(3) { height: 91%; }
+  #opening .how__step .m-text-5 { margin-bottom: auto; }
+  #opening .how__step .m-text { font-size: 15px; color: var(--color-4); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .hero__line { animation: opening-line .6s cubic-bezier(.2,.75,.2,1) backwards; }
+    #opening .hero__line + .hero__line { animation-delay: .08s; }
+    #opening .sky__col:not(.sky__col--3) .sky__in { animation: opening-rise 1s cubic-bezier(.2,.75,.2,1) backwards; }
+    #opening .sky__col--2 .sky__in, #opening .sky__col--4 .sky__in { animation-delay: .08s; }
+    #opening .hero__badge, #opening .hero__crowd { animation: opening-line .9s cubic-bezier(.2,.75,.2,1) .12s backwards; }
+    #opening .hero__quote .m-mark { animation: opening-mark .7s cubic-bezier(.3,.7,.2,1) .45s backwards; }
+    #opening .sky__col--1 .sky__bob { animation: opening-bob 3.8s ease-in-out -1.2s infinite alternate; }
+    #opening .sky__col--2 .sky__bob { animation: opening-bob 4.4s ease-in-out -3.1s infinite alternate; }
+    #opening .sky__col--4 .sky__bob { animation: opening-bob 4.1s ease-in-out -0.4s infinite alternate; }
+    #opening .sky__col--5 .sky__bob { animation: opening-bob 3.6s ease-in-out -2.4s infinite alternate; }
+    #opening .sky__mark svg { animation: opening-spin 16s linear infinite; }
+    #opening[data-paused] .sky__bob, #opening[data-paused] .sky__mark svg { animation-play-state: paused; }
+  }
+  @keyframes opening-line { from { transform: translateY(0.32em); } }
+  @keyframes opening-rise { from { transform: translateY(110px); } }
+  @keyframes opening-mark { from { background-size: 0% 0.62em; } }
+  @keyframes opening-bob { from { transform: translateY(-15px); } to { transform: translateY(15px); } }
+  @keyframes opening-spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 1023px) {
+    #opening .hero__strip { grid-template-columns: 1fr; gap: 28px; }
+    #opening .hero__next { justify-self: start; }
+    #opening .how__grid { grid-template-columns: 1fr; align-items: start; }
+    #opening .how__title { max-width: 12ch; }
+  }
+  @media (max-width: 759px) {
+    #opening .opening__first { padding-top: 92px; }
+    #opening .hero__head { grid-template-columns: auto 1fr; grid-template-areas: "title title" "badge crowd"; row-gap: 14px; }
+    #opening .hero__title { font-size: min(44px, 11.2vw); }
+    #opening .hero__badge { width: 70px; height: 70px; margin: 0; }
+    #opening .hero__ring { font-size: 14.5px; }
+    #opening .hero__play { inset: 22px; }
+    #opening .hero__crowd { margin: 0; }
+    #opening .sky { --sky-h: clamp(330px, 50svh, 420px); grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr) minmax(0, 1fr); margin-top: 18px; margin-bottom: 64px; }
+    #opening .sky__col--2, #opening .sky__col--4 { display: none; }
+    #opening .sky__mark { width: 24px; height: 24px; margin-top: 8%; }
+    #opening .sky__card--centre { height: 76%; }
+    #opening .sky__cta { position: absolute; left: 50%; bottom: -62px; width: auto; height: 50px; padding: 0 24px; transform: translateX(-50%); }
+    #opening .how__steps { grid-template-columns: 1fr; height: auto; align-items: stretch; }
+    #opening .how__step, #opening .how__step:nth-child(2), #opening .how__step:nth-child(3) { height: auto; min-height: 200px; }
+    #opening .how__step:nth-child(2) { margin-inline: 0 8%; }
+    #opening .how__step:nth-child(3) { margin-inline: 8% 0; }
+  }
+}
+</style>
+<style data-8b-part="section:hours">
+@layer sections {
+  #hours { padding-block: var(--space-1); }
+  #hours .hours__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+  #hours .hours__intro { display: grid; gap: 22px; justify-items: start; }
+  #hours .hours__intro .m-text-7 { max-width: 26em; color: var(--color-4); }
+  #hours .hours__drawer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 16px; }
+  #hours .folder { --m-tab-h: 42px; --m-tab-w: 136px; --folder-k: 0; --m-tab-at: calc(var(--m-tab-r) * 2 + (100% - var(--m-tab-w) - var(--m-tab-r) * 4) * var(--folder-k)); display: flex; flex-direction: column; align-items: flex-start; min-height: 340px; padding: 66px 26px 24px; color: var(--color-2); }
+  #hours .folder:nth-child(6n+2) { --folder-k: 0.2; }
+  #hours .folder:nth-child(6n+3) { --folder-k: 0.4; }
+  #hours .folder:nth-child(6n+4) { --folder-k: 0.6; }
+  #hours .folder:nth-child(6n+5) { --folder-k: 0.8; }
+  #hours .folder:nth-child(6n) { --folder-k: 1; }
+  #hours .folder--food { background: var(--color-6); }
+  #hours .folder--reading { background: var(--color-8); }
+  #hours .folder--river { background: var(--color-10); color: var(--color-1); }
+  #hours .folder--repairs { background: var(--color-3); }
+  #hours .folder--company { background: var(--color-9); }
+  #hours .folder--gardens { background: var(--color-7); color: var(--color-1); }
+  #hours .folder--river :focus-visible, #hours .folder--gardens :focus-visible { outline-color: var(--color-1); }
+  #hours .folder__tab { position: absolute; top: 0; left: calc(var(--m-tab-at) + var(--m-tab-r)); width: calc(var(--m-tab-w) - var(--m-tab-r) * 2); height: var(--m-tab-h); display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; }
+  #hours .folder .m-badge { margin-bottom: 16px; }
+  #hours .folder__title { font-size: clamp(24px, 2.4vw, 32px); line-height: 1.1; max-width: 14em; }
+  #hours .folder__facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: auto; padding-top: 26px; }
+  #hours .folder__facts dd { font-family: var(--font-1); font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+  #hours .folder .m-link { margin-top: 20px; }
+  @media (max-width: 1023px) {
+    #hours .hours__grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 680px) {
+    #hours .hours__drawer { grid-template-columns: minmax(0, 1fr); }
+    #hours .folder { --m-tab-h: 36px; --m-tab-w: 118px; min-height: 320px; padding: 56px 20px 22px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:hours-drawer">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #hours[data-drawer] .hours__drawer { --drawer-step: 44px; position: sticky; top: max(96px, calc(50svh - 290px)); grid-template-columns: minmax(0, 1fr); padding-top: calc(var(--drawer-steps, 5) * var(--drawer-step)); }
+    #hours[data-drawer] .hours__track::after { content: ""; display: block; height: calc(var(--drawer-steps, 5) * 64svh); }
+    #hours[data-drawer] .folder { grid-area: 1 / 1; min-height: 360px; padding-top: calc(var(--m-tab-h) + var(--drawer-step) + 14px); transform-origin: 50% 0; }
+    @media (min-width: 1024px) {
+      #hours[data-drawer] .hours__intro { position: sticky; top: max(120px, calc(50svh - 200px)); }
+    }
+    @media (max-width: 680px) {
+      #hours[data-drawer] .hours__drawer { --drawer-step: 36px; top: 76px; }
+      #hours[data-drawer] .folder { min-height: 330px; }
+    }
+  }
+}
+</style>
+<style data-8b-part="section:causes">
+@layer sections {
+  #causes { padding-block: var(--space-1); }
+  #causes .causes__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: end; margin-bottom: clamp(40px, 6vw, 72px); }
+  #causes .causes__head .m-text-7 { max-width: 28em; color: var(--color-4); justify-self: end; }
+  #causes .causes__row { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(10px, 1.2vw, 16px); align-items: end; height: clamp(420px, 40vw, 540px); }
+  #causes .cause { display: flex; flex-direction: column; height: 100%; color: var(--color-2); }
+  #causes .cause:nth-child(6n+2), #causes .cause:nth-child(6n+5) { height: 88%; }
+  #causes .cause:nth-child(6n+3), #causes .cause:nth-child(6n+4) { height: 76%; }
+  #causes .cause__photo { flex: 1; min-height: 0; }
+  #causes .cause__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #causes .cause__text { display: grid; gap: 6px; padding: 16px 16px 18px; }
+  #causes .cause--food { background: var(--color-6); }
+  #causes .cause--gardens { background: var(--color-7); color: var(--color-1); }
+  #causes .cause--reading { background: var(--color-8); }
+  #causes .cause--company { background: var(--color-9); }
+  #causes .cause--repairs { background: var(--color-3); }
+  #causes .cause--river { background: var(--color-10); color: var(--color-1); }
+  @media (max-width: 900px) {
+    #causes .causes__head { grid-template-columns: minmax(0, 1fr); }
+    #causes .causes__head .m-text-7 { justify-self: start; }
+    #causes .causes__row { grid-template-columns: repeat(2, minmax(0, 1fr)); height: auto; align-items: start; row-gap: 14px; }
+    #causes .cause, #causes .cause:nth-child(n) { height: clamp(300px, 80vw, 380px); }
+    #causes .cause:nth-child(even) { margin-top: 48px; margin-bottom: -48px; }
+  }
+}
+</style>
+<style data-8b-part="section:saturday">
+@layer sections {
+  #saturday { background: var(--color-2); color: var(--color-1); padding-block: var(--space-1); }
+  #saturday :focus-visible { outline-color: var(--color-1); }
+  #saturday .saturday__row { display: grid; gap: clamp(40px, 5vw, 64px); }
+  #saturday .saturday__head { display: grid; gap: 20px; max-width: 620px; }
+  #saturday .saturday__head .m-text-7 { color: color-mix(in srgb, var(--color-1) 78%, var(--color-2)); }
+  #saturday .saturday__strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px 20px; }
+  #saturday .frame { display: grid; gap: 8px; align-content: start; }
+  #saturday .frame__photo { aspect-ratio: 4 / 3.3; margin-bottom: 10px; background: var(--color-4); }
+  #saturday .frame:nth-child(odd) .frame__photo { background: var(--color-10); }
+  #saturday .frame__time { color: var(--color-3); font-weight: 600; }
+  #saturday .frame__text { max-width: 28em; color: color-mix(in srgb, var(--color-1) 76%, var(--color-2)); }
+  @media (max-width: 900px) { #saturday .saturday__strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { #saturday .saturday__strip { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="scene-style:saturday-strip">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #saturday[data-strip] { padding-block: 0; }
+    #saturday[data-strip] .saturday__track { height: calc(100svh + var(--strip-run, 0px)); }
+    #saturday[data-strip] .saturday__stage { position: sticky; top: 0; height: 100svh; display: flex; align-items: center; overflow: clip; }
+    #saturday[data-strip] .saturday__row { display: flex; align-items: center; gap: clamp(32px, 5vw, 80px); width: max-content; max-width: none; margin: 0; }
+    #saturday[data-strip] .saturday__head { flex: none; width: min(460px, 82vw); }
+    #saturday[data-strip] .saturday__strip { display: flex; gap: clamp(16px, 2vw, 28px); }
+    #saturday[data-strip] .frame { flex: none; width: clamp(270px, 25vw, 340px); }
+    @media (max-width: 600px) {
+      #saturday[data-strip] .frame { width: 76vw; }
+      #saturday[data-strip] .frame__photo { aspect-ratio: 4 / 3.6; }
+    }
+  }
+}
+</style>
+<style data-8b-part="section:voices">
+@layer sections {
+  #voices { padding-block: var(--space-1); }
+  #voices .voices__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(48px, 6vw, 72px) clamp(32px, 5vw, 80px); align-items: end; }
+  #voices .voices__title { grid-column: 1 / -1; max-width: 11ch; }
+  #voices .voice--main { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 3vw, 40px); align-items: end; }
+  #voices .voice__photo { aspect-ratio: 3 / 4; }
+  #voices .voice--main .voice__photo { background: var(--color-6); }
+  #voices .voice__qmark { width: 30px; height: 26px; margin-bottom: 18px; fill: var(--color-5); }
+  #voices .voices__side { display: grid; gap: 44px; }
+  #voices .voice--small { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 22px; align-items: start; }
+  #voices .voice--small .voice__photo { aspect-ratio: 4 / 5; background: var(--color-8); }
+  #voices .voice--small:nth-child(2) .voice__photo { background: var(--color-3); }
+  #voices .voice figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-top: 16px; }
+  #voices .voice figcaption .m-text-4 { color: var(--color-4); }
+  @media (max-width: 1023px) {
+    #voices .voices__grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 600px) {
+    #voices .voice--main { grid-template-columns: minmax(0, 1fr); }
+    #voices .voice--main .voice__photo { width: 72%; }
+    #voices .voice--small { grid-template-columns: 96px minmax(0, 1fr); gap: 18px; }
+  }
+}
+</style>
+<style data-8b-part="section:streets">
+@layer sections {
+  #streets { background: var(--color-10); color: var(--color-1); padding-block: var(--space-1); }
+  #streets :focus-visible { outline-color: var(--color-1); }
+  #streets .streets__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: end; margin-bottom: clamp(40px, 6vw, 80px); }
+  #streets .streets__head .m-text-7 { max-width: 28em; justify-self: end; color: color-mix(in srgb, var(--color-1) 84%, var(--color-10)); }
+  #streets .streets__names { display: flex; flex-wrap: wrap; gap: clamp(8px, 1vw, 14px) clamp(6px, 0.8vw, 12px); }
+  #streets .street { display: inline-flex; align-items: flex-start; gap: 0.3em; padding: 0.1em 0.36em 0.14em; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-10); transition: background-color .5s ease, color .5s ease, transform .5s cubic-bezier(.3,.7,.2,1); }
+  #streets .street__name { font-size: clamp(28px, 4.3vw, 60px); line-height: 1.05; }
+  #streets .street__hours { margin-top: 0.4em; white-space: nowrap; }
+  #streets .street--food { background: var(--color-6); color: var(--color-2); }
+  #streets .street--reading { background: var(--color-8); color: var(--color-2); }
+  #streets .street--company { background: var(--color-9); color: var(--color-2); }
+  #streets .street--repairs { background: var(--color-3); color: var(--color-2); }
+  #streets .street--gardens { background: var(--color-7); color: var(--color-1); }
+  @media (max-width: 760px) {
+    #streets .streets__head { grid-template-columns: minmax(0, 1fr); }
+    #streets .streets__head .m-text-7 { justify-self: start; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:streets-fill">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #streets[data-fill] .street:not(.is-lit) { background: transparent; color: color-mix(in srgb, var(--color-1) 42%, var(--color-10)); transform: translateY(0.18em) scale(0.94); }
+  }
+}
+</style>
+<style data-8b-part="section:groups">
+@layer sections {
+  #groups { padding-block: var(--space-1); }
+  #groups .groups__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+  #groups .groups__photo { aspect-ratio: 4 / 5; background: var(--color-9); }
+  #groups .groups__photo img { object-position: 50% 50%; }
+  #groups .groups__text { display: grid; gap: 24px; justify-items: start; }
+  #groups .groups__text .m-text-7 { max-width: 30em; color: var(--color-4); }
+  #groups .groups__points { width: 100%; border-top: 1px solid var(--color-5); }
+  #groups .groups__points li { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 8px 20px; padding: 18px 0; border-bottom: 1px solid var(--color-5); }
+  #groups .groups__points .m-text { color: var(--color-4); }
+  @media (max-width: 900px) {
+    #groups .groups__grid { grid-template-columns: minmax(0, 1fr); }
+    #groups .groups__photo { width: min(100%, 420px); }
+    #groups .groups__points li { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:give">
+@layer sections {
+  #give { background: var(--color-3); color: var(--color-2); padding-block: var(--space-1); }
+  #give .give__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(36px, 5vw, 80px); align-items: center; }
+  #give .give__text { display: grid; gap: 22px; }
+  #give .give__form { display: grid; gap: 18px; justify-items: start; margin-top: 6px; }
+  #give .give__amounts { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; border: 0; }
+  #give .give__amounts legend { float: left; width: 100%; margin-bottom: 12px; padding: 0; }
+  #give .give__monthly { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; }
+  #give .give__monthly input { width: 20px; height: 20px; margin: 0; accent-color: var(--color-2); }
+  #give .give__note { padding: 12px 16px; border-radius: var(--radius-3); background: var(--color-1); }
+  #give .give__cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  #give .gift { display: flex; flex-direction: column; background: var(--color-1); }
+  #give .gift__photo { position: relative; aspect-ratio: 3 / 3.6; }
+  #give .gift__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #give .gift .m-badge { position: absolute; left: 12px; top: 12px; }
+  #give .gift__text { padding: 16px 16px 20px; }
+  @media (max-width: 1023px) { #give .give__grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 759px) {
+    #give .give__cards { grid-template-columns: minmax(0, 1fr); }
+    #give .gift { flex-direction: row; }
+    #give .gift__photo { flex: none; width: 42%; aspect-ratio: auto; min-height: 150px; }
+    #give .gift__text { align-self: center; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding-block: var(--space-1); }
+  #faq .faq__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+  #faq .faq__head { display: grid; gap: 20px; justify-items: start; }
+  #faq .faq__head .m-text-7 { color: var(--color-4); }
+  #faq .faq__list { border-top: 1.5px solid var(--color-2); }
+  #faq .faq__item { border-bottom: 1px solid var(--color-5); }
+  #faq .faq__item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+  #faq .faq__item summary::-webkit-details-marker { display: none; }
+  #faq .faq__plus { position: relative; flex: none; display: grid; place-items: center; width: 38px; height: 38px; border: 1.5px solid var(--color-2); border-radius: 50%; isolation: isolate; overflow: hidden; transition: transform .4s cubic-bezier(.3,.7,.2,1), color .3s ease; }
+  #faq .faq__plus::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; background: var(--color-2); transform: scale(0); transition: transform .4s cubic-bezier(.3,.7,.2,1); }
+  #faq .faq__plus svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+  #faq .faq__item[open] .faq__plus { transform: rotate(45deg); color: var(--color-1); }
+  #faq .faq__item[open] .faq__plus::before { transform: scale(1); }
+  #faq .faq__answer { max-width: 40em; padding: 0 60px 24px 0; color: var(--color-4); }
+  @media (hover: hover) {
+    #faq .faq__item summary:hover .faq__plus { color: var(--color-1); }
+    #faq .faq__item summary:hover .faq__plus::before { transform: scale(1); }
+  }
+  @media (max-width: 900px) { #faq .faq__grid { grid-template-columns: minmax(0, 1fr); } #faq .faq__answer { padding-right: 0; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding-block: var(--space-1) clamp(72px, 9vw, 120px); }
+  #contact .contact__title { font-size: clamp(42px, 6.6vw, 92px); text-align: center; }
+  #contact .contact__lead { max-width: 32em; margin: 18px auto 0; text-align: center; color: var(--color-4); }
+  #contact .contact__sky { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1.2vw, 16px); align-items: end; height: clamp(240px, 30vw, 400px); margin-top: clamp(36px, 5vw, 60px); overflow: clip; }
+  #contact .contact__card { height: 64%; }
+  #contact .contact__card:nth-child(5n+2), #contact .contact__card:nth-child(5n+4) { height: 82%; }
+  #contact .contact__card:nth-child(5n+3) { height: 100%; }
+  #contact .contact__card:nth-child(5n+1) { background: var(--color-8); }
+  #contact .contact__card:nth-child(5n+2) { background: var(--color-7); }
+  #contact .contact__card:nth-child(5n+3) { background: var(--color-3); }
+  #contact .contact__card:nth-child(5n+4) { background: var(--color-6); }
+  #contact .contact__card:nth-child(5n) { background: var(--color-10); }
+  #contact .contact__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(40px, 6vw, 96px); margin-top: clamp(48px, 6vw, 80px); }
+  #contact .contact__form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 16px; align-items: start; }
+  #contact .contact__wide { grid-column: 1 / -1; }
+  #contact .contact__times { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; border: 0; }
+  #contact .contact__times legend { float: left; width: 100%; margin-bottom: 10px; padding: 0; font-family: var(--font-1); font-size: 13px; font-weight: 600; }
+  #contact .contact__form .m-btn { justify-self: start; }
+  #contact .contact__note { padding: 12px 16px; border-radius: var(--radius-3); background: var(--color-9); }
+  #contact .contact__details { display: grid; gap: 26px; align-content: start; }
+  #contact .contact__details dt { margin-bottom: 6px; color: var(--color-4); }
+  #contact .contact__details dd + dd { margin-top: 2px; }
+  @media (max-width: 900px) {
+    #contact .contact__grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 600px) {
+    #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+    #contact .contact__sky { height: 220px; }
+    #contact .contact__card { --m-tab-r: 10px; --m-tab-h: 10px; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { background: var(--color-2); color: var(--color-1); padding-block: clamp(72px, 9vw, 120px) 32px; }
+  #footer :focus-visible { outline-color: var(--color-1); }
+  #footer .footer__top { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 32px; }
+  #footer .footer__pitch { max-width: 24em; color: color-mix(in srgb, var(--color-1) 78%, var(--color-2)); }
+  #footer .footer__col h2 { margin-bottom: 14px; color: color-mix(in srgb, var(--color-1) 70%, var(--color-2)); }
+  #footer .footer__col ul { display: grid; gap: 8px; }
+  #footer .footer__col a { font-size: 16px; }
+  #footer .footer__mark { margin-top: clamp(56px, 8vw, 110px); font-family: var(--font-1); font-weight: 800; letter-spacing: -0.055em; line-height: 0.82; font-size: min(22vw, calc((min(100vw, 1280px) - 2 * var(--space-2)) / (var(--len) * 0.455))); white-space: nowrap; }
+  #footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 28px; padding-top: 22px; border-top: 1px solid color-mix(in srgb, var(--color-1) 22%, var(--color-2)); color: color-mix(in srgb, var(--color-1) 70%, var(--color-2)); }
+  @media (max-width: 860px) {
+    #footer .footer__top { grid-template-columns: 1fr 1fr; }
+    #footer .footer__pitch-wrap { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@media (prefers-reduced-motion: no-preference) {
+  #opening .how__head > * { animation: opening-line .7s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .how__head > :nth-child(2) { animation-delay: .08s; }
+  #opening .how__head > :nth-child(3) { animation-delay: .16s; }
+  #opening .how__step { animation: opening-rise 1s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .how__step:nth-child(1) { animation-delay: .1s; }
+  #opening .how__step:nth-child(2) { animation-delay: .22s; }
+  #opening .how__step:nth-child(3) { animation-delay: .16s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="site-nav">
+<div class="wrap nav__bar">
+<a class="nav__brand" href="#opening">{{t1|⟦name⟧}}</a>
+<nav aria-label="Main">
+<ul class="nav__links" data-8b-items=":scope &gt; li">
+{{#nv_hours}}<li><a class="m-link-2" href="#hours">{{t2|Open hours}}</a></li>{{/nv_hours}}
+{{#nv_causes}}<li><a class="m-link-2" href="#causes">{{t3|Causes}}</a></li>{{/nv_causes}}
+{{#nv_groups}}<li><a class="m-link-2" href="#groups">{{t4|For groups}}</a></li>{{/nv_groups}}
+{{#nv_give}}<li><a class="m-link-2" href="#give">{{t5|Give}}</a></li>{{/nv_give}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t6|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<div class="nav__tools">
+<a aria-label="Search this week's open hours" class="m-icon nav__search" href="#hours"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></a>
+<a aria-label="Give to {{name}}" class="m-icon" href="#give"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.1A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20Z"></path></svg></a>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t7|Sign up}}</span></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon nav__menu" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 8h16M4 16h16"></path></svg></button>
+</div>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<a class="nav__brand" href="#opening">{{t1|⟦name⟧}}</a>
+<button aria-label="Close the menu" class="m-icon menu__close" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></svg></button>
+</div>
+<ul class="menu__links" data-8b-items=":scope &gt; li">
+{{#nv_hours}}<li><a href="#hours">{{t2|Open hours}}</a></li>{{/nv_hours}}
+{{#nv_causes}}<li><a href="#causes">{{t3|Causes}}</a></li>{{/nv_causes}}
+{{#nv_groups}}<li><a href="#groups">{{t4|For groups}}</a></li>{{/nv_groups}}
+{{#nv_give}}<li><a href="#give">{{t5|Give}}</a></li>{{/nv_give}}
+{{#nv_faq}}<li><a href="#faq">{{t6|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a href="#contact">{{t7|Sign up}}</a></li>{{/nv_contact}}
+</ul>
+<div class="menu__foot m-text">
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t8|⟦phone⟧}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t9|hello@sparehour.example}}</a>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section data-8b-section="opening" id="opening">
+<div class="opening__second" id="how">
+<div class="wrap how__grid">
+<div class="how__head">
+<h1 class="m-text-2 how__title">{{t10|An hour is the whole ask.}}</h1>
+<p class="m-text-7 how__lead">{{t11|No rota to sign and no minimum term. Pick a slot that suits your week, turn up, and go home knowing exactly what your hour did.}}</p>
+<a class="m-btn-3" href="#hours"><span class="m-btn-3__label">{{t12|See this week's hours}}</span><svg aria-hidden="true" class="m-btn-3__icon" viewbox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5"></path></svg></a>
+</div>
+<ol class="how__steps" data-8b-items=":scope &gt; li">
+<li class="m-tab how__step"><span class="m-text-5">{{t13|01}}</span><h3 class="m-text-3">{{t14|Pick an hour}}</h3><p class="m-text">{{t15|Browse what groups near you need this week by street, day and how long you have got.}}</p></li>
+<li class="m-tab-2 how__step"><span class="m-text-5">{{t16|02}}</span><h3 class="m-text-3">{{t17|Meet your crew}}</h3><p class="m-text">{{t18|Your group lead texts the door code, what to wear and who puts the kettle on.}}</p></li>
+<li class="m-tab how__step"><span class="m-text-5">{{t19|03}}</span><h3 class="m-text-3">{{t20|Show up}}</h3><p class="m-text">{{t21|Do the hour. Stay longer if you like, or skip a week without anyone chasing you.}}</p></li>
+</ol>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_hours}}<section data-8b-section="open-hours" id="hours">
+<div class="wrap hours__grid">
+<div class="hours__intro">
+<h2 class="m-text-2">{{t22|This week's open hours}}</h2>
+<p class="m-text-7">{{t23|214 hours are waiting across 38 groups this week. Here are six that still need hands; the full list filters by street, day and how long you have.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t24|See all 214 hours}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5"></path></svg></a>
+</div>
+<div class="hours__track">
+<ul class="hours__drawer" data-8b-items=":scope &gt; .folder">
+<li class="m-tab-4 folder folder--food">
+<span class="m-text-4 folder__tab">{{t25|Govan}}</span>
+<span class="m-badge">{{t26|Food}}</span>
+<h3 class="m-text-3 folder__title">{{t27|Pack Saturday bags at the larder}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t29|Sat 10:00}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t31|1 hour}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t33|6 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+<li class="m-tab-4 folder folder--reading">
+<span class="m-text-4 folder__tab">{{t35|Partick}}</span>
+<span class="m-badge">{{t36|Reading}}</span>
+<h3 class="m-text-3 folder__title">{{t37|Read with a P3 pupil after school}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t38|Tue 15:30}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t31|1 hour}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t39|3 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+<li class="m-tab-4 folder folder--river">
+<span class="m-text-4 folder__tab">{{t40|Kelvinbridge}}</span>
+<span class="m-badge">{{t41|River}}</span>
+<h3 class="m-text-3 folder__title">{{t42|Litter pick the Kelvin walkway}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t43|Sun 09:00}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t44|1.5 hours}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t45|12 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+<li class="m-tab-4 folder folder--repairs">
+<span class="m-text-4 folder__tab">{{t46|Dennistoun}}</span>
+<span class="m-badge">{{t47|Repairs}}</span>
+<h3 class="m-text-3 folder__title">{{t48|Fix bikes and kettles at repair night}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t49|Thu 18:30}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t50|2 hours}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t51|4 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+<li class="m-tab-4 folder folder--company">
+<span class="m-text-4 folder__tab">{{t52|Shawlands}}</span>
+<span class="m-badge">{{t53|Company}}</span>
+<h3 class="m-text-3 folder__title">{{t54|Pour tea for older neighbours}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t55|Wed 14:00}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t31|1 hour}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t56|5 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+<li class="m-tab-4 folder folder--gardens">
+<span class="m-text-4 folder__tab">{{t57|Springburn}}</span>
+<span class="m-badge">{{t58|Gardens}}</span>
+<h3 class="m-text-3 folder__title">{{t59|Weed the raised beds before the frost}}</h3>
+<dl class="folder__facts">
+<div><dt class="m-text-4">{{t28|When}}</dt><dd>{{t60|Sat 11:00}}</dd></div>
+<div><dt class="m-text-4">{{t30|Length}}</dt><dd>{{t31|1 hour}}</dd></div>
+<div><dt class="m-text-4">{{t32|Places}}</dt><dd>{{t61|8 left}}</dd></div>
+</dl>
+<a class="m-link" href="#contact">{{t34|Book this hour}}</a>
+</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_hours}}
+
+{{#sec_causes}}<section data-8b-section="causes" id="causes">
+<div class="wrap">
+<div class="causes__head">
+<h2 class="m-text-2">{{t62|Six ways to spend an hour}}</h2>
+<p class="m-text-7">{{t63|Every group on ⟦name⟧ works on one of six things the city keeps asking for. Pick the one that sounds like you, or try them all in a month.}}</p>
+</div>
+<ul class="causes__row" data-8b-items=":scope &gt; li" data-8b-motion="skyline">
+<li class="m-tab cause cause--food">
+<div class="cause__photo"><img alt="A volunteer stocking jars on the shelves of a community larder" height="3351" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1615897570286-da936a5dfb81?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Zm9vZCUyMGJhbmslMjB2b2x1bnRlZXJzJTIwcGFja2luZ3xlbnwxfDB8fHwxNzkxNDU1NDAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#8c7359;object-position: 30% 50%" width="5319"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t26|Food}}</h3><p class="m-text-4">{{t64|Larders, community fridges and Saturday lunches.}}</p></div>
+</li>
+<li class="m-tab-2 cause cause--gardens">
+<div class="cause__photo"><img alt="Two volunteers tending raised vegetable beds" height="2590" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1788538812851-9aacd4189fa8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y29tbXVuaXR5JTIwZ2FyZGVuJTIwdm9sdW50ZWVyc3xlbnwxfDB8fHwxNzkxNDU1NDAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#597340;object-position: 70% 50%" width="3684"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t58|Gardens}}</h3><p class="m-text-4">{{t65|Raised beds, orchards and green corners of the estates.}}</p></div>
+</li>
+<li class="m-tab-3 cause cause--reading">
+<div class="cause__photo"><img alt="A man reading a picture book with a young girl" height="2160" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1714646793149-189cc073b387?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8YWR1bHQlMjByZWFkaW5nJTIwYm9vayUyMHdpdGglMjBjaGlsZHxlbnwxfDB8fHwxNzkxNDU1NDAyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#404040;object-position: 45% 50%" width="3840"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t36|Reading}}</h3><p class="m-text-4">{{t66|After-school reading and English over coffee.}}</p></div>
+</li>
+<li class="m-tab-3 cause cause--company">
+<div class="cause__photo"><img alt="An older woman smiling over a cup of tea" height="5504" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1685608626291-820fce4508aa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZWxkZXJseSUyMHdvbWFuJTIwdGVhJTIwY3VwJTIwY29udmVyc2F0aW9ufGVufDF8MHx8fDE3OTE0NTU0MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=460&q=60}}" style="background:#f3f3f3;object-position: 62% 50%" width="8256"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t53|Company}}</h3><p class="m-text-4">{{t67|Tea tables, phone calls and walks with older neighbours.}}</p></div>
+</li>
+<li class="m-tab cause cause--repairs">
+<div class="cause__photo"><img alt="A volunteer adjusting a bicycle on a repair stand" height="3753" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1673870861138-3d7b92d8b619?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cmVwYWlyaW5nJTIwYmljeWNsZSUyMHdvcmtzaG9wJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTQ1NTQwNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=500&q=60}}" style="background:#d9d9d9;object-position: 60% 50%" width="5630"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t47|Repairs}}</h3><p class="m-text-4">{{t68|Repair nights for bikes, kettles, lamps and jackets.}}</p></div>
+</li>
+<li class="m-tab-2 cause cause--river">
+<div class="cause__photo"><img alt="A smiling volunteer holding a bag of litter in a park" height="2160" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1758599668299-beebedfabf7b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGl0dGVyJTIwcGlja2luZyUyMGNsZWFudXAlMjB2b2x1bnRlZXJzfGVufDF8MHx8fDE3OTE0NTU0MDV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=710&q=60}}" style="background:#597340;object-position: 72% 40%" width="3840"/></div>
+<div class="cause__text"><h3 class="m-text-3">{{t41|River}}</h3><p class="m-text-4">{{t69|Clean-ups along the Clyde, the Kelvin and the canal.}}</p></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_causes}}
+
+{{#sec_saturday}}<section data-8b-section="saturday" id="saturday">
+<div class="saturday__track">
+<div class="saturday__stage">
+<div class="wrap saturday__row">
+<div class="saturday__head">
+<h2 class="m-text-2">{{t70|One Saturday at the Govan larder}}</h2>
+<p class="m-text-7">{{t71|Eight neighbours, two and a half hours, 140 bags. This is what a morning of spare hours looks like from the inside.}}</p>
+</div>
+<ol class="saturday__strip" data-8b-items=":scope &gt; li">
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="Blue crates of fresh vegetables stacked by a door" height="4159" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1655499320557-5d2845461be8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dm9sdW50ZWVycyUyMHNvcnRpbmclMjB2ZWdldGFibGVzJTIwY3JhdGVzfGVufDF8MHx8fDE3OTE0NTU0MzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#0c2640" width="5198"/></figure>
+<p class="m-text-4 frame__time">{{t72|09:40}}</p>
+<h3 class="m-text-3">{{t73|Keys, kettle, crates}}</h3>
+<p class="m-text frame__text">{{t74|The wholesaler drops eleven crates at the side door. Whoever arrives first puts the kettle on.}}</p>
+</li>
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="Volunteers carrying crates into a kitchen, smiling" height="3024" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1712908714811-321472432c4e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dm9sdW50ZWVycyUyMHNvcnRpbmclMjB2ZWdldGFibGVzJTIwY3JhdGVzfGVufDF8MHx8fDE3OTE0NTU0MzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="4032"/></figure>
+<p class="m-text-4 frame__time">{{t75|10:00}}</p>
+<h3 class="m-text-3">{{t76|The crew arrives}}</h3>
+<p class="m-text frame__text">{{t77|Eight people, four of them new. Everyone has a job and a name badge within five minutes.}}</p>
+</li>
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="Hands passing tomatoes into a paper bag" height="4200" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1715443972054-acf4aafa15a1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFja2luZyUyMGdyb2NlcnklMjBiYWdzJTIwaGFuZHN8ZW58MXwxfHx8MTc5MTQ1NTQzN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#f3f3f3" width="2800"/></figure>
+<p class="m-text-4 frame__time">{{t78|10:20}}</p>
+<h3 class="m-text-3">{{t79|Sorting what came in}}</h3>
+<p class="m-text frame__text">{{t80|Soft fruit first, tins last. Anything past its best goes to the soup pot.}}</p>
+</li>
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="A volunteer in a green apron carrying a basket of produce" height="4024" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1695654398729-9009013ca7f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dm9sdW50ZWVycyUyMHNvcnRpbmclMjB2ZWdldGFibGVzJTIwY3JhdGVzfGVufDF8MHx8fDE3OTE0NTU0MzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60}}" style="background:#8c8c8c" width="6048"/></figure>
+<p class="m-text-4 frame__time">{{t81|10:45}}</p>
+<h3 class="m-text-3">{{t82|Bags packed, names on}}</h3>
+<p class="m-text frame__text">{{t83|140 bags, each with a name and a note about allergies, lined up by the door.}}</p>
+</li>
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="People around a table preparing food together" height="3592" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1763570645098-371723617ee9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29tbXVuaXR5JTIwa2l0Y2hlbiUyMHZvbHVudGVlcnMlMjBjb29raW5nfGVufDF8MHx8fDE3OTE0NTU0MzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60}}" style="background:#c08c26" width="5392"/></figure>
+<p class="m-text-4 frame__time">{{t84|11:30}}</p>
+<h3 class="m-text-3">{{t85|Lunch for whoever stayed}}</h3>
+<p class="m-text frame__text">{{t86|The soup pot feeds the crew and anyone who came in out of the rain.}}</p>
+</li>
+<li class="frame">
+<figure class="m-tab-2 frame__photo"><img alt="A volunteer loading crates of fruit outdoors" height="4000" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1583227246355-dcb9091e7134?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8dm9sdW50ZWVycyUyMHNvcnRpbmclMjB2ZWdldGFibGVzJTIwY3JhdGVzfGVufDF8MHx8fDE3OTE0NTU0MzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60}}" style="background:#0c2626" width="6000"/></figure>
+<p class="m-text-4 frame__time">{{t87|12:10}}</p>
+<h3 class="m-text-3">{{t88|The rest goes up the road}}</h3>
+<p class="m-text frame__text">{{t89|Leftovers walk two streets to the community fridge, and the keys go back to Margaret.}}</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>{{/sec_saturday}}
+
+{{#sec_voices}}<section data-8b-section="voices" id="voices">
+<div class="wrap voices__grid">
+<h2 class="m-text-2 voices__title">{{t90|Why they keep coming back}}</h2>
+<figure class="voice voice--main">
+<div class="m-tab voice__photo" data-8b-motion="rise"><img alt="A smiling woman in a blue dress against an orange wall" height="5000" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1761168026167-2309a979e1c8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29tYW4lMjBibHVlJTIwd2FsbCUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0NTUzMTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#260c0c" width="4000"/></div>
+<div>
+<svg aria-hidden="true" class="voice__qmark" viewbox="0 0 26 22"><path d="M0 22V12.6C0 5.4 3.5 1.2 10.2 0l1.1 2.9C7.6 4 5.8 6.4 5.6 10H11v12H0Zm14.7 0V12.6C14.7 5.4 18.2 1.2 24.9 0L26 2.9c-3.7 1.1-5.5 3.5-5.7 7.1h5.4v12H14.7Z"></path></svg>
+<blockquote><p class="m-text-8">{{t91|I moved here at sixty-three and knew nobody. Now I know who takes two sugars, who is learning English and who can fix a radio.}}</p></blockquote>
+<figcaption><span class="m-text-6 m-mark" data-8b-motion="highlight">{{t92|Grace O.}}</span><span class="m-text-4">{{t93|Tea table, Shawlands, since 2023}}</span></figcaption>
+</div>
+</figure>
+<div class="voices__side" data-8b-items=":scope &gt; .voice">
+<figure class="voice voice--small">
+<div class="m-tab-2 voice__photo" data-8b-motion="rise"><img alt="A smiling woman holding her phone outdoors" height="6000" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1768244016593-8ca75b15bc92?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHNtaWxpbmclMjB3b21hbiUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTE0NTUzNDJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=160&q=60}}" style="background:#402626" width="4000"/></div>
+<div>
+<blockquote><p class="m-text">{{t94|I give one Tuesday hour. The P3 I read with now corrects how I pronounce the dinosaurs.}}</p></blockquote>
+<figcaption><span class="m-text-6 m-mark" data-8b-motion="highlight">{{t95|Priya K.}}</span><span class="m-text-4">{{t96|Reading club, Partick}}</span></figcaption>
+</div>
+</figure>
+<figure class="voice voice--small">
+<div class="m-tab voice__photo" data-8b-motion="rise"><img alt="A smiling man in a beanie and jacket" height="8192" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1760411070204-1437a1eb4249?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fG1hbiUyMGJsdWUlMjB3YWxsJTIwcG9ydHJhaXQlMjBzbWlsaW5nfGVufDF8MXx8fDE3OTE0NTUzNzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=160&q=60}}" style="background:#262626" width="5464"/></div>
+<div>
+<blockquote><p class="m-text">{{t97|Fixing a kettle takes twenty minutes. The rest of the evening is the best conversation in Dennistoun.}}</p></blockquote>
+<figcaption><span class="m-text-6 m-mark" data-8b-motion="highlight">{{t98|Callum R.}}</span><span class="m-text-4">{{t99|Repair night, Dennistoun}}</span></figcaption>
+</div>
+</figure>
+</div>
+</div>
+</section>{{/sec_voices}}
+
+{{#sec_streets}}<section data-8b-section="neighbourhoods" id="streets">
+<div class="wrap">
+<div class="streets__head">
+<h2 class="m-text-2">{{t100|Thirty neighbourhoods, one network}}</h2>
+<p class="m-text-7">{{t101|Every name below has a group with hours open this week. Its colour shows what most of them need, and the small number how many hours are waiting.}}</p>
+</div>
+<ul class="streets__names" data-8b-items=":scope &gt; li">
+<li class="street street--food"><span class="m-text-2 street__name">{{t25|Govan}}</span><span class="m-text-4 street__hours">{{t102|12 h}}</span></li>
+<li class="street street--reading"><span class="m-text-2 street__name">{{t35|Partick}}</span><span class="m-text-4 street__hours">{{t103|9 h}}</span></li>
+<li class="street street--repairs"><span class="m-text-2 street__name">{{t46|Dennistoun}}</span><span class="m-text-4 street__hours">{{t104|7 h}}</span></li>
+<li class="street street--company"><span class="m-text-2 street__name">{{t52|Shawlands}}</span><span class="m-text-4 street__hours">{{t105|11 h}}</span></li>
+<li class="street street--gardens"><span class="m-text-2 street__name">{{t57|Springburn}}</span><span class="m-text-4 street__hours">{{t106|8 h}}</span></li>
+<li class="street street--river"><span class="m-text-2 street__name">{{t107|Maryhill}}</span><span class="m-text-4 street__hours">{{t108|10 h}}</span></li>
+<li class="street street--food"><span class="m-text-2 street__name">{{t109|Pollokshields}}</span><span class="m-text-4 street__hours">{{t110|6 h}}</span></li>
+<li class="street street--repairs"><span class="m-text-2 street__name">{{t111|Calton}}</span><span class="m-text-4 street__hours">{{t112|5 h}}</span></li>
+<li class="street street--company"><span class="m-text-2 street__name">{{t113|Gorbals}}</span><span class="m-text-4 street__hours">{{t103|9 h}}</span></li>
+<li class="street street--reading"><span class="m-text-2 street__name">{{t114|Finnieston}}</span><span class="m-text-4 street__hours">{{t115|4 h}}</span></li>
+<li class="street street--river"><span class="m-text-2 street__name">{{t116|Hillhead}}</span><span class="m-text-4 street__hours">{{t110|6 h}}</span></li>
+<li class="street street--reading"><span class="m-text-2 street__name">{{t117|Woodlands}}</span><span class="m-text-4 street__hours">{{t112|5 h}}</span></li>
+<li class="street street--gardens"><span class="m-text-2 street__name">{{t118|Garnethill}}</span><span class="m-text-4 street__hours">{{t119|3 h}}</span></li>
+<li class="street street--food"><span class="m-text-2 street__name">{{t120|Possilpark}}</span><span class="m-text-4 street__hours">{{t121|14 h}}</span></li>
+<li class="street street--gardens"><span class="m-text-2 street__name">{{t122|Ruchill}}</span><span class="m-text-4 street__hours">{{t115|4 h}}</span></li>
+<li class="street street--company"><span class="m-text-2 street__name">{{t123|Govanhill}}</span><span class="m-text-4 street__hours">{{t124|13 h}}</span></li>
+<li class="street street--repairs"><span class="m-text-2 street__name">{{t125|Strathbungo}}</span><span class="m-text-4 street__hours">{{t119|3 h}}</span></li>
+<li class="street street--reading"><span class="m-text-2 street__name">{{t126|Cathcart}}</span><span class="m-text-4 street__hours">{{t112|5 h}}</span></li>
+<li class="street street--food"><span class="m-text-2 street__name">{{t127|Castlemilk}}</span><span class="m-text-4 street__hours">{{t102|12 h}}</span></li>
+<li class="street street--gardens"><span class="m-text-2 street__name">{{t128|Drumchapel}}</span><span class="m-text-4 street__hours">{{t108|10 h}}</span></li>
+<li class="street street--company"><span class="m-text-2 street__name">{{t129|Knightswood}}</span><span class="m-text-4 street__hours">{{t110|6 h}}</span></li>
+<li class="street street--river"><span class="m-text-2 street__name">{{t130|Scotstoun}}</span><span class="m-text-4 street__hours">{{t115|4 h}}</span></li>
+<li class="street street--river"><span class="m-text-2 street__name">{{t131|Whiteinch}}</span><span class="m-text-4 street__hours">{{t104|7 h}}</span></li>
+<li class="street street--repairs"><span class="m-text-2 street__name">{{t132|Yoker}}</span><span class="m-text-4 street__hours">{{t133|2 h}}</span></li>
+<li class="street street--reading"><span class="m-text-2 street__name">{{t134|Anniesland}}</span><span class="m-text-4 street__hours">{{t112|5 h}}</span></li>
+<li class="street street--food"><span class="m-text-2 street__name">{{t135|Easterhouse}}</span><span class="m-text-4 street__hours">{{t136|15 h}}</span></li>
+<li class="street street--company"><span class="m-text-2 street__name">{{t137|Shettleston}}</span><span class="m-text-4 street__hours">{{t106|8 h}}</span></li>
+<li class="street street--gardens"><span class="m-text-2 street__name">{{t138|Parkhead}}</span><span class="m-text-4 street__hours">{{t110|6 h}}</span></li>
+<li class="street street--river"><span class="m-text-2 street__name">{{t139|Bridgeton}}</span><span class="m-text-4 street__hours">{{t103|9 h}}</span></li>
+<li class="street street--repairs"><span class="m-text-2 street__name">{{t140|Royston}}</span><span class="m-text-4 street__hours">{{t115|4 h}}</span></li>
+</ul>
+</div>
+</section>{{/sec_streets}}
+
+{{#sec_groups}}<section data-8b-section="for-groups" id="groups">
+<div class="wrap groups__grid">
+<figure class="m-tab-2 groups__photo" data-8b-motion="rise"><img alt="A community group meeting on chairs in a circle on the grass" height="3328" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1555069855-e580a9adbf43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y29tbXVuaXR5JTIwbWVldGluZyUyMGNpcmNsZSUyMGNoYWlyc3xlbnwxfDB8fHwxNzkxNDU1NDM4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1190&q=60}}" style="background:#738c59" width="5640"/></figure>
+<div class="groups__text">
+<h2 class="m-text-2">{{t141|Run a community group?}} <span class="m-mark" data-8b-motion="highlight">{{t142|Post an hour}}</span> {{t143|in five minutes.}}</h2>
+<p class="m-text-7">{{t144|Tell us what needs doing, when and for how long. We send people who have said yes to exactly that, and we follow up so they come back.}}</p>
+<ul class="groups__points" data-8b-items=":scope &gt; li">
+<li><h3 class="m-text-3">{{t145|Free for every group}}</h3><p class="m-text">{{t146|Registered charities, tenants' associations and three neighbours with a shed all post for free.}}</p></li>
+<li><h3 class="m-text-3">{{t147|Checks done for you}}</h3><p class="m-text">{{t148|Where your work needs a PVG check, we arrange and pay for it before the first hour.}}</p></li>
+<li><h3 class="m-text-3">{{t149|One named contact}}</h3><p class="m-text">{{t150|Morag, Dev or Shona answers your calls, not a ticketing system.}}</p></li>
+</ul>
+<a class="m-btn" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t142|Post an hour}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 12 12"><path d="M3 9 9 3M4 3h5v5"></path></svg></a>
+</div>
+</div>
+</section>{{/sec_groups}}
+
+{{#sec_give}}<section data-8b-section="give" id="give">
+<div class="wrap give__grid">
+<div class="give__text">
+<h2 class="m-text-2">{{t151|Can't spare an hour? Spare a fiver.}}</h2>
+<p class="m-text-7">{{t152|⟦name⟧ runs on ₦90,000,000 a year, about ₦2,000 for every hour our volunteers give. Your gift keeps groups stocked and the matching free.}}</p>
+
+</div>
+<ul class="give__cards" data-8b-items=":scope &gt; li">
+<li class="m-tab-3 gift">
+<div class="gift__photo"><img alt="Biscuits in a jar beside stacked cups with hearts" height="6048" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1747223695359-5be8f6a0ef56?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YmlzY3VpdHMlMjBhbmQlMjB0ZWElMjBtdWdzfGVufDF8MXx8fDE3OTE0NTU0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#40260c" width="4032"/><span class="m-badge">{{t153|₦2,500}}</span></div>
+<p class="m-text-3 gift__text">{{t154|Tea and biscuits for a whole tea table afternoon}}</p>
+</li>
+<li class="m-tab-3 gift">
+<div class="gift__photo"><img alt="A pair of work gloves on a wooden table" height="6000" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1588501858476-d09afb6f0c73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29yayUyMGdsb3ZlcyUyMGxpdHRlciUyMHBpY2tlcnxlbnwxfDF8fHwxNzkxNDU1NDQxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#26260c" width="4000"/><span class="m-badge">{{t155|₦5,000}}</span></div>
+<p class="m-text-3 gift__text">{{t156|Gloves and a litter picker for a new river volunteer}}</p>
+</li>
+<li class="m-tab-3 gift">
+<div class="gift__photo"><img alt="A stack of colourful children's books" height="5184" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1588421357764-4f684e0a1426?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHN0YWNrJTIwb2YlMjBjaGlsZHJlbiUyMGJvb2tzfGVufDF8MXx8fDE3OTE0NTU0Mzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#f3f3f3" width="3456"/><span class="m-badge">{{t157|₦12,500}}</span></div>
+<p class="m-text-3 gift__text">{{t158|A shelf of new books for an after-school reading club}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_give}}
+
+{{#sec_faq}}<section data-8b-section="faq" id="faq">
+<div class="wrap faq__grid">
+<div class="faq__head">
+<h2 class="m-text-2">{{t159|Questions before your first hour}}</h2>
+<p class="m-text-7">{{t160|Anything else, ask us on ⟦phone⟧. A person answers.}}</p>
+</div>
+<div class="faq__list" data-8b-items=":scope &gt; details">
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t161|Do I need any experience?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t162|No. Every group explains the job at the door, and most hours are things you already do at home: sorting, reading, pouring, weeding.}}</p>
+</details>
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t163|What if I can only come once?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t164|Then come once. About a third of our volunteers give one hour a month or less, and groups plan their rotas around that.}}</p>
+</details>
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t165|Is there an age limit?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t166|From 16 on your own, from 12 with an adult who signs up too. Reading in schools is for over-18s only.}}</p>
+</details>
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t167|Do I need a PVG check?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t168|Only for hours with children or vulnerable adults. We arrange and pay for it, and it usually takes about two weeks.}}</p>
+</details>
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t169|Can my workplace come as a team?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t170|Yes. Teams of up to twelve can take over a larder shift or a garden day. Write to us a month ahead.}}</p>
+</details>
+<details class="faq__item">
+<summary><h3 class="m-text-3">{{t171|Where does my money go?}}</h3><span aria-hidden="true" class="faq__plus"><svg viewbox="0 0 16 16"><path d="M8 2v12M2 8h12"></path></svg></span></summary>
+<p class="m-text faq__answer">{{t172|₦410 of every pound pays for matching, checks and group supplies. The rest keeps the lights on at the office.}}</p>
+</details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section data-8b-section="contact" id="contact">
+<div class="wrap">
+<h2 class="m-text-2 contact__title">{{t173|Start with one hour}}</h2>
+<p class="m-text-7 contact__lead">{{t174|Tell us where you live and when you are free. Every Monday we send the open hours near you, and you pick one or none.}}</p>
+<div class="contact__sky" data-8b-items=":scope &gt; .contact__card">
+<figure class="m-tab contact__card"><img alt="A smiling man in a blue robe against a blue wall" height="6000" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1756699280136-2fad5299c3f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG1hbiUyMGJsdWUlMjB3YWxsJTIwcG9ydHJhaXQlMjBzbWlsaW5nfGVufDF8MXx8fDE3OTE0NTUzNzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#0c268c" width="4000"/></figure>
+<figure class="m-tab-2 contact__card"><img alt="A man in a white top laughing by a green door" height="3263" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1496774201529-c0a04e49eba6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c21pbGluZyUyMG1hbiUyMGdyZWVuJTIwd2FsbHxlbnwxfDF8fHwxNzkxNDU1MzQwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#59c00c" width="2427"/></figure>
+<figure class="m-tab-3 contact__card"><img alt="A man in sunglasses stretching against a yellow wall" height="4437" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1624781982928-c80ab779cb9f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG9ydHJhaXQlMjB5ZWxsb3clMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTE0NTUyOTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#f3f3f3" width="3550"/></figure>
+<figure class="m-tab contact__card"><img alt="A man with goggles on his head against an orange wall" height="6000" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1655923104050-d515f6e9aa11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fG9sZGVyJTIwbWFuJTIwcG9ydHJhaXQlMjBjb2xvcmZ1bCUyMHdhbGx8ZW58MXwxfHx8MTc5MTQ1NTM3Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#f38c40" width="4000"/></figure>
+<figure class="m-tab-2 contact__card"><img alt="A man in sunglasses looking aside against a blue wall" height="4592" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1628149739794-2544d11feb24?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bWFuJTIwYmx1ZSUyMHdhbGwlMjBwb3J0cmFpdCUyMHNtaWxpbmd8ZW58MXwxfHx8MTc5MTQ1NTM3MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#40a6c0" width="3448"/></figure>
+</div>
+<div class="contact__grid">
+
+<dl class="contact__details">
+<div><dt class="m-text-4">{{t175|Drop in}}</dt><dd class="m-text">{{t176|1 Admiralty Way, Kaduna}}</dd><dd class="m-text">{{t177|Wednesdays, 12:00 to 14:00}}</dd></div>
+<div><dt class="m-text-4">{{t178|Call}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t8|⟦phone⟧}}</a></dd><dd class="m-text">{{t179|Monday to Friday, 9:30 to 17:00}}</dd></div>
+<div><dt class="m-text-4">{{t180|Write}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t9|hello@sparehour.example}}</a></dd><dd class="m-text">{{t181|Groups:}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t182|groups@sparehour.example}}</a></dd></div>
+</dl>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Nonprofit by <a href="https://github.com/8bsite/nonprofit-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="wrap">
+<div class="footer__top">
+<div class="footer__pitch-wrap">
+<p class="m-text-7 footer__pitch">{{t183|⟦name⟧ connects Glaswegians who have an hour to give with the community groups that need one, street by street.}}</p>
+</div>
+<div class="footer__col">
+<h2 class="m-text-4">{{t184|Volunteer}}</h2>
+<ul data-8b-items=":scope &gt; li">
+{{#nv_hours}}<li><a class="m-link-2" href="#hours">{{t2|Open hours}}</a></li>{{/nv_hours}}
+{{#nv_causes}}<li><a class="m-link-2" href="#causes">{{t3|Causes}}</a></li>{{/nv_causes}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t7|Sign up}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+<div class="footer__col">
+<h2 class="m-text-4">{{t185|Groups}}</h2>
+<ul data-8b-items=":scope &gt; li">
+{{#nv_groups}}<li><a class="m-link-2" href="#groups">{{t142|Post an hour}}</a></li>{{/nv_groups}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t6|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</div>
+<div class="footer__col">
+<h2 class="m-text-4">{{t186|Contact}}</h2>
+<ul data-8b-items=":scope &gt; li">
+<li><a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t8|⟦phone⟧}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t9|hello@sparehour.example}}</a></li>
+{{#nv_give}}<li><a class="m-link-2" href="#give">{{t5|Give}}</a></li>{{/nv_give}}
+</ul>
+</div>
+</div>
+<p aria-hidden="true" class="footer__mark" style="--len:10">{{t1|⟦name⟧}}</p>
+<div class="footer__legal m-text-4">
+<p>{{t187|⟦name⟧ is a Scottish charitable incorporated organisation, SC000000. 1 Admiralty Way, Kaduna.}}</p>
+<p>{{t188|© 2026 ⟦name⟧ · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t189|8B}}</a></p>
+</div>
+</div>
+</footer>
+<script data-8b-part="section-script:site-nav">
+(() => {
+  const nav = document.getElementById('site-nav');
+  const menu = nav.querySelector('#menu');
+  const openButton = nav.querySelector('.nav__menu');
+  const closeButton = nav.querySelector('.menu__close');
+  let lastY = window.scrollY, travel = 0;
+  const onScroll = () => {
+    const y = window.scrollY, dy = y - lastY;
+    lastY = y;
+    nav.toggleAttribute('data-scrolled', y > 24);
+    if (y < 120) { travel = 0; nav.removeAttribute('data-hidden'); return; }
+    travel = (Math.sign(dy) === Math.sign(travel)) ? travel + dy : dy;
+    if (travel > 10) nav.setAttribute('data-hidden', '');
+    else if (travel < -6) nav.removeAttribute('data-hidden');
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setMenu = open => {
+    menu.hidden = !open;
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); } else { window.lenis?.start(); }
+  };
+  openButton.addEventListener('click', () => setMenu(true));
+  closeButton.addEventListener('click', () => { setMenu(false); openButton.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setMenu(false); openButton.focus(); } });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+const navBar = document.getElementById('site-nav');
+function navOffset() { return navBar ? navBar.querySelector('.nav__bar').offsetHeight : 0; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.1, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const photo = element.querySelector('img');
+    const timeline = gsap.timeline(vars);
+    timeline.from(element, { y: 80, duration: 1.1, ease: 'power3.out' }, 0);
+    if (photo) timeline.from(photo, { scale: 1.16, duration: 1.4, ease: 'power3.out' }, 0);
+    return timeline;
+  },
+  highlight(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { backgroundSize: '0% 0.62em' }, { backgroundSize: '100% 0.62em', duration: 0.8, ease: 'power2.inOut' });
+  },
+  skyline(cards, vars = {}) {
+    const list = [...cards];
+    const middle = (list.length - 1) / 2 || 1;
+    const timeline = gsap.timeline(vars);
+    list.forEach((card, index) => {
+      const outer = Math.abs(index - middle) / middle;
+      timeline.from(card, { y: () => 90 + (1 - outer) * 150, duration: 1, ease: 'power3.out' }, (1 - outer) * 0.28);
+    });
+    return timeline;
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const bound = [...section.querySelectorAll('[data-8b-motion]')];
+  if (!bound.length) return;
+  queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    bound.forEach((element, index) => element.getAttribute('data-8b-motion').split(/\s+/).forEach(name => {
+      if (!effects[name]) return;
+      const target = name === 'skyline' ? element.querySelectorAll(element.getAttribute('data-8b-items') || ':scope > *') : element;
+      ScrollTrigger.create({ id: `effect:${name}:${section.id}:${index}`, trigger: element, start: 'top 86%', once: true, animation: effects[name](target) });
+    }));
+  }), section.getBoundingClientRect().top < innerHeight ? { first: true, id: `effects:${section.id}` } : { near: section, id: `effects:${section.id}` });
+});
+</script>
+<script data-8b-part="scene:hours-drawer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('hours');
+    const drawer = section.querySelector('.hours__drawer');
+    const track = section.querySelector('.hours__track');
+    const folders = [...drawer.querySelectorAll('.folder')];
+    const count = folders.length;
+    if (count < 2) return;
+    section.style.setProperty('--drawer-steps', String(count - 1));
+    section.setAttribute('data-drawer', '');
+    const step = () => parseFloat(getComputedStyle(drawer).getPropertyValue('--drawer-step')) || 40;
+    const depth = slot => 1 - slot * 0.022;
+    const stickyTop = () => parseFloat(getComputedStyle(drawer).top) || 0;
+    const cycle = 2, dwell = 0.6, total = (count - 1) * cycle + dwell;
+    const easeIn = gsap.parseEase('power2.in'), easeOut = gsap.parseEase('power2.out'), easeStep = gsap.parseEase('power1.inOut');
+    const part = (time, from, length) => Math.min(1, Math.max(0, (time - from) / length));
+    const mix = (a, b, k) => a + (b - a) * k;
+    const state = { progress: 0 };
+    const setters = folders.map(folder => ({
+      y: gsap.quickSetter(folder, 'y', 'px'), scale: gsap.quickSetter(folder, 'scale'),
+      rotation: gsap.quickSetter(folder, 'rotation', 'deg'), zIndex: gsap.quickSetter(folder, 'zIndex')
+    }));
+    let gap = 40, heights = [];
+    const measure = () => { gap = step(); heights = folders.map(folder => folder.offsetHeight); };
+    const render = () => {
+      const time = state.progress * total;
+      const folderState = folders.map((folder, index) => ({ y: -index * gap, scale: depth(index), rotation: 0, zIndex: count - index }));
+      for (let round = 0; round < count - 1; round++) {
+        const at = round * cycle + dwell;
+        if (time <= at) break;
+        const lifted = folderState[round], liftY = -(heights[round] + count * gap + 60);
+        if (time < at + 0.5) {
+          const k = easeIn(part(time, at, 0.5));
+          lifted.y = mix(0, liftY, k); lifted.rotation = mix(0, -3, k);
+        } else {
+          const k = easeOut(part(time, at + 0.5, 0.55));
+          lifted.zIndex = -round - 1; lifted.y = mix(liftY, -(count - 1) * gap, k); lifted.scale = mix(1, depth(count - 1), k); lifted.rotation = mix(-3, 0, k);
+        }
+        const k = easeStep(part(time, at + 0.35, 0.7));
+        folderState.forEach((entry, index) => {
+          if (index === round) return;
+          const slot = (index - round + count) % count;
+          entry.y = mix(-slot * gap, -(slot - 1) * gap, k); entry.scale = mix(depth(slot), depth(slot - 1), k);
+        });
+      }
+      folderState.forEach((entry, index) => { const set = setters[index]; set.y(entry.y); set.scale(entry.scale); set.rotation(entry.rotation); set.zIndex(entry.zIndex); });
+    };
+    gsap.to(state, { progress: 1, ease: 'none', onUpdate: render, scrollTrigger: {
+      id: 'hours-drawer', trigger: track, start: () => `top ${stickyTop()}px`, end: () => `bottom ${stickyTop() + drawer.offsetHeight}px`, scrub: 0.6,
+      onRefreshInit: measure, onRefresh: render
+    }});
+    measure();
+    render();
+    return () => {
+      gsap.set(folders, { clearProps: 'transform,zIndex' });
+      section.removeAttribute('data-drawer'); section.style.removeProperty('--drawer-steps');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:saturday-strip">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('saturday');
+    const track = section.querySelector('.saturday__track');
+    const row = section.querySelector('.saturday__row');
+    const photos = [...section.querySelectorAll('.frame__photo')];
+    section.setAttribute('data-strip', '');
+    const distance = () => Math.max(0, row.scrollWidth - document.documentElement.clientWidth);
+    const setRun = () => section.style.setProperty('--strip-run', `${distance()}px`);
+    const lean = { amount: 0 };
+    const applyLean = () => {
+      const amount = lean.amount;
+      photos.forEach(photo => {
+        if (Math.abs(amount) < 0.003) photo.style.removeProperty('--m-tab-at');
+        else photo.style.setProperty('--m-tab-at', `${(36 + amount * 24).toFixed(2)}%`);
+      });
+    };
+    const leanTo = gsap.quickTo(lean, 'amount', { duration: 0.55, ease: 'power3.out', onUpdate: applyLean });
+    let settle = null;
+    setRun();
+    gsap.to(row, { x: () => -distance(), ease: 'none', scrollTrigger: {
+      id: 'saturday-strip', trigger: track, start: 'top top', end: 'bottom bottom', scrub: 0.5, invalidateOnRefresh: true,
+      onRefreshInit: setRun,
+      onUpdate: self => {
+        leanTo(gsap.utils.clamp(-1, 1, -self.getVelocity() / 2400));
+        if (settle) settle.kill();
+        settle = gsap.delayedCall(0.16, () => leanTo(0));
+      }
+    }});
+    return () => {
+      if (settle) settle.kill();
+      section.removeAttribute('data-strip');
+      section.style.removeProperty('--strip-run');
+      photos.forEach(photo => photo.style.removeProperty('--m-tab-at'));
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:streets-fill">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('streets');
+    const list = section.querySelector('.streets__names');
+    const names = [...list.querySelectorAll('.street')];
+    let tops = [];
+    const pageTop = element => { let top = 0, node = element; while (node) { top += node.offsetTop; node = node.offsetParent; } return top; };
+    const measure = () => {
+      let rowTop = null, inRow = 0;
+      tops = names.map(name => {
+        const top = pageTop(name);
+        inRow = top === rowTop ? inRow + 1 : 0;
+        rowTop = top;
+        name.style.transitionDelay = `${inRow * 70}ms`;
+        return top;
+      });
+    };
+    const light = () => {
+      const line = scrollY + innerHeight * 0.78;
+      names.forEach((name, index) => name.classList.toggle('is-lit', tops[index] < line));
+    };
+    section.setAttribute('data-fill', '');
+    measure();
+    light();
+    ScrollTrigger.create({ id: 'streets-fill', trigger: list, start: 'top bottom', end: 'bottom top', onRefresh: () => { measure(); light(); }, onUpdate: light, onLeave: light, onLeaveBack: light });
+    return () => {
+      section.removeAttribute('data-fill');
+      names.forEach(name => { name.classList.remove('is-lit'); name.style.removeProperty('transition-delay'); });
+    };
+  });
+}, { near: document.querySelector('#streets .streets__names') });
+</script>
+<script data-8b-part="section-script:give">
+(() => {
+  const form = document.querySelector('#give [data-give-form]');
+  if (!form) return;
+  const message = form.querySelector('[data-give-message]');
+  form.addEventListener('submit', event => { event.preventDefault(); message.hidden = false; });
+})();
+</script>
+<script data-8b-part="scene:give-deal">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 760px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 759px)'
+  }, context => {
+    const section = document.getElementById('give');
+    const list = section.querySelector('.give__cards');
+    const cards = [...list.querySelectorAll('.gift')];
+    const middle = (cards.length - 1) / 2;
+    const wide = context.conditions.wide;
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'give-deal', trigger: list, start: 'top 88%', end: 'center 52%', scrub: 0.6, invalidateOnRefresh: true
+    }});
+    cards.forEach((card, index) => {
+      const offset = index - middle;
+      gsap.set(card, { zIndex: 10 - Math.round(Math.abs(offset) * 2) });
+      timeline.from(card, wide
+        ? { x: () => -offset * (card.offsetWidth + 16) * 0.94, y: () => Math.abs(offset) * 30, rotation: offset * 8, duration: 1, ease: 'power2.out' }
+        : { y: () => -offset * (card.offsetHeight + 16) * 0.94, rotation: offset * 4, duration: 1, ease: 'power2.out' }, 0);
+    });
+  });
+}, { near: document.querySelector('#give .give__cards') });
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact [data-signup-form]');
+  if (!form) return;
+  const message = form.querySelector('[data-signup-message]');
+  form.addEventListener('submit', event => { event.preventDefault(); if (form.reportValidity()) message.hidden = false; });
+})();
+</script>
+<script data-8b-part="scene:contact-skyline">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const sky = section.querySelector('.contact__sky');
+    const cards = [...sky.querySelectorAll('.contact__card')];
+    const middle = (cards.length - 1) / 2 || 1;
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'contact-skyline', trigger: sky, start: 'top 95%', end: 'bottom 60%', scrub: 0.6, invalidateOnRefresh: true
+    }});
+    cards.forEach((card, index) => {
+      const inner = 1 - Math.abs(index - middle) / middle;
+      timeline.from(card, { yPercent: 102, duration: 0.55 + inner * 0.25, ease: 'power2.out' }, inner * 0.2);
+    });
+  });
+}, { near: document.querySelector('#contact .contact__sky') });
+</script>
+</body>
+</html>

@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #18181b;
+  --color-3: #62626b;
+  --color-4: #f4f4f5;
+  --color-5: #ffb547;
+  --color-6: #fc5f2b;
+  --color-7: #120d0a;
+  --color-8: #a1a1aa;
+  --color-9: #e4e4e7;
+  --color-10: #ffe3b3;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 0.875rem;
+  --radius-2: 999px;
+  --space-1: clamp(5rem, 13vh, 9rem);
+  --space-2: clamp(1.25rem, 4vw, 3.5rem);
+  --space-3: 0.5rem;
+  --shadow-1: 0 1.75rem 3.5rem -1.5rem color-mix(in srgb, var(--color-7) 45%, transparent);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.1%; ascent-override: 97%; descent-override: 30.4%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 93.5%; ascent-override: 109%; descent-override: 34.2%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; height: auto; }
+  h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  [data-ground="dark"] :focus-visible { outline-color: var(--color-1); }
+  [data-ground="dark"] .m-surface-3 :focus-visible { outline-color: var(--color-2); }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  [data-loop].is-paused { animation-play-state: paused; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(2.75rem, 5.4vw, 5rem); font-weight: 400; line-height: 1.02; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(2rem, 3.5vw, 3.25rem); font-weight: 400; line-height: 1.06; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(1.25rem, 1.6vw, 1.5rem); font-weight: 400; line-height: 1.25; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: 0.875rem; font-weight: 500; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: 0.9375rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-3); }
+.m-text-7 { font-family: var(--font-1); font-size: 0.9375rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-8); }
+.m-text-8 { font-family: var(--font-1); font-size: clamp(1.5rem, 2.3vw, 2.125rem); font-weight: 400; line-height: 1.22; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+
+.m-btn, .m-btn-2, .m-btn-3 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.875rem 1.5rem; border: 0; border-radius: var(--radius-2); overflow: hidden; isolation: isolate; font-family: var(--font-1); font-size: 0.9375rem; font-weight: 500; line-height: 1.1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color 0.35s ease; }
+.m-btn::before, .m-btn-2::before, .m-btn-3::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 100%; width: 150%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle closest-side, var(--color-10), var(--color-5) 55%, var(--color-6)); transform: translate(-50%, -50%) scale(0); transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.m-btn { background: var(--color-2); color: var(--color-1); }
+.m-btn-2 { background: var(--color-1); color: var(--color-2); }
+.m-btn-3 { background: color-mix(in srgb, var(--color-1) 16%, transparent); color: var(--color-1); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn-2:hover, .m-btn-3:hover { color: var(--color-2); }
+  .m-btn:hover::before, .m-btn-2:hover::before, .m-btn-3:hover::before { transform: translate(-50%, -50%) scale(1); }
+}
+.m-btn:focus-visible::before, .m-btn-2:focus-visible::before, .m-btn-3:focus-visible::before { transform: translate(-50%, -50%) scale(1); }
+.m-btn:focus-visible, .m-btn-2:focus-visible, .m-btn-3:focus-visible { color: var(--color-2); }
+
+.m-link { font: inherit; color: inherit; text-decoration: none; padding-bottom: 0.15em; background: linear-gradient(var(--color-6), var(--color-6)) 50% 100% / 0% 2px no-repeat, linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; transition: background-size 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 2px, 100% 1px; } }
+.m-link:focus-visible { background-size: 100% 2px, 100% 1px; }
+
+.m-iconbtn { position: relative; display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: 50%; background: transparent; color: inherit; cursor: pointer; transition: border-color 0.35s ease; }
+.m-iconbtn__icon { position: relative; width: 1.125rem; height: 0.625rem; transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.m-iconbtn__icon::before, .m-iconbtn__icon::after { content: ""; position: absolute; left: 0; right: 0; height: 1.5px; background: currentColor; }
+.m-iconbtn__icon::before { top: 0; }
+.m-iconbtn__icon::after { bottom: 0; }
+@media (hover: hover) { .m-iconbtn:hover { border-color: var(--color-6); } .m-iconbtn:hover .m-iconbtn__icon { transform: rotate(90deg); } }
+
+.m-surface { background: color-mix(in srgb, var(--color-1) 82%, transparent); color: var(--color-2); border: 1px solid color-mix(in srgb, var(--color-1) 70%, transparent); border-radius: var(--radius-1); box-shadow: var(--shadow-1); -webkit-backdrop-filter: blur(18px) saturate(1.2); backdrop-filter: blur(18px) saturate(1.2); }
+.m-surface-2 { background: color-mix(in srgb, var(--color-7) 80%, transparent); color: var(--color-1); border: 1px solid color-mix(in srgb, var(--color-1) 14%, transparent); border-radius: var(--radius-1); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); }
+.m-surface-3 { background: var(--color-1); color: var(--color-2); border-radius: var(--radius-1); box-shadow: var(--shadow-1); }
+.m-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.7rem 0.3rem 0.35rem; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 0.8125rem; font-weight: 500; line-height: 1.2; letter-spacing: 0; white-space: nowrap; }
+.m-badge__icon { position: relative; width: 1.125rem; height: 1.125rem; border-radius: 50%; background: var(--color-6); }
+.m-badge__icon::after { content: ""; position: absolute; left: 0.36rem; top: 0.22rem; width: 0.3rem; height: 0.52rem; border: solid var(--color-1); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+.m-field { display: block; width: 100%; min-height: 3rem; padding: 0.8rem 1rem; border: 1px solid var(--color-9); border-radius: 0.625rem; background: var(--color-4); color: var(--color-2); font-family: var(--font-1); font-size: 1rem; font-weight: 400; line-height: 1.4; transition: border-color 0.3s ease; }
+.m-field:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .container { width: min(100% - 2 * var(--space-2), 80rem); margin-inline: auto; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; z-index: 50; inset: 0 0 auto 0; transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  #navigation.is-hidden { transform: translateY(-100%); }
+  #navigation .nav__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.5rem; height: 4.5rem; padding-inline: var(--space-2); background: var(--color-1); color: var(--color-2); }
+  #navigation .nav__links { display: flex; gap: 1.75rem; font-size: 0.9375rem; }
+  #navigation .nav__logo { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 1.625rem; font-weight: 600; letter-spacing: -0.045em; line-height: 1; }
+  #navigation .nav__mark { width: 1rem; height: 1rem; border-radius: 50%; background: radial-gradient(circle closest-side, var(--color-10), var(--color-5) 45%, var(--color-6)); }
+  #navigation .nav__actions { display: flex; align-items: center; justify-content: flex-end; gap: 1.25rem; font-size: 0.9375rem; }
+  #navigation .nav__menu { display: none; }
+  #navigation .menu { position: fixed; z-index: 60; inset: 0; display: flex; flex-direction: column; padding: 1rem var(--space-2) 2rem; background: var(--color-1); color: var(--color-2); overflow-y: auto; }
+  #navigation .menu[hidden] { display: none; }
+  #navigation .menu__top { display: flex; justify-content: space-between; align-items: center; height: 2.5rem; margin-bottom: 2.5rem; }
+  #navigation .menu__list { display: grid; gap: 1.25rem; font-size: 2rem; letter-spacing: -0.03em; line-height: 1.1; }
+  #navigation .menu__foot { margin-top: auto; display: grid; gap: 1rem; justify-items: start; }
+  #navigation .menu__close .m-iconbtn__icon { transform: rotate(45deg); height: 0; }
+  #navigation .menu__close .m-iconbtn__icon::before { top: 0; transform: rotate(0deg); }
+  #navigation .menu__close .m-iconbtn__icon::after { bottom: auto; top: 0; transform: rotate(90deg); }
+  @media (max-width: 960px) {
+    #navigation .nav__bar { grid-template-columns: 1fr auto; height: 4rem; gap: 0.75rem; }
+    #navigation .nav__links, #navigation .nav__tel { display: none; }
+    #navigation .nav__logo { grid-row: 1; grid-column: 1; font-size: 1.5rem; }
+    #navigation .nav__actions { gap: 0.625rem; }
+    #navigation .nav__actions .m-btn { min-height: 2.5rem; padding: 0.625rem 1rem; font-size: 0.875rem; }
+    #navigation .nav__menu { display: inline-grid; }
+  }
+  @media (max-width: 360px) {
+    #navigation .nav__actions .m-btn { padding-inline: 0.8rem; }
+  }
+  @media (max-width: 389px) {
+    #navigation .nav__bar { gap: 0.5rem; }
+    #navigation .nav__logo { font-size: 1.25rem; gap: 0.375rem; }
+    #navigation .nav__actions { gap: 0.5rem; }
+    #navigation .nav__actions .m-btn { padding-inline: 0.75rem; font-size: 0.8125rem; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { --opening-top: var(--nav-h, 4.5rem); position: relative; display: grid; grid-template-columns: 100%; grid-template-rows: 100svh auto; background: var(--color-7); }
+  #opening .opening__stage { grid-area: 1 / 1 / 3 / 2; position: sticky; top: 0; align-self: start; height: 100svh; background: var(--color-1); }
+  #opening .opening__frame { position: absolute; inset: 0; overflow: hidden; isolation: isolate; background: var(--color-7); clip-path: inset(var(--opening-top) var(--space-3) var(--space-3) var(--space-3) round var(--radius-1)); }
+  #opening .opening__disc { --opening-disc: min(104vmin, 62rem); position: absolute; width: var(--opening-disc); height: var(--opening-disc); left: calc(62% - var(--opening-disc) / 2); top: calc(46% - var(--opening-disc) / 2); }
+  #opening .disc__intro, #opening .disc__core { position: absolute; inset: 0; border-radius: 50%; }
+  #opening .disc__core { background: radial-gradient(circle closest-side, var(--color-10), var(--color-5) 32%, var(--color-6) 62%, color-mix(in srgb, var(--color-6) 32%, transparent) 80%, transparent); }
+  #opening .opening__photo { position: absolute; inset: 0; mix-blend-mode: multiply; }
+  #opening .opening__photo-in { position: absolute; inset: 0; }
+  #opening .opening__photo img { position: absolute; bottom: 0; left: 62%; width: auto; max-width: none; height: 88%; aspect-ratio: 1600 / 1067; transform: translateX(-55%) scaleX(-1); filter: grayscale(1) contrast(1.3) brightness(1.08); -webkit-mask-image: linear-gradient(to bottom, transparent 3%, var(--color-2) 14%), linear-gradient(to right, transparent, var(--color-2) 16%, var(--color-2) 84%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(to bottom, transparent 3%, var(--color-2) 14%), linear-gradient(to right, transparent, var(--color-2) 16%, var(--color-2) 84%, transparent); mask-composite: intersect; }
+  #opening .opening__first { grid-area: 1 / 1 / 2 / 2; position: relative; z-index: 1; display: flex; align-items: center; padding: calc(var(--opening-top) + 2rem) 0 2.5rem; color: var(--color-1); }
+  #opening .opening__intro { display: grid; justify-items: start; gap: 1.5rem; }
+  #opening .opening__heading { max-width: 8.6em; text-wrap: balance; }
+  #opening .opening__lead { max-width: 25rem; }
+  #opening .opening__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+  #opening .opening__checks { display: grid; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.875rem; font-weight: 500; }
+  #opening .opening__checks li { display: inline-flex; align-items: center; gap: 0.5rem; }
+  #opening .opening__checks li::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-5); }
+  #opening .opening__second { grid-area: 2 / 1 / 3 / 2; position: relative; z-index: 1; display: flex; align-items: center; min-height: 100svh; padding: 7rem 0 5rem; color: var(--color-2); background: radial-gradient(circle farthest-corner at 61% 40%, var(--color-10), var(--color-5) 38%, var(--color-6) 100%); }
+  #opening .opening__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 3rem 5rem; align-items: center; }
+  #opening .opening__copy { display: grid; gap: 1.5rem; justify-items: start; max-width: 34rem; }
+  #opening .aip { padding: 1.75rem; display: grid; gap: 0.25rem; max-width: 26rem; justify-self: end; width: 100%; }
+  #opening .aip__head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+  #opening .aip__sum { font-size: clamp(2.5rem, 4vw, 3.5rem); line-height: 1.05; letter-spacing: -0.035em; }
+  #opening .aip__rows { display: grid; margin: 1.25rem 0 1rem; border-top: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); }
+  #opening .aip__row { --rows-lit: 1; position: relative; display: flex; justify-content: space-between; gap: 1rem; padding: 0.7rem 0 0.7rem 1rem; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); font-size: 0.9375rem; }
+  #opening .aip__row::before { content: ""; position: absolute; left: 0; top: 50%; width: 0.375rem; height: 0.375rem; margin-top: -0.1875rem; border-radius: 50%; background: var(--color-6); transform: scale(var(--rows-lit)); }
+  #opening .aip__row dd { text-align: right; font-weight: 500; }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .opening__intro { animation: opening-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+    #opening .disc__intro { animation: opening-glow 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+    #opening .opening__photo-in { animation: opening-settle 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+    #opening .disc__core { animation: opening-drift 7s ease-in-out infinite alternate; }
+    #opening .disc__core.is-paused { animation-play-state: paused; }
+  }
+  @keyframes opening-rise { from { transform: translateY(1.5rem); } }
+  @keyframes opening-glow { from { transform: scale(0.72); } }
+  @keyframes opening-settle { from { transform: scale(1.06); } }
+  @keyframes opening-drift { 0% { transform: translate(-2.75rem, 1.25rem) scale(0.96); } 100% { transform: translate(2.75rem, -1.5rem) scale(1.05); } }
+  @keyframes opening-drift-small { 0% { transform: translate(-1.5rem, 0.5rem) scale(0.97); } 100% { transform: translate(1.5rem, -1rem) scale(1.04); } }
+  @media (max-width: 960px) and (prefers-reduced-motion: no-preference) { #opening .disc__core { animation-name: opening-drift-small; } }
+  @media (max-width: 960px) {
+    #opening { --opening-top: var(--nav-h, 4rem); }
+    #opening .opening__disc { --opening-disc: min(104vw, 32rem); left: calc(56% - var(--opening-disc) / 2); top: calc(24% - var(--opening-disc) / 2); }
+    #opening .opening__photo img { top: 5%; bottom: auto; left: 56%; height: 50%; }
+    #opening .opening__first { align-items: flex-end; padding-bottom: 2.25rem; }
+    #opening .opening__intro { gap: 1.125rem; }
+    #opening .opening__lead { font-size: 1.0625rem; }
+    #opening .opening__grid { grid-template-columns: 100%; }
+    #opening .aip { justify-self: stretch; max-width: none; padding: 1.375rem; }
+    #opening .opening__second { padding: 5.5rem 0 4rem; }
+  }
+}
+</style>
+<style data-8b-part="section:market">
+@layer sections {
+  #market { padding: var(--space-1) 0; }
+  #market .market__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 1.5rem 4rem; align-items: end; }
+  #market .market__lead { max-width: 30rem; }
+  #market .market__chart { margin-top: clamp(3rem, 8vh, 5rem); }
+  #market .market__field { position: relative; height: clamp(10rem, 30vh, 17rem); background: repeating-linear-gradient(to right, var(--color-6) 0 3px, transparent 3px calc(100% / var(--market-count))); }
+  #market .market__field.has-lines { background: none; }
+  #market .market__lines { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: flex-end; }
+  #market .market__line { flex: none; width: 3px; height: 100%; background: var(--color-6); transform-origin: 50% 100%; }
+  #market .market__line.is-bank { background: var(--color-2); }
+  #market .market__labels { position: relative; height: 3.75rem; margin-top: 1rem; }
+  #market .market__label { position: absolute; top: 0; display: grid; gap: 0.15rem; }
+  #market .market__label--bank { left: calc(var(--market-bank) / (var(--market-count) - 1) * 100%); padding-left: 0.75rem; border-left: 1px solid var(--color-2); }
+  #market .market__label--end { right: 0; text-align: right; padding-right: 0.75rem; border-right: 1px solid var(--color-6); }
+  #market .market__kinds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: clamp(3rem, 8vh, 5rem); padding-top: 2rem; border-top: 1px solid var(--color-9); }
+  #market .market__kinds li { display: grid; gap: 0.5rem; align-content: start; }
+  @media (max-width: 960px) {
+    #market .market__head { grid-template-columns: 100%; }
+    #market .market__line { width: 1.5px; }
+    #market .market__labels { height: 7rem; }
+    #market .market__label--end { top: 3.5rem; }
+    #market .market__kinds { grid-template-columns: 100%; gap: 1.5rem; }
+  }
+}
+</style>
+<style data-8b-part="section:method">
+@layer sections {
+  #method { padding: var(--space-1) 0 calc(var(--space-1) / 2); }
+  #method .method__head { display: grid; gap: 1rem; justify-items: start; margin-bottom: clamp(1rem, 4vh, 3rem); }
+  #method .method__lead { max-width: 32rem; }
+  #method .method__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 clamp(2rem, 5vw, 5rem); }
+  #method .method__stage { grid-column: 2; grid-row: 1; position: sticky; top: 12vh; height: 76vh; align-self: start; }
+  #method .method__steps { grid-column: 1; grid-row: 1; }
+  #method .method__step { min-height: 76vh; display: grid; align-content: center; padding: 2rem 0; }
+  #method .method__card { display: grid; justify-items: start; gap: 1rem; }
+  #method .method__num { display: inline-flex; align-items: center; gap: 0.6rem; }
+  #method .method__num::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-6); }
+  #method .method__title { font-size: clamp(1.75rem, 2.6vw, 2.5rem); max-width: 14em; }
+  #method .method__text { max-width: 26rem; }
+  #method .method__frame { position: relative; height: 100%; border-radius: var(--radius-1); overflow: hidden; background: var(--color-7); }
+  #method .method__photo { position: absolute; inset: 0; margin: 0; clip-path: inset(0 0 0 0); }
+  #method .method__photo:nth-child(1) { z-index: 4; }
+  #method .method__photo:nth-child(2) { z-index: 3; }
+  #method .method__photo:nth-child(3) { z-index: 2; }
+  #method .method__photo:nth-child(4) { z-index: 1; }
+  #method .method__shift { position: absolute; inset: 0; }
+  #method .method__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #method .method__chip { position: absolute; left: 1.25rem; bottom: 1.25rem; display: grid; justify-items: start; gap: 0.4rem; padding: 1rem 1.125rem; max-width: 19rem; }
+  #method .method__index { position: absolute; z-index: 5; top: 1.25rem; right: 1.25rem; display: grid; gap: 0.5rem; padding: 0.875rem 1.125rem; }
+  #method .method__index li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.8125rem; font-weight: 500; line-height: 1.2; }
+  #method .method__dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-5); }
+  @media (max-width: 960px) {
+    #method .method__body { grid-template-columns: 100%; width: calc(100% - 2 * var(--space-3)); }
+    #method .method__stage { grid-area: 1 / 1; top: 0; height: 100svh; padding: var(--space-3) 0; }
+    #method .method__steps { grid-area: 1 / 1; position: relative; z-index: 1; }
+    #method .method__step { min-height: 100svh; padding: 0 0.75rem; }
+    #method .method__card { gap: 0.75rem; padding: 1.25rem; border-radius: var(--radius-1); color: var(--color-1); background: color-mix(in srgb, var(--color-7) 82%, transparent); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); }
+    #method .method__title { font-size: 1.625rem; }
+    #method .method__chip { left: 0.75rem; top: 24%; bottom: auto; right: 0.75rem; max-width: none; padding: 0.75rem 0.875rem; }
+    #method .method__index { left: 0.75rem; right: 0.75rem; top: 4.75rem; display: flex; justify-content: space-between; padding: 0.6rem 0.875rem; }
+    #method .method__label { display: none; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:method">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #method.is-staged .method__photo { z-index: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:included">
+@layer sections {
+  #included { padding: var(--space-1) 0; }
+  #included .included__inner { display: grid; justify-items: center; text-align: center; gap: 1.5rem; }
+  #included .included__title { max-width: 15em; }
+  #included .included__lead { max-width: 36rem; }
+  #included .included__ledger { width: min(100%, 48rem); margin: 1.5rem 0 0.5rem; text-align: left; }
+  #included .included__row { --rows-lit: 1; position: relative; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0.25rem 1.5rem; padding: 0.9rem 1rem 0.9rem 2.25rem; border-radius: 0.5rem; font-size: 0.9375rem; color: color-mix(in srgb, var(--color-2) calc(var(--rows-lit) * 100%), var(--color-9)); }
+  #included .included__row:nth-child(odd) { background: var(--color-4); }
+  #included .included__row::before { content: ""; position: absolute; left: 1rem; top: 1.3rem; width: 0.4375rem; height: 0.4375rem; border-radius: 50%; background: var(--color-6); transform: scale(var(--rows-lit)); }
+  #included .included__row dt { font-weight: 500; }
+  #included .included__row dd { color: color-mix(in srgb, var(--color-3) calc(var(--rows-lit) * 100%), var(--color-9)); }
+  #included .included__note { max-width: 34rem; }
+  @media (max-width: 640px) {
+    #included .included__inner { text-align: left; justify-items: start; }
+    #included .included__row { grid-template-columns: 100%; }
+  }
+}
+</style>
+<style data-8b-part="section:advisers">
+@layer sections {
+  #advisers { padding: var(--space-1) 0; background: var(--color-2); color: var(--color-1); }
+  #advisers .advisers__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 1.5rem 4rem; align-items: end; margin-bottom: clamp(2.5rem, 7vh, 4.5rem); }
+  #advisers .advisers__list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem 1.25rem; }
+  #advisers .adviser__frame { aspect-ratio: 3 / 4; overflow: hidden; clip-path: inset(0 round var(--radius-1)); background: var(--color-7); }
+  #advisers .adviser__frame img { width: 100%; height: 100%; object-fit: cover; }
+  #advisers .adviser__text { display: grid; gap: 0.35rem; margin-top: 1.125rem; }
+  #advisers .adviser__role { color: var(--color-5); }
+  @media (max-width: 960px) {
+    #advisers .advisers__head { grid-template-columns: 100%; }
+    #advisers .advisers__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 0.875rem; }
+    #advisers .adviser__name { font-size: 1.125rem; }
+  }
+}
+</style>
+<style data-8b-part="section:stories">
+@layer sections {
+  #stories { padding: var(--space-1) 0; }
+  #stories .stories__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 1rem 4rem; align-items: end; margin-bottom: clamp(3rem, 8vh, 5rem); }
+  #stories .stories__list { display: grid; gap: clamp(4rem, 12vh, 7.5rem); }
+  #stories .story { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 2rem clamp(2rem, 6vw, 6rem); align-items: center; }
+  #stories .story:nth-child(even) .story__photo { order: 2; }
+  #stories .story__photo { margin: 0; aspect-ratio: 5 / 4; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); }
+  #stories .story__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #stories .story:nth-child(1) .story__photo img { object-position: 50% 25%; }
+  #stories .story__text { display: grid; gap: 1.25rem; justify-items: start; }
+  #stories .story__quote { margin: 0; }
+  #stories .story__result { display: inline-flex; align-items: center; gap: 0.6rem; padding-top: 1rem; border-top: 1px solid var(--color-9); }
+  #stories .story__result::before { content: ""; flex: none; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-6); }
+  @media (max-width: 960px) {
+    #stories .stories__head, #stories .story { grid-template-columns: 100%; }
+    #stories .story:nth-child(even) .story__photo { order: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:switch">
+@layer sections {
+  #switch { padding: var(--space-1) 0; background: var(--color-5); color: var(--color-2); }
+  #switch .switch__track { display: grid; gap: clamp(2.5rem, 6vh, 4rem); width: min(100% - 2 * var(--space-2), 80rem); margin-inline: auto; }
+  #switch .switch__intro { display: grid; gap: 1.25rem; max-width: 36rem; }
+  #switch .switch__run { position: relative; }
+  #switch .switch__line { display: none; }
+  #switch .switch__panels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+  #switch .switch__panel { display: grid; gap: 1rem; align-content: start; justify-items: start; }
+  #switch .switch__dot { width: 1rem; height: 1rem; border-radius: 50%; background: var(--color-2); outline: 0.375rem solid color-mix(in srgb, var(--color-1) 45%, transparent); }
+  #switch .switch__when { font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.05; }
+  #switch .switch__panel > .m-text { max-width: 24rem; }
+  #switch .switch__card { display: grid; gap: 0.25rem; padding: 1rem 1.125rem; margin-top: 0.25rem; }
+  @media (max-width: 960px) {
+    #switch .switch__panels { grid-template-columns: 100%; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:switch">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #switch.is-track { height: 100svh; padding: 0; overflow: hidden; display: flex; align-items: center; }
+    #switch.is-track .switch__track { display: flex; align-items: center; gap: 0; width: max-content; margin: 0; padding-inline: var(--space-2); }
+    #switch.is-track .switch__intro { flex: none; width: min(34rem, 84vw); margin-right: 8vw; }
+    #switch.is-track .switch__line { display: block; position: absolute; left: 0; right: 4vw; top: 0.5rem; height: 2px; background: color-mix(in srgb, var(--color-2) 18%, transparent); }
+    #switch.is-track .switch__fill { position: absolute; inset: 0; background: var(--color-2); transform-origin: 0 50%; }
+    #switch.is-track .switch__panels { display: flex; gap: 0; }
+    #switch.is-track .switch__panel { position: relative; flex: none; width: min(31rem, 84vw); padding-right: 4vw; }
+  }
+}
+</style>
+<style data-8b-part="section:offer">
+@layer sections {
+  #offer { padding: var(--space-1) 0; }
+  #offer .offer__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 3rem clamp(2rem, 6vw, 6rem); align-items: center; }
+  #offer .offer__frame { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); }
+  #offer .offer__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+  #offer .offer__panel { position: absolute; left: 1.25rem; right: 1.25rem; bottom: 1.25rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.25rem 1.5rem; align-items: end; padding: 1.25rem 1.375rem; }
+  #offer .offer__panel > :not(svg) { grid-column: 1; }
+  #offer .offer__figure { font-size: clamp(2rem, 3.4vw, 2.75rem); line-height: 1.05; letter-spacing: -0.03em; }
+  #offer .offer__old { white-space: nowrap; text-decoration-thickness: 1px; }
+  #offer .offer__chart { grid-column: 2; grid-row: 1 / 4; width: clamp(6rem, 12vw, 9rem); height: auto; overflow: visible; }
+  #offer .offer__chart polyline { fill: none; stroke: var(--color-5); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; vector-effect: non-scaling-stroke; }
+  #offer .offer__copy { display: grid; gap: 1.5rem; justify-items: start; }
+  #offer .offer__price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 1rem; }
+  #offer .offer__amount { font-size: clamp(3rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -0.04em; }
+  #offer .offer__checks { display: grid; gap: 0.75rem; }
+  #offer .offer__checks li { display: flex; align-items: center; gap: 0.75rem; }
+  #offer .offer__checks li::before { content: ""; flex: none; width: 1.125rem; height: 1.125rem; border-radius: 50%; background: radial-gradient(circle, var(--color-1) 0 22%, var(--color-6) 26%); }
+  @media (max-width: 960px) {
+    #offer .offer__grid { grid-template-columns: 100%; }
+    #offer .offer__frame { aspect-ratio: 4 / 4.4; }
+    #offer .offer__panel { left: 0.75rem; right: 0.75rem; bottom: 0.75rem; padding: 1rem; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding: var(--space-1) 0; background: var(--color-4); }
+  #faq .faq__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2.5rem clamp(2rem, 6vw, 6rem); align-items: start; }
+  #faq .faq__head { display: grid; gap: 1.25rem; position: sticky; top: 7rem; }
+  #faq .faq__item { --rows-lit: 1; border-top: 1px solid color-mix(in srgb, var(--color-2) calc(var(--rows-lit) * 18%), transparent); color: color-mix(in srgb, var(--color-2) calc(var(--rows-lit) * 100%), var(--color-9)); }
+  #faq .faq__item:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-2) 18%, transparent); }
+  #faq .faq__q { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.4rem 0; cursor: pointer; list-style: none; }
+  #faq .faq__q::-webkit-details-marker { display: none; }
+  #faq .faq__icon { position: relative; flex: none; width: 2.25rem; height: 2.25rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--color-2) 30%, transparent); transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.35s ease; }
+  #faq .faq__icon::before, #faq .faq__icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 0.75rem; height: 1.5px; margin: -0.75px 0 0 -0.375rem; background: currentColor; }
+  #faq .faq__icon::after { transform: rotate(90deg); transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  #faq .faq__item[open] .faq__icon::after { transform: rotate(0deg); }
+  @media (hover: hover) { #faq .faq__q:hover .faq__icon { border-color: var(--color-6); transform: rotate(90deg); } }
+  #faq .faq__a { max-width: 40rem; padding: 0 3.5rem 1.6rem 0; }
+  @media (max-width: 960px) {
+    #faq .faq__grid { grid-template-columns: 100%; }
+    #faq .faq__head { position: static; }
+    #faq .faq__a { padding-right: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding: var(--space-1) 0; background: var(--color-7); color: var(--color-1); }
+  #contact .contact__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 3rem clamp(2rem, 5vw, 5rem); align-items: start; }
+  #contact .contact__visual { grid-column: 2; grid-row: 1 / 3; position: sticky; top: 10vh; height: 80vh; min-height: 30rem; overflow: hidden; isolation: isolate; border-radius: var(--radius-1); background: var(--color-7); }
+  #contact .contact__disc { --contact-disc: min(62vh, 36rem); position: absolute; width: var(--contact-disc); height: var(--contact-disc); left: calc(50% - var(--contact-disc) / 2); top: calc(42% - var(--contact-disc) / 2); }
+  #contact .contact__glow { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle closest-side, var(--color-10), var(--color-5) 34%, var(--color-6) 64%, color-mix(in srgb, var(--color-6) 30%, transparent) 82%, transparent); }
+  #contact .contact__photo { position: absolute; inset: 0; mix-blend-mode: multiply; }
+  #contact .contact__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; filter: grayscale(1) contrast(1.35) brightness(1.06); }
+  #contact .contact__copy { grid-column: 1; display: grid; gap: 1.5rem; }
+  #contact .contact__title { max-width: 11em; }
+  #contact .contact__details { display: grid; gap: 1rem; margin-top: 0.5rem; }
+  #contact .contact__details div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 1rem; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
+  #contact .contact__form { grid-column: 1; display: grid; gap: 1rem; padding: clamp(1.25rem, 3vw, 2rem); }
+  #contact .contact__field { display: grid; gap: 0.4rem; }
+  #contact .contact__pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem; }
+  #contact .contact__form .m-btn { justify-self: start; margin-top: 0.5rem; }
+  @media (max-width: 960px) {
+    #contact .contact__grid { grid-template-columns: 100%; }
+    #contact .contact__visual { grid-column: 1; grid-row: auto; position: relative; top: auto; height: auto; min-height: 0; aspect-ratio: 4 / 3.4; }
+    #contact .contact__disc { --contact-disc: 82vw; }
+    #contact .contact__pair { grid-template-columns: 100%; }
+  }
+  @media (max-width: 389px) {
+    #contact .contact__details dd { overflow-wrap: anywhere; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: 0 var(--space-3) var(--space-3); background: var(--color-7); }
+  #footer .footer__card { padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 3.5rem) 2rem; display: grid; gap: clamp(2.5rem, 6vh, 4rem); box-shadow: none; }
+  #footer .footer__top { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr); gap: 2.5rem; }
+  #footer .footer__brand { display: grid; gap: 1.25rem; justify-items: start; align-content: start; }
+  #footer .footer__logo { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 2rem; font-weight: 600; letter-spacing: -0.045em; line-height: 1; }
+  #footer .footer__mark { width: 1.125rem; height: 1.125rem; border-radius: 50%; background: radial-gradient(circle closest-side, var(--color-10), var(--color-5) 45%, var(--color-6)); }
+  #footer .footer__col { display: grid; gap: 1rem; align-content: start; }
+  #footer .footer__col ul { display: grid; gap: 0.7rem; font-size: 0.9375rem; }
+  #footer .footer__col a { justify-self: start; }
+  #footer .footer__legal { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 1rem 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--color-9); }
+  #footer .footer__legal p:last-child { text-align: right; }
+  @media (max-width: 960px) {
+    #footer .footer__top, #footer .footer__legal { grid-template-columns: 100%; }
+    #footer .footer__legal p:last-child { text-align: left; }
+  }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening { grid-template-rows: auto; }
+#opening .opening__second { grid-area: 1 / 1 / 2 / 2; }
+#opening .opening__copy h1 { text-wrap: balance; }
+#opening .opening__copy .opening__actions { align-items: center; gap: 0.75rem 1.75rem; margin-top: 0.25rem; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__copy > * { animation: opening-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+  #opening .opening__copy > :nth-child(2) { animation-delay: 0.08s; }
+  #opening .opening__copy > :nth-child(3) { animation-delay: 0.16s; }
+  #opening .aip { animation: opening-rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s backwards; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="visually-hidden" href="#main">{{t1|Skip to content}}</a>
+
+<header class="nav" data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<nav aria-label="Main" class="nav__links">
+<a class="m-link" href="#method">{{t2|How it works}}</a>
+<a class="m-link" href="#advisers">{{t3|Advisers}}</a>
+<a class="m-link" href="#stories">{{t4|Stories}}</a>
+<a class="m-link" href="#faq">{{t5|FAQ}}</a>
+</nav>
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening"><span aria-hidden="true" class="nav__mark"></span><span class="nav__word">{{t6|keylight}}</span></a>
+<div class="nav__actions">
+<a class="nav__tel m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t7|⟦phone⟧}}</a>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-iconbtn nav__menu" type="button"><span class="visually-hidden">{{t9|Open menu}}</span><span aria-hidden="true" class="m-iconbtn__icon"></span></button>
+</div>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="nav__logo"><span aria-hidden="true" class="nav__mark"></span><span class="nav__word">{{t6|keylight}}</span></span>
+<button class="m-iconbtn menu__close" type="button"><span class="visually-hidden">{{t10|Close menu}}</span><span aria-hidden="true" class="m-iconbtn__icon"></span></button>
+</div>
+<nav aria-label="Menu">
+<ul class="menu__list" role="list">
+{{#nv_method}}<li><a class="m-link" href="#method">{{t2|How it works}}</a></li>{{/nv_method}}
+{{#nv_included}}<li><a class="m-link" href="#included">{{t11|What's included}}</a></li>{{/nv_included}}
+{{#nv_advisers}}<li><a class="m-link" href="#advisers">{{t3|Advisers}}</a></li>{{/nv_advisers}}
+{{#nv_stories}}<li><a class="m-link" href="#stories">{{t4|Stories}}</a></li>{{/nv_stories}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t5|FAQ}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<div class="menu__foot">
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t7|⟦phone⟧}}</a>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" class="opening" data-8b-section="opening" id="opening">
+<div class="opening__second" id="borrow">
+<div class="container opening__grid">
+<div class="opening__copy">
+<h1 class="m-text-3" id="opening-title">{{t12|Know your number before you fall for a house.}}</h1>
+<p class="m-text">{{t13|One 20-minute call, a soft credit check that leaves no footprint, and a figure in writing that estate agents take seriously. Most people have theirs the same day.}}</p>
+<div class="opening__actions"><a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a><a class="m-link" href="#method">{{t14|See how it works}}</a></div>
+</div>
+<article aria-label="Example agreement in principle" class="aip m-surface">
+<div class="aip__head">
+<span class="m-text-5">{{t15|Agreement in principle}}</span>
+<span class="m-badge"><span aria-hidden="true" class="m-badge__icon"></span><span class="m-badge__label">{{t16|Ready}}</span></span>
+</div>
+<p class="m-text-6">{{t17|You could borrow up to}}</p>
+<p class="aip__sum"><data value="312500">{{t18|₦156,250,000}}</data></p>
+<dl class="aip__rows">
+<div class="aip__row"><dt>{{t19|Deposit}}</dt><dd>{{t20|₦17,500,000 · 10%}}</dd></div>
+<div class="aip__row"><dt>{{t21|Term}}</dt><dd>{{t22|30 years}}</dd></div>
+<div class="aip__row"><dt>{{t23|Monthly from}}</dt><dd>{{t24|₦743,000 at 4.29% fixed}}</dd></div>
+<div class="aip__row"><dt>{{t25|Lenders who'd say yes}}</dt><dd>{{t26|41 of 94}}</dd></div>
+<div class="aip__row"><dt>{{t27|Valid until}}</dt><dd>{{t28|14 January 2027}}</dd></div>
+</dl>
+<p class="m-text-6">{{t29|Example for a couple earning ₦34,000,000 a year between them.}}</p>
+</article>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_market}}<section aria-labelledby="market-title" class="market" data-8b-section="market" id="market">
+<div class="container">
+<div class="market__head">
+<h2 class="m-text-3" id="market-title">{{t30|Your bank shows you one shelf. We show you the whole market.}}</h2>
+<p class="m-text market__lead">{{t31|A bank can only offer its own mortgages. We compare}} <data class="market__count" value="94">{{t32|94 lenders}}</data>{{t33|, including building societies and specialist lenders that only take applications through brokers, and rank them by what you would actually pay.}}</p>
+</div>
+<div class="market__chart" style="--market-count: 94; --market-bank: 31">
+<div aria-hidden="true" class="market__field" data-bank="31"><div class="market__lines"></div></div>
+<div class="market__labels">
+<p class="market__label market__label--bank"><span class="m-text-5">{{t34|Your bank}}</span><span class="m-text-6">{{t35|One lender's deals}}</span></p>
+<p class="market__label market__label--end"><span class="m-text-5">{{t36|Keylight}}</span><span class="m-text-6">{{t37|Every lender, ranked by total cost}}</span></p>
+</div>
+</div>
+<ul class="market__kinds" role="list">
+<li><h3 class="m-text-4">{{t38|High-street banks}}</h3><p class="m-text-6">{{t39|The names you know, compared on fees and cashback as well as the headline rate.}}</p></li>
+<li><h3 class="m-text-4">{{t40|Building societies}}</h3><p class="m-text-6">{{t41|Often kinder to overtime, bonuses, smaller deposits and first homes.}}</p></li>
+<li><h3 class="m-text-4">{{t42|Specialist lenders}}</h3><p class="m-text-6">{{t43|For the self-employed, new contractors and anyone with a blip on their credit file.}}</p></li>
+</ul>
+</div>
+</section>{{/sec_market}}
+
+{{#sec_method}}<section aria-labelledby="method-title" class="method" data-8b-section="method" id="method">
+<div class="container method__head">
+<h2 class="m-text-3" id="method-title">{{t2|How it works}}</h2>
+<p class="m-text method__lead">{{t44|From the first call to the front door: one adviser, four steps, and nothing you have to chase yourself.}}</p>
+</div>
+<div class="container method__body">
+<ol class="method__steps" role="list">
+<li class="method__step">
+<div class="method__card">
+<p class="m-text-5 method__num">{{t45|Step 01}}</p>
+<h3 class="m-text-4 method__title">{{t46|Know your number}}</h3>
+<p class="m-text method__text">{{t47|A 20-minute call and a soft credit check that leaves no footprint. You get a written borrowing figure, not a guess from an online calculator.}}</p>
+</div>
+</li>
+<li class="method__step">
+<div class="method__card">
+<p class="m-text-5 method__num">{{t48|Step 02}}</p>
+<h3 class="m-text-4 method__title">{{t49|See the whole market}}</h3>
+<p class="m-text method__text">{{t50|We compare 94 lenders on what the mortgage costs over your fixed term, rate, fees and cashback together, and show you the three that fit.}}</p>
+</div>
+</li>
+<li class="method__step">
+<div class="method__card">
+<p class="m-text-5 method__num">{{t51|Step 03}}</p>
+<h3 class="m-text-4 method__title">{{t52|We handle the application}}</h3>
+<p class="m-text method__text">{{t53|Payslips, bank statements, the valuation, the solicitor's questions: we collect them, check them and chase them so the offer arrives on time.}}</p>
+</div>
+</li>
+<li class="method__step">
+<div class="method__card">
+<p class="m-text-5 method__num">{{t54|Step 04}}</p>
+<h3 class="m-text-4 method__title">{{t55|Keys, and a call before your deal ends}}</h3>
+<p class="m-text method__text">{{t56|On completion day you get the keys. Six months before your fixed rate ends, you get a call from the same adviser.}}</p>
+</div>
+</li>
+</ol>
+<div class="method__stage">
+<div class="method__frame">
+<figure class="method__photo"><div class="method__shift">
+<img alt="A woman going through her finances on a laptop at the kitchen table" height="900" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1758522484755-93e3286fdfc4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29tYW4lMjBsYXB0b3AlMjBraXRjaGVuJTIwZXZlbmluZyUyMGhvbWV8ZW58MXwwfHx8MTc5MTQ0MzYwOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6a6a6" width="1600"/>
+<figcaption class="method__chip m-surface-2"><span class="m-badge"><span aria-hidden="true" class="m-badge__icon"></span><span class="m-badge__label">{{t57|Done}}</span></span><span class="m-text-5">{{t58|Soft credit check complete}}</span><span class="m-text-7">{{t59|No footprint on your file}}</span></figcaption>
+</div></figure>
+<figure class="method__photo"><div class="method__shift">
+<img alt="A street of red-brick terraced houses at sunset" height="1886" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1768988497940-c123e874634c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dGVycmFjZWQlMjBob3VzZXMlMjBzdHJlZXQlMjBkdXNrfGVufDF8MXx8fDE3OTE0NDM1NTd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1120&q=60}}" style="background:#262626" width="1600"/>
+<figcaption class="method__chip m-surface-2"><span class="m-badge"><span aria-hidden="true" class="m-badge__icon"></span><span class="m-badge__label">{{t60|Shortlist}}</span></span><span class="m-text-5">{{t61|3 deals out of 94 lenders}}</span><span class="m-text-7">{{t62|Ranked by cost over the fixed term}}</span></figcaption>
+</div></figure>
+<figure class="method__photo"><div class="method__shift">
+<img alt="A couple signing mortgage papers with their adviser" height="1067" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1664463760781-f159dfe3af30?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2lnbmluZyUyMGNvbnRyYWN0JTIwd2FybSUyMGxpZ2h0fGVufDF8MHx8fDE3OTE0NDM2MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#404040" width="1600"/>
+<figcaption class="method__chip m-surface-2"><span class="m-badge"><span aria-hidden="true" class="m-badge__icon"></span><span class="m-badge__label">{{t63|Booked}}</span></span><span class="m-text-5">{{t64|Valuation, Thursday 10:30}}</span><span class="m-text-7">{{t65|Your solicitor has the offer}}</span></figcaption>
+</div></figure>
+<figure class="method__photo"><div class="method__shift">
+<img alt="A hand holding up the keys to a new front door" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1733244766159-f58f4184fd38?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZnJvbnQlMjBkb29yJTIwbmV3JTIwaG9tZSUyMGtleXN8ZW58MXwwfHx8MTc5MTQ0MzYxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#d9d9c0" width="1600"/>
+<figcaption class="method__chip m-surface-2"><span class="m-badge"><span aria-hidden="true" class="m-badge__icon"></span><span class="m-badge__label">{{t66|Complete}}</span></span><span class="m-text-5">{{t67|Keys released at 12:04}}</span><span class="m-text-7">{{t68|Next call: six months before your deal ends}}</span></figcaption>
+</div></figure>
+<ol aria-hidden="true" class="method__index m-surface-2">
+<li><span class="method__dot"></span>{{t69|01}}<span class="method__label"> {{t70|Your number}}</span></li>
+<li><span class="method__dot"></span>{{t71|02}}<span class="method__label"> {{t72|The market}}</span></li>
+<li><span class="method__dot"></span>{{t73|03}}<span class="method__label"> {{t74|Application}}</span></li>
+<li><span class="method__dot"></span>{{t75|04}}<span class="method__label"> {{t76|Keys}}</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>{{/sec_method}}
+
+{{#sec_included}}<section aria-labelledby="included-title" class="included" data-8b-section="included" id="included">
+<div class="container included__inner">
+<h2 class="m-text-3 included__title" data-8b-motion="rise" id="included-title">{{t77|Brokers can charge up to ₦497,500. Our fee is ₦0.}}</h2>
+<p class="m-text included__lead">{{t78|Lenders pay us a fee when your mortgage completes, and we tell you exactly how much, in writing, before you apply. Everything below is included.}}</p>
+<dl class="included__ledger" data-8b-motion="lightRows">
+<div class="included__row"><dt>{{t79|Affordability check}}</dt><dd>{{t80|A written borrowing figure within a day}}</dd></div>
+<div class="included__row"><dt>{{t81|Credit file review}}</dt><dd>{{t82|A soft search that leaves no footprint}}</dd></div>
+<div class="included__row"><dt>{{t83|Whole-of-market search}}</dt><dd>{{t84|94 lenders, compared on total cost}}</dd></div>
+<div class="included__row"><dt>{{t15|Agreement in principle}}</dt><dd>{{t85|Ready to show estate agents the same week}}</dd></div>
+<div class="included__row"><dt>{{t86|Full application}}</dt><dd>{{t87|Submitted, tracked and chased by your adviser}}</dd></div>
+<div class="included__row"><dt>{{t88|Valuation and solicitor}}</dt><dd>{{t89|Every step followed through to completion}}</dd></div>
+<div class="included__row"><dt>{{t90|Protection review}}</dt><dd>{{t91|Life and income cover, only if you need it}}</dd></div>
+<div class="included__row"><dt>{{t92|Rate-switch review}}</dt><dd>{{t93|Six months before your deal ends}}</dd></div>
+<div class="included__row"><dt>{{t94|Evening and weekend calls}}</dt><dd>{{t95|Until 8pm on weekdays, 10 to 4 on Saturdays}}</dd></div>
+</dl>
+<p class="m-text-6 included__note">{{t96|A ₦247,500 fee applies only to complex cases, such as limited-company buy-to-let, and we agree it with you before any work starts.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a>
+</div>
+</section>{{/sec_included}}
+
+{{#sec_advisers}}<section aria-labelledby="advisers-title" class="advisers" data-8b-section="advisers" data-ground="dark" id="advisers">
+<div class="container">
+<div class="advisers__head">
+<h2 class="m-text-3" id="advisers-title">{{t97|The adviser on your first call is the one who hands you the keys.}}</h2>
+<p class="m-text-7">{{t98|Four advisers, 61 years of mortgages between them, and a speciality each. No call centre and no hand-offs.}}</p>
+</div>
+<ul class="advisers__list" role="list">
+<li class="adviser">
+<div class="adviser__frame"><img alt="Portrait of Hannah Moorcroft" height="2400" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1635366898830-b5d48950e4f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cG9ydHJhaXQlMjB3b21hbiUyMG5hdHVyYWwlMjBsaWdodCUyMG9mZmljZSUyMHNtaWxpbmd8ZW58MXwxfHx8MTc5MTQ0MzU5Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#594026" width="1600"/></div>
+<div class="adviser__text"><h3 class="m-text-4 adviser__name">{{t99|Hannah Moorcroft}}</h3><p class="m-text-5 adviser__role">{{t100|First-time buyers}}</p><p class="m-text-7">{{t101|Has walked more than 900 first-time buyers through their first offer.}}</p></div>
+</li>
+<li class="adviser">
+<div class="adviser__frame"><img alt="Portrait of Daniel Okafor" height="2377" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1719536342328-1ed261a77652?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHBvcnRyYWl0JTIwbWFuJTIwbmF0dXJhbCUyMHdpbmRvdyUyMGxpZ2h0JTIwZnJpZW5kbHl8ZW58MXwxfHx8MTc5MTQ0MzU5M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#260c0c" width="1600"/></div>
+<div class="adviser__text"><h3 class="m-text-4 adviser__name">{{t102|Daniel Okafor}}</h3><p class="m-text-5 adviser__role">{{t103|Self-employed and contractors}}</p><p class="m-text-7">{{t104|Reads tax calculations and company accounts the way underwriters do.}}</p></div>
+</li>
+<li class="adviser">
+<div class="adviser__frame"><img alt="Portrait of Raj Mistry" height="2400" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1758336011136-343678e4fc05?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8b2xkZXIlMjBtYW4lMjBwb3J0cmFpdCUyMG5hdHVyYWwlMjBsaWdodCUyMHNtaWxpbmd8ZW58MXwxfHx8MTc5MTQ0MzY0MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="adviser__text"><h3 class="m-text-4 adviser__name">{{t105|Raj Mistry}}</h3><p class="m-text-5 adviser__role">{{t106|Remortgages and later life}}</p><p class="m-text-7">{{t107|Twenty-two years of fixed rates ending, and not one client left on a standard rate.}}</p></div>
+</li>
+<li class="adviser">
+<div class="adviser__frame"><img alt="Portrait of Ellie Varga" height="2133" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1759352675002-958a2cddf291?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cG9ydHJhaXQlMjB3b21hbiUyMG5hdHVyYWwlMjBsaWdodCUyMG9mZmljZSUyMHNtaWxpbmd8ZW58MXwxfHx8MTc5MTQ0MzU5Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#8c7359" width="1600"/></div>
+<div class="adviser__text"><h3 class="m-text-4 adviser__name">{{t108|Ellie Varga}}</h3><p class="m-text-5 adviser__role">{{t109|Buy-to-let and landlords}}</p><p class="m-text-7">{{t110|Knows which lenders still take portfolio landlords and shared houses this quarter.}}</p></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_advisers}}
+
+{{#sec_stories}}<section aria-labelledby="stories-title" class="stories" data-8b-section="stories" id="stories">
+<div class="container">
+<div class="stories__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="stories-title">{{t111|Bought, moved, switched.}}</h2>
+<p class="m-text-6">{{t112|Three clients from this year, in their own words. Rated 4.9 out of 5 across 1,240 reviews.}}</p>
+</div>
+<ol class="stories__list" role="list">
+<li class="story">
+<figure class="story__photo"><img alt="A couple dancing in the living room of their first home" data-8b-motion="brighten" height="2474" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1655759738611-6bf3df26a7e7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bW92aW5nJTIwYm94ZXMlMjBlbXB0eSUyMHJvb20lMjBjb3VwbGV8ZW58MXwxfHx8MTc5MTQ0MzU2MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+<div class="story__text">
+<blockquote class="story__quote"><p class="m-text-8">{{t113|“Our bank said ₦120,000,000. Hannah found a lender who would count Tom's overtime, and we offered on the house we actually wanted.”}}</p></blockquote>
+<p class="m-text-5">{{t114|Amira and Tom, Chapel Allerton}}</p>
+<p class="m-text-6 story__result">{{t115|First home: ₦19,000,000 more than their bank's figure}}</p>
+</div>
+</li>
+<li class="story">
+<figure class="story__photo"><img alt="An illustrator working at her desk in a studio full of plants" data-8b-motion="brighten" height="1067" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1768471125958-78556538fadc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzZWxmJTIwZW1wbG95ZWQlMjBzdHVkaW8lMjB3b3Jrc3BhY2V8ZW58MXwwfHx8MTc5MTQ0MzU5Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=670&q=60}}" style="background:#40260c" width="1600"/></figure>
+<div class="story__text">
+<blockquote class="story__quote"><p class="m-text-8">{{t116|“Two years of accounts and a letter from my accountant. Daniel knew which lender would read them properly the first time.”}}</p></blockquote>
+<p class="m-text-5">{{t117|Jess, Garki}}</p>
+<p class="m-text-6 story__result">{{t118|Self-employed: approved on her first application}}</p>
+</div>
+</li>
+<li class="story">
+<figure class="story__photo"><img alt="A woman with a cup of coffee by an open window at home" data-8b-motion="brighten" height="2400" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1676269632049-87faf23b8ed3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjB3aW5kb3clMjB3YXJtJTIwbGlnaHQlMjBob21lJTIwY29mZmVlfGVufDF8MXx8fDE3OTE0NDM2NDJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#c0d9f3" width="1600"/></figure>
+<div class="story__text">
+<blockquote class="story__quote"><p class="m-text-8">{{t119|“I'd have forgotten my fix ended in March. Raj rang in September with a new rate already held for me.”}}</p></blockquote>
+<p class="m-text-5">{{t120|Mei, Roundhay}}</p>
+<p class="m-text-6 story__result">{{t121|Remortgage: ₦106,000 a month less than rolling onto the standard rate}}</p>
+</div>
+</li>
+</ol>
+</div>
+</section>{{/sec_stories}}
+
+{{#sec_switch}}<section aria-labelledby="switch-title" class="switch" data-8b-section="switch" id="switch">
+<div class="switch__track">
+<div class="switch__intro">
+<h2 class="m-text-3" id="switch-title">{{t122|A fixed rate ends. We're already watching.}}</h2>
+<p class="m-text">{{t123|Most people find out their deal has ended from a bigger direct debit. Our clients hear from us six months before, with the next rate already found.}}</p>
+</div>
+<div class="switch__run">
+<div aria-hidden="true" class="switch__line"><span class="switch__fill"></span></div>
+<ol class="switch__panels" role="list">
+<li class="switch__panel">
+<span aria-hidden="true" class="switch__dot"></span>
+<h3 class="m-text-4 switch__when">{{t124|Today}}</h3>
+<p class="m-text">{{t125|You complete on a five-year fix. We put the end date in our diary, not only in yours.}}</p>
+<p class="switch__card m-surface"><span class="m-text-5">{{t126|Fixed at 4.29% for five years}}</span><span class="m-text-6">{{t127|Ends 31 March 2031}}</span></p>
+</li>
+<li class="switch__panel">
+<span aria-hidden="true" class="switch__dot"></span>
+<h3 class="m-text-4 switch__when">{{t128|Year three}}</h3>
+<p class="m-text">{{t129|Rates move. If yours could be beaten even after the early repayment charge, we tell you. If not, we leave you in peace.}}</p>
+<p class="switch__card m-surface"><span class="m-text-5">{{t130|Market check done}}</span><span class="m-text-6">{{t131|Your rate is still the better deal}}</span></p>
+</li>
+<li class="switch__panel">
+<span aria-hidden="true" class="switch__dot"></span>
+<h3 class="m-text-4 switch__when">{{t132|Six months to go}}</h3>
+<p class="m-text">{{t133|We search the market again and reserve your next rate. If rates fall before you switch, we re-book the lower one.}}</p>
+<p class="switch__card m-surface"><span class="m-text-5">{{t134|3.94% for five years, reserved}}</span><span class="m-text-6">{{t135|Held until your switch date}}</span></p>
+</li>
+<li class="switch__panel">
+<span aria-hidden="true" class="switch__dot"></span>
+<h3 class="m-text-4 switch__when">{{t136|Switch day}}</h3>
+<p class="m-text">{{t137|The new deal starts the day the old one ends. Not a single month on the standard variable rate.}}</p>
+<p class="switch__card m-surface"><span class="m-text-5">{{t138|Standard variable rate avoided}}</span><span class="m-text-6">{{t139|7.49% at most lenders this year}}</span></p>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_switch}}
+
+{{#sec_offer}}<section aria-labelledby="offer-title" class="offer" data-8b-section="offer" id="offer">
+<div class="container offer__grid">
+<div class="offer__frame">
+<img alt="A man leaning on a sunlit window sill at home" class="offer__img" height="2400" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1641753914745-d62bd463d021?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bWFuJTIwcG9ydHJhaXQlMjB3aW5kb3clMjBsaWdodCUyMGNhcmRpZ2FufGVufDF8MXx8fDE3OTE0NDM2NDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#260c0c" width="1600"/>
+<div class="offer__panel m-surface-2">
+<p class="m-text-5">{{t140|Same house, better deal}}</p>
+<p class="offer__figure"><data value="1286">{{t141|₦643,000}}</data> <span class="m-text-7">{{t142|a month}}</span></p>
+<p class="m-text-7">{{t143|His bank's offer:}} <del class="offer__old">{{t144|₦706,000}}</del></p>
+<svg aria-hidden="true" class="offer__chart" viewbox="0 0 120 64"><polyline pathlength="1" points="2,8 30,12 58,26 88,40 118,56"></polyline></svg>
+</div>
+</div>
+<div class="offer__copy">
+<h2 class="m-text-3" data-8b-motion="rise" id="offer-title">{{t145|Start with a free mortgage review.}}</h2>
+<p class="m-text">{{t146|Tell us where you are: buying, moving, or with a deal about to end. We'll show you what you can borrow, what it will cost and which lenders will say yes.}}</p>
+<p class="offer__price"><span class="offer__amount">{{t147|₦0}}</span><span class="m-text-6">{{t148|no fee for most buyers, against up to ₦497,500 elsewhere}}</span></p>
+<ul class="offer__checks" role="list">
+<li>{{t80|A written borrowing figure within a day}}</li>
+<li>{{t149|A soft credit check with no footprint}}</li>
+<li>{{t150|94 lenders ranked by total cost}}</li>
+<li>{{t151|An agreement in principle the same week}}</li>
+<li>{{t152|One adviser from first call to completion}}</li>
+<li>{{t153|A call six months before your deal ends}}</li>
+</ul>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a>
+<p class="m-text-6">{{t154|Calls from 8am to 8pm on weekdays, and 10 to 4 on Saturdays.}}</p>
+</div>
+</div>
+</section>{{/sec_offer}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" class="faq" data-8b-section="faq" id="faq">
+<div class="container faq__grid">
+<div class="faq__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="faq-title">{{t155|Questions people ask before the first call}}</h2>
+<p class="m-text-6">{{t156|Or ask us yourself:}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t7|⟦phone⟧}}</a></p>
+</div>
+<div class="faq__list" data-8b-motion="lightRows">
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t157|Do you really not charge a fee?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t158|For most residential mortgages, no. The lender pays us a fee when your mortgage completes, usually 0.35% to 0.45% of the loan, and we tell you the exact amount in writing before you apply. Complex cases, such as limited-company buy-to-let, carry a ₦247,500 fee that we agree with you first.}}</p></details>
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t159|Will talking to you affect my credit score?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t160|No. We use a soft search to see your file the way a lender will, and it leaves no footprint that other lenders can see. A hard search happens only when you decide to apply.}}</p></details>
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t161|How much deposit do I need?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t162|Some lenders accept 5%, but 10% or 15% usually unlocks noticeably better rates. We show you the difference in pounds a month for your own numbers, so you can decide whether waiting to save more is worth it.}}</p></details>
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t163|I'm self-employed. Can I still get a mortgage?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t164|Yes. Most lenders want two years of accounts or tax calculations, and some accept one. Daniel works with contractors and company directors every week and knows which lenders read accounts sensibly.}}</p></details>
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t165|How long from first call to mortgage offer?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t166|An agreement in principle usually takes a day. Once your offer on a home is accepted, a full mortgage offer typically takes two to four weeks, depending on the lender and the valuation.}}</p></details>
+<details class="faq__item"><summary class="faq__q"><span class="m-text-4">{{t167|What happens when my fixed rate ends?}}</span><span aria-hidden="true" class="faq__icon"></span></summary><p class="m-text faq__a">{{t168|We call you six months before, compare the market again and reserve a new rate. If rates fall before your switch date, we re-book the lower one, so you never spend a month on the standard variable rate.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" class="contact" data-8b-section="contact" data-ground="dark" id="contact">
+<div class="container contact__grid">
+<div class="contact__visual">
+<div class="contact__disc"><div class="contact__glow"></div></div>
+<div class="contact__photo"><img alt="" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1736517425687-617ef7150e99?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2lsaG91ZXR0ZSUyMGNvdXBsZSUyMHdpbmRvdyUyMGhvbWV8ZW58MXwwfHx8MTc5MTQ0MzUxOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=960&q=60}}" style="background:#a6a6a6" width="1600"/></div>
+</div>
+<div class="contact__copy">
+<h2 class="m-text-3 contact__title" id="contact-title">{{t169|The keys are closer than they look.}}</h2>
+<p class="m-text">{{t170|Book a free call and speak to an adviser today, or come and see us in Abuja. We'll tell you on the first call whether we can help.}}</p>
+<dl class="contact__details">
+<div><dt class="m-text-7">{{t171|Call}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t7|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-7">{{t172|Email}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t173|hello@keylight.example}}</a></dd></div>
+<div><dt class="m-text-7">{{t174|Visit}}</dt><dd>{{t175|1 Admiralty Way, Abuja}}</dd></div>
+<div><dt class="m-text-7">{{t176|Hours}}</dt><dd>{{t177|Weekdays 8am to 8pm, Saturdays 10 to 4}}</dd></div>
+</dl>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Mortgage Broker by <a href="https://github.com/8bsite/mortgage-broker-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="footer" data-8b-section="footer" id="footer">
+<div class="footer__card m-surface-3">
+<div class="footer__top">
+<div class="footer__brand">
+<a aria-label="{{name}}, back to the top" class="footer__logo" href="#opening"><span aria-hidden="true" class="footer__mark"></span><span>{{t6|keylight}}</span></a>
+<p class="m-text-6">{{t178|Whole-of-market mortgage advice from Abuja, for first homes, moves, remortgages and landlords.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t8|Book a free call}}</span></a>
+</div>
+<nav aria-label="Footer" class="footer__col">
+<p class="m-text-5">{{t179|Explore}}</p>
+<ul role="list">
+{{#nv_method}}<li><a class="m-link" href="#method">{{t2|How it works}}</a></li>{{/nv_method}}
+{{#nv_included}}<li><a class="m-link" href="#included">{{t11|What's included}}</a></li>{{/nv_included}}
+{{#nv_advisers}}<li><a class="m-link" href="#advisers">{{t3|Advisers}}</a></li>{{/nv_advisers}}
+{{#nv_stories}}<li><a class="m-link" href="#stories">{{t180|Client stories}}</a></li>{{/nv_stories}}
+{{#nv_switch}}<li><a class="m-link" href="#switch">{{t181|Rate switching}}</a></li>{{/nv_switch}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t5|FAQ}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<div class="footer__col">
+<p class="m-text-5">{{t182|Contact}}</p>
+<ul role="list">
+<li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t7|⟦phone⟧}}</a></li>
+<li><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t173|hello@keylight.example}}</a></li>
+<li class="m-text-6">{{t175|1 Admiralty Way, Abuja}}</li>
+</ul>
+</div>
+</div>
+<div class="footer__legal">
+<p class="m-text-6">{{t183|⟦name⟧ Ltd is authorised and regulated by the Financial Conduct Authority. Your home may be repossessed if you do not keep up repayments on your mortgage. Most buy-to-let mortgages are not regulated by the Financial Conduct Authority.}}</p>
+<p class="m-text-6">{{t184|© 2026 ⟦name⟧ Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t185|8B}}</a> · <a class="m-link" href="/privacy">{{t186|Privacy}}</a> · <a class="m-link" href="/complaints">{{t187|Complaints}}</a></p>
+</div>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const openButton = nav.querySelector('.nav__menu');
+  const closeButton = menu.querySelector('.menu__close');
+  let last = window.scrollY, travel = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    if (y < 120) { nav.classList.remove('is-hidden'); travel = 0; return; }
+    if (delta === 0) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (travel > 40) nav.classList.add('is-hidden');
+    else if (travel < -40) nav.classList.remove('is-hidden');
+  }, { passive: true });
+  const setMenu = open => {
+    menu.hidden = !open;
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); }
+    else { window.lenis?.start(); }
+  };
+  openButton.addEventListener('click', () => setMenu(true));
+  closeButton.addEventListener('click', () => { setMenu(false); openButton.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setMenu(false); openButton.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:market">
+(() => {
+  const section = document.getElementById('market');
+  const field = section.querySelector('.market__field');
+  const holder = field.querySelector('.market__lines');
+  const count = Math.max(1, parseInt(section.querySelector('data.market__count').value, 10) || 1);
+  const bank = Math.min(count - 1, parseInt(field.dataset.bank, 10) || 0);
+  field.closest('.market__chart').style.setProperty('--market-count', count);
+  const lines = document.createDocumentFragment();
+  for (let index = 0; index < count; index += 1) {
+    const line = document.createElement('i');
+    line.className = index === bank ? 'market__line is-bank' : 'market__line';
+    lines.append(line);
+  }
+  holder.append(lines);
+  field.classList.add('has-lines');
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+const navigationBar = document.getElementById('navigation');
+function measureNavigation() {
+  document.documentElement.style.setProperty('--nav-h', navigationBar.querySelector('.nav__bar').offsetHeight + 'px');
+}
+measureNavigation();
+window.addEventListener('resize', measureNavigation);
+function refreshScroll() {
+  measureNavigation();
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+window.refreshScroll = refreshScroll;
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -navigationBar.querySelector('.nav__bar').offsetHeight } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete() { split.revert(); } })
+      .from(split.lines, { yPercent: 108, duration: 1, ease: 'expo.out', stagger: 0.09 });
+  },
+  brighten(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { filter: 'brightness(0.42) saturate(0.6)', scale: 1.08 }, { filter: 'brightness(1) saturate(1)', scale: 1, ease: 'none' });
+  },
+  lightRows(element, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    element.querySelectorAll(':scope > *').forEach((row, index) => {
+      timeline.fromTo(row, { '--rows-lit': 0 }, { '--rows-lit': 1, duration: 0.6, ease: 'power2.out' }, index * 0.08);
+    });
+    return timeline;
+  }
+};
+const bindEffect = (name, create) => document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+  if (!elements.length) return;
+  const id = `effect:${name}:${section.id}`;
+  queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    elements.forEach((element, index) => create(element, `${id}:${index}`));
+  }), section.getBoundingClientRect().top < window.innerHeight ? { first: true, id } : { near: section, id });
+});
+bindEffect('rise', (element, id) => ScrollTrigger.create({ id, trigger: element, start: 'top 88%', once: true, animation: effects.rise(element) }));
+bindEffect('brighten', (element, id) => ScrollTrigger.create({ id, trigger: element, start: 'top bottom', end: 'center 55%', scrub: true, animation: effects.brighten(element) }));
+bindEffect('lightRows', (element, id) => ScrollTrigger.create({ id, trigger: element, start: 'top 82%', once: true, animation: effects.lightRows(element) }));
+const loopWatch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.classList.toggle('is-paused', !entry.isIntersecting)));
+document.querySelectorAll('[data-loop]').forEach(loop => loopWatch.observe(loop));
+</script>
+<script data-8b-part="scene:market">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('market');
+    const field = section.querySelector('.market__field');
+    const lines = [...field.querySelectorAll('.market__line')];
+    const bank = lines.findIndex(line => line.classList.contains('is-bank'));
+    const reach = Math.max(bank, lines.length - 1 - bank, 1);
+    const root = getComputedStyle(document.documentElement);
+    const pale = root.getPropertyValue('--color-9').trim();
+    const ember = root.getPropertyValue('--color-6').trim();
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'market', trigger: field, start: 'top 88%', end: 'bottom 40%', scrub: true } });
+    lines.forEach((line, index) => {
+      if (index === bank) return;
+      timeline.fromTo(line, { scaleY: 0.2, backgroundColor: pale }, { scaleY: 1, backgroundColor: ember, duration: 0.3, ease: 'power2.out' }, Math.abs(index - bank) / reach * 0.7);
+    });
+  });
+}, { id: 'scene:market', near: document.getElementById('market') });
+</script>
+<script data-8b-part="scene:method">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('method');
+    const steps = [...section.querySelectorAll('.method__step')];
+    const photos = [...section.querySelectorAll('.method__photo')];
+    const dots = [...section.querySelectorAll('.method__dot')];
+    if (photos.length < steps.length || dots.length < steps.length) throw new Error('method: a photo and an index dot per step are required');
+    section.classList.add('is-staged');
+    steps.forEach((step, index) => {
+      if (index === 0) return;
+      const photo = photos[index], previous = photos[index - 1];
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `method:step-${index + 1}`, trigger: step, start: 'top 85%', end: 'top 30%', scrub: true } });
+      timeline
+        .fromTo(photo, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(photo.querySelector('img'), { scale: 1.18 }, { scale: 1, duration: 1 }, 0)
+        .fromTo(previous.querySelector('.method__shift'), { yPercent: 0, filter: 'brightness(1)' }, { yPercent: -12, filter: 'brightness(0.4)', duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(dots[index], { scale: 0 }, { scale: 1, duration: 0.3 }, 0.55)
+        .fromTo(dots[index - 1], { opacity: 1 }, { opacity: 0, duration: 0.3 }, 0.55);
+    });
+    return () => section.classList.remove('is-staged');
+  });
+}, { id: 'scene:method', near: document.getElementById('method') });
+</script>
+<script data-8b-part="scene:advisers">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('advisers');
+    const people = [...section.querySelectorAll('.adviser')];
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const perRow = window.matchMedia('(max-width: 960px)').matches ? 2 : 4;
+    people.forEach((person, index) => {
+      const lag = (index % perRow) * 6;
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `advisers:person-${index + 1}`, trigger: person, start: `top ${96 - lag}%`, end: `top ${52 - lag}%`, scrub: true } });
+      timeline
+        .fromTo(person.querySelector('.adviser__frame'), { clipPath: `inset(0% 46% 0% 46% round ${rem * 20}px)` }, { clipPath: `inset(0% 0% 0% 0% round ${rem * 0.875}px)`, duration: 0.8, ease: 'power2.inOut' }, 0)
+        .fromTo(person.querySelector('img'), { filter: 'brightness(0.3)', scale: 1.2 }, { filter: 'brightness(1)', scale: 1, duration: 0.8 }, 0)
+        .fromTo(person.querySelector('.adviser__text'), { y: rem * 2 }, { y: 0, duration: 0.6, ease: 'power2.out' }, 0.4);
+    });
+  });
+}, { id: 'scene:advisers', near: document.getElementById('advisers') });
+</script>
+<script data-8b-part="scene:switch">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('switch');
+    const track = section.querySelector('.switch__track');
+    const fill = section.querySelector('.switch__fill');
+    const dots = [...section.querySelectorAll('.switch__dot')];
+    const root = getComputedStyle(document.documentElement);
+    const white = root.getPropertyValue('--color-1').trim();
+    const amber = root.getPropertyValue('--color-5').trim();
+    section.classList.add('is-track');
+    const distance = () => Math.max(0, track.scrollWidth - window.innerWidth);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'switch', trigger: section, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: true, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 }, 0)
+      .fromTo(section, { backgroundColor: white }, { backgroundColor: amber, duration: 1, ease: 'power1.in' }, 0)
+      .fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 0.92 }, 0.04);
+    dots.forEach((dot, index) => timeline.fromTo(dot, { scale: 0.45 }, { scale: 1, duration: 0.08, ease: 'back.out(3)' }, 0.06 + index / Math.max(dots.length - 1, 1) * 0.84));
+    return () => section.classList.remove('is-track');
+  });
+}, { id: 'scene:switch' });
+</script>
+<script data-8b-part="scene:offer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('offer');
+    const frame = section.querySelector('.offer__frame');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'offer', trigger: frame, start: 'top 85%', end: 'center 45%', scrub: true } });
+    timeline
+      .fromTo(frame.querySelector('.offer__img'), { scale: 1.2 }, { scale: 1, duration: 1 }, 0)
+      .fromTo(frame.querySelector('.offer__panel'), { yPercent: 140 }, { yPercent: 0, duration: 0.5, ease: 'power2.out' }, 0.15)
+      .fromTo(frame.querySelector('.offer__chart polyline'), { strokeDashoffset: 1 }, { autoRound: false, strokeDashoffset: 0, duration: 0.45 }, 0.45);
+  });
+}, { id: 'scene:offer', near: document.getElementById('offer') });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const visual = section.querySelector('.contact__visual');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'contact', trigger: section, start: 'top 90%', end: 'top 15%', scrub: true } });
+    timeline
+      .fromTo(visual.querySelector('.contact__disc'), { yPercent: 70, scale: 0.45 }, { yPercent: 0, scale: 1, duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(visual.querySelector('.contact__photo'), { scale: 1.12 }, { scale: 1, duration: 1 }, 0);
+  });
+}, { id: 'scene:contact', near: document.getElementById('contact') });
+</script>
+</body>
+</html>

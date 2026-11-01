@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/kalnia/v6/11hdGpPCwUbbYwZZP0RBuDY62BQZhjvO4N8XQQ.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* math */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hdGpPCwUbbYwZZP0RBuDY62BQZhjvO4KMXQVR-.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hdGpPCwUbbYwZZP0RBuDY62BQZhjvO4NEXQVR-.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hdGpPCwUbbYwZZP0RBuDY62BQZhjvO4N8XQQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #141213;
+  --color-2: #f1eade;
+  --color-3: #573726;
+  --color-4: #8c5f43;
+  --color-5: #ffffff;
+  --color-6: #675a50;
+  --color-7: #a99d91;
+  --color-8: #b48a5a;
+  --font-1: "Kalnia", "Kalnia Fallback", Georgia, serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 8px;
+  --radius-2: 4px;
+  --radius-3: 999px 999px 0 0;
+  --shadow-1: 0 24px 60px -24px color-mix(in srgb, var(--color-1) 70%, transparent);
+  --space-1: clamp(16px, 4vw, 56px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* font fallbacks */
+@font-face { font-family: "Kalnia Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 115.4%; ascent-override: 91%; descent-override: 26%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 100%; ascent-override: 102%; descent-override: 32%; line-gap-override: 0%; }
+/* end font fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-1); overflow-x: clip; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+.lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: clamp(15px, 0.35vw + 13.6px, 17px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(48px, 7vw, 112px); font-weight: 300; line-height: 0.88; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(19px, 0.6vw + 15px, 24px); font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+.m-text-3 > span { display: block; padding-left: calc(var(--m-text-3-i, 0) * 1.15em); }
+.m-text-4 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(17px, 0.6vw + 14px, 21px); font-weight: 400; line-height: 1.2; letter-spacing: 0; text-transform: uppercase; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(22px, 1vw + 17px, 30px); font-weight: 400; line-height: 1.08; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; display: inline-flex; align-items: flex-start; justify-content: space-between; gap: 18px; min-width: 188px; min-height: 54px; padding: 10px 11px 12px 12px; border: 0; border-radius: var(--radius-2); background: var(--color-5); color: var(--color-1); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-btn__label { position: relative; z-index: 1; transition: color .45s cubic-bezier(.2,.7,.2,1); }
+.m-btn__dot { position: absolute; right: 11px; bottom: 11px; width: 7px; height: 7px; border-radius: 50%; background: var(--color-1); }
+.m-btn__dot::after { content: ""; position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; background: var(--color-1); transform: scale(0.0134); transition: transform .6s cubic-bezier(.3,.7,.2,1); }
+.m-btn:focus-visible { outline-color: var(--color-5); }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__dot::after { transform: scale(1); }
+  .m-btn:hover .m-btn__label { color: var(--color-2); }
+}
+.m-btn-2 { position: relative; display: inline-flex; align-items: flex-start; justify-content: space-between; gap: 18px; min-width: 188px; min-height: 54px; padding: 10px 11px 12px 12px; border: 0; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-btn-2__label { position: relative; z-index: 1; transition: color .45s cubic-bezier(.2,.7,.2,1); }
+.m-btn-2__dot { position: absolute; right: 11px; bottom: 11px; width: 7px; height: 7px; border-radius: 50%; background: var(--color-2); }
+.m-btn-2__dot::after { content: ""; position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; background: var(--color-2); transform: scale(0.0134); transition: transform .6s cubic-bezier(.3,.7,.2,1); }
+.m-btn-2:focus-visible { outline-color: var(--color-1); }
+@media (hover: hover) {
+  .m-btn-2:hover .m-btn-2__dot::after { transform: scale(1); }
+  .m-btn-2:hover .m-btn-2__label { color: var(--color-1); }
+}
+.m-link { position: relative; display: inline-block; color: inherit; text-decoration: none; padding-bottom: 0.12em; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: 100% 50%; transition: transform .5s cubic-bezier(.6,0,.2,1); }
+@media (hover: hover) {
+  .m-link:hover::after { transform: scaleX(0); transform-origin: 0 50%; animation: m-link-draw .9s cubic-bezier(.6,0,.2,1) forwards; }
+}
+.m-link-2 { position: relative; display: inline-block; color: inherit; text-decoration: none; padding-bottom: 0.06em; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 100% 50%; transition: transform .5s cubic-bezier(.6,0,.2,1); }
+@media (hover: hover) {
+  .m-link-2:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+}
+.m-link-2:focus-visible::after { transform: scaleX(1); }
+@keyframes m-link-draw { 0% { transform: scaleX(1); transform-origin: 100% 50%; } 45% { transform: scaleX(0); transform-origin: 100% 50%; } 46% { transform: scaleX(0); transform-origin: 0 50%; } 100% { transform: scaleX(1); transform-origin: 0 50%; } }
+.m-icon { position: relative; display: inline-grid; place-content: center; gap: 4px; width: 64px; height: 38px; padding: 0; border: 0; border-radius: var(--radius-2); background: var(--color-5); color: var(--color-1); cursor: pointer; }
+.m-icon__line { display: block; width: 26px; height: 1px; background: currentColor; transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+.m-icon__line:nth-child(2) { width: 18px; margin-left: 8px; }
+.m-icon:focus-visible { outline-color: var(--color-5); }
+@media (hover: hover) {
+  .m-icon:hover .m-icon__line:first-child { transform: translate(-4px, -2px); }
+  .m-icon:hover .m-icon__line:last-child { transform: translate(4px, 2px); }
+}
+.m-badge { display: inline-flex; align-items: center; min-height: 26px; padding: 3px 11px; border: 1px solid currentColor; border-radius: 999px; font-family: var(--font-2); font-size: 11px; font-weight: 500; line-height: 1.2; letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-field { display: grid; grid-template-columns: minmax(96px, 9.5em) 1fr; align-items: end; gap: 12px 20px; padding-bottom: 6px; border-bottom: 1px solid color-mix(in srgb, currentColor 45%, transparent); }
+.m-field__label { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.05; letter-spacing: 0; padding-bottom: 6px; }
+.m-field__label > span { display: block; }
+.m-field__label > span + span { padding-left: 1em; }
+.m-field__input { width: 100%; min-width: 0; padding: 4px 0; border: 0; border-radius: 0; background: transparent; font-family: var(--font-1); font-size: clamp(22px, 1.4vw + 16px, 34px); font-weight: 300; line-height: 1.2; letter-spacing: -0.01em; appearance: none; }
+.m-field__input::placeholder { color: var(--color-6); opacity: 1; }
+textarea.m-field__input { resize: vertical; min-height: 3.6em; }
+.m-field:focus-within { border-bottom-color: currentColor; }
+.m-field__input:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto 0; z-index: 40; display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; gap: 16px; padding: 16px var(--space-1) 14px; color: var(--color-2); transition: translate .55s cubic-bezier(.3,.7,.2,1), background-color .4s ease; }
+#nav[data-solid] { background: var(--color-1); }
+#nav[data-hidden] { translate: 0 -110%; }
+#nav .nav-logo { justify-self: start; display: block; font-family: var(--font-1); font-size: 25px; font-weight: 400; line-height: 0.8; letter-spacing: -0.02em; text-decoration: none; }
+#nav .nav-logo span { display: block; }
+#nav .nav-logo span:nth-child(2) { padding-left: 0.42em; }
+#nav .nav-logo span:nth-child(3) { padding-left: 0.84em; }
+#nav .nav-mid { display: flex; align-items: stretch; gap: 10px; }
+#nav .nav-mid::before { content: ""; order: 1; width: 1px; background: var(--color-2); margin: -4px 0; }
+#nav .nav-mid a:last-child { order: 2; }
+#nav .nav-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 132px; min-height: 34px; padding: 6px 16px; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-2) 14%, transparent); font-family: var(--font-2); font-size: 12px; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: background-color .35s ease, color .35s ease; }
+#nav .nav-end { justify-self: end; display: flex; align-items: center; gap: 12px; }
+@media (hover: hover) {
+  #nav .nav-pill:hover { background: var(--color-2); color: var(--color-1); }
+}
+#nav .nav-menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; padding: 18px var(--space-1) 28px; background: var(--color-1); color: var(--color-2); overflow: auto; }
+#nav .nav-menu[hidden] { display: none; }
+#nav .nav-menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .nav-menu > nav { align-self: center; }
+#nav .nav-menu__list { display: grid; gap: 0.06em; padding: 4vh 0; }
+#nav .nav-close .m-icon__line:nth-child(2) { opacity: 0; }
+#nav .nav-close .m-icon__line:first-child { transform: translateY(5px) rotate(38deg); }
+#nav .nav-close .m-icon__line:last-child { transform: translateY(-5px) rotate(-38deg); }
+#nav .nav-menu__list li:nth-child(2) { padding-left: 1.2em; }
+#nav .nav-menu__list li:nth-child(3) { padding-left: 0.4em; }
+#nav .nav-menu__list li:nth-child(4) { padding-left: 1.8em; }
+#nav .nav-menu__list li:nth-child(5) { padding-left: 0.8em; }
+#nav .nav-menu__list a { font-size: clamp(44px, 8vw, 104px); }
+#nav .nav-menu__foot { display: flex; flex-wrap: wrap; gap: 8px 32px; color: var(--color-7); }
+#nav .nav-menu .m-icon:focus-visible, #nav .nav-menu a:focus-visible { outline-color: var(--color-2); }
+@media (max-width: 860px) {
+  #nav { grid-template-columns: 1fr auto; }
+  #nav .nav-mid, #nav .nav-book { display: none; }
+  #nav .nav-logo { font-size: 22px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+#opening :focus-visible { outline-color: var(--color-2); }
+#opening .op-first { position: sticky; top: 0; height: 100vh; height: 100svh; min-height: 600px; overflow: clip; background: linear-gradient(172deg, var(--color-3) 6%, var(--color-4) 74%); isolation: isolate; }
+#opening .op-thread { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; fill: none; stroke: color-mix(in srgb, var(--color-2) 55%, transparent); stroke-width: 1; }
+#opening .op-title { position: absolute; z-index: 3; left: 0; right: 0; top: 12vh; font-size: clamp(84px, 12vw, 184px); line-height: 0.84; pointer-events: none; }
+#opening .op-line { display: block; width: max-content; }
+#opening .op-line__in { display: block; }
+#opening .op-line--1 { margin-left: 20vw; }
+#opening .op-line--2 { margin-left: 39vw; }
+#opening .op-line--3 { margin-left: 27vw; }
+#opening .op-arch { position: absolute; z-index: 1; left: 50%; top: 19vh; width: min(30vw, 420px); height: 66vh; margin-left: max(-15vw, -210px); }
+#opening .op-arch__in { width: 100%; height: 100%; border-radius: var(--radius-3); overflow: hidden; background: var(--color-1); }
+#opening .op-arch__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; }
+#opening .op-arch__in::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-1) 55%, transparent), color-mix(in srgb, var(--color-1) 35%, transparent) 75%); pointer-events: none; }
+#opening .op-arch__in { position: relative; }
+#opening .op-card { position: absolute; z-index: 1; width: clamp(92px, 15vw, 230px); aspect-ratio: 3 / 4; }
+#opening .op-card--l { left: -3vw; top: 47vh; transform: rotate(-9deg); }
+#opening .op-card--r { right: -3vw; top: 27vh; transform: rotate(8deg); }
+#opening .op-card__float { width: 100%; height: 100%; border-radius: var(--radius-1); overflow: hidden; box-shadow: var(--shadow-1); }
+#opening .op-card__float img { width: 100%; height: 100%; object-fit: cover; }
+#opening .op-note { position: absolute; z-index: 3; text-align: center; }
+#opening .op-note--l { left: 4vw; top: 31vh; text-align: left; }
+#opening .op-note--r { right: 14vw; top: 21vh; }
+#opening .op-act { position: absolute; z-index: 3; left: 66vw; top: 58vh; display: grid; gap: 22px; justify-items: start; }
+#opening .op-second { position: relative; z-index: 4; min-height: 100vh; min-height: 100svh; background: var(--color-1); }
+#opening .op-dome-wrap { position: absolute; left: 50%; bottom: calc(100% - 1px); width: 124vw; height: 26vh; margin-left: -62vw; pointer-events: none; }
+#opening .op-dome { width: 100%; height: 100%; background: var(--color-1); border-radius: 50% 50% 0 0 / 100% 100% 0 0; transform-origin: 50% 100%; }
+#opening .op-second__in { min-height: 100vh; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; gap: 48px; padding: 14vh var(--space-1) 10vh; }
+#opening .op-copy { display: grid; gap: 28px; justify-items: start; max-width: 560px; }
+#opening .op-copy__title { font-size: clamp(40px, 4.6vw, 72px); line-height: 0.95; }
+#opening .op-copy__text { max-width: 40ch; color: var(--color-7); }
+#opening .op-strips { position: relative; display: flex; justify-content: center; align-items: flex-end; gap: clamp(10px, 1.8vw, 26px); }
+#opening .op-strip { display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: clamp(64px, 7.4vw, 104px); height: clamp(300px, 60vh, 500px); padding: 16px 0 14px; border-radius: 3px; background: var(--color-2); color: var(--color-1); }
+#opening .op-strip:nth-child(even) { height: clamp(260px, 52vh, 430px); }
+#opening .op-strip__word { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font-size: clamp(20px, 1.9vw, 28px); }
+#opening .op-strip__tag { color: var(--color-6); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-line__in { animation: op-rise 1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-line--2 .op-line__in { animation-delay: .08s; }
+  #opening .op-line--3 .op-line__in { animation-delay: .16s; }
+  #opening .op-arch__in { animation: op-arch-in 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-card__float { animation: op-card-in 1s .1s cubic-bezier(.2,.7,.2,1) backwards, op-float 7s 1.1s ease-in-out infinite; }
+  #opening .op-card--r .op-card__float { animation: op-card-in-r 1s .15s cubic-bezier(.2,.7,.2,1) backwards, op-float 8s 1.15s ease-in-out infinite reverse; }
+  #opening .op-arch__img { animation: op-pan 11s ease-in-out infinite alternate; }
+  #opening .op-dome-wrap { animation: op-dome-in 1.1s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .op-note, #opening .op-act { animation: op-fade 1s .25s ease backwards; }
+  #opening[data-offscreen] .op-card__float, #opening[data-offscreen] .op-arch__img { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(0.32em); } }
+@keyframes op-arch-in { from { transform: translateY(48px) scale(0.96); } }
+@keyframes op-card-in { from { transform: translateX(-70px); opacity: 0; } }
+@keyframes op-card-in-r { from { transform: translateX(70px); opacity: 0; } }
+@keyframes op-float { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 25% { transform: translate(4px, -18px) rotate(-2deg); } 75% { transform: translate(-4px, 18px) rotate(2deg); } }
+@keyframes op-pan { from { transform: scale(1.14) translateY(-4%); } to { transform: scale(1.14) translateY(4%); } }
+@keyframes op-dome-in { from { transform: translateY(9vh); } }
+@keyframes op-fade { from { opacity: 0; } }
+@media (max-width: 767.98px) {
+  #opening .op-first { min-height: 640px; }
+  #opening .op-title { top: 104px; font-size: min(24vw, 108px); }
+  #opening .op-line--1 { margin-left: 5vw; }
+  #opening .op-line--2 { margin-left: 16vw; }
+  #opening .op-line--3 { margin-left: 9vw; }
+  #opening .op-arch { left: auto; right: 6vw; top: auto; bottom: 14vh; width: 50vw; height: 50vh; margin-left: 0; }
+  #opening .op-card { width: 23vw; }
+  #opening .op-card--l { left: -7vw; top: auto; bottom: 47vh; }
+  #opening .op-card--r { right: -6vw; top: 96px; }
+  #opening .op-note--l { left: 5vw; top: auto; bottom: 41vh; }
+  #opening .op-note--r { display: none; }
+  #opening .op-act { left: 5vw; top: auto; bottom: calc(20vh + 12px); gap: 16px; }
+  #opening .op-act .m-text-3 { font-size: 19px; }
+  #opening .op-act .m-btn { min-width: 172px; }
+  #opening .op-dome-wrap { width: 150vw; height: 17vh; margin-left: -75vw; }
+  #opening .op-second__in { grid-template-columns: 1fr; align-content: center; gap: 36px; padding: 96px var(--space-1) 56px; }
+  #opening .op-strips { gap: 10px; }
+  #opening .op-strip { width: calc((100% - 30px) / 4); height: 300px; }
+  #opening .op-strip:nth-child(even) { height: 260px; }
+}
+}
+</style>
+<style data-8b-part="section:origins">
+@layer sections {
+#origins { position: relative; overflow-x: clip; padding: 18vh 0 12vh; background: var(--color-1); color: var(--color-2); }
+#origins :focus-visible { outline-color: var(--color-2); }
+#origins .or-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px 48px; padding: 0 var(--space-1) 7vh; }
+#origins .or-title { font-size: clamp(64px, 11vw, 170px); }
+#origins .or-title__a, #origins .or-title__b { display: block; }
+#origins .or-title__b { padding-left: 1.3em; color: var(--color-7); }
+#origins .or-cap { padding-bottom: 0.5em; }
+#origins .or-stage { position: relative; padding: 0 var(--space-1); }
+#origins .or-grid { position: relative; display: grid; grid-template-columns: 22fr 46fr 22fr; grid-template-rows: repeat(20, minmax(0, 1fr)); gap: 0 2.2vw; height: clamp(540px, calc(100svh - 110px), 880px); }
+#origins .or-tile { position: relative; min-height: 0; }
+#origins .or-tile--a { grid-column: 1; grid-row: 1 / 9; }
+#origins .or-tile--b { grid-column: 1; grid-row: 10 / 21; }
+#origins .or-tile--c { grid-column: 2; grid-row: 2 / 14; z-index: 2; }
+#origins .or-tile--d { grid-column: 2; grid-row: 15 / 21; width: 56%; justify-self: end; }
+#origins .or-tile--e { grid-column: 3; grid-row: 1 / 12; }
+#origins .or-tile--f { grid-column: 3; grid-row: 13 / 20; }
+#origins .or-fig { display: flex; flex-direction: column; gap: 10px; height: 100%; }
+#origins .or-photo { position: relative; flex: 1 1 auto; min-height: 0; border-radius: var(--radius-1); overflow: hidden; background: var(--color-3); }
+#origins .or-photo img { width: 100%; height: 100%; object-fit: cover; }
+#origins .or-meta { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 12px; }
+#origins .or-name { font-size: clamp(18px, 1.4vw, 22px); }
+#origins .or-place { color: var(--color-7); }
+#origins .or-foot { max-width: 46ch; margin: 7vh var(--space-1) 0 auto; padding-right: var(--space-1); color: var(--color-7); }
+@media (max-width: 767.98px) {
+  #origins { padding-top: 13vh; }
+  #origins .or-head { grid-template-columns: 1fr; }
+  #origins .or-title__b { padding-left: 0.6em; }
+  #origins .or-grid { grid-template-columns: 1fr 1fr; gap: 0 10px; height: clamp(600px, calc(100svh - 72px), 820px); }
+  #origins .or-tile--c { grid-column: 1 / 3; grid-row: 1 / 8; }
+  #origins .or-tile--a { grid-column: 1; grid-row: 8 / 13; }
+  #origins .or-tile--b { grid-column: 1; grid-row: 13 / 17; }
+  #origins .or-tile--d { grid-column: 1; grid-row: 17 / 21; width: auto; }
+  #origins .or-tile--e { grid-column: 2; grid-row: 8 / 15; }
+  #origins .or-tile--f { grid-column: 2; grid-row: 15 / 21; }
+  #origins .or-fig { gap: 4px; }
+  #origins .or-photo { margin-top: 8px; }
+  #origins .or-name { font-size: 16px; }
+  #origins .or-place { font-size: 11px; }
+  #origins .or-foot { margin-left: var(--space-1); }
+}
+}
+</style>
+<style data-8b-part="scene-style:origins">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #origins[data-staged] .or-track { height: 240vh; }
+  #origins[data-staged] .or-stage { position: sticky; top: 0; height: 100vh; height: 100svh; display: grid; align-content: end; padding-bottom: 14px; overflow: clip; }
+}
+}
+</style>
+<style data-8b-part="section:shelf">
+@layer sections {
+#shelf { position: relative; overflow: clip; padding: 18vh var(--space-1) 16vh; background: var(--color-2); color: var(--color-1); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 16px; }
+#shelf :focus-visible { outline-color: var(--color-1); }
+#shelf .sh-thread { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-8); stroke-width: 1.1; pointer-events: none; }
+#shelf .sh-copy { position: relative; grid-column: 2 / span 6; display: grid; gap: 30px; align-content: start; }
+#shelf .sh-title { font-size: clamp(56px, 8.4vw, 132px); }
+#shelf .sh-title span { display: block; }
+#shelf .sh-title span + span { padding-left: 0.9em; }
+#shelf .sh-lead { max-width: 24ch; }
+#shelf .sh-text { max-width: 38ch; margin-left: 12%; }
+#shelf .sh-num { display: inline-grid; place-items: center; width: 1.9em; height: 1.9em; margin: -0.4em 0.15em; border: 1px solid var(--color-8); border-radius: 50%; background: var(--color-5); font-family: var(--font-1); font-size: 1.45em; line-height: 1; color: var(--color-3); vertical-align: middle; }
+#shelf .sh-act { display: grid; gap: 20px; justify-items: start; margin-left: 44%; }
+#shelf .sh-photo { position: relative; grid-column: 9 / span 4; align-self: start; margin-top: 16vh; border-radius: var(--radius-1); overflow: hidden; box-shadow: var(--shadow-1); }
+#shelf .sh-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+#shelf .sh-photo figcaption { position: absolute; left: 12px; bottom: 12px; padding: 4px 10px; border-radius: 999px; background: var(--color-2); }
+@media (max-width: 860px) {
+  #shelf { grid-template-columns: 1fr; padding-top: 12vh; }
+  #shelf .sh-copy { grid-column: 1; grid-row: 2; }
+  #shelf .sh-photo { grid-column: 1; grid-row: 1; width: 70%; margin: 0 0 7vh auto; }
+  #shelf .sh-text { margin-left: 0; }
+  #shelf .sh-act { margin-left: 18%; }
+}
+}
+</style>
+<style data-8b-part="section:cabinet">
+@layer sections {
+#cabinet { position: relative; overflow-x: clip; background: var(--color-5); color: var(--color-1); }
+#cabinet :focus-visible { outline-color: var(--color-1); }
+#cabinet .cb-stage { position: relative; display: grid; grid-template-rows: auto auto auto auto; align-content: center; gap: 2.4vh; padding: 12vh var(--space-1) 10vh; }
+#cabinet .cb-title { position: relative; display: flex; justify-content: space-between; align-items: baseline; font-size: clamp(64px, 11.5vw, 178px); }
+#cabinet .cb-word { display: block; }
+#cabinet .cb-lead { max-width: 34ch; justify-self: center; text-align: center; color: var(--color-6); }
+#cabinet .cb-deck { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+#cabinet .cb-card { position: relative; display: flex; flex-direction: column; border-radius: var(--radius-1); overflow: hidden; background: var(--color-2); }
+#cabinet .cb-card:nth-child(1) { z-index: 4; }
+#cabinet .cb-card:nth-child(2) { z-index: 3; }
+#cabinet .cb-card:nth-child(3) { z-index: 2; }
+#cabinet .cb-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+#cabinet .cb-body { display: grid; gap: 7px; padding: 12px 16px 14px; }
+#cabinet .cb-no { color: var(--color-6); }
+#cabinet .cb-notes { display: grid; gap: 2px; }
+#cabinet .cb-notes div { display: grid; grid-template-columns: 3.4em minmax(0, 1fr); gap: 8px; }
+#cabinet .cb-notes dt { color: var(--color-6); }
+#cabinet .cb-price { margin-top: 4px; padding-top: 8px; border-top: 1px solid color-mix(in srgb, var(--color-1) 22%, transparent); }
+#cabinet .cb-more { justify-self: center; }
+@media (max-width: 767.98px) {
+  #cabinet .cb-stage { gap: 14px; padding: 76px var(--space-1) 28px; }
+  #cabinet .cb-title { font-size: 15vw; }
+  #cabinet .cb-lead { font-size: 14px; }
+  #cabinet .cb-deck { grid-template-columns: 1fr 1fr; gap: 10px; }
+  #cabinet .cb-photo img { aspect-ratio: 3 / 2; }
+  #cabinet .cb-body { gap: 4px; padding: 8px 10px 10px; }
+  #cabinet .cb-body .m-text-6 { font-size: 19px; }
+  #cabinet .cb-notes { display: block; font-size: 12px; }
+  #cabinet .cb-notes div { display: inline; }
+  #cabinet .cb-notes dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  #cabinet .cb-notes dd { display: inline; }
+  #cabinet .cb-notes div + div dd::before { content: " / "; color: var(--color-6); }
+  #cabinet .cb-price { font-size: 12px; padding-top: 5px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:cabinet">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #cabinet[data-staged] .cb-track { height: 330vh; }
+  #cabinet[data-staged] .cb-stage { position: sticky; top: 0; height: 100vh; height: 100svh; padding-top: max(9vh, 104px); padding-bottom: 3vh; }
+  #cabinet[data-staged] .cb-card { box-shadow: var(--shadow-1); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 767.98px) {
+  #cabinet[data-staged] .cb-stage { padding-top: 92px; padding-bottom: 10px; }
+}
+}
+</style>
+<style data-8b-part="section:accord">
+@layer sections {
+#accord { position: relative; overflow-x: clip; padding: 16vh var(--space-1) 14vh; background: var(--color-2); color: var(--color-1); }
+#accord :focus-visible { outline-color: var(--color-1); }
+#accord .ac-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 24px 48px; margin-bottom: 6vh; }
+#accord .ac-title { font-size: clamp(60px, 10vw, 156px); }
+#accord .ac-title span { display: block; padding-left: 0.08em; font-size: 0.42em; line-height: 1; }
+#accord .ac-frame { position: relative; height: clamp(420px, 78vh, 760px); border-radius: var(--radius-1); overflow: hidden; background: var(--color-1); }
+#accord .ac-gap { position: absolute; top: 0; bottom: 0; left: 32%; right: 32%; overflow: hidden; }
+#accord .ac-gap img { width: 100%; height: 100%; object-fit: cover; }
+#accord .ac-half { position: absolute; top: 0; bottom: 0; width: 50%; overflow: hidden; }
+#accord .ac-half--l { left: -18%; clip-path: polygon(0 0, calc(100% - 6vw) 0, 100% 16%, 100% 84%, calc(100% - 6vw) 100%, 0 100%); }
+#accord .ac-half--r { left: 68%; clip-path: polygon(6vw 0, 100% 0, 100% 100%, 6vw 100%, 0 84%, 0 16%); }
+#accord .ac-half img { position: absolute; top: 0; width: 200%; max-width: none; height: 100%; object-fit: cover; }
+#accord .ac-half--l img { left: 0; }
+#accord .ac-half--r img { left: -100%; }
+#accord .ac-text { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px 16px; margin-top: 7vh; }
+#accord .ac-text p { font-size: clamp(22px, 1.6vw + 12px, 34px); line-height: 1.12; }
+#accord .ac-text p:first-child { grid-column: 2 / span 5; }
+#accord .ac-text p:last-child { grid-column: 6 / span 6; margin-top: 2.2em; }
+@media (max-width: 767.98px) {
+  #accord { padding-top: 12vh; }
+  #accord .ac-frame { height: 64vh; }
+  #accord .ac-gap { left: 30%; right: 30%; }
+  #accord .ac-half--l { left: -20%; clip-path: polygon(0 0, calc(100% - 9vw) 0, 100% 14%, 100% 86%, calc(100% - 9vw) 100%, 0 100%); }
+  #accord .ac-half--r { left: 70%; clip-path: polygon(9vw 0, 100% 0, 100% 100%, 9vw 100%, 0 86%, 0 14%); }
+  #accord .ac-text p:first-child, #accord .ac-text p:last-child { grid-column: 1 / -1; margin-top: 0; }
+  #accord .ac-text p:last-child { padding-left: 14%; }
+}
+}
+</style>
+<style data-8b-part="section:resting">
+@layer sections {
+#resting { position: relative; overflow: clip; padding: 6vh var(--space-1) 16vh; background: var(--color-2); color: var(--color-1); }
+#resting :focus-visible { outline-color: var(--color-1); }
+#resting .rs-thread { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-8); stroke-width: 1.1; pointer-events: none; }
+#resting .rs-head { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; margin-bottom: 7vh; }
+#resting .rs-title { font-size: clamp(54px, 8vw, 128px); }
+#resting .rs-intro { max-width: 40ch; color: var(--color-6); }
+#resting .rs-list { position: relative; }
+#resting .rs-row { display: grid; grid-template-columns: 1.2fr 2.4fr 2fr 3.4fr 1.6fr; align-items: center; gap: 16px 28px; padding: 22px 0; border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+#resting .rs-row:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+#resting .rs-batch { color: var(--color-6); }
+#resting .rs-badge { justify-self: start; }
+#resting .rs-note { color: var(--color-6); }
+#resting .rs-photo { border-radius: var(--radius-1); overflow: hidden; }
+#resting .rs-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+#resting .rs-row:nth-child(2) .rs-photo { translate: 0 18px; }
+#resting .rs-row:nth-child(3) .rs-photo { translate: 0 -10px; }
+@media (max-width: 860px) {
+  #resting .rs-head { grid-template-columns: 1fr; }
+  #resting .rs-row { grid-template-columns: 1fr 108px; gap: 8px 16px; }
+  #resting .rs-row > * { grid-column: 1; }
+  #resting .rs-row .rs-photo { grid-column: 2; grid-row: 1 / span 4; align-self: start; }
+  #resting .rs-row:nth-child(n) .rs-photo { translate: none; }
+}
+}
+</style>
+<style data-8b-part="section:noses">
+@layer sections {
+#noses { position: relative; overflow-x: clip; padding: 16vh var(--space-1) 18vh; background: var(--color-1); color: var(--color-2); }
+#noses :focus-visible { outline-color: var(--color-2); }
+#noses .ns-word { font-size: min(34vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.6))); line-height: 0.8; text-align: center; white-space: nowrap; }
+#noses .ns-lead { max-width: 25ch; margin: 5vh auto 10vh; text-align: center; font-size: clamp(24px, 1.8vw + 12px, 38px); color: var(--color-2); }
+#noses .ns-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3.2vw; align-items: start; }
+#noses .ns-person { display: grid; gap: 10px; }
+#noses .ns-person:nth-child(2) { margin-top: 12vh; }
+#noses .ns-person:nth-child(3) { margin-top: 4vh; }
+#noses .ns-arch { aspect-ratio: 3 / 4.1; overflow: hidden; clip-path: inset(0% 0% 0% 0% round 999px 999px 0px 0px); background: var(--color-3); margin-bottom: 10px; }
+#noses .ns-arch img { width: 100%; height: 100%; object-fit: cover; }
+#noses .ns-role { color: var(--color-7); }
+#noses .ns-bio { max-width: 34ch; color: var(--color-7); }
+@media (max-width: 767.98px) {
+  #noses .ns-list { grid-template-columns: 1fr; gap: 9vh; }
+  #noses .ns-person:nth-child(n) { margin-top: 0; width: 82%; }
+  #noses .ns-person:nth-child(2) { margin-left: auto; }
+  #noses .ns-person:nth-child(3) { margin-left: 8%; }
+}
+}
+</style>
+<style data-8b-part="section:questions">
+@layer sections {
+#questions { position: relative; overflow: clip; padding: 16vh var(--space-1); background: var(--color-2); color: var(--color-1); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 6vh 6vw; }
+#questions :focus-visible { outline-color: var(--color-1); }
+#questions .qs-thread { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-8); stroke-width: 1.1; pointer-events: none; }
+#questions .qs-head { position: relative; display: grid; gap: 28px; align-content: start; }
+#questions .qs-title { font-size: clamp(54px, 7.4vw, 118px); }
+#questions .qs-list { position: relative; }
+#questions .qs-item { border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+#questions .qs-item:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+#questions .qs-item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#questions .qs-item summary::-webkit-details-marker { display: none; }
+#questions .qs-mark { position: relative; flex: 0 0 auto; width: 18px; height: 18px; }
+#questions .qs-mark::before, #questions .qs-mark::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: currentColor; transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+#questions .qs-mark::after { transform: rotate(90deg); }
+#questions .qs-item[open] .qs-mark::after { transform: rotate(0deg); }
+#questions .qs-answer { max-width: 52ch; padding: 0 0 24px 12%; color: var(--color-6); }
+@media (max-width: 860px) {
+  #questions { grid-template-columns: 1fr; padding-top: 12vh; }
+  #questions .qs-answer { padding-left: 0; }
+}
+}
+</style>
+<style data-8b-part="section:blind-set">
+@layer sections {
+#blind-set { position: relative; overflow-x: clip; padding: 16vh var(--space-1); background: var(--color-3); color: var(--color-2); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 6vh 5vw; align-items: center; }
+#blind-set :focus-visible { outline-color: var(--color-2); }
+#blind-set .bs-copy { display: grid; gap: 26px; justify-items: start; }
+#blind-set .bs-title { font-size: clamp(54px, 7.2vw, 116px); }
+#blind-set .bs-text { max-width: 40ch; }
+#blind-set .bs-price { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+#blind-set .bs-price .m-text-6 { font-size: clamp(34px, 3vw, 46px); }
+#blind-set .bs-visual { position: relative; aspect-ratio: 4 / 3; }
+#blind-set .bs-photo { position: absolute; inset: 0; border-radius: var(--radius-1); overflow: hidden; }
+#blind-set .bs-photo img { width: 100%; height: 100%; object-fit: cover; }
+#blind-set .bs-slots li { position: absolute; display: grid; place-items: center; align-content: center; gap: 1px; width: 78px; height: 78px; margin: -39px 0 0 -39px; border-radius: 50%; background: var(--color-2); color: var(--color-1); text-align: center; }
+#blind-set .bs-slots .m-text-6 { font-size: 26px; line-height: 1; }
+#blind-set .bs-slots .m-text-4 { font-size: 11px; }
+#blind-set .bs-slots li:nth-child(1) { left: 20%; top: 30%; }
+#blind-set .bs-slots li:nth-child(2) { left: 50%; top: 30%; }
+#blind-set .bs-slots li:nth-child(3) { left: 80%; top: 30%; }
+#blind-set .bs-slots li:nth-child(4) { left: 20%; top: 72%; }
+#blind-set .bs-slots li:nth-child(5) { left: 50%; top: 72%; }
+#blind-set .bs-slots li:nth-child(6) { left: 80%; top: 72%; }
+#blind-set .m-btn:focus-visible { outline-color: var(--color-2); }
+@media (max-width: 860px) {
+  #blind-set { grid-template-columns: 1fr; padding-top: 12vh; }
+  #blind-set .bs-visual { grid-row: 1; aspect-ratio: 4 / 5; }
+  #blind-set .bs-slots li { width: 64px; height: 64px; margin: -32px 0 0 -32px; }
+  #blind-set .bs-slots .m-text-6 { font-size: 22px; }
+  #blind-set .bs-slots li:nth-child(1) { left: 28%; top: 18%; }
+  #blind-set .bs-slots li:nth-child(2) { left: 72%; top: 18%; }
+  #blind-set .bs-slots li:nth-child(3) { left: 28%; top: 50%; }
+  #blind-set .bs-slots li:nth-child(4) { left: 72%; top: 50%; }
+  #blind-set .bs-slots li:nth-child(5) { left: 28%; top: 82%; }
+  #blind-set .bs-slots li:nth-child(6) { left: 72%; top: 82%; }
+}
+}
+</style>
+<style data-8b-part="scene-style:blind-set">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #blind-set[data-apertures] .bs-photo {
+    --bs-g: var(--color-1) var(--bs-r, 0px), transparent calc(var(--bs-r, 0px) + 1px);
+    -webkit-mask-image: radial-gradient(circle at 20% 30%, var(--bs-g)), radial-gradient(circle at 50% 30%, var(--bs-g)), radial-gradient(circle at 80% 30%, var(--bs-g)), radial-gradient(circle at 20% 72%, var(--bs-g)), radial-gradient(circle at 50% 72%, var(--bs-g)), radial-gradient(circle at 80% 72%, var(--bs-g));
+    mask-image: radial-gradient(circle at 20% 30%, var(--bs-g)), radial-gradient(circle at 50% 30%, var(--bs-g)), radial-gradient(circle at 80% 30%, var(--bs-g)), radial-gradient(circle at 20% 72%, var(--bs-g)), radial-gradient(circle at 50% 72%, var(--bs-g)), radial-gradient(circle at 80% 72%, var(--bs-g));
+  }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 860px) {
+  #blind-set[data-apertures] .bs-photo {
+    -webkit-mask-image: radial-gradient(circle at 28% 18%, var(--bs-g)), radial-gradient(circle at 72% 18%, var(--bs-g)), radial-gradient(circle at 28% 50%, var(--bs-g)), radial-gradient(circle at 72% 50%, var(--bs-g)), radial-gradient(circle at 28% 82%, var(--bs-g)), radial-gradient(circle at 72% 82%, var(--bs-g));
+    mask-image: radial-gradient(circle at 28% 18%, var(--bs-g)), radial-gradient(circle at 72% 18%, var(--bs-g)), radial-gradient(circle at 28% 50%, var(--bs-g)), radial-gradient(circle at 72% 50%, var(--bs-g)), radial-gradient(circle at 28% 82%, var(--bs-g)), radial-gradient(circle at 72% 82%, var(--bs-g));
+  }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { position: relative; overflow: clip; padding: 16vh var(--space-1) 14vh; background: var(--color-2); color: var(--color-1); }
+#visit :focus-visible { outline-color: var(--color-1); }
+#visit .vs-ground { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+#visit .vs-thread { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-5); stroke-width: 1.2; pointer-events: none; }
+#visit .vs-inner { position: relative; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 7vh 7vw; }
+#visit .vs-title { grid-column: 1 / -1; font-size: clamp(52px, 8.4vw, 132px); }
+#visit .vs-title span { display: block; padding-left: 1.6em; }
+#visit .vs-form { display: grid; gap: 26px; align-content: start; }
+#visit .vs-consent { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; max-width: 46ch; }
+#visit .vs-consent input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--color-1); }
+#visit .vs-send { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+#visit .vs-status { max-width: 36ch; }
+#visit .vs-info { display: grid; gap: 22px; align-content: start; }
+#visit .vs-info dl { display: grid; gap: 16px; }
+#visit .vs-info dt { color: var(--color-1); }
+#visit .vs-info address { font-style: normal; }
+#visit select.m-field__input { cursor: pointer; }
+@media (max-width: 860px) {
+  #visit { padding-top: 12vh; }
+  #visit .vs-inner { grid-template-columns: 1fr; }
+  #visit .vs-title span { padding-left: 0.6em; }
+  #visit .m-field { grid-template-columns: 1fr; gap: 2px; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; padding: 18vh var(--space-1) var(--space-1); background: var(--color-1); color: var(--color-1); }
+#footer :focus-visible { outline-color: var(--color-1); }
+#footer .ft-card { position: relative; overflow: hidden; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px 16px; padding: clamp(24px, 3vw, 44px); border-radius: 22px; background: var(--color-5); }
+#footer .ft-thread { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-8); stroke-width: 1.2; pointer-events: none; }
+#footer .ft-note { position: relative; grid-column: 1 / span 4; }
+#footer .ft-quiet { position: relative; grid-column: 10 / span 3; justify-self: end; text-align: right; color: var(--color-6); }
+#footer .ft-nav { position: relative; grid-column: 1 / -1; }
+#footer .ft-links { display: grid; gap: 0.04em; padding: 2vh 0 4vh; }
+#footer .ft-links li:nth-child(1) { padding-left: 28%; }
+#footer .ft-links li:nth-child(2) { padding-left: 46%; }
+#footer .ft-links li:nth-child(3) { padding-left: 16%; }
+#footer .ft-links li:nth-child(4) { padding-left: 54%; }
+#footer .ft-links li:nth-child(5) { padding-left: 34%; }
+#footer .ft-links a { font-size: clamp(46px, 6.6vw, 104px); line-height: 0.98; }
+#footer .ft-links a::before { content: "+"; position: absolute; left: -0.5em; top: 0.18em; font-family: var(--font-2); font-size: 14px; font-weight: 400; }
+#footer .ft-meta { position: relative; grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; color: var(--color-6); }
+@media (max-width: 767.98px) {
+  #footer { padding-top: 12vh; }
+  #footer .ft-note, #footer .ft-quiet { grid-column: 1 / -1; justify-self: start; text-align: left; }
+  #footer .ft-links li:nth-child(n) { padding-left: 0; }
+  #footer .ft-links li:nth-child(2n) { padding-left: 18%; }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="nav">
+<a aria-label="{{name}}, back to the top" class="nav-logo" href="#opening"><span>{{t1|The}}</span><span>{{t2|Resin}}</span><span>{{t3|Cabinet}}</span></a>
+<nav aria-label="Main" class="nav-mid">
+<a class="nav-pill" href="#origins">{{t4|Origins}}</a>
+<a class="nav-pill" href="#cabinet">{{t3|Cabinet}}</a>
+</nav>
+<div class="nav-end">
+<a class="nav-pill nav-book" href="#visit">{{t5|Book a session}}</a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon nav-toggle" type="button"><span class="m-icon__line"></span><span class="m-icon__line"></span><span class="m-icon__line"></span></button>
+</div>
+<div class="nav-menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="nav-menu__top">
+<p class="m-text-6">{{t6|⟦name⟧}}</p>
+<button aria-label="Close the menu" class="m-icon nav-close" type="button"><span class="m-icon__line"></span><span class="m-icon__line"></span><span class="m-icon__line"></span></button>
+</div>
+<nav aria-label="Menu">
+<ul class="nav-menu__list">
+{{#nv_origins}}<li><a class="m-text-2 m-link-2" href="#origins">{{t4|Origins}}</a></li>{{/nv_origins}}
+{{#nv_cabinet}}<li><a class="m-text-2 m-link-2" href="#cabinet">{{t3|Cabinet}}</a></li>{{/nv_cabinet}}
+{{#nv_accord}}<li><a class="m-text-2 m-link-2" href="#accord">{{t7|Accord}}</a></li>{{/nv_accord}}
+{{#nv_noses}}<li><a class="m-text-2 m-link-2" href="#noses">{{t8|Noses}}</a></li>{{/nv_noses}}
+{{#nv_visit}}<li><a class="m-text-2 m-link-2" href="#visit">{{t9|Visit}}</a></li>{{/nv_visit}}
+</ul>
+</nav>
+<div class="nav-menu__foot m-text-4">
+<p>{{t10|1 Admiralty Way, Leith, Enugu}}</p>
+<p>{{t11|Thursday to Saturday, by appointment}}</p>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-first" data-loop="">
+<div class="op-card op-card--l"><div class="op-card__float"><img alt="A thread of incense smoke curling upward in the dark" height="2005" sizes="(max-width: 767px) 56px, 18vw" src="{{i1|https://images.unsplash.com/photo-1770217535698-dd125e5d36c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aW5jZW5zZSUyMHNtb2tlJTIwZGFya3xlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" srcset="{{i2|https://images.unsplash.com/photo-1770217535698-dd125e5d36c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aW5jZW5zZSUyMHNtb2tlJTIwZGFya3xlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}} 170w, {{i1|https://images.unsplash.com/photo-1770217535698-dd125e5d36c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aW5jZW5zZSUyMHNtb2tlJTIwZGFya3xlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}} 230w" style="background:#262626" width="1600"/></div></div>
+<div class="op-card op-card--r"><div class="op-card__float"><img alt="Night jasmine flowering on a dark branch" height="1067" sizes="(max-width: 767px) 106px, 33vw" src="{{i3|https://images.unsplash.com/photo-1718659109023-c752aa52d99e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8amFzbWluZSUyMGZsb3dlcnMlMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" srcset="{{i4|https://images.unsplash.com/photo-1718659109023-c752aa52d99e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8amFzbWluZSUyMGZsb3dlcnMlMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60}} 320w, {{i3|https://images.unsplash.com/photo-1718659109023-c752aa52d99e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8amFzbWluZSUyMGZsb3dlcnMlMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}} 420w" style="background:#262626" width="1600"/></div></div>
+<div class="op-arch"><div class="op-arch__in"><img alt="A pipette filling a square bottle with amber extrait" class="op-arch__img" fetchpriority="high" height="2400" src="{{i5|https://images.unsplash.com/photo-1709662217659-c7966220219f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#262626" width="1600"/></div></div>
+<svg aria-hidden="true" class="op-thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900"><path d="M1180 -20 C 1260 160, 1120 330, 860 390 S 380 420, 300 560 S 520 860, 980 760 S 1500 640, 1460 880" pathlength="1"></path></svg>
+<h1 class="op-title m-text-2" id="opening-title"><span class="op-line op-line--1"><span class="op-line__in">{{t12|Nose}}</span></span> <span class="op-line op-line--2"><span class="op-line__in">{{t13|Before}}</span></span> <span class="op-line op-line--3"><span class="op-line__in">{{t14|Name}}</span></span></h1>
+<p class="op-note op-note--l m-text-4">{{t15|A blind perfumery}}<br/>{{t16|for patient noses}}</p>
+<p class="op-note op-note--r m-text-4">{{t17|Names withheld}}<br/>{{t18|until chosen}}</p>
+<div class="op-act">
+<p class="m-text-3"><span style="--m-text-3-i:0">{{t19|Smell first,}}</span><span style="--m-text-3-i:1">{{t20|choose second,}}</span><span style="--m-text-3-i:2">{{t21|then see /}}</span></p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t22|Book a blind session}}</span><span aria-hidden="true" class="m-btn__dot"></span></a>
+</div>
+</div>
+<div class="op-second">
+<div aria-hidden="true" class="op-dome-wrap"><div class="op-dome"></div></div>
+<div class="op-second__in">
+<div class="op-copy">
+<h2 class="op-copy__title m-text-2">{{t23|Every scent waits on a paper strip, without a name.}}</h2>
+<p class="op-copy__text m-text">{{t24|You smell four strips at a time. No bottles, no prices, no labels on the table. Only once you have chosen by nose do we turn the card and tell you what it is, who made it and where it grew.}}</p>
+<a class="m-link m-text-4" href="#questions">{{t25|How a blind session works}}</a>
+</div>
+<ul aria-label="Four strips on the table" class="op-strips">
+<li class="op-strip"><span class="op-strip__word m-text-6">{{t26|Rain on cut bark}}</span><span class="op-strip__tag m-text-4">{{t27|A}}</span></li>
+<li class="op-strip"><span class="op-strip__word m-text-6">{{t28|A match just struck}}</span><span class="op-strip__tag m-text-4">{{t29|B}}</span></li>
+<li class="op-strip"><span class="op-strip__word m-text-6">{{t30|Cold iris root}}</span><span class="op-strip__tag m-text-4">{{t31|C}}</span></li>
+<li class="op-strip"><span class="op-strip__word m-text-6">{{t32|Skin after dark}}</span><span class="op-strip__tag m-text-4">{{t33|D}}</span></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_origins}}<section aria-labelledby="origins-title" data-8b-section="origins" id="origins">
+<div class="or-head">
+<h2 class="or-title m-text-2" data-8b-motion="rise" id="origins-title"><span class="or-title__a">{{t4|Origins}}</span> <span class="or-title__b">{{t34|Before the Bottle}}</span></h2>
+<p class="or-cap m-text-3" data-8b-motion="settle"><span style="--m-text-3-i:0">{{t35|Grown far}}</span><span style="--m-text-3-i:1">{{t36|from the shop,}}</span><span style="--m-text-3-i:2">{{t37|visited in person /}}</span></p>
+</div>
+<div class="or-track">
+<div class="or-stage">
+<ul class="or-grid">
+<li class="or-tile or-tile--a">
+<figure class="or-fig">
+<div class="or-photo"><img alt="Cupped hands holding freshly picked jasmine flowers" height="901" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1736186682724-f365f927d293?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8amFzbWluZSUyMGZsb3dlcnMlMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=410&q=60}}" style="background:#262626" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t38|Jasmine sambac}}</span><span class="or-place m-text-4">{{t39|Fayoum, Egypt · August}}</span></figcaption>
+</figure>
+</li>
+<li class="or-tile or-tile--b">
+<figure class="or-fig">
+<div class="or-photo"><img alt="Dry cistus scrub on a coastal hillside at dusk" height="1067" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1788518450532-d5a0a12c8ed6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZHJ5JTIwbWVkaXRlcnJhbmVhbiUyMGhpbGxzJTIwc2hydWJzfGVufDF8MHx8fDE3OTE0NDAwMTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#260c0c" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t40|Labdanum}}</span><span class="or-place m-text-4">{{t41|Andalusia, Spain · July}}</span></figcaption>
+</figure>
+</li>
+<li class="or-tile or-tile--c">
+<figure class="or-fig">
+<div class="or-photo"><img alt="Baskets heaped with rose petals during a night harvest" height="1067" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1545969376-184e17d64041?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cm9zZSUyMHBldGFscyUyMGhhcnZlc3QlMjBiYXNrZXR8ZW58MXwwfHx8MTc5MTQ0MDAxNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#0c2626" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t42|Rose centifolia, picked in the dark}}</span><span class="or-place m-text-4">{{t43|Isparta, Türkiye · May}}</span></figcaption>
+</figure>
+</li>
+<li class="or-tile or-tile--d">
+<figure class="or-fig">
+<div class="or-photo"><img alt="A field of pale purple irises in bloom" height="1067" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1779111205945-1aa9c8be0327?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aXJpcyUyMGZsb3dlciUyMGZpZWxkfGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#597359" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t44|Orris}}</span><span class="or-place m-text-4">{{t45|Tuscany · every third summer}}</span></figcaption>
+</figure>
+</li>
+<li class="or-tile or-tile--e">
+<figure class="or-fig">
+<div class="or-photo"><img alt="Cedars on a hillside wrapped in mist" height="1200" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1786040721789-ac866dfa20c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2VkYXIlMjBmb3Jlc3QlMjBtaXN0fGVufDF8MHx8fDE3OTE0Mzk5OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#262626" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t46|Atlas cedar}}</span><span class="or-place m-text-4">{{t47|Middle Atlas · fallen wood}}</span></figcaption>
+</figure>
+</li>
+<li class="or-tile or-tile--f">
+<figure class="or-fig">
+<div class="or-photo"><img alt="Cones of sea salt drying in grey salt pans" height="1200" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1622100394397-f9bfe7c3f2fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c2FsdCUyMHBhbnMlMjBoYXJ2ZXN0fGVufDF8MHx8fDE3OTE0NDAwODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=390&q=60}}" style="background:#595959" width="1600"/></div>
+<figcaption class="or-meta"><span class="or-name m-text-6">{{t48|Sea salt}}</span><span class="or-place m-text-4">{{t49|Guérande · September}}</span></figcaption>
+</figure>
+</li>
+</ul>
+</div>
+</div>
+<p class="or-foot m-text">{{t50|We buy from six growers and distillers we have stood beside. When a harvest is poor, the scent that needs it simply waits for the next one.}}</p>
+</section>{{/sec_origins}}
+
+{{#sec_shelf}}<section aria-labelledby="shelf-title" data-8b-section="shelf" id="shelf">
+<svg aria-hidden="true" class="sh-thread" data-8b-motion="thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 1000"><path d="M-20 120 C 240 60, 520 160, 600 300 S 420 560, 700 640 S 1260 520, 1180 760 S 900 1040, 1460 960" pathlength="1"></path></svg>
+<div class="sh-copy">
+<h2 class="sh-title m-text-2" data-8b-motion="rise" id="shelf-title"><span>{{t51|No Window,}}</span> <span>{{t52|No Sign}}</span></h2>
+<p class="sh-lead m-text-5">{{t53|The shop is one room up a stair in Leith.}}</p>
+<p class="sh-text m-text">{{t54|There are}} <span class="sh-num">{{t55|41}}</span> {{t56|scents on the shelf at the moment, from eleven small houses and our own bench. None of them is on display. They live in a cabinet of numbered drawers and come out one strip at a time, so the room smells of nothing until you ask.}}</p>
+<div class="sh-act">
+<p class="m-text-3" data-8b-motion="settle"><span style="--m-text-3-i:0">{{t57|Ring the}}</span><span style="--m-text-3-i:1">{{t58|brass bell}}</span><span style="--m-text-3-i:2">{{t59|on the landing /}}</span></p>
+<a class="m-btn-2" href="#visit"><span class="m-btn-2__label">{{t60|See if a seat is free}}</span><span aria-hidden="true" class="m-btn-2__dot"></span></a>
+</div>
+</div>
+<figure class="sh-photo">
+<img alt="A curved bench of hundreds of small amber bottles around a perfumer's chair" height="1066" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1533414765079-4bb015a31395?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVyZnVtZSUyMHNob3AlMjBzaGVsdmVzJTIwYm90dGxlc3xlbnwxfDB8fHwxNzkxNDQwMDM0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=750&q=60}}" style="background:#594040" width="1600"/>
+<figcaption class="m-text-4">{{t61|The bench at the back}}</figcaption>
+</figure>
+</section>{{/sec_shelf}}
+
+{{#sec_cabinet}}<section aria-labelledby="cabinet-title" data-8b-section="cabinet" id="cabinet">
+<div class="cb-track">
+<div class="cb-stage">
+<h2 class="cb-title m-text-2" id="cabinet-title"><span class="cb-word">{{t1|The}}</span> <span class="cb-word">{{t3|Cabinet}}</span></h2>
+<p class="cb-lead m-text">{{t62|Our own four extraits, made on the bench at the back of the room. Each one is still served unnamed first.}}</p>
+<ul class="cb-deck">
+<li class="cb-card">
+<figure class="cb-photo"><img alt="A square bottle of dark amber extrait under a pipette" height="2169" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1709660628819-c8f1cb5d818b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#a68c59" width="1600"/></figure>
+<div class="cb-body">
+<p class="cb-no m-text-4">{{t63|No. 11}}</p>
+<h3 class="m-text-6">{{t64|Wet Cedar}}</h3>
+<dl class="cb-notes m-text-4">
+<div><dt>{{t65|Top}}</dt><dd>{{t66|Bergamot, black pepper}}</dd></div>
+<div><dt>{{t67|Heart}}</dt><dd>{{t68|Atlas cedar, vetiver}}</dd></div>
+<div><dt>{{t69|Base}}</dt><dd>{{t70|Oakmoss, ambergris accord}}</dd></div>
+</dl>
+<p class="cb-price m-text-4">{{t71|50 ml extrait · ₦74,000}}</p>
+</div>
+</li>
+<li class="cb-card">
+<figure class="cb-photo"><img alt="A tall clear bottle being filled in a cool grey workshop" height="2155" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1709662369900-130507781728?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="cb-body">
+<p class="cb-no m-text-4">{{t72|No. 23}}</p>
+<h3 class="m-text-6">{{t73|Low Smoke}}</h3>
+<dl class="cb-notes m-text-4">
+<div><dt>{{t65|Top}}</dt><dd>{{t74|Black tea, saffron}}</dd></div>
+<div><dt>{{t67|Heart}}</dt><dd>{{t75|Birch tar, labdanum}}</dd></div>
+<div><dt>{{t69|Base}}</dt><dd>{{t76|Benzoin, soft leather}}</dd></div>
+</dl>
+<p class="cb-price m-text-4">{{t77|50 ml extrait · ₦78,000}}</p>
+</div>
+</li>
+<li class="cb-card">
+<figure class="cb-photo"><img alt="A clear square bottle under a glass pipette, in black and white" height="2400" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1709662217788-6a8a1b31562a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#594040" width="1600"/></figure>
+<div class="cb-body">
+<p class="cb-no m-text-4">{{t78|No. 37}}</p>
+<h3 class="m-text-6">{{t79|Salt Iris}}</h3>
+<dl class="cb-notes m-text-4">
+<div><dt>{{t65|Top}}</dt><dd>{{t80|Sea salt accord, pear}}</dd></div>
+<div><dt>{{t67|Heart}}</dt><dd>{{t81|Orris butter, violet leaf}}</dd></div>
+<div><dt>{{t69|Base}}</dt><dd>{{t82|Ambrette, clean musk}}</dd></div>
+</dl>
+<p class="cb-price m-text-4">{{t83|50 ml extrait · ₦86,000}}</p>
+</div>
+</li>
+<li class="cb-card">
+<figure class="cb-photo"><img alt="A gloved hand holding a square bottle as it is filled" height="2132" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1709662074619-a3f1e0da6b4c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#598c8c" width="1600"/></figure>
+<div class="cb-body">
+<p class="cb-no m-text-4">{{t84|No. 40}}</p>
+<h3 class="m-text-6">{{t85|Night Jasmine}}</h3>
+<dl class="cb-notes m-text-4">
+<div><dt>{{t65|Top}}</dt><dd>{{t86|Green mandarin}}</dd></div>
+<div><dt>{{t67|Heart}}</dt><dd>{{t87|Jasmine sambac, tobacco leaf}}</dd></div>
+<div><dt>{{t69|Base}}</dt><dd>{{t88|Benzoin, sandalwood}}</dd></div>
+</dl>
+<p class="cb-price m-text-4">{{t89|50 ml extrait · ₦82,000}}</p>
+</div>
+</li>
+</ul>
+<a class="cb-more m-link m-text-4" href="#blind-set">{{t90|Smell all four at home first: the Blind Set}}</a>
+</div>
+</div>
+</section>{{/sec_cabinet}}
+
+{{#sec_accord}}<section aria-labelledby="accord-title" data-8b-section="accord" id="accord">
+<div class="ac-head">
+<h2 class="ac-title m-text-2" data-8b-motion="rise" id="accord-title"><span>{{t1|The}}</span> {{t7|Accord}}</h2>
+<p class="m-text-3" data-8b-motion="settle"><span style="--m-text-3-i:0">{{t91|Material}}</span><span style="--m-text-3-i:1">{{t92|and scent}}</span><span style="--m-text-3-i:2">{{t93|are one thing /}}</span></p>
+</div>
+<div class="ac-frame">
+<div class="ac-gap"><img alt="A finished bottle of amber extrait on the bench" height="2400" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1709662074692-5a6e790cd311?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVyZnVtZSUyMHRlc3RpbmclMjBzdHJpcHxlbnwxfDF8fHwxNzkxNDM5OTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#265973" width="1600"/></div>
+<div class="ac-half ac-half--l"><img alt="A bead of amber resin swelling from a cut in pine bark" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1651847296846-38bd1ee301ef?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cmVzaW4lMjB0ZWFycyUyMHRyZWUlMjBiYXJrfGVufDF8MHx8fDE3OTE0NDAwNTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" style="background:#26260c" width="1600"/></div>
+<div class="ac-half ac-half--r"><img alt="" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1651847296846-38bd1ee301ef?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cmVzaW4lMjB0ZWFycyUyMHRyZWUlMjBiYXJrfGVufDF8MHx8fDE3OTE0NDAwNTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" style="background:#26260c" width="1600"/></div>
+</div>
+<div class="ac-text">
+<p class="m-text-6">{{t94|A perfume is not a picture of a place. It is a little of the place itself: resin bled from bark, petals pressed before noon, a root left to dry for three summers.}}</p>
+<p class="m-text-6">{{t95|Once it leaves the bench, a scent carries its origin without describing it. That is why we never print the story on the label, and why you meet it on a strip first.}}</p>
+</div>
+</section>{{/sec_accord}}
+
+{{#sec_resting}}<section aria-labelledby="resting-title" data-8b-section="resting" id="resting">
+<svg aria-hidden="true" class="rs-thread" data-8b-motion="thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900"><path d="M1460 60 C 1200 140, 1040 40, 860 120 S 640 300, 820 380 S 1100 460, 760 560 S 160 620, -20 820" pathlength="1"></path></svg>
+<div class="rs-head">
+<h2 class="rs-title m-text-2" data-8b-motion="rise" id="resting-title">{{t96|Now Resting}}</h2>
+<p class="rs-intro m-text">{{t97|Small batches age in the dark before they are bottled. This is what sits on the back shelf this month, and when it may reach the strips.}}</p>
+</div>
+<ol class="rs-list">
+<li class="rs-row">
+<p class="rs-batch m-text-4">{{t98|Batch 23}}</p>
+<h3 class="m-text-6">{{t73|Low Smoke}}</h3>
+<p class="rs-badge m-badge">{{t99|Resting · week 5 of 8}}</p>
+<p class="rs-note m-text">{{t100|Birch tar is settling into the labdanum. Bottling planned for late November.}}</p>
+<figure class="rs-photo"><img alt="Brown dropper bottles and a jar on a wooden shelf" height="1066" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1672062519525-5c04bfaefea3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGFtYmVyJTIwamFycyUyMGFwb3RoZWNhcnl8ZW58MXwwfHx8MTc5MTQ0MDM5MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+</li>
+<li class="rs-row">
+<p class="rs-batch m-text-4">{{t101|Batch 37}}</p>
+<h3 class="m-text-6">{{t79|Salt Iris}}</h3>
+<p class="rs-badge m-badge">{{t102|Filtering}}</p>
+<p class="rs-note m-text">{{t103|Chilled and filtered twice; the orris has turned soft and powdery, as it should.}}</p>
+<figure class="rs-photo"><img alt="Old labelled glass jars on a wooden counter" height="900" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1778950874196-7b9ff5e68ed5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YW1iZXIlMjBqYXJzJTIwYXBvdGhlY2FyeXxlbnwxfDB8fHwxNzkxNDQwMzkxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+</li>
+<li class="rs-row">
+<p class="rs-batch m-text-4">{{t104|Batch 41}}</p>
+<h3 class="m-text-6">{{t105|Not yet named}}</h3>
+<p class="rs-badge m-badge">{{t106|Forming}}</p>
+<p class="rs-note m-text">{{t107|A green fig trial. Three drafts on the bench; one of them may survive the winter.}}</p>
+<figure class="rs-photo"><img alt="A row of brown glass bottles on a lit shelf in the dark" height="1067" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1543846230-40657a4f50ed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGFtYmVyJTIwamFycyUyMGFwb3RoZWNhcnl8ZW58MXwwfHx8MTc5MTQ0MDM5MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#26260c" width="1600"/></figure>
+</li>
+</ol>
+</section>{{/sec_resting}}
+
+{{#sec_noses}}<section aria-labelledby="noses-title" data-8b-section="noses" id="noses">
+<h2 class="ns-word m-text-2" id="noses-title" style="--len:5">{{t8|Noses}}</h2>
+<p class="ns-lead m-text-6">{{t108|Three people choose what goes in the cabinet. None of them sells on commission.}}</p>
+<ul class="ns-list">
+<li class="ns-person">
+<div class="ns-arch"><img alt="Portrait of Ines Marlow in profile, in low light" height="2400" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1764384700065-304c92b11e9c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29tYW4lMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kJTIwY2FsbXxlbnwxfDF8fHwxNzkxNDQwMDU0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#260c0c" width="1600"/></div>
+<h3 class="m-text-6">{{t109|Ines Marlow}}</h3>
+<p class="ns-role m-text-4">{{t110|Founder and perfumer}}</p>
+<p class="ns-bio m-text">{{t111|Trained in Grasse, left for Leith. Makes the four extraits and turns down most briefs.}}</p>
+</li>
+<li class="ns-person">
+<div class="ns-arch"><img alt="Portrait of Callum Reid in a leather apron at his workbench" height="2400" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1631396327819-8683b8fda119?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bWFuJTIwcG9ydHJhaXQlMjBjcmFmdHNtYW4lMjBhcHJvbnxlbnwxfDF8fHwxNzkxNDQwMDU0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#260c0c" width="1600"/></div>
+<h3 class="m-text-6">{{t112|Callum Reid}}</h3>
+<p class="ns-role m-text-4">{{t113|Buyer}}</p>
+<p class="ns-bio m-text">{{t114|Visits the growers. Keeps a notebook of every harvest that was too poor to buy.}}</p>
+</li>
+<li class="ns-person">
+<div class="ns-arch"><img alt="Portrait of Sara Okafor looking down, warm light on her face" height="2400" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1759354192456-71975b190c51?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHdvbWFuJTIwcG9ydHJhaXQlMjBkYXJrJTIwYmFja2dyb3VuZCUyMGNhbG18ZW58MXwxfHx8MTc5MTQ0MDA1NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#40260c" width="1600"/></div>
+<h3 class="m-text-6">{{t115|Sara Okafor}}</h3>
+<p class="ns-role m-text-4">{{t116|Session host}}</p>
+<p class="ns-bio m-text">{{t117|Runs the blind sessions. Has never once told anyone what they ought to like.}}</p>
+</li>
+</ul>
+</section>{{/sec_noses}}
+
+{{#sec_questions}}<section aria-labelledby="questions-title" data-8b-section="questions" id="questions">
+<svg aria-hidden="true" class="qs-thread" data-8b-motion="thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900"><path d="M-20 700 C 200 760, 360 600, 300 460 S 120 220, 420 160 S 980 260, 1100 120 S 1380 -20, 1460 60" pathlength="1"></path></svg>
+<div class="qs-head">
+<h2 class="qs-title m-text-2" data-8b-motion="rise" id="questions-title">{{t118|Questions}}</h2>
+<p class="m-text-3" data-8b-motion="settle"><span style="--m-text-3-i:0">{{t119|Asked most}}</span><span style="--m-text-3-i:1">{{t120|often at}}</span><span style="--m-text-3-i:2">{{t121|the table /}}</span></p>
+</div>
+<div class="qs-list">
+<details class="qs-item">
+<summary><span class="m-text-6">{{t122|What happens in a blind session?}}</span><span aria-hidden="true" class="qs-mark"></span></summary>
+<p class="qs-answer m-text">{{t123|Fifty minutes at the table with a host and a dozen strips. You keep the ones you return to; we reveal names, makers and prices at the end. A session costs ₦12,500 taken off any bottle you buy.}}</p>
+</details>
+<details class="qs-item">
+<summary><span class="m-text-6">{{t124|Do I have to buy anything?}}</span><span aria-hidden="true" class="qs-mark"></span></summary>
+<p class="qs-answer m-text">{{t125|No. Many people leave with a card of numbers and nothing else. The strips you choose are yours to take home.}}</p>
+</details>
+<details class="qs-item">
+<summary><span class="m-text-6">{{t126|Can I smell by post?}}</span><span aria-hidden="true" class="qs-mark"></span></summary>
+<p class="qs-answer m-text">{{t127|Yes. The Blind Set sends six sealed vials with numbered cards, so you can do the same ritual at your own table.}}</p>
+</details>
+<details class="qs-item">
+<summary><span class="m-text-6">{{t128|Where do you ship?}}</span><span aria-hidden="true" class="qs-mark"></span></summary>
+<p class="qs-answer m-text">{{t129|Within the Nigeria and the EU, in recyclable card. Extraits travel as liquids, so we pack them by hand on Mondays.}}</p>
+</details>
+<details class="qs-item">
+<summary><span class="m-text-6">{{t130|Can I return a bottle?}}</span><span aria-hidden="true" class="qs-mark"></span></summary>
+<p class="qs-answer m-text">{{t131|Unopened bottles within 30 days. Opened ones we cannot sell again, but we will swap them for a set of samples.}}</p>
+</details>
+</div>
+</section>{{/sec_questions}}
+
+{{#sec_blind_set}}<section aria-labelledby="blind-title" data-8b-section="blind-set" id="blind-set">
+<div class="bs-copy">
+<h2 class="bs-title m-text-2" data-8b-motion="rise" id="blind-title">{{t132|The Blind Set}}</h2>
+<p class="m-text-5">{{t133|Six vials of 2 ml, numbered and sealed.}}</p>
+<p class="bs-text m-text">{{t134|A card inside names them only when you tear it. Smell for a week, keep notes, then open the card, or never open it at all.}}</p>
+<p class="bs-price"><span class="m-text-6">{{t135|₦19,000}}</span><span class="m-text-4">{{t136|credited against your first full bottle}}</span></p>
+<a class="m-btn" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t137|Order the Blind Set}}</span><span aria-hidden="true" class="m-btn__dot"></span></a>
+</div>
+<div class="bs-visual">
+<div class="bs-photo"><img alt="Rows of small capped glass vials on a pale table" height="1200" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1559964396-7e83e6308bab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c21hbGwlMjBnbGFzcyUyMHZpYWxzJTIwc2V0fGVufDF8MHx8fDE3OTE0NDAwMzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=950&q=60}}" style="background:#d9c0a6" width="1600"/></div>
+<ol aria-label="The six vials" class="bs-slots">
+<li><span class="m-text-6">{{t138|1}}</span><span class="m-text-4">{{t2|Resin}}</span></li>
+<li><span class="m-text-6">{{t139|2}}</span><span class="m-text-4">{{t140|Smoke}}</span></li>
+<li><span class="m-text-6">{{t141|3}}</span><span class="m-text-4">{{t142|Green}}</span></li>
+<li><span class="m-text-6">{{t143|4}}</span><span class="m-text-4">{{t144|Skin}}</span></li>
+<li><span class="m-text-6">{{t145|5}}</span><span class="m-text-4">{{t146|Salt}}</span></li>
+<li><span class="m-text-6">{{t147|6}}</span><span class="m-text-4">{{t148|Wood}}</span></li>
+</ol>
+</div>
+</section>{{/sec_blind_set}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" data-8b-section="visit" id="visit">
+<img alt="" class="vs-ground" height="900" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1770457732642-505ffd11c062?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGNyZWFtJTIwc2lsayUyMGZhYnJpYyUyMGZvbGRzfGVufDF8MHx8fDE3OTE0NDAwMzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0c0a6" width="1600"/>
+<svg aria-hidden="true" class="vs-thread" data-8b-motion="thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 1000"><path d="M-20 300 C 300 200, 600 380, 520 560 S 140 820, 600 880 S 1300 700, 1460 820" pathlength="1"></path></svg>
+<div class="vs-inner">
+<h2 class="vs-title m-text-2" data-8b-motion="rise" id="visit-title">{{t149|Request a}} <span>{{t150|Blind Session}}</span></h2>
+
+<div class="vs-info">
+<p class="m-text-3" data-8b-motion="settle"><span style="--m-text-3-i:0">{{t151|Up the stair,}}</span><span style="--m-text-3-i:1">{{t152|first door,}}</span><span style="--m-text-3-i:2">{{t153|ring the bell /}}</span></p>
+<dl class="m-text">
+<div><dt class="m-text-4">{{t154|Address}}</dt><dd><address>{{t155|1 Admiralty Way}}<br/>{{t156|Leith, Enugu}}</address></dd></div>
+<div><dt class="m-text-4">{{t157|Hours}}</dt><dd>{{t158|Thursday to Saturday, 11:00–18:00, by appointment}}</dd></div>
+<div><dt class="m-text-4">{{t159|Telephone}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t160|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-4">{{t161|Email}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t162|bench@resincabinet.example}}</a></dd></div>
+</dl>
+</div>
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Perfumery by <a href="https://github.com/8bsite/perfumery-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft-card">
+<svg aria-hidden="true" class="ft-thread" data-8b-motion="thread" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 700"><path d="M1210 40 C 1080 90, 760 80, 640 150 S 900 320, 1020 380 S 620 420, 330 470 S -40 560, 120 640 S 520 690, 700 720" pathlength="1"></path></svg>
+<p class="ft-note m-text-3"><span style="--m-text-3-i:0">{{t163|An independent}}</span><span style="--m-text-3-i:1">{{t164|perfumery, one room}}</span><span style="--m-text-3-i:2">{{t165|up a stair /}}</span></p>
+<p class="ft-quiet m-text-4">{{t166|No newsletter. We write when a batch is ready.}}</p>
+<nav aria-label="Footer" class="ft-nav">
+<ul class="ft-links">
+{{#nv_origins}}<li><a class="m-text-2 m-link-2" href="#origins">{{t4|Origins}}</a></li>{{/nv_origins}}
+{{#nv_cabinet}}<li><a class="m-text-2 m-link-2" href="#cabinet">{{t3|Cabinet}}</a></li>{{/nv_cabinet}}
+{{#nv_accord}}<li><a class="m-text-2 m-link-2" href="#accord">{{t7|Accord}}</a></li>{{/nv_accord}}
+{{#nv_noses}}<li><a class="m-text-2 m-link-2" href="#noses">{{t8|Noses}}</a></li>{{/nv_noses}}
+{{#nv_visit}}<li><a class="m-text-2 m-link-2" href="#visit">{{t9|Visit}}</a></li>{{/nv_visit}}
+</ul>
+</nav>
+<div class="ft-meta m-text-4">
+<p>{{t167|© 2026 ⟦name⟧ · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t168|8B}}</a></p>
+<p>{{t10|1 Admiralty Way, Leith, Enugu}}</p>
+<p><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t162|bench@resincabinet.example}}</a></p>
+</div>
+</div>
+</footer>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const close = nav.querySelector('.nav-close');
+  const menu = document.getElementById('menu');
+  let lastY = window.scrollY, travel = 0, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY, delta = y - lastY;
+    lastY = y;
+    nav.toggleAttribute('data-solid', y > window.innerHeight * 0.85);
+    if (!menu.hidden) return;
+    if (y < 120) { nav.removeAttribute('data-hidden'); travel = 0; return; }
+    travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta;
+    if (travel > 24) nav.setAttribute('data-hidden', '');
+    else if (travel < -12) nav.removeAttribute('data-hidden');
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+  const openMenu = () => {
+    nav.removeAttribute('data-hidden');
+    menu.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+    window.lenis?.stop();
+    close.focus();
+  };
+  const closeMenu = (focusToggle = true) => {
+    menu.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    window.lenis?.start();
+    if (focusToggle) toggle.focus();
+  };
+  toggle.addEventListener('click', openMenu);
+  close.addEventListener('click', () => closeMenu());
+  menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) closeMenu(); });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navOffset() {
+  const nav = document.querySelector('[data-8b-section="navigation"]');
+  return nav ? nav.offsetHeight : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete: () => split.revert() })
+      .from(split.lines, { yPercent: 108, duration: 1.15, ease: 'expo.out', stagger: 0.09 });
+  },
+  settle(element, vars = {}) {
+    const lines = [...element.children];
+    return gsap.timeline(vars)
+      .from(lines, { x: index => -28 - index * 14, opacity: 0, duration: 0.9, ease: 'power3.out', stagger: 0.09 });
+  },
+  thread(element, vars = {}) {
+    const paths = element.querySelectorAll('path');
+    return gsap.timeline(vars)
+      .fromTo(paths, { strokeDasharray: 1, strokeDashoffset: 1 }, { autoRound: false, strokeDashoffset: 0, ease: 'none', duration: 1 });
+  },
+  part(first, second, distance, vars = {}) {
+    return gsap.timeline(vars)
+      .to(first, { x: () => -distance(), ease: 'none', duration: 1 }, 0)
+      .to(second, { x: () => distance(), ease: 'none', duration: 1 }, 0);
+  }
+};
+const bindings = {
+  rise: (element, id) => {
+    const timeline = effects.rise(element, { paused: true });
+    ScrollTrigger.create({ id, trigger: element, start: 'top 88%', once: true, onEnter: () => timeline.play() });
+  },
+  settle: (element, id) => {
+    const timeline = effects.settle(element, { paused: true });
+    ScrollTrigger.create({ id, trigger: element, start: 'top 90%', once: true, onEnter: () => timeline.play() });
+  },
+  thread: (element, id) => {
+    effects.thread(element, { scrollTrigger: { id, trigger: element, start: 'top 85%', end: 'bottom 40%', scrub: true } });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(bindings).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => bindings[name](element, `${id}:${index}`));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+document.querySelectorAll('[data-loop]').forEach(root => {
+  const owner = root.closest('[data-8b-section]') || root;
+  new IntersectionObserver(entries => entries.forEach(entry => owner.toggleAttribute('data-offscreen', !entry.isIntersecting))).observe(root);
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 768px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 767.98px)'
+  }, context => {
+    const narrow = context.conditions.narrow;
+    const section = document.getElementById('opening');
+    const lines = section.querySelectorAll('.op-line');
+    const strips = [...section.querySelectorAll('.op-strip')];
+    const row = section.querySelector('.op-strips');
+    const vw = () => window.innerWidth / 100, vh = () => window.innerHeight / 100;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true }
+    });
+    const dome = section.querySelector('.op-dome');
+    timeline
+      .to(dome, { scaleY: narrow ? 1.9 : 1.5, scaleX: 1.15, duration: 0.45, ease: 'power1.in' }, 0)
+      .to(dome, { scaleY: 0.02, scaleX: 1.6, duration: 0.42, ease: 'power2.out' }, 0.45)
+      .fromTo(section.querySelector('.op-copy'), { y: () => -12 * vh() }, { y: 0, duration: 0.55 }, 0.35)
+      .add(effects.part(lines[0], lines[2], () => (narrow ? 26 : 24) * vw()), 0)
+      .to(lines[0], { y: () => (narrow ? -16 : -10) * vh(), scale: 1.1, duration: 1 }, 0)
+      .to(lines[2], { y: () => (narrow ? -6 : -18) * vh(), scale: 1.1, duration: 1 }, 0)
+      .to(lines[1], { y: () => (narrow ? -11 : -22) * vh(), scale: narrow ? 1.06 : 1.16, duration: 1 }, 0)
+      .to(section.querySelector('.op-card--l'), { x: () => -10 * vw(), y: () => -38 * vh(), rotation: -32, duration: 0.7 }, 0)
+      .to(section.querySelector('.op-card--r'), { x: () => 10 * vw(), y: () => -34 * vh(), rotation: 30, duration: 0.7 }, 0)
+      .to(section.querySelector('.op-arch'), { y: () => 40 * vh(), scale: 0.78, duration: 0.6, ease: 'power1.in' }, 0)
+      .to(section.querySelector('.op-act'), { y: () => 30 * vh(), duration: 0.5, ease: 'power1.in' }, 0);
+    strips.forEach((strip, index) => {
+      const middle = (strips.length - 1) / 2;
+      timeline.fromTo(strip, {
+        x: () => row.offsetWidth / 2 - (strip.offsetLeft + strip.offsetWidth / 2) + (index - middle) * (narrow ? 14 : 26),
+        y: () => (narrow ? 22 : 30) * vh(),
+        rotation: (index - middle) * (narrow ? 9 : 12),
+        transformOrigin: '50% 100%'
+      }, { x: 0, y: 0, rotation: 0, duration: 0.55 }, 0.42 + index * 0.05);
+    });
+  });
+}, { first: true });
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vs-form');
+  if (!form) return;
+  const status = form.querySelector('.vs-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const field = name => form.elements.namedItem(name);
+    const valid = field('name').value.trim() && field('email').value.trim() && field('email').validity.valid && field('consent').checked;
+    status.textContent = valid ? status.dataset.sent : status.dataset.error;
+    if (valid) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:origins">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('origins');
+    const track = section.querySelector('.or-track');
+    const stage = section.querySelector('.or-stage');
+    const grid = section.querySelector('.or-grid');
+    const hero = section.querySelector('.or-tile--c');
+    const heroPhoto = hero.querySelector('.or-photo');
+    const heroCaption = hero.querySelector('figcaption');
+    const others = [...section.querySelectorAll('.or-tile:not(.or-tile--c)')];
+    section.setAttribute('data-staged', '');
+    const centre = element => {
+      let x = element.offsetWidth / 2, y = element.offsetHeight / 2, node = element;
+      while (node && node !== stage) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+      return { x, y };
+    };
+    const stageCentre = () => ({ x: stage.clientWidth / 2, y: stage.clientHeight / 2 });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'origins', trigger: track, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(heroPhoto, {
+      x: () => stageCentre().x - centre(heroPhoto).x,
+      y: () => stageCentre().y - centre(heroPhoto).y,
+      scale: () => Math.max(stage.clientWidth / heroPhoto.offsetWidth, stage.clientHeight / heroPhoto.offsetHeight) * 1.04
+    }, { x: 0, y: 0, scale: 1, duration: 0.62, ease: 'power2.inOut' }, 0.04);
+    timeline.fromTo(heroCaption, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.14 }, 0.66);
+    others.forEach((tile, index) => {
+      const away = axis => () => {
+        const own = centre(tile), mid = stageCentre();
+        const dx = own.x - mid.x, dy = own.y - mid.y, length = Math.hypot(dx, dy) || 1;
+        const reach = Math.hypot(stage.clientWidth, stage.clientHeight) * 0.62;
+        return (axis === 'x' ? dx : dy) / length * reach;
+      };
+      timeline.fromTo(tile, {
+        x: away('x'), y: away('y'),
+        rotation: [-7, 5, 8, -6, 4][index % 5],
+        scale: 0.82
+      }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.46, ease: 'power3.out' }, 0.2 + index * 0.07);
+    });
+    timeline.to({}, { duration: 0.1 });
+    return () => section.removeAttribute('data-staged');
+  });
+});
+</script>
+<script data-8b-part="scene:cabinet">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('cabinet');
+    const track = section.querySelector('.cb-track');
+    const title = section.querySelector('.cb-title');
+    const words = [...section.querySelectorAll('.cb-word')];
+    const deck = section.querySelector('.cb-deck');
+    const cards = [...section.querySelectorAll('.cb-card')];
+    section.setAttribute('data-staged', '');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'cabinet', trigger: track, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true }
+    });
+    const closedStart = () => {
+      const gap = parseFloat(getComputedStyle(title).fontSize) * 0.24;
+      return (title.clientWidth - words[0].offsetWidth - gap - words[1].offsetWidth) / 2;
+    };
+    const closedGap = () => parseFloat(getComputedStyle(title).fontSize) * 0.24;
+    timeline
+      .fromTo(words[0], { x: () => closedStart() - words[0].offsetLeft }, { x: 0, duration: 0.8, ease: 'power1.inOut' }, 0.04)
+      .fromTo(words[1], { x: () => closedStart() + words[0].offsetWidth + closedGap() - words[1].offsetLeft }, { x: 0, duration: 0.8, ease: 'power1.inOut' }, 0.04);
+    cards.forEach((card, index) => {
+      timeline.fromTo(card, {
+        x: () => deck.clientWidth / 2 - (card.offsetLeft + card.offsetWidth / 2),
+        y: () => deck.clientHeight / 2 - (card.offsetTop + card.offsetHeight / 2),
+        rotation: [-4, 3, -2, 5][index],
+        scale: 1.06
+      }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.17, ease: 'power2.inOut' }, 0.1 + index * 0.21);
+    });
+    timeline.to({}, { duration: 0.06 });
+    return () => section.removeAttribute('data-staged');
+  });
+});
+</script>
+<script data-8b-part="scene:accord">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 768px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 767.98px)'
+  }, context => {
+    const section = document.getElementById('accord');
+    const frame = section.querySelector('.ac-frame');
+    const [left, right] = section.querySelectorAll('.ac-half');
+    const shift = () => frame.clientWidth * (context.conditions.narrow ? 0.2 : 0.18);
+    gsap.timeline({
+      defaults: { ease: 'power2.inOut', duration: 1 },
+      scrollTrigger: { id: 'accord', trigger: frame, start: 'top 82%', end: 'center 42%', scrub: true, invalidateOnRefresh: true }
+    })
+      .fromTo(left, { x: () => shift() }, { x: 0 }, 0)
+      .fromTo(right, { x: () => -shift() }, { x: 0 }, 0)
+      .fromTo(section.querySelector('.ac-gap img'), { scale: 1.45 }, { scale: 1, ease: 'none' }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:noses">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('noses');
+    gsap.from(section.querySelector('.ns-word'), {
+      xPercent: 16, ease: 'none',
+      scrollTrigger: { id: 'noses:word', trigger: section, start: 'top bottom', end: 'top 20%', scrub: true }
+    });
+    section.querySelectorAll('.ns-person').forEach((person, index) => {
+      const arch = person.querySelector('.ns-arch');
+      gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `noses:arch-${index + 1}`, trigger: arch, start: `top ${94 - index * 4}%`, end: `top ${34 - index * 4}%`, scrub: true }
+      })
+        .fromTo(arch, { clipPath: 'inset(58% 40% 0% 40% round 999px 999px 0px 0px)' }, { clipPath: 'inset(0% 0% 0% 0% round 999px 999px 0px 0px)', ease: 'power2.out' }, 0)
+        .from(arch.querySelector('img'), { scale: 1.35, yPercent: 6 }, 0);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:blind-set">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 861px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 860px)'
+  }, context => {
+    const narrow = context.conditions.narrow;
+    const section = document.getElementById('blind-set');
+    const visual = section.querySelector('.bs-visual');
+    const photo = section.querySelector('.bs-photo');
+    section.setAttribute('data-apertures', '');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'blind-set', trigger: visual, start: 'top 80%', end: 'bottom 55%', scrub: true }
+    });
+    timeline.fromTo(photo, { '--bs-r': narrow ? '10vw' : '3.8vw' }, { '--bs-r': narrow ? '52vw' : '30vw', ease: 'power2.in', duration: 1 }, 0);
+    section.querySelectorAll('.bs-slots li').forEach((slot, index) => {
+      timeline.from(slot, { scale: 0.7, rotation: index % 2 ? 14 : -14, duration: 0.5 }, index * 0.06);
+    });
+    return () => section.removeAttribute('data-apertures');
+  });
+});
+</script>
+</body>
+</html>

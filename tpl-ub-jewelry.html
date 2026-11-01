@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/instrumentsans/v4/pxicypc9vsFDm051Uf6KVwgkfoSbT2lB.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykDXr4.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxicypc9vsFDm051Uf6KVwgkfoSbQWlBkm8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 75% 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxicypc9vsFDm051Uf6KVwgkfoSbT2lB.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr3aX2AzA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr-aX2AzA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr5aX2AzA.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr1aX2AzA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr0aX2AzA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFH2_tTDB4M7-auWDN0ahZJW1ge6NmXq2ZbF8zBfb98SUr6aX0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykAHr4cXk.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykCXr4cXk.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykDnr4cXk.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykAnr4cXk.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykA3r4cXk.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2iZPwg3BucvUtfykDXr4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #eeeef1;
+  --color-2: #121014;
+  --color-3: #e9736a;
+  --color-4: #8e8a75;
+  --color-5: #cdcae8;
+  --color-6: #ffffff;
+  --color-7: #5b5a63;
+  --color-8: #aeacb6;
+  --font-1: "Instrument Sans", "Instrument Sans Fallback", Arial, sans-serif;
+  --font-2: "Source Serif 4", "Source Serif 4 Fallback", Georgia, serif;
+  --radius-1: 999px;
+  --radius-2: clamp(22px, 2.9vw, 40px);
+  --shadow-1: 0 14px 34px -16px color-mix(in srgb, var(--color-2) 45%, transparent);
+  --space-1: clamp(14px, 2.2vw, 30px);
+  --space-2: clamp(10px, 1.1vw, 16px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallbacks */
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.2%; ascent-override: 94.9%; descent-override: 24.5%; line-gap-override: 0%; }
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 100.2%; ascent-override: 96.8%; descent-override: 25%; line-gap-override: 0%; }
+@font-face { font-family: "Source Serif 4 Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 90.9%; ascent-override: 114.4%; descent-override: 37.4%; line-gap-override: 0%; }
+/* /fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; line-height: 1.5; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, p, ul, ol, figure, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: clamp(15px, 1.05vw, 16.5px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(2.35rem, 4.4vw, 4.1rem); font-weight: 400; line-height: 1.04; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-2); font-size: 1.04em; font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; text-transform: none; font-style: italic; }
+
+.m-text-4 { font-family: var(--font-2); font-size: 1.03em; font-weight: 400; line-height: 1.04; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: 13.5px; font-weight: 400; line-height: 1.42; letter-spacing: 0.005em; text-transform: none; font-style: normal; }
+
+.m-text-6 { font-family: var(--font-1); font-size: clamp(1.3rem, 1.75vw, 1.6rem); font-weight: 400; line-height: 1.12; letter-spacing: -0.015em; text-transform: none; font-style: normal; }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(1.8rem, 2.7vw, 2.5rem); font-weight: 400; line-height: 1; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; height: 58px; padding: 0 34px; border: 0; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 15.5px; font-weight: 500; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; isolation: isolate; }
+.m-btn__label { display: block; transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+.m-btn::after { content: ""; position: absolute; right: 9px; top: 9px; width: 40px; height: 40px; border-radius: 50%; background: currentColor; transform: scale(0); transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__label { transform: translateX(-20px); }
+  .m-btn:hover::after { transform: scale(1); }
+}
+
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; height: 48px; padding: 0 26px; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; color: inherit; font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.m-btn-2__label { display: block; transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+.m-btn-2::after { content: ""; position: absolute; right: 7px; top: 50%; width: 32px; height: 32px; margin-top: -16px; border-radius: 50%; background: currentColor; transform: scale(0); transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) {
+  .m-btn-2:hover .m-btn-2__label { transform: translateX(-18px); }
+  .m-btn-2:hover::after { transform: scale(1); }
+}
+
+.m-btn-3 { --m-btn-3-h: 60px; position: relative; isolation: isolate; display: inline-flex; align-items: center; height: var(--m-btn-3-h); color: var(--color-6); font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1; letter-spacing: 0; font-style: italic; text-decoration: none; white-space: nowrap; transition: --m-fuse-g .45s cubic-bezier(.3,.7,.2,1); }
+.m-btn-3__label { display: flex; align-items: center; height: 100%; padding: 0 calc(var(--m-btn-3-h) * .45); border-radius: var(--radius-1); background: var(--color-2); }
+.m-btn-3__neck { flex: none; width: calc(var(--m-btn-3-h) * .44); height: 100%; margin: 0 calc(var(--m-btn-3-h) * -.15); background: var(--color-2); -webkit-mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-btn-3-h) * .25), var(--color-2) calc(var(--m-btn-3-h) * .25 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-btn-3-h) * .25), var(--color-2) calc(var(--m-btn-3-h) * .25 + .5px)) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-btn-3-h) * .25), var(--color-2) calc(var(--m-btn-3-h) * .25 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-btn-3-h) * .25), var(--color-2) calc(var(--m-btn-3-h) * .25 + .5px)) bottom / 100% 51% no-repeat; }
+.m-btn-3__orb { position: relative; z-index: 1; flex: none; display: grid; place-items: center; width: var(--m-btn-3-h); height: var(--m-btn-3-h); border-radius: 50%; background: var(--color-2); color: var(--color-3); overflow: hidden; translate: calc(var(--m-fuse-g) * var(--m-btn-3-h) * -1) 0; }
+.m-btn-3__orb svg { width: 40%; height: 40%; }
+.m-btn-3__orb img { width: calc(100% - 6px); height: calc(100% - 6px); border-radius: 50%; object-fit: cover; }
+@media (hover: hover) {
+  .m-btn-3:hover { --m-fuse-g: -.16; }
+}
+
+.m-link { position: relative; display: inline-block; color: inherit; font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-decoration: none; transition: transform .4s cubic-bezier(.3,.7,.2,1); }
+.m-link::before { content: ""; position: absolute; left: -12px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: var(--color-3); transform: scale(0); transition: transform .4s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) {
+  .m-link:hover { transform: translateX(6px); }
+  .m-link:hover::before { transform: scale(1); }
+}
+
+.m-icon { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; isolation: isolate; }
+.m-icon::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: 50%; background: var(--color-3); transform: scale(0); transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+.m-icon svg { width: 16px; height: 16px; transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) {
+  .m-icon:hover { color: var(--color-2); border-color: var(--color-3); }
+  .m-icon:hover::before { transform: scale(1); }
+  .m-icon:hover svg { transform: rotate(45deg); }
+}
+
+.m-badge { display: inline-flex; align-items: center; height: 40px; padding: 0 18px; border: 1px solid currentColor; border-radius: var(--radius-1); font-family: var(--font-1); font-size: 14px; font-weight: 400; line-height: 1; letter-spacing: 0; white-space: nowrap; }
+
+.m-surface { border-radius: var(--radius-2); background: var(--color-4); color: var(--color-2); }
+
+.m-surface-2 { border-radius: var(--radius-2); background: var(--color-2); color: var(--color-6); }
+
+.m-surface-3 { border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); }
+
+.m-surface-4 { border-radius: var(--radius-2); background: var(--color-5); color: var(--color-2); }
+
+.m-photo { position: relative; overflow: hidden; border-radius: var(--radius-2); background: var(--color-4); }
+.m-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.m-photo-2 { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: 50%; background: var(--color-4); }
+.m-photo-2 img { width: 100%; height: 100%; object-fit: cover; }
+
+.m-photo-3 { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); }
+.m-photo-3 img { width: 100%; height: 100%; object-fit: cover; }
+
+.m-fuse { --m-fuse-h: 56px; position: relative; isolation: isolate; display: inline-flex; align-items: center; max-width: 100%; height: var(--m-fuse-h); color: var(--color-6); font-family: var(--font-1); font-size: 14px; font-weight: 400; line-height: 1.25; letter-spacing: 0; }
+.m-fuse__orb { position: relative; z-index: 1; flex: none; display: grid; place-items: center; width: var(--m-fuse-h); height: var(--m-fuse-h); border-radius: 50%; overflow: hidden; background: var(--color-2); color: var(--color-3); translate: calc(var(--m-fuse-g) * var(--m-fuse-h)) 0; scale: var(--m-fuse-sc); }
+.m-fuse__orb img { width: calc(100% - 6px); height: calc(100% - 6px); border-radius: 50%; object-fit: cover; }
+.m-fuse__orb svg { width: 42%; height: 42%; }
+.m-fuse__neck { flex: none; width: calc(var(--m-fuse-h) * .44); height: 100%; margin: 0 calc(var(--m-fuse-h) * -.15); background: var(--color-2); -webkit-mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-fuse-h) * .25), var(--color-2) calc(var(--m-fuse-h) * .25 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-fuse-h) * .25), var(--color-2) calc(var(--m-fuse-h) * .25 + .5px)) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-fuse-h) * .25), var(--color-2) calc(var(--m-fuse-h) * .25 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-fuse-h) * .25), var(--color-2) calc(var(--m-fuse-h) * .25 + .5px)) bottom / 100% 51% no-repeat; }
+.m-fuse__pill { display: flex; align-items: center; min-width: 0; height: 100%; padding: 0 calc(var(--m-fuse-h) * .42); border-radius: var(--radius-1); background: var(--color-2); }
+
+.m-field { display: grid; gap: 8px; font-family: var(--font-1); font-size: 13.5px; font-weight: 400; line-height: 1.3; letter-spacing: 0; }
+.m-field__input { width: 100%; height: 52px; padding: 0 22px; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; color: inherit; font-family: var(--font-1); font-size: 16px; }
+textarea.m-field__input { height: 120px; padding: 16px 22px; border-radius: 26px; resize: vertical; }
+select.m-field__input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 26px) 50%, calc(100% - 20px) 50%; background-size: 6px 6px; background-repeat: no-repeat; }
+select.m-field__input option { color: var(--color-2); background: var(--color-6); }
+
+.m-text-8 { font-family: var(--font-1); font-size: clamp(2.6rem, 7vw, 6.6rem); font-weight: 650; line-height: .95; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+
+.m-fuse-2 { --m-fuse-2-h: 120px; position: relative; isolation: isolate; display: flex; align-items: center; color: var(--color-2); }
+.m-fuse-2__orb { position: relative; z-index: 1; flex: none; display: grid; place-items: center; width: var(--m-fuse-2-h); height: var(--m-fuse-2-h); border-radius: 50%; overflow: hidden; background: var(--color-6); color: var(--color-2); translate: calc(var(--m-fuse-g) * var(--m-fuse-2-h)) 0; scale: var(--m-fuse-sc); }
+.m-fuse-2__orb img { width: calc(100% - 8px); height: calc(100% - 8px); border-radius: 50%; object-fit: cover; }
+.m-fuse-2__orb svg { width: 36%; height: 36%; }
+.m-fuse-2__neck { flex: none; align-self: center; width: calc(var(--m-fuse-2-h) * .3); height: calc(var(--m-fuse-2-h) * .86); margin: 0 calc(var(--m-fuse-2-h) * -.08); background: var(--color-6); -webkit-mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-fuse-2-h) * .22), var(--color-2) calc(var(--m-fuse-2-h) * .22 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-fuse-2-h) * .22), var(--color-2) calc(var(--m-fuse-2-h) * .22 + .5px)) bottom / 100% 51% no-repeat; mask: radial-gradient(circle at 50% 0, transparent calc(var(--m-fuse-2-h) * .22), var(--color-2) calc(var(--m-fuse-2-h) * .22 + .5px)) top / 100% 51% no-repeat, radial-gradient(circle at 50% 100%, transparent calc(var(--m-fuse-2-h) * .22), var(--color-2) calc(var(--m-fuse-2-h) * .22 + .5px)) bottom / 100% 51% no-repeat; }
+.m-fuse-2__pill { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; min-height: calc(var(--m-fuse-2-h) * .86); padding: 14px calc(var(--m-fuse-2-h) * .3) 14px calc(var(--m-fuse-2-h) * .26); border-radius: calc(var(--m-fuse-2-h) * .43); background: var(--color-6); }
+/* The fused join of .m-btn-3, .m-fuse and .m-fuse-2: the neck is one shape whose two concave arcs (fillets of radius r) are tangent
+   to the circle and to the pill's end, computed from the circle's offset toward the pill (g), its scale (sc) and the pill's height (p),
+   all in units of the circle size; its other edges lie inside the circle and the pill, so the outline has no seam or spike.
+   g and sc are what hover and the bud effect move; p is measured by atom-script:m-fuse-2. Older browsers keep the masked neck. */
+@property --m-fuse-g { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-sc { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-p { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-rp { syntax: "<number>"; inherits: true; initial-value: .5; }
+@property --m-fuse-r { syntax: "<number>"; inherits: true; initial-value: .275; }
+@property --m-fuse-ro { syntax: "<number>"; inherits: true; initial-value: .5; }
+@property --m-fuse-cx { syntax: "<number>"; inherits: true; initial-value: .5; }
+@property --m-fuse-e { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-a { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-b { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-dx { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-d { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-ax { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-s { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-ux { syntax: "<number>"; inherits: true; initial-value: 1; }
+@property --m-fuse-uy { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-sl { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-t { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-fx { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-fy { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-ox { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-oy { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-px { syntax: "<number>"; inherits: true; initial-value: 0; }
+@property --m-fuse-py { syntax: "<number>"; inherits: true; initial-value: 0; }
+@supports (clip-path: shape(from 0 0, line to 1px 1px)) {
+  .m-btn-3, .m-fuse, .m-fuse-2 {
+    --m-fuse-ro: calc(.5 * var(--m-fuse-sc));
+    --m-fuse-cx: calc(.5 + var(--m-fuse-g));
+    --m-fuse-e: max(0, var(--m-fuse-p) / 2 - var(--m-fuse-rp));
+    --m-fuse-a: calc(var(--m-fuse-ro) + var(--m-fuse-r));
+    --m-fuse-b: calc(var(--m-fuse-rp) + var(--m-fuse-r));
+    --m-fuse-dx: calc(1.14 + var(--m-fuse-rp) - var(--m-fuse-cx));
+    --m-fuse-d: max(.001, hypot(var(--m-fuse-dx), var(--m-fuse-e)));
+    --m-fuse-ax: calc((var(--m-fuse-a) * var(--m-fuse-a) - var(--m-fuse-b) * var(--m-fuse-b) + var(--m-fuse-d) * var(--m-fuse-d)) / (2 * var(--m-fuse-d)));
+    --m-fuse-s: sqrt(max(0, var(--m-fuse-a) * var(--m-fuse-a) - var(--m-fuse-ax) * var(--m-fuse-ax)));
+    --m-fuse-ux: calc(var(--m-fuse-dx) / var(--m-fuse-d));
+    --m-fuse-uy: calc(-1 * var(--m-fuse-e) / var(--m-fuse-d));
+    --m-fuse-sl: sqrt(max(0, var(--m-fuse-a) * var(--m-fuse-a) - pow(1.14 - var(--m-fuse-r) - var(--m-fuse-cx), 2)));
+    --m-fuse-t: clamp(0, (var(--m-fuse-e) - var(--m-fuse-sl)) * 1000, 1);
+    --m-fuse-fx: calc((var(--m-fuse-cx) + var(--m-fuse-ux) * var(--m-fuse-ax) + var(--m-fuse-uy) * var(--m-fuse-s)) * (1 - var(--m-fuse-t)) + (1.14 - var(--m-fuse-r)) * var(--m-fuse-t));
+    --m-fuse-fy: calc((var(--m-fuse-uy) * var(--m-fuse-ax) - var(--m-fuse-ux) * var(--m-fuse-s)) * (1 - var(--m-fuse-t)) - var(--m-fuse-sl) * var(--m-fuse-t));
+    --m-fuse-ox: calc(var(--m-fuse-cx) + (var(--m-fuse-fx) - var(--m-fuse-cx)) * var(--m-fuse-ro) / var(--m-fuse-a));
+    --m-fuse-oy: calc(var(--m-fuse-fy) * var(--m-fuse-ro) / var(--m-fuse-a));
+    --m-fuse-px: calc((1.14 + var(--m-fuse-rp) + (var(--m-fuse-fx) - 1.14 - var(--m-fuse-rp)) * var(--m-fuse-rp) / var(--m-fuse-b)) * (1 - var(--m-fuse-t)) + 1.14 * var(--m-fuse-t));
+    --m-fuse-py: calc((-1 * var(--m-fuse-e) + (var(--m-fuse-fy) + var(--m-fuse-e)) * var(--m-fuse-rp) / var(--m-fuse-b)) * (1 - var(--m-fuse-t)) + var(--m-fuse-fy) * var(--m-fuse-t));
+  }
+  .m-btn-3 { --m-fuse-p: 1; --m-fuse-rp: .5; --m-fuse-r: .275; column-gap: calc(var(--m-btn-3-h) * .14); }
+  .m-fuse { --m-fuse-p: 1; --m-fuse-rp: .5; --m-fuse-r: .275; column-gap: calc(var(--m-fuse-h) * .14); }
+  .m-fuse-2 { --m-fuse-p: .86; --m-fuse-rp: .43; --m-fuse-r: .225; column-gap: calc(var(--m-fuse-2-h) * .14); }
+  .m-btn-3__neck, .m-fuse__neck, .m-fuse-2__neck { position: absolute; z-index: -1; top: 0; bottom: 0; align-self: stretch; height: auto; margin: 0; -webkit-mask: none; mask: none; pointer-events: none; }
+  .m-btn-3__neck { right: 0; width: calc(var(--m-btn-3-h) * 1.85); transform: scaleX(-1); background: var(--color-2); clip-path: shape(from calc(var(--m-btn-3-h) * var(--m-fuse-ox)) calc(50% + var(--m-btn-3-h) * var(--m-fuse-oy)), arc to calc(var(--m-btn-3-h) * var(--m-fuse-px)) calc(50% + var(--m-btn-3-h) * var(--m-fuse-py)) of calc(var(--m-btn-3-h) * var(--m-fuse-r)) ccw, line to calc(var(--m-btn-3-h) * (var(--m-fuse-px) + .15)) calc(50% + var(--m-btn-3-h) * var(--m-fuse-py)), line to calc(var(--m-btn-3-h) * (var(--m-fuse-px) + .15)) calc(50% - var(--m-btn-3-h) * var(--m-fuse-py)), line to calc(var(--m-btn-3-h) * var(--m-fuse-px)) calc(50% - var(--m-btn-3-h) * var(--m-fuse-py)), arc to calc(var(--m-btn-3-h) * var(--m-fuse-ox)) calc(50% - var(--m-btn-3-h) * var(--m-fuse-oy)) of calc(var(--m-btn-3-h) * var(--m-fuse-r)) ccw, close); }
+  .m-fuse__neck { left: 0; width: calc(var(--m-fuse-h) * 1.85); background: var(--color-2); clip-path: shape(from calc(var(--m-fuse-h) * var(--m-fuse-ox)) calc(50% + var(--m-fuse-h) * var(--m-fuse-oy)), arc to calc(var(--m-fuse-h) * var(--m-fuse-px)) calc(50% + var(--m-fuse-h) * var(--m-fuse-py)) of calc(var(--m-fuse-h) * var(--m-fuse-r)) ccw, line to calc(var(--m-fuse-h) * (var(--m-fuse-px) + .15)) calc(50% + var(--m-fuse-h) * var(--m-fuse-py)), line to calc(var(--m-fuse-h) * (var(--m-fuse-px) + .15)) calc(50% - var(--m-fuse-h) * var(--m-fuse-py)), line to calc(var(--m-fuse-h) * var(--m-fuse-px)) calc(50% - var(--m-fuse-h) * var(--m-fuse-py)), arc to calc(var(--m-fuse-h) * var(--m-fuse-ox)) calc(50% - var(--m-fuse-h) * var(--m-fuse-oy)) of calc(var(--m-fuse-h) * var(--m-fuse-r)) ccw, close); }
+  .m-fuse-2__neck { left: 0; width: calc(var(--m-fuse-2-h) * 1.85); background: var(--color-6); clip-path: shape(from calc(var(--m-fuse-2-h) * var(--m-fuse-ox)) calc(50% + var(--m-fuse-2-h) * var(--m-fuse-oy)), arc to calc(var(--m-fuse-2-h) * var(--m-fuse-px)) calc(50% + var(--m-fuse-2-h) * var(--m-fuse-py)) of calc(var(--m-fuse-2-h) * var(--m-fuse-r)) ccw, line to calc(var(--m-fuse-2-h) * (var(--m-fuse-px) + .15)) calc(50% + var(--m-fuse-2-h) * var(--m-fuse-py)), line to calc(var(--m-fuse-2-h) * (var(--m-fuse-px) + .15)) calc(50% - var(--m-fuse-2-h) * var(--m-fuse-py)), line to calc(var(--m-fuse-2-h) * var(--m-fuse-px)) calc(50% - var(--m-fuse-2-h) * var(--m-fuse-py)), arc to calc(var(--m-fuse-2-h) * var(--m-fuse-ox)) calc(50% - var(--m-fuse-2-h) * var(--m-fuse-oy)) of calc(var(--m-fuse-2-h) * var(--m-fuse-r)) ccw, close); }
+}
+@supports not (clip-path: shape(from 0 0, line to 1px 1px)) {
+  @media (hover: hover) {
+    .m-btn-3__neck { transition: transform .45s cubic-bezier(.3,.7,.2,1); }
+    .m-btn-3:hover .m-btn-3__neck { transform: translateX(calc(var(--m-btn-3-h) * .05)) scaleX(1.45); }
+  }
+}
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto; z-index: 50; padding: 14px var(--space-1) 0; pointer-events: none; transition: transform .5s cubic-bezier(.3,.7,.2,1); }
+#nav[data-hidden] { transform: translateY(calc(-100% - 12px)); }
+#nav .nav__bar { position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 8px; border-radius: var(--radius-1); background: transparent; pointer-events: auto; transition: background-color .4s, box-shadow .4s; }
+#nav[data-floating] .nav__bar { background: var(--color-1); box-shadow: var(--shadow-1); }
+#nav .nav__menu { justify-self: start; }
+#nav .nav__mark { position: relative; justify-self: center; display: inline-flex; align-items: flex-start; padding: 4px 6px; color: var(--color-2); font-family: var(--font-1); font-size: clamp(22px, 2vw, 28px); font-weight: 650; line-height: 1; letter-spacing: -0.04em; text-decoration: none; }
+#nav .nav__dot { width: 7px; height: 7px; margin: 1px 0 0 3px; border-radius: 50%; background: var(--color-3); }
+#nav .nav__right { justify-self: end; display: flex; align-items: center; gap: 10px; }
+#nav .nav__talk { --m-btn-3-h: 48px; font-size: 14px; font-style: normal; font-family: var(--font-1); }
+#nav .nav__talk .m-btn-3__label { padding: 0 20px; }
+@media (max-width: 860px) {
+  #nav .nav__price { display: none; }
+}
+@media (max-width: 640px) {
+  #nav { padding-top: 10px; }
+  #nav .nav__bar { padding: 6px; gap: 6px; }
+  #nav .nav__menu { height: 42px; padding: 0 18px; }
+  #nav .nav__talk { --m-btn-3-h: 42px; }
+  #nav .nav__talk .m-btn-3__label, #nav .nav__talk .m-btn-3__neck { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+#nav .menu { position: fixed; inset: 0; z-index: 60; pointer-events: auto; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: 18px var(--space-1) 28px; background: var(--color-2); color: var(--color-6); }
+#nav .menu[hidden] { display: none; }
+#nav .menu :focus-visible { outline-color: var(--color-6); }
+#nav .menu .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu .menu__mark { color: var(--color-6); font-size: 26px; font-weight: 650; letter-spacing: -0.04em; text-decoration: none; }
+#nav .menu .menu__list { align-self: center; display: grid; gap: clamp(6px, 1.4vh, 14px); padding-left: 14px; }
+#nav .menu .menu__list .m-link { font-size: clamp(30px, 5.4vw, 64px); font-weight: 400; letter-spacing: -0.03em; }
+#nav .menu .menu__list .m-link::before { left: -20px; width: 10px; height: 10px; margin-top: -5px; }
+#nav .menu .menu__foot { display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--color-8); }
+#nav .menu .menu__foot a { color: var(--color-6); }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; overflow-x: clip; }
+#opening .op__one { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr 2.12fr; grid-template-rows: minmax(0, 1fr) auto; column-gap: var(--space-2); row-gap: var(--space-2); min-height: 100svh; padding: clamp(84px, 11vh, 100px) var(--space-1) var(--space-1); }
+#opening .op__copy { grid-column: 1 / 3; align-self: center; display: grid; gap: clamp(18px, 2.6vh, 28px); padding: 8px clamp(4px, 2vw, 28px) 8px 4px; }
+#opening .op__title { font-size: clamp(2.5rem, 4.3vw, 4.1rem); }
+#opening .op__l { display: block; }
+#opening .op__lead { max-width: 46ch; }
+#opening .op__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+#opening .op__photo-wrap { grid-column: 3; min-height: 300px; }
+#opening .op__photo { width: 100%; height: 100%; }
+#opening .op__drift { position: absolute; inset: 0; }
+#opening .op__drift img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+#opening .op__row-a, #opening .op__row-b { height: clamp(220px, 30svh, 300px); }
+#opening .op__card { display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: clamp(16px, 1.6vw, 22px); }
+#opening .op__card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+#opening .op__card .m-btn-2 { height: 38px; padding: 0 16px; font-size: 13px; }
+#opening .op__card .m-btn-2::after { width: 24px; height: 24px; margin-top: -12px; right: 6px; }
+#opening .op__card .m-icon { width: 38px; height: 38px; }
+#opening .op__card h3 { margin-bottom: 8px; }
+#opening .op__card p { max-width: 34ch; }
+#opening .op__card--b .m-text-5 { color: var(--color-8); }
+#opening .op__card--b :focus-visible { outline-color: var(--color-6); }
+#opening .op__avatars { display: flex; }
+#opening .op__avatars li { width: 42px; height: 42px; margin-right: -12px; border: 2px solid var(--color-2); border-radius: 50%; overflow: hidden; background: var(--color-3); }
+#opening .op__avatars img { width: 100%; height: 100%; object-fit: cover; }
+#opening .op__facts { grid-column: 3; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; padding: clamp(10px, 2vh, 24px) clamp(8px, 2vw, 36px) 4px; }
+#opening .op__words { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+#opening .op__words dd { margin-top: 10px; color: var(--color-7); }
+#opening .op__index { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 6px 18px; min-height: 64px; padding: 10px 26px; border: 1px solid var(--color-2); border-radius: var(--radius-1); }
+#opening .op__two { position: relative; z-index: 1; padding: var(--space-1); }
+#opening .op__panel { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: clamp(24px, 4vw, 64px); min-height: calc(100svh - 2 * var(--space-1)); padding: clamp(28px, 5vw, 72px); }
+#opening .op__panel-copy { display: grid; gap: 22px; align-content: center; }
+#opening .op__panel-copy h2 { font-size: clamp(2.4rem, 5vw, 4.6rem); }
+#opening .op__panel-copy h2 span { display: block; }
+#opening .op__panel-copy p { max-width: 44ch; }
+#opening .op__bring { display: flex; flex-wrap: wrap; gap: 8px; max-width: 560px; }
+#opening .op__drawer { position: relative; justify-self: center; width: min(100%, 64svh, 560px); }
+#opening .op__circle { width: 100%; }
+#opening .op__caption { position: absolute; left: -6%; bottom: 4%; --m-fuse-h: 58px; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__in { animation: op-rise .9s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .op__in--2 { animation-delay: .07s; }
+  #opening .op__in--3 { animation-delay: .14s; }
+  #opening .op__photo-wrap { animation-name: op-grow; animation-duration: 1s; }
+  #opening .op__row-a { animation-delay: .2s; }
+  #opening .op__row-b { animation-delay: .28s; }
+  #opening .op__facts { animation-delay: .34s; }
+  #opening .op__drift { animation: op-drift 6.5s ease-in-out infinite alternate; }
+  #opening .op__drift[data-paused] { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(26px); } }
+@keyframes op-grow { from { transform: scale(.94); } }
+@keyframes op-drift {
+  from { transform: translate(-6%, 2%) scale(1.18); }
+  to { transform: translate(6%, -2%) scale(1.18); }
+}
+@media (max-width: 1023px) {
+  #opening .op__one { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  #opening .op__copy { grid-column: 1 / -1; padding-top: 20px; }
+  #opening .op__photo-wrap { grid-column: 1 / -1; aspect-ratio: 16 / 10; min-height: 0; }
+  #opening .op__facts { grid-column: 1 / -1; }
+  #opening .op__panel { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  #opening .op__one { grid-template-columns: 1fr; padding-top: 84px; }
+  #opening .op__title { font-size: clamp(2.3rem, 10.6vw, 3rem); }
+  #opening .op__photo-wrap { aspect-ratio: 4 / 3.2; }
+  #opening .op__row-a, #opening .op__row-b { height: auto; min-height: 220px; }
+  #opening .op__card h3 { margin-top: 36px; }
+  #opening .op__words { gap: 8px; }
+  #opening .op__words .m-text-7 { font-size: 1.55rem; }
+  #opening .op__facts { padding: 18px 0 0; }
+  #opening .op__index { justify-content: center; gap: 6px 14px; border-radius: 30px; padding: 14px 12px; }
+  #opening .op__panel { padding: 30px 20px 40px; gap: 34px; }
+  #opening .op__panel-copy h2 { font-size: clamp(2.2rem, 10vw, 2.9rem); }
+  #opening .op__drawer { width: 100%; }
+  #opening .op__caption { left: 0; bottom: -4%; --m-fuse-h: 50px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__flood { display: none; }
+  #opening[data-flood] .op__flood { position: absolute; inset: 0; z-index: 0; display: block; background: var(--color-3); pointer-events: none; }
+  #opening[data-flood] .op__panel { background: transparent; }
+  #opening[data-flood] .op__words dd { color: var(--color-2); }
+  #opening[data-flood] .op__photo-wrap { will-change: transform; }
+}
+}
+</style>
+<style data-8b-part="section:pieces">
+@layer sections {
+#pieces { --pc-w: clamp(230px, 22vw, 320px); background: var(--color-2); color: var(--color-6); }
+#pieces :focus-visible { outline-color: var(--color-6); }
+#pieces .pc__stage { padding: clamp(80px, 12vh, 140px) var(--space-1); }
+#pieces .pc__head { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 20px 48px; margin-bottom: clamp(32px, 6vh, 64px); }
+#pieces .pc__head h2 span { display: block; }
+#pieces .pc__head p { max-width: 44ch; color: var(--color-8); }
+#pieces .pc__track { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-2); }
+#pieces .pc__frame { aspect-ratio: 5 / 8; background: var(--color-7); }
+#pieces .pc__text { display: grid; gap: 6px; padding: 18px 8px 0; background: var(--color-2); }
+#pieces .pc__text .m-text-5 { color: var(--color-8); }
+#pieces .pc__text .pc__price { color: var(--color-3); }
+@media (max-width: 1023px) {
+  #pieces .pc__track { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 32px; }
+}
+@media (max-width: 640px) {
+  #pieces { --pc-w: 62vw; }
+  #pieces .pc__head { grid-template-columns: 1fr; }
+  #pieces .pc__track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+}
+</style>
+<style data-8b-part="scene-style:pieces">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #pieces[data-strand] { height: calc(100svh + var(--pc-run, 0px)); }
+  #pieces[data-strand] .pc__stage { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: center; height: 100svh; padding-top: clamp(76px, 11vh, 110px); padding-bottom: 3vh; overflow: hidden; }
+  #pieces[data-strand] .pc__head { margin-bottom: clamp(18px, 4vh, 40px); }
+  #pieces[data-strand] .pc__track { display: flex; width: max-content; gap: clamp(18px, 2.4vw, 36px); padding: 0 calc(50vw - var(--space-1) - var(--pc-w) / 2); }
+  #pieces[data-strand] .pc__item { flex: none; width: var(--pc-w); }
+  #pieces[data-strand] .pc__frame { aspect-ratio: auto; height: min(44svh, calc(var(--pc-w) * 1.55)); }
+  #pieces[data-strand] .pc__frame img { width: 124%; max-width: none; margin-left: -12%; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 640px) {
+  #pieces[data-strand] .pc__head p { display: none; }
+  #pieces[data-strand] .pc__frame { height: 40svh; }
+}
+}
+</style>
+<style data-8b-part="section:gold">
+@layer sections {
+#gold { overflow-x: clip; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; gap: clamp(32px, 5vw, 80px); padding: clamp(80px, 14vh, 150px) var(--space-1); }
+#gold .gd__intro { position: sticky; top: 112px; display: grid; justify-items: start; gap: 22px; }
+#gold .gd__intro h2 span { display: block; }
+#gold .gd__intro p { max-width: 42ch; }
+#gold .gd__list { display: grid; gap: clamp(14px, 2vh, 22px); }
+#gold .gd__row { --m-fuse-2-h: clamp(118px, 10.5vw, 150px); }
+#gold .gd__row h3 { margin-bottom: 6px; }
+#gold .gd__row .m-text-5 { max-width: 46ch; color: var(--color-7); }
+@media (max-width: 860px) {
+  #gold { grid-template-columns: 1fr; }
+  #gold .gd__intro { position: static; }
+  #gold .gd__row { --m-fuse-2-h: 82px; }
+}
+}
+</style>
+<style data-8b-part="section:bench">
+@layer sections {
+#bench { overflow-x: clip; padding: clamp(80px, 13vh, 140px) var(--space-1); background: var(--color-4); color: var(--color-2); }
+#bench .bn__head { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 20px 48px; margin-bottom: clamp(30px, 6vh, 60px); }
+#bench .bn__head h2 span { display: block; }
+#bench .bn__head p { max-width: 44ch; }
+#bench .bn__list { border-top: 1px solid var(--color-2); }
+#bench .bn__step { display: grid; grid-template-columns: 44px minmax(0, 1fr) minmax(0, 290px) clamp(96px, 10vw, 140px); align-items: center; gap: clamp(14px, 2.2vw, 32px); padding: clamp(14px, 2.2vh, 24px) 0; border-bottom: 1px solid var(--color-2); }
+#bench .bn__num { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid currentColor; border-radius: 50%; }
+#bench .bn__name { font-size: min(7.2vw, 6.6rem, calc((100vw - 2 * var(--space-1) - 560px) / (var(--len) * .5))); white-space: nowrap; }
+#bench .bn__photo { width: 100%; background: var(--color-2); }
+@media (max-width: 1023px) {
+  #bench .bn__head { grid-template-columns: 1fr; }
+  #bench .bn__step { grid-template-columns: 40px minmax(0, 1fr) clamp(84px, 22vw, 120px); grid-template-areas: "num name photo" ". desc photo"; row-gap: 8px; }
+  #bench .bn__num { grid-area: num; }
+  #bench .bn__name { grid-area: name; font-size: min(9vw, calc((100vw - 2 * var(--space-1) - 22vw - 100px) / (var(--len) * .5))); }
+  #bench .bn__desc { grid-area: desc; }
+  #bench .bn__photo { grid-area: photo; }
+}
+@media (max-width: 640px) {
+  #bench .bn__step { grid-template-columns: 32px minmax(0, 1fr) 76px; grid-template-areas: "num name name" "desc desc photo"; column-gap: 12px; }
+  #bench .bn__num { width: 32px; height: 32px; }
+  #bench .bn__name { font-size: min(12vw, calc((100vw - 2 * var(--space-1) - 48px) / (var(--len) * .5))); }
+}
+}
+</style>
+<style data-8b-part="scene-style:bench">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #bench[data-heat] .bn__name { position: relative; }
+  #bench[data-heat] .bn__heat { position: relative; display: inline-block; transform-origin: 0 50%; will-change: transform, opacity; }
+  #bench[data-heat] .bn__heat--copy { position: absolute; left: 0; top: 0; pointer-events: none; }
+}
+}
+</style>
+<style data-8b-part="section:standin">
+@layer sections {
+#standin { overflow-x: clip; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(28px, 6vw, 96px); padding: clamp(80px, 13vh, 140px) var(--space-1); background: var(--color-5); color: var(--color-2); }
+#standin .si__photo { justify-self: center; width: min(100%, 460px); aspect-ratio: 3 / 4.3; }
+#standin .si__copy { display: grid; justify-items: start; gap: 24px; max-width: 640px; }
+#standin h2 span { display: block; }
+#standin .si__copy > p { max-width: 46ch; }
+#standin .si__points { display: grid; gap: 10px; width: 100%; }
+#standin .si__point { --m-fuse-2-h: 74px; }
+#standin .si__point .m-text-6 { font-size: clamp(1.05rem, 1.3vw, 1.25rem); }
+@media (max-width: 860px) {
+  #standin { grid-template-columns: 1fr; }
+  #standin .si__photo { width: min(78%, 360px); }
+  #standin .si__point { --m-fuse-2-h: 62px; }
+}
+}
+</style>
+<style data-8b-part="section:stories">
+@layer sections {
+#stories { overflow-x: clip; padding: clamp(80px, 13vh, 140px) var(--space-1) clamp(60px, 10vh, 120px); }
+#stories .sr__head { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 20px 48px; margin-bottom: clamp(30px, 5vh, 50px); }
+#stories .sr__head h2 span { display: block; }
+#stories .sr__list { display: grid; gap: clamp(20px, 4vh, 40px); }
+#stories .sr__card { --sr-i: 0; position: sticky; top: calc(96px + var(--sr-i) * 14px); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .5fr) minmax(0, 1fr); align-items: center; gap: clamp(16px, 2.6vw, 40px); min-height: min(66svh, 580px); padding: clamp(22px, 3vw, 44px); transform-origin: 50% 0; }
+#stories .sr__card:nth-child(2) { --sr-i: 1; }
+#stories .sr__card:nth-child(3) { --sr-i: 2; }
+#stories .sr__text { display: grid; align-content: center; gap: 16px; }
+#stories .sr__text .m-text-5 { max-width: 44ch; }
+#stories .sr__quote { max-width: 36ch; }
+#stories .m-surface-2 .sr__text .m-text-5, #stories .m-surface-2 .sr__in p { color: var(--color-8); }
+#stories .m-surface-2 :focus-visible { outline-color: var(--color-6); }
+#stories .sr__in { display: grid; justify-items: center; gap: 10px; }
+#stories .sr__in .m-photo-2 { width: min(100%, 190px); }
+#stories .sr__out { align-self: stretch; min-height: 300px; max-height: 520px; }
+@media (max-width: 860px) {
+  #stories .sr__head { grid-template-columns: 1fr; }
+  #stories .sr__card { top: calc(78px + var(--sr-i) * 10px); grid-template-columns: minmax(0, 1fr) 92px; grid-template-areas: "out out" "text in"; align-items: start; min-height: 0; padding: 14px 14px 22px; gap: 16px 12px; }
+  #stories .sr__out { grid-area: out; min-height: 0; height: 30svh; }
+  #stories .sr__text { grid-area: text; gap: 10px; padding-left: 6px; }
+  #stories .sr__in { grid-area: in; }
+  #stories .sr__quote { font-size: 14.5px; }
+}
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+#studio { background: var(--color-2); color: var(--color-6); }
+#studio .st__stage { display: flex; flex-direction: column; justify-content: center; gap: clamp(32px, 6vh, 64px); padding: clamp(80px, 13vh, 140px) var(--space-1); }
+#studio .st__head { display: grid; grid-template-columns: 1.3fr 1fr; align-items: end; gap: 20px 48px; }
+#studio .st__head h2 span { display: block; }
+#studio .st__head p { max-width: 42ch; color: var(--color-8); }
+#studio .st__people { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-2); }
+#studio .st__person { display: grid; justify-items: center; align-content: start; gap: 6px; text-align: center; }
+#studio .st__circle { width: min(100%, 200px); aspect-ratio: 1; margin-bottom: 12px; border-radius: 50%; }
+#studio .st__circle--you { display: grid; place-items: center; background: var(--color-3); color: var(--color-2); }
+#studio .st__role { max-width: 22ch; color: var(--color-8); }
+@media (max-width: 860px) {
+  #studio .st__head { grid-template-columns: 1fr; }
+  #studio .st__people { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 24px; }
+  #studio .st__name { font-size: 1.05rem; }
+  #studio .st__role { font-size: 12.5px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:studio">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #studio[data-cluster] { height: 240svh; }
+  #studio[data-cluster] .st__stage { position: sticky; top: 0; min-height: 100svh; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { overflow-x: clip; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: start; gap: clamp(28px, 5vw, 80px); padding: clamp(80px, 13vh, 140px) var(--space-1); }
+#faq .fq__head { position: sticky; top: 112px; display: grid; gap: 20px; }
+#faq .fq__head h2 span { display: block; }
+#faq .fq__head p { max-width: 38ch; }
+#faq .fq__head a { text-underline-offset: 3px; }
+#faq .fq__list { display: grid; gap: 10px; }
+#faq .fq__item { border: 1px solid var(--color-2); border-radius: 34px; transition: background-color .3s; }
+#faq .fq__item[open] { background: var(--color-6); }
+#faq .fq__q { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 68px; padding: 12px 14px 12px 28px; list-style: none; cursor: pointer; border-radius: 34px; }
+#faq .fq__q::-webkit-details-marker { display: none; }
+#faq .fq__q::after { content: "+"; flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-2); color: var(--color-6); font-family: var(--font-1); font-size: 22px; line-height: 1; transition: transform .4s cubic-bezier(.3,.7,.2,1), background-color .3s; }
+#faq .fq__item[open] .fq__q::after { transform: rotate(45deg); background: var(--color-3); color: var(--color-2); }
+#faq .fq__a { max-width: 60ch; padding: 0 28px 24px; }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: 1fr; }
+  #faq .fq__head { position: static; }
+  #faq .fq__q { padding-left: 22px; font-size: 1.1rem; }
+  #faq .fq__a { padding: 0 22px 22px; }
+}
+}
+</style>
+<style data-8b-part="section:care">
+@layer sections {
+#care { padding: clamp(80px, 13vh, 140px) var(--space-1); background: var(--color-5); color: var(--color-2); overflow: clip; }
+#care .cr__head { display: grid; justify-items: center; gap: 20px; max-width: 760px; margin: 0 auto clamp(36px, 6vh, 64px); text-align: center; }
+#care .cr__head h2 span { display: block; }
+#care .cr__head p { max-width: 50ch; }
+#care .cr__pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 1080px; margin: 0 auto; }
+#care .cr__pill { display: flex; align-items: center; gap: 16px; min-height: 76px; padding: 10px 32px; border-radius: var(--radius-1); background: var(--color-6); }
+#care .cr__pill .m-text-6 { font-size: clamp(1.1rem, 1.6vw, 1.45rem); }
+#care .cr__price { color: var(--color-7); white-space: nowrap; }
+#care .cr__pill--free { background: var(--color-3); }
+#care .cr__pill--free .cr__price { color: var(--color-2); }
+@media (max-width: 640px) {
+  #care .cr__pills { gap: 8px; }
+  #care .cr__pill { gap: 10px; min-height: 58px; padding: 8px 20px; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { overflow-x: clip; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: clamp(24px, 4vw, 64px); padding: clamp(80px, 13vh, 140px) var(--space-1); }
+#contact .ct__info { display: grid; justify-items: start; gap: 22px; }
+#contact .ct__info h2 span { display: block; }
+#contact .ct__info > p { max-width: 44ch; }
+#contact .ct__facts { display: grid; gap: 8px; }
+#contact .ct__fact { --m-fuse-h: 52px; }
+#contact .ct__fact :focus-visible { outline-color: var(--color-6); }
+#contact .ct__photo { width: 100%; aspect-ratio: 16 / 10; margin-top: 8px; }
+#contact .ct__form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; padding: clamp(24px, 3.4vw, 48px); }
+#contact .ct__form :focus-visible { outline-color: var(--color-6); }
+#contact .ct__form h3, #contact .ct__wide, #contact .ct__send { grid-column: 1 / -1; }
+#contact .ct__form .m-field:nth-of-type(4) { grid-column: 1 / -1; }
+#contact .ct__send { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+#contact .ct__status { max-width: 42ch; color: var(--color-8); }
+@media (max-width: 860px) {
+  #contact { grid-template-columns: 1fr; }
+  #contact .ct__form { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+  #contact .ct__fact { --m-fuse-h: 46px; font-size: 13px; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: clamp(60px, 10vh, 110px) var(--space-1) 24px; background: var(--color-2); color: var(--color-6); overflow: clip; }
+#footer :focus-visible { outline-color: var(--color-6); }
+#footer .ft__top { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+#footer .ft__label { margin-bottom: 8px; color: var(--color-8); }
+#footer .ft__col a { color: inherit; }
+#footer .ft__talk .m-link { margin-left: 12px; font-size: 15px; font-weight: 400; }
+#footer .ft__talk { margin-left: -12px; }
+#footer .ft__links { display: grid; justify-items: start; align-content: start; gap: 8px; padding-left: 12px; }
+#footer .ft__mark { margin: clamp(30px, 7vh, 80px) 0 14px; font-family: var(--font-1); font-size: calc((100vw - 2 * var(--space-1)) / (var(--len) * .47)); font-weight: 650; line-height: .82; letter-spacing: -0.05em; text-align: center; white-space: nowrap; }
+#footer .ft__dot { display: inline-block; width: .09em; height: .09em; margin-left: .03em; border-radius: 50%; background: var(--color-3); vertical-align: .62em; }
+#footer .ft__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--color-6) 22%, transparent); color: var(--color-8); }
+#footer .ft__legal .m-link { color: var(--color-6); }
+@media (max-width: 860px) {
+  #footer .ft__top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #footer .ft__col:nth-child(3) { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="scene-style:footer">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #footer[data-widen] .ft__mark { font-variation-settings: "wdth" var(--ft-wdth, 100); }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op__two { --top: clamp(84px, 11vh, 100px); padding-top: var(--top); }
+#opening .op__panel { min-height: calc(100svh - var(--top) - var(--space-1)); }
+#opening .op__panel-copy h1 { font-size: clamp(2.4rem, 5vw, 4.6rem); }
+#opening .op__panel-copy h1 span { display: block; text-wrap: balance; }
+@media (max-width: 640px) {
+  #opening .op__two { --top: 76px; }
+  #opening .op__panel-copy h1 { font-size: clamp(2.2rem, 10vw, 2.9rem); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__panel { animation: op-grow 1s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .op__panel-copy > * { animation: op-rise .9s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .op__panel-copy > :nth-child(2) { animation-delay: .07s; }
+  #opening .op__panel-copy > :nth-child(3) { animation-delay: .14s; }
+  #opening .op__panel-copy > :nth-child(4) { animation-delay: .2s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="nav">
+<div class="nav__bar">
+<button aria-controls="menu" aria-expanded="false" class="m-btn-2 nav__menu" type="button"><span class="m-btn-2__label">{{t1|Menu}}</span></button>
+<a aria-label="{{name}} goldsmiths, back to the top" class="nav__mark" href="#opening">{{t2|⟦name⟧}}<span aria-hidden="true" class="nav__dot"></span></a>
+<div class="nav__right">
+<a class="m-btn-2 nav__price" href="#care"><span class="m-btn-2__label">{{t3|Price Guide}}</span></a>
+<a aria-label="Talk to a goldsmith: call Isla Gowan on {{phone}}" class="m-btn-3 nav__talk" data-8b-placeholder="phone" href="tel:{{telraw}}"><span class="m-btn-3__label">{{t4|Talk To A Goldsmith: Isla Gowan}}</span><span aria-hidden="true" class="m-btn-3__neck"></span><span aria-hidden="true" class="m-btn-3__orb"><img alt="" height="2134" src="{{i1|https://images.unsplash.com/photo-1772442125299-dc4d557ec273?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8amV3ZWxlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0MDc4MTd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#262626;object-position: 50% 22%" width="1600"/></span></a>
+</div>
+</div>
+<div aria-label="Site menu" aria-modal="true" class="menu" data-lenis-prevent="" hidden="" id="menu" role="dialog">
+<div class="menu__top">
+<a class="menu__mark" href="#opening">{{t2|⟦name⟧}}</a>
+<button aria-label="Close the menu" class="m-icon menu__close" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"></path></svg></button>
+</div>
+<ul class="menu__list">
+{{#nv_pieces}}<li><a class="m-link" href="#pieces">{{t5|What We Make}}</a></li>{{/nv_pieces}}
+{{#nv_gold}}<li><a class="m-link" href="#gold">{{t6|Our Metal}}</a></li>{{/nv_gold}}
+{{#nv_bench}}<li><a class="m-link" href="#bench">{{t7|At The Bench}}</a></li>{{/nv_bench}}
+{{#nv_standin}}<li><a class="m-link" href="#standin">{{t8|Proposing}}</a></li>{{/nv_standin}}
+{{#nv_stories}}<li><a class="m-link" href="#stories">{{t9|Remade Pieces}}</a></li>{{/nv_stories}}
+{{#nv_studio}}<li><a class="m-link" href="#studio">{{t10|The Goldsmiths}}</a></li>{{/nv_studio}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t11|Questions}}</a></li>{{/nv_faq}}
+{{#nv_care}}<li><a class="m-link" href="#care">{{t12|Care & Prices}}</a></li>{{/nv_care}}
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t13|Visit Us}}</a></li>{{/nv_contact}}
+</ul>
+<p class="m-text-5 menu__foot"><span>{{t14|1 Admiralty Way, Enugu}}</span><a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t15|⟦phone⟧}}</a><span>{{t16|Tue–Sat, 10:00–17:30}}</span></p>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op__two">
+<div class="m-surface-3 op__panel">
+<div class="op__panel-copy">
+<h1 class="m-text-2" id="opening-title"><span>{{t17|Every Drawer Holds A Ring}}</span> <span class="m-text-4">{{t18|Waiting To Be Made.}}</span></h1>
+<p class="m-text">{{t19|Bring what you no longer wear — in a pocket, a pouch or a biscuit tin. We test each piece in front of you, weigh it, and tell you what it could become and what it is worth. The valuation is free and nothing leaves your sight.}}</p>
+<ul aria-label="What to bring" class="op__bring">
+<li class="m-badge">{{t20|Wedding bands}}</li>
+<li class="m-badge">{{t21|Broken chains}}</li>
+<li class="m-badge">{{t22|Single earrings}}</li>
+<li class="m-badge">{{t23|Signet rings}}</li>
+<li class="m-badge">{{t24|Old sovereigns}}</li>
+<li class="m-badge">{{t25|Charms & lockets}}</li>
+</ul>
+<div><a class="m-btn-3" href="#contact"><span class="m-btn-3__label">{{t26|Book A Free Valuation}}</span><span aria-hidden="true" class="m-btn-3__neck"></span><span aria-hidden="true" class="m-btn-3__orb"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5"></path></svg></span></a></div>
+</div>
+<div class="op__drawer">
+<figure class="m-photo-2 op__circle"><img alt="An open jewellery box of old gold earrings, pearls and brooches" height="1200" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1775135946288-ab8f63edff52?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVhcmwlMjBlYXJyaW5ncyUyMHBpbmt8ZW58MXwwfHx8MTc5MTQwNzc0M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#a6a6a6" width="1600"/></figure>
+<div class="m-fuse op__caption"><span aria-hidden="true" class="m-fuse__orb"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 20 20"><circle cx="10" cy="10" r="7.5"></circle><path d="M10 5.5V10l3 2"></path></svg></span><span aria-hidden="true" class="m-fuse__neck"></span><span class="m-fuse__pill">{{t27|Valued in about twenty minutes}}</span></div>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_pieces}}<section data-8b-section="pieces" id="pieces">
+<div class="pc__stage">
+<div class="pc__head">
+<h2 class="m-text-2"><span>{{t28|What Leaves Our Bench}}</span> <span class="m-text-4">{{t29|Most Weeks}}</span></h2>
+<p class="m-text">{{t30|Five kinds of piece, each drawn for one person. Prices are for new recycled gold; remaking your own usually brings them down.}}</p>
+</div>
+<ul class="pc__track">
+<li class="pc__item">
+<figure class="m-photo-3 pc__frame"><img alt="A gold solitaire ring on a woman's hand resting on white linen" height="2400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1686538246844-f3ca82434d95?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8ZW5nYWdlbWVudCUyMHJpbmclMjBoYW5kfGVufDF8MXx8fDE3OTE0MDc3OTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#738c8c;object-position: 50% 45%" width="1600"/></figure>
+<div class="pc__text"><h3 class="m-text-6">{{t31|Engagement Rings}}</h3><p class="m-text-5">{{t32|Drawn around a stone you choose, or the one you already have.}}</p><p class="m-text-5 pc__price">{{t33|From ₦725,000}}</p></div>
+</li>
+<li class="pc__item">
+<figure class="m-photo-3 pc__frame"><img alt="Two plain gold wedding bands lying on green satin" height="2400" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1772286372295-0381010dfae0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z29sZCUyMHdlZGRpbmclMjBiYW5kc3xlbnwxfDF8fHwxNzkxNDA3NzkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#0c2626" width="1600"/></figure>
+<div class="pc__text"><h3 class="m-text-6">{{t34|Wedding Bands}}</h3><p class="m-text-5">{{t35|Forged as a pair, often from both families' old gold.}}</p><p class="m-text-5 pc__price">{{t36|From ₦210,000}}</p></div>
+</li>
+<li class="pc__item">
+<figure class="m-photo-3 pc__frame"><img alt="A pair of polished gold drop earrings on white cloth" height="2400" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1727990864588-757416bf8062?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z29sZCUyMGVhcnJpbmdzJTIwZWFyfGVufDF8MXx8fDE3OTE0MDc3OTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<div class="pc__text"><h3 class="m-text-6">{{t37|Earrings}}</h3><p class="m-text-5">{{t38|Drops, hoops and studs, sized to how you wear your hair.}}</p><p class="m-text-5 pc__price">{{t39|From ₦130,000}}</p></div>
+</li>
+<li class="pc__item">
+<figure class="m-photo-3 pc__frame"><img alt="A gold signet ring with a black stone on a stone plinth" height="2196" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1695222508573-5fd70be4c7c1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHNpZ25ldCUyMHJpbmd8ZW58MXwxfHx8MTc5MTQwNzc5M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60}}" style="background:#735940" width="1600"/></figure>
+<div class="pc__text"><h3 class="m-text-6">{{t40|Signet Rings}}</h3><p class="m-text-5">{{t41|Cut and engraved by hand at the bench, never by laser.}}</p><p class="m-text-5 pc__price">{{t42|From ₦340,000}}</p></div>
+</li>
+<li class="pc__item">
+<figure class="m-photo-3 pc__frame"><img alt="A pearl pendant on a fine gold chain against black" height="2400" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1682629846138-7db022565bd5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGVhcmwlMjBuZWNrbGFjZXxlbnwxfDF8fHwxNzkxNDA3Nzk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="pc__text"><h3 class="m-text-6">{{t43|Pendants}}</h3><p class="m-text-5">{{t44|A stone or pearl from an old piece, given a new setting.}}</p><p class="m-text-5 pc__price">{{t45|From ₦170,000}}</p></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_pieces}}
+
+{{#sec_gold}}<section data-8b-section="gold" id="gold">
+<div class="gd__intro">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t46|Where Our Metal}}</span> <span class="v-b m-text-4">{{t47|Comes From}}</span></h2>
+<p class="m-text">{{t48|Every gram we work has been gold before. We would rather refine a ring you'll never wear again than buy metal fresh from the ground — and we can show you the paper trail for every stone we set.}}</p>
+<a class="m-btn-2" href="#faq"><span class="m-btn-2__label">{{t49|Read Our Questions}}</span></a>
+</div>
+<ul class="gd__list">
+<li class="m-fuse-2 gd__row" data-8b-motion="bud">
+<span class="m-fuse-2__orb"><img alt="Open hands holding small gold and silver pieces brought in for remaking" height="1060" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1775327589376-f94584330dba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z29sZCUyMGdyYW51bGVzfGVufDF8MHx8fDE3OTE0MDc3OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#8c5959" width="1600"/></span>
+<span aria-hidden="true" class="m-fuse-2__neck"></span>
+<div class="m-fuse-2__pill"><h3 class="m-text-6">{{t50|Your Own Gold}}</h3><p class="m-text-5">{{t51|Tested and refined in our studio, alloyed back to 9, 14 or 18 carat. You get your own metal back, not an equivalent.}}</p></div>
+</li>
+<li class="m-fuse-2 gd__row" data-8b-motion="bud">
+<span class="m-fuse-2__orb"><img alt="Small pieces of recycled gold grain on a dark wooden table" height="914" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1737815914093-becb6c9ac064?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z29sZCUyMGdyYW51bGVzfGVufDF8MHx8fDE3OTE0MDc3OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#405973" width="1600"/></span>
+<span aria-hidden="true" class="m-fuse-2__neck"></span>
+<div class="m-fuse-2__pill"><h3 class="m-text-6">{{t52|Recycled Bullion}}</h3><p class="m-text-5">{{t53|When yours runs short, we top it up with recycled grain from a British refiner, hallmarked at the Enugu Assay Office.}}</p></div>
+</li>
+<li class="m-fuse-2 gd__row" data-8b-motion="bud">
+<span class="m-fuse-2__orb"><img alt="Rough uncut gemstones scattered on black" height="1067" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1631832724508-ea8df04ad455?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fHJvdWdoJTIwZ2Vtc3RvbmVzfGVufDF8MHx8fDE3OTE0MDc3OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#262626" width="1600"/></span>
+<span aria-hidden="true" class="m-fuse-2__neck"></span>
+<div class="m-fuse-2__pill"><h3 class="m-text-6">{{t54|Traceable Stones}}</h3><p class="m-text-5">{{t55|Diamonds and sapphires with a record back to the mine, or the stones you bring, re-cut only if they need it.}}</p></div>
+</li>
+</ul>
+</section>{{/sec_gold}}
+
+{{#sec_bench}}<section data-8b-section="bench" id="bench">
+<div class="bn__head">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t56|Five Sittings}}</span> <span class="v-b m-text-4">{{t57|From Drawer To Hand}}</span></h2>
+<p class="m-text">{{t58|Most commissions take six to eight weeks. You're welcome at all five sittings; most people come to three and leave the rest to us.}}</p>
+</div>
+<ol class="bn__list">
+<li class="bn__step">
+<span aria-hidden="true" class="bn__num m-text-5">{{t59|1}}</span>
+<h3 class="m-text-8 bn__name" style="--len:12">{{t60|Sit & Sketch}}</h3>
+<p class="m-text bn__desc">{{t61|An hour at the bench with the goldsmith who will make your piece. We draw it around your hand, not from a catalogue.}}</p>
+<figure class="m-photo-2 bn__photo"><img alt="A hand sketching ring outlines in pencil on paper" height="1200" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1780241625902-3383df04236f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGpld2VsbGVyeSUyMHNrZXRjaCUyMGRyYXdpbmd8ZW58MXwwfHx8MTc5MTQwNzc2OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#260c0c" width="1600"/></figure>
+</li>
+<li class="bn__step">
+<span aria-hidden="true" class="bn__num m-text-5">{{t62|2}}</span>
+<h3 class="m-text-8 bn__name" style="--len:13">{{t63|Melt & Refine}}</h3>
+<p class="m-text bn__desc">{{t64|Your gold is tested, weighed and melted while you watch, then alloyed to the carat and colour you choose.}}</p>
+<figure class="m-photo-2 bn__photo"><img alt="A torch flame heating a glowing bar of gold on a soldering block" height="1067" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1656288187932-5d382f643767?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8amV3ZWxyeSUyMG1ha2luZyUyMHRvb2xzfGVufDF8MHx8fDE3OTE0MDc3NjZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#595959" width="1600"/></figure>
+</li>
+<li class="bn__step">
+<span aria-hidden="true" class="bn__num m-text-5">{{t65|3}}</span>
+<h3 class="m-text-8 bn__name" style="--len:11">{{t66|Saw & Forge}}</h3>
+<p class="m-text bn__desc">{{t67|The metal is rolled, sawn and forged into shape. Come back and hold it before the stone goes in.}}</p>
+<figure class="m-photo-2 bn__photo"><img alt="Hands filing a gold band against a wooden bench peg" height="1065" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1599071338288-49173359e0fd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmluZyUyMHBvbGlzaGluZ3xlbnwxfDB8fHwxNzkxNDA3NzY4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#262626" width="1600"/></figure>
+</li>
+<li class="bn__step">
+<span aria-hidden="true" class="bn__num m-text-5">{{t68|4}}</span>
+<h3 class="m-text-8 bn__name" style="--len:13">{{t69|Set The Stone}}</h3>
+<p class="m-text bn__desc">{{t70|Each claw is raised and closed under the loupe. A solitaire takes our setter most of an afternoon.}}</p>
+<figure class="m-photo-2 bn__photo"><img alt="A setter's hands turning a ring under a lamp" height="1067" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1623304741393-54f6c11c0da6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cmluZyUyMHBvbGlzaGluZ3xlbnwxfDB8fHwxNzkxNDA3NzY4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#260c0c" width="1600"/></figure>
+</li>
+<li class="bn__step">
+<span aria-hidden="true" class="bn__num m-text-5">{{t71|5}}</span>
+<h3 class="m-text-8 bn__name" style="--len:18">{{t72|Polish & Hand Over}}</h3>
+<p class="m-text bn__desc">{{t73|Polished, hallmarked and handed to you across the same bench it was made on, with a note of its weight and story.}}</p>
+<figure class="m-photo-2 bn__photo"><img alt="A ring held against a spinning polishing wheel" height="1280" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1589845641474-bc54b83380f5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cmluZyUyMHBvbGlzaGluZ3xlbnwxfDB8fHwxNzkxNDA3NzY4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=160&q=60}}" style="background:#f3d9d9" width="1600"/></figure>
+</li>
+</ol>
+</section>{{/sec_bench}}
+
+{{#sec_standin}}<section data-8b-section="standin" id="standin">
+<figure class="m-photo-3 si__photo" data-8b-motion="round"><img alt="A ring being slipped onto a partner's finger" height="2400" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1682282423992-033015e1db5a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGVuZ2FnZW1lbnQlMjByaW5nJTIwaGFuZHxlbnwxfDF8fHwxNzkxNDA3NzkxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=460&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+<div class="si__copy">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t74|Proposing?}}</span> <span class="v-b m-text-4">{{t75|Use A Stand-In.}}</span></h2>
+<p class="m-text">{{t76|Not sure what they'd choose? Propose with our silver stand-in ring, then come back together and design the one you'll both remember. Nobody has to guess a ring size in secret.}}</p>
+<ul class="si__points">
+<li class="m-fuse-2 si__point" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse-2__orb"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4.5"></circle></svg></span><span aria-hidden="true" class="m-fuse-2__neck"></span><div class="m-fuse-2__pill"><p class="m-text-6">{{t77|A silver stand-in, sized on the day}}</p></div></li>
+<li class="m-fuse-2 si__point" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse-2__orb"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span aria-hidden="true" class="m-fuse-2__neck"></span><div class="m-fuse-2__pill"><p class="m-text-6">{{t78|Its ₦30,000 comes off the real ring}}</p></div></li>
+<li class="m-fuse-2 si__point" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse-2__orb"><svg fill="none" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 19l4-1L19 7l-3-3L5 15l-1 4z"></path></svg></span><span aria-hidden="true" class="m-fuse-2__neck"></span><div class="m-fuse-2__pill"><p class="m-text-6">{{t79|Then draw the real one together}}</p></div></li>
+</ul>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t80|Ask About A Stand-In}}</span></a>
+</div>
+</section>{{/sec_standin}}
+
+{{#sec_stories}}<section data-8b-section="stories" id="stories">
+<div class="sr__head">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t81|Three Pieces}}</span> <span class="v-b m-text-4">{{t82|That Came Back Different}}</span></h2>
+<p class="m-text">{{t83|What people carried in, and what they wore home.}}</p>
+</div>
+<ol class="sr__list">
+<li class="m-surface sr__card">
+<div class="sr__text">
+<h3 class="m-text-6">{{t84|Three Grandmothers,}} <span class="m-text-4">{{t85|One Band}}</span></h3>
+<p class="m-text-5">{{t86|Three worn wedding rings from three generations, melted together and forged into one wide band with a sculpted top. The three golds still show as faint stripes when it catches the light.}}</p>
+<p class="m-text sr__quote">{{t87|“It's the first ring all three of them have been in at once.” — Eilidh, Portobello}}</p>
+</div>
+<div class="sr__in"><figure class="m-photo-2"><img alt="Old gold wedding rings laid over a vintage photograph" height="1600" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1625908734887-10fa8521253b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dmludGFnZSUyMGdvbGQlMjByaW5nc3xlbnwxfDJ8fHwxNzkxNDA3NzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#8c8c8c" width="1600"/></figure><p class="m-text-5">{{t88|Came in}}</p></div>
+<figure class="m-photo sr__out"><img alt="Two sculpted gold rings on a white dish" height="2400" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1723802205505-2f88b2227718?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z29sZCUyMHdlZGRpbmclMjBiYW5kc3xlbnwxfDF8fHwxNzkxNDA3NzkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+</li>
+<li class="m-surface-2 sr__card">
+<div class="sr__text">
+<h3 class="m-text-6">{{t89|A Necklace}} <span class="m-text-4">{{t90|With A Broken Clasp}}</span></h3>
+<p class="m-text-5">{{t91|A pearl necklace that had sat in a drawer for twenty years became two pairs of pearl drops — one for each daughter — and the clasp's gold became their hooks.}}</p>
+<p class="m-text sr__quote">{{t92|“They wore them to their mum's seventieth. Nobody guessed.” — Graham, Stockbridge}}</p>
+</div>
+<div class="sr__in"><figure class="m-photo-2"><img alt="A pearl on a fine chain lying on white lace" height="2133" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1647524648025-0477089d1312?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBlYXJsJTIwbmVja2xhY2V8ZW58MXwxfHx8MTc5MTQwNzc5NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#a6a6a6" width="1600"/></figure><p class="m-text-5">{{t88|Came in}}</p></div>
+<figure class="m-photo sr__out"><img alt="A pair of pearl drop earrings on dark cloth" height="1067" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1701087217697-3bf348cda440?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cGVhcmwlMjBlYXJyaW5ncyUyMHBpbmt8ZW58MXwwfHx8MTc5MTQwNzc0M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#262626" width="1600"/></figure>
+</li>
+<li class="m-surface-4 sr__card">
+<div class="sr__text">
+<h3 class="m-text-6">{{t93|An Engagement Ring}} <span class="m-text-4">{{t94|From 1962}}</span></h3>
+<p class="m-text-5">{{t95|The band had worn paper-thin. We saved the old diamond, cut two small ones to sit beside it, and set all three in a new gold band of the same pattern.}}</p>
+<p class="m-text sr__quote">{{t96|“Same stone my gran said yes to, on a ring that'll last me.” — Priya, Leith}}</p>
+</div>
+<div class="sr__in"><figure class="m-photo-2"><img alt="A worn gold ring resting on an old printed page" height="1600" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1634390756696-505390283f61?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dmludGFnZSUyMGdvbGQlMjByaW5nc3xlbnwxfDJ8fHwxNzkxNDA3NzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}}" style="background:#f3f3f3" width="1600"/></figure><p class="m-text-5">{{t88|Came in}}</p></div>
+<figure class="m-photo sr__out"><img alt="A gold ring with three clusters of diamonds on a pale lilac ground" height="1600" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1728381137374-4aa8f5c45ecb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dmludGFnZSUyMGdvbGQlMjByaW5nc3xlbnwxfDJ8fHwxNzkxNDA3NzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#c0c0d9" width="1600"/></figure>
+</li>
+</ol>
+</section>{{/sec_stories}}
+
+{{#sec_studio}}<section data-8b-section="studio" id="studio">
+<div class="st__stage">
+<div class="st__head">
+<h2 class="m-text-2"><span>{{t97|Four At The Bench}}</span> <span class="m-text-4">{{t98|And A Seat For You}}</span></h2>
+<p class="m-text">{{t99|⟦name⟧ is four people and one long bench under the window. Whoever draws your piece makes it.}}</p>
+</div>
+<ul class="st__people">
+<li class="st__person st__person--you">
+<div class="st__circle st__circle--you"><span class="m-text-6">{{t100|You}}</span></div>
+<p class="m-text-6 st__name">{{t101|Your Seat}}</p>
+<p class="m-text-5 st__role">{{t102|Bring a sketch, a stone or nothing at all}}</p>
+</li>
+<li class="st__person">
+<figure class="m-photo-2 st__circle"><img alt="Isla Gowan at her jeweller's bench" height="2134" src="{{i1|https://images.unsplash.com/photo-1772442125299-dc4d557ec273?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8amV3ZWxlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0MDc4MTd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#262626;object-position: 50% 24%" width="1600"/></figure>
+<p class="m-text-6 st__name">{{t103|Isla Gowan}}</p>
+<p class="m-text-5 st__role">{{t104|Goldsmith and founder, draws every commission}}</p>
+</li>
+<li class="st__person">
+<figure class="m-photo-2 st__circle"><img alt="Tam Rennie in his workshop wearing magnifying glasses" height="1067" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1764760214881-69e2a3198c11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z29sZHNtaXRoJTIwd29ya2JlbmNofGVufDF8MHx8fDE3OTE0MDc3NjV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#f3f3f3;object-position: 52% 30%" width="1600"/></figure>
+<p class="m-text-6 st__name">{{t105|Tam Rennie}}</p>
+<p class="m-text-5 st__role">{{t106|Stone setter, thirty years under the loupe}}</p>
+</li>
+<li class="st__person">
+<figure class="m-photo-2 st__circle"><img alt="Morag Baird smiling in the studio" height="1600" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1783953589389-d9f4ebfaa49b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjBwb3J0cmFpdCUyMG5hdHVyYWwlMjBsaWdodHxlbnwxfDJ8fHwxNzkxNDA3ODIwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#260c0c;object-position: 50% 30%" width="1600"/></figure>
+<p class="m-text-6 st__name">{{t107|Morag Baird}}</p>
+<p class="m-text-5 st__role">{{t108|Pearls, restringing and the front desk}}</p>
+</li>
+<li class="st__person">
+<figure class="m-photo-2 st__circle"><img alt="Calum Shaw sawing metal at the bench" height="1067" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1786840320404-4c1c26980075?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z29sZHNtaXRoJTIwd29ya2JlbmNofGVufDF8MHx8fDE3OTE0MDc3NjV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#737373;object-position: 62% 30%" width="1600"/></figure>
+<p class="m-text-6 st__name">{{t109|Calum Shaw}}</p>
+<p class="m-text-5 st__role">{{t110|Apprentice goldsmith, in his third year}}</p>
+</li>
+</ul>
+</div>
+</section>{{/sec_studio}}
+
+{{#sec_faq}}<section data-8b-section="faq" id="faq">
+<div class="fq__head">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t111|Asked At}}</span> <span class="v-b m-text-4">{{t112|The Counter}}</span></h2>
+<p class="m-text">{{t113|Something else? Call the studio on}} <a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t15|⟦phone⟧}}</a> {{t114|and Morag will answer.}}</p>
+</div>
+<div class="fq__list">
+<details class="fq__item">
+<summary class="fq__q m-text-6">{{t115|How long does a commission take?}}</summary>
+<p class="m-text fq__a">{{t116|Six to eight weeks from the first sketch for most rings; wedding bands about four. If there's a date, tell us at the first sitting and we'll plan backwards from it.}}</p>
+</details>
+<details class="fq__item">
+<summary class="fq__q m-text-6">{{t117|What if my gold isn't enough for the piece?}}</summary>
+<p class="m-text fq__a">{{t118|We weigh it at the valuation and top it up with recycled gold. You pay only for the difference, priced per gram on the day.}}</p>
+</details>
+<details class="fq__item">
+<summary class="fq__q m-text-6">{{t119|Will my piece be hallmarked?}}</summary>
+<p class="m-text fq__a">{{t120|Yes. Everything over the legal weight is sent to the Enugu Assay Office and comes back with its hallmark before you collect it.}}</p>
+</details>
+<details class="fq__item">
+<summary class="fq__q m-text-6">{{t121|Do you buy gold too?}}</summary>
+<p class="m-text fq__a">{{t122|We do, at the day's rate, and we'll always give you the figure in writing. Most people decide to remake instead once they've seen the sketches.}}</p>
+</details>
+<details class="fq__item">
+<summary class="fq__q m-text-6">{{t123|Can I see the work in progress?}}</summary>
+<p class="m-text fq__a">{{t124|Every commission includes a visit to approve the wax model and another before the stone is set. Many clients drop in more often; the kettle's always on.}}</p>
+</details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_care}}<section data-8b-section="care" id="care">
+<div class="cr__head">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t125|Looked After}}</span> <span class="v-b m-text-4">{{t126|For As Long As You Wear It}}</span></h2>
+<p class="m-text">{{t127|Cleaning and a claw check are free for every ⟦name⟧ piece, for life. For everything else — ours or not — these are our prices.}}</p>
+</div>
+<ul class="cr__pills">
+<li class="cr__pill cr__pill--free"><span class="m-text-6">{{t128|Cleaning & claw check}}</span><span class="m-text-5 cr__price">{{t129|Free, for life}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t130|Ring resizing}}</span><span class="m-text-5 cr__price">{{t131|from ₦22,500}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t132|Pearl restringing}}</span><span class="m-text-5 cr__price">{{t133|from ₦27,500}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t134|White gold re-plating}}</span><span class="m-text-5 cr__price">{{t135|₦30,000}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t136|Chain & clasp repair}}</span><span class="m-text-5 cr__price">{{t137|from ₦17,500}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t138|Stone re-setting}}</span><span class="m-text-5 cr__price">{{t139|from ₦40,000}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t140|Hand engraving}}</span><span class="m-text-5 cr__price">{{t141|from ₦20,000}}</span></li>
+<li class="cr__pill"><span class="m-text-6">{{t142|Insurance valuation}}</span><span class="m-text-5 cr__price">{{t143|₦25,000}}</span></li>
+</ul>
+</section>{{/sec_care}}
+
+{{#sec_contact}}<section data-8b-section="contact" id="contact">
+<div class="ct__info">
+<h2 class="m-text-2" data-8b-motion="voices"><span class="v-a">{{t144|Come Round}}</span> <span class="v-b m-text-4">{{t145|To Tanner's Wynd}}</span></h2>
+<p class="m-text">{{t146|Valuations and first sittings are by appointment so the bench is free for you. Book below, or ring and we'll find a time.}}</p>
+<ul class="ct__facts">
+<li class="m-fuse ct__fact" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse__orb"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 20 20"><path d="M10 18s6-5.2 6-10a6 6 0 10-12 0c0 4.8 6 10 6 10z"></path><circle cx="10" cy="8" r="2.2"></circle></svg></span><span aria-hidden="true" class="m-fuse__neck"></span><span class="m-fuse__pill">{{t14|1 Admiralty Way, Enugu}}</span></li>
+<li class="m-fuse ct__fact" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse__orb"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 20 20"><circle cx="10" cy="10" r="7.5"></circle><path d="M10 5.5V10l3 2"></path></svg></span><span aria-hidden="true" class="m-fuse__neck"></span><span class="m-fuse__pill">{{t147|Tue–Sat 10:00–17:30, Thu until 19:00}}</span></li>
+<li class="m-fuse ct__fact" data-8b-motion="bud"><span aria-hidden="true" class="m-fuse__orb"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 20 20"><path d="M5 3h3l1.5 4-2 1.3a9 9 0 004.2 4.2L13 10.5l4 1.5v3a2 2 0 01-2 2A13 13 0 013 5a2 2 0 012-2z"></path></svg></span><span aria-hidden="true" class="m-fuse__neck"></span><span class="m-fuse__pill"><a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t15|⟦phone⟧}}</a> · <a data-8b-placeholder="email" href="#ub-contact">{{t148|Email us}}</a></span></li>
+</ul>
+<figure class="m-photo ct__photo" data-8b-motion="round"><img alt="A visitor looking at glass cabinets of jewellery in a warmly lit studio" height="1067" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1771964990519-1af926f25f31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8amV3ZWxyeSUyMHNob3AlMjBpbnRlcmlvcnxlbnwxfDB8fHwxNzkxNDA3ODE2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#c08c59" width="1600"/></figure>
+</div>
+
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Jewelry by <a href="https://github.com/8bsite/jewelry-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft__top">
+<div class="ft__col"><p class="m-text-5 ft__label">{{t149|Visit}}</p><p class="m-text">{{t150|1 Admiralty Way}}<br/>{{t151|Enugu}}</p></div>
+<div class="ft__col"><p class="m-text-5 ft__label">{{t152|Hours}}</p><p class="m-text">{{t153|Tue–Sat 10:00–17:30}}<br/>{{t154|Thursday until 19:00}}</p></div>
+<div class="ft__col"><p class="m-text-5 ft__label">{{t155|Talk}}</p><p class="m-text ft__talk"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t15|⟦phone⟧}}</a><br/><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t156|studio@oriel.example}}</a></p></div>
+<nav aria-label="Footer" class="ft__col ft__links">
+<a class="m-link" href="#pieces">{{t5|What We Make}}</a>
+<a class="m-link" href="#bench">{{t7|At The Bench}}</a>
+<a class="m-link" href="#stories">{{t9|Remade Pieces}}</a>
+<a class="m-link" href="#care">{{t12|Care & Prices}}</a>
+<a class="m-link" href="#contact">{{t157|Book A Visit}}</a>
+</nav>
+</div>
+<p aria-hidden="true" class="ft__mark" style="--len:5">{{t2|⟦name⟧}}<span class="ft__dot"></span></p>
+<div class="m-text-5 ft__legal"><span>{{t158|© 2026 ⟦name⟧ Goldsmiths Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t159|8B}}</a></span><a class="m-link" href="#opening">{{t160|Back To The Top}}</a></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const menu = document.getElementById('menu');
+  const openBtn = nav.querySelector('.nav__menu');
+  const closeBtn = menu.querySelector('.menu__close');
+  let lastY = scrollY, travel = 0;
+  const onScroll = () => {
+    const y = scrollY, dy = y - lastY;
+    lastY = y;
+    if (y > 40) nav.setAttribute('data-floating', ''); else nav.removeAttribute('data-floating');
+    if (y < 120) { nav.removeAttribute('data-hidden'); travel = 0; return; }
+    if (Math.sign(dy) !== Math.sign(travel)) travel = 0;
+    travel += dy;
+    if (travel > 24) nav.setAttribute('data-hidden', '');
+    else if (travel < -24) nav.removeAttribute('data-hidden');
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setOpen = open => {
+    menu.hidden = !open;
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { nav.removeAttribute('data-hidden'); window.lenis?.stop(); closeBtn.focus(); } else { window.lenis?.start(); openBtn.focus(); }
+  };
+  openBtn.addEventListener('click', () => setOpen(true));
+  closeBtn.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setOpen(false); });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+<script data-8b-part="atom-script:m-fuse-2">
+(() => {
+  const items = [...document.querySelectorAll('.m-fuse-2')];
+  if (!items.length) return;
+  const measure = item => {
+    const orb = item.querySelector('.m-fuse-2__orb'), pill = item.querySelector('.m-fuse-2__pill');
+    if (orb && pill && orb.offsetWidth) item.style.setProperty('--m-fuse-p', (pill.offsetHeight / orb.offsetWidth).toFixed(4));
+  };
+  items.forEach(measure);
+  if (!('ResizeObserver' in window)) return;
+  const observer = new ResizeObserver(entries => entries.forEach(entry => { const item = entry.target.closest('.m-fuse-2'); if (item) measure(item); }));
+  items.forEach(item => item.querySelectorAll('.m-fuse-2__orb, .m-fuse-2__pill').forEach(node => observer.observe(node)));
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() {
+  const bar = document.querySelector('#nav .nav__bar');
+  return bar ? bar.getBoundingClientRect().height + 14 : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  voices(element, vars = {}) {
+    const first = element.querySelector('.v-a');
+    const second = element.querySelector('.v-b');
+    const distance = () => Math.min(innerWidth * 0.08, 110);
+    return gsap.timeline(vars)
+      .fromTo(first, { x: () => -distance() }, { x: 0, ease: 'power2.out' }, 0)
+      .fromTo(second, { x: () => distance() }, { x: 0, ease: 'power2.out' }, 0);
+  },
+  bud(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { '--m-fuse-g': 0.55, '--m-fuse-sc': 0.72 }, { '--m-fuse-g': 0, '--m-fuse-sc': 1, ease: 'power2.out' }, 0);
+  },
+  round(element, vars = {}) {
+    const image = element.querySelector('img');
+    return gsap.timeline(vars)
+      .fromTo(element, { clipPath: 'inset(7% 7% 7% 7% round 999px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'power2.out' }, 0)
+      .fromTo(image, { scale: 1.16 }, { scale: 1, ease: 'power2.out' }, 0);
+  }
+};
+const effectRanges = { voices: ['top 94%', 'top 58%'], bud: ['top 94%', 'top 64%'], round: ['top 96%', 'top 42%'] };
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index + 1}`, trigger: element, start: effectRanges[name][0], end: effectRanges[name][1],
+        scrub: 0.6, invalidateOnRefresh: true, animation: effects[name](element)
+      }));
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  if (!form) return;
+  const status = form.querySelector('.ct__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.name.value.trim() && /\S+@\S+\.\S+/.test(form.email.value);
+    status.textContent = ok ? status.dataset.done : status.dataset.error;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:pieces">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('pieces');
+    const track = section.querySelector('.pc__track');
+    const items = [...track.querySelectorAll(':scope > .pc__item')];
+    const images = items.map(item => item.querySelector('.pc__frame img'));
+    if (items.length < 2) return;
+    section.setAttribute('data-strand', '');
+    const run = () => items[items.length - 1].offsetLeft - items[0].offsetLeft;
+    const measure = () => section.style.setProperty('--pc-run', `${run()}px`);
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const setY = items.map(item => gsap.quickSetter(item, 'y', 'px'));
+    const setR = items.map(item => gsap.quickSetter(item, 'rotation', 'deg'));
+    const setX = images.map(image => gsap.quickSetter(image, 'xPercent'));
+    const curve = () => {
+      const half = innerWidth / 2;
+      const lift = innerHeight * (innerWidth < 641 ? 0.05 : 0.11);
+      items.forEach((item, index) => {
+        const box = item.getBoundingClientRect();
+        const raw = Math.max(-1.6, Math.min(1.6, (box.left + box.width / 2 - half) / half));
+        const c = Math.sign(raw) * Math.max(0, Math.abs(raw) - 0.12) / 0.88;
+        setY[index](lift * c * c);
+        setR[index](c * 8);
+        setX[index](-c * 7);
+      });
+    };
+    gsap.to(track, {
+      x: () => -run(), ease: 'none',
+      scrollTrigger: { id: 'pieces', trigger: section, start: 'top top', end: () => `+=${run()}`, scrub: 0.5, invalidateOnRefresh: true, onUpdate: curve, onRefresh: curve }
+    });
+    curve();
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.style.removeProperty('--pc-run');
+      section.removeAttribute('data-strand');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:bench">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('bench');
+    const cool = { wdth: 75, wght: 400 }, warm = { wdth: 100, wght: 650 }, levels = 4;
+    const smooth = (from, to, x) => { const t = Math.min(1, Math.max(0, (x - from) / (to - from))); return t * t * (3 - 2 * t); };
+    const rows = [...section.querySelectorAll('.bn__step')].map(step => {
+      const name = step.querySelector('.bn__name');
+      const top = document.createElement('span');
+      top.className = 'bn__heat';
+      top.append(...name.childNodes);
+      const layers = Array.from({ length: levels - 1 }, (_, k) => {
+        const copy = top.cloneNode(true);
+        const h = k / (levels - 1);
+        copy.className = 'bn__heat bn__heat--copy';
+        copy.setAttribute('aria-hidden', 'true');
+        copy.style.fontVariationSettings = `"wdth" ${cool.wdth + (warm.wdth - cool.wdth) * h}, "wght" ${cool.wght + (warm.wght - cool.wght) * h}`;
+        return copy;
+      });
+      layers.push(top);
+      name.append(...layers);
+      return {
+        step, name, top, layers, photo: step.querySelector('.bn__photo'), heat: { h: 0 }, widths: null,
+        scale: layers.map(layer => gsap.quickSetter(layer, 'scaleX')), fade: layers.map(layer => gsap.quickSetter(layer, 'opacity'))
+      };
+    });
+    const draw = row => {
+      if (!row.widths) row.widths = row.layers.map(layer => layer.offsetWidth || 1);
+      const s = row.heat.h * (levels - 1);
+      const k = Math.min(levels - 2, Math.floor(s)), t = s - k;
+      const width = row.widths[k] + (row.widths[k + 1] - row.widths[k]) * t;
+      row.layers.forEach((layer, j) => {
+        row.fade[j](j === k ? 1 - smooth(0.6, 1, t) : j === k + 1 ? smooth(0, 0.6, t) : 0);
+        row.scale[j](width / row.widths[j]);
+      });
+    };
+    section.setAttribute('data-heat', '');
+    rows.forEach((row, index) => {
+      const update = () => draw(row);
+      gsap.timeline({ scrollTrigger: { id: `bench:step-${index + 1}`, trigger: row.step, start: 'top 78%', end: 'bottom 22%', scrub: 0.5, onRefresh: () => { row.widths = null; draw(row); } } })
+        .fromTo(row.heat, { h: 0 }, { h: 1, ease: 'power2.out', duration: 0.42, onUpdate: update }, 0)
+        .fromTo(row.photo, { scale: 0.48 }, { scale: 1, ease: 'power2.out', duration: 0.42 }, 0)
+        .to(row.heat, { h: 0, ease: 'power2.in', duration: 0.42, onUpdate: update }, 0.58)
+        .to(row.photo, { scale: 0.48, ease: 'power2.in', duration: 0.42 }, 0.58);
+      draw(row);
+    });
+    return () => {
+      section.removeAttribute('data-heat');
+      rows.forEach(({ name, top, layers }) => { layers.forEach(layer => layer !== top && layer.remove()); name.replaceChildren(...top.childNodes); });
+    };
+  });
+}, { near: document.getElementById('bench'), id: 'scene:bench' });
+</script>
+<script data-8b-part="scene:stories">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('stories');
+    const cards = [...section.querySelectorAll('.sr__card')];
+    cards.slice(0, -1).forEach((card, index) => {
+      const next = cards[index + 1];
+      gsap.fromTo(card, { scale: 1 }, {
+        scale: 0.92, ease: 'none',
+        scrollTrigger: { id: `stories:card-${index + 1}`, trigger: next, start: 'top bottom', end: () => `top ${parseFloat(getComputedStyle(next).top) || 0}px`, scrub: 0.4, invalidateOnRefresh: true }
+      });
+    });
+  });
+}, { near: document.getElementById('stories'), id: 'scene:stories' });
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('studio');
+    const list = section.querySelector('.st__people');
+    const circles = [...list.querySelectorAll('.st__circle')];
+    const labels = [...list.querySelectorAll('.st__name, .st__role')];
+    if (!circles.length) return;
+    section.setAttribute('data-cluster', '');
+    const centre = element => {
+      let x = element.offsetWidth / 2, y = element.offsetHeight / 2, node = element;
+      while (node && node !== list) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+      return { x, y };
+    };
+    const scale = 0.3;
+    const spacing = () => circles[0].offsetWidth * scale * 0.7;
+    const target = index => ({ x: list.offsetWidth / 2 + (index - (circles.length - 1) / 2) * spacing(), y: Math.min(list.offsetHeight / 2, circles[0].offsetHeight * 0.6) });
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'studio', trigger: section, start: 'top 35%', end: () => `+=${section.offsetHeight - innerHeight * 0.65}`, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    circles.forEach((circle, index) => {
+      timeline.fromTo(circle,
+        { x: () => target(index).x - centre(circle).x, y: () => target(index).y - centre(circle).y, scale },
+        { x: 0, y: 0, scale: 1, ease: 'power2.inOut', duration: 0.62 }, 0.08);
+    });
+    labels.forEach(label => {
+      timeline.fromTo(label, { y: 18, opacity: 0 }, { y: 0, opacity: 1, ease: 'power2.out', duration: 0.2 }, 0.62);
+    });
+    timeline.to({}, { duration: 0.18 });
+    return () => section.removeAttribute('data-cluster');
+  });
+});
+</script>
+<script data-8b-part="scene:care">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('care');
+    const block = section.querySelector('.cr__pills');
+    const pills = [...block.querySelectorAll('.cr__pill')];
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'care', trigger: block, start: 'top bottom', end: 'top 30%', scrub: 0.6, invalidateOnRefresh: true }
+    });
+    pills.forEach((pill, index) => {
+      const sx = ((index * 37) % 7 - 3) / 3;
+      const sy = ((index * 53) % 5 - 2) / 2;
+      timeline.fromTo(pill,
+        { x: () => sx * innerWidth * 0.2, y: () => sy * innerHeight * 0.14 + innerHeight * 0.12, rotation: sx * 22 + sy * 9 },
+        { x: 0, y: 0, rotation: 0, ease: 'power3.out', duration: 1 }, index * 0.05);
+    });
+  });
+}, { near: document.getElementById('care'), id: 'scene:care' });
+</script>
+<script data-8b-part="scene:footer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('footer');
+    const mark = section.querySelector('.ft__mark');
+    section.setAttribute('data-widen', '');
+    gsap.fromTo(mark, { '--ft-wdth': 75 }, {
+      '--ft-wdth': 100, ease: 'none',
+      scrollTrigger: { id: 'footer', trigger: mark, start: 'top bottom', end: 'bottom bottom', scrub: 0.5 }
+    });
+    return () => section.removeAttribute('data-widen');
+  });
+}, { near: document.getElementById('footer'), id: 'scene:footer' });
+</script>
+</body>
+</html>

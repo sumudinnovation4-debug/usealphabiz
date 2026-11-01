@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>New password – UseAlphaBiz</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head><body>
+<main class="wrap" style="max-width:460px"><div class="card"><h1>Choose a new password</h1><input id="pw" type="password" placeholder="New password (6+ characters)"><button class="btn block" id="go">Save password</button><p id="m" class="mut" style="text-align:center"></p></div></main>
+<script src="app.js"></script><script>
+const sb=SB();$('#go').onclick=async()=>{if(!sb)return;const {error}=await sb.auth.updateUser({password:$('#pw').value});if(error)$('#m').textContent=error.message;else{$('#m').textContent='Password updated. Redirecting…';setTimeout(()=>location.href='login.html',1200)}}
+</script></body></html>

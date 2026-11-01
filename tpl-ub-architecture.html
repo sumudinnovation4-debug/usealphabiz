@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/mozillaheadline/v1/QGY4z-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYTHNYMU.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD7xNK.woff2" rel="preload" type="font/woff2"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 500 700;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGY4z-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYTHDYMVmJQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 500 700;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGY4z-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYTHNYMU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Mozilla Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD4RNKuCc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mozilla Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD7xNK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #d9e4f0;
+  --color-2: #1a2430;
+  --color-3: #f3eeed;
+  --color-4: #b9471f;
+  --color-5: #e7a36a;
+  --color-6: #3f6964;
+  --color-7: #26419b;
+  --color-8: #d22630;
+  --color-9: #ffffff;
+  --color-10: #475463;
+  --color-11: #a9c1dd;
+  --color-12: #e6dad8;
+  --font-1: "Mozilla Headline", "Mozilla Headline Fallback", "Arial Narrow", Arial, sans-serif;
+  --font-2: "Mozilla Text", "Mozilla Text Fallback", Arial, sans-serif;
+  --space-1: clamp(20px, 4vw, 64px);
+  --space-2: clamp(72px, 11vw, 160px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* font fallbacks */
+  @font-face { font-family: "Mozilla Headline Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 71%; ascent-override: 133.7%; descent-override: 36.6%; line-gap-override: 0%; }
+  @font-face { font-family: "Mozilla Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 110.6%; ascent-override: 85.9%; descent-override: 23.5%; line-gap-override: 0%; }
+  @font-face { font-family: "Mozilla Text Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 101.1%; ascent-override: 93.9%; descent-override: 25.7%; line-gap-override: 0%; }
+  /* end font fallbacks */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+  [data-tone="dark"] :focus-visible { outline-color: var(--color-5); }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  main { display: block; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: clamp(16px, 1.05vw + 10px, 18px); font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 5.4vw, 92px); font-weight: 650; font-stretch: 75%; line-height: .93; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(38px, 4.4vw, 72px); font-weight: 620; font-stretch: 75%; line-height: .95; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(18px, 1.2vw + 10px, 22px); font-weight: 450; line-height: 1.42; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(24px, 1.6vw + 12px, 34px); font-weight: 600; font-stretch: 75%; line-height: 1.02; letter-spacing: .005em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 2px solid var(--color-2); background: var(--color-2); color: var(--color-9); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.1; letter-spacing: .01em; text-decoration: none; overflow: hidden; cursor: pointer; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(to bottom, var(--color-4) 0 7px, var(--color-5) 7px 11px, var(--color-4) 11px 15px, var(--color-8) 15px 17px, var(--color-4) 17px 24px); transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: scaleX(1); }
+  .m-btn:hover { border-color: var(--color-4); }
+}
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 22px; border: 2px solid var(--color-2); background: transparent; color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.1; letter-spacing: .01em; text-decoration: none; overflow: hidden; cursor: pointer; transition: color .3s; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(to bottom, var(--color-2) 0 7px, var(--color-7) 7px 10px, var(--color-2) 10px 16px, var(--color-6) 16px 18px, var(--color-2) 18px 24px); transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn-2:hover { color: var(--color-9); }
+  .m-btn-2:hover::before { transform: scaleX(1); }
+}
+.m-btn-3 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 2px solid var(--color-5); background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.1; letter-spacing: .01em; text-decoration: none; overflow: hidden; cursor: pointer; }
+.m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(to bottom, var(--color-9) 0 7px, var(--color-3) 7px 11px, var(--color-9) 11px 15px, var(--color-8) 15px 17px, var(--color-9) 17px 24px); transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn-3:hover::before { transform: scaleX(1); }
+  .m-btn-3:hover { border-color: var(--color-9); }
+}
+.m-link { color: inherit; text-decoration: none; background-image: linear-gradient(currentColor, currentColor), linear-gradient(var(--color-4), var(--color-4)); background-repeat: no-repeat; background-size: 28% 2px, 0 2px; background-position: 0 100%, 0 calc(100% - 4px); padding-bottom: 6px; transition: background-size .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 2px, 100% 2px; }
+}
+.m-icon-btn { position: relative; display: inline-grid; place-content: center; gap: 6px; width: 48px; height: 48px; padding: 0; border: 2px solid var(--color-2); background: transparent; color: var(--color-2); cursor: pointer; }
+.m-icon-btn__bar { display: block; width: 22px; height: 2px; background: currentColor; transform-origin: 0 50%; transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+.m-icon-btn__bar:nth-child(2) { transform: scaleX(.6); }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__bar { transform: scaleX(1.25); }
+  .m-icon-btn:hover .m-icon-btn__bar:nth-child(2) { transform: scaleX(1); }
+}
+.m-block { background: var(--color-3); color: var(--color-2); padding: clamp(20px, 2.4vw, 36px); }
+.m-block-2 { background: var(--color-12); color: var(--color-2); padding: clamp(20px, 2.4vw, 36px); }
+.m-block-3 { background: var(--color-2); color: var(--color-9); padding: clamp(24px, 3.2vw, 56px); }
+.m-photo { position: relative; overflow: hidden; background: var(--color-12); }
+.m-photo__img { width: 100%; height: 100%; object-fit: cover; }
+.m-badge { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.2; letter-spacing: .06em; text-transform: uppercase; font-style: normal; color: var(--color-2); }
+.m-badge::before { content: ""; width: 18px; height: 6px; background: var(--color-6); }
+.m-badge-2 { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.2; letter-spacing: .06em; text-transform: uppercase; font-style: normal; color: var(--color-2); }
+.m-badge-2::before { content: ""; width: 18px; height: 6px; background: var(--color-4); }
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; font-style: normal; }
+.m-field__input { width: 100%; min-height: 50px; padding: 12px 14px; border: 0; border-bottom: 2px solid var(--color-2); background: var(--color-9); color: var(--color-2); font-family: var(--font-2); font-size: 17px; line-height: 1.4; border-radius: 0; }
+.m-field__input:focus-visible { outline: 3px solid var(--color-7); outline-offset: 2px; }
+textarea.m-field__input { min-height: 120px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .wrap { width: min(100% - 2 * var(--space-1), 1360px); margin-inline: auto; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; inset: 0 0 auto; z-index: 50; display: flex; align-items: center; gap: 24px; height: 72px; padding: 0 var(--space-1); background: var(--color-1); border-bottom: 2px solid var(--color-2); }
+  #navigation .nav__brand { font-family: var(--font-1); font-size: 30px; font-weight: 700; font-stretch: 75%; line-height: 1; letter-spacing: .01em; text-decoration: none; margin-right: auto; display: inline-flex; align-items: center; gap: 10px; }
+  #navigation .nav__mark { display: inline-grid; grid-template-columns: 5px 8px 5px; gap: 3px; height: 26px; align-items: end; }
+  #navigation .nav__mark span { background: var(--color-2); height: 100%; }
+  #navigation .nav__mark span:nth-child(2) { background: var(--color-4); height: 62%; }
+  #navigation .nav__links { display: flex; gap: 26px; }
+  #navigation .nav__links a { font-size: 16px; font-weight: 500; }
+  #navigation .nav__cta { min-height: 44px; }
+  #navigation .nav__toggle { display: none; }
+  #navigation .nav__menu { position: fixed; inset: 0; z-index: 60; background: var(--color-2); color: var(--color-9); padding: 96px var(--space-1) 40px; display: grid; align-content: start; gap: 28px; }
+  #navigation .nav__menu[hidden] { display: none; }
+  #navigation .nav__menu-links { display: grid; gap: 4px; }
+  #navigation .nav__menu-links a { font-family: var(--font-1); font-size: 44px; font-weight: 600; font-stretch: 75%; line-height: 1.15; text-decoration: none; display: block; padding: 4px 0; }
+  #navigation .nav__close { position: absolute; top: 12px; right: var(--space-1); border-color: var(--color-9); color: var(--color-9); }
+  #navigation .nav__menu-stripe { height: 14px; background: linear-gradient(to bottom, var(--color-5) 0 40%, var(--color-4) 40% 70%, var(--color-6) 70% 100%); }
+  @media (prefers-reduced-motion: no-preference) {
+    #navigation { transition: transform .45s cubic-bezier(.6, 0, .2, 1); }
+  }
+  #navigation[data-hidden] { transform: translateY(-100%); }
+  @media (max-width: 900px) {
+    #navigation { height: 64px; }
+    #navigation .nav__links, #navigation .nav__cta { display: none; }
+    #navigation .nav__toggle { display: inline-grid; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; background: var(--color-1); overflow-x: clip; }
+  #opening .op__stage { position: sticky; top: 0; height: 100svh; margin-bottom: -100svh; overflow: hidden; container-type: size; z-index: 0; }
+  #opening .op__sky { position: absolute; inset: 0; background: linear-gradient(to bottom, var(--color-11), var(--color-1) 62%); }
+  #opening .op__slab { position: absolute; inset: 0; z-index: 2; clip-path: inset(calc(var(--t) * 1%) calc((99.8 - var(--l) - var(--w)) * 1%) calc(var(--b) * 1%) calc(var(--l) * 1%)); }
+  #opening .op__slab--gap { z-index: 1; clip-path: inset(0% calc((100 - var(--l) - var(--w) / 2) * 1%) 0% calc((var(--l) + var(--w) / 2) * 1%)); }
+  #opening .op__rise { position: absolute; inset: 0; }
+  #opening .op__img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 58% 50%; transform-origin: calc(var(--o) * 1%) 50%; transform: scaleX(64); }
+  #opening .op__slab--gap .op__img { transform: none; }
+  #opening .op__floor { position: absolute; inset: 0; z-index: 3; clip-path: inset(calc(var(--f) * 1%) 0% 0% 0%); --f: 84; --o: 47; }
+  #opening .op__floor .op__img { object-position: 58% 50%; }
+  /* desktop slab geometry, in % of the stage */
+  #opening .op__slab:nth-of-type(2) { --l: 0;    --w: 11;   --t: 13; --b: 16; --o: 26; }
+  #opening .op__slab:nth-of-type(3) { --l: 11;   --w: 9.5;  --t: 20; --b: 26; --o: 33; }
+  #opening .op__slab:nth-of-type(4) { --l: 20.5; --w: 7;    --t: 41; --b: 21; --o: 41; }
+  #opening .op__slab:nth-of-type(5) { --l: 70;   --w: 8;    --t: 31; --b: 29; --o: 61; }
+  #opening .op__slab:nth-of-type(6) { --l: 78;   --w: 12;   --t: 11; --b: 22; --o: 71; }
+  #opening .op__slab:nth-of-type(7) { --l: 90;   --w: 10;   --t: 0;  --b: 16; --o: 86; }
+  #opening .op__slab--gap { --l: 27.5; --w: 42.5; --t: 0; --b: 0; --o: 50; }
+
+  #opening .op__first { position: relative; z-index: 1; height: 100svh; }
+  #opening .op__copy { position: absolute; left: 28.5%; width: 41%; top: max(96px, 15svh); display: grid; justify-items: start; }
+  #opening .op__block { width: 100%; }
+  #opening .op__block--a { padding-top: clamp(26px, 3vw, 44px); }
+  #opening .op__block--b { width: 86%; justify-self: end; }
+  #opening .op__block--c { width: 74%; display: flex; flex-wrap: wrap; gap: 12px; background: var(--color-5); }
+  #opening .op__title { max-width: 11ch; }
+  #opening .op__hold { height: 0; }
+  #opening .op__second { position: relative; z-index: 1; min-height: 100svh; padding: max(120px, 16svh) var(--space-1) max(64px, 10svh); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 20px; align-content: center; }
+  #opening .op__manifesto { grid-column: 1 / span 7; display: grid; gap: 26px; }
+  #opening .op__manifesto .m-text-3 { max-width: 14ch; }
+  #opening .op__manifesto .m-text { max-width: 54ch; color: var(--color-9); }
+  #opening .op__facts { grid-column: 9 / span 4; align-self: end; display: grid; gap: 0; padding: 0; }
+  #opening .op__fact { padding: 22px 26px; border-top: 2px solid var(--color-2); }
+  #opening .op__fact:first-child { border-top: 0; }
+  #opening .op__fact:nth-child(2) { margin-left: -14%; background: var(--color-12); }
+  #opening .op__fact dt { margin-bottom: 8px; color: var(--color-10); }
+
+  @media (max-width: 900px) {
+    #opening .op__slab:nth-of-type(2) { --l: 0;  --w: 10; --t: 10; --b: 30; --o: 12; }
+    #opening .op__slab:nth-of-type(3) { --l: 10; --w: 8;  --t: 19; --b: 26; --o: 30; }
+    #opening .op__slab:nth-of-type(4) { --l: 18; --w: 7;  --t: 29; --b: 34; --o: 44; }
+    #opening .op__slab:nth-of-type(5) { --l: 75; --w: 8;  --t: 23; --b: 28; --o: 62; }
+    #opening .op__slab:nth-of-type(6) { --l: 83; --w: 8;  --t: 13; --b: 22; --o: 78; }
+    #opening .op__slab:nth-of-type(7) { --l: 91; --w: 9;  --t: 8;  --b: 18; --o: 92; }
+    #opening .op__slab--gap { --l: 25; --w: 50; }
+    #opening .op__floor { --f: 88; }
+    #opening .op__copy { left: 5%; width: 90%; top: auto; bottom: max(20px, 2.5svh); }
+    #opening .op__block--b { width: 90%; }
+    #opening .op__block--c { width: 100%; }
+    #opening .op__second { grid-template-columns: 1fr; row-gap: 0; padding-top: 96px; }
+    #opening .op__manifesto, #opening .op__facts { grid-column: 1; }
+    #opening .op__facts { width: 88%; justify-self: end; }
+    #opening .op__fact:nth-child(2) { margin-left: -10%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op__slab:not(.op__slab--gap) .op__img, #opening .op__floor .op__img { animation: op-drift var(--dur, 8s) ease-in-out infinite alternate; }
+    #opening .op__slab:nth-of-type(2) .op__img { --dur: 7s; --d: 7; }
+    #opening .op__slab:nth-of-type(3) .op__img { --dur: 9s; --d: -6; }
+    #opening .op__slab:nth-of-type(4) .op__img { --dur: 6s; --d: 8; }
+    #opening .op__slab:nth-of-type(5) .op__img { --dur: 8s; --d: -7; }
+    #opening .op__slab:nth-of-type(6) .op__img { --dur: 10s; --d: 6; }
+    #opening .op__slab:nth-of-type(7) .op__img { --dur: 7.5s; --d: -8; }
+    #opening .op__floor .op__img { --dur: 11s; --d: 22; }
+    #opening .op__stage[data-paused] .op__img { animation-play-state: paused; }
+    #opening .op__rise { animation: op-rise .9s cubic-bezier(.2, .7, .2, 1) backwards; }
+    #opening .op__slab:nth-of-type(3) .op__rise { animation-delay: .08s; }
+    #opening .op__slab:nth-of-type(4) .op__rise { animation-delay: .16s; }
+    #opening .op__slab:nth-of-type(5) .op__rise { animation-delay: .12s; }
+    #opening .op__slab:nth-of-type(6) .op__rise { animation-delay: .04s; }
+    #opening .op__slab:nth-of-type(7) .op__rise { animation-delay: .2s; }
+    #opening .op__floor .op__rise { animation-name: op-floor; animation-duration: 1s; }
+    #opening .op__copy > * { animation: op-step .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+    #opening .op__block--b { animation-delay: .1s; --dx: 36px; }
+    #opening .op__block--c { animation-delay: .2s; --dx: -28px; }
+  }
+  @keyframes op-drift { from { transform-origin: calc(var(--o) * 1%) 50%; } to { transform-origin: calc((var(--o) + var(--d, 6)) * 1%) 50%; } }
+  @keyframes op-rise { from { clip-path: inset(100% 0% 0% 0%); } to { clip-path: inset(0% 0% 0% 0%); } }
+  @keyframes op-floor { from { clip-path: inset(0% 100% 0% 0%); } to { clip-path: inset(0% 0% 0% 0%); } }
+  @keyframes op-step { from { transform: translateX(var(--dx, -40px)); } }
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #opening[data-opening] .op__hold { height: 70svh; }
+  }
+}
+</style>
+<style data-8b-part="section:buildings">
+@layer sections {
+  #buildings { position: relative; background: var(--color-1); padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+  #buildings .bl__pin { position: relative; }
+  #buildings .bl__track { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px 2.6vw; padding: 0 var(--space-1); }
+  #buildings .bl__item { flex: none; width: calc(var(--plot) * 4.6vw); }
+  #buildings .bl__item--head { width: max(300px, 30vw); display: grid; gap: 22px; align-content: end; }
+  #buildings .bl__item--end { width: max(260px, 22vw); display: grid; gap: 18px; align-content: end; }
+  #buildings .bl__photo { position: relative; overflow: hidden; height: calc(var(--h) * 1svh); background: var(--color-12); }
+  #buildings .bl__shift { position: absolute; inset: 0 -8%; }
+  #buildings .bl__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #buildings .bl__plate { height: 200px; padding-top: 16px; display: grid; gap: 6px; align-content: start; border-top: 4px solid var(--color-2); }
+  #buildings .bl__plate .m-text-4 { color: var(--color-10); }
+  #buildings .bl__plate p:last-child { font-size: 15px; line-height: 1.45; max-width: 36ch; }
+  #buildings .bl__pavement { height: 18px; margin-top: 40px; background: linear-gradient(to bottom, var(--color-2) 0 34%, var(--color-5) 34% 67%, var(--color-6) 67% 100%); }
+  @media (max-width: 900px) {
+    #buildings .bl__item { width: min(84vw, calc(var(--plot) * 10vw)); }
+    #buildings .bl__item--head, #buildings .bl__item--end { width: 84vw; }
+    #buildings .bl__photo { height: calc(var(--h) * .9svh); }
+    #buildings .bl__plate { height: 214px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:buildings">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #buildings[data-walk] { padding: 0; }
+    #buildings[data-walk] .bl__pin { height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 6svh; overflow: hidden; }
+    #buildings[data-walk] .bl__track { flex-wrap: nowrap; width: max-content; }
+    #buildings[data-walk] .bl__pavement { margin-top: 0; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 900px) {
+    #buildings[data-walk] .bl__pin { justify-content: center; padding-bottom: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:scan">
+@layer sections {
+  #scan { background: var(--color-2); color: var(--color-9); padding: var(--space-2) var(--space-1); }
+  #scan .sc__grid { display: grid; grid-template-columns: minmax(0, 34fr) minmax(0, 66fr); grid-template-areas: "head stage" "steps stage"; column-gap: 4vw; max-width: 1440px; margin: 0 auto; }
+  #scan .sc__head { grid-area: head; display: grid; gap: 22px; align-content: start; padding-bottom: 10svh; }
+  #scan .sc__head .m-text-5 { color: var(--color-1); }
+  #scan .sc__stage { grid-area: stage; }
+  #scan .sc__frame { position: sticky; top: 12svh; height: 76svh; }
+  #scan .sc__photo, #scan .sc__smear { position: absolute; inset: 0 0 46px 0; }
+  #scan .sc__photo .m-photo__img { object-position: 50% 40%; }
+  #scan .sc__smear { overflow: hidden; clip-path: inset(0% 100% 0% 0%); }
+  #scan .sc__smear img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transform-origin: 0% 50%; transform: scaleX(24); }
+  #scan .sc__line { position: absolute; top: -12px; bottom: 34px; left: 0; width: 3px; margin-left: -1px; background: var(--color-8); }
+  #scan .sc__axis { position: absolute; left: 0; right: 0; bottom: 0; height: 34px; border-top: 2px solid var(--color-1); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #scan .sc__tick { padding-top: 9px; color: var(--color-1); }
+  #scan .sc__tick[data-lit] { color: var(--color-5); }
+  #scan .sc__steps { grid-area: steps; display: grid; }
+  #scan .sc__step { min-height: 40svh; padding: 20px 0 32px 24px; border-left: 3px solid var(--color-10); display: grid; gap: 10px; align-content: start; }
+  #scan .sc__step[data-lit] { border-left-color: var(--color-5); }
+  #scan .sc__time { color: var(--color-5); }
+  #scan .sc__step p:last-child { max-width: 38ch; }
+  @media (max-width: 900px) {
+    #scan .sc__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "stage" "steps"; }
+    #scan .sc__head { padding-bottom: 32px; }
+    #scan .sc__stage { position: sticky; top: 0; z-index: 2; background: var(--color-2); padding: 10px 0 14px; }
+    #scan .sc__frame { position: relative; top: 0; height: 38svh; }
+    #scan .sc__photo, #scan .sc__smear { bottom: 40px; }
+    #scan .sc__tick { font-size: 11px; }
+    #scan .sc__step { min-height: 34svh; padding-top: 24px; }
+  }
+}
+</style>
+<style data-8b-part="section:register">
+@layer sections {
+  #register { background: var(--color-9); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+  #register .rg__inner { max-width: 1360px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px 5vw; align-items: start; }
+  #register .rg__head { display: grid; gap: 22px; justify-items: start; }
+  #register .rg__stripes { display: grid; gap: 4px; width: 100%; }
+  #register .rg__stripes span { display: block; transform-origin: 50% 0; }
+  #register .rg__stripes span:nth-child(1) { height: 12px; background: var(--color-5); }
+  #register .rg__stripes span:nth-child(2) { height: 7px; background: var(--color-4); }
+  #register .rg__stripes span:nth-child(3) { height: 4px; background: var(--color-6); }
+  #register .rg__table { width: 100%; border-collapse: collapse; }
+  #register .rg__table th { text-align: left; padding: 0 14px 12px 0; border-bottom: 3px solid var(--color-2); color: var(--color-10); }
+  #register .rg__table td { padding: 18px 14px 18px 0; border-bottom: 1px solid var(--color-10); vertical-align: top; }
+  #register .rg__table td:first-child { font-weight: 600; }
+  #register .rg__note { grid-column: 2; color: var(--color-10); font-size: 15px; }
+  @media (max-width: 900px) {
+    #register .rg__inner { grid-template-columns: minmax(0, 1fr); }
+    #register .rg__note { grid-column: 1; }
+    #register .rg__table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    #register .rg__table tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--color-10); }
+    #register .rg__table td { border: 0; padding: 4px 0; }
+    #register .rg__table td:first-child { grid-column: 1 / -1; padding-bottom: 8px; }
+    #register .rg__table td:last-child { grid-column: 1 / -1; padding-top: 10px; }
+    #register .rg__table td[data-label]:not(:first-child):not(:last-child)::before { content: attr(data-label); display: block; font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--color-10); }
+  }
+}
+</style>
+<style data-8b-part="section:colours">
+@layer sections {
+  #colours { background: var(--color-1); }
+  #colours .co__head { padding: var(--space-2) var(--space-1) 56px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 24px 6vw; align-items: end; max-width: 1440px; margin: 0 auto; }
+  #colours .co__band { position: relative; min-height: max(120px, 15svh); display: grid; align-items: center; }
+  #colours .co__fill { position: absolute; inset: 0; transform-origin: 50% 0; background: var(--co-band); }
+  #colours .co__label { position: relative; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 2fr); gap: 12px 3vw; align-items: baseline; padding: 26px var(--space-1); max-width: 1440px; width: 100%; margin: 0 auto; }
+  #colours .co__label p { max-width: 50ch; }
+  #colours .co__band--sand { --co-band: var(--color-5); color: var(--color-2); }
+  #colours .co__band--brick { --co-band: var(--color-4); color: var(--color-9); }
+  #colours .co__band--door { --co-band: var(--color-6); color: var(--color-9); }
+  #colours .co__band--plaster { --co-band: var(--color-12); color: var(--color-2); }
+  #colours .co__band--tram { --co-band: var(--color-7); color: var(--color-9); }
+  #colours .co__band--night { --co-band: var(--color-2); color: var(--color-9); }
+  #colours .co__band--night .co__fill { border-top: 6px solid var(--color-8); }
+  @media (max-width: 900px) {
+    #colours .co__head { grid-template-columns: minmax(0, 1fr); }
+    #colours .co__label { grid-template-columns: minmax(0, 1fr); padding-block: 22px; }
+  }
+}
+</style>
+<style data-8b-part="section:neighbours">
+@layer sections {
+  #neighbours { background: var(--color-1); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+  #neighbours .nb__inner { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 3fr); gap: 48px 4vw; max-width: 1440px; margin: 0 auto; align-items: end; }
+  #neighbours .nb__title { grid-column: 1 / -1; max-width: 16ch; }
+  #neighbours .nb__quotes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; }
+  #neighbours .nb__quote { display: grid; gap: 20px; align-content: start; }
+  #neighbours .nb__quote:nth-child(2) { margin-bottom: 140px; }
+  #neighbours .nb__quote:nth-child(3) { margin-bottom: 64px; }
+  #neighbours .nb__quote blockquote p { font-size: clamp(18px, 1.1vw + 8px, 21px); line-height: 1.45; }
+  #neighbours .nb__quote figcaption { display: grid; gap: 2px; }
+  #neighbours .nb__quote figcaption span:last-child { font-size: 15px; }
+  #neighbours .nb__photo { height: 68svh; }
+  #neighbours .nb__floor { grid-column: 1 / -1; height: 14px; margin-top: -48px; background: linear-gradient(to bottom, var(--color-2) 0 40%, var(--color-6) 40% 70%, var(--color-5) 70% 100%); }
+  @media (max-width: 900px) {
+    #neighbours .nb__inner { grid-template-columns: minmax(0, 1fr); }
+    #neighbours .nb__quotes { grid-template-columns: minmax(0, 1fr); }
+    #neighbours .nb__quote:nth-child(1) { margin-right: 10%; }
+    #neighbours .nb__quote:nth-child(2) { margin: 0 0 0 10%; }
+    #neighbours .nb__quote:nth-child(3) { margin: 0 5%; }
+    #neighbours .nb__photo { height: 54svh; }
+    #neighbours .nb__floor { margin-top: -48px; }
+  }
+}
+</style>
+<style data-8b-part="section:floors">
+@layer sections {
+  #floors { background: var(--color-2); color: var(--color-9); padding: var(--space-2) var(--space-1); }
+  #floors .fl__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-areas: "stage head" "stage list"; column-gap: 6vw; max-width: 1300px; margin: 0 auto; }
+  #floors .fl__head { grid-area: head; display: grid; gap: 22px; padding-bottom: 8svh; }
+  #floors .fl__head .m-text-5 { color: var(--color-1); }
+  #floors .fl__stage { grid-area: stage; }
+  #floors .fl__frame { position: sticky; top: 11svh; height: 78svh; max-width: 100%; aspect-ratio: .56; margin: 0 auto; }
+  #floors .fl__slice { position: absolute; inset: 0; clip-path: inset(calc(var(--a) * 1%) 0% calc((100 - var(--z)) * 1%) 0%); }
+  #floors .fl__slice img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 46% 62%; }
+  #floors .fl__slice:nth-child(1) { --a: 0;  --z: 22; }
+  #floors .fl__slice:nth-child(2) { --a: 22; --z: 34; }
+  #floors .fl__slice:nth-child(3) { --a: 34; --z: 46; }
+  #floors .fl__slice:nth-child(4) { --a: 46; --z: 58; }
+  #floors .fl__slice:nth-child(5) { --a: 58; --z: 70; }
+  #floors .fl__slice:nth-child(6) { --a: 70; --z: 82; }
+  #floors .fl__slice:nth-child(7) { --a: 82; --z: 100; }
+  #floors .fl__list { grid-area: list; display: grid; }
+  #floors .fl__floor { min-height: 30svh; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 8px 24px; align-content: start; padding: 22px 0 36px; border-top: 3px solid var(--color-10); }
+  #floors .fl__floor[data-active] { border-top-color: var(--color-5); }
+  #floors .fl__level { color: var(--color-5); padding-top: 8px; }
+  #floors .fl__level { grid-column: 1; grid-row: 1 / span 2; }
+  #floors .fl__floor h3, #floors .fl__floor p:last-child { grid-column: 2; }
+  #floors .fl__floor p:last-child { max-width: 44ch; }
+  @media (max-width: 900px) {
+    #floors .fl__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "stage" "list"; }
+    #floors .fl__head { padding-bottom: 28px; }
+    #floors .fl__stage { position: sticky; top: 0; z-index: 2; background: var(--color-2); padding: 10px 0 14px; }
+    #floors .fl__frame { position: relative; top: 0; height: 44svh; }
+    #floors .fl__floor { grid-template-columns: minmax(0, 1fr); min-height: 30svh; }
+    #floors .fl__level, #floors .fl__floor h3, #floors .fl__floor p:last-child { grid-column: 1; grid-row: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+  #studio { background: var(--color-9); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+  #studio .st__head { max-width: 1360px; margin: 0 auto 64px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 5fr); gap: 24px 6vw; align-items: end; }
+  #studio .st__row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.6vw; align-items: end; max-width: 1360px; margin: 0 auto; }
+  #studio .st__frame { height: calc(var(--h) * 1svh); }
+  #studio .st__frame .m-photo__img { object-position: 50% 30%; }
+  #studio .st__person:nth-child(1) { --h: 58; }
+  #studio .st__person:nth-child(2) { --h: 44; }
+  #studio .st__person:nth-child(3) { --h: 52; }
+  #studio .st__person:nth-child(4) { --h: 39; }
+  #studio .st__person:nth-child(5) { --h: 48; }
+  #studio .st__name { margin-top: 14px; padding-top: 12px; border-top: 4px solid var(--color-2); display: grid; gap: 4px; min-height: 92px; align-content: start; }
+  #studio .st__name span { font-size: 15px; color: var(--color-10); }
+  @media (max-width: 900px) {
+    #studio .st__head { grid-template-columns: minmax(0, 1fr); }
+    #studio .st__row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 14px; }
+    #studio .st__frame { height: calc(var(--h) * .62svh); }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { background: var(--color-1); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+  #faq .fq__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px 6vw; max-width: 1300px; margin: 0 auto; align-items: start; }
+  #faq .fq__head { display: grid; gap: 22px; justify-items: start; }
+  #faq .fq__list { border-bottom: 2px solid var(--color-2); }
+  #faq .fq__item { border-top: 2px solid var(--color-2); }
+  #faq .fq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; }
+  #faq .fq__item summary::-webkit-details-marker { display: none; }
+  #faq .fq__icon { position: relative; flex: none; width: 22px; height: 22px; }
+  #faq .fq__icon::before, #faq .fq__icon::after { content: ""; position: absolute; left: 0; top: 10px; width: 22px; height: 2px; background: currentColor; transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+  #faq .fq__icon::after { transform: rotate(90deg); }
+  #faq .fq__item[open] .fq__icon::after { transform: rotate(0deg) scaleX(.5); }
+  @media (hover: hover) {
+    #faq .fq__item summary:hover .fq__icon::before { transform: scaleX(1.25); }
+  }
+  #faq .fq__item p { padding: 0 48px 26px 0; max-width: 60ch; }
+  @media (max-width: 900px) {
+    #faq .fq__inner { grid-template-columns: minmax(0, 1fr); }
+    #faq .fq__item p { padding-right: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { background: var(--color-2); color: var(--color-9); padding: var(--space-2) 0; overflow-x: clip; }
+  #contact .ct__stage { display: grid; grid-template-columns: minmax(0, 22fr) minmax(0, 52fr) minmax(0, 22fr); gap: 2vw; align-items: stretch; }
+  #contact .ct__slab { position: relative; overflow: hidden; }
+  #contact .ct__slab img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #contact .ct__slab--l img { object-position: 30% 50%; }
+  #contact .ct__slab--r img { object-position: 82% 50%; }
+  #contact .ct__form { display: grid; gap: 22px; align-content: start; }
+  #contact .ct__form .m-text-5 { max-width: 44ch; }
+  #contact .ct__form :focus-visible { outline-color: var(--color-2); }
+  #contact .ct__fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+  #contact .ct__fields .ct__wide { grid-column: 1 / -1; }
+  #contact .ct__status { padding: 14px 16px; background: var(--color-5); color: var(--color-2); font-weight: 600; }
+  #contact .ct__details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 3vw; padding: 56px var(--space-1) 0; max-width: 1440px; margin: 0 auto; }
+  #contact .ct__details dt { color: var(--color-5); margin-bottom: 8px; }
+  #contact .ct__details dd { color: var(--color-9); }
+  @media (max-width: 900px) {
+    #contact .ct__stage { grid-template-columns: minmax(0, 9fr) minmax(0, 82fr) minmax(0, 9fr); gap: 0; }
+    #contact .ct__fields { grid-template-columns: minmax(0, 1fr); }
+    #contact .ct__details { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { background: var(--color-2); color: var(--color-9); padding: 0 0 36px; }
+  #footer .ft__bands { display: grid; }
+  #footer .ft__bands span { display: block; transform-origin: 50% 0; }
+  #footer .ft__bands span:nth-child(1) { height: 22px; background: var(--color-5); }
+  #footer .ft__bands span:nth-child(2) { height: 10px; background: var(--color-4); }
+  #footer .ft__bands span:nth-child(3) { height: 16px; background: var(--color-6); }
+  #footer .ft__bands span:nth-child(4) { height: 4px; background: var(--color-8); }
+  #footer .ft__mark { display: block; padding: 40px var(--space-1) 0; font-family: var(--font-1); font-weight: 700; font-stretch: 75%; line-height: .82; letter-spacing: -.01em; font-size: min(34vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .385))); color: var(--color-1); }
+  #footer .ft__grid { display: grid; grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 2fr)); gap: 28px 4vw; padding: 48px var(--space-1) 0; }
+  #footer .ft__grid ul { display: grid; gap: 8px; }
+  #footer .ft__grid h2 { color: var(--color-5); margin-bottom: 12px; }
+  #footer .ft__legal { padding: 48px var(--space-1) 0; font-size: 14px; color: var(--color-1); }
+  @media (max-width: 900px) {
+    #footer .ft__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    #footer .ft__grid > :first-child { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="navigation">
+<a class="nav__brand" href="#opening"><span aria-hidden="true" class="nav__mark"><span></span><span></span><span></span></span>{{t1|⟦name⟧}}</a>
+<nav aria-label="Main">
+<ul class="nav__links">
+{{#nv_buildings}}<li><a class="m-link" href="#buildings">{{t2|Buildings}}</a></li>{{/nv_buildings}}
+{{#nv_scan}}<li><a class="m-link" href="#scan">{{t3|Method}}</a></li>{{/nv_scan}}
+{{#nv_register}}<li><a class="m-link" href="#register">{{t4|Register}}</a></li>{{/nv_register}}
+{{#nv_studio}}<li><a class="m-link" href="#studio">{{t5|Studio}}</a></li>{{/nv_studio}}
+</ul>
+</nav>
+<a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">{{t6|Bring us a plot}}</span></a>
+<button aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu" class="m-icon-btn nav__toggle" type="button"><span class="m-icon-btn__bar"></span><span class="m-icon-btn__bar"></span></button>
+<div class="nav__menu" data-lenis-prevent="" hidden="" id="nav-menu">
+<button aria-label="Close menu" class="m-icon-btn nav__close" type="button"><span class="m-icon-btn__bar"></span><span class="m-icon-btn__bar"></span></button>
+<div aria-hidden="true" class="nav__menu-stripe"></div>
+<ul class="nav__menu-links">
+{{#nv_buildings}}<li><a href="#buildings">{{t2|Buildings}}</a></li>{{/nv_buildings}}
+{{#nv_scan}}<li><a href="#scan">{{t3|Method}}</a></li>{{/nv_scan}}
+{{#nv_register}}<li><a href="#register">{{t4|Register}}</a></li>{{/nv_register}}
+{{#nv_studio}}<li><a href="#studio">{{t5|Studio}}</a></li>{{/nv_studio}}
+{{#nv_contact}}<li><a href="#contact">{{t6|Bring us a plot}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="op-title" data-8b-section="opening" id="opening">
+<div aria-label="A street of pastel apartment blocks under a pale sky, smeared into vertical slabs of colour" class="op__stage" role="img">
+<div class="op__sky"></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" fetchpriority="high" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__slab op__slab--gap"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+<div class="op__floor"><div class="op__rise"><img alt="" class="op__img" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div></div>
+</div>
+<div class="op__first">
+<div class="op__copy">
+<div class="m-block op__block op__block--a"><h1 class="m-text-2 op__title" id="op-title">{{t7|We build in the gaps a city leaves.}}</h1></div>
+<div class="m-block-2 op__block op__block--b"><p class="m-text-5">{{t8|⟦name⟧ is an architecture office for plots under ten metres wide: the gap between two houses, the yard behind a shop, the corner nobody could use.}}</p></div>
+<div class="m-block op__block op__block--c"><a class="m-btn" href="#buildings"><span class="m-btn__label">{{t9|See the buildings}}</span></a><a class="m-btn-2" href="#contact"><span class="m-btn__label">{{t6|Bring us a plot}}</span></a></div>
+</div>
+</div>
+<div class="op__hold"></div>
+<div class="op__second" data-tone="dark">
+<div class="m-block-3 op__manifesto">
+<h2 class="m-text-3">{{t10|A street takes a century to build and a second to see.}}</h2>
+<p class="m-text">{{t11|Before we draw a line, we film the plot’s street from first light to midnight and read it as one long exposure: where the sun reaches, who walks past, which colours the neighbours have worn for decades. Then we design the building the gap was waiting for.}}</p>
+</div>
+<dl class="m-block op__facts">
+<div class="op__fact"><dt class="m-text-4">{{t12|Narrowest so far}}</dt><dd>{{t13|2.9 metres at 9 Ropewalk: seven floors with a bike workshop at the bottom.}}</dd></div>
+<div class="op__fact"><dt class="m-text-4">{{t14|On our register}}</dt><dd>{{t15|Forty-one gaps mapped across the city, open to anyone who owns one or lives beside it.}}</dd></div>
+<div class="op__fact"><dt class="m-text-4">{{t16|Since 2014}}</dt><dd>{{t17|Eleven buildings, each one on a plot somebody called unbuildable.}}</dd></div>
+</dl>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_buildings}}<section aria-labelledby="bl-title" data-8b-section="buildings" id="buildings">
+<div class="bl__pin">
+<div class="bl__track">
+<div class="m-block-3 bl__item bl__item--head">
+<h2 class="m-text-3" id="bl-title">{{t18|Five buildings, none wider than a bus}}</h2>
+<p class="m-text-5">{{t19|Walk the frontage. Each one stands at its real width, on a plot that had been empty for decades.}}</p>
+</div>
+<article class="bl__item" style="--plot: 4.1; --h: 60">
+<div class="bl__photo"><div class="bl__shift"><img alt="A narrow white building with one tall recessed window between two older houses" class="bl__img" height="2137" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1746426693858-0b7096bbe90d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=550&q=60}}" style="background:#595940" width="1600"/></div></div>
+<div class="bl__plate">
+<h3 class="m-text-6">{{t20|11 Kerr Lane}}</h3>
+<p class="m-text-4">{{t21|4.1 m plot · 5 floors · 2023}}</p>
+<p>{{t22|One tall window closes a gap that stood open since 1941. Two flats, one stair, a roof the neighbours share.}}</p>
+</div>
+</article>
+<article class="bl__item" style="--plot: 6.2; --h: 50">
+<div class="bl__photo"><div class="bl__shift"><img alt="A slim house with three cantilevered glass balconies above a garage" class="bl__img" height="2400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1726000164777-1e9b9a523f79?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#c0a6a6" width="1600"/></div></div>
+<div class="bl__plate">
+<h3 class="m-text-6">{{t23|4 Saltmarket Row}}</h3>
+<p class="m-text-4">{{t24|6.2 m plot · 4 floors · 2021}}</p>
+<p>{{t25|Three balconies lean out over a driveway nobody used, so every floor gets the evening sun.}}</p>
+</div>
+</article>
+<article class="bl__item" style="--plot: 7.8; --h: 44">
+<div class="bl__photo"><div class="bl__shift"><img alt="A pale house with a deep timber-framed window above a planted terrace by the water" class="bl__img" height="2135" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1750360563453-1c02464f2e97?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#a68c8c;object-position: 50% 38%" width="1600"/></div></div>
+<div class="bl__plate">
+<h3 class="m-text-6">{{t26|Quay 27}}</h3>
+<p class="m-text-4">{{t27|7.8 m plot · 3 floors · 2022}}</p>
+<p>{{t28|A timber frame on the last empty plot of the quay, set back to keep the towpath wide.}}</p>
+</div>
+</article>
+<article class="bl__item" style="--plot: 5.5; --h: 56">
+<div class="bl__photo"><div class="bl__shift"><img alt="A small folded grey concrete house with one large window over a parking space" class="bl__img" height="2400" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1730117574369-4aa95bebf655?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#d9d9f3" width="1600"/></div></div>
+<div class="bl__plate">
+<h3 class="m-text-6">{{t29|Mill & Ash corner}}</h3>
+<p class="m-text-4">{{t30|5.5 m plot · 2 floors · 2019}}</p>
+<p>{{t31|A folded concrete shell on thirty-eight square metres of corner: a studio above, a car below.}}</p>
+</div>
+</article>
+<article class="bl__item" style="--plot: 9; --h: 48">
+<div class="bl__photo"><div class="bl__shift"><img alt="A narrow house clad in dark timber with tall dark-framed windows" class="bl__img" height="2400" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1582586587646-b55bb2058ea4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bW9kZXJuJTIwYXBhcnRtZW50JTIwZmFjYWRlJTIwdGltYmVyfGVufDF8MXx8fDE3OTEyOTczNTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#c0c0d9;object-position: 50% 40%" width="1600"/></div></div>
+<div class="bl__plate">
+<h3 class="m-text-6">{{t32|18 Weir Road}}</h3>
+<p class="m-text-4">{{t33|9 m plot · 4 floors · 2024}}</p>
+<p>{{t34|Two flats turned sideways to look past the neighbours, faced in timber from the old tannery roof.}}</p>
+</div>
+</article>
+<div class="m-block bl__item bl__item--end">
+<p class="m-text-6">{{t35|Every one of them began as a line in our register.}}</p>
+<p><a class="m-link" href="#register">{{t36|Read the register}}</a></p>
+</div>
+</div>
+<div aria-hidden="true" class="bl__pavement"></div>
+</div>
+</section>{{/sec_buildings}}
+
+{{#sec_scan}}<section aria-labelledby="sc-title" data-8b-section="scan" data-tone="dark" id="scan">
+<div class="sc__grid">
+<div class="sc__head">
+<h2 class="m-text-3" id="sc-title">{{t37|We read a street for a whole day}}</h2>
+<p class="m-text-5">{{t38|A slit camera records one vertical line of the street from first light to midnight. Sun, shade, traffic and the colour of a neighbour’s door all end up in one long image. That image is our brief.}}</p>
+</div>
+<div class="sc__stage">
+<div class="sc__frame">
+<div class="m-photo sc__photo"><img alt="Two people walk past a long white wall under a striped red and grey roof" class="m-photo__img" height="1030" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1764237769304-fc44eb3109e5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bWluaW1hbCUyMGZhY2FkZSUyMHN0cmVldCUyMHdhbGtpbmclMjBwZXJzb258ZW58MXwwfHx8MTc5MTI5NTIyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0c0c0" width="1600"/></div>
+<div aria-hidden="true" class="sc__smear"><img alt="" height="1030" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1764237769304-fc44eb3109e5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bWluaW1hbCUyMGZhY2FkZSUyMHN0cmVldCUyMHdhbGtpbmclMjBwZXJzb258ZW58MXwwfHx8MTc5MTI5NTIyM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0c0c0" width="1600"/></div>
+<div aria-hidden="true" class="sc__line"></div>
+<ol aria-hidden="true" class="sc__axis">
+<li class="m-text-4 sc__tick">{{t39|First light}}</li>
+<li class="m-text-4 sc__tick">{{t40|Noon}}</li>
+<li class="m-text-4 sc__tick">{{t41|Dusk}}</li>
+<li class="m-text-4 sc__tick">{{t42|Midnight}}</li>
+</ol>
+</div>
+</div>
+<ol class="sc__steps">
+<li class="sc__step">
+<h3 class="m-text-6">{{t43|Scan}}</h3>
+<p class="m-text-4 sc__time">{{t44|05:40 · first light}}</p>
+<p>{{t45|We fix a camera across the street from the plot and record a single vertical line of it until midnight.}}</p>
+</li>
+<li class="sc__step">
+<h3 class="m-text-6">{{t46|Read}}</h3>
+<p class="m-text-4 sc__time">{{t47|12:10 · noon}}</p>
+<p>{{t48|The long image shows where the sun reaches the ground, how long the shade lies and who uses the pavement at which hour.}}</p>
+</li>
+<li class="sc__step">
+<h3 class="m-text-6">{{t49|Draw}}</h3>
+<p class="m-text-4 sc__time">{{t50|19:30 · dusk}}</p>
+<p>{{t51|We draw the building to the street’s own heights and colours, and give the sun back to the windows that lose it.}}</p>
+</li>
+<li class="sc__step">
+<h3 class="m-text-6">{{t52|Build}}</h3>
+<p class="m-text-4 sc__time">{{t53|23:55 · midnight}}</p>
+<p>{{t54|Small sites mean small crews: one contractor, short sections, and a street that stays open while we work.}}</p>
+</li>
+</ol>
+</div>
+</section>{{/sec_scan}}
+
+{{#sec_register}}<section aria-labelledby="rg-title" data-8b-section="register" id="register">
+<div class="rg__inner">
+<div class="rg__head" data-8b-motion="step">
+<div aria-hidden="true" class="rg__stripes"><span data-8b-motion="band"></span><span data-8b-motion="band"></span><span data-8b-motion="band"></span></div>
+<h2 class="m-text-3" id="rg-title">{{t55|The gap register}}</h2>
+<p class="m-text-5">{{t56|A public list of every plot under ten metres wide we have measured in the city. If you own one, or live beside one, it may already be here.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t57|Add a plot}}</span></a>
+</div>
+<table class="rg__table">
+<caption class="sr-only">{{t58|Plots under ten metres wide on the register, with width, depth, orientation and status}}</caption>
+<thead>
+<tr><th class="m-text-4" scope="col">{{t59|Plot}}</th><th class="m-text-4" scope="col">{{t60|Width}}</th><th class="m-text-4" scope="col">{{t61|Depth}}</th><th class="m-text-4" scope="col">{{t62|Faces}}</th><th class="m-text-4" scope="col">{{t63|Status}}</th></tr>
+</thead>
+<tbody>
+<tr><td>{{t64|Behind 3 Cooper Street}}</td><td data-label="Width">{{t65|3.6 m}}</td><td data-label="Depth">{{t66|22 m}}</td><td data-label="Faces">{{t67|North}}</td><td><span class="m-badge">{{t68|Mapped}}</span></td></tr>
+<tr><td>{{t69|Between 18 and 20 Weir Road}}</td><td data-label="Width">{{t70|4.8 m}}</td><td data-label="Depth">{{t71|31 m}}</td><td data-label="Faces">{{t72|South-west}}</td><td><span class="m-badge">{{t73|Owner contacted}}</span></td></tr>
+<tr><td>{{t74|Former substation, Hale Lane}}</td><td data-label="Width">{{t75|6.1 m}}</td><td data-label="Depth">{{t76|12 m}}</td><td data-label="Faces">{{t77|East}}</td><td><span class="m-badge">{{t78|In design}}</span></td></tr>
+<tr><td>{{t79|Yard of 7 Union Row}}</td><td data-label="Width">{{t80|5.2 m}}</td><td data-label="Depth">{{t81|9 m}}</td><td data-label="Faces">{{t82|South}}</td><td><span class="m-badge">{{t68|Mapped}}</span></td></tr>
+<tr><td>{{t83|End of Garnet Mews}}</td><td data-label="Width">{{t84|8.4 m}}</td><td data-label="Depth">{{t85|15 m}}</td><td data-label="Faces">{{t86|West}}</td><td><span class="m-badge">{{t73|Owner contacted}}</span></td></tr>
+<tr><td>{{t87|40a Saltmarket Row}}</td><td data-label="Width">{{t88|3.1 m}}</td><td data-label="Depth">{{t89|27 m}}</td><td data-label="Faces">{{t90|North-east}}</td><td><span class="m-badge">{{t78|In design}}</span></td></tr>
+<tr><td>{{t91|Car wash, Brook Street}}</td><td data-label="Width">{{t92|9.6 m}}</td><td data-label="Depth">{{t93|18 m}}</td><td data-label="Faces">{{t82|South}}</td><td><span class="m-badge">{{t68|Mapped}}</span></td></tr>
+<tr><td>{{t94|9 Ropewalk}}</td><td data-label="Width">{{t95|2.9 m}}</td><td data-label="Depth">{{t96|21 m}}</td><td data-label="Faces">{{t86|West}}</td><td><span class="m-badge-2">{{t97|Built}}</span></td></tr>
+</tbody>
+</table>
+<p class="rg__note">{{t98|Updated every month from our scans. Plots are listed with their owners’ agreement; exact boundaries are shared on request.}}</p>
+</div>
+</section>{{/sec_register}}
+
+{{#sec_colours}}<section aria-labelledby="co-title" data-8b-section="colours" id="colours">
+<div class="co__head">
+<h2 class="m-text-3" id="co-title">{{t99|Borrowed colours}}</h2>
+<p class="m-text-5">{{t100|We never choose a colour from a fan deck. Each building takes its colours from the street it stands in, measured off the day-long scan.}}</p>
+</div>
+<ol class="co__bands">
+<li class="co__band co__band--sand"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t101|Ropewalk sand}}</h3><p>{{t102|The render of No. 7, painted in 1932 and repainted the same colour four times since.}}</p><p class="m-text-4">{{t103|9 Ropewalk, ground floor}}</p></div></li>
+<li class="co__band co__band--brick"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t104|Quay brick}}</h3><p>{{t105|The fired brick of the warehouse next door, matched in a glazed tile.}}</p><p class="m-text-4">{{t106|Quay 27, window frame}}</p></div></li>
+<li class="co__band co__band--door"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t107|Weir Road door}}</h3><p>{{t108|A front door painted in 1958, the only green on the street.}}</p><p class="m-text-4">{{t109|18 Weir Road, stair}}</p></div></li>
+<li class="co__band co__band--plaster"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t110|Kerr Lane plaster}}</h3><p>{{t111|The pale lime of the terrace, taken at noon when it reads warmest.}}</p><p class="m-text-4">{{t112|11 Kerr Lane, façade}}</p></div></li>
+<li class="co__band co__band--tram"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t113|Saltmarket tram blue}}</h3><p>{{t114|The old tram shelter on the corner, a bus stop now and still this blue.}}</p><p class="m-text-4">{{t115|4 Saltmarket Row, balconies}}</p></div></li>
+<li class="co__band co__band--night"><div aria-hidden="true" class="co__fill"></div><div class="co__label"><h3 class="m-text-6">{{t116|Midnight asphalt}}</h3><p>{{t117|The last line of every scan, when the street lamps are the only colour left.}}</p><p class="m-text-4">{{t118|Every building, doors and rails}}</p></div></li>
+</ol>
+</section>{{/sec_colours}}
+
+{{#sec_neighbours}}<section aria-labelledby="nb-title" data-8b-section="neighbours" id="neighbours">
+<div class="nb__inner">
+<h2 class="m-text-3 nb__title" id="nb-title">{{t119|What the neighbours said}}</h2>
+<div class="nb__quotes" data-8b-motion="step">
+<figure class="m-block nb__quote">
+<blockquote><p>{{t120|“They filmed my shopfront for a whole day, then asked what colour I would paint it if I could. The house next door is that colour now.”}}</p></blockquote>
+<figcaption><strong class="m-text-6">{{t121|Ines Calder}}</strong><span>{{t122|Florist, Ropewalk}}</span></figcaption>
+</figure>
+<figure class="m-block-2 nb__quote">
+<blockquote><p>{{t123|“I expected two years of scaffolding. It took seven months, and the pavement was never closed once.”}}</p></blockquote>
+<figcaption><strong class="m-text-6">{{t124|Tom Abara}}</strong><span>{{t125|Lives at 9 Kerr Lane}}</span></figcaption>
+</figure>
+<figure class="m-block-3 nb__quote">
+<blockquote><p>{{t126|“The gap behind our garden was nettles for forty years. Now there is a stair, and two children who wave from it.”}}</p></blockquote>
+<figcaption><strong class="m-text-6">{{t127|Margit Holm}}</strong><span>{{t128|Weir Road}}</span></figcaption>
+</figure>
+</div>
+<div class="m-photo nb__photo" data-8b-motion="resolve"><img alt="Two terraced houses side by side, one painted yellow and one pale blue" class="m-photo__img" height="1994" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1764866261011-1fdfb1b45c4b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGFzdGVsJTIwZmFjYWRlJTIwc2h1dHRlcnN8ZW58MXwxfHx8MTc5MTI5NzM1Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div aria-hidden="true" class="nb__floor"></div>
+</div>
+</section>{{/sec_neighbours}}
+
+{{#sec_floors}}<section aria-labelledby="fl-title" data-8b-section="floors" data-tone="dark" id="floors">
+<div class="fl__grid">
+<div class="fl__head">
+<h2 class="m-text-3" id="fl-title">{{t129|9 Ropewalk, floor by floor}}</h2>
+<p class="m-text-5">{{t130|A 2.9-metre plot between a garage and a print shop. Seven floors, one stair, and a building that is wider inside than it looks.}}</p>
+</div>
+<div class="fl__stage">
+<div aria-label="A narrow seven-storey building with vertical orange timber fins between two low houses" class="fl__frame" role="img">
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="fl__slice"><img alt="" height="2409" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1656917861513-0092a6401afd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9kZXJuJTIwbmFycm93JTIwaG91c2UlMjBmYWNhZGV8ZW58MXwxfHx8MTc5MTI5NTQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+</div>
+</div>
+<ol class="fl__list">
+<li class="fl__floor"><h3 class="m-text-6">{{t131|A garden behind the fins}}</h3><p class="m-text-4 fl__level">{{t132|Roof}}</p><p>{{t133|Planters between the timber fins, a table for six and the best view of the river on the street.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t134|One-bedroom flat}}</h3><p class="m-text-4 fl__level">{{t135|Floor 6}}</p><p>{{t136|The bedroom faces east; the fins shade it from nine in the morning.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t137|Duplex, upper level}}</h3><p class="m-text-4 fl__level">{{t138|Floor 5}}</p><p>{{t139|Two bedrooms and a bath under a skylight that runs the full depth of the plot.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t140|Duplex, lower level}}</h3><p class="m-text-4 fl__level">{{t141|Floor 4}}</p><p>{{t142|Kitchen to the street, living room to the yard, and a stair that doubles as a bookshelf.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t143|Studio flat}}</h3><p class="m-text-4 fl__level">{{t144|Floor 3}}</p><p>{{t145|Twenty-eight square metres with a window seat set into the line of the fins.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t143|Studio flat}}</h3><p class="m-text-4 fl__level">{{t146|Floor 2}}</p><p>{{t147|The same plan as above, let at a fixed rent to someone who works on the street.}}</p></li>
+<li class="fl__floor"><h3 class="m-text-6">{{t148|Bike workshop}}</h3><p class="m-text-4 fl__level">{{t149|Ground}}</p><p>{{t150|The old garage door kept its size: a repair shop that opens straight onto the pavement.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_floors}}
+
+{{#sec_studio}}<section aria-labelledby="st-title" data-8b-section="studio" id="studio">
+<div class="st__head">
+<h2 class="m-text-3" id="st-title">{{t151|Five people, one long table}}</h2>
+<p class="m-text-5">{{t152|We keep the office small on purpose: every plot is designed by the person who walked it.}}</p>
+</div>
+<ul class="st__row">
+<li class="st__person"><div class="m-photo st__frame"><img alt="A bearded man in a blue jacket studies a white architectural model at his desk" class="m-photo__img" height="2133" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1772442198907-765685249ea4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJjaGl0ZWN0JTIwcG9ydHJhaXQlMjBzdHVkaW98ZW58MXwxfHx8MTc5MTI5NTQ3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=370&q=60}}" style="background:#f3f3f3;object-position: 70% 40%" width="1600"/></div><p class="st__name"><strong class="m-text-6">{{t153|Owen Marsh}}</strong><span>{{t154|Founder, architect}}</span></p></li>
+<li class="st__person"><div class="m-photo st__frame"><img alt="A woman with long dark hair in profile against a sunlit stone wall" class="m-photo__img" height="2400" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1625642336708-0e401083494e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHBvcnRyYWl0JTIwd29tYW4lMjBwbGFpbiUyMHdhbGwlMjBuYXR1cmFsJTIwbGlnaHR8ZW58MXwxfHx8MTc5MTI5NTQ3MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#595940;object-position: 62% 70%" width="1600"/></div><p class="st__name"><strong class="m-text-6">{{t155|Hana Okafor}}</strong><span>{{t156|Architect, scans and site}}</span></p></li>
+<li class="st__person"><div class="m-photo st__frame"><img alt="A young man in a pale blue sweater against a sage green wall" class="m-photo__img" height="2400" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1714023498720-ccb2fdaa6a7d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHBvcnRyYWl0JTIwbWFuJTIwcGxhaW4lMjB3YWxsJTIwZGF5bGlnaHR8ZW58MXwxfHx8MTc5MTI5NTQ3Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#738c73" width="1600"/></div><p class="st__name"><strong class="m-text-6">{{t157|Leo Varga}}</strong><span>{{t158|Architect, structure}}</span></p></li>
+<li class="st__person"><div class="m-photo st__frame"><img alt="A woman in a white shirt beside a pale curtain" class="m-photo__img" height="2400" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1625642336668-3d806204b975?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cG9ydHJhaXQlMjB3b21hbiUyMHBsYWluJTIwd2FsbCUyMG5hdHVyYWwlMjBsaWdodHxlbnwxfDF8fHwxNzkxMjk1NDcxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#c0c0c0;object-position: 60% 40%" width="1600"/></div><p class="st__name"><strong class="m-text-6">{{t159|Mei Lindqvist}}</strong><span>{{t160|Project lead, planning}}</span></p></li>
+<li class="st__person"><div class="m-photo st__frame"><img alt="A young person in a dark T-shirt against a grey wall" class="m-photo__img" height="2400" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1620058833760-3655c04bbf16?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cG9ydHJhaXQlMjBtYW4lMjBwbGFpbiUyMHdhbGwlMjBkYXlsaWdodHxlbnwxfDF8fHwxNzkxMjk1NDcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#c0a68c" width="1600"/></div><p class="st__name"><strong class="m-text-6">{{t161|Jun Park}}</strong><span>{{t162|Model maker}}</span></p></li>
+</ul>
+</section>{{/sec_studio}}
+
+{{#sec_faq}}<section aria-labelledby="fq-title" data-8b-section="faq" id="faq">
+<div class="fq__inner">
+<div class="fq__head" data-8b-motion="step">
+<h2 class="m-text-3" id="fq-title">{{t163|Questions we hear on site}}</h2>
+<p class="m-text-5">{{t164|The short answers. The long ones we give on the pavement, in front of your plot.}}</p>
+</div>
+<div class="fq__list">
+<details class="fq__item"><summary><span class="m-text-6">{{t165|How narrow is too narrow?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p>{{t166|We have built on 2.9 metres. Below about 2.4 metres a stair and a room no longer fit side by side, so we look at the plot behind or above instead.}}</p></details>
+<details class="fq__item"><summary><span class="m-text-6">{{t167|What does a first visit cost?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p>{{t168|Nothing. We walk the plot with you and tell you what the rules allow; only then do we quote for a scan and a feasibility study.}}</p></details>
+<details class="fq__item"><summary><span class="m-text-6">{{t169|Do you only work in this city?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p>{{t170|Most of our buildings are within an hour of the studio, because we want to be on site every week. We take on one plot further away each year.}}</p></details>
+<details class="fq__item"><summary><span class="m-text-6">{{t171|Who owns the plots on the register?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p>{{t172|Private owners, the council and two housing associations. We list a plot only when its owner agrees, and we never pass on their details.}}</p></details>
+<details class="fq__item"><summary><span class="m-text-6">{{t173|How long from scan to keys?}}</span><span aria-hidden="true" class="fq__icon"></span></summary><p>{{t174|About two years: three months of scan and design, nine to twelve months of planning, then seven to ten months on site.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="ct-title" data-8b-section="contact" data-tone="dark" id="contact">
+<div class="ct__stage">
+<div aria-hidden="true" class="ct__slab ct__slab--l"><img alt="" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div>
+
+<div aria-hidden="true" class="ct__slab ct__slab--r"><img alt="" height="1067" src="{{i1|https://images.unsplash.com/photo-1788263191133-f97e2749972d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFzdGVsJTIwYnVpbGRpbmclMjBzdHJlZXQlMjBwZWRlc3RyaWFufGVufDF8MHx8fDE3OTEyOTUyMjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a6d9d9" width="1600"/></div>
+</div>
+<dl class="ct__details">
+<div><dt class="m-text-4">{{t5|Studio}}</dt><dd>{{t175|Ropewalk Yard 9}}<br/>{{t176|Kano}}</dd></div>
+<div><dt class="m-text-4">{{t177|Telephone}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t178|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-4">{{t179|Email}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t180|studio@midblock.example}}</a></dd></div>
+<div><dt class="m-text-4">{{t181|Hours}}</dt><dd>{{t182|Monday to Friday, 9:00–18:00. Site walks on Thursdays.}}</dd></div>
+</dl>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Architecture by <a href="https://github.com/8bsite/architecture-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" data-tone="dark" id="footer">
+<div aria-hidden="true" class="ft__bands"><span data-8b-motion="band"></span><span data-8b-motion="band"></span><span data-8b-motion="band"></span><span data-8b-motion="band"></span></div>
+<p class="ft__mark" style="--len:8">{{t1|⟦name⟧}}</p>
+<div class="ft__grid">
+<p class="m-text-5">{{t183|Architecture for the narrow plots a city leaves: gaps, yards and corners under ten metres wide.}}</p>
+<div>
+<h2 class="m-text-4">{{t184|Pages}}</h2>
+<ul>
+{{#nv_buildings}}<li><a class="m-link" href="#buildings">{{t2|Buildings}}</a></li>{{/nv_buildings}}
+{{#nv_scan}}<li><a class="m-link" href="#scan">{{t3|Method}}</a></li>{{/nv_scan}}
+{{#nv_register}}<li><a class="m-link" href="#register">{{t4|Register}}</a></li>{{/nv_register}}
+{{#nv_studio}}<li><a class="m-link" href="#studio">{{t5|Studio}}</a></li>{{/nv_studio}}
+</ul>
+</div>
+<div>
+<h2 class="m-text-4">{{t5|Studio}}</h2>
+<p>{{t175|Ropewalk Yard 9}}<br/>{{t176|Kano}}</p>
+</div>
+<div>
+<h2 class="m-text-4">{{t185|Write}}</h2>
+<ul>
+<li><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t180|studio@midblock.example}}</a></li>
+<li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t178|⟦phone⟧}}</a></li>
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t6|Bring us a plot}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+</div>
+<p class="ft__legal">{{t186|© 2026 ⟦name⟧ Architects Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t187|8B}}</a></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const header = document.getElementById('navigation');
+  const toggle = header.querySelector('.nav__toggle');
+  const menu = header.querySelector('.nav__menu');
+  const close = header.querySelector('.nav__close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); document.documentElement.style.overflow = ''; window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setOpen(false); });
+  let last = window.scrollY, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY, delta = y - last;
+    if (Math.abs(delta) < 4) return;
+    if (delta > 0 && y > 140 && !header.contains(document.activeElement)) header.setAttribute('data-hidden', '');
+    else if (delta < 0) header.removeAttribute('data-hidden');
+    last = y;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  header.addEventListener('focusin', () => header.removeAttribute('data-hidden'));
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  const nav = document.getElementById('navigation');
+  document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.95, anchors: { offset: -nav.offsetHeight } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 200); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  resolve(frame, vars = {}) {
+    const img = frame.matches('img') ? frame : frame.querySelector('img');
+    const { k = 48, duration = 1.1, ease = 'power3.inOut', ...rest } = vars;
+    return gsap.timeline(rest).fromTo(img, { scaleX: k }, { scaleX: 1, duration, ease }, 0);
+  },
+  step(block, vars = {}) {
+    const items = block.children.length ? [...block.children] : [block];
+    return gsap.timeline(vars).from(items, { x: i => (i % 2 ? 1 : -1) * (36 + i * 18), duration: .9, ease: 'power3.out', stagger: .09 }, 0);
+  },
+  band(stripe, vars = {}) {
+    const { from = .06, duration = .9, ease = 'power2.inOut', ...rest } = vars;
+    return gsap.timeline(rest).fromTo(stripe, { scaleY: from }, { scaleY: 1, duration, ease }, 0);
+  }
+};
+['resolve', 'step', 'band'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true,
+        animation: effects[name](element, { paused: true })
+      }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const slabs = [...section.querySelectorAll('.op__slab:not(.op__slab--gap)')];
+    const gap = section.querySelector('.op__slab--gap');
+    const floor = section.querySelector('.op__floor');
+    const blocks = [...section.querySelectorAll('.op__block')];
+    section.setAttribute('data-opening', '');
+    const stage = section.querySelector('.op__stage');
+    ScrollTrigger.create({ id: 'opening:loop', trigger: section, start: 'top bottom', end: 'bottom top', onToggle: self => stage.toggleAttribute('data-paused', !self.isActive) });
+    const num = (element, name) => parseFloat(getComputedStyle(element).getPropertyValue(name)) || 0;
+    const inset = (t, r, b, l) => `inset(${t}% ${r}% ${b}% ${l}%)`;
+    const right = el => +(99.8 - num(el, '--l') - num(el, '--w')).toFixed(2);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .7, invalidateOnRefresh: true }
+    });
+    blocks.forEach((block, index) => {
+      timeline.fromTo(block, { y: 0 }, { y: () => -innerHeight * (.26 - index * .09), duration: .4, ease: 'power1.in' }, 0);
+    });
+    slabs.forEach((slab, index) => {
+      const img = slab.querySelector('.op__img');
+      timeline.fromTo(slab,
+        { clipPath: () => inset(num(slab, '--t'), right(slab), num(slab, '--b'), num(slab, '--l')) },
+        { clipPath: () => inset(0, right(slab), 0, num(slab, '--l')), duration: .3, ease: 'power2.inOut' }, .03 + index * .022);
+      timeline.add(effects.resolve(img, { k: 64, duration: .3 }), .09 + index * .018);
+    });
+    timeline.fromTo(gap,
+      { clipPath: () => { const c = num(gap, '--l') + num(gap, '--w') / 2; return inset(0, +(100 - c).toFixed(2), 0, +c.toFixed(2)); } },
+      { clipPath: () => inset(0, +(100 - num(gap, '--l') - num(gap, '--w')).toFixed(2), 0, num(gap, '--l')), duration: .26, ease: 'power2.inOut' }, .16);
+    timeline.fromTo(floor,
+      { clipPath: () => inset(num(floor, '--f'), 0, 0, 0) },
+      { clipPath: 'inset(0% 0% 0% 0%)', duration: .44, ease: 'power1.inOut' }, .56);
+    return () => { section.removeAttribute('data-opening'); stage.removeAttribute('data-paused'); };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  if (!form) return;
+  const status = form.querySelector('.ct__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = ['name', 'email', 'plot'].every(name => form.elements[name].value.trim()) && form.elements.email.checkValidity();
+    status.textContent = ok ? status.dataset.sentText : status.dataset.errorText;
+    status.hidden = false;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:buildings">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('buildings');
+    const pin = section.querySelector('.bl__pin');
+    const track = section.querySelector('.bl__track');
+    const items = [...track.querySelectorAll('.bl__item')];
+    section.setAttribute('data-walk', '');
+    const distance = () => Math.max(0, track.scrollWidth - pin.clientWidth);
+    const walk = gsap.to(track, {
+      x: () => -distance(), ease: 'none',
+      scrollTrigger: { id: 'buildings', trigger: pin, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: .6, invalidateOnRefresh: true, anticipatePin: 1 }
+    });
+    items.forEach((item, index) => {
+      const shift = item.querySelector('.bl__shift');
+      const img = shift && shift.querySelector('img');
+      if (!shift) return;
+      gsap.fromTo(shift, { xPercent: -6 }, { xPercent: 6, ease: 'none', scrollTrigger: { id: `buildings:depth-${index}`, trigger: item, containerAnimation: walk, start: 'left right', end: 'right left', scrub: true } });
+      effects.resolve(img, { k: 36, ease: 'power2.out', scrollTrigger: { id: `buildings:resolve-${index}`, trigger: item, containerAnimation: walk, start: 'left 102%', end: 'left 58%', scrub: true } });
+    });
+    return () => section.removeAttribute('data-walk');
+  });
+});
+</script>
+<script data-8b-part="scene:scan">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('scan');
+    const frame = section.querySelector('.sc__frame');
+    const smear = section.querySelector('.sc__smear');
+    const smearImg = smear.querySelector('img');
+    const line = section.querySelector('.sc__line');
+    const ticks = [...section.querySelectorAll('.sc__tick')];
+    const steps = [...section.querySelectorAll('.sc__step')];
+    const light = progress => {
+      const lit = Math.min(steps.length - 1, Math.floor(Math.min(progress / .8, .999) * steps.length));
+      steps.forEach((step, index) => step.toggleAttribute('data-lit', index === lit));
+      ticks.forEach((tick, index) => tick.toggleAttribute('data-lit', index <= lit));
+    };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'scan', trigger: section.querySelector('.sc__steps'), start: 'top 70%', end: 'bottom 55%', scrub: .5, invalidateOnRefresh: true, onUpdate: self => light(self.progress) }
+    });
+    timeline
+      .fromTo(line, { x: 0 }, { x: () => frame.clientWidth, duration: .8 }, 0)
+      .fromTo(smear, { clipPath: 'inset(0% 100% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .8 }, 0)
+      .fromTo(smearImg, { transformOrigin: '0% 50%' }, { transformOrigin: '100% 50%', duration: .8 }, 0)
+      .add(effects.resolve(smearImg, { k: 24, duration: .2, ease: 'power2.inOut' }), .8);
+    return () => { steps.forEach(step => step.removeAttribute('data-lit')); ticks.forEach(tick => tick.removeAttribute('data-lit')); };
+  });
+});
+</script>
+<script data-8b-part="scene:colours">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('colours');
+    const bands = [...section.querySelectorAll('.co__band')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'colours', trigger: section.querySelector('.co__bands'), start: 'top 84%', end: 'bottom 86%', scrub: .6 }
+    });
+    bands.forEach((band, index) => {
+      const fill = band.querySelector('.co__fill');
+      const label = band.querySelector('.co__label');
+      timeline
+        .add(effects.band(fill, { from: .035, duration: 1 }), index * .5)
+        .fromTo(label, { clipPath: 'inset(0% 100% 0% 0%)', x: -48 }, { clipPath: 'inset(0% 0% 0% 0%)', x: 0, duration: .8, ease: 'power2.out' }, index * .5 + .35);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:floors">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('floors');
+    const frame = section.querySelector('.fl__frame');
+    const slices = [...section.querySelectorAll('.fl__slice')];
+    const floors = [...section.querySelectorAll('.fl__floor')];
+    const setters = slices.map(slice => gsap.quickSetter(slice, 'x', 'px'));
+    const last = slices.length - 1;
+    const apply = progress => {
+      const amplitude = Math.min(64, frame.clientWidth * .16);
+      const reading = progress * last;
+      const envelope = Math.sin(Math.PI * progress);
+      slices.forEach((slice, index) => setters[index](envelope * amplitude * Math.min(1, Math.abs(index - reading)) * (index % 2 ? 1 : -1)));
+      const active = Math.round(reading);
+      floors.forEach((floor, index) => floor.toggleAttribute('data-active', index === active));
+    };
+    ScrollTrigger.create({
+      id: 'floors', trigger: section.querySelector('.fl__list'), start: 'top 62%', end: 'bottom 62%',
+      onUpdate: self => apply(self.progress), onRefresh: self => apply(self.progress)
+    });
+    return () => { floors.forEach(floor => floor.removeAttribute('data-active')); gsap.set(slices, { clearProps: 'transform' }); };
+  });
+});
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('studio');
+    const people = [...section.querySelectorAll('.st__person')];
+    const lifts = [-.2, .16, -.1, .24, -.15];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'studio', trigger: section.querySelector('.st__row'), start: 'top 88%', end: 'top 30%', scrub: .6, invalidateOnRefresh: true }
+    });
+    people.forEach((person, index) => {
+      const frame = person.querySelector('.st__frame');
+      const img = frame.querySelector('img');
+      timeline
+        .fromTo(frame, { y: () => innerHeight * lifts[index % lifts.length] }, { y: 0, duration: 1, ease: 'power2.out' }, index * .08)
+        .add(effects.resolve(img, { k: 40, duration: .7 }), .3 + index * .08);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const left = section.querySelector('.ct__slab--l');
+    const right = section.querySelector('.ct__slab--r');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact', trigger: section.querySelector('.ct__stage'), start: 'top 85%', end: 'top 20%', scrub: .6 }
+    });
+    timeline
+      .fromTo(left, { xPercent: -75 }, { xPercent: 0, duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(right, { xPercent: 75 }, { xPercent: 0, duration: 1, ease: 'power2.out' }, 0)
+      .add(effects.resolve(left, { k: 50, duration: .75 }), .25)
+      .add(effects.resolve(right, { k: 50, duration: .75 }), .25);
+  });
+});
+</script>
+</body>
+</html>

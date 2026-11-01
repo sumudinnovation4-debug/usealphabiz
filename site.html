@@ -1,0 +1,4 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="engine.js"></script><script>
+(async()=>{const L=k=>{try{return JSON.parse(localStorage.getItem(k))}catch{}},i=new URLSearchParams(location.search).get('id'),s=i?(L('sites')||[]).find(x=>x.id==i):L('draft');let h='<p style="font-family:sans-serif;padding:30px">Site not found.</p>';
+if(s){const o={origin:location.origin,url:s.domain?'https://'+s.domain:''};if(isNaN(s.variant))o.tpl=await loadTpl(s.variant);h=render(s.data,s.variant,o)}document.open();document.write(h);document.close()})();
+</script>

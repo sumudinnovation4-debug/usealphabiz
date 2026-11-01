@@ -1,0 +1,11 @@
+create table sites(id uuid primary key,user_id uuid default auth.uid() references auth.users,category text,variant text default '0',data jsonb,domain text,status text default 'draft',note text,live bool default false,updated timestamptz default now(),created timestamptz default now());
+create unique index one_domain on sites(domain) where status in('paid','working','registering','live');
+create table payments(ref text primary key,site_id uuid references sites(id) on delete set null,amount numeric,currency text,status text,created timestamptz default now());
+alter table sites enable row level security;alter table payments enable row level security;
+create policy own on sites for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+create policy pub on sites for select using(live);
+create policy ownpay on payments for select using(exists(select 1 from sites s where s.id=site_id and s.user_id=auth.uid()));
+revoke insert,update on sites from authenticated,anon;
+grant insert(id,category,variant,data,domain),update(id,category,variant,data,domain) on sites to authenticated;
+create function lock_domain() returns trigger language plpgsql as $$ begin if old.status<>'draft' and new.domain is distinct from old.domain then raise exception 'domain locked'; end if; return new; end $$;
+create trigger lock before update on sites for each row execute function lock_domain();

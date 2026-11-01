@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01oVTw.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hLxR.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hLxR.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01UVTyX-.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01QVTyX-.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'National Park';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nationalpark/v4/GftD7vJOtg4NO-gmoY4nmcqP01oVTw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ECF1F5;
+  --color-2: #06132E;
+  --color-3: #2B3BFF;
+  --color-4: #B4DDF8;
+  --color-5: #FFFFFF;
+  --color-6: #4C5A70;
+  --color-7: #A7B4CA;
+  --color-8: #DDEBF6;
+  --font-1: "National Park", "National Park Fallback", Arial, sans-serif;
+  --font-2: "Golos Text", "Golos Text Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 28px;
+  --radius-3: 18px;
+  --shadow-1: 0 34px 60px -34px color-mix(in srgb, var(--color-2) 55%, transparent);
+  --shadow-2: 0 0 0 6px var(--color-3);
+  --space-1: clamp(16px, 3.2vw, 44px);
+  --space-2: clamp(96px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallback faces */
+@font-face { font-family: "National Park Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 86%; ascent-override: 120.1%; descent-override: 35%; line-gap-override: 0%; }
+@font-face { font-family: "National Park Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 100.7%; ascent-override: 102.3%; descent-override: 29.8%; line-gap-override: 0%; }
+@font-face { font-family: "Golos Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 108.1%; ascent-override: 90.7%; descent-override: 20.4%; line-gap-override: 0%; }
+@font-face { font-family: "Golos Text Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 100.2%; ascent-override: 97.8%; descent-override: 22%; line-gap-override: 0%; }
+/* /fallback faces */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -80px; z-index: 100; padding: 12px 18px; border-radius: var(--radius-1); background: var(--color-5); color: var(--color-2); }
+.skip:focus-visible { top: 12px; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(38px, 4.6vw, 66px); font-weight: 400; line-height: 1; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 120px; font-weight: 800; line-height: 0.82; letter-spacing: -0.045em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 25px; font-weight: 500; line-height: 1.1; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(28px, 3.2vw, 46px); font-weight: 400; line-height: 1.08; letter-spacing: -0.028em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-6); }
+.m-text-8 { font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-7); }
+
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 16px; min-height: 56px; padding: 6px 6px 6px 26px; border: 0; border-radius: var(--radius-1); background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; overflow: hidden; cursor: pointer; box-shadow: var(--shadow-1); }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: circle(22px at calc(100% - 28px) 50%); transition: clip-path 0.6s cubic-bezier(0.7, 0, 0.2, 1); }
+.m-btn__label { white-space: nowrap; transition: color 0.35s ease 0.08s; }
+.m-btn__disc { display: grid; place-items: center; width: 44px; height: 44px; flex: none; color: var(--color-5); }
+.m-btn__disc svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) {
+  .m-btn:hover::before { clip-path: circle(150% at calc(100% - 28px) 50%); }
+  .m-btn:hover .m-btn__label { color: var(--color-5); }
+  .m-btn:hover .m-btn__disc svg { transform: translateX(4px); }
+}
+
+.m-round { display: inline-grid; place-items: center; width: 46px; height: 46px; flex: none; padding: 0; border: 0; border-radius: 50%; background: var(--color-8); color: var(--color-2); overflow: hidden; text-decoration: none; cursor: pointer; transition: background-color 0.3s, color 0.3s; }
+.m-round svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+@media (hover: hover) {
+  .m-round:hover { background: var(--color-3); color: var(--color-5); }
+  .m-round:hover svg { animation: m-round-cross 0.55s cubic-bezier(0.7, 0, 0.2, 1); }
+}
+@keyframes m-round-cross { 45% { transform: translateX(140%); } 46% { transform: translateX(-140%); } 100% { transform: translateX(0); } }
+
+.m-link { color: inherit; text-decoration: none; background: linear-gradient(var(--color-8), var(--color-8)) 0 100% / 100% 2px no-repeat; padding: 0 2px; transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 100%; } }
+.m-link-3 { color: inherit; text-decoration: none; background: linear-gradient(var(--color-3), var(--color-3)) 0 100% / 100% 2px no-repeat; padding: 0 2px; transition: background-size 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
+@media (hover: hover) { .m-link-3:hover { background-size: 100% 100%; } }
+.m-link-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: var(--radius-1); overflow: hidden; background: color-mix(in srgb, var(--color-5) 80%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); color: var(--color-2); font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; transition: color 0.3s ease 0.05s; }
+.m-link-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(calc(100% - 3px) 22% 0 22%); opacity: 0; transition: clip-path 0.45s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.2s; }
+@media (hover: hover) {
+  .m-link-2:hover { color: var(--color-5); }
+  .m-link-2:hover::before { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+.m-surface { background: var(--color-5); color: var(--color-2); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-2 { background: color-mix(in srgb, var(--color-5) 7%, var(--color-2)); color: var(--color-5); border-radius: var(--radius-2); border: 1px solid color-mix(in srgb, var(--color-5) 12%, transparent); }
+.m-badge { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 12px; border-radius: var(--radius-1); background: var(--color-8); color: var(--color-2); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-badge-2 { display: inline-flex; align-items: center; min-height: 30px; padding: 4px 12px; border-radius: var(--radius-1); background: color-mix(in srgb, var(--color-5) 10%, transparent); color: var(--color-5); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field { min-height: 56px; width: 100%; padding: 0 24px; border: 1px solid color-mix(in srgb, var(--color-5) 35%, transparent); border-radius: var(--radius-1); background: color-mix(in srgb, var(--color-5) 6%, transparent); color: inherit; font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field::placeholder { color: var(--color-7); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px var(--space-1); pointer-events: none; transition: transform 0.5s cubic-bezier(0.6, 0, 0.2, 1); }
+#navigation > * { pointer-events: auto; }
+#navigation.is-hidden { transform: translateY(-120%); }
+#navigation :focus-visible { outline: 2px solid var(--color-5); outline-offset: 2px; box-shadow: var(--shadow-2); }
+#navigation .nav-logo { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: var(--radius-1); background: var(--color-5); color: var(--color-2); font-family: var(--font-1); font-size: 22px; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; }
+#navigation .nav-links ul { display: flex; gap: 6px; }
+#navigation .nav-end { display: flex; align-items: center; gap: 8px; }
+#navigation .nav-menu { display: none; background: var(--color-5); width: 48px; height: 48px; }
+@media (max-width: 900px) {
+  #navigation .nav-menu { display: inline-grid; }
+  #navigation .nav-cta { min-height: 48px; padding-left: 20px; }
+  #navigation .nav-cta .m-btn__disc { width: 36px; height: 36px; }
+  #navigation .nav-cta::before { clip-path: circle(18px at calc(100% - 24px) 50%); }
+  #navigation .nav-links { position: fixed; inset: 0; z-index: -1; display: grid; align-content: center; padding: 96px var(--space-1) 48px; background: var(--color-2); visibility: hidden; opacity: 0; transition: opacity 0.35s, visibility 0s linear 0.35s; }
+  #navigation .nav-links ul { flex-direction: column; align-items: flex-start; gap: 12px; }
+  #navigation .nav-links .m-link-2 { min-height: 64px; padding: 0 28px; font-size: 26px; }
+  #navigation.is-open .nav-links { visibility: visible; opacity: 1; transition: opacity 0.35s; }
+  #navigation.is-open { transform: none; }
+}
+@media (max-width: 900px) and (hover: hover) {
+  #navigation .nav-cta:hover::before { clip-path: circle(150% at calc(100% - 24px) 50%); }
+}
+@media (max-width: 380px) {
+  #navigation .nav-logo { padding: 0 16px; font-size: 20px; }
+  #navigation .nav-cta { padding-left: 16px; gap: 10px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-1); }
+#opening .op-track { position: absolute; inset: 0; }
+#opening .op-stage { position: sticky; top: 0; height: 100svh; overflow: clip; background: var(--color-1); }
+#opening .op-window { position: absolute; inset: 0; overflow: hidden; background: var(--color-2); }
+#opening .op-zoom, #opening .op-intro, #opening .op-drift { position: absolute; inset: 0; }
+#opening .op-drift { left: -8%; right: -8%; }
+#opening .op-photo { width: 100%; height: 100%; object-fit: cover; object-position: 50% 32%; }
+#opening .op-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, color-mix(in srgb, var(--color-2) 42%, transparent), transparent 42%), linear-gradient(0deg, color-mix(in srgb, var(--color-2) 72%, transparent), transparent 58%); }
+#opening .op-word { position: absolute; left: var(--space-1); right: var(--space-1); top: 96px; text-align: center; white-space: nowrap; font-size: min(31vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.62))); color: var(--color-5); }
+#opening .op-word__in { display: inline-block; }
+#opening .op-screen { position: relative; z-index: 1; min-height: 100svh; }
+#opening .op-screen--1 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 390px); gap: 40px; align-items: end; padding: 120px var(--space-1) clamp(24px, 5vh, 44px); color: var(--color-5); }
+#opening .op-title { max-width: 12.5em; margin-bottom: 30px; font-size: clamp(36px, 4.3vw, 60px); }
+#opening .op-card { padding: 20px 14px 16px; }
+#opening .op-card__tag { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; }
+#opening .op-card__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--color-3); }
+#opening .op-card__text { max-width: 26em; margin: 6px auto 0; text-align: center; }
+#opening .op-card__media { position: relative; margin-top: 16px; aspect-ratio: 4 / 3; border-radius: var(--radius-3); overflow: hidden; }
+#opening .op-card__pan { position: absolute; inset: -9% 0; }
+#opening .op-card__pan img { width: 100%; height: 100%; object-fit: cover; }
+#opening .op-card__go { position: absolute; right: 12px; bottom: 12px; background: var(--color-5); }
+#opening .op-card__price { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px; padding: 0 8px; }
+#opening .op-screen--2 { display: grid; align-content: center; padding: 140px var(--space-1) 10vh; background: var(--color-1); }
+#opening .op-copy { max-width: 780px; }
+#opening .op-statement { max-width: 14em; }
+#opening .op-body { max-width: 34em; margin-top: 24px; }
+#opening .op-copy .m-btn { margin-top: 30px; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-intro { animation: op-settle 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+  #opening .op-word__in { animation: op-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.05s backwards; }
+  #opening .op-lead, #opening .op-card { animation: op-lift 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s backwards; }
+  #opening .op-drift { animation: op-drift 16s ease-in-out infinite alternate; }
+  #opening .op-card__pan { animation: op-pan 9s ease-in-out infinite alternate; }
+  #opening.is-paused .op-drift, #opening.is-paused .op-card__pan { animation-play-state: paused; }
+}
+@keyframes op-settle { from { transform: scale(1.07); } }
+@keyframes op-rise { from { transform: translateY(24%); } }
+@keyframes op-lift { from { transform: translateY(28px); } }
+@keyframes op-drift { from { transform: translateX(-6%); } to { transform: translateX(6%); } }
+@keyframes op-pan { from { transform: translateY(-7%); } to { transform: translateY(7%); } }
+@media (max-width: 760px) {
+  #opening .op-word { top: 74px; font-size: calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.62)); }
+  #opening .op-photo { object-position: 46% 50%; }
+  #opening .op-screen--1 { grid-template-columns: minmax(0, 1fr); gap: 22px; align-content: end; padding: 200px var(--space-1) 20px; }
+  #opening .op-title { margin-bottom: 22px; font-size: clamp(30px, 8.6vw, 40px); }
+  #opening .op-card { display: grid; grid-template-columns: 104px minmax(0, 1fr); column-gap: 14px; align-items: center; padding: 10px 14px 10px 10px; }
+  #opening .op-card__tag { justify-content: flex-start; grid-column: 2; font-size: 15px; }
+  #opening .op-card__text { grid-column: 2; margin: 2px 0 0; text-align: left; font-size: 14px; }
+  #opening .op-card__media { grid-column: 1; grid-row: 1 / span 3; margin: 0; aspect-ratio: auto; height: 100%; min-height: 112px; }
+  #opening .op-card__go { right: 6px; bottom: 6px; width: 38px; height: 38px; }
+  #opening .op-card__price { grid-column: 2; margin-top: 6px; padding: 0; justify-content: flex-start; }
+  #opening .op-card__price.m-text-4 { font-size: 21px; }
+  #opening .op-screen--2 { align-content: center; padding: 110px var(--space-1) 12vh; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; overflow: clip; padding: clamp(72px, 9vw, 120px) var(--space-1) 28px; background: var(--color-2); color: var(--color-5); }
+#footer :focus-visible { outline-color: var(--color-5); }
+#footer .foot-top { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px 64px; align-items: end; }
+#footer .foot-form__label { display: block; max-width: 18em; margin-bottom: 22px; font-size: clamp(24px, 2.4vw, 32px); }
+#footer .foot-form__row { display: flex; gap: 10px; max-width: 560px; }
+#footer .foot-form__row .m-btn { flex: none; }
+#footer .foot-form__msg { min-height: 1.5em; margin-top: 12px; }
+#footer .foot-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 28px; font-family: var(--font-2); font-size: 17px; }
+#footer .foot-word { margin-top: clamp(64px, 9vw, 120px); text-align: center; white-space: nowrap; font-size: min(30vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.6))); }
+#footer .foot-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 28px; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-5) 14%, transparent); }
+@media (max-width: 760px) {
+  #footer .foot-top { grid-template-columns: minmax(0, 1fr); }
+  #footer .foot-form__row { flex-direction: column; }
+  #footer .foot-form__row .m-btn { align-self: flex-start; }
+  #footer .foot-links { justify-content: flex-start; }
+}
+}
+</style>
+<style data-8b-part="section:kit">
+@layer sections {
+#kit { padding: var(--space-2) var(--space-1); }
+#kit .kit-grid { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 48px 5vw; align-items: start; }
+#kit .kit-head { position: sticky; top: 18vh; display: grid; justify-items: start; gap: 24px; }
+#kit .kit-intro { max-width: 30em; }
+#kit .kit-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+#kit .kit-card { position: relative; display: grid; grid-template-rows: auto 1fr; padding: 10px; }
+#kit .kit-card__media { aspect-ratio: 5 / 4; border-radius: var(--radius-3); overflow: hidden; }
+#kit .kit-card__media img { width: 100%; height: 100%; object-fit: cover; }
+#kit .kit-card__body { display: grid; align-content: start; gap: 8px; padding: 18px 70px 14px 12px; }
+#kit .kit-card__price { margin-top: 6px; color: var(--color-3); }
+#kit .kit-card__go { position: absolute; right: 18px; bottom: 18px; }
+@media (max-width: 760px) {
+  #kit .kit-grid { grid-template-columns: minmax(0, 1fr); }
+  #kit .kit-head { position: static; }
+  #kit .kit-cards { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:kit-index">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #kit.is-indexed .kit-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 400px) minmax(0, 0.62fr); }
+  #kit.is-indexed .kit-cards { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 4vh 0 12vh; }
+  #kit .kit-index { position: sticky; top: 36vh; grid-column: 3; grid-row: 1; align-self: start; }
+  #kit .kit-index__list { position: relative; display: grid; }
+  #kit .kit-index__link { position: relative; z-index: 1; display: flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: var(--radius-1); color: var(--color-6); font-family: var(--font-1); font-size: 22px; font-weight: 400; letter-spacing: -0.02em; text-decoration: none; transition: color 0.3s; }
+  #kit .kit-index__link.is-active { color: var(--color-5); }
+  #kit .kit-index__marker { position: absolute; left: 0; top: 0; z-index: 0; width: 100%; height: 52px; border-radius: var(--radius-1); background: var(--color-3); pointer-events: none; }
+}
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  #kit .kit-index__link:not(.is-active):hover { color: var(--color-2); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #kit.is-indexed .kit-grid { grid-template-columns: minmax(0, 1fr); }
+  #kit.is-indexed .kit-cards { grid-row: 2; grid-column: 1; padding: 0 0 88px; gap: 18px; }
+  #kit .kit-index { position: sticky; top: auto; bottom: 14px; z-index: 5; grid-row: 2; grid-column: 1; align-self: end; padding: 5px; border-radius: var(--radius-1); background: var(--color-5); box-shadow: var(--shadow-1); }
+  #kit .kit-index__list { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+  #kit .kit-index__link { justify-content: center; min-height: 42px; padding: 0 4px; font-family: var(--font-2); font-size: 13px; font-weight: 500; letter-spacing: 0; }
+  #kit .kit-index__marker { height: 42px; }
+}
+}
+</style>
+<style data-8b-part="section:packs">
+@layer sections {
+#packs { overflow: clip; padding: var(--space-2) var(--space-1); background: var(--color-2); color: var(--color-5); }
+#packs :focus-visible { outline-color: var(--color-5); }
+#packs .packs-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 6vw; align-items: end; margin-bottom: clamp(48px, 6vw, 80px); }
+#packs .packs-head h2 { max-width: 12em; }
+#packs .packs-intro { max-width: 30em; }
+#packs .packs-nights { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; grid-column: 2; margin: 0; padding: 0; border: 0; }
+#packs .packs-nights legend { float: left; margin-right: 10px; padding: 0; color: var(--color-7); }
+#packs .packs-nights__option { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 20px 0 16px; border-radius: var(--radius-1); border: 1px solid color-mix(in srgb, var(--color-5) 28%, transparent); font-family: var(--font-2); font-size: 15px; font-weight: 500; cursor: pointer; transition: background-color 0.3s, color 0.3s; }
+#packs .packs-nights__option input { flex: none; width: 12px; height: 12px; margin: 0; border: 2px solid currentColor; border-radius: 50%; background: transparent; -webkit-appearance: none; appearance: none; cursor: pointer; }
+#packs .packs-nights__option input:checked { background: currentColor; }
+#packs .packs-nights__option:has(input:checked) { background: var(--color-5); color: var(--color-2); border-color: var(--color-5); }
+#packs .packs-nights__option input:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+#packs .packs-grid { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+#packs .pack { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr); gap: 22px; padding: 10px; }
+#packs .pack__media { min-height: 280px; border-radius: var(--radius-3); overflow: hidden; }
+#packs .pack__media img { width: 100%; height: 100%; object-fit: cover; }
+#packs .pack__body { display: grid; grid-template-rows: auto 1fr auto; gap: 16px; padding: 14px 8px 6px 0; }
+#packs .pack__items { display: flex; flex-wrap: wrap; align-content: start; gap: 6px; }
+#packs .pack__foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+#packs .pack__price { font-size: 34px; letter-spacing: -0.03em; }
+@media (max-width: 1100px) {
+  #packs .packs-grid { grid-template-columns: minmax(0, 1fr); max-width: 760px; margin-inline: auto; }
+}
+@media (max-width: 760px) {
+  #packs .packs-head { grid-template-columns: minmax(0, 1fr); }
+  #packs .packs-nights { grid-column: 1; }
+  #packs .pack { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  #packs .pack__media { min-height: 0; aspect-ratio: 16 / 10; }
+  #packs .pack__body { padding: 4px 8px 6px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:packs-deal">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #packs.is-dealing .pack { position: relative; will-change: transform; }
+  #packs.is-dealing .pack:nth-child(1) { z-index: 4; }
+  #packs.is-dealing .pack:nth-child(2) { z-index: 3; }
+  #packs.is-dealing .pack:nth-child(3) { z-index: 2; }
+  #packs.is-dealing .pack:nth-child(4) { z-index: 1; }
+}
+}
+</style>
+<style data-8b-part="section:how">
+@layer sections {
+#how { padding: var(--space-2) var(--space-1); }
+#how .how-head { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 28px 6vw; align-items: start; margin-bottom: clamp(56px, 7vw, 96px); }
+#how .how-intro { max-width: 17em; }
+#how .how-step { display: grid; grid-template-columns: 72px minmax(0, 1fr) minmax(0, 0.85fr); gap: 16px 4vw; align-items: baseline; padding: 30px 0 34px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#how .how-step:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#how .how-step__num { color: var(--color-3); }
+#how .how-step__title { font-size: clamp(34px, 4.4vw, 64px); }
+#how .how-step__text { max-width: 30em; font-size: 17px; }
+@media (max-width: 760px) {
+  #how .how-head { grid-template-columns: minmax(0, 1fr); }
+  #how .how-step { grid-template-columns: 44px minmax(0, 1fr); padding: 24px 0 26px; }
+  #how .how-step__text { grid-column: 2; }
+}
+}
+</style>
+<style data-8b-part="section:fitting">
+@layer sections {
+#fitting { padding: var(--space-2) var(--space-1); }
+#fitting .fit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px 6vw; align-items: start; }
+#fitting .fit-frame { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+#fitting .fit-photo { aspect-ratio: 3 / 4; border-radius: var(--radius-3); overflow: hidden; background: var(--color-8); }
+#fitting .fit-photo img { width: 100%; height: 100%; object-fit: cover; }
+#fitting .fit-head { display: grid; justify-items: start; gap: 22px; margin-bottom: 56px; }
+#fitting .fit-intro { max-width: 30em; }
+#fitting .fit-stories { display: grid; gap: 36px; }
+#fitting .fit-story { display: grid; gap: 14px; max-width: 30em; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#fitting .fit-story h3 { font-size: clamp(28px, 2.6vw, 38px); }
+@media (max-width: 760px) {
+  #fitting .fit-grid { grid-template-columns: minmax(0, 1fr); }
+  #fitting .fit-frame { gap: 8px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:fitting-swap">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #fitting.is-swapping .fit-frame { position: sticky; top: 12vh; display: block; height: 76vh; border-radius: var(--radius-2); overflow: hidden; }
+  #fitting.is-swapping .fit-photo { position: absolute; inset: 0; aspect-ratio: auto; border-radius: 0; }
+  #fitting.is-swapping .fit-stories { gap: 0; padding-bottom: 14vh; }
+  #fitting.is-swapping .fit-story { min-height: 60vh; align-content: center; border-top: 0; padding-top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #fitting.is-swapping .fit-copy { display: contents; }
+  #fitting.is-swapping .fit-head { grid-row: 1; grid-column: 1; margin-bottom: 8px; }
+  #fitting.is-swapping .fit-frame { grid-row: 2 / 4; grid-column: 1; align-self: start; top: 10px; z-index: 2; height: 44svh; border-radius: var(--radius-3); }
+  #fitting.is-swapping .fit-stories { grid-row: 3; grid-column: 1; padding: calc(44svh + 32px) 0 6svh; }
+  #fitting.is-swapping .fit-story { min-height: 56svh; align-content: start; padding-top: 6svh; }
+}
+}
+</style>
+<style data-8b-part="section:care">
+@layer sections {
+#care { overflow: clip; background: var(--color-4); }
+#care .care-pin { padding: var(--space-2) var(--space-1); }
+#care .care-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px 6vw; align-items: end; margin-bottom: 48px; }
+#care .care-head h2 { max-width: 12em; }
+#care .care-intro { max-width: 30em; }
+#care .care-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+#care .care-panel { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 26px; box-shadow: none; }
+#care .care-panel h3 { max-width: 9em; padding-right: 40px; font-size: clamp(26px, 2.3vw, 32px); }
+#care .care-tick { position: absolute; top: 22px; right: 22px; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--color-3); color: var(--color-5); }
+#care .care-tick svg { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+#care .care-step { color: var(--color-3); }
+#care .care-photo { margin-top: auto; aspect-ratio: 16 / 9; border-radius: var(--radius-3); overflow: hidden; }
+#care .care-photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  #care .care-head { grid-template-columns: minmax(0, 1fr); }
+  #care .care-track { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="scene-style:care-track">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #care.is-tracking .care-pin { display: flex; flex-direction: column; justify-content: center; min-height: 100vh; padding-block: 10vh 6vh; }
+  #care.is-tracking .care-head { margin-bottom: 36px; }
+  #care.is-tracking .care-track { display: flex; gap: 20px; width: max-content; }
+  #care.is-tracking .care-panel { width: min(400px, 78vw); }
+  #care.is-tracking .care-photo { margin-top: 8px; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #care.is-tracking .care-pin { padding-block: 9vh 4vh; }
+  #care.is-tracking .care-head { gap: 12px; margin-bottom: 22px; }
+  #care.is-tracking .care-panel { padding: 22px; gap: 8px; }
+  #care.is-tracking .care-photo { aspect-ratio: 2 / 1; }
+}
+}
+</style>
+<style data-8b-part="section:routes">
+@layer sections {
+#routes { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 48px 5vw; align-items: center; padding: var(--space-2) var(--space-1); }
+#routes .routes-photo { aspect-ratio: 4 / 5; border-radius: var(--radius-2); overflow: hidden; background: var(--color-8); }
+#routes .routes-photo img { width: 100%; height: 100%; object-fit: cover; }
+#routes .routes-copy { display: grid; gap: 22px; }
+#routes .routes-intro { max-width: 32em; }
+#routes .routes-table { width: 100%; margin-top: 14px; border-collapse: collapse; font-family: var(--font-2); }
+#routes .routes-table thead th { padding: 0 14px 12px 0; text-align: left; font-size: 14px; font-weight: 500; color: var(--color-6); }
+#routes .routes-table tbody th, #routes .routes-table td { padding: 18px 14px 18px 0; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); text-align: left; vertical-align: middle; }
+#routes .routes-table tbody th { font-size: 22px; }
+#routes .routes-table td { font-size: 16px; white-space: nowrap; }
+@media (max-width: 900px) {
+  #routes { grid-template-columns: minmax(0, 1fr); }
+  #routes .routes-photo { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 600px) {
+  #routes .routes-table, #routes .routes-table thead, #routes .routes-table tbody { display: block; }
+  #routes .routes-table tr { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 8px; align-items: center; }
+  #routes .routes-table thead th:first-child { display: none; }
+  #routes .routes-table thead th { padding: 0 0 8px; font-size: 13px; }
+  #routes .routes-table tbody tr { padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+  #routes .routes-table tbody th { grid-column: 1 / -1; padding: 0 0 8px; border: 0; font-size: 20px; }
+  #routes .routes-table td { padding: 0; border: 0; font-size: 14px; }
+  #routes .routes-table .m-badge { padding: 4px 8px; font-size: 12px; }
+}
+}
+</style>
+<style data-8b-part="section:trips">
+@layer sections {
+#trips { overflow: clip; padding-top: var(--space-2); }
+#trips .trips-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px 6vw; align-items: end; margin-bottom: 44px; padding: 0 var(--space-1); }
+#trips .trips-intro { max-width: 28em; }
+#trips .trips-stage { padding: 0 var(--space-1) var(--space-2); }
+#trips .trips-grid { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(250px, 30vh); gap: 14px; }
+#trips .trips-cell { border-radius: var(--radius-2); overflow: hidden; background: var(--color-8); }
+#trips .trips-cell img { width: 100%; height: 100%; object-fit: cover; }
+#trips .trips-cell--quote { display: grid; padding: 26px 28px; background: var(--color-5); }
+#trips .trips-cell--quote blockquote { display: grid; align-content: space-between; gap: 16px; margin: 0; }
+#trips .trips-quote { font-size: clamp(19px, 1.6vw, 23px); line-height: 1.22; }
+@media (max-width: 760px) {
+  #trips .trips-head { grid-template-columns: minmax(0, 1fr); }
+  #trips .trips-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: auto; grid-auto-flow: dense; gap: 10px; }
+  #trips .trips-cell { aspect-ratio: 1; border-radius: var(--radius-3); }
+  #trips .trips-cell--centre, #trips .trips-cell:last-child { grid-column: span 2; aspect-ratio: 16 / 10; }
+  #trips .trips-cell--centre { order: -1; }
+  #trips .trips-cell--quote { grid-column: span 2; aspect-ratio: auto; padding: 22px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:trips-zoom">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+  #trips.is-zooming .trips-stage { height: 100vh; padding: 3vh var(--space-1); overflow: clip; }
+  #trips.is-zooming .trips-grid { height: 100%; grid-template-rows: repeat(3, minmax(0, 1fr)); grid-auto-rows: auto; will-change: transform; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 48px 5vw; align-items: start; padding: var(--space-2) var(--space-1); }
+#faq .faq-side { position: sticky; top: 14vh; display: grid; gap: 34px; }
+#faq .faq-side h2 { max-width: 10em; }
+#faq .faq-photo { aspect-ratio: 3 / 2; border-radius: var(--radius-2); overflow: hidden; background: var(--color-8); }
+#faq .faq-photo img { width: 100%; height: 100%; object-fit: cover; }
+#faq .faq-list { display: grid; gap: 12px; }
+#faq .faq-item { padding: 0 24px; border-radius: 22px; box-shadow: none; }
+#faq .faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 78px; padding: 12px 0; list-style: none; cursor: pointer; font-size: 21px; }
+#faq .faq-item summary::-webkit-details-marker { display: none; }
+#faq .faq-item summary::after { content: ""; flex: none; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(var(--color-2), var(--color-2)) center / 12px 2px no-repeat, linear-gradient(var(--color-2), var(--color-2)) center / 2px 12px no-repeat, var(--color-8); transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1), background-color 0.3s; }
+#faq .faq-item[open] summary::after { transform: rotate(45deg); }
+#faq .faq-item summary:focus-visible { outline-offset: 6px; border-radius: 8px; }
+#faq .faq-item p { max-width: 34em; padding-bottom: 24px; }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: minmax(0, 1fr); }
+  #faq .faq-side { position: static; }
+  #faq .faq-item { padding: 0 18px; }
+  #faq .faq-item summary { min-height: 68px; font-size: 19px; }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { position: relative; display: grid; align-items: center; justify-items: end; min-height: 100svh; padding: 12vh var(--space-1); overflow: clip; }
+#visit .visit-frame { position: absolute; inset: 0; overflow: hidden; background: var(--color-2); }
+#visit .visit-zoom { position: absolute; inset: 0; }
+#visit .visit-zoom img { width: 100%; height: 100%; object-fit: cover; }
+#visit .visit-card { position: relative; z-index: 1; display: grid; gap: 26px; width: min(540px, 100%); padding: clamp(28px, 3.4vw, 46px); }
+#visit .visit-details { display: grid; gap: 14px; }
+#visit .visit-details > div { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; padding-top: 14px; border-top: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); }
+#visit .visit-details dt { padding-top: 2px; color: var(--color-6); }
+#visit .visit-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; }
+#visit .visit-map { font-weight: 600; }
+@media (max-width: 760px) {
+  #visit { align-items: end; justify-items: stretch; padding: 46svh var(--space-1) 24px; }
+  #visit .visit-details > div { grid-template-columns: 64px minmax(0, 1fr); }
+  #visit .visit-zoom { bottom: 38%; }
+  #visit .visit-zoom img { object-position: 18% 50%; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-screen--2 { background: transparent; }
+#opening .op-copy { max-width: 44%; }
+#opening .op-window { inset: 120px var(--space-1) 7vh 52%; border-radius: var(--radius-2); }
+#opening .op-shade { opacity: .3; }
+@media (max-width: 760px) {
+  #opening .op-window { inset: 80px var(--space-1) auto; height: 42svh; }
+  #opening .op-screen--2 { align-content: start; padding-top: calc(108px + 42svh); padding-bottom: 4svh; }
+  #opening .op-copy { max-width: none; }
+  #opening .op-statement { font-size: 25px; }
+  #opening .op-body { margin-top: 14px; font-size: 15px; }
+  #opening .op-copy .m-btn { margin-top: 18px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-window { animation: rw-window 1.15s cubic-bezier(.65, 0, .35, 1) backwards; }
+  #opening .op-copy > * { animation: op-lift .8s cubic-bezier(.2, .7, .2, 1) .15s backwards; }
+  #opening .op-copy > :nth-child(2) { animation-delay: .25s; }
+  #opening .op-copy > :nth-child(3) { animation-delay: .35s; }
+}
+@keyframes rw-window { from { clip-path: inset(44% 10% 44% 10% round 999px); } to { clip-path: inset(0 0 0 0 round 28px); } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+<a class="skip" href="#main">{{t1|Skip to content}}</a>
+
+<header class="nav" data-8b-section="navigation" id="navigation">
+<a class="nav-logo" href="#opening">{{t2|⟦name⟧}}</a>
+<nav aria-label="Main" class="nav-links" data-lenis-prevent="" id="nav-links">
+<ul>
+{{#nv_kit}}<li><a class="m-link-2" href="#kit">{{t3|Kit room}}</a></li>{{/nv_kit}}
+{{#nv_packs}}<li><a class="m-link-2" href="#packs">{{t4|Ready packs}}</a></li>{{/nv_packs}}
+{{#nv_how}}<li><a class="m-link-2" href="#how">{{t5|How hire works}}</a></li>{{/nv_how}}
+{{#nv_care}}<li><a class="m-link-2" href="#care">{{t6|Care}}</a></li>{{/nv_care}}
+{{#nv_visit}}<li><a class="m-link-2" href="#visit">{{t7|Visit}}</a></li>{{/nv_visit}}
+</ul>
+</nav>
+<div class="nav-end">
+<a class="m-btn nav-cta" href="#visit"><span class="m-btn__label">{{t8|Book kit}}</span><span aria-hidden="true" class="m-btn__disc"><svg focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span></a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Open menu" class="m-round nav-menu" data-label-close="Close menu" data-label-open="Open menu" type="button"><svg aria-hidden="true" focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M4 8h16M4 16h16"></path></svg></button>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="op-title" class="op" data-8b-section="opening" id="opening">
+<div class="op-track"><div class="op-stage">
+<div class="op-window">
+<div class="op-zoom"><div class="op-intro"><div class="op-drift">
+<img alt="A deep valley between snow-covered peaks under a dark blue sky" class="op-photo" fetchpriority="high" height="1200" src="{{i1|https://images.unsplash.com/photo-1772266198063-4d7e53d3904f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8c25vd3klMjBtb3VudGFpbiUyMHBlYWslMjBkZWVwJTIwYmx1ZSUyMHNreXxlbnwxfDB8fHwxNzkxNDYyNzMzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#262626" width="1600"/>
+</div></div></div>
+<div class="op-shade"></div>
+</div>
+</div></div>
+<div class="op-screen op-screen--2">
+<div class="op-copy">
+<h1 class="op-statement m-text-6" id="op-title">{{t9|We own the tent you would use twice a year, so you don’t have to.}}</h1>
+<p class="op-body">{{t10|Our kit goes up the fells most weekends and comes back muddy. Between hires every piece is washed, dried, tested seam by seam and fitted to the next person in the shop on Awolowo Road.}}</p>
+<a class="m-btn" href="#how"><span class="m-btn__label">{{t5|How hire works}}</span><span aria-hidden="true" class="m-btn__disc"><svg focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_kit}}<section aria-labelledby="kit-title" class="kit" data-8b-section="kit" data-index-label="Kit room shelves" id="kit">
+<div class="kit-grid">
+<div class="kit-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="kit-title">{{t11|Everything in the kit room, by the night.}}</h2>
+<p class="kit-intro m-text-7">{{t12|Six shelves and about four hundred pieces, sized, checked and ready to go. Hire one thing for a night or the whole lot for a fortnight.}}</p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t13|Reserve kit}}</span><span aria-hidden="true" class="m-btn__disc"><svg focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+<ol class="kit-cards">
+<li class="kit-card m-surface" id="kit-tents">
+<div class="kit-card__media"><img alt="A red dome tent pitched on open grass below a snowy ridge" height="2400" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1723556142724-c011cc5eddc2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGRvbWUlMjB0ZW50JTIwY2FtcGluZyUyMGdyYXNzfGVufDF8MXx8fDE3OTE0NjI3Nzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#26260c" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t14|Tents}}</h3>
+<p class="m-text-7">{{t15|One-person shelters to six-berth family tunnels, every one pitched and tested in our yard.}}</p>
+<p class="kit-card__price m-text-5">{{t16|From ₦6,000 a night}}</p>
+</div>
+<a aria-label="Reserve a tent" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+<li class="kit-card m-surface" id="kit-sleep">
+<div class="kit-card__media"><img alt="A blue sleeping bag inside an open tent looking out over mountains" height="2400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1784813488936-d28a470134c0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2xlZXBpbmclMjBiYWclMjBpbnNpZGUlMjB0ZW50JTIwbW9ybmluZ3xlbnwxfDF8fHwxNzkxNDYyNzgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#c0c08c" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t17|Sleep}}</h3>
+<p class="m-text-7">{{t18|Three-season and winter bags in two lengths, with inflatable or closed-cell mats.}}</p>
+<p class="kit-card__price m-text-5">{{t19|From ₦3,000 a night}}</p>
+</div>
+<a aria-label="Reserve sleeping kit" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+<li class="kit-card m-surface" id="kit-packs">
+<div class="kit-card__media"><img alt="A walker carrying a large black and red backpack across green hills" height="2400" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1606175063459-796dce40e3aa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGhpa2VyJTIwcmlkZ2UlMjB3YWxraW5nJTIwbW91bnRhaW5zfGVufDF8MXx8fDE3OTE0NjI3MzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#595940" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t20|Packs}}</h3>
+<p class="m-text-7">{{t21|Day packs to 70-litre trekking packs, adjusted to your back before you leave the shop.}}</p>
+<p class="kit-card__price m-text-5">{{t22|From ₦2,500 a night}}</p>
+</div>
+<a aria-label="Reserve a pack" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+<li class="kit-card m-surface" id="kit-cook">
+<div class="kit-card__media"><img alt="A small gas stove with a pan on a rock outdoors" height="2200" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1768146336038-637fac0ad6bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2FtcGluZyUyMHN0b3ZlJTIwY29va2luZyUyMHBvdCUyMG91dGRvb3JzfGVufDF8MXx8fDE3OTE0NjI3ODN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t23|Cook}}</h3>
+<p class="m-text-7">{{t24|Gas stoves, pans, mugs and a full canister, packed together in one bag.}}</p>
+<p class="kit-card__price m-text-5">{{t25|From ₦2,000 a night}}</p>
+</div>
+<a aria-label="Reserve a stove set" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+<li class="kit-card m-surface" id="kit-boots">
+<div class="kit-card__media"><img alt="A pair of worn hiking boots standing on grass below a mountain" height="2400" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1722641277093-247f90661dec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aGlraW5nJTIwYm9vdHMlMjByb2NrcyUyMGNsb3NldXB8ZW58MXwxfHx8MTc5MTQ2Mjc4NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t26|Boots}}</h3>
+<p class="m-text-7">{{t27|Leather and fabric boots in half sizes, already worn in and never straight out of the box.}}</p>
+<p class="kit-card__price m-text-5">{{t28|From ₦4,000 a night}}</p>
+</div>
+<a aria-label="Reserve boots" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+<li class="kit-card m-surface" id="kit-shells">
+<div class="kit-card__media"><img alt="A walker in an orange waterproof jacket on a wet woodland path" height="2400" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1580118587866-c2f60069f0ac?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmFpbiUyMGphY2tldCUyMGhpa2VyJTIwd2V0fGVufDF8MXx8fDE3OTE0NjI3ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#402626" width="1600"/></div>
+<div class="kit-card__body">
+<h3 class="kit-card__title m-text-4">{{t29|Shells}}</h3>
+<p class="m-text-7">{{t30|Waterproof jackets and trousers, washed and reproofed after every single hire.}}</p>
+<p class="kit-card__price m-text-5">{{t31|From ₦3,500 a night}}</p>
+</div>
+<a aria-label="Reserve waterproofs" class="m-round kit-card__go" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</li>
+</ol>
+</div>
+</section>{{/sec_kit}}
+
+{{#sec_packs}}<section aria-labelledby="packs-title" class="packs" data-8b-section="packs" id="packs">
+<div class="packs-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="packs-title">{{t32|Ready packs, so you only choose the weekend.}}</h2>
+<p class="packs-intro m-text-8">{{t33|Packed, checked and labelled on the shelf the night before you come. Swap anything in the shop when you collect.}}</p>
+<fieldset class="packs-nights">
+<legend class="m-text-5">{{t34|Hire for}}</legend>
+<label class="packs-nights__option"><input checked="" name="pack-nights" type="radio" value="2"/><span>{{t35|2 nights}}</span></label>
+<label class="packs-nights__option"><input name="pack-nights" type="radio" value="3"/><span>{{t36|3 nights}}</span></label>
+<label class="packs-nights__option"><input name="pack-nights" type="radio" value="7"/><span>{{t37|A week}}</span></label>
+</fieldset>
+</div>
+<ul class="packs-grid">
+<li class="pack m-surface-2">
+<div class="pack__media"><img alt="Two people sitting by a red tent on a rocky coast at sunset" height="1067" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1770276346161-00bd394e92c1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHR3byUyMHBlb3BsZSUyMHdpbGQlMjBjYW1waW5nJTIwdGVudHxlbnwxfDB8fHwxNzkxNDYyODA5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#262626" width="1600"/></div>
+<div class="pack__body">
+<h3 class="m-text-4">{{t38|Wild camp for two}}</h3>
+<ul class="pack__items">
+<li class="m-badge-2">{{t39|Two-person tent}}</li>
+<li class="m-badge-2">{{t40|Two three-season bags}}</li>
+<li class="m-badge-2">{{t41|Two inflatable mats}}</li>
+<li class="m-badge-2">{{t42|Stove, pan and gas}}</li>
+<li class="m-badge-2">{{t43|Two head torches}}</li>
+</ul>
+<div class="pack__foot">
+<p class="pack__price m-text-4"><data data-price-2="64" data-price-3="82" data-price-7="140" value="64">{{t44|₦32,000}}</data></p>
+<a aria-label="Reserve the wild camp pack" class="m-round" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</li>
+<li class="pack m-surface-2">
+<div class="pack__media"><img alt="A small mountain hut on a rocky slope with a glacier behind it" height="1067" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1706893838731-3d2d3574cbeb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bW91bnRhaW4lMjBodXQlMjBoaWtlcnN8ZW58MXwwfHx8MTc5MTQ2MjgxMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#8c8c8c" width="1600"/></div>
+<div class="pack__body">
+<h3 class="m-text-4">{{t45|Hut to hut}}</h3>
+<ul class="pack__items">
+<li class="m-badge-2">{{t46|38-litre pack}}</li>
+<li class="m-badge-2">{{t47|Sleeping-bag liner}}</li>
+<li class="m-badge-2">{{t48|Jacket and overtrousers}}</li>
+<li class="m-badge-2">{{t49|Walking poles}}</li>
+<li class="m-badge-2">{{t50|Map case and compass}}</li>
+</ul>
+<div class="pack__foot">
+<p class="pack__price m-text-4"><data data-price-2="48" data-price-3="60" data-price-7="98" value="48">{{t51|₦24,000}}</data></p>
+<a aria-label="Reserve the hut to hut pack" class="m-round" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</li>
+<li class="pack m-surface-2">
+<div class="pack__media"><img alt="A canvas bell tent pitched on grass next to a campfire" height="1067" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1708464683223-651106e0295e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZmFtaWx5JTIwY2FtcGluZyUyMHRlbnQlMjBjYXJ8ZW58MXwwfHx8MTc5MTQ2MjgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#737340" width="1600"/></div>
+<div class="pack__body">
+<h3 class="m-text-4">{{t52|Family camp}}</h3>
+<ul class="pack__items">
+<li class="m-badge-2">{{t53|Six-berth tunnel tent}}</li>
+<li class="m-badge-2">{{t54|Four sleeping bags}}</li>
+<li class="m-badge-2">{{t55|Four foam mats}}</li>
+<li class="m-badge-2">{{t56|Two-burner stove}}</li>
+<li class="m-badge-2">{{t57|Camp lantern}}</li>
+</ul>
+<div class="pack__foot">
+<p class="pack__price m-text-4"><data data-price-2="96" data-price-3="124" data-price-7="210" value="96">{{t58|₦48,000}}</data></p>
+<a aria-label="Reserve the family camp pack" class="m-round" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</li>
+<li class="pack m-surface-2">
+<div class="pack__media"><img alt="Two walkers with packs crossing deep snow between bare trees" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1698521688714-dc482eb1c769?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d2ludGVyJTIwaGlraW5nJTIwc25vdyUyMHdhbGtlcnN8ZW58MXwwfHx8MTc5MTQ2MjgxM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#d9d9d9" width="1600"/></div>
+<div class="pack__body">
+<h3 class="m-text-4">{{t59|Winter day}}</h3>
+<ul class="pack__items">
+<li class="m-badge-2">{{t60|B2 winter boots}}</li>
+<li class="m-badge-2">{{t61|Crampons}}</li>
+<li class="m-badge-2">{{t62|Ice axe}}</li>
+<li class="m-badge-2">{{t63|Insulated jacket}}</li>
+<li class="m-badge-2">{{t64|Steel flask}}</li>
+</ul>
+<div class="pack__foot">
+<p class="pack__price m-text-4"><data data-price-2="36" data-price-3="46" data-price-7="80" value="36">{{t65|₦18,000}}</data></p>
+<a aria-label="Reserve the winter day pack" class="m-round" href="#visit"><svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</li>
+</ul>
+</section>{{/sec_packs}}
+
+{{#sec_how}}<section aria-labelledby="how-title" class="how" data-8b-section="how" id="how">
+<div class="how-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="how-title">{{t5|How hire works}}</h2>
+<p class="how-intro m-text-6" data-8b-motion="fill">{{t66|Four steps between our shelf and your pitch, and none of them asks for money up front.}}</p>
+</div>
+<ol class="how-steps">
+<li class="how-step">
+<span aria-hidden="true" class="how-step__num m-text-5">{{t67|01}}</span>
+<h3 class="how-step__title m-text-2" data-8b-motion="rise">{{t68|Book}}</h3>
+<p class="how-step__text m-text-7">{{t69|Choose kit online or ring the shop. We hold it for your dates, and nothing is charged until you collect.}}</p>
+</li>
+<li class="how-step">
+<span aria-hidden="true" class="how-step__num m-text-5">{{t70|02}}</span>
+<h3 class="how-step__title m-text-2" data-8b-motion="rise">{{t71|Get fitted}}</h3>
+<p class="how-step__text m-text-7">{{t72|Twenty minutes in the fitting room: boots on the slope, packs loaded to weight, bags matched to your height.}}</p>
+</li>
+<li class="how-step">
+<span aria-hidden="true" class="how-step__num m-text-5">{{t73|03}}</span>
+<h3 class="how-step__title m-text-2" data-8b-motion="rise">{{t74|Go}}</h3>
+<p class="how-step__text m-text-7">{{t75|Every hire leaves with a route card for the valleys around us and a phone number answered until nine at night.}}</p>
+</li>
+<li class="how-step">
+<span aria-hidden="true" class="how-step__num m-text-5">{{t76|04}}</span>
+<h3 class="how-step__title m-text-2" data-8b-motion="rise">{{t77|Bring it back muddy}}</h3>
+<p class="how-step__text m-text-7">{{t78|Drop it at the counter or the after-hours locker. Cleaning is on us; we only charge for damage beyond a stitch.}}</p>
+</li>
+</ol>
+</section>{{/sec_how}}
+
+{{#sec_fitting}}<section aria-labelledby="fitting-title" class="fitting" data-8b-section="fitting" id="fitting">
+<div class="fit-grid">
+<div class="fit-frame">
+<figure class="fit-photo"><img alt="A walker tying a leather boot on a rock above a valley" height="1943" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1730974657205-9ac80db8b284?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bGFjaW5nJTIwaGlraW5nJTIwYm9vdHN8ZW58MXwxfHx8MTc5MTQ2MjgxNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<figure class="fit-photo"><img alt="A man in a grey jumper checking a backpack among trees" height="2400" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1622260614529-916d761f2391?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8YWRqdXN0aW5nJTIwYmFja3BhY2slMjBzdHJhcHN8ZW58MXwxfHx8MTc5MTQ2MjgxNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#0c2626" width="1600"/></figure>
+<figure class="fit-photo"><img alt="A walker in a blue and orange hooded waterproof, seen from behind" height="2589" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1567955465154-078c60ff5c9e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cmFpbiUyMGphY2tldCUyMGhpa2VyJTIwd2V0fGVufDF8MXx8fDE3OTE0NjI3ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=180&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+</div>
+<div class="fit-copy">
+<div class="fit-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="fitting-title">{{t79|Fitted, not handed over.}}</h2>
+<p class="fit-intro m-text-7">{{t80|Kit that fits is kit you forget about on the hill. Every hire starts with twenty minutes in our fitting room, and it costs nothing.}}</p>
+</div>
+<ol class="fit-stories">
+<li class="fit-story">
+<h3 class="m-text-6">{{t81|Boots on a slope}}</h3>
+<p class="m-text">{{t82|We measure both feet, lace you in and walk you up and down our ramp until your heel stays put on the way down.}}</p>
+</li>
+<li class="fit-story">
+<h3 class="m-text-6">{{t83|Packs loaded to weight}}</h3>
+<p class="m-text">{{t84|Your torso length sets the back system. We load the pack to what you will carry and settle the hip belt on your hips, not your waist.}}</p>
+</li>
+<li class="fit-story">
+<h3 class="m-text-6">{{t85|Shells over your layers}}</h3>
+<p class="m-text">{{t86|Jackets are tried over the fleece you will wear, arms up, so the cuffs stay at your wrists and the hood turns with your head.}}</p>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_fitting}}
+
+{{#sec_care}}<section aria-labelledby="care-title" class="care" data-8b-section="care" id="care">
+<div class="care-pin">
+<div class="care-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="care-title">{{t87|Between every hire, the same six checks.}}</h2>
+<p class="care-intro m-text-7">{{t88|Nothing goes back on the shelf until it passes all six. Each piece carries a card with the date and the initials of whoever checked it.}}</p>
+</div>
+<ol class="care-track">
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t89|Check 1 of 6}}</p>
+<h3 class="m-text-6">{{t90|Washed}}</h3>
+<p class="m-text-7">{{t91|Tents rinsed, bags and shells washed with a technical cleaner, boots scrubbed and waxed.}}</p>
+<div class="care-photo"><img alt="Muddy walking boots standing in a shallow stream" height="667" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1646060389308-6fa76f41ab92?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bXVkZHklMjBoaWtpbmclMjBib290cyUyMHdhc2hpbmd8ZW58MXwwfHx8MTc5MTQ2NTg5MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#262626" width="1000"/></div>
+</li>
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t92|Check 2 of 6}}</p>
+<h3 class="m-text-6">{{t93|Dried for two days}}</h3>
+<p class="m-text-7">{{t94|Hung in the drying loft for forty-eight hours. Nothing is ever packed away damp.}}</p>
+<div class="care-photo"><img alt="A tent glowing in low sunlight on a grassy field" height="1067" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1746824104470-3a57228b1780?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dGVudCUyMGRyeWluZyUyMHN1bnxlbnwxfDB8fHwxNzkxNDYyODM5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#c0d9d9" width="1600"/></div>
+</li>
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t95|Check 3 of 6}}</p>
+<h3 class="m-text-6">{{t96|Seams tested}}</h3>
+<p class="m-text-7">{{t97|Every tent is pitched in the yard, sprayed with a hose and checked from the inside for drips.}}</p>
+<div class="care-photo"><img alt="A hand holding a hose that sprays a fan of water" height="667" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1697293585549-6eb147d2a8f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z2FyZGVuJTIwaG9zZSUyMHdhdGVyJTIwc3ByYXl8ZW58MXwwfHx8MTc5MTQ2NjEzMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#262626" width="1000"/></div>
+</li>
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t98|Check 4 of 6}}</p>
+<h3 class="m-text-6">{{t99|Zips run end to end}}</h3>
+<p class="m-text-7">{{t100|Sliders cleaned, pulls replaced and stiff teeth fixed before they can fail on a ridge.}}</p>
+<div class="care-photo"><img alt="A close view of a metal zip on blue and brown fabric" height="667" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1785061731121-abd4fb53150e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8emlwcGVyJTIwY2xvc2UlMjB1cCUyMGZhYnJpY3xlbnwxfDB8fHwxNzkxNDY1ODE0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#405973" width="1000"/></div>
+</li>
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t101|Check 5 of 6}}</p>
+<h3 class="m-text-6">{{t102|Stoves fired}}</h3>
+<p class="m-text-7">{{t103|Each stove is lit and its flame checked; seals and jets are replaced every season.}}</p>
+<div class="care-photo"><img alt="A man crouching over a lit camping stove outdoors" height="2031" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1768146336075-c081a5702c50?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2FtcGluZyUyMHN0b3ZlJTIwY29va2luZyUyMHBvdCUyMG91dGRvb3JzfGVufDF8MXx8fDE3OTE0NjI3ODN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#d9d9d9" width="1600"/></div>
+</li>
+<li class="care-panel care-panel--photo m-surface">
+<span aria-hidden="true" class="care-tick"><svg focusable="false" height="20" viewbox="0 0 24 24" width="20"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<p class="care-step m-text-5">{{t104|Check 6 of 6}}</p>
+<h3 class="m-text-6">{{t105|Repaired in the workroom}}</h3>
+<p class="m-text-7">{{t106|Small tears are patched and re-taped the same week. Whatever we cannot trust, we retire.}}</p>
+<div class="care-photo"><img alt="Hands guiding fabric through a sewing machine" height="1066" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1641320197434-6ae0ca235048?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c2V3aW5nJTIwcmVwYWlyJTIwZmFicmljJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTQ2Mjg0MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#8c7373" width="1600"/></div>
+</li>
+</ol>
+</div>
+</section>{{/sec_care}}
+
+{{#sec_routes}}<section aria-labelledby="routes-title" class="routes" data-8b-section="routes" id="routes">
+<figure class="routes-photo" data-8b-motion="window"><img alt="A walker in an orange jacket on a narrow path along a steep grassy ridge" height="1067" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1788884225354-2b42e4780bdd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aGlrZXJzJTIwb24lMjByaWRnZSUyMHBhdGh8ZW58MXwwfHx8MTc5MTQ2Mjg0Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#c0c0d9" width="1600"/></figure>
+<div class="routes-copy">
+<h2 class="m-text-2" data-8b-motion="rise" id="routes-title">{{t107|A route card with every hire.}}</h2>
+<p class="routes-intro m-text-7">{{t108|Written by the people who rent you the kit and walked again every spring. Four favourites from the shop door:}}</p>
+<table class="routes-table">
+<caption class="visually-hidden">{{t109|Four walking routes that start from the shop}}</caption>
+<thead>
+<tr><th scope="col">{{t110|Route}}</th><th scope="col">{{t111|Distance}}</th><th scope="col">{{t112|Ascent}}</th><th scope="col">{{t113|Time}}</th><th scope="col">{{t114|Grade}}</th></tr>
+</thead>
+<tbody>
+<tr><th class="m-text-4" scope="row">{{t115|Loughrigg Fell circuit}}</th><td>{{t116|9 km}}</td><td>{{t117|335 m}}</td><td>{{t118|3 hours}}</td><td><span class="m-badge">{{t119|Easy}}</span></td></tr>
+<tr><th class="m-text-4" scope="row">{{t120|Wansfell and Troutbeck}}</th><td>{{t121|10 km}}</td><td>{{t122|480 m}}</td><td>{{t123|4 hours}}</td><td><span class="m-badge">{{t124|Moderate}}</span></td></tr>
+<tr><th class="m-text-4" scope="row">{{t125|Langdale Pikes}}</th><td>{{t126|12 km}}</td><td>{{t127|750 m}}</td><td>{{t128|5 hours}}</td><td><span class="m-badge">{{t129|Hard}}</span></td></tr>
+<tr><th class="m-text-4" scope="row">{{t130|Fairfield Horseshoe}}</th><td>{{t131|17 km}}</td><td>{{t132|1,000 m}}</td><td>{{t133|7 hours}}</td><td><span class="m-badge">{{t134|Strenuous}}</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>{{/sec_routes}}
+
+{{#sec_trips}}<section aria-labelledby="trips-title" class="trips" data-8b-section="trips" id="trips">
+<div class="trips-head">
+<h2 class="m-text-2" data-8b-motion="rise" id="trips-title">{{t135|Where the kit went last month.}}</h2>
+<p class="trips-intro m-text-7">{{t136|Photos and notes our customers sent back with the kit, muddy boots and all.}}</p>
+</div>
+<div class="trips-stage">
+<ul class="trips-grid">
+<li class="trips-cell"><img alt="The view from inside a tent door across a range of mountains" height="2133" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1697202120309-5b456026781a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c2xlZXBpbmclMjBiYWclMjBpbnNpZGUlMjB0ZW50JTIwbW9ybmluZ3xlbnwxfDF8fHwxNzkxNDYyNzgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=390&q=60}}" style="background:#f3f3f3" width="1600"/></li>
+<li class="trips-cell trips-cell--quote m-surface">
+<blockquote>
+<p class="trips-quote m-text-4">{{t137|“The tent had been pitched in their yard the day before. It didn’t leak once in two nights of Lakeland rain.”}}</p>
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Outdoor Gear Rental by <a href="https://github.com/8bsite/outdoor-gear-rental-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="m-text-7">{{t138|Hannah and Joe, wild camp for two}}</footer>
+</blockquote>
+</li>
+<li class="trips-cell"><img alt="Friends in camping chairs round a fire at night beside a lit tent" height="1067" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1609788063095-d71bf3c1f01f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dHdvJTIwcGVvcGxlJTIwd2lsZCUyMGNhbXBpbmclMjB0ZW50fGVufDF8MHx8fDE3OTE0NjI4MDl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#262640" width="1600"/></li>
+<li class="trips-cell trips-cell--quote m-surface">
+<blockquote>
+<p class="trips-quote m-text-4">{{t139|“Twenty minutes on my boots in the shop, and I came back off Fairfield without a single blister.”}}</p>
+<footer class="m-text-7">{{t140|Priya, Fairfield Horseshoe}}</footer>
+</blockquote>
+</li>
+<li class="trips-cell trips-cell--centre"><img alt="A walker standing beside a small tent on a mountain top at dusk" height="900" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1671465184864-1fe3ea6c7734?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dHdvJTIwcGVvcGxlJTIwd2lsZCUyMGNhbXBpbmclMjB0ZW50fGVufDF8MHx8fDE3OTE0NjI4MDl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#262626" width="1600"/></li>
+<li class="trips-cell"><img alt="Three walkers in waterproofs on a wet woodland track" height="2000" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1613560136056-80f1fa43686c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cmFpbiUyMGphY2tldCUyMGhpa2VyJTIwd2V0fGVufDF8MXx8fDE3OTE0NjI3ODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=390&q=60}}" style="background:#d9d9d9" width="1600"/></li>
+<li class="trips-cell"><img alt="A walker on a rocky ridge disappearing into fog" height="900" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1758895342025-205eb6359eaa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGlrZXJzJTIwb24lMjByaWRnZSUyMHBhdGh8ZW58MXwwfHx8MTc5MTQ2Mjg0Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#d9d9d9" width="1600"/></li>
+<li class="trips-cell trips-cell--quote m-surface">
+<blockquote>
+<p class="trips-quote m-text-4">{{t141|“We brought everything back soaked and nobody blinked. The family pack is booked again for August.”}}</p>
+<footer class="m-text-7">{{t142|The Okafor family, family camp}}</footer>
+</blockquote>
+</li>
+<li class="trips-cell"><img alt="Looking out of a tent onto a sandy shore and the sea" height="1067" loading="lazy" src="{{i27|https://images.unsplash.com/photo-1544143740-03aad32d5f7f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dGVudCUyMGRyeWluZyUyMHN1bnxlbnwxfDB8fHwxNzkxNDYyODM5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#c0c0c0" width="1600"/></li>
+</ul>
+</div>
+</section>{{/sec_trips}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" class="faq" data-8b-section="faq" id="faq">
+<div class="faq-side">
+<h2 class="m-text-2" data-8b-motion="rise" id="faq-title">{{t143|Questions people ask at the counter}}</h2>
+<figure class="faq-photo" data-8b-motion="window"><img alt="Two people sitting on a hillside at sunrise beside their tent" height="1067" loading="lazy" src="{{i28|https://images.unsplash.com/photo-1565257074896-83694ab78bb6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dHdvJTIwcGVvcGxlJTIwd2lsZCUyMGNhbXBpbmclMjB0ZW50fGVufDF8MHx8fDE3OTE0NjI4MDl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#26260c" width="1600"/></figure>
+</div>
+<div class="faq-list">
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t144|Do I need to book?}}</summary>
+<p class="m-text-7">{{t145|For weekends from May to September, yes. Midweek we can usually kit you out on the day if you ring first.}}</p>
+</details>
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t146|What if it rains the whole time?}}</summary>
+<p class="m-text-7">{{t147|Bring it back wet. Drying and cleaning are part of every hire, and we would rather you didn’t try to dry a tent in a flat.}}</p>
+</details>
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t148|Is there a deposit?}}</summary>
+<p class="m-text-7">{{t149|We hold a card when you collect and release it when the kit is back. Nothing is charged before then.}}</p>
+</details>
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t150|What happens if something breaks?}}</summary>
+<p class="m-text-7">{{t151|Tell us. Normal wear is on us; we only charge for damage beyond a simple repair, and never more than the item is worth.}}</p>
+</details>
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t152|Can you deliver to a campsite?}}</summary>
+<p class="m-text-7">{{t153|Yes, to campsites and huts within twenty miles of the shop, for ₦7,500 each way.}}</p>
+</details>
+<details class="faq-item m-surface">
+<summary class="m-text-4">{{t154|Can I keep the kit longer?}}</summary>
+<p class="m-text-7">{{t155|Ring before your return day and we will extend the hire at the nightly rate, as long as nobody has booked it next.}}</p>
+</details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" class="visit" data-8b-section="visit" id="visit">
+<div class="visit-frame"><div class="visit-zoom"><img alt="A row of white cottages along a village road below golden mountains" height="1067" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1762436959873-4fb060084e84?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3RvbmUlMjBjb3R0YWdlJTIwdmlsbGFnZSUyMG1vdW50YWluc3xlbnwxfDB8fHwxNzkxNDY0NDM4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1520&q=60}}" style="background:#c0c0a6" width="1600"/></div></div>
+<div class="visit-card m-surface">
+<h2 class="m-text-2" id="visit-title">{{t156|Come and get fitted.}}</h2>
+<dl class="visit-details">
+<div><dt class="m-text-5">{{t157|Shop}}</dt><dd>{{t158|Example Mill, Awolowo Road, Ambleside, Cumbria}}</dd></div>
+<div><dt class="m-text-5">{{t159|Open}}</dt><dd>{{t160|Every day, 8:00 to 18:00. The returns locker is open all night.}}</dd></div>
+<div><dt class="m-text-5">{{t161|Phone}}</dt><dd><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t162|015300 00000}}</a></dd></div>
+<div><dt class="m-text-5">{{t163|Email}}</dt><dd><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t164|hello@kitfell.example}}</a></dd></div>
+</dl>
+<div class="visit-actions">
+<a class="m-btn" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t165|Book by email}}</span><span aria-hidden="true" class="m-btn__disc"><svg focusable="false" height="18" viewbox="0 0 24 24" width="18"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span></a>
+<a class="m-link visit-map" data-8b-placeholder="map" href="https://www.google.com/maps/search/?api=1&amp;query={{address}}">{{t166|Get directions}}</a>
+</div>
+</div>
+</section>{{/sec_visit}}
+
+</main>
+
+<footer class="foot" data-8b-section="footer" id="footer">
+<div class="foot-top">
+
+<ul class="foot-links">
+<li><a class="m-link-3" data-8b-placeholder="social" href="https://www.instagram.com/">{{t167|Instagram}}</a></li>
+<li><a class="m-link-3" data-8b-placeholder="social" href="https://www.strava.com/">{{t168|Strava club}}</a></li>
+{{#nv_faq}}<li><a class="m-link-3" href="#faq">{{t169|Hire terms}}</a></li>{{/nv_faq}}
+{{#nv_visit}}<li><a class="m-link-3" href="#visit">{{t170|Privacy}}</a></li>{{/nv_visit}}
+</ul>
+</div>
+<p class="foot-word m-text-3" data-8b-motion="rise" style="--len:7">{{t2|⟦name⟧}}</p>
+<div class="foot-legal m-text-8">
+<p>{{t171|© 2026 ⟦name⟧ Kit Hire Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t172|8B}}</a>{{t173|. Registered in Nigeria, no. 00000000.}}</p>
+<p>{{t174|Hire since 2011, at the foot of Loughrigg.}}</p>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav-menu');
+  const panel = document.getElementById('nav-links');
+  let lastY = window.scrollY;
+  let travel = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    const delta = y - lastY;
+    lastY = y;
+    if (nav.classList.contains('is-open')) return;
+    if (y < 80) { nav.classList.remove('is-hidden'); travel = 0; return; }
+    if (delta > 0) { travel = Math.max(0, travel) + delta; if (travel > 24) nav.classList.add('is-hidden'); }
+    else if (delta < 0) { travel = 0; nav.classList.remove('is-hidden'); }
+  }, { passive: true });
+  const setOpen = open => {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', toggle.dataset[open ? 'labelClose' : 'labelOpen']);
+    if (open) { window.lenis?.stop(); panel.querySelector('a')?.focus(); }
+    else window.lenis?.start();
+  };
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+  panel.addEventListener('click', event => { if (event.target.closest('a') && nav.classList.contains('is-open')) setOpen(false); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); toggle.focus(); }
+  });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(entries => {
+    entries.forEach(entry => section.classList.toggle('is-paused', !entry.isIntersecting));
+  }).observe(section);
+})();
+</script>
+<script data-8b-part="section-script:footer">
+(() => {
+  const form = document.querySelector('#footer .foot-form');
+  const message = form.querySelector('.foot-form__msg');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const field = form.elements.email;
+    if (!field.checkValidity()) { message.textContent = message.dataset.invalid; field.focus(); return; }
+    message.textContent = message.dataset.done;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.95, anchors: { offset: 0 } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 250); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete() { split.revert(); } })
+      .from(split.lines, { yPercent: 108, duration: 0.95, ease: 'power3.out', stagger: 0.09 });
+  },
+  fill(element, vars = {}) {
+    const from = getComputedStyle(document.documentElement).getPropertyValue('--color-6').trim();
+    const to = getComputedStyle(element).color;
+    const split = SplitText.create(element, { type: 'words' });
+    return gsap.timeline(vars)
+      .fromTo(split.words, { color: from }, { color: to, duration: 0.3, ease: 'none', stagger: 0.7 / Math.max(1, split.words.length) });
+  },
+  window(element, vars = {}) {
+    return gsap.timeline({ ...vars, onComplete() { gsap.set(element, { clearProps: 'clipPath' }); } })
+      .fromTo(element, { clipPath: 'inset(44% 10% 44% 10% round 999px)' }, { clipPath: 'inset(0% 0% 0% 0% round 28px)', duration: 1.15, ease: 'power3.inOut' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  ['rise', 'window', 'fill'].forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        if (name === 'fill') {
+          ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 88%', end: 'bottom 52%', scrub: 0.6, animation: effects.fill(element) });
+        } else {
+          ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 96%', once: true, onEnter: () => effects[name](element) });
+        }
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="section-script:packs">
+(() => {
+  const section = document.getElementById('packs');
+  const prices = [...section.querySelectorAll('.pack__price data')];
+  section.querySelector('.packs-nights').addEventListener('change', event => {
+    const nights = event.target.value;
+    prices.forEach(price => {
+      const value = price.getAttribute(`data-price-${nights}`);
+      if (!value) return;
+      const prefix = price.textContent.replace(/[\d.,\s]+$/, '');
+      price.value = value;
+      price.textContent = `${prefix}${value}`;
+    });
+  });
+})();
+</script>
+<script data-8b-part="scene:kit-index">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('kit');
+    const grid = section.querySelector('.kit-grid');
+    const cards = [...section.querySelectorAll('.kit-cards > li')];
+    const wide = context.conditions.wide;
+    const nav = document.createElement('nav');
+    nav.className = 'kit-index';
+    nav.setAttribute('aria-label', section.dataset.indexLabel || '');
+    const list = document.createElement('ol');
+    list.className = 'kit-index__list';
+    const marker = document.createElement('span');
+    marker.className = 'kit-index__marker';
+    marker.setAttribute('aria-hidden', 'true');
+    const links = cards.map(card => {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.className = 'kit-index__link';
+      link.href = `#${card.id}`;
+      link.textContent = card.querySelector('.kit-card__title').textContent;
+      item.append(link);
+      list.append(item);
+      return link;
+    });
+    list.prepend(marker);
+    nav.append(list);
+    grid.append(nav);
+    section.classList.add('is-indexed');
+    let stops = [];
+    const measure = () => { stops = links.map(link => wide ? link.parentElement.offsetTop : link.parentElement.offsetLeft); };
+    const setX = gsap.quickSetter(marker, 'x', 'px');
+    const setY = gsap.quickSetter(marker, 'y', 'px');
+    let active = -1;
+    const place = progress => {
+      const at = progress * (stops.length - 1);
+      const index = Math.min(stops.length - 2, Math.floor(at));
+      const position = gsap.utils.interpolate(stops[index], stops[index + 1], at - index);
+      (wide ? setY : setX)(position);
+      const current = Math.round(at);
+      if (current !== active) {
+        links.forEach((link, i) => link.classList.toggle('is-active', i === current));
+        active = current;
+      }
+    };
+    ScrollTrigger.create({
+      id: 'kit-index', trigger: cards[0], start: 'center center',
+      endTrigger: cards[cards.length - 1], end: 'center center',
+      onRefresh: self => { measure(); if (!wide) gsap.set(marker, { width: links[0].parentElement.offsetWidth }); place(self.progress); },
+      onUpdate: self => place(self.progress)
+    });
+    cards.forEach((card, i) => {
+      const tilt = i % 2 ? 2.5 : -2.5;
+      gsap.timeline({ scrollTrigger: { id: `kit-index:card-${i + 1}`, trigger: card, start: 'top bottom', end: 'bottom top', scrub: 0.4 } })
+        .fromTo(card, { scale: 0.84, rotation: tilt, opacity: 0.5 }, { scale: 1, rotation: 0, opacity: 1, duration: 0.36, ease: 'power2.out' }, 0)
+        .to(card, { scale: 0.84, rotation: -tilt, opacity: 0.5, duration: 0.36, ease: 'power2.in' }, 0.64);
+    });
+    return () => { nav.remove(); section.classList.remove('is-indexed'); };
+  });
+}, { id: 'scene:kit-index' });
+</script>
+<script data-8b-part="scene:packs-deal">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('packs');
+    const gridEl = section.querySelector('.packs-grid');
+    const cards = [...gridEl.querySelectorAll(':scope > .pack')];
+    section.classList.add('is-dealing');
+    const tilts = [-9, 6, -4, 10, -7, 5];
+    if (context.conditions.wide) {
+      const offset = (card, axis) => {
+        const centre = axis === 'x' ? gridEl.offsetWidth / 2 : gridEl.offsetHeight / 2;
+        return axis === 'x' ? centre - (card.offsetLeft + card.offsetWidth / 2) : centre - (card.offsetTop + card.offsetHeight / 2);
+      };
+      const timeline = gsap.timeline({ scrollTrigger: { id: 'packs-deal', trigger: gridEl, start: 'top 82%', end: 'center 56%', scrub: 0.6, invalidateOnRefresh: true } });
+      cards.forEach((card, i) => {
+        timeline.fromTo(card,
+          { x: () => offset(card, 'x'), y: () => offset(card, 'y'), rotation: tilts[i % tilts.length], scale: 0.9 },
+          { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.55, ease: 'power2.inOut' }, i * 0.15);
+      });
+    } else {
+      cards.forEach((card, i) => {
+        const side = i % 2 ? 1 : -1;
+        gsap.fromTo(card, { xPercent: side * 70, rotation: side * 9 }, {
+          xPercent: 0, rotation: 0, ease: 'power2.out',
+          scrollTrigger: { id: `packs-deal:card-${i + 1}`, trigger: card, start: 'top 96%', end: 'top 58%', scrub: 0.5 }
+        });
+      });
+    }
+    return () => section.classList.remove('is-dealing');
+  });
+}, { id: 'scene:packs-deal' });
+</script>
+<script data-8b-part="scene:fitting-swap">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fitting');
+    const photos = [...section.querySelectorAll('.fit-photo')];
+    const stories = [...section.querySelectorAll('.fit-story')];
+    section.classList.add('is-swapping');
+    photos.forEach((photo, i) => {
+      if (i === 0 || !stories[i]) return;
+      gsap.timeline({
+        scrollTrigger: {
+          id: `fitting-swap:photo-${i + 1}`, trigger: stories[i], start: 'top 85%', end: 'top 45%', scrub: 0.5,
+          onLeave: () => gsap.set(photo, { clearProps: 'clipPath' })
+        }
+      })
+        .fromTo(photo, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power2.inOut' }, 0)
+        .fromTo(photo.querySelector('img'), { scale: 1.16 }, { scale: 1, ease: 'power2.out' }, 0)
+        .fromTo(photos[i - 1], { scale: 1 }, { scale: 1.08, ease: 'power1.in' }, 0);
+    });
+    return () => section.classList.remove('is-swapping');
+  });
+}, { id: 'scene:fitting-swap' });
+</script>
+<script data-8b-part="scene:care-track">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('care');
+    const pin = section.querySelector('.care-pin');
+    const track = section.querySelector('.care-track');
+    const panels = [...track.querySelectorAll('.care-panel')];
+    section.classList.add('is-tracking');
+    const root = getComputedStyle(document.documentElement);
+    const pale = root.getPropertyValue('--color-8').trim();
+    const solid = root.getPropertyValue('--color-3').trim();
+    const distance = () => {
+      const style = getComputedStyle(pin);
+      const room = pin.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+      return Math.max(0, track.scrollWidth - room);
+    };
+    const run = gsap.to(track, {
+      x: () => -distance(), ease: 'none',
+      scrollTrigger: { id: 'care-track', trigger: pin, start: 'top top', end: () => `+=${distance() * 1.1}`, pin: true, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    panels.forEach((panel, i) => {
+      gsap.fromTo(panel.querySelector('.care-tick'), { scale: 0.42, backgroundColor: pale }, {
+        scale: 1, backgroundColor: solid, ease: 'power2.out',
+        scrollTrigger: { id: `care-track:tick-${i + 1}`, trigger: panel, containerAnimation: run, start: 'left 96%', end: 'left 70%', scrub: true }
+      });
+    });
+    return () => section.classList.remove('is-tracking');
+  });
+}, { id: 'scene:care-track' });
+</script>
+<script data-8b-part="scene:trips-zoom">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('trips');
+    const stage = section.querySelector('.trips-stage');
+    const grid = section.querySelector('.trips-grid');
+    const centre = grid.querySelector('.trips-cell--centre');
+    if (context.conditions.wide) {
+      section.classList.add('is-zooming');
+      const origin = () => `${centre.offsetLeft + centre.offsetWidth / 2}px ${centre.offsetTop + centre.offsetHeight / 2}px`;
+      const start = () => Math.max(stage.clientWidth / centre.offsetWidth, stage.clientHeight / centre.offsetHeight) * 1.04;
+      gsap.timeline({ scrollTrigger: { id: 'trips-zoom', trigger: stage, start: 'top top', end: () => `+=${innerHeight * 1.1}`, pin: true, scrub: 0.6, invalidateOnRefresh: true } })
+        .fromTo(grid, { scale: start, transformOrigin: origin }, { scale: 1, transformOrigin: origin, duration: 0.85, ease: 'power2.inOut' }, 0)
+        .to({}, { duration: 0.15 });
+      return () => section.classList.remove('is-zooming');
+    }
+    gsap.fromTo(grid, { scale: 1.4, transformOrigin: '50% 0%' }, {
+      scale: 1, ease: 'power2.out',
+      scrollTrigger: { id: 'trips-zoom', trigger: grid, start: 'top 92%', end: 'top 20%', scrub: 0.5 }
+    });
+  });
+}, { id: 'scene:trips-zoom' });
+</script>
+<script data-8b-part="scene:visit-open">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('visit');
+    const frame = section.querySelector('.visit-frame');
+    const zoom = section.querySelector('.visit-zoom');
+    const from = context.conditions.wide ? 'inset(18% 46% 18% 5% round 28px)' : 'inset(9% 16% 64% 16% round 999px)';
+    gsap.timeline({
+      scrollTrigger: {
+        id: 'visit-open', trigger: section, start: 'top 85%', end: 'top top', scrub: 0.5,
+        onLeave: () => gsap.set(frame, { clearProps: 'clipPath' })
+      }
+    })
+      .fromTo(frame, { clipPath: from }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'power2.inOut' }, 0)
+      .fromTo(zoom, { scale: 1.25 }, { scale: 1, ease: 'power1.out' }, 0);
+  });
+}, { id: 'scene:visit-open' });
+</script>
+</body>
+</html>

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TCIj.woff2" rel="preload" type="font/woff2"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.1.woff2) format('woff2');
+  unicode-range: U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4, U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074, U+e0077, U+e007f;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.2.woff2) format('woff2');
+  unicode-range: U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122, U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2, U+25aa-25ab, U+25b6, U+25c0, U+25fb-25fe, U+2611, U+2622-2623, U+2626, U+262a, U+262e-262f, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267b, U+267e-267f, U+2695, U+269b-269c, U+26a0, U+26a7, U+26aa-26ab, U+26ce, U+26d4, U+2705, U+2714, U+2716, U+271d, U+2721, U+2733-2734, U+2747, U+274c, U+274e, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27a1, U+27b0, U+27bf, U+2934-2935, U+2b05-2b07, U+2b1b-2b1c, U+2b55, U+3030, U+303d, U+3297, U+3299, U+fe0f, U+1f170-1f171, U+1f17e-1f17f, U+1f18e, U+1f191-1f19a, U+1f201-1f202, U+1f21a, U+1f22f, U+1f232-1f23a, U+1f250-1f251, U+1f310, U+1f3a6, U+1f3b5-1f3b6, U+1f3bc, U+1f3e7, U+1f441, U+1f499-1f49c, U+1f49f-1f4a0, U+1f4a2, U+1f4ac-1f4ad, U+1f4b1-1f4b2, U+1f4b9, U+1f4db, U+1f4f2-1f4f6, U+1f500-1f50a, U+1f515, U+1f518-1f524, U+1f52f-1f53d, U+1f549, U+1f54e, U+1f5a4, U+1f5e8, U+1f5ef, U+1f6ab, U+1f6ad-1f6b1, U+1f6b3, U+1f6b7-1f6bc, U+1f6be, U+1f6c2-1f6c5, U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e, U+1f9e1, U+1fa75-1fa77, U+1faaf;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.3.woff2) format('woff2');
+  unicode-range: U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694, U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709, U+270f, U+2712, U+fe0f, U+1f302, U+1f321, U+1f392-1f393, U+1f3a9, U+1f3bd, U+1f3ee, U+1f3f7, U+1f3fa, U+1f451-1f462, U+1f484, U+1f489-1f48a, U+1f48c-1f48e, U+1f4a1, U+1f4a3, U+1f4b0, U+1f4b3-1f4b8, U+1f4bb-1f4da, U+1f4dc-1f4f1, U+1f4ff, U+1f50b-1f514, U+1f516-1f517, U+1f526-1f529, U+1f52c-1f52e, U+1f550-1f567, U+1f56f-1f570, U+1f576, U+1f587, U+1f58a-1f58d, U+1f5a5, U+1f5a8, U+1f5b1-1f5b2, U+1f5c2-1f5c4, U+1f5d1-1f5d3, U+1f5dc-1f5de, U+1f5e1, U+1f5f3, U+1f6aa, U+1f6ac, U+1f6bd, U+1f6bf, U+1f6c1, U+1f6cb, U+1f6cd-1f6cf, U+1f6d2, U+1f6e0-1f6e1, U+1f6f0, U+1f97b-1f97f, U+1f9af, U+1f9ba, U+1f9e2-1f9e6, U+1f9ea-1f9ec, U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86, U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.4.woff2) format('woff2');
+  unicode-range: U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf, U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b, U+1f39e-1f39f, U+1f3a3-1f3a5, U+1f3a7-1f3a9, U+1f3ab-1f3b4, U+1f3b7-1f3bb, U+1f3bd-1f3c0, U+1f3c5-1f3c6, U+1f3c8-1f3c9, U+1f3cf-1f3d3, U+1f3f8-1f3f9, U+1f47e, U+1f4e2, U+1f4f7-1f4fd, U+1f52b, U+1f579, U+1f58c-1f58d, U+1f5bc, U+1f6f7, U+1f6f9, U+1f6fc, U+1f93f, U+1f941, U+1f945, U+1f947-1f94f, U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85, U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.5.woff2) format('woff2');
+  unicode-range: U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708, U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2, U+1f3aa, U+1f3cd-1f3ce, U+1f3d5, U+1f3d7-1f3db, U+1f3df-1f3e6, U+1f3e8-1f3ed, U+1f3ef-1f3f0, U+1f488, U+1f492, U+1f4ba, U+1f54b-1f54d, U+1f5fa-1f5ff, U+1f680-1f6a2, U+1f6a4-1f6a8, U+1f6b2, U+1f6d1, U+1f6d5-1f6d6, U+1f6dd-1f6df, U+1f6e2-1f6e5, U+1f6e9, U+1f6eb-1f6ec, U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3, U+1fa7c;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.6.woff2) format('woff2');
+  unicode-range: U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382, U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb, U+1fad0-1fadb;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.7.woff2) format('woff2');
+  unicode-range: U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5, U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300, U+1f304-1f305, U+1f308, U+1f30a-1f30f, U+1f311-1f321, U+1f324-1f32c, U+1f331-1f335, U+1f337-1f33c, U+1f33e-1f344, U+1f3d4, U+1f3d6, U+1f3dc-1f3de, U+1f3f5, U+1f400-1f43f, U+1f490, U+1f4a7, U+1f4ab, U+1f4ae, U+1f525, U+1f54a, U+1f573, U+1f577-1f578, U+1f648-1f64a, U+1f940, U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf, U+1face-1facf, U+1fae7;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.8.woff2) format('woff2');
+  unicode-range: U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f, U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8, U+1f3c2-1f3c4, U+1f3c7, U+1f3ca-1f3cc, U+1f3eb, U+1f3ed, U+1f3fb-1f3ff, U+1f466-1f478, U+1f47c, U+1f481-1f483, U+1f486-1f487, U+1f48b, U+1f48f, U+1f491, U+1f4bb-1f4bc, U+1f527, U+1f52c, U+1f574-1f575, U+1f57a, U+1f645-1f647, U+1f64b, U+1f64d-1f64e, U+1f680, U+1f692, U+1f6a3, U+1f6b4-1f6b6, U+1f6c0, U+1f6cc, U+1f91d, U+1f926, U+1f930-1f931, U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9, U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.9.woff2) format('woff2');
+  unicode-range: U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728, U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389, U+1f3fb-1f3ff, U+1f440-1f450, U+1f463-1f465, U+1f479-1f47b, U+1f47d-1f480, U+1f485, U+1f48b-1f48c, U+1f493-1f49f, U+1f4a4-1f4a6, U+1f4a8-1f4ab, U+1f4af, U+1f525, U+1f573, U+1f590, U+1f595-1f596, U+1f5a4, U+1f5e3, U+1f600-1f644, U+1f648-1f64a, U+1f64c, U+1f64f, U+1f90c-1f925, U+1f927-1f92f, U+1f932-1f933, U+1f970-1f976, U+1f978-1f97a, U+1f9a0, U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1, U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QSIjuyw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89SCIjuyw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TyIjuyw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89MCIjuyw.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QyIjuyw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QiIjuyw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TCIj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* fallback */
+@font-face {
+  font-family: 'Playwrite US Modern';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playwriteusmodern/v11/H4cMBWmRlMXPhla3hmMaveiYz8nSDkIFLNIYl2TXUwK62YohNg2G.woff2) format('woff2');
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #e6e6e2;
+  --color-2: #121212;
+  --color-3: #2b48e0;
+  --color-4: #f8cc2e;
+  --color-5: #f25c1f;
+  --color-6: #ffffff;
+  --color-7: #d2d2cc;
+  --color-8: #4a4a46;
+  --color-9: #b9c3f3;
+  --font-1: "Playpen Sans", "Playpen Sans Fallback", "Comic Sans MS", system-ui, Arial, sans-serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-3: "Playwrite US Modern", "Segoe Script", cursive;
+  --radius-1: 999px;
+  --radius-2: 18px;
+  --shadow-1: 0 18px 34px -22px color-mix(in srgb, var(--color-2) 70%, transparent);
+  --shadow-2: 0 0 0 4px var(--color-4);
+  --space-1: clamp(16px, 3.2vw, 48px);
+  --space-2: clamp(72px, 9vw, 132px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Playpen Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 92.3%; ascent-override: 126.8%; descent-override: 36.9%; line-gap-override: 0%; }
+@font-face { font-family: "Playpen Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 102.5%; ascent-override: 114.2%; descent-override: 33.2%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104.6%; ascent-override: 97.5%; descent-override: 30.6%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 98.6%; ascent-override: 103.5%; descent-override: 32.5%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis-smooth { scroll-behavior: auto; }
+.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis-stopped { overflow: clip; }
+body {
+  margin: 0;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  overflow-x: clip;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: linear-gradient(color-mix(in srgb, var(--color-2) 6%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--color-2) 6%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip { position: fixed; left: 12px; top: 12px; z-index: 100; transform: translateY(-160%); background: var(--color-2); color: var(--color-6); padding: 10px 16px; border-radius: var(--radius-1); }
+.skip:focus-visible { transform: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 6vw, 88px); font-weight: 800; line-height: .9; letter-spacing: -.01em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 20px; font-weight: 700; line-height: 1.02; letter-spacing: 0; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-3); font-size: 22px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.35; letter-spacing: .01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: 17px; font-weight: 600; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-2); font-size: clamp(18px, 1.6vw, 21px); font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding: 0 22px 0 24px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-6); font-family: var(--font-2); font-size: 15px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; cursor: pointer; overflow: hidden; transition: color .25s; }
+.m-btn::before { content: ""; position: absolute; z-index: -1; right: -25%; top: 50%; translate: 0 -50%; width: 150%; aspect-ratio: 1; border-radius: 46% 54% 41% 59% / 55% 43% 57% 45%; background: var(--color-4); transform: scale(0) rotate(-30deg); transform-origin: 85% 50%; transition: transform .45s cubic-bezier(.3, 1.4, .5, 1); }
+.m-btn__icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s; }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-2); background-color: var(--color-4); transition: color .25s, background-color 0s .3s; }
+  .m-btn:hover::before { transform: scale(1) rotate(0deg); }
+  .m-btn:hover .m-btn__icon { transform: translateX(3px) rotate(-8deg); }
+}
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px 0 10px; border: 1.5px solid var(--color-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-2); font-size: 15px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; cursor: pointer; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; z-index: -1; left: -25%; top: 50%; translate: 0 -50%; width: 150%; aspect-ratio: 1; border-radius: 54% 46% 59% 41% / 43% 55% 45% 57%; background: var(--color-4); transform: scale(0) rotate(30deg); transform-origin: 12% 50%; transition: transform .45s cubic-bezier(.3, 1.4, .5, 1); }
+.m-btn-2__icon { display: grid; place-items: center; width: 30px; height: 30px; border: 1.5px solid currentColor; border-radius: 50%; }
+.m-btn-2__icon svg { width: 12px; height: 12px; fill: currentColor; }
+@media (hover: hover) {
+  .m-btn-2:hover::before { transform: scale(1) rotate(0deg); }
+}
+.m-btn-3 { display: inline-grid; place-items: center; flex: none; width: 40px; height: 40px; padding: 0; border: 1.5px solid var(--color-2); border-radius: 50%; background: var(--color-6); color: var(--color-2); cursor: pointer; transition: background-color .25s; }
+.m-btn-3 svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .45s cubic-bezier(.3, 1.4, .5, 1); }
+@media (hover: hover) {
+  .m-btn-3:hover { background: var(--color-4); }
+  .m-btn-3:hover svg { transform: rotate(-90deg) scale(1.12); }
+}
+.m-link { position: relative; display: inline-flex; flex-direction: column; gap: 2px; font-family: var(--font-2); font-size: 15px; font-weight: 600; line-height: 1.2; letter-spacing: 0; text-decoration: none; }
+.m-link__line { width: 100%; height: 8px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 140; stroke-dashoffset: 92; transition: stroke-dashoffset .5s ease; }
+@media (hover: hover) { .m-link:hover .m-link__line { stroke-dashoffset: 0; } }
+.m-link:focus-visible .m-link__line { stroke-dashoffset: 0; }
+
+.m-sticker { --m-sticker-shape: polygon(3% 5%, 19% 2%, 35% 4%, 52% 0%, 70% 3%, 88% 1%, 98% 7%, 96% 26%, 100% 45%, 97% 63%, 99% 82%, 95% 98%, 75% 96%, 55% 100%, 36% 97%, 17% 99%, 2% 96%, 4% 76%, 0% 57%, 3% 38%, 1% 20%); position: relative; display: block; padding: 8px; background: var(--color-6); clip-path: var(--m-sticker-shape); }
+.m-sticker img { width: 100%; height: 100%; object-fit: cover; clip-path: var(--m-sticker-shape); }
+
+.m-surface { background: var(--color-6); color: var(--color-2); border-radius: 14px; }
+.m-tape { display: inline-block; padding: 7px 14px 8px; background: var(--color-6); color: var(--color-2); clip-path: polygon(2% 0, 98% 4%, 100% 50%, 97% 100%, 3% 96%, 0 50%); }
+.m-badge { display: inline-flex; align-items: center; min-height: 26px; padding: 0 12px; border: 1.5px solid currentColor; border-radius: var(--radius-1); font-family: var(--font-2); font-size: 12px; font-weight: 600; line-height: 1; letter-spacing: .04em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-field { display: flex; align-items: center; gap: 8px; min-height: 56px; padding: 6px 6px 6px 20px; border-radius: var(--radius-1); background: var(--color-6); color: var(--color-2); }
+.m-field__input { flex: 1; min-width: 0; border: 0; background: transparent; font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.2; outline-offset: 2px; }
+.m-field__input::placeholder { color: var(--color-8); opacity: 1; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; z-index: 50; inset: 0 0 auto; transition: transform .45s cubic-bezier(.3, .7, .2, 1), background-color .3s; }
+#nav[data-hidden] { transform: translateY(-110%); }
+#nav[data-scrolled] { background: color-mix(in srgb, var(--color-1) 92%, transparent); }
+#nav .nav-bar { display: flex; align-items: center; gap: 28px; height: 72px; padding: 0 var(--space-1); }
+#nav .nav-logo { display: inline-flex; flex-direction: column; text-decoration: none; transform: rotate(-4deg); }
+#nav .nav-logo .m-text-3 { font-size: 30px; font-weight: 800; letter-spacing: -.02em; }
+#nav .nav-logo svg { width: 100%; height: 8px; margin-top: -2px; fill: none; stroke: var(--color-5); stroke-width: 3; stroke-linecap: round; }
+#nav .nav-links { display: flex; gap: 30px; margin-left: 48px; }
+#nav .nav-links a { text-decoration: none; }
+#nav .nav-links .m-link__line { position: absolute; left: 0; top: 100%; stroke-dashoffset: 140; }
+#nav .nav-links .m-link:focus-visible .m-link__line { stroke-dashoffset: 0; }
+@media (hover: hover) { #nav .nav-links .m-link:hover .m-link__line { stroke-dashoffset: 0; } }
+#nav .nav-tools { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+#nav .nav-icon { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 4px; text-decoration: none; }
+#nav .nav-icon::before { content: ""; position: absolute; z-index: -1; left: -6px; top: 50%; translate: 0 -50%; width: 34px; aspect-ratio: 1; border-radius: 46% 54% 41% 59% / 55% 43% 57% 45%; background: var(--color-4); transform: scale(0) rotate(-30deg); transition: transform .45s cubic-bezier(.3, 1.4, .5, 1); }
+#nav .nav-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .45s cubic-bezier(.3, 1.4, .5, 1); }
+@media (hover: hover) {
+  #nav .nav-icon:hover::before { transform: scale(1) rotate(0deg); }
+  #nav .nav-icon:hover svg { transform: rotate(-12deg) scale(1.12); }
+}
+#nav .nav-cta { min-height: 42px; }
+#nav .nav-menu { display: none; }
+#nav .nav-sheet { display: none; }
+@media (max-width: 899px) {
+  #nav .nav-bar { height: 64px; gap: 14px; }
+  #nav .nav-links, #nav .nav-cta, #nav .nav-search { display: none; }
+  #nav .nav-menu { display: inline-grid; }
+  #nav .nav-sheet { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; gap: 26px; padding: 96px var(--space-1) 40px; background: var(--color-3); color: var(--color-6); overflow-y: auto; visibility: hidden; transform: translateY(-100%); transition: transform .5s cubic-bezier(.3, .7, .2, 1), visibility 0s .5s; }
+  #nav .nav-sheet[data-open] { visibility: visible; transform: none; transition: transform .5s cubic-bezier(.3, .7, .2, 1); }
+  #nav .nav-sheet a { text-decoration: none; font-size: 48px; }
+  #nav .nav-sheet :focus-visible { outline-color: var(--color-4); }
+  #nav .nav-close { position: absolute; top: 12px; right: var(--space-1); }
+}
+}
+</style>
+<style data-8b-part="section:process">
+@layer sections {
+#process { position: relative; padding: var(--space-2) 0; overflow-x: clip; }
+#process .pr-track { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 36px 26px; padding: 0 var(--space-1); }
+#process .pr-intro { grid-column: 1 / -1; display: grid; gap: 20px; justify-items: start; max-width: 620px; }
+#process .pr-intro .m-text-2 { transform: rotate(-3deg); }
+#process .pr-intro .m-text-4 { transform: rotate(-4deg); }
+#process .pr-steps { display: contents; }
+#process .pr-step { position: relative; display: grid; gap: 12px; align-content: start; }
+#process .pr-num { display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--color-2); color: var(--color-6); font-size: 26px; }
+#process .pr-step:nth-child(2) .pr-num { background: var(--color-4); color: var(--color-2); }
+#process .pr-step:nth-child(3) .pr-num { background: var(--color-5); color: var(--color-2); }
+#process .pr-step:nth-child(4) .pr-num { background: var(--color-3); color: var(--color-6); }
+#process .pr-photo { aspect-ratio: 4 / 3; transform: rotate(-2.5deg); }
+#process .pr-step:nth-child(even) .pr-photo { transform: rotate(2.5deg); }
+#process .pr-step .m-text { max-width: 34ch; }
+#process .pr-line { display: none; }
+@media (max-width: 899px) {
+  #process .pr-track { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #process[data-track] { padding: 0; }
+  #process[data-track] .pr-stage { display: flex; align-items: center; height: 100svh; overflow: hidden; }
+  #process[data-track] .pr-track { display: flex; align-items: center; gap: 7vw; width: max-content; padding: 0 10vw 0 var(--space-1); }
+  #process[data-track] .pr-intro { flex: none; width: min(38vw, 540px); }
+  #process[data-track] .pr-steps { display: flex; align-items: center; gap: 7vw; }
+  #process[data-track] .pr-step { flex: none; width: min(28vw, 380px); }
+  #process[data-track] .pr-step:nth-child(odd) { margin-top: -16vh; }
+  #process[data-track] .pr-step:nth-child(even) { margin-top: 16vh; }
+  #process[data-track] .pr-line { display: block; position: absolute; z-index: -1; left: min(30vw, 420px); right: 6vw; top: 22%; width: auto; height: 56%; fill: none; stroke: var(--color-2); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2 12; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+  #process[data-track] .pr-intro { width: 84vw; }
+  #process[data-track] .pr-step { width: 74vw; }
+  #process[data-track] .pr-step:nth-child(odd), #process[data-track] .pr-step:nth-child(even) { margin-top: 0; }
+}
+}
+</style>
+<style data-8b-part="section:crew">
+@layer sections {
+#crew { display: grid; grid-template-columns: minmax(0, .66fr) minmax(0, 1.34fr); gap: 40px; align-items: center; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#crew .cw-head { display: grid; gap: 22px; justify-items: start; }
+#crew .cw-title { position: relative; }
+#crew .cw-title svg { width: 72%; height: 14px; margin-top: 6px; fill: none; stroke: var(--color-5); stroke-width: 4; stroke-linecap: round; }
+#crew .cw-wall { position: relative; height: clamp(560px, 56vw, 740px); }
+#crew .cw-item { position: absolute; left: var(--cw-x); top: var(--cw-y); width: var(--cw-w); transform: rotate(var(--cw-r)); }
+#crew .cw-item .m-sticker { aspect-ratio: 3 / 4; }
+#crew .cw-item .m-tape { position: absolute; left: 8%; bottom: -14px; max-width: 92%; transform: rotate(-3deg); box-shadow: var(--shadow-1); }
+#crew .cw-item:nth-child(even) .m-tape { left: auto; right: 6%; transform: rotate(3deg); }
+#crew .cw-item .m-tape .m-text-5 { display: block; }
+@media (max-width: 899px) {
+  #crew { grid-template-columns: minmax(0, 1fr); }
+  #crew .cw-wall { height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 14px; }
+  #crew .cw-item { position: relative; left: auto; top: auto; width: auto; }
+  #crew .cw-item:nth-child(even) { margin-top: 28px; }
+}
+}
+</style>
+<style data-8b-part="section:heavy">
+@layer sections {
+#heavy { position: relative; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#heavy .hv-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 20px 48px; margin-bottom: 40px; }
+#heavy .hv-head .m-text-2 { transform: rotate(-3deg); }
+#heavy .hv-stage { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 48px; align-items: center; }
+#heavy .hv-list { display: grid; gap: 6px; }
+#heavy .hv-item { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 2px 14px; padding: 16px 18px; border-radius: 16px; transition: background-color .35s, transform .35s; }
+#heavy .hv-item .hv-num { grid-row: span 2; display: grid; place-items: center; width: 44px; height: 44px; border: 2px solid var(--color-2); border-radius: 50%; font-size: 20px; }
+#heavy .hv-item[data-active] { background: var(--color-4); transform: rotate(-1.5deg); }
+#heavy .hv-frame { position: relative; justify-self: center; width: min(100%, 62svh); aspect-ratio: 4 / 5; border-radius: 26px; overflow: hidden; background: var(--color-7); }
+#heavy .hv-zoom { position: absolute; inset: 0; transform-origin: 0 0; }
+#heavy .hv-zoom img { width: 100%; height: 100%; object-fit: cover; }
+#heavy .hv-marks { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-5); stroke-width: 3.5; stroke-linecap: round; }
+#heavy .hv-pin { position: absolute; display: grid; place-items: center; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%; background: var(--color-5); color: var(--color-2); font-size: 16px; }
+@media (max-width: 899px) {
+  #heavy .hv-head { grid-template-columns: minmax(0, 1fr); margin-bottom: 24px; }
+  #heavy .hv-stage { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  #heavy .hv-frame { order: -1; width: min(100%, 44svh); }
+  #heavy .hv-item { grid-template-columns: 40px minmax(0, 1fr); padding: 8px 12px; }
+  #heavy .hv-item .hv-num { width: 34px; height: 34px; font-size: 16px; }
+  #heavy .hv-item .m-text { font-size: 14px; line-height: 1.4; }
+}
+}
+</style>
+<style data-8b-part="section:fund">
+@layer sections {
+#fund { position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 40px; align-items: center; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#fund .fd-splash { position: relative; display: grid; gap: 22px; justify-items: start; padding: 11% 13% 13% 11%; }
+#fund .fd-splash > .fd-bg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: var(--color-5); }
+#fund .fd-splash > *:not(.fd-bg) { position: relative; }
+#fund .fd-splash .m-text-2 { font-size: clamp(42px, 4.8vw, 72px); transform: rotate(-3deg); }
+#fund .fd-under { width: 60%; height: 14px; margin-top: -10px; fill: none; stroke: var(--color-2); stroke-width: 3.5; stroke-linecap: round; }
+#fund .fd-splash .m-text-7 { max-width: 30ch; }
+#fund .fd-photos { position: relative; height: clamp(440px, 42vw, 580px); }
+#fund .fd-photo { position: absolute; width: 64%; aspect-ratio: 4 / 3.2; }
+#fund .fd-photo:nth-child(1) { left: 0; top: 2%; transform: rotate(-5deg); }
+#fund .fd-photo:nth-child(2) { right: 0; top: 40%; transform: rotate(4deg); }
+#fund .fd-note { position: absolute; left: 4%; bottom: 0; max-width: 270px; padding: 20px 24px 24px; background: var(--color-7); clip-path: polygon(0 4%, 20% 0, 46% 3%, 70% 0, 100% 3%, 98% 52%, 100% 97%, 76% 100%, 48% 96%, 22% 100%, 0 97%, 2% 50%); transform: rotate(-3deg); }
+#fund .fd-note .m-text { color: var(--color-8); }
+#fund .fd-note .m-text-6 { margin-bottom: 4px; }
+@media (max-width: 899px) {
+  #fund { grid-template-columns: minmax(0, 1fr); }
+  #fund .fd-splash { padding: 16% 12% 18%; }
+  #fund .fd-photos { height: 118vw; max-height: 620px; }
+  #fund .fd-photo { width: 76%; }
+  #fund .fd-photo:nth-child(2) { top: 36%; }
+}
+}
+</style>
+<style data-8b-part="section:drops">
+@layer sections {
+#drops { display: grid; grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); gap: 40px 56px; align-items: start; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#drops .ds-head { display: grid; gap: 20px; justify-items: start; }
+#drops .ds-head .m-text-2 { font-size: clamp(40px, 4.2vw, 62px); transform: rotate(-3deg); }
+#drops .ds-head svg { width: 110px; fill: none; stroke: var(--color-2); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+#drops .ds-board { position: relative; }
+#drops .ds-list { position: relative; z-index: 1; display: grid; border-bottom: 1.5px solid var(--color-2); }
+#drops .ds-row { position: relative; z-index: 1; display: grid; grid-template-columns: 120px minmax(0, 1fr) 130px 90px 110px; align-items: center; gap: 18px; min-height: 92px; padding: 16px 12px; border-top: 1.5px solid var(--color-2); }
+#drops .ds-row[data-next] { background: var(--color-4); }
+#drops .ds-date { font-size: 26px; }
+#drops .ds-row .m-text-6 { font-size: 19px; }
+#drops .ds-row .m-text-5 { color: var(--color-8); }
+#drops .ds-row[data-next] .m-text-5 { color: var(--color-2); }
+#drops .ds-mark { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  #drops[data-marking] .ds-row[data-next] { background: none; }
+  #drops[data-marking] .ds-mark { display: block; position: absolute; z-index: 0; left: 0; right: 0; top: 0; height: 100px; background: var(--color-4); clip-path: polygon(0 8%, 30% 0, 62% 6%, 100% 0, 99% 50%, 100% 94%, 70% 100%, 36% 93%, 0 100%, 1% 50%); transform-origin: 0 0; }
+}
+@media (max-width: 899px) {
+  #drops { grid-template-columns: minmax(0, 1fr); }
+  #drops .ds-row { grid-template-columns: 86px minmax(0, 1fr) auto; grid-template-areas: "date name name" "date mood act" "date count act"; gap: 6px 12px; padding: 16px 8px; }
+  #drops .ds-date { grid-area: date; font-size: 22px; }
+  #drops .ds-row .m-text-6 { grid-area: name; font-size: 17px; }
+  #drops .ds-row .m-badge { grid-area: mood; justify-self: start; }
+  #drops .ds-row .ds-count { grid-area: count; }
+  #drops .ds-row .m-link { grid-area: act; justify-self: end; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px; align-items: center; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#faq .fq-splash { position: relative; display: grid; gap: 16px; justify-items: start; align-content: center; aspect-ratio: 1.05; padding: 14% 12% 22% 24%; color: var(--color-6); }
+#faq .fq-splash > .fq-bg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: var(--color-3); }
+#faq .fq-splash > *:not(.fq-bg) { position: relative; }
+#faq .fq-splash .m-text-2 { font-size: clamp(34px, 4vw, 58px); transform: rotate(-4deg); }
+#faq .fq-splash .fq-arrow { width: 90px; fill: none; stroke: var(--color-6); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+#faq .fq-splash a { color: var(--color-6); }
+#faq .fq-splash :focus-visible { outline-color: var(--color-2); outline-offset: 6px; box-shadow: var(--shadow-2); }
+#faq .fq-list { display: grid; gap: 12px; }
+#faq details { border-radius: 16px; background: var(--color-6); }
+#faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; padding: 12px 14px 12px 22px; cursor: pointer; list-style: none; border-radius: 16px; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary .m-btn-3 { pointer-events: none; }
+#faq summary .m-btn-3 svg { transition: transform .4s cubic-bezier(.3, 1.4, .5, 1); }
+#faq details[open] summary .m-btn-3 svg { transform: rotate(45deg); }
+#faq details .m-text { padding: 0 22px 22px; color: var(--color-8); max-width: 62ch; }
+@media (max-width: 899px) {
+  #faq { grid-template-columns: minmax(0, 1fr); }
+  #faq .fq-splash { width: min(100%, 420px); }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "say say" "tapes photo"; gap: 28px 56px; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#contact .ct-say { grid-area: say; font-size: min(30vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .7))); line-height: .82; transform-origin: 0 0; }
+#contact .ct-say svg { display: inline-block; width: .5em; vertical-align: .05em; fill: var(--color-4); stroke: var(--color-2); stroke-width: 1.2; }
+#contact .ct-tapes { grid-area: tapes; display: grid; gap: 14px; align-content: start; justify-items: start; }
+#contact .ct-tapes .m-tape { display: grid; gap: 2px; padding: 14px 22px 16px; background: var(--color-6); }
+#contact .ct-tapes .m-tape:nth-child(odd) { transform: rotate(-2deg); }
+#contact .ct-tapes .m-tape:nth-child(even) { transform: rotate(1.5deg); margin-left: 6%; }
+#contact .ct-tapes .m-text-5 { color: var(--color-8); }
+#contact .ct-tapes a { text-decoration: none; }
+#contact .ct-tapes .m-text-4 { margin-top: 10px; font-size: 20px; transform: rotate(-4deg); }
+#contact .ct-photo { grid-area: photo; align-self: start; aspect-ratio: 4 / 3; transform: rotate(3deg); }
+@media (max-width: 899px) {
+  #contact { grid-template-columns: minmax(0, 1fr); grid-template-areas: "say" "photo" "tapes"; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto auto; align-items: center; gap: 24px 48px; padding: 44px var(--space-1) 40px; border-top: 1.5px solid var(--color-2); }
+#footer .ft-logo { display: inline-grid; text-decoration: none; transform: rotate(-4deg); }
+#footer .ft-logo .m-text-3 { font-size: 38px; font-weight: 800; letter-spacing: -.02em; }
+#footer .ft-logo svg { width: 100%; height: 10px; fill: none; stroke: var(--color-5); stroke-width: 3; stroke-linecap: round; }
+#footer nav { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+#footer nav a, #footer .ft-social a { text-decoration: none; }
+#footer .ft-social { display: flex; gap: 18px; }
+#footer .m-link__line { position: absolute; left: 0; top: 100%; stroke-dashoffset: 140; }
+#footer .m-link:focus-visible .m-link__line { stroke-dashoffset: 0; }
+@media (hover: hover) { #footer .m-link:hover .m-link__line { stroke-dashoffset: 0; } }
+#footer .ft-copy { color: var(--color-8); }
+@media (min-width: 1100px) and (max-width: 1499px) {
+  #footer { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "logo tag tag" "nav social copy"; }
+  #footer .ft-logo { grid-area: logo; justify-self: start; }
+  #footer > .m-text-6 { grid-area: tag; }
+  #footer > nav { grid-area: nav; }
+  #footer .ft-social { grid-area: social; justify-self: end; }
+  #footer .ft-copy { grid-area: copy; }
+}
+@media (max-width: 1099px) {
+  #footer { grid-template-columns: minmax(0, 1fr); justify-items: start; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#process .pr-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; }
+/* phones: the intro fills the first screen, so no sliver of step one shows at the edge */
+@media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+  #process[data-track] .pr-intro { width: calc(100vw - 2 * var(--space-1)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #process .pr-intro > * { animation: rw-up .8s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #process .pr-intro > :nth-child(2) { animation-delay: .1s; }
+  #process .pr-intro > :nth-child(3) { animation-delay: .2s; }
+  #process .pr-intro > :nth-child(4) { animation-delay: .26s; }
+  #process .pr-step { animation: rw-up .8s cubic-bezier(.2, .8, .2, 1) .3s backwards; }
+  #process .pr-step:nth-child(2) { animation-delay: .4s; }
+}
+@keyframes rw-up { from { translate: 0 26px; opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="skip m-text-5" href="#main">{{t1|Skip to content}}</a>
+
+<header data-8b-section="navigation" id="nav">
+<div class="nav-bar">
+<a aria-label="{{name}}, back to top" class="nav-logo" href="#process">
+<span class="m-text-3">{{t2|Scrawl}}</span>
+<svg aria-hidden="true" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M3 6c18-4 30 3 48 0s34-4 66 1"></path></svg>
+</a>
+<nav aria-label="Main" class="nav-links">
+<a class="m-link" href="#heavy"><span class="m-link__label">{{t3|Shop}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#drops"><span class="m-link__label">{{t4|Drops}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#crew"><span class="m-link__label">{{t5|Crew}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#contact"><span class="m-link__label">{{t6|Studio}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+</nav>
+<div class="nav-tools">
+<a aria-label="Browse the shop" class="nav-icon nav-search" href="#heavy"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5 21 21"></path></svg></a>
+<a aria-label="Bag, 0 items" class="nav-icon m-text-5" href="#heavy"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 8h14l-1 13H6z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span aria-hidden="true">{{t7|(0)}}</span></a>
+<a class="m-btn nav-cta" href="#crew"><span class="m-btn__label">{{t8|Join the crew}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"></path></svg></a>
+<button aria-controls="nav-sheet" aria-expanded="false" aria-label="Open menu" class="m-btn-3 nav-menu" type="button"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 6h14M3 10h14M3 14h14"></path></svg></button>
+</div>
+</div>
+<div aria-label="Menu" class="nav-sheet" data-lenis-prevent="" id="nav-sheet">
+<button aria-label="Close menu" class="m-btn-3 nav-close" type="button"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M5 5l10 10M15 5 5 15"></path></svg></button>
+<a class="m-text-2" href="#heavy">{{t3|Shop}}</a>
+<a class="m-text-2" href="#drops">{{t4|Drops}}</a>
+<a class="m-text-2" href="#crew">{{t5|Crew}}</a>
+<a class="m-text-2" href="#contact">{{t6|Studio}}</a>
+<a class="m-text-2" href="#crew">{{t8|Join the crew}}</a>
+</div>
+</header>
+<main id="main">
+
+{{#sec_process}}<section data-8b-section="process: sketch to stitch" id="process">
+<div class="pr-stage">
+<div class="pr-track">
+<div class="pr-intro">
+<h1 class="m-text-2">{{t9|Sketch}}<br/>{{t10|to stitch}}</h1>
+<p class="m-text-7">{{t11|Every ⟦name⟧ print starts as a doodle on somebody's knee. Four steps take it from paper to your back.}}</p>
+<p class="m-text-4">{{t12|no robots, only pens}}</p>
+<div class="pr-actions"><a class="m-btn" href="#drops"><span class="m-btn__label">{{t13|See the drops}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"></path></svg></a><a class="m-btn-2" href="#crew"><span aria-hidden="true" class="m-btn-2__icon"><svg viewbox="0 0 20 20"><path d="M7 5l8 5-8 5z"></path></svg></span><span class="m-btn-2__label">{{t14|Meet the crew}}</span></a></div>
+</div>
+<ol class="pr-steps">
+<li class="pr-step">
+<span class="pr-num m-text-3">{{t15|1}}</span>
+<figure class="pr-photo m-sticker"><img alt="An open spiral sketchbook beside a box of oil pastels" height="533" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1616627981431-ed306bb11ac0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2tldGNoYm9vayUyMGRyYXdpbmclMjBtYXJrZXJ8ZW58MXwwfHx8MTc5MTIzNjQzOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#a6a6a6" width="800"/></figure>
+<h3 class="m-text-6">{{t16|Open call}}</h3>
+<p class="m-text">{{t17|Each month the crew sends in doodles: napkins, notebook margins, phone sketches.}}</p>
+</li>
+<li class="pr-step">
+<span class="pr-num m-text-3">{{t18|2}}</span>
+<figure class="pr-photo m-sticker"><img alt="Colourful drawings pinned side by side on a wall" height="533" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1761403948893-c6438c52925a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hpbGRyZW4lMjBkcmF3aW5ncyUyMHRhcGVkJTIwb24lMjB3YWxsfGVufDF8MHx8fDE3OTEyNzI0NTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#c0a68c" width="800"/></figure>
+<h3 class="m-text-6">{{t19|Crew vote}}</h3>
+<p class="m-text">{{t20|Everyone picks favourites. The loudest ten go to the studio wall.}}</p>
+</li>
+<li class="pr-step">
+<span class="pr-num m-text-3">{{t21|3}}</span>
+<figure class="pr-photo m-sticker"><img alt="Gloved hands pulling yellow ink across a screen-printing frame" height="530" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1643216674491-33878507b402?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c2NyZWVuJTIwcHJpbnRpbmd8ZW58MXwwfHx8MTc5MTIzNjQzOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#c0c0c0" width="800"/></figure>
+<h3 class="m-text-6">{{t22|Screen print}}</h3>
+<p class="m-text">{{t23|We pull every print by hand on heavy cotton, one colour at a time.}}</p>
+</li>
+<li class="pr-step">
+<span class="pr-num m-text-3">{{t24|4}}</span>
+<figure class="pr-photo m-sticker"><img alt="A shop corner with a neon fitting-rooms sign and printed tees on a rail" height="533" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1598775378121-e24f7062c151?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2xvdGhpbmclMjBzdG9yZSUyMGludGVyaW9yJTIwc3RyZWV0d2VhcnxlbnwxfDB8fHwxNzkxMjM2NDQwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#594026" width="800"/></figure>
+<h3 class="m-text-6">{{t25|Friday drop}}</h3>
+<p class="m-text">{{t26|The drop lands online and in the studio shop, with the artist's name on the tag.}}</p>
+</li>
+</ol>
+<svg aria-hidden="true" class="pr-line" preserveaspectratio="none" viewbox="0 0 1000 100"><path d="M0 50C80 0 160 100 250 50S420 0 500 50 670 100 750 50 920 0 1000 50"></path></svg>
+</div>
+</div>
+</section>{{/sec_process}}
+
+{{#sec_crew}}<section data-8b-section="the crew wall" id="crew">
+<div class="cw-head">
+<h2 class="cw-title m-text-2">{{t27|The crew}}<br/>{{t28|draws it}}<svg aria-hidden="true" data-8b-motion="scrawl" preserveaspectratio="none" viewbox="0 0 200 14"><path d="M3 9c40-6 70 3 110-1s60-5 84 0"></path></svg></h2>
+<p class="m-text-7">{{t29|Skaters, students, nurses, bus drivers. Thousands of people sketch for us, and every print carries its artist's name.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t30|Send a doodle}}</span><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"></path></svg></a>
+</div>
+<ul class="cw-wall">
+<li class="cw-item" style="--cw-x:0%;--cw-y:3%;--cw-w:30%;--cw-r:-6deg"><figure class="m-sticker"><img alt="Two friends posing together outdoors, one in a white top, one in orange" height="932" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1765560219979-f1056d3c752e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3RyZWV0JTIwc3R5bGUlMjBwb3J0cmFpdCUyMGZyaWVuZHN8ZW58MXwxfHx8MTc5MTIzNjQxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#c0d9d9" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t31|Ama & Jo}}</span><span class="m-text-5">{{t32|drew Loud Weather}}</span></p></li>
+<li class="cw-item" style="--cw-x:34%;--cw-y:0%;--cw-w:27%;--cw-r:4deg"><figure class="m-sticker"><img alt="A young man in a cap and black jeans jumping with his arms spread against a white backdrop" height="1050" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1648249590658-ad7761bb9329?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8c2thdGVyJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTI3MjQ2M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#f3f3f3" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t33|Theo}}</span><span class="m-text-5">{{t34|drew Star Jump}}</span></p></li>
+<li class="cw-item" style="--cw-x:66%;--cw-y:6%;--cw-w:31%;--cw-r:-3deg"><figure class="m-sticker"><img alt="Three young men leaning on an orange wall in layered jackets" height="932" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1772521239395-3be2cbc05f80?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c3RyZWV0JTIwc3R5bGUlMjBwb3J0cmFpdCUyMGZyaWVuZHN8ZW58MXwxfHx8MTc5MTIzNjQxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#d98c59" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t35|Kofi, Dre & Sam}}</span><span class="m-text-5">{{t36|drew Paper Planes}}</span></p></li>
+<li class="cw-item" style="--cw-x:4%;--cw-y:50%;--cw-w:27%;--cw-r:5deg"><figure class="m-sticker"><img alt="A young woman in a black beanie resting her head on her hand" height="1050" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1548535363-d4613b517a31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8eW91bmclMjB3b21hbiUyMHBvcnRyYWl0JTIwYmVhbmllfGVufDF8MXx8fDE3OTEyMzY0MTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#262626" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t37|Lena}}</span><span class="m-text-5">{{t38|drew Soft Static}}</span></p></li>
+<li class="cw-item" style="--cw-x:36%;--cw-y:45%;--cw-w:30%;--cw-r:-4deg"><figure class="m-sticker"><img alt="Three friends in scarves and denim posing on a paved walkway" height="1050" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1773236175367-4f4c525dc923?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3RyZWV0JTIwc3R5bGUlMjBwb3J0cmFpdCUyMGZyaWVuZHN8ZW58MXwxfHx8MTc5MTIzNjQxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#264040" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t39|Nate, Ola & Ty}}</span><span class="m-text-5">{{t40|drew Night Bus}}</span></p></li>
+<li class="cw-item" style="--cw-x:70%;--cw-y:53%;--cw-w:27%;--cw-r:7deg"><figure class="m-sticker"><img alt="A skater flying above his board against a bright sky" height="1050" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1723676537398-4e1c7ba6c17f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2thdGVyJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTIzNjQxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#d9d9d9" width="700"/></figure><p class="m-tape"><span class="m-text-6">{{t41|Rui}}</span><span class="m-text-5">{{t42|drew Halo Cap}}</span></p></li>
+</ul>
+</section>{{/sec_crew}}
+
+{{#sec_heavy}}<section data-8b-section="made heavy: one hoodie up close" id="heavy">
+<div class="hv-head">
+<h2 class="m-text-2">{{t43|Made}}<br/>{{t44|heavy}}</h2>
+<p class="m-text-7">{{t45|Doodles deserve a canvas that lasts. Our hoodie is cut boxy from brushed fleece and built to be worn through a hundred washes.}}</p>
+</div>
+<div class="hv-stage">
+<ol class="hv-list">
+<li class="hv-item" data-x="52" data-y="27"><span class="hv-num m-text-3">{{t15|1}}</span><h3 class="m-text-6">{{t46|Double-layer hood}}</h3><p class="m-text">{{t47|Holds its shape, frames the face, never flops.}}</p></li>
+<li class="hv-item" data-x="51" data-y="58"><span class="hv-num m-text-3">{{t18|2}}</span><h3 class="m-text-6">{{t48|Flat cotton cords}}</h3><p class="m-text">{{t49|Knotted by hand, metal-free tips.}}</p></li>
+<li class="hv-item" data-x="26" data-y="52"><span class="hv-num m-text-3">{{t21|3}}</span><h3 class="m-text-6">{{t50|Dropped shoulder}}</h3><p class="m-text">{{t51|Room to move, room for a big back print.}}</p></li>
+<li class="hv-item" data-x="50" data-y="86"><span class="hv-num m-text-3">{{t24|4}}</span><h3 class="m-text-6">{{t52|Deep kangaroo pocket}}</h3><p class="m-text">{{t53|Fits a sketchbook, a phone and cold hands.}}</p></li>
+</ol>
+<div class="hv-frame">
+<div class="hv-zoom">
+<img alt="A smiling young man in a light grey heavyweight hoodie with his hands in the front pocket" height="1750" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1642978277577-83c6ceac4820?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8aG9vZGllJTIwY2xvc2UlMjB1cHxlbnwxfDF8fHwxNzkxMjM2NDM4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#d9d9d9" width="1400"/>
+<svg aria-hidden="true" class="hv-marks" viewbox="0 0 400 500">
+<ellipse cx="208" cy="135" rx="70" ry="80"></ellipse>
+<ellipse cx="204" cy="290" rx="40" ry="62"></ellipse>
+<ellipse cx="104" cy="260" rx="44" ry="50"></ellipse>
+<ellipse cx="200" cy="430" rx="80" ry="40"></ellipse>
+</svg>
+<span aria-hidden="true" class="hv-pin m-text-3" style="left:70%;top:16%">{{t15|1}}</span>
+<span aria-hidden="true" class="hv-pin m-text-3" style="left:63%;top:50%">{{t18|2}}</span>
+<span aria-hidden="true" class="hv-pin m-text-3" style="left:14%;top:42%">{{t21|3}}</span>
+<span aria-hidden="true" class="hv-pin m-text-3" style="left:72%;top:84%">{{t24|4}}</span>
+</div>
+</div>
+</div>
+</section>{{/sec_heavy}}
+
+{{#sec_fund}}<section data-8b-section="the brighter fund" id="fund">
+<div class="fd-splash">
+<svg aria-hidden="true" class="fd-bg" preserveaspectratio="none" viewbox="0 0 640 420"><path d="M596.5 187.2C596.8 220.5 584.3 267.2 566.7 301.1C549.2 335.1 542 339.5 508.7 357.2C475.4 374.8 442.4 385.4 400.2 389.3C358 393.3 337.3 380.5 297.6 376.9C257.9 373.4 229.8 378.2 201.6 371.5C173.3 364.7 182.3 359.1 156.4 343.3C130.5 327.6 90.3 319.4 72 292.6C53.7 265.8 65.8 241.7 65 209.3C64.2 176.9 58 152.6 68.1 130.6C78.2 108.6 87.8 112 115.5 99.3C143.2 86.6 163 80.7 206.6 67.3C250.1 53.8 285.2 36.8 333.1 32C381 27.2 413.6 36.4 445.9 43.3C478.3 50.2 471 48.2 494.8 66.5C518.6 84.8 544.7 110.8 565 134.9C585.3 159.1 596.1 154 596.5 187.2Z"></path></svg>
+<h2 class="m-text-2">{{t54|The brighter}}<br/>{{t55|fund}}</h2>
+<svg aria-hidden="true" class="fd-under" data-8b-motion="scrawl" preserveaspectratio="none" viewbox="0 0 200 14"><path d="M3 8c30-6 60 4 96 0s64-6 98 1"></path></svg>
+<p class="m-text-7">{{t56|Five cents of every dollar buys markers, paper and studio time for youth art clubs near our stockists.}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t57|Nominate a club}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+</div>
+<div class="fd-photos">
+<figure class="fd-photo m-sticker" data-8b-motion="slap" data-turn="-12"><img alt="A girl in a mustard dress and a red flower headband holding a paintbrush" height="648" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1581688550502-f86e852fdee9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fGdpcmwlMjBwYWludGluZyUyMHBhcGVyJTIwcGFpbnRicnVzaHxlbnwxfDB8fHwxNzkxMjcyNTA3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#404026" width="900"/></figure>
+<figure class="fd-photo m-sticker" data-8b-motion="slap" data-turn="10"><img alt="A boy leaning over a table, painting with a watercolour set" height="600" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1536221993589-9edbbca2c7fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8a2lkcyUyMGFydCUyMGNsYXNzJTIwcGFpbnRpbmd8ZW58MXwwfHx8MTc5MTIzNjQ0MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#8ca6a6" width="900"/></figure>
+<div class="fd-note" data-8b-motion="peel" data-turn="8"><p class="m-text-6">{{t58|This year}}</p><p class="m-text">{{t59|Workshops in nine cities, led by the kids who drew our last two drops.}}</p></div>
+</div>
+</section>{{/sec_fund}}
+
+{{#sec_drops}}<section data-8b-section="drop calendar" id="drops">
+<div class="ds-head">
+<h2 class="m-text-2">{{t60|Drop}}<br/>{{t61|calendar}}</h2>
+<p class="m-text-7">{{t62|New ink lands every other Friday at 6 pm CET. Sold-out drops never come back.}}</p>
+<svg aria-hidden="true" data-8b-motion="scrawl" viewbox="0 0 120 50"><path d="M4 10c30 4 70 12 100 30M88 42l18 0-6-16"></path></svg>
+</div>
+<div class="ds-board">
+<ol class="ds-list">
+<li class="ds-row" data-next=""><time class="ds-date m-text-3" datetime="2026-10-09">{{t63|09 Oct}}</time><span class="m-text-6">{{t64|Loud Weather, part two}}</span><span class="m-badge">{{t65|Rainy}}</span><span class="ds-count m-text-5">{{t66|8 pieces}}</span><a class="m-link" href="#contact"><span class="m-link__label">{{t67|Remind me}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a></li>
+<li class="ds-row"><time class="ds-date m-text-3" datetime="2026-10-23">{{t68|23 Oct}}</time><span class="m-text-6">{{t69|Night Bus}}</span><span class="m-badge">{{t70|Sleepy}}</span><span class="ds-count m-text-5">{{t71|6 pieces}}</span><a class="m-link" href="#contact"><span class="m-link__label">{{t67|Remind me}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a></li>
+<li class="ds-row"><time class="ds-date m-text-3" datetime="2026-11-06">{{t72|06 Nov}}</time><span class="m-text-6">{{t73|Paper Planes}}</span><span class="m-badge">{{t74|Restless}}</span><span class="ds-count m-text-5">{{t75|10 pieces}}</span><a class="m-link" href="#contact"><span class="m-link__label">{{t67|Remind me}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a></li>
+<li class="ds-row"><time class="ds-date m-text-3" datetime="2026-11-20">{{t76|20 Nov}}</time><span class="m-text-6">{{t77|Kind of Blue}}</span><span class="m-badge">{{t78|Soft}}</span><span class="ds-count m-text-5">{{t79|7 pieces}}</span><a class="m-link" href="#contact"><span class="m-link__label">{{t67|Remind me}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a></li>
+<li class="ds-row"><time class="ds-date m-text-3" datetime="2026-12-04">{{t80|04 Dec}}</time><span class="m-text-6">{{t81|Snow Doodles}}</span><span class="m-badge">{{t82|Cosy}}</span><span class="ds-count m-text-5">{{t83|9 pieces}}</span><a class="m-link" href="#contact"><span class="m-link__label">{{t67|Remind me}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a></li>
+</ol>
+<span aria-hidden="true" class="ds-mark"></span>
+</div>
+</section>{{/sec_drops}}
+
+{{#sec_faq}}<section data-8b-section="questions" id="faq">
+<div class="fq-splash" data-8b-motion="slap" data-turn="-8">
+<svg aria-hidden="true" class="fq-bg" preserveaspectratio="none" viewbox="0 0 420 420"><path d="M376.1 189.1C374.8 212.9 360 241.4 349 273.7C338 306 342.2 335.1 321.2 350.5C300.1 366 270.7 337.5 243.7 350.9C216.7 364.3 213.5 424.5 186.3 417.5C159 410.5 129.6 346.4 107.3 315.9C84.9 285.3 86.4 287.2 74.5 264.7C62.6 242.3 51 232.1 47.9 203.6C44.7 175.1 42.3 145.6 58.7 122.3C75.2 99.1 103.6 101 130.3 87.5C157 74 170.4 66.2 192.3 54.8C214.1 43.4 215.7 29.1 239.7 30.7C263.6 32.2 289 37.8 312.1 62.7C335.2 87.5 342.5 129.8 355.3 155.1C368.1 180.4 377.4 165.4 376.1 189.1Z"></path></svg>
+<h2 class="m-text-2">{{t84|Ask us}}<br/>{{t85|anything}}</h2>
+<svg aria-hidden="true" class="fq-arrow" data-8b-motion="scrawl" viewbox="0 0 90 40"><path d="M4 30c24-14 46-18 76-14M66 4l14 12-14 12"></path></svg>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t86|hello@scrawl.example}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+</div>
+<div class="fq-list">
+<details><summary><span class="m-text-6">{{t87|When do drops land?}}</span><span aria-hidden="true" class="m-btn-3"><svg viewbox="0 0 20 20"><path d="M10 4v12M4 10h12"></path></svg></span></summary><p class="m-text">{{t88|Every other Friday at 6 pm CET, online and in the studio shop at the same minute. The calendar above lists the next five.}}</p></details>
+<details><summary><span class="m-text-6">{{t89|How do I send a doodle?}}</span><span aria-hidden="true" class="m-btn-3"><svg viewbox="0 0 20 20"><path d="M10 4v12M4 10h12"></path></svg></span></summary><p class="m-text">{{t90|Photograph it in daylight and email it to doodles@scrawl.example before the last Sunday of the month. Paper, napkins and phone sketches all count.}}</p></details>
+<details><summary><span class="m-text-6">{{t91|What if my doodle is picked?}}</span><span aria-hidden="true" class="m-btn-3"><svg viewbox="0 0 20 20"><path d="M10 4v12M4 10h12"></path></svg></span></summary><p class="m-text">{{t92|You get a fee, ten percent of the print's sales, a box of the finished pieces and your name on every tag.}}</p></details>
+<details><summary><span class="m-text-6">{{t93|Shipping and returns}}</span><span aria-hidden="true" class="m-btn-3"><svg viewbox="0 0 20 20"><path d="M10 4v12M4 10h12"></path></svg></span></summary><p class="m-text">{{t94|We ship worldwide in recycled mailers. Returns are free within 30 days, unworn and unwashed.}}</p></details>
+<details><summary><span class="m-text-6">{{t95|How do the sizes run?}}</span><span aria-hidden="true" class="m-btn-3"><svg viewbox="0 0 20 20"><path d="M10 4v12M4 10h12"></path></svg></span></summary><p class="m-text">{{t96|Boxy and a touch long. Take your usual size for the intended fit, one down for a closer one.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section data-8b-section="studio and contact" id="contact">
+<h2 class="ct-say m-text-2" style="--len:6">{{t97|Say hi}}<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 1c1 7 4 10 11 11-7 1-10 4-11 11-1-7-4-10-11-11 7-1 10-4 11-11z"></path></svg></h2>
+<ul class="ct-tapes">
+<li class="m-tape"><span class="m-text-5">{{t98|Studio and shop}}</span><span class="m-text-6">{{t99|Ozumba Mbadiwe Avenue 1, Kano}}</span></li>
+<li class="m-tape"><span class="m-text-5">{{t100|Open}}</span><span class="m-text-6">{{t101|Thursday to Sunday, 11:00 to 19:00}}</span></li>
+<li class="m-tape"><span class="m-text-5">{{t102|Write}}</span><a class="m-text-6" data-8b-placeholder="email" href="#ub-contact">{{t86|hello@scrawl.example}}</a></li>
+<li class="m-tape"><span class="m-text-5">{{t103|Call}}</span><a class="m-text-6" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t104|⟦phone⟧}}</a></li>
+<li class="m-tape"><span class="m-text-5">{{t105|Doodles}}</span><a class="m-text-6" data-8b-placeholder="email" href="#ub-contact">{{t106|doodles@scrawl.example}}</a></li>
+</ul>
+<figure class="ct-photo m-sticker"><img alt="The studio shop: a yellow rail of hoodies and tees under three framed prints" height="667" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1761682719767-36b43e4acd63?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGNsb3RoaW5nJTIwc3RvcmUlMjBpbnRlcmlvciUyMHJhaWxzJTIwd2FybSUyMGxpZ2h0fGVufDF8MHx8fDE3OTEyNzI1NDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=670&q=60}}" style="background:#c0c0c0" width="1000"/></figure>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Streetwear Brand by <a href="https://github.com/8bsite/streetwear-brand-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<a aria-label="{{name}}, back to top" class="ft-logo" href="#process"><span class="m-text-3">{{t2|Scrawl}}</span><svg aria-hidden="true" data-8b-motion="scrawl" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M3 6c18-4 30 3 48 0s34-4 66 1"></path></svg></a>
+<p class="m-text-6">{{t107|Drawn by people. Worn by people.}}</p>
+<nav aria-label="Footer">
+<a class="m-link" href="#heavy"><span class="m-link__label">{{t3|Shop}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#drops"><span class="m-link__label">{{t4|Drops}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#crew"><span class="m-link__label">{{t5|Crew}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#faq"><span class="m-link__label">{{t108|Help}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" href="#contact"><span class="m-link__label">{{t6|Studio}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+</nav>
+<div class="ft-social">
+<a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/"><span class="m-link__label">{{t109|Instagram}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" data-8b-placeholder="social" href="https://www.tiktok.com/"><span class="m-link__label">{{t110|TikTok}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+<a class="m-link" data-8b-placeholder="social" href="https://www.youtube.com/"><span class="m-link__label">{{t111|YouTube}}</span><svg aria-hidden="true" class="m-link__line" preserveaspectratio="none" viewbox="0 0 120 10"><path d="M2 6c14-5 22 4 36 0s24-5 38 0 26 4 42-1"></path></svg></a>
+</div>
+<p class="ft-copy m-text-5">{{t112|© 2026 ⟦name⟧. All rights reserved. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t113|8B}}</a></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  if (!nav) return;
+  const sheet = nav.querySelector('.nav-sheet'), open = nav.querySelector('.nav-menu'), close = nav.querySelector('.nav-close');
+  const setOpen = state => {
+    if (state) { sheet.setAttribute('data-open', ''); window.lenis?.stop(); close.focus(); }
+    else { sheet.removeAttribute('data-open'); window.lenis?.start(); }
+    open.setAttribute('aria-expanded', String(state));
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => { setOpen(false); open.focus(); });
+  sheet.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && sheet.hasAttribute('data-open')) { setOpen(false); open.focus(); } });
+  let last = scrollY, travel = 0;
+  const onScroll = () => {
+    const y = scrollY, d = y - last;
+    last = y;
+    if (y > 8) nav.setAttribute('data-scrolled', ''); else nav.removeAttribute('data-scrolled');
+    if (d === 0) return;
+    travel = Math.sign(d) === Math.sign(travel) ? travel + d : d;
+    if (y < 140 || travel < -12) nav.removeAttribute('data-hidden');
+    else if (travel > 12 && !nav.contains(document.activeElement)) nav.setAttribute('data-hidden', '');
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navOffset() { const nav = document.getElementById('nav'); return nav ? nav.offsetHeight : 0; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .1, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  slap(element, vars = {}) {
+    const turn = element.dataset.turn ? +element.dataset.turn : 9;
+    return gsap.timeline(vars).from(element, { scale: 1.22, rotation: '+=' + turn, y: -26, autoAlpha: 0, duration: .55, ease: 'back.out(2.2)' });
+  },
+  scrawl(element, vars = {}) {
+    const paths = element.matches('path, line, polyline, circle') ? [element] : [...element.querySelectorAll('path, line, polyline, circle')];
+    const timeline = gsap.timeline(vars);
+    paths.forEach((path, i) => {
+      const length = Math.ceil(path.getTotalLength ? path.getTotalLength() : 200) + 2;
+      timeline.fromTo(path, { strokeDasharray: length, strokeDashoffset: length }, { strokeDashoffset: 0, duration: .7, ease: 'power2.inOut', clearProps: 'strokeDasharray,strokeDashoffset' }, i * .12);
+    });
+    return timeline;
+  },
+  peel(element, vars = {}) {
+    const turn = element.dataset.turn ? +element.dataset.turn : -10;
+    return gsap.timeline(vars).from(element, { rotation: '+=' + turn, yPercent: 14, ease: 'none', duration: 1 });
+  }
+};
+const motionBindings = {
+  slap: element => {
+    const group = element.parentElement ? [...element.parentElement.children].filter(child => child.matches('[data-8b-motion~="slap"]')) : [element];
+    return { trigger: element, start: 'top 88%', once: true, animation: effects.slap(element, { delay: Math.max(0, group.indexOf(element)) * .08 }) };
+  },
+  scrawl: element => ({ trigger: element, start: 'top 86%', once: true, animation: effects.scrawl(element) }),
+  peel: element => ({ trigger: element, start: 'top bottom', end: 'center 55%', scrub: .6, animation: effects.peel(element) })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(motionBindings).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, i) => ScrollTrigger.create({ id: `${id}:${i}`, ...motionBindings[name](element) }));
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:process-track">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('process');
+    const stage = section.querySelector('.pr-stage'), track = section.querySelector('.pr-track');
+    section.setAttribute('data-track', '');
+    const run = () => Math.max(1, track.scrollWidth - innerWidth);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'process-track', trigger: stage, pin: true, start: 'top top', end: () => '+=' + run(), scrub: .6, invalidateOnRefresh: true
+    } })
+      .to(track, { x: () => -run(), duration: 1 }, 0)
+      .fromTo(section.querySelector('.pr-line'), { clipPath: 'inset(0% 100% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .9 }, 0);
+    section.querySelectorAll('.pr-step').forEach((step, i) => {
+      gsap.from(step.querySelector('.pr-photo'), { rotation: '+=' + (i % 2 ? 12 : -12), scale: .84, ease: 'none', scrollTrigger: {
+        id: `process-track:step-${i + 1}`, trigger: step, containerAnimation: timeline, start: 'left 96%', end: 'center 52%', scrub: true
+      } });
+    });
+    return () => section.removeAttribute('data-track');
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:crew-unpack">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('crew');
+    const wall = section.querySelector('.cw-wall'), items = [...wall.querySelectorAll('.cw-item')];
+    const towards = (item, axis) => axis === 'x'
+      ? (wall.offsetWidth / 2 - (item.offsetLeft + item.offsetWidth / 2)) * .9
+      : (Math.min(wall.offsetHeight, innerHeight) / 2 - (item.offsetTop + item.offsetHeight / 2)) * .9;
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'crew-unpack', trigger: wall, start: 'top 85%', end: 'center 55%', scrub: .6, invalidateOnRefresh: true
+    } });
+    items.forEach((item, i) => timeline.from(item, {
+      x: () => towards(item, 'x'), y: () => towards(item, 'y'), rotation: () => '+=' + [-18, 14, -10, 16, -13, 10][i % 6], scale: .8,
+      duration: .5, ease: 'power2.out'
+    }, i * .06));
+  });
+}, { near: document.querySelector('#crew .cw-wall') });
+</script>
+<script data-8b-part="scene:heavy-tour">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('heavy');
+    const stage = section.querySelector('.hv-stage'), frame = section.querySelector('.hv-frame'), zoom = section.querySelector('.hv-zoom');
+    const items = [...section.querySelectorAll('.hv-item')], rings = [...section.querySelectorAll('.hv-marks ellipse')];
+    const S = 2.2, step = 1.6;
+    const clamp = (value, size) => Math.min(0, Math.max(size - size * S, value));
+    const panX = i => clamp(frame.offsetWidth * (.5 - +items[i].dataset.x / 100 * S), frame.offsetWidth);
+    const panY = i => clamp(frame.offsetHeight * (.5 - +items[i].dataset.y / 100 * S), frame.offsetHeight);
+    let active = -1;
+    const setActive = index => {
+      if (index === active) return;
+      items.forEach((item, i) => i === index ? item.setAttribute('data-active', '') : item.removeAttribute('data-active'));
+      active = index;
+    };
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'heavy-tour', trigger: stage, pin: true, start: () => innerWidth < 900 ? 'top top+=16' : 'center center', end: () => '+=' + innerHeight * 3,
+      scrub: .6, invalidateOnRefresh: true,
+      onUpdate: self => {
+        const time = self.progress * timeline.duration();
+        const index = Math.floor((time - .5) / step);
+        setActive(time > .5 && index < items.length && (time - .5) % step < step - .2 ? index : -1);
+      }
+    } });
+    items.forEach((item, i) => {
+      const length = Math.ceil(rings[i].getTotalLength()) + 2;
+      timeline
+        .to(zoom, { scale: S, x: () => panX(i), y: () => panY(i), duration: 1 }, i * step)
+        .fromTo(rings[i], { strokeDasharray: length, strokeDashoffset: length }, { strokeDashoffset: 0, duration: .5, ease: 'none' }, i * step + .6);
+    });
+    timeline.to(zoom, { scale: 1, x: 0, y: 0, duration: 1 }, items.length * step);
+    return () => setActive(-1);
+  });
+});
+</script>
+<script data-8b-part="scene:drops-marker">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('drops');
+    const list = section.querySelector('.ds-list'), mark = section.querySelector('.ds-mark');
+    const rows = [...list.querySelectorAll('.ds-row')];
+    section.setAttribute('data-marking', '');
+    let current = -1, sweep;
+    const place = (index, instant) => {
+      if (index === current && !instant) return;
+      current = index;
+      const row = rows[index], base = mark.offsetHeight || 100;
+      sweep?.kill();
+      if (instant) { gsap.set(mark, { y: row.offsetTop, scaleY: row.offsetHeight / base, scaleX: 1, transformOrigin: '0% 0%' }); return; }
+      sweep = gsap.timeline()
+        .to(mark, { scaleX: 0, transformOrigin: '100% 0%', duration: .16, ease: 'power2.in' })
+        .set(mark, { y: row.offsetTop, scaleY: row.offsetHeight / base })
+        .to(mark, { scaleX: 1, transformOrigin: '0% 0%', duration: .34, ease: 'power3.out' });
+    };
+    const indexAt = progress => Math.min(rows.length - 1, Math.max(0, Math.floor(progress * rows.length)));
+    ScrollTrigger.create({
+      id: 'drops-marker', trigger: list, start: 'top 62%', end: 'bottom 42%',
+      onUpdate: self => place(indexAt(self.progress)),
+      onRefresh: self => place(indexAt(self.progress), true)
+    });
+    return () => { sweep?.kill(); section.removeAttribute('data-marking'); };
+  });
+}, { near: document.querySelector('#drops .ds-list') });
+</script>
+<script data-8b-part="scene:contact-say">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const tapes = [...section.querySelectorAll('.ct-tapes .m-tape')];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'contact-say', trigger: section, start: 'top 90%', end: 'center 55%', scrub: .6, invalidateOnRefresh: true
+    } })
+      .from(section.querySelector('.ct-say'), { scale: () => innerWidth < 900 ? 1.7 : 2.3, duration: 1, ease: 'power2.out' }, 0);
+    tapes.forEach((tape, i) => timeline.from(tape, {
+      x: () => (i % 2 ? 1 : -1) * Math.min(220, innerWidth * .3), rotation: () => '+=' + (i % 2 ? 16 : -14), duration: .6
+    }, .2 + i * .08));
+    timeline.from(section.querySelector('.ct-photo'), { y: 140, rotation: '+=12', duration: .7 }, .12);
+  });
+}, { near: document.getElementById('contact') });
+</script>
+</body>
+</html>

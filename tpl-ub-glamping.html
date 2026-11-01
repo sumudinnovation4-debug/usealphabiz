@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYwz_0dZAGKJJ4t3FFkc3Q8AkNP9Pj20cKEEQgs.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYwz_0dZAGKJJ4t3FFkc3Q8AkNP9Pj20cKEHwgsm6Y.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYwz_0dZAGKJJ4t3FFkc3Q8AkNP9Pj20cKEEQgs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmS-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnj-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnx-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AE, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F8D0-1F8D8, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FAC6, U+1FAC8, U+1FACC-1FADD, U+1FADF-1FAEB, U+1FAEF-1FAFA, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmR-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #eef0f7;
+  --color-2: #211c55;
+  --color-3: #ffffff;
+  --color-4: #0d0b27;
+  --color-5: #f2783f;
+  --color-6: #57547a;
+  --color-7: #b8c1ee;
+  --color-8: #e7b6cb;
+  --color-9: #323d80;
+  --font-1: "Gabarito", "Gabarito Fallback", Arial, sans-serif;
+  --font-2: "Onest", "Onest Fallback", Arial, sans-serif;
+  --radius-1: clamp(28px, 3.4vw, 44px);
+  --radius-2: clamp(20px, 2.2vw, 28px);
+  --radius-3: 999px;
+  --shadow-1: 0 26px 60px -26px color-mix(in srgb, var(--color-4) 55%, transparent);
+  --space-1: clamp(8px, 1.6vw, 22px);
+  --space-2: clamp(20px, 4.6vw, 64px);
+  --space-3: clamp(88px, 12vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 97.7%; ascent-override: 96.2%; descent-override: 26.6%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 90%; ascent-override: 104.4%; descent-override: 28.9%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.7%; ascent-override: 91.8%; descent-override: 29.3%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 93%; ascent-override: 104.3%; descent-override: 33.3%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+::selection { background: var(--color-7); color: var(--color-2); }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 9.6vw, 150px); font-weight: 500; line-height: .92; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(42px, 6.2vw, 92px); font-weight: 500; line-height: .96; letter-spacing: -.03em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 23px; font-weight: 500; line-height: 1.15; letter-spacing: -.012em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.35; letter-spacing: .01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(17px, 1.45vw, 20px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-btn { display: inline-flex; align-items: center; gap: 14px; min-height: 54px; padding: 7px 7px 7px 24px; border: 0; border-radius: var(--radius-3); background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1.4; letter-spacing: 0; white-space: nowrap; }
+.m-btn__label { display: block; overflow: hidden; height: 1.4em; }
+.m-btn__text { display: block; text-shadow: 0 -1.6em currentColor; transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+.m-btn__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-5); color: var(--color-4); flex: none; transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+.m-btn__icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__text { transform: translateY(1.6em); }
+  .m-btn:hover .m-btn__icon { transform: rotate(-45deg); }
+}
+.m-btn-2 { display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 22px; border: 0; border-radius: var(--radius-3); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1.4; letter-spacing: 0; white-space: nowrap; box-shadow: var(--shadow-1); }
+.m-btn-2__label { display: block; overflow: hidden; height: 1.4em; }
+.m-btn-2__text { display: block; text-shadow: 0 -1.6em currentColor; transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+.m-btn-2__arrow { width: 18px; height: 18px; fill: none; stroke: var(--color-5); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn-2:hover .m-btn-2__text { transform: translateY(1.6em); }
+  .m-btn-2:hover .m-btn-2__arrow { transform: rotate(-45deg); }
+}
+.m-icon { display: inline-grid; place-items: center; width: 46px; height: 46px; padding: 0; border: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); border-radius: 50%; background: var(--color-3); color: var(--color-2); flex: none; transition: background-color .35s ease, color .35s ease, border-color .35s ease; }
+.m-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: transform .45s cubic-bezier(.6, 0, .2, 1); }
+.m-icon[aria-current="true"] { background: var(--color-2); color: var(--color-3); }
+@media (hover: hover) {
+  .m-icon:hover { background: var(--color-5); border-color: var(--color-5); color: var(--color-4); }
+  .m-icon:hover svg { transform: translateY(-3px); }
+}
+.m-link { display: inline; padding-bottom: 3px; font-weight: 500; background-image: linear-gradient(currentColor, currentColor), linear-gradient(color-mix(in srgb, currentColor 30%, transparent), color-mix(in srgb, currentColor 30%, transparent)); background-repeat: no-repeat; background-position: 50% 100%, 0 100%; background-size: 0% 2px, 100% 1px; transition: background-size .45s cubic-bezier(.6, 0, .2, 1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 2px, 100% 1px; }
+}
+.m-surface { background: var(--color-3); color: var(--color-2); border-radius: var(--radius-2); padding: 26px; box-shadow: var(--shadow-1); }
+.m-surface-2 { background: color-mix(in srgb, var(--color-3) 66%, transparent); color: var(--color-2); border: 1px solid color-mix(in srgb, var(--color-3) 75%, transparent); border-radius: var(--radius-2); padding: 24px; -webkit-backdrop-filter: blur(18px) saturate(1.3); backdrop-filter: blur(18px) saturate(1.3); }
+.m-badge { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-2); font-size: 13.5px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-badge svg { width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.m-field { position: relative; display: grid; gap: 0; min-width: 0; font-family: var(--font-2); }
+.m-field__label { font-size: 11.5px; font-weight: 500; line-height: 1.3; color: var(--color-6); }
+.m-field__control { appearance: none; -webkit-appearance: none; width: 100%; min-width: 0; padding: 0 22px 0 0; border: 0; border-radius: 0; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0 center / 16px; font-size: 15px; font-weight: 600; line-height: 1.4; color: var(--color-2); cursor: pointer; }
+.m-field-2 { display: grid; gap: 6px; min-width: 0; font-family: var(--font-2); }
+.m-field-2__label { font-size: 13px; font-weight: 500; line-height: 1.35; color: var(--color-6); }
+.m-field-2__control { width: 100%; min-width: 0; min-height: 52px; padding: 12px 18px; border: 1px solid color-mix(in srgb, var(--color-2) 22%, transparent); border-radius: 18px; background: var(--color-1); font-size: 16px; font-weight: 400; line-height: 1.4; color: var(--color-2); transition: border-color .3s ease, background-color .3s ease; }
+select.m-field-2__control { appearance: none; -webkit-appearance: none; padding-right: 44px; background: var(--color-1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 16px center / 18px; }
+textarea.m-field-2__control { min-height: 116px; resize: vertical; }
+.m-field-2__control:focus-visible { border-color: var(--color-2); background-color: var(--color-3); }
+.m-frame { position: relative; overflow: hidden; border: 8px solid var(--color-3); border-radius: var(--radius-1); background: var(--color-7); isolation: isolate; }
+.m-frame > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.m-mark { display: inline-block; width: 24px; height: 24px; flex: none; border-radius: 50%; background: linear-gradient(180deg, var(--color-5) 0 56%, transparent 56% 66%, currentColor 66%); }
+@media (max-width: 719px) {
+  .m-text-4 { font-size: 21px; }
+  .m-frame { border-width: 5px; }
+  .m-surface { padding: 20px; }
+  .m-surface-2 { padding: 18px; }
+}
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation .nav__bar { position: fixed; z-index: 40; top: calc(var(--space-1) + 18px); left: calc(var(--space-1) + 18px); right: calc(var(--space-1) + 18px); display: flex; justify-content: space-between; align-items: center; gap: 12px; pointer-events: none; transition: transform .55s cubic-bezier(.6, 0, .2, 1); }
+#navigation .nav__bar > * { pointer-events: auto; }
+#navigation .nav__bar[data-hidden] { transform: translateY(calc(-100% - var(--space-1) - 28px)); }
+#navigation .nav__brand { padding-left: 14px; font-family: var(--font-1); font-size: 19px; letter-spacing: -.01em; }
+#navigation .nav__brand .m-mark { color: var(--color-2); }
+#navigation .nav__end { display: flex; align-items: center; gap: 10px; }
+#navigation .nav__menu { width: 52px; height: 52px; border: 0; box-shadow: var(--shadow-1); }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 60; display: grid; padding: var(--space-1); background: color-mix(in srgb, var(--color-4) 55%, transparent); }
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__panel { position: relative; display: grid; align-content: space-between; gap: 32px; overflow: auto; padding: clamp(24px, 4vw, 56px); border-radius: var(--radius-1); background: var(--color-4); color: var(--color-3); }
+#navigation .nav__panel :focus-visible { outline-color: var(--color-7); }
+#navigation .nav__close { position: absolute; top: clamp(18px, 3vw, 40px); right: clamp(18px, 3vw, 40px); }
+#navigation .nav__links { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 10px clamp(32px, 6vw, 96px); padding-top: 56px; }
+#navigation .nav__links a { font-family: var(--font-1); font-weight: 500; font-size: clamp(30px, 4.6vw, 64px); line-height: 1.15; letter-spacing: -.025em; }
+#navigation .nav__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; color: var(--color-7); }
+@media (max-width: 719px) {
+  #navigation .nav__bar { top: calc(var(--space-1) + 10px); left: calc(var(--space-1) + 10px); right: calc(var(--space-1) + 10px); }
+  #navigation .nav__brand { min-height: 46px; padding: 6px 16px 6px 10px; font-size: 17px; }
+  #navigation .nav__book { min-height: 46px; padding: 6px 16px; font-size: 14px; }
+  #navigation .nav__menu { width: 46px; height: 46px; }
+  #navigation .nav__links { grid-template-columns: 1fr; }
+}
+@media (max-width: 380px) {
+  #navigation .nav__book .m-btn-2__arrow { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; --op-title-size: clamp(54px, 9.6vw, 150px); --op-title-top: clamp(110px, 15vh, 150px); --op-drift-s: 1.09; --op-drift-x: 48px; }
+#opening .op__stage { position: sticky; top: 0; height: 100svh; min-height: 560px; overflow: hidden; background: var(--color-1); }
+#opening .op__rim { position: absolute; inset: 0; background: var(--color-3); clip-path: inset(var(--space-1) round calc(var(--radius-1) + 8px)); }
+#opening .op__window { position: absolute; inset: 0; overflow: hidden; clip-path: inset(calc(var(--space-1) + 8px) round var(--radius-1)); background: var(--color-9); }
+#opening .op__in-media, #opening .op__layer, #opening .op__dusk, #opening .op__night { position: absolute; inset: 0; }
+#opening .op__layer { overflow: hidden; }
+#opening .op__drift { position: absolute; inset: 0; }
+#opening .op__drift img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+#opening .op__fg { visibility: hidden; }
+#opening .op__glow { position: absolute; left: 14%; top: 34%; width: 34%; height: 30%; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in srgb, var(--color-8) 70%, transparent), transparent); mix-blend-mode: screen; }
+#opening .op__shade { position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--color-4) 38%, transparent) 0%, color-mix(in srgb, var(--color-4) 8%, transparent) 46%, transparent 62%), radial-gradient(42% 34% at 17% 52%, color-mix(in srgb, var(--color-4) 66%, transparent), transparent); }
+#opening .op__title-wrap { position: absolute; left: 0; right: 0; top: var(--op-title-top); display: flex; justify-content: center; padding: 0 var(--space-2); }
+#opening .op__title { font-size: var(--op-title-size); color: var(--color-3); text-align: center; }
+#opening .op__dusk { opacity: 0; background: linear-gradient(180deg, var(--color-4) 0%, color-mix(in srgb, var(--color-4) 82%, var(--color-9)) 55%, color-mix(in srgb, var(--color-4) 55%, var(--color-9)) 100%); }
+#opening .op__night { width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+#opening .op__ui { position: absolute; inset: calc(var(--space-1) + 8px); }
+#opening .op__ui > * { position: absolute; }
+#opening .op__in-rail { left: -6px; top: 0; bottom: 0; display: flex; align-items: center; }
+#opening .op__rail { display: grid; gap: 12px; }
+#opening .op__rail ul { display: grid; gap: 6px; padding: 6px; border-radius: var(--radius-3); background: color-mix(in srgb, var(--color-3) 62%, transparent); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border: 1px solid color-mix(in srgb, var(--color-3) 70%, transparent); }
+#opening .op__rail .m-icon { width: 42px; height: 42px; border: 0; background: transparent; }
+#opening .op__rail .m-icon[aria-current="true"] { background: var(--color-3); color: var(--color-2); }
+#opening .op__avatar { display: block; width: 42px; height: 42px; overflow: hidden; border-radius: 50%; border: 2px solid var(--color-3); }
+#opening .op__avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+#opening .op__in-search { left: 0; right: 0; top: 10px; display: flex; justify-content: center; pointer-events: none; }
+#opening .op__search { pointer-events: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; align-items: center; gap: 0; width: min(620px, 52vw); min-height: 58px; padding: 6px 6px 6px 8px; border-radius: var(--radius-3); background: var(--color-3); box-shadow: var(--shadow-1); }
+#opening .op__search .m-field { padding: 0 18px; border-right: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent); }
+#opening .op__search .m-field:nth-child(3) { border-right: 0; }
+#opening .op__search .m-icon { width: 46px; height: 46px; border: 0; background: var(--color-2); color: var(--color-3); }
+#opening .op__in-lead { left: calc(70px + 2vw); top: 45%; width: min(290px, 25vw); }
+#opening .op__lead { color: var(--color-3); font-size: 15px; line-height: 1.55; }
+#opening .op__in-card-l { left: calc(70px + 2vw); bottom: 20px; width: min(340px, 30vw); }
+#opening .op__card-l { display: grid; gap: 12px; }
+#opening .op__card-l .m-text { font-size: 14px; line-height: 1.55; color: var(--color-6); }
+#opening .op__count { display: flex; align-items: center; gap: 14px; margin-top: 4px; }
+#opening .op__figure { font-family: var(--font-1); font-weight: 500; font-size: 52px; line-height: 1; letter-spacing: -.03em; }
+#opening .op__count p { display: grid; }
+#opening .op__thumbs { display: flex; margin-left: auto; }
+#opening .op__thumbs li { width: 46px; height: 46px; margin-left: -12px; overflow: hidden; border: 3px solid var(--color-3); border-radius: 50%; }
+#opening .op__thumbs img { width: 100%; height: 100%; object-fit: cover; }
+#opening .op__in-card-r { right: 20px; bottom: 20px; width: min(370px, 31vw); }
+#opening .op__card-r { display: grid; gap: 10px; }
+#opening .op__card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+#opening .op__addr { display: flex; align-items: center; gap: 6px; }
+#opening .op__addr svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; }
+#opening .op__card-r .m-text { font-size: 14px; line-height: 1.55; }
+#opening .op__specs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#opening .op__seal { right: calc(20px + min(370px, 31vw) - 18px); bottom: 0; display: grid; place-items: center; width: 92px; height: 92px; border: 6px solid var(--color-3); border-radius: 50%; background: var(--color-2); color: var(--color-3); }
+#opening .op__seal .m-mark { width: 36px; height: 36px; }
+#opening .op__night-screen { position: relative; z-index: 2; display: grid; place-items: center; height: 100svh; min-height: 560px; overflow: hidden; padding: var(--space-3) var(--space-2); background: var(--color-4); color: var(--color-3); text-align: center; }
+#opening .op__night-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#opening .op__night-screen::before { content: ""; position: absolute; inset: 0; z-index: 1; background: radial-gradient(70% 60% at 50% 50%, color-mix(in srgb, var(--color-4) 55%, transparent), transparent); }
+#opening .op__night-copy { position: relative; z-index: 2; display: grid; justify-items: center; gap: 26px; max-width: 760px; }
+#opening .op__night-copy .m-text-6 { max-width: 600px; }
+#opening .op__night-copy :focus-visible { outline-color: var(--color-3); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__in-media { animation: op-settle 1.1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__title-wrap { animation: op-rise .9s .1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__in-search { animation: op-drop .8s .3s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__in-lead { animation: op-rise .8s .35s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__in-card-l { animation: op-left .8s .4s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__in-card-r { animation: op-right .8s .4s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__in-rail { animation: op-left .7s .25s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op__drift { animation: op-drift 9s ease-in-out infinite alternate; }
+  #opening .op__glow { animation: op-glow 6s ease-in-out infinite alternate; }
+  #opening[data-loops="paused"] .op__drift, #opening[data-loops="paused"] .op__glow { animation-play-state: paused; }
+}
+@keyframes op-settle { from { transform: scale(1.1); } }
+@keyframes op-rise { from { transform: translateY(46px); opacity: 0; } }
+@keyframes op-drop { from { transform: translateY(-24px); opacity: 0; } }
+@keyframes op-left { from { transform: translateX(-40px); opacity: 0; } }
+@keyframes op-right { from { transform: translateX(40px); opacity: 0; } }
+@keyframes op-drift { from { transform: translateX(calc(var(--op-drift-x) * -1)) scale(var(--op-drift-s)); } to { transform: translateX(var(--op-drift-x)) scale(var(--op-drift-s)); } }
+@keyframes op-glow { from { transform: scale(.85); opacity: .55; } to { transform: scale(1.25); opacity: 1; } }
+@media (max-width: 1023px) {
+  #opening .op__in-rail { display: none; }
+  #opening .op__in-lead, #opening .op__in-card-l { left: 20px; }
+  #opening .op__search { width: min(560px, 58vw); }
+}
+@media (max-width: 719px) {
+  #opening { --op-title-size: clamp(46px, 14.6vw, 64px); --op-title-top: 84px; --op-drift-s: 1.25; --op-drift-x: 36px; }
+  #opening .op__drift img { object-position: 52% 0%; }
+  #opening .op__glow { left: 0; width: 60%; }
+  #opening .op__shade { background: linear-gradient(180deg, color-mix(in srgb, var(--color-4) 42%, transparent) 0%, color-mix(in srgb, var(--color-4) 48%, transparent) 46%, transparent 66%); }
+  #opening .op__title-wrap { padding: 0 16px; }
+  #opening .op__in-search { left: 12px; right: 12px; top: calc(var(--op-title-top) - var(--space-1) - 8px + var(--op-title-size) * 1.84 + 18px); }
+  #opening .op__search { width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; min-height: 56px; padding: 5px 5px 5px 4px; }
+  #opening .op__search .m-field { padding: 0 6px 0 10px; }
+  #opening .op__search .m-field__control { font-size: 13px; padding-right: 14px; background-size: 12px; }
+  #opening .op__search .m-field__label { font-size: 11px; }
+  #opening .op__search .m-icon { width: 42px; height: 42px; }
+  #opening .op__in-lead { left: 16px; right: 16px; width: auto; top: calc(var(--op-title-top) - var(--space-1) - 8px + var(--op-title-size) * 1.84 + 90px); }
+  #opening .op__lead { font-size: 14px; max-width: 330px; }
+  #opening .op__in-card-l { display: none; }
+  #opening .op__in-card-r { left: 10px; right: 10px; bottom: 10px; width: auto; }
+  #opening .op__card-r > .m-text { display: none; }
+  #opening .op__specs { gap: 8px 10px; padding-top: 10px; }
+  #opening .op__seal { display: none; }
+}
+@media (max-width: 719px) and (max-height: 700px) {
+  #opening .op__in-lead { display: none; }
+}
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening.is-set .op__fg { visibility: visible; }
+  #opening.is-set .op__night-screen { background: none; }
+  #opening.is-set .op__night-photo { visibility: hidden; }
+  #opening.is-set .op__night-screen::before { background: radial-gradient(60% 50% at 50% 50%, color-mix(in srgb, var(--color-4) 40%, transparent), transparent); }
+}
+}
+</style>
+<style data-8b-part="section:ridges">
+@layer sections {
+#ridges { padding: var(--space-3) var(--space-2) var(--space-2); background: var(--color-1); overflow-x: clip; }
+#ridges .ridges__head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: end; gap: 24px 48px; max-width: 1320px; margin: 0 auto clamp(40px, 6vw, 80px); }
+#ridges .ridges__head .m-text-6 { color: var(--color-6); max-width: 520px; }
+#ridges .ridges__stage { max-width: 1320px; margin: 0 auto; }
+#ridges .ridges__list { display: grid; gap: clamp(24px, 4vw, 48px); }
+#ridges .ridge { position: relative; height: min(78svh, 760px); min-height: 520px; clip-path: inset(0% 0% 0% 0% round 0px); }
+#ridges .ridge__frame { position: absolute; inset: 0; }
+#ridges .ridge__card { position: absolute; left: 28px; bottom: 28px; display: grid; gap: 10px; width: min(400px, calc(100% - 56px)); }
+#ridges .ridge__where { display: flex; align-items: center; gap: 6px; }
+#ridges .ridge__where svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+#ridges .ridge__name { font-family: var(--font-1); font-weight: 500; font-size: clamp(34px, 3.4vw, 48px); line-height: 1; letter-spacing: -.03em; }
+#ridges .ridge__card .m-text { font-size: 15px; line-height: 1.55; }
+#ridges .ridge__facts { display: flex; flex-wrap: wrap; gap: 8px 18px; padding-top: 10px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+@media (max-width: 719px) {
+  #ridges .ridges__head { grid-template-columns: 1fr; }
+  #ridges .ridge { height: 88svh; min-height: 560px; }
+  #ridges .ridge__card { left: 12px; right: 12px; bottom: 12px; width: auto; }
+}
+}
+</style>
+<style data-8b-part="scene-style:ridges">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #ridges.is-held .ridges__stage { height: calc(100svh - 2 * var(--space-2)); min-height: 520px; }
+  #ridges.is-held .ridges__list { height: 100%; gap: 0; }
+  #ridges.is-held .ridge { grid-area: 1 / 1; height: 100%; min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="section:stays">
+@layer sections {
+#stays { padding: var(--space-3) var(--space-2); background: var(--color-1); overflow-x: clip; }
+#stays .stays__head { max-width: 1320px; margin: 0 auto clamp(40px, 6vw, 88px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 48px; align-items: end; }
+#stays .stays__head .m-text-6 { color: var(--color-6); max-width: 520px; }
+#stays .stays__list { display: grid; gap: clamp(28px, 5vw, 72px); max-width: 1320px; margin: 0 auto; }
+#stays .stay { position: relative; height: clamp(520px, 44vw, 640px); }
+#stays .stay__frame { position: absolute; inset: 0; }
+#stays .stay__frame img { width: 112%; max-width: none; left: -6%; }
+#stays .stay__card { position: absolute; top: 50%; left: 28px; display: grid; gap: 10px; width: min(390px, calc(100% - 56px)); translate: 0 -50%; }
+#stays .stay:nth-child(even) .stay__card { left: auto; right: 28px; }
+#stays .stay__top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+#stays .stay__name { font-family: var(--font-1); font-weight: 500; font-size: clamp(30px, 2.8vw, 40px); line-height: 1; letter-spacing: -.03em; }
+#stays .stay__price { white-space: nowrap; text-align: right; }
+#stays .stay__price strong { font-family: var(--font-1); font-size: 23px; font-weight: 500; }
+#stays .stay__card .m-text { font-size: 15px; line-height: 1.55; }
+#stays .stay__specs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; padding: 12px 0 4px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#stays .stay__card .m-link { justify-self: start; }
+@media (max-width: 719px) {
+  #stays .stays__head { grid-template-columns: 1fr; }
+  #stays .stay { height: auto; display: grid; }
+  #stays .stay__frame { position: relative; inset: auto; aspect-ratio: 4 / 5; }
+  #stays .stay__card, #stays .stay:nth-child(even) .stay__card { position: relative; top: auto; left: auto; right: auto; width: auto; margin: -140px 12px 0; translate: none; }
+}
+}
+</style>
+<style data-8b-part="section:night">
+@layer sections {
+#night { position: relative; background: var(--color-8); color: var(--color-2); }
+#night .night__ground { display: none; }
+#night .night__head { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; padding: var(--space-3) var(--space-2) clamp(40px, 6vw, 72px); max-width: calc(1320px + 2 * var(--space-2)); margin: 0 auto; }
+#night .night__list { position: relative; }
+#night .moment { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: clamp(28px, 5vw, 88px); padding: clamp(48px, 7vw, 104px) var(--space-2); }
+#night .moment > * { max-width: 100%; }
+#night .moment:nth-child(even) .moment__frame { order: 2; }
+#night .moment__frame { aspect-ratio: 4 / 3; }
+#night .moment__copy { display: grid; gap: 14px; max-width: 460px; }
+#night .moment__name { font-family: var(--font-1); font-size: clamp(44px, 5.4vw, 80px); font-weight: 500; line-height: .95; letter-spacing: -.035em; }
+#night .moment[data-light="dusk"], #night .moment[data-light="dawn"] { background: var(--color-8); color: var(--color-2); }
+#night .moment[data-light="blue"] { background: var(--color-9); color: var(--color-3); }
+#night .moment[data-light="fire"] { background: var(--color-2); color: var(--color-3); }
+#night .moment[data-light="star"] { background: var(--color-4); color: var(--color-3); }
+#night .moment[data-light="blue"] :focus-visible, #night .moment[data-light="fire"] :focus-visible, #night .moment[data-light="star"] :focus-visible { outline-color: var(--color-3); }
+@media (max-width: 719px) {
+  #night .night__head { grid-template-columns: 1fr; }
+  #night .moment { grid-template-columns: 1fr; }
+  #night .moment:nth-child(even) .moment__frame { order: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:night">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #night.is-sky { background: none; }
+  #night.is-sky .night__ground { display: block; position: absolute; inset: 0; background: var(--color-8); }
+  #night.is-sky .moment { background: none; color: inherit; }
+}
+}
+</style>
+<style data-8b-part="section:table">
+@layer sections {
+#table { padding: var(--space-3) var(--space-2); background: var(--color-1); }
+#table .table__head { max-width: 1320px; margin: 0 auto clamp(40px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; }
+#table .table__head .m-text-6 { color: var(--color-6); max-width: 540px; }
+#table .table__stage { position: relative; max-width: 1320px; margin: 0 auto; height: clamp(600px, 52vw, 720px); }
+#table .table__frame { position: absolute; inset: 0; }
+#table .table__frame img { object-position: 50% 70%; }
+#table .table__kitchen { position: absolute; left: 28px; bottom: 28px; display: grid; gap: 12px; width: min(340px, 34%); }
+#table .table__kitchen .m-text { font-size: 14px; color: var(--color-6); }
+#table .table__count { display: flex; align-items: center; gap: 14px; }
+#table .table__figure { font-family: var(--font-1); font-weight: 500; font-size: 48px; line-height: 1; letter-spacing: -.03em; }
+#table .table__count p { display: grid; }
+#table .table__thumbs { display: flex; margin-left: auto; }
+#table .table__thumbs li { width: 46px; height: 46px; margin-left: -12px; overflow: hidden; border: 3px solid var(--color-3); border-radius: 50%; }
+#table .table__thumbs img { width: 100%; height: 100%; object-fit: cover; }
+#table .table__box { position: absolute; right: 28px; top: 28px; display: grid; gap: 12px; width: min(380px, 36%); }
+#table .table__items { display: grid; gap: 0; }
+#table .table__items li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); font-size: 15px; line-height: 1.45; }
+#table .table__items li span:last-child { color: var(--color-2); white-space: nowrap; font-weight: 500; }
+#table .table__price { display: flex; justify-content: space-between; align-items: baseline; padding-top: 12px; border-top: 1px solid var(--color-2); }
+#table .table__price strong { font-family: var(--font-1); font-size: 26px; font-weight: 500; }
+@media (max-width: 719px) {
+  #table .table__head { grid-template-columns: 1fr; }
+  #table .table__stage { height: auto; display: grid; gap: 12px; }
+  #table .table__frame { position: relative; inset: auto; aspect-ratio: 4 / 5; }
+  #table .table__kitchen, #table .table__box { position: relative; inset: auto; width: auto; }
+  #table .table__box { order: 2; margin: -220px 12px 0; }
+  #table .table__kitchen { order: 3; }
+}
+}
+</style>
+<style data-8b-part="section:hosts">
+@layer sections {
+#hosts { padding: var(--space-3) var(--space-2); background: var(--color-3); }
+#hosts .hosts__head { max-width: 1320px; margin: 0 auto clamp(40px, 6vw, 88px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; }
+#hosts .hosts__head .m-text-6 { color: var(--color-6); max-width: 540px; }
+#hosts .hosts__list { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2.4vw, 32px); }
+#hosts .host { display: grid; gap: 6px; align-content: start; }
+#hosts .host:nth-child(even) { margin-top: clamp(40px, 7vw, 110px); }
+#hosts .host__photo { position: relative; aspect-ratio: 3 / 5; overflow: hidden; margin-bottom: 14px; clip-path: inset(0% 0% 0% 0% round 999px); background: var(--color-7); }
+#hosts .host__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#hosts .host .m-text-5 { color: var(--color-6); }
+@media (max-width: 719px) {
+  #hosts .hosts__head { grid-template-columns: 1fr; }
+  #hosts .hosts__list { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 32px; }
+  #hosts .host:nth-child(even) { margin-top: 56px; }
+}
+}
+</style>
+<style data-8b-part="section:pledge">
+@layer sections {
+#pledge { padding: var(--space-3) var(--space-2); background: var(--color-4); color: var(--color-3); }
+#pledge :focus-visible { outline-color: var(--color-7); }
+#pledge .pledge__inner { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px clamp(40px, 6vw, 112px); align-items: start; }
+#pledge .pledge__head { position: sticky; top: 120px; display: grid; gap: 24px; }
+#pledge .pledge__head .m-text-6 { color: var(--color-7); max-width: 440px; }
+#pledge .pledge__rules { display: grid; }
+#pledge .pledge__rule { display: grid; gap: 10px; padding: clamp(26px, 3.6vw, 44px) 0; border-top: 1px solid color-mix(in srgb, var(--color-7) 30%, transparent); }
+#pledge .pledge__rule:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-7) 30%, transparent); }
+#pledge .pledge__line { font-size: clamp(28px, 3.3vw, 48px); line-height: 1.06; letter-spacing: -.025em; color: var(--color-7); }
+#pledge .pledge__note { color: var(--color-7); max-width: 520px; }
+@media (max-width: 719px) {
+  #pledge .pledge__inner { grid-template-columns: 1fr; }
+  #pledge .pledge__head { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:arrival">
+@layer sections {
+#arrival { padding: var(--space-3) var(--space-2); background: var(--color-1); }
+#arrival .arrival__head { max-width: 1320px; margin: 0 auto clamp(40px, 6vw, 80px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 24px 48px; }
+#arrival .arrival__head .m-text-6 { color: var(--color-6); max-width: 540px; }
+#arrival .arrival__stage { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(16px, 2.4vw, 32px); align-items: stretch; }
+#arrival .arrival__frame { min-height: 620px; }
+#arrival .arrival__frame img { object-position: 30% 50%; }
+#arrival .arrival__side { display: grid; gap: 16px; align-content: space-between; }
+#arrival .arrival__route { display: grid; gap: 0; padding-block: 10px; }
+#arrival .arrival__leg { display: grid; grid-template-columns: auto 1fr; gap: 4px 18px; padding: 20px 0; border-top: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); }
+#arrival .arrival__leg:first-child { border-top: 0; }
+#arrival .arrival__step { grid-row: span 2; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-2); color: var(--color-3); font-weight: 600; font-size: 15px; }
+#arrival .arrival__leg .m-text { color: var(--color-6); font-size: 15px; }
+#arrival .arrival__note { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 18px 18px 24px; border-radius: var(--radius-2); background: var(--color-7); }
+@media (max-width: 899px) {
+  #arrival .arrival__head, #arrival .arrival__stage { grid-template-columns: 1fr; }
+  #arrival .arrival__frame { min-height: 0; aspect-ratio: 4 / 3; }
+}
+@media (max-width: 719px) {
+  #arrival .arrival__note { flex-direction: column; align-items: flex-start; }
+}
+}
+</style>
+<style data-8b-part="section:notes">
+@layer sections {
+#notes { padding: var(--space-2); background: var(--color-1); }
+#notes .notes__stage { position: relative; max-width: calc(1320px + 2 * var(--space-2)); margin: 0 auto; overflow: hidden; border: 8px solid var(--color-3); border-radius: var(--radius-1); background: var(--color-4); color: var(--color-3); padding: clamp(72px, 9vw, 128px) clamp(20px, 4vw, 56px); }
+#notes .notes__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#notes .notes__stage::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--color-4) 72%, transparent), color-mix(in srgb, var(--color-4) 30%, transparent) 50%, color-mix(in srgb, var(--color-4) 60%, transparent)); }
+#notes .notes__head { position: relative; z-index: 2; display: grid; gap: 18px; max-width: 760px; margin-bottom: clamp(48px, 6vw, 88px); }
+#notes .notes__head .m-text-6 { color: var(--color-3); max-width: 520px; }
+#notes .notes__list { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); align-items: start; }
+#notes .note { display: grid; gap: 14px; }
+#notes .note:nth-child(3n + 2) { margin-top: 80px; }
+#notes .note:nth-child(3n + 3) { margin-top: 160px; }
+#notes .note blockquote .m-text { font-size: 16.5px; line-height: 1.55; }
+@media (max-width: 899px) {
+  #notes .notes__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #notes .note:nth-child(3n + 2), #notes .note:nth-child(3n + 3) { margin-top: 0; }
+  #notes .note:nth-child(even) { margin-top: 64px; }
+}
+@media (max-width: 719px) {
+  #notes { padding: var(--space-1); }
+  #notes .notes__stage { border-width: 5px; }
+  #notes .notes__list { grid-template-columns: 1fr; }
+  #notes .note:nth-child(even) { margin-top: 0; margin-left: 28px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: var(--space-3) var(--space-2); background: var(--color-1); }
+#faq .faq__inner { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 48px clamp(40px, 6vw, 112px); }
+#faq .faq__side { display: grid; gap: 32px; align-content: start; }
+#faq .faq__host { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; }
+#faq .faq__photo { aspect-ratio: 3 / 4; border-width: 5px; border-radius: var(--radius-2); }
+#faq .faq__host p { color: var(--color-6); margin-bottom: 8px; }
+#faq .faq__list { display: grid; }
+#faq .faq__item { border-top: 1px solid color-mix(in srgb, var(--color-2) 18%, transparent); }
+#faq .faq__item:last-child { border-bottom: 1px solid color-mix(in srgb, var(--color-2) 18%, transparent); }
+#faq .faq__item summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; cursor: pointer; list-style: none; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__sign { position: relative; width: 36px; height: 36px; flex: none; border-radius: 50%; background: var(--color-3); transition: background-color .3s ease, transform .4s ease; }
+#faq .faq__sign::before, #faq .faq__sign::after { content: ""; position: absolute; left: 11px; right: 11px; top: 17px; height: 2px; background: var(--color-2); }
+#faq .faq__sign::after { transform: rotate(90deg); transition: transform .4s ease; }
+#faq .faq__item[open] .faq__sign { background: var(--color-5); }
+#faq .faq__item[open] .faq__sign::after { transform: rotate(0deg); }
+#faq .faq__item > p { padding: 0 56px 26px 0; color: var(--color-6); }
+@media (hover: hover) {
+  #faq .faq__item summary:hover .faq__sign { background: var(--color-7); }
+}
+@media (max-width: 899px) {
+  #faq .faq__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 719px) {
+  #faq .faq__item > p { padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; padding: var(--space-3) var(--space-2); background: var(--color-8); color: var(--color-2); }
+#contact .contact__ground { display: none; }
+#contact .contact__inner { position: relative; max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px clamp(40px, 6vw, 112px); align-items: start; }
+#contact .contact__side { display: grid; gap: 28px; align-content: start; }
+#contact .contact__horizon { overflow: hidden; padding-bottom: .14em; border-bottom: 1px solid currentColor; }
+#contact .contact__title { font-size: clamp(56px, 8vw, 128px); line-height: .92; }
+#contact .contact__ways { display: grid; gap: 14px; }
+#contact .contact__ways li { display: grid; gap: 2px; }
+#contact .contact__ways .m-text-5 { opacity: .78; }
+#contact .contact__form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: clamp(22px, 3vw, 36px); }
+#contact .contact__form .is-wide { grid-column: 1 / -1; }
+#contact .contact__actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 6px; }
+#contact .contact__actions .m-text-5 { color: var(--color-6); max-width: 260px; }
+#contact .contact__status { grid-column: 1 / -1; padding: 14px 18px; border-radius: 16px; background: var(--color-7); }
+@media (max-width: 899px) {
+  #contact .contact__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 719px) {
+  #contact .contact__form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:contact">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #contact.is-dawn { background: none; }
+  #contact.is-dawn .contact__ground { display: block; position: absolute; inset: 0; background: var(--color-8); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: clamp(72px, 9vw, 120px) var(--space-2) var(--space-1); background: var(--color-4); color: var(--color-3); overflow: hidden; }
+#footer :focus-visible { outline-color: var(--color-7); }
+#footer .footer__top { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; }
+#footer .footer__brand { display: grid; gap: 18px; align-content: start; max-width: 340px; }
+#footer .footer__name { display: flex; align-items: center; gap: 12px; font-family: var(--font-1); font-weight: 500; font-size: 24px; }
+#footer .footer__name .m-mark { width: 30px; height: 30px; color: var(--color-3); }
+#footer .footer__brand .m-text, #footer .footer__contact .m-text-5 { color: var(--color-7); }
+#footer .footer__links { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; align-content: start; }
+#footer .footer__contact { display: grid; gap: 12px; align-content: start; }
+#footer .footer__contact li { display: grid; gap: 2px; }
+#footer .footer__word { max-width: 1320px; margin: clamp(48px, 7vw, 96px) auto 0; font-size: min(26vw, calc(min(100vw - 2 * var(--space-2), 1320px) / (var(--len) * .5))); line-height: .9; color: var(--color-7); text-align: center; white-space: nowrap; }
+#footer .footer__base { max-width: 1320px; margin: 28px auto 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--color-7) 28%, transparent); color: var(--color-7); }
+@media (max-width: 899px) {
+  #footer .footer__top { grid-template-columns: 1fr 1fr; }
+  #footer .footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 519px) {
+  #footer .footer__top { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header class="nav" data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<a class="m-btn-2 nav__brand" href="#opening"><span aria-hidden="true" class="m-mark"></span><span class="m-btn-2__label"><span class="m-btn-2__text">{{t1|⟦name⟧}}</span></span></a>
+<div class="nav__end">
+<a class="m-btn-2 nav__book" href="#contact"><span class="m-btn-2__label"><span class="m-btn-2__text">{{t2|Book a stay}}</span></span><svg aria-hidden="true" class="m-btn-2__arrow" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+<button aria-controls="menu" aria-expanded="false" class="m-icon nav__menu" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 8h16M4 16h16"></path></svg><span class="sr-only">{{t3|Open the menu}}</span></button>
+</div>
+</div>
+<div class="nav__overlay" data-lenis-prevent="" hidden="" id="menu">
+<div aria-label="Menu" aria-modal="true" class="nav__panel" role="dialog">
+<button class="m-icon nav__close" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr-only">{{t4|Close the menu}}</span></button>
+<nav aria-label="Main">
+<ul class="nav__links">
+{{#nv_ridges}}<li><a class="m-link" href="#ridges">{{t5|Ridges}}</a></li>{{/nv_ridges}}
+{{#nv_stays}}<li><a class="m-link" href="#stays">{{t6|Stays}}</a></li>{{/nv_stays}}
+{{#nv_night}}<li><a class="m-link" href="#night">{{t7|One night}}</a></li>{{/nv_night}}
+{{#nv_table}}<li><a class="m-link" href="#table">{{t8|Supper}}</a></li>{{/nv_table}}
+{{#nv_hosts}}<li><a class="m-link" href="#hosts">{{t9|Hosts}}</a></li>{{/nv_hosts}}
+{{#nv_pledge}}<li><a class="m-link" href="#pledge">{{t10|Our pledge}}</a></li>{{/nv_pledge}}
+{{#nv_arrival}}<li><a class="m-link" href="#arrival">{{t11|Getting there}}</a></li>{{/nv_arrival}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t12|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<div class="nav__foot">
+<p class="m-text">{{t13|Hosts answer from 8 am to 8 pm,}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t14|+1 760 000 0000}}</a></p>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label"><span class="m-btn-2__text">{{t2|Book a stay}}</span></span><svg aria-hidden="true" class="m-btn-2__arrow" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+</div>
+</div>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op__stage">
+<div aria-hidden="true" class="op__rim"></div>
+<div class="op__window">
+<div class="op__in-media">
+<div class="op__layer op__bg">
+<div class="op__drift">
+<img alt="A long black timber cabin with a lit wall of glass on a snowfield at dusk, mountains on both sides" fetchpriority="high" height="1200" src="{{i1|https://images.unsplash.com/photo-1781795095622-ca97592f416a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z2xhc3MlMjBjYWJpbiUyMHNub3clMjBkdXNrfGVufDF8MHx8fDE3OTE0MTMyNzJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#40598c" width="1600"/>
+<span aria-hidden="true" class="op__glow"></span>
+<span aria-hidden="true" class="op__shade"></span>
+</div>
+</div>
+<div class="op__title-wrap">
+<h1 class="m-text-2 op__title" id="opening-title">{{t15|Out Past}}<br/> {{t16|The Lights}}</h1>
+</div>
+<div aria-hidden="true" class="op__layer op__fg">
+<div class="op__drift">
+<img alt="" height="1200" src="{{i1|https://images.unsplash.com/photo-1781795095622-ca97592f416a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z2xhc3MlMjBjYWJpbiUyMHNub3clMjBkdXNrfGVufDF8MHx8fDE3OTE0MTMyNzJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#40598c" width="1600"/>
+<span class="op__glow"></span>
+<span class="op__shade"></span>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="op__dusk"></div>
+<img alt="" class="op__night" fetchpriority="low" height="1067" src="{{i2|https://images.unsplash.com/photo-1662747975359-9c40ddd55551?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bWlsa3klMjB3YXklMjBkZXNlcnR8ZW58MXwwfHx8MTc5MTQxMzI3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#262626" width="1600"/>
+</div>
+<div class="op__ui">
+<div class="op__in-rail">
+<nav aria-label="Sections" class="op__rail">
+<ul>
+<li><a aria-current="true" class="m-icon" href="#opening"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20h-5.5v-5h-5v5H4z"></path></svg><span class="sr-only">{{t17|Top of the page}}</span></a></li>
+<li><a class="m-icon" href="#stays"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m20 20-4.5-4.5"></path></svg><span class="sr-only">{{t18|Find a stay}}</span></a></li>
+<li><a class="m-icon" href="#ridges"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg><span class="sr-only">{{t19|The four ridges}}</span></a></li>
+<li><a class="m-icon" href="#contact"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 5h14v10H10l-5 4z"></path></svg><span class="sr-only">{{t20|Write to us}}</span></a></li>
+<li><a class="op__avatar" href="#hosts"><img alt="Mara, the Snowline host" height="2178" src="{{i3|https://images.unsplash.com/photo-1605762830970-ab1104c9b0a6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d29tYW4lMjBoaWtlciUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDF8fHwxNzkxNDEzMzcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#f3f3f3" width="1600"/></a></li>
+</ul>
+<ul>
+<li><a class="m-icon" href="#arrival"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 20c0-5 12-3 12-9S8 8 8 4"></path><circle cx="8" cy="4" r="1"></circle><circle cx="6" cy="20" r="1"></circle></svg><span class="sr-only">{{t11|Getting there}}</span></a></li>
+<li><a class="m-icon" href="#night"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"></path></svg><span class="sr-only">{{t7|One night}}</span></a></li>
+<li><a class="m-icon" href="#faq"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M9.8 9.6a2.3 2.3 0 1 1 3.2 2.1c-.7.3-1 .8-1 1.5v.6M12 16.6v.1"></path></svg><span class="sr-only">{{t12|Questions}}</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="op__in-search">
+
+</div>
+<div class="op__in-lead">
+<p class="m-text op__lead">{{t21|Glass-walled cabins, domes and pods set alone on four dark-sky ridges of the high desert. Arrive before sunset and let the sky do the rest.}}</p>
+</div>
+<div class="op__in-card-l">
+<article class="m-surface op__card-l">
+<h2 class="m-text-4">{{t22|Find Your Own Ridge}}</h2>
+<p class="m-text">{{t23|Every stay faces open sky, 400 metres from the next. Pick a ridge, a roof and the nights.}}</p>
+<div class="op__count">
+<p><span class="op__figure">{{t24|38}}</span><span class="m-text-5">{{t25|stays on four ridges}}</span></p>
+<ul class="op__thumbs">
+<li><img alt="A glass dome lit from inside at night" height="1067" sizes="(max-width: 767px) 340px, 101vw" src="{{i4|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i5|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i4|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#260c0c" width="1600"/></li>
+<li><img alt="Inside a shell pod with a curved window" height="1067" sizes="(max-width: 767px) 340px, 101vw" src="{{i6|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i7|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i6|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#402626" width="1600"/></li>
+<li><img alt="A canvas suite lit by a bedside lamp" height="1067" sizes="(max-width: 767px) 340px, 101vw" src="{{i8|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i9|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i8|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#260c0c" width="1600"/></li>
+</ul>
+<a class="m-icon" href="#ridges"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg><span class="sr-only">{{t26|See the four ridges}}</span></a>
+</div>
+</article>
+</div>
+<div class="op__in-card-r">
+<article class="m-surface-2 op__card-r">
+<div class="op__card-head">
+<h2 class="m-text-4">{{t27|Snowline Cabin No. 4}}</h2>
+<a class="m-icon" href="#stays"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg><span class="sr-only">{{t28|See the Rim Cabin}}</span></a>
+</div>
+<p class="m-text-5 op__addr"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg><span>{{t29|Snowline Ridge, Eastern Sierra}}</span></p>
+<p class="m-text">{{t30|A black timber cabin with one wall of glass facing the range. Wood stove, deep bath and a bed you can watch the sky from.}}</p>
+<ul class="op__specs">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></svg><span>{{t31|34 m² inside}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 16h18M5 16V9h14v7M3 16v3M21 16v3"></path></svg><span>{{t32|60 m² deck}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"></path></svg><span>{{t33|1 king bed}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21c-3.3 0-6-2.4-6-5.6 0-3.6 3.4-5.2 3.4-9.4 2.8 1.6 4.2 3.8 4.2 6 1-.6 1.6-1.6 1.8-2.8 1.6 1.6 2.6 3.6 2.6 6.2 0 3.2-2.7 5.6-6 5.6z"></path></svg><span>{{t34|Wood stove}}</span></li>
+</ul>
+</article>
+</div>
+<span aria-hidden="true" class="op__seal"><span class="m-mark"></span></span>
+</div>
+</div>
+<div class="op__night-screen">
+<img alt="The Milky Way over a dark desert with a few warm camp lights on the horizon" class="op__night-photo" fetchpriority="low" height="1067" src="{{i2|https://images.unsplash.com/photo-1662747975359-9c40ddd55551?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bWlsa3klMjB3YXklMjBkZXNlcnR8ZW58MXwwfHx8MTc5MTQxMzI3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#262626" width="1600"/>
+<div class="op__night-copy">
+<h2 class="m-text-3" data-8b-motion="rise">{{t35|Lights Out.}}<br/> {{t36|Sky On.}}</h2>
+<p class="m-text-6">{{t37|No streetlights for forty miles, amber lamps at knee height and glass over every bed. Our four ridges sit under some of the darkest skies left in the country, and we keep them that way.}}</p>
+<a class="m-link" href="#night">{{t38|Spend one night with us, light by light}}</a>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_ridges}}<section aria-labelledby="ridges-title" data-8b-section="ridges" id="ridges">
+<div class="ridges__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="ridges-title">{{t39|Four Ridges,}}<br/> {{t40|One Rule}}</h2>
+<p class="m-text-6">{{t41|Every ⟦name⟧ stay sits on high ground with nothing between the bed and the horizon. Six to twelve stays a ridge, never more, and never in sight of each other.}}</p>
+</div>
+<div class="ridges__stage">
+<ol class="ridges__list">
+<li class="ridge">
+<div class="m-frame ridge__frame"><img alt="Two small tents on a rocky slope under snow-capped peaks at golden hour" height="1067" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1789371385139-8e9d40471278?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHRlbnQlMjBibHVlJTIwaG91cnxlbnwxfDB8fHwxNzkxNDEzMjcxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#0c2626" width="1600"/></div>
+<article class="m-surface-2 ridge__card">
+<p class="m-text-5 ridge__where"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg><span>{{t42|Eastern Sierra, California · 2,450 m}}</span></p>
+<h3 class="ridge__name">{{t43|Snowline}}</h3>
+<p class="m-text">{{t44|Black timber cabins on a snowfield under the range. Wood stoves, deep baths and skis by the door from December to April.}}</p>
+<ul class="ridge__facts">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20H4z"></path></svg><span>{{t45|12 stays}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg><span>{{t46|3 h 40 from Reno}}</span></li>
+</ul>
+</article>
+</li>
+<li class="ridge">
+<div class="m-frame ridge__frame"><img alt="Red sandstone towers in front of a snow-covered range under a grey sky" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1712673339074-d64e291def4c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHNub3d5JTIwZGVzZXJ0JTIwbW91bnRhaW5zfGVufDF8MHx8fDE3OTE0MTMyNzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0c0c0" width="1600"/></div>
+<article class="m-surface-2 ridge__card">
+<p class="m-text-5 ridge__where"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg><span>{{t47|Southern Utah · 1,900 m}}</span></p>
+<h3 class="ridge__name">{{t48|Red Bench}}</h3>
+<p class="m-text">{{t49|Glass domes on a sandstone shelf, red rock below and snow on the peaks behind. The darkest sky of the four, and the quietest.}}</p>
+<ul class="ridge__facts">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20H4z"></path></svg><span>{{t50|8 stays}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg><span>{{t51|2 h 50 from St. George}}</span></li>
+</ul>
+</article>
+</li>
+<li class="ridge">
+<div class="m-frame ridge__frame"><img alt="A still lake with a pale salt shore at twilight" height="900" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1778838388555-5663f1dd072e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c2FsdCUyMGZsYXQlMjBkdXNrfGVufDF8MHx8fDE3OTE0MTM2MDl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#595959" width="1600"/></div>
+<article class="m-surface-2 ridge__card">
+<p class="m-text-5 ridge__where"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg><span>{{t52|Great Basin, Nevada · 1,700 m}}</span></p>
+<h3 class="ridge__name">{{t53|Salt Rim}}</h3>
+<p class="m-text">{{t54|Shell pods along the edge of an old lakebed. Flat to every horizon, so the sky starts at your feet and the sunsets last twice as long.}}</p>
+<ul class="ridge__facts">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20H4z"></path></svg><span>{{t55|10 stays}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg><span>{{t56|3 h from Las Vegas}}</span></li>
+</ul>
+</article>
+</li>
+<li class="ridge">
+<div class="m-frame ridge__frame"><img alt="Snow on desert shrubs and cactus below a white mountain range" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1677777475572-8c251e2101ae?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c25vd3klMjBkZXNlcnQlMjBtb3VudGFpbnN8ZW58MXwwfHx8MTc5MTQxMzI3NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0d9f3" width="1600"/></div>
+<article class="m-surface-2 ridge__card">
+<p class="m-text-5 ridge__where"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21s-6-5.4-6-11a6 6 0 0 1 12 0c0 5.6-6 11-6 11z"></path><circle cx="12" cy="10" r="2.2"></circle></svg><span>{{t57|Northern Arizona · 2,100 m}}</span></p>
+<h3 class="ridge__name">{{t58|Juniper Mesa}}</h3>
+<p class="m-text">{{t59|Canvas suites among junipers and yucca, a short walk from the rim. The mildest winters of the four and the best ridge for families.}}</p>
+<ul class="ridge__facts">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20H4z"></path></svg><span>{{t50|8 stays}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg><span>{{t60|1 h 30 from Flagstaff}}</span></li>
+</ul>
+</article>
+</li>
+</ol>
+</div>
+</section>{{/sec_ridges}}
+
+{{#sec_stays}}<section aria-labelledby="stays-title" data-8b-section="stays" id="stays">
+<div class="stays__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="stays-title">{{t61|Four Ways To}}<br/> {{t62|Sleep Outside}}</h2>
+<p class="m-text-6">{{t63|Every roof is built to be looked through. Beds face the glass, lamps sit low, and the heating works on the coldest night of the year.}}</p>
+</div>
+<ul class="stays__list">
+<li class="stay">
+<div class="m-frame stay__frame"><img alt="A black cabin with a lit glass corner among snowy pines at night" height="1067" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1549278347-3bad8ad0c29b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG1vZGVybiUyMGNhYmluJTIwbmlnaHQlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTQxMzI3OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" style="background:#264073" width="1600"/></div>
+<article class="m-surface-2 stay__card">
+<div class="stay__top"><h3 class="stay__name">{{t64|Rim Cabin}}</h3><p class="stay__price"><strong>{{t65|$310}}</strong> <span class="m-text-5">{{t66|a night}}</span></p></div>
+<p class="m-text-5">{{t67|Black timber, one wall of glass}}</p>
+<p class="m-text">{{t68|Long and low against the snow, with the bed facing the glass. Wood stove, rain shower and a deep bath by the window.}}</p>
+<ul class="stay__specs">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></svg><span>{{t31|34 m² inside}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5M16 5.5a3 3 0 0 1 0 5M18 14c2 .6 3 2.2 3 5"></path></svg><span>{{t69|Sleeps 2}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21c-3.3 0-6-2.4-6-5.6 0-3.6 3.4-5.2 3.4-9.4 2.8 1.6 4.2 3.8 4.2 6 1-.6 1.6-1.6 1.8-2.8 1.6 1.6 2.6 3.6 2.6 6.2 0 3.2-2.7 5.6-6 5.6z"></path></svg><span>{{t34|Wood stove}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 12h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM6 12V6a2 2 0 0 1 4 0"></path></svg><span>{{t70|Deep bath}}</span></li>
+</ul>
+<a class="m-link" href="#contact">{{t71|Ask for dates}}</a>
+</article>
+</li>
+<li class="stay">
+<div class="m-frame stay__frame"><img alt="A geodesic glass dome with a bed inside, glowing at night" height="1067" loading="lazy" sizes="(max-width: 767px) 340px, 101vw" src="{{i4|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i5|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i4|https://images.unsplash.com/photo-1783696521772-e3ba2c4ef0b5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#260c0c" width="1600"/></div>
+<article class="m-surface-2 stay__card">
+<div class="stay__top"><h3 class="stay__name">{{t72|Glass Dome}}</h3><p class="stay__price"><strong>{{t73|$260}}</strong> <span class="m-text-5">{{t66|a night}}</span></p></div>
+<p class="m-text-5">{{t74|Geodesic frame, clear roof panels}}</p>
+<p class="m-text">{{t75|The sky is the ceiling. Curtains close the lower panels for privacy; the upper ones stay open all night, right above the pillow.}}</p>
+<ul class="stay__specs">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></svg><span>{{t76|28 m² inside}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5M16 5.5a3 3 0 0 1 0 5M18 14c2 .6 3 2.2 3 5"></path></svg><span>{{t69|Sleeps 2}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg><span>{{t77|Telescope}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 18V8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"></path></svg><span>{{t78|King bed}}</span></li>
+</ul>
+<a class="m-link" href="#contact">{{t71|Ask for dates}}</a>
+</article>
+</li>
+<li class="stay">
+<div class="m-frame stay__frame"><img alt="Inside a curved shell pod, a red sofa facing a long panoramic window" height="1067" loading="lazy" sizes="(max-width: 767px) 340px, 101vw" src="{{i6|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i7|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i6|https://images.unsplash.com/photo-1762255126293-7bd86413780d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#402626" width="1600"/></div>
+<article class="m-surface-2 stay__card">
+<div class="stay__top"><h3 class="stay__name">{{t79|Shell Pod}}</h3><p class="stay__price"><strong>{{t80|$240}}</strong> <span class="m-text-5">{{t66|a night}}</span></p></div>
+<p class="m-text-5">{{t81|A curved shell with one long window}}</p>
+<p class="m-text">{{t82|A smooth white shell turned to the flattest horizon we could find. The window wraps the whole front, so the bed sees from edge to edge.}}</p>
+<ul class="stay__specs">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></svg><span>{{t83|22 m² inside}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5M16 5.5a3 3 0 0 1 0 5M18 14c2 .6 3 2.2 3 5"></path></svg><span>{{t69|Sleeps 2}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 12c3-4 6-6 9-6s6 2 9 6c-3 4-6 6-9 6s-6-2-9-6z"></path></svg><span>{{t84|180° window}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 16h18M5 16V9h14v7M3 16v3M21 16v3"></path></svg><span>{{t85|Terrace}}</span></li>
+</ul>
+<a class="m-link" href="#contact">{{t71|Ask for dates}}</a>
+</article>
+</li>
+<li class="stay">
+<div class="m-frame stay__frame"><img alt="A canvas suite at night, a lamp and a bottle on the bedside table" height="1067" loading="lazy" sizes="(max-width: 767px) 340px, 101vw" src="{{i8|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}}" srcset="{{i9|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1020&q=60}} 1020w, {{i8|https://images.unsplash.com/photo-1774013710285-1456e49581f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhbXBpbmclMjB0ZW50JTIwaW50ZXJpb3J8ZW58MXwwfHx8MTc5MTQxMzI3N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1290&q=60}} 1290w" style="background:#260c0c" width="1600"/></div>
+<article class="m-surface-2 stay__card">
+<div class="stay__top"><h3 class="stay__name">{{t86|Canvas Suite}}</h3><p class="stay__price"><strong>{{t87|$190}}</strong> <span class="m-text-5">{{t66|a night}}</span></p></div>
+<p class="m-text-5">{{t88|Heavy canvas on a timber deck}}</p>
+<p class="m-text">{{t89|The warmest way to sleep in a tent: a real bed, a stove, thick rugs and a second room for children. The flap rolls up towards the rim.}}</p>
+<ul class="stay__specs">
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"></path></svg><span>{{t90|40 m² inside}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5M16 5.5a3 3 0 0 1 0 5M18 14c2 .6 3 2.2 3 5"></path></svg><span>{{t91|Sleeps 4}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 21c-3.3 0-6-2.4-6-5.6 0-3.6 3.4-5.2 3.4-9.4 2.8 1.6 4.2 3.8 4.2 6 1-.6 1.6-1.6 1.8-2.8 1.6 1.6 2.6 3.6 2.6 6.2 0 3.2-2.7 5.6-6 5.6z"></path></svg><span>{{t92|Tent stove}}</span></li>
+<li class="m-badge"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"></path></svg><span>{{t93|Two rooms}}</span></li>
+</ul>
+<a class="m-link" href="#contact">{{t71|Ask for dates}}</a>
+</article>
+</li>
+</ul>
+</section>{{/sec_stays}}
+
+{{#sec_night}}<section aria-labelledby="night-title" data-8b-section="night" id="night">
+<div aria-hidden="true" class="night__ground"></div>
+<div class="night__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="night-title">{{t94|One Night,}}<br/> {{t95|Five Lights}}</h2>
+<p class="m-text-6">{{t96|A night on a ridge is not dark all at once. It goes in stages, and we built the stay around them, from the hour you arrive to the coffee on the deck.}}</p>
+</div>
+<ol class="night__list">
+<li class="moment" data-light="dusk">
+<div class="m-frame moment__frame"><img alt="Two tents on a grassy ridge above a valley at dusk" height="1067" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1532260159992-05862a94e27f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGdsYW1waW5nJTIwZHVza3xlbnwxfDB8fHwxNzkxNDEzMjcwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#a6c0d9" width="1600"/></div>
+<div class="moment__copy">
+<p class="m-text-5">{{t97|Arrival, around four}}</p>
+<h3 class="moment__name">{{t98|Last light}}</h3>
+<p class="m-text">{{t99|Your host meets you at the gate, walks your bags up and lights the stove. You get keys, a map and no wifi password.}}</p>
+</div>
+</li>
+<li class="moment" data-light="blue">
+<div class="m-frame moment__frame"><img alt="A car, a small fire and a red tent on a dune under a deep blue evening sky" height="1067" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1714229727637-a5d2520320a0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2FtcGZpcmUlMjBuaWdodCUyMGRlc2VydHxlbnwxfDB8fHwxNzkxNDEzMzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#0c2659" width="1600"/></div>
+<div class="moment__copy">
+<p class="m-text-5">{{t100|The sky goes blue}}</p>
+<h3 class="moment__name">{{t101|Blue hour}}</h3>
+<p class="m-text">{{t102|The ridge goes quiet and the first planets come out. The best twenty minutes for photographs and for not taking any.}}</p>
+</div>
+</li>
+<li class="moment" data-light="fire">
+<div class="m-frame moment__frame"><img alt="A campfire under an overhanging rock glowing orange against the blue night" height="1021" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1696347826892-8012bbaa55f9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2FtcGZpcmUlMjBuaWdodCUyMGRlc2VydHxlbnwxfDB8fHwxNzkxNDEzMzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#260c0c" width="1600"/></div>
+<div class="moment__copy">
+<p class="m-text-5">{{t103|Supper outside}}</p>
+<h3 class="moment__name">{{t104|Firelight}}</h3>
+<p class="m-text">{{t105|The supper box arrives with the wood. Grill on the fire pit, bake in the coals, keep the blanket close.}}</p>
+</div>
+</li>
+<li class="moment" data-light="star">
+<div class="m-frame moment__frame"><img alt="The Milky Way rising over a snowy ridge with a camera on a tripod" height="1067" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1604728890708-631078e3eab7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dGVsZXNjb3BlJTIwbmlnaHQlMjBza3l8ZW58MXwwfHx8MTc5MTQxMzM0NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=600&q=60}}" style="background:#264040" width="1600"/></div>
+<div class="moment__copy">
+<p class="m-text-5">{{t106|Lamps off at ten}}</p>
+<h3 class="moment__name">{{t107|Starlight}}</h3>
+<p class="m-text">{{t108|Give your eyes twenty minutes. Then the Milky Way needs no help, and the telescope on the deck is yours until morning.}}</p>
+</div>
+</li>
+<li class="moment" data-light="dawn">
+<div class="m-frame moment__frame"><img alt="Two people sitting in a tent doorway watching a pink sunrise over hills" height="1068" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1622224945973-10de93e0e710?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNvZmZlZSUyMGNhbXBpbmclMjBtb3JuaW5nfGVufDF8MHx8fDE3OTE0MTMzNDd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#262626" width="1600"/></div>
+<div class="moment__copy">
+<p class="m-text-5">{{t109|Coffee on the deck}}</p>
+<h3 class="moment__name">{{t110|First light}}</h3>
+<p class="m-text">{{t111|The ridge turns pink before anything else does. Breakfast comes up at eight; checkout is when you are ready.}}</p>
+</div>
+</li>
+</ol>
+</section>{{/sec_night}}
+
+{{#sec_table}}<section aria-labelledby="table-title" data-8b-section="table" id="table">
+<div class="table__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="table-title">{{t112|Supper Comes}}<br/> {{t113|Up The Ridge}}</h2>
+<p class="m-text-6">{{t114|No restaurant and no dining room. At six a host drives up with a box from the camp kitchen: something to grill, something for the coals, bread from the valley and breakfast for the morning.}}</p>
+</div>
+<div class="table__stage">
+<div class="m-frame table__frame" data-8b-motion="horizon"><img alt="Hosts setting out food on a long outdoor table on a deck above the hills" height="1200" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1784034751882-3db1bb6095a4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8b3V0ZG9vciUyMGRpbm5lciUyMHRhYmxlJTIwZHVza3xlbnwxfDB8fHwxNzkxNDEzMzQ4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1150&q=60}}" style="background:#a6a68c" width="1600"/></div>
+<article class="m-surface table__kitchen" data-8b-motion="frost">
+<h3 class="m-text-4">{{t115|The Fire Kitchen}}</h3>
+<p class="m-text">{{t116|Cooked on each ridge from what the valley farms bring up that week. Tell us what you do not eat when you book.}}</p>
+<div class="table__count">
+<p><span class="table__figure">{{t117|6 pm}}</span><span class="m-text-5">{{t118|delivered to your deck}}</span></p>
+<ul class="table__thumbs">
+<li><img alt="Grilled sausages and a lantern on a table at night" height="1067" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1750271328328-64ebf9c6e0b0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3V0ZG9vciUyMGRpbm5lciUyMHRhYmxlJTIwZHVza3xlbnwxfDB8fHwxNzkxNDEzMzQ4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=100&q=60}}" style="background:#40260c" width="1600"/></li>
+<li><img alt="A fire burning under a rock at dusk" height="1021" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1696347826892-8012bbaa55f9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2FtcGZpcmUlMjBuaWdodCUyMGRlc2VydHxlbnwxfDB8fHwxNzkxNDEzMzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#260c0c" width="1600"/></li>
+</ul>
+<a class="m-icon" href="#contact"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg><span class="sr-only">{{t119|Add supper to a stay}}</span></a>
+</div>
+</article>
+<article class="m-surface-2 table__box" data-8b-motion="frost">
+<h3 class="m-text-4">{{t120|Tonight's Box}}</h3>
+<ul class="table__items">
+<li><span>{{t121|Lamb and rosemary skewers for the fire}}</span><span>{{t122|Grill}}</span></li>
+<li><span>{{t123|Squash baked in the coals, chili butter}}</span><span>{{t124|Coals}}</span></li>
+<li><span>{{t125|Sourdough and greens from the valley}}</span><span>{{t126|Table}}</span></li>
+<li><span>{{t127|Piñon cookies and a flask of cocoa}}</span><span>{{t128|Deck}}</span></li>
+<li><span>{{t129|Eggs, bacon and ground coffee}}</span><span>{{t130|Morning}}</span></li>
+</ul>
+<p class="table__price"><span class="m-text-5">{{t131|For two, with the wood}}</span><strong>{{t132|$64}}</strong></p>
+</article>
+</div>
+</section>{{/sec_table}}
+
+{{#sec_hosts}}<section aria-labelledby="hosts-title" data-8b-section="hosts" id="hosts">
+<div class="hosts__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="hosts-title">{{t133|One Host}}<br/> {{t134|Per Ridge}}</h2>
+<p class="m-text-6">{{t135|Each ridge has one person who knows its roads, its weather and its sky. They meet you at the gate, bring supper up at six and keep their phone on all night.}}</p>
+</div>
+<ul class="hosts__list">
+<li class="host">
+<div class="host__photo"><img alt="Mara smiling in a blue jacket on a granite ledge" height="2178" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1605762830970-ab1104c9b0a6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d29tYW4lMjBoaWtlciUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDF8fHwxNzkxNDEzMzcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#f3f3f3;object-position: 52% 30%" width="1600"/></div>
+<h3 class="m-text-4">{{t136|Mara Quint}}</h3>
+<p class="m-text-5">{{t137|Snowline · ask her about winter routes}}</p>
+</li>
+<li class="host">
+<div class="host__photo"><img alt="Eli in a straw hat and beaded necklaces, laughing in a dry field" height="2133" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1787780799165-6e8c1aed55e7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG9ydHJhaXQlMjBvbGRlciUyMG1hbiUyMGhhdCUyMG91dGRvb3JzfGVufDF8MXx8fDE3OTE0MTMzNzJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=340&q=60}}" style="background:#26260c;object-position: 50% 24%" width="1600"/></div>
+<h3 class="m-text-4">{{t138|Eli Navarro}}</h3>
+<p class="m-text-5">{{t139|Red Bench · ask him about the old trails}}</p>
+</li>
+<li class="host">
+<div class="host__photo"><img alt="Walt with a white beard and a bucket hat, in a checked shirt" height="2133" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1788940206076-3c5c7ad4d6b7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBvcnRyYWl0JTIwb2xkZXIlMjBtYW4lMjBoYXQlMjBvdXRkb29yc3xlbnwxfDF8fHwxNzkxNDEzMzcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=340&q=60}}" style="background:#597373;object-position: 50% 22%" width="1600"/></div>
+<h3 class="m-text-4">{{t140|Walt Brennan}}</h3>
+<p class="m-text-5">{{t141|Salt Rim · ask him about the planets}}</p>
+</li>
+<li class="host">
+<div class="host__photo"><img alt="June smiling in a grey fleece with an orange collar" height="2399" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1788088133486-d090adaa7db3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29tYW4lMjBoaWtlciUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDF8fHwxNzkxNDEzMzcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#262626;object-position: 40% 24%" width="1600"/></div>
+<h3 class="m-text-4">{{t142|June Okafor}}</h3>
+<p class="m-text-5">{{t143|Juniper Mesa · ask her about the birds}}</p>
+</li>
+</ul>
+</section>{{/sec_hosts}}
+
+{{#sec_pledge}}<section aria-labelledby="pledge-title" data-8b-section="pledge" id="pledge">
+<div class="pledge__inner">
+<div class="pledge__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="pledge-title">{{t144|We Keep}}<br/> {{t145|It Dark}}</h2>
+<p class="m-text-6">{{t146|A dark sky is the one thing we could never build back. These rules hold on every ridge, and they are written into our leases with the land.}}</p>
+</div>
+<ol class="pledge__rules">
+<li class="pledge__rule"><p class="m-text-4 pledge__line">{{t147|No light above knee height, anywhere on the ridge.}}</p><p class="m-text pledge__note">{{t148|Path lamps point at the ground and stop at your ankles.}}</p></li>
+<li class="pledge__rule"><p class="m-text-4 pledge__line">{{t149|Amber bulbs only, and few of them.}}</p><p class="m-text pledge__note">{{t150|Warm, dim glass that leaves your night vision alone.}}</p></li>
+<li class="pledge__rule"><p class="m-text-4 pledge__line">{{t151|Shared lamps go off at ten, every night.}}</p><p class="m-text pledge__note">{{t152|Your own lamps stay yours, on a timer you can override.}}</p></li>
+<li class="pledge__rule"><p class="m-text-4 pledge__line">{{t153|No generators, no drones, no speakers.}}</p><p class="m-text pledge__note">{{t154|The loudest thing on the ridge should be the wind.}}</p></li>
+<li class="pledge__rule"><p class="m-text-4 pledge__line">{{t155|Nothing built that shows from the next ridge.}}</p><p class="m-text pledge__note">{{t156|Every stay turns its glass away from the others.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_pledge}}
+
+{{#sec_arrival}}<section aria-labelledby="arrival-title" data-8b-section="arrival" id="arrival">
+<div class="arrival__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="arrival-title">{{t157|The Last}}<br/> {{t158|Six Miles}}</h2>
+<p class="m-text-6">{{t159|Every ridge is a drive from a small airport and a short stretch of gravel from the last paved road. Leave the city by lunch and you are on the deck before the light goes.}}</p>
+</div>
+<div class="arrival__stage">
+<div class="m-frame arrival__frame" data-8b-motion="horizon"><img alt="An empty two-lane road curving towards a snow-capped range in the evening" height="1067" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1617914373988-caa09cb61ca3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z3JhdmVsJTIwcm9hZCUyMGRlc2VydCUyMG1vdW50YWluc3xlbnwxfDB8fHwxNzkxNDEzNjA4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#4073a6" width="1600"/></div>
+<div class="arrival__side">
+<ol class="m-surface arrival__route" data-8b-motion="frost">
+<li class="arrival__leg"><span class="arrival__step">{{t160|1}}</span><h3 class="m-text-4">{{t161|Fly in small}}</h3><p class="m-text">{{t162|Reno, Las Vegas, St. George or Flagstaff, depending on the ridge. Any car will do; four-wheel drive only from December to March.}}</p></li>
+<li class="arrival__leg"><span class="arrival__step">{{t163|2}}</span><h3 class="m-text-4">{{t164|Take the two-lane road}}</h3><p class="m-text">{{t165|Two to four hours of open highway. Fill the tank in the last town; we send you its name and its best pie.}}</p></li>
+<li class="arrival__leg"><span class="arrival__step">{{t166|3}}</span><h3 class="m-text-4">{{t167|Six miles of gravel}}</h3><p class="m-text">{{t168|Graded, slow and beautiful. Your host meets you at the gate and brings your bags up on a cart.}}</p></li>
+</ol>
+<div class="arrival__note" data-8b-motion="frost">
+<p class="m-text">{{t169|No car? The shuttle leaves the last town at 2 pm on Fridays and Sundays.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label"><span class="m-btn__text">{{t170|Book a seat}}</span></span><span aria-hidden="true" class="m-btn__icon"><svg viewbox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg></span></a>
+</div>
+</div>
+</div>
+</section>{{/sec_arrival}}
+
+{{#sec_notes}}<section aria-labelledby="notes-title" data-8b-section="notes" id="notes">
+<div class="notes__stage">
+<img alt="" class="notes__photo" height="1067" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1675889336585-a50144866e5f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YmVkJTIwd2luZG93JTIwbW91bnRhaW4lMjB2aWV3fGVufDF8MHx8fDE3OTE0MTMzNDl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#262626" width="1600"/>
+<div class="notes__head">
+<h2 class="m-text-3" id="notes-title">{{t171|Left In}}<br/> {{t172|The Guestbook}}</h2>
+<p class="m-text-6">{{t173|Every stay has a paper guestbook by the bed. A few of the things people wrote in it this year.}}</p>
+</div>
+<ul class="notes__list">
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t174|We meant to read. We lay on the deck until two and never opened a book.}}</p></blockquote><p class="m-text-5">{{t175|Ines and Tom · Red Bench, February}}</p></li>
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t176|My daughter asked why the sky at home is broken. I did not have a good answer.}}</p></blockquote><p class="m-text-5">{{t177|Priya · Juniper Mesa, October}}</p></li>
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t178|Snowed in for a day with a stove, a bath and Mara's soup. Best day of the year.}}</p></blockquote><p class="m-text-5">{{t179|Daniel · Snowline, January}}</p></li>
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t180|The sunset went on for so long over the salt that we ran out of things to say, which was the point.}}</p></blockquote><p class="m-text-5">{{t181|Ruth and Ola · Salt Rim, May}}</p></li>
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t182|Walt showed us Saturn's rings at midnight and then went to bed like it was nothing.}}</p></blockquote><p class="m-text-5">{{t183|The Haddad family · Salt Rim, August}}</p></li>
+<li class="m-surface-2 note"><blockquote><p class="m-text">{{t184|Third visit. I still do not know the wifi password and I am not asking.}}</p></blockquote><p class="m-text-5">{{t185|Marcus · Snowline, March}}</p></li>
+</ul>
+</div>
+</section>{{/sec_notes}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="faq__inner">
+<div class="faq__side">
+<h2 class="m-text-3" data-8b-motion="rise" id="faq-title">{{t186|Before You}}<br/> {{t187|Drive Out}}</h2>
+<div class="faq__host">
+<div class="m-frame faq__photo" data-8b-motion="horizon"><img alt="Mara, the Snowline host" height="2178" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1605762830970-ab1104c9b0a6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d29tYW4lMjBoaWtlciUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDF8fHwxNzkxNDEzMzcyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#f3f3f3;object-position: 52% 30%" width="1600"/></div>
+<div>
+<p class="m-text">{{t188|Still unsure about something? Mara answers the phone from eight to eight, every day.}}</p>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t14|+1 760 000 0000}}</a>
+</div>
+</div>
+</div>
+<div class="faq__list">
+<details class="faq__item"><summary><span class="m-text-4">{{t189|Is there wifi or phone signal?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t190|Not in the stays. Each ridge has a small cabin at the gate with wifi and a landline for emergencies, and your host is always reachable.}}</p></details>
+<details class="faq__item"><summary><span class="m-text-4">{{t191|What happens if it is cloudy?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t192|Clouds come and go fast up here. If a whole stay is overcast, tell us before checkout and we give you a free night to use within a year.}}</p></details>
+<details class="faq__item"><summary><span class="m-text-4">{{t193|Are the stays warm in winter?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t194|Yes. Cabins and suites have wood stoves, domes and pods have quiet electric heating and heavy duvets, and every bed has a hot water bottle.}}</p></details>
+<details class="faq__item"><summary><span class="m-text-4">{{t195|Can we bring children or a dog?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t196|Children are welcome in the canvas suites at Juniper Mesa. Dogs can stay in the Rim Cabins at Snowline for $30 a night.}}</p></details>
+<details class="faq__item"><summary><span class="m-text-4">{{t197|Is there running water and a real toilet?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t198|Every stay has its own bathroom with a hot shower and a flushing toilet. Water comes from the ridge's own well and is safe to drink.}}</p></details>
+<details class="faq__item"><summary><span class="m-text-4">{{t199|What is the cancellation policy?}}</span><span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t200|Cancel up to fourteen days before arrival for a full refund. After that we move your dates once, free, within the next twelve months.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div aria-hidden="true" class="contact__ground"></div>
+<div class="contact__inner">
+<div class="contact__side">
+<div class="contact__horizon"><h2 class="m-text-3 contact__title" id="contact-title">{{t201|Book}}<br/> {{t202|The Quiet}}</h2></div>
+<p class="m-text-6">{{t203|Tell us the ridge, the roof and the nights. A host writes back within a day with dates, the gate code and the name of the last town.}}</p>
+<ul class="contact__ways">
+<li><span class="m-text-5">{{t204|Call a host}}</span><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t14|+1 760 000 0000}}</a></li>
+<li><span class="m-text-5">{{t205|Write}}</span><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t206|stay@farlight.example}}</a></li>
+<li><span class="m-text-5">{{t207|Office}}</span><span class="m-text">{{t208|1 Admiralty Way, Bishop, California}}</span></li>
+</ul>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Glamping by <a href="https://github.com/8bsite/glamping-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="footer__top">
+<div class="footer__brand">
+<p class="footer__name"><span aria-hidden="true" class="m-mark"></span>{{t1|⟦name⟧}}</p>
+<p class="m-text">{{t209|Glass-walled stays on four dark-sky ridges of the high desert, each one alone with the horizon.}}</p>
+</div>
+<nav aria-label="Footer">
+<ul class="footer__links">
+{{#nv_ridges}}<li><a class="m-link" href="#ridges">{{t5|Ridges}}</a></li>{{/nv_ridges}}
+{{#nv_hosts}}<li><a class="m-link" href="#hosts">{{t9|Hosts}}</a></li>{{/nv_hosts}}
+{{#nv_stays}}<li><a class="m-link" href="#stays">{{t6|Stays}}</a></li>{{/nv_stays}}
+{{#nv_pledge}}<li><a class="m-link" href="#pledge">{{t10|Our pledge}}</a></li>{{/nv_pledge}}
+{{#nv_night}}<li><a class="m-link" href="#night">{{t7|One night}}</a></li>{{/nv_night}}
+{{#nv_arrival}}<li><a class="m-link" href="#arrival">{{t11|Getting there}}</a></li>{{/nv_arrival}}
+{{#nv_table}}<li><a class="m-link" href="#table">{{t8|Supper}}</a></li>{{/nv_table}}
+{{#nv_faq}}<li><a class="m-link" href="#faq">{{t12|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<ul class="footer__contact">
+<li><span class="m-text-5">{{t204|Call a host}}</span><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t14|+1 760 000 0000}}</a></li>
+<li><span class="m-text-5">{{t205|Write}}</span><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t206|stay@farlight.example}}</a></li>
+<li><span class="m-text-5">{{t207|Office}}</span><span class="m-text">{{t208|1 Admiralty Way, Bishop, California}}</span></li>
+</ul>
+</div>
+<p class="m-text-2 footer__word" data-8b-motion="rise" style="--len:8">{{t1|⟦name⟧}}</p>
+<div class="footer__base">
+<p class="m-text-5">{{t210|© 2026 ⟦name⟧ Camps · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t211|8B}}</a></p>
+<a class="m-link m-text-5" href="#opening">{{t212|Back to the top}}</a>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+ScrollTrigger.config({ ignoreMobileResize: true });
+function navOffset() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? Math.round(bar.getBoundingClientRect().height + bar.offsetTop) : 0;
+}
+function refreshScroll() {
+  if (window.lenis) window.lenis.options.anchors = { offset: -navOffset() };
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .085, wheelMultiplier: .9, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  horizon(element, vars = {}) {
+    const img = element.querySelector('img');
+    const tl = gsap.timeline(vars);
+    tl.fromTo(element, { clipPath: 'inset(64% 0% 34% 0% round 24px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', duration: 1.25, ease: 'expo.inOut', clearProps: 'clipPath' }, 0);
+    if (img) tl.fromTo(img, { scale: 1.18 }, { scale: 1, duration: 1.6, ease: 'expo.out', clearProps: 'transform' }, .15);
+    return tl;
+  },
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines', linesClass: 'rise-line' });
+    const tl = gsap.timeline({ ...vars, onComplete() { split.revert(); vars.onComplete?.(); } });
+    split.lines.forEach((line, i) => tl.from(line, { yPercent: 108, duration: 1.05, ease: 'expo.out' }, i * .12));
+    tl.eventCallback('onInterrupt', () => split.revert());
+    tl.split = split;
+    return tl;
+  },
+  frost(element, vars = {}) {
+    const side = element.getBoundingClientRect().left + element.offsetWidth / 2 > innerWidth / 2 ? 1 : -1;
+    const blur = matchMedia('(min-width: 1024px) and (hover: hover)').matches;
+    const tl = gsap.timeline(vars);
+    tl.fromTo(element, { x: 56 * side, autoAlpha: 0, filter: blur ? 'blur(10px)' : 'none' }, { x: 0, autoAlpha: 1, filter: blur ? 'blur(0px)' : 'none', duration: 1.1, ease: 'expo.out', clearProps: 'filter,transform,opacity,visibility' });
+    return tl;
+  }
+};
+['horizon', 'rise', 'frost'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => {
+      gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+        const made = elements.map((element, i) => {
+          const animation = effects[name](element, { paused: true });
+          ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top 86%', once: true, animation });
+          return animation;
+        });
+        return () => made.forEach(animation => animation.split?.revert());
+      });
+    }, { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const bar = nav.querySelector('.nav__bar');
+  const open = nav.querySelector('.nav__menu');
+  const overlay = nav.querySelector('.nav__overlay');
+  const close = nav.querySelector('.nav__close');
+  let lastY = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - lastY;
+    lastY = y;
+    if (!delta) return;
+    travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta;
+    if (y < 80) bar.removeAttribute('data-hidden');
+    else if (travel > 24) bar.setAttribute('data-hidden', '');
+    else if (travel < -8) bar.removeAttribute('data-hidden');
+  }, { passive: true });
+  const setOpen = state => {
+    overlay.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  overlay.addEventListener('click', event => {
+    if (event.target === overlay) setOpen(false);
+    if (event.target.closest('a')) { overlay.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }
+  });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) setOpen(false); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  const form = section.querySelector('.op__search');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    ['ridge', 'stay', 'nights'].forEach(name => {
+      const target = document.getElementById(`contact-${name}`);
+      const value = form.elements[name]?.value;
+      if (target && value) target.value = value;
+    });
+    const contact = document.getElementById('contact');
+    if (window.lenis) window.lenis.scrollTo(contact, { offset: 0 });
+    else contact.scrollIntoView();
+    contact.querySelector('input[name="name"]')?.focus({ preventScroll: true });
+  });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      section.dataset.loops = entry.isIntersecting ? 'running' : 'paused';
+    }).observe(section.querySelector('.op__stage'));
+  }
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.elements.name.value.trim() && /\S+@\S+\.\S+/.test(form.elements.email.value);
+    status.textContent = ok ? status.dataset.sent : status.dataset.missing;
+    status.hidden = false;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const stage = section.querySelector('.op__stage');
+    const rim = section.querySelector('.op__rim');
+    const win = section.querySelector('.op__window');
+    const fg = section.querySelector('.op__fg');
+    const fgDrift = fg.querySelector('.op__drift');
+    const fgImg = fg.querySelector('img');
+    const title = section.querySelector('.op__title');
+    const titleWrap = section.querySelector('.op__title-wrap');
+    const dusk = section.querySelector('.op__dusk');
+    const night = section.querySelector('.op__night');
+    const ui = {
+      search: section.querySelector('.op__search'),
+      lead: section.querySelector('.op__lead'),
+      rail: section.querySelector('.op__rail'),
+      left: section.querySelector('.op__card-l'),
+      right: section.querySelector('.op__card-r'),
+      seal: section.querySelector('.op__seal')
+    };
+    const ratio = (+fgImg.getAttribute('width') || 4) / (+fgImg.getAttribute('height') || 3);
+    const shape = [[0, .725], [.152, .725], [.152, .566], [.837, .376], [.837, .66], [1, .66], [1, 1], [0, 1]];
+    let points = [];
+    const measure = () => {
+      const w = fgDrift.offsetWidth, h = fgDrift.offsetHeight;
+      const [px, py] = getComputedStyle(fgImg).objectPosition.split(' ').map(v => parseFloat(v) / 100);
+      const rw = Math.max(w, h * ratio), rh = rw / ratio;
+      const ox = (w - rw) * (isNaN(px) ? .5 : px), oy = (h - rh) * (isNaN(py) ? 0 : py);
+      points = shape.map(([u, v]) => [ox + u * rw, oy + v * rh]);
+      fgDrift.style.clipPath = `polygon(${points.map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(', ')})`;
+    };
+    const coverTopAt = x => {
+      let top = Infinity;
+      for (let i = 0; i < points.length - 1; i++) {
+        const [x1, y1] = points[i], [x2, y2] = points[i + 1];
+        if (x2 === x1 || y1 > fgDrift.offsetHeight * .99 || y2 > fgDrift.offsetHeight * .99) continue;
+        const lo = Math.min(x1, x2), hi = Math.max(x1, x2);
+        if (x < lo || x > hi) continue;
+        top = Math.min(top, y1 + (y2 - y1) * (x - x1) / (x2 - x1));
+      }
+      return top === Infinity ? fgDrift.offsetHeight : top;
+    };
+    const sink = () => {
+      const h = fgDrift.offsetHeight;
+      const scale = new DOMMatrix(getComputedStyle(fgDrift).transform).a || 1;
+      const left = titleWrap.offsetLeft + title.offsetLeft, top = titleWrap.offsetTop + title.offsetTop, w = title.offsetWidth;
+      let lowest = 0;
+      for (let k = 0; k <= 10; k++) lowest = Math.max(lowest, coverTopAt(left - 60 + (w + 120) * k / 10));
+      return Math.max(0, h / 2 + (lowest - h / 2) * scale - top + 24);
+    };
+    const restClip = el => { const own = el.style.clipPath; el.style.clipPath = ''; const value = getComputedStyle(el).clipPath; el.style.clipPath = own; return value; };
+    section.classList.add('is-set');
+    measure();
+    const tl = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        id: 'opening', trigger: section, start: 'top top', end: () => '+=' + stage.offsetHeight,
+        scrub: .6, invalidateOnRefresh: true, onRefreshInit: measure
+      }
+    });
+    tl.fromTo(rim, { clipPath: () => restClip(rim) }, { clipPath: 'inset(0px round 0px)', duration: .55 }, 0)
+      .fromTo(win, { clipPath: () => restClip(win) }, { clipPath: 'inset(0px round 0px)', duration: .55 }, 0)
+      .to(ui.search, { y: -36, autoAlpha: 0, duration: .16 }, 0)
+      .to(ui.lead, { y: -50, autoAlpha: 0, duration: .3 }, .02)
+      .to(ui.rail, { x: -110, autoAlpha: 0, duration: .32 }, 0)
+      .to(ui.left, { x: -120, y: 90, autoAlpha: 0, duration: .4 }, .04)
+      .to(ui.right, { x: 150, y: 40, autoAlpha: 0, duration: .4 }, .04)
+      .to(ui.seal, { y: 160, rotation: -70, autoAlpha: 0, duration: .36 }, .02)
+      .to(title, { y: sink, duration: .62, ease: 'power1.in' }, .06)
+      .fromTo(dusk, { opacity: 0 }, { opacity: .82, duration: .5 }, .2)
+      .fromTo(night, { opacity: 0, scale: 1.14 }, { opacity: 1, scale: 1, duration: .5 }, .5);
+    return () => { section.classList.remove('is-set'); fgDrift.style.removeProperty('clip-path'); };
+  });
+}, { first: true, id: 'scene:opening' });
+</script>
+<script data-8b-part="scene:ridges">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('ridges');
+    const stage = section.querySelector('.ridges__stage');
+    const items = [...section.querySelectorAll('.ridge')];
+    if (items.length < 2) return;
+    section.classList.add('is-held');
+    const tl = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: {
+        id: 'ridges', trigger: stage, start: () => `top ${Math.max(0, (innerHeight - stage.offsetHeight) / 2)}px`,
+        end: () => '+=' + innerHeight * .95 * (items.length - 1), pin: true, scrub: .7, invalidateOnRefresh: true
+      }
+    });
+    items.forEach((item, i) => {
+      if (!i) return;
+      const prev = items[i - 1];
+      const at = i - 1;
+      tl.fromTo(item, { clipPath: 'inset(62% 0% 38.6% 0% round 0px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', duration: .7, ease: 'power2.inOut' }, at)
+        .fromTo(item.querySelector('.ridge__frame img'), { scale: 1.25 }, { scale: 1, duration: .9, ease: 'power2.out' }, at)
+        .fromTo(item.querySelector('.ridge__card'), { x: 90, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: .35, ease: 'power2.out' }, at + .5)
+        .fromTo(prev.querySelector('.ridge__frame'), { scale: 1, filter: 'brightness(1)' }, { scale: .9, filter: 'brightness(.45)', duration: .8, ease: 'power1.in' }, at + .1)
+        .fromTo(prev.querySelector('.ridge__card'), { autoAlpha: 1 }, { autoAlpha: 0, duration: .25 }, at + .1);
+    });
+    tl.to({}, { duration: .25 });
+    return () => section.classList.remove('is-held');
+  });
+}, { id: 'scene:ridges' });
+</script>
+<script data-8b-part="scene:stays">
+queueMotion(() => {
+  const mm = gsap.matchMedia();
+  mm.add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 720px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 719px)' }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('stays');
+    section.querySelectorAll('.stay').forEach((stay, i) => {
+      const card = stay.querySelector('.stay__card');
+      const img = stay.querySelector('.stay__frame img');
+      const dir = stay.matches(':nth-child(even)') ? -1 : 1;
+      const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `stays:${i}`, trigger: stay, start: 'top bottom', end: 'center 52%', scrub: .6, invalidateOnRefresh: true } });
+      if (wide) tl.fromTo(card, { x: () => dir * (stay.offsetWidth - card.offsetWidth - 56) }, { x: 0, ease: 'power2.out' }, 0);
+      else tl.fromTo(card, { y: 120 }, { y: 0, ease: 'power2.out' }, 0);
+      tl.fromTo(img, { xPercent: -5 * dir }, { xPercent: 0, ease: 'power1.out' }, 0);
+    });
+  });
+}, { id: 'scene:stays' });
+</script>
+<script data-8b-part="scene:night">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('night');
+    const ground = section.querySelector('.night__ground');
+    const moments = [...section.querySelectorAll('.moment')];
+    if (!moments.length) return;
+    const colors = moments.map(m => getComputedStyle(m).backgroundColor);
+    const inks = moments.map(m => getComputedStyle(m).color);
+    section.classList.add('is-sky');
+    const setBg = gsap.quickSetter(ground, 'backgroundColor');
+    const setInk = gsap.quickSetter(section, 'color');
+    let marks = [];
+    const measure = () => { marks = moments.map(m => m.getBoundingClientRect().top + scrollY); };
+    const paint = () => {
+      const y = scrollY + innerHeight * .5;
+      let color = colors[0], ink = inks[0];
+      for (let i = 1; i < moments.length; i++) {
+        const start = marks[i] - innerHeight * .2, end = marks[i] + innerHeight * .1;
+        if (y <= start) break;
+        const t = gsap.utils.clamp(0, 1, (y - start) / (end - start));
+        color = gsap.utils.interpolate(colors[i - 1], colors[i], t);
+        ink = gsap.utils.interpolate(inks[i - 1], inks[i], gsap.utils.clamp(0, 1, (t - .42) / .16));
+      }
+      setBg(color);
+      setInk(ink);
+    };
+    ScrollTrigger.create({ id: 'night', trigger: section, start: 'top bottom', end: 'bottom top', onRefresh: () => { measure(); paint(); }, onUpdate: paint });
+    moments.forEach((moment, i) => {
+      gsap.fromTo(moment.querySelector('.moment__frame'), { y: 140 }, { y: 0, ease: 'power1.out', scrollTrigger: { id: `night:frame-${i}`, trigger: moment, start: 'top bottom', end: 'center 55%', scrub: .5 } });
+    });
+    return () => { section.classList.remove('is-sky'); section.style.removeProperty('color'); };
+  });
+}, { id: 'scene:night' });
+</script>
+<script data-8b-part="scene:hosts">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('hosts');
+    const list = section.querySelector('.hosts__list');
+    const hosts = [...list.querySelectorAll('.host')];
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'hosts', trigger: list, start: 'top 88%', end: 'bottom 55%', scrub: .6 } });
+    hosts.forEach((host, i) => {
+      const at = i * .22;
+      tl.fromTo(host.querySelector('.host__photo'), { clipPath: 'inset(16% 26% 58% 26% round 999px)' }, { clipPath: 'inset(0% 0% 0% 0% round 999px)', duration: .8 }, at)
+        .fromTo(host.querySelector('.host__photo img'), { scale: 1.45 }, { scale: 1, duration: .8 }, at)
+        .fromTo(host.querySelector('h3'), { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .4 }, at + .45)
+        .fromTo(host.querySelector('.m-text-5'), { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .4 }, at + .52);
+    });
+  });
+}, { id: 'scene:hosts' });
+</script>
+<script data-8b-part="scene:pledge">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('pledge');
+    const css = getComputedStyle(document.documentElement);
+    const ember = css.getPropertyValue('--color-5').trim();
+    const off = css.getPropertyValue('--color-7').trim();
+    const white = css.getPropertyValue('--color-3').trim();
+    section.querySelectorAll('.pledge__rule').forEach((rule, i) => {
+      const line = rule.querySelector('.pledge__line');
+      const note = rule.querySelector('.pledge__note');
+      const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `pledge:${i}`, trigger: rule, start: 'top 62%', end: 'top 38%', scrub: .4 } });
+      tl.fromTo(line, { color: ember, textShadow: `0 0 28px ${ember}` }, { color: off, textShadow: `0 0 0px ${ember}` }, 0)
+        .fromTo(note, { color: white }, { color: off }, 0);
+    });
+  });
+}, { id: 'scene:pledge' });
+</script>
+<script data-8b-part="scene:notes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('notes');
+    const stage = section.querySelector('.notes__stage');
+    const notes = [...section.querySelectorAll('.note')];
+    const cols = () => getComputedStyle(section.querySelector('.notes__list')).gridTemplateColumns.split(' ').length;
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'notes', trigger: stage, start: 'top bottom', end: 'center 55%', scrub: .6, invalidateOnRefresh: true } });
+    tl.fromTo(section.querySelector('.notes__photo'), { scale: 1.25 }, { scale: 1 }, 0);
+    notes.forEach((note, i) => {
+      tl.fromTo(note, { y: () => 90 + (i % cols()) * 130 }, { y: 0, ease: 'power1.out' }, 0);
+    });
+  });
+}, { id: 'scene:notes' });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const css = getComputedStyle(document.documentElement);
+    const nightC = css.getPropertyValue('--color-4').trim();
+    const dawn = css.getPropertyValue('--color-8').trim();
+    const ink = css.getPropertyValue('--color-2').trim();
+    const light = css.getPropertyValue('--color-3').trim();
+    section.classList.add('is-dawn');
+    const side = section.querySelector('.contact__side');
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'contact', trigger: section, start: 'top bottom', end: 'top 30%', scrub: .6 } });
+    tl.fromTo(section.querySelector('.contact__ground'), { backgroundColor: nightC }, { backgroundColor: dawn }, 0)
+      .fromTo(side, { color: light }, { color: ink }, .1)
+      .fromTo(section.querySelector('.contact__title'), { yPercent: 102 }, { yPercent: 0, ease: 'power2.out' }, .2);
+    return () => section.classList.remove('is-dawn');
+  });
+}, { id: 'scene:contact' });
+</script>
+</body>
+</html>

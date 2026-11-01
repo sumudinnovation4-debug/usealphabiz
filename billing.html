@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Billing – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<main class="wrap"><p><a href="dashboard.html">My Sites</a> · <b>Billing</b></p><h1>Billing & Subscription</h1>
+<div class="card"><div class="row" style="border:0"><h3>Current Plan</h3><span class="pill">Active</span></div><b>Starter Annual</b><p class="mut" id="pl"></p><p>Domain included: <span class="pill" id="dm"></span></p></div><br>
+<div class="card"><h3>Payment Method</h3><p class="mut">Paystack · Card ending in saved at checkout</p><button class="btn sm" onclick="if(confirm('Cancel your subscription?'))alert('Request received. Connect this to your /api/cancel route.')">Cancel Subscription</button> <button class="btn out sm">Change</button></div>
+<h2 style="margin-top:28px">Invoices</h2><div class="card"><table><tr><th>Date</th><th>Invoice</th><th>Amount</th><th>Status</th></tr><tbody id="inv"></tbody></table></div></main>
+<script src="app.js"></script><script>
+const p=S.get('paid',null),o=S.get('order',{}),d=p?new Date(p.date):null;
+$('#dm').textContent=o.domain||'—';$('#pl').textContent=d?`₦26,999/year · Renews ${new Date(d.getFullYear()+1,d.getMonth(),d.getDate()).toDateString()}`:'No active plan yet';
+$('#inv').innerHTML=d?`<tr><td>${d.toDateString()}</td><td>INV-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,0)}${String(d.getDate()).padStart(2,0)}</td><td>₦26,999</td><td><span class="pill">Paid</span></td></tr>`:'<tr><td colspan=4 class="mut">No invoices yet</td></tr>';
+</script></body></html>

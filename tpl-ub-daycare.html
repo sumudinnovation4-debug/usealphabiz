@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* armenian */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiIUvaYr.woff2) format('woff2');
+  unicode-range: U+0308, U+0530-058F, U+2010, U+2024, U+25CC, U+FB13-FB17;
+}
+/* bengali */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiAUvaYr.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1, U+11DF0-11DF1;
+}
+/* canadian-aboriginal */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPh0UvaYr.woff2) format('woff2');
+  unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+0307, U+1400-167F, U+18B0-18F5, U+25CC, U+11AB0-11ABF;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPj8UvaYr.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjYUvaYr.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjMUvaYr.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* ethiopic */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiMUvaYr.woff2) format('woff2');
+  unicode-range: U+030E, U+1200-1399, U+2D80-2DDE, U+AB01-AB2E, U+1E7E0-1E7E6, U+1E7E8-1E7EB, U+1E7ED-1E7EE, U+1E7F0-1E7FE;
+}
+/* georgian */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPi0UvaYr.woff2) format('woff2');
+  unicode-range: U+0589, U+10A0-10FF, U+1C90-1CBA, U+1CBD-1CBF, U+205A, U+2D00-2D2F, U+2E31;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPj4UvaYr.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjEUvaYr.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* gujarati */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPikUvaYr.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839;
+}
+/* gurmukhi */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPhEUvaYr.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0A01-0A76, U+200C-200D, U+20B9, U+25CC, U+262C, U+A830-A839;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjAUvaYr.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* khmer */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjkUvaYr.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+19E0-19FF, U+200C-200D, U+25CC;
+}
+/* lao */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjsUvaYr.woff2) format('woff2');
+  unicode-range: U+0E81-0EDF, U+200C-200D, U+25CC;
+}
+/* malayalam */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPioUvaYr.woff2) format('woff2');
+  unicode-range: U+0307, U+0323, U+0951-0952, U+0964-0965, U+0B83, U+0D00-0D7F, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC, U+A830-A832;
+}
+/* oriya */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPisUvaYr.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0B01-0B77, U+1CDA, U+1CF2, U+200C-200D, U+20B9, U+25CC;
+}
+/* sinhala */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPi8UvaYr.woff2) format('woff2');
+  unicode-range: U+0964-0965, U+0D81-0DF4, U+1CF2, U+200C-200D, U+25CC, U+111E1-111F4;
+}
+/* symbols */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPlwUvaYr.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AE, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F8D0-1F8D8, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FAC6, U+1FAC8, U+1FACC-1FADD, U+1FADF-1FAEB, U+1FAEF-1FAFA, U+1FB00-1FBFF;
+}
+/* tamil */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiQUvaYr.woff2) format('woff2');
+  unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
+}
+/* telugu */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPi4UvaYr.woff2) format('woff2');
+  unicode-range: U+0951-0952, U+0964-0965, U+0B83, U+0C00-0C7F, U+1CD5-1CD6, U+1CD8, U+1CDA, U+1CF2, U+200C-200D, U+25CC;
+}
+/* thai */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPiYUvaYr.woff2) format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPj0UvaYr.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjwUvaYr.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/googlesans/v71/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #F6EADA;
+  --color-2: #FDF8F1;
+  --color-3: #4A2A1F;
+  --color-4: #E2588B;
+  --color-5: #AE9AEA;
+  --color-6: #7A5BD0;
+  --color-7: #BFE6B0;
+  --color-8: #3E9A55;
+  --color-9: #F6D167;
+  --color-10: #F8C8D9;
+  --color-11: #FFFFFF;
+  --color-12: #C93A72;
+  --color-13: #7B5C4F;
+  --color-14: #A6D996;
+  --font-1: "Gabarito", "Gabarito Fallback", system-ui, Arial, sans-serif;
+  --font-2: "Google Sans", "Google Sans Fallback", system-ui, Arial, sans-serif;
+  --radius-1: 48px;
+  --radius-2: 32px;
+  --radius-3: 999px;
+  --radius-4: 24px;
+  --radius-5: 18px;
+  --shadow-1: inset 0 2px 0 color-mix(in srgb, var(--color-11) 75%, transparent), inset 10px 14px 22px color-mix(in srgb, var(--color-11) 45%, transparent), inset -12px -16px 26px color-mix(in srgb, var(--color-3) 8%, transparent), 0 26px 44px -22px color-mix(in srgb, var(--color-3) 30%, transparent);
+  --shadow-2: inset 3px 4px 7px color-mix(in srgb, var(--color-11) 50%, transparent), inset -4px -6px 10px color-mix(in srgb, var(--color-3) 16%, transparent), 0 10px 18px -8px color-mix(in srgb, var(--color-3) 32%, transparent);
+  --shadow-3: inset 1px 2px 3px color-mix(in srgb, var(--color-11) 30%, transparent), inset -3px -5px 10px color-mix(in srgb, var(--color-3) 24%, transparent), 0 4px 8px -5px color-mix(in srgb, var(--color-3) 30%, transparent);
+  --shadow-4: 0 24px 40px -20px color-mix(in srgb, var(--color-3) 45%, transparent);
+  --space-1: clamp(12px, 2.4vw, 32px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 81.8%; ascent-override: 115%; descent-override: 31.8%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 91.8%; ascent-override: 102.4%; descent-override: 28.3%; line-gap-override: 0%; }
+@font-face { font-family: "Google Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 99.5%; ascent-override: 97.5%; descent-override: 29.1%; line-gap-override: 0%; }
+@font-face { font-family: "Google Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 100.7%; ascent-override: 96.3%; descent-override: 28.8%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-3); overflow-x: clip; }
+main, footer { overflow-x: clip; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+section[id], footer[id] { scroll-margin-top: 96px; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(3.75rem, 8.6vw, 8rem); font-weight: 800; line-height: .9; letter-spacing: -.025em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(2.375rem, 4.6vw, 4.25rem); font-weight: 800; line-height: 1; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 1.5rem; font-weight: 700; line-height: 1.1; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: .9375rem; font-weight: 500; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(1.125rem, 1.45vw, 1.3125rem); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1.25; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-8 { font-family: var(--font-2); font-size: clamp(1.375rem, 2.1vw, 1.875rem); font-weight: 500; line-height: 1.4; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+
+.m-btn { display: inline-flex; align-items: center; gap: 16px; padding: 9px 9px 9px 28px; border: 0; border-radius: var(--radius-3); background: var(--color-6); color: var(--color-11); box-shadow: var(--shadow-2); font-family: var(--font-2); font-size: 1.125rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; text-decoration: none; cursor: pointer; transform-origin: 50% 100%; transition: transform .45s cubic-bezier(.34, 1.56, .64, 1), box-shadow .3s ease; }
+.m-btn__icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--color-11); color: var(--color-6); box-shadow: var(--shadow-2); transition: transform .6s cubic-bezier(.34, 1.4, .64, 1); }
+.m-btn:focus-visible { outline-color: var(--color-3); }
+@media (hover: hover) {
+  .m-btn:hover { transform: translateY(2px) scale(1.03, .93); box-shadow: var(--shadow-3); }
+  .m-btn:hover .m-btn__icon { transform: translateX(3px) rotate(360deg); }
+}
+.m-btn-2 { display: inline-flex; align-items: center; gap: 10px; padding: 7px 22px 7px 7px; border: 0; border-radius: var(--radius-3); background: var(--color-12); color: var(--color-11); box-shadow: var(--shadow-2); font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; transform-origin: 50% 100%; transition: transform .45s cubic-bezier(.34, 1.56, .64, 1), box-shadow .3s ease; }
+.m-btn-2__icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--color-2); color: var(--color-12); transition: transform .6s cubic-bezier(.34, 1.4, .64, 1); }
+@media (hover: hover) {
+  .m-btn-2:hover { transform: translateY(2px) scale(1.03, .93); box-shadow: var(--shadow-3); }
+  .m-btn-2:hover .m-btn-2__icon { transform: rotate(360deg); }
+}
+.m-btn-3 { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px 12px 24px; border: 0; border-radius: var(--radius-3); background: var(--color-2); color: var(--color-3); box-shadow: var(--shadow-2); font-family: var(--font-2); font-size: 1.0625rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; text-decoration: none; cursor: pointer; transform-origin: 50% 100%; transition: transform .45s cubic-bezier(.34, 1.56, .64, 1), box-shadow .3s ease; }
+.m-btn-3__icon { display: grid; place-items: center; color: var(--color-6); transition: transform .6s cubic-bezier(.34, 1.4, .64, 1); }
+@media (hover: hover) {
+  .m-btn-3:hover { transform: translateY(2px) scale(1.03, .93); box-shadow: var(--shadow-3); }
+  .m-btn-3:hover .m-btn-3__icon { transform: translateX(3px) rotate(360deg); }
+}
+.m-link { position: relative; display: inline-block; isolation: isolate; padding: 2px 4px; color: var(--color-3); font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1.3; letter-spacing: 0; text-decoration: none; }
+.m-link::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 10px; background: color-mix(in srgb, var(--color-4) 38%, transparent); transform: scaleY(.16); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.34, 1.56, .64, 1); }
+@media (hover: hover) { .m-link:hover::before { transform: scaleY(1); } }
+.m-iconbtn { display: grid; place-items: center; width: 52px; height: 52px; padding: 0; border: 0; border-radius: 50%; background: var(--color-2); color: var(--color-3); box-shadow: var(--shadow-2); cursor: pointer; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) { .m-iconbtn:hover { animation: m-iconbtn-squash .55s cubic-bezier(.34, 1.56, .64, 1); } }
+@keyframes m-iconbtn-squash { 30% { transform: scale(1.12, .84); } 60% { transform: scale(.94, 1.06); } }
+
+.m-surface { background: var(--color-2); color: var(--color-3); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-2 { background: var(--color-6); color: var(--color-11); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-2 :focus-visible { outline-color: var(--color-11); }
+.m-surface-3 { background: var(--color-7); color: var(--color-3); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-4 { background: var(--color-10); color: var(--color-3); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-5 { background: var(--color-9); color: var(--color-3); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-surface-6 { background: var(--color-5); color: var(--color-3); border-radius: var(--radius-2); box-shadow: var(--shadow-1); }
+.m-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: var(--radius-3); background: var(--color-9); color: var(--color-3); box-shadow: var(--shadow-2); font-family: var(--font-2); font-size: .875rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-badge-2 { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: var(--radius-3); background: var(--color-7); color: var(--color-3); box-shadow: var(--shadow-2); font-family: var(--font-2); font-size: .875rem; font-weight: 700; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-frame { overflow: hidden; border-radius: var(--radius-2); background: var(--color-2); box-shadow: var(--shadow-4); }
+.m-frame > img { width: 100%; height: 100%; object-fit: cover; }
+.m-field { display: grid; gap: 8px; font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1.25; letter-spacing: 0; color: var(--color-3); }
+.m-field__control { width: 100%; min-height: 54px; padding: 14px 18px; border: 2px solid transparent; border-radius: var(--radius-5); background: var(--color-2); box-shadow: var(--shadow-3); font-family: var(--font-2); font-size: 1rem; font-weight: 400; color: var(--color-3); }
+.m-field__control:focus-visible { outline: 3px solid var(--color-3); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-wrap { width: min(1240px, 100% - 2 * var(--space-1)); margin-inline: auto; }
+.l-head { display: grid; gap: 16px; max-width: 42rem; text-wrap: balance; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto 0; z-index: 50; pointer-events: none; }
+#navigation .nav__bar { pointer-events: auto; display: flex; align-items: center; gap: 24px; margin: calc(var(--space-1) + 14px) calc(var(--space-1) + 14px) 0; padding: 10px 12px 10px 20px; border-radius: var(--radius-3); transition: transform .5s cubic-bezier(.34, 1.3, .64, 1), background-color .3s ease, box-shadow .3s ease, margin .3s ease; }
+#navigation.is-floating .nav__bar { margin-top: 12px; background: var(--color-2); box-shadow: var(--shadow-2); }
+#navigation.is-hidden .nav__bar { transform: translateY(calc(-100% - 40px)); }
+#navigation .nav__brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--color-3); flex: none; }
+#navigation .nav__mark { display: grid; grid-template-columns: repeat(2, 15px); gap: 3px; }
+#navigation .nav__mark i { width: 15px; height: 15px; border-radius: 50%; box-shadow: var(--shadow-2); background: var(--color-5); }
+#navigation .nav__mark i:nth-child(2) { background: var(--color-4); }
+#navigation .nav__mark i:nth-child(3) { background: var(--color-14); }
+#navigation .nav__mark i:nth-child(4) { background: var(--color-9); }
+#navigation .nav__word { font-family: var(--font-1); font-size: 1.625rem; font-weight: 800; letter-spacing: -.02em; line-height: 1; }
+#navigation .nav__links { margin-inline: auto; }
+#navigation .nav__links ul { display: flex; gap: 4px; }
+#navigation .nav__link { position: relative; display: block; padding: 11px 18px; border-radius: var(--radius-3); text-decoration: none; isolation: isolate; }
+#navigation .nav__link::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: var(--color-5); box-shadow: var(--shadow-2); transform: scale(.4, .2); opacity: 0; transition: transform .5s cubic-bezier(.34, 1.56, .64, 1), opacity .2s ease; }
+#navigation .nav__link[aria-current="true"]::before { transform: none; opacity: 1; }
+@media (hover: hover) { #navigation .nav__link:hover::before { transform: scale(1, .9); opacity: .55; } #navigation .nav__link[aria-current="true"]:hover::before { transform: scale(1.06, .86); opacity: 1; } }
+#navigation .nav__menu { display: none; }
+#navigation .nav__cta { flex: none; }
+#navigation .menu { pointer-events: auto; position: fixed; inset: 0; z-index: 60; display: grid; align-content: start; gap: 28px; padding: 22px var(--space-1) 40px; background: var(--color-5); overflow-y: auto; }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .menu__links { display: grid; gap: 10px; }
+#navigation .menu__links a { display: block; padding: 16px 24px; border-radius: var(--radius-4); background: var(--color-2); box-shadow: var(--shadow-2); font-family: var(--font-1); font-size: 1.75rem; font-weight: 800; letter-spacing: -.01em; text-decoration: none; color: var(--color-3); }
+@media (max-width: 1023px) {
+  #navigation .nav__links { display: none; }
+  #navigation .nav__menu { display: grid; }
+  #navigation .nav__cta { margin-left: auto; }
+  #navigation .nav__bar { gap: 12px; }
+}
+@media (max-width: 559px) {
+  #navigation .nav__bar { margin: 12px 12px 0; padding: 6px 6px 6px 14px; }
+  #navigation .nav__cta { display: none; }
+  #navigation .nav__brand { margin-right: auto; }
+  #navigation .nav__word { font-size: 1.375rem; }
+}
+}
+</style>
+<style data-8b-part="section:rooms">
+@layer sections {
+#rooms { padding-block: clamp(80px, 12vh, 140px) clamp(32px, 5vh, 48px); }
+#rooms .l-head { max-width: none; }
+#rooms .l-head p { max-width: 44rem; }
+#rooms .rm-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 22px); align-items: end; height: clamp(560px, 68vh, 680px); margin-top: clamp(32px, 5vh, 56px); }
+#rooms .rm-room { position: relative; height: var(--rm-h); }
+#rooms .rm-room:nth-child(1) { --rm-h: 76%; --rm-w: 79%; }
+#rooms .rm-room:nth-child(2) { --rm-h: 84%; --rm-w: 86%; }
+#rooms .rm-room:nth-child(3) { --rm-h: 92%; --rm-w: 93%; }
+#rooms .rm-room:nth-child(4) { --rm-h: 100%; --rm-w: 100%; }
+#rooms .rm-ground { position: absolute; inset: 0; transform-origin: 50% 100%; }
+#rooms .rm-body { position: relative; height: 100%; display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto auto; gap: 10px; justify-items: start; padding: 14px 14px 20px; }
+#rooms .rm-photo { width: 100%; height: 100%; min-height: 120px; border-radius: 22px; margin-bottom: 6px; }
+#rooms .rm-room:nth-child(1) .rm-photo img { object-position: 50% 30%; }
+#rooms .rm-room:nth-child(2) .rm-photo img { object-position: 40% 70%; }
+#rooms .rm-room:nth-child(3) .rm-photo img { object-position: 50% 30%; }
+#rooms .rm-room:nth-child(4) .rm-photo img { object-position: 50% 32%; }
+#rooms .rm-name { font-size: clamp(1.75rem, 2.4vw, 2.25rem); padding-inline: 6px; }
+#rooms .rm-ratio, #rooms .rm-text { padding-inline: 6px; }
+#rooms .rm-badge { margin-left: 4px; }
+@media (max-width: 899px) {
+  #rooms .rm-list { grid-template-columns: minmax(0, 1fr); height: auto; align-items: start; gap: 14px; }
+  #rooms .rm-room { height: auto; width: var(--rm-w); }
+  #rooms .rm-ground { transform-origin: 0 50%; }
+  #rooms .rm-body { height: auto; grid-template-rows: none; grid-template-columns: 104px minmax(0, 1fr); column-gap: 14px; row-gap: 6px; padding: 12px 16px 14px 12px; }
+  #rooms .rm-photo { grid-row: span 4; height: auto; min-height: 0; aspect-ratio: 1; margin: 0; align-self: start; }
+  #rooms .rm-name { font-size: 1.5rem; padding: 0; }
+  #rooms .rm-ratio, #rooms .rm-text { padding: 0; }
+  #rooms .rm-badge { margin: 0; }
+}
+}
+</style>
+<style data-8b-part="section:making">
+@layer sections {
+#making { padding-block: clamp(40px, 6vh, 80px); }
+#making .mk-slab { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.6fr); gap: clamp(28px, 4vw, 64px); align-items: center; padding: clamp(28px, 4.4vw, 64px); border-radius: var(--radius-1); }
+#making .mk-copy { display: grid; gap: 18px; justify-items: start; }
+#making .mk-copy ul { display: flex; flex-wrap: wrap; gap: 8px; }
+#making .mk-table { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 22px); align-items: start; }
+#making .mk-item { position: relative; display: grid; gap: 10px; justify-items: center; }
+#making .mk-item:nth-child(3n + 2) { margin-top: clamp(28px, 4vw, 56px); }
+#making .mk-item .m-frame { width: 100%; aspect-ratio: 4 / 5; border-radius: 28px; border: 6px solid var(--color-2); }
+@media (max-width: 899px) {
+  #making .mk-slab { grid-template-columns: minmax(0, 1fr); }
+  #making .mk-table { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #making .mk-item:nth-child(3n + 2) { margin-top: 0; }
+  #making .mk-item:nth-child(even) { margin-top: 36px; }
+}
+}
+</style>
+<style data-8b-part="section:garden">
+@layer sections {
+#garden { padding-block: clamp(96px, 14vh, 160px); }
+#garden .gd-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
+#garden .gd-photos { position: relative; padding: 0 8% 12% 0; }
+#garden .gd-big { aspect-ratio: 4 / 3; border-radius: var(--radius-1); }
+#garden .gd-big img { object-position: 60% 50%; }
+#garden .gd-boots { position: absolute; right: 0; bottom: 0; width: 34%; transform: rotate(-5deg); }
+#garden .gd-boots .m-frame { aspect-ratio: 3 / 4; border-radius: 30px; border: 8px solid var(--color-2); }
+#garden .gd-slab { display: grid; gap: 20px; justify-items: start; padding: clamp(28px, 3.6vw, 52px); border-radius: var(--radius-1); }
+#garden .gd-notes { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 899px) {
+  #garden .gd-grid { grid-template-columns: minmax(0, 1fr); }
+  #garden .gd-photos { padding: 0 10% 18% 0; }
+  #garden .gd-boots { width: 40%; }
+}
+}
+</style>
+<style data-8b-part="section:settling">
+@layer sections {
+#settling { padding-block: clamp(80px, 12vh, 140px); }
+#settling .st-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+#settling .st-steps { display: grid; gap: 17vh; margin-top: 10vh; padding-bottom: 12vh; }
+#settling .st-step { position: relative; overflow: hidden; display: grid; gap: 10px; justify-items: start; padding: clamp(22px, 2.6vw, 34px); border-radius: var(--radius-2); }
+#settling .st-step__fill { position: absolute; inset: 0; z-index: 0; background: var(--color-5); transform: scaleX(0); transform-origin: 0 50%; }
+#settling .st-step:last-child .st-step__fill { transform: none; }
+#settling .st-step > :not(.st-step__fill) { position: relative; z-index: 1; }
+#settling .st-step p.m-text { max-width: 36ch; }
+#settling .st-stage { position: sticky; top: calc(50vh - min(40vw, 520px) / 2 + 30px); aspect-ratio: 1; width: min(100%, 520px); justify-self: end; border-radius: var(--radius-1); }
+#settling .st-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+#settling .st-lines line { stroke: var(--color-3); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2 10; opacity: .55; }
+#settling .st-person { position: absolute; width: var(--st-size); height: var(--st-size); left: calc(var(--st-x) - var(--st-size) / 2); top: calc(var(--st-y) - var(--st-size) / 2); }
+#settling .st-person--child { --st-size: 30%; --st-x: 50%; --st-y: 54%; z-index: 2; }
+#settling .st-person--key { --st-size: 23%; --st-x: 30%; --st-y: 40%; z-index: 3; }
+#settling .st-person--you { --st-size: 19%; --st-x: 86%; --st-y: 14%; z-index: 3; }
+#settling .st-face { width: 100%; height: 100%; border-radius: 50%; border: 6px solid var(--color-11); }
+#settling .st-label { position: absolute; left: 50%; top: calc(100% - 10px); transform: translateX(-50%); }
+#settling .st-stage figcaption { position: absolute; left: 24px; bottom: 22px; right: 24px; color: var(--color-3); }
+@media (max-width: 899px) {
+  #settling .st-grid { grid-template-columns: minmax(0, 1fr); row-gap: 28px; }
+  #settling .st-copy { display: contents; }
+  #settling .st-copy .l-head { grid-row: 1; }
+  #settling .st-stage { grid-row: 2; top: 84px; z-index: 4; width: min(84vw, 360px); justify-self: center; }
+  #settling .st-steps { grid-row: 3; gap: 30vh; margin-top: 0; }
+  #settling .st-stage figcaption { font-size: .8125rem; left: 16px; bottom: 14px; }
+  #settling .st-face { border-width: 4px; }
+}
+}
+</style>
+<style data-8b-part="section:kitchen">
+@layer sections {
+#kitchen { padding-block: clamp(40px, 6vh, 80px); }
+#kitchen .kt-slab { display: grid; gap: clamp(28px, 4vh, 44px); padding: clamp(28px, 4.4vw, 64px); border-radius: var(--radius-1); overflow: clip; }
+#kitchen .kt-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px 40px; }
+#kitchen .kt-head .l-head { max-width: 38rem; }
+#kitchen .kt-week { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.4vw, 18px); }
+#kitchen .kt-day { display: grid; gap: 8px; align-content: start; padding: 14px 14px 20px; border-radius: var(--radius-4); }
+#kitchen .kt-bowl { width: 100%; aspect-ratio: 1; border-radius: 50%; border: 6px solid var(--color-11); margin-bottom: 8px; }
+#kitchen .kt-day .m-text-4 { font-size: 1.1875rem; }
+#kitchen .kt-day .m-text-5 { color: var(--color-13); }
+@media (max-width: 899px) {
+  #kitchen .kt-week { grid-template-columns: minmax(0, 1fr); }
+  #kitchen .kt-day { grid-template-columns: 92px minmax(0, 1fr); column-gap: 16px; row-gap: 4px; align-items: center; padding: 12px; }
+  #kitchen .kt-bowl { grid-row: span 3; margin: 0; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding-block: clamp(96px, 14vh, 160px) clamp(56px, 8vh, 96px); }
+#faq .fq-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+#faq .fq-list { display: grid; gap: 12px; }
+#faq .fq-item { border-radius: var(--radius-4); }
+#faq .fq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 20px 20px 26px; cursor: pointer; list-style: none; }
+#faq .fq-item summary::-webkit-details-marker { display: none; }
+#faq .fq-item summary .m-text-4 { font-size: 1.25rem; }
+#faq .fq-plus { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-5); box-shadow: var(--shadow-2); transition: transform .45s cubic-bezier(.34, 1.56, .64, 1); }
+#faq .fq-item[open] .fq-plus { transform: rotate(45deg); }
+#faq .fq-item p { padding: 0 26px 24px; max-width: 60ch; }
+@media (hover: hover) { #faq .fq-item summary:hover .fq-plus { transform: scale(1.1, .9); } #faq .fq-item[open] summary:hover .fq-plus { transform: rotate(45deg) scale(1.1, .9); } }
+@media (max-width: 899px) { #faq .fq-grid { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:fees">
+@layer sections {
+#fees { padding-block: clamp(56px, 8vh, 96px) clamp(80px, 12vh, 140px); }
+#fees .fe-row { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 22px); margin-top: clamp(32px, 5vh, 56px); padding: clamp(16px, 2vw, 28px); }
+#fees .fe-tray { position: absolute; inset: 0; border-radius: var(--radius-1); }
+#fees .fe-plans { display: contents; }
+#fees .fe-plan { position: relative; display: grid; gap: 12px; justify-items: start; align-content: start; padding: clamp(24px, 2.6vw, 36px); border-radius: var(--radius-2); }
+#fees .fe-price { display: flex; align-items: baseline; gap: 8px; }
+#fees .fe-price .m-text-3 { font-size: clamp(2.5rem, 4vw, 3.5rem); }
+#fees .fe-plan .m-text-5 { color: var(--color-13); }
+#fees .fe-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; margin-top: 32px; }
+#fees .fe-foot p { max-width: 58ch; }
+@media (max-width: 899px) { #fees .fe-row { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { padding-block: clamp(56px, 8vh, 96px) clamp(96px, 14vh, 160px); }
+#visit .vi-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: start; }
+#visit .vi-info { display: grid; gap: 24px; }
+#visit .vi-photo { aspect-ratio: 3 / 2; border-radius: var(--radius-1); }
+#visit .vi-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 24px; }
+#visit .vi-facts div { display: grid; gap: 4px; }
+#visit .vi-facts dd { color: var(--color-13); }
+#visit .vi-form { display: grid; gap: 18px; padding: clamp(24px, 3.4vw, 48px); border-radius: var(--radius-1); }
+#visit .vi-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+#visit .vi-dates { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; border: 0; }
+#visit .vi-dates legend { width: 100%; margin-bottom: 8px; padding: 0; }
+#visit .vi-date { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px 10px 12px; border-radius: var(--radius-3); background: var(--color-2); box-shadow: var(--shadow-2); cursor: pointer; transition: transform .4s cubic-bezier(.34, 1.56, .64, 1), background-color .2s ease; }
+#visit .vi-date input { appearance: none; flex: none; width: 20px; height: 20px; margin: 0; border: 2px solid var(--color-3); border-radius: 50%; background: var(--color-2); cursor: pointer; }
+#visit .vi-date input:checked { border-color: var(--color-11); background: radial-gradient(circle, var(--color-6) 0 34%, var(--color-11) 38%); }
+#visit .vi-date:has(input:checked) { background: var(--color-6); color: var(--color-11); box-shadow: var(--shadow-3); transform: scale(1.02, .94); }
+#visit .vi-date input:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+#visit .vi-date input:checked:focus-visible { outline-color: var(--color-11); }
+#visit textarea.m-field__control { min-height: 110px; resize: vertical; }
+#visit .vi-done { padding: 14px 18px; border-radius: var(--radius-4); background: var(--color-2); }
+@media (max-width: 899px) {
+  #visit .vi-grid { grid-template-columns: minmax(0, 1fr); }
+  #visit .vi-pair { grid-template-columns: minmax(0, 1fr); }
+  #visit .vi-facts { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { margin-top: 0; padding: clamp(56px, 8vh, 96px) 0 32px; border-radius: var(--radius-1) var(--radius-1) 0 0; background: var(--color-5); color: var(--color-3); }
+#footer .ft-word { display: block; font-family: var(--font-1); font-weight: 800; letter-spacing: -.035em; line-height: .9; white-space: nowrap; font-size: calc(min(1240px, 100vw - 2 * var(--space-1)) / (var(--len) * .5)); transform-origin: 50% 100%; }
+#footer .ft-cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin-top: clamp(32px, 5vh, 56px); padding-top: 28px; border-top: 2px solid color-mix(in srgb, var(--color-3) 18%, transparent); }
+#footer .ft-cols h2 { margin-bottom: 10px; }
+#footer .ft-cols ul { display: grid; gap: 4px; justify-items: start; }
+#footer .ft-cols .m-link { left: -4px; }
+#footer .ft-small { margin-top: 40px; }
+@media (max-width: 899px) { #footer .ft-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 559px) { #footer .ft-cols > :last-child { grid-column: 1 / -1; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#rooms { padding-top: 160px; --rw-from: scaleY(.14); }
+#rooms .rm-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 6px; }
+#rooms .rm-room:nth-child(2) { --rm-i: 1; }
+#rooms .rm-room:nth-child(3) { --rm-i: 2; }
+#rooms .rm-room:nth-child(4) { --rm-i: 3; }
+@media (max-width: 899px) {
+  #rooms { padding-top: 116px; --rw-from: scaleX(.18); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #rooms .l-head > * { animation: rw-up .8s cubic-bezier(.34, 1.4, .64, 1) backwards; }
+  #rooms .l-head > :nth-child(2) { animation-delay: .08s; }
+  #rooms .l-head > :nth-child(3) { animation-delay: .16s; }
+  #rooms .rm-ground { animation: rw-grow .75s cubic-bezier(.34, 1.56, .64, 1) backwards; animation-delay: calc(.25s + var(--rm-i, 0) * .16s); }
+  #rooms .rm-body { animation: rw-up .6s cubic-bezier(.2, .7, .2, 1) backwards; animation-delay: calc(.42s + var(--rm-i, 0) * .16s); }
+}
+@keyframes rw-grow { from { transform: var(--rw-from); } } /* one name for both layouts: a switched name replays */
+@keyframes rw-up { from { transform: translateY(44px); opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__brand" href="#rooms">
+<span aria-hidden="true" class="nav__mark"><i></i><i></i><i></i><i></i></span>
+<span class="nav__word">{{t1|⟦name⟧}}</span>
+</a>
+<nav aria-label="Main" class="nav__links">
+<ul>
+{{#nv_rooms}}<li><a class="nav__link m-text-7" href="#rooms">{{t2|Rooms}}</a></li>{{/nv_rooms}}
+{{#nv_settling}}<li><a class="nav__link m-text-7" href="#settling">{{t3|Settling in}}</a></li>{{/nv_settling}}
+{{#nv_fees}}<li><a class="nav__link m-text-7" href="#fees">{{t4|Fees}}</a></li>{{/nv_fees}}
+{{#nv_visit}}<li><a class="nav__link m-text-7" href="#visit">{{t5|Visit}}</a></li>{{/nv_visit}}
+</ul>
+</nav>
+<a class="m-btn-2 nav__cta" href="#visit"><span aria-hidden="true" class="m-btn-2__icon"><svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="16"><rect height="15" rx="4" width="16" x="4" y="5"></rect><path d="M8 3v4M16 3v4M4 10h16"></path></svg></span><span class="m-btn-2__label">{{t6|Book a visit}}</span></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-iconbtn nav__menu" type="button"><svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2.6" viewbox="0 0 24 24" width="22"><path d="M5 9h14M5 15h14"></path></svg></button>
+</div>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="nav__word">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-iconbtn menu__close" type="button"><svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2.6" viewbox="0 0 24 24" width="22"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<ul class="menu__links">
+{{#nv_rooms}}<li><a href="#rooms">{{t2|Rooms}}</a></li>{{/nv_rooms}}
+{{#nv_settling}}<li><a href="#settling">{{t3|Settling in}}</a></li>{{/nv_settling}}
+{{#nv_fees}}<li><a href="#fees">{{t4|Fees}}</a></li>{{/nv_fees}}
+{{#nv_visit}}<li><a href="#visit">{{t5|Visit}}</a></li>{{/nv_visit}}
+</ul>
+<a class="m-btn-2" href="#visit"><span aria-hidden="true" class="m-btn-2__icon"><svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="16"><rect height="15" rx="4" width="16" x="4" y="5"></rect><path d="M8 3v4M16 3v4M4 10h16"></path></svg></span><span class="m-btn-2__label">{{t6|Book a visit}}</span></a>
+</div>
+</header>
+<main>
+
+{{#sec_rooms}}<section aria-labelledby="rooms-title" data-8b-section="rooms" id="rooms">
+<div class="l-wrap">
+<div class="l-head">
+<h1 class="m-text-3" id="rooms-title">{{t7|Four rooms, growing up together}}</h1>
+<p class="m-text-6">{{t8|Children move up a room when they are ready, not on a birthday. Each room is a little bigger, a little louder and a little closer to school.}}</p>
+<div class="rm-actions"><a class="m-btn" href="#visit"><span class="m-btn__label">{{t6|Book a visit}}</span><span aria-hidden="true" class="m-btn__icon"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="20"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a><a class="m-link" href="#fees"><span class="m-link__label">{{t9|Fees and funded hours}}</span></a></div>
+</div>
+<ol class="rm-list">
+<li class="rm-room">
+<span aria-hidden="true" class="rm-ground m-surface-6"></span>
+<div class="rm-body">
+<figure class="m-frame rm-photo"><img alt="A baby boy lying on a soft carpet, looking up" height="5997" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1628853441454-c7cbce703f8a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8YmFieSUyMGNyYXdsaW5nJTIwdG95cyUyMGNvbG9yZnVsfGVufDF8MXx8fDE3OTE0NTQzNzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#c0c0d9" width="3998"/></figure>
+<h3 class="m-text-4 rm-name">{{t10|Buds}}</h3>
+<p class="m-badge rm-badge">{{t11|12 months to 2 years}}</p>
+<p class="m-text-7 rm-ratio">{{t12|1 grown-up to 3 children}}</p>
+<p class="m-text-5 rm-text">{{t13|Soft floors, low shelves and a sleep room that smells of lavender.}}</p>
+</div>
+</li>
+<li class="rm-room">
+<span aria-hidden="true" class="rm-ground m-surface-4"></span>
+<div class="rm-body">
+<figure class="m-frame rm-photo"><img alt="A toddler in a red dress building with blocks on the floor" height="5823" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1709380830070-2c0da9348126?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8YmFieSUyMGNyYXdsaW5nJTIwdG95cyUyMGNvbG9yZnVsfGVufDF8MXx8fDE3OTE0NTQzNzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#c0c0c0" width="4000"/></figure>
+<h3 class="m-text-4 rm-name">{{t14|Shoots}}</h3>
+<p class="m-badge rm-badge">{{t15|2 to 3 years}}</p>
+<p class="m-text-7 rm-ratio">{{t16|1 grown-up to 4 children}}</p>
+<p class="m-text-5 rm-text">{{t17|Water trays, first words and first best friends.}}</p>
+</div>
+</li>
+<li class="rm-room">
+<span aria-hidden="true" class="rm-ground m-surface-3"></span>
+<div class="rm-body">
+<figure class="m-frame rm-photo"><img alt="A girl in an apron painting at a low table" height="5088" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1769720199844-0db615cd1089?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNoaWxkJTIwcGxheWluZyUyMHdpdGglMjBwbGF5ZG91Z2h8ZW58MXwxfHx8MTc5MTQ1NDE1MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#a68c73" width="3392"/></figure>
+<h3 class="m-text-4 rm-name">{{t18|Blooms}}</h3>
+<p class="m-badge rm-badge">{{t19|3 to 4 years}}</p>
+<p class="m-text-7 rm-ratio">{{t20|1 grown-up to 6 children}}</p>
+<p class="m-text-5 rm-text">{{t21|Funded hours begin, and so do the big projects that last all week.}}</p>
+</div>
+</li>
+<li class="rm-room">
+<span aria-hidden="true" class="rm-ground m-surface-5"></span>
+<div class="rm-body">
+<figure class="m-frame rm-photo"><img alt="A boy in a white jacket looking up while holding a toy" height="5507" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1748500192009-f19ae6606960?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGtpZHMlMjBoYW5kcyUyMHBsYXklMjBkb3VnaHxlbnwxfDJ8fHwxNzkxNDU0MTUyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=400&q=60}}" style="background:#f3f3f3" width="5445"/></figure>
+<h3 class="m-text-4 rm-name">{{t22|Meadow}}</h3>
+<p class="m-badge rm-badge">{{t23|4 to 5 years}}</p>
+<p class="m-text-7 rm-ratio">{{t24|1 grown-up to 8 children}}</p>
+<p class="m-text-5 rm-text">{{t25|Letters, scissors and shoelaces: ready for big school, still very small.}}</p>
+</div>
+</li>
+</ol>
+</div>
+</section>{{/sec_rooms}}
+
+{{#sec_making}}<section aria-labelledby="making-title" data-8b-section="making" id="making">
+<div class="l-wrap mk-slab m-surface-4">
+<div class="mk-copy">
+<h2 class="m-text-3" id="making-title">{{t26|The making table}}</h2>
+<p class="m-text-6">{{t27|Dough, clay, paint and glue, every single day. We keep the mess at child height, the aprons by the door and the finished things on the shelf by the coats.}}</p>
+<ul aria-label="On the table this week">
+<li class="m-badge">{{t28|Salt dough}}</li>
+<li class="m-badge">{{t29|Finger paint}}</li>
+<li class="m-badge">{{t30|Clay coils}}</li>
+</ul>
+</div>
+<ul class="mk-table">
+<li class="mk-item"><figure class="m-frame"><img alt="Small hands covered in red and blue paint on a painted plate" height="2768" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1666710988451-ba4450498967?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cHJlc2Nob29sJTIwY2hpbGRyZW4lMjBwYWludGluZ3xlbnwxfDF8fHwxNzkxNDU0MzcxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#d9d9d9" width="1807"/></figure><p class="m-badge-2">{{t29|Finger paint}}</p></li>
+<li class="mk-item"><figure class="m-frame"><img alt="Coloured clay coils bent into arches standing on a table" height="4092" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1629477482090-9ae97eecc277?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8a2lkcyUyMGhhbmRzJTIwcGxheSUyMGRvdWdofGVufDF8Mnx8fDE3OTE0NTQxNTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=260&q=60}}" style="background:#262626" width="3839"/></figure><p class="m-badge-2">{{t31|Clay arches}}</p></li>
+<li class="mk-item"><figure class="m-frame"><img alt="A child pressing a pink cutter into yellow dough" height="6000" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1585106851177-35d96b9c8761?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2hpbGQlMjBwbGF5aW5nJTIwd2l0aCUyMHBsYXlkb3VnaHxlbnwxfDF8fHwxNzkxNDU0MTUwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#f3f3f3" width="4000"/></figure><p class="m-badge-2">{{t32|Cutter shapes}}</p></li>
+<li class="mk-item"><figure class="m-frame"><img alt="Lumps of red, green and blue dough on a wooden table" height="6240" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1648810402687-1a6f60fa3bb9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2hpbGQlMjBwbGF5aW5nJTIwd2l0aCUyMHBsYXlkb3VnaHxlbnwxfDF8fHwxNzkxNDU0MTUwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#f3d9c0" width="4160"/></figure><p class="m-badge-2">{{t33|Dough lumps}}</p></li>
+<li class="mk-item"><figure class="m-frame"><img alt="A girl rolling blue modelling clay at a table" height="5304" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1554728432-3816d7bb55f2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dG9kZGxlciUyMG1vZGVsaW5nJTIwY2xheXxlbnwxfDB8fHwxNzkxNDU0MTUxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=410&q=60}}" style="background:#595959" width="7952"/></figure><p class="m-badge-2">{{t34|Clay snakes}}</p></li>
+<li class="mk-item"><figure class="m-frame"><img alt="A child painting with watercolours on paper on the floor" height="6000" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1784063452458-2e0f0f2ef1c8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cHJlc2Nob29sJTIwY2hpbGRyZW4lMjBwYWludGluZ3xlbnwxfDF8fHwxNzkxNDU0MzcxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#260c0c" width="4000"/></figure><p class="m-badge-2">{{t35|Watercolour}}</p></li>
+</ul>
+</div>
+</section>{{/sec_making}}
+
+{{#sec_garden}}<section aria-labelledby="garden-title" data-8b-section="garden" id="garden">
+<div class="l-wrap gd-grid">
+<div class="gd-photos">
+<figure class="m-frame gd-big"><img alt="A toddler crawling through tall green plants and yellow flowers" height="2832" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1772310206870-71f00322f15d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dG9kZGxlcnMlMjBwbGF5aW5nJTIwaW4lMjBnYXJkZW58ZW58MXwwfHx8MTc5MTQ1NDIwMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#0c260c" width="4256"/></figure>
+<div class="gd-boots">
+<figure class="m-frame" data-8b-motion="press"><img alt="A toddler in yellow wellies stamping in a puddle among autumn leaves" height="4437" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1605796637388-0757a79c26cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hpbGQlMjByYWluJTIwYm9vdHMlMjBwdWRkbGV8ZW58MXwxfHx8MTc5MTQ1NDIwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#a68c73" width="3328"/></figure>
+</div>
+</div>
+<div class="gd-slab m-surface-3" data-8b-motion="swell" data-swell-origin="0% 100%">
+<h2 class="m-text-3" id="garden-title">{{t36|Out in all weathers}}</h2>
+<p class="m-text-6">{{t37|A walled garden behind the house, with room to run, dig and hide. We go out twice a day, every day: rain is just weather with puddles in it.}}</p>
+<ul aria-label="In the garden" class="gd-notes">
+<li class="m-badge" data-8b-motion="press">{{t38|Mud kitchen}}</li>
+<li class="m-badge" data-8b-motion="press">{{t39|Willow tunnel}}</li>
+<li class="m-badge" data-8b-motion="press">{{t40|Vegetable beds}}</li>
+<li class="m-badge" data-8b-motion="press">{{t41|A bug hotel}}</li>
+<li class="m-badge" data-8b-motion="press">{{t42|Puddle suits on pegs}}</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_garden}}
+
+{{#sec_settling}}<section aria-labelledby="settling-title" data-8b-section="settling" id="settling">
+<div class="l-wrap st-grid">
+<div class="st-copy">
+<div class="l-head">
+<h2 class="m-text-3" id="settling-title">{{t43|Settling in, one step at a time}}</h2>
+<p class="m-text-6">{{t44|Two weeks, four small steps. You stay as long as your child needs you, and step back only when Jess and your child are ready.}}</p>
+</div>
+<ol class="st-steps">
+<li class="st-step m-surface"><span aria-hidden="true" class="st-step__fill"></span><span class="m-badge">{{t45|Days 1 and 2}}</span><h3 class="m-text-4">{{t46|Stay and play together}}</h3><p class="m-text">{{t47|You come in with your child for an hour. Jess plays alongside you both and learns the songs, the snacks and the words for everything.}}</p></li>
+<li class="st-step m-surface"><span aria-hidden="true" class="st-step__fill"></span><span class="m-badge">{{t48|Days 3 and 4}}</span><h3 class="m-text-4">{{t49|A short goodbye}}</h3><p class="m-text">{{t50|You say goodbye at the door and wait in the kitchen with a cup of tea. Twenty minutes, then back for a cuddle.}}</p></li>
+<li class="st-step m-surface"><span aria-hidden="true" class="st-step__fill"></span><span class="m-badge">{{t51|Days 5 to 7}}</span><h3 class="m-text-4">{{t52|A morning on their own}}</h3><p class="m-text">{{t53|A whole morning with Jess and the room, lunch included. We send photos so you can see how it's going.}}</p></li>
+<li class="st-step m-surface"><span aria-hidden="true" class="st-step__fill"></span><span class="m-badge">{{t54|Week two}}</span><h3 class="m-text-4">{{t55|A full day, then home-time hugs}}</h3><p class="m-text">{{t56|The first full day, with Jess close by. Most children have a favourite friend by the end of the week.}}</p></li>
+</ol>
+</div>
+<figure class="st-stage m-surface-4">
+<svg aria-hidden="true" class="st-lines" focusable="false" preserveaspectratio="none" viewbox="0 0 100 100">
+<line class="st-line st-line--you" vector-effect="non-scaling-stroke" x1="50" x2="86" y1="54" y2="14"></line>
+<line class="st-line st-line--key" vector-effect="non-scaling-stroke" x1="50" x2="30" y1="54" y2="40"></line>
+</svg>
+<div class="st-person st-person--child">
+<div class="m-frame st-face"><img alt="Leo, a small boy with blond hair" height="3321" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1626976666226-97ae60d89636?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dG9kZGxlciUyMHBvcnRyYWl0JTIwc21pbGluZ3xlbnwxfDJ8fHwxNzkxNDU0NDA4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=150&q=60}}" style="background:#f3a6c0" width="3321"/></div>
+<span class="m-badge st-label">{{t57|Leo}}</span>
+</div>
+<div class="st-person st-person--key">
+<div class="m-frame st-face"><img alt="Jess, his key person" height="3283" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1615751596346-9df8006e5381?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bnVyc2VyeSUyMHRlYWNoZXIlMjBzbWlsaW5nJTIwcG9ydHJhaXR8ZW58MXwyfHx8MTc5MTQ1NDE3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#f3f3f3" width="3283"/></div>
+<span class="m-badge st-label">{{t58|Jess}}</span>
+</div>
+<div class="st-person st-person--you">
+<div class="m-frame st-face"><img alt="Leo's mum" height="4480" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1710777932534-2a58edf3603d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bnVyc2VyeSUyMHRlYWNoZXIlMjBzbWlsaW5nJTIwcG9ydHJhaXR8ZW58MXwyfHx8MTc5MTQ1NDE3NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#f38c26" width="4480"/></div>
+<span class="m-badge st-label">{{t59|You}}</span>
+</div>
+<figcaption class="m-text-5">{{t60|By week two, Jess is close by and you are a wave away.}}</figcaption>
+</figure>
+</div>
+</section>{{/sec_settling}}
+
+{{#sec_kitchen}}<section aria-labelledby="kitchen-title" data-8b-section="kitchen" id="kitchen">
+<div class="l-wrap kt-slab m-surface-5">
+<div class="kt-head">
+<div class="l-head">
+<h2 class="m-text-3" id="kitchen-title">{{t61|Cooked here, this morning}}</h2>
+<p class="m-text-6">{{t62|Rosa cooks every lunch from scratch in our own kitchen, vegetables first, and plans every diet and allergy with you. This is the menu for the week of 12 October.}}</p>
+</div>
+<p class="m-badge-2">{{t63|Nut-free kitchen}}</p>
+</div>
+<ol class="kt-week">
+<li class="kt-day m-surface"><div class="m-frame kt-bowl"><img alt="A white bowl of clear vegetable broth" height="4160" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1625535608282-8f181a38f9e7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c291cCUyMGJvd2wlMjBvdmVyaGVhZHxlbnwxfDJ8fHwxNzkxNDU0NDA2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#0c8ca6" width="4160"/></div><p class="m-text-7">{{t64|Monday}}</p><h3 class="m-text-4">{{t65|Chicken and vegetable broth}}</h3><p class="m-text-5">{{t66|Pudding: apple slices and yoghurt}}</p></li>
+<li class="kt-day m-surface"><div class="m-frame kt-bowl"><img alt="A bowl of beef and root vegetable stew" height="3833" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1610452229974-74c9283a3873?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c291cCUyMGJvd2wlMjBvdmVyaGVhZHxlbnwxfDJ8fHwxNzkxNDU0NDA2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#260c0c" width="3833"/></div><p class="m-text-7">{{t67|Tuesday}}</p><h3 class="m-text-4">{{t68|Beef and root vegetable stew}}</h3><p class="m-text-5">{{t69|Pudding: rice pudding}}</p></li>
+<li class="kt-day m-surface"><div class="m-frame kt-bowl"><img alt="A bowl of yoghurt with oats and raspberries" height="3307" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1645939976619-adbd86ccdf47?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG9ycmlkZ2UlMjBib3dsJTIwYmVycmllcyUyMG92ZXJoZWFkfGVufDF8Mnx8fDE3OTE0NTQ0MDV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#a68c59" width="3024"/></div><p class="m-text-7">{{t70|Wednesday}}</p><h3 class="m-text-4">{{t71|Fish pie with peas}}</h3><p class="m-text-5">{{t72|Pudding: yoghurt, oats and raspberries}}</p></li>
+<li class="kt-day m-surface"><div class="m-frame kt-bowl"><img alt="A wooden bowl of sliced fruit and berries" height="3456" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1562166453-964fd947f2a4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cG9ycmlkZ2UlMjBib3dsJTIwYmVycmllcyUyMG92ZXJoZWFkfGVufDF8Mnx8fDE3OTE0NTQ0MDV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#d9d9d9" width="3456"/></div><p class="m-text-7">{{t73|Thursday}}</p><h3 class="m-text-4">{{t74|Chickpea and spinach curry}}</h3><p class="m-text-5">{{t75|Pudding: a rainbow fruit bowl}}</p></li>
+<li class="kt-day m-surface"><div class="m-frame kt-bowl"><img alt="A white bowl of raspberries and blueberries" height="3360" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1541598060305-1a7438a7f937?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cG9ycmlkZ2UlMjBib3dsJTIwYmVycmllcyUyMG92ZXJoZWFkfGVufDF8Mnx8fDE3OTE0NTQ0MDV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#590c0c" width="3360"/></div><p class="m-text-7">{{t76|Friday}}</p><h3 class="m-text-4">{{t77|Tomato pasta with hidden veg}}</h3><p class="m-text-5">{{t78|Pudding: berries and cream}}</p></li>
+</ol>
+</div>
+</section>{{/sec_kitchen}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="l-wrap fq-grid">
+<div class="l-head">
+<h2 class="m-text-3" id="faq-title">{{t79|Questions parents ask}}</h2>
+<p class="m-text-6">{{t80|And if yours isn't here, ask us at an open morning or call the house: someone always picks up.}}</p>
+</div>
+<div class="fq-list">
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t81|What ages do you take?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t82|From twelve months until children start school, usually the September after they turn four.}}</p></details>
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t83|Do you take funded hours?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t84|Yes, 15 and 30 funded hours for every age we care for, term-time or stretched across the year. We take them off your bill before we send it.}}</p></details>
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t85|What should my child bring?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t86|Wellies, a spare set of clothes and a comforter if they have one. We provide nappies, wipes, sun cream and every meal and snack.}}</p></details>
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t87|How do you handle allergies?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t88|Our kitchen is nut-free. Rosa sits down with you before the first day and plans every allergy and diet, and each room has the list on the wall.}}</p></details>
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t89|Is there a waiting list?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t90|For Buds there often is. Register at an open morning and we will tell you honestly how long it is likely to be.}}</p></details>
+<details class="fq-item m-surface" data-8b-motion="press"><summary><span class="m-text-4">{{t91|When are you open?}}</span><span aria-hidden="true" class="fq-plus"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.8" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p class="m-text">{{t92|Monday to Friday, 7:30 to 18:00, 51 weeks a year. We close between Christmas and New Year.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_fees}}<section aria-labelledby="fees-title" data-8b-section="fees" id="fees">
+<div class="l-wrap">
+<div class="l-head">
+<h2 class="m-text-3" id="fees-title">{{t9|Fees and funded hours}}</h2>
+<p class="m-text-6">{{t93|One simple day, three ways to use it. Meals, snacks, nappies and trips are always included.}}</p>
+</div>
+<div class="fe-row">
+<span aria-hidden="true" class="fe-tray m-surface-6"></span>
+<ul class="fe-plans">
+<li class="fe-plan m-surface"><h3 class="m-text-4">{{t94|Mornings}}</h3><p class="m-badge">{{t95|7:30 to 13:00}}</p><p class="fe-price"><span class="m-text-3">{{t96|₦22,000}}</span><span class="m-text-5">{{t97|a session}}</span></p><p class="m-text">{{t98|Breakfast, garden time and lunch before home.}}</p></li>
+<li class="fe-plan m-surface"><h3 class="m-text-4">{{t99|School day}}</h3><p class="m-badge">{{t100|9:00 to 15:00}}</p><p class="fe-price"><span class="m-text-3">{{t101|₦28,000}}</span><span class="m-text-5">{{t97|a session}}</span></p><p class="m-text">{{t102|The heart of the day, the same hours as big school.}}</p></li>
+<li class="fe-plan m-surface"><h3 class="m-text-4">{{t103|Full day}}</h3><p class="m-badge">{{t104|7:30 to 18:00}}</p><p class="fe-price"><span class="m-text-3">{{t105|₦36,000}}</span><span class="m-text-5">{{t106|a day}}</span></p><p class="m-text">{{t107|Everything, with tea at four and the late story.}}</p></li>
+</ul>
+</div>
+<div class="fe-foot">
+<p class="m-text">{{t108|Funded hours, 15 or 30 a week from nine months old, come off the monthly bill. There are no extra charges for meals or nappies on funded hours.}}</p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t109|Ask about your hours}}</span><span aria-hidden="true" class="m-btn__icon"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="20"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+</div>
+</section>{{/sec_fees}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" data-8b-section="visit" id="visit">
+<div class="l-wrap vi-grid">
+<div class="vi-info">
+<div class="l-head">
+<h2 class="m-text-3" id="visit-title">{{t110|Come to an open morning}}</h2>
+<p class="m-text-6">{{t111|Saturday mornings in October, ten till twelve. Bring your child, have a coffee in the kitchen and meet the people who would care for them.}}</p>
+</div>
+<figure class="m-frame vi-photo" data-8b-motion="press"><img alt="A bright playroom with flowered curtains, a yellow table and small chairs" height="3712" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1600173868911-23137600bed9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bnVyc2VyeSUyMGNsYXNzcm9vbSUyMHRveXN8ZW58MXwwfHx8MTc5MTQ1NDQwOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#f3f3f3" width="5568"/></figure>
+<dl class="vi-facts">
+<div><dt class="m-text-7">{{t112|Address}}</dt><dd class="m-text-5">{{t113|1 Admiralty Way, Ikeja, Lagos}}</dd></div>
+<div><dt class="m-text-7">{{t114|Hours}}</dt><dd class="m-text-5">{{t115|Monday to Friday, 7:30 to 18:00}}</dd></div>
+<div><dt class="m-text-7">{{t116|Phone}}</dt><dd class="m-text-5"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}"><span class="m-link__label">{{t117|⟦phone⟧}}</span></a></dd></div>
+<div><dt class="m-text-7">{{t118|Email}}</dt><dd class="m-text-5"><a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t119|hello@}}<wbr/>{{t120|mallow-house.example}}</span></a></dd></div>
+</dl>
+</div>
+
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Daycare by <a href="https://github.com/8bsite/daycare-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="l-wrap">
+<p aria-hidden="true" class="ft-word" data-8b-motion="press" style="--len:12">{{t1|⟦name⟧}}</p>
+<div class="ft-cols">
+<div><h2 class="m-text-7">{{t1|⟦name⟧}}</h2><p class="m-text-5">{{t121|A nursery for ages one to five. 1 Admiralty Way, Ikeja, Lagos}}</p></div>
+<div><h2 class="m-text-7">{{t122|Open}}</h2><p class="m-text-5">{{t123|Monday to Friday, 7:30 to 18:00, 51 weeks a year}}</p></div>
+<nav aria-label="Footer"><h2 class="m-text-7">{{t124|Pages}}</h2><ul>{{#nv_rooms}}<li><a class="m-link" href="#rooms"><span class="m-link__label">{{t2|Rooms}}</span></a></li>{{/nv_rooms}}{{#nv_settling}}<li><a class="m-link" href="#settling"><span class="m-link__label">{{t3|Settling in}}</span></a></li>{{/nv_settling}}{{#nv_fees}}<li><a class="m-link" href="#fees"><span class="m-link__label">{{t4|Fees}}</span></a></li>{{/nv_fees}}{{#nv_faq}}<li><a class="m-link" href="#faq"><span class="m-link__label">{{t125|Questions}}</span></a></li>{{/nv_faq}}</ul></nav>
+<div><h2 class="m-text-7">{{t126|Say hello}}</h2><ul><li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}"><span class="m-link__label">{{t117|⟦phone⟧}}</span></a></li><li><a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t119|hello@}}<wbr/>{{t120|mallow-house.example}}</span></a></li></ul></div>
+</div>
+<p class="ft-small m-text-5">{{t127|© 2026 ⟦name⟧ Nursery Ltd. Ministry of Education registered. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t128|8B}}</a></p>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  if (!root) return;
+  const menu = root.querySelector('#menu');
+  const toggle = root.querySelector('.nav__menu');
+  const close = root.querySelector('.menu__close');
+  let lastY = window.scrollY, travel = 0, open = false;
+  const setHidden = hidden => root.classList.toggle('is-hidden', hidden);
+  const onScroll = () => {
+    const y = window.scrollY, delta = y - lastY;
+    lastY = y;
+    root.classList.toggle('is-floating', y > 40);
+    if (open || !delta) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 160) setHidden(false);
+    else if (travel > 24) setHidden(true);
+    else if (travel < -24) setHidden(false);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  root.addEventListener('focusin', () => setHidden(false));
+  const setMenu = state => {
+    open = state;
+    menu.hidden = !state;
+    toggle.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); document.documentElement.style.overflow = 'hidden'; close.focus(); }
+    else { window.lenis?.start(); document.documentElement.style.overflow = ''; }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => { setMenu(false); toggle.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && open) { setMenu(false); toggle.focus(); } });
+  const links = [...root.querySelectorAll('.nav__link')];
+  const targets = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window && targets.length) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(link => link.setAttribute('aria-current', String(link.getAttribute('href') === '#' + entry.target.id)));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    targets.forEach(target => observer.observe(target));
+  }
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vi-form');
+  if (!form) return;
+  const done = form.querySelector('.vi-done');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    done.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navOffset() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? Math.round(bar.getBoundingClientRect().height + 24) : 0;
+}
+function refreshScroll() {
+  if (window.lenis && window.lenis.options.anchors) window.lenis.options.anchors = { offset: -navOffset() };
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .09, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  press(element, vars = {}) {
+    const drop = vars.drop ?? 56, total = vars.duration ?? 1;
+    return gsap.timeline()
+      .fromTo(element, { autoAlpha: 0 }, { autoAlpha: 1, duration: total * .14, ease: 'none' }, 0)
+      .fromTo(element, { y: -drop, scaleX: .92, scaleY: 1.1, transformOrigin: '50% 100%' }, { y: 0, scaleX: 1, scaleY: 1, duration: total * .42, ease: 'power2.in' }, 0)
+      .to(element, { scaleX: 1.08, scaleY: .86, duration: total * .14, ease: 'power1.out' })
+      .to(element, { scaleX: 1, scaleY: 1, duration: total * .44, ease: 'back.out(3)' });
+  },
+  swell(element, vars = {}) {
+    return gsap.timeline().fromTo(element, { scale: vars.from ?? .25, transformOrigin: vars.origin ?? '50% 50%' }, { scale: 1, duration: vars.duration ?? 1, ease: vars.ease ?? 'back.out(1.5)' });
+  },
+  roll(element, vars = {}) {
+    const radius = () => element.offsetWidth / 2 || 1;
+    const distance = vars.distance;
+    const total = vars.duration ?? 1;
+    return gsap.timeline()
+      .fromTo(element, { x: () => -distance(), rotation: () => -distance() / radius() * 180 / Math.PI }, { x: 0, rotation: 0, duration: total * .8, ease: 'power2.out' }, 0)
+      .to(element, { scaleX: 1.08, scaleY: .9, duration: total * .08, ease: 'power1.out', transformOrigin: '50% 100%' })
+      .to(element, { scaleX: 1, scaleY: 1, duration: total * .12, ease: 'back.out(3)' });
+  }
+};
+function measured(read) {
+  let value = null;
+  const reset = () => { value = null; };
+  ScrollTrigger.addEventListener('refreshInit', reset);
+  const get = () => value || (value = read());
+  get.release = () => ScrollTrigger.removeEventListener('refreshInit', reset);
+  return get;
+}
+['press', 'swell'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true,
+        animation: effects[name](element, { origin: element.getAttribute('data-swell-origin') || undefined })
+      }));
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:making">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('making');
+    const table = section.querySelector('.mk-table');
+    const items = [...table.querySelectorAll('.mk-item')];
+    const turns = [-18, 12, -7, 16, -12, 8];
+    const offsets = measured(() => items.map(item => ({
+      x: table.offsetWidth / 2 - (item.offsetLeft + item.offsetWidth / 2),
+      y: table.offsetHeight / 2 - (item.offsetTop + item.offsetHeight / 2)
+    })));
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'making', trigger: table, start: 'center 96%', end: 'center 44%', scrub: .7, invalidateOnRefresh: true } });
+    items.forEach((item, index) => {
+      timeline.fromTo(item, { x: () => offsets()[index].x, y: () => offsets()[index].y, rotation: turns[index % turns.length], scale: .62 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: .72, ease: 'power2.out' }, index * .055);
+    });
+    return () => offsets.release();
+  });
+}, { near: document.querySelector('#making .mk-table'), id: 'scene:making' });
+</script>
+<script data-8b-part="scene:settling">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('settling');
+    const stage = section.querySelector('.st-stage');
+    const list = section.querySelector('.st-steps');
+    const fills = [...list.querySelectorAll('.st-step__fill')];
+    const child = stage.querySelector('.st-person--child');
+    const people = [
+      { node: stage.querySelector('.st-person--key'), line: stage.querySelector('.st-line--key'), rest: [30, 42], steps: [[12, 84, .82], [19, 72, .9], [25, 56, 1]] },
+      { node: stage.querySelector('.st-person--you'), line: stage.querySelector('.st-line--you'), rest: [86, 14], steps: [[68, 66, 1.4], [76, 46, 1.24], [82, 28, 1.1]] }
+    ];
+    const narrow = () => innerWidth < 900;
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'settling', trigger: list, start: () => narrow() ? 'top 96%' : 'top 62%', end: () => narrow() ? 'bottom 98%' : 'bottom 70%', scrub: .6, invalidateOnRefresh: true } });
+    const size = measured(() => ({ w: stage.offsetWidth, h: stage.offsetHeight }));
+    people.forEach(({ node, line, rest, steps }) => {
+      const at = ([x, y, s]) => ({ x: () => (x - rest[0]) / 100 * size().w, y: () => (y - rest[1]) / 100 * size().h, scale: s });
+      timeline
+        .fromTo(node, at(steps[0]), { ...at(steps[1]), duration: .6, ease: 'power2.inOut' }, .2)
+        .to(node, { ...at(steps[2]), duration: .6, ease: 'power2.inOut' }, 1.2)
+        .to(node, { x: 0, y: 0, scale: 1, duration: .6, ease: 'power2.inOut' }, 2.2)
+        .fromTo(line, { attr: { x2: steps[0][0], y2: steps[0][1] } }, { attr: { x2: steps[1][0], y2: steps[1][1] }, duration: .6, ease: 'power2.inOut' }, .2)
+        .to(line, { attr: { x2: steps[2][0], y2: steps[2][1] }, duration: .6, ease: 'power2.inOut' }, 1.2)
+        .to(line, { attr: { x2: rest[0], y2: rest[1] }, duration: .6, ease: 'power2.inOut' }, 2.2);
+    });
+    [.8, 1.8, 2.8].forEach(at => timeline
+      .to(child, { scaleX: 1.06, scaleY: .93, transformOrigin: '50% 100%', duration: .08, ease: 'power1.out' }, at)
+      .to(child, { scaleX: 1, scaleY: 1, duration: .14, ease: 'back.out(3)' }, at + .08));
+    fills.forEach((fill, index) => {
+      timeline.fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: .2, ease: 'power2.out' }, index ? index - .05 : 0);
+      if (index < fills.length - 1) timeline.to(fill, { scaleX: 0, duration: .2, ease: 'power2.in' }, index + .95);
+    });
+    return () => size.release();
+  });
+}, { near: document.querySelector('#settling .st-grid'), id: 'scene:settling' });
+</script>
+<script data-8b-part="scene:kitchen">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('kitchen');
+    const slab = section.querySelector('.kt-slab');
+    const week = section.querySelector('.kt-week');
+    const days = [...week.querySelectorAll('.kt-day')];
+    const bowls = days.map(day => day.querySelector('.kt-bowl'));
+    const distances = measured(() => {
+      const left = slab.getBoundingClientRect().left;
+      return days.map((day, index) => day.getBoundingClientRect().left - left + parseFloat(getComputedStyle(day).paddingLeft) + bowls[index].offsetWidth);
+    });
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'kitchen', trigger: week, start: 'top 86%', end: 'bottom 62%', scrub: .7, invalidateOnRefresh: true } });
+    bowls.forEach((bowl, index) => timeline.add(effects.roll(bowl, { distance: () => distances()[index], duration: .52 }), index * .12));
+    return () => distances.release();
+  });
+}, { near: document.querySelector('#kitchen .kt-week'), id: 'scene:kitchen' });
+</script>
+<script data-8b-part="scene:fees">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fees');
+    const row = section.querySelector('.fe-row');
+    const tray = row.querySelector('.fe-tray');
+    const plans = [...row.querySelectorAll('.fe-plan')];
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'fees', trigger: row, start: 'top 78%', end: 'center 46%', scrub: .7, invalidateOnRefresh: true } });
+    timeline.fromTo(tray, { scaleX: .3, scaleY: .62, transformOrigin: '50% 50%' }, { scaleX: 1, scaleY: 1, duration: .55, ease: 'back.out(1.3)' }, 0);
+    const offsets = measured(() => plans.map(plan => ({
+      x: row.offsetWidth / 2 - (plan.offsetLeft + plan.offsetWidth / 2),
+      y: row.offsetHeight / 2 - (plan.offsetTop + plan.offsetHeight / 2)
+    })));
+    plans.forEach((plan, index) => {
+      timeline
+        .fromTo(plan, { x: () => offsets()[index].x, y: () => offsets()[index].y, scale: .68, transformOrigin: '50% 100%' }, { x: 0, y: 0, scale: 1, duration: .5, ease: 'power3.out' }, .1)
+        .to(plan, { scaleX: 1.05, scaleY: .92, duration: .08, ease: 'power1.out' }, .6)
+        .to(plan, { scaleX: 1, scaleY: 1, duration: .14, ease: 'back.out(3)' }, .68);
+    });
+    return () => offsets.release();
+  });
+}, { near: document.querySelector('#fees .fe-row'), id: 'scene:fees' });
+</script>
+</body>
+</html>

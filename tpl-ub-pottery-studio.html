@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsvDddtC.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsLDddtC.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsXDddtC.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsnDddtC.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsjDddtC.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 112%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f1f2f2;
+  --color-2: #0f0f10;
+  --color-3: #ffffff;
+  --color-4: #656869;
+  --color-5: #1d42cf;
+  --color-6: #b9361a;
+  --color-7: #a9c4b7;
+  --color-8: #2a1c15;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(16px, 2.4vw, 32px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallbacks:start */
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.4%; ascent-override: 94.9%; descent-override: 28.5%; line-gap-override: 0%; }
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 112.4%; ascent-override: 88.9%; descent-override: 26.7%; line-gap-override: 0%; }
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 99.7%; ascent-override: 100.3%; descent-override: 30.1%; line-gap-override: 0%; }
+/* fallbacks:end */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-stretch: 100%;
+  overflow-x: clip;
+}
+img { display: block; max-width: 100%; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; line-height: 1.5; font-weight: 400; letter-spacing: 0; text-transform: none; font-style: normal; font-stretch: 100%; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 6.4vw, 104px); line-height: .9; font-weight: 760; letter-spacing: -.055em; text-transform: none; font-style: normal; font-stretch: 112%; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(20px, 2.05vw, 28px); line-height: 1.32; font-weight: 420; letter-spacing: -.015em; text-transform: none; font-style: normal; font-stretch: 100%; }
+.m-text-4 { font-family: var(--font-1); font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-style: normal; font-stretch: 100%; }
+.m-text-5 { font-family: var(--font-1); font-size: 14px; line-height: 1.4; font-weight: 400; letter-spacing: 0; text-transform: none; font-style: normal; font-stretch: 100%; color: var(--color-4); }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(30px, 3.2vw, 48px); line-height: .95; font-weight: 720; letter-spacing: -.045em; text-transform: none; font-style: normal; font-stretch: 112%; }
+.m-mark { display: inline-block; color: var(--color-5); font-weight: 500; font-stretch: 100%; line-height: 1; }
+.m-mark-2 { display: inline-block; color: var(--color-6); font-weight: 500; font-stretch: 100%; line-height: 1; }
+.m-btn, .m-btn-2, .m-btn-3 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border-radius: var(--radius-1); font-family: var(--font-1); font-size: 14px; line-height: 1; font-weight: 600; letter-spacing: 0; text-transform: none; font-style: normal; font-stretch: 100%; white-space: nowrap; overflow: hidden; isolation: isolate; cursor: pointer; border: 1px solid transparent; transition: color .35s ease; }
+.m-btn { background: var(--color-2); color: var(--color-3); }
+.m-btn:focus-visible { outline-color: var(--color-2); }
+.m-btn__fill { position: absolute; inset: 0; display: flex; z-index: -1; pointer-events: none; }
+.m-btn__fill i { flex: 1; background: var(--color-5); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.22,.7,.2,1); }
+.m-btn__fill i:nth-child(1) { transition-delay: .12s; }
+.m-btn__fill i:nth-child(2) { transition-delay: .08s; }
+.m-btn__fill i:nth-child(3) { transition-delay: .04s; }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__fill i, .m-btn-2:hover .m-btn__fill i, .m-btn-3:hover .m-btn__fill i { transform: scaleY(1); }
+  .m-btn-2:hover, .m-btn-3:hover { color: var(--color-3); }
+}
+.m-btn-2 { background: transparent; color: var(--color-2); border-color: var(--color-2); min-height: 34px; padding: 0 16px; font-size: 12px; letter-spacing: .03em; text-transform: uppercase; }
+.m-btn-2 .m-btn__fill i { background: var(--color-2); }
+.m-btn-3 { background: var(--color-3); color: var(--color-2); }
+.m-btn-3:focus-visible { outline-color: var(--color-3); }
+.m-btn-3 .m-btn__fill i { background: var(--color-2); }
+.m-link { display: inline-flex; align-items: baseline; gap: .45em; font-family: var(--font-1); font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-style: normal; font-stretch: 100%; padding: 6px 0; }
+.m-link__plus { display: inline-block; font-weight: 400; transition: transform .45s cubic-bezier(.22,.7,.2,1); }
+.m-link__label { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .45s cubic-bezier(.22,.7,.2,1); }
+@media (hover: hover) {
+  .m-link:hover .m-link__plus { transform: rotate(90deg); }
+  .m-link:hover .m-link__label { background-size: 100% 1px; }
+}
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; color: inherit; cursor: pointer; transition: border-radius .35s cubic-bezier(.22,.7,.2,1), background-color .35s ease, color .35s ease; }
+.m-icon-btn__icon { position: relative; width: 16px; height: 10px; border-block: 1.5px solid currentColor; }
+@media (hover: hover) {
+  .m-icon-btn:hover { border-radius: 10px; background: var(--color-2); color: var(--color-3); border-color: var(--color-2); }
+}
+.m-surface { display: block; background: var(--color-3); color: var(--color-2); padding: 10px 10px 14px; }
+.m-surface__photo { overflow: hidden; background: var(--color-1); }
+.m-surface__photo img { width: 100%; height: 100%; object-fit: cover; }
+.m-surface__row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 12px; }
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.m-field__control { width: 100%; min-height: 48px; padding: 12px 0; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0; background: transparent; font-size: 17px; line-height: 1.4; }
+.m-field__control:focus-visible { outline: 2px solid var(--color-5); outline-offset: 4px; }
+textarea.m-field__control { min-height: 104px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.page-grid { position: fixed; top: 0; left: 0; width: 0; height: 0; z-index: 70; pointer-events: none; }
+.page-grid i { position: fixed; top: 0; bottom: 0; width: 1px; background: color-mix(in srgb, var(--color-2) 9%, transparent); }
+.page-grid i:nth-child(1) { left: var(--space-1); }
+.page-grid i:nth-child(2) { left: calc(var(--space-1) + (100% - 2 * var(--space-1)) * .25); }
+.page-grid i:nth-child(3) { left: calc(var(--space-1) + (100% - 2 * var(--space-1)) * .5); }
+.page-grid i:nth-child(4) { left: calc(var(--space-1) + (100% - 2 * var(--space-1)) * .75); }
+.page-grid i:nth-child(5) { left: calc(100% - var(--space-1) - 1px); }
+.cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto 0; height: 0; z-index: 60; }
+#nav .nav__bar { position: relative; height: 72px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: center; padding-inline: var(--space-1); background: var(--color-1); border-bottom: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent); transition: transform .5s cubic-bezier(.22,.7,.2,1); }
+#nav.is-hidden .nav__bar { transform: translateY(-101%); }
+#nav .nav__a1 { grid-column: 1; justify-self: start; }
+#nav .nav__a2 { grid-column: 2; justify-self: start; }
+#nav .nav__a3 { grid-column: 3; justify-self: center; }
+#nav .nav__cta { grid-column: 4; justify-self: end; }
+#nav .nav__logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 22px; line-height: 1; font-weight: 780; font-stretch: 112%; letter-spacing: -.06em; padding: 8px 4px; }
+#nav .nav__menu { display: none; }
+#nav .menu { position: fixed; inset: 0; z-index: 90; background: var(--color-2); color: var(--color-3); padding: 18px var(--space-1) 32px; display: grid; grid-template-rows: auto 1fr auto; overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__logo { font-size: 22px; font-weight: 780; font-stretch: 112%; letter-spacing: -.06em; }
+#nav .menu__list { align-self: center; display: grid; gap: 6px; padding-block: 40px; }
+#nav .menu__list a { font-size: clamp(38px, 11vw, 64px); line-height: 1; font-weight: 760; font-stretch: 112%; letter-spacing: -.055em; display: inline-block; padding: 4px 0; }
+#nav .menu__foot { display: grid; gap: 6px; }
+#nav .menu__list a { background: linear-gradient(currentColor, currentColor) 0 92% / 0 3px no-repeat; transition: background-size .45s cubic-bezier(.22,.7,.2,1); }
+@media (hover: hover) { #nav .menu__list a:hover { background-size: 100% 3px; } }
+@media (max-width: 760px) {
+  #nav .nav__bar { height: 60px; grid-template-columns: 1fr auto; }
+  #nav .nav__a1, #nav .nav__a2, #nav .nav__a3, #nav .nav__cta { display: none; }
+  #nav .nav__logo { position: static; transform: none; grid-column: 1; justify-self: start; }
+  #nav .nav__menu { display: inline-grid; grid-column: 2; }
+}
+@media (prefers-reduced-motion: reduce) { #nav .nav__bar { transition: none; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { --op-h: max(100svh, 620px); --op-band: calc(var(--op-h) * .46); position: relative; }
+#opening .op-screen { position: relative; height: var(--op-h); padding-top: 72px; display: grid; grid-template-rows: minmax(0, 1fr) var(--op-band); overflow: hidden; }
+#opening .op-hero { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; padding: clamp(32px, 5.5vh, 64px) var(--space-1) 24px; z-index: 1; }
+#opening .op-title { grid-column: 1 / 3; grid-row: 1; font-size: clamp(60px, 8.8vw, 140px); }
+#opening .op-line { display: block; overflow: clip; padding-block: .08em .22em; margin-block: -.08em -.22em; }
+#opening .op-line__in { display: block; }
+#opening .op-aside { grid-column: 3; grid-row: 1; display: grid; gap: 22px; justify-items: start; padding-top: 10px; padding-right: 24px; }
+#opening .op-lead { max-width: 30ch; font-size: 15px; }
+#opening .op-thumb { grid-column: 4; grid-row: 1; justify-self: end; width: min(100%, 220px); aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-2); }
+#opening .op-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 56%; transform: scale(1.5); }
+#opening .op-band { grid-row: 2; }
+#opening .op-photo { position: absolute; inset: 0; z-index: 0; overflow: hidden; clip-path: inset(calc(100% - var(--op-band)) 0 0 0); background: var(--color-8); }
+#opening .op-photo__intro, #opening .op-photo__drift { position: absolute; inset: 0; }
+#opening .op-photo__drift { left: -48px; right: -48px; }
+#opening .op-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+#opening .op-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, color-mix(in srgb, var(--color-2) 55%, transparent), transparent 52%); pointer-events: none; }
+#opening .op-about { position: relative; z-index: 3; min-height: 100svh; background: var(--color-1); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto auto 1fr; padding: clamp(96px, 16vh, 150px) var(--space-1) clamp(64px, 10vh, 110px); }
+#opening .op-label { grid-column: 1; grid-row: 1; padding-top: .7em; }
+#opening .op-statement { grid-column: 3 / 5; grid-row: 1; margin-left: -12%; max-width: 30em; padding-right: 8px; }
+#opening .op-rule { grid-column: 3 / 5; grid-row: 2; margin-left: -12%; border: 0; border-top: 1px solid color-mix(in srgb, var(--color-2) 14%, transparent); margin-block: clamp(32px, 6vh, 56px) 0; }
+#opening .op-work { grid-column: 1; grid-row: 2 / 4; align-self: end; display: grid; gap: 10px; justify-items: start; max-width: 220px; }
+#opening .op-work__photo { width: 100%; aspect-ratio: 1 / 1.05; overflow: hidden; background: var(--color-6); }
+#opening .op-work__photo img { width: 100%; height: 100%; object-fit: cover; }
+#opening .op-big { grid-column: 3 / 5; grid-row: 3; margin-left: -12%; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-top: clamp(28px, 5vh, 48px); align-self: start; }
+#opening .op-big__item { display: grid; gap: 14px; align-content: start; }
+#opening .op-big__word { font-size: clamp(56px, 7.4vw, 118px); display: inline-flex; align-items: flex-start; gap: .04em; }
+#opening .op-big__word .m-mark, #opening .op-big__word .m-mark-2 { font-size: .5em; margin-top: -.06em; }
+#opening .op-big__cap { max-width: 24ch; }
+@media (hover: hover) {
+  #opening .op-big__item .m-mark, #opening .op-big__item .m-mark-2 { transition: rotate .45s cubic-bezier(.22,.7,.2,1); }
+  #opening .op-big__item:hover .m-mark, #opening .op-big__item:hover .m-mark-2 { rotate: 90deg; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-line__in { animation: op-line-in .9s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .op-line:nth-child(2) .op-line__in { animation-delay: .08s; }
+  #opening .op-photo__intro { animation: op-photo-in 1.1s cubic-bezier(.2,.75,.2,1) backwards; }
+  #opening .op-aside, #opening .op-thumb { animation: op-shift-in .9s cubic-bezier(.2,.75,.2,1) .12s backwards; }
+  #opening .op-photo__drift { animation: op-drift 9s ease-in-out infinite alternate; }
+  #opening .op-screen.is-paused .op-photo__drift { animation-play-state: paused; }
+}
+@keyframes op-line-in { from { transform: translateY(105%); } }
+@keyframes op-photo-in { from { transform: translateY(18%) scale(1.06); } }
+@keyframes op-shift-in { from { transform: translateY(26px); } }
+@keyframes op-drift { from { transform: translateX(-44px); } to { transform: translateX(44px); } }
+@media (max-width: 760px) {
+  #opening { --op-h: max(100svh, 600px); --op-band: calc(var(--op-h) * .34); }
+  #opening .op-screen { padding-top: 60px; }
+  #opening .op-hero { padding-top: 28px; row-gap: 22px; }
+  #opening .op-title { grid-column: 1 / 5; font-size: clamp(52px, 17vw, 84px); }
+  #opening .op-aside { grid-column: 1 / 4; grid-row: 2; padding-top: 0; gap: 18px; }
+  #opening .op-thumb { grid-column: 4; grid-row: 2; width: 100%; aspect-ratio: 3 / 4; }
+  #opening .op-about { grid-template-columns: 1fr; grid-template-rows: none; padding-top: 88px; row-gap: 28px; }
+  #opening .op-label, #opening .op-statement, #opening .op-rule, #opening .op-work, #opening .op-big { grid-column: 1; grid-row: auto; margin-left: 0; }
+  #opening .op-rule { margin: 0; }
+  #opening .op-big { grid-template-columns: 1fr; gap: 28px; padding-top: 0; }
+  #opening .op-big__word { font-size: clamp(56px, 18vw, 84px); }
+  #opening .op-work { max-width: 62%; }
+}
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening.is-held .op-screen { position: sticky; top: 0; }
+  #opening .op-hold { display: none; }
+  #opening.is-held .op-hold { display: block; height: 72svh; }
+  #opening .op-strip { z-index: 2; clip-path: none; }
+  #opening .op-strip .op-photo__intro { animation: none; }
+  #opening .op-title--copy { position: absolute; z-index: 1; margin: 0; color: var(--color-3); pointer-events: none; }
+  #opening .op-title--copy .op-line__in { animation: none; }
+  #opening .op-dim { position: absolute; inset: 0; z-index: 3; background: var(--color-2); opacity: 0; pointer-events: none; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #opening.is-held .op-hold { height: 56svh; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; background: var(--color-2); color: var(--color-3); padding: clamp(64px, 9vw, 120px) var(--space-1) 28px; }
+#footer .ft-mark { font-size: min(40vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .44))); line-height: .8; white-space: nowrap; margin-left: -.04em; }
+#footer .ft-cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 0; margin-top: clamp(48px, 7vw, 96px); }
+#footer .ft-col { display: grid; gap: 6px; align-content: start; padding-right: 20px; }
+#footer .ft-col .m-text-4 { color: color-mix(in srgb, var(--color-3) 70%, var(--color-2)); margin-bottom: 8px; }
+#footer .ft-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 56px; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-3) 22%, transparent); font-size: 13px; color: color-mix(in srgb, var(--color-3) 72%, var(--color-2)); }
+@media (max-width: 760px) {
+  #footer .ft-cols { grid-template-columns: 1fr 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:commissions">
+@layer sections {
+#commissions { position: relative; z-index: 1; color: var(--color-3); background: var(--color-8); }
+#commissions .cm-backdrop { position: absolute; inset: 0; }
+#commissions .cm-stick { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+#commissions .cm-room { position: absolute; inset: 0; }
+#commissions .cm-room + .cm-room { visibility: hidden; }
+#commissions .cm-room img { width: 100%; height: 100%; object-fit: cover; }
+#commissions .cm-stick::after { content: ""; position: absolute; inset: 0; z-index: 4; background: linear-gradient(90deg, color-mix(in srgb, var(--color-2) 74%, transparent), color-mix(in srgb, var(--color-2) 42%, transparent) 48%, color-mix(in srgb, var(--color-2) 8%, transparent) 74%); }
+#commissions .cm-inner { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; padding: var(--space-2) var(--space-1); }
+#commissions .cm-head { grid-column: 1 / 3; position: sticky; top: clamp(110px, 18vh, 170px); display: grid; gap: 28px; justify-items: start; padding-right: 40px; }
+#commissions .cm-title { font-size: clamp(50px, 6.6vw, 108px); }
+#commissions .cm-lead { max-width: 36ch; }
+#commissions .cm-cards { grid-column: 4; display: grid; gap: 20px; }
+#commissions .cm-card .m-surface__photo { aspect-ratio: 1 / 1.08; }
+#commissions .cm-card .m-text-6 { font-size: clamp(22px, 1.9vw, 30px); }
+@media (max-width: 760px) {
+  #commissions .cm-stick::after { background: linear-gradient(180deg, color-mix(in srgb, var(--color-2) 72%, transparent), color-mix(in srgb, var(--color-2) 30%, transparent) 70%); }
+  #commissions .cm-head { grid-column: 1 / 5; position: static; padding-right: 0; }
+  #commissions .cm-cards { grid-column: 2 / 5; margin-top: 64px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:commissions">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #commissions.is-opening .cm-room + .cm-room { visibility: visible; }
+}
+}
+</style>
+<style data-8b-part="section:process">
+@layer sections {
+#process { position: relative; padding-block: var(--space-2); }
+#process .pr-head { align-items: end; row-gap: 24px; margin-bottom: clamp(40px, 6vw, 80px); }
+#process .pr-title { grid-column: 1 / 4; font-size: clamp(44px, 6.2vw, 100px); padding-right: 24px; }
+#process .pr-lead { grid-column: 4; max-width: 32ch; }
+#process .pr-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 0; padding-inline: var(--space-1); }
+#process .pr-step { display: grid; gap: 10px; align-content: start; padding-right: 32px; }
+#process .pr-step__photo { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-8); margin-bottom: 10px; }
+#process .pr-step__photo img { width: 100%; height: 100%; object-fit: cover; }
+#process .pr-step .m-text-6 { font-size: clamp(30px, 3vw, 46px); }
+#process .pr-step .m-text-5 { max-width: 36ch; }
+#process .pr-rule { display: none; }
+@media (max-width: 760px) {
+  #process .pr-title, #process .pr-lead { grid-column: 1 / 5; }
+  #process .pr-track { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:process">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #process.is-track { padding-block: 0; }
+  #process.is-track .pr-pin { position: relative; height: 100svh; min-height: 620px; padding-top: clamp(84px, 13vh, 132px); overflow: hidden; }
+  #process.is-track .pr-head { margin-bottom: clamp(28px, 5vh, 56px); }
+  #process.is-track .pr-track { display: flex; width: max-content; gap: 0; }
+  #process.is-track .pr-step { width: clamp(300px, 30vw, 430px); flex: none; }
+  #process.is-track .pr-step__photo { transform-origin: 0% 100%; }
+  #process.is-track .pr-rule { display: block; position: absolute; left: var(--space-1); right: var(--space-1); bottom: clamp(20px, 5vh, 44px); height: 1px; background: color-mix(in srgb, var(--color-2) 14%, transparent); }
+  #process.is-track .pr-rule span { display: block; height: 100%; background: var(--color-2); transform-origin: 0 50%; transform: scaleX(0); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #process.is-track .pr-pin { padding-top: 76px; }
+  #process.is-track .pr-step { width: 76vw; padding-right: 24px; }
+  #process.is-track .pr-title { font-size: clamp(40px, 12vw, 56px); }
+  #process.is-track .pr-lead { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="section:glazes">
+@layer sections {
+#glazes { position: relative; background: var(--color-1); color: var(--color-2); }
+#glazes .gl-head { align-items: end; row-gap: 24px; padding-top: var(--space-2); padding-bottom: clamp(48px, 7vw, 96px); }
+#glazes .gl-title { grid-column: 1 / 4; font-size: clamp(44px, 6.2vw, 100px); padding-right: 24px; }
+#glazes .gl-lead { grid-column: 4; max-width: 32ch; }
+#glazes .gl-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto auto 1fr; min-height: 82svh; padding: clamp(36px, 5vw, 72px) var(--space-1); background: var(--gl-ground); color: var(--gl-ink); }
+#glazes .gl-name { grid-column: 1 / 4; grid-row: 1; font-size: min(22vw, calc((100vw - 2 * var(--space-1)) * .72 / (var(--len) * .63))); line-height: .84; padding-bottom: .06em; }
+#glazes .gl-note { grid-column: 1 / 3; grid-row: 2; align-self: start; max-width: 40ch; padding-right: 24px; margin-top: clamp(20px, 3vw, 40px); }
+#glazes .gl-spec { grid-column: 3; grid-row: 2; align-self: start; padding-right: 16px; margin-top: clamp(24px, 3vw, 44px); }
+#glazes .gl-photo { grid-column: 4; grid-row: 1 / 4; align-self: end; aspect-ratio: 3 / 4; overflow: hidden; background: var(--color-2); }
+#glazes .gl-photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  #glazes .gl-title, #glazes .gl-lead { grid-column: 1 / 5; }
+  #glazes .gl-row { grid-template-rows: auto auto auto 1fr; row-gap: 24px; min-height: 72svh; }
+  #glazes .gl-name { grid-column: 1 / 5; font-size: min(26vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .64))); }
+  #glazes .gl-photo { grid-column: 3 / 5; grid-row: 2; align-self: start; }
+  #glazes .gl-note { grid-column: 1 / 3; grid-row: 2; padding-right: 16px; font-size: 15px; margin-top: 0; }
+  #glazes .gl-spec { grid-column: 1 / 5; grid-row: 3; margin-top: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:glazes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #glazes.is-shifting { background: var(--gl-ground); color: var(--gl-ink); }
+  #glazes.is-shifting .gl-row { background: transparent; color: inherit; }
+}
+}
+</style>
+<style data-8b-part="section:classes">
+@layer sections {
+#classes { position: relative; padding-block: var(--space-2); }
+#classes .cl-top { row-gap: 32px; align-items: start; }
+#classes .cl-head { grid-column: 1 / 3; display: grid; gap: 28px; align-content: start; padding-right: 40px; }
+#classes .cl-title { font-size: clamp(44px, 6vw, 96px); }
+#classes .cl-photo { grid-column: 3 / 5; aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-8); }
+#classes .cl-photo img { width: 100%; height: 100%; object-fit: cover; }
+#classes .cl-list { margin: clamp(56px, 8vw, 110px) var(--space-1) 0; border-top: 1px solid var(--color-2); }
+#classes .cl-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: baseline; padding: 26px 0 28px; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#classes .cl-name { display: flex; gap: .3em; align-items: flex-start; padding-right: 24px; }
+#classes .cl-name .m-text-6 { font-size: clamp(24px, 2.3vw, 34px); }
+#classes .cl-name .m-mark, #classes .cl-name .m-mark-2 { font-size: 20px; }
+#classes .cl-when { display: grid; gap: 2px; padding-right: 24px; }
+#classes .cl-desc { padding-right: 32px; max-width: 34ch; }
+#classes .cl-buy { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+#classes .cl-price { font-size: clamp(24px, 2.3vw, 34px); }
+@media (max-width: 760px) {
+  #classes .cl-head, #classes .cl-photo { grid-column: 1 / 5; padding-right: 0; }
+  #classes .cl-row { grid-template-columns: 1fr 1fr; row-gap: 12px; }
+  #classes .cl-name, #classes .cl-desc, #classes .cl-buy { grid-column: 1 / 3; }
+  #classes .cl-when { grid-column: 1 / 3; }
+}
+}
+</style>
+<style data-8b-part="section:makers">
+@layer sections {
+#makers { position: relative; padding-block: var(--space-2); }
+#makers .mk-grid { align-items: start; row-gap: 48px; }
+#makers .mk-list { grid-column: 1 / 4; grid-row: 1; position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#makers .mk-person { display: grid; gap: 14px; align-content: start; padding-right: 24px; }
+#makers .mk-photo { aspect-ratio: 3 / 4; overflow: hidden; background: var(--color-8); }
+#makers .mk-photo img { width: 100%; height: 100%; object-fit: cover; }
+#makers .mk-text { display: grid; gap: 6px; }
+#makers .mk-text .m-text-6 { font-size: clamp(22px, 2vw, 30px); }
+#makers .mk-head { grid-column: 4; grid-row: 1; display: grid; gap: 24px; align-content: start; }
+#makers .mk-title { font-size: clamp(40px, 4.4vw, 72px); }
+@media (max-width: 760px) {
+  #makers .mk-head { grid-column: 1 / 5; grid-row: 1; }
+  #makers .mk-list { grid-column: 1 / 5; grid-row: 2; grid-template-columns: 1fr; row-gap: 28px; }
+  #makers .mk-person { grid-template-columns: 1fr 1fr; column-gap: 16px; padding-right: 0; }
+  #makers .mk-text { align-content: end; }
+}
+}
+</style>
+<style data-8b-part="section:membership">
+@layer sections {
+#membership { position: relative; padding-block: var(--space-2); }
+#membership .ms-grid { align-items: start; row-gap: 40px; }
+#membership .ms-photo { grid-column: 1 / 3; aspect-ratio: 4 / 5; overflow: hidden; margin-right: clamp(24px, 3vw, 48px); background: var(--color-8); }
+#membership .ms-photo img { width: 100%; height: 100%; object-fit: cover; }
+#membership .ms-body { grid-column: 3 / 5; display: grid; gap: 28px; align-content: start; justify-items: start; }
+#membership .ms-title { font-size: clamp(44px, 5.4vw, 88px); }
+#membership .ms-price { display: flex; align-items: baseline; gap: 12px; }
+#membership .ms-price .m-text-6 { font-size: clamp(40px, 4.4vw, 68px); }
+#membership .ms-list { width: 100%; border-top: 1px solid var(--color-2); }
+#membership .ms-list li { display: grid; grid-template-columns: 32px 1fr; align-items: baseline; padding: 14px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#membership .ms-list .m-mark { font-size: 20px; }
+@media (max-width: 760px) {
+  #membership .ms-photo, #membership .ms-body { grid-column: 1 / 5; margin-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:shop">
+@layer sections {
+#shop { position: relative; padding-block: var(--space-2); }
+#shop .sh-head { align-items: end; row-gap: 24px; margin-bottom: clamp(40px, 6vw, 80px); }
+#shop .sh-title { grid-column: 1 / 3; font-size: clamp(44px, 6.2vw, 100px); }
+#shop .sh-lead { grid-column: 3 / 5; max-width: 40ch; }
+#shop .sh-grid { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: 56px; padding-inline: var(--space-1); }
+#shop .sh-line { grid-column: 1 / -1; align-self: start; height: 0; border-top: 1px solid var(--color-2); margin-bottom: 20px; }
+#shop .sh-item { display: grid; gap: 12px; align-content: start; padding-right: 20px; }
+#shop .sh-item--wide { grid-column: span 2; }
+#shop .sh-photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-3); }
+#shop .sh-item--wide .sh-photo { aspect-ratio: 16 / 10; }
+#shop .sh-photo img { width: 100%; height: 100%; object-fit: cover; }
+#shop .sh-bisque { display: none; position: absolute; inset: 0; backdrop-filter: grayscale(1) brightness(1.18) contrast(.78); pointer-events: none; }
+#shop .sh-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+#shop .sh-row .m-text-6 { font-size: clamp(20px, 1.8vw, 26px); }
+#shop .sh-price { font-weight: 600; }
+@media (max-width: 760px) {
+  #shop .sh-title, #shop .sh-lead { grid-column: 1 / 5; }
+  #shop .sh-grid { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+  #shop .sh-item { padding-right: 12px; }
+  #shop .sh-row { display: grid; gap: 4px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:shop">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #shop.is-glazing .sh-line { position: sticky; top: 50%; z-index: 3; }
+  #shop.is-glazing .sh-bisque { display: block; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; padding-block: var(--space-2); }
+#faq .fq-grid { align-items: start; row-gap: 32px; }
+#faq .fq-head { grid-column: 1; display: flex; gap: .15em; align-items: flex-start; padding-right: 24px; }
+#faq .fq-title { font-size: clamp(36px, 3.6vw, 60px); }
+#faq .fq-head .m-mark { font-size: clamp(24px, 2.4vw, 38px); }
+#faq .fq-list { grid-column: 2 / 5; border-top: 1px solid var(--color-2); }
+#faq .fq-item { border-bottom: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#faq .fq-q { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: baseline; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq .fq-q::-webkit-details-marker { display: none; }
+#faq .fq-icon { font-size: 26px; line-height: 1; transition: transform .45s cubic-bezier(.22,.7,.2,1); }
+#faq .fq-item[open] .fq-icon { transform: rotate(45deg); }
+#faq .fq-a { padding: 0 0 28px; max-width: 62ch; }
+@media (max-width: 760px) {
+  #faq .fq-head, #faq .fq-list { grid-column: 1 / 5; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; padding-block: var(--space-2) clamp(80px, 9vw, 140px); overflow-x: clip; }
+#contact .ct-grid { row-gap: clamp(48px, 7vw, 96px); align-items: start; }
+#contact .ct-title { grid-column: 1 / 5; display: flex; flex-wrap: wrap; column-gap: .24em; font-size: clamp(50px, 8.4vw, 140px); }
+#contact .ct-word { display: inline-block; }
+#contact .ct-info { grid-column: 1 / 3; display: grid; grid-template-columns: 1fr 1fr; gap: 36px 0; padding-right: 32px; }
+#contact .ct-block { display: grid; gap: 8px; align-content: start; padding-right: 24px; }
+#contact .ct-form { grid-column: 3 / 5; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+#contact .ct-wide { grid-column: 1 / 3; }
+#contact .ct-send { grid-column: 1 / 3; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
+#contact .ct-status { color: var(--color-5); font-weight: 600; }
+@media (max-width: 760px) {
+  #contact .ct-info, #contact .ct-form { grid-column: 1 / 5; padding-right: 0; }
+  #contact .ct-form { grid-template-columns: 1fr; }
+  #contact .ct-wide, #contact .ct-send { grid-column: 1; }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<div aria-hidden="true" class="page-grid"><i></i><i></i><i></i><i></i><i></i></div>
+
+<header data-8b-section="navigation" id="nav">
+<nav aria-label="Main" class="nav__bar">
+<a class="m-link nav__a1" href="#about"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t1|Studio}}</span></a>
+<a class="m-link nav__a2" href="#commissions"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t2|Commissions}}</span></a>
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">{{t3|fettle}}</a>
+<a class="m-link nav__a3" href="#classes"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t4|Classes}}</span></a>
+<a class="m-btn-2 nav__cta" href="#contact"><span aria-hidden="true" class="m-btn__fill"><i></i><i></i><i></i><i></i></span><span class="m-btn__label">{{t5|Contact us}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-icon-btn nav__menu" type="button"><span aria-hidden="true" class="m-icon-btn__icon"></span><span class="sr">{{t6|Open menu}}</span></button>
+</nav>
+<div aria-label="Menu" aria-modal="true" class="menu" data-lenis-prevent="" hidden="" id="menu" role="dialog">
+<div class="menu__top">
+<span class="menu__logo">{{t3|fettle}}</span>
+<button class="m-icon-btn menu__close" type="button"><span aria-hidden="true" class="m-icon-btn__icon"></span><span class="sr">{{t7|Close menu}}</span></button>
+</div>
+<ul class="menu__list">
+<li><a href="#about">{{t1|Studio}}</a></li>
+{{#nv_commissions}}<li><a href="#commissions">{{t2|Commissions}}</a></li>{{/nv_commissions}}
+{{#nv_process}}<li><a href="#process">{{t8|Process}}</a></li>{{/nv_process}}
+{{#nv_glazes}}<li><a href="#glazes">{{t9|Glazes}}</a></li>{{/nv_glazes}}
+{{#nv_classes}}<li><a href="#classes">{{t4|Classes}}</a></li>{{/nv_classes}}
+{{#nv_shop}}<li><a href="#shop">{{t10|Shop}}</a></li>{{/nv_shop}}
+{{#nv_contact}}<li><a href="#contact">{{t11|Contact}}</a></li>{{/nv_contact}}
+</ul>
+<div class="menu__foot">
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t12|hello@fettle.example}}</span></a>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t13|⟦phone⟧}}</span></a>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-screen">
+<div class="op-photo">
+<div class="op-photo__intro"><div class="op-photo__drift"><img alt="Unglazed bowls drying on long wooden shelves in the studio" fetchpriority="high" height="1065" src="{{i1|https://images.unsplash.com/photo-1772607407371-44031ae3b69f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG90dGVyeSUyMHN0dWRpbyUyMHNoZWx2ZXN8ZW58MXwwfHx8MTc5MTQxNDQ0OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#40260c" width="1600"/></div></div>
+</div>
+<div class="op-hero">
+<h1 class="op-title m-text-2" id="opening-title"><span class="op-line"><span class="op-line__in">{{t14|Pottery}}</span></span> <span class="op-line"><span class="op-line__in">{{t1|Studio}}</span></span></h1>
+<div class="op-aside">
+<p class="op-lead m-text">{{t15|We throw, glaze and fire tableware for restaurants, cafés and homes from a former cutlery works in Ibadan, and teach anyone who wants their hands in clay.}}</p>
+<a class="m-btn" href="#classes"><span aria-hidden="true" class="m-btn__fill"><i></i><i></i><i></i><i></i></span><span class="m-btn__label">{{t16|Book a class}}</span></a>
+</div>
+<figure class="op-thumb"><img alt="A hand holding a stack of stoneware plates and bowls" height="1200" sizes="(max-width: 767px) 73px, 26vw" src="{{i2|https://images.unsplash.com/photo-1764521727337-fe33394efc4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2VyYW1pYyUyMHBsYXRlcyUyMHN0YWNrfGVufDF8MXx8fDE3OTE0MTQ0ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" srcset="{{i3|https://images.unsplash.com/photo-1764521727337-fe33394efc4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2VyYW1pYyUyMHBsYXRlcyUyMHN0YWNrfGVufDF8MXx8fDE3OTE0MTQ0ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}} 220w, {{i2|https://images.unsplash.com/photo-1764521727337-fe33394efc4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2VyYW1pYyUyMHBsYXRlcyUyMHN0YWNrfGVufDF8MXx8fDE3OTE0MTQ0ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}} 330w" style="background:#260c0c" width="800"/></figure>
+</div>
+<div aria-hidden="true" class="op-band"></div>
+</div>
+<div aria-hidden="true" class="op-hold"></div>
+<div class="op-about" id="about">
+<p class="op-label m-text-4">{{t17|About us}}</p>
+<p class="op-statement m-text-3">{{t18|Clay keeps a record of every hand that shapes it. At ⟦name⟧ we make plates, bowls and cups that carry that record onto busy pass counters and kitchen tables: thrown on the wheel, fired slowly and built to be used every single day.}}</p>
+<hr class="op-rule"/>
+<div class="op-work">
+<div class="op-work__photo"><img alt="Hands shaping a terracotta pot on a turning wheel" height="1198" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1662845114342-256fdc45981d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8aGFuZHMlMjBwb3R0ZXJ5JTIwd2hlZWx8ZW58MXwxfHx8MTc5MTQxNDQ1MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60}}" style="background:#73260c" width="800"/></div>
+<a class="m-link" href="#commissions"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t19|See our work}}</span></a>
+</div>
+<div class="op-big">
+<a class="op-big__item" href="#commissions"><span class="op-big__word m-text-6">{{t20|Make}}<span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span></span><span class="op-big__cap m-text-5">{{t21|Tableware made to order for restaurants, cafés and hotels.}}</span></a>
+<a class="op-big__item" href="#classes"><span class="op-big__word m-text-6">{{t22|Learn}}<span aria-hidden="true" class="m-mark-2" data-8b-motion="turn">+</span></span><span class="op-big__cap m-text-5">{{t23|Wheel and handbuilding classes on evenings and weekends.}}</span></a>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_commissions}}<section aria-labelledby="commissions-title" data-8b-section="commissions" id="commissions">
+<div aria-hidden="true" class="cm-backdrop">
+<div class="cm-stick">
+<div class="cm-room"><img alt="" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1771830937809-6f815c091b25?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMHRhYmxlJTIwaGFuZG1hZGUlMjBwbGF0ZXN8ZW58MXwwfHx8MTc5MTQxNDQ1Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#260c0c" width="1600"/></div>
+<div class="cm-room"><img alt="" height="2400" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1677729437372-2d35520a3d0e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGNhZmUlMjBjZXJhbWljJTIwY3VwJTIwdGFibGV8ZW58MXwxfHx8MTc5MTQxNDQ1M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#f3f3f3" width="1600"/></div>
+<div class="cm-room"><img alt="" height="2400" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1721522291144-4c712d48d371?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGhvdGVsJTIwYnJlYWtmYXN0JTIwY2VyYW1pY3xlbnwxfDF8fHwxNzkxNDE0NDU0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#d9d9d9" width="1600"/></div>
+</div>
+</div>
+<div class="cm-inner">
+<div class="cm-head">
+<h2 class="cm-title m-text-2" id="commissions-title">{{t24|Where clay meets the table}}</h2>
+<p class="cm-lead m-text">{{t25|We design and make whole services for kitchens that cook for hundreds: plates sized to the pass, bowls that stack in a dishwasher rack, cups that survive a Saturday brunch. Samples in four weeks, a full order in twelve.}}</p>
+<a class="m-btn-3" href="#contact"><span aria-hidden="true" class="m-btn__fill"><i></i><i></i><i></i><i></i></span><span class="m-btn__label">{{t26|Start a commission}}</span></a>
+</div>
+<ol class="cm-cards">
+<li>
+<article class="m-surface cm-card">
+<div class="m-surface__photo"><img alt="A long restaurant table set with pale blue stoneware plates" height="1067" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1660950644107-64b706f631cb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cmVzdGF1cmFudCUyMHRhYmxlJTIwaGFuZG1hZGUlMjBwbGF0ZXN8ZW58MXwwfHx8MTc5MTQxNDQ1Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#734026" width="1600"/></div>
+<div class="m-surface__row"><h3 class="m-text-6">{{t27|Restaurant}}</h3><p class="m-text-5">{{t28|Marrow, Surulere Island}}</p></div>
+</article>
+</li>
+<li>
+<article class="m-surface cm-card">
+<div class="m-surface__photo"><img alt="A black glazed coffee mug on a wooden café table" height="2400" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1605025515868-c35a7c6cccce?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGNhZmUlMjBjZXJhbWljJTIwY3VwJTIwdGFibGV8ZW58MXwxfHx8MTc5MTQxNDQ1M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=400&q=60}}" style="background:#260c0c" width="1600"/></div>
+<div class="m-surface__row"><h3 class="m-text-6">{{t29|Café}}</h3><p class="m-text-5">{{t30|Lowfield Coffee, Heeley}}</p></div>
+</article>
+</li>
+<li>
+<article class="m-surface cm-card">
+<div class="m-surface__photo"><img alt="Sage-green cups and toast on a hotel breakfast tray" height="2400" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1722246616918-272fbbe70d8b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8aG90ZWwlMjBicmVha2Zhc3QlMjBjZXJhbWljfGVufDF8MXx8fDE3OTE0MTQ0NTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=400&q=60}}" style="background:#d9d9d9" width="1600"/></div>
+<div class="m-surface__row"><h3 class="m-text-6">{{t31|Hotel}}</h3><p class="m-text-5">{{t32|Hallam House, Broomhill}}</p></div>
+</article>
+</li>
+</ol>
+</div>
+</section>{{/sec_commissions}}
+
+{{#sec_process}}<section aria-labelledby="process-title" data-8b-section="process" id="process">
+<div class="pr-pin">
+<div class="pr-head cols">
+<h2 class="pr-title m-text-2" id="process-title">{{t33|Mud to table in six steps}}</h2>
+<p class="pr-lead m-text">{{t34|Every ⟦name⟧ piece goes through the same six steps and two firings. It takes about three weeks, and none of it can be hurried.}}</p>
+</div>
+<ol class="pr-track">
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="Hands pressing a block of clay on a workbench" height="1067" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1609881583306-39c8b7eea68b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHdlZGdpbmclMjBjbGF5fGVufDF8MHx8fDE3OTE0MTQ0NTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#402626" width="1600"/></div>
+<p class="m-text-4">{{t35|Step 1}}</p>
+<h3 class="m-text-6">{{t36|Wedge}}</h3>
+<p class="m-text-5">{{t37|Each block is kneaded on a canvas bench to push out trapped air, so nothing cracks or bursts in the kiln.}}</p>
+</li>
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="Clay-covered hands raising a pot on the wheel" height="2400" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1771523350747-638a89667c8f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGFuZHMlMjBwb3R0ZXJ5JTIwd2hlZWx8ZW58MXwxfHx8MTc5MTQxNDQ1MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#c0a68c" width="1600"/></div>
+<p class="m-text-4">{{t38|Step 2}}</p>
+<h3 class="m-text-6">{{t39|Throw}}</h3>
+<p class="m-text-5">{{t40|The clay is centred on the wheel, opened and pulled up into a cylinder, then shaped into a bowl, cup or plate.}}</p>
+</li>
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="A potter trimming the foot of a terracotta piece on the wheel" height="1067" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1609881582441-7c9385db15c3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fHBvdHRlcnklMjBjbGFzc3xlbnwxfDB8fHwxNzkxNDE0NDc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#40260c" width="1600"/></div>
+<p class="m-text-4">{{t41|Step 3}}</p>
+<h3 class="m-text-6">{{t42|Trim}}</h3>
+<p class="m-text-5">{{t43|Leather-hard pieces go back on the wheel upside down to cut a clean foot ring and lose extra weight.}}</p>
+</li>
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="A pile of pale unglazed dishes after the first firing" height="1028" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1740478949628-ff562c3c3923?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2xhemluZyUyMGNlcmFtaWNzfGVufDF8MHx8fDE3OTE0MTQ0NjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#a68c73" width="1600"/></div>
+<p class="m-text-4">{{t44|Step 4}}</p>
+<h3 class="m-text-6">{{t45|Bisque}}</h3>
+<p class="m-text-5">{{t46|A first, slow firing to 1000°C turns dry clay into porous bisque that can soak up glaze.}}</p>
+</li>
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="A potter brushing glaze onto a white mug" height="1092" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1599958336382-c6a7c598925c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z2xhemluZyUyMGNlcmFtaWNzfGVufDF8MHx8fDE3OTE0MTQ0NjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60}}" style="background:#8c8c8c" width="1600"/></div>
+<p class="m-text-4">{{t47|Step 5}}</p>
+<h3 class="m-text-6">{{t48|Glaze}}</h3>
+<p class="m-text-5">{{t49|Pieces are dipped by hand in one of our house glazes; each foot is waxed so it never sticks to the kiln shelf.}}</p>
+</li>
+<li class="pr-step">
+<div class="pr-step__photo"><img alt="Red flames filling the dark inside of a kiln" height="1067" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1510616443155-dbf131a55805?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8a2lsbnxlbnwxfDB8fHwxNzkxNDE0NTQzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60}}" style="background:#730c0c" width="1600"/></div>
+<p class="m-text-4">{{t50|Step 6}}</p>
+<h3 class="m-text-6">{{t51|Fire}}</h3>
+<p class="m-text-5">{{t52|The glaze firing runs overnight to 1240°C. We open the kiln the next afternoon, never sooner.}}</p>
+</li>
+</ol>
+<div aria-hidden="true" class="pr-rule"><span></span></div>
+</div>
+</section>{{/sec_process}}
+
+{{#sec_glazes}}<section aria-labelledby="glazes-title" data-8b-section="glazes" id="glazes">
+<div class="gl-head cols">
+<h2 class="gl-title m-text-2" id="glazes-title">{{t53|Four glazes, mixed in the back room}}</h2>
+<p class="gl-lead m-text">{{t54|We weigh and sieve every bucket ourselves. Each glaze is food safe, tested in the dishwasher and fired on our own clay body.}}</p>
+</div>
+<ul class="gl-list">
+<li class="gl-row" style="--gl-ground: var(--color-5); --gl-ink: var(--color-3)">
+<h3 class="gl-name m-text-2" style="--len:6">{{t55|Cobalt}}</h3>
+<p class="gl-note m-text">{{t56|A deep, glossy blue that breaks pale where it thins over the rims. The glaze most of our restaurant plates wear.}}</p>
+<p class="gl-spec m-text-4">{{t57|Gloss · dinner plates, bowls}}</p>
+<figure class="gl-photo"><img alt="A stack of bowls in shades of cobalt and pale blue" height="1967" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1639146266039-6c8f7d738b51?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y29iYWx0JTIwYmx1ZSUyMGdsYXplJTIwYm93bHxlbnwxfDF8fHwxNzkxNDE0NDYzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+</li>
+<li class="gl-row" style="--gl-ground: var(--color-6); --gl-ink: var(--color-3)">
+<h3 class="gl-name m-text-2" style="--len:8">{{t58|Iron red}}</h3>
+<p class="gl-note m-text">{{t59|Rust that turns orange on edges and almost black where it pools. Every piece comes out of the kiln a little different.}}</p>
+<p class="gl-spec m-text-4">{{t60|Satin · vases, serving dishes}}</p>
+<figure class="gl-photo"><img alt="An orange-red glazed vase on a dark background" height="2400" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1674390521253-79caf82d0ceb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cmVkJTIwY2VyYW1pYyUyMHZhc2V8ZW58MXwxfHx8MTc5MTQxNDQ3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#c0c08c" width="1600"/></figure>
+</li>
+<li class="gl-row" style="--gl-ground: var(--color-7); --gl-ink: var(--color-2)">
+<h3 class="gl-name m-text-2" style="--len:7">{{t61|Celadon}}</h3>
+<p class="gl-note m-text">{{t62|A pale green-grey you can see the clay through, glassy and calm. Teacups, rice bowls and anything for a slow breakfast.}}</p>
+<p class="gl-spec m-text-4">{{t63|Gloss · cups, small bowls}}</p>
+<figure class="gl-photo"><img alt="A pale blue-green bowl holding dark tea" height="2137" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1768677675311-ad831e8d4be0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z3JlZW4lMjBjZXJhbWljJTIwYm93bHxlbnwxfDF8fHwxNzkxNDE0NDc0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#a67359" width="1600"/></figure>
+</li>
+<li class="gl-row" style="--gl-ground: var(--color-8); --gl-ink: var(--color-3)">
+<h3 class="gl-name m-text-2" style="--len:7">{{t64|Tenmoku}}</h3>
+<p class="gl-note m-text">{{t65|Near-black brown with a bronze shine on the shoulders. Heavy, quiet and the best background for food we know.}}</p>
+<p class="gl-spec m-text-4">{{t66|Gloss · sharing plates, jugs}}</p>
+<figure class="gl-photo"><img alt="Close view of a dark brown glazed vase" height="2133" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1706655855916-81abe7b19601?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YnJvd24lMjBnbGF6ZWQlMjBjZXJhbWljfGVufDF8MXx8fDE3OTE0MTQ0NzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+</li>
+</ul>
+</section>{{/sec_glazes}}
+
+{{#sec_classes}}<section aria-labelledby="classes-title" data-8b-section="classes" id="classes">
+<div class="cl-top cols">
+<div class="cl-head">
+<h2 class="cl-title m-text-2" data-8b-motion="rise" id="classes-title">{{t67|Classes for any pair of hands}}</h2>
+<p class="m-text-3" data-8b-motion="rise">{{t68|Small groups of six, a wheel each, clay and firing included. Come alone or bring the friend who keeps saying they would love to try.}}</p>
+</div>
+<figure class="cl-photo"><img alt="A teacher guiding a child's hands on a turning pot" height="1066" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1621846323386-a60faf26f962?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cG90dGVyeSUyMGNsYXNzfGVufDF8MHx8fDE3OTE0MTQ0Nzl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#262626" width="1600"/></figure>
+</div>
+<ul class="cl-list">
+<li class="cl-row" data-8b-motion="rise">
+<div class="cl-name"><h3 class="m-text-6">{{t69|Taster evening}}</h3><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span></div>
+<p class="cl-when"><span class="m-text">{{t70|Thursdays 18:30}}</span><span class="m-text-5">{{t71|2.5 hours}}</span></p>
+<p class="cl-desc m-text">{{t72|Try the wheel with tea and biscuits. We trim, glaze and fire your two best pieces.}}</p>
+<div class="cl-buy"><span class="cl-price m-text-6">{{t73|₦24,000}}</span><a class="m-link" href="#contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t74|Book}}</span></a></div>
+</li>
+<li class="cl-row" data-8b-motion="rise">
+<div class="cl-name"><h3 class="m-text-6">{{t75|Six-week wheel course}}</h3><span aria-hidden="true" class="m-mark-2" data-8b-motion="turn">+</span></div>
+<p class="cl-when"><span class="m-text">{{t76|Tuesdays or Saturdays}}</span><span class="m-text-5">{{t77|6 × 2.5 hours}}</span></p>
+<p class="cl-desc m-text">{{t78|From centring to trimming. You leave with a set of bowls and the skill to make more.}}</p>
+<div class="cl-buy"><span class="cl-price m-text-6">{{t79|₦142,500}}</span><a class="m-link" href="#contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t74|Book}}</span></a></div>
+</li>
+<li class="cl-row" data-8b-motion="rise">
+<div class="cl-name"><h3 class="m-text-6">{{t80|Handbuilding weekend}}</h3><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span></div>
+<p class="cl-when"><span class="m-text">{{t81|First weekend of the month}}</span><span class="m-text-5">{{t82|2 days}}</span></p>
+<p class="cl-desc m-text">{{t83|Pinch, coil and slab. No wheel needed, just patience and a rolling pin.}}</p>
+<div class="cl-buy"><span class="cl-price m-text-6">{{t84|₦82,500}}</span><a class="m-link" href="#contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t74|Book}}</span></a></div>
+</li>
+<li class="cl-row" data-8b-motion="rise">
+<div class="cl-name"><h3 class="m-text-6">{{t85|Private lesson}}</h3><span aria-hidden="true" class="m-mark-2" data-8b-motion="turn">+</span></div>
+<p class="cl-when"><span class="m-text">{{t86|By appointment}}</span><span class="m-text-5">{{t87|2 hours}}</span></p>
+<p class="cl-desc m-text">{{t88|One potter, one wheel and every question you have been saving up.}}</p>
+<div class="cl-buy"><span class="cl-price m-text-6">{{t89|₦47,500}}</span><a class="m-link" href="#contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t74|Book}}</span></a></div>
+</li>
+</ul>
+</section>{{/sec_classes}}
+
+{{#sec_makers}}<section aria-labelledby="makers-title" data-8b-section="makers" id="makers">
+<div class="mk-grid cols">
+<div class="mk-head">
+<h2 class="mk-title m-text-2" id="makers-title">{{t90|Three pairs of hands}}</h2>
+<p class="m-text">{{t91|⟦name⟧ is three potters and a kiln. Whoever answers your email is also the one who will make your plates.}}</p>
+</div>
+<ul class="mk-list">
+<li class="mk-person">
+<div class="mk-photo"><img alt="Ruth Ainsley painting a white vase at her bench" height="2400" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1699391197134-fa0235ac22d5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGNlcmFtaWNpc3QlMjBzdHVkaW8lMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDE0NDc4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#c0c0c0" width="1600"/></div>
+<div class="mk-text">
+<p class="m-text-4">{{t92|Founder, thrower}}</p>
+<h3 class="m-text-6">{{t93|Ruth Ainsley}}</h3>
+<p class="m-text-5">{{t94|Ten years making for other people's restaurants before opening ⟦name⟧. Throws every dinner plate we sell.}}</p>
+</div>
+</li>
+<li class="mk-person">
+<div class="mk-photo"><img alt="Dev Mistry shaping a clay piece in the studio" height="2397" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1713652463814-545a8f6c9cfe?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNlcmFtaWNpc3QlMjBzdHVkaW8lMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNDE0NDc4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#404040" width="1600"/></div>
+<div class="mk-text">
+<p class="m-text-4">{{t95|Glazes and kilns}}</p>
+<h3 class="m-text-6">{{t96|Dev Mistry}}</h3>
+<p class="m-text-5">{{t97|A chemist by training. Mixes our four glazes and loads every firing, and is still chasing the perfect red.}}</p>
+</div>
+</li>
+<li class="mk-person">
+<div class="mk-photo"><img alt="Hana Kowalska in an apron at a table full of pieces" height="2400" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1673252413454-162352c3df01?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Y2VyYW1pY2lzdCUyMHN0dWRpbyUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0MTQ0Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#a6a6a6" width="1600"/></div>
+<div class="mk-text">
+<p class="m-text-4">{{t4|Classes}}</p>
+<h3 class="m-text-6">{{t98|Hana Kowalska}}</h3>
+<p class="m-text-5">{{t99|Runs the evening classes and the open studio. Has taught more than two thousand people to centre clay.}}</p>
+</div>
+</li>
+</ul>
+</div>
+</section>{{/sec_makers}}
+
+{{#sec_membership}}<section aria-labelledby="membership-title" data-8b-section="membership" id="membership">
+<div class="ms-grid cols">
+<figure class="ms-photo"><img alt="Studio shelves full of members' unglazed work" height="1067" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1610206349499-c932c3b3aacb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Z2xhemluZyUyMGNlcmFtaWNzfGVufDF8MHx8fDE3OTE0MTQ0NjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1070&q=60}}" style="background:#262626" width="1600"/></figure>
+<div class="ms-body">
+<h2 class="ms-title m-text-2" data-8b-motion="rise" id="membership-title">{{t100|Open studio membership}}</h2>
+<p class="m-text-3" data-8b-motion="rise">{{t101|For anyone who has finished a course and cannot stop. Your own shelf, wheel time six days a week and a kiln that fires every Friday.}}</p>
+<p class="ms-price" data-8b-motion="rise"><span class="m-text-6">{{t89|₦47,500}}</span><span class="m-text-5">{{t102|a month, no fixed term}}</span></p>
+<ul class="ms-list">
+<li data-8b-motion="rise"><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span><span class="m-text">{{t103|Wheel time Tuesday to Sunday, booked online}}</span></li>
+<li data-8b-motion="rise"><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span><span class="m-text">{{t104|A shelf of your own for work in progress}}</span></li>
+<li data-8b-motion="rise"><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span><span class="m-text">{{t105|12.5 kg of clay a month, more at cost}}</span></li>
+<li data-8b-motion="rise"><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span><span class="m-text">{{t106|Bisque and glaze firings for anything that fits the shelf}}</span></li>
+<li data-8b-motion="rise"><span aria-hidden="true" class="m-mark" data-8b-motion="turn">+</span><span class="m-text">{{t107|All four house glazes, plus your own tests}}</span></li>
+</ul>
+<a class="m-btn" href="#contact"><span aria-hidden="true" class="m-btn__fill"><i></i><i></i><i></i><i></i></span><span class="m-btn__label">{{t108|Join the waiting list}}</span></a>
+</div>
+</div>
+</section>{{/sec_membership}}
+
+{{#sec_shop}}<section aria-labelledby="shop-title" data-8b-section="shop" id="shop">
+<div class="sh-head cols">
+<h2 class="sh-title m-text-2" id="shop-title">{{t109|From the shelf}}</h2>
+<p class="sh-lead m-text">{{t110|One-off pieces and small batches left over from commissions. Reserve by email, collect from the studio or we post anywhere in the Nigeria.}}</p>
+</div>
+<ul class="sh-grid">
+<li aria-hidden="true" class="sh-line"></li>
+<li class="sh-item">
+<div class="sh-photo"><img alt="A pale stoneware pitcher with a pinched spout" height="2400" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1784901389095-9843fdc5463e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2VyYW1pYyUyMGp1Z3xlbnwxfDF8fHwxNzkxNDE0NDgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#f3f3f3" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t111|Pale pitcher}}</h3><span class="sh-price m-text">{{t112|₦34,000}}</span></div>
+<p class="m-text-5">{{t113|Clear glaze, 1.2 litres}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+<li class="sh-item">
+<div class="sh-photo"><img alt="A rough off-white vase with two small handles" height="2400" loading="lazy" src="{{i27|https://images.unsplash.com/photo-1784901392739-c17de5ebeb59?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjV8fHdoaXRlJTIwY2VyYW1pYyUyMHZhc2V8ZW58MXwxfHx8MTc5MTQxNDQ3Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#f3f3f3" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t115|Two-handled vase}}</h3><span class="sh-price m-text">{{t116|₦42,000}}</span></div>
+<p class="m-text-5">{{t117|Unglazed outside, 28 cm}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+<li class="sh-item">
+<div class="sh-photo"><img alt="A stack of white bowls and plates" height="2069" loading="lazy" src="{{i28|https://images.unsplash.com/photo-1715690998785-20b918a6392e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2VyYW1pYyUyMHBsYXRlcyUyMHN0YWNrfGVufDF8MXx8fDE3OTE0MTQ0ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#f3f3f3" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t118|Breakfast set}}</h3><span class="sh-price m-text">{{t119|₦48,000}}</span></div>
+<p class="m-text-5">{{t120|Clear glaze, bowl, plate and side plate}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+<li class="sh-item">
+<div class="sh-photo"><img alt="Two white mugs side by side" height="2400" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1687158179173-b9f3eac1fde9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGhhbmRtYWRlJTIwY2VyYW1pYyUyMG11Z3xlbnwxfDF8fHwxNzkxNDE0NDgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#c0c0c0" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t121|Morning mugs}}</h3><span class="sh-price m-text">{{t122|₦21,000}}</span></div>
+<p class="m-text-5">{{t123|Clear glaze, a pair, 350 ml}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+<li class="sh-item sh-item--wide">
+<div class="sh-photo"><img alt="Speckled grey and black bud vases on a table" height="2399" loading="lazy" src="{{i30|https://images.unsplash.com/photo-1677761821976-4a2b4ed29437?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjR8fHdoaXRlJTIwY2VyYW1pYyUyMHZhc2V8ZW58MXwxfHx8MTc5MTQxNDQ3Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#c0a68c" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t124|Speckled bud vases}}</h3><span class="sh-price m-text">{{t125|₦28,000}}</span></div>
+<p class="m-text-5">{{t126|Tenmoku and ash, a trio}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+<li class="sh-item sh-item--wide">
+<div class="sh-photo"><img alt="A speckled oatmeal tumbler on a shelf" height="2400" loading="lazy" src="{{i31|https://images.unsplash.com/photo-1666445759502-85124c28524e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGFuZG1hZGUlMjBjZXJhbWljJTIwbXVnfGVufDF8MXx8fDE3OTE0MTQ0ODB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#c0c0c0" width="1600"/><span aria-hidden="true" class="sh-bisque"></span></div>
+<div class="sh-row"><h3 class="m-text-6">{{t127|Speckled tumbler}}</h3><span class="sh-price m-text">{{t128|₦11,000}}</span></div>
+<p class="m-text-5">{{t129|Raw clay outside, clear inside}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t114|Reserve}}</span></a>
+</li>
+</ul>
+</section>{{/sec_shop}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-grid cols">
+<div class="fq-head"><h2 class="fq-title m-text-2" id="faq-title">{{t130|Questions}}</h2><span aria-hidden="true" class="m-mark-2" data-8b-motion="turn">+</span></div>
+<div class="fq-list">
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t131|Do I need any experience for a class?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t132|None at all. The taster evening and the six-week course both start from the very beginning, and the groups are small enough that everyone gets help on the wheel.}}</p>
+</details>
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t133|What should I wear?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t134|Clothes you do not mind getting clay on, and short nails if you can. We lend aprons and towels; clay washes out of cotton easily.}}</p>
+</details>
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t135|When can I collect what I made?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t136|Three to four weeks after your class, once the pieces have been trimmed, bisque fired, glazed and fired again. We email you when they are on the collection shelf.}}</p>
+</details>
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t137|Is your tableware dishwasher safe?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t138|Yes. All four house glazes are food safe and tested in commercial dishwashers and microwaves. Unglazed outsides are best washed by hand.}}</p>
+</details>
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t139|How big does a commission have to be?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t140|We start at about 40 pieces of one shape. Samples take four weeks and a full service ten to twelve, and we keep your glaze recipe on file for reorders.}}</p>
+</details>
+<details class="fq-item" data-8b-motion="rise">
+<summary class="fq-q"><span class="m-text-3">{{t141|Do you sell gift vouchers?}}</span><span aria-hidden="true" class="fq-icon">+</span></summary>
+<p class="fq-a m-text">{{t142|For any class or any amount. Email us and we will send a printable voucher the same day; it is valid for a year.}}</p>
+</details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="ct-grid cols">
+<h2 class="ct-title m-text-2" id="contact-title"><span class="ct-word">{{t143|Come}}</span> <span class="ct-word">{{t144|by}}</span> <span class="ct-word">{{t145|the}}</span> <span class="ct-word">{{t146|studio}}</span></h2>
+<div class="ct-info">
+<div class="ct-block">
+<p class="m-text-4">{{t147|Address}}</p>
+<p class="m-text">{{t148|1 Admiralty Way}}<br/>{{t149|Ibadan}}</p>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t150|Open}}</p>
+<p class="m-text">{{t151|Tue–Fri 10:00–21:00}}<br/>{{t152|Sat–Sun 10:00–17:00}}</p>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t153|Write}}</p>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t12|hello@fettle.example}}</span></a>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t154|Call}}</p>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t13|⟦phone⟧}}</span></a>
+</div>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Pottery Studio by <a href="https://github.com/8bsite/pottery-studio-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<p aria-hidden="true" class="ft-mark m-text-2" style="--len:6">{{t3|fettle}}</p>
+<div class="ft-cols">
+<div class="ft-col">
+<p class="m-text-4">{{t1|Studio}}</p>
+<p class="m-text">{{t148|1 Admiralty Way}}<br/>{{t149|Ibadan}}</p>
+</div>
+<div class="ft-col">
+<p class="m-text-4">{{t150|Open}}</p>
+<p class="m-text">{{t151|Tue–Fri 10:00–21:00}}<br/>{{t152|Sat–Sun 10:00–17:00}}</p>
+</div>
+<div class="ft-col">
+<p class="m-text-4">{{t155|Pages}}</p>
+<a class="m-link" href="#commissions"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t2|Commissions}}</span></a>
+<a class="m-link" href="#classes"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t4|Classes}}</span></a>
+<a class="m-link" href="#shop"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t10|Shop}}</span></a>
+</div>
+<div class="ft-col">
+<p class="m-text-4">{{t156|Follow}}</p>
+<a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t157|Instagram}}</span></a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t158|Newsletter}}</span></a>
+</div>
+</div>
+<div class="ft-base"><span>{{t159|© 2026 ⟦name⟧ Pottery Studio Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t160|8B}}</a></span><a class="m-link" href="#opening"><span aria-hidden="true" class="m-link__plus">+</span><span class="m-link__label">{{t161|Back to top}}</span></a></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const root = document.getElementById('nav');
+  const bar = root.querySelector('.nav__bar');
+  const menu = root.querySelector('#menu');
+  const openBtn = root.querySelector('.nav__menu');
+  const closeBtn = root.querySelector('.menu__close');
+  let last = window.scrollY, hidden = false;
+  const setHidden = value => { if (value !== hidden) { hidden = value; root.classList.toggle('is-hidden', value); } };
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, dy = y - last;
+    if (Math.abs(dy) < 3) return;
+    setHidden(dy > 0 && y > 140);
+    last = y;
+  }, { passive: true });
+  bar.addEventListener('focusin', () => setHidden(false));
+  const open = () => { menu.hidden = false; openBtn.setAttribute('aria-expanded', 'true'); window.lenis?.stop(); closeBtn.focus(); };
+  const close = (focus = true) => { menu.hidden = true; openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); if (focus) openBtn.focus(); };
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', () => close());
+  menu.addEventListener('click', event => { if (event.target.closest('a')) close(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) close(); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const screen = document.querySelector('#opening .op-screen');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => screen.classList.toggle('is-paused', !entry.isIntersecting)).observe(screen);
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const bar = document.querySelector('#nav .nav__bar');
+  const lenis = window.lenis = new Lenis({ lerp: .085, wheelMultiplier: .95, anchors: { offset: -(bar ? bar.offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 200); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  turn(element, vars = {}) {
+    return gsap.fromTo(element, { rotation: -180 }, { rotation: 0, ease: 'none', ...vars });
+  },
+  rise(element, vars = {}) {
+    return gsap.fromTo(element, { yPercent: 35, clipPath: 'inset(0% 0% 100% 0%)' }, { yPercent: 0, clipPath: 'inset(0% 0% 0% 0%)', duration: .9, ease: 'power3.out', clearProps: 'clipPath', ...vars });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const turns = section.querySelectorAll('[data-8b-motion~="turn"]');
+  const rises = section.querySelectorAll('[data-8b-motion~="rise"]');
+  const first = section.getBoundingClientRect().top < innerHeight;
+  if (turns.length) {
+    const id = `effect:turn:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      turns.forEach((element, i) => ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top bottom', end: 'center 58%', scrub: .6, animation: effects.turn(element) }));
+    }), first ? { first: true, id } : { near: section, id });
+  }
+  if (rises.length) {
+    const id = `effect:rise:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      rises.forEach((element, i) => {
+        const siblings = element.parentElement ? [...element.parentElement.children].filter(child => child.matches('[data-8b-motion~="rise"]')) : [];
+        const delay = Math.max(0, siblings.indexOf(element)) * .07;
+        ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top 90%', once: true, animation: effects.rise(element, { paused: true, delay }) });
+      });
+    }), first ? { first: true, id } : { near: section, id });
+  }
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const screen = section.querySelector('.op-screen');
+    const photo = screen.querySelector('.op-photo');
+    const title = screen.querySelector('.op-title');
+    const band = screen.querySelector('.op-band');
+    const hold = section.querySelector('.op-hold');
+    const about = section.querySelector('.op-about');
+    const statement = about.querySelector('.op-statement');
+    const lines = [...document.querySelectorAll('.page-grid i')];
+    section.classList.add('is-held');
+    const strips = [0, 1, 2, 3].map(() => {
+      const strip = photo.cloneNode(true);
+      strip.classList.add('op-strip');
+      strip.setAttribute('aria-hidden', 'true');
+      strip.querySelectorAll('img').forEach(img => { img.alt = ''; img.removeAttribute('fetchpriority'); });
+      const copy = title.cloneNode(true);
+      copy.removeAttribute('id');
+      copy.classList.add('op-title--copy');
+      strip.appendChild(copy);
+      screen.appendChild(strip);
+      return strip;
+    });
+    const source = photo.getAnimations({ subtree: true });
+    strips.forEach(strip => strip.getAnimations({ subtree: true }).forEach((animation, i) => {
+      if (source[i] && source[i].currentTime != null) animation.currentTime = source[i].currentTime;
+    }));
+    const dim = document.createElement('div');
+    dim.className = 'op-dim';
+    screen.appendChild(dim);
+    const geo = { top: 0, edges: [0, 0, 0, 0, 0] };
+    const measure = () => {
+      const width = screen.offsetWidth;
+      geo.top = screen.offsetHeight - band.offsetHeight;
+      geo.edges = [0, lines[1].offsetLeft, lines[2].offsetLeft, lines[3].offsetLeft, width];
+      strips.forEach(strip => {
+        const copy = strip.querySelector('.op-title--copy');
+        copy.style.left = `${title.offsetLeft}px`;
+        copy.style.top = `${title.offsetTop}px`;
+        copy.style.width = `${title.offsetWidth}px`;
+      });
+    };
+    measure();
+    const inset = (i, top) => `inset(${top}px ${geo.edges[4] - geo.edges[i + 1]}px 0px ${geo.edges[i]}px)`;
+    const rise = gsap.timeline({ scrollTrigger: {
+      id: 'opening', trigger: section, start: 'top top', end: () => `+=${hold.offsetHeight}`, scrub: .5, invalidateOnRefresh: true, onRefreshInit: measure
+    } });
+    [3, 2, 1, 0].forEach((i, order) => {
+      rise.fromTo(strips[i], { clipPath: () => inset(i, geo.top) }, { clipPath: () => inset(i, 0), ease: 'power2.inOut', duration: 1 }, order * .3);
+    });
+    const recede = gsap.timeline({ scrollTrigger: {
+      id: 'opening:about', trigger: about, start: 'top bottom', end: 'top top', scrub: .5
+    } });
+    recede.to(screen, { scale: .93, transformOrigin: '50% 30%', ease: 'none' }, 0)
+      .to(dim, { opacity: .5, ease: 'none' }, 0);
+    const split = SplitText.create(statement, { type: 'words' });
+    const ink = getComputedStyle(statement).color;
+    const pale = getComputedStyle(section).getPropertyValue('--color-1').trim();
+    gsap.timeline({ scrollTrigger: { id: 'opening:read', trigger: statement, start: 'top 88%', end: 'bottom 62%', scrub: .4 } })
+      .fromTo(split.words, { color: gsap.utils.interpolate(pale, ink, .22) }, { color: ink, ease: 'none', stagger: .08, duration: .4 });
+    return () => {
+      split.revert();
+      strips.forEach(strip => strip.remove());
+      dim.remove();
+      section.classList.remove('is-held');
+    };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  const status = form.querySelector('.ct-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
+      status.textContent = status.dataset.invalid;
+      const first = form.querySelector(':invalid');
+      if (first) first.focus();
+      return;
+    }
+    status.textContent = status.dataset.sent;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:commissions">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('commissions');
+    const stick = section.querySelector('.cm-stick');
+    const rooms = [...section.querySelectorAll('.cm-room')];
+    const cards = [...section.querySelectorAll('.cm-card')];
+    const count = Math.min(rooms.length, cards.length);
+    if (count < 2) return;
+    section.classList.add('is-opening');
+    for (let i = 1; i < count; i++) {
+      const card = cards[i];
+      const frame = card.querySelector('.m-surface__photo') || card;
+      const start = () => {
+        const width = stick.offsetWidth, height = stick.offsetHeight;
+        const left = frame.getBoundingClientRect().left;
+        const top = height * .78 + frame.offsetTop - card.offsetTop;
+        const bottom = Math.max(0, height - top - frame.offsetHeight);
+        return `inset(${top.toFixed(1)}px ${Math.max(0, width - left - frame.offsetWidth).toFixed(1)}px ${bottom.toFixed(1)}px ${left.toFixed(1)}px)`;
+      };
+      gsap.fromTo(rooms[i], { clipPath: start }, {
+        clipPath: 'inset(0px 0px 0px 0px)', ease: 'power2.inOut',
+        scrollTrigger: { id: `commissions:${i}`, trigger: card, start: 'top 78%', end: 'top 18%', scrub: .5, invalidateOnRefresh: true }
+      });
+    }
+    return () => section.classList.remove('is-opening');
+  });
+}, { near: document.getElementById('commissions') });
+</script>
+<script data-8b-part="scene:process">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('process');
+    const pin = section.querySelector('.pr-pin');
+    const track = section.querySelector('.pr-track');
+    const fill = section.querySelector('.pr-rule span');
+    const steps = [...track.querySelectorAll('.pr-step')];
+    section.classList.add('is-track');
+    const distance = () => Math.max(0, track.scrollWidth - pin.clientWidth);
+    const travel = gsap.to(track, {
+      x: () => -distance(), ease: 'none',
+      scrollTrigger: { id: 'process', trigger: pin, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: .6, invalidateOnRefresh: true }
+    });
+    gsap.fromTo(fill, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { id: 'process:rule', trigger: pin, start: 'top top', end: () => `+=${distance()}`, scrub: .6, invalidateOnRefresh: true } });
+    steps.forEach((step, i) => {
+      const photo = step.querySelector('.pr-step__photo');
+      if (!photo) return;
+      gsap.fromTo(photo, { scale: .72 }, { scale: 1, ease: 'none', scrollTrigger: { id: `process:step${i}`, trigger: step, containerAnimation: travel, start: 'left 102%', end: 'left 80%', scrub: true } });
+    });
+    return () => section.classList.remove('is-track');
+  });
+});
+</script>
+<script data-8b-part="scene:glazes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('glazes');
+    const rows = [...section.querySelectorAll('.gl-row')];
+    if (!rows.length) return;
+    const read = (element, ground, ink) => {
+      const style = getComputedStyle(element);
+      return { '--gl-ground': style.getPropertyValue(ground).trim(), '--gl-ink': style.getPropertyValue(ink).trim() };
+    };
+    const states = [read(section, '--color-1', '--color-2'), ...rows.map(row => read(row, '--gl-ground', '--gl-ink'))];
+    section.classList.add('is-shifting');
+    gsap.set(section, states[0]);
+    rows.forEach((row, i) => {
+      gsap.fromTo(section, { ...states[i] }, {
+        ...states[i + 1], ease: 'none', immediateRender: false,
+        scrollTrigger: { id: `glazes:${i}`, trigger: row, start: 'top 57%', end: 'top 43%', scrub: .3 }
+      });
+    });
+    return () => section.classList.remove('is-shifting');
+  });
+}, { near: document.getElementById('glazes') });
+</script>
+<script data-8b-part="scene:makers">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('makers');
+    const list = section.querySelector('.mk-list');
+    const people = [...list.querySelectorAll('.mk-person')];
+    const photos = people.map(person => person.querySelector('.mk-photo'));
+    const texts = people.map(person => person.querySelector('.mk-text'));
+    if (photos.some(photo => !photo)) return;
+    const mid = Math.floor(photos.length / 2);
+    const dx = i => photos[mid].offsetLeft - photos[i].offsetLeft;
+    const dy = i => photos[mid].offsetTop - photos[i].offsetTop;
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'makers', trigger: list, start: 'top 82%', end: 'center 56%', scrub: .6, invalidateOnRefresh: true } });
+    photos.forEach((photo, i) => {
+      gsap.set(photo, { zIndex: i === mid ? 3 : 2 - Math.abs(i - mid) + 1, position: 'relative' });
+      timeline.fromTo(photo, { x: () => dx(i), y: () => dy(i), rotation: (i - mid) * 5, scale: .9 }, { x: 0, y: 0, rotation: 0, scale: 1, ease: 'power2.inOut', duration: 1 }, 0);
+    });
+    texts.forEach((text, i) => {
+      if (!text) return;
+      timeline.fromTo(text, { opacity: 0, y: 24 }, { opacity: 1, y: 0, ease: 'power2.out', duration: .35 }, .65 + Math.abs(i - mid) * .08);
+    });
+  });
+}, { near: document.getElementById('makers') });
+</script>
+<script data-8b-part="scene:shop">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('shop');
+    const overlays = [...section.querySelectorAll('.sh-bisque')];
+    if (!overlays.length) return;
+    section.classList.add('is-glazing');
+    overlays.forEach((overlay, i) => {
+      gsap.fromTo(overlay, { clipPath: 'inset(0% 0% 0% 0%)' }, {
+        clipPath: 'inset(100% 0% 0% 0%)', ease: 'none',
+        scrollTrigger: { id: `shop:${i}`, trigger: overlay.parentElement, start: 'top 50%', end: 'bottom 50%', scrub: true }
+      });
+    });
+    return () => section.classList.remove('is-glazing');
+  });
+}, { near: document.getElementById('shop') });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const title = section.querySelector('.ct-title');
+    const words = [...title.querySelectorAll('.ct-word')];
+    const lines = [...document.querySelectorAll('.page-grid i')];
+    if (!words.length) return;
+    const heights = [150, 40, 220, 100];
+    const phone = () => window.matchMedia('(max-width: 760px)').matches;
+    const fromX = i => {
+      if (phone()) return (i % 2 ? 1 : -1) * 18;
+      const word = words[i];
+      const titleLeft = title.getBoundingClientRect().left;
+      const left = titleLeft + word.offsetLeft;
+      const column = lines[i % 4] ? lines[i % 4].offsetLeft : left;
+      const limit = (lines[4] ? lines[4].offsetLeft : window.innerWidth) - (left + word.offsetWidth);
+      return Math.min(column - left, limit);
+    };
+    const fromY = i => phone() ? 40 + i * 46 : heights[i % 4];
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'contact', trigger: title, start: 'top 96%', end: 'top 30%', scrub: .6, invalidateOnRefresh: true } });
+    words.forEach((word, i) => timeline.fromTo(word, { x: () => fromX(i), y: () => fromY(i) }, { x: 0, y: 0, ease: 'power2.out', duration: 1 }, i * .06));
+  });
+}, { near: document.getElementById('contact') });
+</script>
+</body>
+</html>

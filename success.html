@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your site is live – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script></head><body>
+<main class="wrap" style="text-align:center"><div style="font-size:4rem;color:var(--g)">✔</div><h1 class="big">Your site is live!</h1>
+<p>Your website is live at <b id="u"></b></p><p class="mut">About 2 minutes to propagate</p>
+<div class="grid g2" style="text-align:left;margin-top:24px"><div class="card" style="text-align:center"><h3>Scan to view site</h3><div id="q" style="display:inline-block"></div></div>
+<div class="card"><span class="pill">Payment Successful</span><p class="mut">Plan: Annual · Starter</p><div class="big" style="font-size:2.2rem">₦26,999 paid</div><p class="mut" id="dt"></p>
+<a class="btn" href="dashboard.html">Go to My Site</a> <a class="btn out" href="billing.html">Manage</a></div></div></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script><script>
+const o=S.get('order',{}),p=S.get('paid',{});const url='https://'+(o.domain||'yourbiz.com');$('#u').textContent=url;qr($('#q'),url);
+$('#dt').textContent='Paid on '+new Date(p.date||Date.now()).toDateString()+' · Invoice sent to your email';
+</script><script>
+(async()=>{const sb=SB(),id=new URLSearchParams(location.search).get('site');if(!sb||!id)return;const h=$('h1');h.textContent='Setting up your site…';
+for(let i=0;i<40;i++){const {data}=await sb.from('sites').select('status,note,domain').eq('id',id).single();
+if(data&&data.status==='live'){h.textContent='Your site is live!';$('#u').textContent='https://'+data.domain;return}
+if(data&&data.status==='failed'){h.textContent='We hit a problem';$('#u').textContent=data.note||'Contact support.';return}
+await new Promise(r=>setTimeout(r,3000))}h.textContent='Still setting up. We will email you when it is live.'})();
+</script></body></html>

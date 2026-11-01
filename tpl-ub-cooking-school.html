@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDn_wghc.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhgnOytM_sLzi-TFWAW9illxWEtY.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* math */
+@font-face {
+  font-family: 'Hedvig Letters Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDn-Mghclfg.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Hedvig Letters Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDn-eghclfg.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AE, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F8D0-1F8D8, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FAC6, U+1FAC8, U+1FACC-1FADD, U+1FADF-1FAEB, U+1FAEF-1FAFA, U+1FB00-1FBFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Hedvig Letters Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDn_-ghclfg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Hedvig Letters Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDn_wghc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* math */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhgnOytM_sLzi-TFWAW9illwqEtYCkA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhgnOytM_sLzi-TFWAW9illxYEtYCkA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhgnOytM_sLzi-TFWAW9illxWEtY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #472600;
+  --color-3: #d4d1c8;
+  --color-4: #858276;
+  --color-5: #36619c;
+  --font-1: "Kalnia", "Kalnia Fallback", Georgia, serif;
+  --font-2: "Hedvig Letters Serif", "Hedvig Letters Serif Fallback", Georgia, serif;
+  --space-1: clamp(16px, 1.9vw, 28px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Kalnia Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 148.7%; ascent-override: 70.6%; descent-override: 19.9%; line-gap-override: 0%; }
+@font-face { font-family: "Hedvig Letters Serif Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 103.9%; ascent-override: 98.2%; descent-override: 30.8%; line-gap-override: 0%; }
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); }
+  h1, h2, h3, p, figure, ul, ol, dl, dd, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button, input { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+  .m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+  .m-text-2 { font-family: var(--font-2); font-size: clamp(23px, 3.05vw, 44px); font-weight: 400; line-height: 1.13; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+  .m-text-3 { font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; }
+  .m-label { font-family: var(--font-2); font-size: 13px; font-weight: 400; line-height: 1.25; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+  .m-display { font-family: var(--font-1); font-size: max(24px, min(92px, calc((100vw - 2 * var(--space-1)) / (var(--len, 8) * 1.26)))); font-weight: 400; font-stretch: 125%; line-height: 0.92; letter-spacing: 0.04em; text-transform: uppercase; font-style: normal; }
+  .m-display-2 { font-family: var(--font-1); font-size: clamp(40px, 12vw, 180px); font-weight: 400; font-stretch: 125%; line-height: 0.86; letter-spacing: 0.4em; text-transform: uppercase; font-style: normal; }
+  .m-title { font-family: var(--font-2); font-size: clamp(19px, 1.9vw, 27px); font-weight: 400; line-height: 1.15; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+  .m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px 20px; border: 1px solid var(--color-2); background: var(--color-2); color: var(--color-1); font-family: var(--font-2); font-size: 13px; font-weight: 400; line-height: 1.2; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; }
+  .m-btn::before, .m-btn::after { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; width: 50%; background: var(--color-5); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .38s cubic-bezier(.5, 0, .1, 1); }
+  .m-btn:focus-visible { outline-color: var(--color-2); }
+  .m-btn::before { left: 0; }
+  .m-btn::after { right: 0; transition-delay: .07s; }
+  .m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px 18px; border: 1px solid var(--color-2); background: transparent; color: var(--color-2); font-family: var(--font-2); font-size: 13px; font-weight: 400; line-height: 1.2; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; transition: color .3s; }
+  .m-btn-2::before, .m-btn-2::after { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; width: 50%; background: var(--color-2); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .38s cubic-bezier(.5, 0, .1, 1); }
+  .m-btn-2::before { left: 0; }
+  .m-btn-2::after { right: 0; transition-delay: .07s; }
+  @media (hover: hover) {
+    .m-btn:hover::before, .m-btn:hover::after, .m-btn-2:hover::before, .m-btn-2:hover::after { transform: scaleY(1); }
+    .m-btn-2:hover { color: var(--color-1); }
+  }
+  .m-link { color: inherit; text-decoration: none; background-image: linear-gradient(color-mix(in srgb, currentColor 22%, transparent), color-mix(in srgb, currentColor 22%, transparent)), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 100% 0, 100% 1px; background-position: 0 100%, 0 100%; transition: background-size .35s cubic-bezier(.5, 0, .1, 1); }
+  @media (hover: hover) { .m-link:hover { background-size: 100% .5em, 100% 1px; } }
+  .m-icon { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 4px; border: 0; background: none; color: inherit; font-family: var(--font-2); font-size: clamp(24px, 2.6vw, 36px); line-height: 1; cursor: pointer; }
+  .m-icon__glyph { display: inline-block; transition: transform .35s cubic-bezier(.5, 0, .1, 1); }
+  @media (hover: hover) { .m-icon:hover .m-icon__glyph { transform: translateX(8px); } }
+  .m-field { display: flex; align-items: baseline; gap: .4em; font-family: var(--font-2); font-size: clamp(22px, 3.05vw, 44px); line-height: 1.2; }
+  .m-field__input { flex: 1; min-width: 0; padding: 0 0 4px; border: 0; border-bottom: 1px solid currentColor; border-radius: 0; background: transparent; font-size: inherit; outline-offset: 4px; }
+  .m-code { display: inline-block; min-width: 3.6em; padding: .3em .5em; border: 1px solid currentColor; font-family: var(--font-2); font-size: 13px; font-weight: 400; line-height: 1.2; letter-spacing: 0.06em; text-align: center; text-transform: uppercase; font-style: normal; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .wrap { padding-inline: var(--space-1); }
+  .hang { display: grid; }
+  .hang > .hang__label, .hang > .hang__text { grid-area: 1 / 1; }
+  .hang__label { align-self: start; max-width: 15%; margin-top: clamp(6px, 1.25vw, 18px); }
+  .hang__text { text-indent: 16.5%; }
+  .justify { text-align: justify; text-align-last: justify; }
+  .spread__w { display: inline-block; }
+  @media (max-width: 760px) {
+    .hang { display: block; }
+    .hang__label { max-width: none; margin: 0 0 14px; }
+    .hang__text { text-indent: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; z-index: 50; inset: 0 0 auto; display: flex; align-items: center; gap: 28px; min-height: 56px; padding: 6px var(--space-1); background: var(--color-1); border-bottom: 1px solid var(--color-3); transition: transform .45s cubic-bezier(.5, 0, .1, 1); }
+  #navigation[data-hidden] { transform: translateY(-101%); }
+  #navigation .nav__logo { font-size: 17px; line-height: 1; text-decoration: none; margin-right: auto; padding: 10px 0; }
+  #navigation .nav__links { display: flex; gap: 26px; }
+  #navigation .nav__links a { text-decoration: none; padding: 10px 0; }
+  #navigation .nav__menu { display: none; }
+  @media (hover: hover) { #navigation .nav__links a:hover { background-size: 100% .5em, 100% 1px; } }
+  @media (max-width: 860px) {
+    #navigation { gap: 10px; }
+    #navigation .nav__menu { display: inline-flex; }
+    #navigation .nav__book { min-height: 40px; padding: 10px 14px; }
+    #navigation .nav__links { position: fixed; z-index: -1; inset: 0; flex-direction: column; justify-content: center; gap: 4px; padding: 80px var(--space-1) 40px; background: var(--color-2); color: var(--color-1); visibility: hidden; opacity: 0; transition: opacity .3s, visibility 0s .3s; overflow-y: auto; }
+    #navigation .nav__links a { font-size: 30px; padding: 8px 0; align-self: flex-start; }
+    #navigation[data-open] { transform: none; background: var(--color-2); color: var(--color-1); border-color: var(--color-2); }
+    #navigation[data-open] .nav__links { visibility: visible; opacity: 1; transition: opacity .3s; }
+    #navigation[data-open] .nav__menu, #navigation[data-open] .nav__book { color: var(--color-1); border-color: var(--color-1); outline-color: var(--color-1); }
+  }
+  @media (prefers-reduced-motion: reduce) { #navigation, #navigation .nav__links { transition: none; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { --band: 46svh; --opening-gap: 8px; --opening-drift: max(2.6vw, 26px); --opening-zoom: 1.1; position: relative; }
+  #opening .opening__first { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: 1fr auto var(--band); min-height: 100svh; padding-top: 56px; }
+  #opening .opening__mast { min-width: 0; align-self: center; padding-top: clamp(8px, 2vh, 24px); overflow-x: clip; font-size: min(calc((100vw - 2 * var(--space-1)) / 6.925), 22svh); }
+  #opening .opening__name, #opening .opening__year { display: block; height: .86em; }
+  #opening .opening__name { padding-inline: var(--space-1); white-space: nowrap; font-size: min(calc((100vw - 2 * var(--space-1)) / (var(--len) * 1.465 - .4)), 22svh); }
+  #opening .opening__digits { display: block; position: relative; height: .86em; }
+  #opening .opening__digits > span { position: absolute; top: 0; left: calc(12.5% - .53em); }
+  #opening .opening__digits > span:nth-child(2) { left: calc(37.5% - .53em); }
+  #opening .opening__digits > span:nth-child(3) { left: calc(62.5% - .53em); }
+  #opening .opening__digits > span:nth-child(4) { left: calc(87.5% - .53em); }
+  #opening .opening__bar { display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; padding-block: clamp(12px, 2.2vh, 22px); }
+  #opening .opening__line { max-width: 20em; }
+  #opening .opening__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  #opening .opening__band { position: relative; overflow: hidden; background: var(--color-5); }
+  #opening .opening__still { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+  #opening .opening__light { display: none; }
+  #opening .opening__second { display: flex; flex-direction: column; gap: clamp(24px, 4vh, 44px); min-height: 100svh; padding: calc(56px + clamp(20px, 5vh, 56px)) 0 clamp(20px, 4vh, 40px); background: var(--color-5); color: var(--color-1); }
+  #opening .opening__intro { max-width: 1180px; }
+  #opening .opening__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: auto; }
+  #opening .opening__col { min-width: 0; }
+  #opening .opening__frame { position: relative; height: var(--band); overflow: hidden; clip-path: inset(0 var(--opening-gap)); }
+  #opening .opening__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #opening .opening__cap { display: grid; gap: 6px; padding: 14px 16px 0; }
+  @media (max-width: 760px) {
+    #opening { --band: 54svh; --opening-gap: 3px; --opening-drift: 8vw; --opening-zoom: 1.26; }
+    #opening .opening__bar { align-items: flex-start; }
+    #opening .opening__cap { padding: 10px 6px 0; gap: 4px; }
+    #opening .opening__cap .m-title { font-size: 15px; }
+    #opening .opening__cap .m-text-3 { font-size: 12px; line-height: 1.3; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .opening__lift { display: block; animation: opening-rise .85s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #opening .opening__year .opening__lift { animation-delay: .08s; }
+    #opening .opening__band { animation: opening-open .9s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #opening .opening__still { animation: opening-drift 7s ease-in-out infinite alternate; }
+    #opening[data-off] .opening__still { animation-play-state: paused; }
+    #opening .opening__light { display: block; position: absolute; z-index: 1; top: 0; left: 0; width: 25%; height: 100%; pointer-events: none; background: var(--color-1); mix-blend-mode: soft-light; animation: opening-lamp 10s cubic-bezier(.6, 0, .3, 1) infinite alternate; }
+    #opening[data-off] .opening__light, #opening[data-lamp-off] .opening__light { animation-play-state: paused; }
+  }
+  @keyframes opening-rise { from { transform: translateY(38%); clip-path: inset(0 0 38% 0); } }
+  @keyframes opening-open { from { clip-path: inset(16% 0 0 0); } }
+  @keyframes opening-drift { from { transform: scale(var(--opening-zoom)) translate3d(calc(-1 * var(--opening-drift)), 0, 0); } to { transform: scale(var(--opening-zoom)) translate3d(var(--opening-drift), 0, 0); } }
+  @keyframes opening-lamp { 0%, 12% { transform: translate3d(0, 0, 0); } 24%, 44% { transform: translate3d(100%, 0, 0); } 56%, 76% { transform: translate3d(200%, 0, 0); } 88%, 100% { transform: translate3d(300%, 0, 0); } }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { background: var(--color-2); color: var(--color-3); padding-top: clamp(64px, 9vw, 120px); overflow: hidden; }
+  #footer .footer__news { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; max-width: 1180px; }
+  #footer .footer__form { display: flex; align-items: flex-end; gap: 12px; }
+  #footer .footer__form .m-field { flex: 1; min-width: 0; }
+  #footer .footer__form .m-field__input { width: 0; }
+  #footer .footer__status:empty { display: none; }
+  #footer .footer__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px var(--space-1); margin-top: clamp(64px, 8vw, 110px); padding-top: 22px; border-top: 1px solid color-mix(in srgb, var(--color-3) 45%, transparent); }
+  #footer .footer__cols ul { display: grid; gap: 6px; margin-top: 12px; }
+  #footer .footer__cols a { text-decoration: none; }
+  #footer .footer__mast { margin-top: clamp(56px, 8vw, 110px); padding-bottom: var(--space-1); overflow-x: clip; font-size: min(calc((100vw - 2 * var(--space-1)) / 6.925), 22svh); }
+  #footer .footer__mast .opening__name, #footer .footer__mast .opening__year, #footer .footer__mast .opening__lift { display: block; }
+  #footer .footer__mast .opening__name, #footer .footer__mast .opening__year { height: .86em; }
+  #footer .footer__mast .opening__name { padding-inline: var(--space-1); white-space: nowrap; font-size: min(calc((100vw - 2 * var(--space-1)) / (var(--len, 5) * 1.465 - .4)), 22svh); }
+  #footer .footer__mast .opening__digits { display: block; position: relative; height: .86em; }
+  #footer .footer__mast .opening__digits > span { position: absolute; top: 0; left: calc(12.5% - .53em); }
+  #footer .footer__mast .opening__digits > span:nth-child(2) { left: calc(37.5% - .53em); }
+  #footer .footer__mast .opening__digits > span:nth-child(3) { left: calc(62.5% - .53em); }
+  #footer .footer__mast .opening__digits > span:nth-child(4) { left: calc(87.5% - .53em); }
+  @media (max-width: 760px) { #footer .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+</style>
+<style data-8b-part="section:school">
+@layer sections {
+  #school { padding-block: var(--space-2) 0; }
+  #school .school__aside { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 3fr); gap: var(--space-1); align-items: end; width: min(100%, 58.5%); margin: clamp(48px, 7vw, 96px) 0 0 auto; }
+  #school .school__photo { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-3); }
+  #school .school__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #school .school__note { display: grid; gap: 14px; }
+  #school .school__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  @media (max-width: 960px) { #school .school__aside { width: 100%; } }
+  @media (max-width: 600px) { #school .school__aside { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:courses">
+@layer sections {
+  #courses { padding-block: var(--space-2) 0; }
+  #courses .courses__title { position: relative; }
+  #courses .courses__body { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 0 calc(var(--space-1) * 2); align-items: start; margin-top: clamp(36px, 5vw, 72px); }
+  #courses .courses__intro { max-width: 46ch; margin-bottom: 28px; }
+  #courses .courses__list { grid-column: 1; }
+  #courses .courses__row { --rule: 1; position: relative; display: grid; grid-template-columns: 4.6em minmax(0, 1fr) auto; gap: 6px 22px; align-items: start; padding: 22px 0 26px; }
+  #courses .courses__row::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--color-4); transform: scaleX(var(--rule)); transform-origin: 0 0; }
+  #courses .courses__row:last-child { border-bottom: 1px solid var(--color-4); }
+  #courses .courses__what { display: grid; gap: 8px; }
+  #courses .courses__meta { margin-top: 4px; }
+  #courses .courses__book { padding: 10px 0; }
+  #courses .courses__code[data-lit] { background: var(--color-5); color: var(--color-1); border-color: var(--color-5); }
+  #courses .courses__frame { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: 96px; height: min(76vh, 640px); overflow: hidden; background: var(--color-3); }
+  #courses .courses__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 760px) {
+    #courses .courses__body { grid-template-columns: minmax(0, 1fr); }
+    #courses .courses__frame { grid-column: 1; grid-row: 3; z-index: 2; top: auto; bottom: 0; height: 28svh; margin: 18px calc(var(--space-1) * -1) 0; }
+    #courses .courses__intro { grid-row: 1; }
+    #courses .courses__list { grid-row: 2; }
+    #courses .courses__row { grid-template-columns: 4.2em minmax(0, 1fr); }
+    #courses .courses__book { grid-column: 2; justify-self: start; padding: 4px 0; }
+  }
+}
+</style>
+<style data-8b-part="section:doors">
+@layer sections {
+  #doors { padding-block: var(--space-2) 0; }
+  #doors .doors__pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #doors .doors__door { display: grid; gap: 16px; align-content: start; }
+  #doors .doors__door:nth-child(2) { position: relative; z-index: 1; }
+  #doors .doors__photo { position: relative; display: block; aspect-ratio: 5 / 6; overflow: hidden; background: var(--color-3); text-decoration: none; }
+  #doors .doors__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #doors .doors__label { position: absolute; top: 18px; left: 50%; translate: -50% 0; padding: 9px 14px; background: var(--color-1); color: var(--color-2); white-space: nowrap; transition: background-color .3s, color .3s; }
+  #doors .doors__text { max-width: 44ch; }
+  @media (hover: hover) { #doors .doors__photo:hover .doors__label { background: var(--color-2); color: var(--color-1); } }
+  @media (max-width: 600px) {
+    #doors .doors__pair { gap: 8px; }
+    #doors .doors__photo { aspect-ratio: 3 / 5; }
+    #doors .doors__label { top: 10px; padding: 7px 9px; font-size: 11px; }
+    #doors .doors__text { font-size: 14px; }
+  }
+}
+</style>
+<style data-8b-part="section:teachers">
+@layer sections {
+  #teachers { padding-block: var(--space-2) 0; }
+  #teachers .teachers__title { position: relative; }
+  #teachers .teachers__text { margin-top: clamp(36px, 5vw, 72px); font-size: clamp(26px, 4.1vw, 60px); line-height: 1.16; }
+  #teachers .teachers__who { white-space: nowrap; }
+  #teachers .teachers__win { display: inline-block; width: 2.1em; height: .92em; margin-right: .08em; vertical-align: -0.1em; overflow: hidden; background: var(--color-3); }
+  #teachers .teachers__win img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+  #teachers .teachers__name { --read: 1; color: color-mix(in srgb, var(--color-2) calc(var(--read) * 100%), var(--color-4)); }
+  #teachers .teachers__more { margin-top: clamp(28px, 4vw, 48px); }
+}
+</style>
+<style data-8b-part="section:term">
+@layer sections {
+  #term { padding-block: var(--space-2) 0; }
+  #term .term__title { position: relative; }
+  #term .term__head { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin: clamp(28px, 4vw, 56px) 0 18px; }
+  #term .term__head p { max-width: 52ch; }
+  #term table { width: 100%; border-collapse: collapse; }
+  #term th { padding: 0 12px 12px 0; text-align: left; font-weight: 400; }
+  #term tbody tr { --rule: 1; background: linear-gradient(var(--color-4), var(--color-4)) 0 0 / calc(var(--rule) * 100%) 1px no-repeat; }
+  #term tbody tr:last-child { border-bottom: 1px solid var(--color-4); }
+  #term td { padding: 16px 12px 18px 0; vertical-align: top; }
+  #term .term__course { display: flex; gap: 14px; align-items: baseline; }
+  #term td:last-child { text-align: right; padding-right: 0; }
+  @media (max-width: 760px) {
+    #term thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    #term table, #term tbody { display: block; }
+    #term tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 14px 0 16px; }
+    #term td { display: block; padding: 0; }
+    #term .term__date { grid-column: 1; }
+    #term .term__course { grid-column: 1 / -1; grid-row: 2; }
+    #term .term__who { grid-column: 1 / -1; }
+    #term .term__time { grid-column: 1; }
+    #term .term__left { grid-column: 2; grid-row: 1; text-align: right; }
+    #term td:last-child { grid-column: 2; grid-row: 4; }
+  }
+}
+</style>
+<style data-8b-part="section:notebook">
+@layer sections {
+  #notebook { margin-top: var(--space-2); }
+  #notebook .notebook__pin { display: flex; align-items: center; min-height: 100svh; overflow: hidden; }
+  #notebook .notebook__track { display: flex; gap: clamp(20px, 3vw, 44px); width: 100%; padding: 72px var(--space-1) 32px; overflow-x: auto; }
+  #notebook .notebook__intro { flex: 0 0 min(40vw, 560px); display: grid; align-content: center; gap: 28px; }
+  #notebook .notebook__title { font-size: clamp(30px, 4.6vw, 66px); }
+  #notebook .notebook__note { flex: 0 0 min(32vw, 460px); display: grid; gap: 12px; align-content: start; }
+  #notebook .notebook__figure { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-3); margin-bottom: 8px; }
+  #notebook .notebook__figure img { width: 100%; height: 100%; object-fit: cover; }
+  #notebook .notebook__note .m-link { justify-self: start; padding: 6px 0; }
+  @media (min-width: 761px) and (min-height: 700px) { #notebook .notebook__figure { aspect-ratio: 1 / 1; } }
+  @media (max-width: 760px) {
+    #notebook .notebook__intro { flex-basis: 84vw; }
+    #notebook .notebook__note { flex-basis: 74vw; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding-block: var(--space-2) 0; }
+  #faq .faq__grid { display: grid; grid-template-columns: 16.5% minmax(0, 1fr); align-items: start; }
+  #faq .faq__label { padding-top: 26px; }
+  #faq .faq__item { --rule: 1; position: relative; }
+  #faq .faq__item::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--color-4); transform: scaleX(var(--rule)); transform-origin: 0 0; }
+  #faq .faq__item:last-child { border-bottom: 1px solid var(--color-4); }
+  #faq summary { display: flex; justify-content: space-between; gap: 24px; padding: 20px 0 22px; font-size: clamp(22px, 2.6vw, 36px); cursor: pointer; list-style: none; }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq summary::after { content: "+"; flex: none; transition: transform .35s cubic-bezier(.5, 0, .1, 1); }
+  #faq details[open] summary::after { transform: rotate(45deg); }
+  #faq .faq__answer { max-width: 60ch; padding-bottom: 26px; }
+  @media (max-width: 760px) {
+    #faq .faq__grid { grid-template-columns: 1fr; }
+    #faq .faq__label { padding: 0 0 14px; }
+  }
+}
+</style>
+<style data-8b-part="section:house">
+@layer sections {
+  #house { padding-block: var(--space-2) 0; }
+  #house .house__view { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-1); margin-top: clamp(48px, 7vw, 100px); align-items: end; }
+  #house .house__stage { position: relative; grid-column: 2; width: min(100%, 520px); }
+  #house .house__under { position: absolute; inset: 0; top: 36px; left: -36px; right: 36px; bottom: -36px; background: var(--color-5); }
+  #house .house__frame { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-3); }
+  #house .house__frame img { width: 100%; height: 100%; object-fit: cover; }
+  #house .house__note { grid-column: 1; grid-row: 1; max-width: 36ch; display: grid; gap: 14px; justify-items: start; padding-bottom: 36px; }
+  @media (max-width: 760px) {
+    #house .house__view { grid-template-columns: 1fr; }
+    #house .house__stage { grid-column: 1; width: calc(100% - 24px); margin-left: 24px; }
+    #house .house__under { top: 24px; left: -24px; right: 24px; bottom: -24px; }
+    #house .house__note { grid-row: 2; padding: 48px 0 0; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding-block: var(--space-2); }
+  #contact .contact__title { position: relative; }
+  #contact .contact__table { margin-top: clamp(36px, 5vw, 72px); }
+  #contact .contact__row { --rule: 1; position: relative; display: grid; grid-template-columns: 22% repeat(3, minmax(0, 1fr)); gap: 10px var(--space-1); padding: 18px 0 26px; }
+  #contact .contact__row::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--color-4); transform: scaleX(var(--rule)); transform-origin: 0 0; }
+  #contact .contact__row:last-child { border-bottom: 1px solid var(--color-4); }
+  #contact .contact__row a { text-decoration: none; }
+  #contact .contact__mail { margin-top: clamp(40px, 5vw, 72px); }
+  @media (max-width: 760px) {
+    #contact .contact__row { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:notebook">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #notebook[data-track] .notebook__track { overflow: visible; }
+  }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .opening__second { gap: clamp(20px, 3.4vh, 40px); }
+#opening .opening__bar { padding-block: 0; }
+#opening .opening__second .m-btn-2 { color: var(--color-1); border-color: var(--color-1); }
+#opening .opening__second .m-btn-2::before, #opening .opening__second .m-btn-2::after { background: var(--color-1); }
+@media (hover: hover) { #opening .opening__second .m-btn-2:hover { color: var(--color-2); } }
+#opening .opening__second :focus-visible { outline-color: var(--color-1); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__intro, #opening .opening__bar { animation: opening-rise .85s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .opening__bar { animation-delay: .12s; }
+  #opening .opening__frame { animation: opening-open .9s cubic-bezier(.2, .7, .1, 1) .2s backwards; }
+  #opening .opening__col:nth-child(2) .opening__frame { animation-delay: .27s; }
+  #opening .opening__col:nth-child(3) .opening__frame { animation-delay: .34s; }
+  #opening .opening__col:nth-child(4) .opening__frame { animation-delay: .41s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="navigation">
+<a class="nav__logo m-display-2" href="#opening">{{t1|⟦name⟧}}</a>
+<nav aria-label="Main">
+<ul class="nav__links" data-lenis-prevent="" id="nav-links">
+<li><a class="m-label m-link" href="#kitchens">{{t2|Kitchens}}</a></li>
+{{#nv_courses}}<li><a class="m-label m-link" href="#courses">{{t3|Courses}}</a></li>{{/nv_courses}}
+{{#nv_teachers}}<li><a class="m-label m-link" href="#teachers">{{t4|Teachers}}</a></li>{{/nv_teachers}}
+{{#nv_term}}<li><a class="m-label m-link" href="#term">{{t5|Term}}</a></li>{{/nv_term}}
+{{#nv_house}}<li><a class="m-label m-link" href="#house">{{t6|Visit}}</a></li>{{/nv_house}}
+</ul>
+</nav>
+<button aria-controls="nav-links" aria-expanded="false" class="nav__menu m-btn-2" type="button"><span class="m-btn-2__label" data-close="Close">{{t7|Menu}}</span></button>
+<a class="nav__book m-btn" href="#term"><span class="m-btn__label">{{t8|Book a class}}</span></a>
+</header>
+<main>
+
+{{#sec_opening}}<section data-8b-section="opening" id="opening">
+<div class="opening__second" id="kitchens">
+<div class="opening__intro hang wrap">
+<p class="hang__label m-label">{{t9|The kitchens}}</p>
+<h1 class="hang__text m-text-2" id="opening-title">{{t10|Four kitchens under one roof, each kept for one kind of cooking and for the cooks who love it most.}}</h1>
+</div>
+<div class="opening__bar wrap">
+<p class="opening__line m-label">{{t11|A cookery school on Exchange Street, Dundee, since 1924}}</p>
+<div class="opening__actions">
+<a class="m-btn" href="#term"><span class="m-btn__label">{{t8|Book a class}}</span></a>
+<a class="m-btn-2" href="#courses"><span class="m-btn-2__label">{{t12|See the catalogue}}</span></a>
+</div>
+</div>
+<div class="opening__cols">
+<figure class="opening__col">
+<div class="opening__frame"><img alt="A scored round loaf cooling on a wire rack" class="opening__photo" height="1195" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1638788449271-9bb9121c1bfc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjN8fHNvdXJkb3VnaCUyMGJyZWFkJTIwbG9hZnxlbnwxfDF8fHwxNzkxNTUyNzc3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=550&q=60}}" style="background:#8c8c8c" width="900"/></div>
+<figcaption class="opening__cap"><span class="m-title">{{t13|The Bread Room}}</span><span class="m-text-3">{{t14|Flour, water, salt and the long, slow rise.}}</span></figcaption>
+</figure>
+<figure class="opening__col">
+<div class="opening__frame"><img alt="Hands rolling a sheet of pastry with a wooden pin" class="opening__photo" height="1349" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1603779702182-7985c97f72d9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cm9sbGluZyUyMHBhc3RyeSUyMGRvdWdofGVufDF8MXx8fDE3OTE1NTI3Nzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#a6a6a6" width="900"/></div>
+<figcaption class="opening__cap"><span class="m-title">{{t15|The Pastry Room}}</span><span class="m-text-3">{{t16|A cold marble bench and butter kept colder.}}</span></figcaption>
+</figure>
+<figure class="opening__col">
+<div class="opening__frame"><img alt="Logs burning with tall orange flames" class="opening__photo" height="1350" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1779117864496-51ca27f1221b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNvb2tpbmclMjBvdmVyJTIwb3BlbiUyMGZpcmV8ZW58MXwxfHx8MTc5MTU1Mjc4MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#262626" width="900"/></div>
+<figcaption class="opening__cap"><span class="m-title">{{t17|The Hearth}}</span><span class="m-text-3">{{t18|Wood fire, iron pans and a little patience.}}</span></figcaption>
+</figure>
+<figure class="opening__col">
+<div class="opening__frame"><img alt="Two jars of pickled red onions" class="opening__photo" height="1140" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1786046873392-fac519ea6fa7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmVybWVudGluZyUyMGphcnMlMjBwaWNrbGVzfGVufDF8MXx8fDE3OTE1NTI3ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#a6a6a6" width="900"/></div>
+<figcaption class="opening__cap"><span class="m-title">{{t19|The Larder}}</span><span class="m-text-3">{{t20|Pickles, brines, cures and whatever keeps.}}</span></figcaption>
+</figure>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_school}}<section data-8b-section="school" id="school">
+<div class="school__lead hang wrap">
+<h2 class="hang__label m-label">{{t21|Since 1924}}</h2>
+<p class="hang__text m-text-2" data-8b-motion="rise">{{t22|Agnes ⟦name⟧ opened a school of plain cookery on Exchange Street in the spring of 1924, teaching the young cooks of Dundee to make a loaf, a stock and a pudding without waste. A hundred years on, the house is the same and so is the idea: small classes, real kitchens and teachers who still cook for a living.}}</p>
+</div>
+<div class="school__aside wrap">
+<figure class="school__photo" data-8b-motion="rise"><img alt="A class of young women in aprons and caps around a kitchen table, early twentieth century" class="school__img" height="670" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1708461859599-48b7c35996ed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y29va2luZyUyMHNjaG9vbCUyMHN0dWRlbnRzfGVufDF8MHx8fDE3OTE1NTI5MjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#262626" width="900"/></figure>
+<div class="school__note">
+<p class="m-label">{{t23|The recipe archive}}</p>
+<p class="m-text-3">{{t24|Agnes's handwritten notebooks, class lists and menus are kept upstairs, from the first term onwards. We still teach from them, and anyone who books a class may ask to see them.}}</p>
+<div class="school__links">
+<a class="m-btn-2" href="#house"><span class="m-btn-2__label">{{t25|The house}}</span></a>
+<a class="m-btn-2" href="#notebook"><span class="m-btn-2__label">{{t26|The notebook}}</span></a>
+</div>
+</div>
+</div>
+</section>{{/sec_school}}
+
+{{#sec_courses}}<section data-8b-section="courses" id="courses">
+<h2 class="courses__title m-display justify wrap" data-8b-motion="spread" style="--len:13">{{t27|The Catalogue}}</h2>
+<div class="courses__body wrap">
+<p class="courses__intro m-text-3">{{t28|Seven courses run every term, from a single evening to a whole day. Each has a code: quote it when you book.}}</p>
+<ol class="courses__list" data-8b-motion="rule">
+<li class="courses__row"><span class="courses__code m-code">{{t29|K01}}</span><div class="courses__what"><h3 class="m-title" id="course-k01">{{t30|The knife class}}</h3><p class="m-text-3">{{t31|Hold, sharpen and cut: the one skill every other class leans on.}}</p><p class="courses__meta m-label">{{t32|All kitchens · One evening · ₦42,500}}</p></div><a aria-describedby="course-k01" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t34|B07}}</span><div class="courses__what"><h3 class="m-title" id="course-b07">{{t35|Sourdough, start to slice}}</h3><p class="m-text-3">{{t36|Feed a starter, shape, score and bake two loaves to take home.}}</p><p class="courses__meta m-label">{{t37|Bread Room · One day · ₦72,500}}</p></div><a aria-describedby="course-b07" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t38|P11}}</span><div class="courses__what"><h3 class="m-title" id="course-p11">{{t39|Choux and the creams that fill it}}</h3><p class="m-text-3">{{t40|Éclairs, buns and a pastry cream you will make again at home.}}</p><p class="courses__meta m-label">{{t41|Pastry Room · One day · ₦75,000}}</p></div><a aria-describedby="course-p11" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t42|B12}}</span><div class="courses__what"><h3 class="m-title" id="course-b12">{{t43|Pasta by hand}}</h3><p class="m-text-3">{{t44|Egg doughs, a long pin and four shapes from one sheet.}}</p><p class="courses__meta m-label">{{t45|Bread Room · One evening · ₦45,000}}</p></div><a aria-describedby="course-b12" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t46|H02}}</span><div class="courses__what"><h3 class="m-title" id="course-h02">{{t47|Cooking over wood}}</h3><p class="m-text-3">{{t48|Build the fire, read the heat and cook a whole day's meals on it.}}</p><p class="courses__meta m-label">{{t49|Hearth · One day · ₦82,500}}</p></div><a aria-describedby="course-h02" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t50|H05}}</span><div class="courses__what"><h3 class="m-title" id="course-h05">{{t51|The whole fish}}</h3><p class="m-text-3">{{t52|Choose, scale and fillet, then three ways to cook what you cut.}}</p><p class="courses__meta m-label">{{t53|Hearth · One evening · ₦47,500}}</p></div><a aria-describedby="course-h05" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+<li class="courses__row"><span class="courses__code m-code">{{t54|L04}}</span><div class="courses__what"><h3 class="m-title" id="course-l04">{{t55|Pickles and the long ferment}}</h3><p class="m-text-3">{{t56|Brines, crocks and the jars that see a kitchen through winter.}}</p><p class="courses__meta m-label">{{t57|Larder · One day · ₦67,500}}</p></div><a aria-describedby="course-l04" class="courses__book m-label m-link" href="#term">{{t33|Book}}</a></li>
+</ol>
+<figure class="courses__frame">
+<img alt="A chef's knife between carrots, a courgette and a pepper on a dark board" class="courses__photo" height="1350" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1596633609591-e4e1e9e06b7f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8a25pZmUlMjBza2lsbHMlMjB2ZWdldGFibGVzJTIwY3V0dGluZ3xlbnwxfDF8fHwxNzkxNTUyOTIwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="900"/>
+<img alt="A floured sourdough loaf on a cooling rack" class="courses__photo" height="1350" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1596575666733-cbcea306ac16?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fHNvdXJkb3VnaCUyMGJyZWFkJTIwbG9hZnxlbnwxfDF8fHwxNzkxNTUyNzc3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#595959" width="900"/>
+<img alt="Chocolate éclairs on a plate beside a tray of choux buns" class="courses__photo" height="1350" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1582217271932-3ace3faf5325?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2hvdXglMjBwYXN0cnklMjBlY2xhaXJzfGVufDF8MXx8fDE3OTE1NTI4MDZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="900"/>
+<img alt="Flour sprinkled over fresh tagliatelle" class="courses__photo" height="1349" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1615502732340-e96c7d3a776a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGZyZXNoJTIwcGFzdGElMjBtYWtpbmclMjBoYW5kc3xlbnwxfDF8fHwxNzkxNTUyOTE5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="900"/>
+<img alt="Wood burning in an outdoor grill" class="courses__photo" height="1125" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1761178383875-2d3e4ad3ae4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29va2luZyUyMG92ZXIlMjBvcGVuJTIwZmlyZXxlbnwxfDF8fHwxNzkxNTUyNzgwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#73a673" width="900"/>
+<img alt="Whole fish packed in crushed ice" class="courses__photo" height="1125" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1572123866325-6f15f82c993d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d2hvbGUlMjBmaXNoJTIwb24lMjBpY2V8ZW58MXwxfHx8MTc5MTU1MjgwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#d9d9d9" width="900"/>
+<img alt="Jars of cucumbers fermenting in brine" class="courses__photo" height="1350" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1668048482298-733d626be840?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZmVybWVudGluZyUyMGphcnMlMjBwaWNrbGVzfGVufDF8MXx8fDE3OTE1NTI3ODJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#262626" width="900"/>
+</figure>
+</div>
+</section>{{/sec_courses}}
+
+{{#sec_doors}}<section data-8b-section="doors" id="doors">
+<div class="doors__pair wrap">
+<article class="doors__door">
+<a class="doors__photo" href="#term"><img alt="Four people cooking together at a steel counter" class="doors__img" height="600" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1683624328172-88fb24625ec1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y29va2luZyUyMGNsYXNzJTIwa2l0Y2hlbnxlbnwxfDB8fHwxNzkxNTUyNzc1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1100&q=60}}" style="background:#c0c0c0" width="900"/><span class="doors__label m-label">{{t58|Join a class}}</span></a>
+<p class="doors__text m-text" data-8b-motion="rise">{{t59|Public classes run from Tuesday to Saturday, eight cooks to a kitchen, with every knife, pan and ingredient laid out at your place.}}</p>
+</article>
+<article class="doors__door">
+<a class="doors__photo" href="#contact"><img alt="A long table laid with glasses and flowers in a warm room" class="doors__img" height="601" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1597733817043-e673d01e884c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bG9uZyUyMGRpbm5lciUyMHRhYmxlJTIwZ3Vlc3RzfGVufDF8MHx8fDE3OTE1NTI4MTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1100&q=60}}" style="background:#40260c" width="900"/><span class="doors__label m-label">{{t60|Hire the kitchen}}</span></a>
+<p class="doors__text m-text" data-8b-motion="rise">{{t61|Book a kitchen for a birthday, a team or a supper of your own: a teacher cooks with you, then the long table is laid at the top of the house.}}</p>
+</article>
+</div>
+</section>{{/sec_doors}}
+
+{{#sec_teachers}}<section data-8b-section="teachers" id="teachers">
+<h2 class="teachers__title m-display justify wrap" data-8b-motion="spread" style="--len:11">{{t62|Who Teaches}}</h2>
+<p class="teachers__text m-text-2 wrap">{{t63|The Bread Room belongs to}} <span class="teachers__who"><span class="teachers__win"><img alt="Portrait of Morag Quill" class="teachers__img" height="1350" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1570697756485-aa4f6b0e1fac?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fHdvbWFuJTIwY2hlZiUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE1NTI4MzV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#c0c0c0" width="900"/></span> <span class="teachers__name">{{t64|Morag Quill}}</span></span>{{t65|, who learned to bake at four in the morning in her father's shop. Pastry is taught by}} <span class="teachers__who"><span class="teachers__win"><img alt="Portrait of Hana Bell" class="teachers__img" height="1350" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1778634304534-6629b945ee26?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8d29tYW4lMjBjaGVmJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTU1MjgzNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#d9d9d9" width="900"/></span> <span class="teachers__name">{{t66|Hana Bell}}</span></span>{{t67|, who weighs everything twice and laughs at most of it.}} <span class="teachers__who"><span class="teachers__win"><img alt="Portrait of Idris Fenwick" class="teachers__img" height="1354" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1716766322050-e1f30dcb8db3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bWFuJTIwY29vayUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE1NTI4MzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#262626" width="900"/></span> <span class="teachers__name">{{t68|Idris Fenwick}}</span></span> {{t69|keeps the fire in the Hearth and a stockpot on all day, and}} <span class="teachers__who"><span class="teachers__win"><img alt="Portrait of Tom Ellery" class="teachers__img" height="1350" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1723083467031-b5dae65ba6c9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWFuJTIwY29vayUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE1NTI4MzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=110&q=60}}" style="background:#260c0c" width="900"/></span> <span class="teachers__name">{{t70|Tom Ellery}}</span></span> {{t71|runs the Larder, where nothing is wasted and everything is labelled.}}</p>
+<p class="teachers__more m-text wrap" data-8b-motion="rise">{{t72|Every teacher still cooks for a living, and three of the four first learned here.}} <a class="m-link" href="#term">{{t73|See who teaches what this term}}</a></p>
+</section>{{/sec_teachers}}
+
+{{#sec_term}}<section data-8b-section="term" id="term">
+<h2 class="term__title m-display justify wrap" data-8b-motion="spread" style="--len:11">{{t74|Autumn Term}}</h2>
+<div class="term__head wrap">
+<p class="m-text">{{t75|Classes from October to December 2026. Ask for a place and we hold it for two days while you decide.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t76|Ask for a place}}</span></a>
+</div>
+<div class="wrap">
+<table class="term__table">
+<thead><tr><th class="m-label" scope="col">{{t77|Date}}</th><th class="m-label" scope="col">{{t78|Course}}</th><th class="m-label" scope="col">{{t79|Teacher}}</th><th class="m-label" scope="col">{{t80|Time}}</th><th class="m-label" scope="col">{{t81|Places}}</th><th class="m-label" scope="col"><span class="sr">{{t82|Booking}}</span></th></tr></thead>
+<tbody data-8b-motion="rule">
+<tr><td class="term__date m-text-3">{{t83|Tue 13 Oct}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t29|K01}}</span><span>{{t30|The knife class}}</span></span></td><td class="term__who m-text-3">{{t70|Tom Ellery}}</td><td class="term__time m-text-3">{{t84|18:30 to 21:30}}</td><td class="term__left m-text-3">{{t85|3 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t86|Sat 17 Oct}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t34|B07}}</span><span>{{t35|Sourdough, start to slice}}</span></span></td><td class="term__who m-text-3">{{t64|Morag Quill}}</td><td class="term__time m-text-3">{{t87|10:00 to 16:00}}</td><td class="term__left m-text-3">{{t88|5 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t89|Thu 22 Oct}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t50|H05}}</span><span>{{t51|The whole fish}}</span></span></td><td class="term__who m-text-3">{{t68|Idris Fenwick}}</td><td class="term__time m-text-3">{{t84|18:30 to 21:30}}</td><td class="term__left m-text-3">{{t90|Full}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t91|Waiting list}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t92|Sat 31 Oct}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t38|P11}}</span><span>{{t39|Choux and the creams that fill it}}</span></span></td><td class="term__who m-text-3">{{t66|Hana Bell}}</td><td class="term__time m-text-3">{{t87|10:00 to 16:00}}</td><td class="term__left m-text-3">{{t93|2 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t94|Wed 4 Nov}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t42|B12}}</span><span>{{t43|Pasta by hand}}</span></span></td><td class="term__who m-text-3">{{t64|Morag Quill}}</td><td class="term__time m-text-3">{{t84|18:30 to 21:30}}</td><td class="term__left m-text-3">{{t95|6 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t96|Sat 14 Nov}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t46|H02}}</span><span>{{t47|Cooking over wood}}</span></span></td><td class="term__who m-text-3">{{t68|Idris Fenwick}}</td><td class="term__time m-text-3">{{t97|10:00 to 17:00}}</td><td class="term__left m-text-3">{{t98|4 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t99|Sat 28 Nov}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t54|L04}}</span><span>{{t55|Pickles and the long ferment}}</span></span></td><td class="term__who m-text-3">{{t70|Tom Ellery}}</td><td class="term__time m-text-3">{{t87|10:00 to 16:00}}</td><td class="term__left m-text-3">{{t100|8 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+<tr><td class="term__date m-text-3">{{t101|Sat 12 Dec}}</td><td class="m-text-3"><span class="term__course"><span class="m-code">{{t38|P11}}</span><span>{{t39|Choux and the creams that fill it}}</span></span></td><td class="term__who m-text-3">{{t66|Hana Bell}}</td><td class="term__time m-text-3">{{t87|10:00 to 16:00}}</td><td class="term__left m-text-3">{{t102|7 left}}</td><td class="m-text-3"><a class="m-link" href="#contact">{{t33|Book}}</a></td></tr>
+</tbody>
+</table>
+</div>
+</section>{{/sec_term}}
+
+{{#sec_notebook}}<section data-8b-section="notebook" id="notebook">
+<div class="notebook__pin">
+<div class="notebook__track">
+<div class="notebook__intro">
+<h2 class="notebook__title m-display">{{t103|The Notebook}}</h2>
+<p class="m-text-2">{{t104|What the teachers write down between classes: a method, a mistake worth making once, a recipe from the archive.}}</p>
+</div>
+<article class="notebook__note">
+<figure class="notebook__figure"><img alt="A wooden spoon of flaky salt on a dark surface" class="notebook__img" height="600" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1590346313583-492cdf7c5f6b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2VhJTIwc2FsdCUyMGZsYWtlc3xlbnwxfDB8fHwxNzkxNTUyODM5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#d9d9d9" width="900"/></figure>
+<p class="m-label">{{t105|2 October 2026}}</p>
+<h3 class="m-title" id="note-salt">{{t106|Salt the water twice}}</h3>
+<p class="m-text-3">{{t107|Once for the pasta and once for you: why we taste the pot before the pan, every time.}}</p>
+<a aria-describedby="note-salt" class="m-link m-label" href="#notebook">{{t108|Read the note}}</a>
+</article>
+<article class="notebook__note">
+<figure class="notebook__figure"><img alt="A savoy cabbage on a black background" class="notebook__img" height="632" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1693500383228-dd0bdc78eba6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8Y2FiYmFnZSUyMG9uJTIwdGFibGV8ZW58MXwwfHx8MTc5MTU1MjgzN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#26260c" width="900"/></figure>
+<p class="m-label">{{t109|18 September 2026}}</p>
+<h3 class="m-title" id="note-savoy">{{t110|A savoy, five ways}}</h3>
+<p class="m-text-3">{{t111|One cabbage, a sharp knife and a week of suppers from the Larder's shelves.}}</p>
+<a aria-describedby="note-savoy" class="m-link m-label" href="#notebook">{{t108|Read the note}}</a>
+</article>
+<article class="notebook__note">
+<figure class="notebook__figure"><img alt="A dish of butter beside an enamel bowl and a steel pot" class="notebook__img" height="600" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1604973965442-30ccfd6038e4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJ1dHRlciUyMG1lbHRpbmclMjBwYW58ZW58MXwwfHx8MTc5MTU1Mjg0NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#264040" width="900"/></figure>
+<p class="m-label">{{t112|4 September 2026}}</p>
+<h3 class="m-title" id="note-butter">{{t113|Brown butter, and when to stop}}</h3>
+<p class="m-text-3">{{t114|The smell changes before the colour does. Here is how to catch the moment.}}</p>
+<a aria-describedby="note-butter" class="m-link m-label" href="#notebook">{{t108|Read the note}}</a>
+</article>
+<article class="notebook__note">
+<figure class="notebook__figure"><img alt="An onion held in the air above a pile of onions on blue" class="notebook__img" height="506" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1758738880761-b4930995abb6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aW5ncmVkaWVudHMlMjBvbiUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE1NTI3NzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=730&q=60}}" style="background:#2673a6" width="900"/></figure>
+<p class="m-label">{{t115|21 August 2026}}</p>
+<h3 class="m-title" id="note-onion">{{t116|Agnes's onion soup, 1926}}</h3>
+<p class="m-text-3">{{t117|From the first notebook in the archive: three onions, a heel of bread and patience.}}</p>
+<a aria-describedby="note-onion" class="m-link m-label" href="#notebook">{{t108|Read the note}}</a>
+</article>
+</div>
+</div>
+</section>{{/sec_notebook}}
+
+{{#sec_faq}}<section data-8b-section="faq" id="faq">
+<div class="faq__grid wrap">
+<h2 class="faq__label m-label">{{t118|Before you come}}</h2>
+<div class="faq__list" data-8b-motion="rule">
+<details class="faq__item"><summary class="m-title">{{t119|Do I need any experience?}}</summary><p class="faq__answer m-text">{{t120|None for the evening classes and most day classes. Where a course follows another one, the catalogue says so.}}</p></details>
+<details class="faq__item"><summary class="m-title">{{t121|What should I bring?}}</summary><p class="faq__answer m-text">{{t122|Nothing at all. Aprons, knives and ingredients are laid out at your place, and you take home what you cook in the boxes we give you.}}</p></details>
+<details class="faq__item"><summary class="m-title">{{t123|Can you cook for my diet?}}</summary><p class="faq__answer m-text">{{t124|Tell us when you book. Every class can be cooked without meat and most without gluten or dairy; nuts stay out of the Pastry Room.}}</p></details>
+<details class="faq__item"><summary class="m-title">{{t125|What if I cannot come?}}</summary><p class="faq__answer m-text">{{t126|Move your place to another date up to seven days before the class, or pass it to a friend at any time.}}</p></details>
+<details class="faq__item"><summary class="m-title">{{t127|Do you sell gift vouchers?}}</summary><p class="faq__answer m-text">{{t128|Yes, for any amount or any course, printed on card in the shop or sent by email the same day.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_house}}<section data-8b-section="house" id="house">
+<div class="house__lead hang wrap">
+<h2 class="hang__label m-label">{{t25|The house}}</h2>
+<p class="hang__text m-text-2" data-8b-motion="rise">{{t129|We teach in a stone house of four floors on Exchange Street, a minute from the river: bread and fire on the ground floor, pastry and the Larder above, the long table under the roof. Downstairs, the shop sells the knives, pans, flour and salt we use in class, and the teachers will tell you which to buy and which to skip.}}</p>
+</div>
+<div class="house__view wrap">
+<div class="house__stage">
+<div class="house__under"></div>
+<figure class="house__frame"><img alt="The grey stone front of the house with six white sash windows" class="house__img" height="1350" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1788131529039-ce133e79c1c2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGdlb3JnaWFuJTIwdG93bmhvdXNlJTIwZWRpbmJ1cmdofGVufDF8MXx8fDE3OTE1NTI4NTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#404059" width="900"/></figure>
+</div>
+<div class="house__note">
+<p class="m-label">{{t130|The shop}}</p>
+<p class="m-text-3">{{t131|Open whenever classes run. Everything on the shelves is something we cook with, and anything you buy after a class is a tenth off.}}</p>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t132|Plan a visit}}</span></a>
+</div>
+</div>
+</section>{{/sec_house}}
+
+{{#sec_contact}}<section data-8b-section="contact" id="contact">
+<h2 class="contact__title m-display justify wrap" data-8b-motion="spread" style="--len:7">{{t133|Find Us}}</h2>
+<div class="contact__table wrap" data-8b-motion="rule">
+<div class="contact__row"><h3 class="m-label">{{t134|The school}}</h3><p class="m-text-3">{{t135|Phone}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t136|⟦phone⟧}}</a></p><p class="m-text-3">{{t137|Classes Tuesday to Saturday}}<br/>{{t138|9:30 to 21:30}}</p><p class="m-text-3">{{t139|1 Admiralty Way}}<br/>{{t140|Dundee}}</p></div>
+<div class="contact__row"><h3 class="m-label">{{t130|The shop}}</h3><p class="m-text-3">{{t135|Phone}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t136|⟦phone⟧}}</a></p><p class="m-text-3">{{t141|Tuesday to Saturday}}<br/>{{t142|10:00 to 18:00}}</p><p class="m-text-3">{{t143|1 Admiralty Way, ground floor}}<br/>{{t140|Dundee}}</p></div>
+<div class="contact__row"><h3 class="m-label">{{t144|Private hire and gifts}}</h3><p class="m-text-3">{{t145|Email}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t146|hire@grist.example}}</a></p><p class="m-text-3">{{t147|Replies within two working days}}</p><p class="m-text-3">{{t148|The long table seats up to twenty-two}}</p></div>
+</div>
+<p class="contact__mail m-text-2 wrap">{{t149|Or write to}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t150|hello@grist.example}}</a> {{t151|and a teacher will answer.}}</p>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Cooking School by <a href="https://github.com/8bsite/cooking-school-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="footer__news wrap">
+<p class="m-text-2">{{t152|The term's timetable comes out four times a year. Leave your email and it comes to you first.}}</p>
+
+<p class="footer__status m-text-3" role="status"></p>
+</div>
+<div class="footer__cols wrap">
+<div>
+<p class="m-label">{{t153|School}}</p>
+<ul>
+<li><a class="m-link m-text-3" href="#kitchens">{{t9|The kitchens}}</a></li>
+{{#nv_courses}}<li><a class="m-link m-text-3" href="#courses">{{t154|Catalogue}}</a></li>{{/nv_courses}}
+{{#nv_teachers}}<li><a class="m-link m-text-3" href="#teachers">{{t4|Teachers}}</a></li>{{/nv_teachers}}
+{{#nv_term}}<li><a class="m-link m-text-3" href="#term">{{t155|Autumn term}}</a></li>{{/nv_term}}
+</ul>
+</div>
+<div>
+<p class="m-label">{{t6|Visit}}</p>
+<ul>
+{{#nv_house}}<li><a class="m-link m-text-3" href="#house">{{t25|The house}}</a></li>{{/nv_house}}
+{{#nv_faq}}<li><a class="m-link m-text-3" href="#faq">{{t118|Before you come}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link m-text-3" href="#contact">{{t156|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+<div>
+<p class="m-label">{{t157|Follow}}</p>
+<ul>
+<li><a class="m-link m-text-3" data-8b-placeholder="social" href="https://www.instagram.com/">{{t158|Instagram}}</a></li>
+<li><a class="m-link m-text-3" data-8b-placeholder="social" href="https://www.youtube.com/">{{t159|YouTube}}</a></li>
+</ul>
+</div>
+<div>
+<p class="m-label">{{t160|© 2026 ⟦name⟧ Cookery School Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t161|8B}}</a></p>
+<ul>
+<li><a class="m-link m-text-3" href="#footer">{{t162|Privacy}}</a></li>
+<li><a class="m-link m-text-3" href="#footer">{{t163|Terms of booking}}</a></li>
+</ul>
+</div>
+</div>
+<div aria-hidden="true" class="footer__mast m-display-2"><span class="opening__name" style="--len:5"><span class="opening__lift">{{t1|⟦name⟧}}</span></span><span class="opening__year"><span class="opening__lift opening__digits"><span>{{t164|1}}</span><span>{{t165|9}}</span><span>{{t166|2}}</span><span>{{t167|4}}</span></span></span></div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = nav.querySelector('.nav__menu');
+  const label = menu.querySelector('.m-btn-2__label');
+  const openText = label.textContent, closeText = label.dataset.close;
+  const setOpen = open => {
+    nav.toggleAttribute('data-open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    label.textContent = open ? closeText : openText;
+    if (open) window.lenis?.stop(); else window.lenis?.start();
+  };
+  menu.addEventListener('click', () => setOpen(!nav.hasAttribute('data-open')));
+  nav.querySelectorAll('.nav__links a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.hasAttribute('data-open')) { setOpen(false); menu.focus(); } });
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, dy = y - last; last = y;
+    if (nav.hasAttribute('data-open')) return;
+    travel = Math.sign(dy) === Math.sign(travel) ? travel + dy : dy;
+    if (y < 120) nav.removeAttribute('data-hidden');
+    else if (travel > 24) nav.setAttribute('data-hidden', '');
+    else if (travel < -24) nav.removeAttribute('data-hidden');
+  }, { passive: true });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+<script data-8b-part="section-script:footer">
+(() => {
+  const footer = document.getElementById('footer');
+  const form = footer.querySelector('.footer__form');
+  const status = footer.querySelector('.footer__status');
+  form.addEventListener('submit', e => { e.preventDefault(); status.textContent = form.dataset.done; form.reset(); });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+const navigation = document.getElementById('navigation');
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navigation.offsetHeight } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  spread(element, vars = {}) {
+    const words = [...element.querySelectorAll('.spread__w')];
+    const timeline = gsap.timeline(vars);
+    words.forEach(word => timeline.fromTo(word, {
+      x: () => (element.clientWidth / 2 - (word.offsetLeft + word.offsetWidth / 2)) * 0.6,
+      opacity: 0.2
+    }, { x: 0, opacity: 1, ease: 'power2.out', duration: 1 }, 0));
+    return timeline;
+  },
+  rule(element, vars = {}) {
+    return gsap.fromTo(element.children, { '--rule': 0 }, { '--rule': 1, duration: 1.1, ease: 'power3.inOut', stagger: 0.07, ...vars });
+  },
+  rise(element, vars = {}) {
+    return gsap.fromTo(element, { y: 40, clipPath: 'inset(100% 0% 0% 0%)' }, { y: 0, clipPath: 'inset(0% 0% 0% 0%)', duration: 1, ease: 'power3.out', ...vars });
+  }
+};
+function splitWords(element) {
+  const original = element.innerHTML;
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node => {
+    const parts = node.textContent.split(/(\s+)/);
+    const fragment = document.createDocumentFragment();
+    parts.forEach(part => {
+      if (!part) return;
+      if (/^\s+$/.test(part)) fragment.append(part);
+      else { const span = document.createElement('span'); span.className = 'spread__w'; span.textContent = part; fragment.append(span); }
+    });
+    node.replaceWith(fragment);
+  });
+  return () => { element.innerHTML = original; };
+}
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const first = section.getBoundingClientRect().top < innerHeight;
+  const timing = id => first ? { first, id } : { near: section, id };
+  const spread = section.querySelectorAll('[data-8b-motion~="spread"]');
+  if (spread.length) {
+    const id = `effect:spread:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      const restores = [...spread].map(splitWords);
+      spread.forEach(element => ScrollTrigger.create({ id, trigger: element, start: 'top 94%', end: 'top 56%', scrub: 0.6, invalidateOnRefresh: true, animation: effects.spread(element) }));
+      return () => restores.forEach(restore => restore());
+    }), timing(id));
+  }
+  ['rule', 'rise'].forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach(element => ScrollTrigger.create({ id, trigger: element, start: 'top 90%', once: true, animation: effects[name](element, { paused: true }) }));
+    }), timing(id));
+  });
+});
+</script>
+<script data-8b-part="scene:courses">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', narrow: '(max-width: 760px)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('courses');
+    const rows = [...section.querySelectorAll('.courses__row')];
+    const photos = [...section.querySelectorAll('.courses__photo')];
+    const narrow = context.conditions.narrow;
+    const line = narrow ? ['top 70%', 'top 46%'] : ['top 74%', 'top 46%'];
+    const codes = rows.map(row => row.querySelector('.courses__code'));
+    const reached = rows.map(() => 0);
+    const light = () => codes.forEach((code, index) => code?.toggleAttribute('data-lit', reached[index] > 0.5 && !(reached[index + 1] > 0.5)));
+    rows.forEach((row, index) => {
+      const photo = index ? photos[index] : null;
+      const vars = { ease: 'none', onUpdate() { reached[index] = this.progress(); light(); }, scrollTrigger: {
+        id: `courses:row-${index}`, trigger: row, start: line[0], end: line[1], scrub: 0.4
+      } };
+      if (photo) gsap.fromTo(photo, { clipPath: 'inset(100% 0% 0% 0%)', scale: 1.14 }, { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, ...vars });
+      else gsap.fromTo(reached, { [index]: 0 }, { [index]: 1, ...vars });
+    });
+    return () => codes.forEach(code => code?.removeAttribute('data-lit'));
+  });
+}, { near: document.getElementById('courses'), id: 'scene:courses' });
+</script>
+<script data-8b-part="scene:doors">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', narrow: '(max-width: 600px)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('doors');
+    const pair = section.querySelector('.doors__pair');
+    const doors = [...section.querySelectorAll('.doors__photo')];
+    const images = [...section.querySelectorAll('.doors__img')];
+    if (doors.length < 2) return;
+    const lift = context.conditions.narrow ? 0.07 : 0.12;
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'doors', trigger: pair, start: 'top bottom', end: 'center 55%', scrub: 0.5, invalidateOnRefresh: true } });
+    timeline.fromTo(doors[0], { xPercent: 27, y: () => innerHeight * lift }, { xPercent: 0, y: 0, ease: 'power2.out', duration: 1 }, 0)
+      .fromTo(doors[1], { xPercent: -27, y: () => -innerHeight * lift }, { xPercent: 0, y: 0, ease: 'power2.out', duration: 1 }, 0);
+    images.forEach(image => timeline.fromTo(image, { scale: 1.32 }, { scale: 1, ease: 'power2.out', duration: 1 }, 0));
+  });
+}, { near: document.getElementById('doors'), id: 'scene:doors' });
+</script>
+<script data-8b-part="scene:teachers">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('teachers');
+    section.querySelectorAll('.teachers__who').forEach((who, index) => {
+      const win = who.querySelector('.teachers__win');
+      const image = who.querySelector('.teachers__img');
+      const name = who.querySelector('.teachers__name');
+      if (!win || !image || !name) return;
+      gsap.timeline({ scrollTrigger: { id: `teachers:who-${index}`, trigger: who, start: 'top 90%', end: 'top 54%', scrub: 0.5 } })
+        .fromTo(win, { clipPath: 'inset(0% 42% 0% 42% round 999px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'power2.inOut', duration: 1 }, 0)
+        .fromTo(image, { scale: 1.5 }, { scale: 1, ease: 'power2.out', duration: 1 }, 0)
+        .fromTo(name, { '--read': 0 }, { '--read': 1, ease: 'none', duration: 0.6 }, 0.4);
+    });
+  });
+}, { near: document.getElementById('teachers'), id: 'scene:teachers' });
+</script>
+<script data-8b-part="scene:notebook">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('notebook');
+    const pin = section.querySelector('.notebook__pin');
+    const track = section.querySelector('.notebook__track');
+    section.setAttribute('data-track', '');
+    section.querySelectorAll('.notebook__img[loading="lazy"]').forEach(image => { image.loading = 'eager'; });
+    const distance = () => Math.max(0, track.scrollWidth - track.clientWidth);
+    const slide = gsap.to(track, { x: () => -distance(), ease: 'none', scrollTrigger: {
+      id: 'notebook', trigger: pin, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: 0.6, invalidateOnRefresh: true
+    } });
+    section.querySelectorAll('.notebook__figure').forEach((figure, index) => {
+      const image = figure.querySelector('.notebook__img');
+      if (!image) return;
+      gsap.fromTo(image, { xPercent: -7, scale: 1.16 }, { xPercent: 7, scale: 1.16, ease: 'none', scrollTrigger: {
+        id: `notebook:photo-${index}`, trigger: figure, containerAnimation: slide, start: 'left right', end: 'right left', scrub: true
+      } });
+    });
+    return () => section.removeAttribute('data-track');
+  });
+}, { id: 'scene:notebook' });
+</script>
+<script data-8b-part="scene:house">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('house');
+    const frame = section.querySelector('.house__frame');
+    const image = section.querySelector('.house__img');
+    const under = section.querySelector('.house__under');
+    if (!frame || !image || !under) return;
+    gsap.timeline({ scrollTrigger: { id: 'house', trigger: frame, start: 'top 95%', end: 'bottom 55%', scrub: 0.6, invalidateOnRefresh: true } })
+      .fromTo(image, { scale: 2.6, transformOrigin: '30% 22%' }, { scale: 1, ease: 'power1.inOut', duration: 1 }, 0)
+      .fromTo(under, { x: () => frame.offsetLeft - under.offsetLeft, y: () => frame.offsetTop - under.offsetTop }, { x: 0, y: 0, ease: 'power2.inOut', duration: 0.7 }, 0.3);
+  });
+}, { near: document.getElementById('house'), id: 'scene:house' });
+</script>
+</body>
+</html>

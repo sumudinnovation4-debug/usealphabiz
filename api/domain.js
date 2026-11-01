@@ -1,0 +1,3 @@
+module.exports=async(req,res)=>{if(!process.env.CF_API_TOKEN)return res.status(501).end();const n=(req.query.name||'').toLowerCase().replace(/[^a-z0-9-]/g,'');if(!n)return res.json([]);
+const r=await fetch(`https://api.cloudflare.com/client/v4/accounts/${process.env.CF_ACCOUNT_ID}/registrar/domain-check`,{method:'POST',headers:{Authorization:'Bearer '+process.env.CF_API_TOKEN,'Content-Type':'application/json'},body:JSON.stringify({domains:[n+'.com',n+'.net',n+'.org','get'+n+'.com','my'+n+'.com']})}).then(x=>x.json());
+res.json(((r.result||{}).domains||[]).map(d=>({d:d.name,ok:!!d.registrable&&parseFloat((d.pricing||{}).registration_cost||99)<=15})))};

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Settings – UseAlphaBiz</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head><body>
+<main class="wrap" style="max-width:560px"><p><a href="dashboard.html">My Sites</a> · <a href="billing.html">Billing</a> · <b>Settings</b></p><h1>Settings</h1>
+<div class="card"><h3>Account</h3><p class="mut">Signed in as <b id="em"></b></p><label>New password</label><input id="np" type="password" placeholder="6+ characters"><button class="btn sm" id="pw">Update password</button></div><br>
+<div class="card"><h3>Session</h3><button class="btn out sm" id="out">Log out</button></div></main>
+<script src="app.js"></script><script>
+const sb=SB();(async()=>{if(!sb)return $('#em').textContent=S.get('user',{}).email||'demo mode';const {data:{user}}=await sb.auth.getUser();if(!user)return location.href='login.html';$('#em').textContent=user.email})();
+$('#pw').onclick=async()=>{if($('#np').value.length<6)return toast('Use 6+ characters');if(!sb)return toast('Demo mode');const {error}=await sb.auth.updateUser({password:$('#np').value});toast(error?error.message:'Password updated')};
+$('#out').onclick=async()=>{sb&&await sb.auth.signOut();S.set('user',null);location.href='login.html'};
+</script></body></html>

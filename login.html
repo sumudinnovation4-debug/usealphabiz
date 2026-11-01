@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Log in – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head><body>
+<main class="wrap" style="max-width:460px"><div class="card"><h1 style="text-align:center">Log in to UseAlphaBiz.com</h1>
+<p class="mut" style="text-align:center" id="sub">Welcome back — log in to your account</p>
+<label>Email</label><input id="em" type="email" placeholder="you@example.com"><label>Password</label><input id="pw" type="password" placeholder="Password">
+<button class="btn block" id="go">Log in</button><p style="text-align:center"><a href="forgot.html" style="color:var(--g)">Forgot password?</a></p><p class="mut" style="text-align:center">or</p>
+<button class="btn out block" id="gg">Continue with Google</button>
+<p style="text-align:center">No account? <a href="#" id="sw" style="color:var(--g);font-weight:700">Sign up</a></p><p id="msg" style="color:#b33;text-align:center"></p></div></main>
+<script src="app.js"></script><script>
+let up=false,sb=CFG.SUPABASE_URL&&supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON);
+$('#sw').onclick=e=>{e.preventDefault();up=!up;$('#go').textContent=up?'Sign up':'Log in';$('#sw').textContent=up?'Log in':'Sign up'};
+$('#go').onclick=async()=>{const email=$('#em').value,password=$('#pw').value;if(!email||password.length<6){$('#msg').textContent='Enter an email and a password of 6+ characters.';return}
+if(!sb){S.set('user',{email});return location.href='dashboard.html'} // demo mode until Supabase keys are set
+const r=up?await sb.auth.signUp({email,password}):await sb.auth.signInWithPassword({email,password});
+if(r.error)$('#msg').textContent=r.error.message;else location.href='dashboard.html'};
+$('#gg').onclick=()=>sb?sb.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+'/dashboard.html'}}):($('#msg').textContent='Add your Supabase keys in app.js to enable Google login.');
+</script></body></html>

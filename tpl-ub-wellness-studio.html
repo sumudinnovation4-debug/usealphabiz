@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsvDddtC.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsLDddtC.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsXDddtC.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsnDddtC.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsjDddtC.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 110%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ece9e4;
+  --color-2: #1c1a18;
+  --color-3: #57534d;
+  --color-4: #dcd8d1;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", "Arial", sans-serif;
+  --space-1: clamp(1rem, 3.2vw, 2.5rem);
+  --space-2: clamp(4.5rem, 10vw, 8.5rem);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 112.4%; ascent-override: 89%; descent-override: 26.7%; line-gap-override: 0%; }
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 107.2%; ascent-override: 93.3%; descent-override: 28%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-stretch: 110%;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+h1, h2, h3, p, ul, ol, figure, dl, dd, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+main > section { scroll-margin-top: 3.5rem; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text {
+  font-family: var(--font-1); font-size: 1.0625rem; font-weight: 400; line-height: 1.55;
+  letter-spacing: 0; text-transform: none; font-style: normal;
+}
+.m-text-2 {
+  font-family: var(--font-1); font-size: clamp(2.2rem, 5vw, 4.4rem); font-weight: 600; line-height: 1.02;
+  letter-spacing: -0.015em; text-transform: none; font-style: normal;
+}
+.m-text-2__line { display: block; width: fit-content; }
+.m-text-2__line + .m-text-2__line { margin-left: 1.9em; }
+.m-text-2__line + .m-text-2__line + .m-text-2__line { margin-left: 3.8em; }
+@media (max-width: 600px) {
+  .m-text-2 { font-size: 2.05rem; }
+  .m-text-2__line + .m-text-2__line { margin-left: 1.2em; }
+  .m-text-2__line + .m-text-2__line + .m-text-2__line { margin-left: 2.4em; }
+}
+.m-text-3 {
+  font-family: var(--font-1); font-size: min(13rem, 15vw); font-weight: 450; line-height: 0.84;
+  letter-spacing: -0.035em; text-transform: none; font-style: normal;
+}
+.m-text-4 {
+  font-family: var(--font-1); font-size: clamp(1.3rem, 1.9vw, 1.7rem); font-weight: 600; line-height: 1.1;
+  letter-spacing: -0.01em; text-transform: none; font-style: normal;
+}
+.m-text-5 {
+  font-family: var(--font-1); font-size: 0.875rem; font-weight: 400; line-height: 1.45;
+  letter-spacing: 0; text-transform: none; font-style: normal;
+}
+.m-text-6 {
+  font-family: var(--font-1); font-size: clamp(7rem, 17vw, 16rem); font-weight: 400; line-height: 0.8;
+  letter-spacing: -0.04em; text-transform: none; font-style: normal;
+}
+.m-text-7 {
+  font-family: var(--font-1); font-size: clamp(1.6rem, 3.6vw, 3.2rem); font-weight: 500; line-height: 1.1;
+  letter-spacing: -0.01em; text-transform: none; font-style: normal;
+}
+.m-ast { width: 100%; height: auto; aspect-ratio: 1; fill: currentColor; overflow: visible; }
+.m-btn, .m-btn-2 {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  min-height: 3rem; padding: 0.8em 1.05em; white-space: nowrap;
+  border: 1px solid var(--color-2);
+  font-family: var(--font-1); font-size: 1.0625rem; font-weight: 600; line-height: 1;
+  letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none;
+  cursor: pointer; transition: color 0.35s ease;
+}
+.m-btn { background: var(--color-1); color: var(--color-2); }
+.m-btn::before, .m-btn-2::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  transform: scaleY(0); transform-origin: 50% 100%;
+  transition: transform 0.45s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.m-btn::before { background: var(--color-2); }
+.m-btn__icon, .m-btn-2__icon { width: 1.1em; height: 1.1em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: square; }
+.m-btn-2 { background: var(--color-2); color: var(--color-1); }
+.m-btn-2::before { background: var(--color-1); }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-1); }
+  .m-btn-2:hover { color: var(--color-2); }
+  .m-btn:hover::before, .m-btn-2:hover::before { transform: scaleY(1); }
+}
+.m-btn:focus-visible, .m-btn-2:focus-visible, .m-icon-btn:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.m-btn:focus-visible { color: var(--color-1); }
+.m-btn-2:focus-visible { color: var(--color-2); }
+.m-btn:focus-visible::before, .m-btn-2:focus-visible::before { transform: scaleY(1); }
+.m-link, .m-link-2 { position: relative; color: inherit; }
+.m-link {
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
+}
+.m-link::after, .m-link-2::after {
+  content: ""; position: absolute; width: 0.6em; height: 0.6em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cpath d='M-9-48h18v96h-18z'/%3E%3Cpath d='M-9-48h18v96h-18z' transform='rotate(60)'/%3E%3Cpath d='M-9-48h18v96h-18z' transform='rotate(-60)'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cpath d='M-9-48h18v96h-18z'/%3E%3Cpath d='M-9-48h18v96h-18z' transform='rotate(60)'/%3E%3Cpath d='M-9-48h18v96h-18z' transform='rotate(-60)'/%3E%3C/svg%3E") center / contain no-repeat;
+  transform: scale(0) rotate(-120deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1.5, 0.5, 1);
+  pointer-events: none;
+}
+.m-link::after { top: -0.45em; right: -0.65em; }
+.m-link-2 {
+  display: inline-flex; align-items: center; padding: 0.4em 0.6em;
+  border: 1px solid var(--color-2); background: var(--color-1); color: var(--color-2);
+  font-family: var(--font-1); font-size: 0.875rem; font-weight: 500; line-height: 1;
+  letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none;
+}
+.m-link-2::after { top: -0.4em; right: -0.4em; }
+@media (hover: hover) {
+  .m-link:hover::after, .m-link-2:hover::after { transform: scale(1) rotate(0deg); }
+  .m-link:hover { text-decoration-thickness: 2px; }
+  .m-link-2:hover { background: var(--color-4); }
+}
+.m-link:focus-visible::after, .m-link-2:focus-visible::after { transform: scale(1) rotate(0deg); }
+.m-icon-btn {
+  position: relative; display: inline-grid; place-items: center; flex: none;
+  width: 2.25rem; height: 2.25rem; padding: 0;
+  border: 1px solid var(--color-2); background: var(--color-1); color: var(--color-2);
+  text-decoration: none; cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.m-icon-btn svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.7; }
+@media (hover: hover) {
+  .m-icon-btn:hover { background: var(--color-2); color: var(--color-1); }
+}
+.m-icon-btn:focus-visible { background: var(--color-2); color: var(--color-1); }
+.m-icon {
+  display: inline-grid; place-items: center; width: 3rem; height: 3rem;
+  border: 1px solid var(--color-2); color: var(--color-2);
+}
+.m-icon svg { width: 1.45rem; height: 1.45rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.m-frame { position: relative; overflow: hidden; border: 1px solid var(--color-2); background: var(--color-4); }
+.m-frame img { width: 100%; height: 100%; object-fit: cover; }
+.m-surface { background: var(--color-1); color: var(--color-2); }
+.m-field {
+  width: 100%; padding: 0.7em 0; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0;
+  background: transparent; color: var(--color-2);
+  font-family: var(--font-1); font-size: 1.0625rem; font-weight: 400; line-height: 1.4;
+  letter-spacing: 0; text-transform: none; font-style: normal;
+}
+textarea.m-field { resize: vertical; min-height: 6.5rem; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: sticky; top: -1.75rem; z-index: 50; }
+#navigation .nav__top {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+  height: 1.75rem; padding: 0 var(--space-1); background: var(--color-1);
+}
+#navigation .nav__bar {
+  display: flex; align-items: stretch; height: 3.25rem;
+  border-block: 1px solid var(--color-2); background: var(--color-1);
+  transition: transform 0.45s cubic-bezier(0.7, 0, 0.2, 1);
+}
+#navigation.is-hidden:not(:focus-within) .nav__bar { transform: translateY(-110%); }
+#navigation .nav__logo {
+  display: flex; align-items: center; padding: 0 var(--space-1) 0 var(--space-1);
+  border-right: 1px solid var(--color-2); min-width: 12rem;
+  font-family: var(--font-1); font-size: 1.75rem; font-weight: 700; letter-spacing: 0.02em; line-height: 1;
+  text-decoration: none;
+}
+#navigation .nav__menu { margin-left: auto; display: flex; align-items: center; }
+#navigation .nav__list { display: flex; gap: 0.5rem; align-items: center; }
+#navigation .nav__end { display: flex; align-items: center; gap: 0.5rem; padding: 0 var(--space-1) 0 0.5rem; }
+#navigation .nav__cart { width: 2rem; height: 2rem; }
+#navigation .nav__count {
+  position: absolute; top: -0.45rem; right: -0.45rem; min-width: 1.05rem; height: 1.05rem; padding: 0 0.2rem;
+  display: grid; place-items: center; background: var(--color-2); color: var(--color-1);
+  font-size: 0.6875rem; font-weight: 600; line-height: 1;
+}
+#navigation .nav__count:empty, #navigation .nav__count[data-count="0"] { display: none; }
+#navigation .nav__toggle { display: none; }
+#navigation .nav__rail {
+  position: fixed; left: 0; top: 9.5rem; z-index: 40;
+  display: flex; flex-direction: column;
+}
+#navigation .nav__rail .m-icon-btn { width: 1.75rem; height: 1.75rem; margin-top: -1px; }
+#navigation .nav__rail .m-icon-btn svg { width: 0.9rem; height: 0.9rem; }
+#navigation .nav__overlay {
+  position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column;
+  padding: 1rem var(--space-1) 2rem; background: var(--color-1); overflow-y: auto;
+}
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__overlay-head { display: flex; justify-content: space-between; align-items: center; }
+#navigation .nav__overlay-list { margin-top: 2rem; border-top: 1px solid var(--color-2); }
+#navigation .nav__overlay-list a {
+  display: block; padding: 0.35em 0; border-bottom: 1px solid var(--color-2);
+  font-family: var(--font-1); font-size: 2.4rem; font-weight: 600; line-height: 1.1; text-decoration: none;
+}
+#navigation .nav__overlay-foot { margin-top: auto; padding-top: 2rem; }
+@media (max-width: 900px) {
+  #navigation .nav__menu, #navigation .nav__rail, #navigation .nav__phone { display: none; }
+  #navigation .nav__toggle { display: inline-grid; width: 2rem; height: 2rem; }
+  #navigation .nav__logo { min-width: 0; font-size: 1.5rem; }
+  #navigation .nav__end { margin-left: auto; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .op-hero {
+  position: sticky; top: 0; z-index: 0;
+  display: flex; flex-direction: column;
+  min-height: calc(100svh - 5rem);
+  padding: 1rem var(--space-1) 1.75rem;
+  overflow: clip;
+}
+#opening .op-hero__top { position: relative; container-type: inline-size; }
+#opening .op-word { font-size: min(13rem, 100cqi * 0.62 / (var(--len) * 0.55)); }
+#opening .op-word__in { display: inline-block; }
+#opening .op-ast { position: absolute; right: 0; top: 0.4rem; width: clamp(2.4rem, 6.5cqi, 5.25rem); }
+#opening .op-ast__spin { display: block; }
+#opening .op-hero__body {
+  flex: 1; display: grid; grid-template-columns: minmax(0, 40fr) minmax(0, 60fr);
+  align-items: start; margin-top: clamp(1.25rem, 2.6vw, 2.25rem);
+}
+#opening .op-photo__frame { aspect-ratio: 4 / 3; }
+#opening .op-photo__frame img { object-position: 62% 38%; }
+#opening .op-copy { padding: 0.5rem 0 0 clamp(1.5rem, 11vw, 10rem); }
+#opening .op-h1 { font-size: clamp(2.3rem, 5.4vw, 4.6rem); }
+#opening .op-lead { margin-top: 1.4rem; max-width: 30rem; font-size: clamp(1.0625rem, 1.75vw, 1.5rem); line-height: 1.35; }
+#opening .op-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+#opening .op-note { margin-top: 1.25rem; color: var(--color-3); max-width: 26rem; }
+#opening .op-next {
+  position: relative; z-index: 1; background: var(--color-1);
+  display: flex; flex-direction: column; min-height: 100svh;
+}
+#opening .op-band { position: relative; border-block: 1px solid var(--color-2); }
+#opening .op-band__track { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 0.45em; padding: 0.2em var(--space-1); }
+#opening .op-band__item { display: flex; flex-wrap: wrap; align-items: center; gap: 0 0.45em; padding: 0.06em 0; }
+#opening .op-band__who { font-family: var(--font-1); font-size: 0.4em; font-weight: 500; line-height: 1; color: var(--color-3); align-self: center; }
+#opening .op-band__item .m-ast { width: 0.5em; }
+#opening .op-grid { flex: 1; display: grid; grid-template-columns: minmax(0, 25fr) minmax(0, 75fr); }
+#opening .op-num { position: relative; display: flex; align-items: flex-end; padding: 1.25rem var(--space-1) 0.9rem; color: var(--color-1); }
+#opening .op-num__ink { position: absolute; inset: 0; z-index: 1; background: var(--color-2); }
+#opening .op-num__n { position: relative; z-index: 2; }
+#opening .op-main { display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; }
+#opening .op-h2 { padding: clamp(2rem, 4.5vw, 4rem) var(--space-1) 0 clamp(1.5rem, 9vw, 9rem); font-size: clamp(2.2rem, 4.6vw, 4.1rem); }
+#opening .op-cards {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px;
+  background: var(--color-2); border-top: 1px solid var(--color-2);
+}
+#opening .op-card { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.1rem 1.25rem 1.6rem; }
+#opening .op-card .m-icon { margin-bottom: clamp(1.25rem, 4vw, 3.25rem); }
+#opening .op-card .m-text-5 { color: var(--color-3); max-width: 22rem; }
+@media (max-width: 900px) {
+  #opening .op-word { font-size: min(13rem, 100cqi * 0.84 / (var(--len) * 0.55)); }
+  #opening .op-hero__body { grid-template-columns: 1fr; align-content: start; margin-top: 1rem; }
+  #opening .op-photo__frame { aspect-ratio: 3 / 2; }
+  #opening .op-copy { padding: 1.25rem 0 0; }
+  #opening .op-lead { margin-top: 0.9rem; }
+  #opening .op-actions { margin-top: 1.1rem; }
+  #opening .op-actions > * { flex: 1 1 auto; }
+  #opening .op-note { margin-top: 0.9rem; }
+  #opening .op-grid { grid-template-columns: 1fr; }
+  #opening .op-num { min-height: 9.5rem; }
+  #opening .op-num__n { font-size: 8.5rem; }
+  #opening .op-h2 { padding: 2rem var(--space-1) 0; }
+  #opening .op-cards { grid-template-columns: 1fr; }
+  #opening .op-card { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; padding: 1.1rem var(--space-1) 1.3rem; }
+  #opening .op-card .m-icon { margin: 0; grid-row: span 2; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-word { animation: op-rise 1s cubic-bezier(0.2, 0.75, 0.2, 1) backwards; }
+  #opening .op-photo { animation: op-open 1s 0.05s cubic-bezier(0.2, 0.75, 0.2, 1) backwards; }
+  #opening .op-h1 .m-text-2__line + .m-text-2__line { animation: op-step 0.9s 0.15s cubic-bezier(0.2, 0.75, 0.2, 1) backwards; }
+  #opening .op-lead, #opening .op-actions, #opening .op-note { animation: op-rise-s 0.8s 0.3s cubic-bezier(0.2, 0.75, 0.2, 1) backwards; }
+  #opening .op-ast__spin { animation: op-spin 12s linear infinite; }
+  #opening .op-photo__frame img { animation: op-drift 6s ease-in-out infinite alternate; }
+  #opening.is-idle .op-ast__spin, #opening.is-idle .op-photo__frame img { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(0.24em); } }
+@keyframes op-rise-s { from { transform: translateY(1.25rem); } }
+@keyframes op-open { from { clip-path: inset(0 0 30% 0); } }
+@keyframes op-step { from { transform: translateX(-1.9em); } }
+@keyframes op-spin { to { transform: rotate(360deg); } }
+@keyframes op-drift { from { transform: scale(1.05) translate(-2.5%, 1%); } to { transform: scale(1.16) translate(2.5%, -2%); } }
+@keyframes op-band { to { transform: translateX(-50%); } }
+}
+</style>
+<style data-8b-part="section:motivation">
+@layer sections {
+#motivation { padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#motivation .mv-head { position: relative; container-type: inline-size; }
+#motivation .mv-word { font-size: min(13rem, 100cqi * 0.74 / (var(--len) * 0.55)); }
+#motivation .mv-ast { position: absolute; right: 0; top: 0.4rem; width: clamp(2.4rem, 6.5cqi, 5.25rem); }
+#motivation .mv-body {
+  display: grid; grid-template-columns: minmax(0, 54fr) minmax(0, 46fr); gap: 2rem;
+  align-items: end; margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+#motivation .mv-copy { max-width: 34rem; padding-bottom: 0.5rem; }
+#motivation .mv-box { display: inline-block; padding: 0.12em 0.4em 0.18em; border: 1px solid var(--color-2); font-size: clamp(2rem, 4.4vw, 3.8rem); }
+#motivation .mv-text { margin-top: 1.5rem; font-size: clamp(1.0625rem, 1.6vw, 1.375rem); line-height: 1.4; }
+#motivation .mv-rules { margin-top: 1.5rem; border-top: 1px solid var(--color-2); }
+#motivation .mv-rules li { padding: 0.65rem 0; border-bottom: 1px solid var(--color-2); }
+#motivation .mv-more { margin-top: 1.4rem; }
+#motivation .mv-note { margin-top: 1rem; color: var(--color-3); }
+#motivation .mv-photo { justify-self: end; width: min(100%, 30rem); aspect-ratio: 4 / 5; }
+#motivation .mv-photo img { height: 116%; margin-top: -8%; object-position: 50% 30%; }
+@media (max-width: 900px) {
+  #motivation .mv-word { font-size: min(13rem, 100cqi * 0.84 / (var(--len) * 0.55)); }
+  #motivation .mv-body { grid-template-columns: 1fr; }
+  #motivation .mv-photo { order: -1; width: 80%; }
+}
+}
+</style>
+<style data-8b-part="section:words">
+@layer sections {
+#words {
+  position: relative; display: flex; flex-direction: column; justify-content: center;
+  min-height: 100svh; padding: clamp(3rem, 6vw, 4.5rem) var(--space-1) clamp(2.5rem, 5vw, 3.5rem);
+  background: var(--color-1); border-top: 1px solid var(--color-2);
+}
+#words .wd-title {
+  container-type: inline-size; display: flex; flex-wrap: wrap; align-items: flex-end;
+  column-gap: clamp(1rem, 4vw, 4rem); row-gap: 0.75rem; font-weight: inherit;
+}
+#words .wd-word { position: relative; font-size: min(14rem, 100cqi * 0.4 / (var(--len) * 0.55)); }
+#words .wd-strike {
+  position: absolute; left: -0.04em; right: -0.04em; top: 0.4em; height: 0.07em;
+  background: var(--color-2); transform-origin: 0 50%;
+}
+#words .wd-sub { display: block; padding-bottom: 0.1em; font-size: clamp(2.1rem, 4.6vw, 4.1rem); }
+#words .wd-ast { position: absolute; right: var(--space-1); top: clamp(3rem, 6vw, 4.5rem); width: clamp(2.4rem, 6vw, 5.25rem); }
+#words .wd-wall {
+  display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem); background: var(--color-2); border: 1px solid var(--color-2);
+}
+#words .wd-cell {
+  position: relative; display: flex; align-items: center;
+  min-height: clamp(3.25rem, 6.2vw, 4.75rem); padding: 0 1rem; background: var(--color-1);
+}
+#words .wd-cell__w { display: block; }
+#words .wd-note { margin-top: 1.1rem; color: var(--color-3); max-width: 42rem; }
+@media (max-width: 900px) {
+  #words .wd-word { font-size: min(14rem, 100cqi * 0.56 / (var(--len) * 0.55)); }
+  #words .wd-ast { width: 2.4rem; }
+  #words .wd-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #words .wd-cell { min-height: 2.4rem; padding: 0 0.75rem; }
+  #words .wd-cell .m-text-4 { font-size: 1.05rem; }
+}
+}
+</style>
+<style data-8b-part="section:course">
+@layer sections {
+#course { display: grid; grid-template-columns: minmax(0, 25fr) minmax(0, 75fr); border-top: 1px solid var(--color-2); }
+#course .cr-num {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 1.25rem var(--space-1) 0.9rem; background: var(--color-2); color: var(--color-1);
+}
+#course .cr-num__n { position: sticky; bottom: 0.9rem; }
+#course .cr-main { padding-top: clamp(3rem, 6vw, 5.5rem); }
+#course .cr-h2 { padding: 0 var(--space-1) 0 clamp(1.5rem, 9vw, 9rem); }
+#course .cr-lead { margin: 1.5rem var(--space-1) 0 clamp(1.5rem, 9vw, 9rem); max-width: 36rem; }
+#course .cr-ledger { margin-top: clamp(2rem, 4vw, 3.5rem); border-top: 1px solid var(--color-2); }
+#course .cr-row {
+  display: grid; grid-template-columns: 6rem minmax(0, 13rem) minmax(0, 1fr); gap: 0.3rem 2rem; align-items: baseline;
+  padding: 1.2rem var(--space-1) 1.3rem; border-bottom: 1px solid var(--color-2);
+}
+#course .cr-row__wk, #course .cr-row__txt { color: var(--color-3); }
+#course .cr-foot {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
+  padding: 1.6rem var(--space-1) 2.2rem;
+}
+#course .cr-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
+#course .cr-price .m-text-5 { color: var(--color-3); }
+@media (max-width: 900px) {
+  #course { grid-template-columns: 1fr; }
+  #course .cr-num { min-height: 9.5rem; }
+  #course .cr-num__n { position: static; font-size: 8.5rem; }
+  #course .cr-h2 { padding: 0 var(--space-1); }
+  #course .cr-lead { margin-left: var(--space-1); }
+  #course .cr-row { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:founder">
+@layer sections {
+#founder {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem clamp(2rem, 6vw, 6rem);
+  align-items: center; padding: var(--space-2) var(--space-1);
+}
+#founder .fd-photo { aspect-ratio: 4 / 5; }
+#founder .fd-photo img { object-position: 50% 30%; }
+#founder .fd-letter { display: grid; gap: 1rem; margin-top: 2rem; max-width: 38rem; font-size: clamp(1.125rem, 1.9vw, 1.55rem); line-height: 1.4; }
+#founder .fd-sign { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; margin-top: 2rem; }
+#founder .fd-role { color: var(--color-3); }
+#founder .fd-more { margin-top: 1rem; }
+@media (max-width: 900px) {
+  #founder { grid-template-columns: 1fr; }
+  #founder .fd-photo { width: 82%; }
+}
+}
+</style>
+<style data-8b-part="section:live">
+@layer sections {
+#live {
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 2rem clamp(2rem, 5vw, 5rem);
+  padding: var(--space-2) var(--space-1); border-top: 1px solid var(--color-2); overflow-x: clip;
+}
+#live .lv-side { align-self: start; position: sticky; top: 5rem; }
+#live .lv-photo { aspect-ratio: 3 / 4; }
+#live .lv-photo img { object-position: 55% 40%; }
+#live .lv-cap { margin-top: 0.75rem; color: var(--color-3); }
+#live .lv-list { margin-top: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--color-2); }
+#live .lv-row {
+  display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 0.4rem 1.5rem; align-items: center;
+  padding: 1.1rem 0; border-bottom: 1px solid var(--color-2);
+}
+#live .lv-meta { margin-top: 0.25rem; color: var(--color-3); }
+#live .lv-book { margin-right: 0.7rem; }
+@media (max-width: 900px) {
+  #live { grid-template-columns: 1fr; }
+  #live .lv-side { position: static; }
+  #live .lv-photo { aspect-ratio: 4 / 3; }
+  #live .lv-row { grid-template-columns: 4.75rem minmax(0, 1fr); }
+  #live .lv-book { grid-column: 2; justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:teams">
+@layer sections {
+#teams { position: relative; padding: clamp(2.5rem, 5vw, 4rem) var(--space-1); background: var(--color-1); border-top: 1px solid var(--color-2); overflow: clip; }
+#teams .tm-head { position: relative; container-type: inline-size; }
+#teams .tm-word { font-size: min(13rem, 100cqi * 0.64 / (var(--len) * 0.55)); }
+#teams .tm-ast { position: absolute; right: 0; top: 0.4rem; width: clamp(2.4rem, 6.5cqi, 5.25rem); }
+#teams .tm-grid {
+  display: grid; grid-template-columns: minmax(0, 17fr) minmax(0, 40fr) minmax(0, 43fr);
+  margin-top: clamp(1.25rem, 2.5vw, 2rem); border: 1px solid var(--color-2);
+}
+#teams .tm-num { display: flex; align-items: flex-end; padding: 1rem 1.25rem 0.8rem; background: var(--color-2); color: var(--color-1); }
+#teams .tm-num__n { font-size: clamp(6rem, 11vw, 10rem); }
+#teams .tm-photo { position: relative; z-index: 2; aspect-ratio: 1; border-width: 0 1px; }
+#teams .tm-offer { display: flex; flex-direction: column; gap: 1.1rem; padding: 1.4rem clamp(1.25rem, 3vw, 2.5rem); }
+#teams .tm-h2 { font-size: clamp(2rem, 3.6vw, 3.3rem); }
+#teams .tm-formats { border-top: 1px solid var(--color-2); }
+#teams .tm-format { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.2rem 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--color-2); }
+#teams .tm-format .m-text-5 { grid-column: 1 / -1; color: var(--color-3); }
+#teams .tm-price { white-space: nowrap; }
+#teams .tm-note { color: var(--color-3); }
+@media (max-width: 900px) {
+  #teams { display: flex; flex-direction: column; }
+  #teams .tm-grid { display: contents; }
+  #teams .tm-photo { order: 1; aspect-ratio: 4 / 5; border-width: 1px; }
+  #teams .tm-photo img { object-position: 42% 50%; }
+  #teams .tm-head { order: 2; margin-top: 1.5rem; }
+  #teams .tm-word { font-size: min(13rem, 100cqi * 0.8 / (var(--len) * 0.55)); }
+  #teams .tm-num { order: 3; min-height: 7.5rem; margin-top: 1.25rem; }
+  #teams .tm-num__n { font-size: 6.5rem; }
+  #teams .tm-offer { order: 4; padding: 1.25rem var(--space-1); border: 1px solid var(--color-2); border-top: 0; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem clamp(2rem, 5vw, 5rem);
+  padding: var(--space-2) var(--space-1); border-top: 1px solid var(--color-2);
+}
+#faq .fq-side { align-self: start; position: sticky; top: 6rem; }
+#faq .fq-note { display: flex; gap: 0.6rem; margin-top: 1.5rem; max-width: 22rem; color: var(--color-3); }
+#faq .fq-note .m-ast { width: 0.9rem; flex: none; margin-top: 0.2rem; }
+#faq .fq-list { border-top: 1px solid var(--color-2); }
+#faq .fq-item { border-bottom: 1px solid var(--color-2); }
+#faq .fq-q { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.2rem 0; cursor: pointer; list-style: none; }
+#faq .fq-q::-webkit-details-marker { display: none; }
+#faq .fq-icon { position: relative; flex: none; width: 1.1rem; height: 1.1rem; }
+#faq .fq-icon::before, #faq .fq-icon::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px;
+  background: currentColor; transition: transform 0.3s ease;
+}
+#faq .fq-icon::after { transform: rotate(90deg); }
+#faq .fq-item[open] .fq-icon::after { transform: rotate(0deg); }
+#faq .fq-a { max-width: 44rem; padding: 0 3rem 1.4rem 0; color: var(--color-3); }
+@media (max-width: 900px) {
+  #faq { grid-template-columns: 1fr; }
+  #faq .fq-side { position: static; }
+  #faq .fq-a { padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:journal">
+@layer sections {
+#journal { padding: var(--space-2) var(--space-1); border-top: 1px solid var(--color-2); overflow-x: clip; }
+#journal .jr-head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 1.5rem 3rem; align-items: end; }
+#journal .jr-lead { font-size: clamp(1.0625rem, 1.6vw, 1.375rem); line-height: 1.4; }
+#journal .jr-pile {
+  position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.5rem, 2vw, 1.5rem); margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+#journal .jr-photo { aspect-ratio: 4 / 5; }
+#journal .jr-buy { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem 3rem; align-items: center; margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+#journal .jr-facts {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px;
+  background: var(--color-2); border: 1px solid var(--color-2);
+}
+#journal .jr-facts li { padding: 0.8rem 1rem; }
+#journal .jr-act { display: flex; align-items: center; gap: 1.25rem; }
+#journal .jr-price { font-size: clamp(2rem, 3.6vw, 3rem); }
+#journal .jr-status { grid-column: 1 / -1; min-height: 1.45em; color: var(--color-3); }
+@media (max-width: 900px) {
+  #journal .jr-head, #journal .jr-buy { grid-template-columns: 1fr; }
+  #journal .jr-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2.5rem clamp(2rem, 6vw, 6rem);
+  padding: var(--space-2) var(--space-1); border-top: 1px solid var(--color-2);
+}
+#contact .ct-lead { margin-top: 1.5rem; max-width: 28rem; }
+#contact .ct-lines { margin-top: 2rem; border-top: 1px solid var(--color-2); }
+#contact .ct-lines li { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 1rem; align-items: baseline; padding: 0.7rem 0; border-bottom: 1px solid var(--color-2); }
+#contact .ct-k { color: var(--color-3); }
+#contact .ct-note { display: flex; gap: 0.6rem; margin-top: 1.25rem; max-width: 26rem; color: var(--color-3); }
+#contact .ct-note .m-ast { width: 0.9rem; flex: none; margin-top: 0.2rem; }
+#contact .ct-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem 2rem; align-content: start; padding-top: 0.5rem; }
+#contact .ct-field { display: grid; gap: 0.15rem; }
+#contact .ct-field--wide { grid-column: 1 / -1; }
+#contact .ct-label { color: var(--color-3); }
+#contact .ct-send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+#contact .ct-status { color: var(--color-3); }
+@media (max-width: 900px) {
+  #contact { grid-template-columns: 1fr; }
+  #contact .ct-form { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-band.is-running { overflow: clip; }
+  #opening .op-band.is-running .op-band__track {
+    flex-wrap: nowrap; justify-content: flex-start; width: max-content; column-gap: 0; padding: 0;
+    animation: op-band 46s linear infinite;
+  }
+  #opening .op-band.is-running .op-band__item { flex-wrap: nowrap; white-space: nowrap; padding: 0.22em 0 0.26em 0.45em; }
+  #opening .op-band.is-running:hover .op-band__track,
+  #opening .op-band.is-running:focus-within .op-band__track,
+  #opening .op-band.is-running.is-idle .op-band__track { animation-play-state: paused; }
+}
+}
+</style>
+<style data-8b-part="scene-style:fine">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #words.is-flipping .wd-cell { perspective: 700px; }
+  #words.is-flipping .wd-cell__w { transform-origin: 50% 100%; backface-visibility: hidden; }
+  #words.is-flipping .wd-cell__fine {
+    position: absolute; inset: 0; display: flex; align-items: center; padding: inherit;
+    background: var(--color-1); color: var(--color-3);
+    transform-origin: 50% 0%; backface-visibility: hidden;
+  }
+}
+}
+</style>
+<style data-8b-part="scene-style:ledger">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #course.is-reading .cr-ledger { position: relative; }
+  #course.is-reading .cr-arm {
+    position: absolute; left: 0; top: 0; z-index: 0; width: 100%; height: 100px;
+    background: var(--color-2); transform-origin: 0 0; pointer-events: none;
+  }
+  #course.is-reading .cr-row { position: relative; z-index: 1; transition: color 0.3s ease; }
+  #course.is-reading .cr-row > * { transition: color 0.25s ease 0.12s; }
+  #course.is-reading .cr-row.is-lit, #course.is-reading .cr-row.is-lit > * { color: var(--color-1); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: var(--space-2) var(--space-1) 1.5rem; border-top: 1px solid var(--color-2); }
+#footer .ft-mark { font-size: min(28rem, 100cqi * 0.97 / (var(--len) * 0.58)); }
+#footer .ft-head { container-type: inline-size; position: relative; overflow-x: clip; }
+#footer .ft-cols {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin-top: 2.5rem;
+  background: var(--color-2); border-block: 1px solid var(--color-2);
+}
+#footer .ft-col { padding: 1.25rem 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.45rem; }
+#footer .ft-col h2 { margin-bottom: 0.6rem; }
+#footer .ft-social { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+#footer .ft-legal { display: flex; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; margin-top: 1.25rem; color: var(--color-3); }
+@media (max-width: 900px) {
+  #footer .ft-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  #footer .ft-cols { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-next { min-height: calc(100svh - 5rem); }
+#opening .op-main { justify-content: flex-start; gap: 0; }
+#opening .op-actions { margin: 0; padding: clamp(1.25rem, 2.4vw, 2rem) var(--space-1) 2.5rem clamp(1.5rem, 9vw, 9rem); }
+#opening .op-cards { margin-top: auto; }
+@media (max-width: 900px) {
+  #opening .op-actions { padding: 1.25rem var(--space-1) 2rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-h2 .m-text-2__line + .m-text-2__line { animation: op-step .9s .15s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .op-actions { animation: op-rise-s .8s .3s cubic-bezier(.2, .75, .2, 1) backwards; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header class="nav" data-8b-section="navigation" id="navigation">
+<div class="nav__top">
+<p class="m-text-5">{{t1|Write to us:}} <a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t2|hello@senti.example}}</a></p>
+<p class="m-text-5 nav__phone">{{t3|Call:}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t4|+1 555 000 0000}}</a></p>
+</div>
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">{{t5|⟦name⟧}}</a>
+<nav aria-label="Main" class="nav__menu">
+<ul class="nav__list">
+{{#nv_motivation}}<li><a class="m-link-2" href="#motivation">{{t6|Studio}}</a></li>{{/nv_motivation}}
+{{#nv_course}}<li><a class="m-link-2" href="#course">{{t7|Course}}</a></li>{{/nv_course}}
+{{#nv_live}}<li><a class="m-link-2" href="#live">{{t8|Live}}</a></li>{{/nv_live}}
+{{#nv_teams}}<li><a class="m-link-2" href="#teams">{{t9|Teams}}</a></li>{{/nv_teams}}
+{{#nv_journal}}<li><a class="m-link-2" href="#journal">{{t10|Journal}}</a></li>{{/nv_journal}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t11|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<div class="nav__end">
+<a aria-label="Cart: no items yet" class="m-icon-btn nav__cart" data-cart-link="" data-label-empty="Cart: no items yet" data-label-items="Cart: {n} items, go to the journal" href="#journal">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 8.5h14l-1.2 12H6.2z"></path><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"></path></svg>
+<span class="nav__count" data-cart-count="" data-count="0">{{t12|0}}</span>
+</a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open the menu" class="m-icon-btn nav__toggle" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 8.5h16M4 15.5h16"></path></svg>
+</button>
+</div>
+</div>
+<ul aria-label="{{name}} elsewhere" class="nav__rail">
+<li><a aria-label="{{name}} on Instagram" class="m-icon-btn" data-8b-placeholder="social" href="https://instagram.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="17" rx="5" width="17" x="3.5" y="3.5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.2 6.6v.4"></path></svg></a></li>
+<li><a aria-label="{{name}} on TikTok" class="m-icon-btn" data-8b-placeholder="social" href="https://tiktok.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 3.5v11.3a3.8 3.8 0 1 1-3.4-3.8"></path><path d="M14 3.5c.6 2.6 2.4 4.3 5 4.5"></path></svg></a></li>
+<li><a aria-label="{{name}} on YouTube" class="m-icon-btn" data-8b-placeholder="social" href="https://youtube.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="13" rx="3.5" width="19" x="2.5" y="5.5"></rect><path d="M10 9.3v5.4l4.6-2.7z"></path></svg></a></li>
+<li><a aria-label="Email {{name}}" class="m-icon-btn" data-8b-placeholder="email" href="#ub-contact"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="13" width="18" x="3" y="5.5"></rect><path d="M3 6.5l9 6.5 9-6.5"></path></svg></a></li>
+</ul>
+<div class="nav__overlay" data-lenis-prevent="" hidden="" id="menu">
+<div class="nav__overlay-head">
+<span class="nav__logo">{{t5|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-icon-btn nav__close" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5.5 5.5l13 13M18.5 5.5l-13 13"></path></svg>
+</button>
+</div>
+<nav aria-label="Menu">
+<ul class="nav__overlay-list">
+{{#nv_motivation}}<li><a href="#motivation">{{t6|Studio}}</a></li>{{/nv_motivation}}
+{{#nv_course}}<li><a href="#course">{{t7|Course}}</a></li>{{/nv_course}}
+{{#nv_live}}<li><a href="#live">{{t8|Live}}</a></li>{{/nv_live}}
+{{#nv_teams}}<li><a href="#teams">{{t9|Teams}}</a></li>{{/nv_teams}}
+{{#nv_journal}}<li><a href="#journal">{{t10|Journal}}</a></li>{{/nv_journal}}
+{{#nv_contact}}<li><a href="#contact">{{t11|Contact}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<p class="m-text-5 nav__overlay-foot">{{t3|Call:}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t4|+1 555 000 0000}}</a></p>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section class="op" data-8b-section="opening" id="opening">
+<div class="op-next">
+<div aria-label="What members say" class="op-band" role="region">
+<ul class="op-band__track">
+<li class="op-band__item m-text-7">{{t13|“I stopped saying fine.”}} <span class="op-band__who">{{t14|Lea, 34}}</span><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></li>
+<li class="op-band__item m-text-7">{{t15|“My team argues better now.”}} <span class="op-band__who">{{t16|Omar, 41}}</span><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></li>
+<li class="op-band__item m-text-7">{{t17|“Thursdays are my reset.”}} <span class="op-band__who">{{t18|Priya, 27}}</span><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></li>
+<li class="op-band__item m-text-7">{{t19|“Six weeks, thirty new words.”}} <span class="op-band__who">{{t20|Jonas, 52}}</span><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></li>
+</ul>
+</div>
+<div class="op-grid">
+<div class="op-num">
+<span class="op-num__ink"></span>
+<p class="op-num__n m-text-6">{{t21|1.}}</p>
+</div>
+<div class="op-main">
+<h1 class="m-text-2 op-h2" id="opening-title"><span class="m-text-2__line">{{t22|Practise for free,}}</span> <span class="m-text-2__line">{{t23|wherever you are!}}</span></h1>
+<div class="op-actions">
+<a class="m-btn" href="#course"><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 24 24"><rect height="15.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span class="m-btn__label">{{t24|Book a class}}</span></a>
+<a class="m-btn-2" href="#live"><svg aria-hidden="true" class="m-btn-2__icon" viewbox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"></path></svg><span class="m-btn-2__label">{{t25|Watch live}}</span></a>
+</div>
+<ul class="op-cards">
+<li class="m-surface op-card">
+<span aria-hidden="true" class="m-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="2.4"></circle><path d="M8 8a5.7 5.7 0 0 0 0 8M16 8a5.7 5.7 0 0 1 0 8M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"></path></svg></span>
+<h3 class="m-text-4">{{t26|Thursday Live}}</h3>
+<p class="m-text-5">{{t27|One feeling, unpacked for an hour on Twitch, with your questions read out from the chat.}}</p>
+</li>
+<li class="m-surface op-card">
+<span aria-hidden="true" class="m-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="13.5" r="7"></circle><path d="M12 13.5V9.5M9.5 3h5M18 6.5l1.6-1.6"></path></svg></span>
+<h3 class="m-text-4">{{t28|Minute Drills}}</h3>
+<p class="m-text-5">{{t29|Sixty-second exercises on TikTok for the queue, the bus and the minute before a hard call.}}</p>
+</li>
+<li class="m-surface op-card">
+<span aria-hidden="true" class="m-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="6.5" r="2.5"></circle><circle cx="5.8" cy="16.5" r="2.5"></circle><circle cx="18.2" cy="16.5" r="2.5"></circle><path d="M10.6 8.7 7.2 14.3M13.4 8.7l3.4 5.6M8.3 16.5h7.4"></path></svg></span>
+<h3 class="m-text-4">{{t30|Sunday Circle}}</h3>
+<p class="m-text-5">{{t31|An open group where members post one honest sentence a week, and nobody tries to fix it.}}</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_motivation}}<section class="mv" data-8b-section="motivation" id="motivation">
+<div class="mv-head">
+<p class="mv-word m-text-3" style="--len:10">{{t32|Motivation}}</p>
+<span class="mv-ast"><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></span>
+</div>
+<div class="mv-body">
+<div class="mv-copy">
+<h2 class="m-text-2 mv-box"><span class="m-text-2__line">{{t33|Make it a game!}}</span></h2>
+<p class="m-text mv-text">{{t34|Willpower runs out by Wednesday. Curiosity does not. Every class is built like play: short rounds, small wins and one good laugh before the hard part.}}</p>
+<ul class="mv-rules">
+<li class="m-text">{{t35|Twenty-minute rounds, then a real break}}</li>
+<li class="m-text">{{t36|One feeling per class, never five}}</li>
+<li class="m-text">{{t37|Small wins, written down the same night}}</li>
+</ul>
+<p class="mv-more"><a class="m-link" href="#course">{{t38|See how a class runs}}</a></p>
+<p class="m-text-5 mv-note">{{t39|* Motivation: what is left when the mood is gone, if you made the practice fun.}}</p>
+</div>
+<figure class="m-frame mv-photo"><img alt="A woman in round glasses and a denim jacket laughing, her chin on her hand" height="2400" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1619896382906-4f4681290afc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjBnbGFzc2VzJTIwcG9ydHJhaXQlMjBkYXJrfGVufDF8MXx8fDE3OTEzMjE4Mzd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#262626" width="1600"/></figure>
+</div>
+</section>{{/sec_motivation}}
+
+{{#sec_words}}<section class="wd" data-8b-section="words" id="words">
+<h2 class="wd-title">
+<span class="wd-word m-text-3" style="--len:4">{{t40|Fine}}<span class="wd-strike"></span></span>
+<span class="m-text-2 wd-sub"><span class="m-text-2__line">{{t41|is not}}</span> <span class="m-text-2__line">{{t42|a feeling.}}</span></span>
+</h2>
+<span class="wd-ast"><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></span>
+<ul aria-label="Words members learn to use instead" class="wd-wall">
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t43|Disappointed}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t44|Restless}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t45|Proud}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t46|Left out}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t47|Relieved}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t48|Tender}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t49|Jealous}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t50|Hopeful}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t51|Embarrassed}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t52|Grateful}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t53|Tense}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t54|Lonely}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t55|Curious}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t56|Ashamed}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t57|Calm}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t58|Irritated}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t59|Excited}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t60|Nostalgic}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t61|Hurt}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t62|Brave}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t63|Bored}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t64|Content}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t65|Worried}}</span></li>
+<li class="wd-cell"><span class="wd-cell__w m-text-4">{{t66|Moved}}</span></li>
+</ul>
+<p class="m-text-5 wd-note">{{t67|* Most people get through a week on three feeling words: fine, stressed, tired. Members leave the course with thirty, and use them.}}</p>
+</section>{{/sec_words}}
+
+{{#sec_course}}<section class="cr" data-8b-section="course" id="course">
+<div class="cr-num"><p class="cr-num__n m-text-6">{{t68|2.}}</p></div>
+<div class="cr-main">
+<h2 class="m-text-2 cr-h2" data-8b-motion="step"><span class="m-text-2__line">{{t69|Six weeks,}}</span> <span class="m-text-2__line">{{t70|one feeling a week}}</span></h2>
+<p class="m-text cr-lead">{{t71|A group of twelve, one evening a week, ninety minutes each. You leave every session with a drill for the next seven days.}}</p>
+<ol class="cr-ledger">
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t72|Week 1}}</span><h3 class="m-text-4">{{t73|Anger}}</h3><p class="m-text-5 cr-row__txt">{{t74|Where it sits in the body, and the useful message folded inside it.}}</p></li>
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t75|Week 2}}</span><h3 class="m-text-4">{{t76|Fear}}</h3><p class="m-text-5 cr-row__txt">{{t77|Telling a warning from a habit, and what to do with each.}}</p></li>
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t78|Week 3}}</span><h3 class="m-text-4">{{t79|Sadness}}</h3><p class="m-text-5 cr-row__txt">{{t80|Letting it finish instead of scrolling past it.}}</p></li>
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t81|Week 4}}</span><h3 class="m-text-4">{{t82|Shame}}</h3><p class="m-text-5 cr-row__txt">{{t83|The quiet one. Saying it out loud is half the work.}}</p></li>
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t84|Week 5}}</span><h3 class="m-text-4">{{t85|Joy}}</h3><p class="m-text-5 cr-row__txt">{{t86|Noticing it while it happens, not three days later.}}</p></li>
+<li class="cr-row"><span class="cr-row__wk m-text-5">{{t87|Week 6}}</span><h3 class="m-text-4">{{t88|All of them}}</h3><p class="m-text-5 cr-row__txt">{{t89|Mixed feelings, real conversations and your own weekly routine.}}</p></li>
+</ol>
+<div class="cr-foot">
+<p class="cr-price"><span class="m-text-4">{{t90|$240}}</span> <span class="m-text-5">{{t91|for six evenings. The next group starts on 3 November.}}</span></p>
+<a class="m-btn-2" href="#contact"><svg aria-hidden="true" class="m-btn-2__icon" viewbox="0 0 24 24"><rect height="15.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg><span class="m-btn-2__label">{{t92|Reserve a seat}}</span></a>
+</div>
+</div>
+</section>{{/sec_course}}
+
+{{#sec_founder}}<section class="fd" data-8b-section="founder" id="founder">
+<figure class="m-frame fd-photo" data-8b-motion="frame"><img alt="A woman with short hair and crossed arms resting on her chest, looking calmly at the camera" height="2400" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1721003080966-423d4017d09d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8d29tYW4lMjBwb3J0cmFpdCUyMGNhbG0lMjBzdHVkaW98ZW58MXwxfHx8MTc5MTMyMTgzN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#c0a68c" width="1600"/></figure>
+<div class="fd-copy">
+<h2 class="m-text-2 fd-h2" data-8b-motion="step"><span class="m-text-2__line">{{t93|A letter}}</span> <span class="m-text-2__line">{{t94|from Mara}}</span></h2>
+<div class="m-text fd-letter">
+<p>{{t95|I spent ten years as a theatre coach, teaching actors to show any feeling on cue. Off stage, most of them could not say what they felt on an ordinary Tuesday.}}</p>
+<p>{{t96|⟦name⟧ began as a Thursday night class for them. Now it is for anyone who has answered “fine” and meant something else entirely.}}</p>
+</div>
+<p class="fd-sign"><span class="m-text-4">{{t97|Mara Ilić}}</span> <span class="m-text-5 fd-role">{{t98|founder and head coach}}</span></p>
+<p class="fd-more"><a class="m-link" href="#live">{{t99|Meet her on Thursday Live}}</a></p>
+</div>
+</section>{{/sec_founder}}
+
+{{#sec_live}}<section class="lv" data-8b-section="live" id="live">
+<div class="lv-side">
+<figure class="m-frame lv-photo" data-8b-motion="frame"><img alt="A woman with teal hair, headphones and glasses speaking into a studio microphone" height="1069" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1594009375825-564aac98bda6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGVyc29uJTIwdGFsa2luZyUyMG1pY3JvcGhvbmUlMjBzdHJlYW18ZW58MXwwfHx8MTc5MTMyMTg3Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=760&q=60}}" style="background:#262626" width="1600"/></figure>
+<p class="m-text-5 lv-cap">{{t100|Thursday Live, 8 pm CET, every week. Free, recorded, no sign-up.}}</p>
+</div>
+<div class="lv-main">
+<h2 class="m-text-2 lv-h2" data-8b-motion="step"><span class="m-text-2__line">{{t101|Next on}}</span> <span class="m-text-2__line">{{t102|the calendar}}</span></h2>
+<ol class="lv-list">
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-10-15">{{t103|15 Oct}}</time><div class="lv-what"><h3 class="m-text-4">{{t104|Jealousy, out loud}}</h3><p class="m-text-5 lv-meta">{{t105|Thursday Live · online · free}}</p></div><a class="m-link m-text-5 lv-book" href="#contact">{{t106|Remind me}}</a></li>
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-10-18">{{t107|18 Oct}}</time><div class="lv-what"><h3 class="m-text-4">{{t108|Saying no without a speech}}</h3><p class="m-text-5 lv-meta">{{t109|Workshop · studio · $35}}</p></div><a class="m-link m-text-5 lv-book" href="#contact">{{t110|Book a place}}</a></li>
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-10-22">{{t111|22 Oct}}</time><div class="lv-what"><h3 class="m-text-4">{{t112|The Sunday dread}}</h3><p class="m-text-5 lv-meta">{{t105|Thursday Live · online · free}}</p></div><a class="m-link m-text-5 lv-book" href="#contact">{{t106|Remind me}}</a></li>
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-10-29">{{t113|29 Oct}}</time><div class="lv-what"><h3 class="m-text-4">{{t114|Pride you are allowed}}</h3><p class="m-text-5 lv-meta">{{t105|Thursday Live · online · free}}</p></div><a class="m-link m-text-5 lv-book" href="#contact">{{t106|Remind me}}</a></li>
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-11-01">{{t115|1 Nov}}</time><div class="lv-what"><h3 class="m-text-4">{{t116|Grief at work}}</h3><p class="m-text-5 lv-meta">{{t109|Workshop · studio · $35}}</p></div><a class="m-link m-text-5 lv-book" href="#contact">{{t110|Book a place}}</a></li>
+<li class="lv-row"><time class="lv-date m-text-4" datetime="2026-11-03">{{t117|3 Nov}}</time><div class="lv-what"><h3 class="m-text-4">{{t118|Six-week course, group 14}}</h3><p class="m-text-5 lv-meta">{{t119|Course · studio and online · $240}}</p></div><a class="m-link m-text-5 lv-book" href="#course">{{t92|Reserve a seat}}</a></li>
+</ol>
+</div>
+</section>{{/sec_live}}
+
+{{#sec_teams}}<section class="tm" data-8b-section="teams" id="teams">
+<div class="tm-head">
+<p class="tm-word m-text-3" style="--len:8">{{t120|Together}}</p>
+<span class="tm-ast"><svg aria-hidden="true" class="m-ast" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg></span>
+</div>
+<div class="tm-grid">
+<div class="tm-num"><p class="tm-num__n m-text-6">{{t121|3.}}</p></div>
+<figure class="m-frame tm-photo"><img alt="Five colleagues sitting in a loose circle on a sunny terrace, talking" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1646066489838-aa1eddbe5964?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTl8fHRlYW0lMjB3b3Jrc2hvcCUyMGRpc2N1c3Npb258ZW58MXwwfHx8MTc5MTMyMTg3NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1060&q=60}}" style="background:#8c7373" width="1600"/></figure>
+<div class="tm-offer">
+<h2 class="m-text-2 tm-h2"><span class="m-text-2__line">{{t122|Bring}}</span> <span class="m-text-2__line">{{t123|your team}}</span></h2>
+<ul class="tm-formats">
+<li class="tm-format"><h3 class="m-text-4">{{t124|Half-day reset}}</h3><p class="m-text-4 tm-price">{{t125|$1,900}}</p><p class="m-text-5">{{t126|Up to sixteen people, at your office or ours, on the one feeling the team keeps stepping around.}}</p></li>
+<li class="tm-format"><h3 class="m-text-4">{{t127|Monthly check-in}}</h3><p class="m-text-4 tm-price">{{t128|$650 a month}}</p><p class="m-text-5">{{t129|An hour online every month with the same coach, so the habit outlives the workshop.}}</p></li>
+<li class="tm-format"><h3 class="m-text-4">{{t130|Two-day retreat}}</h3><p class="m-text-4 tm-price">{{t131|from $8,400}}</p><p class="m-text-5">{{t132|A quiet house outside the city, two coaches and a plan the team writes for itself.}}</p></li>
+</ul>
+<p class="tm-act"><a class="m-btn" href="#contact"><svg aria-hidden="true" class="m-btn__icon" viewbox="0 0 24 24"><circle cx="12" cy="6.5" r="2.5"></circle><circle cx="5.8" cy="16.5" r="2.5"></circle><circle cx="18.2" cy="16.5" r="2.5"></circle></svg><span class="m-btn__label">{{t133|Plan a session}}</span></a></p>
+<p class="m-text-5 tm-note">{{t134|* Together: where feelings stop being private problems and start being shared information.}}</p>
+</div>
+</div>
+</section>{{/sec_teams}}
+
+{{#sec_faq}}<section class="fq" data-8b-section="faq" id="faq">
+<div class="fq-side">
+<h2 class="m-text-2 fq-h2" data-8b-motion="step"><span class="m-text-2__line">{{t135|Fair}}</span> <span class="m-text-2__line">{{t136|questions}}</span></h2>
+<p class="m-text-5 fq-note"><svg aria-hidden="true" class="m-ast" data-8b-motion="tick" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg><span>{{t137|Anything else? Ask it on Thursday Live; the best questions become episodes.}}</span></p>
+</div>
+<div class="fq-list">
+<details class="fq-item"><summary class="fq-q"><span class="m-text-4">{{t138|Is this therapy?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t139|No. It is training for everyday feelings, led by certified coaches. If you are struggling, we will help you find a therapist, and you are welcome in class alongside it.}}</p></details>
+<details class="fq-item"><summary class="fq-q"><span class="m-text-4">{{t140|Do I have to talk in class?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t141|Never. You can listen, write in the chat or keep your journal page to yourself. Most people speak up by week three, on their own terms.}}</p></details>
+<details class="fq-item"><summary class="fq-q"><span class="m-text-4">{{t142|What if I miss a week?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t143|Each session is recorded for your group, and the drill for the week arrives by email, so you can catch up before the next evening.}}</p></details>
+<details class="fq-item"><summary class="fq-q"><span class="m-text-4">{{t144|Can my company pay?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t145|Yes. We invoice in your company's name, and many members use their learning budget for the course.}}</p></details>
+<details class="fq-item"><summary class="fq-q"><span class="m-text-4">{{t146|Is the live show really free?}}</span><span aria-hidden="true" class="fq-icon"></span></summary><p class="m-text fq-a">{{t147|Yes, every Thursday, with no sign-up. Recordings stay online for a month.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_journal}}<section class="jr" data-8b-section="journal" id="journal">
+<div class="jr-head">
+<h2 class="m-text-2 jr-h2" data-8b-motion="step"><span class="m-text-2__line">{{t148|The Feelings}}</span> <span class="m-text-2__line">{{t10|Journal}}</span></h2>
+<p class="m-text jr-lead">{{t149|A printed companion to the course: one prompt a day for twelve weeks, a feelings index at the back and paper that takes a fountain pen.}}</p>
+</div>
+<div class="jr-pile">
+<figure class="m-frame jr-photo"><img alt="A hand writing with a black pen in a small spiral notebook" height="1067" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1649710025212-5b63cda94759?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjJ8fG9wZW4lMjBqb3VybmFsJTIwcGVuJTIwd3JpdGluZ3xlbnwxfDB8fHwxNzkxMzIxODc1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#260c0c" width="1600"/></figure>
+<figure class="m-frame jr-photo"><img alt="An open ring-bound notebook with ochre pages and a fountain pen lying across it" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1709039549249-dd25168a8e63?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjR8fG9wZW4lMjBqb3VybmFsJTIwcGVuJTIwd3JpdGluZ3xlbnwxfDB8fHwxNzkxMzIxODc1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#d9a659" width="1600"/></figure>
+<figure class="m-frame jr-photo"><img alt="Black and white close-up of a hand writing lines of text in a notebook" height="1066" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1731963094554-c5c981ccdefd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjF8fG9wZW4lMjBqb3VybmFsJTIwcGVuJTIwd3JpdGluZ3xlbnwxfDB8fHwxNzkxMzIxODc1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#c0c0c0" width="1600"/></figure>
+</div>
+<div class="jr-buy">
+<ul class="jr-facts">
+<li class="m-surface m-text-5">{{t150|192 pages, lay-flat binding}}</li>
+<li class="m-surface m-text-5">{{t151|A5, linen cover}}</li>
+<li class="m-surface m-text-5">{{t152|84 prompts and a feelings index}}</li>
+<li class="m-surface m-text-5">{{t153|Ships within three days}}</li>
+</ul>
+<div class="jr-act">
+<p class="m-text-4 jr-price">{{t154|$32}}</p>
+<button class="m-btn-2" data-add-cart="" type="button"><svg aria-hidden="true" class="m-btn-2__icon" viewbox="0 0 24 24"><path d="M5 8.5h14l-1.2 12H6.2z"></path><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"></path></svg><span class="m-btn-2__label">{{t155|Add to cart}}</span></button>
+</div>
+<p class="m-text-5 jr-status" data-added-text="Added. The cart at the top of the page shows it." role="status"></p>
+</div>
+</section>{{/sec_journal}}
+
+{{#sec_contact}}<section class="ct" data-8b-section="contact" id="contact">
+<div class="ct-info">
+<h2 class="m-text-2 ct-h2" data-8b-motion="step"><span class="m-text-2__line">{{t156|Say it}}</span> <span class="m-text-2__line">{{t157|to us first}}</span></h2>
+<p class="m-text ct-lead">{{t158|Tell us what you want to work on. We answer within two working days, usually with a question.}}</p>
+<ul class="ct-lines">
+<li><span class="m-text-5 ct-k">{{t159|Email}}</span><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t2|hello@senti.example}}</a></li>
+<li><span class="m-text-5 ct-k">{{t160|Phone}}</span><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t4|+1 555 000 0000}}</a></li>
+<li><span class="m-text-5 ct-k">{{t6|Studio}}</span><span>{{t161|1 Admiralty Way, Studio 3}}</span></li>
+<li><span class="m-text-5 ct-k">{{t162|Hours}}</span><span>{{t163|Mon–Thu, 10:00–21:00}}</span></li>
+</ul>
+<p class="m-text-5 ct-note"><svg aria-hidden="true" class="m-ast" data-8b-motion="tick" focusable="false" viewbox="-50 -50 100 100"><path d="M-8-48h16v96h-16z"></path><path d="M-8-48h16v96h-16z" transform="rotate(60)"></path><path d="M-8-48h16v96h-16z" transform="rotate(-60)"></path></svg><span>{{t164|A person reads every message. No bots, no newsletters unless you ask.}}</span></p>
+</div>
+
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Wellness Studio by <a href="https://github.com/8bsite/wellness-studio-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="ft" data-8b-section="footer" id="footer">
+<div class="ft-head">
+<p class="ft-mark m-text-3" style="--len:5">{{t5|⟦name⟧}}</p>
+</div>
+<div class="ft-cols">
+<div class="m-surface ft-col">
+<h2 class="m-text-4">{{t6|Studio}}</h2>
+<p class="m-text-5">{{t165|Emotional fitness classes, online and in a small room with big windows.}}</p>
+</div>
+<nav aria-label="Footer" class="m-surface ft-col">
+<h2 class="m-text-4">{{t166|Pages}}</h2>
+<a class="m-link m-text-5" href="#course">{{t167|Six-week course}}</a>
+<a class="m-link m-text-5" href="#live">{{t168|Live calendar}}</a>
+<a class="m-link m-text-5" href="#teams">{{t169|For teams}}</a>
+<a class="m-link m-text-5" href="#journal">{{t170|The journal}}</a>
+</nav>
+<div class="m-surface ft-col">
+<h2 class="m-text-4">{{t11|Contact}}</h2>
+<a class="m-link m-text-5" data-8b-placeholder="email" href="#ub-contact">{{t2|hello@senti.example}}</a>
+<a class="m-link m-text-5" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t4|+1 555 000 0000}}</a>
+<p class="m-text-5">{{t161|1 Admiralty Way, Studio 3}}</p>
+</div>
+<div class="m-surface ft-col">
+<h2 class="m-text-4">{{t171|Follow}}</h2>
+<ul class="ft-social">
+<li><a aria-label="{{name}} on Instagram" class="m-icon-btn" data-8b-placeholder="social" href="https://instagram.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="17" rx="5" width="17" x="3.5" y="3.5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.2 6.6v.4"></path></svg></a></li>
+<li><a aria-label="{{name}} on TikTok" class="m-icon-btn" data-8b-placeholder="social" href="https://tiktok.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14 3.5v11.3a3.8 3.8 0 1 1-3.4-3.8"></path><path d="M14 3.5c.6 2.6 2.4 4.3 5 4.5"></path></svg></a></li>
+<li><a aria-label="{{name}} on YouTube" class="m-icon-btn" data-8b-placeholder="social" href="https://youtube.com/"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="13" rx="3.5" width="19" x="2.5" y="5.5"></rect><path d="M10 9.3v5.4l4.6-2.7z"></path></svg></a></li>
+</ul>
+</div>
+</div>
+<div class="ft-legal">
+<p class="m-text-5">{{t172|© 2026 ⟦name⟧ Studio · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t173|8B}}</a>{{t174|. Emotional fitness is training, not therapy: in a crisis, call your local emergency number.}}</p>
+<p class="m-text-5"><a class="m-link" href="#opening">{{t175|Back to the top}}</a></p>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  if (!nav) return;
+  let last = window.scrollY, travel = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    if (nav.classList.contains('is-open')) return;
+    if (delta === 0) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 160) nav.classList.remove('is-hidden');
+    else if (travel > 40) nav.classList.add('is-hidden');
+    else if (travel < -40) nav.classList.remove('is-hidden');
+  }, { passive: true });
+
+  const toggle = nav.querySelector('.nav__toggle');
+  const overlay = nav.querySelector('.nav__overlay');
+  const close = nav.querySelector('.nav__close');
+  if (!toggle || !overlay || !close) return;
+  const setOpen = open => {
+    overlay.hidden = !open;
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); }
+    else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  overlay.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  overlay.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    overlay.hidden = true; nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start();
+  }));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const band = document.querySelector('#opening .op-band');
+  if (!band || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(entries => entries.forEach(entry => band.classList.toggle('is-idle', !entry.isIntersecting))).observe(band);
+})();
+</script>
+<script data-8b-part="section-script:journal">
+(() => {
+  const section = document.getElementById('journal');
+  const button = section && section.querySelector('[data-add-cart]');
+  if (!button) return;
+  const status = section.querySelector('.jr-status');
+  button.addEventListener('click', () => {
+    const count = document.querySelector('[data-cart-count]');
+    const link = document.querySelector('[data-cart-link]');
+    const total = (parseInt(count ? count.dataset.count : '0', 10) || 0) + 1;
+    if (count) { count.dataset.count = String(total); count.textContent = String(total); }
+    if (link && link.dataset.labelItems) link.setAttribute('aria-label', link.dataset.labelItems.replace('{n}', String(total)));
+    if (status) status.textContent = status.dataset.addedText || '';
+  });
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  const status = form && form.querySelector('.ct-status');
+  if (!form || !status) return;
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.textContent = status.dataset.sentText || '';
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function refreshScroll() {
+  const offset = navHeight();
+  document.querySelectorAll('main > section').forEach(section => { section.style.scrollMarginTop = `${offset}px`; });
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  step(element, vars = {}) {
+    const lines = [...element.querySelectorAll('.m-text-2__line')];
+    const first = lines[0];
+    return gsap.timeline(vars).from(lines, {
+      x: (index, line) => first.offsetLeft - line.offsetLeft - 28,
+      duration: 0.95, ease: 'power3.out', stagger: 0.09
+    });
+  },
+  frame(element, vars = {}) {
+    const image = element.querySelector('img');
+    const timeline = gsap.timeline(vars).fromTo(element,
+      { clipPath: 'inset(12% 12% 12% 12%)' },
+      { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.1, ease: 'power3.out', clearProps: 'clipPath' });
+    if (image) timeline.fromTo(image, { scale: 1.22 }, { scale: 1, duration: 1.3, ease: 'power3.out', clearProps: 'transform' }, 0);
+    return timeline;
+  },
+  tick(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element,
+      { rotation: -120, scale: 0.5, transformOrigin: '50% 50%' },
+      { rotation: 0, scale: 1, duration: 0.9, ease: 'back.out(2)' });
+  }
+};
+const effectStarts = { step: 'top 86%', frame: 'top 88%', tick: 'top 92%' };
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effectStarts).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index}`, trigger: element, start: effectStarts[name], once: true,
+        animation: effects[name](element, { paused: true })
+      }));
+    }), { first: section.getBoundingClientRect().top < window.innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const band = document.querySelector('#opening .op-band');
+    const track = band.querySelector('.op-band__track');
+    const copies = [...track.children].map(item => {
+      const copy = item.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      track.append(copy);
+      return copy;
+    });
+    band.classList.add('is-running');
+    return () => { copies.forEach(copy => copy.remove()); band.classList.remove('is-running'); };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:momentum">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('motivation');
+    const word = section.querySelector('.mv-word');
+    const split = SplitText.create(word, { type: 'chars', charsClass: 'mv-char' });
+    const heights = [72, -44, 96, -22, 58, -62, 30, 86, -36, 48];
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'momentum', trigger: word, start: 'top bottom', end: 'top 28%', scrub: 0.5 } })
+      .fromTo(split.chars, { yPercent: index => heights[index % heights.length] }, { yPercent: 0, ease: 'power1.inOut' }, 0)
+      .fromTo(section.querySelector('.mv-ast'), { rotation: -150 }, { rotation: 0 }, 0);
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'momentum:drift', trigger: section.querySelector('.mv-photo'), start: 'top bottom', end: 'bottom top', scrub: true } })
+      .fromTo(section.querySelector('.mv-photo img'), { yPercent: -6 }, { yPercent: 6 }, 0)
+      .fromTo(section.querySelector('.mv-box'), { y: 45 }, { y: -45 }, 0);
+    return () => split.revert();
+  });
+}, { near: document.querySelector('#motivation .mv-head') });
+</script>
+<script data-8b-part="scene:fine">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('words');
+    const cells = [...section.querySelectorAll('.wd-cell')];
+    const words = cells.map(cell => cell.querySelector('.wd-cell__w'));
+    const faces = cells.map(cell => {
+      const face = document.createElement('span');
+      face.className = 'wd-cell__fine m-text-4';
+      face.setAttribute('aria-hidden', 'true');
+      face.textContent = 'fine';
+      cell.append(face);
+      return face;
+    });
+    section.classList.add('is-flipping');
+    const phone = window.innerWidth <= 900;
+    const wave = { grid: 'auto', from: 'start', amount: 0.62 };
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'fine', trigger: section, start: 'top top', end: phone ? '+=110%' : '+=150%', pin: true, scrub: 0.6 } })
+      .fromTo(section.querySelector('.wd-strike'), { scaleX: 0 }, { scaleX: 1, duration: 0.2, ease: 'power2.inOut' }, 0)
+      .fromTo(faces, { rotationX: 0 }, { rotationX: 90, duration: 0.2, stagger: wave, ease: 'power1.in' }, 0.14)
+      .fromTo(words, { rotationX: -90 }, { rotationX: 0, duration: 0.2, stagger: wave, ease: 'power1.out' }, 0.32);
+    return () => { faces.forEach(face => face.remove()); section.classList.remove('is-flipping'); };
+  });
+});
+</script>
+<script data-8b-part="scene:ledger">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('course');
+    const ledger = section.querySelector('.cr-ledger');
+    const rows = [...ledger.querySelectorAll('.cr-row')];
+    const arm = document.createElement('span');
+    arm.className = 'cr-arm';
+    arm.setAttribute('aria-hidden', 'true');
+    ledger.prepend(arm);
+    section.classList.add('is-reading');
+    let tops = [], heights = [], lit = -2, at = -1;
+    const measure = () => { tops = rows.map(row => row.offsetTop); heights = rows.map(row => row.offsetHeight); };
+    const setScaleX = gsap.quickSetter(arm, 'scaleX');
+    const render = (progress, instant) => {
+      const index = Math.min(rows.length - 1, Math.floor(progress * rows.length));
+      setScaleX(Math.max(0, Math.min(1, progress / 0.06, (1 - progress) / 0.06)));
+      if (index !== at || instant) {
+        gsap.to(arm, { y: tops[index], scaleY: heights[index] / 100, duration: instant ? 0 : 0.45, ease: 'power3.inOut', overwrite: true });
+        at = index;
+      }
+      const on = progress > 0.06 && progress < 0.94 ? index : -1;
+      if (on !== lit) { rows.forEach((row, k) => row.classList.toggle('is-lit', k === on)); lit = on; }
+    };
+    measure();
+    render(0, true);
+    ScrollTrigger.create({
+      id: 'ledger', trigger: ledger, start: 'top 64%', end: 'bottom 40%',
+      onUpdate: self => render(self.progress),
+      onRefresh: self => { measure(); render(self.progress, true); }
+    });
+    return () => { arm.remove(); rows.forEach(row => row.classList.remove('is-lit')); section.classList.remove('is-reading'); };
+  });
+}, { near: document.querySelector('#course .cr-ledger') });
+</script>
+<script data-8b-part="scene:calendar">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('live');
+    const list = section.querySelector('.lv-list');
+    const rows = section.querySelectorAll('.lv-row');
+    const step = () => (window.innerWidth <= 900 ? 26 : Math.round(window.innerWidth * 0.085));
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'calendar', trigger: list, start: 'top 96%', end: 'bottom 78%', scrub: 0.5, invalidateOnRefresh: true } });
+    rows.forEach((row, index) => timeline.fromTo(row, { x: () => (index + 1) * step() }, { x: 0, duration: 0.5, ease: 'power2.out' }, index * 0.05));
+  });
+}, { near: document.querySelector('#live .lv-list') });
+</script>
+<script data-8b-part="scene:circle">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('teams');
+    const photo = section.querySelector('.tm-photo');
+    const offset = element => {
+      let x = 0, y = 0, node = element;
+      while (node && node !== section) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+      return { x, y };
+    };
+    const fill = () => {
+      const at = offset(photo), w = photo.offsetWidth, h = photo.offsetHeight;
+      return {
+        x: window.innerWidth / 2 - (section.offsetLeft + at.x + w / 2),
+        y: window.innerHeight / 2 - (at.y + h / 2),
+        scale: Math.max(window.innerWidth / w, window.innerHeight / h) * 1.02
+      };
+    };
+    const phone = () => window.innerWidth <= 900;
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'circle', trigger: section, start: 'top top', end: () => `+=${Math.round(window.innerHeight * (phone() ? 1 : 1.2))}`,
+      pin: true, scrub: 0.6, invalidateOnRefresh: true
+    } })
+      .fromTo(photo, { x: () => fill().x, y: () => fill().y, scale: () => fill().scale }, { x: 0, y: 0, scale: 1, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(section.querySelector('.tm-word'), { xPercent: -24 }, { xPercent: 0, duration: 0.75, ease: 'power2.out' }, 0.25)
+      .fromTo(section.querySelector('.tm-num__n'), { yPercent: 70 }, { yPercent: 0, duration: 0.5, ease: 'power2.out' }, 0.5)
+      .fromTo(section.querySelectorAll('.tm-offer > *'), { y: 50 }, { y: 0, duration: 0.45, stagger: 0.06, ease: 'power2.out' }, 0.5)
+      .to({}, { duration: 0.4 });
+  });
+});
+</script>
+<script data-8b-part="scene:fan">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('journal');
+    const pile = section.querySelector('.jr-pile');
+    const photos = [...pile.querySelectorAll('.jr-photo')];
+    const turn = [-8, 5, -2.5], lift = [36, -14, 18];
+    const toCentre = (index, photo) => pile.offsetWidth / 2 - (photo.offsetLeft + photo.offsetWidth / 2);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'fan', trigger: pile, start: 'top 96%', end: 'center 48%', scrub: 0.6, invalidateOnRefresh: true } });
+    photos.forEach((photo, index) => timeline.fromTo(photo,
+      { x: () => toCentre(index, photo), y: () => lift[index % 3], rotation: () => turn[index % 3], scale: 0.84 },
+      { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.5, ease: 'power2.inOut' }, index * 0.05));
+  });
+}, { near: document.querySelector('#journal .jr-pile') });
+</script>
+<script data-8b-part="scene:exhale">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    gsap.fromTo(footer.querySelector('.ft-mark'),
+      { fontVariationSettings: '"wght" 800', yPercent: 16 },
+      { fontVariationSettings: '"wght" 450', yPercent: 0, ease: 'none', scrollTrigger: { id: 'exhale', trigger: footer, start: 'top bottom', end: 'top 30%', scrub: 0.6 } });
+  });
+}, { near: document.getElementById('footer') });
+</script>
+</body>
+</html>

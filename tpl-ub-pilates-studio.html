@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hLxR.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hLxR.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f6f4e9;
+  --color-2: #ef573b;
+  --color-3: #c3331c;
+  --color-4: #6b665e;
+  --font-1: "Golos Text", "Golos Text Fallback", Arial, sans-serif;
+  --radius-1: 22px;
+  --radius-2: 14px;
+  --radius-3: 999px;
+  --space-1: clamp(10px, 1.9vw, 26px);
+  --space-2: clamp(18px, 3.4vw, 48px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallbacks:start */
+@font-face { font-family: "Golos Text Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 101.8%; ascent-override: 96.3%; descent-override: 21.6%; line-gap-override: 0%; }
+@font-face { font-family: "Golos Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 108.1%; ascent-override: 90.7%; descent-override: 20.4%; line-gap-override: 0%; }
+@font-face { font-family: "Golos Text Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 90.3%; ascent-override: 108.6%; descent-override: 24.4%; line-gap-override: 0%; }
+/* fallbacks:end */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--color-2); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-2); color: var(--color-4); }
+h1, h2, h3, h4, p, ul, ol, figure, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: 120px; font-weight: 800; line-height: .84; letter-spacing: -.055em; text-transform: none; font-style: normal; color: var(--color-2); }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(36px, 5vw, 70px); font-weight: 760; line-height: .96; letter-spacing: -.045em; text-transform: none; font-style: normal; color: var(--color-2); }
+.m-text-4 { font-family: var(--font-1); font-size: 23px; font-weight: 700; line-height: 1.08; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: 1em; font-weight: 600; line-height: inherit; letter-spacing: inherit; text-transform: none; font-style: normal; color: var(--color-3); }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(22px, 2.1vw, 29px); font-weight: 450; line-height: 1.28; letter-spacing: -.012em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: .01em; text-transform: none; font-style: normal; }
+.m-text-8 { font-family: var(--font-1); font-size: clamp(40px, 5.6vw, 84px); font-weight: 800; line-height: .9; letter-spacing: -.05em; text-transform: none; font-style: normal; color: var(--color-2); }
+.m-text-9 { font-family: var(--font-1); font-size: clamp(25px, 3.1vw, 44px); font-weight: 500; line-height: 1.2; letter-spacing: -.022em; text-transform: none; font-style: normal; }
+.m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border: 1.5px solid var(--color-3); border-radius: var(--radius-3); background: var(--color-3); color: var(--color-1); font-family: var(--font-1); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: -.005em; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color .45s cubic-bezier(.65, 0, .2, 1); }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: var(--color-1); transform: translateX(-101%); transition: transform .55s cubic-bezier(.65, 0, .2, 1); }
+.m-btn__label { position: relative; }
+.m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border: 1.5px solid var(--color-1); border-radius: var(--radius-3); background: var(--color-1); color: var(--color-3); font-family: var(--font-1); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: -.005em; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color .45s cubic-bezier(.65, 0, .2, 1); }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: var(--color-3); transform: translateX(-101%); transition: transform .55s cubic-bezier(.65, 0, .2, 1); }
+.m-btn-2__label { position: relative; }
+.m-link { color: var(--color-3); font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1.5px; transition: background-size .5s cubic-bezier(.65, 0, .2, 1); }
+.m-icon { position: relative; display: inline-grid; place-items: center; flex: none; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: var(--color-1); color: var(--color-3); cursor: pointer; }
+.m-icon svg { width: 18px; height: 18px; fill: currentColor; }
+.m-icon::after { content: ""; position: absolute; inset: -5px; border: 1.5px solid currentColor; border-radius: 50%; opacity: 0; transform: scale(.7); transition: transform .5s cubic-bezier(.65, 0, .2, 1), opacity .3s; }
+.m-surface { border: 1.2px solid var(--color-2); border-radius: var(--radius-2); background: transparent; color: var(--color-4); }
+.m-surface-2 { border: 1.2px solid var(--color-3); border-radius: var(--radius-2); background: var(--color-3); color: var(--color-1); }
+.m-glyph { flex: none; width: 32px; height: 32px; color: var(--color-2); fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 14px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; text-transform: none; font-style: normal; color: var(--color-3); }
+.m-field__input { width: 100%; min-height: 48px; padding: 10px 0; border: 0; border-bottom: 1.5px solid var(--color-2); border-radius: 0; background: transparent; color: var(--color-4); font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.4; }
+textarea.m-field__input { min-height: 120px; resize: vertical; }
+select.m-field__input { cursor: pointer; }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn:focus-visible { color: var(--color-3); }
+  .m-btn:hover::before, .m-btn:focus-visible::before { transform: none; }
+  .m-btn-2:hover, .m-btn-2:focus-visible { color: var(--color-1); }
+  .m-btn-2:hover::before, .m-btn-2:focus-visible::before { transform: none; }
+  .m-link:hover { background-size: 100% 1.5px; }
+  .m-icon:hover::after { opacity: 1; transform: scale(1); }
+}
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.sheet { display: block; margin: var(--space-1) var(--space-1) 0; border-radius: var(--radius-1); background: var(--color-1); }
+.wrap { padding-inline: var(--space-2); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; z-index: 50; top: var(--space-1); left: var(--space-1); right: var(--space-1); transition: transform .55s cubic-bezier(.65, 0, .2, 1); }
+#nav::before { content: ""; position: absolute; z-index: 0; top: calc(-1 * var(--space-1)); left: calc(-1 * var(--space-1)); right: calc(-1 * var(--space-1)); height: calc(var(--space-1) + var(--radius-1)); background: var(--color-2); }
+#nav.is-hidden { transform: translateY(calc(-100% - var(--space-1) - 2px)); }
+#nav .nav__inner { position: relative; z-index: 1; border-radius: var(--radius-1) var(--radius-1) 0 0; background: var(--color-1); }
+#nav .nav__bar { display: flex; align-items: center; gap: 28px; height: 74px; margin-inline: var(--space-2); border-bottom: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); }
+#nav .nav__mark { display: inline-flex; align-items: flex-start; color: var(--color-2); font-size: 27px; text-decoration: none; }
+#nav .nav__mark sup { font-size: .5em; line-height: 1; margin-left: 2px; color: var(--color-3); }
+#nav .nav__links { display: flex; gap: 22px; margin-left: auto; margin-right: 18px; }
+#nav .nav__menu { display: none; margin-left: auto; }
+#nav .nav__sheet { position: fixed; z-index: 60; inset: 0; display: grid; align-content: space-between; gap: 32px; padding: calc(var(--space-1) + 16px) calc(var(--space-1) + var(--space-2)) 32px; background: var(--color-1); overflow-y: auto; }
+#nav .nav__sheet[hidden] { display: none; }
+#nav .nav__sheet-top { display: flex; justify-content: space-between; align-items: center; }
+#nav .nav__sheet .m-icon { background: var(--color-3); color: var(--color-1); }
+#nav .nav__sheet-links { display: grid; gap: 6px; }
+#nav .nav__sheet-links a { text-decoration: none; }
+@media (max-width: 900px) {
+  #nav .nav__links, #nav .nav__book { display: none; }
+  #nav .nav__menu { display: inline-flex; }
+  #nav .nav__bar { height: 62px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .o-first { position: relative; display: flex; flex-direction: column; min-height: 100svh; padding: calc(74px + 30px) var(--space-2) clamp(28px, 4.2svh, 44px); border-radius: var(--radius-1) var(--radius-1) 0 0; overflow: clip; }
+#opening .o-first::before { content: ""; position: absolute; z-index: 1; inset: 0; background: var(--color-3); visibility: hidden; pointer-events: none; }
+#opening .o-title { position: relative; z-index: 2; font-size: min(calc((100vw - 2 * var(--space-1) - 2 * var(--space-2)) / (var(--len) * .455)), 26svh); white-space: nowrap; transform-origin: 50% 100%; }
+#opening .o-title__w { display: inline-block; }
+#opening .o-cards { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: clamp(8px, 1.1vw, 14px); margin-top: clamp(20px, 3.6svh, 34px); }
+#opening .o-card { position: relative; display: flex; flex-direction: column; min-height: clamp(128px, 21svh, 172px); padding: 14px 14px 14px 16px; }
+#opening .o-card--on { z-index: 2; }
+#opening .o-card__body { display: flex; flex-direction: column; flex: 1; }
+#opening .o-card__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+#opening .o-card__title { color: var(--color-2); text-decoration: none; }
+#opening .o-card--on .o-card__title { color: var(--color-1); }
+#opening .o-card--on .m-glyph { color: var(--color-1); }
+#opening .o-card--on :focus-visible { outline-color: var(--color-1); }
+#opening .o-pacer { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; align-items: center; margin-top: auto; padding-top: 12px; }
+#opening .o-pacer .m-icon { width: 38px; height: 38px; grid-row: 1 / 3; }
+#opening .o-pacer .m-icon svg { width: 14px; height: 14px; }
+#opening .o-pacer__play { display: none; }
+#opening .o-pacer.is-paused .o-pacer__play { display: block; }
+#opening .o-pacer.is-paused .o-pacer__pause { display: none; }
+#opening .o-pacer__labels { display: flex; justify-content: space-between; gap: 8px; }
+#opening .o-pacer__bar { position: relative; height: 18px; clip-path: inset(-6px -10px -6px -9px); }
+#opening .o-pacer__bar::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: color-mix(in srgb, var(--color-1) 35%, transparent); }
+#opening .o-pacer__run { position: absolute; inset: 0; transform: translateX(-62%); }
+#opening .o-pacer__run::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: var(--color-1); }
+#opening .o-pacer__run::after { content: ""; position: absolute; top: 50%; right: -8px; width: 16px; height: 16px; margin-top: -8px; border-radius: 50%; background: var(--color-1); }
+#opening .o-intro { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: clamp(24px, 4vw, 64px); row-gap: 14px; margin-top: auto; padding-top: clamp(24px, 4svh, 48px); }
+#opening .o-intro__title { grid-column: 1 / -1; font-size: clamp(24px, 2.2vw, 30px); }
+#opening .o-intro .m-text { font-size: 15.5px; line-height: 1.42; }
+#opening .o-second { position: relative; z-index: 3; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: clamp(28px, 5vw, 80px); min-height: 100svh; padding: clamp(96px, 13svh, 128px) var(--space-2) clamp(40px, 7svh, 72px); background: var(--color-3); color: var(--color-1); }
+#opening .o-second__text { display: grid; gap: clamp(20px, 3svh, 30px); max-width: 640px; }
+#opening .o-second__title { color: var(--color-1); font-size: clamp(40px, 5.2vw, 76px); }
+#opening .o-second__act { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+#opening .o-second :focus-visible { outline-color: var(--color-1); }
+#opening .o-second__photo { justify-self: end; width: min(100%, calc((100svh - 220px) * .707)); aspect-ratio: 3761 / 5320; overflow: hidden; border-radius: var(--radius-2); clip-path: inset(0%); }
+#opening .o-second__photo img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 701px) and (min-height: 620px) {
+  #opening .o-first { position: sticky; top: 0; height: 100svh; }
+}
+@media (max-width: 700px) {
+  #opening .o-first { padding-top: calc(62px + 22px); padding-bottom: 36px; }
+  #opening .o-title { font-size: calc((100vw - 2 * var(--space-1) - 2 * var(--space-2)) / (var(--len) * .5 * .455)); white-space: normal; line-height: .86; }
+  #opening .o-title__w { display: block; }
+  #opening .o-cards { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #opening .o-card { min-height: 112px; padding: 12px; }
+  #opening .o-card .m-text-4 { font-size: 20px; }
+  #opening .o-card .m-glyph { width: 26px; height: 26px; }
+  #opening .o-pacer { grid-template-columns: minmax(0, 1fr); row-gap: 6px; }
+  #opening .o-pacer .m-icon { width: 32px; height: 32px; grid-row: auto; }
+  #opening .o-pacer .m-text-7 { font-size: 12px; }
+  #opening .o-intro { grid-template-columns: minmax(0, 1fr); padding-top: 32px; margin-top: 0; }
+  #opening .o-second { grid-template-columns: minmax(0, 1fr); align-items: start; padding-top: 72px; }
+  #opening .o-second__photo { justify-self: stretch; width: 100%; aspect-ratio: 4 / 5; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .o-title__w { animation: o-word .8s cubic-bezier(.2, .75, .15, 1) backwards; }
+  #opening .o-title__w + .o-title__w { animation-delay: .07s; }
+  #opening .o-card { animation: o-card .7s cubic-bezier(.2, .75, .15, 1) backwards; }
+  #opening .o-card:nth-child(2) { animation-delay: .1s; }
+  #opening .o-card:nth-child(3) { animation-delay: .18s; }
+  #opening .o-card:nth-child(4) { animation-delay: .26s; }
+  #opening .o-pacer__run { animation: o-breath 5s cubic-bezier(.45, 0, .55, 1) infinite alternate; }
+  #opening .m-glyph { animation: o-turn 16s linear infinite; }
+  #opening .o-card:nth-child(2) .m-glyph { animation-duration: 22s; animation-direction: reverse; }
+  #opening .o-card:nth-child(3) .m-glyph { animation-duration: 19s; }
+  #opening .o-card:nth-child(4) .m-glyph { animation-duration: 13s; animation-direction: reverse; }
+  #opening .o-pacer.is-paused .o-pacer__run, #opening.is-offscreen .o-pacer__run, #opening.is-offscreen .m-glyph { animation-play-state: paused; }
+  @keyframes o-word { from { transform: translateY(38%); clip-path: inset(0 -6% 62% -6%); } to { transform: none; clip-path: inset(-20% -6% -30% -6%); } }
+  @keyframes o-card { from { transform: translateY(26px); opacity: 0; } }
+  @keyframes o-breath { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+  @keyframes o-turn { to { transform: rotate(360deg); } }
+}
+@media (hover: hover) {
+  #opening .o-card__title:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+}
+}
+</style>
+<style data-8b-part="section:classes">
+@layer sections {
+#classes { padding: clamp(96px, 12vw, 168px) var(--space-2) clamp(72px, 9vw, 130px); }
+#classes .cl-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); margin-bottom: clamp(36px, 5vw, 64px); }
+#classes .cl-wrap { position: relative; }
+#classes .cl-carriage { display: none; }
+#classes .cl-rails { display: grid; grid-auto-rows: 1fr; gap: 12px; }
+#classes .cl-rail { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) clamp(190px, 21vw, 290px); grid-template-areas: "name text photo"; align-items: center; gap: 18px clamp(24px, 4vw, 56px); min-height: clamp(190px, 21vw, 250px); padding: 16px 16px 16px clamp(20px, 2.6vw, 36px); transition: color .2s, background-color .2s; }
+#classes .cl-name { grid-area: name; transition: color .2s; }
+#classes .cl-text { grid-area: text; display: grid; gap: 14px; }
+#classes .cl-meta { color: var(--color-3); transition: color .2s; }
+#classes .cl-photo { grid-area: photo; align-self: stretch; min-height: 150px; overflow: hidden; border-radius: calc(var(--radius-2) - 5px); }
+#classes .cl-photo img { width: 100%; height: 100%; object-fit: cover; }
+#classes .cl-rail.is-on { border-color: var(--color-3); background: var(--color-3); color: var(--color-1); }
+#classes .cl-rail.is-on .cl-name, #classes .cl-rail.is-on .cl-meta { color: var(--color-1); }
+#classes .cl-rail.is-on :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 760px) {
+  #classes .cl-head { grid-template-columns: minmax(0, 1fr); }
+  #classes .cl-rail { grid-template-columns: minmax(0, 1fr) 40%; grid-template-areas: "name photo" "text text"; align-items: start; padding: 14px; }
+  #classes .cl-name { align-self: center; font-size: 38px; }
+  #classes .cl-photo { aspect-ratio: 1; min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:classes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #classes.is-carried .cl-carriage { display: block; position: absolute; z-index: 0; top: 0; left: 0; width: 100%; border-radius: var(--radius-2); background: var(--color-3); pointer-events: none; }
+  #classes.is-carried .cl-rail.is-on { background: transparent; }
+}
+}
+</style>
+<style data-8b-part="section:method">
+@layer sections {
+#method { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 2.4fr); gap: 28px clamp(32px, 5vw, 88px); padding: clamp(72px, 9vw, 130px) var(--space-2); border-top: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); }
+#method .me-title { font-size: clamp(30px, 3.2vw, 46px); }
+#method .me-rules { color: var(--color-4); max-width: 34em; }
+@media (max-width: 760px) {
+  #method { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:fifty">
+@layer sections {
+#fifty { padding: clamp(80px, 10vw, 140px) 0; }
+#fifty .fi-stage { display: grid; gap: clamp(28px, 4vw, 48px); overflow: clip; }
+#fifty .fi-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); padding-inline: var(--space-2); }
+#fifty .fi-rail { display: none; }
+#fifty .fi-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding-inline: var(--space-2); }
+#fifty .fi-block { display: flex; flex-direction: column; gap: 10px; padding: 14px 14px 18px; transition: background-color .2s, color .2s; }
+#fifty .fi-block figure { aspect-ratio: 4 / 3; overflow: hidden; margin-bottom: 6px; border-radius: calc(var(--radius-2) - 5px); }
+#fifty .fi-block figure img { width: 100%; height: 100%; object-fit: cover; }
+#fifty .fi-block--text { justify-content: space-between; }
+#fifty .fi-block--text .m-glyph { margin-bottom: auto; }
+#fifty .fi-block--text .fi-copy { display: grid; gap: 10px; margin-top: 48px; }
+#fifty .fi-time { color: var(--color-3); }
+#fifty .fi-block .m-text-4 { color: var(--color-2); }
+#fifty .fi-block.is-now { border-color: var(--color-3); background: var(--color-3); color: var(--color-1); }
+#fifty .fi-block.is-now .fi-time, #fifty .fi-block.is-now .m-text-4, #fifty .fi-block.is-now .m-glyph { color: var(--color-1); }
+@media (max-width: 900px) {
+  #fifty .fi-head { grid-template-columns: minmax(0, 1fr); }
+  #fifty .fi-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  #fifty .fi-track { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="scene-style:fifty">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #fifty.is-tracking { padding-block: 0; }
+  #fifty.is-tracking .fi-stage { grid-template-columns: minmax(0, 1fr); min-height: 100svh; align-content: center; padding-block: clamp(84px, 11svh, 110px) clamp(24px, 4svh, 40px); }
+  #fifty.is-tracking .fi-rail { display: block; position: relative; height: 44px; margin-inline: var(--space-2); }
+  #fifty.is-tracking .fi-rail__line { position: absolute; left: 0; right: 0; top: 30px; height: 2px; background: color-mix(in srgb, var(--color-2) 30%, transparent); }
+  #fifty.is-tracking .fi-rail__fill { position: absolute; left: 0; right: 0; top: 30px; height: 2px; background: var(--color-3); transform: scaleX(0); transform-origin: 0 50%; }
+  #fifty.is-tracking .fi-rail__ticks { position: absolute; inset: 0 0 auto; display: flex; justify-content: space-between; color: var(--color-3); }
+  #fifty.is-tracking .fi-rail__dot { position: absolute; left: -9px; top: 22px; width: 18px; height: 18px; border-radius: 50%; background: var(--color-3); }
+  #fifty.is-tracking .fi-track { display: flex; width: max-content; }
+  #fifty.is-tracking .fi-block { flex: none; width: clamp(280px, 29vw, 390px); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 560px) {
+  #fifty.is-tracking .fi-block { width: 78vw; }
+  #fifty.is-tracking .fi-block figure { aspect-ratio: 16 / 10; }
+}
+}
+</style>
+<style data-8b-part="section:teachers">
+@layer sections {
+#teachers { padding: clamp(80px, 10vw, 140px) var(--space-2); overflow-x: clip; }
+#teachers .te-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); margin-bottom: clamp(32px, 4.5vw, 56px); }
+#teachers .te-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1.1vw, 14px); }
+#teachers .te-card { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 18px; }
+#teachers .te-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; min-height: 52px; }
+#teachers .te-top .m-text-4 { color: var(--color-2); }
+#teachers .te-photo { aspect-ratio: 4 / 5; overflow: hidden; border-radius: calc(var(--radius-2) - 5px); }
+#teachers .te-photo img { width: 100%; height: 100%; object-fit: cover; }
+#teachers .te-role { color: var(--color-3); }
+@media (max-width: 900px) {
+  #teachers .te-head { grid-template-columns: minmax(0, 1fr); }
+  #teachers .te-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  #teachers .te-card { padding: 10px 10px 14px; }
+  #teachers .te-top .m-text-4 { font-size: 19px; }
+  #teachers .te-top .m-glyph { width: 24px; height: 24px; }
+  #teachers .te-card .m-text { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="section:bodies">
+@layer sections {
+#bodies { padding: clamp(80px, 10vw, 140px) var(--space-2); }
+#bodies .bo-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); margin-bottom: clamp(36px, 5vw, 64px); }
+#bodies .bo-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 1.8vw, 24px); }
+#bodies .bo-item { display: flex; flex-direction: column; gap: 14px; }
+#bodies .bo-name { color: var(--color-2); font-size: clamp(24px, 2.2vw, 31px); }
+#bodies .bo-frame { aspect-ratio: 2 / 3; overflow: hidden; border-radius: var(--radius-2); clip-path: inset(0%); }
+#bodies .bo-frame img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  #bodies .bo-head { grid-template-columns: minmax(0, 1fr); }
+  #bodies .bo-list { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
+  #bodies .bo-text { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+#studio { display: grid; gap: clamp(36px, 5vw, 64px); padding: clamp(80px, 10vw, 140px) 0; overflow: clip; border-top: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); }
+#studio .st-text { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 24px clamp(32px, 5vw, 80px); padding-inline: var(--space-2); }
+#studio .st-copy { display: grid; gap: 22px; align-content: start; }
+#studio .st-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; border-top: 1px solid color-mix(in srgb, var(--color-2) 40%, transparent); }
+#studio .st-facts li { padding: 12px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 40%, transparent); }
+#studio .st-facts .m-text-5 { display: block; }
+#studio .st-lanes { display: grid; gap: 14px; padding-inline: var(--space-2); }
+#studio .st-lane { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 14px; }
+#studio .st-lane--b { grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); }
+#studio .st-lane figure { height: clamp(220px, 30vw, 430px); overflow: hidden; border-radius: var(--radius-2); }
+#studio .st-lane img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  #studio .st-text { grid-template-columns: minmax(0, 1fr); }
+  #studio .st-lane figure { height: 200px; }
+  #studio .st-facts { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:timetable">
+@layer sections {
+#timetable { overflow-x: clip; padding: clamp(80px, 10vw, 140px) var(--space-2); border-top: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); }
+#timetable .tt-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); margin-bottom: clamp(32px, 4.5vw, 56px); }
+#timetable .tt-head-copy { display: grid; gap: 20px; justify-items: start; }
+#timetable .tt-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; }
+#timetable .tt-day { display: grid; align-content: start; gap: 8px; }
+#timetable .tt-day > h3 { padding-bottom: 10px; border-bottom: 1.2px solid var(--color-2); color: var(--color-2); }
+#timetable .tt-list { display: grid; gap: 8px; }
+#timetable .tt-slot { display: grid; gap: 2px; padding: 10px 12px 12px; }
+#timetable .tt-class { font-size: 17px; color: var(--color-3); }
+#timetable .tt-slot.m-surface-2 .tt-class { color: var(--color-1); }
+@media (max-width: 980px) {
+  #timetable .tt-head { grid-template-columns: minmax(0, 1fr); }
+  #timetable .tt-week { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  #timetable .tt-day { grid-template-columns: 64px minmax(0, 1fr); align-items: start; }
+  #timetable .tt-day > h3 { padding: 10px 0 0; border: 0; }
+  #timetable .tt-list { grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); }
+  #timetable .tt-slot { padding: 8px 10px 10px; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { padding: clamp(80px, 10vw, 140px) var(--space-2) clamp(96px, 12vw, 170px); }
+#prices .pr-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); margin-bottom: clamp(36px, 5vw, 64px); }
+#prices .pr-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(8px, 1.1vw, 14px); }
+#prices .pr-plan { display: flex; flex-direction: column; gap: 16px; min-height: clamp(360px, 34vw, 440px); padding: clamp(20px, 2.4vw, 32px); }
+#prices .pr-plan .m-text-4 { color: var(--color-2); }
+#prices .pr-price { font-size: clamp(40px, 3.8vw, 56px); }
+#prices .pr-unit { color: var(--color-3); }
+#prices .pr-plan .m-btn, #prices .pr-plan .m-btn-2 { margin-top: auto; align-self: flex-start; }
+#prices .pr-plan.m-surface-2 .m-text-4, #prices .pr-plan.m-surface-2 .pr-price, #prices .pr-plan.m-surface-2 .pr-unit { color: var(--color-1); }
+#prices .pr-plan.m-surface-2 :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 860px) {
+  #prices .pr-head { grid-template-columns: minmax(0, 1fr); }
+  #prices .pr-list { grid-template-columns: minmax(0, 1fr); }
+  #prices .pr-plan { min-height: 0; }
+  #prices .pr-plan .m-btn, #prices .pr-plan .m-btn-2 { margin-top: 12px; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px clamp(40px, 6vw, 110px); padding: clamp(80px, 10vw, 140px) var(--space-2) clamp(80px, 10vw, 140px); border-top: 1px solid color-mix(in srgb, var(--color-2) 32%, transparent); }
+#contact .co-info { display: grid; gap: 28px; align-content: start; }
+#contact .co-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; }
+#contact .co-details dt { color: var(--color-3); margin-bottom: 4px; }
+#contact .co-details dd { color: var(--color-4); }
+#contact .co-details .m-link { font-size: 17px; }
+#contact .co-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; align-content: start; }
+#contact .co-wide { grid-column: 1 / -1; }
+#contact .co-form .m-btn { justify-self: start; }
+#contact .co-status { grid-column: 1 / -1; color: var(--color-3); }
+@media (max-width: 760px) {
+  #contact { grid-template-columns: minmax(0, 1fr); }
+  #contact .co-details, #contact .co-form { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { display: grid; gap: clamp(40px, 6vw, 72px); margin: var(--space-1); padding: clamp(40px, 6vw, 80px) var(--space-2) 26px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); }
+#footer .fo-top { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: 32px; }
+#footer .fo-brand { display: grid; gap: 14px; align-content: start; }
+#footer .fo-mark { color: var(--color-1); }
+#footer .fo-mark sup { font-size: .4em; vertical-align: top; }
+#footer .fo-col { display: grid; gap: 8px; align-content: start; }
+#footer .fo-col h2 { margin-bottom: 6px; }
+#footer .m-link { color: var(--color-1); justify-self: start; }
+#footer .fo-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+#footer :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 860px) {
+  #footer .fo-top { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #footer .fo-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 420px) {
+  #footer .fo-top { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .o-second { border-radius: var(--radius-1) var(--radius-1) 0 0; }
+@media (max-width: 700px) {
+  #opening .o-second { padding-top: calc(62px + 40px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .o-second__text > * { animation: o-card .8s cubic-bezier(.2, .75, .15, 1) backwards; }
+  #opening .o-second__text > :nth-child(2) { animation-delay: .1s; }
+  #opening .o-second__text > :nth-child(3) { animation-delay: .2s; }
+  #opening .o-second__photo { animation: rw-lengthen 1.2s cubic-bezier(.65, 0, .35, 1) .15s backwards; }
+}
+@keyframes rw-lengthen { from { clip-path: inset(46% 0% 46% 0%); } to { clip-path: inset(0%); } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body class="m-text">
+
+<header data-8b-section="navigation" id="nav">
+<div class="nav__inner">
+<div class="nav__bar">
+<a aria-label="{{name}}, back to the top" class="nav__mark m-text-4" href="#opening">{{t1|⟦name⟧}}<sup>®</sup></a>
+<nav aria-label="Main" class="nav__links">
+<a class="m-link" href="#classes">{{t2|Classes}}</a>
+<a class="m-link" href="#teachers">{{t3|Teachers}}</a>
+<a class="m-link" href="#timetable">{{t4|Timetable}}</a>
+<a class="m-link" href="#prices">{{t5|Prices}}</a>
+<a class="m-link" href="#contact">{{t6|Contact}}</a>
+</nav>
+<a class="m-btn nav__book" href="#contact"><span class="m-btn__label">{{t7|Book a class}}</span></a>
+<button aria-controls="nav-sheet" aria-expanded="false" class="m-btn nav__menu" type="button"><span class="m-btn__label">{{t8|Menu}}</span></button>
+</div>
+</div>
+<div class="nav__sheet" data-lenis-prevent="" hidden="" id="nav-sheet">
+<div class="nav__sheet-top">
+<span class="nav__mark m-text-4">{{t1|⟦name⟧}}<sup>®</sup></span>
+<button aria-label="Close the menu" class="m-icon nav__close" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5.6 4.2 12 10.6l6.4-6.4 1.4 1.4-6.4 6.4 6.4 6.4-1.4 1.4-6.4-6.4-6.4 6.4-1.4-1.4 6.4-6.4-6.4-6.4z"></path></svg></button>
+</div>
+<nav aria-label="Main, on small screens" class="nav__sheet-links">
+<a class="m-text-8" href="#classes">{{t2|Classes}}</a>
+<a class="m-text-8" href="#teachers">{{t3|Teachers}}</a>
+<a class="m-text-8" href="#timetable">{{t4|Timetable}}</a>
+<a class="m-text-8" href="#prices">{{t5|Prices}}</a>
+<a class="m-text-8" href="#contact">{{t6|Contact}}</a>
+</nav>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t7|Book a class}}</span></a>
+</div>
+</header>
+<main class="sheet">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="o-second">
+<div class="o-second__text">
+<h1 class="o-second__title m-text-3" id="opening-title">{{t9|Every class opens with the ⟦name⟧.}}</h1>
+<p class="o-second__lead m-text-6">{{t10|A hundred beats of the arms, in for five and out for five. By the last count your ribs, belly and back know where the work is, and the next fifty minutes go exactly there.}}</p>
+<div class="o-second__act">
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t11|Book your first class}}</span></a>
+<p class="m-text-7">{{t12|First class ₦7,500 · One-to-one intro ₦22,500}}</p>
+</div>
+</div>
+<figure class="o-second__photo"><img alt="A woman in a long side reach on a reformer, one arm lifted towards the ceiling, in a sunlit studio" height="5320" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1747239202356-764770773c9a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGlsYXRlcyUyMHJlZm9ybWVyfGVufDF8MXx8fDE3OTE1Njc3NjZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60}}" style="background:#c0a68c" width="3761"/></figure>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_classes}}<section aria-labelledby="classes-title" data-8b-section="classes" id="classes">
+<header class="cl-head">
+<h2 class="m-text-3" id="classes-title">{{t13|Four ways onto the apparatus}}</h2>
+<p class="m-text">{{t14|Most people start on the Reformer and add the others as their body asks for them. Every class is booked by the place, and every place comes with a teacher's eyes on you.}}</p>
+</header>
+<div class="cl-wrap">
+<div aria-hidden="true" class="cl-carriage"></div>
+<ol class="cl-rails">
+<li class="cl-rail m-surface is-on">
+<h3 class="cl-name m-text-8">{{t15|Reformer}}</h3>
+<div class="cl-text">
+<p class="m-text">{{t16|A sliding carriage on springs, with straps for hands and feet. The springs resist both ways, so every movement is worked on the way out and again on the way back.}}</p>
+<p class="cl-meta m-text-7">{{t17|50 minutes · All levels · Up to 8 people}}</p>
+</div>
+<figure class="cl-photo"><img alt="A woman in a side stretch on a wooden reformer, one arm reaching over her head" height="4672" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1717500251741-cdbc93342d5a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cGlsYXRlcyUyMHJlZm9ybWVyJTIwY2xhc3N8ZW58MXwwfHx8MTc5MTU2Nzc2OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#d9d9d9" width="7008"/></figure>
+</li>
+<li class="cl-rail m-surface">
+<h3 class="cl-name m-text-8">{{t18|Tower}}</h3>
+<div class="cl-text">
+<p class="m-text">{{t19|A frame of springs and bars fixed to the wall. Slower, heavier work for hips and shoulders, and the class we send stiff backs to first.}}</p>
+<p class="cl-meta m-text-7">{{t20|50 minutes · Level 2 · Up to 4 people}}</p>
+</div>
+<figure class="cl-photo"><img alt="A woman lying on a tower bed with both feet in sprung straps, legs lifted" height="7008" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1717500251718-42ace0648aca?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHBpbGF0ZXMlMjByZWZvcm1lcnxlbnwxfDF8fHwxNzkxNTY3NzY2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#f3f3f3" width="4672"/></figure>
+</li>
+<li class="cl-rail m-surface">
+<h3 class="cl-name m-text-8">{{t21|Mat}}</h3>
+<div class="cl-text">
+<p class="m-text">{{t22|No machine, just your own weight and a mat. The original repertoire, taught slowly, and the one you can take home with you.}}</p>
+<p class="cl-meta m-text-7">{{t23|45 minutes · All levels · Up to 12 people}}</p>
+</div>
+<figure class="cl-photo"><img alt="Three women on mats lifting one leg each from a shoulder bridge" height="5547" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1763403921315-f2ef8697199f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGlsYXRlcyUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxNTY3Nzk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60}}" style="background:#f3f3f3" width="4160"/></figure>
+</li>
+<li class="cl-rail m-surface">
+<h3 class="cl-name m-text-8">{{t24|Ring}}</h3>
+<div class="cl-text">
+<p class="m-text">{{t25|A flexible ring held between the hands or the knees. Short, focused classes for inner thighs, chest and arms, good after a long day at a desk.}}</p>
+<p class="cl-meta m-text-7">{{t26|30 minutes · All levels · Up to 10 people}}</p>
+</div>
+<figure class="cl-photo"><img alt="Hands pressing a black Pilates ring while seated on a reformer" height="8192" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1715780463401-b9ef0567943e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGlsYXRlcyUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxNTY3Nzk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#f3f3f3" width="5464"/></figure>
+</li>
+</ol>
+</div>
+</section>{{/sec_classes}}
+
+{{#sec_method}}<section aria-labelledby="method-title" data-8b-section="method" id="method">
+<h2 class="me-title m-text-3" data-8b-motion="rise" id="method-title">{{t27|Six rules we teach by}}</h2>
+<p class="me-rules m-text-9" data-8b-motion="rise"><strong class="m-text-5">{{t28|Breath}}</strong> {{t29|leads every movement, never the other way round.}} <strong class="m-text-5">{{t30|Centre}}</strong> {{t31|is where it starts: the band from ribs to hips that holds you up.}} <strong class="m-text-5">{{t32|Control}}</strong> {{t33|beats speed, so nothing swings and nothing is thrown.}} <strong class="m-text-5">{{t34|Precision}}</strong> {{t35|beats repetition: five careful reps over twenty loose ones.}} <strong class="m-text-5">{{t36|Concentration}}</strong> {{t37|keeps your mind on the muscle doing the work.}} <strong class="m-text-5">{{t38|Flow}}</strong> {{t39|joins it all, so the class moves like one long exercise.}}</p>
+</section>{{/sec_method}}
+
+{{#sec_fifty}}<section aria-labelledby="fifty-title" data-8b-section="fifty" id="fifty">
+<div class="fi-stage">
+<header class="fi-head">
+<h2 class="m-text-3" id="fifty-title">{{t40|Fifty minutes, in order}}</h2>
+<p class="m-text">{{t41|Every class follows the same arc, so your body learns its shape and your attention can stay on the work instead of on what comes next.}}</p>
+</header>
+<div aria-hidden="true" class="fi-rail">
+<ol class="fi-rail__ticks m-text-7"><li>{{t42|0}}</li><li>{{t43|10}}</li><li>{{t44|20}}</li><li>{{t45|30}}</li><li>{{t46|40}}</li><li>{{t47|50 min}}</li></ol>
+<span class="fi-rail__line"></span><span class="fi-rail__fill"></span><span class="fi-rail__dot"></span>
+</div>
+<ol class="fi-track">
+<li class="fi-block fi-block--text m-surface" data-from="0" data-to="5">
+<svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><path d="M16 3.5v25M5.2 9.75l21.6 12.5M5.2 22.25l21.6-12.5"></path></svg>
+<div class="fi-copy">
+<p class="fi-time m-text-7">{{t48|Minutes 0 to 5}}</p>
+<h3 class="m-text-4">{{t49|The ⟦name⟧}}</h3>
+<p class="m-text">{{t50|Arm beats on the breath, in for five and out for five, to warm the trunk and find the centre before anything moves.}}</p>
+</div>
+</li>
+<li class="fi-block m-surface" data-from="5" data-to="12">
+<figure><img alt="A woman lying on a reformer with both legs raised straight up in the straps" height="5320" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1747239069226-55382c570116?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGlsYXRlcyUyMHJlZm9ybWVyfGVufDF8MXx8fDE3OTE1Njc3NjZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#735940" width="3761"/></figure>
+<p class="fi-time m-text-7">{{t51|Minutes 5 to 12}}</p>
+<h3 class="m-text-4">{{t52|Feet and legs}}</h3>
+<p class="m-text">{{t53|Feet on the bar, then in the straps: legs warmed and lined up before they carry any load.}}</p>
+</li>
+<li class="fi-block m-surface" data-from="12" data-to="22">
+<figure><img alt="A woman kneeling on a reformer carriage pulling a strap back past her hip" height="5320" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1747237602396-20cb5331ee7b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGlsYXRlcyUyMHJlZm9ybWVyfGVufDF8MXx8fDE3OTE1Njc3NjZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#8c7359" width="3761"/></figure>
+<p class="fi-time m-text-7">{{t54|Minutes 12 to 22}}</p>
+<h3 class="m-text-4">{{t55|Arms in straps}}</h3>
+<p class="m-text">{{t56|Kneeling and seated work that opens the chest and gives the shoulders a job they rarely get.}}</p>
+</li>
+<li class="fi-block m-surface" data-from="22" data-to="32">
+<figure><img alt="A woman holding a long plank between the reformer frame and the carriage" height="4375" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1747240549807-fc3962949818?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGlsYXRlcyUyMHJlZm9ybWVyJTIwY2xhc3N8ZW58MXwwfHx8MTc5MTU2Nzc2OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=510&q=60}}" style="background:#a68c73" width="6188"/></figure>
+<p class="fi-time m-text-7">{{t57|Minutes 22 to 32}}</p>
+<h3 class="m-text-4">{{t30|Centre}}</h3>
+<p class="m-text">{{t58|Planks, curls and the long stretch: the heaviest ten minutes, taken slowly and counted out loud.}}</p>
+</li>
+<li class="fi-block m-surface" data-from="32" data-to="42">
+<figure><img alt="A woman in a side plank on the reformer reaching her top arm to the ceiling" height="4375" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1747240031720-dced770be260?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGlsYXRlcyUyMHJlZm9ybWVyJTIwY2xhc3N8ZW58MXwwfHx8MTc5MTU2Nzc2OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=510&q=60}}" style="background:#a68c73" width="6188"/></figure>
+<p class="fi-time m-text-7">{{t59|Minutes 32 to 42}}</p>
+<h3 class="m-text-4">{{t60|Length}}</h3>
+<p class="m-text">{{t61|Side work and long reaches that lengthen everything the centre block just shortened.}}</p>
+</li>
+<li class="fi-block fi-block--text m-surface" data-from="42" data-to="50">
+<svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><circle cx="16" cy="16" r="12"></circle><circle cx="16" cy="11.5" fill="currentColor" r="4.6" stroke="none"></circle></svg>
+<div class="fi-copy">
+<p class="fi-time m-text-7">{{t62|Minutes 42 to 50}}</p>
+<h3 class="m-text-4">{{t63|Release}}</h3>
+<p class="m-text">{{t64|The spine rolled down one bone at a time, breath back to normal, nothing rushed on the way out of the door.}}</p>
+</div>
+</li>
+</ol>
+</div>
+</section>{{/sec_fifty}}
+
+{{#sec_teachers}}<section aria-labelledby="teachers-title" data-8b-section="teachers" id="teachers">
+<header class="te-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="teachers-title">{{t65|Teachers who watch}}</h2>
+<p class="m-text" data-8b-motion="rise">{{t66|Four teachers, each trained for 450 hours on every piece of apparatus. They teach small rooms on purpose: correcting you is the job.}}</p>
+</header>
+<ul class="te-list">
+<li class="te-card m-surface" data-8b-motion="glide">
+<div class="te-top"><h3 class="m-text-4">{{t67|Isla Kerr}}</h3><svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><circle cx="16" cy="9.8" r="5.6"></circle><circle cx="16" cy="22.2" r="5.6"></circle><circle cx="9.8" cy="16" r="5.6"></circle><circle cx="22.2" cy="16" r="5.6"></circle></svg></div>
+<figure class="te-photo"><img alt="Portrait of Isla Kerr, arms folded, in a black sports top" height="6720" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1581423880338-b9e4f9718df6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Zml0bmVzcyUyMGluc3RydWN0b3IlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNTY3ODQ1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#0c4059" width="4480"/></figure>
+<p class="te-role m-text-7">{{t68|Founder · Tower and back care}}</p>
+<p class="m-text">{{t69|Eleven years as a physiotherapist before she bought her first reformer. Teaches the Tuesday back class.}}</p>
+</li>
+<li class="te-card m-surface" data-8b-motion="glide">
+<div class="te-top"><h3 class="m-text-4">{{t70|Callum Reid}}</h3><svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><path d="M16 3.5v25M5.2 9.75l21.6 12.5M5.2 22.25l21.6-12.5"></path></svg></div>
+<figure class="te-photo"><img alt="Portrait of Callum Reid, bearded, in a white vest" height="5820" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1652550616981-e4dcabc0b489?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGZpdG5lc3MlMjBpbnN0cnVjdG9yJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTU2Nzg0NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#c0c0c0" width="3885"/></figure>
+<p class="te-role m-text-7">{{t71|Reformer · Early classes}}</p>
+<p class="m-text">{{t72|Rebuilt his own knee on a reformer after rugby. Runs the seven o'clock classes and the runners' block.}}</p>
+</li>
+<li class="te-card m-surface" data-8b-motion="glide">
+<div class="te-top"><h3 class="m-text-4">{{t73|Marisol Ortega}}</h3><svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><circle cx="16" cy="16" r="12"></circle><circle cx="16" cy="11.5" fill="currentColor" r="4.6" stroke="none"></circle></svg></div>
+<figure class="te-photo"><img alt="Portrait of Marisol Ortega, smiling, in glasses and a black sports top" height="6000" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1685811984028-4e545c757abc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fGZpdG5lc3MlMjBpbnN0cnVjdG9yJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTU2Nzg0NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#d9d9d9" width="4000"/></figure>
+<p class="te-role m-text-7">{{t74|Mat · Pregnancy and after}}</p>
+<p class="m-text">{{t75|Trained in pre- and postnatal Pilates in Madrid. Teaches Mat and the mothers' mornings.}}</p>
+</li>
+<li class="te-card m-surface" data-8b-motion="glide">
+<div class="te-top"><h3 class="m-text-4">{{t76|Tom Baird}}</h3><svg aria-hidden="true" class="m-glyph" viewbox="0 0 32 32"><path d="M16 16V4.5a5.75 5.75 0 0 1 0 11.5zM16 16h11.5a5.75 5.75 0 0 1-11.5 0zM16 16v11.5a5.75 5.75 0 0 1 0-11.5zM16 16H4.5a5.75 5.75 0 0 1 11.5 0z" fill="currentColor" stroke="none"></path></svg></div>
+<figure class="te-photo"><img alt="Portrait of Tom Baird, hands on hips, in a black T-shirt" height="4560" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1595886509089-b691b210fc5c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Zml0bmVzcyUyMGluc3RydWN0b3IlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxNTY3ODQ1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#73c0a6" width="3648"/></figure>
+<p class="te-role m-text-7">{{t77|Ring · Strength}}</p>
+<p class="m-text">{{t78|A strength coach who came for his hamstrings and stayed to teach. Leads Ring and the Sunday release.}}</p>
+</li>
+</ul>
+</section>{{/sec_teachers}}
+
+{{#sec_bodies}}<section aria-labelledby="bodies-title" data-8b-section="bodies" id="bodies">
+<header class="bo-head">
+<h2 class="m-text-3" id="bodies-title">{{t79|Who walks in on a Monday}}</h2>
+<p class="m-text">{{t80|There is no Pilates body. There are runners, new mothers, people who sit all day and people who would like to keep getting up off the floor.}}</p>
+</header>
+<ul class="bo-list">
+<li class="bo-item">
+<h3 class="bo-name m-text-4">{{t81|Runners}}</h3>
+<figure class="bo-frame"><img alt="A runner stretching on a red running track" height="6000" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1788709443347-f961ffc0670b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fHJ1bm5lciUyMHN0cmV0Y2hpbmd8ZW58MXwxfHx8MTc5MTU2Nzg1OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#a64040" width="4000"/></figure>
+<p class="bo-text m-text">{{t82|Hips that open, ankles that stop rolling and a stride that lasts past the tenth mile.}}</p>
+</li>
+<li class="bo-item">
+<h3 class="bo-name m-text-4">{{t83|Pregnancy and after}}</h3>
+<figure class="bo-frame"><img alt="A pregnant woman standing tall in profile, one hand under her bump" height="6240" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1710897872898-3bc4353682ce?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJlZ25hbnQlMjB3b21hbiUyMGV4ZXJjaXNlfGVufDF8MXx8fDE3OTE1Njc4NzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#d9d9d9" width="4160"/></figure>
+<p class="bo-text m-text">{{t84|Breath, pelvic floor and a safe way back to strength, with a teacher trained for both.}}</p>
+</li>
+<li class="bo-item">
+<h3 class="bo-name m-text-4">{{t85|Desk backs}}</h3>
+<figure class="bo-frame"><img alt="A woman on all fours on a mat by a window, stretching her back" height="6000" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1787089574694-42a0de36f9c3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2VuaW9yJTIwd29tYW4lMjBzdHJldGNoaW5nfGVufDF8MXx8fDE3OTE1Njc4NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#404040" width="4000"/></figure>
+<p class="bo-text m-text">{{t86|Eight hours in a chair undone on a carriage: a spine that moves again and shoulders that drop.}}</p>
+</li>
+<li class="bo-item">
+<h3 class="bo-name m-text-4">{{t87|Sixty and over}}</h3>
+<figure class="bo-frame"><img alt="A woman with white hair rolling her shoulders, eyes closed" height="6960" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1790868939305-33a355941002?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c2VuaW9yJTIwd29tYW4lMjBzdHJldGNoaW5nfGVufDF8MXx8fDE3OTE1Njc4NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#8c7373" width="4640"/></figure>
+<p class="bo-text m-text">{{t88|Balance, bone strength and getting up off the floor without having to think about it.}}</p>
+</li>
+</ul>
+</section>{{/sec_bodies}}
+
+{{#sec_studio}}<section aria-labelledby="studio-title" data-8b-section="studio" id="studio">
+<div class="st-text">
+<h2 class="m-text-3" id="studio-title">{{t89|One room on Admiralty Way}}</h2>
+<div class="st-copy">
+<p class="m-text">{{t90|Tall windows onto the Shore, eight reformers in two rows, two towers on the back wall and a changing room with showers that stay hot.}}</p>
+<ul class="st-facts">
+<li class="m-text"><span class="m-text-5">{{t91|Eight reformers}}</span> {{t92|Two rows, one teacher}}</li>
+<li class="m-text"><span class="m-text-5">{{t93|Two towers}}</span> {{t94|For the small classes}}</li>
+<li class="m-text"><span class="m-text-5">{{t95|Showers and lockers}}</span> {{t96|Towels included}}</li>
+<li class="m-text"><span class="m-text-5">{{t97|Buggy space}}</span> {{t98|Right by the door}}</li>
+</ul>
+</div>
+</div>
+<div class="st-lanes">
+<div class="st-lane st-lane--a">
+<figure><img alt="The studio floor with wooden towers and reformers under a white ceiling" height="4672" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1717500252709-05a73fc4f1da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGlsYXRlcyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxNTY3NzY5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#d9d9d9" width="7008"/></figure>
+<figure><img alt="Two wooden towers with springs and bars by a plant" height="7008" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1717500252297-b09508db7ceb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGlsYXRlcyUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxNTY3Nzk0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#d9d9d9" width="4672"/></figure>
+</div>
+<div class="st-lane st-lane--b">
+<figure><img alt="The padded headrest and shoulder blocks of a reformer by a curtained window" height="4032" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1756367201409-8a05f0d9aed4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHBpbGF0ZXMlMjByZWZvcm1lcnxlbnwxfDF8fHwxNzkxNTY3NzY2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#a6a6a6" width="3024"/></figure>
+<figure><img alt="A woman on her back on a tower bed, feet in the sprung loops" height="4672" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1717500252573-d31d4bf5ddf1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGlsYXRlcyUyMHJlZm9ybWVyJTIwY2xhc3N8ZW58MXwwfHx8MTc5MTU2Nzc2OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60}}" style="background:#c0c0c0" width="7008"/></figure>
+</div>
+</div>
+</section>{{/sec_studio}}
+
+{{#sec_timetable}}<section aria-labelledby="timetable-title" data-8b-section="timetable" id="timetable">
+<header class="tt-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="timetable-title">{{t99|This week on the floor}}</h2>
+<div class="tt-head-copy" data-8b-motion="rise">
+<p class="m-text">{{t100|Filled slots are Reformer classes. Book up to two weeks ahead; cancel up to twelve hours before and the place goes back on your pass.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t101|Book a place}}</span></a>
+</div>
+</header>
+<div class="tt-week">
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t102|Mon}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t103|07:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t105|12:15}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t106|Marisol}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t107|18:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t109|19:15}}</time><span class="tt-class m-text-4">{{t18|Tower}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t110|Tue}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t103|07:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t111|10:00}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t112|Mothers · Marisol}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t113|18:30}}</time><span class="tt-class m-text-4">{{t18|Tower}}</span><span class="m-text-7">{{t114|Backs · Isla}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t115|19:30}}</time><span class="tt-class m-text-4">{{t24|Ring}}</span><span class="m-text-7">{{t116|Tom}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t117|Wed}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t103|07:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t105|12:15}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t107|18:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t118|Runners · Callum}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t109|19:15}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t106|Marisol}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t119|Thu}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t103|07:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t116|Tom}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t111|10:00}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t120|Sixty plus · Isla}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t107|18:00}}</time><span class="tt-class m-text-4">{{t18|Tower}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t109|19:15}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t121|Fri}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t103|07:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t105|12:15}}</time><span class="tt-class m-text-4">{{t24|Ring}}</span><span class="m-text-7">{{t116|Tom}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t122|17:30}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t123|Sat}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t124|08:30}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t116|Tom}}</span></li>
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t111|10:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t108|Isla}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t125|11:30}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t106|Marisol}}</span></li>
+</ul>
+</div>
+<div class="tt-day" data-8b-motion="glide">
+<h3 class="m-text-4">{{t126|Sun}}</h3>
+<ul class="tt-list">
+<li class="tt-slot m-surface-2"><time class="m-text-7">{{t111|10:00}}</time><span class="tt-class m-text-4">{{t15|Reformer}}</span><span class="m-text-7">{{t104|Callum}}</span></li>
+<li class="tt-slot m-surface"><time class="m-text-7">{{t125|11:30}}</time><span class="tt-class m-text-4">{{t21|Mat}}</span><span class="m-text-7">{{t127|Release · Tom}}</span></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_timetable}}
+
+{{#sec_prices}}<section aria-labelledby="prices-title" data-8b-section="prices" id="prices">
+<header class="pr-head">
+<h2 class="m-text-3" id="prices-title">{{t128|Three ways to pay}}</h2>
+<p class="m-text">{{t129|No joining fee and no contract to sign. Grip socks are lent free, and a one-to-one intro with any teacher costs ₦22,500.}}</p>
+</header>
+<ul class="pr-list">
+<li class="pr-plan m-surface">
+<h3 class="m-text-4">{{t130|First class}}</h3>
+<p class="pr-price m-text-8">{{t131|₦7,500}}</p>
+<p class="pr-unit m-text-7">{{t132|One Reformer class}}</p>
+<p class="m-text">{{t133|A full fifty minutes in a normal class, with a few minutes before it for your teacher to ask about your body.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t134|Book a first class}}</span></a>
+</li>
+<li class="pr-plan m-surface-2">
+<h3 class="m-text-4">{{t135|Ten classes}}</h3>
+<p class="pr-price m-text-8">{{t136|₦90,000}}</p>
+<p class="pr-unit m-text-7">{{t137|₦9,000 a class · four months to use them}}</p>
+<p class="m-text">{{t138|Any class, any teacher, any time on the timetable. Most people come twice a week and finish a pass in five.}}</p>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t139|Buy ten classes}}</span></a>
+</li>
+<li class="pr-plan m-surface">
+<h3 class="m-text-4">{{t140|Unlimited}}</h3>
+<p class="pr-price m-text-8">{{t141|₦82,500}}</p>
+<p class="pr-unit m-text-7">{{t142|A month · a month's notice to stop}}</p>
+<p class="m-text">{{t143|Every class on the timetable, plus a twenty-minute check-in with a teacher each month to plan what your body needs next.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t144|Go unlimited}}</span></a>
+</li>
+</ul>
+</section>{{/sec_prices}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="co-info">
+<h2 class="m-text-3" data-8b-motion="rise" id="contact-title">{{t145|Come in for a first class}}</h2>
+<p class="m-text-6" data-8b-motion="rise">{{t146|Tell us a little about your body and we will suggest a class and a teacher. Or just ring: the front desk picks up between classes.}}</p>
+<dl class="co-details" data-8b-motion="rise">
+<div><dt class="m-text-7">{{t147|Studio}}</dt><dd class="m-text">{{t148|1 Admiralty Way}}<br/>{{t149|Leith, Enugu}}</dd></div>
+<div><dt class="m-text-7">{{t150|Hours}}</dt><dd class="m-text">{{t151|Mon–Fri 06:45–20:30}}<br/>{{t152|Sat–Sun 08:15–12:45}}</dd></div>
+<div><dt class="m-text-7">{{t153|Phone}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t154|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-7">{{t155|Email}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t156|hello@hundred.example}}</a></dd></div>
+</dl>
+</div>
+
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Pilates Studio by <a href="https://github.com/8bsite/pilates-studio-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer aria-labelledby="footer-title" data-8b-section="footer" id="footer">
+<div class="fo-top">
+<div class="fo-brand">
+<h2 class="fo-mark m-text-8" id="footer-title">{{t1|⟦name⟧}}<sup>®</sup></h2>
+<p class="m-text">{{t157|Reformer Pilates on Admiralty Way, Leith. Small classes, slow work and teachers who came from physiotherapy.}}</p>
+</div>
+<div class="fo-col">
+<h3 class="m-text-7">{{t158|Visit}}</h3>
+<p class="m-text">{{t148|1 Admiralty Way}}<br/>{{t149|Leith, Enugu}}</p>
+</div>
+<div class="fo-col">
+<h3 class="m-text-7">{{t159|Talk to us}}</h3>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t154|⟦phone⟧}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t156|hello@hundred.example}}</a>
+<a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/">{{t160|Instagram}}</a>
+</div>
+<nav aria-label="Footer" class="fo-col">
+<h3 class="m-text-7">{{t161|On this page}}</h3>
+<a class="m-link" href="#classes">{{t2|Classes}}</a>
+<a class="m-link" href="#timetable">{{t4|Timetable}}</a>
+<a class="m-link" href="#prices">{{t5|Prices}}</a>
+<a class="m-link" href="#contact">{{t6|Contact}}</a>
+</nav>
+</div>
+<div class="fo-base">
+<p class="m-text-7">{{t162|© 2026 ⟦name⟧ Pilates Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t163|8B}}</a></p>
+<a class="m-link" href="#opening">{{t164|Back to the top}}</a>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.querySelector('[data-8b-section="navigation"] .nav__inner');
+  const lenis = window.lenis = new Lenis({ lerp: .085, anchors: { offset: -Math.round(nav ? nav.offsetHeight * .5 : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const header = document.getElementById('nav');
+  const sheet = header.querySelector('.nav__sheet');
+  const open = header.querySelector('.nav__menu');
+  const close = header.querySelector('.nav__close');
+  let lastY = scrollY;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    if (y < 120) { header.classList.remove('is-hidden'); lastY = y; return; }
+    if (y - lastY > 12) { header.classList.add('is-hidden'); lastY = y; }
+    else if (lastY - y > 12) { header.classList.remove('is-hidden'); lastY = y; }
+  }, { passive: true });
+  header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
+  const setOpen = state => {
+    sheet.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  sheet.addEventListener('click', event => { if (event.target.closest('a')) { sheet.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !sheet.hidden) setOpen(false); });
+})();
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}, lag = 0) {
+    return gsap.timeline(vars).fromTo(element, { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .9, ease: 'power3.out' }, lag);
+  },
+  glide(element, vars = {}, lag = 0) {
+    return gsap.timeline(vars).fromTo(element, { x: 70, autoAlpha: 0 }, { x: 0, autoAlpha: 1, duration: 1.1, ease: 'expo.out' }, lag);
+  },
+  lengthen(element, vars = {}, lag = 0) {
+    return gsap.timeline(vars).fromTo(element, { clipPath: 'inset(46% 0% 46% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'power3.inOut' }, lag);
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const bound = [...section.querySelectorAll('[data-8b-motion]')];
+  const names = [...new Set(bound.flatMap(element => element.getAttribute('data-8b-motion').split(/\s+/)))].filter(name => effects[name]);
+  names.forEach(name => {
+    const elements = bound.filter(element => element.getAttribute('data-8b-motion').split(/\s+/).includes(name));
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const previous = elements[index - 1];
+        const lag = previous && Math.abs(previous.offsetTop - element.offsetTop) < 4 && previous.parentElement === element.parentElement ? (index % 7) * .07 : 0;
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true, animation: effects[name](element, { paused: true }, lag) });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .co-form');
+  const status = form.querySelector('.co-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:classes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('classes');
+    const wrap = section.querySelector('.cl-wrap');
+    const carriage = wrap.querySelector('.cl-carriage');
+    const rails = [...wrap.querySelectorAll('.cl-rail')];
+    section.classList.add('is-carried');
+    let stops = [], sizes = [], active = -1;
+    const measure = () => {
+      stops = rails.map(rail => rail.offsetTop);
+      sizes = rails.map(rail => rail.offsetHeight);
+      carriage.style.height = sizes[0] + 'px';
+    };
+    const setY = gsap.quickSetter(carriage, 'y', 'px');
+    const smooth = t => t * t * (3 - 2 * t);
+    const place = self => {
+      if (!stops.length) measure();
+      const centre = self.progress * wrap.offsetHeight;
+      let y = stops[0], index = 0;
+      for (let i = 0; i < stops.length - 1; i++) {
+        const boundary = (stops[i] + sizes[i] + stops[i + 1]) / 2;
+        const zone = (stops[i + 1] - stops[i]) * .13;
+        if (centre <= boundary - zone) break;
+        if (centre >= boundary + zone) { y = stops[i + 1]; index = i + 1; continue; }
+        const t = smooth((centre - boundary + zone) / (2 * zone));
+        y = stops[i] + (stops[i + 1] - stops[i]) * t;
+        index = t < .5 ? i : i + 1;
+        break;
+      }
+      setY(y);
+      if (index !== active) { rails.forEach((rail, i) => rail.classList.toggle('is-on', i === index)); active = index; }
+    };
+    measure();
+    ScrollTrigger.create({ id: 'classes', trigger: wrap, start: 'top center', end: 'bottom center', onUpdate: place, onRefresh: self => { measure(); place(self); } });
+    return () => {
+      section.classList.remove('is-carried');
+      rails.forEach((rail, i) => rail.classList.toggle('is-on', i === 0));
+      carriage.style.removeProperty('height');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:fifty">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fifty');
+    const stage = section.querySelector('.fi-stage');
+    const track = section.querySelector('.fi-track');
+    const blocks = [...track.querySelectorAll(':scope > .fi-block')];
+    const rail = section.querySelector('.fi-rail');
+    const dot = rail.querySelector('.fi-rail__dot');
+    const fill = rail.querySelector('.fi-rail__fill');
+    const ranges = blocks.map(block => [Number(block.dataset.from), Number(block.dataset.to)]);
+    const total = Math.max(...ranges.map(range => range[1]));
+    section.classList.add('is-tracking');
+    const distance = () => Math.max(0, track.scrollWidth - stage.clientWidth);
+    let now = -1;
+    const mark = progress => {
+      const minute = progress * total;
+      let index = ranges.findIndex(([from, to]) => minute >= from && minute < to);
+      if (index < 0) index = ranges.length - 1;
+      if (index !== now) { blocks.forEach((block, i) => block.classList.toggle('is-now', i === index)); now = index; }
+    };
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'fifty', trigger: stage, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: .6, invalidateOnRefresh: true,
+      onUpdate: self => mark(self.progress)
+    } });
+    timeline
+      .fromTo(track, { x: 0 }, { x: () => -distance() }, 0)
+      .fromTo(dot, { x: 0 }, { x: () => rail.offsetWidth }, 0)
+      .fromTo(fill, { scaleX: 0 }, { scaleX: 1 }, 0);
+    mark(0);
+    return () => { section.classList.remove('is-tracking'); blocks.forEach(block => block.classList.remove('is-now')); };
+  });
+});
+</script>
+<script data-8b-part="scene:bodies">
+queueMotion(() => {
+  const section = document.getElementById('bodies');
+  const list = section.querySelector('.bo-list');
+  const items = [...list.querySelectorAll(':scope > .bo-item')];
+  const grow = (timeline, item, at) => {
+    const frame = item.querySelector('.bo-frame');
+    const name = item.querySelector('.bo-name');
+    const text = item.querySelector('.bo-text');
+    const shift = () => frame.offsetHeight * .3;
+    timeline
+      .fromTo(frame, { clipPath: 'inset(30% 0% 30% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .58, ease: 'power2.inOut' }, at)
+      .fromTo(name, { y: () => shift() }, { y: 0, duration: .58, ease: 'power2.inOut' }, at)
+      .fromTo(text, { y: () => -shift() }, { y: 0, duration: .58, ease: 'power2.inOut' }, at);
+  };
+  const mm = gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference) and (min-width: 761px)', () => {
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'bodies', trigger: list, start: 'top 88%', end: 'bottom 72%', scrub: .6, invalidateOnRefresh: true
+    } });
+    items.forEach((item, index) => grow(timeline, item, index * .14));
+  });
+  mm.add('(prefers-reduced-motion: no-preference) and (max-width: 760px)', () => {
+    items.forEach((item, index) => grow(gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: `bodies:${index}`, trigger: item, start: 'top 95%', end: `top ${index % 2 ? 38 : 48}%`, scrub: .6, invalidateOnRefresh: true
+    } }), item, 0));
+  });
+});
+</script>
+<script data-8b-part="scene:studio">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('studio');
+    const lanes = section.querySelector('.st-lanes');
+    const a = lanes.querySelector('.st-lane--a');
+    const b = lanes.querySelector('.st-lane--b');
+    gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: {
+      id: 'studio', trigger: lanes, start: 'top bottom', end: 'center 55%', scrub: .8
+    } })
+      .fromTo(a, { xPercent: 24 }, { xPercent: 0 }, 0)
+      .fromTo(b, { xPercent: -24 }, { xPercent: 0 }, 0);
+  });
+});
+</script>
+<script data-8b-part="scene:prices">
+queueMotion(() => {
+  const section = document.getElementById('prices');
+  const list = section.querySelector('.pr-list');
+  const plans = [...list.querySelectorAll(':scope > .pr-plan')];
+  const pattern = [.55, .15, 1];
+  const build = axis => () => {
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: {
+      id: 'prices', trigger: list, start: 'top bottom', end: 'top 30%', scrub: .6, invalidateOnRefresh: true
+    } });
+    plans.forEach((plan, index) => {
+      const offset = () => axis === 'y' ? pattern[index % 3] * Math.min(240, innerHeight * .3) : (index % 2 ? 1 : -1) * pattern[index % 3] * innerWidth * .14;
+      timeline.fromTo(plan, { [axis]: offset }, { [axis]: 0, duration: 1 }, 0);
+    });
+  };
+  const mm = gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference) and (min-width: 861px)', build('y'));
+  mm.add('(prefers-reduced-motion: no-preference) and (max-width: 860px)', build('x'));
+});
+</script>
+</body>
+</html>

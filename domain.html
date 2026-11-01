@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search your domain – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<main class="wrap grid g2"><div><div class="card"><h1>Search Your Domain</h1><p class="mut">Enter your business name to see options.</p>
+<input id="q" placeholder="business name"><button class="btn block" id="s">Search</button></div><div id="res" style="margin-top:18px" class="grid"></div></div>
+<aside class="card"><h2>Your Site</h2><div class="pill" id="cat"></div><p class="mut">Selected domain</p><b id="sel" style="color:var(--g)">None yet</b>
+<div class="row"><span>Domain + hosting</span><b>₦26,999/year</b></div><p class="mut">✔ Custom domain ✔ SSL ✔ Hosting</p>
+<div class="row"><b>Total today</b><span class="tot">₦26,999</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></aside></main>
+<script src="app.js"></script><script>
+const o=S.get('order',{});$('#cat').textContent=o.category||'Choose a template first';
+async function check(n){let L=[];try{const r=await fetch(CFG.API+'/domain?name='+n);if(r.ok)L=await r.json()}catch{}
+ return L.length?L:[n+'.com',n+'.net'].map(d=>({d,ok:true}))}
+$('#s').onclick=async()=>{const n=$('#q').value.toLowerCase().replace(/[^a-z0-9]/g,'');if(!n)return;
+ const L=await check(n);$('#res').innerHTML=`<b>Available domains for "${n}"</b>`+L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?'Available':'Taken'} · ₦26,999/year</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')};
+$('#res').onclick=e=>{const d=e.target.dataset.d;if(!d)return;o.domain=d;S.set('order',o);$('#sel').textContent=d};
+$('#c').onclick=()=>{if(!o.domain)return alert('Select a domain first');location.href='checkout.html'};
+if(o.domain)$('#sel').textContent=o.domain;
+</script></body></html>

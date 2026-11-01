@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<title>{{name}}</title>
+
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="{{origin}}/tpl-business-casual.css" rel="stylesheet"/>
+<style>body{background-color:#3b2412}</style><style>:root{--hero-img:url("{{photo0}}")}</style></head>
+<body>
+<header>
+<h1 class="site-heading text-center text-faded d-none d-lg-block">
+<span class="site-heading-upper text-primary mb-3">{{tagline}}</span>
+<span class="site-heading-lower">{{name}}</span>
+</h1>
+</header>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+<div class="container">
+<a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">{{name}}</a>
+<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mx-auto"><li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#top">Home</a></li><li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#services">Services</a></li><li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="#contact">Contact</a></li></ul>
+</div>
+</div>
+</nav>
+<section class="page-section clearfix" id="top">
+<div class="container">
+<div class="intro">
+<img alt="..." class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{photo0}}"/>
+<div class="intro-text left-0 text-center bg-faded p-5 rounded">
+<h2 class="section-heading mb-4">
+<span class="section-heading-upper">Welcome to</span>
+<span class="section-heading-lower">{{name}}</span>
+</h2>
+<p class="mb-3">{{about}}</p>
+<div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#contact">Contact us</a></div>
+</div>
+</div>
+</div>
+</section>
+<section class="page-section cta" id="services">
+<div class="container">
+<div class="row">
+<div class="col-xl-9 mx-auto">
+<div class="cta-inner bg-faded text-center rounded">
+<h2 class="section-heading mb-4">
+<span class="section-heading-upper">What We</span>
+<span class="section-heading-lower">Offer</span>
+</h2>
+<ul class="list-unstyled mb-0 fs-5">{{#services}}<li class="mb-2">{{.}}</li>{{/services}}</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section class="page-section" id="gallery"><div class="container"><div class="row g-3"><div class="col-md-4"><img alt="" class="img-fluid rounded" src="{{photo1}}"/></div><div class="col-md-4"><img alt="" class="img-fluid rounded" src="{{photo2}}"/></div><div class="col-md-4"><img alt="" class="img-fluid rounded" src="{{photo3}}"/></div></div></div></section><section class="page-section cta" id="contact"><div class="container"><div class="row"><div class="col-xl-9 mx-auto"><div class="cta-inner bg-faded text-center rounded"><h2 class="section-heading mb-4"><span class="section-heading-upper">Find</span><span class="section-heading-lower">Us</span></h2><div class="row justify-content-center text-center"><div class="col-lg-6"><p class="fs-5 mb-1">{{phone}}</p><p class="mb-1">{{address}}</p><p>{{hours}}</p><div class="d-flex justify-content-center gap-3 my-3">{{{qrh}}}</div>{{#wa}}<a class="btn btn-primary btn-xl my-2" href="{{waurl}}">Message us</a>{{/wa}}<div>{{#ig}}<a class="btn btn-sm btn-outline-dark m-1" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="btn btn-sm btn-outline-dark m-1" href="{{fb}}">Facebook</a>{{/fb}}</div></div></div></div></div></div></div></section>
+<footer class="footer text-faded text-center py-5"><div class="container"><p class="m-0 small">© {{year}} {{name}} · Template: <a href="https://startbootstrap.com/theme/business-casual">Business Casual</a> by Start Bootstrap (MIT) · Built with UseAlphaBiz</p></div></footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script>/*!
+* Start Bootstrap - Business Casual v7.0.9 (https://startbootstrap.com/theme/business-casual)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
+*/
+// Highlights current date on contact page
+window.addEventListener('DOMContentLoaded', event => {
+    const listHoursArray = document.body.querySelectorAll('.list-hours li');
+    listHoursArray[new Date().getDay()].classList.add(('today'));
+})
+</script>
+{{{qrs}}}</body>
+</html>

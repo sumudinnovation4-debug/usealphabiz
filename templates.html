@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Templates – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<main class="wrap"><h1>Choose Your Template</h1><p class="mut">Pick your business type, then a design. You can change the design later. New templates are added regularly.</p>
+<div class="grid g3" id="cats" style="margin:22px 0"></div>
+<section id="vs" style="display:none"><div class="row" style="border:0"><h2 id="vt"></h2><div id="f"></div></div><div class="grid" id="vg" style="grid-template-columns:repeat(auto-fill,230px);justify-content:center"></div></section></main>
+<script src="app.js"></script><script src="engine.js"></script><script>
+let cur=0,flt='All';
+$('#cats').innerHTML=CATS.map(([e,n],i)=>`<div class="card tpl" data-i="${i}"><div class="e">${e}</div><b>${n}</b></div>`).join('');
+$('#cats').onclick=e=>{const c=e.target.closest('.tpl');if(c)show(+c.dataset.i)};
+$('#f').innerHTML=['All','Classic','Modern','Bold'].map(t=>`<button class="btn sm ${t=='All'?'':'out'}" data-t="${t}">${t}</button>`).join(' ');
+$('#f').onclick=e=>{if(!e.target.dataset.t)return;flt=e.target.dataset.t;[...$('#f').children].forEach(b=>b.classList.toggle('out',b.dataset.t!=flt));draw()};
+function show(i){cur=i;$('#vs').style.display='block';$('#vt').textContent=CATS[i][1]+' templates';draw();$('#vs').scrollIntoView({behavior:'smooth'})}
+function draw(){const g=$('#vg');g.innerHTML='';const list=tplsFor(cur).map(t=>t.id);
+for(const v of list){if(flt!='All'&&tagOf(v)!=flt)continue;const T=isNaN(v)?TPLS.find(t=>t.id===v):null,c=document.createElement('div');c.className='card';c.style.padding='10px';
+c.innerHTML=`<div class="pv"><iframe loading="lazy" tabindex="-1"></iframe></div><b>${nameOf(v)}</b> <span class="mut">${tagOf(v)}</span>${T?`<br><small class="mut">Free template by <a href="${T.url}" style="color:var(--g)">${T.by}</a></small>`:''}<button class="btn sm block" style="margin-top:8px">Use This Template</button>`;
+const o={p:1,origin:location.origin},go=async()=>{if(T)o.tpl=await loadTpl(v);c.querySelector('iframe').srcdoc=render(defaultData(cur),v,o)};go();
+c.querySelector('button').onclick=()=>{S.set('draft',{cat:cur,variant:v,data:defaultData(cur)});location.href='editor.html'};g.appendChild(c)}}
+const k=new URLSearchParams(location.search).get('cat');if(k!==null&&CATS[k])show(+k);
+</script></body></html>

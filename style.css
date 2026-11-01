@@ -1,0 +1,27 @@
+:root{--g:#3f8f5a;--gd:#2f6f45;--gl:#e6f1e8;--ink:#1f2a2e;--mut:#5d6b66;--bg:#f6f7f5;--bd:#dfe4df}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:inherit;text-decoration:none}h1,h2,h3{line-height:1.15;margin:0 0 .4em;letter-spacing:-.02em}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5vw;background:#fff;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:5}
+.logo{font-weight:700;font-size:1.1rem}.nav nav{display:flex;gap:22px;color:var(--mut);font-size:.95rem}
+.btn{display:inline-block;border:0;border-radius:999px;background:var(--g);color:#fff;padding:12px 22px;font:600 .95rem Inter,sans-serif;cursor:pointer;text-align:center}
+.btn:hover{background:var(--gd)}.btn.sm{padding:8px 14px;font-size:.85rem}.btn.dark{background:#555f63}
+.btn.out{background:#fff;color:var(--gd);border:1.5px solid var(--g)}.btn.block{display:block;width:100%}
+.wrap{max-width:1050px;margin:0 auto;padding:32px 5vw}.card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:22px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:1.3fr 1fr}.g3{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.pill{display:inline-block;background:var(--gl);color:var(--gd);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:600}
+.pill.draft{background:#f6e6c8;color:#8a5a00}.mut{color:var(--mut)}.big{font-size:clamp(2rem,6vw,3.4rem);font-weight:800}
+input{width:100%;padding:13px 14px;border:1px solid var(--bd);border-radius:10px;font:1rem Inter,sans-serif;background:#f4f6f4;margin:6px 0 14px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
+.tpl{text-align:center;cursor:pointer;transition:.15s}.tpl:hover{border-color:var(--g)}.tpl .e{font-size:2.2rem}
+.tot{font-size:2rem;font-weight:800;color:var(--g)}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px 4px;border-bottom:1px solid var(--bd)}
+.modal{position:fixed;inset:0;background:#0007;display:none;align-items:center;justify-content:center;z-index:9}.modal.on{display:flex}.modal .card{text-align:center}
+.foot{text-align:center;padding:18px;color:var(--gd);background:var(--gl);margin-top:30px;font-size:.9rem}
+@media(max-width:760px){.nav nav{display:none}.g2{grid-template-columns:1fr}}
+select{width:100%;padding:13px 14px;border:1px solid var(--bd);border-radius:10px;font:1rem Inter,sans-serif;background:#f4f6f4;margin:6px 0 14px}label{font-weight:600;font-size:.9rem}
+.ed{grid-template-columns:1fr 1.4fr;align-items:start}.pg{display:grid;grid-template-columns:repeat(auto-fill,90px);gap:8px;margin:8px 0}.pg div{position:relative}.pg img{width:90px;height:90px;object-fit:cover;border-radius:8px}
+.pg button{position:absolute;top:3px;right:3px;border:0;border-radius:50%;width:24px;height:24px;cursor:pointer}.x{border:0;background:none;cursor:pointer}
+.pv{height:128px;overflow:hidden;border-radius:8px;margin-bottom:8px;background:#eee}.pv iframe{width:1000px;height:600px;border:0;transform:scale(.21);transform-origin:0 0;pointer-events:none}
+@media(max-width:760px){.ed{grid-template-columns:1fr}.sticky{position:static!important}}
+.ft{background:#1f2a2e;color:#cfd8d3;padding:48px 5vw 24px;margin-top:48px}.ft .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;max-width:1100px;margin:0 auto}.ft a{display:block;color:#cfd8d3;margin:7px 0;font-size:.92rem}.ft a:hover{color:#fff}.ft h4{color:#fff;margin:0 0 8px}.ft p{margin:6px 0;font-size:.92rem}.ft .bot{max-width:1100px;margin:28px auto 0;border-top:1px solid #3a474b;padding-top:16px;font-size:.85rem}
+@media(max-width:760px){.ft .cols{grid-template-columns:1fr 1fr}}
+textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;font:1rem Inter,sans-serif;background:#f4f6f4;margin:6px 0 10px}.ac{border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:8px 0}.ac summary{cursor:pointer}.ac input:not([type=checkbox]):not([type=file]){margin:6px 0 10px}.im{display:flex;gap:10px;align-items:center;margin:6px 0}.im img{width:90px;height:60px;object-fit:cover;border-radius:6px;background:#eee}.im input{margin:0!important}

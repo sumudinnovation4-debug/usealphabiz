@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6TDYsmgQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #131313;
+  --color-3: #e5dcd2;
+  --color-4: #ff5714;
+  --color-5: #f4f0a1;
+  --color-6: #57524c;
+  --font-1: "Funnel Display", "Funnel Display Fallback", "Arial", sans-serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", "Arial", sans-serif;
+  --radius-1: 18px;
+  --radius-2: 999px;
+  --space-1: clamp(16px, 3.2vw, 40px);
+  --space-2: 16px;
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* font fallbacks */
+@font-face { font-family: "Funnel Display Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 106.2%; ascent-override: 94.2%; descent-override: 23.5%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104%; ascent-override: 98.1%; descent-override: 30.8%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 98.9%; ascent-override: 103.2%; descent-override: 32.4%; line-gap-override: 0%; }
+/* end font fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-2);
+  font-size: 16px;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+h1, h2, h3, h4, p, ol, ul, figure, blockquote, dl, dd { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--color-1); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(38px, 4.4vw, 64px); font-weight: 400; line-height: 1.04; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(24px, 2.3vw, 32px); font-weight: 400; line-height: 1.06; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 13.5px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(36px, 5.2vw, 76px); font-weight: 400; line-height: 1.0; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-btn, .m-btn-2, .m-btn-3 {
+  --m-btn-ring: var(--color-2);
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  border-radius: var(--radius-2); border: 1.5px solid var(--color-2);
+  font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1; white-space: nowrap; cursor: pointer;
+}
+.m-btn { height: 52px; padding: 0 24px 0 26px; background: var(--color-2); color: var(--color-1); }
+.m-btn svg, .m-btn-2 svg, .m-btn-3 svg { flex: none; }
+.m-btn::before, .m-btn::after, .m-btn-2::before, .m-btn-2::after, .m-btn-3::before, .m-btn-3::after {
+  content: ""; position: absolute; border: 1.5px solid var(--m-btn-ring); border-radius: inherit; pointer-events: none;
+  opacity: 0; scale: .96; transition: opacity .25s, scale .35s cubic-bezier(.2,.7,.2,1);
+}
+.m-btn::before, .m-btn-2::before, .m-btn-3::before { inset: -6px; }
+.m-btn::after, .m-btn-2::after, .m-btn-3::after { inset: -12px; }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before, .m-btn-3:hover::before { opacity: .55; scale: 1; }
+  .m-btn:hover::after, .m-btn-2:hover::after, .m-btn-3:hover::after { opacity: .22; scale: 1; transition-delay: .06s; }
+}
+.m-btn-2 { height: 52px; padding: 0 6px 0 22px; gap: 14px; background: var(--color-3); color: var(--color-2); }
+.m-btn-2__icon { width: 38px; height: 38px; border-radius: 50%; background: var(--color-2); color: var(--color-1); display: grid; place-items: center; }
+.m-btn-3 { height: 44px; padding: 0 22px; background: var(--color-5); color: var(--color-2); font-size: 14px; }
+.on-dark .m-btn-3 { --m-btn-ring: var(--color-1); }
+.m-link { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat; padding-bottom: 2px; transition: background-size .35s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 1.5px; } }
+.m-icon-btn { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--color-2); background: var(--color-5); color: var(--color-2); display: grid; place-items: center; cursor: pointer; }
+.m-icon-btn svg { transition: rotate .4s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) { .m-icon-btn:hover svg { rotate: 45deg; } }
+
+.m-surface { background: var(--color-1); color: var(--color-2); border: 1.5px solid var(--color-2); border-radius: var(--radius-1); }
+.m-surface-2 { background: var(--color-3); color: var(--color-2); border: 1.5px solid var(--color-2); border-radius: var(--radius-1); }
+.m-badge { display: inline-flex; align-items: center; height: 24px; padding: 0 10px; border-radius: var(--radius-2); border: 1.5px solid var(--color-2); background: var(--color-5); color: var(--color-2); font-family: var(--font-2); font-size: 12px; font-weight: 600; line-height: 1; white-space: nowrap; }
+.m-badge-2 { display: inline-flex; align-items: center; height: 24px; padding: 0 10px; border-radius: var(--radius-2); border: 1.5px solid currentColor; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1; white-space: nowrap; }
+.m-diamond { display: inline-block; flex: none; width: var(--m-diamond-size, 18px); aspect-ratio: 1; background: var(--color-4); clip-path: polygon(50% 0, 63% 37%, 100% 50%, 63% 63%, 50% 100%, 37% 63%, 0 50%, 37% 37%); }
+.m-field { width: 100%; min-height: 50px; padding: 12px 18px; border: 1.5px solid var(--color-2); border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 15px; line-height: 1.4; }
+textarea.m-field { border-radius: var(--radius-1); resize: vertical; min-height: 110px; }
+.m-field__wrap { display: grid; gap: 8px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { width: min(100% - 2 * var(--space-1), 1440px); margin-inline: auto; }
+[data-8b-motion~="echo"] { position: relative; }
+[data-8b-motion~="echo"]::before, [data-8b-motion~="echo"]::after {
+  content: ""; position: absolute; inset: 0; border: 1.5px solid var(--color-2); border-radius: inherit; pointer-events: none;
+  opacity: calc(var(--echo, 0) * .6); translate: calc(var(--echo, 0) * -20px) calc(var(--echo, 0) * 20px);
+}
+[data-8b-motion~="echo"]::after { opacity: calc(var(--echo, 0) * .3); translate: calc(var(--echo, 0) * -40px) calc(var(--echo, 0) * 40px); }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+#site-nav { position: fixed; z-index: 20; top: 14px; left: 0; right: 0; pointer-events: none; transition: translate .45s cubic-bezier(.2,.7,.2,1); }
+#site-nav.is-hidden { translate: 0 calc(-100% - 24px); }
+#site-nav .nav__bar { pointer-events: auto; height: 62px; display: flex; align-items: center; gap: 24px; padding: 0 9px 0 20px; background: var(--color-1); border: 1.5px solid var(--color-2); border-radius: var(--radius-2); }
+#site-nav .nav__logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-1); font-size: 20px; font-weight: 500; letter-spacing: -0.02em; }
+#site-nav .nav__logo svg { width: 30px; height: 22px; }
+#site-nav .nav__links { flex: 1; display: flex; align-items: center; justify-content: center; gap: 28px; }
+#site-nav .nav__links::before, #site-nav .nav__links::after { content: ""; flex: 1 1 40px; max-width: 120px; height: 1.5px; background: var(--color-2); }
+#site-nav .nav__links ul { display: flex; gap: 28px; }
+#site-nav .nav__actions { display: flex; align-items: center; gap: 22px; }
+#site-nav .nav__menu-btn { display: none; height: 44px; padding: 0 18px; border-radius: var(--radius-2); border: 1.5px solid var(--color-2); background: var(--color-1); cursor: pointer; }
+#site-nav .nav__overlay { position: fixed; inset: 0; z-index: 30; pointer-events: auto; background: var(--color-2); color: var(--color-1); padding: 20px var(--space-1) 32px; display: flex; flex-direction: column; gap: 32px; overflow-y: auto; }
+#site-nav .nav__overlay[hidden] { display: none; }
+#site-nav .nav__overlay-top { display: flex; justify-content: space-between; align-items: center; }
+#site-nav .nav__overlay ul { display: grid; gap: 6px; }
+#site-nav .nav__overlay ul a { font-family: var(--font-1); font-size: 40px; line-height: 1.15; letter-spacing: -0.02em; }
+#site-nav .nav__close { height: 44px; padding: 0 18px; border-radius: var(--radius-2); border: 1.5px solid var(--color-1); background: transparent; cursor: pointer; }
+@media (max-width: 960px) {
+  #site-nav .nav__links, #site-nav .nav__login { display: none; }
+  #site-nav .nav__bar { justify-content: space-between; }
+  #site-nav .nav__menu-btn { display: inline-flex; align-items: center; }
+  #site-nav .nav__actions { gap: 8px; }
+}
+@media (max-width: 400px) {
+  #site-nav .nav__bar { gap: 8px; padding: 0 clamp(6px, 3.75vw - 6px, 9px) 0 clamp(12px, 10vw - 20px, 20px); }
+  #site-nav .nav__logo { gap: clamp(7px, 3.75vw - 5px, 10px); font-size: clamp(17px, 3.75vw + 5px, 20px); }
+  #site-nav .nav__logo svg { width: clamp(25px, 6.25vw + 5px, 30px); height: auto; aspect-ratio: 30 / 22; }
+  #site-nav .nav__actions { gap: clamp(5px, 3.75vw - 7px, 8px); }
+  #site-nav .nav__actions .m-btn-3 { padding: 0 clamp(13px, 11.25vw - 23px, 22px); }
+  #site-nav .nav__menu-btn { padding: 0 clamp(12px, 7.5vw - 12px, 18px); }
+}
+@media (max-width: 309px) { #site-nav .nav__actions .m-btn-3 { display: none; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; isolation: isolate; overflow: clip; }
+#opening .opening__screen--one {
+  position: relative; z-index: 2;
+  width: min(100% - 2 * var(--space-1), 1440px); margin-inline: auto;
+  min-height: 100svh; padding: 102px 0 34px;
+  display: grid; grid-template-columns: minmax(0, 2.06fr) minmax(0, 2.15fr); column-gap: clamp(32px, 4.4vw, 72px);
+}
+#opening .opening__bento { grid-column: 1; grid-row: 1; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); height: clamp(560px, calc(100svh - 136px), 760px); }
+#opening .bento__col { position: relative; min-height: 0; }
+#opening .bento__col--a { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: 66fr 38fr 40fr 12fr 98fr 25fr 64fr; }
+#opening .bento__col--a > * { grid-column: 1; }
+#opening .bento__col--b { display: flex; flex-direction: column; gap: 18px; padding-top: 26px; }
+#opening .bento__programs { grid-row: 1 / 3; padding: 18px 18px 0; display: grid; grid-template-columns: 1fr auto; align-content: start; gap: 8px 12px; }
+#opening .bento__programs .m-text-4 { grid-column: 1; max-width: 22ch; }
+#opening .bento__programs .m-icon-btn { grid-row: 1 / 3; grid-column: 2; }
+#opening .bento__cascade {
+  grid-row: 2 / 4; position: relative; border: 1.5px solid var(--color-2); border-radius: var(--radius-1);
+  background: radial-gradient(120% 90% at 50% 45%, var(--color-1), color-mix(in oklab, var(--color-2) 16%, var(--color-1)));
+  display: grid; place-items: center; overflow: hidden;
+}
+#opening .cascade { position: relative; width: 172px; height: 100px; }
+#opening .cascade__sq {
+  --sq: 68px; position: absolute; top: calc(50% - var(--sq) / 2 + var(--i) * 1.5px); left: calc(var(--i) * 15px);
+  width: var(--sq); height: var(--sq); border-radius: 3px; rotate: -32deg; z-index: calc(10 - var(--i));
+  background: color-mix(in oklab, var(--color-2) calc(100% - var(--i) * 16%), var(--color-1));
+}
+#opening .bento__class { grid-row: 5 / 7; padding: 18px 18px 0; display: flex; flex-direction: column; gap: 12px; }
+#opening .bento__class-top { display: flex; justify-content: space-between; align-items: start; gap: 10px; }
+#opening .bento__class-foot { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+#opening .bento__class-foot .m-text-4 { max-width: 20ch; }
+#opening .price { display: grid; justify-items: end; font-family: var(--font-1); font-size: 22px; line-height: 1.1; }
+#opening .price s { font-family: var(--font-2); font-size: 13px; color: var(--color-6); }
+#opening .bento__ticket { grid-row: 6 / 8; padding: 14px 18px 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; }
+#opening .ticket__dates { display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 1.5px solid var(--color-2); }
+#opening .ticket__body { display: flex; justify-content: space-between; align-items: end; gap: 10px; }
+#opening .ticket__time { font-family: var(--font-1); font-size: 34px; line-height: 1; letter-spacing: -0.02em; }
+#opening .ticket__time small { display: block; margin-top: 6px; font-family: var(--font-2); font-size: 12.5px; letter-spacing: 0; }
+#opening .barcode { width: 92px; height: 48px; color: var(--color-2); }
+#opening .bento__rating { white-space: nowrap; display: flex; align-items: center; justify-content: space-between; gap: 10px; height: 42px; padding: 0 16px 0 12px; border-radius: var(--radius-2); }
+#opening .bento__rating .diamonds { display: flex; gap: 2px; --m-diamond-size: 17px; }
+#opening .bento__team { flex: 107 1 0; min-height: 0; padding: 16px 18px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; }
+#opening .avatars { display: flex; }
+#opening .avatars img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-2); margin-left: -8px; background: var(--color-3); }
+#opening .avatars img:first-child { margin-left: 0; }
+#opening .bento__covers { flex: 180 1 0; min-height: 0; padding: 14px 18px 18px; display: flex; flex-direction: column; gap: 10px; }
+#opening .bento__covers-top { display: flex; justify-content: space-between; align-items: center; }
+#opening .dots { display: flex; gap: 3px; }
+#opening .dots i { width: 4px; height: 4px; border-radius: 50%; background: var(--color-2); }
+#opening .disc { position: relative; flex: 1 1 auto; min-height: 90px; display: grid; place-items: center; }
+#opening .disc img { height: 100%; max-height: 190px; width: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 1.5px solid var(--color-2); }
+#opening .bento__covers .m-text-3 { margin-top: auto; }
+
+#opening .opening__copy { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; padding-top: 22px; min-width: 0; }
+#opening .opening__copy h1 { max-width: 12.5em; }
+#opening .rings { display: inline-flex; vertical-align: -0.06em; margin-left: 0.12em; height: 0.72em; }
+#opening .rings i { width: 0.72em; height: 0.72em; border-radius: 50%; border: 0.045em solid var(--color-2); margin-left: -0.28em; display: grid; place-items: center; }
+#opening .rings i:first-child { margin-left: 0; background: var(--color-1); }
+#opening .rings i:nth-child(2) { background: var(--color-4); }
+#opening .rings i:nth-child(3) { background: var(--color-5); }
+#opening .rings i:nth-child(3)::after { content: ""; width: 0.3em; height: 0.3em; border: 0.04em solid var(--color-2); rotate: 45deg; }
+#opening .opening__lead { margin-top: 28px; max-width: 58ch; font-size: 15px; }
+#opening .cta-pair { margin-top: 30px; display: flex; align-items: center; }
+#opening .cta-pair__bridge { width: 30px; height: 52px; margin: 0 -9px; color: var(--color-2); flex: none; position: relative; z-index: 0; }
+#opening .cta-pair .m-btn { z-index: 1; }
+#opening .cta-pair .m-btn-2 { z-index: 1; }
+#opening .opening__facts { margin-top: auto; padding-top: 28px; display: grid; grid-template-columns: 1fr 1.08fr; }
+#opening .fact { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 12px; min-height: 166px; }
+#opening .fact + .fact { margin-left: -22px; position: relative; }
+#opening .fact__top { display: flex; align-items: center; gap: 14px; }
+#opening .fact__top::after { content: ""; flex: 1; height: 1.5px; background: var(--color-2); order: 1; }
+#opening .fact__top .m-badge-2 { order: 2; }
+#opening .fact .m-text-3 { font-size: clamp(30px, 2.8vw, 40px); }
+
+#opening .opening__screen--two { position: relative; z-index: 1; min-height: 100svh; padding: 56px var(--space-1) var(--space-1); display: flex; }
+#opening .opening__field, #opening .opening__echo { position: absolute; border-radius: calc(var(--radius-1) + 10px); }
+#opening .opening__field { inset: 56px var(--space-1) var(--space-1); background: var(--color-2); z-index: 1; }
+#opening .opening__echo {
+  --sx: min(10px, var(--space-1) / 4);
+  top: calc(56px - var(--i) * 10px); bottom: calc(var(--space-1) + var(--i) * 10px);
+  left: calc(var(--space-1) - var(--i) * var(--sx)); right: calc(var(--space-1) + var(--i) * var(--sx));
+  background: color-mix(in oklab, var(--color-2) calc(100% - var(--i) * 19%), var(--color-1)); z-index: 0;
+}
+#opening .opening__lesson {
+  position: relative; z-index: 2; flex: 1; color: var(--color-1);
+  border-radius: calc(var(--radius-1) + 10px); background: color-mix(in oklab, var(--color-2) calc(var(--ground, 1) * 100%), transparent);
+  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 32px clamp(32px, 5vw, 80px);
+  padding: clamp(28px, 4.6vw, 64px) clamp(22px, 5vw, 72px);
+}
+#opening .lesson__head { display: flex; flex-direction: column; gap: 22px; }
+#opening .lesson__head .m-text { max-width: 46ch; color: color-mix(in oklab, var(--color-1) 82%, var(--color-2)); }
+#opening .lesson-steps { grid-column: 1; align-self: end; display: grid; gap: 0; border-top: 1.5px solid color-mix(in oklab, var(--color-1) 35%, var(--color-2)); }
+#opening .lesson-steps li { display: grid; grid-template-columns: 44px minmax(0, 11ch) minmax(0, 1fr); gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1.5px solid color-mix(in oklab, var(--color-1) 35%, var(--color-2)); }
+#opening .lesson-steps .step-n { font-family: var(--font-1); font-size: 18px; color: var(--color-5); }
+#opening .lesson-steps h3 { font-family: var(--font-1); font-size: 24px; font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; }
+#opening .lesson-steps p { color: color-mix(in oklab, var(--color-1) 82%, var(--color-2)); }
+#opening .lesson__photo { grid-column: 2; grid-row: 1 / 3; position: relative; align-self: stretch; min-height: 320px; }
+#opening .lesson__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; border-radius: var(--radius-1); }
+#opening .lesson__photo::before, #opening .lesson__photo::after { content: ""; position: absolute; inset: 0; border: 1.5px solid color-mix(in oklab, var(--color-1) 50%, var(--color-2)); border-radius: var(--radius-1); }
+#opening .lesson__photo::before { translate: -12px -12px; }
+#opening .lesson__photo::after { translate: -24px -24px; opacity: .5; }
+#opening .lesson__actions { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+
+@media (max-width: 1023px) {
+  #opening .opening__screen--one { grid-template-columns: minmax(0, 1fr); padding-top: 96px; min-height: 0; }
+  #opening .opening__copy { display: contents; }
+  #opening .opening__copy h1 { order: 1; }
+  #opening .opening__lead { order: 2; }
+  #opening .cta-pair { order: 3; }
+  #opening .opening__bento { grid-column: 1; grid-row: auto; order: 4; margin-top: 36px; height: auto; }
+  #opening .opening__facts { order: 5; margin-top: 16px; padding-top: 0; }
+  #opening .bento__col--a { grid-template-rows: auto; display: flex; flex-direction: column; }
+  #opening .bento__programs { padding-bottom: 46px; }
+  #opening .bento__cascade { height: 150px; margin-top: -34px; }
+  #opening .bento__class { margin-top: 12px; padding-bottom: 40px; }
+  #opening .bento__ticket { margin-top: -24px; }
+  #opening .bento__col--b { padding-top: 22px; }
+  #opening .bento__team, #opening .bento__covers { flex: none; }
+  #opening .disc img { height: auto; width: min(100%, 170px); }
+  #opening .opening__lesson { grid-template-columns: minmax(0, 1fr); }
+  #opening .lesson__photo { grid-column: 1; grid-row: auto; aspect-ratio: 4 / 3; min-height: 0; }
+}
+@media (max-width: 640px) {
+  #opening .opening__lead { margin-top: 20px; }
+  #opening .cta-pair { margin-top: 24px; }
+  #opening .cta-pair .m-btn { padding: 0 18px; }
+  #opening .cta-pair .m-btn-2 { padding-left: 16px; gap: 10px; }
+  #opening .opening__bento { gap: 10px; margin-top: 30px; }
+  #opening .bento__programs, #opening .bento__class, #opening .bento__team, #opening .bento__covers, #opening .bento__ticket { padding-left: 14px; padding-right: 14px; }
+  #opening .bento__programs { grid-template-columns: 1fr; }
+  #opening .bento__programs .m-icon-btn { grid-row: auto; grid-column: 1; width: 40px; height: 40px; }
+  #opening .cascade { width: 128px; height: 80px; }
+  #opening .cascade__sq { --sq: 50px; left: calc(var(--i) * 11px); }
+  #opening .bento__class-top { flex-direction: column-reverse; }
+  #opening .bento__class-foot { flex-direction: column; }
+  #opening .price { justify-items: start; }
+  #opening .ticket__time { font-size: 28px; }
+  #opening .ticket__body { flex-direction: column; align-items: start; }
+  #opening .barcode { width: 100%; height: 34px; }
+  #opening .bento__rating { flex-direction: column; height: auto; padding: 10px 12px; border-radius: var(--radius-1); }
+  #opening .opening__facts { grid-template-columns: 1fr; }
+  #opening .fact { min-height: 0; }
+  #opening .fact + .fact { margin-left: 0; margin-top: -14px; }
+  #opening .opening__screen--two { padding-top: 46px; }
+  #opening .opening__field { top: 46px; }
+  #opening .opening__echo { top: calc(46px - var(--i) * 8px); bottom: calc(var(--space-1) + var(--i) * 8px); }
+  #opening .lesson-steps li { grid-template-columns: 30px minmax(0, 1fr); }
+  #opening .lesson-steps li p { grid-column: 2; }
+}
+@media (max-width: 350px) {
+  #opening .cta-pair .m-btn { padding: 0 12px 0 14px; gap: 8px; }
+  #opening .cta-pair .m-btn svg { width: 16px; }
+  #opening .cta-pair .m-btn-2 { padding-left: 13px; gap: 8px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .bento__col { animation: opening-drop .8s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .bento__col--b { animation-delay: .12s; }
+  #opening .opening__copy > * { animation: opening-slide .8s cubic-bezier(.2,.7,.2,1) backwards; }
+  #opening .opening__copy > :nth-child(2) { animation-delay: .08s; }
+  #opening .opening__copy > :nth-child(3) { animation-delay: .16s; }
+  #opening .opening__copy > :nth-child(4) { animation-delay: .24s; }
+  #opening .cascade__sq:not(.cascade__sq--lead) { animation: opening-fan 1.7s cubic-bezier(.45,0,.55,1) infinite alternate; }
+  #opening .rings i:nth-child(2) { animation: opening-roll 2.2s cubic-bezier(.45,0,.55,1) infinite alternate; }
+  #opening.loops-paused .cascade__sq, #opening.loops-paused .rings i { animation-play-state: paused; }
+}
+@keyframes opening-drop { from { translate: 0 26px; opacity: 0; } }
+@keyframes opening-slide { from { translate: 0 18px; } }
+@keyframes opening-fan { from { translate: calc(var(--i) * -6px) calc(var(--i) * 1px); } to { translate: calc(var(--i) * 7px) calc(var(--i) * -2px); } }
+@keyframes opening-roll { from { translate: -0.3em 0; } to { translate: 0.3em 0; } }
+}
+</style>
+<style data-8b-part="section:programs">
+@layer sections {
+#programs { position: relative; overflow-x: clip; }
+#programs .programs__stage { padding: clamp(72px, 9vw, 120px) 0 clamp(48px, 6vw, 80px); display: flex; flex-direction: column; justify-content: center; gap: clamp(32px, 4vw, 48px); }
+#programs .programs__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 24px 64px; align-items: end; }
+#programs .programs__head .m-text { max-width: 44ch; }
+#programs .deck { position: relative; display: flex; align-items: stretch; }
+#programs .program { position: relative; flex: 1 1 0; min-width: 0; padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 10px; transition: background-color .3s; }
+#programs .program + .program { margin-left: -18px; }
+#programs .program:not(:last-child) { padding-right: 32px; }
+#programs .program:not(:last-child) .program__link { right: 30px; }
+#programs .program:nth-child(even) { background: var(--color-3); }
+#programs .program__top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+#programs .program__photo { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 10px; background: var(--color-3); }
+#programs .program h3 { margin-top: 4px; }
+#programs .program .m-text-4 { max-width: 26ch; padding-right: 40px; }
+#programs .program__link { position: absolute; right: 12px; bottom: 14px; width: 40px; height: 40px; }
+@media (hover: hover) { #programs .program:has(.program__link:hover) { background: var(--color-5); } }
+@media (max-width: 1023px) {
+  #programs .programs__head { grid-template-columns: minmax(0, 1fr); }
+  #programs .deck { flex-direction: column; }
+  #programs .program { display: grid; grid-template-columns: 104px minmax(0, 1fr); grid-template-rows: auto auto 1fr; gap: 6px 16px; padding: 12px; }
+  #programs .program + .program { margin-left: 0; margin-top: -12px; }
+  #programs .program:not(:last-child) { padding-right: 12px; }
+  #programs .program:not(:last-child) .program__link { right: 12px; }
+  #programs .program__photo { grid-column: 1; grid-row: 1 / 4; height: 100%; min-height: 120px; aspect-ratio: auto; }
+  #programs .program__top, #programs .program h3, #programs .program .m-text-4 { grid-column: 2; }
+  #programs .program h3 { margin-top: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:programs-deal">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) {
+  #programs[data-deal] .programs__hold { height: 190svh; }
+  #programs[data-deal] .programs__stage { position: sticky; top: 0; min-height: 100svh; }
+}
+}
+</style>
+<style data-8b-part="section:mentors">
+@layer sections {
+#mentors { padding: clamp(72px, 9vw, 128px) 0; }
+#mentors .mentors__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 64px; align-items: end; margin-bottom: clamp(40px, 5vw, 64px); }
+#mentors .mentors__head .m-text { max-width: 46ch; }
+#mentors .mentors__row { display: flex; }
+#mentors .mentor { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+#mentors .mentor__photo { width: calc(100% + 36px); min-height: 0; aspect-ratio: 1; border-radius: 50%; position: relative; z-index: 0; }
+#mentors .mentor:last-child .mentor__photo { width: 100%; }
+#mentors .mentor__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 1.5px solid var(--color-2); background: var(--color-3); }
+#mentors .mentor__text { padding-right: 24px; display: grid; gap: 6px; }
+#mentors .mentor__text .m-text-6 { display: flex; align-items: center; gap: 8px; }
+#mentors .mentor__text .m-diamond { --m-diamond-size: 12px; }
+#mentors .mentor__text .m-text-4 { color: var(--color-6); }
+@media (max-width: 860px) {
+  #mentors .mentors__head { grid-template-columns: minmax(0, 1fr); }
+  #mentors .mentors__row { flex-direction: column; }
+  #mentors .mentor { flex-direction: row; align-items: center; gap: 18px; }
+  #mentors .mentor + .mentor { margin-top: -14px; }
+  #mentors .mentor__photo, #mentors .mentor:last-child .mentor__photo { width: 112px; flex: none; }
+  #mentors .mentor__text { padding: 0; }
+}
+}
+</style>
+<style data-8b-part="section:masterclasses">
+@layer sections {
+#masterclasses { position: relative; overflow-x: clip; padding-bottom: clamp(72px, 9vw, 120px); }
+#masterclasses .mc__stage { position: relative; padding: clamp(64px, 8vw, 104px) 0 clamp(40px, 5vw, 64px); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 4vw, 44px); }
+#masterclasses .mc__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 20px 64px; align-items: end; }
+#masterclasses .mc__head .m-text { max-width: 44ch; }
+#masterclasses .ticket { position: relative; }
+#masterclasses .ticket--featured { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) 200px; min-height: 380px; }
+#masterclasses .ticket__photo { position: relative; z-index: 3; margin: 14px; border-radius: 12px; overflow: hidden; background: var(--color-3); }
+#masterclasses .ticket__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+#masterclasses .ticket__main { padding: 26px 28px 24px 12px; display: flex; flex-direction: column; gap: 14px; }
+#masterclasses .ticket__main .m-text-4 { max-width: 40ch; }
+#masterclasses .ticket__host { display: flex; align-items: center; gap: 8px; }
+#masterclasses .ticket__dates { margin-top: auto; display: flex; align-items: center; gap: 14px; }
+#masterclasses .ticket__dates::after { content: ""; order: 1; flex: 1; height: 1.5px; background: var(--color-2); }
+#masterclasses .ticket__dates span:last-child { order: 2; }
+#masterclasses .ticket__dates span { background: var(--color-1); }
+#masterclasses .ticket--small .ticket__dates span { background: var(--color-3); }
+#masterclasses .ticket__time { font-family: var(--font-1); font-size: clamp(36px, 4vw, 54px); line-height: 1; letter-spacing: -0.02em; }
+#masterclasses .ticket__time small { display: block; margin-top: 8px; font-family: var(--font-2); font-size: 13.5px; letter-spacing: 0; }
+#masterclasses .ticket__stub { position: relative; border-left: 2px dashed var(--color-2); padding: 24px 22px; display: flex; flex-direction: column; align-items: start; gap: 14px; }
+#masterclasses .ticket__stub::before, #masterclasses .ticket__stub::after { content: ""; position: absolute; left: -13px; width: 24px; height: 24px; border-radius: 50%; background: var(--color-1); border: 1.5px solid var(--color-2); }
+#masterclasses .ticket__stub::before { top: -13px; clip-path: inset(50% 0 0 0); }
+#masterclasses .ticket__stub::after { bottom: -13px; clip-path: inset(0 0 50% 0); }
+#masterclasses .price { display: grid; font-family: var(--font-1); font-size: 40px; line-height: 1; letter-spacing: -0.02em; }
+#masterclasses .price s { margin-top: 4px; font-family: var(--font-2); font-size: 14px; letter-spacing: 0; color: var(--color-6); }
+#masterclasses .ticket__stub .barcode { width: 100%; height: 56px; margin-top: auto; }
+#masterclasses .mc__more { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+#masterclasses .ticket--small { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 6px 20px; padding: 14px 20px 18px 14px; transition: background-color .3s; }
+#masterclasses .ticket--small img { grid-row: 1 / 6; width: 132px; height: 100%; min-height: 150px; object-fit: cover; border-radius: 10px; }
+#masterclasses .ticket--small .ticket__dates { margin-top: 2px; }
+#masterclasses .ticket--small .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 6px; }
+#masterclasses .ticket--small .row b { font-family: var(--font-1); font-size: 26px; font-weight: 400; }
+@media (hover: hover) { #masterclasses .ticket--small:has(a:hover) { background: var(--color-5); } }
+#masterclasses .barcode { color: var(--color-2); }
+@media (max-width: 1023px) {
+  #masterclasses .mc__head { grid-template-columns: minmax(0, 1fr); }
+  #masterclasses .ticket--featured { grid-template-columns: minmax(0, 1fr); }
+  #masterclasses .ticket__photo { aspect-ratio: 4 / 3; }
+  #masterclasses .ticket__main { padding: 4px 20px 22px; }
+  #masterclasses .ticket__stub { border-left: 0; border-top: 2px dashed var(--color-2); flex-direction: row; flex-wrap: wrap; align-items: center; padding: 20px; }
+  #masterclasses .ticket__stub::before { top: -13px; left: -13px; clip-path: inset(0 0 0 50%); }
+  #masterclasses .ticket__stub::after { top: -13px; bottom: auto; left: auto; right: -13px; clip-path: inset(0 50% 0 0); }
+  #masterclasses .ticket__stub .barcode { width: 120px; height: 40px; margin: 0 0 0 auto; }
+  #masterclasses .mc__more { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+  #masterclasses .ticket--small { grid-template-columns: 92px minmax(0, 1fr); }
+  #masterclasses .ticket--small img { width: 92px; min-height: 0; }
+  #masterclasses .ticket__stub .m-btn { width: 100%; }
+  #masterclasses .ticket__stub .barcode { display: none; }
+}
+}
+</style>
+<style data-8b-part="scene-style:masterclass-zoom">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #masterclasses[data-zoom] .mc__hold { height: 185svh; }
+  #masterclasses[data-zoom] .mc__stage { position: sticky; top: 0; min-height: 100svh; }
+}
+}
+</style>
+<style data-8b-part="section:covers">
+@layer sections {
+#covers { padding: clamp(72px, 9vw, 128px) 0; }
+#covers .covers__grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 40px clamp(40px, 6vw, 96px); }
+#covers .covers__disc-col { position: relative; }
+#covers .covers__disc-wrap { position: sticky; top: max(12vh, 90px); padding: 20px 0 0 20px; }
+#covers .covers__disc-wrap::before { content: ""; position: absolute; left: 0; top: 0; width: calc(100% - 20px); aspect-ratio: 1; border-radius: 50%; background: var(--color-4); }
+#covers .covers__disc { position: relative; width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 1.5px solid var(--color-2); background: var(--color-3); }
+#covers .covers__layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; clip-path: circle(71% at 50% 50%); }
+#covers .covers__hole { position: absolute; left: 50%; top: 50%; width: 14%; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; background: var(--color-1); border: 1.5px solid var(--color-2); }
+#covers .covers__list-col { display: flex; flex-direction: column; gap: 22px; }
+#covers .covers__list-col > .m-text { max-width: 46ch; }
+#covers .tracks { margin-top: 18px; display: grid; gap: 12px; }
+#covers .track { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto auto; align-items: center; gap: 16px; padding: 10px 10px 10px 12px; border: 1.5px solid var(--color-2); border-radius: var(--radius-2); transition: background-color .35s, color .35s; }
+#covers .track img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1.5px solid currentColor; }
+#covers .track h3 { font-family: var(--font-1); font-size: 20px; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; }
+#covers .track p { color: inherit; }
+#covers .track__price { font-family: var(--font-1); font-size: 22px; }
+#covers .track.is-active { background: var(--color-2); color: var(--color-1); }
+#covers .track.is-active .m-btn-3 { --m-btn-ring: var(--color-1); }
+@media (max-width: 860px) {
+  #covers .covers__grid { grid-template-columns: minmax(0, 1fr); }
+  #covers .covers__disc-col { position: sticky; top: 0; z-index: 3; background: var(--color-1); padding: 12px 0; order: 2; display: flex; justify-content: center; }
+  #covers .covers__disc-wrap { position: relative; top: 0; width: 170px; padding: 10px 0 0 10px; }
+  #covers .covers__disc-wrap::before { width: calc(100% - 10px); }
+  #covers .covers__list-col { display: contents; }
+  #covers .covers__list-col > h2 { order: 0; }
+  #covers .covers__list-col > .m-text { order: 1; }
+  #covers .tracks { order: 3; margin-top: 0; }
+  #covers .track { grid-template-columns: 48px minmax(0, 1fr) auto; border-radius: 28px; }
+  #covers .track img { width: 48px; height: 48px; }
+  #covers .track__price { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:path">
+@layer sections {
+#path { overflow-x: clip; padding: clamp(72px, 9vw, 120px) 0 clamp(88px, 10vw, 140px); background: var(--color-3); border-block: 1.5px solid var(--color-2); }
+#path .path__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 20px 64px; align-items: end; margin-bottom: clamp(48px, 6vw, 72px); }
+#path .path__head .m-text { max-width: 44ch; }
+#path .stairs { position: relative; display: flex; flex-direction: column; gap: 14px; }
+#path .stair {
+  --fill: 0; position: relative; width: 40%; margin-left: calc(var(--k) * 20%); min-height: 132px;
+  padding: 20px 24px 22px 76px; border: 1.5px solid var(--color-2); border-radius: 30px;
+  background: color-mix(in oklab, var(--color-2) calc(var(--fill) * 100%), var(--color-1));
+  color: color-mix(in oklab, var(--color-1) calc(var(--fill) * 100%), var(--color-2));
+  display: grid; gap: 6px; align-content: start;
+}
+#path .stair:last-child { --fill: 1; }
+#path .stair__slot { position: absolute; left: 18px; top: 18px; width: 42px; height: 42px; border-radius: 50%; border: 1.5px solid currentColor; display: grid; place-items: center; }
+#path .path__marker { --m-diamond-size: 30px; position: relative; z-index: 2; }
+#path .stair__n { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; }
+#path .stair .m-text-4 { max-width: 40ch; }
+@media (max-width: 860px) {
+  #path .path__head { grid-template-columns: minmax(0, 1fr); }
+  #path .stair { width: 86%; margin-left: calc(var(--k) * 4.66%); padding: 18px 18px 20px 68px; border-radius: 24px; min-height: 0; }
+  #path .stair__slot { left: 14px; top: 16px; }
+}
+}
+</style>
+<style data-8b-part="section:stage">
+@layer sections {
+#stage { padding: clamp(80px, 10vw, 140px) 0 clamp(72px, 9vw, 120px); }
+#stage .stage__frame { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); }
+#stage .stage__photo { border-radius: var(--radius-1); margin-left: clamp(0px, 14vw, 220px); }
+#stage .stage__photo img { width: 100%; height: auto; aspect-ratio: 16 / 8; object-fit: cover; object-position: 50% 45%; border-radius: var(--radius-1); border: 1.5px solid var(--color-2); }
+#stage .stage__card { position: relative; z-index: 1; width: min(520px, 100%); margin-top: -180px; padding: 28px 28px 30px; display: grid; gap: 16px; }
+#stage .stage__date { display: flex; align-items: center; gap: 12px; padding-top: 14px; border-top: 1.5px solid var(--color-2); }
+#stage .stage__actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 4px; }
+@media (max-width: 760px) {
+  #stage .stage__photo { margin-left: 0; }
+  #stage .stage__photo img { aspect-ratio: 4 / 3; }
+  #stage .stage__card { margin: -56px 12px 0; width: auto; padding: 22px 20px 24px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:reviews-ink">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #reviews[data-ink] .ink-word { color: color-mix(in oklab, var(--color-2) calc(16% + var(--ink, 1) * 84%), var(--color-1)); }
+  #reviews[data-ink] .reviews__rating .m-diamond { background: color-mix(in oklab, var(--color-4) calc(var(--lit, 1) * 100%), var(--color-3)); }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { padding: clamp(72px, 9vw, 120px) 0; }
+#reviews .reviews__rating { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding-bottom: 22px; border-bottom: 1.5px solid var(--color-2); }
+#reviews .reviews__rating .diamonds { display: flex; gap: 4px; --m-diamond-size: 28px; }
+#reviews .reviews__rating .m-text-3 { margin-right: auto; }
+#reviews .reviews__quote { margin: clamp(40px, 5vw, 64px) 0; display: grid; gap: 24px; }
+#reviews .reviews__quote blockquote { font-size: clamp(28px, 3.9vw, 56px); line-height: 1.08; max-width: 22ch; }
+#reviews .reviews__quote figcaption { display: flex; align-items: center; gap: 12px; }
+#reviews .reviews__quote figcaption img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--color-2); }
+#reviews .reviews__cards { display: flex; }
+#reviews .review { flex: 1 1 0; min-width: 0; padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 14px; }
+#reviews .review + .review { margin-left: -18px; }
+#reviews .review:nth-child(2) { background: var(--color-3); }
+#reviews .review .diamonds { display: flex; gap: 2px; --m-diamond-size: 14px; }
+#reviews .review footer { margin-top: auto; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 860px) {
+  #reviews .reviews__cards { flex-direction: column; }
+  #reviews .review + .review { margin-left: 0; margin-top: -12px; }
+}
+}
+</style>
+<style data-8b-part="section:pricing">
+@layer sections {
+#pricing { padding: clamp(72px, 9vw, 120px) 0; overflow-x: clip; }
+#pricing .pricing__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 20px 64px; align-items: end; margin-bottom: clamp(40px, 5vw, 64px); }
+#pricing .pricing__head .m-text { max-width: 44ch; }
+#pricing .plans { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr); align-items: center; }
+#pricing .plan { position: relative; z-index: 1; align-self: stretch; padding: 24px 24px 26px; display: flex; flex-direction: column; gap: 16px; }
+#pricing .plan--term { z-index: 2; }
+#pricing .plan__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+#pricing .plan__price { font-family: var(--font-1); font-size: clamp(44px, 4.6vw, 64px); line-height: 1; letter-spacing: -0.03em; }
+#pricing .plan__price small { font-family: var(--font-2); font-size: 14px; letter-spacing: 0; }
+#pricing .plan ul { display: grid; gap: 10px; padding-top: 16px; border-top: 1.5px solid var(--color-2); }
+#pricing .plan li { display: flex; gap: 10px; align-items: baseline; }
+#pricing .plan li .m-diamond { --m-diamond-size: 11px; translate: 0 1px; }
+#pricing .plan .m-btn, #pricing .plan .m-btn-3 { margin-top: auto; align-self: start; }
+#pricing .plan-bridge { width: 72px; height: 92px; margin: 0 -14px; color: var(--color-2); z-index: 0; justify-self: center; }
+@media (max-width: 960px) {
+  #pricing .pricing__head { grid-template-columns: minmax(0, 1fr); }
+  #pricing .plans { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 44px auto 44px auto; }
+  #pricing .plan-bridge { margin: -14px 0; rotate: 90deg; width: 72px; height: 92px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: clamp(72px, 9vw, 120px) 0; }
+#faq .faq__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px clamp(40px, 6vw, 96px); align-items: start; }
+#faq .faq__intro { display: grid; gap: 20px; position: sticky; top: 110px; }
+#faq .faq__list { display: grid; gap: 12px; }
+#faq details { border: 1.5px solid var(--color-2); border-radius: 30px; background: var(--color-1); }
+#faq details:nth-child(even) { background: var(--color-3); }
+#faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px 18px 24px; font-family: var(--font-1); font-size: 21px; line-height: 1.2; letter-spacing: -0.01em; border-radius: 30px; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary .m-diamond { --m-diamond-size: 20px; transition: rotate .4s cubic-bezier(.2,.7,.2,1); }
+#faq details[open] summary .m-diamond { rotate: 45deg; }
+#faq details p { padding: 0 24px 22px; max-width: 60ch; }
+@media (max-width: 860px) {
+  #faq .faq__grid { grid-template-columns: minmax(0, 1fr); }
+  #faq .faq__intro { position: static; }
+  #faq summary { font-size: 19px; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding: clamp(40px, 6vw, 72px) 0 clamp(72px, 9vw, 112px); overflow-x: clip; }
+#contact .contact__card { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 40px clamp(32px, 5vw, 80px); padding: clamp(24px, 4vw, 56px); }
+#contact .contact__form-col { display: grid; gap: 20px; align-content: start; }
+#contact .contact__form-col > .m-text { max-width: 44ch; }
+#contact .contact__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 10px; }
+#contact .contact__form .span-2 { grid-column: 1 / -1; }
+#contact .contact__form .m-btn { justify-self: start; }
+#contact .form-status { grid-column: 1 / -1; padding: 12px 18px; border-radius: var(--radius-1); background: var(--color-1); border: 1.5px solid var(--color-2); }
+#contact .contact__side { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+#contact .contact__cascade { position: relative; height: clamp(180px, 22vw, 280px); }
+#contact .contact__sq {
+  --sq: clamp(96px, 11vw, 150px); position: absolute; top: calc(50% - var(--sq) / 2 + var(--i) * 3px); left: calc(18% + var(--i) * clamp(18px, 2.4vw, 32px));
+  width: var(--sq); height: var(--sq); border-radius: 6px; rotate: -32deg; z-index: calc(10 - var(--i));
+  background: color-mix(in oklab, var(--color-2) calc(100% - var(--i) * 16%), var(--color-3));
+}
+#contact .contact__lines { display: grid; gap: 14px; }
+#contact .contact__lines > div { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 12px; padding-top: 14px; border-top: 1.5px solid var(--color-2); }
+#contact .contact__lines dd { overflow-wrap: anywhere; }
+@media (max-width: 960px) {
+  #contact .contact__card { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__side { display: contents; }
+  #contact .contact__cascade { order: -1; }
+  #contact .contact__lines { order: 2; }
+}
+@media (max-width: 560px) {
+  #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__form .m-btn { justify-self: stretch; }
+  #contact .contact__sq { left: calc(8% + var(--i) * 16px); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: 24px 0 32px; border-top: 1.5px solid var(--color-2); }
+#footer .footer__mark { display: flex; align-items: center; gap: 0.12em; font-family: var(--font-1); font-weight: 400; letter-spacing: -0.04em; line-height: .9; font-size: min(24vw, (min(100vw, 1520px) - 2 * var(--space-1)) / (var(--len) * 0.64)); padding: 24px 0 32px; }
+#footer .footer__mark svg { width: 0.8em; height: 0.6em; flex: none; }
+#footer .footer__grid { display: grid; grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, .6fr)) minmax(0, 1fr); gap: 32px; padding: 32px 0; border-top: 1.5px solid var(--color-2); }
+#footer h2 { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; margin-bottom: 12px; }
+#footer ul { display: grid; gap: 8px; }
+#footer .footer__brand p { max-width: 30ch; }
+#footer .footer__base { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 20px; border-top: 1.5px solid var(--color-2); }
+@media (max-width: 860px) {
+  #footer .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #footer .footer__brand, #footer .footer__contact { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .opening__screen--two { --top: 92px; padding-top: var(--top); }
+#opening .opening__field { top: var(--top); }
+#opening .opening__echo { top: calc(var(--top) - var(--i) * 10px); }
+@media (max-width: 640px) {
+  #opening .opening__screen--two { --top: 84px; }
+  #opening .opening__echo { top: calc(var(--top) - var(--i) * 8px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__echo { animation: rw-step .9s cubic-bezier(.2, .7, .2, 1) backwards; animation-delay: calc(.25s + var(--i) * .07s); }
+  #opening .opening__field { animation: rw-field .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .opening__lesson > * { animation: opening-drop .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .opening__lesson > :nth-child(2) { animation-delay: .12s; }
+  #opening .opening__lesson > :nth-child(3) { animation-delay: .22s; }
+}
+@keyframes rw-step { from { translate: calc(var(--i) * 10px) calc(var(--i) * 10px); opacity: 0; } }
+@keyframes rw-field { from { scale: .96; opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="site-nav">
+<div class="wrap">
+<nav aria-label="Main" class="nav__bar">
+<a aria-label="{{name}}, back to top" class="nav__logo" href="#opening">
+<svg aria-hidden="true" viewbox="0 0 30 22"><rect fill="currentColor" height="14" opacity=".25" rx="2" transform="rotate(-32 21 11)" width="14" x="14" y="4"></rect><rect fill="currentColor" height="14" opacity=".55" rx="2" transform="rotate(-32 15 11)" width="14" x="8" y="4"></rect><rect fill="currentColor" height="14" rx="2" transform="rotate(-32 9 11)" width="14" x="2" y="4"></rect></svg>
+<span>{{t1|⟦name⟧}}</span>
+</a>
+<div class="nav__links">
+<ul>
+{{#nv_programs}}<li><a class="m-link m-text-6" href="#programs">{{t2|Programs}}</a></li>{{/nv_programs}}
+{{#nv_mentors}}<li><a class="m-link m-text-6" href="#mentors">{{t3|Mentors}}</a></li>{{/nv_mentors}}
+{{#nv_masterclasses}}<li><a class="m-link m-text-6" href="#masterclasses">{{t4|Masterclasses}}</a></li>{{/nv_masterclasses}}
+{{#nv_covers}}<li><a class="m-link m-text-6" href="#covers">{{t5|Covers}}</a></li>{{/nv_covers}}
+{{#nv_pricing}}<li><a class="m-link m-text-6" href="#pricing">{{t6|Pricing}}</a></li>{{/nv_pricing}}
+{{#nv_faq}}<li><a class="m-link m-text-6" href="#faq">{{t7|FAQ}}</a></li>{{/nv_faq}}
+</ul>
+</div>
+<div class="nav__actions">
+<a class="m-link m-text-6 nav__login" href="#contact">{{t8|Log in}}</a>
+<a class="m-btn-3" href="#contact">{{t9|Sign up}}</a>
+<button aria-controls="site-menu" aria-expanded="false" class="nav__menu-btn m-text-6" type="button">{{t10|Menu}}</button>
+</div>
+</nav>
+</div>
+<div class="nav__overlay on-dark" data-lenis-prevent="" hidden="" id="site-menu">
+<div class="nav__overlay-top">
+<span class="nav__logo">{{t1|⟦name⟧}}</span>
+<button class="nav__close m-text-6" type="button">{{t11|Close}}</button>
+</div>
+<ul>
+{{#nv_programs}}<li><a href="#programs">{{t2|Programs}}</a></li>{{/nv_programs}}
+{{#nv_mentors}}<li><a href="#mentors">{{t3|Mentors}}</a></li>{{/nv_mentors}}
+{{#nv_masterclasses}}<li><a href="#masterclasses">{{t4|Masterclasses}}</a></li>{{/nv_masterclasses}}
+{{#nv_covers}}<li><a href="#covers">{{t5|Covers}}</a></li>{{/nv_covers}}
+{{#nv_pricing}}<li><a href="#pricing">{{t6|Pricing}}</a></li>{{/nv_pricing}}
+{{#nv_faq}}<li><a href="#faq">{{t7|FAQ}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a href="#contact">{{t12|Contact}}</a></li>{{/nv_contact}}
+</ul>
+<a class="m-btn-3" href="#contact">{{t9|Sign up}}</a>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="opening__screen opening__screen--two" id="opening-lesson">
+<div aria-hidden="true" class="opening__echo" style="--i:4"></div>
+<div aria-hidden="true" class="opening__echo" style="--i:3"></div>
+<div aria-hidden="true" class="opening__echo" style="--i:2"></div>
+<div aria-hidden="true" class="opening__echo" style="--i:1"></div>
+<div aria-hidden="true" class="opening__field"></div>
+<div class="opening__lesson on-dark">
+<div class="lesson__head">
+<h1 class="m-text-5" id="opening-title">{{t13|Every lesson is a conversation in sound}}</h1>
+<p class="m-text">{{t14|Fifty minutes, one mentor, your instrument. Low-latency audio lets you play together, not take turns.}}</p>
+<div class="lesson__actions"><a class="m-btn-3" href="#contact">{{t15|Book a free lesson}}</a><a class="m-link m-text-6" href="#programs">{{t16|Choose an instrument}}</a></div>
+</div>
+<ol class="lesson-steps">
+<li><span class="step-n">{{t17|1}}</span><h3>{{t18|Hear it}}</h3><p class="m-text-4">{{t19|Your mentor plays the passage live, slowly first, then at tempo.}}</p></li>
+<li><span class="step-n">{{t20|2}}</span><h3>{{t21|Play it back}}</h3><p class="m-text-4">{{t22|You answer on your instrument and get feedback while the sound is still in the air.}}</p></li>
+<li><span class="step-n">{{t23|3}}</span><h3>{{t24|Make it yours}}</h3><p class="m-text-4">{{t25|Each lesson ends with a recording you keep and a plan for the next seven days.}}</p></li>
+</ol>
+<figure class="lesson__photo">
+<img alt="A student in headphones plays guitar in front of a laptop during an online lesson" height="1067" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2lybCUyMHByYWN0aWNpbmclMjBndWl0YXIlMjBoZWFkcGhvbmVzfGVufDF8MHx8fDE3OTEyMzIyNTh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=910&q=60}}" style="background:#260c0c" width="1600"/>
+</figure>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_programs}}<section aria-labelledby="programs-title" data-8b-section="programs" id="programs">
+<div class="programs__hold">
+<div class="programs__stage wrap">
+<div class="programs__head">
+<h2 class="m-text-5" data-8b-motion="rise" id="programs-title">{{t26|Choose what you want to play}}</h2>
+<p class="m-text">{{t27|Five programs, each with its own mentors, practice plans and stage repertoire. Switch instruments in any month; your notes and recordings travel with you.}}</p>
+</div>
+<ul class="deck">
+<li class="program m-surface">
+<div class="program__top"><span class="m-badge-2">{{t28|Ages 6+}}</span><span class="m-text-6">{{t29|45 min}}</span></div>
+<img alt="Hands on a piano keyboard below an open music book" class="program__photo" height="400" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1652181820522-cc76583c9950?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGlhbm8lMjBoYW5kc3xlbnwxfDF8fHwxNzkxMjMyMjU2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#262626" width="400"/>
+<h3 class="m-text-3">{{t30|Piano}}</h3>
+<p class="m-text-4">{{t31|From first scales to your own arrangements of the songs you love.}}</p>
+<a aria-label="Book a free piano lesson" class="m-icon-btn program__link" href="#contact"><svg aria-hidden="true" height="16" viewbox="0 0 18 18" width="16"><path d="M4 14 14 4M6 4h8v8" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></a>
+</li>
+<li class="program m-surface">
+<div class="program__top"><span class="m-badge-2">{{t32|Ages 8+}}</span><span class="m-text-6">{{t29|45 min}}</span></div>
+<img alt="Close-up of a hand fretting a chord on an electric guitar" class="program__photo" height="400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1579797990179-4ca11c8b47fd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjBndWl0YXIlMjBwbGF5ZXIlMjBjbG9zZXxlbnwxfDF8fHwxNzkxMjMyMjU2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#262626" width="400"/>
+<h3 class="m-text-3">{{t33|Guitar}}</h3>
+<p class="m-text-4">{{t34|Acoustic or electric: chords, riffs, fingerstyle and reading tab.}}</p>
+<a aria-label="Book a free guitar lesson" class="m-icon-btn program__link" href="#contact"><svg aria-hidden="true" height="16" viewbox="0 0 18 18" width="16"><path d="M4 14 14 4M6 4h8v8" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></a>
+</li>
+<li class="program m-surface">
+<div class="program__top"><span class="m-badge-2">{{t35|Ages 10+}}</span><span class="m-text-6">{{t36|30 min}}</span></div>
+<img alt="A singer leans into a microphone under blue and red light" class="program__photo" height="400" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1556296569-44d434fb28d6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHNpbmdlciUyMHBvcnRyYWl0fGVufDF8Mnx8fDE3OTEyMzIyMzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#0c2640" width="400"/>
+<h3 class="m-text-3">{{t37|Voice}}</h3>
+<p class="m-text-4">{{t38|Breath, range and the confidence to sing into a real microphone.}}</p>
+<a aria-label="Book a free voice lesson" class="m-icon-btn program__link" href="#contact"><svg aria-hidden="true" height="16" viewbox="0 0 18 18" width="16"><path d="M4 14 14 4M6 4h8v8" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></a>
+</li>
+<li class="program m-surface">
+<div class="program__top"><span class="m-badge-2">{{t32|Ages 8+}}</span><span class="m-text-6">{{t29|45 min}}</span></div>
+<img alt="A drum kit under three spotlights on a dark stage" class="program__photo" height="400" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1620726990396-e0e479cf4f04?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZHJ1bW1lcnxlbnwxfDF8fHwxNzkxMjMyMjU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60}}" style="background:#262626" width="400"/>
+<h3 class="m-text-3">{{t39|Drums}}</h3>
+<p class="m-text-4">{{t40|Groove, timing and reading, on a full kit or a quiet practice pad.}}</p>
+<a aria-label="Book a free drums lesson" class="m-icon-btn program__link" href="#contact"><svg aria-hidden="true" height="16" viewbox="0 0 18 18" width="16"><path d="M4 14 14 4M6 4h8v8" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></a>
+</li>
+<li class="program m-surface">
+<div class="program__top"><span class="m-badge-2">{{t41|Ages 13+}}</span><span class="m-text-6">{{t42|60 min}}</span></div>
+<img alt="A home studio desk with monitors, speakers and a keyboard" class="program__photo" height="400" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1627407661127-fe96129c06dc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bXVzaWMlMjBwcm9kdWNlciUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxMjMyMjU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#d9d9d9" width="400"/>
+<h3 class="m-text-3">{{t43|Production}}</h3>
+<p class="m-text-4">{{t44|Write, record and mix your own songs in the software you already have.}}</p>
+<a aria-label="Book a free production lesson" class="m-icon-btn program__link" href="#contact"><svg aria-hidden="true" height="16" viewbox="0 0 18 18" width="16"><path d="M4 14 14 4M6 4h8v8" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></a>
+</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_programs}}
+
+{{#sec_mentors}}<section aria-labelledby="mentors-title" data-8b-section="mentors" id="mentors">
+<div class="wrap">
+<div class="mentors__head">
+<h2 class="m-text-5" data-8b-motion="rise" id="mentors-title">{{t45|Mentors who still play every weekend}}</h2>
+<p class="m-text">{{t46|Every mentor gigs, records or tours, and teaches no more than twenty students. You meet yours in the free lesson and keep them as long as you like.}}</p>
+</div>
+<ul class="mentors__row">
+<li class="mentor">
+<figure class="mentor__photo" data-8b-motion="echo"><img alt="Arjun Mehta at a keyboard in an orange shirt" height="300" sizes="(max-width: 767px) 63px, 22vw" src="{{i7|https://images.unsplash.com/photo-1620730389901-ba3d6070c45c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" srcset="{{i8|https://images.unsplash.com/photo-1620730389901-ba3d6070c45c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}} 190w, {{i7|https://images.unsplash.com/photo-1620730389901-ba3d6070c45c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}} 280w" style="background:#d9c0c0;object-position: 55% 30%" width="300"/></figure>
+<div class="mentor__text"><h3 class="m-text-3">{{t47|Arjun Mehta}}</h3><p class="m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t30|Piano}}</p><p class="m-text-4">{{t48|Jazz trio pianist, arranges for two theatre companies.}}</p></div>
+</li>
+<li class="mentor">
+<figure class="mentor__photo" data-8b-motion="echo"><img alt="Daniel Asfaw holding a hollow-body guitar" height="300" sizes="(max-width: 767px) 63px, 22vw" src="{{i9|https://images.unsplash.com/photo-1618674782816-1c1c777bd2c1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" srcset="{{i10|https://images.unsplash.com/photo-1618674782816-1c1c777bd2c1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}} 190w, {{i9|https://images.unsplash.com/photo-1618674782816-1c1c777bd2c1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}} 280w" style="background:#262626;object-position: 50% 22%" width="300"/></figure>
+<div class="mentor__text"><h3 class="m-text-3">{{t49|Daniel Asfaw}}</h3><p class="m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t33|Guitar}}</p><p class="m-text-4">{{t50|Session guitarist, plays on about forty records a year.}}</p></div>
+</li>
+<li class="mentor">
+<figure class="mentor__photo" data-8b-motion="echo"><img alt="Lena Brandt singing into a microphone" height="300" sizes="(max-width: 767px) 66px, 23vw" src="{{i11|https://images.unsplash.com/photo-1520872024865-3ff2805d8bb3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2luZ2VyJTIwcG9ydHJhaXR8ZW58MXwyfHx8MTc5MTIzMjIzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" srcset="{{i12|https://images.unsplash.com/photo-1520872024865-3ff2805d8bb3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2luZ2VyJTIwcG9ydHJhaXR8ZW58MXwyfHx8MTc5MTIzMjIzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60}} 200w, {{i11|https://images.unsplash.com/photo-1520872024865-3ff2805d8bb3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2luZ2VyJTIwcG9ydHJhaXR8ZW58MXwyfHx8MTc5MTIzMjIzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}} 290w" style="background:#8c7359;object-position: 62% 40%" width="300"/></figure>
+<div class="mentor__text"><h3 class="m-text-3">{{t51|Lena Brandt}}</h3><p class="m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t37|Voice}}</p><p class="m-text-4">{{t52|Fronts an indie band and leads a sixty-voice city choir.}}</p></div>
+</li>
+<li class="mentor">
+<figure class="mentor__photo" data-8b-motion="echo"><img alt="Ama Mensah resting her arm on a djembe" height="300" sizes="(max-width: 767px) 63px, 22vw" src="{{i13|https://images.unsplash.com/photo-1632723295326-9b17888cb531?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" srcset="{{i14|https://images.unsplash.com/photo-1632723295326-9b17888cb531?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=190&q=60}} 190w, {{i13|https://images.unsplash.com/photo-1632723295326-9b17888cb531?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG11c2ljJTIwdGVhY2hlciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMzIyMzZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}} 280w" style="background:#c0c0c0;object-position: 48% 26%" width="300"/></figure>
+<div class="mentor__text"><h3 class="m-text-3">{{t53|Ama Mensah}}</h3><p class="m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t39|Drums}}</p><p class="m-text-4">{{t54|Percussionist with an Afrobeat big band, teaches hand drums too.}}</p></div>
+</li>
+<li class="mentor">
+<figure class="mentor__photo" data-8b-motion="echo"><img alt="Jonah Reyes in headphones and glasses" height="300" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1614302092816-3a081c6e7d86?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bXVzaWNpYW4lMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxMjMyMjM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=240&q=60}}" style="background:#0c2640;object-position: 50% 28%" width="300"/></figure>
+<div class="mentor__text"><h3 class="m-text-3">{{t55|Jonah Reyes}}</h3><p class="m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t43|Production}}</p><p class="m-text-4">{{t56|Mixes for small indie labels from a studio in his flat.}}</p></div>
+</li>
+</ul>
+</div>
+</section>{{/sec_mentors}}
+
+{{#sec_masterclasses}}<section aria-labelledby="masterclasses-title" data-8b-section="masterclasses" id="masterclasses">
+<div class="mc__hold">
+<div class="mc__stage wrap">
+<div class="mc__head">
+<h2 class="m-text-5" id="masterclasses-title">{{t57|Masterclasses: two evenings, one skill}}</h2>
+<p class="m-text">{{t58|Small live groups of twelve, led by our mentors. Watch, ask, play along, and keep the recording afterwards.}}</p>
+</div>
+<article class="ticket ticket--featured m-surface">
+<div class="ticket__photo"><img alt="A teacher and a young girl play the piano side by side" height="1067" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1696522732406-065ef560da8c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bXVzaWMlMjB0ZWFjaGVyJTIwc3R1ZGVudCUyMGxlc3NvbnxlbnwxfDB8fHwxNzkxMjMyMjc3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#262626" width="1600"/></div>
+<div class="ticket__main">
+<p class="m-text-6 ticket__host"><span aria-hidden="true" class="m-diamond"></span>{{t59|with Arjun Mehta · all instruments}}</p>
+<h3 class="m-text-3">{{t60|Practice that sticks}}</h3>
+<p class="m-text-4">{{t61|A daily routine you will actually keep: warm-ups, slow practice, and how to stop repeating the bars you already know.}}</p>
+<p class="ticket__dates m-text-6"><span>{{t62|12 Nov}}</span><span>{{t63|13 Nov}}</span></p>
+<p class="ticket__time">{{t64|19:00}}<small>{{t65|2 evenings · 90 min each · 12 seats}}</small></p>
+</div>
+<div class="ticket__stub">
+<span class="m-badge">{{t66|−15%}}</span>
+<p class="price"><span>{{t67|$17}}</span><s><span class="visually-hidden">{{t68|was}} </span>{{t69|$20}}</s></p>
+<svg aria-hidden="true" class="barcode" preserveaspectratio="none" viewbox="0 0 92 48"><g fill="currentColor"><rect height="48" width="3" x="0"></rect><rect height="48" width="1.5" x="5"></rect><rect height="48" width="4" x="9"></rect><rect height="48" width="1.5" x="15"></rect><rect height="48" width="2.5" x="18.5"></rect><rect height="48" width="1.5" x="23"></rect><rect height="48" width="4" x="27"></rect><rect height="48" width="1.5" x="33"></rect><rect height="48" width="3" x="36"></rect><rect height="48" width="1.5" x="41"></rect><rect height="48" width="1.5" x="44.5"></rect><rect height="48" width="4" x="48"></rect><rect height="48" width="2" x="54"></rect><rect height="48" width="1.5" x="58"></rect><rect height="48" width="3.5" x="61.5"></rect><rect height="48" width="1.5" x="67"></rect><rect height="48" width="2.5" x="70.5"></rect><rect height="48" width="1.5" x="75"></rect><rect height="48" width="4" x="78.5"></rect><rect height="48" width="1.5" x="84.5"></rect><rect height="48" width="4" x="88"></rect></g></svg>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t70|Book a seat}}</span></a>
+</div>
+</article>
+</div>
+</div>
+<ul class="mc__more wrap">
+<li class="ticket ticket--small m-surface-2" data-8b-motion="echo">
+<img alt="A guitarist plays while a student listens beside him" height="300" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1636581563713-5ead3fb53a80?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bXVzaWMlMjB0ZWFjaGVyJTIwc3R1ZGVudCUyMGxlc3NvbnxlbnwxfDB8fHwxNzkxMjMyMjc3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#404040" width="264"/>
+<p class="m-text-6">{{t71|with Daniel Asfaw · guitar}}</p>
+<h3 class="m-text-3">{{t72|Fingerstyle without fear}}</h3>
+<p class="ticket__dates m-text-6"><span>{{t73|26 Nov}}</span><span>{{t74|27 Nov}}</span></p>
+<p class="m-text-4">{{t75|18:30 · 2 evenings · 90 min}}</p>
+<div class="row"><b>{{t69|$20}}</b><a class="m-btn-3" href="#contact">{{t70|Book a seat}}</a></div>
+</li>
+<li class="ticket ticket--small m-surface-2" data-8b-motion="echo">
+<img alt="A singer in front of a studio microphone" height="300" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1714140674991-f12cf2bb4d4a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bXVzaWMlMjBwcm9kdWNlciUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxMjMyMjU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}}" style="background:#a6a6a6" width="264"/>
+<p class="m-text-6">{{t76|with Lena Brandt · voice}}</p>
+<h3 class="m-text-3">{{t77|Your first studio vocal}}</h3>
+<p class="ticket__dates m-text-6"><span>{{t78|10 Dec}}</span><span>{{t79|11 Dec}}</span></p>
+<p class="m-text-4">{{t80|19:00 · 2 evenings · 90 min}}</p>
+<div class="row"><b>{{t69|$20}}</b><a class="m-btn-3" href="#contact">{{t70|Book a seat}}</a></div>
+</li>
+</ul>
+</section>{{/sec_masterclasses}}
+
+{{#sec_covers}}<section aria-labelledby="covers-title" data-8b-section="covers" id="covers">
+<div class="wrap covers__grid">
+<div class="covers__disc-col">
+<div aria-hidden="true" class="covers__disc-wrap">
+<div class="covers__disc">
+<img alt="" class="covers__layer" height="520" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1660491291419-f58cab3fc975?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YnJpZ2h0JTIwb3JhbmdlJTIwYmx1ciUyMGFic3RyYWN0fGVufDF8Mnx8fDE3OTEyNzI0OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#f3a68c" width="520"/>
+<img alt="" class="covers__layer" height="520" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1573247374056-ba7c8c5ca4fa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dmlueWwlMjByZWNvcmQlMjBjbG9zZXVwfGVufDF8Mnx8fDE3OTEyMzIyNzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#738ca6" width="520"/>
+<img alt="" class="covers__layer" height="520" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1687618050096-e982131c682e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#f34040" width="520"/>
+<img alt="" class="covers__layer" height="347" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1571265340526-3596c5245ec8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGJhbmQlMjBwbGF5aW5nJTIwc21hbGwlMjBzdGFnZSUyMHdhcm0lMjBsaWdodHMlMjBhdWRpZW5jZXxlbnwxfDB8fHwxNzkxMjcyMzAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=770&q=60}}" style="background:#594026" width="520"/>
+<img alt="" class="covers__layer" height="520" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1573247373996-cea1f3e6adf6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dmlueWwlMjByZWNvcmQlMjBjbG9zZXVwfGVufDF8Mnx8fDE3OTEyMzIyNzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#c0d9f3" width="520"/>
+<img alt="" class="covers__layer" height="520" sizes="(max-width: 767px) 90px, 41vw" src="{{i24|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" srcset="{{i25|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}} 270w, {{i24|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}} 520w" style="background:#f38c40" width="520"/>
+<span class="covers__hole"></span>
+</div>
+</div>
+</div>
+<div class="covers__list-col">
+<h2 class="m-text-5" data-8b-motion="rise" id="covers-title">{{t81|Covers shop: songs you love, at your level}}</h2>
+<p class="m-text">{{t82|Each arrangement comes with sheet music or tab, a backing track and a short walkthrough by the mentor who wrote it, in three levels.}}</p>
+<ol class="tracks">
+<li class="track">
+<img alt="" height="56" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1660491291419-f58cab3fc975?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YnJpZ2h0JTIwb3JhbmdlJTIwYmx1ciUyMGFic3RyYWN0fGVufDF8Mnx8fDE3OTEyNzI0OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#f3a68c" width="56"/>
+<div><h3>{{t83|Slow Sunday Morning}}</h3><p class="m-text-4">{{t84|Piano · beginner · sheet + backing track}}</p></div>
+<span class="track__price">{{t85|$4}}</span>
+<a aria-label="Add Slow Sunday Morning" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+<li class="track">
+<img alt="" height="56" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1573247374056-ba7c8c5ca4fa?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dmlueWwlMjByZWNvcmQlMjBjbG9zZXVwfGVufDF8Mnx8fDE3OTEyMzIyNzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#738ca6" width="56"/>
+<div><h3>{{t87|Neon Rain}}</h3><p class="m-text-4">{{t88|Electric guitar · intermediate · tab + backing track}}</p></div>
+<span class="track__price">{{t89|$5}}</span>
+<a aria-label="Add Neon Rain" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+<li class="track">
+<img alt="" height="56" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1687618050096-e982131c682e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#f34040" width="56"/>
+<div><h3>{{t90|Paper Lanterns}}</h3><p class="m-text-4">{{t91|Voice · beginner · lead sheet + two keys}}</p></div>
+<span class="track__price">{{t85|$4}}</span>
+<a aria-label="Add Paper Lanterns" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+<li class="track">
+<img alt="" height="37" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1571265340526-3596c5245ec8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGJhbmQlMjBwbGF5aW5nJTIwc21hbGwlMjBzdGFnZSUyMHdhcm0lMjBsaWdodHMlMjBhdWRpZW5jZXxlbnwxfDB8fHwxNzkxMjcyMzAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=770&q=60}}" style="background:#594026" width="56"/>
+<div><h3>{{t92|Backbeat Theory}}</h3><p class="m-text-4">{{t93|Drums · intermediate · chart + click track}}</p></div>
+<span class="track__price">{{t89|$5}}</span>
+<a aria-label="Add Backbeat Theory" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+<li class="track">
+<img alt="" height="56" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1573247373996-cea1f3e6adf6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dmlueWwlMjByZWNvcmQlMjBjbG9zZXVwfGVufDF8Mnx8fDE3OTEyMzIyNzh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#c0d9f3" width="56"/>
+<div><h3>{{t94|Last Train Home}}</h3><p class="m-text-4">{{t95|Piano and voice duet · intermediate · score}}</p></div>
+<span class="track__price">{{t96|$6}}</span>
+<a aria-label="Add Last Train Home" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+<li class="track">
+<img alt="" height="56" sizes="(max-width: 767px) 90px, 41vw" src="{{i24|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" srcset="{{i25|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=270&q=60}} 270w, {{i24|https://images.unsplash.com/photo-1707324148764-99647364afa3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3JhbmdlJTIwYWJzdHJhY3QlMjBsaWdodHxlbnwxfDJ8fHwxNzkxMjMyMjc5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}} 520w" style="background:#f38c40" width="56"/>
+<div><h3>{{t97|Orange Hour}}</h3><p class="m-text-4">{{t98|Production · advanced · stems + project file}}</p></div>
+<span class="track__price">{{t99|$9}}</span>
+<a aria-label="Add Orange Hour" class="m-btn-3" href="#contact">{{t86|Add}}</a>
+</li>
+</ol>
+</div>
+</div>
+</section>{{/sec_covers}}
+
+{{#sec_path}}<section aria-labelledby="path-title" data-8b-section="path" id="path">
+<div class="wrap">
+<div class="path__head">
+<h2 class="m-text-5" data-8b-motion="rise" id="path-title">{{t100|From the first lesson to the first stage}}</h2>
+<p class="m-text">{{t101|Most students play their first short set within two terms. This is the way there, one step a season.}}</p>
+</div>
+<ol class="stairs">
+<li class="stair" style="--k:0"><span aria-hidden="true" class="stair__slot"></span><span class="stair__n">{{t102|Step 1}}</span><h3 class="m-text-3">{{t103|Free trial lesson}}</h3><p class="m-text-4">{{t104|Thirty minutes to meet a mentor, play a little and pick one goal.}}</p></li>
+<li class="stair" style="--k:1"><span aria-hidden="true" class="stair__slot"></span><span class="stair__n">{{t105|Step 2}}</span><h3 class="m-text-3">{{t106|Weekly lessons}}</h3><p class="m-text-4">{{t107|One live lesson a week and a practice plan for the days in between.}}</p></li>
+<li class="stair" style="--k:2"><span aria-hidden="true" class="stair__slot"></span><span class="stair__n">{{t108|Step 3}}</span><h3 class="m-text-3">{{t109|Masterclass and ensemble}}</h3><p class="m-text-4">{{t110|Once a month, play with other students in a small online group.}}</p></li>
+<li class="stair" style="--k:3"><span aria-hidden="true" class="stair__slot"><span class="m-diamond path__marker"></span></span><span class="stair__n">{{t111|Step 4}}</span><h3 class="m-text-3">{{t112|Stage night}}</h3><p class="m-text-4">{{t113|The term ends with a concert, online or at one of our partner venues.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_path}}
+
+{{#sec_stage}}<section aria-labelledby="stage-title" data-8b-section="stage" id="stage">
+<div class="wrap stage__frame">
+<figure class="stage__photo" data-8b-motion="echo"><img alt="A small band plays a club stage in warm amber light, with the audience in silhouette" height="1067" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1760092190035-c29f5b9d5531?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGJhbmQlMjBwbGF5aW5nJTIwc21hbGwlMjBzdGFnZSUyMHdhcm0lMjBsaWdodHMlMjBhdWRpZW5jZXxlbnwxfDB8fHwxNzkxMjcyMzAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1030&q=60}}" style="background:#26260c" width="1600"/></figure>
+<div class="stage__card m-surface">
+<h2 class="m-text-5" data-8b-motion="rise" id="stage-title">{{t114|Stage nights}}</h2>
+<p class="m-text">{{t115|Every term, students play a short set for family, friends and the rest of the school, with a sound engineer, real lights and a mentor backstage.}}</p>
+<p class="stage__date m-text-6"><span aria-hidden="true" class="m-diamond" data-8b-motion="turn"></span>{{t116|Next: 14 December, live in Lisbon and online}}</p>
+<div class="stage__actions"><a class="m-btn" href="#contact"><span class="m-btn__label">{{t117|Get a seat}}</span></a><a class="m-link m-text-6" href="#path">{{t118|How students get there}}</a></div>
+</div>
+</div>
+</section>{{/sec_stage}}
+
+{{#sec_reviews}}<section aria-labelledby="reviews-title" data-8b-section="reviews" id="reviews">
+<div class="wrap">
+<div class="reviews__rating">
+<span aria-hidden="true" class="diamonds"><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span></span>
+<h2 class="m-text-3" id="reviews-title">{{t119|4.9 from 2,140 students}}</h2>
+<span class="m-badge-2">{{t120|Reviews}}</span>
+</div>
+<figure class="reviews__quote">
+<blockquote class="m-text-5">{{t121|“I had played the same four chords for ten years. Six months with Daniel and I wrote my first song, then played it to a room full of strangers.”}}</blockquote>
+<figcaption class="m-text-6"><span aria-hidden="true" class="m-diamond"></span>{{t122|Mara Lindqvist, guitar student since spring}}</figcaption>
+</figure>
+<ul class="reviews__cards">
+<li class="review m-surface" data-8b-motion="echo">
+<span aria-hidden="true" class="diamonds"><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span></span>
+<p class="m-text">{{t123|My son used to hide from piano practice. Now he books the lesson himself and plays Arjun his own tunes.}}</p>
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Music School by <a href="https://github.com/8bsite/music-school-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="m-text-4"><span>{{t124|Priya, parent}}</span><span>{{t30|Piano}}</span></footer>
+</li>
+<li class="review m-surface" data-8b-motion="echo">
+<span aria-hidden="true" class="diamonds"><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span></span>
+<p class="m-text">{{t125|I was sure online drum lessons could not work. Ama hears every ghost note through a laptop microphone.}}</p>
+<footer class="m-text-4"><span>{{t126|Tom, 41}}</span><span>{{t39|Drums}}</span></footer>
+</li>
+<li class="review m-surface" data-8b-motion="echo">
+<span aria-hidden="true" class="diamonds"><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span><span class="m-diamond"></span></span>
+<p class="m-text">{{t127|The stage night was terrifying for four minutes and then the best evening of my year.}}</p>
+<footer class="m-text-4"><span>{{t128|Yuki, 17}}</span><span>{{t37|Voice}}</span></footer>
+</li>
+</ul>
+</div>
+</section>{{/sec_reviews}}
+
+{{#sec_pricing}}<section aria-labelledby="pricing-title" data-8b-section="pricing" id="pricing">
+<div class="wrap">
+<div class="pricing__head">
+<h2 class="m-text-5" data-8b-motion="rise" id="pricing-title">{{t129|One price a month, a lesson every week}}</h2>
+<p class="m-text">{{t130|The first lesson is free. After that, pause or cancel any month; unused lessons move to the next one.}}</p>
+</div>
+<div class="plans">
+<article class="plan m-surface">
+<div class="plan__top"><h3 class="m-text-3">{{t131|Monthly}}</h3></div>
+<p class="plan__price">{{t132|$120}}<small> {{t133|/ month}}</small></p>
+<p class="m-text-4">{{t134|Four 45-minute lessons with your mentor.}}</p>
+<ul class="m-text-4">
+<li><span aria-hidden="true" class="m-diamond"></span>{{t135|A practice plan after every lesson}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t136|Recordings of each lesson}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t137|Switch instrument any month}}</li>
+</ul>
+<a class="m-btn-3" href="#contact">{{t138|Start monthly}}</a>
+</article>
+<svg aria-hidden="true" class="plan-bridge" preserveaspectratio="none" viewbox="0 0 72 92"><path d="M0 0C24 0 26 30 36 30S48 0 72 0V92C48 92 46 62 36 62S24 92 0 92Z" fill="currentColor"></path></svg>
+<article class="plan plan--term m-surface-2">
+<div class="plan__top"><h3 class="m-text-3">{{t139|Term}}</h3><span class="m-badge">{{t66|−15%}}</span></div>
+<p class="plan__price">{{t140|$102}}<small> {{t141|/ month, billed per term}}</small></p>
+<p class="m-text-4">{{t142|Twelve lessons over three months.}}</p>
+<ul class="m-text-4">
+<li><span aria-hidden="true" class="m-diamond"></span>{{t143|Everything in Monthly}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t144|One masterclass seat each term}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t145|A slot at the stage night}}</li>
+</ul>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t146|Start a term}}</span></a>
+</article>
+<svg aria-hidden="true" class="plan-bridge" preserveaspectratio="none" viewbox="0 0 72 92"><path d="M0 0C24 0 26 30 36 30S48 0 72 0V92C48 92 46 62 36 62S24 92 0 92Z" fill="currentColor"></path></svg>
+<article class="plan m-surface">
+<div class="plan__top"><h3 class="m-text-3">{{t147|Family}}</h3></div>
+<p class="plan__price">{{t148|$190}}<small> {{t133|/ month}}</small></p>
+<p class="m-text-4">{{t149|Two students, eight lessons between them.}}</p>
+<ul class="m-text-4">
+<li><span aria-hidden="true" class="m-diamond"></span>{{t150|One mentor or two}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t151|Shared covers shop credit}}</li>
+<li><span aria-hidden="true" class="m-diamond"></span>{{t152|A duet slot at the stage night}}</li>
+</ul>
+<a class="m-btn-3" href="#contact">{{t153|Start family}}</a>
+</article>
+</div>
+</div>
+</section>{{/sec_pricing}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="wrap faq__grid">
+<div class="faq__intro">
+<h2 class="m-text-5" data-8b-motion="rise" id="faq-title">{{t154|Questions before the first lesson}}</h2>
+<p class="m-text">{{t155|Something else on your mind? Write to us and a mentor answers, usually the same day.}}</p>
+<p><a class="m-link m-text-6" href="#contact">{{t156|Ask a mentor}}</a></p>
+</div>
+<div class="faq__list">
+<details><summary>{{t157|What do I need for an online lesson?}}<span aria-hidden="true" class="m-diamond"></span></summary><p class="m-text">{{t158|Your instrument, a laptop or tablet with a camera, and headphones. We send a five-minute setup guide that makes the sound clear enough for both of you to play together.}}</p></details>
+<details><summary>{{t159|How young can a student start?}}<span aria-hidden="true" class="m-diamond"></span></summary><p class="m-text">{{t160|Piano from six, guitar and drums from eight, voice from ten. Younger children are welcome in a trial lesson with a parent beside them.}}</p></details>
+<details><summary>{{t161|Can I switch mentors?}}<span aria-hidden="true" class="m-diamond"></span></summary><p class="m-text">{{t162|Yes, at any time and without a reason. Your notes and recordings move to the new mentor so nothing starts again from zero.}}</p></details>
+<details><summary>{{t163|How does the free lesson work?}}<span aria-hidden="true" class="m-diamond"></span></summary><p class="m-text">{{t164|You pick a time, we match you with a mentor, and you spend thirty minutes playing and talking about goals. No card is needed to book it.}}</p></details>
+<details><summary>{{t165|Can I pause my plan?}}<span aria-hidden="true" class="m-diamond"></span></summary><p class="m-text">{{t166|Pause for up to two months a year from your account. Lessons you have already paid for wait for you.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="wrap">
+<div class="contact__card m-surface-2">
+<div class="contact__form-col">
+<h2 class="m-text-5" data-8b-motion="rise" id="contact-title">{{t167|Book your free first lesson}}</h2>
+<p class="m-text">{{t168|Thirty minutes with a mentor, no card needed. Tell us what you play, or what you would like to.}}</p>
+
+</div>
+<div class="contact__side">
+<div aria-hidden="true" class="contact__cascade">
+<span class="contact__sq" style="--i:5"></span>
+<span class="contact__sq" style="--i:4"></span>
+<span class="contact__sq" style="--i:3"></span>
+<span class="contact__sq" style="--i:2"></span>
+<span class="contact__sq" style="--i:1"></span>
+<span class="contact__sq" style="--i:0"></span>
+</div>
+<dl class="contact__lines">
+<div><dt class="m-text-6">{{t169|Email}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t170|hello@overtone.example}}</a></dd></div>
+<div><dt class="m-text-6">{{t171|Phone}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t172|+1 415 000 0000}}</a></dd></div>
+<div><dt class="m-text-6">{{t173|Hours}}</dt><dd class="m-text">{{t174|Lessons every day, 7:00–22:00 in your time zone}}</dd></div>
+</dl>
+</div>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<footer data-8b-section="footer" id="footer">
+<div class="wrap">
+<p aria-hidden="true" class="footer__mark" style="--len:8"><svg viewbox="0 0 30 22"><rect fill="currentColor" height="14" opacity=".25" rx="2" transform="rotate(-32 21 11)" width="14" x="14" y="4"></rect><rect fill="currentColor" height="14" opacity=".55" rx="2" transform="rotate(-32 15 11)" width="14" x="8" y="4"></rect><rect fill="currentColor" height="14" rx="2" transform="rotate(-32 9 11)" width="14" x="2" y="4"></rect></svg>{{t1|⟦name⟧}}</p>
+<div class="footer__grid">
+<div class="footer__brand">
+<h2>{{t175|⟦name⟧ School}}</h2>
+<p class="m-text-4">{{t176|Live online music lessons with working musicians, one student at a time.}}</p>
+</div>
+<nav aria-label="School">
+<h2>{{t177|School}}</h2>
+<ul class="m-text-4">{{#nv_programs}}<li><a class="m-link" href="#programs">{{t2|Programs}}</a></li>{{/nv_programs}}{{#nv_mentors}}<li><a class="m-link" href="#mentors">{{t3|Mentors}}</a></li>{{/nv_mentors}}{{#nv_masterclasses}}<li><a class="m-link" href="#masterclasses">{{t4|Masterclasses}}</a></li>{{/nv_masterclasses}}</ul>
+</nav>
+<nav aria-label="Students">
+<h2>{{t178|Students}}</h2>
+<ul class="m-text-4">{{#nv_covers}}<li><a class="m-link" href="#covers">{{t179|Covers shop}}</a></li>{{/nv_covers}}{{#nv_stage}}<li><a class="m-link" href="#stage">{{t114|Stage nights}}</a></li>{{/nv_stage}}{{#nv_pricing}}<li><a class="m-link" href="#pricing">{{t6|Pricing}}</a></li>{{/nv_pricing}}</ul>
+</nav>
+<nav aria-label="Help">
+<h2>{{t180|Help}}</h2>
+<ul class="m-text-4">{{#nv_faq}}<li><a class="m-link" href="#faq">{{t7|FAQ}}</a></li>{{/nv_faq}}{{#nv_contact}}<li><a class="m-link" href="#contact">{{t12|Contact}}</a></li>{{/nv_contact}}{{#nv_contact}}<li><a class="m-link" href="#contact">{{t8|Log in}}</a></li>{{/nv_contact}}</ul>
+</nav>
+<div class="footer__contact">
+<h2>{{t181|Talk to us}}</h2>
+<ul class="m-text-4"><li><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t170|hello@overtone.example}}</a></li><li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t172|+1 415 000 0000}}</a></li></ul>
+</div>
+</div>
+<div class="footer__base m-text-4"><p>{{t182|© 2026 ⟦name⟧ School · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t183|8B}}</a></p><p>{{t184|Lessons in English, Spanish and Portuguese}}</p></div>
+</div>
+</footer>
+<script data-8b-part="section-script:site-nav">
+(() => {
+  const nav = document.getElementById('site-nav');
+  const menu = document.getElementById('site-menu');
+  const openBtn = nav.querySelector('.nav__menu-btn');
+  const closeBtn = nav.querySelector('.nav__close');
+  let last = scrollY, dir = 0, run = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, d = y - last; last = y;
+    if (!d) return;
+    const s = Math.sign(d);
+    if (s !== dir) { dir = s; run = 0; }
+    run += Math.abs(d);
+    if (y < 120 || (dir < 0 && run > 30)) nav.classList.remove('is-hidden');
+    else if (dir > 0 && run > 12 && menu.hidden) nav.classList.add('is-hidden');
+  }, { passive: true });
+  const setMenu = open => {
+    menu.hidden = !open;
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeBtn.focus(); } else { window.lenis?.start(); openBtn.focus(); }
+  };
+  openBtn.addEventListener('click', () => setMenu(true));
+  closeBtn.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', e => { if (e.target.closest('a')) { menu.hidden = true; openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#site-nav .nav__bar');
+  return bar ? bar.getBoundingClientRect().bottom + 12 : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.1, anchors: { offset: -Math.round(navHeight()) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+function layoutBox(element, ancestor) {
+  let x = 0, y = 0, node = element;
+  while (node && node !== ancestor) {
+    x += node.offsetLeft; y += node.offsetTop;
+    const parent = node.offsetParent;
+    if (parent && parent !== ancestor) { x += parent.clientLeft; y += parent.clientTop; }
+    node = parent;
+  }
+  const w = element.offsetWidth, h = element.offsetHeight;
+  return { x, y, w, h, cx: x + w / 2, cy: y + h / 2 };
+}
+const effects = {
+  turn(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { rotation: -90, scale: 0.2 }, { rotation: 0, scale: 1, duration: 0.7, ease: 'back.out(2)' });
+  },
+  echo(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { x: -40, y: 40, '--echo': 1 }, { x: 0, y: 0, '--echo': 0, duration: 1.1, ease: 'power3.out' }, 0)
+      .fromTo(element, { opacity: 0 }, { opacity: 1, duration: 0.35, ease: 'none' }, 0);
+  },
+  rise(lines, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    lines.forEach((line, index) => timeline.fromTo(line, { yPercent: 110 }, { yPercent: 0, duration: 0.9, ease: 'power3.out' }, index * 0.08));
+    return timeline;
+  }
+};
+function bindEffect(name, bind) {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      const cleanups = elements.map((element, index) => bind(element, `${id}:${index}`));
+      return () => cleanups.forEach(cleanup => cleanup && cleanup());
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+}
+bindEffect('turn', (element, id) => {
+  ScrollTrigger.create({ id, trigger: element, start: 'top 92%', once: true, animation: effects.turn(element, { paused: true }) });
+});
+bindEffect('echo', (element, id) => {
+  ScrollTrigger.create({ id, trigger: element, start: 'top 90%', once: true, animation: effects.echo(element, { paused: true }) });
+});
+bindEffect('rise', (element, id) => {
+  const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+  ScrollTrigger.create({ id, trigger: element, start: 'top 88%', once: true, animation: effects.rise(split.lines, { paused: true, onComplete: () => split.revert() }) });
+  return () => split.revert();
+});
+</script>
+<script data-8b-part="scene:programs-deal">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 1024px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 1023px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('programs');
+    const deck = section.querySelector('.deck');
+    const cards = [...deck.querySelectorAll('.program')];
+    if (wide) section.setAttribute('data-deal', '');
+    const mid = (cards.length - 1) / 2;
+    const order = cards.map((card, index) => index).sort((a, b) => Math.abs(b - mid) - Math.abs(a - mid));
+    const measure = () => {
+      const d = layoutBox(deck, section);
+      return cards.map(card => { const c = layoutBox(card, section); return { x: d.cx - c.cx, y: d.cy - c.cy }; });
+    };
+    let pile = measure();
+    const range = wide
+      ? { trigger: section, start: 'top top', end: 'bottom bottom' }
+      : { trigger: deck, start: 'top 85%', end: 'bottom 75%' };
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'programs-deal', ...range, scrub: 0.6, invalidateOnRefresh: true, onRefreshInit: () => { pile = measure(); } } });
+    cards.forEach((card, index) => {
+      timeline.fromTo(card, {
+        x: () => pile[index].x, y: () => pile[index].y + (index - mid) * -4, rotation: (index - mid) * 5
+      }, { x: 0, y: 0, rotation: 0, duration: 0.6, ease: 'power2.inOut' }, order.indexOf(index) * 0.13);
+    });
+    return () => section.removeAttribute('data-deal');
+  });
+});
+</script>
+<script data-8b-part="scene:masterclass-zoom">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('masterclasses');
+    const hold = section.querySelector('.mc__hold');
+    const stage = section.querySelector('.mc__stage');
+    const photo = section.querySelector('.ticket--featured .ticket__photo');
+    const ticket = section.querySelector('.ticket--featured');
+    const parts = ticket.querySelectorAll('.ticket__main > *, .ticket__stub > :not(a)');
+    section.setAttribute('data-zoom', '');
+    const measure = () => {
+      const p = layoutBox(photo, stage);
+      const vw = document.documentElement.clientWidth, vh = innerHeight;
+      const cover = vw < 768 ? Math.max(vw / p.w, (vh * 0.78) / p.h) : Math.max(vw / p.w, vh / p.h) * 1.04;
+      return { x: (stage.offsetWidth - vw) / 2 + vw / 2 - p.cx, y: vh / 2 - p.cy, scale: cover };
+    };
+    let start = measure();
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'masterclass-zoom', trigger: hold, start: 'top top', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true, onRefreshInit: () => { start = measure(); } } })
+      .fromTo(photo, { x: () => start.x, y: () => start.y, scale: () => start.scale }, { x: 0, y: 0, scale: 1, duration: 1, ease: 'power2.inOut' }, 0);
+    parts.forEach((part, index) => timeline.fromTo(part, { opacity: 0, x: 48 }, { opacity: 1, x: 0, duration: 0.35, ease: 'power2.out' }, 0.55 + index * 0.03));
+    const reveal = () => {
+      const trigger = timeline.scrollTrigger;
+      if (!trigger || trigger.progress >= 1) return;
+      if (window.lenis) window.lenis.scrollTo(trigger.end, { immediate: true, force: true }); else window.scrollTo(0, trigger.end);
+      timeline.progress(1);
+    };
+    ticket.addEventListener('focusin', reveal);
+    return () => { ticket.removeEventListener('focusin', reveal); section.removeAttribute('data-zoom'); };
+  });
+});
+</script>
+<script data-8b-part="scene:covers-iris">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('covers');
+    const rows = [...section.querySelectorAll('.track')];
+    const layers = [...section.querySelectorAll('.covers__layer')];
+    rows.forEach((row, index) => {
+      ScrollTrigger.create({ id: `covers-iris:row-${index}`, trigger: row, start: 'top 60%', end: 'bottom+=12 60%', toggleClass: { targets: row, className: 'is-active' } });
+      const layer = layers[index];
+      if (!index || !layer) return;
+      gsap.fromTo(layer, { clipPath: 'circle(0% at 50% 50%)' }, {
+        clipPath: 'circle(71% at 50% 50%)', ease: 'power1.inOut',
+        scrollTrigger: { id: `covers-iris:cover-${index}`, trigger: row, start: 'top 74%', end: 'top 58%', scrub: 0.4 }
+      });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:path-hop">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('path');
+    const list = section.querySelector('.stairs');
+    const stairs = [...list.querySelectorAll('.stair')];
+    const slots = stairs.map(stair => stair.querySelector('.stair__slot'));
+    const marker = section.querySelector('.path__marker');
+    const last = stairs.length - 1;
+    const measure = () => {
+      const b = layoutBox(slots[last], list);
+      return slots.map(slot => { const a = layoutBox(slot, list); return { x: a.cx - b.cx, y: a.cy - b.cy }; });
+    };
+    let points = measure();
+    const at = index => points[index];
+    const top = index => ({ x: (at(index).x + at(index + 1).x) / 2, y: Math.min(at(index).y, at(index + 1).y) - 90 });
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'path-hop', trigger: list, start: 'top 70%', end: 'bottom 50%', scrub: 0.5, invalidateOnRefresh: true, onRefreshInit: () => { points = measure(); } } });
+    timeline.fromTo(stairs[0], { '--fill': 0 }, { '--fill': 1, duration: 0.15 }, 0);
+    for (let index = 0; index < last; index++) {
+      const t = 0.25 + index * 1.3;
+      timeline
+        .fromTo(marker, { x: () => at(index).x, y: () => at(index).y }, { x: () => top(index).x, y: () => top(index).y, duration: 0.35, ease: 'power1.out', immediateRender: index === 0 }, t)
+        .fromTo(marker, { x: () => top(index).x, y: () => top(index).y }, { x: () => at(index + 1).x, y: () => at(index + 1).y, duration: 0.35, ease: 'power1.in', immediateRender: false }, t + 0.35)
+        .fromTo(marker, { rotation: index * 120 }, { rotation: (index + 1) * 120, duration: 0.7, ease: 'power1.inOut', immediateRender: index === 0 }, t)
+        .to(stairs[index], { '--fill': 0, duration: 0.12 }, t)
+        .fromTo(stairs[index + 1], { '--fill': 0 }, { '--fill': 1, duration: 0.12, immediateRender: index + 1 === last }, t + 0.62);
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:reviews-ink">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const quote = section.querySelector('.reviews__quote blockquote');
+    const diamonds = [...section.querySelectorAll('.reviews__rating .m-diamond')];
+    const split = SplitText.create(quote, { type: 'words', wordsClass: 'ink-word' });
+    section.setAttribute('data-ink', '');
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'reviews-ink', trigger: quote, start: 'top 88%', end: 'center 62%', scrub: 0.5 } });
+    const words = split.words, gap = words.length > 1 ? 1.4 / (words.length - 1) : 0;
+    words.forEach((word, index) => timeline.fromTo(word, { '--ink': 0 }, { '--ink': 1, duration: 0.6, ease: 'none' }, index * gap));
+    diamonds.forEach((diamond, index) => {
+      timeline.fromTo(diamond, { '--lit': 0 }, { '--lit': 1, duration: 0.3 }, index * 0.36).add(effects.turn(diamond), index * 0.36);
+    });
+    return () => { split.revert(); section.removeAttribute('data-ink'); };
+  });
+});
+</script>
+<script data-8b-part="scene:pricing-bridges">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('pricing');
+    const plans = section.querySelector('.plans');
+    const cards = [...plans.querySelectorAll('.plan')];
+    const bridges = [...plans.querySelectorAll('.plan-bridge')];
+    const middle = cards[Math.floor(cards.length / 2)];
+    const measure = () => {
+      const a = layoutBox(middle, plans);
+      return cards.map(card => { const b = layoutBox(card, plans); return { x: (a.cx - b.cx) * 0.86, y: (a.cy - b.cy) * 0.86 }; });
+    };
+    let offsets = measure();
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'pricing-bridges', trigger: plans, start: 'top 85%', end: 'center 52%', scrub: 0.6, invalidateOnRefresh: true, onRefreshInit: () => { offsets = measure(); } } });
+    cards.forEach((card, index) => {
+      if (card === middle) return;
+      timeline.fromTo(card, {
+        x: () => offsets[index].x, y: () => offsets[index].y, rotation: index < cards.indexOf(middle) ? -5 : 5
+      }, { x: 0, y: 0, rotation: 0, duration: 1, ease: 'power2.inOut' }, 0);
+    });
+    bridges.forEach(bridge => timeline.fromTo(bridge, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: 'power2.out' }, 0.4));
+  });
+});
+</script>
+<script data-8b-part="scene:contact-fold">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const cascade = section.querySelector('.contact__cascade');
+    const squares = [...cascade.querySelectorAll('.contact__sq')];
+    const step = element => Number(getComputedStyle(element).getPropertyValue('--i')) || 0;
+    let width = cascade.offsetWidth;
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'contact-fold', trigger: cascade, start: 'top 92%', end: 'center 45%', scrub: 0.6, invalidateOnRefresh: true, onRefreshInit: () => { width = cascade.offsetWidth; } } });
+    squares.forEach((square, index) => {
+      const k = step(square);
+      timeline.fromTo(square, {
+        x: () => k * width * 0.07, y: (k % 2 ? -1 : 1) * k * 12, rotation: -32 + k * 15, scale: 1 - k * 0.05
+      }, { x: 0, y: 0, rotation: -32, scale: 1, duration: 1, ease: 'power2.inOut' }, index * 0.05);
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.form-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>

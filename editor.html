@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editor – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<main class="wrap" style="max-width:1200px"><div class="row" style="border:0"><div><h1 style="margin:0">Editor</h1><span class="mut" id="bc"></span></div><div><button class="btn out sm" id="dc">Discard</button> <button class="btn sm" id="sv">Save Changes</button> <button class="btn dark sm" id="nx">Next: Domain</button></div></div>
+<div class="grid ed" style="margin-top:14px"><div class="card"><h2>Website Details</h2><div id="f"></div><label>Design</label><select id="vs"></select><div id="ct"></div><label>Logo (PNG/JPG)</label><input type="file" id="lg" accept="image/*">
+<div class="row"><b>Services list</b></div><div id="sl"></div><div style="display:flex;gap:8px"><input id="ns" placeholder="Add a service"><button class="btn sm" id="as" style="height:46px;margin-top:6px">Add</button></div>
+<div class="row"><b>Photos upload</b><span class="mut" id="pc"></span></div><div id="ph" class="pg"></div><input type="file" id="pf" multiple accept="image/*"></div>
+<div class="card sticky" style="position:sticky;top:70px"><div class="row" style="border:0"><h2 style="margin:0">Live Preview</h2><button class="btn out sm" id="dv">Mobile Preview</button></div>
+<div style="background:#e9ece9;padding:10px;border-radius:12px;text-align:center"><iframe id="fr" style="width:100%;height:540px;border:0;background:#fff;border-radius:8px"></iframe></div></div></div></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script><script src="engine.js"></script><script>
+const id=new URLSearchParams(location.search).get('id'),sites=S.get('sites',[]),st=id?sites.find(x=>x.id==id):S.get('draft');
+if(!st)location.href='templates.html';const d=st.data;d.services=d.services||[];d.photos=d.photos||[];
+const K=[['name','Business Name'],['tagline','Headline'],['about','About (one line)'],['phone','Phone'],['wa','WhatsApp'],['address','Address'],['hours','Opening hours'],['ig','Instagram link'],['fb','Facebook link'],['pay','Payment link (for Scan to Pay)']];
+$('#bc').textContent='Home / Edit Website / '+(CATS[st.cat]?CATS[st.cat][1]:'');if(st.live)$('#nx').style.display='none';
+$('#f').innerHTML=K.map(([k,l])=>`<label>${l}</label><input data-k="${k}" value="${esc(d[k])}">`).join('');
+$('#vs').innerHTML='<optgroup label="Free templates">'+TPLS.map(t=>`<option value="${t.id}">${t.name} (${t.tag})</option>`).join('')+'</optgroup>';$('#vs').value=st.variant;
+let t;const draw=()=>{clearTimeout(t);t=setTimeout(async()=>{const o={origin:location.origin,url:'https://'+(st.domain||'yourbusiness.com')};if(isNaN(st.variant))o.tpl=await loadTpl(st.variant);$('#fr').srcdoc=render(d,st.variant,o)},200)};
+const lists=()=>{$('#sl').innerHTML=d.services.map((s,i)=>`<div class="row"><span>${esc(s)}</span><button class="x" data-s="${i}">🗑</button></div>`).join('');
+$('#ph').innerHTML=d.photos.map((p,i)=>`<div><img src="${p}"><button data-p="${i}">🗑</button></div>`).join('');$('#pc').textContent=d.photos.length+' of 10 added'};
+const rs=(f,m)=>new Promise(r=>{const i=new Image;i.onload=()=>{const k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL(m<400?'image/png':'image/jpeg',.72))};i.src=URL.createObjectURL(f)});
+$('#f').oninput=e=>{d[e.target.dataset.k]=e.target.value;draw()};$('#vs').onchange=e=>{const x=e.target.value;st.variant=isNaN(x)?x:+x;draw()};
+$('#as').onclick=()=>{const v=$('#ns').value.trim();if(v){d.services.push(v);$('#ns').value='';lists();draw()}};
+$('#sl').onclick=e=>{if(e.target.dataset.s){d.services.splice(+e.target.dataset.s,1);lists();draw()}};
+$('#ph').onclick=e=>{if(e.target.dataset.p){d.photos.splice(+e.target.dataset.p,1);lists();draw()}};
+$('#pf').onchange=async e=>{for(const f of e.target.files){if(d.photos.length>=10)break;d.photos.push(await rs(f,900))}e.target.value='';lists();draw()};
+$('#lg').onchange=async e=>{if(e.target.files[0]){d.logo=await rs(e.target.files[0],300);draw()}};
+function save(){try{id?(S.set('sites',sites),sync(st)):S.set('draft',st);toast('Saved');return true}catch{alert('Storage is full. Remove some photos and save again.');return false}}
+$('#sv').onclick=save;$('#dc').onclick=()=>location.reload();
+$('#nx').onclick=()=>{if(save()){S.set('order',{category:CATS[st.cat][1],variant:st.variant});location.href='domain.html'}};
+$('#dv').onclick=()=>{const m=$('#fr').style.width!='375px';$('#fr').style.width=m?'375px':'100%';$('#dv').textContent=m?'Desktop Preview':'Mobile Preview'};
+const isUB=()=>{const t=TPLS.find(x=>x.id===st.variant);return t&&t.ub},nm=x=>x.replace(/⟦name⟧/g,d.name||'').replace(/⟦NAME⟧/g,String(d.name||'').toUpperCase()).replace(/⟦phone⟧/g,d.phone||'');
+['tagline','about'].forEach(k=>{const i=$('[data-k='+k+']');i.classList.add('gen');i.previousElementSibling.classList.add('gen')});
+[$('#sl').previousElementSibling,$('#sl'),$('#ns').parentElement,$('#pc').parentElement,$('#ph'),$('#pf')].forEach(e=>e.classList.add('gen'));
+function slots(h){const out=[],seen={};let cur='Header and menu',m;const re=/\{\{#sec_(\w+)\}\}|\{\{\/sec_(\w+)\}\}|\{\{([ti])(\d+)\|([\s\S]*?)\}\}/g;while(m=re.exec(h)){if(m[1])cur=m[1];else if(m[2])cur='Footer and other';else{const k=m[3]+m[4];if(seen[k])continue;seen[k]=1;out.push({k,t:m[3],sec:cur,def:m[5]})}}return out}
+async function content(){const ub=isUB();document.querySelectorAll('.gen').forEach(e=>e.style.display=ub?'none':'');const box=$('#ct');if(!ub){box.innerHTML='';return}
+const L=slots(await loadTpl(st.variant)),by={};d.t=d.t||{};d.i=d.i||{};d.hide=d.hide||[];L.forEach(x=>(by[x.sec]=by[x.sec]||[]).push(x));
+const f=x=>{const v=esc(d.t[x.k]??nm(x.def));return x.t=='t'?(x.def.length>70?`<textarea rows="3" data-t="${x.k}">${v}</textarea>`:`<input data-t="${x.k}" value="${v}">`):`<div class="im"><img src="${esc(d.i[x.k]||x.def)}"><input type="file" accept="image/*" data-im="${x.k}"></div>`};
+box.innerHTML='<p class="mut">Edit the text and photos of each section. Untick Show to hide a section you do not need.</p>'+Object.keys(by).map(s=>{const sec=!/^(Header and menu|Footer and other)$/.test(s);return `<details class="ac"><summary><b>${esc(s.replace(/_/g,' '))}</b>${sec?`<label style="float:right;font-weight:400"><input type="checkbox" data-h="${s}" ${d.hide.includes(s)?'':'checked'} style="width:auto;margin:0 4px 0 0">Show</label>`:''}</summary>${by[s].map(f).join('')}</details>`}).join('')}
+$('#ct').oninput=e=>{if(e.target.dataset.t){d.t[e.target.dataset.t]=e.target.value;draw()}};
+$('#ct').onchange=async e=>{const t=e.target;if(t.dataset.h){const i=d.hide.indexOf(t.dataset.h);t.checked?(i>=0&&d.hide.splice(i,1)):(i<0&&d.hide.push(t.dataset.h));draw()}
+if(t.dataset.im&&t.files[0]){d.i[t.dataset.im]=await rs(t.files[0],1000);t.previousElementSibling.src=d.i[t.dataset.im];draw()}};
+$('#vs').addEventListener('change',content);
+lists();content();draw();
+</script></body></html>

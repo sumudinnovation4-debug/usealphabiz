@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #c9c9c7;
+  --color-2: #ffffff;
+  --color-3: #131313;
+  --color-4: #d4e3f3;
+  --color-5: #f6d4dc;
+  --color-6: #d1e8d9;
+  --color-7: #fbefc4;
+  --color-8: #575757;
+  --font-1: "Gabarito", "Gabarito Fallback", Arial, sans-serif;
+  --font-2: "Geist", "Geist Fallback", Arial, sans-serif;
+  --space-1: clamp(16px, 8.4vw, 124px);
+  --space-2: clamp(8px, 1.1vw, 16px);
+  --space-3: clamp(28px, 2.6vw, 36px);
+  --space-4: clamp(40px, 5.5vw, 76px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallback faces */
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 98.9%; ascent-override: 95%; descent-override: 26.3%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 91.5%; ascent-override: 102.8%; descent-override: 28.4%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 96.7%; ascent-override: 104.5%; descent-override: 31%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.4%; ascent-override: 98.6%; descent-override: 29.3%; line-gap-override: 0%; }
+/* end fallback faces */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-3); font-family: var(--font-2); font-size: 16px; line-height: 1.5; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--base-focus, var(--color-3)); outline-offset: 3px; }
+.base-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: clamp(15px, 1.1vw, 16.5px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(42px, 7vw, 104px); font-weight: 500; line-height: .96; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(24px, 2.4vw, 34px); font-weight: 500; line-height: 1.12; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(30px, 3.4vw, 48px); font-weight: 500; line-height: 1; letter-spacing: -.025em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.38; letter-spacing: .005em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: 11px; font-weight: 600; line-height: 1.2; letter-spacing: .06em; text-transform: uppercase; font-style: normal; }
+.m-btn { --m-btn-slant: 14px; position: relative; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 calc(22px + var(--m-btn-slant)) 0 22px; border: 0; background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 17px; font-weight: 500; line-height: 1; letter-spacing: -.005em; text-decoration: none; cursor: pointer; clip-path: polygon(0 0, calc(100% - var(--m-btn-slant)) 0, 100% 100%, 0 100%); isolation: isolate; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-btn-fill, var(--color-4)); transform: translateY(101%); transition: transform .42s cubic-bezier(.3, .7, .1, 1); }
+.m-btn__label { position: relative; transition: color .3s; }
+.m-btn:focus-visible { outline-color: var(--color-3); clip-path: none; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: translateY(0); }
+  .m-btn:hover .m-btn__label { color: var(--color-3); }
+}
+.m-link { position: relative; display: inline-flex; align-items: center; gap: 6px; padding: 4px 0; color: inherit; font-family: var(--font-1); font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1.5px no-repeat; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 4px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .38s cubic-bezier(.3, .7, .1, 1); }
+.m-link__icon { width: 11px; height: 11px; flex: none; }
+@media (hover: hover) { .m-link:hover::after { transform: scaleX(1); } }
+.m-icon { position: relative; display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1.6px solid currentColor; border-radius: 50%; color: inherit; background: transparent; cursor: pointer; transition: background-color .3s, color .3s; }
+.m-icon__svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; transition: transform .35s cubic-bezier(.3, .7, .1, 1); }
+@media (hover: hover) {
+  .m-icon:hover { background: var(--color-3); color: var(--color-2); border-color: var(--color-3); }
+  .m-icon:hover .m-icon__svg { transform: translateY(3px); }
+}
+.m-surface { position: relative; background: var(--color-2); color: var(--color-3); background-image: linear-gradient(var(--color-3), var(--color-3)), linear-gradient(var(--color-3), var(--color-3)); background-size: 2px calc(100% - 30px); background-position: 0 50%, 100% 50%; background-repeat: no-repeat; }
+.m-surface::before, .m-surface::after { content: ""; position: absolute; left: 0; right: 0; height: 4px; background: var(--color-3); transform: scaleX(var(--m-surface-bar, 1)); transform-origin: 0 50%; pointer-events: none; }
+.m-surface::before { top: 0; }
+.m-surface::after { bottom: 0; }
+.m-surface-2 { position: relative; color: inherit; background-image: linear-gradient(currentColor, currentColor); background-size: 2px calc(100% - 26px); background-position: 100% 50%; background-repeat: no-repeat; }
+.m-surface-2::before, .m-surface-2::after { content: ""; position: absolute; left: 0; right: 0; height: 4px; background: currentColor; transform: scaleX(var(--m-surface-bar, 1)); transform-origin: 0 50%; pointer-events: none; }
+.m-surface-2::before { top: 0; }
+.m-surface-2::after { bottom: 0; }
+.m-photo { position: relative; overflow: hidden; background: var(--color-1); clip-path: polygon(calc(0% + 0px) calc(0% + 0px), calc(34% + 0px) calc(0% + 0px), calc(34% + 14px) calc(0% + 14px), calc(100% + 0px) calc(0% + 14px), calc(100% + 0px) calc(100% + 0px), calc(0% + 0px) calc(100% + 0px)); }
+.m-photo img { width: 100%; height: 100%; object-fit: cover; }
+.m-tab { --m-tab-slant: clamp(9px, 1.2vw, 16px); position: relative; display: flex; align-items: center; justify-content: center; height: var(--space-3); padding: 0 var(--m-tab-slant) 0 4px; background: var(--m-tab-ground, var(--color-2)); color: var(--m-tab-ink, var(--color-3)); font-family: var(--font-1); font-size: clamp(11px, 1.05vw, 14.5px); font-weight: 500; line-height: 1; letter-spacing: 0; text-transform: none; text-decoration: none; white-space: nowrap; clip-path: polygon(0 0, calc(100% - var(--m-tab-slant)) 0, 100% 100%, 0 100%); }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; }
+.m-field__input { width: 100%; min-height: 46px; padding: 10px 12px; border: 0; border-bottom: 2px solid var(--color-3); border-radius: 0; background: var(--color-4); font-family: var(--font-2); font-size: 16px; line-height: 1.4; }
+textarea.m-field__input { min-height: 92px; resize: vertical; }
+.m-field__input:focus-visible { outline: 3px solid var(--color-3); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+body { --l-nav-h: 92px; padding-top: var(--l-nav-h); }
+@media (max-width: 760px) { body { --l-nav-h: 78px; } }
+.l-folder { --m-btn-fill: var(--l-folder-ground); position: relative; margin: calc(var(--space-4) + var(--space-3)) var(--space-1) 0; padding: var(--space-2); background: var(--l-folder-ground, var(--color-2)); }
+.l-tab { position: absolute; left: calc(var(--l-tab-i, 0) * (100% - var(--m-tab-slant)) / 6); width: calc((100% - var(--m-tab-slant)) / 6 + var(--m-tab-slant)); }
+.l-folder__tab { --l-tab-i: var(--l-folder-i, 0); bottom: 100%; --m-tab-ground: var(--l-folder-ground); }
+.l-margin-label { position: absolute; left: calc(var(--space-1) / 2); top: 50%; transform: translate(-50%, -50%) rotate(-90deg); white-space: nowrap; }
+@media (max-width: 760px) { .l-margin-label { display: none; } }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+#site-nav { position: fixed; z-index: 50; top: 0; left: 0; right: 0; background: var(--color-1); }
+#site-nav .nav__row { position: relative; display: flex; align-items: center; justify-content: center; height: calc(var(--l-nav-h) - var(--space-3)); padding: 0 var(--space-1); }
+#site-nav .nav__logo { display: grid; justify-items: center; gap: 1px; text-decoration: none; }
+#site-nav .nav__word { font-family: var(--font-1); font-size: 30px; font-weight: 400; line-height: 1; letter-spacing: .2em; margin-right: -.2em; }
+#site-nav .nav__caption { font-size: 8.5px; letter-spacing: .14em; }
+#site-nav .nav__links { position: absolute; right: var(--space-1); top: 50%; transform: translateY(-50%); display: flex; gap: 22px; }
+#site-nav .nav__quick { font-size: 13px; }
+#site-nav .nav__tabs { --nav-drop: 3px; position: relative; height: var(--space-3); margin: 0 var(--space-1); }
+/* Every tab stands on one base line, --nav-drop below the row: a resting tab is lowered onto it; a raised one (open or hovered) keeps its foot and its slant down to it. */
+#site-nav .nav__tabs .m-tab { --nav-foot: 0px; top: 0; z-index: calc(10 - var(--l-tab-i)); transform: translateY(calc(var(--nav-drop) - var(--nav-foot))); clip-path: polygon(0 0, calc(100% - var(--m-tab-slant)) 0, 100% calc(100% + var(--nav-foot)), 0 calc(100% + var(--nav-foot))); transition: transform .3s cubic-bezier(.3, .7, .1, 1), clip-path .3s cubic-bezier(.3, .7, .1, 1); }
+#site-nav .nav__tabs .m-tab::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: calc(2 * var(--nav-drop)); background: inherit; }
+#site-nav .nav__tabs .m-tab[aria-current="true"] { --nav-foot: var(--nav-drop); z-index: 20; }
+#site-nav .nav__tabs .m-tab:focus-visible { outline-color: var(--m-tab-ink, var(--color-3)); outline-offset: -4px; clip-path: none; }
+#site-nav .nav__tabs .m-tab:focus-visible::after { height: var(--nav-foot); }
+@media (hover: hover) { #site-nav .nav__tabs .m-tab:hover { --nav-foot: calc(2 * var(--nav-drop)); z-index: 30; } }
+@media (max-width: 760px) {
+  #site-nav .nav__row { justify-content: flex-start; }
+  #site-nav .nav__logo { justify-items: start; }
+  #site-nav .nav__word { font-size: 24px; }
+  #site-nav .nav__links { gap: 14px; }
+  #site-nav .nav__quick:first-child { display: none; }
+  #site-nav .nav__tabs .m-tab { font-size: 10.5px; padding-left: 2px; }
+}
+}
+</style>
+<style data-8b-part="section:packs">
+@layer sections {
+#packs { margin-top: 0; --l-folder-i: 1; --l-folder-ground: var(--color-4); }
+#packs .packs { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.3fr); gap: clamp(24px, 4vw, 64px); padding: clamp(28px, 3.6vw, 52px) clamp(22px, 3.6vw, 52px) clamp(28px, 3.6vw, 48px); }
+#packs .packs__intro { display: grid; align-content: start; justify-items: start; gap: 18px; }
+#packs .packs__photo { width: 100%; aspect-ratio: 4 / 3.2; margin-top: 10px; }
+#packs .packs__photo img { object-position: 50% 70%; }
+#packs .packs__week { position: relative; align-self: center; padding-bottom: 16px; }
+#packs .packs__table { width: 100%; border-collapse: separate; border-spacing: 5px; table-layout: fixed; }
+#packs .packs__table caption { text-align: left; padding: 0 5px 12px; }
+#packs .packs__table thead th { padding: 0 0 6px; text-align: center; }
+#packs .packs__table thead td { width: 5.6em; height: auto; border: 0; background: none; }
+#packs .packs__table tbody th { width: 5.6em; padding-right: 4px; text-align: left; }
+#packs .packs__table td { position: relative; height: clamp(54px, 5.6vw, 80px); padding: 0; border: 1.5px solid var(--color-3); background: var(--color-2); }
+#packs .packs__dose { position: absolute; inset: 3px; display: grid; place-items: center; background: var(--packs-fill); }
+#packs .packs__am { --packs-fill: var(--color-7); }
+#packs .packs__mid { --packs-fill: var(--color-5); }
+#packs .packs__pm { --packs-fill: var(--color-6); }
+#packs .packs__bed { --packs-fill: var(--color-4); }
+#packs .packs__seal { position: absolute; left: calc(5.6em + 5px); right: 5px; bottom: 0; height: 7px; background: var(--color-3); }
+#packs .packs__key { margin-top: 18px; }
+@media (max-width: 860px) {
+  #packs .packs { grid-template-columns: 1fr; padding: 24px 16px 26px; }
+  #packs .packs__photo { aspect-ratio: 16 / 10; }
+  #packs .packs__table { border-spacing: 3px; }
+  #packs .packs__table thead td { width: 4.9em; }
+  #packs .packs__seal { left: calc(4.9em + 3px); right: 3px; }
+  #packs .packs__table tbody th { font-size: 11.5px; }
+  #packs .packs__table thead th { font-size: 9.5px; letter-spacing: 0; }
+  #packs .packs__table td { height: 44px; }
+  #packs .packs__dose .m-text-4 { font-size: 18px; }
+}
+}
+</style>
+<style data-8b-part="section:clinic">
+@layer sections {
+#clinic { --l-folder-i: 2; --l-folder-ground: var(--color-5); display: grid; grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); gap: var(--space-2); }
+#clinic .clinic__sheet { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); grid-template-rows: auto 1fr auto; gap: 20px clamp(20px, 2.6vw, 40px); min-height: clamp(560px, calc(100svh - var(--l-nav-h) - 2 * var(--space-4)), 760px); padding: clamp(26px, 3.2vw, 46px) clamp(24px, 3.2vw, 46px) clamp(26px, 3vw, 40px); }
+#clinic .clinic__head { grid-column: 1 / -1; max-width: 23ch; }
+#clinic .clinic__photos { position: relative; grid-column: 2; grid-row: 2 / 4; min-height: 320px; }
+#clinic .clinic__photos .m-photo { position: absolute; inset: 0; }
+#clinic .clinic__photos .m-photo:not([data-step="0"]) { background: none; }
+#clinic .clinic__word { grid-column: 1; grid-row: 3; align-self: end; display: grid; justify-items: start; gap: 12px; }
+#clinic .clinic__big { font-size: clamp(54px, 6.4vw, 100px); line-height: .84; white-space: nowrap; }
+#clinic .clinic__text { max-width: 38ch; }
+#clinic .clinic__col { position: relative; display: grid; }
+#clinic .clinic__list { position: relative; display: grid; grid-template-rows: repeat(4, 1fr); gap: 10px; }
+#clinic .clinic__marker { position: absolute; left: 0; right: 0; top: 0; height: calc((100% - 30px) / 4); background: var(--color-2); }
+#clinic .clinic__cell { position: relative; display: grid; align-content: space-between; gap: 10px; padding: 16px 24px 16px 14px; }
+#clinic .clinic__note { max-width: 30ch; }
+@media (max-width: 860px) {
+  #clinic { grid-template-columns: 1fr; }
+  #clinic .clinic__sheet { grid-template-columns: 1fr; grid-template-rows: none; min-height: 0; padding: 24px 18px; }
+  #clinic .clinic__photos { grid-column: 1; grid-row: auto; min-height: 0; aspect-ratio: 4 / 4.4; }
+  #clinic .clinic__word { grid-column: 1; grid-row: auto; }
+  #clinic .clinic__list { grid-template-rows: none; grid-auto-rows: 1fr; }
+  #clinic .clinic__cell { min-height: 128px; }
+}
+}
+</style>
+<style data-8b-part="section:jabs">
+@layer sections {
+#jabs { margin-top: 0; --l-folder-i: 2; --l-folder-ground: var(--color-5); }
+#jabs .jabs { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.4fr); gap: clamp(22px, 3.4vw, 56px); padding: clamp(24px, 3.2vw, 46px); }
+#jabs .jabs__photo { min-height: 420px; height: 100%; }
+#jabs .jabs__photo img { object-position: 38% 50%; }
+#jabs .jabs__body { display: grid; align-content: start; gap: 22px; }
+#jabs .jabs__head { max-width: 22ch; }
+#jabs .jabs__table { width: 100%; border-collapse: collapse; }
+#jabs .jabs__table thead th { padding: 0 12px 10px 0; text-align: left; border-bottom: 4px solid var(--color-3); }
+#jabs .jabs__table tbody th, #jabs .jabs__table td { padding: 16px 14px 16px 0; text-align: left; vertical-align: top; border-bottom: 1.5px solid var(--color-3); }
+#jabs .jabs__table tbody th { width: 28%; }
+#jabs .jabs__table .m-text-4 { font-size: clamp(24px, 2.4vw, 34px); }
+#jabs .jabs__table td:last-child { text-align: right; padding-right: 0; }
+@media (max-width: 860px) {
+  #jabs .jabs { grid-template-columns: 1fr; padding: 22px 16px; }
+  #jabs .jabs__photo { min-height: 0; aspect-ratio: 16 / 11; }
+  #jabs .jabs__table thead { display: none; }
+  #jabs .jabs__table tr { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 14px 0; border-bottom: 1.5px solid var(--color-3); }
+  #jabs .jabs__table tbody th, #jabs .jabs__table td { display: block; width: auto; padding: 0; border: 0; }
+  #jabs .jabs__table td:nth-child(2), #jabs .jabs__table td:nth-child(3) { grid-column: 1 / -1; }
+  #jabs .jabs__table td:last-child { grid-row: 1; grid-column: 2; }
+}
+}
+</style>
+<style data-8b-part="section:shop">
+@layer sections {
+#shop { --l-folder-i: 3; --l-folder-ground: var(--color-6); }
+#shop .shop__rows { display: grid; gap: 10px; }
+#shop .shop__row { display: flex; align-items: center; justify-content: space-between; gap: 18px; width: 100%; min-height: clamp(78px, 8.4vw, 118px); padding: 6px clamp(18px, 2.2vw, 30px); border: 0; background-color: var(--color-6); background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor); background-size: 2px calc(100% - 26px); background-position: 0 50%, 100% 50%; text-align: left; cursor: pointer; transition: background-color .3s; }
+#shop .shop__row[aria-expanded="true"] { background-color: var(--color-2); }
+#shop .shop__name { font-size: clamp(32px, 4.7vw, 68px); line-height: 1.04; }
+#shop .shop__row .m-icon { flex: none; opacity: 0; transition: opacity .3s; }
+#shop .shop__row .m-icon__svg { transform: rotate(90deg); }
+#shop .shop__row[aria-expanded="true"] .m-icon { opacity: 1; }
+#shop .shop__row:focus-visible { outline-offset: -8px; }
+@media (hover: hover) {
+  #shop .shop__row:hover { background-color: color-mix(in srgb, var(--color-2) 60%, var(--color-6)); }
+  #shop .shop__row:hover .m-icon { opacity: 1; }
+}
+#shop .shop__drawer { margin-top: 10px; }
+#shop .shop__panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: clamp(20px, 3.2vw, 52px); padding: clamp(18px, 2.4vw, 34px); }
+#shop .shop__panel[hidden] { display: none; }
+#shop .shop__photo { aspect-ratio: 4 / 3; }
+#shop .shop__body { display: grid; align-content: start; justify-items: start; gap: 18px; padding-top: 8px; }
+#shop .shop__items { display: grid; gap: 0; width: 100%; }
+#shop .shop__items li { padding: 12px 0; border-top: 1.5px solid var(--color-3); }
+#shop .shop__items li:last-child { border-bottom: 1.5px solid var(--color-3); }
+@media (max-width: 860px) {
+  #shop .shop__row { min-height: 68px; padding: 6px 14px; }
+  #shop .shop__row .m-icon { width: 34px; height: 34px; }
+  #shop .shop__panel { grid-template-columns: 1fr; padding: 16px; }
+}
+}
+</style>
+<style data-8b-part="section:delivery">
+@layer sections {
+#delivery { margin-top: 0; --l-folder-i: 3; --l-folder-ground: var(--color-6); }
+#delivery .delivery__stage { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(18px, 2.4vw, 30px); padding: clamp(22px, 3vw, 42px) clamp(14px, 2.4vw, 34px); overflow: hidden; }
+#delivery .delivery__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 34ch); gap: 18px 40px; align-items: end; }
+#delivery .delivery__title { max-width: 18ch; }
+#delivery .delivery__route { position: relative; height: 6px; background: color-mix(in srgb, var(--color-3) 18%, transparent); }
+#delivery .delivery__fill { position: absolute; inset: 0; background: var(--color-3); transform-origin: 0 50%; }
+#delivery .delivery__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+#delivery .delivery__stop { display: grid; align-content: start; gap: 10px; padding: 14px 14px 20px; }
+#delivery .delivery__stop .m-photo { aspect-ratio: 4 / 3; }
+#delivery .delivery__street { font-size: clamp(26px, 2.5vw, 36px); }
+@media (max-width: 860px) {
+  #delivery .delivery__head { grid-template-columns: 1fr; }
+  #delivery .delivery__track { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:people">
+@layer sections {
+#people { --l-folder-i: 4; --l-folder-ground: var(--color-7); display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: var(--space-2); }
+#people .people__sheet { display: grid; grid-template-rows: auto 1fr auto; gap: 18px; min-height: clamp(580px, calc(100svh - var(--l-nav-h) - 2 * var(--space-4)), 780px); padding: clamp(24px, 3vw, 42px); }
+#people .people__title { display: flex; align-items: flex-start; gap: 10px; }
+#people .people__frame { position: relative; min-height: 320px; overflow: hidden; background: var(--color-1); clip-path: polygon(0 0, 34% 0, calc(34% + 14px) 14px, 100% 14px, 100% 100%, 0 100%); }
+#people .people__slat { --people-l: 0%; --people-r: 66.667%; --people-x: -33.333%; position: absolute; inset: 0; clip-path: inset(0 var(--people-r) 0 var(--people-l)); }
+#people .people__slat[data-slat="1"] { --people-l: 33.333%; --people-r: 33.333%; --people-x: 0%; }
+#people .people__slat[data-slat="2"] { --people-l: 66.667%; --people-r: 0%; --people-x: 33.333%; }
+#people .people__slat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: translateX(var(--people-x)); }
+#people .people__slat + .people__slat { border-left: 0; }
+#people .people__list { display: grid; grid-template-rows: repeat(3, 1fr); gap: 10px; }
+#people .people__cell { display: grid; align-content: space-between; gap: 10px; padding: 16px 24px 18px 14px; }
+#people .people__name { font-size: clamp(40px, 4.6vw, 66px); line-height: .9; }
+#people .people__about { max-width: 40ch; }
+@media (max-width: 860px) {
+  #people { grid-template-columns: 1fr; }
+  #people .people__sheet { min-height: 0; padding: 22px 16px; }
+  #people .people__frame { min-height: 0; aspect-ratio: 4 / 4.2; }
+  #people .people__list { grid-template-rows: none; }
+}
+}
+</style>
+<style data-8b-part="section:story">
+@layer sections {
+#story { margin-top: 0; --l-folder-i: 4; --l-folder-ground: var(--color-7); display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: var(--space-2); }
+#story .story__photo { height: 100%; min-height: 520px; }
+#story .story__photo img { object-position: 60% 70%; }
+#story .story__photo figcaption { position: absolute; left: 12px; bottom: 12px; padding: 6px 10px; background: var(--color-2); }
+#story .story__letter { display: grid; align-content: space-between; gap: 28px; padding: clamp(28px, 3.8vw, 58px); }
+#story .story__head { max-width: 20ch; }
+#story .story__text { column-count: 2; column-gap: clamp(22px, 3vw, 44px); }
+#story .story__text p + p { margin-top: 1em; }
+#story .story__sign { display: grid; gap: 6px; padding-top: 18px; border-top: 1.5px solid var(--color-3); }
+@media (max-width: 860px) {
+  #story { grid-template-columns: 1fr; }
+  #story .story__photo { min-height: 0; aspect-ratio: 4 / 4.6; }
+  #story .story__letter { padding: 24px 18px; }
+  #story .story__text { column-count: 1; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { --l-folder-i: 5; --l-folder-ground: var(--color-8); --base-focus: var(--color-2); color: var(--color-2); padding-top: clamp(26px, 3.4vw, 48px); padding-bottom: clamp(18px, 2.6vw, 36px); }
+#faq .faq__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 38ch); gap: 14px 40px; align-items: end; padding: 0 clamp(6px, 1.6vw, 22px) clamp(20px, 2.6vw, 34px); }
+#faq .faq__list { display: grid; gap: 12px; margin: 0 calc(-1 * var(--space-2)); }
+#faq .faq__item { position: relative; padding-top: var(--space-3); }
+#faq .faq__tab { top: 0; }
+#faq .faq__q { background: var(--color-2); color: var(--color-3); }
+#faq .faq__q summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px clamp(16px, 2.2vw, 30px); cursor: pointer; list-style: none; }
+#faq .faq__q summary::-webkit-details-marker { display: none; }
+#faq .faq__q summary .m-text-3 { font-size: clamp(19px, 1.9vw, 27px); }
+#faq .faq__q summary .m-icon { flex: none; width: 36px; height: 36px; }
+#faq .faq__q summary .m-icon__svg { transition: transform .35s cubic-bezier(.3, .7, .1, 1); }
+#faq .faq__q[open] summary .m-icon__svg { transform: rotate(180deg); }
+#faq .faq__q summary:focus-visible { outline-color: var(--color-3); outline-offset: -6px; }
+#faq .faq__answer { max-width: 68ch; padding: 0 clamp(16px, 2.2vw, 30px) 24px; }
+@media (hover: hover) { #faq .faq__q summary:hover .m-icon { background: var(--color-3); color: var(--color-2); } }
+@media (max-width: 860px) {
+  #faq .faq__head { grid-template-columns: 1fr; }
+  #faq .faq__tab { font-size: 10px; }
+  #faq .faq__q summary { padding: 14px 14px; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { --l-folder-i: 5; --l-folder-ground: var(--color-8); --base-focus: var(--color-2); color: var(--color-2); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-2); margin-top: 0; padding-top: var(--space-2); }
+#contact .contact__info { display: grid; align-content: start; gap: 24px; padding: clamp(24px, 3.2vw, 48px) clamp(8px, 2vw, 30px); }
+#contact .contact__address { font-size: clamp(38px, 4.6vw, 68px); }
+#contact .contact__hours { width: 100%; border-collapse: collapse; }
+#contact .contact__hours caption { text-align: left; padding-bottom: 8px; }
+#contact .contact__hours th, #contact .contact__hours td { padding: 9px 0; text-align: left; border-top: 1.5px solid currentColor; font-weight: 500; }
+#contact .contact__hours tr:last-child th, #contact .contact__hours tr:last-child td { border-bottom: 1.5px solid currentColor; }
+#contact .contact__hours td:last-child { text-align: right; }
+#contact .contact__reach { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 28px; }
+#contact .contact__phone { text-decoration: none; }
+#contact .contact__photo { aspect-ratio: 16 / 10; }
+#contact .contact__photo img { object-position: 50% 62%; }
+#contact .contact__form { --m-btn-fill: var(--color-7); --base-focus: var(--color-3); display: grid; align-content: start; gap: 18px; padding: clamp(24px, 3.2vw, 46px); }
+#contact .contact__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+#contact .contact__choice { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 0; padding: 0; border: 0; }
+#contact .contact__choice legend { padding: 0 0 8px; }
+#contact .contact__choice label { display: inline-flex; align-items: center; gap: 8px; }
+#contact .contact__choice input { width: 20px; height: 20px; margin: 0; accent-color: var(--color-3); }
+#contact .contact__status { padding: 12px 14px; background: var(--color-6); }
+#contact .contact__status[hidden] { display: none; }
+@media (max-width: 860px) {
+  #contact { grid-template-columns: 1fr; }
+  #contact .contact__info { padding: 22px 8px; }
+  #contact .contact__pair { grid-template-columns: 1fr; }
+  #contact .contact__form { padding: 22px 16px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:delivery">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #delivery[data-rolling] .delivery__stage { position: sticky; top: var(--l-nav-h); grid-template-rows: auto auto 1fr; align-content: start; height: calc(100svh - var(--l-nav-h) - var(--space-2)); min-height: 520px; }
+  #delivery[data-rolling] .delivery__track { display: flex; align-items: flex-start; width: max-content; }
+  #delivery[data-rolling] .delivery__stop { width: clamp(270px, 27vw, 380px); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 860px) {
+  #delivery[data-rolling] .delivery__stop { width: 76vw; }
+  #delivery[data-rolling] .delivery__stop .m-photo { aspect-ratio: 4 / 4.2; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; margin-top: var(--space-4); padding: 0 var(--space-1) 28px; }
+#footer .footer__word { display: block; font-family: var(--font-1); font-weight: 400; line-height: .8; letter-spacing: .16em; margin-right: -.16em; text-align: center; font-size: min(26vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .86))); }
+#footer .footer__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 28px; padding: 26px 0 24px; border-top: 4px solid var(--color-3); margin-top: 18px; }
+#footer .footer__links { display: grid; gap: 4px; justify-items: start; }
+#footer .footer__phone { font-size: 24px; }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 14px; border-top: 1.5px solid var(--color-3); }
+@media (max-width: 760px) { #footer .footer__grid { grid-template-columns: 1fr 1fr; } #footer .footer__grid > :first-child { grid-column: 1 / -1; } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#packs .packs__title { font-size: clamp(32px, 3.3vw, 48px); max-width: 14ch; }
+#packs .packs__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; }
+@media (max-width: 860px) {
+  #packs .packs__title { font-size: 30px; }
+  #packs .packs__actions { gap: 10px 20px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #packs .packs__intro > :not(.packs__photo) { animation: rw-rise .9s cubic-bezier(.2, .7, .1, 1) .05s backwards; }
+  #packs .packs__intro > :nth-child(2) { animation-delay: .15s; }
+  #packs .packs__intro > :nth-child(3) { animation-delay: .25s; }
+  #packs .packs::before, #packs .packs::after { animation: rw-bar .8s cubic-bezier(.6, 0, .1, 1) backwards; }
+  #packs .packs__week { animation: rw-fade .5s ease .25s backwards; }
+}
+@keyframes rw-rise { from { transform: translateY(34px); clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 -20% 0); } }
+@keyframes rw-bar { from { transform: scaleX(0); } }
+@keyframes rw-fade { from { opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="site-nav">
+<div class="nav__row">
+<a aria-label="{{name}} pharmacy, back to the top" class="nav__logo" href="#packs"><span class="nav__word">{{t1|⟦NAME⟧}}</span><span class="nav__caption m-text-6">{{t2|independent pharmacy}}</span></a>
+<nav aria-label="Quick links" class="nav__links">
+<a class="m-link nav__quick" href="#contact"><svg aria-hidden="true" class="m-link__icon" viewbox="0 0 12 12"><path d="M6 0l1.3 4.7L12 6l-4.7 1.3L6 12 4.7 7.3 0 6l4.7-1.3z" fill="currentColor"></path></svg><span>{{t3|Find us}}</span></a>
+<a class="m-link nav__quick" href="#order"><svg aria-hidden="true" class="m-link__icon" viewbox="0 0 12 12"><path d="M6 0l1.3 4.7L12 6l-4.7 1.3L6 12 4.7 7.3 0 6l4.7-1.3z" fill="currentColor"></path></svg><span>{{t4|Order a repeat}}</span></a>
+</nav>
+</div>
+<nav aria-label="Sections" class="nav__tabs">
+<a aria-current="true" class="m-tab l-tab" href="#packs" style="--l-tab-i:0; --m-tab-ground:var(--color-2)">{{t5|⟦name⟧}}</a>
+<a class="m-tab l-tab" href="#packs" style="--l-tab-i:1; --m-tab-ground:var(--color-4)">{{t6|Repeats}}</a>
+<a class="m-tab l-tab" href="#clinic" style="--l-tab-i:2; --m-tab-ground:var(--color-5)">{{t7|Clinic}}</a>
+<a class="m-tab l-tab" href="#shop" style="--l-tab-i:3; --m-tab-ground:var(--color-6)">{{t8|Shop}}</a>
+<a class="m-tab l-tab" href="#people" style="--l-tab-i:4; --m-tab-ground:var(--color-7)">{{t9|People}}</a>
+<a class="m-tab l-tab" href="#contact" style="--l-tab-i:5; --m-tab-ground:var(--color-8); --m-tab-ink:var(--color-2)">{{t10|Visit}}</a>
+</nav>
+</header>
+<main>
+
+{{#sec_packs}}<section class="l-folder" data-8b-section="weekly-packs" data-tab="1" id="packs">
+<div class="packs m-surface">
+<div class="packs__intro">
+<h1 class="m-text-3 packs__title" id="opening-title">{{t11|Sealed by the week, sorted by the hour}}</h1>
+<p class="m-text">{{t12|On four or more medicines? We pack them a week at a time: every pocket labelled with the day and the hour, checked by a second pharmacist, sealed. Free, and one less thing to count at the kitchen table.}}</p>
+<div class="packs__actions"><a class="m-btn" href="#order"><span class="m-btn__label">{{t4|Order a repeat}}</span></a><a class="m-link" href="#order">{{t13|Ask about weekly packs}}</a></div>
+<figure class="m-photo packs__photo" data-8b-motion="tabopen"><img alt="Blue weekly pill boxes marked by day, open over capsules on a pink tray" height="2400" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1655913197738-6a96ae5e9664?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bWVkaWNpbmUlMjBib3hlc3xlbnwxfDF8fHwxNzkxNDA1MTk3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#0c598c" width="1600"/></figure>
+</div>
+<div class="packs__week">
+<table class="packs__table">
+<caption class="m-text-5">{{t14|An example week: tablets in each pocket}}</caption>
+<thead><tr><td></td><th class="m-text-6" scope="col">{{t15|Mon}}</th><th class="m-text-6" scope="col">{{t16|Tue}}</th><th class="m-text-6" scope="col">{{t17|Wed}}</th><th class="m-text-6" scope="col">{{t18|Thu}}</th><th class="m-text-6" scope="col">{{t19|Fri}}</th><th class="m-text-6" scope="col">{{t20|Sat}}</th><th class="m-text-6" scope="col">{{t21|Sun}}</th></tr></thead>
+<tbody>
+<tr class="packs__am"><th class="m-text-5" scope="row">{{t22|Morning}}</th><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t23|2}}</span></span></td></tr>
+<tr class="packs__mid"><th class="m-text-5" scope="row">{{t24|Midday}}</th><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td></tr>
+<tr class="packs__pm"><th class="m-text-5" scope="row">{{t26|Evening}}</th><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t27|3}}</span></span></td></tr>
+<tr class="packs__bed"><th class="m-text-5" scope="row">{{t28|Bedtime}}</th><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td><td><span class="packs__dose"><span class="m-text-4">{{t25|1}}</span></span></td></tr>
+</tbody>
+</table>
+<span aria-hidden="true" class="packs__seal"></span>
+</div>
+</div>
+</section>{{/sec_packs}}
+
+{{#sec_clinic}}<section class="l-folder" data-8b-section="walk-in-clinic" data-tab="2" id="clinic">
+<span aria-hidden="true" class="l-folder__tab l-tab m-tab">{{t7|Clinic}}</span>
+<div class="clinic__sheet m-surface">
+<h2 class="m-text-3 clinic__head">{{t29|Seen today in the room behind the counter, with no appointment}}</h2>
+<div class="clinic__photos">
+<figure class="m-photo" data-step="3"><img alt="A pharmacist in red takes an older woman's blood pressure" height="1064" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1631815590016-ebce183022ce?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Ymxvb2QlMjBwcmVzc3VyZSUyMGNoZWNrfGVufDF8MHx8fDE3OTE0MDUxMjV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=710&q=60}}" style="background:#a6a6a6" width="1600"/></figure>
+<figure class="m-photo" data-step="2"><img alt="A woman in a striped scarf about to sneeze into a tissue" height="2400" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1737098150410-a82d4950ef16?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c29yZSUyMHRocm9hdHxlbnwxfDF8fHwxNzkxNDA1MTI2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#40c040" width="1600"/></figure>
+<figure class="m-photo" data-step="1"><img alt="A woman pressing her hands over both ears, eyes shut" height="2400" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1737093889885-8e827af13eb6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c29yZSUyMHRocm9hdHxlbnwxfDF8fHwxNzkxNDA1MTI2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#59a640" width="1600"/></figure>
+<figure class="m-photo" data-step="0"><img alt="A woman with her head tipped back, a hand at her throat" height="2400" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1635817301822-0f6fe9a4c0b2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHNvcmUlMjB0aHJvYXR8ZW58MXwxfHx8MTc5MTQwNTEyNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#264040" width="1600"/></figure>
+</div>
+<div class="clinic__word">
+<p class="m-text-2 clinic__big">{{t30|Walk in}}</p>
+<p class="m-text-5">{{t31|The ⟦name⟧ clinic room · Mon–Sat}}</p>
+<p class="m-text clinic__text">{{t32|A pharmacist sees you privately for ten minutes, can treat seven common conditions under the NHIS Pharmacy First service, and tells you plainly when it needs your GP instead.}}</p>
+</div>
+</div>
+<div class="clinic__col">
+<span aria-hidden="true" class="clinic__marker"></span>
+<ul class="clinic__list">
+<li class="clinic__cell m-surface-2"><p class="m-text-5">{{t33|Ages 5 and over}}</p><p class="m-text-4">{{t34|Sore throat}}</p><p class="m-text-5 clinic__note">{{t35|Checked, treated or referred the same day.}}</p></li>
+<li class="clinic__cell m-surface-2"><p class="m-text-5">{{t36|Ages 1 to 17}}</p><p class="m-text-4">{{t37|Earache}}</p><p class="m-text-5 clinic__note">{{t38|We look inside with an otoscope before anything is prescribed.}}</p></li>
+<li class="clinic__cell m-surface-2"><p class="m-text-5">{{t39|Ages 12 and over}}</p><p class="m-text-4">{{t40|Sinusitis}}</p><p class="m-text-5 clinic__note">{{t41|Most clear by themselves; we tell you which ones won't.}}</p></li>
+<li class="clinic__cell m-surface-2"><p class="m-text-5">{{t42|Ages 40 and over, free}}</p><p class="m-text-4">{{t43|Blood pressure}}</p><p class="m-text-5 clinic__note">{{t44|A reading in five minutes, sent to your GP if it is high.}}</p></li>
+</ul>
+</div>
+</section>{{/sec_clinic}}
+
+{{#sec_jabs}}<section class="l-folder" data-8b-section="vaccinations" data-tab="2" id="jabs">
+<div class="jabs m-surface" data-8b-motion="rule">
+<figure class="m-photo jabs__photo" data-8b-motion="tabopen"><img alt="A smiling man in glasses holds up his sleeve to show a plaster on his arm" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1691139599738-bee6565dcacb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fHZhY2NpbmF0aW9ufGVufDF8MHx8fDE3OTE0MDUxOTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#f3f3f3" width="1600"/></figure>
+<div class="jabs__body">
+<h2 class="m-text-3 jabs__head">{{t45|Jabs by the season, given in the same room}}</h2>
+<table class="jabs__table">
+<thead><tr><th class="m-text-6" scope="col">{{t46|Vaccine}}</th><th class="m-text-6" scope="col">{{t47|Who}}</th><th class="m-text-6" scope="col">{{t48|When}}</th><th scope="col"><span class="base-sr">{{t49|Booking}}</span></th></tr></thead>
+<tbody>
+<tr><th scope="row"><span class="m-text-4">{{t50|Flu}}</span></th><td class="m-text-5">{{t51|Free at 65 and over, in pregnancy or with a long-term condition; ₦8,000 for everyone else}}</td><td class="m-text-5">{{t52|October to March}}</td><td><a class="m-link" href="#order">{{t53|Book}}</a></td></tr>
+<tr><th scope="row"><span class="m-text-4">{{t54|Covid}}</span></th><td class="m-text-5">{{t55|Free at 75 and over and for people the NHIS invites}}</td><td class="m-text-5">{{t56|Spring and autumn rounds}}</td><td><a class="m-link" href="#order">{{t53|Book}}</a></td></tr>
+<tr><th scope="row"><span class="m-text-4">{{t57|Travel}}</span></th><td class="m-text-5">{{t58|Anyone going abroad; we check your route and history first}}</td><td class="m-text-5">{{t59|Six weeks before you fly}}</td><td><a class="m-link" href="#order">{{t53|Book}}</a></td></tr>
+<tr><th scope="row"><span class="m-text-4">{{t60|Chickenpox}}</span></th><td class="m-text-5">{{t61|Children from one year and adults who never had it}}</td><td class="m-text-5">{{t62|All year, two doses}}</td><td><a class="m-link" href="#order">{{t53|Book}}</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>{{/sec_jabs}}
+
+{{#sec_shop}}<section class="l-folder" data-8b-section="shop" data-tab="3" id="shop">
+<span aria-hidden="true" class="l-folder__tab l-tab m-tab">{{t8|Shop}}</span>
+<h2 class="base-sr">{{t63|The shop: four shelves chosen by our pharmacists}}</h2>
+<div class="shop__rows">
+<button aria-controls="shelf-skin" aria-expanded="false" class="shop__row m-surface-2" type="button"><span class="m-text-2 shop__name">{{t64|Skin & Sun}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></button>
+<button aria-controls="shelf-sleep" aria-expanded="true" class="shop__row m-surface-2" type="button"><span class="m-text-2 shop__name">{{t65|Sleep & Calm}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></button>
+<button aria-controls="shelf-baby" aria-expanded="false" class="shop__row m-surface-2" type="button"><span class="m-text-2 shop__name">{{t66|Baby & Bath}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></button>
+<button aria-controls="shelf-travel" aria-expanded="false" class="shop__row m-surface-2" type="button"><span class="m-text-2 shop__name">{{t67|Travel Kit}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></button>
+</div>
+<div class="shop__drawer">
+<div class="shop__panel m-surface" hidden="" id="shelf-skin">
+<figure class="m-photo shop__photo"><img alt="Sun cream drawn in white shapes on two sunlit legs" height="2133" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1751821195194-0bbc1caab446?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3Vuc2NyZWVuJTIwc2tpbmNhcmV8ZW58MXwxfHx8MTc5MTQwNTE0Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#a67359" width="1600"/></figure>
+<div class="shop__body"><h3 class="m-text-3">{{t64|Skin & Sun}}</h3><ul class="shop__items"><li class="m-text">{{t68|Mineral SPF 50 for children and for skin that reacts to everything}}</li><li class="m-text">{{t69|Unscented emollients for eczema, in tubs and pumps}}</li><li class="m-text">{{t70|After-sun with no alcohol, and plain advice on burns}}</li></ul><a class="m-link" href="#contact">{{t71|Ask us to order something}}</a></div>
+</div>
+<div class="shop__panel m-surface" id="shelf-sleep">
+<figure class="m-photo shop__photo"><img alt="A cup of tea with floating daisies on white bed linen" height="2400" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1686059437289-e4c4c2320a17?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8aGVyYmFsJTIwdGVhJTIwc2xlZXB8ZW58MXwxfHx8MTc5MTQwNTE0N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<div class="shop__body"><h3 class="m-text-3">{{t65|Sleep & Calm}}</h3><ul class="shop__items"><li class="m-text">{{t72|Herbal teas and remedies we would take ourselves}}</li><li class="m-text">{{t73|Earplugs, eye masks and a quiet word about what keeps you up}}</li><li class="m-text">{{t74|Short-term sleep aids, only after a chat at the counter}}</li></ul><a class="m-link" href="#contact">{{t71|Ask us to order something}}</a></div>
+</div>
+<div class="shop__panel m-surface" hidden="" id="shelf-baby">
+<figure class="m-photo shop__photo"><img alt="A baby's bare feet on a soft blue towel" height="1068" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1640447067543-55cd45ab3e46?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJhYnklMjBmZWV0JTIwdG93ZWx8ZW58MXwwfHx8MTc5MTQwNTM5Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#c0d9f3" width="1600"/></figure>
+<div class="shop__body"><h3 class="m-text-3">{{t66|Baby & Bath}}</h3><ul class="shop__items"><li class="m-text">{{t75|Formula kept in stock, including the hard-to-find ones}}</li><li class="m-text">{{t76|Nappy cream, saline drops and a thermometer that works}}</li><li class="m-text">{{t77|Teething, colic and fevers talked through, day or evening}}</li></ul><a class="m-link" href="#contact">{{t71|Ask us to order something}}</a></div>
+</div>
+<div class="shop__panel m-surface" hidden="" id="shelf-travel">
+<figure class="m-photo shop__photo"><img alt="A white knitted wash bag of travel-size toiletries beside a comb" height="2000" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1650886714591-d654bf096487?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dHJhdmVsJTIwdG9pbGV0cnklMjBiYWd8ZW58MXwxfHx8MTc5MTQwNTE0OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60}}" style="background:#d9d9d9" width="1600"/></figure>
+<div class="shop__body"><h3 class="m-text-3">{{t67|Travel Kit}}</h3><ul class="shop__items"><li class="m-text">{{t78|Travel-size everything, and a first-aid pouch we pack to order}}</li><li class="m-text">{{t79|Motion sickness, altitude and insect bite remedies}}</li><li class="m-text">{{t80|Malaria tablets with a consultation, priced before you commit}}</li></ul><a class="m-link" href="#contact">{{t71|Ask us to order something}}</a></div>
+</div>
+</div>
+</section>{{/sec_shop}}
+
+{{#sec_delivery}}<section class="l-folder" data-8b-section="bike-delivery" data-tab="3" id="delivery">
+<div class="delivery__runway">
+<div class="delivery__stage">
+<div class="delivery__head">
+<h2 class="m-text-3 delivery__title">{{t81|Delivered by bike, Tuesdays and Fridays}}</h2>
+<p class="m-text">{{t82|Prescriptions and shop orders within a mile and a half of the counter come by bike, free. Further out, we post them tracked for ₦1,500.}}</p>
+</div>
+<div aria-hidden="true" class="delivery__route"><span class="delivery__fill"></span></div>
+<ol class="delivery__track">
+<li class="delivery__stop m-surface"><figure class="m-photo"><img alt="A rider in a white helmet cycles past with a crate on the back rack" height="1068" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1633253549370-798512c6f0ef?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNhcmdvJTIwYmlrZSUyMGRlbGl2ZXJ5fGVufDF8MHx8fDE3OTE0MDQ4NDd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#c0c0c0" width="1600"/></figure><p class="m-text-5">{{t83|Leaves 9:30}}</p><p class="m-text-4 delivery__street">{{t84|Admiralty Way}}</p><p class="m-text-5">{{t85|Bags sealed at the counter, names checked twice.}}</p></li>
+<li class="delivery__stop m-surface"><figure class="m-photo"><img alt="A brick terrace with coloured front doors and cars parked outside" height="1121" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1651964723487-722c8acc07d6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dGVycmFjZWQlMjBob3VzZXMlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTQwNTE1MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#595940" width="1600"/></figure><p class="m-text-5">{{t86|Around 9:45}}</p><p class="m-text-4 delivery__street">{{t87|Brudenell Row}}</p><p class="m-text-5">{{t88|Two repeats and a weekly pack, handed over at the door.}}</p></li>
+<li class="delivery__stop m-surface"><figure class="m-photo"><img alt="Tall stone houses in a row, one with a red front door" height="757" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1698431194884-295617261396?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGVycmFjZWQlMjBob3VzZXMlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTQwNTE1MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=630&q=60}}" style="background:#a68c73" width="1600"/></figure><p class="m-text-5">{{t89|Around 10:05}}</p><p class="m-text-4 delivery__street">{{t90|Hollis Avenue}}</p><p class="m-text-5">{{t91|A fridge item, carried in its own cool bag.}}</p></li>
+<li class="delivery__stop m-surface"><figure class="m-photo"><img alt="Red-brick houses with gables and a tree in blossom" height="995" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1774156720905-11b4f15b284d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8dGVycmFjZWQlMjBob3VzZXMlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTQwNTE1MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#a6c0d9" width="1600"/></figure><p class="m-text-5">{{t92|Around 10:20}}</p><p class="m-text-4 delivery__street">{{t93|Cardigan Grove}}</p><p class="m-text-5">{{t94|Last week's pack collected, this week's left in its place.}}</p></li>
+<li class="delivery__stop m-surface"><figure class="m-photo"><img alt="A curving lane of old stone cottages under a grey sky" height="1067" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1649182359601-a55bba9eacd9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8dGVycmFjZWQlMjBob3VzZXMlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTQwNTE1MHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#595959" width="1600"/></figure><p class="m-text-5">{{t95|Around 10:40}}</p><p class="m-text-4 delivery__street">{{t96|Kirk Lane}}</p><p class="m-text-5">{{t97|Back at the counter by eleven, before the clinic opens.}}</p></li>
+</ol>
+</div>
+</div>
+</section>{{/sec_delivery}}
+
+{{#sec_people}}<section class="l-folder" data-8b-section="pharmacists" data-tab="4" id="people">
+<span aria-hidden="true" class="l-folder__tab l-tab m-tab">{{t9|People}}</span>
+<div class="people__sheet m-surface">
+<h2 class="m-text-3 people__title">{{t98|The people at the counter}}</h2>
+<div class="people__frame">
+<div class="people__slat" data-slat="0"><img alt="Nadia, laughing in a white shirt, balances a storage jar on her head" height="2399" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1783099780182-c758ca9fc563?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cG9ydHJhaXQlMjB3b21hbiUyMHdoaXRlJTIwc2hpcnQlMjBzbWlsaW5nfGVufDF8MXx8fDE3OTE0MDUxNzF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#262626" width="1600"/></div>
+<div class="people__slat" data-slat="1"><img alt="Sami in a white coat, standing by the dispensary shelves" height="2400" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1657551856874-d492ef8ecba0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGhhcm1hY2lzdCUyMHBvcnRyYWl0JTIwd29tYW58ZW58MXwxfHx8MTc5MTQwNTM5N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#c0c0c0" width="1600"/></div>
+<div class="people__slat" data-slat="2"><img alt="June, smiling in a white T-shirt in front of a red wall" height="2400" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1731338493464-db479f155a3a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBvcnRyYWl0JTIwb2xkZXIlMjB3b21hbnxlbnwxfDF8fHwxNzkxNDA1MTczfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#c0a6a6" width="1600"/></div>
+</div>
+<p class="m-text-5">{{t99|Two pharmacists, one counter assistant and a dog. Nobody here works for a head office.}}</p>
+</div>
+<ul class="people__list">
+<li class="people__cell m-surface-2"><p class="m-text-5">{{t100|Owner and superintendent pharmacist}}</p><h3 class="m-text-2 people__name">{{t101|Nadia}}</h3><p class="m-text-5 people__about">{{t102|Twenty-two years at this counter. Ask her about blood pressure, weekly packs and anything you would rather not say out loud.}}</p></li>
+<li class="people__cell m-surface-2"><p class="m-text-5">{{t103|Pharmacist, clinic lead}}</p><h3 class="m-text-2 people__name">{{t104|Sami}}</h3><p class="m-text-5 people__about">{{t105|Runs the walk-in room. Ask him about earache, travel jabs and which cough mixture is worth the money.}}</p></li>
+<li class="people__cell m-surface-2"><p class="m-text-5">{{t106|Counter and dispensary}}</p><h3 class="m-text-2 people__name">{{t107|June}}</h3><p class="m-text-5 people__about">{{t108|Has known the street since it had a post office. Ask her where your prescription is; she will know.}}</p></li>
+</ul>
+</section>{{/sec_people}}
+
+{{#sec_story}}<section class="l-folder" data-8b-section="independent-since-1987" data-tab="4" id="story">
+<figure class="m-photo story__photo" data-8b-motion="tabopen"><img alt="A brown dog asleep on the wooden counter in front of shelves of jars" height="2400" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1788487638307-00c3fb38bf51?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHBoYXJtYWN5JTIwc2hlbHZlc3xlbnwxfDF8fHwxNzkxNDA1MDk4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#404040" width="1600"/><figcaption class="m-text-5">{{t109|Biscuit, on the counter since 2015}}</figcaption></figure>
+<article class="story__letter m-surface" data-8b-motion="rule">
+<h2 class="m-text-3 story__head">{{t110|Independent since 1987, and still nobody's branch}}</h2>
+<div class="story__text">
+<p class="m-text">{{t111|Margaret ⟦name⟧ opened this counter in 1987 with one dispensing bench and one rule: whoever is unwell gets the next free pharmacist, not the next free till. When she retired, three chains offered to buy the shop. Sami and I bought it instead, from the person who trained us both.}}</p>
+<p class="m-text">{{t112|Nothing here is decided by a head office. We stock what our patients ask for, keep the clinic room open on Saturdays, and Biscuit, Margaret's dog, still sleeps on the counter in the afternoons. If something here could be better, tell me at the counter.}}</p>
+</div>
+<p class="story__sign"><span class="m-text-4">{{t113|Nadia Okafor}}</span><span class="m-text-5">{{t100|Owner and superintendent pharmacist}}</span></p>
+</article>
+</section>{{/sec_story}}
+
+{{#sec_faq}}<section class="l-folder" data-8b-section="faq" data-tab="5" id="faq">
+<span aria-hidden="true" class="l-folder__tab l-tab m-tab">{{t10|Visit}}</span>
+<div class="faq__head">
+<h2 class="m-text-2 faq__title">{{t114|Asked at the counter}}</h2>
+<p class="m-text">{{t115|The questions we hear most, each filed under the part of the pharmacy that answers it.}}</p>
+</div>
+<div class="faq__list">
+<div class="faq__item" style="--l-tab-i:1"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-4)">{{t6|Repeats}}</span><details class="faq__q"><summary><span class="m-text-3">{{t116|Can you order my repeat from the surgery for me?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t117|Yes. Tell us once which surgery you use and what you take. We request each repeat seven days before you run out and text you when it is packed.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:1"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-4)">{{t6|Repeats}}</span><details class="faq__q"><summary><span class="m-text-3">{{t118|What happens to my weekly pack if a dose changes?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t119|We repack it the same day your GP sends the change, and swap the old pack at your door or at the counter. You never have to pick tablets out yourself.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:2"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-5)">{{t7|Clinic}}</span><details class="faq__q"><summary><span class="m-text-3">{{t120|Do I need an appointment for the walk-in room?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t121|No. Come in, tell the counter what is wrong, and the next free pharmacist sees you, usually within twenty minutes. Jabs are the only thing we book ahead.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:2"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-5)">{{t7|Clinic}}</span><details class="faq__q"><summary><span class="m-text-3">{{t122|Is the flu jab free for me?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t123|It is free at 65 and over, in pregnancy, for carers and with most long-term conditions. Ring us with your situation and we will tell you before you come in.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:3"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-6)">{{t8|Shop}}</span><details class="faq__q"><summary><span class="m-text-3">{{t124|Can you order something you don't stock?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t125|Usually by the next afternoon. Ask at the counter or by email, and we will tell you the price before we order.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:4"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-7)">{{t9|People}}</span><details class="faq__q"><summary><span class="m-text-3">{{t126|Can I speak to a pharmacist in private?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t127|Always. Ask for the clinic room, or just say you would rather talk somewhere else. Nobody at the counter will ask you why.}}</p></details></div>
+<div class="faq__item" style="--l-tab-i:5"><span aria-hidden="true" class="faq__tab m-tab l-tab" style="--m-tab-ground:var(--color-1)">{{t10|Visit}}</span><details class="faq__q"><summary><span class="m-text-3">{{t128|Is there step-free access and somewhere to park?}}</span><span aria-hidden="true" class="m-icon"><svg class="m-icon__svg" viewbox="0 0 24 24"><path d="M12 5v13M6 12l6 6 6-6"></path></svg></span></summary><p class="m-text faq__answer">{{t129|The door is level with the pavement and wide enough for any wheelchair. There are two twenty-minute bays behind the shop, reached from Hollis Avenue.}}</p></details></div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section class="l-folder" data-8b-section="contact" data-tab="5" id="contact">
+<div class="contact__info">
+<h2 class="m-text-2 contact__address">{{t130|1 Admiralty Way, Abuja}}</h2>
+<p class="m-text">{{t131|Two doors up from the bakery, opposite the stop for the 56 bus. Step-free from the street, with two short-stay bays at the back.}}</p>
+<table class="contact__hours">
+<caption class="m-text-6">{{t132|Opening hours}}</caption>
+<tbody>
+<tr><th class="m-text-5" scope="row">{{t133|Monday to Friday}}</th><td class="m-text-5">{{t134|8:30–19:00}}</td></tr>
+<tr><th class="m-text-5" scope="row">{{t135|Saturday, clinic room open}}</th><td class="m-text-5">{{t136|9:00–17:00}}</td></tr>
+<tr><th class="m-text-5" scope="row">{{t137|Sunday, dispensary only}}</th><td class="m-text-5">{{t138|10:00–13:00}}</td></tr>
+</tbody>
+</table>
+<p class="contact__reach"><a class="m-text-4 contact__phone" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t139|⟦phone⟧}}</a><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t140|counter@hale.example}}</a></p>
+<figure class="m-photo contact__photo" data-8b-motion="tabopen"><img alt="A white sign reading Open hangs inside a glass shop door" height="2000" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1763168829003-33755769b975?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHNtYWxsJTIwc2hvcCUyMGZyb250JTIwZG9vcnxlbnwxfDF8fHwxNzkxNDA1MTc0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=470&q=60}}" style="background:#26260c" width="1600"/></figure>
+</div>
+
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Pharmacy by <a href="https://github.com/8bsite/pharmacy-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<span aria-hidden="true" class="footer__word" style="--len:4">{{t1|⟦NAME⟧}}</span>
+<div class="footer__grid">
+<div class="footer__links">
+<p class="m-text">{{t141|⟦name⟧ Pharmacy}}<br/>{{t130|1 Admiralty Way, Abuja}}</p>
+<a class="m-link footer__phone" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t139|⟦phone⟧}}</a>
+</div>
+<nav aria-label="Footer" class="footer__links">
+<a class="m-link" href="#packs">{{t6|Repeats}}</a>
+<a class="m-link" href="#clinic">{{t7|Clinic}}</a>
+<a class="m-link" href="#shop">{{t8|Shop}}</a>
+</nav>
+<div class="footer__links">
+<a class="m-link" href="#people">{{t9|People}}</a>
+<a class="m-link" href="#contact">{{t10|Visit}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t140|counter@hale.example}}</a>
+</div>
+</div>
+<div class="footer__legal"><p class="m-text-5">{{t142|© 2026 ⟦name⟧ Pharmacy Ltd · Registered pharmacy · Superintendent pharmacist Nadia Okafor · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t143|8B}}</a></p><p class="m-text-5">{{t144|Owned by its pharmacists since 1987}}</p></div>
+</footer>
+<script data-8b-part="section-script:site-nav">
+(() => {
+  const nav = document.getElementById('site-nav');
+  const tabs = [...nav.querySelectorAll('.nav__tabs a')];
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const line = nav.offsetHeight + 4;
+    let current = null;
+    document.querySelectorAll('[data-tab]').forEach(el => { if (el.getBoundingClientRect().top <= line) current = el; });
+    const index = current ? +current.dataset.tab : 0;
+    tabs.forEach((tab, i) => { if (i === index) tab.setAttribute('aria-current', 'true'); else tab.removeAttribute('aria-current'); });
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
+<script data-8b-part="section-script:shop">
+(() => {
+  const section = document.getElementById('shop');
+  if (!section) return;
+  const rows = [...section.querySelectorAll('.shop__row')];
+  const drawer = section.querySelector('.shop__drawer');
+  rows.forEach(row => row.addEventListener('click', () => {
+    const before = drawer.offsetHeight;
+    rows.forEach(other => {
+      const open = other === row;
+      other.setAttribute('aria-expanded', String(open));
+      const panel = document.getElementById(other.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !open;
+    });
+    if (drawer.offsetHeight !== before && window.refreshScroll && window.ScrollTrigger) window.refreshScroll();
+  }));
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.getElementById('order');
+  if (!form) return;
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+const pageNav = document.getElementById('site-nav');
+function measureNav() {
+  const height = pageNav.offsetHeight;
+  document.body.style.setProperty('--l-nav-h', height + 'px');
+  return height;
+}
+measureNav();
+function refreshScroll() {
+  measureNav();
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+window.refreshScroll = refreshScroll;
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .1, anchors: { offset: -measureNav() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let pageResize;
+addEventListener('resize', () => { clearTimeout(pageResize); pageResize = setTimeout(refreshScroll, 250); });
+</script>
+<script data-8b-part="motion">
+const fileShape = {
+  open: 'polygon(calc(0% + 0px) calc(0% + 0px), calc(34% + 0px) calc(0% + 0px), calc(34% + 14px) calc(0% + 14px), calc(100% + 0px) calc(0% + 14px), calc(100% + 0px) calc(100% + 0px), calc(0% + 0px) calc(100% + 0px))',
+  tab: 'polygon(calc(0% + 0px) calc(0% + 0px), calc(34% + 0px) calc(0% + 0px), calc(34% + 14px) calc(0% + 14px), calc(34% + 14px) calc(0% + 14px), calc(34% + 14px) calc(0% + 14px), calc(0% + 0px) calc(0% + 14px))'
+};
+const effects = {
+  rule(element, vars = {}) {
+    return gsap.fromTo(element, { '--m-surface-bar': 0 }, { '--m-surface-bar': 1, duration: .9, ease: 'power3.inOut', ...vars });
+  },
+  tabopen(element, vars = {}) {
+    return gsap.fromTo(element, { clipPath: fileShape.tab }, { clipPath: fileShape.open, duration: 1.1, ease: 'power3.inOut', ...vars });
+  },
+  deal(items, vars = {}) {
+    const list = gsap.utils.toArray(items);
+    const timeline = gsap.timeline(vars);
+    list.forEach((item, i) => {
+      if (!i) return;
+      timeline.fromTo(item, {
+        y: () => list[0].offsetTop - item.offsetTop + i * 10,
+        rotation: [0, -3, 2.2, -1.4][i % 4]
+      }, { y: 0, rotation: 0, duration: 1, ease: 'power2.inOut', immediateRender: true }, 0);
+    });
+    return timeline;
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  ['rule', 'tabopen'].forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach(element => ScrollTrigger.create({ id, trigger: element, start: 'top 88%', once: true, animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:packs">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('packs');
+    const week = section.querySelector('.packs__week');
+    const body = week.querySelector('tbody');
+    const seal = week.querySelector('.packs__seal');
+    const rows = [...body.rows];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'packs', trigger: week, start: 'top bottom', toggleActions: 'play none none none'
+    }});
+    timeline.fromTo(seal, { y: () => body.getBoundingClientRect().top - (seal.getBoundingClientRect().top - gsap.getProperty(seal, 'y')) }, { y: 0, duration: .85 }, 0);
+    rows.forEach((row, i) => {
+      timeline.fromTo(row.querySelectorAll('.packs__dose'), { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .85 / rows.length }, i * .85 / rows.length);
+    });
+    timeline.to({}, { duration: .15 }).timeScale(.55).delay(.35);
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:clinic">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('clinic');
+    const col = section.querySelector('.clinic__col');
+    const cells = [...col.querySelectorAll('.clinic__cell')];
+    const marker = col.querySelector('.clinic__marker');
+    const photos = cells.map((cell, i) => section.querySelector(`.clinic__photos [data-step="${i}"]`));
+    gsap.set(photos, { zIndex: i => i + 1 });
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'clinic', trigger: col, start: 'top 62%', end: 'bottom 38%', scrub: .6, invalidateOnRefresh: true
+    }});
+    cells.forEach((cell, i) => {
+      if (!i) return;
+      const at = (i - 1) * 1.4 + .4;
+      timeline.to(marker, { y: () => cell.offsetTop - cells[0].offsetTop, duration: 1 }, at);
+      timeline.fromTo(photos[i].querySelector('img'), { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1 }, at);
+    });
+    timeline.to({}, { duration: .4 });
+  });
+});
+</script>
+<script data-8b-part="scene:shop">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('shop');
+    const list = section.querySelector('.shop__rows');
+    const rows = list.querySelectorAll('.shop__row');
+    gsap.set(rows, { zIndex: i => 10 - i });
+    gsap.timeline({ scrollTrigger: {
+      id: 'shop', trigger: list, start: 'top 92%', end: 'top 32%', scrub: .6, invalidateOnRefresh: true
+    }}).add(effects.deal(rows), 0);
+    const photo = section.querySelector('.shop__panel:not([hidden]) .shop__photo');
+    if (photo) ScrollTrigger.create({ id: 'shop:drawer', trigger: photo, start: 'top 85%', once: true, animation: effects.tabopen(photo) });
+  });
+});
+</script>
+<script data-8b-part="scene:delivery">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('delivery');
+    const nav = document.getElementById('site-nav');
+    const runway = section.querySelector('.delivery__runway');
+    const stage = section.querySelector('.delivery__stage');
+    const track = section.querySelector('.delivery__track');
+    const fill = section.querySelector('.delivery__fill');
+    section.setAttribute('data-rolling', '');
+    const distance = () => {
+      const style = getComputedStyle(stage);
+      return Math.max(0, track.scrollWidth - (stage.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)));
+    };
+    const fitRunway = () => { runway.style.height = stage.offsetHeight + distance() + 'px'; };
+    fitRunway();
+    ScrollTrigger.addEventListener('refreshInit', fitRunway);
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'delivery', trigger: runway, start: () => `top ${nav.offsetHeight}px`, end: () => `bottom ${nav.offsetHeight + stage.offsetHeight}px`, scrub: .5, invalidateOnRefresh: true
+    }})
+      .to(track, { x: () => -distance(), duration: 1 }, 0)
+      .fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0);
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', fitRunway);
+      runway.style.removeProperty('height');
+      section.removeAttribute('data-rolling');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:people">
+queueMotion(() => {
+  gsap.matchMedia().add({ motion: '(prefers-reduced-motion: no-preference)', wide: '(min-width: 861px)' }, context => {
+    if (!context.conditions.motion) return;
+    const section = document.getElementById('people');
+    const frame = section.querySelector('.people__frame');
+    const slats = [...frame.querySelectorAll('.people__slat')];
+    const cells = [...section.querySelectorAll('.people__cell')];
+    const states = [[62, 81], [19, 81], [19, 38], [33.333, 66.667]];
+    const varsFor = ([b1, b2]) => [
+      { '--people-l': '0%', '--people-r': `${100 - b1}%`, '--people-x': `${b1 / 2 - 50}%` },
+      { '--people-l': `${b1}%`, '--people-r': `${100 - b2}%`, '--people-x': `${(b1 + b2) / 2 - 50}%` },
+      { '--people-l': `${b2}%`, '--people-r': '0%', '--people-x': `${(b2 + 100) / 2 - 50}%` }
+    ];
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.inOut', duration: 1 }, scrollTrigger: {
+      id: 'people', trigger: context.conditions.wide ? section : frame,
+      start: context.conditions.wide ? 'top 55%' : 'top 62%', end: context.conditions.wide ? 'bottom 50%' : 'bottom 38%', scrub: .6
+    }});
+    states.forEach((state, k) => {
+      const vars = varsFor(state);
+      slats.forEach((slat, i) => timeline.to(slat, vars[i], .5 + k * 1.3));
+      if (cells[k]) timeline.fromTo(cells[k], { '--m-surface-bar': 0 }, { '--m-surface-bar': 1, duration: .8 }, .7 + k * 1.3);
+    });
+    timeline.to({}, { duration: .5 });
+  });
+});
+</script>
+<script data-8b-part="scene:faq">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('faq');
+    const list = section.querySelector('.faq__list');
+    const tabs = [...list.querySelectorAll('.faq__tab')];
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'faq', trigger: list, start: 'top 88%', end: 'center 50%', scrub: .6, invalidateOnRefresh: true
+    }});
+    tabs.forEach((tab, i) => timeline.fromTo(tab, { x: () => -tab.offsetLeft }, { x: 0, duration: 1 }, i * .14));
+  });
+});
+</script>
+</body>
+</html>

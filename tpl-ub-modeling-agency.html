@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQM1u9.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQPlu9oCs.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQN1u9oCs.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQP1u9oCs.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQMFu9oCs.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQPVu9oCs.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Pliant';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pliant/v1/R70bjyYdl_WLNKbQM1u9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ebebeb;
+  --color-2: #121212;
+  --color-3: #f6cc48;
+  --color-4: #ffffff;
+  --color-5: #575757;
+  --color-6: #fae49c;
+  --color-7: #a6a6a6;
+  --color-8: #d6d6d6;
+  --font-1: "Pliant", "Pliant Fallback", Arial, sans-serif;
+  --radius-1: 12px;
+  --radius-2: 999px;
+  --radius-3: 8px;
+  --shadow-1: 0 0 0 7px color-mix(in srgb, var(--color-3) 35%, transparent);
+  --space-1: clamp(16px, 2.6vw, 34px);
+  --space-2: clamp(80px, 11vw, 150px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Pliant Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 105.6%; ascent-override: 90%; descent-override: 23.7%; line-gap-override: 0%; }
+@font-face { font-family: "Pliant Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 107%; ascent-override: 88.7%; descent-override: 23.4%; line-gap-override: 0%; }
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; font-stretch: 100%; overflow-x: clip; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.55; letter-spacing: 0; word-spacing: 0.06em; text-transform: none; font-style: normal; font-stretch: 100%; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(40px, 4.7vw, 72px); font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; word-spacing: 0.08em; text-transform: none; font-style: normal; font-stretch: 125%; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(32px, 4.2vw, 58px); font-weight: 400; line-height: 1.06; letter-spacing: -0.01em; word-spacing: 0.08em; text-transform: none; font-style: normal; font-stretch: 125%; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 12px; font-weight: 500; line-height: 1.35; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; font-stretch: 100%; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(18px, 1.6vw, 22px); font-weight: 400; line-height: 1.18; letter-spacing: 0; word-spacing: 0.06em; text-transform: none; font-style: normal; font-stretch: 112%; }
+
+.m-btn, .m-btn-2, .m-btn-3 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; gap: 14px; border: 0; border-radius: var(--radius-2); font-family: var(--font-1); font-weight: 500; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; font-style: normal; font-stretch: 100%; text-decoration: none; cursor: pointer; transition: color .35s ease; }
+.m-btn { padding: 15px 18px 15px 22px; font-size: 13px; background: var(--color-2); color: var(--color-4); }
+.m-btn::before, .m-btn-2::before, .m-btn-3::before { content: ""; position: absolute; z-index: -1; right: 16px; top: 50%; width: 20px; height: 20px; margin-top: -10px; border-radius: 50%; transform: scale(0); transition: transform .55s cubic-bezier(.2, .7, .2, 1); }
+.m-btn::before { background: var(--color-3); }
+.m-btn__icon, .m-btn-2__icon { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; flex: none; }
+
+.m-btn-2 { padding: 17px 20px 17px 24px; font-size: 14px; background: var(--color-3); color: var(--color-2); }
+.m-btn-2::before { background: var(--color-2); }
+
+.m-btn-3 { padding: 9px 14px; font-size: 12px; letter-spacing: 0.02em; text-transform: none; background: var(--color-3); color: var(--color-2); }
+.m-btn-3::before { right: auto; left: 50%; margin-left: -10px; background: var(--color-2); }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-2); }
+  .m-btn-2:hover, .m-btn-3:hover { color: var(--color-4); }
+  .m-btn:hover::before, .m-btn-2:hover::before { transform: scale(16); }
+  .m-btn-3:hover::before { transform: scale(7); }
+}
+
+.m-link { color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; padding-bottom: 2px; transition: background-size .45s cubic-bezier(.2, .7, .2, 1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 1px; } }
+
+.m-icon { position: relative; isolation: isolate; display: inline-grid; place-items: center; width: 46px; height: 46px; border: 1px solid currentColor; border-radius: 50%; color: inherit; transition: color .35s ease; }
+.m-icon svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+.m-icon::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: 50%; background: var(--color-3); transform: scale(0); transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+@media (hover: hover) { .m-icon:hover { color: var(--color-2); } .m-icon:hover::before { transform: scale(1); } .m-icon:hover svg { transform: rotate(-45deg); } }
+
+.m-badge { display: inline-flex; align-items: center; padding: 7px 12px; border: 1px solid currentColor; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-2) 40%, transparent); font-family: var(--font-1); font-size: 11px; font-weight: 500; line-height: 1; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; font-stretch: 100%; }
+
+.m-badge-2 { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; font-style: normal; font-stretch: 100%; }
+.m-badge-2::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-3); flex: none; }
+
+.m-badge-3 { display: inline-flex; align-items: center; padding: 9px 14px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0.01em; text-transform: none; font-style: normal; font-stretch: 100%; white-space: nowrap; }
+
+.m-card { position: relative; isolation: isolate; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); color: var(--color-4); min-height: 220px; }
+.m-card__img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.m-card::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(to top, color-mix(in srgb, var(--color-2) 82%, transparent), color-mix(in srgb, var(--color-2) 40%, transparent) 30%, transparent 56%), linear-gradient(to bottom, color-mix(in srgb, var(--color-2) 66%, transparent), transparent 34%); }
+.m-card__top { position: absolute; top: 14px; left: 14px; }
+.m-card__title { position: absolute; left: 16px; right: 76px; bottom: 18px; }
+.m-card__go { position: absolute; right: 14px; bottom: 14px; }
+
+.m-rule { display: block; height: 1px; background: currentColor; }
+
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-1); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; font-stretch: 100%; }
+.m-field__input { width: 100%; min-height: 50px; padding: 12px 16px; border: 1px solid var(--color-2); border-radius: var(--radius-3); background: var(--color-4); color: var(--color-2); font-size: 16px; line-height: 1.4; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { width: 100%; padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+#site-nav { position: fixed; z-index: 50; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 18px; padding: 14px var(--space-1); pointer-events: none; transition: transform .45s cubic-bezier(.2, .7, .2, 1); }
+#site-nav.is-hidden { transform: translateY(-110%); }
+#site-nav > * { pointer-events: auto; }
+#site-nav .nv-panel { display: flex; align-items: center; gap: 30px; padding: 9px 12px 9px 18px; border-radius: var(--radius-3); background: var(--color-4); color: var(--color-2); }
+#site-nav .nv-logo { font-size: 19px; font-weight: 600; font-stretch: 100%; letter-spacing: -0.01em; text-decoration: none; line-height: 1; padding-block: 8px; }
+#site-nav .nv-links { display: flex; gap: 26px; font-size: 14px; }
+#site-nav .nv-line { flex: 1 1 auto; height: 1px; background: currentColor; min-width: 24px; pointer-events: none; color: var(--color-2); }
+#site-nav .nv-social { display: flex; gap: 4px; }
+#site-nav .nv-menu { display: none; }
+#site-nav .nv-overlay { position: fixed; inset: 0; z-index: 60; display: grid; align-content: space-between; gap: 32px; padding: 20px var(--space-1) 32px; background: var(--color-2); color: var(--color-4); overflow-y: auto; }
+#site-nav .nv-overlay[hidden] { display: none; }
+#site-nav .nv-overlay :focus-visible { outline-color: var(--color-3); }
+#site-nav .nv-overlay-top { display: flex; justify-content: space-between; align-items: center; }
+#site-nav .nv-overlay-links { display: grid; gap: 6px; }
+#site-nav .nv-overlay-links a { font-size: clamp(34px, 9vw, 56px); font-stretch: 125%; line-height: 1.15; }
+#site-nav .nv-overlay-social { display: flex; flex-wrap: wrap; gap: 6px; }
+@media (max-width: 1060px) { #site-nav .nv-links { gap: 18px; } #site-nav .nv-panel { gap: 20px; } }
+@media (max-width: 900px) {
+  #site-nav { padding: 12px var(--space-1); gap: 10px; }
+  #site-nav .nv-links, #site-nav .nv-social { display: none; }
+  #site-nav .nv-menu { display: inline-flex; }
+  #site-nav .nv-panel { gap: 14px; padding: 6px 6px 6px 14px; }
+  #site-nav .nv-logo { font-size: 17px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; z-index: 0; overflow-x: clip; background: var(--color-1); }
+#opening .op-first { position: relative; display: flex; flex-direction: column; min-height: 100svh; padding: 88px var(--space-1) 14px; }
+#opening .op-light { position: absolute; z-index: -1; top: 6%; left: 4%; width: min(52vw, 760px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, color-mix(in srgb, var(--color-3) 70%, transparent), color-mix(in srgb, var(--color-3) 22%, transparent) 62%, transparent); pointer-events: none; }
+#opening .op-checker { width: 104px; height: 26px; margin: 4px 0 14px; background: conic-gradient(var(--color-3) 25%, var(--color-6) 0 50%, var(--color-3) 0 75%, var(--color-6) 0) 0 0 / 26px 26px; }
+#opening .op-hero { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr) clamp(80px, 9vw, 130px) minmax(240px, 300px); gap: 0 clamp(16px, 2.4vw, 32px); align-items: center; padding: clamp(18px, 3.4vh, 34px) 0; }
+#opening .op-title { max-width: 12.6em; }
+#opening .op-faces { display: inline-flex; vertical-align: -0.1em; margin-left: .2em; }
+#opening .op-face { position: relative; display: block; width: .8em; height: .8em; }
+#opening .op-face::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px dashed currentColor; }
+#opening .op-face + .op-face { margin-left: -.22em; }
+#opening .op-face img { position: relative; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+#opening .op-slash { width: 100%; height: clamp(150px, 26vh, 240px); fill: none; stroke: currentColor; stroke-width: 1; overflow: visible; }
+#opening .op-icons { display: flex; gap: 8px; margin-bottom: 16px; }
+#opening .op-icons svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.3; }
+#opening .op-lead { max-width: 30ch; margin-bottom: 22px; font-size: 15px; line-height: 1.45; }
+#opening .op-cards { position: relative; z-index: 2; flex: 1 1 auto; display: grid; grid-template-columns: 1fr 1fr 1.72fr; gap: 8px; min-height: 300px; margin-top: clamp(14px, 3vh, 30px); }
+#opening .op-cards .m-card { min-height: 0; }
+#opening .op-second { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: clamp(24px, 4vw, 64px); min-height: 100svh; padding: 110px var(--space-1) 72px; background: var(--color-2); color: var(--color-4); }
+#opening .op-second :focus-visible { outline-color: var(--color-3); }
+#opening .op-label { margin-bottom: 26px; }
+#opening .op-call-title { max-width: 13em; margin-bottom: 36px; }
+#opening .op-details { display: grid; gap: 0; max-width: 520px; margin-bottom: 36px; border-top: 1px solid var(--color-7); }
+#opening .op-details > div { display: grid; grid-template-columns: 90px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--color-7); }
+#opening .op-details dt { color: var(--color-7); padding-top: 4px; }
+#opening .op-stage { position: relative; display: grid; place-items: center; }
+#opening .op-halo { position: absolute; width: 150%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, var(--color-3) 0%, color-mix(in srgb, var(--color-3) 70%, transparent) 62%, color-mix(in srgb, var(--color-3) 18%, transparent) 80%, transparent); pointer-events: none; }
+#opening .op-spot { position: relative; width: min(64vh, 40vw); aspect-ratio: 1; border-radius: 50%; overflow: hidden; }
+#opening .op-spot img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 900px) {
+  #opening .op-first { padding-top: 76px; min-height: 0; }
+  #opening .op-light { width: 110vw; left: -30vw; top: 2%; }
+  #opening .op-checker { width: 78px; height: 20px; background-size: 20px 20px; margin-bottom: 10px; }
+  #opening .op-hero { grid-template-columns: minmax(0, 1fr) 64px; gap: 18px 12px; padding: 20px 0 22px; }
+  #opening .op-title { grid-column: 1 / -1; font-size: clamp(34px, 10vw, 52px); }
+  #opening .op-slash { grid-column: 2; grid-row: 2; height: 120px; align-self: start; }
+  #opening .op-aside { grid-column: 1; grid-row: 2; }
+  #opening .op-cards { grid-template-columns: 1fr 1fr; grid-template-rows: 230px 250px; min-height: 0; flex: none; }
+  #opening .op-cards .m-card:last-child { grid-column: 1 / -1; }
+  #opening .op-cards .m-card__title { font-size: 17px; right: 16px; }
+  #opening .op-cards .m-card:last-child .m-card__title { right: 76px; }
+  #opening .op-second { grid-template-columns: 1fr; align-content: center; padding: 96px var(--space-1) 64px; }
+  #opening .op-stage { grid-row: 1; margin-bottom: 8px; }
+  #opening .op-spot { width: min(78vw, 46vh); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-light { animation: op-sweep 9s ease-in-out infinite alternate; }
+  #opening .op-first[data-paused] .op-light { animation-play-state: paused; }
+  #opening .op-title { animation: op-lift .95s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-aside { animation: op-fade .8s .2s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-first > .m-rule { transform-origin: 0 50%; animation: op-draw .9s .05s cubic-bezier(.6, 0, .2, 1) backwards; }
+  #opening .op-slash { animation: op-slash .7s .35s cubic-bezier(.6, 0, .2, 1) backwards; }
+  #opening .op-checker { animation: op-wipe .55s .1s ease-in-out backwards; }
+  #opening .op-cards > .m-card { animation: op-rise .9s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-cards > .m-card:nth-child(2) { animation-delay: .08s; }
+  #opening .op-cards > .m-card:nth-child(3) { animation-delay: .16s; }
+}
+@keyframes op-sweep { from { transform: translate(-12%, 4%); } to { transform: translate(78%, -6%); } }
+@keyframes op-lift { from { transform: translateY(26px); } }
+@keyframes op-fade { from { transform: translateY(18px); opacity: 0; } }
+@keyframes op-draw { from { transform: scaleX(0); } }
+@keyframes op-slash { from { clip-path: inset(0 100% 0 0); } }
+@keyframes op-wipe { from { clip-path: inset(0 100% 0 0); } }
+@keyframes op-rise { from { transform: translateY(56px); } }
+}
+</style>
+<style data-8b-part="section:board">
+@layer sections {
+#board { padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#board .bd-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); gap: 24px 48px; align-items: end; padding-bottom: 28px; margin-bottom: 8px; }
+#board .bd-head p { color: var(--color-5); }
+#board .bd-head .m-link { display: inline-block; margin-top: 14px; font-weight: 500; }
+#board .bd-index { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 48px; }
+#board .bd-item { position: relative; padding: 22px 0 22px 0; border-top: 1px solid var(--color-2); }
+#board .bd-name { font-size: clamp(32px, 4.6vw, 66px); }
+#board .bd-meta { margin-top: 10px; color: var(--color-5); }
+#board .bd-frame { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-content: start; }
+#board .bd-photo { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); aspect-ratio: 4 / 5; color: var(--color-4); }
+#board .bd-photo img { width: 100%; height: 100%; object-fit: cover; }
+#board .bd-photo figcaption { position: absolute; left: 14px; bottom: 12px; right: 14px; padding: 6px 10px; width: max-content; max-width: calc(100% - 28px); border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-2) 72%, transparent); }
+@media (max-width: 900px) {
+  #board .bd-head { grid-template-columns: 1fr; }
+  #board .bd-index { grid-template-columns: 1fr; gap: 28px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:board">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #board[data-staged] .bd-frame { position: sticky; top: 11vh; display: block; height: 78vh; }
+  #board[data-staged] .bd-photo { position: absolute; inset: 0; aspect-ratio: auto; }
+  #board[data-staged] .bd-item { min-height: 34vh; display: flex; flex-direction: column; justify-content: center; }
+  #board[data-staged] .bd-names { padding-bottom: 22vh; }
+  #board[data-staged] .bd-name { color: var(--color-5); transition: color .4s ease; }
+  #board[data-staged] .bd-item::before { content: ""; position: absolute; left: 0; top: 50%; width: .5em; height: .5em; margin-top: -.25em; font-size: clamp(32px, 4.6vw, 66px); border-radius: 50%; background: var(--color-3); transform: scale(0); transition: transform .5s cubic-bezier(.3, 1.6, .5, 1); }
+  #board[data-staged] .bd-item.is-on .bd-name { color: var(--color-2); }
+  #board[data-staged] .bd-item.is-on::before { transform: scale(1); }
+  @media (max-width: 900px) {
+    #board[data-staged] .bd-frame { order: -1; top: 66px; height: 48svh; z-index: 2; }
+    #board[data-staged] .bd-item { min-height: 30svh; }
+    #board[data-staged] .bd-names { padding-bottom: 8svh; }
+  }
+}
+}
+</style>
+<style data-8b-part="section:spotted">
+@layer sections {
+#spotted { padding: 0 var(--space-1) var(--space-2); }
+#spotted .sp-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); gap: 24px 48px; align-items: end; padding: 40px 0 36px; }
+#spotted .sp-head p { color: var(--color-5); }
+#spotted .sp-row { position: relative; display: grid; grid-template-columns: 40px minmax(0, 1.1fr) minmax(0, 1fr) clamp(150px, 17vw, 230px); gap: 24px; align-items: start; padding: 26px 0; }
+#spotted .sp-row > .m-rule { position: absolute; left: 0; right: 0; top: 0; }
+#spotted .sp-mark { width: 22px; height: 22px; margin-top: 10px; border-radius: 50%; background: var(--color-3); }
+#spotted .sp-place { font-size: clamp(26px, 2.9vw, 42px); }
+#spotted .sp-where { margin-top: 10px; color: var(--color-5); }
+#spotted .sp-story { max-width: 40ch; padding-top: 6px; }
+#spotted .sp-img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-1); background: var(--color-8); }
+@media (max-width: 900px) {
+  #spotted .sp-head { grid-template-columns: 1fr; }
+  #spotted .sp-row { grid-template-columns: 28px minmax(0, 1fr) 96px; gap: 12px 16px; }
+  #spotted .sp-mark { width: 16px; height: 16px; margin-top: 8px; }
+  #spotted .sp-story { grid-column: 2 / -1; grid-row: 2; }
+  #spotted .sp-img { grid-column: 3; grid-row: 1; }
+}
+}
+</style>
+<style data-8b-part="section:method">
+@layer sections {
+#method { padding: var(--space-2) var(--space-1); background: var(--color-4); }
+#method .md-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); gap: 24px 48px; align-items: end; margin-bottom: 40px; }
+#method .md-head p { color: var(--color-5); }
+#method .md-track { position: relative; }
+#method .md-rail { position: absolute; inset: 0; pointer-events: none; }
+#method .md-line { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--color-2); stroke-width: 1; overflow: visible; }
+#method .md-spot { position: absolute; left: 62%; top: 100%; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--color-3); box-shadow: var(--shadow-1); }
+#method .md-steps { position: relative; display: grid; grid-template-rows: repeat(4, minmax(220px, 30vh)); }
+#method .md-step { --f: .125; align-self: center; max-width: min(36%, 420px); margin-left: calc(6% + 56% * var(--f) + 44px); }
+#method .md-step:nth-child(2) { --f: .375; }
+#method .md-step:nth-child(3) { --f: .625; }
+#method .md-step:nth-child(4) { --f: .875; }
+#method .md-num { display: block; margin-bottom: 12px; color: var(--color-5); }
+#method .md-step h3 { margin-bottom: 10px; }
+@media (max-width: 900px) {
+  #method .md-head { grid-template-columns: 1fr; }
+  #method .md-rail { right: auto; width: 28px; }
+  #method .md-steps { grid-template-rows: none; gap: 56px; padding: 12px 0 24px; }
+  #method .md-step { max-width: none; margin-left: 48px; }
+}
+}
+</style>
+<style data-8b-part="section:develop">
+@layer sections {
+#develop { position: relative; background: var(--color-2); color: var(--color-4); }
+#develop :focus-visible { outline-color: var(--color-3); }
+#develop .dv-stage { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(28px, 5vw, 80px); align-items: center; padding: var(--space-2) var(--space-1); }
+#develop .dv-copy p { max-width: 38ch; color: var(--color-7); margin-top: 18px; }
+#develop .dv-note { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--color-7); max-width: 40ch; }
+#develop .dv-note strong { display: block; margin-bottom: 8px; color: var(--color-3); font-weight: 500; }
+#develop .dv-sheet { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(10px, 1.4vw, 18px); width: min(46vw, 76vh); padding: clamp(14px, 1.8vw, 24px); border-radius: 4px; background: var(--color-4); color: var(--color-2); }
+#develop .dv-frame { position: relative; }
+#develop .dv-frame img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--color-8); }
+#develop .dv-frame figcaption { margin-top: 6px; font-size: 10px; }
+#develop .dv-mark { position: absolute; top: -8%; left: -8%; width: 116%; height: auto; aspect-ratio: 1; max-width: none; overflow: visible; fill: none; stroke: var(--color-3); stroke-width: 4; stroke-linecap: round; pointer-events: none; }
+#develop .dv-mark rect { stroke-dasharray: 1; stroke-dashoffset: 0; }
+@media (max-width: 900px) {
+  #develop .dv-stage { grid-template-columns: 1fr; gap: 28px; }
+  #develop .dv-sheet { width: min(100%, 64svh); justify-self: center; gap: 8px; padding: 10px; }
+  #develop .dv-frame figcaption { font-size: 9px; letter-spacing: .03em; }
+}
+}
+</style>
+<style data-8b-part="scene-style:develop">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #develop[data-staged] .dv-pin { height: 290svh; }
+  #develop[data-staged] .dv-stage { position: sticky; top: 0; min-height: 100svh; padding-block: 72px 32px; }
+  #develop[data-staged] .dv-frame:nth-child(7) { z-index: 2; }
+  @media (max-width: 900px) {
+    #develop[data-staged] .dv-stage { align-content: center; gap: 18px; padding-block: 68px 20px; }
+    #develop[data-staged] .dv-copy p:not(.dv-note) { display: none; }
+    #develop[data-staged] .dv-note { margin-top: 0; padding-top: 12px; }
+    #develop[data-staged] .dv-sheet { width: min(100%, 50svh); }
+  }
+}
+}
+</style>
+<style data-8b-part="section:shows">
+@layer sections {
+#shows { padding: var(--space-2) 0; }
+#shows .sh-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); gap: 24px 48px; align-items: end; padding: 0 var(--space-1) 36px; }
+#shows .sh-head p { color: var(--color-5); }
+#shows .sh-view { padding: 0 var(--space-1); }
+#shows .sh-track { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+#shows .sh-track .m-card { grid-column: span 2; height: clamp(380px, 62vh, 560px); }
+#shows .sh-track .m-card:nth-child(4), #shows .sh-track .m-card:nth-child(5) { grid-column: span 3; }
+@media (max-width: 900px) {
+  #shows .sh-head { grid-template-columns: 1fr; }
+  #shows .sh-track { grid-template-columns: 1fr; }
+  #shows .sh-track .m-card, #shows .sh-track .m-card:nth-child(4), #shows .sh-track .m-card:nth-child(5) { grid-column: auto; height: 420px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:shows">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #shows[data-staged] .sh-pin { height: calc(100svh + var(--sh-dist, 0px)); }
+  #shows[data-staged] .sh-view { position: sticky; top: 0; display: flex; align-items: center; height: 100svh; overflow: hidden; }
+  #shows[data-staged] .sh-track { display: flex; gap: 8px; width: max-content; }
+  #shows[data-staged] .sh-track .m-card { flex: none; width: clamp(280px, 26vw, 380px); height: min(72svh, 600px); }
+  #shows[data-staged] .sh-track .m-card:nth-child(3), #shows[data-staged] .sh-track .m-card:nth-child(5) { width: clamp(440px, 46vw, 680px); }
+  @media (max-width: 900px) {
+    #shows[data-staged] .sh-track .m-card { width: 74vw; height: 64svh; }
+    #shows[data-staged] .sh-track .m-card:nth-child(3), #shows[data-staged] .sh-track .m-card:nth-child(5) { width: 88vw; }
+  }
+}
+}
+</style>
+<style data-8b-part="section:promise">
+@layer sections {
+#promise { padding: var(--space-2) var(--space-1); background: var(--color-3); color: var(--color-2); }
+#promise .pr-title { font-size: clamp(56px, 12.4vw, 190px); line-height: .95; margin-bottom: 36px; }
+#promise .pr-lead { max-width: 46ch; margin-bottom: 56px; font-size: 18px; }
+#promise .pr-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; padding-bottom: 12px; }
+#promise .pr-rows > li { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 20px 0; }
+#promise .pr-rows > li > .m-rule { position: absolute; left: 0; right: 0; top: 0; }
+#promise .pr-old { position: relative; justify-self: start; color: var(--color-5); text-decoration: none; }
+#promise .pr-old .m-rule { position: absolute; left: -4px; right: -4px; top: 52%; height: 2px; color: var(--color-2); }
+@media (max-width: 900px) {
+  #promise .pr-cols { display: none; }
+  #promise .pr-rows > li { grid-template-columns: 1fr; gap: 8px; }
+}
+}
+</style>
+<style data-8b-part="section:network">
+@layer sections {
+#network { padding: var(--space-2) 0; background: var(--color-2); color: var(--color-4); overflow-x: clip; }
+#network :focus-visible { outline-color: var(--color-3); }
+#network .nw-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 380px); gap: 24px 48px; align-items: end; padding: 0 var(--space-1) 40px; }
+#network .nw-head p { color: var(--color-7); }
+#network .nw-icon { width: 34px; height: 34px; margin-bottom: 20px; fill: none; stroke: currentColor; stroke-width: 1.3; }
+#network .nw-row { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px var(--space-1); border-top: 1px solid var(--color-7); }
+#network .nw-row:last-child { border-bottom: 1px solid var(--color-7); }
+#network .nw-city { font-size: clamp(48px, 9.6vw, 150px); line-height: 1; white-space: nowrap; }
+@media (max-width: 900px) {
+  #network .nw-head { grid-template-columns: 1fr; }
+  #network .nw-row { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 18px; }
+  #network .nw-city { font-size: clamp(40px, 13vw, 64px); }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 48px; padding: var(--space-2) var(--space-1); }
+#faq .fq-head { align-self: start; position: sticky; top: 110px; }
+#faq .fq-head p { margin-top: 18px; max-width: 36ch; color: var(--color-5); }
+#faq .fq-item { border-top: 1px solid var(--color-2); }
+#faq .fq-item:last-child { border-bottom: 1px solid var(--color-2); }
+#faq summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary::after { content: ""; flex: none; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(var(--color-2), var(--color-2)) center / 12px 1.5px no-repeat, linear-gradient(var(--color-2), var(--color-2)) center / 1.5px 12px no-repeat, var(--color-3); transition: transform .4s cubic-bezier(.2, .7, .2, 1); }
+#faq details[open] summary::after { transform: rotate(45deg); }
+#faq .fq-answer { padding: 0 0 24px; max-width: 54ch; color: var(--color-5); }
+@media (max-width: 900px) {
+  #faq { grid-template-columns: 1fr; gap: 28px; }
+  #faq .fq-head { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding: var(--space-2) var(--space-1); }
+#contact .ct-flag { display: grid; grid-template-columns: repeat(15, 1fr); margin-bottom: 44px; }
+#contact .ct-cell { aspect-ratio: 1; background: var(--color-3); }
+#contact .ct-cell:nth-child(even) { background: var(--color-6); }
+#contact .ct-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 48px; }
+#contact .ct-intro p { max-width: 38ch; margin-top: 18px; color: var(--color-5); }
+#contact .ct-details { display: grid; gap: 0; margin-top: 36px; border-top: 1px solid var(--color-2); }
+#contact .ct-details > div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--color-2); }
+#contact .ct-details dt { color: var(--color-5); padding-top: 3px; }
+#contact .ct-form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: clamp(20px, 3vw, 36px); border-radius: var(--radius-1); background: var(--color-4); }
+#contact .ct-form .m-field:nth-child(1), #contact .ct-form .m-field:nth-child(4), #contact .ct-form .m-field:nth-child(5) { grid-column: 1 / -1; }
+#contact .ct-check { grid-column: 1 / -1; display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.45; }
+#contact .ct-check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--color-2); flex: none; }
+#contact .ct-send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+#contact .ct-status { color: var(--color-5); }
+@media (max-width: 900px) {
+  #contact .ct-flag { margin-bottom: 32px; }
+  #contact .ct-grid { grid-template-columns: 1fr; gap: 32px; }
+  #contact .ct-form { grid-template-columns: 1fr; }
+  #contact .ct-details > div { grid-template-columns: 84px 1fr; }
+}
+@media (max-width: 389px) {
+  #contact .ct-grid { grid-template-columns: minmax(0, 1fr); }
+  #contact .ct-details > div { grid-template-columns: 84px minmax(0, 1fr); }
+  #contact .ct-details dd { min-width: 0; overflow-wrap: anywhere; }
+}
+}
+</style>
+<style data-8b-part="section:site-footer">
+@layer sections {
+#site-footer { padding: 64px var(--space-1) 28px; background: var(--color-2); color: var(--color-4); overflow-x: clip; }
+#site-footer :focus-visible { outline-color: var(--color-3); }
+#site-footer .ft-cols { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 44px; }
+#site-footer .ft-cols h2 { margin-bottom: 14px; color: var(--color-7); }
+#site-footer .ft-links { display: grid; gap: 8px; justify-items: start; }
+#site-footer .ft-social { display: flex; flex-wrap: wrap; gap: 6px; }
+#site-footer .ft-lead { max-width: 30ch; color: var(--color-7); }
+#site-footer .ft-mark { display: block; font-size: min(17vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .75))); font-weight: 600; font-stretch: 125%; line-height: .9; letter-spacing: -0.02em; white-space: nowrap; margin-top: 20px; }
+#site-footer .ft-base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 16px; color: var(--color-7); font-size: 13px; }
+@media (max-width: 900px) {
+  #site-footer .ft-cols { grid-template-columns: 1fr 1fr; }
+  #site-footer .ft-cols > :first-child { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@media (max-width: 900px) {
+  #opening .op-copy { display: flex; flex-direction: column; align-items: flex-start; }
+  #opening .op-details { order: 1; align-self: stretch; margin: 32px 0 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-copy > * { animation: op-fade .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-copy > :nth-child(2) { animation-delay: .08s; }
+  #opening .op-copy > :nth-child(3) { animation-delay: .16s; }
+  #opening .op-copy > :nth-child(4) { animation-delay: .24s; }
+  #opening .op-spot { animation: rw-open 1s .1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .op-halo { animation: rw-halo 1.2s cubic-bezier(.2, .7, .2, 1) backwards, rw-breathe 6s 1.2s ease-in-out infinite alternate; }
+}
+@keyframes rw-open { from { scale: .55; opacity: 0; } }
+@keyframes rw-halo { from { scale: .3; opacity: 0; } }
+@keyframes rw-breathe { to { scale: 1.08; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header class="site-nav" data-8b-section="navigation" id="site-nav">
+<nav aria-label="Main" class="nv-panel">
+<a class="nv-logo" href="#opening">{{t1|⟦name⟧MGMT}}</a>
+<ul class="nv-links">
+{{#nv_opening}}<li><a class="m-link" href="#opening">{{t2|Home}}</a></li>{{/nv_opening}}
+{{#nv_method}}<li><a class="m-link" href="#method">{{t3|About}}</a></li>{{/nv_method}}
+{{#nv_board}}<li><a class="m-link" href="#board">{{t4|Our faces}}</a></li>{{/nv_board}}
+{{#nv_shows}}<li><a class="m-link" href="#shows">{{t5|Shows}}</a></li>{{/nv_shows}}
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t6|Contact us}}</a></li>{{/nv_contact}}
+</ul>
+<button aria-controls="nv-overlay" aria-expanded="false" class="m-btn-3 nv-menu" type="button">{{t7|Menu}}</button>
+</nav>
+<span aria-hidden="true" class="nv-line"></span>
+<ul class="nv-social">
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.youtube.com/">{{t8|YouTube}}</a></li>
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.tiktok.com/">{{t9|TikTok}}</a></li>
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.instagram.com/">{{t10|Instagram}}</a></li>
+</ul>
+<div class="nv-overlay" data-lenis-prevent="" hidden="" id="nv-overlay">
+<div class="nv-overlay-top">
+<span class="nv-logo">{{t1|⟦name⟧MGMT}}</span>
+<button class="m-btn-3 nv-close" type="button">{{t11|Close}}</button>
+</div>
+<ul class="nv-overlay-links">
+{{#nv_opening}}<li><a class="m-link" href="#opening">{{t2|Home}}</a></li>{{/nv_opening}}
+{{#nv_method}}<li><a class="m-link" href="#method">{{t3|About}}</a></li>{{/nv_method}}
+{{#nv_board}}<li><a class="m-link" href="#board">{{t4|Our faces}}</a></li>{{/nv_board}}
+{{#nv_shows}}<li><a class="m-link" href="#shows">{{t5|Shows}}</a></li>{{/nv_shows}}
+{{#nv_contact}}<li><a class="m-link" href="#contact">{{t6|Contact us}}</a></li>{{/nv_contact}}
+</ul>
+<ul class="nv-overlay-social">
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.youtube.com/">{{t8|YouTube}}</a></li>
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.tiktok.com/">{{t9|TikTok}}</a></li>
+<li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.instagram.com/">{{t10|Instagram}}</a></li>
+</ul>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-second" id="open-call">
+<div class="op-copy">
+<p class="m-badge-2 op-label">{{t12|Open call, every Thursday}}</p>
+<h1 class="m-text-3 op-call-title" id="opening-title">{{t13|Walk in unknown. Walk out with your first test shoot.}}</h1>
+<dl class="op-details">
+<div><dt class="m-text-4">{{t14|When}}</dt><dd class="m-text">{{t15|Thursdays, 2 to 6 pm. No appointment needed.}}</dd></div>
+<div><dt class="m-text-4">{{t16|Where}}</dt><dd class="m-text">{{t17|Studio 4, 1 Admiralty Way, Lagos}}</dd></div>
+<div><dt class="m-text-4">{{t18|Bring}}</dt><dd class="m-text">{{t19|A clean face, plain clothes, and a parent if you are under 18.}}</dd></div>
+</dl>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label">{{t20|Book a Thursday slot}}</span><svg aria-hidden="true" class="m-btn-2__icon" viewbox="0 0 16 16"><path d="M4 4l8 8M12 5v7H5"></path></svg></a>
+</div>
+<div class="op-stage">
+<div aria-hidden="true" class="op-halo"></div>
+<figure class="op-spot"><img alt="A new face photographed in warm studio light at the open call" height="1600" src="{{i1|https://images.unsplash.com/photo-1727341554128-3a73b53f0a8c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjBwb3J0cmFpdCUyMHdhcm0lMjBsaWdodCUyMG9yYW5nZXxlbnwxfDJ8fHwxNzkxMzIxODIzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=520&q=60}}" style="background:#d9f3f3" width="1600"/></figure>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_board}}<section aria-labelledby="board-title" data-8b-section="board" id="board">
+<div class="bd-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="board-title">{{t21|The new board}}</h2>
+<div>
+<p class="m-text">{{t22|Six faces we met this year. None of them had stood in front of a camera before; all of them are booking now.}}</p>
+<a class="m-link" href="#contact">{{t23|Apply to join the board}}</a>
+</div>
+</div>
+<div class="bd-index">
+<ol class="bd-names">
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t24|Maren Holt}}</h3><p class="m-text-4 bd-meta">{{t25|175 cm · Mushin · ⟦name⟧ in a record shop}}</p></li>
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t26|Kai Tanaka-Reid}}</h3><p class="m-text-4 bd-meta">{{t27|186 cm · Bethnal Green · ⟦name⟧ on court three}}</p></li>
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t28|Noor Haddad}}</h3><p class="m-text-4 bd-meta">{{t29|176 cm · Abuja · ⟦name⟧ at a bus stop in the snow}}</p></li>
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t30|Theo Callan}}</h3><p class="m-text-4 bd-meta">{{t31|188 cm · Kaduna · ⟦name⟧ in a gig queue}}</p></li>
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t32|Ines Varga}}</h3><p class="m-text-4 bd-meta">{{t33|174 cm · Kano · ⟦name⟧ in a library}}</p></li>
+<li class="bd-item"><h3 class="m-text-3 bd-name">{{t34|Joy Mensah}}</h3><p class="m-text-4 bd-meta">{{t35|172 cm · Festac · ⟦name⟧ at a Sunday market}}</p></li>
+</ol>
+<div class="bd-frame">
+<figure class="bd-photo"><img alt="Maren Holt, short red hair, against a teal wall" height="2400" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1721956514577-f6c15d73e585?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cG9ydHJhaXQlMjBjb2xvcmVkJTIwYmFja2Ryb3AlMjBzdHVkaW98ZW58MXwxfHx8MTc5MTMyMTgzN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#405973" width="1600"/><figcaption class="m-text-4">{{t24|Maren Holt}}</figcaption></figure>
+<figure class="bd-photo"><img alt="Kai Tanaka-Reid in a white shirt against a yellow wall" height="2844" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1681097561932-36d0df02b379?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8eW91bmclMjBtYW4lMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxMzIxODE4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#f3f3f3" width="1600"/><figcaption class="m-text-4">{{t26|Kai Tanaka-Reid}}</figcaption></figure>
+<figure class="bd-photo"><img alt="Noor Haddad wearing a fine necklace against a pale wall" height="2395" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1679466061812-211a6b737175?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8eW91bmclMjB3b21hbiUyMHBvcnRyYWl0JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTEzMjE4MTl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#a6a68c" width="1600"/><figcaption class="m-text-4">{{t28|Noor Haddad}}</figcaption></figure>
+<figure class="bd-photo"><img alt="Theo Callan with curly red hair in low light" height="1587" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1746491183938-8550a53f6429?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29tYW4lMjBwb3J0cmFpdCUyMHdhcm0lMjBsaWdodCUyMG9yYW5nZXxlbnwxfDJ8fHwxNzkxMzIxODIzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=350&q=60}}" style="background:#260c0c" width="1600"/><figcaption class="m-text-4">{{t30|Theo Callan}}</figcaption></figure>
+<figure class="bd-photo"><img alt="Ines Varga in a grey turtleneck" height="2399" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1637325262485-5cf1abb98c05?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjF8fG5hdHVyYWwlMjBmYWNlJTIwcG9ydHJhaXQlMjBubyUyMG1ha2V1cHxlbnwxfDF8fHwxNzkxMzIxODM2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#594026" width="1600"/><figcaption class="m-text-4">{{t32|Ines Varga}}</figcaption></figure>
+<figure class="bd-photo"><img alt="Joy Mensah outdoors in soft green light" height="2400" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1656534439580-19c4de76498b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fG5hdHVyYWwlMjBmYWNlJTIwcG9ydHJhaXQlMjBubyUyMG1ha2V1cHxlbnwxfDF8fHwxNzkxMzIxODM2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60}}" style="background:#0c260c" width="1600"/><figcaption class="m-text-4">{{t34|Joy Mensah}}</figcaption></figure>
+</div>
+</div>
+</section>{{/sec_board}}
+
+{{#sec_spotted}}<section aria-labelledby="spotted-title" data-8b-section="spotted" id="spotted">
+<div class="sp-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="spotted-title">{{t36|Where we found them}}</h2>
+<p class="m-text">{{t37|No casting websites, no paid listings. Our scouts walk the city and talk to people. Four of the places where it worked.}}</p>
+</div>
+<ul class="sp-list">
+<li class="sp-row">
+<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span>
+<span aria-hidden="true" class="sp-mark" data-8b-motion="spot"></span>
+<div><h3 class="m-text-3 sp-place">{{t38|The 38 night bus}}</h3><p class="m-text-4 sp-where">{{t39|Surulere, 1:40 am}}</p></div>
+<p class="m-text sp-story">{{t40|Rae was reading on the top deck. Our scout left a card with the driver; Rae called two weeks later and walked in on the next Thursday.}}</p>
+<img alt="A young person with dark hair riding a bus at night" class="sp-img" data-8b-motion="develop" height="2494" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1772311336577-aa170e076c86?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8YnVzJTIwc3RvcCUyMHRlZW5hZ2VyfGVufDF8MXx8fDE3OTEzMjE4MjB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#0c2626" width="1600"/>
+</li>
+<li class="sp-row">
+<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span>
+<span aria-hidden="true" class="sp-mark" data-8b-motion="spot"></span>
+<div><h3 class="m-text-3 sp-place">{{t41|A record shop}}</h3><p class="m-text-4 sp-where">{{t42|Mushin, Saturday}}</p></div>
+<p class="m-text sp-story">{{t43|Maren was arguing about a B-side with the owner. Six months later she opened her first show in Lagos.}}</p>
+<img alt="A woman holding a record in a record shop" class="sp-img" data-8b-motion="develop" height="2400" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1624022889501-cd2830f38cfb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHJlY29yZCUyMHN0b3JlJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTMyMTgyMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#262626" width="1600"/>
+</li>
+<li class="sp-row">
+<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span>
+<span aria-hidden="true" class="sp-mark" data-8b-motion="spot"></span>
+<div><h3 class="m-text-3 sp-place">{{t44|A bus stop in the snow}}</h3><p class="m-text-4 sp-where">{{t45|Abuja, January}}</p></div>
+<p class="m-text sp-story">{{t46|Noor was waiting for the 49. We waited with her, missed ours, and her mother came to the open call the following week.}}</p>
+<img alt="A woman standing next to a bus stop on a snowy day" class="sp-img" data-8b-motion="develop" height="2240" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1739151550260-87742c85eeed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YnVzJTIwc3RvcCUyMHRlZW5hZ2VyfGVufDF8MXx8fDE3OTEzMjE4MjB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#405973" width="1600"/>
+</li>
+<li class="sp-row">
+<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span>
+<span aria-hidden="true" class="sp-mark" data-8b-motion="spot"></span>
+<div><h3 class="m-text-3 sp-place">{{t47|Court three}}</h3><p class="m-text-4 sp-where">{{t48|Bethnal Green, after school}}</p></div>
+<p class="m-text sp-story">{{t49|Kai was the tallest player on the court and the only one not showing off. He walked in Milan that summer.}}</p>
+<img alt="Young men playing basketball on an outdoor court" class="sp-img" data-8b-motion="develop" height="2400" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1633672357489-263e1c976f6e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGJhc2tldGJhbGwlMjBjb3VydCUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEzMjE4MjB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=220&q=60}}" style="background:#c0c0c0" width="1600"/>
+</li>
+</ul>
+</section>{{/sec_spotted}}
+
+{{#sec_method}}<section aria-labelledby="method-title" data-8b-section="method" id="method">
+<div class="md-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="method-title">{{t50|From spotted to signed}}</h2>
+<p class="m-text">{{t51|Four steps, about two months, and nothing to pay at any point. You can stop after any step.}}</p>
+</div>
+<div class="md-track">
+<div aria-hidden="true" class="md-rail">
+<svg class="md-line" preserveaspectratio="none" viewbox="0 0 100 100"><line vector-effect="non-scaling-stroke" x1="6" x2="62" y1="0" y2="100"></line></svg>
+<span class="md-spot"></span>
+</div>
+<ol class="md-steps">
+<li class="md-step"><span class="m-text-4 md-num">{{t52|Step 1}}</span><h3 class="m-text-3">{{t53|⟦name⟧}}</h3><p class="m-text">{{t54|A scout hands you a card, or you walk into the open call. That is the whole audition.}}</p></li>
+<li class="md-step"><span class="m-text-4 md-num">{{t55|Step 2}}</span><h3 class="m-text-3">{{t56|Test shoot}}</h3><p class="m-text">{{t57|A free half-day with our photographer: plain light, no make-up, two or three looks.}}</p></li>
+<li class="md-step"><span class="m-text-4 md-num">{{t58|Step 3}}</span><h3 class="m-text-3">{{t59|Development}}</h3><p class="m-text">{{t60|Six weeks of walking, posing and portfolio work at your pace, around school or a job.}}</p></li>
+<li class="md-step"><span class="m-text-4 md-num">{{t61|Step 4}}</span><h3 class="m-text-3">{{t62|First booking}}</h3><p class="m-text">{{t63|We send you to clients who book new faces, and a booker stays on set for your first job.}}</p></li>
+</ol>
+</div>
+</section>{{/sec_method}}
+
+{{#sec_develop}}<section aria-labelledby="develop-title" data-8b-section="develop" id="develop">
+<div class="dv-pin">
+<div class="dv-stage">
+<div class="dv-copy">
+<h2 class="m-text-3" data-8b-motion="rise" id="develop-title">{{t64|Nine test shoots this month}}</h2>
+<p class="m-text">{{t65|Every new face gets a free half-day test with our photographer. This is the September sheet, one frame from each shoot.}}</p>
+<p class="m-text dv-note"><strong class="m-text-4">{{t66|Frame 07}}</strong>{{t67|Ines's first test: plain light, no make-up, one look. A Paris lookbook booked her from this frame three weeks later.}}</p>
+</div>
+<div class="dv-sheet">
+<figure class="dv-frame"><img alt="A new face in a brown shirt sitting on a white studio floor" height="2400" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1780566759832-22f1eebad1bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8eW91bmclMjB3b21hbiUyMHBvcnRyYWl0JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTEzMjE4MTl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#d9d9d9" width="1600"/><figcaption class="m-text-4">{{t68|01 · Hana}}</figcaption></figure>
+<figure class="dv-frame"><img alt="A photographer directing a model in a white studio" height="900" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1758613655335-4619180f4bd3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZmFzaGlvbiUyMGVkaXRvcmlhbCUyMGNhbXBhaWdufGVufDF8MHx8fDE3OTEzMjE4MjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#d9d9d9" width="1600"/><figcaption class="m-text-4">{{t69|02 · Ama}}</figcaption></figure>
+<figure class="dv-frame"><img alt="A new face crouching and holding a silver necklace" height="2400" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1780566758601-8f2e657531ef?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8eW91bmclMjB3b21hbiUyMHBvcnRyYWl0JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTEzMjE4MTl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#f3f3f3" width="1600"/><figcaption class="m-text-4">{{t70|03 · Hana}}</figcaption></figure>
+<figure class="dv-frame"><img alt="A young man in a black t-shirt against a red backdrop" height="2133" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1771926011257-833cdebd429a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9kZWwlMjBwb3J0cmFpdCUyMG9yYW5nZSUyMGJhY2tkcm9wfGVufDF8MXx8fDE3OTEzMjE3OTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#c0260c" width="1600"/><figcaption class="m-text-4">{{t71|04 · Luc}}</figcaption></figure>
+<figure class="dv-frame"><img alt="A make-up artist preparing a model in the studio" height="900" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1758613653947-cfce6ae77b72?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8ZmFzaGlvbiUyMGVkaXRvcmlhbCUyMGNhbXBhaWdufGVufDF8MHx8fDE3OTEzMjE4MjJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#d9d9d9" width="1600"/><figcaption class="m-text-4">{{t72|05 · Ama}}</figcaption></figure>
+<figure class="dv-frame"><img alt="Black and white portrait of a young woman in a white shirt" height="2397" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1584464001688-4de9c48ca54b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c2VhbXN0cmVzcyUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMTA2MDd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#f3f3f3" width="1600"/><figcaption class="m-text-4">{{t73|06 · Ines}}</figcaption></figure>
+<figure class="dv-frame"><img alt="Black and white close portrait of Ines with her hair loose" height="2397" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1584464441663-3d23cb39b041?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Y29udGFjdCUyMHNoZWV0JTIwcG9ydHJhaXQlMjBtb2RlbHxlbnwxfDF8fHwxNzkxMzIxNzk5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#f3f3f3" width="1600"/><figcaption class="m-text-4">{{t74|07 · Ines}}</figcaption><svg aria-hidden="true" class="dv-mark" viewbox="0 0 108 108"><rect height="100" pathlength="1" rx="5" width="100" x="4" y="4"></rect></svg></figure>
+<figure class="dv-frame"><img alt="A young woman in a black top against a dark backdrop" height="2400" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1713442861325-8ac2038d3cb5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29udGFjdCUyMHNoZWV0JTIwcG9ydHJhaXQlMjBtb2RlbHxlbnwxfDF8fHwxNzkxMzIxNzk5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=170&q=60}}" style="background:#262626" width="1600"/><figcaption class="m-text-4">{{t75|08 · Vera}}</figcaption></figure>
+<figure class="dv-frame"><img alt="A model posing between studio lights and a camera" height="900" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1758613654806-fa787b741bba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGZhc2hpb24lMjBlZGl0b3JpYWwlMjBjYW1wYWlnbnxlbnwxfDB8fHwxNzkxMzIxODIyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60}}" style="background:#d9d9d9" width="1600"/><figcaption class="m-text-4">{{t76|09 · Ama}}</figcaption></figure>
+</div>
+</div>
+</div>
+</section>{{/sec_develop}}
+
+{{#sec_shows}}<section aria-labelledby="shows-title" data-8b-section="shows" id="shows">
+<div class="sh-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="shows-title">{{t77|First shows, first campaigns}}</h2>
+<p class="m-text">{{t78|Where the board walked and shot this season. Every one of these was somebody's first job.}}</p>
+</div>
+<div class="sh-pin">
+<div class="sh-view">
+<ul class="sh-track">
+<li class="m-card"><img alt="A model in an orange dress walking a runway" class="m-card__img" height="2400" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1733324961705-97bd6cd7f4ba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmFja3N0YWdlJTIwZmFzaGlvbiUyMHdlZWt8ZW58MXwxfHx8MTc5MTMyMTgxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#8c8ca6" width="1600"/><span class="m-badge-2 m-card__top">{{t79|Debut show}}</span><p class="m-text-5 m-card__title">{{t80|Maren Holt opens her first Lagos show}}</p></li>
+<li class="m-card"><img alt="A male model walking a runway in front of an audience" class="m-card__img" height="2400" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1733322987284-4210857c2ada?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8YmFja3N0YWdlJTIwZmFzaGlvbiUyMHdlZWt8ZW58MXwxfHx8MTc5MTMyMTgxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#73738c" width="1600"/><span class="m-badge-2 m-card__top">{{t81|First walk}}</span><p class="m-text-5 m-card__title">{{t82|Kai Tanaka-Reid in Milan men's week}}</p></li>
+<li class="m-card"><img alt="A line of models walking a dark runway" class="m-card__img" height="2396" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1650057961082-d77233053b1b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8YmFja3N0YWdlJTIwZmFzaGlvbiUyMHdlZWt8ZW58MXwxfHx8MTc5MTMyMTgxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#260c0c" width="1600"/><span class="m-badge-2 m-card__top">{{t83|Closing look}}</span><p class="m-text-5 m-card__title">{{t84|Noor Haddad closes a Paris show three months after the bus stop}}</p></li>
+<li class="m-card"><img alt="Two models in long coats standing on stone stairs" class="m-card__img" height="2397" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1546672657-61d12fae638c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmFzaGlvbiUyMHNob3clMjByYWluY29hdCUyMG1vZGVsc3xlbnwxfDF8fHwxNzkxMzIxNzk2fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#8c8c8c" width="1600"/><span class="m-badge-2 m-card__top">{{t85|Campaign}}</span><p class="m-text-5 m-card__title">{{t86|Ines Varga and Joy Mensah for an outerwear label}}</p></li>
+<li class="m-card"><img alt="Two faces close together in warm light for a beauty story" class="m-card__img" height="1280" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1779398260978-291b1f4bb472?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGZhc2hpb24lMjBlZGl0b3JpYWwlMjBjYW1wYWlnbnxlbnwxfDB8fHwxNzkxMzIxODIyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=870&q=60}}" style="background:#c05926" width="1600"/><span class="m-badge-2 m-card__top">{{t87|Editorial}}</span><p class="m-text-5 m-card__title">{{t88|Joy Mensah's first beauty story, shot in one afternoon}}</p></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_shows}}
+
+{{#sec_promise}}<section aria-labelledby="promise-title" data-8b-section="promise" id="promise">
+<h2 class="m-text-2 pr-title" data-8b-motion="rise" id="promise-title">{{t89|No fees. Ever.}}</h2>
+<p class="m-text pr-lead">{{t90|Some agencies make their money from new faces. We only earn when you do: a commission on bookings, and nothing before them.}}</p>
+<div aria-hidden="true" class="pr-cols"><span class="m-text-4">{{t91|What others charge for}}</span><span class="m-text-4">{{t92|What we ask}}</span></div>
+<ul class="pr-rows">
+<li><span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span><s class="m-text-5 pr-old">{{t93|A portfolio shoot, ₦225,000}}<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span></s><span class="m-text-5">{{t94|We shoot your test and pay for it.}}</span></li>
+<li><span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span><s class="m-text-5 pr-old">{{t95|A registration fee, ₦60,000}}<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span></s><span class="m-text-5">{{t96|Signing with us costs nothing.}}</span></li>
+<li><span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span><s class="m-text-5 pr-old">{{t97|A compulsory posing course}}<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span></s><span class="m-text-5">{{t98|Coaching is free and optional.}}</span></li>
+<li><span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span><s class="m-text-5 pr-old">{{t99|A website listing, ₦12,500 a month}}<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span></s><span class="m-text-5">{{t100|You go on the board when you are ready.}}</span></li>
+</ul>
+</section>{{/sec_promise}}
+
+{{#sec_network}}<section aria-labelledby="network-title" data-8b-section="network" id="network">
+<div class="nw-head">
+<div>
+<svg aria-hidden="true" class="nw-icon" viewbox="0 0 32 32"><circle cx="16" cy="16" r="13"></circle><ellipse cx="16" cy="16" rx="6" ry="13"></ellipse><path d="M3 16h26M5.5 9.5h21M5.5 22.5h21"></path></svg>
+<h2 class="m-text-3" id="network-title">{{t101|Five cities, one mother agency}}</h2>
+</div>
+<p class="m-text">{{t102|We stay your mother agency and place you with partners abroad when you are ready to travel, never before.}}</p>
+</div>
+<ul class="nw-rows">
+<li class="nw-row"><span class="m-text-3 nw-city">{{t103|Paris}}</span><span class="m-badge-3 nw-tag">{{t104|Women's shows · since 2019}}</span></li>
+<li class="nw-row"><span class="m-text-3 nw-city">{{t105|Milan}}</span><span class="m-badge-3 nw-tag">{{t106|Men's week · since 2021}}</span></li>
+<li class="nw-row"><span class="m-text-3 nw-city">{{t107|New York}}</span><span class="m-badge-3 nw-tag">{{t108|Campaigns · since 2022}}</span></li>
+<li class="nw-row"><span class="m-text-3 nw-city">{{t109|Seoul}}</span><span class="m-badge-3 nw-tag">{{t110|Editorial · since 2024}}</span></li>
+<li class="nw-row"><span class="m-text-3 nw-city">{{t111|Copenhagen}}</span><span class="m-badge-3 nw-tag">{{t112|Fashion week · since 2025}}</span></li>
+</ul>
+</section>{{/sec_network}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-head">
+<h2 class="m-text-3" data-8b-motion="rise" id="faq-title">{{t113|Before you walk in}}</h2>
+<p class="m-text">{{t114|Questions we hear from applicants and their parents. Anything else, call the studio.}}</p>
+</div>
+<div class="fq-list">
+<details class="fq-item"><summary class="m-text-5">{{t115|Do I need professional photos?}}</summary><p class="m-text fq-answer">{{t116|No. Phone photos in daylight are better: no filters, no make-up, hair off your face. We take the professional ones.}}</p></details>
+<details class="fq-item"><summary class="m-text-5">{{t117|Is there an age or height limit?}}</summary><p class="m-text fq-answer">{{t118|We meet people from 14 upwards. Height matters for runway, not for commercial and beauty work, so apply whatever your height.}}</p></details>
+<details class="fq-item"><summary class="m-text-5">{{t119|I'm under 18. What do my parents need to do?}}</summary><p class="m-text fq-answer">{{t120|A parent or guardian comes to the open call and signs any agreement with you. They are copied on every booking.}}</p></details>
+<details class="fq-item"><summary class="m-text-5">{{t121|What happens at the open call?}}</summary><p class="m-text fq-answer">{{t122|A short chat, a few digital photos against a plain wall and a walk across the studio. It takes about twenty minutes.}}</p></details>
+<details class="fq-item"><summary class="m-text-5">{{t123|How soon will I hear back?}}</summary><p class="m-text fq-answer">{{t124|Within ten working days, whether it is a yes or a no. We reply to every application.}}</p></details>
+<details class="fq-item"><summary class="m-text-5">{{t125|Can I be with another agency too?}}</summary><p class="m-text fq-answer">{{t126|If you already have a mother agency, tell us. We can still place you abroad through them.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div aria-hidden="true" class="ct-flag"><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span><span class="ct-cell"></span></div>
+<div class="ct-grid">
+<div class="ct-intro">
+<h2 class="m-text-3" data-8b-motion="rise" id="contact-title">{{t127|Apply to be spotted}}</h2>
+<p class="m-text">{{t128|Send two phone photos and a few details. A scout replies within ten working days, yes or no.}}</p>
+<dl class="ct-details">
+<div><dt class="m-text-4">{{t129|Studio}}</dt><dd class="m-text">{{t17|Studio 4, 1 Admiralty Way, Lagos}}</dd></div>
+<div><dt class="m-text-4">{{t130|Open call}}</dt><dd class="m-text">{{t131|Thursdays, 2 to 6 pm}}</dd></div>
+<div><dt class="m-text-4">{{t132|Phone}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t133|⟦phone⟧}}</a></dd></div>
+<div><dt class="m-text-4">{{t134|Email}}</dt><dd class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t135|scouting@spotted.example}}</a></dd></div>
+</dl>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Modeling Agency by <a href="https://github.com/8bsite/modeling-agency-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="site-footer">
+<div class="ft-cols">
+<div><p class="m-text ft-lead">{{t136|A scouting and development agency for new faces. Lagos, since 2016.}}</p></div>
+<div><h2 class="m-text-4">{{t137|Agency}}</h2><ul class="ft-links">{{#nv_method}}<li><a class="m-link" href="#method">{{t3|About}}</a></li>{{/nv_method}}{{#nv_board}}<li><a class="m-link" href="#board">{{t4|Our faces}}</a></li>{{/nv_board}}{{#nv_shows}}<li><a class="m-link" href="#shows">{{t5|Shows}}</a></li>{{/nv_shows}}{{#nv_faq}}<li><a class="m-link" href="#faq">{{t138|Questions}}</a></li>{{/nv_faq}}</ul></div>
+<div><h2 class="m-text-4">{{t129|Studio}}</h2><ul class="ft-links"><li><a class="m-link" href="#open-call">{{t130|Open call}}</a></li>{{#nv_contact}}<li><a class="m-link" href="#contact">{{t139|Apply}}</a></li>{{/nv_contact}}<li><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t133|⟦phone⟧}}</a></li><li><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t135|scouting@spotted.example}}</a></li></ul></div>
+<div><h2 class="m-text-4">{{t140|Follow}}</h2><ul class="ft-social"><li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.youtube.com/">{{t8|YouTube}}</a></li><li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.tiktok.com/">{{t9|TikTok}}</a></li><li><a class="m-btn-3" data-8b-placeholder="social" href="https://www.instagram.com/">{{t10|Instagram}}</a></li></ul></div>
+</div>
+<span aria-hidden="true" class="m-rule" data-8b-motion="rule"></span>
+<p aria-hidden="true" class="ft-mark" style="--len:11">{{t1|⟦name⟧MGMT}}</p>
+<div class="ft-base"><span>{{t141|© 2026 ⟦name⟧ Management Ltd. Registered in Nigeria. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t142|8B}}</a></span><span>{{t17|Studio 4, 1 Admiralty Way, Lagos}}</span></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:site-nav">
+(() => {
+  const nav = document.getElementById('site-nav');
+  const toggle = nav.querySelector('.nv-menu');
+  const overlay = document.getElementById('nv-overlay');
+  const close = overlay.querySelector('.nv-close');
+  let last = window.scrollY, run = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, d = y - last;
+    last = y;
+    if (nav.classList.contains('is-open')) return;
+    if (y < 80) { nav.classList.remove('is-hidden'); run = 0; return; }
+    run = Math.sign(d) === Math.sign(run) ? run + d : d;
+    if (run > 12) nav.classList.add('is-hidden');
+    else if (run < -12) nav.classList.remove('is-hidden');
+  }, { passive: true });
+  const setOpen = open => {
+    nav.classList.toggle('is-open', open);
+    nav.classList.remove('is-hidden');
+    overlay.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) setOpen(false); });
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct-form');
+  const status = form.querySelector('.ct-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = ['name', 'age', 'email'].every(name => form.elements[name].value.trim());
+    status.textContent = ok ? status.dataset.sent : status.dataset.missing;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('site-nav');
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: -(nav.offsetHeight + 8) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rule(element, vars = {}) {
+    return gsap.fromTo(element, { scaleX: 0 }, { scaleX: 1, transformOrigin: '0% 50%', duration: 1.1, ease: 'power3.out', ...vars });
+  },
+  develop(element, vars = {}) {
+    return gsap.fromTo(element, { filter: 'grayscale(1) brightness(0.72)' }, { filter: 'grayscale(0) brightness(1)', ease: 'none', ...vars });
+  },
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.from(split.lines, { yPercent: 110, duration: 0.95, ease: 'power3.out', stagger: 0.08, ...vars, onComplete: () => split.revert() });
+  },
+  spot(element, vars = {}) {
+    return gsap.fromTo(element, { scale: 0 }, { scale: 1, duration: 0.7, ease: 'back.out(2.6)', ...vars });
+  }
+};
+const effectTriggers = {
+  rule: { start: 'top 94%', once: true },
+  develop: { start: 'top 96%', end: 'center 52%', scrub: true },
+  rise: { start: 'top 90%', once: true },
+  spot: { start: 'top 90%', once: true }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effectTriggers).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const config = effectTriggers[name];
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, ...config, animation: effects[name](element, config.scrub ? {} : { paused: true }) });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:board">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 901px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 900px)' }, context => {
+    const section = document.getElementById('board');
+    const items = [...section.querySelectorAll('.bd-item')];
+    const photos = [...section.querySelectorAll('.bd-photo')];
+    const count = Math.min(items.length, photos.length);
+    const line = context.conditions.wide ? '50%' : '80%';
+    section.setAttribute('data-staged', '');
+    const names = items.map(item => item.querySelector('.bd-name'));
+    let active = -1;
+    const setActive = index => {
+      if (index === active) return;
+      active = index;
+      items.forEach((item, i) => item.classList.toggle('is-on', i === index));
+      names.forEach((name, i) => gsap.to(name, { x: i === index ? '0.72em' : 0, duration: 0.5, ease: 'power3.out', overwrite: true }));
+    };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'board', trigger: section.querySelector('.bd-names'), start: `top ${line}`, end: `bottom ${line}`, scrub: 0.4, invalidateOnRefresh: true, onUpdate: self => setActive(self.isActive ? Math.min(count - 1, Math.floor(self.progress * count)) : -1), onLeave: () => setActive(-1), onLeaveBack: () => setActive(-1) }
+    });
+    timeline.to({}, { duration: count }, 0);
+    for (let i = 1; i < count; i++) {
+      timeline
+        .fromTo(photos[i], { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', duration: 0.45, ease: 'power2.inOut' }, i - 0.25)
+        .set(photos[i], { clipPath: 'none' }, i + 0.2)
+        .fromTo(photos[i].querySelector('img'), { scale: 1.22 }, { scale: 1, duration: 0.6, ease: 'power2.out' }, i - 0.25);
+    }
+    return () => {
+      section.removeAttribute('data-staged');
+      items.forEach(item => item.classList.remove('is-on'));
+    };
+  });
+}, { id: 'board' });
+</script>
+<script data-8b-part="scene:method">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('method');
+    const track = section.querySelector('.md-track');
+    const rail = section.querySelector('.md-rail');
+    const line = rail.querySelector('.md-line');
+    const spot = rail.querySelector('.md-spot');
+    const steps = [...section.querySelectorAll('.md-step')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'method', trigger: track, start: 'top 62%', end: 'bottom 62%', scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(line, { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1 }, 0)
+      .set(line, { clipPath: 'none' }, 1)
+      .fromTo(spot, { x: () => -0.56 * rail.offsetWidth, y: () => -rail.offsetHeight }, { x: 0, y: 0, duration: 1 }, 0);
+    steps.forEach((step, i) => {
+      timeline.fromTo(step, { opacity: 0.2 }, { opacity: 1, duration: 0.08 }, Math.max(0, (i + 0.5) / steps.length - 0.1));
+    });
+  });
+}, { id: 'method' });
+</script>
+<script data-8b-part="scene:develop">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('develop');
+    const sheet = section.querySelector('.dv-sheet');
+    const frames = [...sheet.querySelectorAll('.dv-frame')];
+    const mark = sheet.querySelector('.dv-mark rect');
+    const note = section.querySelector('.dv-note');
+    section.setAttribute('data-staged', '');
+    const toPile = frame => ({
+      x: sheet.clientWidth / 2 - (frame.offsetLeft + frame.offsetWidth / 2),
+      y: sheet.clientHeight / 2 - (frame.offsetTop + frame.offsetHeight / 2)
+    });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'power2.inOut' },
+      scrollTrigger: { id: 'develop', trigger: section.querySelector('.dv-pin'), start: 'top 35%', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true }
+    });
+    frames.forEach((frame, i) => {
+      timeline.fromTo(frame, { x: () => toPile(frame).x, y: () => toPile(frame).y, rotation: ((i * 37) % 19) - 9, scale: 1.12 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1 }, i * 0.3);
+    });
+    if (mark) timeline.fromTo(mark, { strokeDashoffset: 1 }, { autoRound: false, strokeDashoffset: 0, duration: 0.9, ease: 'power1.inOut' }, '>-0.1');
+    timeline
+      .fromTo(note, { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '<0.3')
+      .to({}, { duration: 0.5 });
+    return () => section.removeAttribute('data-staged');
+  });
+}, { id: 'develop' });
+</script>
+<script data-8b-part="scene:shows">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('shows');
+    const pin = section.querySelector('.sh-pin');
+    const view = section.querySelector('.sh-view');
+    const track = section.querySelector('.sh-track');
+    const cards = [...track.querySelectorAll('.m-card')];
+    section.setAttribute('data-staged', '');
+    const distance = () => Math.max(0, track.scrollWidth - view.clientWidth + 2 * parseFloat(getComputedStyle(view).paddingLeft));
+    const setDistance = () => pin.style.setProperty('--sh-dist', `${distance()}px`);
+    setDistance();
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'shows', trigger: pin, start: 'top top', end: 'bottom bottom', scrub: 0.5, invalidateOnRefresh: true, onRefreshInit: setDistance }
+    });
+    timeline.fromTo(track, { x: 0 }, { x: () => -distance(), duration: 1 }, 0);
+    const span = track.scrollWidth || 1;
+    cards.forEach(card => {
+      const at = Math.min(0.85, Math.max(0, (card.offsetLeft - view.clientWidth * 0.55) / span));
+      timeline.add(effects.develop(card.querySelector('.m-card__img'), { duration: 0.22 }), at);
+    });
+    return () => { section.removeAttribute('data-staged'); pin.style.removeProperty('--sh-dist'); };
+  });
+}, { id: 'shows' });
+</script>
+<script data-8b-part="scene:network">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('network');
+    const rows = [...section.querySelectorAll('.nw-row')];
+    rows.forEach((row, i) => {
+      const city = row.querySelector('.nw-city');
+      const tag = row.querySelector('.nw-tag');
+      const direction = i % 2 ? -1 : 1;
+      gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `network:row-${i}`, trigger: row, start: 'top bottom', end: 'bottom top', scrub: 0.6, invalidateOnRefresh: true }
+      })
+        .fromTo(city, { xPercent: -12 * direction }, { xPercent: 12 * direction, duration: 1 }, 0)
+        .fromTo(tag, { x: () => -(tag.offsetLeft - city.offsetLeft) }, { x: 0, duration: 0.5, ease: 'power2.out' }, 0);
+    });
+  });
+}, { id: 'network' });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const flag = section.querySelector('.ct-flag');
+    const cells = flag.querySelectorAll('.ct-cell');
+    const columns = getComputedStyle(flag).gridTemplateColumns.split(' ').length;
+    gsap.timeline({ scrollTrigger: { id: 'contact', trigger: flag, start: 'top 92%', end: 'bottom 40%', scrub: 0.5 } })
+      .fromTo(cells, { scaleY: 0, scaleX: 0.4 }, { scaleY: 1, scaleX: 1, duration: 0.5, ease: 'power2.out', stagger: { grid: [Math.ceil(cells.length / columns), columns], from: 'start', amount: 1.2 } });
+  });
+}, { id: 'contact' });
+</script>
+</body>
+</html>

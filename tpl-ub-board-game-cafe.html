@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmS-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnj-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xnx-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AE, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F8D0-1F8D8, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FAC6, U+1FAC8, U+1FACC-1FADD, U+1FADF-1FAEB, U+1FAEF-1FAFA, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmR-HY6EQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsvDddtC.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsLDddtC.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsXDddtC.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsnDddtC.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsjDddtC.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 700 900;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #23264a;
+  --color-2: #05a6f7;
+  --color-3: #ffab03;
+  --color-4: #ff74a6;
+  --color-5: #ffffff;
+  --color-6: #e6ebf1;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Onest", "Onest Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 1.5em;
+  --space-1: clamp(1rem, 2.4vw, 2.25rem);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 109.1%; ascent-override: 91.6%; descent-override: 27.5%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 100%; ascent-override: 97%; descent-override: 31%; line-gap-override: 0%; }
+@font-face { font-family: "Onest Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104.8%; ascent-override: 92.6%; descent-override: 29.6%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-6); color: var(--color-1); font-family: var(--font-2); font-size: 1.0625rem; line-height: 1.55; overflow-x: clip; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 1.0625rem; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-size: 0.9375rem; font-weight: 600; line-height: 1.35; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 6rem; font-weight: 900; font-stretch: 125%; line-height: 0.84; letter-spacing: -0.01em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(2rem, 4.2vw, 3.75rem); font-weight: 900; font-stretch: 125%; line-height: 0.96; letter-spacing: -0.005em; text-transform: uppercase; font-style: normal; text-wrap: balance; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(1.25rem, 1.9vw, 1.625rem); font-weight: 800; font-stretch: 125%; line-height: 1; letter-spacing: 0; text-transform: uppercase; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(1.125rem, 1.55vw, 1.375rem); font-weight: 500; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-echo { position: relative; display: block; width: max-content; max-width: 100%; padding-bottom: 0.7em; font-family: var(--font-1); font-size: 1.75rem; font-weight: 900; font-stretch: 125%; line-height: 0.86; letter-spacing: 0.01em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-echo__cut { position: absolute; left: 0; top: 0; -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text; pointer-events: none; user-select: none; }
+.m-echo__cut:nth-of-type(1) { background-image: linear-gradient(transparent 0 0.07em, currentColor 0.07em 0.41em, transparent 0.41em); transform: translateY(0.81em); }
+.m-echo__cut:nth-of-type(2) { background-image: linear-gradient(transparent 0 0.07em, currentColor 0.07em 0.29em, transparent 0.29em); transform: translateY(1.24em); }
+.m-btn, .m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.8rem 1.5rem; border: 0; border-radius: 0 var(--radius-2) 0 0; overflow: hidden; font-family: var(--font-1); font-size: 0.9375rem; font-weight: 800; font-stretch: 125%; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; font-style: normal; text-decoration: none; cursor: pointer; transition: border-radius .35s cubic-bezier(.2,.8,.2,1), color .25s; }
+.m-btn { background: var(--color-1); color: var(--color-5); }
+.m-btn::before, .m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-4); clip-path: circle(0% at 0% 100%); transition: clip-path .45s cubic-bezier(.2,.8,.2,1); }
+.m-btn__label { position: relative; }
+.m-btn-2 { background: var(--color-3); color: var(--color-1); }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn-2:hover { border-radius: 0 0 var(--radius-2) 0; color: var(--color-1); }
+  .m-btn:hover::before, .m-btn-2:hover::before { clip-path: circle(150% at 0% 100%); }
+}
+.m-btn:focus-visible { outline: 3px solid var(--color-1); outline-offset: 3px; }
+.m-btn-2:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.m-link { display: inline; padding: 0.1em 0.15em; margin: -0.1em -0.15em; font-family: var(--font-2); font-size: inherit; font-weight: 600; line-height: inherit; letter-spacing: 0; text-transform: none; font-style: normal; color: inherit; text-decoration: none; background-image: linear-gradient(color-mix(in srgb, currentColor 22%, transparent) 0 0), linear-gradient(currentColor 0 0); background-repeat: no-repeat; background-size: 100% 0%, 100% 2px; background-position: 0 100%, 0 100%; transition: background-size .35s cubic-bezier(.2,.8,.2,1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 100%, 100% 2px; } }
+.m-iconbtn { display: inline-grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 2px solid currentColor; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
+.m-iconbtn svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+@media (hover: hover) { .m-iconbtn:hover svg { transform: rotate(90deg); } }
+.m-field { display: grid; gap: 0.4rem; font-family: var(--font-2); font-size: 0.9375rem; font-weight: 600; line-height: 1.3; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-field input, .m-field select, .m-field textarea { width: 100%; min-height: 3rem; padding: 0.7rem 1rem; border: 2px solid var(--color-1); border-radius: 0 var(--radius-2) 0 0; background: var(--color-5); color: var(--color-1); font-weight: 400; font-size: 1rem; }
+.m-field textarea { min-height: 6rem; resize: vertical; }
+.m-field :focus-visible { outline: 3px solid var(--color-1); outline-offset: 2px; }
+.m-shape { display: block; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 100% 0 0 0; }
+.m-shape[data-corner="tr"] { border-radius: 0 100% 0 0; }
+.m-shape[data-corner="br"] { border-radius: 0 0 100% 0; }
+.m-shape[data-corner="bl"] { border-radius: 0 0 0 100%; }
+.m-shape img, .m-shape-2 img, .m-shape-3 img { width: 100%; height: 100%; object-fit: cover; }
+.m-shape-2 { display: block; width: 100%; aspect-ratio: 1; overflow: hidden; border-radius: 50%; }
+.m-shape-3 { display: block; width: 100%; aspect-ratio: 2 / 1; overflow: hidden; border-radius: var(--radius-1) var(--radius-1) 0 0; }
+.m-shape-4 { display: block; width: 100%; min-height: 1rem; border-radius: var(--radius-1); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { width: 100%; padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; z-index: 50; inset: 0 0 auto; background: var(--color-6); color: var(--color-1); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+#navigation[data-hidden] { transform: translateY(-100%); }
+#navigation .nav-bar { display: flex; align-items: center; gap: 1.5rem; padding: 0.625rem var(--space-1); }
+#navigation .nav-logo { display: inline-flex; align-items: center; gap: 0.6rem; margin-right: auto; text-decoration: none; font-family: var(--font-1); font-weight: 900; font-stretch: 125%; font-size: 1.125rem; letter-spacing: 0.01em; text-transform: uppercase; line-height: 1; }
+#navigation .nav-mark { width: 1.75rem; height: 1.75rem; display: grid; grid-template-columns: 1fr 1fr; }
+#navigation .nav-mark span { background: var(--color-1); }
+#navigation .nav-mark span:nth-child(1) { border-radius: 100% 0 0 0; background: var(--color-3); }
+#navigation .nav-mark span:nth-child(2) { border-radius: 0 100% 0 0; background: var(--color-2); }
+#navigation .nav-mark span:nth-child(3) { border-radius: 0 0 0 100%; background: var(--color-4); }
+#navigation .nav-mark span:nth-child(4) { border-radius: 0 0 100% 0; }
+#navigation .nav-links { display: flex; gap: 1.6rem; font-size: 0.9375rem; }
+#navigation .nav-menu { display: none; }
+#navigation .nav-overlay { position: fixed; inset: 0; z-index: 60; display: grid; align-content: space-between; gap: 2rem; padding: 1rem var(--space-1) 2rem; background: var(--color-1); color: var(--color-5); overflow-y: auto; }
+#navigation .nav-overlay[hidden] { display: none; }
+#navigation .nav-overlay__top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .nav-overlay ul { display: grid; gap: 0.35rem; }
+#navigation .nav-overlay a.m-text-4 { text-decoration: none; font-size: clamp(2rem, 11vw, 3.25rem); }
+@media (max-width: 860px) {
+  #navigation .nav-links { display: none; }
+  #navigation .nav-menu { display: inline-grid; }
+  #navigation .nav-bar { gap: 0.75rem; }
+  #navigation .nav-book { padding-inline: 1rem; }
+  #navigation .nav-logo { white-space: nowrap; }
+}
+@media (max-width: 520px) {
+  #navigation .nav-bar { padding-block: 0.5rem; }
+  #navigation .nav-book__more { display: none; }
+  #navigation .nav-book { min-height: 2.75rem; }
+  #navigation .m-iconbtn { width: 2.75rem; height: 2.75rem; }
+}
+@media (max-width: 380px) {
+  #navigation .nav-logo { font-size: 0.95rem; gap: 0.45rem; }
+  #navigation .nav-mark { width: 1.4rem; height: 1.4rem; }
+  #navigation .nav-book { padding-inline: 0.8rem; font-size: 0.8125rem; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; overflow-x: clip; background: var(--color-1); --k1: 0.8; }
+#opening .op-s1 { position: relative; z-index: 1; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 100svh; padding-top: var(--nav-h, 4.25rem); background: var(--color-1); }
+#opening .op-mosaic { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(6.5rem, 1fr)); grid-template-areas: "a b p p r r d f" "k k p p r r e e" "k k l l l c e e"; }
+#opening .op-cell { position: relative; display: grid; container-type: size; overflow: hidden; }
+#opening .op-in { width: min(100cqw, 100cqh); aspect-ratio: 1; }
+#opening .op-turn { display: block; width: 100%; height: 100%; }
+#opening .op-a { grid-area: a; background: var(--color-1); place-items: end end; }
+#opening .op-a .m-shape { background: var(--color-3); }
+#opening .op-b { grid-area: b; background: var(--color-2); place-items: end start; }
+#opening .op-b .m-shape { background: var(--color-1); }
+#opening .op-f { grid-area: f; background: var(--color-2); place-items: start start; }
+#opening .op-f .m-shape { background: var(--color-1); }
+#opening .op-k { grid-area: k; background: var(--color-1); place-items: start end; }
+#opening .op-k .m-shape { background: var(--color-4); }
+#opening .op-c { grid-area: c; background: var(--color-4); place-items: end center; }
+#opening .op-c .op-turn { display: grid; align-content: end; }
+#opening .op-c .m-shape-3 { background: var(--color-1); }
+#opening .op-p { grid-area: p; background: var(--color-2); place-items: end end; }
+#opening .op-p .m-shape { background: var(--color-1); }
+#opening .op-r { grid-area: r; background: var(--color-3); }
+#opening .op-pills { display: flex; flex-direction: column; justify-content: center; gap: 11cqh; height: 100%; padding-left: 14cqw; padding-right: 8cqw; }
+#opening .op-pills .m-shape-4 { height: 13cqh; min-height: 0; background: var(--color-1); }
+#opening .op-d { grid-area: d; background: var(--color-4); place-items: start start; }
+#opening .op-d .op-in { padding: 14%; }
+#opening .op-dot { width: 34%; background: var(--color-1); }
+#opening .op-e { grid-area: e; background: var(--color-1); place-items: center; }
+#opening .op-e .op-in { padding: 7%; }
+#opening .op-l { grid-area: l; background: var(--color-2); color: var(--color-1); align-content: end; padding: 0 var(--space-1) 1rem; }
+#opening .op-l .m-echo { font-size: min(3.25rem, 100cqw / (var(--len) * 0.83)); }
+#opening .op-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 7fr); }
+#opening .op-pillar { display: flex; align-items: flex-end; padding: 1.25rem; background: var(--color-4); color: var(--color-1); border-radius: 0 calc(100vw / 8) 0 0; transform-origin: 50% 100%; }
+#opening .op-pillar .m-text-2 { font-family: var(--font-1); font-weight: 800; font-stretch: 125%; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.02em; }
+#opening .op-navy { display: grid; gap: 1.25rem; padding: 1.5rem var(--space-1) 1.25rem; background: var(--color-1); color: var(--color-5); container-type: inline-size; }
+#opening .op-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
+#opening .op-intro { max-width: 34rem; font-size: 0.9375rem; line-height: 1.5; color: var(--color-6); text-align: justify; hyphens: auto; }
+#opening .op-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; justify-content: flex-end; }
+#opening .op-title { font-size: min(15rem, 100cqw / (var(--len) * var(--k1))); line-height: 0.8; white-space: nowrap; padding-top: 0.04em; }
+#opening .op-word { display: inline-block; }
+#opening .op-s2 { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 2.5rem; align-items: stretch; min-height: 100svh; padding: calc(var(--nav-h, 4.25rem) + 2.5rem) var(--space-1) 3.5rem; background: var(--color-3); color: var(--color-1); }
+#opening .op-s2-copy { grid-column: 1 / 5; grid-row: 1; align-self: end; display: grid; gap: 1.5rem; justify-items: start; }
+#opening .op-s2-copy .m-text-4 { font-size: clamp(2.25rem, 5vw, 4.5rem); }
+#opening .op-s2-copy .m-text-6 { max-width: 32rem; }
+#opening .op-bars { grid-column: 5 / 9; grid-row: 1; align-self: start; display: grid; gap: 1.25rem; }
+#opening .op-bar { display: flex; align-items: center; min-height: 7.5rem; padding: 1.25rem 2.5rem; background: var(--color-1); color: var(--color-5); border-radius: var(--radius-1); clip-path: inset(0 round var(--radius-1)); }
+#opening .op-bar__in { display: grid; gap: 0.45rem; }
+#opening .op-bar .m-text-2 { color: var(--color-6); font-weight: 500; font-size: 1rem; }
+@media (max-width: 860px) {
+  #opening .op-mosaic { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(3, calc(100vw / 4)) auto; grid-template-areas: "a b d e" "p p r r" "p p r r" "l l l l"; }
+  #opening .op-c, #opening .op-k, #opening .op-f { display: none; }
+  #opening .op-l { container-type: inline-size; padding-block: 1rem 0.9rem; }
+  #opening .op-panel { grid-template-columns: 2.75rem minmax(0, 1fr); }
+  #opening .op-pillar { padding: 0.9rem 0.5rem; border-radius: 0 2.75rem 0 0; justify-content: center; }
+  #opening .op-pillar .m-text-2 { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.75rem; white-space: nowrap; }
+  #opening .op-pillar br { display: none; }
+  #opening .op-navy { padding: 1.25rem var(--space-1) 1.1rem; }
+  #opening .op-top { flex-direction: column; gap: 1.1rem; }
+  #opening .op-intro { font-size: 0.875rem; }
+  #opening .op-actions { justify-content: flex-start; flex-wrap: nowrap; gap: 1rem; }
+  #opening .op-actions .m-btn-2 { padding-inline: 1.1rem; }
+  #opening .op-title { white-space: normal; line-height: 0.82; }
+  #opening .op-word { display: block; width: max-content; font-size: min(10rem, 100cqw / (var(--len) * 0.86)); }
+  #opening .op-s2 { grid-template-columns: minmax(0, 1fr); align-content: space-between; padding-top: calc(var(--nav-h, 4.25rem) + 1.5rem); row-gap: 2rem; }
+  #opening .op-s2-copy, #opening .op-bars { grid-column: 1; grid-row: auto; }
+  #opening .op-bars { order: -1; }
+  #opening .op-bars { gap: 0.75rem; }
+  #opening .op-bar { min-height: 5.5rem; padding: 1rem 1.6rem; }
+  #opening .op-bar .m-text-2 { font-size: 0.875rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-in { animation: op-turn-in .62s cubic-bezier(.2,.9,.25,1.15) backwards; animation-delay: calc(var(--i, 0) * 70ms); }
+  #opening .op-p .op-in { animation-name: op-scale-in; }
+  #opening .op-word { animation: op-rise .75s cubic-bezier(.2,.8,.2,1) backwards; }
+  #opening .op-word + .op-word { animation-delay: .08s; }
+  #opening .op-pillar { animation: op-grow .7s cubic-bezier(.2,.8,.2,1) backwards .1s; }
+  #opening .op-dot { animation: op-hop 4.8s cubic-bezier(.7,0,.2,1) infinite 1.2s; }
+  #opening .op-spin { animation: op-spin 28s linear infinite; }
+  #opening[data-off] .op-dot, #opening[data-off] .op-spin { animation-play-state: paused; }
+}
+@keyframes op-turn-in { from { transform: rotate(-90deg) scale(.82); } }
+@keyframes op-scale-in { from { transform: scale(.92); } }
+@keyframes op-rise { from { transform: translateY(35%); } }
+@keyframes op-grow { from { transform: scaleY(.45); } }
+@keyframes op-hop {
+  0%, 18% { translate: 0 0; }
+  25%, 43% { translate: 194% 0; }
+  50%, 68% { translate: 194% 194%; }
+  75%, 93% { translate: 0 194%; }
+  100% { translate: 0 0; }
+}
+@keyframes op-spin { to { rotate: 360deg; } }
+}
+</style>
+<style data-8b-part="section:library">
+@layer sections {
+#library { position: relative; overflow-x: clip; background: var(--color-1); color: var(--color-5); }
+#library .lb-stage { display: grid; grid-template-columns: minmax(0, 3.2fr) minmax(0, 8fr); padding-top: 5.5rem; }
+#library .lb-head { display: grid; align-content: start; gap: 1.25rem; padding: 0 var(--space-1) 3rem; }
+#library .lb-head .m-text-4 { font-size: clamp(1.875rem, 3.1vw, 3rem); }
+#library .lb-lead { color: var(--color-6); max-width: 26rem; }
+#library .lb-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: minmax(19rem, auto); }
+#library .lb-shelf { position: relative; display: grid; }
+#library .lb-card { display: grid; grid-template-columns: minmax(0, 1fr) min(34%, 12rem); grid-template-rows: auto auto 1fr; align-content: start; padding: 1.75rem var(--space-1) 1.5rem; color: var(--color-1); overflow: hidden; }
+#library .lb-card--1 { background: var(--color-2); }
+#library .lb-card--2 { background: var(--color-4); }
+#library .lb-card--3 { background: var(--color-3); }
+#library .lb-card--4 { background: var(--color-6); }
+#library .lb-photo { grid-column: 2; grid-row: 1 / 3; align-self: start; margin: -1.75rem calc(-1 * var(--space-1)) 0 0; width: calc(100% + var(--space-1)); background: var(--color-1); }
+#library .lb-name { grid-column: 1; font-size: clamp(1.75rem, 2.9vw, 2.75rem); line-height: 0.92; }
+#library .lb-note { grid-column: 1; margin-top: 0.6rem; max-width: 18rem; }
+#library .lb-games { grid-column: 1 / -1; margin-top: 1.25rem; }
+#library .lb-games li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.38rem 0; border-top: 2px solid var(--color-1); font-weight: 600; font-size: 1rem; line-height: 1.3; }
+#library .lb-games li .m-text-2 { white-space: nowrap; }
+@media (max-width: 860px) {
+  #library .lb-stage { grid-template-columns: minmax(0, 1fr); padding-top: 4.5rem; }
+  #library .lb-head { padding-bottom: 2.25rem; }
+  #library .lb-board { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; }
+  #library .lb-card { grid-template-columns: minmax(0, 1fr) 38%; padding-block: 1.5rem 1.25rem; }
+  #library .lb-photo { margin-top: -1.5rem; }
+}
+}
+</style>
+<style data-8b-part="scene-style:library">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) and (min-width: 861px) and (min-height: 720px) {
+  #library[data-swing] { height: 330vh; }
+  #library[data-swing] .lb-stage { position: sticky; top: 0; height: 100svh; padding-top: calc(var(--nav-h, 4.25rem) + 1.5rem); overflow: clip; }
+  #library[data-swing] .lb-board { grid-template-rows: repeat(2, minmax(0, 1fr)); grid-auto-rows: auto; overflow: clip; }
+  #library[data-swing] .lb-card { position: relative; z-index: 1; grid-template-columns: minmax(0, 1fr) min(25%, 7rem); padding-block: 1.25rem 1rem; }
+  #library[data-swing] .lb-photo { margin-top: -1.25rem; }
+  #library[data-swing] .lb-name { font-size: clamp(1.5rem, 2.3vw, 2.125rem); }
+  #library[data-swing] .lb-games { margin-top: 0.9rem; }
+  #library[data-swing] .lb-games li { padding-block: 0.26rem; font-size: 0.9375rem; }
+}
+}
+</style>
+<style data-8b-part="section:guides">
+@layer sections {
+#guides { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem var(--space-1); padding: 6rem var(--space-1); background: var(--color-6); color: var(--color-1); }
+#guides .gd-intro { display: grid; align-content: start; gap: 1.5rem; }
+#guides .gd-photo-row { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); align-items: end; gap: 0; margin-top: 1rem; }
+#guides .gd-photo { background: var(--color-2); }
+#guides .gd-mark { display: block; width: 100%; aspect-ratio: 1; background: var(--color-2); }
+#guides .gd-mark .m-shape { background: var(--color-4); }
+#guides .gd-steps { display: grid; gap: 0.75rem; align-content: start; }
+#guides .gd-step { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); min-height: 9.5rem; }
+#guides .gd-pillar { display: flex; align-items: flex-end; padding: 0.9rem 1rem; background: var(--color-4); color: var(--color-1); border-radius: 0 5.5rem 0 0; }
+#guides .gd-pillar .m-text-5 { font-size: 1.5rem; }
+#guides .gd-body { display: grid; align-content: center; gap: 0.6rem; padding: 1.5rem 2rem; background: var(--color-1); color: var(--color-5); }
+#guides .gd-body .m-text { color: var(--color-6); max-width: 34rem; }
+@media (max-width: 860px) {
+  #guides { grid-template-columns: minmax(0, 1fr); padding-block: 4.5rem; }
+  #guides .gd-step { grid-template-columns: 3.75rem minmax(0, 1fr); min-height: 0; }
+  #guides .gd-pillar { border-radius: 0 3.75rem 0 0; padding: 0.75rem; }
+  #guides .gd-pillar .m-text-5 { font-size: 1.125rem; }
+  #guides .gd-body { padding: 1.25rem; }
+}
+}
+</style>
+<style data-8b-part="section:week">
+@layer sections {
+#week { position: relative; overflow-x: clip; background: var(--color-2); color: var(--color-1); }
+#week .wk-stage { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto minmax(15rem, auto) minmax(15rem, auto); padding-top: 5.5rem; }
+#week .wk-head { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; padding: 0 var(--space-1) 2.25rem; }
+#week .wk-head .m-text-4 { max-width: 46rem; }
+#week .wk-board { grid-column: 1 / -1; grid-row: 2 / 4; display: grid; grid-template-columns: subgrid; grid-template-rows: subgrid; position: relative; z-index: 1; }
+#week .wk-day { display: grid; align-content: start; gap: 0.35rem; padding: 1.4rem var(--space-1) 1.25rem; }
+#week .wk-day h3 { font-size: clamp(2.25rem, 4.4vw, 4rem); line-height: 0.9; margin-bottom: auto; padding-bottom: 1.25rem; }
+#week .wk-what { font-size: 1.0625rem; font-weight: 700; }
+#week .wk-line { font-family: var(--font-2); font-size: 0.9375rem; line-height: 1.4; margin-top: 0.35rem; max-width: 18rem; }
+#week .wk-day--1, #week .wk-day--5 { background: var(--color-1); color: var(--color-5); }
+#week .wk-day--2, #week .wk-day--6 { background: var(--color-3); }
+#week .wk-day--3, #week .wk-day--7 { background: var(--color-4); }
+#week .wk-day--4 { background: var(--color-6); }
+#week .wk-slot { grid-column: 4; grid-row: 3; display: grid; align-content: end; justify-items: start; gap: 1rem; padding: 1.4rem var(--space-1) 1.5rem; }
+@media (max-width: 860px) {
+  #week .wk-stage { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto repeat(4, minmax(11rem, auto)); padding-top: 4.5rem; }
+  #week .wk-head { padding-bottom: 1.5rem; }
+  #week .wk-board { grid-row: 2 / 6; }
+  #week .wk-day { padding: 1rem; gap: 0.2rem; }
+  #week .wk-day h3 { font-size: 2rem; padding-bottom: 0.6rem; }
+  #week .wk-what { font-size: 0.9375rem; }
+  #week .wk-line { font-size: 0.8125rem; line-height: 1.35; }
+  #week .wk-slot { grid-column: 2; grid-row: 5; padding: 1rem; }
+  #week .wk-slot .m-btn { padding-inline: 0.9rem; font-size: 0.8125rem; white-space: nowrap; }
+}
+}
+</style>
+<style data-8b-part="scene-style:week">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #week[data-puzzle] { height: 300vh; }
+  #week[data-puzzle] .wk-stage { position: sticky; top: 0; height: 100svh; padding-top: calc(var(--nav-h, 4.25rem) + 1.25rem); grid-template-rows: auto repeat(2, minmax(0, 1fr)); overflow: clip; }
+  #week[data-puzzle] .wk-day { will-change: transform; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 860px) {
+  #week[data-puzzle] .wk-stage { grid-template-rows: auto repeat(4, minmax(0, 1fr)); padding-top: 1rem; }
+  #week[data-puzzle] .wk-head { padding-bottom: 1rem; }
+}
+}
+</style>
+<style data-8b-part="section:kitchen">
+@layer sections {
+#kitchen { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 3rem var(--space-1); padding: 6rem var(--space-1); background: var(--color-4); color: var(--color-1); }
+#kitchen .kt-head { display: grid; align-content: start; gap: 1.5rem; }
+#kitchen .kt-menu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto; }
+#kitchen .kt-photo { align-self: stretch; height: 100%; aspect-ratio: auto; background: var(--color-1); }
+#kitchen .kt-photo--1 { grid-column: 1; grid-row: 1; align-self: end; height: auto; aspect-ratio: 2 / 1; }
+#kitchen .kt-photo--2 { grid-column: 3; grid-row: 2; align-self: center; height: auto; aspect-ratio: 1; }
+#kitchen .kt-group { position: relative; display: grid; align-content: start; gap: 1rem; padding: 1.5rem 1.4rem 1.75rem; }
+#kitchen .kt-group--1 { grid-column: 2; grid-row: 1; background: var(--color-1); color: var(--color-5); }
+#kitchen .kt-group--2 { grid-column: 3; grid-row: 1; background: var(--color-6); }
+#kitchen .kt-group--3 { grid-column: 1; grid-row: 2; background: var(--color-6); }
+#kitchen .kt-group--4 { grid-column: 2; grid-row: 2; background: var(--color-1); color: var(--color-5); }
+#kitchen .kt-mark { position: absolute; top: 0; right: 0; width: 2.75rem; aspect-ratio: 1; }
+#kitchen .kt-group--1 .kt-mark .m-shape, #kitchen .kt-group--4 .kt-mark .m-shape { background: var(--color-3); }
+#kitchen .kt-group--2 .kt-mark .m-shape, #kitchen .kt-group--3 .kt-mark .m-shape { background: var(--color-2); }
+#kitchen .kt-group h3 { padding-right: 3rem; }
+#kitchen .kt-group ul { display: grid; }
+#kitchen .kt-group li { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; padding: 0.45rem 0; border-top: 2px solid currentColor; font-size: 0.9375rem; line-height: 1.3; }
+#kitchen .kt-group li .m-text-2 { white-space: nowrap; }
+@media (max-width: 1100px) {
+  #kitchen { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  #kitchen { padding-block: 4.5rem; }
+  #kitchen .kt-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #kitchen .kt-photo--1 { grid-column: 1 / -1; grid-row: 1; }
+  #kitchen .kt-group--1 { grid-column: 1 / -1; grid-row: 2; }
+  #kitchen .kt-group--2 { grid-column: 1 / -1; grid-row: 3; }
+  #kitchen .kt-group--3 { grid-column: 1 / -1; grid-row: 4; }
+  #kitchen .kt-group--4 { grid-column: 1 / -1; grid-row: 5; }
+  #kitchen .kt-photo--2 { grid-column: 2; grid-row: 6; }
+}
+}
+</style>
+<style data-8b-part="section:long-table">
+@layer sections {
+#long-table { padding: 6rem var(--space-1); background: var(--color-1); color: var(--color-5); container-type: inline-size; }
+#long-table .lt-label { margin-bottom: 1.5rem; }
+#long-table .lt-title { font-stretch: 150%; font-size: min(14rem, 100cqw / (var(--len) * 0.86)); line-height: 0.82; white-space: nowrap; }
+#long-table .lt-word { display: inline-block; }
+#long-table .lt-photo { margin-top: 2.25rem; height: clamp(13rem, 34vw, 28rem); overflow: hidden; clip-path: inset(0 round var(--radius-1)); background: var(--color-2); }
+#long-table .lt-photo img { width: 100%; height: 100%; object-fit: cover; }
+#long-table .lt-info { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 5fr) auto; gap: 2rem var(--space-1); align-items: start; margin-top: 2.75rem; }
+#long-table .lt-info .m-text-6 { max-width: 34rem; color: var(--color-6); }
+#long-table .lt-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+#long-table .lt-facts div { display: grid; gap: 0.4rem; padding-top: 0.75rem; border-top: 2px solid var(--color-4); }
+#long-table .lt-facts dt { color: var(--color-6); }
+#long-table .lt-facts dd { margin: 0; }
+@media (max-width: 860px) {
+  #long-table { padding-block: 4.5rem; }
+  #long-table .lt-title { white-space: normal; }
+  #long-table .lt-word { display: block; width: max-content; font-size: min(10rem, 100cqw / (var(--len) * 0.95)); }
+  #long-table .lt-info { grid-template-columns: minmax(0, 1fr); }
+  #long-table .lt-info .m-btn-2 { justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:playtest">
+@layer sections {
+#playtest { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem var(--space-1); align-items: center; padding: 6rem var(--space-1); background: var(--color-6); color: var(--color-1); }
+#playtest .pt-photo { background: var(--color-3); max-width: 34rem; }
+#playtest .pt-copy { display: grid; gap: 1.5rem; justify-items: start; }
+#playtest .pt-slip { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); width: 100%; margin-top: 0.5rem; }
+#playtest .pt-pillar { background: var(--color-4); border-radius: 0 4.5rem 0 0; }
+#playtest .pt-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; padding: 1.75rem 1.75rem 2rem; background: var(--color-1); color: var(--color-5); }
+#playtest .pt-cols div { display: grid; align-content: start; gap: 0.75rem; }
+#playtest .pt-cols .m-text { font-size: 0.9375rem; line-height: 1.5; color: var(--color-6); text-align: justify; hyphens: auto; }
+@media (max-width: 1100px) {
+  #playtest .pt-cols { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  #playtest { grid-template-columns: minmax(0, 1fr); padding-block: 4.5rem; }
+  #playtest .pt-photo { width: 82%; }
+  #playtest .pt-slip { grid-template-columns: 2.5rem minmax(0, 1fr); }
+  #playtest .pt-pillar { border-radius: 0 2.5rem 0 0; }
+  #playtest .pt-cols { padding: 1.25rem; }
+}
+@media (max-width: 389px) {
+  #playtest .m-echo { font-size: min(1.75rem, 7.4vw); }
+}
+}
+</style>
+<style data-8b-part="section:regulars">
+@layer sections {
+#regulars { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 3rem var(--space-1); align-items: center; padding: 6rem var(--space-1); background: var(--color-3); color: var(--color-1); }
+#regulars .rg-copy { display: grid; gap: 1.5rem; justify-items: start; }
+#regulars .rg-terms { display: grid; gap: 0.6rem; }
+#regulars .rg-terms li { display: flex; align-items: center; gap: 0.75rem; font-weight: 600; }
+#regulars .rg-terms li::before { content: ""; flex: none; width: 1rem; height: 1rem; border-radius: 100% 0 0 0; background: var(--color-1); }
+#regulars .rg-card { display: grid; gap: 1.25rem; padding: 1.5rem 1.5rem 1.75rem; background: var(--color-1); color: var(--color-5); border-radius: 0 var(--radius-2) 0 0; }
+#regulars .rg-card__top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+#regulars .rg-card__top .m-text-2 { color: var(--color-6); text-transform: uppercase; letter-spacing: 0.08em; }
+#regulars .rg-cells { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5rem; }
+#regulars .rg-cell { position: relative; display: grid; align-content: end; aspect-ratio: 1; overflow: hidden; background: var(--color-6); }
+#regulars .rg-cell .m-shape, #regulars .rg-cell .m-shape-2 { width: 100%; }
+#regulars .rg-cell:nth-child(3n+1) > span:first-child { background: var(--color-2); }
+#regulars .rg-cell:nth-child(3n+2) > span:first-child { background: var(--color-4); }
+#regulars .rg-cell:nth-child(3n) > span:first-child { background: var(--color-1); }
+#regulars .rg-cell--free { background: var(--color-4); }
+#regulars .rg-cell--free .rg-free { position: absolute; inset: 0; background: var(--color-3); }
+#regulars .rg-cell:nth-child(10) > .rg-free { background: var(--color-3); }
+#regulars .rg-free__label { position: relative; padding: 0.5rem; font-size: clamp(0.875rem, 1.5vw, 1.25rem); color: var(--color-1); }
+@media (max-width: 860px) {
+  #regulars { grid-template-columns: minmax(0, 1fr); padding-block: 4.5rem; }
+  #regulars .rg-card { padding: 1.1rem; }
+  #regulars .rg-cells { gap: 0.35rem; }
+  #regulars .rg-free__label { font-size: 0.75rem; padding: 0.3rem; }
+}
+@media (max-width: 389px) {
+  #regulars .m-echo { font-size: min(1.75rem, 7.4vw); }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 3rem var(--space-1); padding: 6rem var(--space-1); background: var(--color-6); color: var(--color-1); }
+#faq .fq-head { display: grid; align-content: start; gap: 1.25rem; }
+#faq .fq-list { border-bottom: 2px solid var(--color-1); }
+#faq .fq-item { border-top: 2px solid var(--color-1); }
+#faq .fq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.25rem 0; cursor: pointer; list-style: none; }
+#faq .fq-item summary::-webkit-details-marker { display: none; }
+#faq .fq-item summary .m-text-5 { font-size: clamp(1.0625rem, 1.6vw, 1.375rem); line-height: 1.15; }
+#faq .fq-mark { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 100% 0 0 0; background: var(--color-4); transition: transform .4s cubic-bezier(.2,.8,.2,1), background-color .3s; }
+#faq .fq-item[open] .fq-mark { transform: rotate(90deg); background: var(--color-2); }
+#faq .fq-item p { max-width: 44rem; padding: 0 3rem 1.5rem 0; }
+@media (hover: hover) { #faq .fq-item summary:hover .fq-mark { background: var(--color-3); } }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: minmax(0, 1fr); padding-block: 4.5rem; }
+  #faq .fq-item p { padding-right: 0; }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { background: var(--color-1); color: var(--color-5); }
+#visit .vs-field { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); overflow: hidden; }
+#visit .vs-field span { --t: 13cqw; position: relative; display: block; aspect-ratio: 1; overflow: hidden; container-type: size; background: var(--color-1); }
+#visit .vs-field span:nth-child(4n+1), #visit .vs-field span:nth-child(4n+3) { background: var(--color-1); }
+#visit .vs-field span::before, #visit .vs-field span::after { content: ""; position: absolute; width: calc(100% + var(--t)); height: calc(100% + var(--t)); border: var(--t) solid var(--color-3); border-radius: 50%; }
+#visit .vs-field span::before { left: calc(-50% - var(--t) / 2); top: calc(-50% - var(--t) / 2); }
+#visit .vs-field span::after { left: calc(50% - var(--t) / 2); top: calc(50% - var(--t) / 2); border-color: var(--color-4); }
+#visit .vs-field span[data-turn="90"] { transform: rotate(90deg); }
+#visit .vs-body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem var(--space-1); padding: 4.5rem var(--space-1) 5.5rem; }
+#visit .vs-info { display: grid; align-content: start; gap: 1.5rem; }
+#visit .vs-address { font-style: normal; color: var(--color-6); }
+#visit .vs-hours { display: grid; gap: 0.6rem; max-width: 24rem; }
+#visit .vs-hours div { display: flex; justify-content: space-between; gap: 1rem; padding-top: 0.6rem; border-top: 2px solid var(--color-2); }
+#visit .vs-hours dt { color: var(--color-6); }
+#visit .vs-hours dd { margin: 0; }
+#visit .vs-contact { display: grid; justify-items: start; gap: 0.6rem; }
+#visit .vs-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem 1.25rem; align-content: start; padding: 2rem; background: var(--color-6); color: var(--color-1); border-radius: 0 var(--radius-2) 0 0; }
+#visit .vs-form h3, #visit .vs-wide { grid-column: 1 / -1; }
+#visit .vs-send { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+#visit .vs-status:empty { display: none; }
+@media (max-width: 860px) {
+  #visit .vs-field { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #visit .vs-body { grid-template-columns: minmax(0, 1fr); padding-block: 3.5rem 4.5rem; }
+  #visit .vs-form { grid-template-columns: minmax(0, 1fr); padding: 1.25rem; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-6); color: var(--color-1); }
+#footer .ft-strip { display: grid; grid-template-columns: repeat(4, 1fr); height: 1.5rem; }
+#footer .ft-strip span:nth-child(1) { background: var(--color-3); }
+#footer .ft-strip span:nth-child(2) { background: var(--color-4); }
+#footer .ft-strip span:nth-child(3) { background: var(--color-2); }
+#footer .ft-strip span:nth-child(4) { background: var(--color-1); }
+#footer .ft-body { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem var(--space-1); padding: 3.5rem var(--space-1) 2rem; }
+#footer .ft-word { font-size: min(9rem, 100cqw / (var(--len) * 0.8)); }
+#footer .ft-brand { container-type: inline-size; display: grid; gap: 1rem; align-content: start; }
+#footer .ft-col { display: grid; gap: 0.5rem; align-content: start; }
+#footer .ft-col h2 { margin-bottom: 0.35rem; }
+#footer .ft-base { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1.25rem var(--space-1) 1.75rem; border-top: 2px solid var(--color-1); }
+@media (max-width: 860px) {
+  #footer .ft-body { grid-template-columns: 1fr 1fr; }
+  #footer .ft-brand { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-s2-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+@media (max-width: 860px) {
+  #opening .op-bars { order: 0; }
+  #opening .op-s2-copy { gap: 1.25rem; }
+  #opening .op-s2-copy .m-echo { font-size: 1.5rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-s2-copy > :not(.m-echo) { animation: rw-up .8s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #opening .op-s2-copy > :nth-child(3) { animation-delay: .1s; }
+  #opening .op-s2-copy > :nth-child(4) { animation-delay: .18s; }
+  #opening .op-bar { animation: rw-stretch .9s cubic-bezier(.6, 0, .2, 1) backwards; animation-delay: calc(.15s + var(--rw-i, 0) * .09s); }
+  #opening .op-bar__in { animation: rw-show .4s ease backwards; animation-delay: calc(.75s + var(--rw-i, 0) * .09s); }
+  #opening .op-bar:nth-child(2) { --rw-i: 1; }
+  #opening .op-bar:nth-child(3) { --rw-i: 2; }
+}
+@keyframes rw-up { from { transform: translateY(2.5rem); opacity: 0; } }
+@keyframes rw-stretch { from { clip-path: inset(calc(50% - 1rem) 38% round 999px); } }
+@keyframes rw-show { from { opacity: 0; } }</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<nav aria-label="Main" class="nav-bar">
+<a aria-label="{{name}}, back to the top" class="nav-logo" href="#opening"><span aria-hidden="true" class="nav-mark"><span></span><span></span><span></span><span></span></span><span>{{t1|⟦name⟧}}</span></a>
+<ul class="nav-links">
+{{#nv_library}}<li><a class="m-link" href="#library">{{t2|Library}}</a></li>{{/nv_library}}
+{{#nv_week}}<li><a class="m-link" href="#week">{{t3|The week}}</a></li>{{/nv_week}}
+{{#nv_kitchen}}<li><a class="m-link" href="#kitchen">{{t4|Kitchen}}</a></li>{{/nv_kitchen}}
+{{#nv_long_table}}<li><a class="m-link" href="#long-table">{{t5|Long table}}</a></li>{{/nv_long_table}}
+{{#nv_visit}}<li><a class="m-link" href="#visit">{{t6|Visit}}</a></li>{{/nv_visit}}
+</ul>
+<a class="m-btn nav-book" href="#visit"><span class="m-btn__label">{{t7|Book}}<span class="nav-book__more"> {{t8|a table}}</span></span></a>
+<button aria-controls="nav-overlay" aria-expanded="false" aria-label="Open the menu" class="m-iconbtn nav-menu" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+</nav>
+<div class="nav-overlay" data-lenis-prevent="" hidden="" id="nav-overlay">
+<div class="nav-overlay__top">
+<span class="m-text-5">{{t1|⟦name⟧}}</span>
+<button aria-label="Close the menu" class="m-iconbtn nav-close" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"></path></svg></button>
+</div>
+<ul>
+{{#nv_library}}<li><a class="m-text-4" href="#library">{{t2|Library}}</a></li>{{/nv_library}}
+{{#nv_guides}}<li><a class="m-text-4" href="#guides">{{t9|Guides}}</a></li>{{/nv_guides}}
+{{#nv_week}}<li><a class="m-text-4" href="#week">{{t3|The week}}</a></li>{{/nv_week}}
+{{#nv_kitchen}}<li><a class="m-text-4" href="#kitchen">{{t4|Kitchen}}</a></li>{{/nv_kitchen}}
+{{#nv_long_table}}<li><a class="m-text-4" href="#long-table">{{t5|Long table}}</a></li>{{/nv_long_table}}
+{{#nv_faq}}<li><a class="m-text-4" href="#faq">{{t10|Questions}}</a></li>{{/nv_faq}}
+{{#nv_visit}}<li><a class="m-text-4" href="#visit">{{t6|Visit}}</a></li>{{/nv_visit}}
+</ul>
+<a class="m-btn-2" href="#visit"><span class="m-btn__label">{{t11|Book a table}}</span></a>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-s2">
+<div class="op-s2-copy">
+<p class="m-echo" data-8b-motion="slice" style="--len:15">{{t12|Board game café}}</p>
+<h1 class="m-text-4" id="opening-title">{{t13|Pull up a chair. We'll teach you the rest.}}</h1>
+<p class="m-text-6">{{t14|Nobody here has to read a rulebook. Tell a guide who is at the table and how long you have, and you'll be playing in ten minutes — whether it's your first game since Monopoly or your fortieth campaign night.}}</p>
+<div class="op-s2-actions"><a class="m-btn" href="#visit"><span class="m-btn__label">{{t11|Book a table}}</span></a><a class="m-link" href="#guides">{{t15|How the guides teach}}</a></div>
+</div>
+<ul class="op-bars">
+<li class="op-bar"><div class="op-bar__in"><strong class="m-text-5">{{t16|₦3,000 a head, all day}}</strong><span class="m-text-2">{{t17|One table fee and no clock. Under-12s pay ₦1,500.}}</span></div></li>
+<li class="op-bar"><div class="op-bar__in"><strong class="m-text-5">{{t18|Any game, taught}}</strong><span class="m-text-2">{{t19|A guide plays your first round with you.}}</span></div></li>
+<li class="op-bar"><div class="op-bar__in"><strong class="m-text-5">{{t20|Plates to the table}}</strong><span class="m-text-2">{{t21|Kitchen open until 22:00, built for one hand.}}</span></div></li>
+</ul>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_library}}<section aria-labelledby="library-title" data-8b-section="library" id="library">
+<div class="lb-stage">
+<div class="lb-head">
+<p class="m-echo" data-8b-motion="slice" style="--len:11">{{t22|The library}}</p>
+<h2 class="m-text-4" id="library-title">{{t23|Seven hundred games, shelved by how your table feels}}</h2>
+<p class="m-text lb-lead">{{t24|Ask for a shelf, not a title. A guide pulls three boxes that fit your group, and every game is counted back after it's played, so nothing is missing a piece.}}</p>
+</div>
+<div class="lb-board">
+<article class="lb-shelf"><div class="lb-card lb-card--1">
+<span class="m-shape lb-photo" data-corner="bl"><img alt="Round playing pieces on a blue grid board" height="1600" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1558919047-ae4820a1906a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGhhbmRzJTIwYm9hcmQlMjBnYW1lJTIwcGllY2VzfGVufDF8Mnx8fDE3OTE0NTQxNzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60}}" style="background:#d9d9f3" width="1600"/></span>
+<h3 class="m-text-5 lb-name">{{t25|Two of us}}</h3>
+<p class="m-text-2 lb-note">{{t26|Head to head, twenty minutes to an hour.}}</p>
+<ul class="lb-games">
+<li><span>{{t27|Patchwork}}</span><span class="m-text-2">{{t28|2 · 30 min}}</span></li>
+<li><span>{{t29|Jaipur}}</span><span class="m-text-2">{{t28|2 · 30 min}}</span></li>
+<li><span>{{t30|7 Wonders Duel}}</span><span class="m-text-2">{{t31|2 · 40 min}}</span></li>
+<li><span>{{t32|Lost Cities}}</span><span class="m-text-2">{{t28|2 · 30 min}}</span></li>
+<li><span>{{t33|Hive}}</span><span class="m-text-2">{{t34|2 · 20 min}}</span></li>
+</ul>
+</div></article>
+<article class="lb-shelf"><div class="lb-card lb-card--2">
+<span class="m-shape lb-photo" data-corner="bl"><img alt="Hands slapping down round picture cards around a table" height="1067" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1759868937448-423d3c7c8133?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGNoaWxkcmVuJTIwcGxheWluZyUyMGJvYXJkJTIwZ2FtZXxlbnwxfDB8fHwxNzkxNDU0MjAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=370&q=60}}" style="background:#8c8ca6" width="1600"/></span>
+<h3 class="m-text-5 lb-name">{{t35|The loud table}}</h3>
+<p class="m-text-2 lb-note">{{t36|Five to ten players, lots of shouting.}}</p>
+<ul class="lb-games">
+<li><span>{{t37|Codenames}}</span><span class="m-text-2">{{t38|4–8 · 20 min}}</span></li>
+<li><span>{{t39|Dixit}}</span><span class="m-text-2">{{t40|3–8 · 30 min}}</span></li>
+<li><span>{{t41|Just One}}</span><span class="m-text-2">{{t42|3–7 · 20 min}}</span></li>
+<li><span>{{t43|Wavelength}}</span><span class="m-text-2">{{t44|2–12 · 45 min}}</span></li>
+<li><span>{{t45|Skull}}</span><span class="m-text-2">{{t46|3–6 · 30 min}}</span></li>
+</ul>
+</div></article>
+<article class="lb-shelf"><div class="lb-card lb-card--3">
+<span class="m-shape lb-photo" data-corner="bl"><img alt="A player holding up a token over a crowded strategy board" height="900" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1676651471150-0e3a5f8de05e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZnJpZW5kcyUyMHBsYXlpbmclMjBib2FyZCUyMGdhbWUlMjB0YWJsZXxlbnwxfDB8fHwxNzkxNDU0MTU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#260c0c;object-position: 62% 50%" width="1600"/></span>
+<h3 class="m-text-5 lb-name">{{t47|Slow and clever}}</h3>
+<p class="m-text-2 lb-note">{{t48|Two to four hours, a quiet room upstairs.}}</p>
+<ul class="lb-games">
+<li><span>{{t49|Wingspan}}</span><span class="m-text-2">{{t50|1–5 · 70 min}}</span></li>
+<li><span>{{t51|Brass: Aba}}</span><span class="m-text-2">{{t52|2–4 · 2 h}}</span></li>
+<li><span>{{t53|Terraforming Mars}}</span><span class="m-text-2">{{t54|1–5 · 2 h}}</span></li>
+<li><span>{{t55|Spirit Island}}</span><span class="m-text-2">{{t56|1–4 · 2 h}}</span></li>
+<li><span>{{t57|Agricola}}</span><span class="m-text-2">{{t56|1–4 · 2 h}}</span></li>
+</ul>
+</div></article>
+<article class="lb-shelf"><div class="lb-card lb-card--4">
+<span class="m-shape lb-photo" data-corner="bl"><img alt="A simple race board with coloured pawns on a wooden table" height="1067" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1651170104468-359c1a7fd53d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2hpbGRyZW4lMjBwbGF5aW5nJTIwYm9hcmQlMjBnYW1lfGVufDF8MHx8fDE3OTE0NTQyMDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=370&q=60}}" style="background:#c08c73;object-position: 55% 60%" width="1600"/></span>
+<h3 class="m-text-5 lb-name">{{t58|First timers}}</h3>
+<p class="m-text-2 lb-note">{{t59|Rules in five minutes, fun for seven-year-olds.}}</p>
+<ul class="lb-games">
+<li><span>{{t60|Ticket to Ride}}</span><span class="m-text-2">{{t61|2–5 · 45 min}}</span></li>
+<li><span>{{t62|Carcassonne}}</span><span class="m-text-2">{{t63|2–5 · 35 min}}</span></li>
+<li><span>{{t64|Azul}}</span><span class="m-text-2">{{t65|2–4 · 40 min}}</span></li>
+<li><span>{{t66|Kingdomino}}</span><span class="m-text-2">{{t67|2–4 · 15 min}}</span></li>
+<li><span>{{t68|Sushi Go!}}</span><span class="m-text-2">{{t69|2–5 · 15 min}}</span></li>
+</ul>
+</div></article>
+</div>
+</div>
+</section>{{/sec_library}}
+
+{{#sec_guides}}<section aria-labelledby="guides-title" data-8b-section="guides" id="guides">
+<div class="gd-intro">
+<p class="m-echo" data-8b-motion="slice" style="--len:12">{{t70|Table guides}}</p>
+<h2 class="m-text-4" id="guides-title">{{t71|We read the rulebook so you don't have to}}</h2>
+<p class="m-text-6">{{t72|There is a guide in every room. They have played everything on the shelves at least twice, and teaching you is part of the table fee.}}</p>
+<div class="gd-photo-row">
+<span class="m-shape gd-photo" data-corner="tr"><img alt="A guide shuffling a deck of game cards over a laid-out board" height="900" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1676562330796-593b68d44e20?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZnJpZW5kcyUyMHBsYXlpbmclMjBib2FyZCUyMGdhbWUlMjB0YWJsZXxlbnwxfDB8fHwxNzkxNDU0MTU3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=760&q=60}}" style="background:#260c0c;object-position: 58% 50%" width="1600"/></span>
+<span aria-hidden="true" class="gd-mark"><span class="m-shape" data-8b-motion="turn" data-corner="bl"></span></span>
+</div>
+</div>
+<ol class="gd-steps">
+<li class="gd-step" data-8b-motion="deal" data-side="right">
+<span class="gd-pillar"><span class="m-text-5">{{t73|01}}</span></span>
+<div class="gd-body"><h3 class="m-text-5">{{t74|Tell us who's playing}}</h3><p class="m-text">{{t75|How many of you, how long you've got, and whether anyone has played anything heavier than snap.}}</p></div>
+</li>
+<li class="gd-step" data-8b-motion="deal" data-side="right">
+<span class="gd-pillar"><span class="m-text-5">{{t76|02}}</span></span>
+<div class="gd-body"><h3 class="m-text-5">{{t77|Pick from three}}</h3><p class="m-text">{{t78|Your guide brings three boxes that fit your table. Nobody has to browse seven hundred spines.}}</p></div>
+</li>
+<li class="gd-step" data-8b-motion="deal" data-side="right">
+<span class="gd-pillar"><span class="m-text-5">{{t79|03}}</span></span>
+<div class="gd-body"><h3 class="m-text-5">{{t80|Play the first round together}}</h3><p class="m-text">{{t81|They set up, explain the goal in a minute and play the opening turns with you until it clicks.}}</p></div>
+</li>
+<li class="gd-step" data-8b-motion="deal" data-side="right">
+<span class="gd-pillar"><span class="m-text-5">{{t82|04}}</span></span>
+<div class="gd-body"><h3 class="m-text-5">{{t83|Raise the flag card}}</h3><p class="m-text">{{t84|Every table has one. Stand it up when a rule starts an argument and a guide comes over to settle it.}}</p></div>
+</li>
+</ol>
+</section>{{/sec_guides}}
+
+{{#sec_week}}<section aria-labelledby="week-title" data-8b-section="week" id="week">
+<div class="wk-stage">
+<div class="wk-head">
+<p class="m-echo" data-8b-motion="slice" style="--len:8">{{t3|The week}}</p>
+<h2 class="m-text-4" id="week-title">{{t85|Something on every night but Monday}}</h2>
+</div>
+<ol class="wk-board">
+<li class="wk-day wk-day--1"><h3 class="m-text-5">{{t86|Mon}}</h3><p class="m-text-2 wk-what">{{t87|Closed}}</p><p class="wk-line">{{t88|We re-sort the shelves and hunt for missing pieces.}}</p></li>
+<li class="wk-day wk-day--2"><h3 class="m-text-5">{{t89|Tue}}</h3><p class="m-text-2 wk-what">{{t90|Learn-to-play night}}</p><p class="m-text-2 wk-when">{{t91|18:00–23:00}}</p><p class="wk-line">{{t92|A guide teaches one new game to every table.}}</p></li>
+<li class="wk-day wk-day--3"><h3 class="m-text-5">{{t93|Wed}}</h3><p class="m-text-2 wk-what">{{t94|Two-player league}}</p><p class="m-text-2 wk-when">{{t95|From 19:00}}</p><p class="wk-line">{{t96|Eight weeks, a new opponent each week.}}</p></li>
+<li class="wk-day wk-day--4"><h3 class="m-text-5">{{t97|Thu}}</h3><p class="m-text-2 wk-what">{{t98|Prototype night}}</p><p class="m-text-2 wk-when">{{t99|From 18:30}}</p><p class="wk-line">{{t100|Test unfinished games from local designers.}}</p></li>
+<li class="wk-day wk-day--5"><h3 class="m-text-5">{{t101|Fri}}</h3><p class="m-text-2 wk-what">{{t102|Big box Friday}}</p><p class="m-text-2 wk-when">{{t103|17:00–late}}</p><p class="wk-line">{{t104|Four-hour games on reserved tables.}}</p></li>
+<li class="wk-day wk-day--6"><h3 class="m-text-5">{{t105|Sat}}</h3><p class="m-text-2 wk-what">{{t106|Family morning}}</p><p class="m-text-2 wk-when">{{t107|11:00–13:00}}</p><p class="wk-line">{{t108|The café to under-12s and their grown-ups.}}</p></li>
+<li class="wk-day wk-day--7"><h3 class="m-text-5">{{t109|Sun}}</h3><p class="m-text-2 wk-what">{{t110|Slow Sunday}}</p><p class="m-text-2 wk-when">{{t111|11:00–20:00}}</p><p class="wk-line">{{t112|Long co-op games, puzzles and pastries.}}</p></li>
+</ol>
+<div class="wk-slot">
+<p class="m-text-2">{{t113|Friday tables go by Wednesday.}}</p>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t114|Book a night}}</span></a>
+</div>
+</div>
+</section>{{/sec_week}}
+
+{{#sec_kitchen}}<section aria-labelledby="kitchen-title" data-8b-section="kitchen" id="kitchen">
+<div class="kt-head">
+<p class="m-echo" data-8b-motion="slice" style="--len:11">{{t115|The kitchen}}</p>
+<h2 class="m-text-4" id="kitchen-title">{{t116|Food you can eat with one hand}}</h2>
+<p class="m-text-6">{{t117|Nothing drips, nothing needs a knife, and it comes to the table between turns. The cards stay clean; so do you.}}</p>
+</div>
+<div class="kt-menu">
+<span class="m-shape-3 kt-photo kt-photo--1"><img alt="A toasted club sandwich cut in half with salad" height="1067" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1712746784291-e29d5d2694d4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dG9hc3RlZCUyMHNhbmR3aWNoJTIwcGxhdGV8ZW58MXwwfHx8MTc5MTQ1NDE5OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#f3f3f3;object-position: 50% 45%" width="1600"/></span>
+<div class="kt-group kt-group--1" data-8b-motion="deal">
+<span aria-hidden="true" class="kt-mark"><span class="m-shape" data-8b-motion="turn" data-corner="br"></span></span>
+<h3 class="m-text-5">{{t118|One-hand plates}}</h3>
+<ul>
+<li><span>{{t119|Toastie of the day}}</span><span class="m-text-2">{{t120|₦4,000}}</span></li>
+<li><span>{{t121|Club sandwich, quartered}}</span><span class="m-text-2">{{t122|₦4,500}}</span></li>
+<li><span>{{t123|Flatbread wedges and hummus}}</span><span class="m-text-2">{{t124|₦3,000}}</span></li>
+<li><span>{{t125|Fries in a cone}}</span><span class="m-text-2">{{t126|₦2,000}}</span></li>
+</ul>
+</div>
+<div class="kt-group kt-group--2" data-8b-motion="deal" data-side="right">
+<span aria-hidden="true" class="kt-mark"><span class="m-shape" data-8b-motion="turn" data-corner="bl"></span></span>
+<h3 class="m-text-5">{{t127|Middle of the table}}</h3>
+<ul>
+<li><span>{{t128|Nachos for four}}</span><span class="m-text-2">{{t129|₦6,000}}</span></li>
+<li><span>{{t130|Popcorn by the bucket}}</span><span class="m-text-2">{{t131|₦2,500}}</span></li>
+<li><span>{{t132|Pretzel bites, cheese dip}}</span><span class="m-text-2">{{t124|₦3,000}}</span></li>
+<li><span>{{t133|Crudités and three dips}}</span><span class="m-text-2">{{t124|₦3,000}}</span></li>
+</ul>
+</div>
+<div class="kt-group kt-group--3" data-8b-motion="deal">
+<span aria-hidden="true" class="kt-mark"><span class="m-shape" data-8b-motion="turn" data-corner="tr"></span></span>
+<h3 class="m-text-5">{{t134|Coffee and tea}}</h3>
+<ul>
+<li><span>{{t135|Flat white}}</span><span class="m-text-2">{{t136|₦1,500}}</span></li>
+<li><span>{{t137|Oat latte}}</span><span class="m-text-2">{{t126|₦2,000}}</span></li>
+<li><span>{{t138|Pot of tea for two}}</span><span class="m-text-2">{{t126|₦2,000}}</span></li>
+<li><span>{{t139|Hot chocolate}}</span><span class="m-text-2">{{t126|₦2,000}}</span></li>
+</ul>
+</div>
+<div class="kt-group kt-group--4" data-8b-motion="deal" data-side="right">
+<span aria-hidden="true" class="kt-mark"><span class="m-shape" data-8b-motion="turn" data-corner="tl"></span></span>
+<h3 class="m-text-5">{{t140|Pints and pours}}</h3>
+<ul>
+<li><span>{{t141|Ibadan pale ale}}</span><span class="m-text-2">{{t124|₦3,000}}</span></li>
+<li><span>{{t142|Pilsner}}</span><span class="m-text-2">{{t131|₦2,500}}</span></li>
+<li><span>{{t143|House wine, glass}}</span><span class="m-text-2">{{t124|₦3,000}}</span></li>
+<li><span>{{t144|Alcohol-free IPA}}</span><span class="m-text-2">{{t126|₦2,000}}</span></li>
+</ul>
+</div>
+<span class="m-shape-2 kt-photo kt-photo--2"><img alt="A latte with leaf-shaped foam art seen from above" height="1772" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1630021439100-74a32ab42d3e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGF0dGUlMjBjb2ZmZWUlMjB0YWJsZSUyMHRvcCUyMHZpZXd8ZW58MXwyfHx8MTc5MTQ1NDE5OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60}}" style="background:#40260c;object-position: 40% 42%" width="1600"/></span>
+</div>
+</section>{{/sec_kitchen}}
+
+{{#sec_long_table}}<section aria-labelledby="long-table-title" data-8b-section="long-table" id="long-table">
+<p class="m-echo lt-label" style="--len:12">{{t145|Private hire}}</p>
+<h2 class="m-text-3 lt-title" id="long-table-title" style="--len:14"><span class="lt-word" style="--len:8">{{t146|The long}}</span> <span class="lt-word" style="--len:5">{{t147|table}}</span></h2>
+<div class="lt-photo"><img alt="Friends laughing and pointing across a long wooden table covered in cards" height="900" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1646934280686-768a69c444eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z3JvdXAlMjBsYXVnaGluZyUyMHBsYXlpbmclMjBjYXJkcyUyMHRhYmxlfGVufDF8MHx8fDE3OTE0NTQxNzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1220&q=60}}" style="background:#a68c73;object-position: 50% 42%" width="1600"/></div>
+<div class="lt-info">
+<p class="m-text-6">{{t148|The back room seats twenty-four at one table: birthdays, team nights, a whole club's campaign weekend. You get the room, a guide for the evening and a games list built for your group before you arrive.}}</p>
+<dl class="lt-facts">
+<div><dt class="m-text-2">{{t149|Seats}}</dt><dd class="m-text-5">{{t150|Up to 24}}</dd></div>
+<div><dt class="m-text-2">{{t151|Evening hire}}</dt><dd class="m-text-5">{{t152|From ₦90,000}}</dd></div>
+<div><dt class="m-text-2">{{t153|Set menu}}</dt><dd class="m-text-5">{{t154|₦7,000 a head}}</dd></div>
+<div><dt class="m-text-2">{{t9|Guides}}</dt><dd class="m-text-5">{{t155|Two on hand}}</dd></div>
+</dl>
+<a class="m-btn-2" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t156|Ask about a date}}</span></a>
+</div>
+</section>{{/sec_long_table}}
+
+{{#sec_playtest}}<section aria-labelledby="playtest-title" data-8b-section="playtest" id="playtest">
+<span class="m-shape pt-photo" data-corner="tr"><img alt="A hand drawing on blank square cards with a pencil" height="1067" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1729710877311-0e8e70bf820b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjF8fHBhcGVyJTIwcHJvdG90eXBlJTIwY2FyZHMlMjBza2V0Y2h8ZW58MXwwfHx8MTc5MTQ1NDIwMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=750&q=60}}" style="background:#a6a6a6;object-position: 30% 50%" width="1600"/></span>
+<div class="pt-copy">
+<p class="m-echo" data-8b-motion="slice" style="--len:15">{{t98|Prototype night}}</p>
+<h2 class="m-text-4" id="playtest-title">{{t157|Bring the game you haven't finished}}</h2>
+<div class="pt-slip">
+<span aria-hidden="true" class="pt-pillar"></span>
+<div class="pt-cols">
+<div data-8b-motion="deal"><h3 class="m-text-5">{{t158|Bring}}</h3><p class="m-text">{{t159|A playable draft — paper, pens and sticky tape are fine — and a one-line pitch we can read to the room.}}</p></div>
+<div data-8b-motion="deal"><h3 class="m-text-5">{{t160|We supply}}</h3><p class="m-text">{{t161|A table for the evening, six players who have never seen your game and a free coffee for the designer.}}</p></div>
+<div data-8b-motion="deal"><h3 class="m-text-5">{{t162|Sign up}}</h3><p class="m-text">{{t163|Email your pitch by Monday. We take four games each Thursday, first come, first served.}}</p></div>
+</div>
+</div>
+<a class="m-link pt-link" data-8b-placeholder="email" href="#ub-contact">{{t164|Send a pitch for Thursday}}</a>
+</div>
+</section>{{/sec_playtest}}
+
+{{#sec_regulars}}<section aria-labelledby="regulars-title" data-8b-section="regulars" id="regulars">
+<div class="rg-copy">
+<p class="m-echo" data-8b-motion="slice" style="--len:14">{{t165|Regulars' card}}</p>
+<h2 class="m-text-4" id="regulars-title">{{t166|Every tenth visit is on us}}</h2>
+<p class="m-text-6">{{t167|₦17,500 a year, paid once at the counter. The card lives on the board by the door, so you never have to remember it.}}</p>
+<ul class="rg-terms">
+<li class="m-text">{{t168|Half-price table fee every Tuesday}}</li>
+<li class="m-text">{{t169|10% off the kitchen and the bar}}</li>
+<li class="m-text">{{t170|First go at new games before they're shelved}}</li>
+<li class="m-text">{{t171|Two guest passes for your birthday month}}</li>
+</ul>
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t172|Ask at the counter}}</span></a>
+</div>
+<div aria-label="A regulars' card of ten cells: nine visits stamped, the tenth on the house" class="rg-card" role="img">
+<div class="rg-card__top"><span class="m-text-5">{{t1|⟦name⟧}}</span><span class="m-text-2">{{t173|Regular}}</span></div>
+<ol class="rg-cells">
+<li class="rg-cell"><span class="m-shape" data-corner="tl"></span></li>
+<li class="rg-cell"><span class="m-shape-2"></span></li>
+<li class="rg-cell"><span class="m-shape" data-corner="br"></span></li>
+<li class="rg-cell"><span class="m-shape-3"></span></li>
+<li class="rg-cell"><span class="m-shape" data-corner="tr"></span></li>
+<li class="rg-cell"><span class="m-shape" data-corner="bl"></span></li>
+<li class="rg-cell"><span class="m-shape-2"></span></li>
+<li class="rg-cell"><span class="m-shape" data-corner="tl"></span></li>
+<li class="rg-cell"><span class="m-shape-3"></span></li>
+<li class="rg-cell rg-cell--free"><span class="m-shape rg-free" data-corner="tl"></span><span class="m-text-5 rg-free__label">{{t174|On us}}</span></li>
+</ol>
+</div>
+</section>{{/sec_regulars}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-head">
+<p class="m-echo" data-8b-motion="slice" style="--len:9">{{t10|Questions}}</p>
+<h2 class="m-text-4" id="faq-title">{{t175|Before you come}}</h2>
+<p class="m-text">{{t176|Anything else, ring the café on}} <a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t177|⟦phone⟧}}</a>.</p>
+</div>
+<div class="fq-list">
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t178|Do we need to book?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t179|Walk-ins are welcome on weekdays. Book for Friday and Saturday evenings, and for groups of six or more.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t180|How long can we stay?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t181|As long as you like: the table fee covers the whole day. On busy evenings we ask big groups to keep to four hours.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t182|Can you teach us a game we've never played?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t183|That is what the guides are for, and it is included in the table fee. Ask as often as you like.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t184|Is it all right to bring children?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t185|Yes. Under-12s pay ₦1,500 Saturday mornings are set aside for families and the first-timers shelf is full of games for seven-year-olds.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t186|Can we bring our own game?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t187|Of course. The table fee is the same, and a guide will help you set it up.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t188|Do you cater for allergies?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t189|Tell us when you order. The kitchen keeps gluten-free bread and vegan cheese, and the full allergen list is at the counter.}}</p></details>
+<details class="fq-item" data-8b-motion="deal" data-side="right"><summary><span class="m-text-5">{{t190|Is the café step-free?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t191|The ground floor, the toilets and the long table room are step-free. The quiet room upstairs is reached by stairs.}}</p></details>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" data-8b-section="visit" id="visit">
+<div aria-hidden="true" class="vs-field">
+<span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span>
+<span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span><span data-turn="90"></span><span data-turn="0"></span>
+</div>
+<div class="vs-body">
+<div class="vs-info">
+<p class="m-echo" style="--len:5">{{t6|Visit}}</p>
+<h2 class="m-text-4" id="visit-title">{{t192|Come and play}}</h2>
+<address class="m-text-6 vs-address">{{t193|1 Admiralty Way}}<br/>{{t194|Ibadan}}</address>
+<dl class="vs-hours">
+<div><dt class="m-text-2">{{t195|Tuesday–Sunday}}</dt><dd class="m-text">{{t196|11:00–23:00}}</dd></div>
+<div><dt class="m-text-2">{{t197|Monday}}</dt><dd class="m-text">{{t87|Closed}}</dd></div>
+<div><dt class="m-text-2">{{t4|Kitchen}}</dt><dd class="m-text">{{t198|Until 22:00}}</dd></div>
+</dl>
+<p class="vs-contact"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t177|⟦phone⟧}}</a><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t199|hello@quarterturn.example}}</a><a class="m-link" data-8b-placeholder="map" href="https://www.google.com/maps/search/?api=1&amp;query={{address}}">{{t200|Get directions}}</a></p>
+</div>
+
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Board Game Cafe by <a href="https://github.com/8bsite/board-game-cafe-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div aria-hidden="true" class="ft-strip"><span></span><span></span><span></span><span></span></div>
+<div class="ft-body">
+<div class="ft-brand">
+<p class="m-text-3 ft-word" style="--len:12">{{t1|⟦name⟧}}</p>
+<p class="m-text">{{t201|Board game café and games library.}}<br/>{{t202|1 Admiralty Way, Ibadan}}</p>
+</div>
+<div class="ft-col">
+<h2 class="m-text-5">{{t203|Play}}</h2>
+<a class="m-link" href="#library">{{t22|The library}}</a>
+<a class="m-link" href="#guides">{{t70|Table guides}}</a>
+<a class="m-link" href="#week">{{t3|The week}}</a>
+</div>
+<div class="ft-col">
+<h2 class="m-text-5">{{t204|Eat & hire}}</h2>
+<a class="m-link" href="#kitchen">{{t4|Kitchen}}</a>
+<a class="m-link" href="#long-table">{{t205|The long table}}</a>
+<a class="m-link" href="#regulars">{{t165|Regulars' card}}</a>
+</div>
+<div class="ft-col">
+<h2 class="m-text-5">{{t206|Say hello}}</h2>
+<a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t177|⟦phone⟧}}</a>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t199|hello@quarterturn.example}}</a>
+<a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/">{{t207|Instagram}}</a>
+</div>
+</div>
+<div class="ft-base">
+<p class="m-text-2">{{t208|© 2026 ⟦name⟧ Games Café Ltd · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t209|8B}}</a></p>
+<p class="m-text-2">{{t210|Tuesday to Sunday 11:00–23:00 · Kitchen until 22:00}}</p>
+</div>
+</footer>
+<script data-8b-part="atom-script:m-echo">
+document.querySelectorAll('.m-echo').forEach(label => {
+  if (label.querySelector('.m-echo__cut')) return;
+  const text = label.textContent.trim();
+  for (let i = 0; i < 2; i += 1) {
+    const cut = document.createElement('span');
+    cut.className = 'm-echo__cut';
+    cut.setAttribute('aria-hidden', 'true');
+    cut.textContent = text;
+    label.append(cut);
+  }
+});
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const header = document.getElementById('navigation');
+  const root = document.documentElement;
+  const setHeight = () => root.style.setProperty('--nav-h', `${header.querySelector('.nav-bar').offsetHeight}px`);
+  setHeight();
+  new ResizeObserver(setHeight).observe(header.querySelector('.nav-bar'));
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (y < 120) { travel = 0; header.removeAttribute('data-hidden'); return; }
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (travel > 24) header.setAttribute('data-hidden', '');
+    else if (travel < -24) header.removeAttribute('data-hidden');
+  }, { passive: true });
+  const overlay = document.getElementById('nav-overlay');
+  const open = header.querySelector('.nav-menu');
+  const close = header.querySelector('.nav-close');
+  const setOpen = state => {
+    overlay.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); }
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => { setOpen(false); open.focus(); });
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) { setOpen(false); open.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vs-form');
+  if (!form) return;
+  const status = form.querySelector('.vs-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { status.textContent = status.dataset.error; form.reportValidity(); return; }
+    status.textContent = status.dataset.done;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  const bar = document.querySelector('#navigation .nav-bar');
+  if (bar) document.documentElement.style.setProperty('--nav-h', `${bar.offsetHeight}px`);
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const bar = document.querySelector('#navigation .nav-bar');
+  const lenis = window.lenis = new Lenis({ lerp: 0.11, anchors: { offset: -(bar ? bar.offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  turn(element, vars = {}) {
+    const { from = -90, to = 0, ...rest } = vars;
+    return gsap.fromTo(element, { rotation: from }, { rotation: to, ease: 'back.out(1.4)', duration: 0.7, ...rest });
+  },
+  slice(label, vars = {}) {
+    const cuts = label.querySelectorAll('.m-echo__cut');
+    return gsap.timeline(vars).fromTo(cuts, { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.55, ease: 'power2.out', stagger: 0.14, clearProps: 'clipPath' });
+  },
+  deal(element, vars = {}) {
+    const { side = -1, index = 0, ...rest } = vars;
+    return gsap.from(element, { xPercent: 14 * side, rotation: 3 * side, transformOrigin: side < 0 ? '0% 100%' : '100% 100%', duration: 0.7, ease: 'power3.out', delay: index * 0.08, ...rest });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  const marked = section.querySelectorAll('[data-8b-motion]');
+  if (!marked.length) return;
+  const id = `effect:bindings:${section.id}`;
+  queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    section.querySelectorAll('[data-8b-motion~="turn"]').forEach((element, index) => ScrollTrigger.create({
+      id: `effect:turn:${section.id}:${index}`, trigger: element, start: 'top 88%', once: true,
+      animation: effects.turn(element, { from: index % 2 ? 90 : -90 })
+    }));
+    section.querySelectorAll('[data-8b-motion~="slice"]').forEach((element, index) => ScrollTrigger.create({
+      id: `effect:slice:${section.id}:${index}`, trigger: element, start: 'top 85%', once: true,
+      animation: effects.slice(element)
+    }));
+    const dealt = [...section.querySelectorAll('[data-8b-motion~="deal"]')];
+    dealt.forEach((element, index) => ScrollTrigger.create({
+      id: `effect:deal:${section.id}:${index}`, trigger: element, start: 'top 90%', once: true,
+      animation: effects.deal(element, { side: element.dataset.side === 'right' ? 1 : -1, index: dealt.filter(other => other.parentElement === element.parentElement).indexOf(element) })
+    }));
+  }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+});
+</script>
+<script data-8b-part="scene:library">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 861px) and (min-height: 720px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 860px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('library');
+    const shelves = [...section.querySelectorAll('.lb-shelf')];
+    const cards = shelves.map(shelf => shelf.querySelector('.lb-card'));
+    if (cards.length !== 4 || cards.some(card => !card)) throw new Error('library: four shelf cards expected');
+    if (context.conditions.wide) {
+      section.setAttribute('data-swing', '');
+      const plan = [['0% 0%', -90], ['100% 0%', -90], ['0% 100%', 90], ['100% 100%', 90]];
+      const timeline = gsap.timeline({
+        defaults: { ease: 'power2.inOut' },
+        scrollTrigger: { id: 'library', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.5 }
+      });
+      cards.forEach((card, index) => {
+        timeline.fromTo(card, { rotation: plan[index][1], transformOrigin: plan[index][0] }, { rotation: 0, duration: 1 }, 0.1 + index * 0.85);
+      });
+      timeline.to({}, { duration: 0.6 });
+      return () => section.removeAttribute('data-swing');
+    }
+    cards.forEach((card, index) => {
+      gsap.fromTo(card, { rotation: index % 2 ? -90 : 90, transformOrigin: index % 2 ? '100% 0%' : '0% 0%' }, {
+        rotation: 0, ease: 'power2.out',
+        scrollTrigger: { id: `library:shelf-${index + 1}`, trigger: shelves[index], start: 'top bottom', end: 'top 30%', scrub: 0.5 }
+      });
+    });
+  });
+}, { id: 'scene:library' });
+</script>
+<script data-8b-part="scene:week">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 861px) and (min-height: 680px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 860px) and (min-height: 740px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const section = document.getElementById('week');
+    const tiles = [...section.querySelectorAll('.wk-day')];
+    const slot = section.querySelector('.wk-slot');
+    if (tiles.length !== 7 || !slot) throw new Error('week: seven days and a slot expected');
+    const cells = [...tiles, slot];
+    const box = element => {
+      let x = 0, y = 0;
+      for (let node = element; node; node = node.offsetParent) { x += node.offsetLeft; y += node.offsetTop; }
+      return { x, y };
+    };
+    const offset = (tile, cell, axis) => box(cells[cell])[axis] - box(tiles[tile])[axis];
+    const path = context.conditions.wide ? [7, 3, 2, 6, 5, 1, 0, 4, 5] : [7, 5, 4, 2, 3, 1, 0, 2, 3];
+    const at = tiles.map((tile, index) => index);
+    const moves = [];
+    for (let step = 1; step < path.length; step += 1) {
+      const tile = at.indexOf(path[step]);
+      at[tile] = path[step - 1];
+      moves.push({ tile, from: path[step], to: path[step - 1] });
+    }
+    section.setAttribute('data-puzzle', '');
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'week', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.4, invalidateOnRefresh: true }
+    });
+    const moved = new Set();
+    moves.reverse().forEach(({ tile, from, to }, step) => {
+      const first = !moved.has(tile);
+      moved.add(tile);
+      timeline.fromTo(tiles[tile], {
+        x: () => offset(tile, to, 'x'), y: () => offset(tile, to, 'y')
+      }, {
+        x: () => offset(tile, from, 'x'), y: () => offset(tile, from, 'y'),
+        duration: 0.7, ease: 'power3.inOut', immediateRender: first
+      }, 0.25 + step * 0.85);
+    });
+    timeline.to({}, { duration: 0.5 });
+    return () => section.removeAttribute('data-puzzle');
+  });
+}, { id: 'scene:week' });
+</script>
+<script data-8b-part="scene:long-table">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('long-table');
+    const title = section.querySelector('.lt-title');
+    const photo = section.querySelector('.lt-photo');
+    if (!title || !photo) throw new Error('long-table: title and photo expected');
+    gsap.fromTo(title, { fontStretch: '75%' }, {
+      fontStretch: '150%', ease: 'power1.inOut',
+      scrollTrigger: { id: 'long-table', trigger: title, start: 'top 95%', end: 'top 30%', scrub: 0.5 }
+    });
+    gsap.fromTo(photo, {
+      clipPath: () => { const side = Math.max(0, (photo.offsetWidth - photo.offsetHeight) / 2); return `inset(0px ${side}px 0px ${side}px round 999px)`; }
+    }, {
+      clipPath: 'inset(0px 0px 0px 0px round 999px)', ease: 'power2.inOut',
+      scrollTrigger: { id: 'long-table:photo', trigger: photo, start: 'top 92%', end: 'center 45%', scrub: 0.5, invalidateOnRefresh: true }
+    });
+  });
+}, { near: document.getElementById('long-table'), id: 'scene:long-table' });
+</script>
+<script data-8b-part="scene:regulars">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('regulars');
+    const card = section.querySelector('.rg-card');
+    const shapes = [...section.querySelectorAll('.rg-cell > span:first-child')];
+    const label = section.querySelector('.rg-free__label');
+    if (!card || shapes.length !== 10 || !label) throw new Error('regulars: card with ten cells expected');
+    const origins = { tl: '100% 100%', tr: '0% 100%', br: '0% 0%', bl: '100% 0%' };
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'regulars', trigger: card, start: 'top 85%', end: 'bottom 50%', scrub: 0.4 }
+    });
+    shapes.forEach((shape, index) => {
+      const origin = shape.classList.contains('m-shape-3') ? '50% 100%' : (origins[shape.dataset.corner] || '50% 50%');
+      timeline.fromTo(shape, { scale: 0, transformOrigin: origin }, { scale: 1, duration: 0.5, ease: 'back.out(1.8)' }, index * 0.32);
+    });
+    timeline.fromTo(label, { yPercent: 120 }, { yPercent: 0, duration: 0.4, ease: 'power3.out' }, 9 * 0.32 + 0.25);
+  });
+}, { near: document.getElementById('regulars'), id: 'scene:regulars' });
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const field = section.querySelector('.vs-field');
+    const tiles = field ? [...field.children] : [];
+    if (!tiles.length) throw new Error('visit: arc tiles expected');
+    const turns = [90, -90, 270, -270, 90, -90, -270];
+    const columns = getComputedStyle(field).gridTemplateColumns.split(' ').length;
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'visit', trigger: field, start: 'top 95%', end: 'bottom 40%', scrub: 0.5 }
+    });
+    tiles.forEach((tile, index) => {
+      const rest = Number(tile.dataset.turn) || 0;
+      timeline.fromTo(tile, { rotation: rest + turns[(index * 3) % turns.length] }, { rotation: rest, duration: 1, ease: 'back.out(1.2)' }, (index % columns) * 0.12 + Math.floor(index / columns) * 0.25);
+    });
+    timeline.to({}, { duration: 0.5 });
+  });
+}, { near: document.getElementById('visit'), id: 'scene:visit' });
+</script>
+</body>
+</html>

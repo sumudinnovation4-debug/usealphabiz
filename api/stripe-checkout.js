@@ -1,0 +1,3 @@
+module.exports=async(req,res)=>{const site=req.query.site,o=req.headers.origin||('https://'+req.headers.host);
+const p=new URLSearchParams({mode:'subscription',success_url:o+'/success.html?site='+site,cancel_url:o+'/checkout.html','metadata[site]':site,'line_items[0][quantity]':'1','line_items[0][price_data][currency]':'usd','line_items[0][price_data][unit_amount]':'2999','line_items[0][price_data][recurring][interval]':'year','line_items[0][price_data][product_data][name]':'UseAlphaBiz Annual: website, domain, hosting'});
+const r=await(await fetch('https://api.stripe.com/v1/checkout/sessions',{method:'POST',headers:{Authorization:'Bearer '+process.env.STRIPE_SECRET,'Content-Type':'application/x-www-form-urlencoded'},body:p})).json();res.json({url:r.url})};

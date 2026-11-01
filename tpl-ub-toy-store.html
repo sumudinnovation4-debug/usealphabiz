@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TCIj.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.1.woff2) format('woff2');
+  unicode-range: U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4, U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074, U+e0077, U+e007f;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.2.woff2) format('woff2');
+  unicode-range: U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122, U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2, U+25aa-25ab, U+25b6, U+25c0, U+25fb-25fe, U+2611, U+2622-2623, U+2626, U+262a, U+262e-262f, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267b, U+267e-267f, U+2695, U+269b-269c, U+26a0, U+26a7, U+26aa-26ab, U+26ce, U+26d4, U+2705, U+2714, U+2716, U+271d, U+2721, U+2733-2734, U+2747, U+274c, U+274e, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27a1, U+27b0, U+27bf, U+2934-2935, U+2b05-2b07, U+2b1b-2b1c, U+2b55, U+3030, U+303d, U+3297, U+3299, U+fe0f, U+1f170-1f171, U+1f17e-1f17f, U+1f18e, U+1f191-1f19a, U+1f201-1f202, U+1f21a, U+1f22f, U+1f232-1f23a, U+1f250-1f251, U+1f310, U+1f3a6, U+1f3b5-1f3b6, U+1f3bc, U+1f3e7, U+1f441, U+1f499-1f49c, U+1f49f-1f4a0, U+1f4a2, U+1f4ac-1f4ad, U+1f4b1-1f4b2, U+1f4b9, U+1f4db, U+1f4f2-1f4f6, U+1f500-1f50a, U+1f515, U+1f518-1f524, U+1f52f-1f53d, U+1f549, U+1f54e, U+1f5a4, U+1f5e8, U+1f5ef, U+1f6ab, U+1f6ad-1f6b1, U+1f6b3, U+1f6b7-1f6bc, U+1f6be, U+1f6c2-1f6c5, U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e, U+1f9e1, U+1fa75-1fa77, U+1faaf;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.3.woff2) format('woff2');
+  unicode-range: U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694, U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709, U+270f, U+2712, U+fe0f, U+1f302, U+1f321, U+1f392-1f393, U+1f3a9, U+1f3bd, U+1f3ee, U+1f3f7, U+1f3fa, U+1f451-1f462, U+1f484, U+1f489-1f48a, U+1f48c-1f48e, U+1f4a1, U+1f4a3, U+1f4b0, U+1f4b3-1f4b8, U+1f4bb-1f4da, U+1f4dc-1f4f1, U+1f4ff, U+1f50b-1f514, U+1f516-1f517, U+1f526-1f529, U+1f52c-1f52e, U+1f550-1f567, U+1f56f-1f570, U+1f576, U+1f587, U+1f58a-1f58d, U+1f5a5, U+1f5a8, U+1f5b1-1f5b2, U+1f5c2-1f5c4, U+1f5d1-1f5d3, U+1f5dc-1f5de, U+1f5e1, U+1f5f3, U+1f6aa, U+1f6ac, U+1f6bd, U+1f6bf, U+1f6c1, U+1f6cb, U+1f6cd-1f6cf, U+1f6d2, U+1f6e0-1f6e1, U+1f6f0, U+1f97b-1f97f, U+1f9af, U+1f9ba, U+1f9e2-1f9e6, U+1f9ea-1f9ec, U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86, U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.4.woff2) format('woff2');
+  unicode-range: U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf, U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b, U+1f39e-1f39f, U+1f3a3-1f3a5, U+1f3a7-1f3a9, U+1f3ab-1f3b4, U+1f3b7-1f3bb, U+1f3bd-1f3c0, U+1f3c5-1f3c6, U+1f3c8-1f3c9, U+1f3cf-1f3d3, U+1f3f8-1f3f9, U+1f47e, U+1f4e2, U+1f4f7-1f4fd, U+1f52b, U+1f579, U+1f58c-1f58d, U+1f5bc, U+1f6f7, U+1f6f9, U+1f6fc, U+1f93f, U+1f941, U+1f945, U+1f947-1f94f, U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85, U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.5.woff2) format('woff2');
+  unicode-range: U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708, U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2, U+1f3aa, U+1f3cd-1f3ce, U+1f3d5, U+1f3d7-1f3db, U+1f3df-1f3e6, U+1f3e8-1f3ed, U+1f3ef-1f3f0, U+1f488, U+1f492, U+1f4ba, U+1f54b-1f54d, U+1f5fa-1f5ff, U+1f680-1f6a2, U+1f6a4-1f6a8, U+1f6b2, U+1f6d1, U+1f6d5-1f6d6, U+1f6dd-1f6df, U+1f6e2-1f6e5, U+1f6e9, U+1f6eb-1f6ec, U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3, U+1fa7c;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.6.woff2) format('woff2');
+  unicode-range: U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382, U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb, U+1fad0-1fadb;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.7.woff2) format('woff2');
+  unicode-range: U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5, U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300, U+1f304-1f305, U+1f308, U+1f30a-1f30f, U+1f311-1f321, U+1f324-1f32c, U+1f331-1f335, U+1f337-1f33c, U+1f33e-1f344, U+1f3d4, U+1f3d6, U+1f3dc-1f3de, U+1f3f5, U+1f400-1f43f, U+1f490, U+1f4a7, U+1f4ab, U+1f4ae, U+1f525, U+1f54a, U+1f573, U+1f577-1f578, U+1f648-1f64a, U+1f940, U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf, U+1face-1facf, U+1fae7;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.8.woff2) format('woff2');
+  unicode-range: U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f, U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8, U+1f3c2-1f3c4, U+1f3c7, U+1f3ca-1f3cc, U+1f3eb, U+1f3ed, U+1f3fb-1f3ff, U+1f466-1f478, U+1f47c, U+1f481-1f483, U+1f486-1f487, U+1f48b, U+1f48f, U+1f491, U+1f4bb-1f4bc, U+1f527, U+1f52c, U+1f574-1f575, U+1f57a, U+1f645-1f647, U+1f64b, U+1f64d-1f64e, U+1f680, U+1f692, U+1f6a3, U+1f6b4-1f6b6, U+1f6c0, U+1f6cc, U+1f91d, U+1f926, U+1f930-1f931, U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9, U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.9.woff2) format('woff2');
+  unicode-range: U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728, U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389, U+1f3fb-1f3ff, U+1f440-1f450, U+1f463-1f465, U+1f479-1f47b, U+1f47d-1f480, U+1f485, U+1f48b-1f48c, U+1f493-1f49f, U+1f4a4-1f4a6, U+1f4a8-1f4ab, U+1f4af, U+1f525, U+1f573, U+1f590, U+1f595-1f596, U+1f5a4, U+1f5e3, U+1f600-1f644, U+1f648-1f64a, U+1f64c, U+1f64f, U+1f90c-1f925, U+1f927-1f92f, U+1f932-1f933, U+1f970-1f976, U+1f978-1f97a, U+1f9a0, U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1, U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QSIjuyw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89SCIjuyw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TyIjuyw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89MCIjuyw.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QyIjuyw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QiIjuyw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TCIj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #24201c;
+  --color-3: #fde77d;
+  --color-4: #f7aacb;
+  --color-5: #a9c34c;
+  --color-6: #2d47c6;
+  --color-7: #f48a3a;
+  --color-8: #fbdde9;
+  --font-1: "Gabarito", "Gabarito Fallback", Arial, sans-serif;
+  --font-2: "Playpen Sans", "Playpen Sans Fallback", Arial, sans-serif;
+  --radius-1: clamp(18px, 1.9vw, 28px);
+  --radius-2: 999px;
+  --radius-3: clamp(10px, 1vw, 14px);
+  --shadow-1: 0 26px 44px -24px color-mix(in oklab, var(--color-2) 60%, transparent);
+  --shadow-2: inset 0 -0.2em 0 color-mix(in oklab, var(--color-2) 16%, transparent);
+  --space-1: clamp(8px, 1.1vw, 14px);
+  --space-2: clamp(88px, 11vw, 160px);
+  --space-3: clamp(16px, 4vw, 56px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* font fallbacks */
+  @font-face { font-family: "Gabarito Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 99.9%; ascent-override: 94.1%; descent-override: 26%; line-gap-override: 0%; }
+  @font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 90.8%; ascent-override: 103.5%; descent-override: 28.6%; line-gap-override: 0%; }
+  @font-face { font-family: "Playpen Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 99.3%; ascent-override: 117.8%; descent-override: 34.2%; line-gap-override: 0%; }
+  /* end font fallbacks */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: clamp(16px, 1.25vw, 18px); font-weight: 400; line-height: 1.5; overflow-x: clip; }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  button, input, textarea, select { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-6); outline-offset: 3px; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  .lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: clamp(16px, 1.25vw, 18px); font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 8vw, 120px); font-weight: 700; line-height: .92; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(38px, 5.4vw, 80px); font-weight: 700; line-height: .98; letter-spacing: -0.03em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(18px, 1.6vw, 23px); font-weight: 500; line-height: 1.35; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(13px, 1vw, 15px); font-weight: 600; line-height: 1.25; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(17px, 1.5vw, 21px); font-weight: 500; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(22px, 2.1vw, 32px); font-weight: 700; line-height: 1.04; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+
+.m-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9em; padding: .5em 1.5em; border: 0; border-radius: var(--radius-2); background: var(--color-4); color: var(--color-2); box-shadow: var(--shadow-2); font-family: var(--font-1); font-size: clamp(18px, 1.7vw, 26px); font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; text-transform: none; font-style: normal; text-decoration: none; cursor: pointer; }
+.m-btn__label, .m-btn-2__label { display: block; overflow: hidden; padding-block: .15em; margin-block: -.15em; }
+.m-btn__text, .m-btn-2__text { display: block; text-shadow: 0 1.6em currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__text, .m-btn-2:hover .m-btn-2__text { transform: translateY(-1.6em); }
+}
+.m-btn-2 { display: inline-flex; align-items: center; justify-content: center; min-height: 3em; padding: .55em 1.4em; border: 0; border-radius: var(--radius-2); background: var(--color-6); color: var(--color-1); box-shadow: var(--shadow-2); font-family: var(--font-1); font-size: clamp(16px, 1.2vw, 18px); font-weight: 600; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; cursor: pointer; }
+.m-btn-3 { display: inline-flex; align-items: center; justify-content: center; gap: .5em; min-width: 48px; min-height: 48px; padding: 0 1em; border: 2px solid var(--color-2); border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; cursor: pointer; }
+.m-btn-3__icon { display: block; width: 18px; height: 18px; transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-3__icon svg { width: 100%; height: 100%; }
+@media (hover: hover) { .m-btn-3:hover .m-btn-3__icon { transform: rotate(90deg); } }
+
+.m-link { color: inherit; font-family: var(--font-1); font-size: inherit; font-weight: 600; line-height: inherit; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration-line: underline; text-decoration-thickness: 2px; text-underline-offset: .25em; text-decoration-color: currentColor; }
+@media (hover: hover) { .m-link:hover, .m-link-2:hover { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: var(--color-6); text-decoration-thickness: 2px; text-underline-offset: .3em; } }
+.m-link-2 { color: inherit; font-family: var(--font-1); font-size: clamp(15px, 1.1vw, 17px); font-weight: 500; line-height: 1.25; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; }
+
+.m-badge { display: inline-block; padding: .4em .95em .44em; border-radius: var(--radius-2); background: var(--color-7); color: var(--color-2); font-family: var(--font-1); font-size: clamp(13px, 1.05vw, 16px); font-weight: 600; line-height: 1.15; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-badge-2 { display: inline-block; padding: .4em .95em .44em; border-radius: var(--radius-2); background: var(--color-5); color: var(--color-2); font-family: var(--font-1); font-size: clamp(13px, 1.05vw, 16px); font-weight: 600; line-height: 1.15; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-badge-3 { display: inline-block; padding: .4em .95em .44em; border-radius: var(--radius-2); background: var(--color-4); color: var(--color-2); font-family: var(--font-1); font-size: clamp(13px, 1.05vw, 16px); font-weight: 600; line-height: 1.15; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-badge-4 { display: inline-block; padding: .4em .95em .44em; border-radius: var(--radius-2); background: var(--color-6); color: var(--color-1); font-family: var(--font-1); font-size: clamp(13px, 1.05vw, 16px); font-weight: 600; line-height: 1.15; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+
+.m-surface { border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); }
+.m-surface-2 { border-radius: var(--radius-1); background: var(--color-4); color: var(--color-2); }
+.m-surface-3 { border-radius: var(--radius-1); background: var(--color-5); color: var(--color-2); }
+.m-surface-4 { border-radius: var(--radius-1); background: var(--color-8); color: var(--color-2); }
+.m-surface-5 { border-radius: var(--radius-1); background: var(--color-6); color: var(--color-1); }
+
+.m-field { display: block; width: 100%; min-height: 52px; padding: .75em 1em; border: 2px solid var(--color-2); border-radius: var(--radius-3); background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 17px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .u-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .u-wrap { width: min(100% - 2 * var(--space-3), 1320px); margin-inline: auto; }
+  /* A card whose top-right corner is cut away as a notch; a tab sits in the notch. The card's ground is one shape:
+     every corner of its outline, outer, the step and the concave fillet, has the card radius (--nr). The notch is at
+     least two radii and the gap deep (--nx), and the tab's corner in the fillet is concentric with it, so the gap is even. */
+  .u-notch { position: relative; isolation: isolate; --nw: 40%; --nh: 64px; --ng: 8px; --nr: var(--radius-1); --nbg: var(--color-3);
+    --nx: max(var(--nh), calc(2 * var(--nr) + var(--ng))); }
+  .u-notch::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--nbg);
+    clip-path: shape(from 0 var(--nr),
+      arc to var(--nr) 0 of var(--nr) cw,
+      hline to calc(100% - var(--nw) - var(--nr)),
+      arc to calc(100% - var(--nw)) var(--nr) of var(--nr) cw,
+      vline to calc(var(--nx) - var(--nr)),
+      arc to calc(100% - var(--nw) + var(--nr)) var(--nx) of var(--nr) ccw,
+      hline to calc(100% - var(--nr)),
+      arc to 100% calc(var(--nx) + var(--nr)) of var(--nr) cw,
+      vline to calc(100% - var(--nr)),
+      arc to calc(100% - var(--nr)) 100% of var(--nr) cw,
+      hline to var(--nr),
+      arc to 0 calc(100% - var(--nr)) of var(--nr) cw,
+      close); }
+  .u-notch__tab { position: absolute; top: 0; right: 0; width: calc(var(--nw) - var(--ng)); height: calc(var(--nx) - var(--ng)); display: grid; place-items: center; border-radius: var(--nr) var(--nr) var(--nr) calc(var(--nr) - var(--ng)); }
+  /* Without shape(): a whole rounded card with the tab set inside its corner. */
+  @supports not (clip-path: shape(from 0 0, line to 0 0)) {
+    .u-notch::before { clip-path: none; border-radius: var(--nr); }
+    .u-notch__tab { top: var(--ng); right: var(--ng); border-radius: calc(var(--nr) - var(--ng)); }
+  }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { --nav-pad: calc(var(--space-1) * 2 + 2px + clamp(20px, 2.2vw, 32px)); position: fixed; inset: 0 0 auto 0; z-index: 40; display: flex; justify-content: space-between; align-items: flex-start; padding: var(--nav-pad) var(--nav-pad) 0; pointer-events: none; transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+  #navigation > * { pointer-events: auto; }
+  #navigation[data-hidden] { transform: translateY(-160%); }
+  #navigation .nav__logo { display: inline-flex; align-items: center; gap: .35em; color: var(--color-2); font-family: var(--font-2); font-size: clamp(20px, 1.7vw, 26px); font-weight: 700; line-height: 1; letter-spacing: -0.01em; text-decoration: none; }
+  #navigation .nav__logo svg { width: 1.25em; height: 1.25em; }
+  #navigation .nav__links { display: flex; flex-direction: column; align-items: flex-end; gap: .4em; }
+  #navigation .nav__links ul { display: contents; }
+  #navigation .nav__menu, #navigation .nav__close { display: none; }
+  #navigation[data-compact] { --nav-pad: calc(var(--space-1) * 1.5); }
+  #navigation[data-compact] .nav__logo { padding: .45em .85em .5em; border: 2px solid var(--color-8); border-radius: var(--radius-2); background: var(--color-1); }
+  #navigation[data-compact] .nav__links { flex-direction: row; gap: 1.4em; padding: .8em 1.5em; border: 2px solid var(--color-8); border-radius: var(--radius-2); background: var(--color-1); }
+  @media (max-width: 899px) {
+    #navigation, #navigation[data-compact] { --nav-pad: 10px; padding: 10px 12px 0; align-items: center; }
+    #navigation .nav__logo { padding: .45em .85em .5em; border: 2px solid var(--color-8); border-radius: var(--radius-2); background: var(--color-1); font-size: 20px; }
+    #navigation .nav__menu { display: inline-flex; }
+    #navigation .nav__links, #navigation[data-compact] .nav__links { position: fixed; inset: 0; z-index: 60; display: none; flex-direction: column; align-items: flex-start; justify-content: center; gap: .3em; padding: 88px 24px 40px; border: 0; border-radius: 0; background: var(--color-4); overflow-y: auto; }
+    #navigation[data-open] .nav__links { display: flex; }
+    #navigation .nav__links .m-link-2 { font-size: 40px; font-weight: 700; letter-spacing: -0.02em; }
+    #navigation .nav__close { display: inline-flex; position: absolute; top: 12px; right: 12px; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; }
+  #opening .op-one { padding: var(--space-1); }
+  #opening .op-frame { display: grid; grid-template-columns: 41fr 32fr 24fr; grid-template-rows: 62fr 38fr; gap: var(--space-1); height: calc(100svh - 2 * var(--space-1)); min-height: 620px; max-height: 1000px; padding: var(--space-1); border: 2px solid var(--color-8); border-radius: calc(var(--radius-1) + var(--space-1)); }
+  #opening .op-slot { position: relative; min-width: 0; min-height: 0; }
+  #opening .op-slot--yellow, #opening .op-slot--photo { grid-row: 1 / 3; }
+  #opening .op-card { position: relative; height: 100%; border-radius: var(--radius-1); }
+  /* yellow card */
+  #opening .op-yellow { --nbg: var(--color-3); --nw: 43%; --nh: clamp(54px, 7.4vh, 72px); container-type: inline-size; display: flex; flex-direction: column; padding: clamp(84px, 13vh, 116px) clamp(20px, 2.4vw, 34px) clamp(20px, 2.4vw, 34px); }
+  #opening .op-tab { background: var(--color-5); font-size: clamp(16px, 1.5vw, 22px); font-weight: 700; }
+  #opening .op-strokes { position: absolute; z-index: -1; top: calc(var(--nx) + 6px); right: 8%; width: 30%; height: auto; color: var(--color-5); }
+  #opening .op-title { font-size: min(140px, 86cqi / (var(--len) * .215)); }
+  #opening .op-title span { display: block; }
+  #opening .op-sub { max-width: 30ch; margin: clamp(16px, 2.4vh, 26px) auto 0; text-align: center; font-size: clamp(16px, 1.4vw, 20px); }
+  #opening .op-pills { position: relative; flex: 1; min-height: 120px; margin: 8px 0 14px; }
+  #opening .op-pill { position: absolute; left: var(--x); top: var(--y); }
+  #opening .op-pill > span { transform: rotate(var(--r)); }
+  #opening .op-cta { width: 100%; }
+  /* photo */
+  #opening .op-photo { overflow: hidden; background: var(--color-8); }
+  #opening .op-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+  /* pink card */
+  #opening .op-pink { overflow: hidden; }
+  #opening .op-ribbon { position: absolute; right: -2%; bottom: 0; width: 104%; height: 76%; overflow: visible; color: var(--color-6); transform-origin: 96% 92%; }
+  /* green card */
+  #opening .op-green { display: flex; flex-direction: column; justify-content: flex-end; gap: .35em; overflow: hidden; padding: clamp(18px, 2vw, 28px); }
+  #opening .op-burst { position: absolute; top: -18%; right: -16%; width: 72%; height: auto; color: color-mix(in oklab, var(--color-5), var(--color-1) 32%); }
+  #opening .op-green__age, #opening .op-green__note { position: relative; }
+  #opening .op-green__note { max-width: 18ch; font-weight: 500; }
+  /* second screen */
+  #opening .op-stage { position: relative; }
+  #opening .op-two { display: grid; grid-template-columns: 5fr 7fr; align-items: center; gap: clamp(32px, 5vw, 88px); min-height: 100svh; padding: clamp(48px, 8vh, 96px) var(--space-3); max-width: 1440px; margin-inline: auto; }
+  #opening .op-two__text { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; align-self: stretch; padding: clamp(24px, 3vw, 44px); }
+  #opening .op-two__title { position: relative; font-size: clamp(36px, 4.1vw, 60px); }
+  #opening .op-two__lead { position: relative; max-width: 40ch; margin-top: auto; }
+  #opening .op-two__text .m-link { position: relative; }
+  #opening .op-two__burst { position: absolute; right: -14%; bottom: 26%; width: 46%; height: auto; color: color-mix(in oklab, var(--color-5), var(--color-1) 30%); }
+  #opening .op-board-frame { justify-self: end; width: min(100%, 76svh); padding: var(--space-1); border: 2px solid var(--color-8); border-radius: calc(var(--radius-1) + var(--space-1)); }
+  #opening .op-board { --g: clamp(6px, .7vw, 10px); position: relative; container-type: inline-size; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--g); aspect-ratio: 1; }
+  #opening .op-tile { position: relative; overflow: hidden; border-radius: var(--radius-3); background: var(--color-8); aspect-ratio: 1; }
+  #opening .op-tile img { position: absolute; left: calc(var(--c) * (100cqi + var(--g)) / -3); top: calc(var(--r) * (100cqi + var(--g)) / -3); width: 100cqi; max-width: none; height: 100cqi; object-fit: cover; object-position: 50% 30%; }
+  /* intro and loops */
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op-slot { animation: op-rise .9s cubic-bezier(.2, .8, .2, 1) backwards; animation-delay: calc(var(--d) * 70ms); }
+    #opening .op-pill { animation: op-drop .55s cubic-bezier(.3, 1.5, .5, 1) backwards; animation-delay: calc(240ms + var(--d) * 50ms); }
+    #opening .op-ribbon { animation: op-sway 2.8s ease-in-out infinite alternate; }
+    #opening .op-burst { animation: op-turn 16s linear infinite; }
+    #opening[data-loops="off"] .op-ribbon, #opening[data-loops="off"] .op-burst { animation-play-state: paused; }
+  }
+  @keyframes op-rise { from { transform: translateY(28px) scale(.97); } }
+  @keyframes op-drop { from { transform: translateY(-36px) rotate(-18deg); } }
+  @keyframes op-sway { from { transform: rotate(-6deg) translateX(-12px); } to { transform: rotate(5deg) translateX(10px); } }
+  @keyframes op-turn { to { transform: rotate(360deg); } }
+  @media (max-width: 899px) {
+    #opening .op-one { padding: 72px 10px 10px; }
+    #opening .op-frame { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: auto; min-height: 0; max-height: none; padding: 8px; }
+    #opening .op-slot--yellow { grid-column: 1 / 3; grid-row: auto; }
+    #opening .op-slot--photo { grid-column: 1 / 3; grid-row: auto; aspect-ratio: 4 / 4.4; }
+    #opening .op-yellow { --nw: 46%; --nh: 52px; padding: 74px 20px 20px; min-height: min(560px, calc(100svh - 110px)); }
+    #opening .op-pills { min-height: 132px; }
+    #opening .op-slot--pink, #opening .op-slot--green { aspect-ratio: 1 / 1.08; }
+    #opening .op-green__age { font-size: 22px; }
+    #opening .op-green__note { font-size: 15px; }
+    #opening .op-two { grid-template-columns: 1fr; gap: 10px; padding: 64px 10px 16px; align-content: center; }
+    #opening .op-two__text { gap: 12px; padding: 20px; }
+    #opening .op-two__title { font-size: 30px; }
+    #opening .op-two__lead { margin-top: 0; font-size: 16px; }
+    #opening .op-two__burst { display: none; }
+    #opening .op-board-frame { justify-self: stretch; width: 100%; padding: 8px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #opening[data-board] .op-stage { height: 270svh; }
+    #opening[data-board] .op-two { position: sticky; top: 0; height: 100svh; }
+    #opening[data-board] .op-tile { will-change: transform; }
+    #opening[data-board] .op-tile--last { z-index: 2; box-shadow: var(--shadow-1); transition: box-shadow .35s ease-out; }
+    #opening[data-board] .op-tile--last[data-home] { box-shadow: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+    #opening[data-board] .op-stage { height: 250svh; }
+  }
+}
+</style>
+<style data-8b-part="section:shelves">
+@layer sections {
+  #shelves { padding-top: var(--space-2); }
+  #shelves .sh-head { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px clamp(32px, 5vw, 80px); align-items: end; margin-bottom: clamp(32px, 4.5vw, 60px); }
+  #shelves .sh-head .m-text-4 { max-width: 36ch; }
+  #shelves .sh-track { position: relative; padding: 0 var(--space-3); }
+  #shelves .sh-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(36px, 4vw, 56px) clamp(20px, 2.6vw, 40px); max-width: 1320px; margin-inline: auto; }
+  #shelves .sh-item { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  #shelves .sh-q { font-size: clamp(28px, 2.9vw, 44px); max-width: 10ch; }
+  #shelves .sh-kind > span { transform: rotate(-4deg); }
+  #shelves .sh-item:nth-child(even) .sh-kind > span { transform: rotate(5deg); }
+  #shelves .sh-ex { max-width: 28ch; }
+  #shelves .sh-photo { width: 100%; margin-top: auto; aspect-ratio: 1; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); transform-origin: 50% 100%; }
+  #shelves .sh-photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 899px) {
+    #shelves .sh-head { grid-template-columns: 1fr; }
+    #shelves .sh-list { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    #shelves .sh-list { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:shelves">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #shelves[data-track] .sh-view { display: flex; flex-direction: column; justify-content: center; min-height: 100svh; padding-block: clamp(72px, 10vh, 110px) clamp(28px, 5vh, 56px); overflow: hidden; }
+    #shelves[data-track] .sh-head { margin-bottom: clamp(24px, 4vh, 48px); }
+    #shelves[data-track] .sh-list { display: flex; width: max-content; max-width: none; margin: 0; gap: clamp(40px, 5vw, 88px); }
+    #shelves[data-track] .sh-item { width: clamp(270px, 25vw, 360px); }
+    #shelves[data-track] .sh-photo { width: min(70%, 30vh); }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+    #shelves[data-track] .sh-item { width: 74vw; }
+    #shelves[data-track] .sh-photo { width: min(62%, 25vh); }
+  }
+}
+</style>
+<style data-8b-part="section:squad">
+@layer sections {
+  #squad { padding-top: var(--space-2); }
+  #squad .sq-head { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px clamp(32px, 5vw, 80px); align-items: end; margin-bottom: clamp(32px, 4.5vw, 60px); }
+  #squad .sq-head .m-text-4 { max-width: 38ch; }
+  #squad .sq-deck { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.3vw, 18px); }
+  #squad .sq-card { min-width: 0; }
+  #squad .sq-card__in { --nw: 48%; --nh: 46px; --ng: 6px; display: flex; flex-direction: column; gap: 8px; height: 100%; padding: 14px 14px 18px; }
+  #squad .sq-card:nth-child(5n+1) .sq-card__in { --nbg: var(--color-4); }
+  #squad .sq-card:nth-child(5n+2) .sq-card__in { --nbg: var(--color-3); }
+  #squad .sq-card:nth-child(5n+3) .sq-card__in { --nbg: var(--color-5); }
+  #squad .sq-card:nth-child(5n+4) .sq-card__in { --nbg: var(--color-8); }
+  #squad .sq-card:nth-child(5n) .sq-card__in { --nbg: var(--color-3); }
+  #squad .sq-age { background: var(--color-7); }
+  #squad .sq-name { min-height: calc(var(--nx) - 20px); font-size: clamp(20px, 1.8vw, 28px); }
+  #squad .sq-photo { margin-top: 6px; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-3); }
+  #squad .sq-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #squad .sq-role { margin-top: 4px; }
+  #squad .sq-verdict { font-size: clamp(15px, 1.2vw, 18px); }
+  @media (max-width: 899px) {
+    #squad .sq-head { grid-template-columns: 1fr; }
+    #squad .sq-deck { grid-template-columns: 1fr 1fr; }
+    #squad .sq-card:last-child { grid-column: 1 / 3; justify-self: center; width: calc(50% - 6px); }
+  }
+}
+</style>
+<style data-8b-part="section:hospital">
+@layer sections {
+  #hospital { padding-top: var(--space-2); }
+  #hospital .ho-grid { display: grid; grid-template-columns: 1.3fr .7fr; grid-template-rows: 1fr 1fr; gap: var(--space-1); }
+  #hospital .ho-card { position: relative; grid-row: 1 / 3; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; overflow: hidden; padding: clamp(28px, 4.4vw, 68px); }
+  #hospital .ho-burst { position: absolute; right: -70px; bottom: -70px; width: clamp(200px, 22vw, 300px); height: auto; color: var(--color-4); }
+  #hospital .ho-title, #hospital .ho-lead, #hospital .ho-tags, #hospital .ho-note { position: relative; }
+  #hospital .ho-lead { max-width: 34ch; }
+  #hospital .ho-tags { display: flex; flex-wrap: wrap; gap: 14px 10px; max-width: 600px; padding-block: 6px; }
+  #hospital .ho-tags li > span { transform: rotate(var(--r)); font-size: clamp(15px, 1.3vw, 19px); }
+  #hospital .ho-note { margin-top: auto; max-width: 28ch; }
+  #hospital .ho-photo { min-height: 250px; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); }
+  #hospital .ho-photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 899px) {
+    #hospital .ho-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    #hospital .ho-card { grid-column: 1 / 3; grid-row: auto; }
+    #hospital .ho-photo { min-height: 0; aspect-ratio: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:tinker">
+@layer sections {
+  #tinker { padding-top: var(--space-2); }
+  #tinker .tk-head { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px clamp(32px, 5vw, 80px); align-items: end; margin-bottom: clamp(24px, 3vw, 40px); }
+  #tinker .tk-head .m-text-4 { max-width: 38ch; }
+  #tinker .tk-run { position: relative; padding-block: 40px; }
+  #tinker .tk-list { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 26%; }
+  #tinker .tk-session:nth-child(odd) { grid-column: 1; }
+  #tinker .tk-session:nth-child(even) { grid-column: 2; }
+  #tinker .tk-session:nth-child(1) { grid-row: 1 / 3; }
+  #tinker .tk-session:nth-child(2) { grid-row: 2 / 4; }
+  #tinker .tk-session:nth-child(3) { grid-row: 3 / 5; }
+  #tinker .tk-session:nth-child(4) { grid-row: 4 / 6; }
+  #tinker .tk-session { padding-block: 12px; }
+  #tinker .tk-card { --nw: 42%; --nh: 48px; --ng: 6px; display: flex; flex-direction: column; gap: 10px; padding: calc(var(--nx) + 16px) 18px 22px; }
+  #tinker .tk-session:nth-child(4n+1) .tk-card { --nbg: var(--color-3); }
+  #tinker .tk-session:nth-child(4n+2) .tk-card { --nbg: var(--color-4); }
+  #tinker .tk-session:nth-child(4n+3) .tk-card { --nbg: var(--color-5); }
+  #tinker .tk-session:nth-child(4n) .tk-card { --nbg: var(--color-8); }
+  #tinker .tk-date { background: var(--color-7); }
+  #tinker .tk-photo { aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-3); background: var(--color-8); }
+  #tinker .tk-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #tinker .tk-title { margin-top: 4px; }
+  #tinker .tk-ribbon { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; overflow: visible; color: var(--color-6); stroke-width: clamp(14px, 1.6vw, 22px); pointer-events: none; }
+  #tinker .tk-ribbon path { stroke-width: inherit; }
+  #tinker .tk-ball { position: absolute; z-index: 2; left: var(--ball-x, 50%); top: var(--ball-y, 100%); width: clamp(26px, 2.6vw, 36px); aspect-ratio: 1; margin: calc(clamp(26px, 2.6vw, 36px) / -2) 0 0 calc(clamp(26px, 2.6vw, 36px) / -2); border-radius: 50%; background: var(--color-7); box-shadow: var(--shadow-2); }
+  @media (max-width: 899px) {
+    #tinker .tk-head { grid-template-columns: 1fr; }
+    #tinker .tk-list { grid-template-columns: 1fr; padding-left: 52px; row-gap: 8px; }
+    #tinker .tk-session:nth-child(n) { grid-column: 1; grid-row: auto; padding-block: 0; }
+    #tinker .tk-card { padding: calc(var(--nx) + 12px) 16px 20px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:tinker">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #tinker .tk-date { transition: background-color .35s; }
+    #tinker .tk-photo { transition: transform .6s cubic-bezier(.3, 1.5, .5, 1); }
+    #tinker .tk-session.is-waiting .tk-date { background: var(--color-5); }
+    #tinker .tk-session.is-waiting .tk-photo { transform: scale(.84) rotate(-5deg); }
+  }
+}
+</style>
+<style data-8b-part="section:swap">
+@layer sections {
+  #swap { padding-top: var(--space-2); }
+  #swap .sw-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(28px, 4.5vw, 72px); align-items: center; }
+  #swap .sw-text { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+  #swap .sw-text .m-text-4 { max-width: 34ch; }
+  #swap .sw-rules { display: flex; flex-wrap: wrap; gap: 10px 8px; }
+  #swap .sw-rules li:nth-child(1) > span { transform: rotate(-4deg); }
+  #swap .sw-rules li:nth-child(2) > span { transform: rotate(3deg); }
+  #swap .sw-rules li:nth-child(3) > span { transform: rotate(-2deg); }
+  #swap .sw-ribbon { width: min(100%, 340px); height: 44px; color: var(--color-6); }
+  #swap .sw-frame { --z: 2.1; --lr: 15cqi; --lx: 50; --ly: 50; position: relative; container-type: size; aspect-ratio: 5328 / 4000; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); }
+  #swap .sw-frame > img { width: 100%; height: 100%; object-fit: cover; }
+  #swap .sw-lens { position: absolute; left: calc(var(--lx) * 1cqi - var(--lr)); top: calc(var(--ly) * 1cqb - var(--lr)); width: calc(2 * var(--lr)); aspect-ratio: 1; overflow: hidden; border-radius: 50%; outline: clamp(5px, .6vw, 8px) solid var(--color-4); box-shadow: var(--shadow-1); background: var(--color-8); }
+  #swap .sw-lens img { position: absolute; left: calc(var(--lr) - var(--lx) * 1cqi * var(--z)); top: calc(var(--lr) - var(--ly) * 1cqb * var(--z)); width: calc(100cqi * var(--z)); max-width: none; height: calc(100cqb * var(--z)); object-fit: cover; }
+  #swap .sw-notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 18px; counter-reset: note; }
+  #swap .sw-notes li { position: relative; padding-top: 14px; border-top: 3px solid var(--color-4); font-size: clamp(15px, 1.1vw, 17px); }
+  @media (max-width: 899px) {
+    #swap .sw-grid { grid-template-columns: 1fr; }
+    #swap .sw-notes { grid-template-columns: 1fr; gap: 12px; }
+    #swap .sw-frame { --lr: 18cqi; }
+  }
+}
+</style>
+<style data-8b-part="section:gifts">
+@layer sections {
+  #gifts { padding-top: var(--space-2); }
+  #gifts .gf-card { position: relative; isolation: isolate; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 4.5vw, 72px); overflow: hidden; padding: clamp(28px, 4.6vw, 72px); }
+  #gifts .gf-burst { position: absolute; z-index: -1; top: clamp(20px, 3vw, 44px); right: clamp(20px, 3vw, 44px); width: clamp(140px, 14vw, 200px); height: auto; color: var(--color-3); transform: rotate(-12deg); }
+  #gifts .gf-sticker { position: absolute; z-index: 2; top: clamp(20px, 3vw, 44px); right: clamp(20px, 3vw, 44px); display: grid; place-items: center; width: clamp(140px, 14vw, 200px); aspect-ratio: 1; padding: 0 clamp(26px, 3.2vw, 46px); text-align: center; transform: rotate(-12deg); }
+  #gifts .gf-text { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+  #gifts .gf-text .m-text-4 { max-width: 36ch; }
+  #gifts .gf-steps { display: grid; gap: 14px; }
+  #gifts .gf-steps li { display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: center; max-width: 46ch; }
+  #gifts .gf-num { display: grid; place-items: center; width: 52px; aspect-ratio: 1; border-radius: 50%; background: var(--color-1); }
+  #gifts .gf-photos { position: relative; display: grid; grid-template-rows: 1.1fr .9fr; gap: var(--space-1); padding-top: clamp(80px, 9vw, 140px); }
+  #gifts .gf-photo { overflow: hidden; border-radius: var(--radius-3); min-height: 180px; }
+  #gifts .gf-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #gifts .gf-photo--2 { width: 78%; justify-self: end; }
+  @media (max-width: 899px) {
+    #gifts .gf-card { grid-template-columns: 1fr; padding-top: 150px; }
+    #gifts .gf-burst, #gifts .gf-sticker { width: 124px; top: 18px; right: 18px; }
+    #gifts .gf-sticker { padding: 0 26px; }
+    #gifts .gf-photos { padding-top: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:shop">
+@layer sections {
+  #shop { padding-top: var(--space-2); }
+  #shop .sp-grid { display: grid; grid-template-columns: 1.3fr .7fr .75fr; grid-template-rows: auto minmax(220px, auto); gap: var(--space-1); }
+  #shop .sp-front { position: relative; grid-column: 1; grid-row: 1 / 3; min-height: 560px; overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); }
+  #shop .sp-front > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #shop .sp-shutters { position: absolute; inset: 0; display: grid; grid-template-rows: repeat(4, 1fr); pointer-events: none; }
+  #shop .sp-shutter { transform: scaleY(0); transform-origin: 50% 0; }
+  #shop .sp-shutter:nth-child(1) { background: var(--color-3); }
+  #shop .sp-shutter:nth-child(2) { background: var(--color-4); }
+  #shop .sp-shutter:nth-child(3) { background: var(--color-5); }
+  #shop .sp-shutter:nth-child(4) { background: var(--color-6); }
+  #shop .sp-title { grid-column: 2 / 4; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding: clamp(28px, 3.6vw, 56px); }
+  #shop .sp-title .m-text-4 { max-width: 30ch; }
+  #shop .sp-hours { display: flex; flex-direction: column; gap: 16px; padding: clamp(22px, 2.4vw, 34px); }
+  #shop .sp-times { display: grid; gap: 10px; }
+  #shop .sp-times div { display: grid; gap: 2px; }
+  #shop .sp-ducks { overflow: hidden; border-radius: var(--radius-1); background: var(--color-8); }
+  #shop .sp-ducks img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 899px) {
+    #shop .sp-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    #shop .sp-front { grid-column: 1 / 3; grid-row: auto; min-height: 0; aspect-ratio: 4 / 3.4; }
+    #shop .sp-title { grid-column: 1 / 3; }
+    #shop .sp-ducks { min-height: 200px; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding-top: var(--space-2); }
+  #faq .fq-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(28px, 4.5vw, 72px); align-items: start; }
+  #faq .fq-head { display: grid; gap: 20px; }
+  #faq .fq-head .m-text-4 { max-width: 30ch; }
+  #faq .fq-list { display: grid; gap: 10px; }
+  #faq details { border: 2px solid var(--color-8); border-radius: var(--radius-1); background: var(--color-1); transition: background-color .3s, border-color .3s; }
+  #faq details[open] { border-color: var(--color-4); background: var(--color-8); }
+  #faq summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 20px 18px 26px; cursor: pointer; list-style: none; border-radius: var(--radius-1); }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq .fq-q { font-size: clamp(18px, 1.5vw, 22px); }
+  #faq .fq-icon { position: relative; flex: none; width: 34px; aspect-ratio: 1; border-radius: 50%; background: var(--color-3); transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+  #faq .fq-icon::before, #faq .fq-icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2.5px; margin: -1.25px 0 0 -7px; border-radius: 2px; background: var(--color-2); }
+  #faq .fq-icon::after { transform: rotate(90deg); }
+  #faq details[open] .fq-icon { transform: rotate(45deg); }
+  #faq .fq-a { max-width: 58ch; padding: 0 26px 22px; }
+  @media (hover: hover) { #faq summary:hover .fq-icon { transform: rotate(90deg); } #faq details[open] summary:hover .fq-icon { transform: rotate(135deg); } #faq details:not([open]):hover { border-color: var(--color-4); } }
+  @media (max-width: 899px) { #faq .fq-grid { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding-top: var(--space-2); }
+  #contact .ct-card { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4.5vw, 72px); padding: clamp(28px, 4.6vw, 72px); }
+  #contact .ct-info { display: flex; flex-direction: column; gap: 32px; }
+  #contact .ct-list { display: grid; gap: 12px; justify-items: start; }
+  #contact .ct-item { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; max-width: 100%; padding: 10px 22px 10px 10px; border-radius: var(--radius-2); background: var(--color-1); }
+  #contact .ct-item .m-text, #contact .ct-item .m-link { font-size: clamp(16px, 1.4vw, 20px); font-weight: 600; overflow-wrap: anywhere; }
+  #contact .ct-form { display: grid; gap: 8px; align-content: start; }
+  #contact .ct-form__lead { margin-bottom: 10px; max-width: 30ch; }
+  #contact .ct-form .m-field + label { margin-top: 8px; }
+  #contact .ct-form textarea { resize: vertical; min-height: 120px; }
+  #contact .ct-form .m-btn-2 { justify-self: start; margin-top: 12px; }
+  @media (max-width: 899px) { #contact .ct-card { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: var(--space-2) 0 28px; }
+  #footer .ft-in { container-type: inline-size; }
+  #footer .ft-word { color: var(--color-2); font-family: var(--font-2); font-size: min(30vw, 100cqi / (var(--len) * .62)); font-weight: 700; line-height: 1; letter-spacing: -0.03em; text-align: center; }
+  #footer .ft-ribbon { width: 100%; height: clamp(36px, 5vw, 80px); margin-top: .6vw; color: var(--color-6); }
+  #footer .ft-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; margin-top: clamp(24px, 3vw, 44px); padding-top: 22px; border-top: 2px solid var(--color-8); }
+  #footer .ft-links { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-two { padding-top: clamp(96px, 12vh, 120px); }
+#opening .op-board-frame { width: min(100%, 70svh); }
+#opening .op-two__cta { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; }
+@media (max-width: 899px) {
+  #opening .op-two { padding-top: 70px; }
+  #opening .op-two__cta { gap: 10px 20px; }
+  #opening .op-two__cta .m-btn { min-height: 46px; padding: 0 1.2em; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-two__text, #opening .op-board-frame { animation: op-rise .9s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #opening .op-board-frame { animation-delay: .1s; }
+}</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="navigation">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">
+<svg aria-hidden="true" viewbox="0 0 40 40"><path d="M20 21c0-2 2-3 3.4-1.8 1.8 1.6.4 4.8-2.4 5-3.6.2-5.6-3.6-4-6.6 2-3.8 7.4-4.2 10-1 3 3.6 1.4 9.4-3.2 10.8-5 1.6-10.2-2-10.6-7.2-.4-6 4.6-10.8 10.6-10.6 6.8.2 11.4 6.6 10 13.2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path></svg>
+<span>{{t1|squiggle}}</span>
+</a>
+<button aria-controls="nav-links" aria-expanded="false" class="m-btn-3 nav__menu" type="button"><span aria-hidden="true" class="m-btn-3__icon"><svg viewbox="0 0 18 18"><path d="M2 5h14M2 9.5h14M2 14h9" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg></span><span>{{t2|Menu}}</span></button>
+<nav aria-label="Main" class="nav__links" id="nav-links">
+<button aria-label="Close the menu" class="m-btn-3 nav__close" type="button"><span aria-hidden="true" class="m-btn-3__icon"><svg viewbox="0 0 18 18"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-linecap="round" stroke-width="2.4"></path></svg></span></button>
+<ul>
+{{#nv_shelves}}<li><a class="m-link-2" href="#shelves">{{t3|Shelves}}</a></li>{{/nv_shelves}}
+{{#nv_squad}}<li><a class="m-link-2" href="#squad">{{t4|Test Squad}}</a></li>{{/nv_squad}}
+{{#nv_hospital}}<li><a class="m-link-2" href="#hospital">{{t5|Toy hospital}}</a></li>{{/nv_hospital}}
+{{#nv_tinker}}<li><a class="m-link-2" href="#tinker">{{t6|Tinker table}}</a></li>{{/nv_tinker}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t7|Visit}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-stage">
+<div class="op-two">
+<div class="op-two__text m-surface-3">
+<svg aria-hidden="true" class="op-two__burst" viewbox="0 0 200 200"><polygon fill="currentColor" points="100.0,0.0 117.9,44.8 158.8,19.1 146.9,65.9 195.1,69.1 158.0,100.0 195.1,130.9 146.9,134.1 158.8,180.9 117.9,155.2 100.0,200.0 82.1,155.2 41.2,180.9 53.1,134.1 4.9,130.9 42.0,100.0 4.9,69.1 53.1,65.9 41.2,19.1 82.1,44.8"></polygon></svg>
+<h1 class="m-text-3 op-two__title" id="opening-title">{{t8|No toy gets a shelf until a kid has tried to break it.}}</h1>
+<p class="m-text-4 op-two__lead">{{t9|Every month a squad of kids from the streets around the shop takes new toys home. If a toy bores them, snaps, or vanishes under the sofa within a week, it never reaches our shelves.}}</p>
+<div class="op-two__cta"><a class="m-btn" href="#contact"><span class="m-btn__label"><span class="m-btn__text">{{t10|Plan a visit}}</span></span></a><a class="m-link" href="#squad">{{t11|Meet the Test Squad}}</a></div>
+</div>
+<div class="op-board-frame">
+<div class="op-board">
+<div class="op-tile" style="--c:0;--r:0"><img alt="A girl laughing as she climbs over a railing, her hand reaching out" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:1;--r:0"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:2;--r:0"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:0;--r:1"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:1;--r:1"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:2;--r:1"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:0;--r:2"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile" style="--c:1;--r:2"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+<div class="op-tile op-tile--last" style="--c:2;--r:2"><img alt="" height="6240" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1690145150475-3ce6bc09e4bb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60}}" style="background:#26260c" width="4160"/></div>
+</div>
+</div>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_shelves}}<section aria-labelledby="shelves-title" data-8b-section="shelves" id="shelves">
+<div class="sh-view">
+<header class="sh-head u-wrap">
+<h2 class="m-text-3" id="shelves-title">{{t12|Shelved by the question, not the age}}</h2>
+<p class="m-text-4">{{t13|Kids don't shop by age band. They shop by what they're itching to find out, so that's how the whole shop is sorted.}}</p>
+</header>
+<div class="sh-track">
+<ul class="sh-list">
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t14|How does it work?}}</p>
+<p class="sh-kind"><span class="m-badge-2">{{t15|Science kits}}</span></p>
+<p class="m-text sh-ex">{{t16|Microscopes, crystal gardens, circuits that buzz.}}</p>
+<figure class="sh-photo"><img alt="Five test tubes of coloured water in a wooden rack" height="2688" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1782320400061-fbbf7a6098f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8a2lkcyUyMHNjaWVuY2UlMjBraXR8ZW58MXwyfHx8MTc5MTQxNDQ2Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#f3f3f3" width="2688"/></figure>
+</li>
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t17|How high can it go?}}</p>
+<p class="sh-kind"><span class="m-badge-3">{{t18|Building}}</span></p>
+<p class="m-text sh-ex">{{t19|Wooden blocks, magnetic tiles, balancing towers.}}</p>
+<figure class="sh-photo"><img alt="Wooden cubes, cones and balls balanced in a tall tower" height="2560" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1762102369311-666bd62eb3d8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d29vZGVuJTIwYnVpbGRpbmclMjBibG9ja3N8ZW58MXwyfHx8MTc5MTQxNDQ2MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#404040" width="2560"/></figure>
+</li>
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t20|Can I make my own?}}</p>
+<p class="sh-kind"><span class="m-badge">{{t21|Craft boxes}}</span></p>
+<p class="m-text sh-ex">{{t22|Paints, clay, looms and far too much glitter.}}</p>
+<figure class="sh-photo"><img alt="Paints, brushes and coloured pencils laid out on a green table" height="3456" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1583156944293-8951639522fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8a2lkcyUyMGNyYWZ0JTIwc3VwcGxpZXN8ZW58MXwyfHx8MTc5MTQxNDQ2NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#59a626" width="3456"/></figure>
+</li>
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t23|Where does this bit go?}}</p>
+<p class="sh-kind"><span class="m-badge-4">{{t24|Puzzles}}</span></p>
+<p class="m-text sh-ex">{{t25|Jigsaws from 12 to 1,000 pieces, tangrams, 3D puzzles.}}</p>
+<figure class="sh-photo"><img alt="Hundreds of jigsaw pieces spread over a wooden table" height="3456" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1684773585761-fde68b4ece42?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8amlnc2F3JTIwcHV6emxlJTIwcGllY2VzfGVufDF8Mnx8fDE3OTE0MTQ0NjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#8c5926" width="3456"/></figure>
+</li>
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t26|What does this button do?}}</p>
+<p class="sh-kind"><span class="m-badge-2">{{t27|Wind-ups and robots}}</span></p>
+<p class="m-text sh-ex">{{t28|Tin walkers, coding bots, anything with a key.}}</p>
+<figure class="sh-photo"><img alt="A red tin robot toy with an antenna on its head" height="3381" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1680714794307-f74f962391d9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dG95JTIwcm9ib3R8ZW58MXwyfHx8MTc5MTQxNDQ2NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#d9d9d9" width="3200"/></figure>
+</li>
+<li class="sh-item">
+<p class="m-text-7 sh-q">{{t29|Who wants a cuddle?}}</p>
+<p class="sh-kind"><span class="m-badge-3">{{t30|Soft toys}}</span></p>
+<p class="m-text sh-ex">{{t31|Octopuses, bears, sloths and one very large hare.}}</p>
+<figure class="sh-photo"><img alt="A smiling red plush octopus sitting on a table" height="2251" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1671043119167-d1b8f88a88c6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGx1c2glMjB0b3l8ZW58MXwyfHx8MTc5MTQxNDQ2NXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60}}" style="background:#a62626" width="2252"/></figure>
+</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_shelves}}
+
+{{#sec_squad}}<section aria-labelledby="squad-title" data-8b-section="squad" id="squad">
+<header class="sq-head u-wrap">
+<h2 class="m-text-3" id="squad-title">{{t11|Meet the Test Squad}}</h2>
+<p class="m-text-4">{{t32|Kids from the streets around the shop. They get new toys a month before anyone else, and their verdicts go on our shelf tags word for word.}}</p>
+</header>
+<ul class="sq-deck u-wrap">
+<li class="sq-card">
+<article class="sq-card__in u-notch">
+<p class="u-notch__tab sq-age m-text-5">{{t33|Age 6}}</p>
+<h3 class="m-text-7 sq-name">{{t34|Rosa}}</h3>
+<figure class="sq-photo"><img alt="A girl concentrating on a colourful wooden puzzle" height="2784" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1624641328326-ecb54b7cff1f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2lybCUyMHBsYXlpbmclMjB3aXRoJTIwYmxvY2tzfGVufDF8MXx8fDE3OTE0MTQ0NzR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#d9a673" width="1856"/></figure>
+<p class="m-text-5 sq-role">{{t35|Puzzle inspector}}</p>
+<p class="m-text-6 sq-verdict">{{t36|“The farm one has a pig missing. I checked twice.”}}</p>
+</article>
+</li>
+<li class="sq-card">
+<article class="sq-card__in u-notch">
+<p class="u-notch__tab sq-age m-text-5">{{t37|Age 3}}</p>
+<h3 class="m-text-7 sq-name">{{t38|Theo}}</h3>
+<figure class="sq-photo"><img alt="A curly-haired toddler laughing with his hands together" height="6720" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1723625757222-01262d333d89?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#262626" width="4480"/></figure>
+<p class="m-text-5 sq-role">{{t39|Drop tester}}</p>
+<p class="m-text-6 sq-verdict">{{t40|“I threw it down the stairs. It's fine.”}}</p>
+</article>
+</li>
+<li class="sq-card">
+<article class="sq-card__in u-notch">
+<p class="u-notch__tab sq-age m-text-5">{{t41|Age 9}}</p>
+<h3 class="m-text-7 sq-name">{{t42|Amara}}</h3>
+<figure class="sq-photo"><img alt="A girl with pigtails grinning over the edge of a table" height="6494" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1648515471792-c13c754aa6e1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGtpZCUyMGxhdWdoaW5nJTIwcGxheWluZ3xlbnwxfDF8fHwxNzkxNDE0NDczfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#a6a6a6" width="4329"/></figure>
+<p class="m-text-5 sq-role">{{t43|Chief button-presser}}</p>
+<p class="m-text-6 sq-verdict">{{t44|“If it doesn't beep, I'm not interested.”}}</p>
+</article>
+</li>
+<li class="sq-card">
+<article class="sq-card__in u-notch">
+<p class="u-notch__tab sq-age m-text-5">{{t45|Age 5}}</p>
+<h3 class="m-text-7 sq-name">{{t46|Lily}}</h3>
+<figure class="sq-photo"><img alt="A small girl laughing as she peeks round a wooden fence" height="3672" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1606080255438-f908756a0169?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#c0a68c" width="2118"/></figure>
+<p class="m-text-5 sq-role">{{t47|Hide-and-seek adviser}}</p>
+<p class="m-text-6 sq-verdict">{{t48|“The box was better than the toy. Keep both.”}}</p>
+</article>
+</li>
+<li class="sq-card">
+<article class="sq-card__in u-notch">
+<p class="u-notch__tab sq-age m-text-5">{{t49|Age 10}}</p>
+<h3 class="m-text-7 sq-name">{{t50|Jonah}}</h3>
+<figure class="sq-photo"><img alt="A boy laughing with his friends outdoors" height="4398" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1571593992702-27f222d4059a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8a2lkJTIwbGF1Z2hpbmclMjBwbGF5aW5nfGVufDF8MXx8fDE3OTE0MTQ0NzN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=230&q=60}}" style="background:#0c2626" width="2932"/></figure>
+<p class="m-text-5 sq-role">{{t51|Board game referee}}</p>
+<p class="m-text-6 sq-verdict">{{t52|“Nobody cried. That means it's a good game.”}}</p>
+</article>
+</li>
+</ul>
+</section>{{/sec_squad}}
+
+{{#sec_hospital}}<section aria-labelledby="hospital-title" data-8b-section="hospital" id="hospital">
+<div class="ho-grid u-wrap">
+<div class="ho-card m-surface-4">
+<svg aria-hidden="true" class="ho-burst" data-8b-motion="spin" viewbox="0 0 200 200"><polygon fill="currentColor" points="100.0,0.0 117.9,44.8 158.8,19.1 146.9,65.9 195.1,69.1 158.0,100.0 195.1,130.9 146.9,134.1 158.8,180.9 117.9,155.2 100.0,200.0 82.1,155.2 41.2,180.9 53.1,134.1 4.9,130.9 42.0,100.0 4.9,69.1 53.1,65.9 41.2,19.1 82.1,44.8"></polygon></svg>
+<h2 class="m-text-3 ho-title" data-8b-motion="slide" id="hospital-title">{{t53|The toy hospital}}</h2>
+<p class="m-text-4 ho-lead">{{t54|Bring us the bear with the loose eye, the train that stopped, the doll who lost her stuffing. Saturday mornings at the counter by the window.}}</p>
+<ul aria-label="Treatments and prices" class="ho-tags">
+<li data-8b-motion="tumble" style="--r:-5deg"><span class="m-badge-3">{{t55|Re-stuffing · ₦4,000}}</span></li>
+<li data-8b-motion="tumble" style="--r:4deg"><span class="m-badge">{{t56|New eyes or buttons · ₦2,500}}</span></li>
+<li data-8b-motion="tumble" style="--r:-3deg"><span class="m-badge-2">{{t57|Torn seams · from ₦3,000}}</span></li>
+<li data-8b-motion="tumble" style="--r:6deg"><span class="m-badge-4">{{t58|Wind-up repairs · from ₦5,000}}</span></li>
+<li data-8b-motion="tumble" style="--r:-6deg"><span class="m-badge">{{t59|Wheels and axles · ₦3,000}}</span></li>
+</ul>
+<p class="m-text-6 ho-note">{{t60|Most patients go home within a week, with a discharge note for their owner.}}</p>
+</div>
+<figure class="ho-photo"><img alt="Hands re-stuffing a red teddy bear with fresh cotton" height="3072" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1769107294962-df3b0af7e782?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dGVkZHklMjBiZWFyJTIwcmVwYWlyJTIwc2V3aW5nfGVufDF8MHx8fDE3OTE0MTQ1MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#a6a6a6" width="4608"/></figure>
+<figure class="ho-photo"><img alt="A worn corduroy teddy bear lying on a table, waiting for repair" height="2656" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1767777230445-3ba39170835c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dGVkZHklMjBiZWFyJTIwcmVwYWlyJTIwc2V3aW5nfGVufDF8MHx8fDE3OTE0MTQ1MDF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=420&q=60}}" style="background:#735926" width="3984"/></figure>
+</div>
+</section>{{/sec_hospital}}
+
+{{#sec_tinker}}<section aria-labelledby="tinker-title" data-8b-section="tinker" id="tinker">
+<header class="tk-head u-wrap">
+<h2 class="m-text-3" id="tinker-title">{{t61|The Saturday tinker table}}</h2>
+<p class="m-text-4">{{t62|Every Saturday at ten the big table at the back is cleared for one project. Free, no booking, ages five and up. Grown-ups welcome to hold things.}}</p>
+</header>
+<div class="tk-run u-wrap">
+<svg aria-hidden="true" class="tk-ribbon"><path d="M0 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<ol class="tk-list">
+<li class="tk-session">
+<article class="tk-card u-notch">
+<p class="u-notch__tab tk-date m-text-5">{{t63|Sat 12 Oct}}</p>
+<figure class="tk-photo"><img alt="A green and red plastic marble run with tracks looping down" height="4000" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1590333626353-98887fe31d2c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bWFyYmxlJTIwcnVuJTIwdG95fGVufDF8MHx8fDE3OTE0MTQ1MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#595940" width="6000"/></figure>
+<h3 class="m-text-7 tk-title">{{t64|Build a marble run}}</h3>
+<p class="m-text tk-line">{{t65|Cardboard tubes, tape and one very determined marble.}}</p>
+</article>
+</li>
+<li class="tk-session">
+<article class="tk-card u-notch">
+<p class="u-notch__tab tk-date m-text-5">{{t66|Sat 19 Oct}}</p>
+<figure class="tk-photo"><img alt="A wooden mechanical model kit assembled on a table" height="3024" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1735665096798-0249c9c0f194?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWFyYmxlJTIwcnVuJTIwdG95fGVufDF8MHx8fDE3OTE0MTQ1MDN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#f3f3f3" width="4032"/></figure>
+<h3 class="m-text-7 tk-title">{{t67|Make a wooden walker}}</h3>
+<p class="m-text tk-line">{{t68|Pop out the pieces, add a rubber band, watch it walk.}}</p>
+</article>
+</li>
+<li class="tk-session">
+<article class="tk-card u-notch">
+<p class="u-notch__tab tk-date m-text-5">{{t69|Sat 26 Oct}}</p>
+<figure class="tk-photo"><img alt="A girl stacking big wooden blocks into a tower" height="4128" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1747720627145-e27ce8f364d2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8a2lkcyUyMGJ1aWxkaW5nJTIwd29ya3Nob3AlMjB0YWJsZXxlbnwxfDB8fHwxNzkxNDE0NTAyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=480&q=60}}" style="background:#8c8c8c" width="6192"/></figure>
+<h3 class="m-text-7 tk-title">{{t70|Tallest tower wins}}</h3>
+<p class="m-text tk-line">{{t71|Twenty minutes, a crate of blocks, no glue allowed.}}</p>
+</article>
+</li>
+<li class="tk-session">
+<article class="tk-card u-notch">
+<p class="u-notch__tab tk-date m-text-5">{{t72|Sat 2 Nov}}</p>
+<figure class="tk-photo"><img alt="A boy building with a heap of colourful plastic bricks" height="6974" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1619287186989-3dceb7d9571f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGtpZCUyMGJ1aWxkaW5nJTIwbGVnb3xlbnwxfDF8fHwxNzkxNDE0NTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=430&q=60}}" style="background:#262626" width="4981"/></figure>
+<h3 class="m-text-7 tk-title">{{t73|Brick city}}</h3>
+<p class="m-text tk-line">{{t74|Everyone builds one street. Together it's a town.}}</p>
+</article>
+</li>
+</ol>
+<span aria-hidden="true" class="tk-ball"></span>
+</div>
+</section>{{/sec_tinker}}
+
+{{#sec_swap}}<section aria-labelledby="swap-title" data-8b-section="swap" id="swap">
+<div class="sw-grid u-wrap">
+<div class="sw-text">
+<h2 class="m-text-3" id="swap-title">{{t75|The swap box}}</h2>
+<p class="m-text-4">{{t76|Outgrown it? Bring it in clean and working and we'll give you credit to spend in the shop. Every toy in the swap box has had a life before.}}</p>
+<ul aria-label="Swap rules" class="sw-rules">
+<li><span class="m-badge-2">{{t77|Clean and working}}</span></li>
+<li><span class="m-badge-3">{{t78|All the pieces, or most}}</span></li>
+<li><span class="m-badge">{{t79|Credit never expires}}</span></li>
+</ul>
+<svg aria-hidden="true" class="sw-ribbon" data-8b-motion="wiggle" preserveaspectratio="none" viewbox="0 0 400 60"><path d="M6 30C40 6 70 6 100 30S160 54 200 30 260 6 300 30 360 54 394 30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="10" vector-effect="non-scaling-stroke"></path></svg>
+</div>
+<figure class="sw-figure">
+<div class="sw-frame">
+<img alt="A table crowded with old toy cars, a pink coach, a tin airliner and small figures" height="4000" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1561584297-91718347e42d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Ym94JTIwb2YlMjBvbGQlMjB0b3lzfGVufDF8MHx8fDE3OTE0MTQ1MDR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1390&q=60}}" style="background:#260c0c" width="5328"/>
+<div aria-hidden="true" class="sw-lens"><img alt="" height="4000" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1561584297-91718347e42d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Ym94JTIwb2YlMjBvbGQlMjB0b3lzfGVufDF8MHx8fDE3OTE0MTQ1MDR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1390&q=60}}" style="background:#260c0c" width="5328"/></div>
+</div>
+<figcaption>
+<ol class="sw-notes">
+<li class="m-text" data-x="31" data-y="40">{{t80|A pink coach, traded in by twins who now ride a real one to school.}}</li>
+<li class="m-text" data-x="83" data-y="69">{{t81|A rubber-headed boy and a green alien. They came in together and leave together.}}</li>
+<li class="m-text" data-x="46" data-y="58">{{t82|A tin airliner that flew laps of a living room in Hove for forty years.}}</li>
+</ol>
+</figcaption>
+</figure>
+</div>
+</section>{{/sec_swap}}
+
+{{#sec_gifts}}<section aria-labelledby="gifts-title" data-8b-section="gifts" id="gifts">
+<div class="gf-card m-surface-2 u-wrap">
+<svg aria-hidden="true" class="gf-burst" viewbox="0 0 200 200"><polygon fill="currentColor" points="100.0,0.0 114.7,35.7 143.4,9.9 141.2,48.4 178.2,37.7 159.5,71.4 197.5,77.7 166.0,100.0 197.5,122.3 159.5,128.6 178.2,162.3 141.2,151.6 143.4,190.1 114.7,164.3 100.0,200.0 85.3,164.3 56.6,190.1 58.8,151.6 21.8,162.3 40.5,128.6 2.5,122.3 34.0,100.0 2.5,77.7 40.5,71.4 21.8,37.7 58.8,48.4 56.6,9.9 85.3,35.7"></polygon></svg>
+<p class="gf-sticker m-text-5">{{t83|Wrapped free in our own paper}}</p>
+<div class="gf-text">
+<h2 class="m-text-3" id="gifts-title">{{t84|Birthday lists that actually work}}</h2>
+<p class="m-text-4">{{t85|Your child picks from our shelves, we keep the list, and friends buy from it in the shop or by phone. No duplicates, no guessing.}}</p>
+<ol class="gf-steps">
+<li><span class="gf-num m-text-7">{{t86|1}}</span><p class="m-text"><strong>{{t87|Pick.}}</strong> {{t88|Come in, wander the shelves and point. We write it all down.}}</p></li>
+<li><span class="gf-num m-text-7">{{t89|2}}</span><p class="m-text"><strong>{{t90|Share.}}</strong> {{t91|Send friends the list's name. They buy in the shop or call us.}}</p></li>
+<li><span class="gf-num m-text-7">{{t92|3}}</span><p class="m-text"><strong>{{t93|Wrapped.}}</strong> {{t94|Every present is wrapped and tagged, ready for the party.}}</p></li>
+</ol>
+<a class="m-btn-2" href="#contact"><span class="m-btn-2__label"><span class="m-btn-2__text">{{t95|Start a list}}</span></span></a>
+</div>
+<div class="gf-photos">
+<figure class="gf-photo gf-photo--1"><img alt="Rolls of brightly patterned wrapping paper standing side by side" height="2384" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1595481197464-eddddfe2624c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d3JhcHBlZCUyMGdpZnRzJTIwY29sb3JmdWwlMjBwYXBlcnxlbnwxfDB8fHwxNzkxNDE0NTA1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#d9d9d9" width="4240"/></figure>
+<figure class="gf-photo gf-photo--2"><img alt="A pink gift bag stuffed with tissue paper next to a starry box" height="3486" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1667864811044-b0bcd9ed4a46?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d3JhcHBlZCUyMGdpZnRzJTIwY29sb3JmdWwlMjBwYXBlcnxlbnwxfDB8fHwxNzkxNDE0NTA1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=400&q=60}}" style="background:#8c7373" width="4649"/></figure>
+</div>
+</div>
+</section>{{/sec_gifts}}
+
+{{#sec_shop}}<section aria-labelledby="shop-title" data-8b-section="shop" id="shop">
+<div class="sp-grid u-wrap">
+<figure class="sp-front">
+<img alt="A toy shop window with a red and yellow frame and pink flowers in front" height="2848" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1761396742176-b6a5f17f9620?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dG95JTIwc3RvcmUlMjB3aW5kb3d8ZW58MXwwfHx8MTc5MTQxNDUwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=900&q=60}}" style="background:#262626" width="4288"/>
+<span aria-hidden="true" class="sp-shutters"><span class="sp-shutter"></span><span class="sp-shutter"></span><span class="sp-shutter"></span><span class="sp-shutter"></span></span>
+</figure>
+<div class="sp-title m-surface-2">
+<h2 class="m-text-3" id="shop-title">{{t96|1 Admiralty Way}}</h2>
+<p class="m-text-4">{{t97|Two floors in the North Laine, one play table, and not a single “do not touch” sign.}}</p>
+<a class="m-btn-2" data-8b-placeholder="map" href="https://www.google.com/maps/search/?api=1&amp;query={{address}}"><span class="m-btn-2__label"><span class="m-btn-2__text">{{t98|Get directions}}</span></span></a>
+</div>
+<div class="sp-hours m-surface">
+<h3 class="m-text-7">{{t99|Opening hours}}</h3>
+<dl class="sp-times">
+<div><dt class="m-text-5">{{t100|Monday to Friday}}</dt><dd class="m-text">{{t101|9:30 – 18:00}}</dd></div>
+<div><dt class="m-text-5">{{t102|Saturday}}</dt><dd class="m-text">{{t103|9:00 – 18:00}}</dd></div>
+<div><dt class="m-text-5">{{t104|Sunday}}</dt><dd class="m-text">{{t105|10:30 – 16:30}}</dd></div>
+</dl>
+</div>
+<figure class="sp-ducks"><img alt="Rows of yellow rubber ducks lined up on shelves" height="2268" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1760888330937-d24ee083878c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dG95JTIwc3RvcmUlMjB3aW5kb3d8ZW58MXwwfHx8MTc5MTQxNDUwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60}}" style="background:#737359" width="4032"/></figure>
+</div>
+</section>{{/sec_shop}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="fq-grid u-wrap">
+<div class="fq-head">
+<h2 class="m-text-3" data-8b-motion="slide" id="faq-title">{{t106|Questions grown-ups ask}}</h2>
+<p class="m-text-4" data-8b-motion="slide">{{t107|Kids mostly ask where the toilet is. It's upstairs, past the puzzles.}}</p>
+</div>
+<div class="fq-list">
+<details>
+<summary><span class="m-text-7 fq-q">{{t108|Can kids play with the toys in the shop?}}</span><span aria-hidden="true" class="fq-icon"></span></summary>
+<p class="m-text fq-a">{{t109|Yes. Everything with a “try me” tag is open, and the play table upstairs always has something set up.}}</p>
+</details>
+<details>
+<summary><span class="m-text-7 fq-q">{{t110|Do you post orders?}}</span><span aria-hidden="true" class="fq-icon"></span></summary>
+<p class="m-text fq-a">{{t111|We post anywhere in the Nigeria. Call or email with what you're after and we'll send a payment link and a photo of the toy.}}</p>
+</details>
+<details>
+<summary><span class="m-text-7 fq-q">{{t112|Does the swap box take toys you didn't sell?}}</span><span aria-hidden="true" class="fq-icon"></span></summary>
+<p class="m-text fq-a">{{t113|It does, as long as they are clean, working and safe. We don't take soft toys for swapping, but the toy hospital will see them.}}</p>
+</details>
+<details>
+<summary><span class="m-text-7 fq-q">{{t114|Is the tinker table really free?}}</span><span aria-hidden="true" class="fq-icon"></span></summary>
+<p class="m-text fq-a">{{t115|Really free. Children under eight need a grown-up nearby, and there are twelve seats, so come early for the popular ones.}}</p>
+</details>
+<details>
+<summary><span class="m-text-7 fq-q">{{t116|Do you sell gift vouchers?}}</span><span aria-hidden="true" class="fq-icon"></span></summary>
+<p class="m-text fq-a">{{t117|From ₦5,000 on a card the kids can actually read. They never expire, like the swap box credit.}}</p>
+</details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" data-8b-section="contact" id="contact">
+<div class="ct-card m-surface u-wrap">
+<div class="ct-info">
+<h2 class="m-text-3" id="contact-title">{{t118|Come and play}}</h2>
+<ul class="ct-list">
+<li class="ct-item"><span class="m-badge-3">{{t119|Shop}}</span><span class="m-text">{{t120|1 Admiralty Way, Ikoyi}}</span></li>
+<li class="ct-item"><span class="m-badge-2">{{t121|Call}}</span><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t122|⟦phone⟧}}</a></li>
+<li class="ct-item"><span class="m-badge">{{t123|Email}}</span><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t124|hello@squiggle.example}}</a></li>
+<li class="ct-item"><span class="m-badge-4">{{t125|Open}}</span><span class="m-text">{{t126|Every day of the week, hours above}}</span></li>
+</ul>
+</div>
+
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Toy Store by <a href="https://github.com/8bsite/toy-store-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="ft-in u-wrap">
+<p class="ft-word" style="--len:8">{{t1|squiggle}}</p>
+<svg aria-hidden="true" class="ft-ribbon" data-8b-motion="wiggle" preserveaspectratio="none" viewbox="0 0 1200 120"><path d="M12 64C120 4 200 4 300 60S480 118 590 62 780 6 890 60 1080 116 1188 52" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="14" vector-effect="non-scaling-stroke"></path></svg>
+<div class="ft-row">
+<nav aria-label="Footer">
+<ul class="ft-links">
+{{#nv_shelves}}<li><a class="m-link-2" href="#shelves">{{t3|Shelves}}</a></li>{{/nv_shelves}}
+{{#nv_hospital}}<li><a class="m-link-2" href="#hospital">{{t5|Toy hospital}}</a></li>{{/nv_hospital}}
+{{#nv_swap}}<li><a class="m-link-2" href="#swap">{{t127|Swap box}}</a></li>{{/nv_swap}}
+{{#nv_gifts}}<li><a class="m-link-2" href="#gifts">{{t128|Birthday lists}}</a></li>{{/nv_gifts}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t129|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</nav>
+<p class="m-text-5">{{t130|© 2026 ⟦name⟧ Toys Ltd · 1 Admiralty Way, Ikoyi · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t131|8B}}</a></p>
+</div>
+</div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = nav.querySelector('.nav__menu');
+  const close = nav.querySelector('.nav__close');
+  const links = nav.querySelector('.nav__links');
+  let last = window.scrollY;
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (nav.hasAttribute('data-open')) { last = y; return; }
+    if (y > last + 2 && y > 80) nav.setAttribute('data-hidden', '');
+    else if (y < last - 2) nav.removeAttribute('data-hidden');
+    nav.setAttribute('data-compact', '');
+    last = y;
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setOpen = open => {
+    nav.toggleAttribute('data-open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); menu.focus(); }
+  };
+  menu.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  links.addEventListener('click', event => { if (event.target.closest('a') && nav.hasAttribute('data-open')) { nav.removeAttribute('data-open'); menu.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && nav.hasAttribute('data-open')) setOpen(false); });
+})();
+</script>
+<script data-8b-part="section-script:tinker">
+(() => {
+  const run = document.querySelector('#tinker .tk-run');
+  if (!run) return;
+  const svg = run.querySelector('.tk-ribbon');
+  const path = svg && svg.querySelector('path');
+  const sessions = [...run.querySelectorAll('.tk-session')];
+  if (!path || !sessions.length) return;
+  const build = () => {
+    const box = run.getBoundingClientRect();
+    const w = run.clientWidth, h = run.clientHeight;
+    if (!w || !h) return;
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    const mid = w / 2;
+    const anchors = sessions.map(session => {
+      const r = (session.querySelector('.tk-card') || session).getBoundingClientRect();
+      const left = r.left - box.left, right = r.right - box.left;
+      const onLeft = (left + right) / 2 < mid;
+      return { x: onLeft ? right - 8 : left + 8, y: r.top - box.top + r.height * .45, onLeft };
+    });
+    const single = anchors.every(a => a.onLeft === anchors[0].onLeft);
+    const bulge = single ? Math.max(14, anchors[0].x * .62) : 0;
+    const first = anchors[0], last = anchors[anchors.length - 1];
+    const points = [{ x: single ? first.x - bulge : mid, y: 0 }, ...anchors, { x: single ? last.x - bulge : mid, y: h }];
+    const prefixes = [];
+    let d = `M${points[0].x.toFixed(1)} ${points[0].y.toFixed(1)}`;
+    for (let i = 1; i < points.length; i++) {
+      const a = points[i - 1], b = points[i], dy = (b.y - a.y) * .55;
+      const ax = i === 1 ? a.x : a.x - bulge, bx = i === points.length - 1 ? b.x : b.x - bulge;
+      d += ` C${ax.toFixed(1)} ${(a.y + dy).toFixed(1)} ${bx.toFixed(1)} ${(b.y - dy).toFixed(1)} ${b.x.toFixed(1)} ${b.y.toFixed(1)}`;
+      prefixes.push(d);
+    }
+    const lengths = prefixes.map(prefix => { path.setAttribute('d', prefix); return path.getTotalLength(); });
+    path.setAttribute('d', d);
+    const total = lengths[lengths.length - 1] || 1;
+    run.dataset.stops = anchors.map((_, i) => (lengths[i] / total).toFixed(4)).join(',');
+    const end = points[points.length - 1];
+    run.style.setProperty('--ball-x', `${end.x}px`);
+    run.style.setProperty('--ball-y', `${end.y}px`);
+  };
+  build();
+  new ResizeObserver(build).observe(run);
+})();
+</script>
+<script data-8b-part="section-script:swap">
+(() => {
+  const frame = document.querySelector('#swap .sw-frame');
+  const notes = document.querySelectorAll('#swap .sw-notes li');
+  if (!frame || !notes.length) return;
+  const rest = notes[notes.length - 1];
+  frame.style.setProperty('--lx', rest.dataset.x || 50);
+  frame.style.setProperty('--ly', rest.dataset.y || 50);
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const logo = document.querySelector('#navigation .nav__logo');
+  const offset = logo ? logo.offsetHeight + 24 : 0;
+  const lenis = window.lenis = new Lenis({ lerp: 0.1, anchors: { offset: -offset } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  tumble(element, vars = {}) {
+    return gsap.timeline(vars).from(element, { y: -60, rotation: gsap.utils.random(-28, 28, 1), duration: .8, ease: 'back.out(2.2)' });
+  },
+  slide(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { xPercent: -14, clipPath: 'inset(0% 100% 0% 0%)' }, { xPercent: 0, clipPath: 'inset(0% 0% 0% 0%)', duration: .75, ease: 'expo.out', clearProps: 'clipPath' });
+  },
+  wiggle(element, vars = {}) {
+    const path = element.querySelector('path') || element;
+    const length = path.getTotalLength();
+    return gsap.timeline(vars).fromTo(path, { strokeDasharray: length, strokeDashoffset: length }, { strokeDashoffset: 0, ease: 'none', duration: 1 });
+  },
+  spin(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { rotation: -120 }, { rotation: 0, ease: 'none', duration: 1 });
+  }
+};
+const effectRanges = {
+  tumble: element => ({ trigger: element, start: 'top 90%', once: true }),
+  slide: element => ({ trigger: element, start: 'top 88%', once: true }),
+  wiggle: element => ({ trigger: element, start: 'top 90%', end: 'bottom 45%', scrub: .6 }),
+  spin: element => ({ trigger: element, start: 'top bottom', end: 'center 42%', scrub: .4 })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const range = effectRanges[name](element);
+        const animation = effects[name](element, { paused: !range.scrub });
+        ScrollTrigger.create({ id: `${id}:${index}`, ...range, animation });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  const section = document.getElementById('opening');
+  const board = section.querySelector('.op-board');
+  const tiles = [...board.querySelectorAll('.op-tile')];
+  
+  const stage = section.querySelector('.op-stage');
+  if (tiles.length < 4 || !stage) throw new Error('opening: board or screens missing');
+  gsap.matchMedia().add({ desk: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 899px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const { desk } = context.conditions;
+    section.setAttribute('data-board', '');
+    const cols = getComputedStyle(board).gridTemplateColumns.split(' ').length;
+    const count = tiles.length;
+    const last = count - 1;
+    let seed = 11;
+    const random = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+    const cellOf = tiles.map((_, i) => i);
+    let hole = last;
+    const moves = [];
+    let previous = -1;
+    while (moves.length < (desk ? 12 : 10)) {
+      const r = Math.floor(hole / cols), c = hole % cols;
+      const options = [[r - 1, c], [r + 1, c], [r, c - 1], [r, c + 1]]
+        .filter(([y, x]) => y >= 0 && x >= 0 && x < cols && y * cols + x < count)
+        .map(([y, x]) => y * cols + x)
+        .filter(cell => cellOf.indexOf(cell) !== previous);
+      const cell = options[Math.floor(random() * options.length)];
+      const tile = cellOf.indexOf(cell);
+      if (tile === last || tile < 0) continue;
+      moves.push({ tile, was: cell, now: hole });
+      cellOf[tile] = hole;
+      hole = cell;
+      previous = tile;
+    }
+    const pitchX = () => tiles[1].offsetLeft - tiles[0].offsetLeft;
+    const pitchY = () => tiles[cols].offsetTop - tiles[0].offsetTop;
+    const dx = (tile, cell) => () => ((cell % cols) - (tile % cols)) * pitchX();
+    const dy = (tile, cell) => () => (Math.floor(cell / cols) - Math.floor(tile / cols)) * pitchY();
+    const solve = gsap.timeline({ scrollTrigger: { id: 'opening', trigger: stage, start: 'top top', end: 'bottom bottom', scrub: .6, invalidateOnRefresh: true } });
+    const started = new Set();
+    const steps = moves.slice().reverse();
+    const current = cellOf.slice();
+    steps.forEach(({ tile, was }, k) => {
+      const at = current[tile];
+      solve.fromTo(tiles[tile], { x: dx(tile, at), y: dy(tile, at) }, { x: dx(tile, was), y: dy(tile, was), duration: .95, ease: 'power3.inOut', immediateRender: !started.has(tile) }, k * 1.05);
+      started.add(tile);
+      current[tile] = was;
+    });
+    const end = (steps.length - 1) * 1.05 + .95;
+    const drop = gsap.fromTo(tiles[last], { x: 0, y: () => -pitchY() * (Math.floor(last / cols) + (desk ? .4 : .32)), rotation: 8, scale: .8 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1.4, ease: 'back.out(1.6)' });
+    solve.add(drop, end);
+    solve.to({}, { duration: solve.duration() / 3 });
+    solve.eventCallback('onUpdate', () => tiles[last].toggleAttribute('data-home', drop.progress() > .96));
+    return () => { section.removeAttribute('data-board'); tiles[last].removeAttribute('data-home'); };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:shelves">
+queueMotion(() => {
+  const section = document.getElementById('shelves');
+  const view = section.querySelector('.sh-view');
+  const track = section.querySelector('.sh-track');
+  const list = section.querySelector('.sh-list');
+  const photos = [...section.querySelectorAll('.sh-photo')];
+  if (!view || !track || !list || !photos.length) throw new Error('shelves: track missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    section.setAttribute('data-track', '');
+    const distance = () => {
+      const style = getComputedStyle(track);
+      const visible = track.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+      return Math.max(0, list.scrollWidth - visible);
+    };
+    const lean = photos.map(photo => gsap.quickTo(photo, 'rotation', { duration: .55, ease: 'power3.out' }));
+    const settle = gsap.delayedCall(.16, () => lean.forEach(to => to(0))).pause();
+    gsap.to(list, {
+      x: () => -distance(),
+      ease: 'none',
+      scrollTrigger: {
+        id: 'shelves', trigger: view, start: 'top top', end: () => `+=${distance()}`, pin: true, scrub: .4, anticipatePin: 1, invalidateOnRefresh: true,
+        onUpdate: self => {
+          const tilt = gsap.utils.clamp(-11, 11, self.getVelocity() / 200);
+          lean.forEach((to, i) => to(tilt * (1 + (i % 3) * .22)));
+          settle.restart(true);
+        }
+      }
+    });
+    return () => { settle.kill(); section.removeAttribute('data-track'); };
+  });
+});
+</script>
+<script data-8b-part="scene:squad">
+queueMotion(() => {
+  const section = document.getElementById('squad');
+  const deck = section.querySelector('.sq-deck');
+  const cards = deck ? [...deck.querySelectorAll('.sq-card')] : [];
+  if (cards.length < 2) throw new Error('squad: deck missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const mid = (cards.length - 1) / 2;
+    const deal = gsap.timeline({ scrollTrigger: { id: 'squad', trigger: deck, start: 'top 88%', end: 'center 52%', scrub: .6, invalidateOnRefresh: true } });
+    cards.forEach((card, i) => {
+      deal.fromTo(card, {
+        x: () => deck.clientWidth / 2 - (card.offsetLeft + card.offsetWidth / 2) + (i - mid) * 14,
+        y: () => (deck.clientHeight / 2 - (card.offsetTop + card.offsetHeight / 2)) * .7 + Math.abs(i - mid) * 10,
+        rotation: (i - mid) * 7
+      }, { x: 0, y: 0, rotation: 0, duration: 1, ease: 'power2.inOut' }, i * .24);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:tinker">
+queueMotion(() => {
+  const section = document.getElementById('tinker');
+  const run = section.querySelector('.tk-run');
+  const path = run && run.querySelector('.tk-ribbon path');
+  const ball = run && run.querySelector('.tk-ball');
+  const sessions = run ? [...run.querySelectorAll('.tk-session')] : [];
+  if (!path || !ball || !sessions.length || !window.MotionPathPlugin) throw new Error('tinker: run missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    let stops = [];
+    const read = () => { stops = (run.dataset.stops || '').split(',').map(Number); };
+    const light = progress => sessions.forEach((session, i) => session.classList.toggle('is-waiting', progress < (stops[i] ?? 0) - .004));
+    read();
+    light(0);
+    gsap.timeline({ scrollTrigger: { id: 'tinker', trigger: run, start: 'top 62%', end: 'bottom 72%', scrub: .5, invalidateOnRefresh: true,
+      onRefresh: self => { read(); light(self.progress); }, onUpdate: self => light(self.progress) } })
+      .to(ball, { motionPath: { path, align: path, alignOrigin: [.5, .5] }, ease: 'none', duration: 1, immediateRender: true });
+    return () => sessions.forEach(session => session.classList.remove('is-waiting'));
+  });
+});
+</script>
+<script data-8b-part="scene:swap">
+queueMotion(() => {
+  const section = document.getElementById('swap');
+  const frame = section.querySelector('.sw-frame');
+  const lens = frame && frame.querySelector('.sw-lens');
+  const inner = lens && lens.querySelector('img');
+  const notes = [...section.querySelectorAll('.sw-notes li')];
+  if (!frame || !lens || !inner || notes.length < 2) throw new Error('swap: lens missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const spots = notes.map(note => ({ x: Number(note.dataset.x) || 50, y: Number(note.dataset.y) || 50 }));
+    const rest = spots[spots.length - 1];
+    const spot = { ...spots[0] };
+    const zoom = () => parseFloat(getComputedStyle(frame).getPropertyValue('--z')) || 2;
+    const lensX = gsap.quickSetter(lens, 'x', 'px'), lensY = gsap.quickSetter(lens, 'y', 'px');
+    const innerX = gsap.quickSetter(inner, 'x', 'px'), innerY = gsap.quickSetter(inner, 'y', 'px');
+    const render = () => {
+      const dx = (spot.x - rest.x) / 100 * frame.clientWidth, dy = (spot.y - rest.y) / 100 * frame.clientHeight, z = zoom();
+      lensX(dx); lensY(dy); innerX(-dx * z); innerY(-dy * z);
+    };
+    const read = gsap.timeline({ onUpdate: render, scrollTrigger: { id: 'swap', trigger: frame, start: 'top 72%', end: 'bottom 38%', scrub: .6, onRefresh: render } });
+    read.to(spot, { x: spots[0].x, duration: .35 });
+    spots.slice(1).forEach((target, i) => {
+      read.to(spot, { x: target.x, y: target.y, duration: 1, ease: 'power2.inOut' })
+        .fromTo(notes[i + 1], { opacity: .32 }, { opacity: 1, duration: .25, ease: 'none' }, '-=.25')
+        .to(spot, { x: target.x, duration: .35 });
+    });
+    render();
+  });
+});
+</script>
+<script data-8b-part="scene:gifts">
+queueMotion(() => {
+  const section = document.getElementById('gifts');
+  const card = section.querySelector('.gf-card');
+  const burst = card && card.querySelector('.gf-burst');
+  const sticker = card && card.querySelector('.gf-sticker');
+  if (!burst || !sticker) throw new Error('gifts: burst missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const cover = () => 3.2 * Math.hypot(card.clientWidth, card.clientHeight) / Math.max(40, burst.clientWidth);
+    gsap.timeline({ scrollTrigger: { id: 'gifts', trigger: card, start: 'top 88%', end: 'top 12%', scrub: .6, invalidateOnRefresh: true } })
+      .fromTo(burst, { scale: cover, rotation: -190 }, { scale: 1, rotation: -12, duration: 1, ease: 'power2.inOut' }, 0)
+      .fromTo(sticker, { scale: .4, rotation: -48, opacity: 0 }, { scale: 1, rotation: -12, opacity: 1, duration: .28, ease: 'back.out(2)' }, .76);
+  });
+});
+</script>
+<script data-8b-part="scene:shop">
+queueMotion(() => {
+  const front = document.querySelector('#shop .sp-front');
+  const shutters = front ? [...front.querySelectorAll('.sp-shutter')] : [];
+  if (!shutters.length) throw new Error('shop: shutters missing');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const roll = gsap.timeline({ scrollTrigger: { id: 'shop', trigger: front, start: 'top 82%', end: 'center 42%', scrub: .5 } });
+    shutters.slice().reverse().forEach((shutter, i) => roll.fromTo(shutter, { scaleY: 1 }, { scaleY: 0, duration: 1, ease: 'power2.inOut' }, i * .32));
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  const list = document.querySelector('#contact .ct-list');
+  const items = list ? [...list.querySelectorAll('.ct-item')] : [];
+  if (!items.length) throw new Error('contact: list missing');
+  gsap.matchMedia().add({ wide: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 899px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const spread = context.conditions.wide ? 1 : .3;
+    const scatter = [[70, 40, -9], [-24, -10, 8], [110, -30, -13], [30, -70, 11]];
+    const tidy = gsap.timeline({ scrollTrigger: { id: 'contact', trigger: list, start: 'top 92%', end: 'top 45%', scrub: .6 } });
+    items.forEach((item, i) => {
+      const [x, y, r] = scatter[i % scatter.length];
+      tidy.fromTo(item, { x: x * spread, y, rotation: r }, { x: 0, y: 0, rotation: 0, duration: 1, ease: 'power2.out' }, i * .14);
+    });
+  });
+});
+</script>
+</body>
+</html>

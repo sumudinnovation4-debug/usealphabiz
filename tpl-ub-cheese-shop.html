@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" rel="preload" type="font/woff2"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f3f3f3;
+  --color-2: #0e0e0e;
+  --color-3: #5c5c5c;
+  --color-4: #d3d3d3;
+  --color-5: #ffffff;
+  --color-6: #a5a5a5;
+  --color-7: #2e2e2e;
+  --font-1: "Geist", "Geist Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(20px, 4.6vw, 72px);
+  --space-2: clamp(96px, 12vw, 180px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101.8%; ascent-override: 99.2%; descent-override: 29.5%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, h4, p, dl, dd, figure, ol, ul { margin: 0; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.skip-link { position: fixed; left: 12px; top: 12px; z-index: 100; padding: 10px 16px; background: var(--color-2); color: var(--color-5); border-radius: var(--radius-1); transform: translateY(-160%); }
+.skip-link:focus-visible { transform: none; outline-color: var(--color-2); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+.lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 8.6vw, 156px); font-weight: 300; line-height: .92; letter-spacing: -.055em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(38px, 5.2vw, 88px); font-weight: 300; line-height: 1; letter-spacing: -.045em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 13px; font-weight: 400; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(17px, 1.45vw, 20px); font-weight: 400; line-height: 1.5; letter-spacing: -.005em; text-transform: none; font-style: normal; color: var(--color-3); }
+
+.m-text-6 { font-family: var(--font-1); font-size: 12vw; font-weight: 300; line-height: .8; letter-spacing: -.06em; text-transform: none; font-style: normal; }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 28px); font-weight: 400; line-height: 1.15; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+
+.m-text-8 { font-family: var(--font-1); font-size: clamp(17px, 1.35vw, 19px); font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-6); }
+
+.m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { transition: color .35s ease; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: scaleY(1); }
+  .m-btn:hover .m-btn__label { color: var(--color-1); }
+}
+
+.m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border: 1px solid var(--color-5); border-radius: var(--radius-1); background: transparent; color: var(--color-5); font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-5); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-2__label { transition: color .35s ease; }
+@media (hover: hover) {
+  .m-btn-2:hover::before { transform: scaleY(1); }
+  .m-btn-2:hover .m-btn-2__label { color: var(--color-2); }
+}
+
+.m-link { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 0 12px; color: inherit; font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.3; letter-spacing: 0; text-decoration: none; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; opacity: .45; transform-origin: 100% 50%; }
+.m-link__icon { display: inline-block; font-size: 15px; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-link:hover::after { animation: m-link-redraw .8s cubic-bezier(.7, 0, .2, 1); }
+  .m-link:hover .m-link__icon { transform: translate(3px, -3px); }
+}
+@keyframes m-link-redraw {
+  0% { transform: scaleX(1); transform-origin: 100% 50%; }
+  45% { transform: scaleX(0); transform-origin: 100% 50%; }
+  46% { transform: scaleX(0); transform-origin: 0 50%; }
+  100% { transform: scaleX(1); transform-origin: 0 50%; }
+}
+
+.m-link-2 { position: relative; display: inline-block; padding: 6px 0; color: inherit; font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 100% 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-link-2[aria-current]::after { transform: scaleX(1); }
+@media (hover: hover) {
+  .m-link-2:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+}
+
+.m-icon-btn { position: relative; display: inline-grid; place-content: center; gap: 6px; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.m-icon-btn__line { display: block; width: 26px; height: 1.5px; background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__line:first-child { transform: translateY(-2.5px); }
+  .m-icon-btn:hover .m-icon-btn__line:nth-child(2) { transform: translateY(2.5px); }
+}
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__line:first-child { transform: translateY(3.75px) rotate(45deg); }
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__line:nth-child(2) { transform: translateY(-3.75px) rotate(-45deg); }
+
+.m-label { display: grid; grid-template-columns: 1fr auto; align-items: baseline; column-gap: 14px; row-gap: 8px; padding: 12px 16px 15px; background: var(--color-2); color: var(--color-5); }
+.m-label__meta { font-family: var(--font-1); font-size: 12px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: var(--color-6); }
+.m-label__meta + .m-label__meta { text-align: right; }
+.m-label__name { display: flex; align-items: baseline; gap: 14px; min-width: 0; font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; }
+.m-label__name::after { content: ""; flex: 1 1 24px; min-width: 24px; height: 1px; background: var(--color-7); transform: translateY(-.3em); }
+.m-label__price { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; white-space: nowrap; }
+
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 400; line-height: 1.35; letter-spacing: 0; color: var(--color-6); }
+.m-field__input { width: 100%; min-height: 44px; padding: 8px 0; border: 0; border-bottom: 1px solid var(--color-6); border-radius: 0; background: transparent; color: var(--color-5); font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.4; resize: vertical; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-5); outline-offset: 4px; border-bottom-color: var(--color-5); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto; z-index: 50; color: var(--color-2); transition: transform .5s cubic-bezier(.7, 0, .2, 1), background-color .35s ease; }
+#navigation.is-scrolled { background: var(--color-1); }
+#navigation.is-hidden { transform: translateY(-100%); }
+#navigation .nav__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 76px; padding: 0 var(--space-1); }
+#navigation .nav__brand { justify-self: start; font-family: var(--font-1); font-size: 20px; font-weight: 500; letter-spacing: -.03em; line-height: 1; text-decoration: none; color: inherit; }
+#navigation .nav__links { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; }
+#navigation .nav__menu-btn { justify-self: end; margin-right: -10px; }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; background: var(--color-2); color: var(--color-5); overflow-y: auto; }
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__overlay-top { display: flex; align-items: center; justify-content: space-between; height: 76px; padding: 0 var(--space-1); }
+#navigation .nav__overlay-top .m-icon-btn { margin-right: -10px; }
+#navigation .nav__overlay-links { list-style: none; margin: 0; padding: 4vh var(--space-1); display: grid; align-content: center; gap: 4px; }
+#navigation .nav__overlay-links a { display: inline-block; padding: 4px 0; color: inherit; text-decoration: none; }
+#navigation .nav__overlay-links a .m-text-3 { display: inline-block; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+#navigation .nav__overlay-foot { display: flex; flex-wrap: wrap; gap: 8px 40px; padding: 24px var(--space-1) 32px; border-top: 1px solid var(--color-7); color: var(--color-6); }
+#navigation .nav__overlay-foot a { color: var(--color-5); }
+@media (hover: hover) {
+  #navigation .nav__overlay-links a:hover .m-text-3 { transform: translateX(18px); }
+}
+@media (max-width: 759.98px) {
+  #navigation .nav__bar { grid-template-columns: 1fr auto; height: 64px; }
+  #navigation .nav__bar > nav { display: none; }
+  #navigation .nav__overlay-top { height: 64px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; isolation: isolate; overflow-x: clip; background: var(--color-1); }
+#opening .opening__first { position: relative; height: 100svh; min-height: 620px; }
+#opening .opening__grid { position: absolute; inset: 0; pointer-events: none; }
+#opening .opening__grid span { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--color-4); }
+#opening .opening__grid span:first-child { left: 36%; }
+#opening .opening__grid span:last-child { left: 93%; }
+#opening .opening__flood { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: var(--color-2); transform: scale(.21, .3); transform-origin: 0 100%; }
+#opening .opening__ghost { position: absolute; left: -1.6vw; top: 14.5%; z-index: 0; pointer-events: none; transform-origin: 20% 50%; }
+#opening .opening__ghost-in { display: block; width: max-content; }
+#opening .opening__ghost-in::before { content: attr(data-word); display: block; font-family: var(--font-1); font-size: 13.5vw; font-weight: 300; line-height: .8; letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1px var(--color-4); }
+#opening .opening__text { position: absolute; inset: 0 0 auto; z-index: 4; display: grid; grid-template-columns: 43.7vw 33vw; padding: 23svh 0 0 7.6vw; }
+#opening .opening__title { display: grid; justify-items: start; }
+#opening .opening__line { display: block; white-space: nowrap; }
+#opening .opening__line-in { display: inline-flex; align-items: center; }
+#opening .opening__line:nth-child(2) { padding-left: .62em; }
+#opening .opening__pill { position: relative; display: inline-block; width: 1.18em; height: .44em; margin-left: .22em; border: max(2px, .02em) solid currentColor; border-radius: var(--radius-1); transform: translateY(.06em); }
+#opening .opening__pill::before { content: ""; position: absolute; inset: .07em; border: max(2px, .02em) solid currentColor; border-radius: var(--radius-1); }
+#opening .opening__actions { margin-top: clamp(28px, 4.2vw, 64px); padding-left: .5vw; }
+#opening .opening__aside { display: grid; gap: 26px; align-content: start; padding-top: 2.6svh; }
+#opening .opening__product { position: absolute; left: 21vw; width: 43.5vw; top: 59%; bottom: 0; z-index: 3; }
+#opening .opening__product-in { display: flex; flex-direction: column; height: 100%; }
+#opening .opening__product-photo { position: relative; flex: 1; min-height: 0; overflow: hidden; }
+#opening .opening__product-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#opening .opening__cellar { position: absolute; left: 50vw; right: 0; top: 53%; bottom: -100svh; z-index: 2; clip-path: inset(0% 0% 0% 32%); }
+#opening .opening__cellar-in { position: absolute; inset: 0; overflow: hidden; background: var(--color-2); }
+#opening .opening__cellar-in img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
+#opening .opening__cellar-in::after { content: ""; position: absolute; inset: 0 0 auto; height: 46%; background: linear-gradient(color-mix(in srgb, var(--color-2) 78%, transparent), transparent); }
+#opening .opening__word { position: absolute; left: calc(32% + 2.2vw); top: 5.5svh; z-index: 1; font-size: 11vw; color: var(--color-5); }
+#opening .opening__second { position: relative; min-height: 100svh; background: var(--color-2); color: var(--color-5); padding: 15svh 0 12svh 7.6vw; }
+#opening .opening__copy { position: relative; z-index: 4; display: grid; gap: 30px; width: min(38vw, 620px); }
+#opening .opening__copy .m-text-3 { max-width: 11em; }
+#opening .opening__facts { display: grid; grid-template-columns: auto 1fr; border-top: 1px solid var(--color-7); }
+#opening .opening__facts dt, #opening .opening__facts dd { padding: 12px 0; border-bottom: 1px solid var(--color-7); }
+#opening .opening__facts dt { color: var(--color-6); padding-right: 32px; }
+#opening .opening__copy .m-link { max-width: 360px; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__line-in { animation: opening-rise .9s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .opening__line:nth-child(2) .opening__line-in { animation-delay: .08s; }
+  #opening .opening__product-in { animation: opening-open .95s cubic-bezier(.3, .7, .2, 1) .12s backwards; }
+  #opening .opening__cellar-in { animation: opening-open 1s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .opening__ghost-in { animation: opening-drift 7s ease-in-out infinite alternate; }
+  #opening .opening__cellar-in img { animation: opening-pan 6s ease-in-out infinite alternate; }
+  #opening [data-loop].is-paused { animation-play-state: paused; }
+}
+@keyframes opening-rise { from { transform: translateY(26px); } }
+@keyframes opening-open { from { clip-path: inset(100% 0% 0% 0%); } }
+@keyframes opening-drift { from { transform: translateX(0); } to { transform: translateX(110px); } }
+@keyframes opening-pan { from { transform: scale(1.12) translate(0, 0); } to { transform: scale(1.12) translate(-2.5%, -5.5%); } }
+@media (max-width: 759.98px) {
+  #opening .opening__first { min-height: 740px; }
+  #opening .opening__grid span:first-child { left: 18vw; }
+  #opening .opening__grid span:last-child { left: 66vw; }
+  #opening .opening__flood { transform: scale(.18, .26); }
+  #opening .opening__ghost { left: -4vw; top: 82px; }
+  #opening .opening__ghost-in::before { font-size: 34vw; }
+  #opening .opening__text { display: flex; flex-direction: column; gap: 20px; padding: 100px var(--space-1) 0; }
+  #opening .opening__title { font-size: 15.4vw; }
+  #opening .opening__actions { margin-top: 20px; padding-left: 0; }
+  #opening .opening__aside { gap: 18px; padding-top: 0; }
+  #opening .opening__aside .m-text-5 { font-size: 15px; max-width: 34em; }
+  #opening .opening__product { left: 18vw; width: 46vw; top: 64%; }
+  #opening .opening__product .m-label { padding: 9px 10px 11px; column-gap: 8px; }
+  #opening .opening__product .m-label__name, #opening .opening__product .m-label__price { font-size: 13px; }
+  #opening .opening__product .m-label__name { grid-column: 1 / -1; }
+  #opening .opening__product .m-label__name::after { display: none; }
+  #opening .opening__product .m-label__price { justify-self: start; }
+  #opening .opening__product .m-label__meta { font-size: 11px; }
+  #opening .opening__cellar { left: 50vw; top: 59%; bottom: -26svh; }
+  #opening .opening__word { left: calc(32% + 10px); top: 18px; font-size: 13vw; }
+  #opening .opening__second { padding: 34svh var(--space-1) 12svh; }
+  #opening .opening__copy { width: 100%; gap: 24px; }
+}
+@media (min-width: 760px) and (max-width: 1099.98px) {
+  #opening .opening__text { grid-template-columns: 46vw 38vw; padding-left: var(--space-1); }
+  #opening .opening__product .m-label__name, #opening .opening__product .m-label__price { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="section:counter">
+@layer sections {
+#counter { background: var(--color-1); padding: var(--space-2) 0 0; }
+#counter .counter__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 40px 6vw; align-items: end; padding: 0 var(--space-1); margin-bottom: clamp(48px, 6vw, 96px); }
+#counter .counter__head .m-text-3 { max-width: 9em; }
+#counter .counter__intro { display: grid; gap: 26px; }
+#counter .counter__row { display: flex; align-items: flex-end; gap: .5vw; height: min(80svh, 780px); min-height: 520px; margin: 0; padding: 0; list-style: none; overflow: clip; }
+#counter .counter__item { flex: 1 1 0; min-width: 0; height: calc(var(--h) * 100%); display: flex; flex-direction: column; }
+#counter .counter__photo { position: relative; flex: 1; min-height: 120px; margin: 0; overflow: hidden; background: var(--color-2); }
+#counter .counter__photo img { position: absolute; inset: -6% 0; width: 100%; height: 112%; object-fit: cover; }
+#counter .counter__item .m-label__name { grid-column: 1 / -1; }
+#counter .counter__item .m-label__price { justify-self: start; }
+@media (max-width: 1099.98px) {
+  #counter .counter__item .m-label__name, #counter .counter__item .m-label__price { font-size: 15px; }
+}
+@media (max-width: 759.98px) {
+  #counter .counter__head { grid-template-columns: 1fr; }
+  #counter .counter__row { flex-direction: column; align-items: flex-start; gap: 8px; height: auto; min-height: 0; }
+  #counter .counter__item { flex: none; width: calc(var(--w) * 100%); height: auto; }
+  #counter .counter__photo { flex: none; height: 168px; }
+}
+}
+</style>
+<style data-8b-part="section:cellar">
+@layer sections {
+#cellar { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); }
+#cellar .cellar__head { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 6vw; align-items: end; margin-bottom: clamp(56px, 7vw, 112px); }
+#cellar .cellar__wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; }
+#cellar .cellar__frame-col { position: relative; }
+#cellar .cellar__frame { position: sticky; top: calc(50svh - min(19vw, 34svh)); width: min(38vw, 68svh); aspect-ratio: 1; }
+#cellar .cellar__turn { position: absolute; inset: 0; overflow: hidden; background: var(--color-7); }
+#cellar .cellar__still { position: absolute; inset: -21%; }
+#cellar .cellar__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#cellar .cellar__photo:not(:first-child) { opacity: 0; }
+#cellar .cellar__steps { margin: 0; padding: 0; list-style: none; }
+#cellar .cellar__step { position: relative; display: grid; grid-template-columns: 72px 1fr; align-content: start; gap: 14px 24px; min-height: 46svh; padding: 26px 0 64px; }
+#cellar .cellar__step:last-child { min-height: 0; }
+#cellar .cellar__rule { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--color-7); }
+#cellar .cellar__fill { position: absolute; inset: 0; background: var(--color-5); transform-origin: 0 50%; }
+#cellar .cellar__num { color: var(--color-6); padding-top: 6px; }
+#cellar .cellar__step .m-text-8 { grid-column: 2; max-width: 30em; }
+@media (max-width: 759.98px) {
+  #cellar .cellar__head, #cellar .cellar__wrap { grid-template-columns: 1fr; }
+  #cellar .cellar__wrap { gap: 28px; }
+  #cellar .cellar__frame-col { position: sticky; top: 64px; z-index: 2; padding: 10vw 0; background: var(--color-2); }
+  #cellar .cellar__frame { position: relative; top: 0; width: 46vw; margin: 0 auto; }
+  #cellar .cellar__step { grid-template-columns: 44px 1fr; min-height: 34svh; }
+}
+}
+</style>
+<style data-8b-part="section:milks">
+@layer sections {
+#milks { background: var(--color-1); padding: var(--space-2) 0; }
+#milks .milks__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; padding: 0 var(--space-1); margin-bottom: clamp(48px, 6vw, 96px); }
+#milks .milks__rows { display: grid; gap: .5vw; }
+#milks .milks__row { position: relative; display: grid; grid-template-columns: 40% 1fr; height: min(74svh, 680px); min-height: 460px; overflow: clip; }
+#milks .milks__row--flip { grid-template-columns: 1fr 40%; }
+#milks .milks__photo { position: absolute; inset: 0; margin: 0; overflow: hidden; }
+#milks .milks__photo img { width: 100%; height: 100%; object-fit: cover; }
+#milks .milks__field { position: relative; z-index: 1; grid-column: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: clamp(24px, 2.6vw, 44px); color: var(--color-5); }
+#milks .milks__row--flip .milks__field { grid-column: 2; }
+#milks .milks__field-bg { position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform-origin: 0 50%; }
+#milks .milks__row--flip .milks__field-bg { transform-origin: 100% 50%; }
+#milks .milks__word { font-size: min(19vw, calc(34vw / (var(--len) * .62))); margin-left: -.04em; }
+#milks .milks__copy { display: grid; gap: 14px; max-width: 30em; }
+#milks .milks__list { color: var(--color-6); }
+@media (max-width: 759.98px) {
+  #milks .milks__head { grid-template-columns: 1fr; }
+  #milks .milks__row, #milks .milks__row--flip { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  #milks .milks__field, #milks .milks__row--flip .milks__field { grid-column: 1; grid-row: 1; }
+  #milks .milks__photo { grid-row: 2; }
+  #milks .milks__field { padding: 24px var(--space-1) 28px; gap: 40px; }
+  #milks .milks__field-bg, #milks .milks__row--flip .milks__field-bg { transform-origin: 50% 0; }
+  #milks .milks__photo { position: relative; inset: auto; height: 44svh; min-height: 280px; }
+  #milks .milks__word { font-size: min(40vw, calc(86vw / (var(--len) * .62))); }
+}
+}
+</style>
+<style data-8b-part="section:cut">
+@layer sections {
+#cut { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#cut .cut__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 6vw; align-items: start; }
+#cut .cut__photo { position: relative; aspect-ratio: 4 / 5; margin: 0; overflow: hidden; background: var(--color-4); }
+#cut .cut__photo img { width: 100%; height: 100%; object-fit: cover; }
+#cut .cut__text { display: grid; gap: 28px; padding-top: 4vw; }
+#cut .cut__text .m-text-3 { max-width: 9em; }
+#cut .cut__list { margin: 20px 0 0; padding: 0; list-style: none; }
+#cut .cut__item { position: relative; display: grid; grid-template-columns: minmax(140px, 1fr) 2fr; gap: 8px 24px; padding: 18px 0 20px; }
+#cut .cut__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#cut .cut__item dt { color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #cut .cut__grid { grid-template-columns: 1fr; }
+  #cut .cut__text { padding-top: 0; }
+  #cut .cut__item { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:farms">
+@layer sections {
+#farms { position: relative; background: var(--color-2); color: var(--color-5); padding: var(--space-2) 0; }
+#farms .farms__track { padding: 0 var(--space-1); }
+#farms .farms__intro { display: grid; gap: 26px; align-content: start; max-width: 520px; margin-bottom: 56px; }
+#farms .farms__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 48px 2vw; margin: 0; padding: 0; list-style: none; }
+#farms .farms__panel { display: grid; gap: 10px; align-content: start; }
+#farms .farms__photo { position: relative; aspect-ratio: 4 / 5; margin: 0 0 8px; overflow: hidden; background: var(--color-7); }
+#farms .farms__photo img { position: absolute; top: 0; left: -10%; width: 120%; max-width: none; height: 100%; object-fit: cover; }
+#farms .farms__meta { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px solid var(--color-7); color: var(--color-6); }
+}
+</style>
+<style data-8b-part="section:tastings">
+@layer sections {
+#tastings { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#tastings .tastings__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; margin-bottom: clamp(48px, 5vw, 80px); }
+#tastings .tastings__photo { position: relative; aspect-ratio: 21 / 8; margin: 0 0 clamp(40px, 5vw, 72px); overflow: hidden; background: var(--color-4); }
+#tastings .tastings__photo img { width: 100%; height: 100%; object-fit: cover; }
+#tastings .tastings__list { margin: 0; padding: 0; list-style: none; }
+#tastings .tastings__row { position: relative; display: grid; grid-template-columns: 12% minmax(0, 1fr) 11% 8% auto; gap: 12px 3vw; align-items: baseline; padding: 24px 0 26px; }
+#tastings .tastings__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#tastings .tastings__date { font-size: clamp(21px, 1.9vw, 28px); font-weight: 300; letter-spacing: -.03em; }
+#tastings .tastings__what { display: grid; gap: 6px; }
+#tastings .tastings__what .m-text { color: var(--color-3); }
+#tastings .tastings__seats { color: var(--color-3); }
+#tastings .tastings__row .m-link { min-width: 150px; }
+@media (max-width: 899.98px) {
+  #tastings .tastings__head { grid-template-columns: 1fr; }
+  #tastings .tastings__photo { aspect-ratio: 4 / 3; }
+  #tastings .tastings__row { grid-template-columns: auto 1fr; }
+  #tastings .tastings__what { grid-column: 1 / -1; grid-row: 2; }
+  #tastings .tastings__seats { grid-row: 3; }
+  #tastings .tastings__price { grid-row: 3; justify-self: end; }
+  #tastings .tastings__row .m-link { grid-column: 1 / -1; grid-row: 4; }
+}
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+#club { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#club .club__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; margin-bottom: clamp(48px, 6vw, 96px); }
+#club .club__parcels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2vw; margin: 0; padding: 0; list-style: none; }
+#club .club__parcel { position: relative; display: grid; grid-template-rows: auto 1fr; background: var(--color-7); }
+#club .club__photo { position: relative; aspect-ratio: 4 / 4.4; margin: 0; overflow: hidden; }
+#club .club__photo img { width: 100%; height: 100%; object-fit: cover; }
+#club .club__body { display: grid; gap: 14px; align-content: start; padding: 24px 24px 28px; }
+#club .club__name { font-size: clamp(34px, 3.4vw, 56px); }
+#club .club__price { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0 6px; border-top: 1px solid var(--color-6); }
+#club .club__price strong { font-weight: 400; font-size: 21px; letter-spacing: -.02em; }
+#club .club__body .m-btn-2 { justify-self: start; margin-top: 8px; }
+#club .club__note { margin-top: 32px; max-width: 46em; }
+@media (max-width: 899.98px) {
+  #club .club__head { grid-template-columns: 1fr; }
+  #club .club__parcels { grid-template-columns: 1fr; gap: 20px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#faq .faq__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px 6vw; }
+#faq .faq__head { display: grid; gap: 24px; align-content: start; }
+#faq .faq__list { margin: 0; padding: 0; list-style: none; }
+#faq .faq__item { position: relative; }
+#faq .faq__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#faq details summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq details summary::-webkit-details-marker { display: none; }
+#faq .faq__sign { position: relative; flex: none; width: 18px; height: 18px; }
+#faq .faq__sign::before, #faq .faq__sign::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+#faq .faq__sign::after { transform: rotate(90deg); }
+#faq details[open] .faq__sign::after { transform: rotate(0deg); }
+#faq details p { padding: 0 0 26px; max-width: 38em; color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #faq .faq__grid { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); }
+#visit .visit__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 56px 6vw; align-items: start; }
+#visit .visit__text { display: grid; gap: 30px; }
+#visit .visit__facts { display: grid; grid-template-columns: minmax(96px, auto) 1fr; border-top: 1px solid var(--color-7); }
+#visit .visit__facts dt, #visit .visit__facts dd { padding: 14px 0; border-bottom: 1px solid var(--color-7); }
+#visit .visit__facts dt { color: var(--color-6); padding-right: 28px; }
+#visit .visit__facts dd a { color: inherit; }
+#visit .visit__form { display: grid; gap: 22px; margin-top: 18px; }
+#visit .visit__form .m-btn-2 { justify-self: start; }
+#visit .visit__status { color: var(--color-5); }
+#visit .visit__photo { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); aspect-ratio: 4 / 5; margin: 0; }
+#visit .visit__col { position: relative; overflow: hidden; background: var(--color-7); }
+#visit .visit__col img { position: absolute; top: 0; height: 100%; width: 300%; max-width: none; object-fit: cover; }
+#visit .visit__col:nth-child(1) img { left: 0; }
+#visit .visit__col:nth-child(2) img { left: -100%; }
+#visit .visit__col:nth-child(3) img { left: -200%; }
+@media (max-width: 899.98px) {
+  #visit .visit__grid { grid-template-columns: 1fr; }
+  #visit .visit__photo { order: -1; aspect-ratio: 4 / 3.4; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-1); color: var(--color-2); padding: clamp(64px, 8vw, 120px) var(--space-1) 28px; }
+#footer .footer__cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px 6vw; padding-bottom: clamp(48px, 6vw, 96px); }
+#footer .footer__cols ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; align-content: start; }
+#footer .footer__lead { max-width: 24em; }
+#footer .footer__mark { display: block; font-family: var(--font-1); font-weight: 300; font-size: min(40vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .345))); line-height: .78; letter-spacing: -.065em; margin-left: -.03em; padding-bottom: .04em; }
+#footer .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; padding-top: 22px; margin-top: 18px; border-top: 1px solid var(--color-4); color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #footer .footer__cols { grid-template-columns: 1fr 1fr; }
+  #footer .footer__lead { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="scene-style:farms">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #farms.is-track { height: calc(100svh + var(--farms-travel, 0px)); padding: 0; }
+  #farms.is-track .farms__stage { position: sticky; top: 0; height: 100svh; overflow: clip; display: flex; align-items: center; }
+  #farms.is-track .farms__track { display: flex; align-items: center; gap: 2vw; width: max-content; padding: 0 var(--space-1); }
+  #farms.is-track .farms__intro { flex: none; width: min(34vw, 520px); margin: 0 4vw 0 0; }
+  #farms.is-track .farms__list { display: flex; gap: 2vw; }
+  #farms.is-track .farms__panel { flex: none; width: min(24vw, 46svh); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 759.98px) {
+  #farms.is-track .farms__intro { width: 80vw; margin-right: 6vw; }
+  #farms.is-track .farms__panel { width: min(70vw, 44svh); }
+}
+}
+</style>
+<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+<a class="skip-link" href="#main">{{t1|Skip to content}}</a>
+
+<header data-8b-section="navigation" id="navigation">
+<div class="nav__bar">
+<a class="nav__brand" href="#opening">{{t2|⟦name⟧}}</a>
+<nav aria-label="Main">
+<ul class="nav__links">
+{{#nv_opening}}<li><a aria-current="page" class="m-link-2" href="#opening">{{t3|Home}}</a></li>{{/nv_opening}}
+{{#nv_counter}}<li><a class="m-link-2" href="#counter">{{t4|Cheeses}}</a></li>{{/nv_counter}}
+{{#nv_cellar}}<li><a class="m-link-2" href="#cellar">{{t5|Cellar}}</a></li>{{/nv_cellar}}
+{{#nv_visit}}<li><a class="m-link-2" href="#visit">{{t6|Visit}}</a></li>{{/nv_visit}}
+</ul>
+</nav>
+<button aria-controls="menu" aria-expanded="false" class="m-icon-btn nav__menu-btn" type="button"><span class="m-icon-btn__line"></span><span class="m-icon-btn__line"></span><span class="visually-hidden">{{t7|Menu}}</span></button>
+</div>
+<div aria-label="Menu" aria-modal="true" class="nav__overlay" data-lenis-prevent="" hidden="" id="menu" role="dialog">
+<div class="nav__overlay-top">
+<a class="nav__brand" href="#opening">{{t2|⟦name⟧}}</a>
+<button aria-controls="menu" aria-expanded="true" class="m-icon-btn nav__close" type="button"><span class="m-icon-btn__line"></span><span class="m-icon-btn__line"></span><span class="visually-hidden">{{t8|Close menu}}</span></button>
+</div>
+<ul class="nav__overlay-links">
+{{#nv_counter}}<li><a href="#counter"><span class="m-text-3">{{t9|On the counter}}</span></a></li>{{/nv_counter}}
+{{#nv_cellar}}<li><a href="#cellar"><span class="m-text-3">{{t10|The cellar}}</span></a></li>{{/nv_cellar}}
+{{#nv_milks}}<li><a href="#milks"><span class="m-text-3">{{t11|Three milks}}</span></a></li>{{/nv_milks}}
+{{#nv_farms}}<li><a href="#farms"><span class="m-text-3">{{t12|Our farms}}</span></a></li>{{/nv_farms}}
+{{#nv_tastings}}<li><a href="#tastings"><span class="m-text-3">{{t13|Tastings}}</span></a></li>{{/nv_tastings}}
+{{#nv_club}}<li><a href="#club"><span class="m-text-3">{{t14|Cellar club}}</span></a></li>{{/nv_club}}
+{{#nv_visit}}<li><a href="#visit"><span class="m-text-3">{{t6|Visit}}</span></a></li>{{/nv_visit}}
+</ul>
+<div class="nav__overlay-foot m-text-4">
+<span>{{t15|1 Admiralty Way, Jos}}</span>
+<a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t16|⟦phone⟧}}</a>
+<a data-8b-placeholder="email" href="#ub-contact">{{t17|hello@affina.example}}</a>
+</div>
+</div>
+</header>
+<main id="main">
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="opening__first">
+<div aria-hidden="true" class="opening__grid"><span></span><span></span></div>
+<div aria-hidden="true" class="opening__flood"></div>
+<div aria-hidden="true" class="opening__ghost"><span class="opening__ghost-in" data-loop="" data-word="Rind"></span></div>
+<div class="opening__text">
+<div class="opening__head">
+<h1 class="m-text-2 opening__title" id="opening-title">
+<span class="opening__line"><span class="opening__line-in">{{t18|Ripened}}<span aria-hidden="true" class="opening__pill"></span></span></span>
+<span class="opening__line"><span class="opening__line-in">{{t19|down here}}</span></span>
+</h1>
+<div class="opening__actions">
+<a class="m-btn" href="#visit"><span class="m-btn__label">{{t20|Visit the shop}}</span></a>
+</div>
+</div>
+<div class="opening__aside">
+<p class="m-text-5">{{t21|Farmhouse cheese from seven makers in Oyo State, Somerset and the Jura, finished in the cellar under our shop and cut to order at the counter on Admiralty Way.}}</p>
+<a class="m-link" href="#counter"><span class="m-link__label">{{t22|This week’s wheels}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</div>
+</div>
+<div class="opening__product">
+<div class="opening__product-in">
+<div class="m-label">
+<span class="m-label__meta">{{t23|Cow · raw milk}}</span><span class="m-label__meta">{{t24|22 months}}</span>
+<span class="m-label__name">{{t25|Fossdyke Cloth Cheddar}}</span><span class="m-label__price">{{t26|₦19,000 / kg}}</span>
+</div>
+<figure class="opening__product-photo">
+<img alt="Three large wheels of hard cheese cut into wedges on the counter" height="2415" src="{{i1|https://images.unsplash.com/photo-1788601988339-3741cdab6fe9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#404040" width="3867"/>
+</figure>
+</div>
+</div>
+<div class="opening__cellar">
+<div class="opening__cellar-in">
+<img alt="Blocks of cheese resting on wooden shelves in a dark stone cellar" data-loop="" fetchpriority="high" height="5184" sizes="(max-width: 767px) 253px, 77vw" src="{{i2|https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=990&q=60}}" srcset="{{i3|https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=760&q=60}} 760w, {{i2|https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=990&q=60}} 990w" style="background:#262626" width="3888"/>
+</div>
+<span aria-hidden="true" class="m-text-6 opening__word">{{t27|Cave}}</span>
+</div>
+</div>
+<div class="opening__second">
+<div class="opening__copy">
+<h2 class="m-text-3">{{t28|Eleven degrees and a lot of patience}}</h2>
+<p class="m-text-8">{{t29|Young wheels come straight from the farms and go downstairs. We wash the rinds, brush them, turn every wheel by hand and taste each one with an iron until it is ready: three weeks for a goat’s log, two years for a cloth-bound Cheddar.}}</p>
+<dl class="opening__facts m-text">
+<dt class="m-text-4">{{t30|Temperature}}</dt><dd>{{t31|11 °C, all year}}</dd>
+<dt class="m-text-4">{{t32|Humidity}}</dt><dd>{{t33|92 per cent}}</dd>
+<dt class="m-text-4">{{t34|Turned}}</dt><dd>{{t35|Every Thursday, by hand}}</dd>
+</dl>
+<a class="m-link" href="#cellar"><span class="m-link__label">{{t36|How the cellar works}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_counter}}<section aria-labelledby="counter-title" data-8b-section="counter" id="counter">
+<div class="counter__head">
+<h2 class="m-text-3" id="counter-title">{{t37|On the counter this week}}</h2>
+<div class="counter__intro">
+<p class="m-text-5">{{t38|Everything is cut from the whole wheel while you wait, from 100 g. Prices are per kilo; ask for a taste of anything before you buy.}}</p>
+<a class="m-link" href="#visit"><span class="m-link__label">{{t39|Order for collection}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</div>
+</div>
+<ul class="counter__row">
+<li class="counter__item" style="--h:.8;--w:1">
+<div class="m-label">
+<span class="m-label__meta">{{t23|Cow · raw milk}}</span><span class="m-label__meta">{{t24|22 months}}</span>
+<span class="m-label__name">{{t25|Fossdyke Cloth Cheddar}}</span><span class="m-label__price">{{t26|₦19,000 / kg}}</span>
+</div>
+<figure class="counter__photo"><img alt="Crumbly pieces of cloth-bound cheese on a dark wooden board" height="5472" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1654184735305-c4d304006f15?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2xvdGhib3VuZCUyMGNoZWRkYXJ8ZW58MXwxfHx8MTc5MTQxMTgzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=620&q=60}}" style="background:#260c0c" width="3648"/></figure>
+</li>
+<li class="counter__item" style="--h:.62;--w:.86">
+<div class="m-label">
+<span class="m-label__meta">{{t40|Cow · pasteurised}}</span><span class="m-label__meta">{{t41|14 weeks}}</span>
+<span class="m-label__name">{{t42|Hartside Blue}}</span><span class="m-label__price">{{t43|₦17,000 / kg}}</span>
+</div>
+<figure class="counter__photo"><img alt="A wedge of creamy blue cheese on a plate beside honey" height="5041" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1595404640725-f179aff5ab1c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Ymx1ZSUyMGNoZWVzZXxlbnwxfDF8fHwxNzkxNDExODM0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=540&q=60}}" style="background:#d9d9d9" width="3361"/></figure>
+</li>
+<li class="counter__item" style="--h:1;--w:.94">
+<div class="m-label">
+<span class="m-label__meta">{{t23|Cow · raw milk}}</span><span class="m-label__meta">{{t44|24 months}}</span>
+<span class="m-label__name">{{t45|Comté, Mont Vachère}}</span><span class="m-label__price">{{t46|₦21,000 / kg}}</span>
+</div>
+<figure class="counter__photo"><img alt="The rind of a large alpine wheel with its stamped label" height="5563" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1607474485810-259c5552ba7d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2xvdGhib3VuZCUyMGNoZWRkYXJ8ZW58MXwxfHx8MTc5MTQxMTgzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#f3f3f3" width="3709"/></figure>
+</li>
+<li class="counter__item" style="--h:.72;--w:.78">
+<div class="m-label">
+<span class="m-label__meta">{{t47|Goat · raw milk}}</span><span class="m-label__meta">{{t48|3 weeks}}</span>
+<span class="m-label__name">{{t49|Ashgrove Crottin}}</span><span class="m-label__price">{{t50|₦2,000 each}}</span>
+</div>
+<figure class="counter__photo"><img alt="Small fresh goat’s cheeses topped with berries on a tray" height="4032" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1568092219855-24d322238fbd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z29hdCUyMGNoZWVzZSUyMGxvZ3xlbnwxfDF8fHwxNzkxNDExODM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=490&q=60}}" style="background:#d9d9d9" width="3024"/></figure>
+</li>
+<li class="counter__item" style="--h:.54;--w:.9">
+<div class="m-label">
+<span class="m-label__meta">{{t51|Ewe · raw milk}}</span><span class="m-label__meta">{{t52|6 months}}</span>
+<span class="m-label__name">{{t53|Wensley Ewe}}</span><span class="m-label__price">{{t54|₦22,000 / kg}}</span>
+</div>
+<figure class="counter__photo"><img alt="A wedge of pale hard sheep’s cheese on a wooden board" height="3936" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1655662844300-e59c3d2e7587?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c2hlZXAlMjBtaWxrJTIwY2hlZXNlfGVufDF8MXx8fDE3OTE0MTE4Mzd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#d9c073" width="2214"/></figure>
+</li>
+</ul>
+</section>{{/sec_counter}}
+
+{{#sec_cellar}}<section aria-labelledby="cellar-title" data-8b-section="cellar" id="cellar">
+<div class="cellar__head">
+<h2 class="m-text-3" id="cellar-title">{{t55|What the cellar does}}</h2>
+<p class="m-text-8">{{t56|Cheese leaves the farm young. The last weeks or months decide how it tastes, and they happen forty steps below the shop.}}</p>
+</div>
+<div class="cellar__wrap">
+<div class="cellar__frame-col">
+<div class="cellar__frame">
+<div class="cellar__turn">
+<div class="cellar__still">
+<img alt="Rows of young white cheeses resting on a tray" class="cellar__photo" height="2667" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1624806992221-12d8062c35e5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#a6a6a6" width="4000"/>
+<img alt="Close-up of a mottled orange rind on a cellar rack" class="cellar__photo" height="3168" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1635714173187-b92c28706491?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwcmluZCUyMGNsb3NldXB8ZW58MXwwfHx8MTc5MTQxMTgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#40260c" width="4752"/>
+<img alt="Hands lifting a round cheese off a cellar shelf" class="cellar__photo" height="2848" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1642702614835-4e2e8058edcc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#402626" width="4288"/>
+<img alt="Two stacked wheels with rough grey rinds, seen up close" class="cellar__photo" height="9024" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1709629605706-37445ecf6ebd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3V0JTIwY2hlZXNlJTIwd2hlZWwlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MTE3OTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=930&q=60}}" style="background:#8c8c59" width="12032"/>
+<img alt="Large cheese wheels on wooden shelves in a maturing room" class="cellar__photo" height="2268" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1650969788858-3e19f17072e0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1230&q=60}}" style="background:#c0a68c" width="4032"/>
+</div>
+</div>
+</div>
+</div>
+<ol class="cellar__steps">
+<li class="cellar__step">
+<span aria-hidden="true" class="cellar__rule"><span class="cellar__fill"></span></span>
+<span class="m-text-4 cellar__num">{{t57|Step 1}}</span>
+<h3 class="m-text-7">{{t58|Arrive}}</h3>
+<p class="m-text-8">{{t59|Wheels come in from the makers at a few weeks old and rest for a day before anyone touches them.}}</p>
+</li>
+<li class="cellar__step">
+<span aria-hidden="true" class="cellar__rule"><span class="cellar__fill"></span></span>
+<span class="m-text-4 cellar__num">{{t60|Step 2}}</span>
+<h3 class="m-text-7">{{t61|Wash and brush}}</h3>
+<p class="m-text-8">{{t62|Washed rinds get a brine wipe twice a week; natural rinds are brushed so the moulds stay even.}}</p>
+</li>
+<li class="cellar__step">
+<span aria-hidden="true" class="cellar__rule"><span class="cellar__fill"></span></span>
+<span class="m-text-4 cellar__num">{{t63|Step 3}}</span>
+<h3 class="m-text-7">{{t64|Turn}}</h3>
+<p class="m-text-8">{{t65|Every Thursday each wheel is turned by hand, so the moisture stays even through the paste.}}</p>
+</li>
+<li class="cellar__step">
+<span aria-hidden="true" class="cellar__rule"><span class="cellar__fill"></span></span>
+<span class="m-text-4 cellar__num">{{t66|Step 4}}</span>
+<h3 class="m-text-7">{{t67|Taste with an iron}}</h3>
+<p class="m-text-8">{{t68|We pull a core with a cheese iron, taste it and put the plug back. Nothing goes upstairs before it’s right.}}</p>
+</li>
+<li class="cellar__step">
+<span aria-hidden="true" class="cellar__rule"><span class="cellar__fill"></span></span>
+<span class="m-text-4 cellar__num">{{t69|Step 5}}</span>
+<h3 class="m-text-7">{{t70|Bring it up}}</h3>
+<p class="m-text-8">{{t71|Ready wheels go up to the counter, where they are cut to order and wrapped in waxed paper.}}</p>
+</li>
+</ol>
+</div>
+</section>{{/sec_cellar}}
+
+{{#sec_milks}}<section aria-labelledby="milks-title" data-8b-section="milks" id="milks">
+<div class="milks__head">
+<h2 class="m-text-3" id="milks-title">{{t72|Three milks, three tempers}}</h2>
+<p class="m-text-5">{{t73|The milk sets a cheese’s character long before the cellar does. Ask at the counter and we’ll cut you a sliver of each.}}</p>
+</div>
+<div class="milks__rows">
+<article class="milks__row">
+<figure class="milks__photo"><img alt="A brown Jersey cow standing in a green field" height="4000" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1637906212803-5878175b5376?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZGFpcnklMjBjb3clMjBwb3J0cmFpdHxlbnwxfDB8fHwxNzkxNDExODYwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#8c8c73" width="6000"/></figure>
+<div class="milks__field">
+<span aria-hidden="true" class="milks__field-bg"></span>
+<h3 class="m-text-6 milks__word" style="--len:3">{{t74|Cow}}</h3>
+<div class="milks__copy">
+<p class="m-text">{{t75|The long keepers. Cloth-bound Cheddars, alpine wheels and the blues: sweet, savoury and built to age for years.}}</p>
+<p class="m-text-4 milks__list">{{t76|Fossdyke Cloth Cheddar · Comté · Hartside Blue}}</p>
+</div>
+</div>
+</article>
+<article class="milks__row milks__row--flip">
+<figure class="milks__photo"><img alt="Sheep grazing on a green hillside under a blue sky" height="3448" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1763105997556-03e857b94923?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2hlZXAlMjBmbG9jayUyMGhpbGxzaWRlfGVufDF8MHx8fDE3OTE0MTE4NjB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#26400c" width="4592"/></figure>
+<div class="milks__field">
+<span aria-hidden="true" class="milks__field-bg"></span>
+<h3 class="m-text-6 milks__word" style="--len:3">{{t77|Ewe}}</h3>
+<div class="milks__copy">
+<p class="m-text">{{t78|Richer and nuttier, with more fat and a sweetness that turns to caramel as the wheel ages.}}</p>
+<p class="m-text-4 milks__list">{{t79|Wensley Ewe · Coombe Tomme · Old Ewe Pecorino}}</p>
+</div>
+</div>
+</article>
+<article class="milks__row">
+<figure class="milks__photo"><img alt="Goats grazing on a mountain pasture" height="5304" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1568924352485-cc50a5b7f53b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z29hdCUyMGhlcmQlMjBtb3VudGFpbnxlbnwxfDB8fHwxNzkxNDExODYxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1280&q=60}}" style="background:#c0d9f3" width="7952"/></figure>
+<div class="milks__field">
+<span aria-hidden="true" class="milks__field-bg"></span>
+<h3 class="m-text-6 milks__word" style="--len:4">{{t80|Goat}}</h3>
+<div class="milks__copy">
+<p class="m-text">{{t81|Bright, lemony and best young: ash-dusted logs, crottins and the odd round wrapped in a chestnut leaf.}}</p>
+<p class="m-text-4 milks__list">{{t82|Ashgrove Crottin · Ashgrove Log · Leaf-wrapped round}}</p>
+</div>
+</div>
+</article>
+</div>
+</section>{{/sec_milks}}
+
+{{#sec_cut}}<section aria-labelledby="cut-title" data-8b-section="cut" id="cut">
+<div class="cut__grid">
+<figure class="cut__photo" data-8b-motion="step"><img alt="A cheesemonger cutting into a large wheel of hard cheese" height="4912" loading="lazy" src="{{i17|https://images.unsplash.com/photo-1590672173485-27900f8f3082?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y3V0dGluZyUyMGNoZWVzZSUyMHdoZWVsJTIwa25pZmV8ZW58MXwwfHx8MTc5MTQxMTgzOHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#c0a640" width="7360"/></figure>
+<div class="cut__text">
+<h2 class="m-text-3" data-8b-motion="rise" id="cut-title">{{t83|Cut to order, wrapped in paper}}</h2>
+<p class="m-text-5">{{t84|We cut from the wheel while you watch, weigh it in front of you and wrap it in waxed paper. Cling film suffocates a rind; paper lets it breathe.}}</p>
+<dl class="cut__list m-text">
+<div class="cut__item"><span aria-hidden="true" class="cut__rule" data-8b-motion="rule"></span><dt>{{t85|For a board}}</dt><dd>{{t86|Around 100 g a person, across three cheeses.}}</dd></div>
+<div class="cut__item"><span aria-hidden="true" class="cut__rule" data-8b-motion="rule"></span><dt>{{t87|As the main event}}</dt><dd>{{t88|150 g a person, with bread and something sharp.}}</dd></div>
+<div class="cut__item"><span aria-hidden="true" class="cut__rule" data-8b-motion="rule"></span><dt>{{t89|At home}}</dt><dd>{{t90|In its paper, in the salad drawer, for up to two weeks.}}</dd></div>
+<div class="cut__item"><span aria-hidden="true" class="cut__rule" data-8b-motion="rule"></span><dt>{{t91|Before eating}}</dt><dd>{{t92|Out of the fridge an hour ahead, still wrapped.}}</dd></div>
+</dl>
+</div>
+</div>
+</section>{{/sec_cut}}
+
+{{#sec_farms}}<section aria-labelledby="farms-title" data-8b-section="farms" id="farms">
+<div class="farms__stage">
+<div class="farms__track">
+<div class="farms__intro">
+<h2 class="m-text-3" id="farms-title">{{t93|Seven farms we buy from}}</h2>
+<p class="m-text-8">{{t94|We buy whole wheels straight from the people who make them, and visit every farm at least once a year to taste in their own cellars.}}</p>
+</div>
+<ul class="farms__list">
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="Green fields under a grey sky in the Dales" height="4016" loading="lazy" src="{{i18|https://images.unsplash.com/photo-1575497749278-5f6b0c41ba3b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8eW9ya3NoaXJlJTIwZGFsZXMlMjBmYXJtfGVufDF8MHx8fDE3OTE0MTE5MzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#73730c" width="6016"/></figure>
+<h3 class="m-text-7">{{t95|Fossdyke Farm}}</h3>
+<p class="m-text-8">{{t96|Swaledale, North Oyo State}}</p>
+<p class="m-text-4 farms__meta"><span>{{t74|Cow}}</span><span>{{t97|Cloth-bound Cheddar}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="Cows grazing in a foggy pasture at dawn" height="1833" loading="lazy" src="{{i19|https://images.unsplash.com/photo-1745394496911-af9423da537a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZGFpcnklMjBmYXJtJTIwbW9ybmluZyUyMG1pc3R8ZW58MXwwfHx8MTc5MTQxMTkzN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#a6c0d9" width="2750"/></figure>
+<h3 class="m-text-7">{{t98|Hartside Dairy}}</h3>
+<p class="m-text-8">{{t99|Teesdale, County Durham}}</p>
+<p class="m-text-4 farms__meta"><span>{{t74|Cow}}</span><span>{{t42|Hartside Blue}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="A herd of white goats grazing in a dry field" height="4000" loading="lazy" src="{{i20|https://images.unsplash.com/photo-1758716147204-5397d5e1dacb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z29hdCUyMGhlcmQlMjBtb3VudGFpbnxlbnwxfDB8fHwxNzkxNDExODYxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#c0c0c0" width="6000"/></figure>
+<h3 class="m-text-7">{{t100|Ashgrove Goats}}</h3>
+<p class="m-text-8">{{t101|The Mendips, Somerset}}</p>
+<p class="m-text-4 farms__meta"><span>{{t80|Goat}}</span><span>{{t102|Crottins and logs}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="A farmer kneeling beside a cow in a field" height="4000" loading="lazy" src="{{i21|https://images.unsplash.com/photo-1735806366224-4aa27f160cf0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZmFybWVyJTIwbWlsa2luZ3xlbnwxfDB8fHwxNzkxNDExOTM0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#c0c0c0" width="6000"/></figure>
+<h3 class="m-text-7">{{t103|Fruitière de Mont Vachère}}</h3>
+<p class="m-text-8">{{t104|Haut-Jura, France}}</p>
+<p class="m-text-4 farms__meta"><span>{{t74|Cow}}</span><span>{{t105|Comté}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="Sheep walking along a grassy mountain slope" height="4000" loading="lazy" src="{{i22|https://images.unsplash.com/photo-1760900383891-cc486f692bdd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2hlZXAlMjBmbG9jayUyMGhpbGxzaWRlfGVufDF8MHx8fDE3OTE0MTE4NjB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#40400c" width="6000"/></figure>
+<h3 class="m-text-7">{{t106|Wensley Fold}}</h3>
+<p class="m-text-8">{{t107|Wensleydale, North Oyo State}}</p>
+<p class="m-text-4 farms__meta"><span>{{t77|Ewe}}</span><span>{{t53|Wensley Ewe}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="A stone farmhouse on a snow-dusted hillside" height="2736" loading="lazy" src="{{i23|https://images.unsplash.com/photo-1761837861354-e56e58805645?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c3RvbmUlMjBiYXJuJTIwY291bnRyeXNpZGV8ZW58MXwwfHx8MTc5MTQxMTkzMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=920&q=60}}" style="background:#c0a68c" width="3648"/></figure>
+<h3 class="m-text-7">{{t108|High Lathe}}</h3>
+<p class="m-text-8">{{t109|Nidderdale, North Oyo State}}</p>
+<p class="m-text-4 farms__meta"><span>{{t74|Cow}}</span><span>{{t110|Washed-rind rounds}}</span></p>
+</li>
+<li class="farms__panel">
+<figure class="farms__photo"><img alt="Green hills and trees under heavy cloud" height="4016" loading="lazy" src="{{i24|https://images.unsplash.com/photo-1572289502196-06c5e48872e8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8eW9ya3NoaXJlJTIwZGFsZXMlMjBmYXJtfGVufDF8MHx8fDE3OTE0MTE5MzB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1040&q=60}}" style="background:#597326" width="6016"/></figure>
+<h3 class="m-text-7">{{t111|Coombe Bottom}}</h3>
+<p class="m-text-8">{{t112|The Quantocks, Somerset}}</p>
+<p class="m-text-4 farms__meta"><span>{{t77|Ewe}}</span><span>{{t113|Coombe Tomme}}</span></p>
+</li>
+</ul>
+</div>
+</div>
+</section>{{/sec_farms}}
+
+{{#sec_tastings}}<section aria-labelledby="tastings-title" data-8b-section="tastings" id="tastings">
+<div class="tastings__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="tastings-title">{{t114|Thursdays in the cellar}}</h2>
+<p class="m-text-5">{{t115|Once a month we set a long table between the shelves and taste our way through one idea. Bread, pickles and a matched glass are included.}}</p>
+</div>
+<figure class="tastings__photo" data-8b-motion="step"><img alt="A candle-lit table laid with cheeses and wine" height="3934" loading="lazy" src="{{i25|https://images.unsplash.com/photo-1707037489765-1a12e1f90164?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2hlZXNlJTIwdGFzdGluZyUyMGV2ZW5pbmclMjB3aW5lfGVufDF8MHx8fDE3OTE0MTE4NjR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1170&q=60}}" style="background:#260c0c" width="5867"/></figure>
+<ul class="tastings__list">
+<li class="tastings__row">
+<span aria-hidden="true" class="tastings__rule" data-8b-motion="rule"></span>
+<time class="tastings__date" datetime="2026-11-05">{{t116|5 Nov}}</time>
+<div class="tastings__what"><h3 class="m-text-7">{{t117|Alpine wheels, young to old}}</h3><p class="m-text">{{t118|Four Comtés, from eight to thirty months.}}</p></div>
+<span class="m-text-4 tastings__seats">{{t119|14 seats}}</span>
+<span class="m-text tastings__price">{{t120|₦19,000}}</span>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t121|Book a seat}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</li>
+<li class="tastings__row">
+<span aria-hidden="true" class="tastings__rule" data-8b-motion="rule"></span>
+<time class="tastings__date" datetime="2026-12-03">{{t122|3 Dec}}</time>
+<div class="tastings__what"><h3 class="m-text-7">{{t123|Blue, three ways}}</h3><p class="m-text">{{t124|A cow’s blue, a sheep’s blue and a soft goat’s blue.}}</p></div>
+<span class="m-text-4 tastings__seats">{{t119|14 seats}}</span>
+<span class="m-text tastings__price">{{t125|₦18,000}}</span>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t121|Book a seat}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</li>
+<li class="tastings__row">
+<span aria-hidden="true" class="tastings__rule" data-8b-motion="rule"></span>
+<time class="tastings__date" datetime="2027-01-07">{{t126|7 Jan}}</time>
+<div class="tastings__what"><h3 class="m-text-7">{{t127|Cloth and wax}}</h3><p class="m-text">{{t128|Why a cloth-bound Cheddar tastes the way it does.}}</p></div>
+<span class="m-text-4 tastings__seats">{{t119|14 seats}}</span>
+<span class="m-text tastings__price">{{t125|₦18,000}}</span>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t121|Book a seat}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</li>
+<li class="tastings__row">
+<span aria-hidden="true" class="tastings__rule" data-8b-motion="rule"></span>
+<time class="tastings__date" datetime="2027-02-04">{{t129|4 Feb}}</time>
+<div class="tastings__what"><h3 class="m-text-7">{{t130|Goats in winter}}</h3><p class="m-text">{{t131|Late-season goat’s milk and what the cellar does with it.}}</p></div>
+<span class="m-text-4 tastings__seats">{{t119|14 seats}}</span>
+<span class="m-text tastings__price">{{t132|₦17,000}}</span>
+<a class="m-link" data-8b-placeholder="email" href="#ub-contact"><span class="m-link__label">{{t121|Book a seat}}</span><span aria-hidden="true" class="m-link__icon">↗</span></a>
+</li>
+</ul>
+</section>{{/sec_tastings}}
+
+{{#sec_club}}<section aria-labelledby="club-title" data-8b-section="club" id="club">
+<div class="club__head">
+<h2 class="m-text-3" id="club-title">{{t133|The cellar club}}</h2>
+<p class="m-text-8">{{t134|A parcel on the first Friday of every month: whatever is best in the cellar right now, cut that morning, with notes from whoever turned it.}}</p>
+</div>
+<ul class="club__parcels">
+<li class="club__parcel">
+<figure class="club__photo"><img alt="Three cheeses with figs and jam on a dark board" height="3463" loading="lazy" src="{{i26|https://images.unsplash.com/photo-1775203308520-b44f5ff4492c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Ymx1ZSUyMGNoZWVzZXxlbnwxfDF8fHwxNzkxNDExODM0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#0c2626" width="2362"/></figure>
+<div class="club__body">
+<h3 class="m-text-3 club__name">{{t135|Pair}}</h3>
+<p class="m-text-8">{{t136|Two cheeses, about 400 g, one hard and one soft.}}</p>
+<p class="club__price m-text-4"><span>{{t137|Every month}}</span><strong>{{t138|₦12,000}}</strong></p>
+<a class="m-btn-2" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn-2__label">{{t139|Join with Pair}}</span></a>
+</div>
+</li>
+<li class="club__parcel">
+<figure class="club__photo"><img alt="A wooden board of cut cheeses, grapes and nuts" height="5600" loading="lazy" src="{{i27|https://images.unsplash.com/photo-1700760933443-84ef4f5feac4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwYm9hcmQlMjB3b29kZW58ZW58MXwxfHx8MTc5MTQxMTkzNXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#595959" width="4480"/></figure>
+<div class="club__body">
+<h3 class="m-text-3 club__name">{{t140|Board}}</h3>
+<p class="m-text-8">{{t141|Three cheeses, about 750 g, with oatcakes and a jar of chutney.}}</p>
+<p class="club__price m-text-4"><span>{{t137|Every month}}</span><strong>{{t142|₦19,500}}</strong></p>
+<a class="m-btn-2" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn-2__label">{{t143|Join with Board}}</span></a>
+</div>
+</li>
+<li class="club__parcel">
+<figure class="club__photo"><img alt="Halves of large cheese wheels stacked on a wooden table" height="5472" loading="lazy" src="{{i28|https://images.unsplash.com/photo-1654184750621-1110fe5afcdc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2hlZXAlMjBtaWxrJTIwY2hlZXNlfGVufDF8MXx8fDE3OTE0MTE4Mzd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=560&q=60}}" style="background:#260c0c" width="3648"/></figure>
+<div class="club__body">
+<h3 class="m-text-3 club__name">{{t5|Cellar}}</h3>
+<p class="m-text-8">{{t144|Five cheeses, about 1.2 kg, always including one small whole wheel.}}</p>
+<p class="club__price m-text-4"><span>{{t137|Every month}}</span><strong>{{t145|₦31,000}}</strong></p>
+<a class="m-btn-2" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn-2__label">{{t146|Join with Cellar}}</span></a>
+</div>
+</li>
+</ul>
+<p class="m-text-8 club__note">{{t147|Pause or cancel any month. Free delivery in Jos; ₦3,000 by next-day courier anywhere else in mainland Nigeria.}}</p>
+</section>{{/sec_club}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" data-8b-section="faq" id="faq">
+<div class="faq__grid">
+<div class="faq__head">
+<h2 class="m-text-3" data-8b-motion="rise" id="faq-title">{{t148|Questions at the counter}}</h2>
+<p class="m-text-5">{{t149|Anything else, ask us in the shop or by email.}}</p>
+</div>
+<ul class="faq__list">
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t150|Do you post cheese?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t151|Yes: Tuesday to Thursday, by next-day courier in insulated boxes, anywhere in mainland Nigeria. We don’t post on Fridays, so nothing sits in a depot over the weekend.}}</p></details></li>
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t152|How long will it keep?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t153|Hard cheeses keep two to three weeks in their paper in the salad drawer; soft and fresh cheeses about a week. Re-wrap in fresh paper if the old one turns greasy.}}</p></details></li>
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t154|Can you cut a whole wheel for a wedding?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t155|Gladly: stacked wheels, whole cheeses and long boards for any number of guests. Give us two weeks’ notice for the big wheels.}}</p></details></li>
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t156|Is it all raw-milk cheese?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t157|Most of it, and every label says which. If you’re pregnant or avoiding raw milk, ask and we’ll point you to the pasteurised ones.}}</p></details></li>
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t158|Do you have vegetarian cheeses?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t159|About half the counter uses vegetarian rennet, and the label strip says so.}}</p></details></li>
+<li class="faq__item"><span aria-hidden="true" class="faq__rule" data-8b-motion="rule"></span><details><summary class="m-text-7">{{t160|Can I bring my own containers?}}<span aria-hidden="true" class="faq__sign"></span></summary><p class="m-text">{{t161|Yes. We weigh your box first and cut straight into it.}}</p></details></li>
+</ul>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_visit}}<section aria-labelledby="visit-title" data-8b-section="visit" id="visit">
+<div class="visit__grid">
+<div class="visit__text">
+<h2 class="m-text-3" id="visit-title">{{t162|Come downstairs}}</h2>
+<p class="m-text-8">{{t163|The shop is on Admiralty Way, a few doors from the river. On Saturdays the cellar is open for a look: just ask at the counter.}}</p>
+<dl class="visit__facts m-text">
+<dt class="m-text-4">{{t164|Address}}</dt><dd>{{t15|1 Admiralty Way, Jos}}</dd>
+<dt class="m-text-4">{{t165|Hours}}</dt><dd>{{t166|Tuesday to Friday 9.30–18.00}}<br/>{{t167|Saturday 9.00–17.30}}<br/>{{t168|Sunday 10.00–16.00, closed Monday}}</dd>
+<dt class="m-text-4">{{t169|Phone}}</dt><dd><a data-8b-placeholder="phone" href="tel:{{telraw}}">{{t16|⟦phone⟧}}</a></dd>
+<dt class="m-text-4">{{t170|Email}}</dt><dd><a data-8b-placeholder="email" href="#ub-contact">{{t17|hello@affina.example}}</a></dd>
+</dl>
+
+</div>
+<figure class="visit__photo">
+<div class="visit__col"><img alt="Wheels of cheese in wooden crates on the shop’s shelves" height="4000" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=930&q=60}}" style="background:#734026" width="6000"/></div>
+<div aria-hidden="true" class="visit__col"><img alt="" height="4000" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=930&q=60}}" style="background:#734026" width="6000"/></div>
+<div aria-hidden="true" class="visit__col"><img alt="" height="4000" loading="lazy" src="{{i29|https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=930&q=60}}" style="background:#734026" width="6000"/></div>
+</figure>
+</div>
+</section>{{/sec_visit}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Cheese Shop by <a href="https://github.com/8bsite/cheese-shop-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
+<div class="footer__cols">
+<p class="m-text-5 footer__lead">{{t171|Cheesemonger and maturing cellar. Farmhouse cheese, finished below the shop and cut to order.}}</p>
+<ul>
+{{#nv_counter}}<li><a class="m-link-2" href="#counter">{{t4|Cheeses}}</a></li>{{/nv_counter}}
+{{#nv_cellar}}<li><a class="m-link-2" href="#cellar">{{t5|Cellar}}</a></li>{{/nv_cellar}}
+{{#nv_club}}<li><a class="m-link-2" href="#club">{{t14|Cellar club}}</a></li>{{/nv_club}}
+{{#nv_visit}}<li><a class="m-link-2" href="#visit">{{t6|Visit}}</a></li>{{/nv_visit}}
+</ul>
+<ul>
+<li><a class="m-link-2" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t16|⟦phone⟧}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="email" href="#ub-contact">{{t172|Email us}}</a></li>
+{{#nv_tastings}}<li><a class="m-link-2" href="#tastings">{{t13|Tastings}}</a></li>{{/nv_tastings}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t173|Questions}}</a></li>{{/nv_faq}}
+</ul>
+</div>
+<p class="footer__mark" style="--len:7">{{t2|⟦name⟧}}</p>
+<div class="footer__base m-text-4">
+<span>{{t174|© 2026 Affina Cheese Ltd, 1 Admiralty Way, Jos · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t175|8B}}</a></span>
+<span>{{t176|Tuesday to Sunday}}</span>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('navigation');
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -(nav ? nav.querySelector('.nav__bar').offsetHeight : 0) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const openBtn = nav.querySelector('.nav__menu-btn');
+  const closeBtn = nav.querySelector('.nav__close');
+  const overlay = nav.querySelector('.nav__overlay');
+  let last = window.scrollY, travel = 0;
+  const onScroll = () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    nav.classList.toggle('is-scrolled', y > 8);
+    if (!overlay.hidden) return;
+    if (delta !== 0 && Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 120 || travel < -24) nav.classList.remove('is-hidden');
+    else if (travel > 48) nav.classList.add('is-hidden');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const open = () => {
+    nav.classList.remove('is-hidden');
+    overlay.hidden = false;
+    openBtn.setAttribute('aria-expanded', 'true');
+    window.lenis?.stop();
+    closeBtn.focus();
+  };
+  const close = (focusBack = true) => {
+    overlay.hidden = true;
+    openBtn.setAttribute('aria-expanded', 'false');
+    window.lenis?.start();
+    if (focusBack) openBtn.focus();
+  };
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', () => close());
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) close(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) close(); });
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  const status = form.querySelector('.visit__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const valid = form.elements.name.value.trim() && form.elements.email.checkValidity() && form.elements.email.value.trim();
+    status.textContent = valid ? status.dataset.sent : status.dataset.invalid;
+    if (valid) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'lines', mask: 'lines' });
+    return gsap.timeline({ ...vars, onComplete: () => split.revert() })
+      .from(split.lines, { yPercent: 105, duration: .95, ease: 'power3.out', stagger: .09 });
+  },
+  rule(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1.1, ease: 'power3.inOut', clearProps: 'transform,transformOrigin' });
+  },
+  step(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.15, ease: 'power3.out', clearProps: 'clipPath' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const delay = name === 'rule' ? (index % 6) * .08 : 0;
+        ScrollTrigger.create({ id: `${id}:${index + 1}`, trigger: element, start: 'top 88%', once: true, animation: effects[name](element, { delay }) });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+(() => {
+  const loops = document.querySelectorAll('[data-loop]');
+  if (!('IntersectionObserver' in window) || !loops.length) return;
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => entry.target.classList.toggle('is-paused', !entry.isIntersecting)));
+  loops.forEach(loop => observer.observe(loop));
+})();
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const q = selector => section.querySelector(selector);
+    const flood = q('.opening__flood');
+    const lines = section.querySelectorAll('.opening__line');
+    const ghost = q('.opening__ghost');
+    const fading = [q('.opening__actions'), q('.opening__aside')];
+    const product = q('.opening__product');
+    const cellar = q('.opening__cellar');
+    const word = q('.opening__word');
+    const copy = section.querySelectorAll('.opening__copy > *');
+    const light = getComputedStyle(document.documentElement).getPropertyValue('--color-5').trim();
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .8, invalidateOnRefresh: true }
+    });
+    timeline
+      .to(flood, { scaleX: 1, duration: .55, ease: 'power2.in' }, 0)
+      .to(flood, { scaleY: 1, duration: .7, ease: 'power1.inOut' }, 0)
+      .to(lines[0], { x: () => -innerWidth * .55, duration: .6, ease: 'power2.in' }, .04)
+      .to(lines[1], { x: () => innerWidth * .5, duration: .6, ease: 'power2.in' }, .04)
+      .to(lines, { color: light, duration: .14 }, .26)
+      .to(ghost, { scale: 1.7, opacity: 0, duration: .45, ease: 'power1.in' }, 0)
+      .to(fading, { y: () => -innerHeight * .22, opacity: 0, duration: .34, stagger: .04 }, 0)
+      .to(product, { y: () => -innerHeight * .8, duration: .62, ease: 'power2.in' }, .02)
+      .fromTo(cellar, { clipPath: 'inset(0% 0% 0% 32%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .55, ease: 'power2.inOut' }, .2)
+      .to(word, { x: () => -cellar.offsetWidth * .32, scale: 1.18, transformOrigin: '0% 0%', duration: .55, ease: 'power2.inOut' }, .2)
+      ;
+    copy.forEach((node, index) => timeline.from(node, { x: () => innerWidth * .12, opacity: 0, duration: .3, ease: 'power2.out' }, .44 + index * .06));
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:counter">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 760px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 759.98px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('counter');
+    const row = section.querySelector('.counter__row');
+    const items = [...row.querySelectorAll(':scope > .counter__item')];
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'counter', trigger: row, start: wide ? 'top 92%' : 'top 85%', end: wide ? 'bottom bottom' : 'bottom 75%', scrub: .7, invalidateOnRefresh: true }
+    });
+    items.forEach((item, index) => {
+      const depth = .55 + .35 * Math.abs(Math.sin(index * 1.7 + .6));
+      const at = index * .16;
+      if (wide) timeline.from(item, { y: () => item.offsetHeight * depth + 40, duration: 1, ease: 'power2.out' }, at);
+      else timeline.from(item, { x: () => -(item.offsetWidth * depth + 20), duration: 1, ease: 'power2.out' }, at);
+      const photo = item.querySelector('.counter__photo img');
+      if (photo) timeline.from(photo, { yPercent: wide ? 9 : 0, xPercent: wide ? 0 : -6, duration: 1.1, ease: 'power1.out' }, at);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:cellar">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('cellar');
+    const turn = section.querySelector('.cellar__turn');
+    const still = section.querySelector('.cellar__still');
+    const photos = [...still.querySelectorAll('.cellar__photo')];
+    const steps = [...section.querySelectorAll('.cellar__step')];
+    const count = Math.min(photos.length, steps.length);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'cellar', trigger: section.querySelector('.cellar__steps'), start: 'top 55%', end: () => `+=${Math.max(1, steps[count - 1].offsetTop - steps[0].offsetTop)}`, scrub: .8, invalidateOnRefresh: true }
+    });
+    const quarter = 360 / Math.max(1, count - 1);
+    for (let index = 1; index < count; index++) {
+      const at = index - 1 + .25;
+      timeline
+        .to(turn, { rotation: quarter * index, duration: .75, ease: 'power2.inOut' }, at)
+        .to(still, { rotation: -quarter * index, duration: .75, ease: 'power2.inOut' }, at)
+        .to(photos[index], { opacity: 1, duration: .2 }, at + .28);
+    }
+    timeline.to({}, { duration: .25 });
+    steps.forEach((step, index) => {
+      const fill = step.querySelector('.cellar__fill');
+      if (!fill) return;
+      gsap.fromTo(fill, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { id: `cellar:rule-${index + 1}`, trigger: step, start: 'top 75%', end: 'top 45%', scrub: .5 } });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:milks">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 760px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 759.98px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('milks');
+    section.querySelectorAll('.milks__row').forEach((row, index) => {
+      const field = row.querySelector('.milks__field');
+      const ground = row.querySelector('.milks__field-bg');
+      const word = row.querySelector('.milks__word');
+      const copy = row.querySelector('.milks__copy');
+      const photo = row.querySelector('.milks__photo img');
+      const flip = row.classList.contains('milks__row--flip');
+      const timeline = gsap.timeline({
+        scrollTrigger: { id: `milks:band-${index + 1}`, trigger: row, start: 'top 92%', end: wide ? 'center 52%' : 'bottom 80%', scrub: .7, invalidateOnRefresh: true }
+      });
+      if (wide) {
+        timeline
+          .from(ground, { scaleX: () => row.offsetWidth / field.offsetWidth, duration: 1, ease: 'power2.inOut' }, 0)
+          .from(word, { x: () => (flip ? -1 : 1) * (row.offsetWidth - field.offsetWidth), duration: 1, ease: 'power2.inOut' }, 0);
+      } else {
+        timeline
+          .from(ground, { scaleY: () => row.offsetHeight / field.offsetHeight, duration: 1, ease: 'power2.inOut' }, 0)
+          .from(word, { x: () => row.offsetWidth * .5, duration: 1, ease: 'power2.inOut' }, 0);
+      }
+      if (photo) timeline.from(photo, { scale: 1.3, duration: 1.1, ease: 'power1.out' }, 0);
+      if (copy) timeline.from(copy, { y: 36, opacity: 0, duration: .4, ease: 'power2.out' }, .62);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:farms">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('farms');
+    const stage = section.querySelector('.farms__stage');
+    const track = section.querySelector('.farms__track');
+    const travel = () => Math.max(0, track.scrollWidth - stage.clientWidth);
+    const measure = () => section.style.setProperty('--farms-travel', `${travel()}px`);
+    section.classList.add('is-track');
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const slide = gsap.to(track, {
+      x: () => -travel(), ease: 'none',
+      scrollTrigger: { id: 'farms', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .6, invalidateOnRefresh: true }
+    });
+    section.querySelectorAll('.farms__photo img').forEach((photo, index) => {
+      gsap.fromTo(photo, { xPercent: -7 }, {
+        xPercent: 7, ease: 'none',
+        scrollTrigger: { id: `farms:photo-${index + 1}`, trigger: photo.parentElement, containerAnimation: slide, start: 'left right', end: 'right left', scrub: true }
+      });
+    });
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.classList.remove('is-track');
+      section.style.removeProperty('--farms-travel');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:club">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(min-width: 900px) and (prefers-reduced-motion: no-preference)',
+    narrow: '(max-width: 899.98px) and (prefers-reduced-motion: no-preference)'
+  }, context => {
+    const { wide } = context.conditions;
+    const section = document.getElementById('club');
+    const list = section.querySelector('.club__parcels');
+    const parcels = [...list.querySelectorAll(':scope > .club__parcel')];
+    if (!parcels.length) return;
+    const turns = [-7, 5, -3, 4, -5];
+    if (wide) {
+      const anchor = parcels[Math.floor(parcels.length / 2)];
+      const timeline = gsap.timeline({
+        scrollTrigger: { id: 'club', trigger: list, start: 'top 88%', end: 'top 22%', scrub: .7, invalidateOnRefresh: true }
+      });
+      parcels.forEach((parcel, index) => {
+        timeline.from(parcel, {
+          x: () => anchor.offsetLeft - parcel.offsetLeft,
+          y: () => anchor.offsetTop - parcel.offsetTop + index * 14,
+          rotation: turns[index % turns.length],
+          duration: 1, ease: 'power2.inOut'
+        }, (parcels.length - 1 - index) * .12);
+      });
+    } else {
+      parcels.forEach((parcel, index) => {
+        gsap.from(parcel, {
+          x: () => (index % 2 ? 1 : -1) * innerWidth * .6,
+          rotation: turns[index % turns.length] * 1.4,
+          ease: 'power2.out',
+          scrollTrigger: { id: `club:parcel-${index + 1}`, trigger: parcel, start: 'top 98%', end: 'top 62%', scrub: .6, invalidateOnRefresh: true }
+        });
+      });
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const photo = section.querySelector('.visit__photo');
+    const columns = [...photo.querySelectorAll('.visit__col')];
+    const shifts = [.34, -.22, .5];
+    const timeline = gsap.timeline({
+      scrollTrigger: { id: 'visit', trigger: photo, start: 'top bottom', end: 'center 55%', scrub: .8, invalidateOnRefresh: true }
+    });
+    columns.forEach((column, index) => {
+      timeline.from(column, { y: () => photo.offsetHeight * shifts[index % shifts.length], duration: 1, ease: 'power2.out' }, 0);
+    });
+  });
+});
+</script>
+</body>
+</html>
