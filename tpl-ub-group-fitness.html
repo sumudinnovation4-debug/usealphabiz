@@ -636,7 +636,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 }
 </style>
-<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<style>html,body{max-width:100%;overflow-x:clip!important}.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
 <body>
 <svg aria-hidden="true" class="sprite" focusable="false">
 <defs>
@@ -1003,7 +1003,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 <section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Group Fitness by <a href="https://github.com/8bsite/group-fitness-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" id="footer">
 <span aria-hidden="true" class="ft__st ft__st--1" data-8b-motion="spin" data-turn="240"><svg aria-hidden="true" class="m-sticker-3" focusable="false"><use href="#st-bolt"></use></svg></span>
-<p class="m-text-4"><a class="ft__word" href="#opening" style="--len:8">{{t1|⟦name⟧}}</a></p>
+<p class="m-text-4"><a class="ft__word" href="#opening" style="--len:{{namelen}}">{{t1|⟦name⟧}}</a></p>
 <div class="ft__cols">
 <div>
 <h3 class="m-text-3">{{t169|⟦name⟧ Studio}}</h3>

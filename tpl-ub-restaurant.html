@@ -414,7 +414,7 @@ select.m-field__control { background-image: linear-gradient(45deg, transparent 5
 }
 }
 </style>
-<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<style>html,body{max-width:100%;overflow-x:clip!important}.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
 <body>
 
 <header data-8b-section="navigation" data-form="full" data-state="top" id="nav">
@@ -451,7 +451,7 @@ select.m-field__control { background-image: linear-gradient(45deg, transparent 5
 {{#sec_opening}}<section data-8b-section="opening" id="opening">
 <div class="op__hero">
 <div class="op__band">
-<h1 class="m-text-2 op__mark" style="--len:8"><span class="op__mark-in">{{t1|⟦name⟧}}</span></h1>
+<h1 class="m-text-2 op__mark" style="--len:{{namelen}}"><span class="op__mark-in">{{t1|⟦name⟧}}</span></h1>
 </div>
 <div class="op__photo">
 <div class="op__frame">
@@ -500,7 +500,7 @@ select.m-field__control { background-image: linear-gradient(45deg, transparent 5
 
 {{#sec_moments}}<section data-8b-section="moments" id="moments">
 <div class="mo__head">
-<h2 class="m-text-2 mo__title" data-8b-motion="flush" style="--len:16">{{t26|⟦name⟧ moments}}</h2>
+<h2 class="m-text-2 mo__title" data-8b-motion="flush" style="--len:{{namelen}}">{{t26|⟦name⟧ moments}}</h2>
 <a class="m-link" data-8b-placeholder="social" href="https://www.instagram.com/" rel="noopener">{{t27|Follow us}}</a>
 </div>
 <ul class="mo__grid">
@@ -730,7 +730,7 @@ select.m-field__control { background-image: linear-gradient(45deg, transparent 5
 <div class="ft__col"><p class="m-text-3">{{t158|The house}}</p><a class="m-link-2" href="#carte">{{t3|Menu}}</a><a class="m-link-2" href="#day">{{t28|Noon to midnight}}</a><a class="m-link-2" href="#terrace">{{t5|Terrace}}</a></div>
 <div class="ft__col"><p class="m-text-3">{{t159|Elsewhere}}</p><a class="m-link-2" data-8b-placeholder="social" href="https://www.instagram.com/" rel="noopener">{{t160|Instagram}}</a><a class="m-link-2" href="#contact">{{t6|Book a table}}</a></div>
 </div>
-<p class="m-text-2 ft__mark" style="--len:8">{{t1|⟦name⟧}}</p>
+<p class="m-text-2 ft__mark" style="--len:{{namelen}}">{{t1|⟦name⟧}}</p>
 <div class="ft__legal m-text-4"><p>{{t161|© 2026 ⟦name⟧ Brasserie & Bar · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t162|8B}}</a></p><p>{{t163|Last orders at the bar 23:45}}</p></div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>

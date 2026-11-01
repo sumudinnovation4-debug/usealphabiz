@@ -549,7 +549,7 @@ textarea.m-field__input { min-height: 120px; resize: vertical; }
   }
 }
 </style>
-<style>.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<style>html,body{max-width:100%;overflow-x:clip!important}.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
 <body class="m-text">
 
 <header data-8b-section="navigation" id="navigation">
@@ -852,7 +852,7 @@ textarea.m-field__input { min-height: 120px; resize: vertical; }
 
 <section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Architecture by <a href="https://github.com/8bsite/architecture-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer data-8b-section="footer" data-tone="dark" id="footer">
 <div aria-hidden="true" class="ft__bands"><span data-8b-motion="band"></span><span data-8b-motion="band"></span><span data-8b-motion="band"></span><span data-8b-motion="band"></span></div>
-<p class="ft__mark" style="--len:8">{{t1|⟦name⟧}}</p>
+<p class="ft__mark" style="--len:{{namelen}}">{{t1|⟦name⟧}}</p>
 <div class="ft__grid">
 <p class="m-text-5">{{t183|Architecture for the narrow plots a city leaves: gaps, yards and corners under ten metres wide.}}</p>
 <div>
