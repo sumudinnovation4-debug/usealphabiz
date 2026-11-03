@@ -1,5 +1,9 @@
 name: Unzip
-on: workflow_dispatch
+on:
+  push:
+    paths:
+      - '*.zip'
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -7,11 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          unzip -oq useAlphaBiz.zip
-          rm useAlphaBiz.zip
+      - name: Unzip any zip in the repo root
+        run: |
+          shopt -s nullglob
+          zips=(*.zip)
+          if [ ${#zips[@]} -eq 0 ]; then echo "No zip found, nothing to do."; exit 0; fi
+          for z in "${zips[@]}"; do
+            unzip -oq "$z"
+            rm "$z"
+          done
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A
-          git commit -m "Unzip project"
+          git commit -m "Unzip project" || echo "Nothing to commit"
           git push
