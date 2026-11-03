@@ -1,6 +1,6 @@
 // ===== CONFIG: paste your keys here (public keys only!) =====
 const CFG={PAYSTACK_PK:'pk_test_xxxxxxxx',SUPABASE_URL:'https://yhlaxhsncqwqzhumrmvx.supabase.co',SUPABASE_ANON:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobGF4aHNuY3F3cXpodW1ybXZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1Njc0MDUsImV4cCI6MjEwOTE0MzQwNX0.DiwOd4z4J9CnEUxL0A244zEMunIXL6VaPJhplRlUoR0',API:'/api',STRIPE:false,PAYSTACK_USD:false};
-const $=s=>document.querySelector(s)
+const $=s=>document.querySelector(s);
 const S={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
 const PRICE=26999,fmt=n=>'₦'+n.toLocaleString();
 const CATS=[['🍽️','Restaurant'],['💈','Barber / Salon / Spa'],['👗','Fashion / Tailor / Boutique'],['⛪','Church / Mosque'],['🏫','School'],['🏠','Real Estate'],['🔧','Artisan'],['🛒','Supermarket / Shop'],['🏥','Clinic / Pharmacy'],['🏨','Hotel'],['💼','General / Portfolio'],['📄','CV']];

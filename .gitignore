@@ -1,0 +1,4 @@
+.env
+*.env
+SECRETS*
+node_modules

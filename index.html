@@ -39,10 +39,10 @@ details{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:16
 <section class="sec" style="padding-top:0"><div class="in"><div class="cta c"><h2 style="color:#fff">Ready to get your business online?</h2><p style="opacity:.9">Build your website today and publish when you are ready.</p><a class="btn" href="templates.html">Start building free</a></div></div></section>
 <script src="app.js"></script><script src="engine.js"></script><script>
 const D={...defaultData(0),name:'Mama Titi Kitchen',tagline:'Home-style meals, made fresh daily',about:'Jollof rice, soups, grilled fish and small chops for every occasion.',services:['Party Packs','Daily Lunch','Catering']};
-async function show(el,v,i,d){const o={p:1,origin:location.origin};if(isNaN(v))o.tpl=await loadTpl(v);el.srcdoc=render(d||defaultData(i),v,o)}
+async function show(el,v,i,d,sk){const o={p:1,origin:location.origin,skin:sk};if(isNaN(v))o.tpl=await loadTpl(v);el.srcdoc=render(d||defaultData(i),v,o)}
 show($('#hero'),'ub-restaurant',0,D);
 $('#chips').innerHTML=CATS.map(([e,n],i)=>`<a href="templates.html?cat=${i}">${e} ${n}</a>`).join('');
-[['ub-restaurant',0],['ub-hair-salon',1],['ub-tailor',2],['ub-community',3],['ub-coding-school',4],['ub-plumber',6],['ub-hardware-store',7],['ub-pharmacy',8],['ub-boutique-hotel',9]].forEach(([v,i])=>{const c=document.createElement('a');c.className='card';c.style.padding='10px';c.href='templates.html?cat='+i;c.innerHTML='<div class="pv"><iframe></iframe></div><b>'+CATS[i][1]+'</b>';$('#sh').appendChild(c);show(c.querySelector('iframe'),v,i)});
+[['ub-restaurant',0],['ub-hair-salon',1],['ub-tailor',2],['ub-community',3],['ub-coding-school',4],['ub-plumber',6],['ub-hardware-store',7],['ub-pharmacy',8],['ub-boutique-hotel',9]].forEach(([v,i],n)=>{const c=document.createElement('a');c.className='card';c.style.padding='10px';c.href='templates.html?cat='+i;c.innerHTML='<div class="pv"><iframe></iframe></div><b>'+CATS[i][1]+'</b>';$('#sh').appendChild(c);show(c.querySelector('iframe'),v,i,undefined,SKINS[[0,3,1,4,2,5,0,1,3][n]].id)});
 const fitH=()=>{const p=$('.pvw'),f=$('#hero'),k=p.clientWidth/1100;f.style.transform='scale('+k+')';p.style.height=(720*k)+'px'};fitH();addEventListener('resize',fitH);
 const fit=()=>document.querySelectorAll('.sh .pv').forEach(p=>{const k=p.clientWidth/1200,f=p.firstChild;f.style.cssText='width:1200px;height:'+p.clientHeight/k+'px;transform:scale('+k+');transform-origin:0 0'});fit();addEventListener('resize',fit);
 </script></body></html>

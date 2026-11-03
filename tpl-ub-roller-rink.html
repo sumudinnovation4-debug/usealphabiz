@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>{{name}}</title>
+<meta content="{{name}}" name="description"/>
+<meta content="8B Templates" name="generator"/>
+
+
+
+
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2" rel="preload" type="font/woff2"/>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEWli389k.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #0b5f7f;
+  --color-2: #3b2e47;
+  --color-3: #f3e6cf;
+  --color-4: #f5a524;
+  --color-5: #ee5a2a;
+  --color-6: #b8301a;
+  --color-7: #271e30;
+  --font-1: "Gabarito", "Gabarito Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Rethink Sans", "Rethink Sans Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(20px, 5vw, 72px);
+  --space-2: clamp(80px, 11vw, 160px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* font fallbacks */
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 80.2%; ascent-override: 117.2%; descent-override: 32.4%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 92.7%; ascent-override: 101.4%; descent-override: 28.1%; line-gap-override: 0%; }
+@font-face { font-family: "Rethink Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 92.7%; ascent-override: 106.8%; descent-override: 33.4%; line-gap-override: 0%; }
+@font-face { font-family: "Rethink Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.4%; ascent-override: 96.7%; descent-override: 30.3%; line-gap-override: 0%; }
+/* end font fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background-color: var(--color-7); color: var(--color-3); font-family: var(--font-2); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, p, ol, ul, dl, dd, figure { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+a { color: inherit; }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--color-3); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent], .lenis [data-lenis-prevent-wheel], .lenis [data-lenis-prevent-touch] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+.lenis.lenis-autoToggle { transition-property: overflow; transition-duration: 1ms; transition-behavior: allow-discrete; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 1.0625rem; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(3rem, 6.2vw, 5.75rem); font-weight: 800; line-height: 0.92; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(2.25rem, 4.6vw, 4rem); font-weight: 800; line-height: 0.96; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 0.8125rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(1.125rem, 1.5vw, 1.3rem); font-weight: 500; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: 1.625rem; font-weight: 700; line-height: 1.05; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 2px solid var(--color-3); border-radius: var(--radius-1); background-color: var(--color-4); color: var(--color-7); font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1; letter-spacing: 0.01em; text-transform: none; font-style: normal; text-decoration: none; overflow: hidden; isolation: isolate; cursor: pointer; transition: background-color .35s ease, color .35s ease; }
+.m-btn::before { content: ""; position: absolute; top: -4px; bottom: -4px; left: 0; width: 70px; z-index: -1; background: linear-gradient(90deg, var(--color-3) 0 8px, var(--color-6) 8px 26px, var(--color-3) 26px 34px, var(--color-4) 34px 52px, var(--color-3) 52px 60px, transparent 60px); transform: translateX(-120px) skewX(-30deg); }
+.m-btn__label { position: relative; }
+.m-btn-2__label { position: relative; }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 2px solid var(--color-3); border-radius: var(--radius-1); background-color: transparent; color: var(--color-3); font-family: var(--font-2); font-size: 1rem; font-weight: 700; line-height: 1; letter-spacing: 0.01em; text-transform: none; font-style: normal; text-decoration: none; overflow: hidden; isolation: isolate; cursor: pointer; transition: background-color .35s ease, color .35s ease; }
+.m-btn-2::before { content: ""; position: absolute; top: -4px; bottom: -4px; left: 0; width: 70px; z-index: -1; background: linear-gradient(90deg, var(--color-4) 0 18px, transparent 18px 26px, var(--color-5) 26px 44px, transparent 44px 52px, var(--color-6) 52px 70px); transform: translateX(-120px) skewX(-30deg); }
+@media (hover: hover) {
+  .m-btn:hover { background-color: var(--color-5); }
+  .m-btn-2:hover { background-color: var(--color-3); color: var(--color-7); }
+  .m-btn:hover::before, .m-btn-2:hover::before { animation: m-btn-pass .75s cubic-bezier(.3,.6,.3,1); }
+}
+@keyframes m-btn-pass { from { transform: translateX(-120px) skewX(-30deg); } to { transform: translateX(460px) skewX(-30deg); } }
+
+.m-link { color: inherit; font-weight: 700; text-decoration: none; background-image: linear-gradient(currentColor, currentColor), linear-gradient(var(--color-5), var(--color-5)); background-repeat: no-repeat; background-position: 0 100%, 0 calc(100% - 5px); background-size: 100% 2px, 0% 3px; padding-bottom: 7px; transition: background-size .4s cubic-bezier(.3,.6,.3,1); }
+.m-link-2 { color: inherit; font-family: var(--font-2); font-size: 0.9375rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; font-style: normal; text-decoration: none; background-image: linear-gradient(var(--color-4), var(--color-4)), linear-gradient(var(--color-5), var(--color-5)); background-repeat: no-repeat; background-position: 0 100%, 100% calc(100% - 5px); background-size: 0% 2px, 0% 2px; padding: 6px 0 9px; transition: background-size .4s cubic-bezier(.3,.6,.3,1), color .3s ease; }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 2px, 100% 3px; }
+  .m-link-2:hover { background-size: 100% 2px, 100% 2px; color: var(--color-4); }
+}
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 2px solid var(--color-3); border-radius: var(--radius-1); background-color: transparent; color: var(--color-3); cursor: pointer; }
+.m-icon-btn__bars { display: grid; gap: 4px; width: 20px; }
+.m-icon-btn__bars span { display: block; height: 3px; background-color: currentColor; transition: transform .35s cubic-bezier(.3,.6,.3,1), background-color .35s ease; }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__bars span { transform: skewX(-30deg) translateX(3px); background-color: var(--color-4); }
+  .m-icon-btn:hover .m-icon-btn__bars span:nth-child(2) { transform: skewX(-30deg) translateX(-1px); background-color: var(--color-5); }
+  .m-icon-btn:hover .m-icon-btn__bars span:nth-child(3) { transform: skewX(-30deg) translateX(-5px); background-color: var(--color-3); }
+}
+
+.m-surface { background-color: var(--color-4); color: var(--color-7); }
+.m-surface-2 { background-color: var(--color-5); color: var(--color-7); }
+.m-surface-3 { background-color: var(--color-6); color: var(--color-3); }
+.m-surface-4 { background-color: var(--color-1); color: var(--color-3); }
+.m-surface-5 { background-color: var(--color-2); color: var(--color-3); }
+
+.m-badge { display: inline-block; justify-self: start; padding: 7px 20px 7px 22px; background-color: var(--color-7); color: var(--color-3); clip-path: polygon(18px 0, 100% 0, calc(100% - 18px) 100%, 0 100%); font-family: var(--font-2); font-size: 0.9375rem; font-weight: 700; line-height: 1.2; letter-spacing: 0.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-stripes { display: block; height: 26px; width: 100%; transform-origin: 0 50%; clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%); background: linear-gradient(180deg, var(--color-4) 0 6px, var(--color-3) 6px 10px, var(--color-5) 10px 16px, var(--color-3) 16px 20px, var(--color-6) 20px 26px); }
+.m-frame { position: relative; background-color: var(--color-3); clip-path: polygon(46px 0, 100% 0, 100% calc(100% - 80px), calc(100% - 46px) 100%, 0 100%, 0 80px); }
+.m-frame__clip { position: absolute; inset: 5px; overflow: hidden; clip-path: polygon(43px 0, 100% 0, 100% calc(100% - 75px), calc(100% - 43px) 100%, 0 100%, 0 75px); background-color: var(--color-7); }
+.m-frame__clip img { position: absolute; left: -5%; top: -7%; width: 110%; height: 114%; max-width: none; object-fit: cover; }
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-2); font-size: 0.8125rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.08em; text-transform: uppercase; font-style: normal; }
+.m-field__input { min-height: 52px; padding: 0 22px; border: 2px solid var(--color-3); border-radius: var(--radius-1); background-color: transparent; color: var(--color-3); font-family: var(--font-2); font-size: 1rem; font-weight: 500; }
+.m-field__input::placeholder { color: color-mix(in srgb, var(--color-3) 72%, transparent); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-wrap { width: 100%; max-width: 1360px; margin-inline: auto; padding-inline: var(--space-1); }
+.l-grain { background-image: radial-gradient(color-mix(in srgb, var(--color-3) 9%, transparent) 0.8px, transparent 1.4px); background-size: 6px 6px; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto; z-index: 50; display: flex; align-items: center; gap: 28px; padding: 14px var(--space-1); color: var(--color-3); transition: transform .45s cubic-bezier(.3,.6,.3,1), background-color .35s ease; }
+#nav.is-solid { background-color: var(--color-7); }
+#nav.is-hidden { transform: translateY(-110%); }
+#nav .nav__logo { display: inline-flex; align-items: center; gap: 12px; margin-right: auto; text-decoration: none; }
+#nav .nav__mark { display: block; width: 34px; height: 26px; transform: skewX(-30deg); }
+#nav .nav__name { font-family: var(--font-1); font-size: 1.5rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+#nav .nav__links { display: flex; gap: 26px; }
+#nav .nav__toggle { display: none; }
+@media (max-width: 899px) {
+  #nav .nav__links, #nav .nav__cta { display: none; }
+  #nav .nav__toggle { display: inline-grid; }
+}
+#nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; align-content: start; gap: 32px; padding: 14px var(--space-1) 40px; background-color: var(--color-2); color: var(--color-3); overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__name { font-family: var(--font-1); font-size: 1.5rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+#nav .menu__links { display: grid; gap: 6px; padding-top: 24px; }
+#nav .menu__links .m-link-2 { font-family: var(--font-1); font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em; }
+#nav .menu__links li:nth-child(1) a { color: var(--color-4); }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background-color: var(--color-1); color: var(--color-3); overflow: clip; }
+#opening .op-stage { position: absolute; inset: 0 0 auto; height: 100svh; z-index: 0; background-color: var(--color-1); overflow: hidden; }
+#opening .op-svg { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; }
+#opening .op-svg--port { display: none; }
+@media (max-aspect-ratio: 1/1) {
+  #opening .op-svg--land { display: none; }
+  #opening .op-svg--port { display: block; }
+}
+#opening .op-split { fill: var(--color-2); }
+#opening .op-cream { fill: none; stroke: var(--color-3); stroke-width: var(--op-cw); stroke-linecap: butt; stroke-linejoin: miter; }
+#opening .op-ink { fill: none; stroke-width: var(--op-w); stroke-linecap: butt; stroke-linejoin: miter; }
+#opening .op-digit--1 .op-ink { stroke: var(--color-4); }
+#opening .op-digit--9 .op-ink, #opening .op-ext--9.op-ink { stroke: var(--color-5); }
+#opening .op-digit--7 .op-ink, #opening .op-ext--7.op-ink { stroke: var(--color-1); }
+#opening .op-digit--6 .op-ink, #opening .op-ext--6.op-ink { stroke: var(--color-6); }
+#opening .op-track { display: none; }
+#opening .op-streak { stroke: var(--color-3); stroke-width: var(--op-sw); stroke-linecap: round; opacity: 0; }
+#opening .op-screen { position: relative; z-index: 1; min-height: 100svh; }
+#opening .op-screen--1 { display: grid; align-content: center; padding: 120px var(--space-1) 72px; }
+#opening .op-copy { max-width: 33rem; display: grid; gap: 26px; }
+#opening .op-copy .m-text-2 { max-width: 6em; }
+#opening .op-lead { max-width: 30rem; }
+#opening .op-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+#opening .op-note { color: var(--color-3); }
+#opening .op-screen--2 { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: center; column-gap: 24px; row-gap: 40px; padding: var(--space-2) var(--space-1); background-color: var(--color-2); }
+#opening .op-photos { grid-column: 1 / span 6; position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); align-items: end; }
+#opening .op-photo--a { grid-column: 2 / span 3; grid-row: 1; aspect-ratio: 4 / 5.4; }
+#opening .op-photo--b { grid-column: 4 / span 3; grid-row: 1; aspect-ratio: 4 / 3; margin-bottom: -12%; }
+#opening .op-text { grid-column: 8 / span 5; display: grid; gap: 24px; }
+#opening .op-text .m-text-3 { color: var(--color-4); }
+@media (max-width: 899px) {
+  #opening .op-screen--1 { align-content: start; padding-top: 104px; }
+  #opening .op-copy { gap: 20px; }
+  #opening .op-screen--2 { grid-template-columns: minmax(0, 1fr); padding-top: 96px; }
+  #opening .op-photos, #opening .op-text { grid-column: 1; }
+  #opening .op-text { grid-row: 1; }
+  #opening .op-photos { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  #opening .op-photo--a { grid-column: 1 / span 4; }
+  #opening .op-photo--b { grid-column: 3 / span 4; margin-bottom: -18%; }
+}
+@media (max-width: 899px) and (max-aspect-ratio: 1/1) {
+  #opening .op-screen--1 .m-text-2 { font-size: clamp(2.6rem, 12.4vw, 4.2rem); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-in { animation: op-in 1s cubic-bezier(.16,.7,.22,1) backwards; }
+  #opening .op-in--2 { animation-delay: .07s; }
+  #opening .op-in--3 { animation-delay: .14s; }
+  #opening .op-in--4 { animation-delay: .2s; }
+  #opening .op-copy { animation: op-copy .8s cubic-bezier(.16,.7,.22,1) backwards; }
+  #opening .op-streak { animation: op-streak 2.4s linear infinite; }
+  #opening.is-off .op-streak { animation-play-state: paused; }
+}
+@keyframes op-in { from { transform: translate(var(--op-sx), var(--op-sy)); } }
+@keyframes op-copy { from { transform: translateY(18px); } }
+@keyframes op-streak { 0% { transform: translate(0, 0); opacity: 0; } 10% { opacity: 1; } 82% { opacity: 1; } 100% { transform: translate(var(--op-dx), var(--op-dy)); opacity: 0; } }
+}
+</style>
+<style data-8b-part="section:sessions">
+@layer sections {
+#sessions { position: relative; background-color: var(--color-7); color: var(--color-3); overflow: clip; }
+#sessions .ss-stage { display: grid; align-content: center; gap: clamp(28px, 4vh, 56px); padding: var(--space-2) 0; }
+#sessions .ss-head { display: grid; gap: 16px; }
+#sessions .ss-head .m-text { max-width: 34rem; }
+#sessions .ss-list { position: relative; display: grid; gap: 6px; padding-inline: var(--space-1); max-width: 1360px; width: 100%; margin-inline: auto; }
+#sessions .ss-row { position: relative; display: grid; grid-template-columns: 11rem minmax(0, 1fr) 8.5rem 5.5rem; align-items: center; gap: 8px 28px; min-height: 78px; padding: 12px 32px; clip-path: inset(0px 0px 0px 0px); }
+#sessions .ss-day { font-size: clamp(1.5rem, 2.2vw, 2rem); }
+#sessions .ss-what { display: grid; gap: 2px; }
+#sessions .ss-what .m-text-6 { font-size: 1.25rem; }
+#sessions .ss-what .m-text { font-size: 0.975rem; line-height: 1.45; }
+#sessions .ss-time { justify-self: start; }
+#sessions .ss-row .m-badge { justify-self: end; }
+#sessions .ss-foot { padding-inline: var(--space-1); max-width: 1360px; width: 100%; margin-inline: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 16px 28px; }
+#sessions .ss-foot .m-text { max-width: 21rem; text-align: right; }
+@media (max-width: 899px) {
+  #sessions .ss-row { grid-template-columns: auto minmax(0, 1fr) auto; gap: 6px 14px; min-height: 0; padding: 14px 18px; }
+  #sessions .ss-day { grid-column: 1; grid-row: 1; font-size: 1.375rem; }
+  #sessions .ss-time { grid-column: 2; grid-row: 1; }
+  #sessions .ss-row .m-badge { grid-column: 3; grid-row: 1; }
+  #sessions .ss-what { grid-column: 1 / -1; grid-row: 2; }
+  #sessions .ss-what .m-text { display: none; }
+  #sessions .ss-foot { justify-content: flex-start; }
+  #sessions .ss-foot .m-text { text-align: left; }
+}
+}
+</style>
+<style data-8b-part="scene-style:sessions">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+  #sessions.is-scened { height: 210svh; }
+  #sessions.is-scened .ss-stage { position: sticky; top: 0; min-height: 100svh; padding: 88px 0 40px; }
+}
+}
+</style>
+<style data-8b-part="section:floor">
+@layer sections {
+#floor { position: relative; background-color: var(--color-4); color: var(--color-7); padding: var(--space-2) 0; overflow: clip; }
+#floor :focus-visible { outline-color: var(--color-7); }
+#floor .fl-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px 24px; align-items: center; }
+#floor .fl-photo { grid-column: 1 / span 7; aspect-ratio: 3 / 2.1; }
+#floor .fl-text { grid-column: 8 / span 5; display: grid; gap: 24px; }
+#floor .fl-facts { display: grid; gap: 0; border-top: 2px solid var(--color-7); }
+#floor .fl-facts li { display: grid; grid-template-columns: 1fr; gap: 2px; padding: 14px 0; border-bottom: 2px solid var(--color-7); }
+#floor .fl-facts .m-text-6 { font-size: 1.25rem; }
+#floor .fl-facts .m-text { font-size: 1rem; line-height: 1.45; }
+#floor .m-stripes { width: min(260px, 60%); }
+@media (max-width: 899px) {
+  #floor .fl-photo, #floor .fl-text { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:lessons">
+@layer sections {
+#lessons { position: relative; background-color: var(--color-1); color: var(--color-3); padding: var(--space-2) 0; overflow: clip; }
+#lessons .ls-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px 48px; align-items: end; }
+#lessons .ls-head-text { display: grid; gap: 22px; }
+#lessons .ls-photo { aspect-ratio: 4 / 2.7; }
+#lessons .ls-floor { position: relative; margin-top: clamp(56px, 8vw, 104px); overflow: clip; }
+#lessons .ls-steps { --ls-rise: clamp(56px, 7vw, 92px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; align-items: end; }
+#lessons .ls-step { display: grid; align-content: start; gap: 12px; min-height: calc(330px + (var(--ls-n) - 1) * var(--ls-rise)); padding: 26px 24px 30px; }
+#lessons .ls-ring { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; border: 9px solid currentColor; font-family: var(--font-1); font-size: 1.375rem; font-weight: 800; line-height: 1; }
+#lessons .ls-step .m-text { font-size: 1rem; line-height: 1.5; }
+#lessons .ls-base { height: 26px; margin-top: 10px; }
+#lessons .ls-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 40px; }
+@media (max-width: 899px) {
+  #lessons .ls-head { grid-template-columns: minmax(0, 1fr); }
+  #lessons .ls-steps { --ls-rise: 26px; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  #lessons .ls-step { min-height: 0; margin-left: calc((var(--ls-n) - 1) * var(--ls-rise)); padding: 20px 20px 24px; grid-template-columns: auto minmax(0, 1fr); column-gap: 16px; }
+  #lessons .ls-ring { grid-row: span 3; width: 52px; height: 52px; border-width: 7px; font-size: 1.125rem; }
+}
+}
+</style>
+<style data-8b-part="section:skates">
+@layer sections {
+#skates { position: relative; background-color: var(--color-2); color: var(--color-3); padding: var(--space-2) 0; overflow: clip; }
+#skates .sk-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 48px 24px; }
+#skates .sk-head { grid-column: 1 / span 6; display: grid; gap: 22px; align-content: start; }
+#skates .sk-photo--wall { grid-column: 7 / span 6; grid-row: 1 / span 2; aspect-ratio: 4 / 3.2; }
+#skates .sk-sizes { grid-column: 1 / span 6; display: grid; gap: 10px; }
+#skates .sk-sizes li { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 2px solid color-mix(in srgb, var(--color-3) 35%, transparent); }
+#skates .sk-wheel { width: 44px; height: 44px; border-radius: 50%; border: 12px solid var(--sk-c); outline: 3px solid var(--color-3); }
+#skates .sk-photo--pile { grid-column: 1 / span 5; aspect-ratio: 3 / 2; }
+#skates .sk-shop { grid-column: 7 / span 6; display: grid; gap: 18px; align-content: start; }
+#skates .sk-shop ul { display: grid; }
+#skates .sk-shop li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 2px solid color-mix(in srgb, var(--color-3) 35%, transparent); }
+@media (max-width: 899px) {
+  #skates .sk-head, #skates .sk-photo--wall, #skates .sk-sizes, #skates .sk-photo--pile, #skates .sk-shop { grid-column: 1 / -1; grid-row: auto; }
+}
+}
+</style>
+<style data-8b-part="section:seasons">
+@layer sections {
+#seasons { position: relative; background-color: var(--color-5); color: var(--color-7); overflow: clip; }
+#seasons :focus-visible { outline-color: var(--color-7); }
+#seasons .se-stage { display: grid; grid-template-columns: minmax(0, 1fr); align-content: center; gap: 40px; padding: var(--space-2) 0; }
+#seasons .se-viewport { min-width: 0; }
+#seasons .se-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 24rem); gap: 20px 48px; align-items: end; }
+#seasons .se-viewport { position: relative; padding-inline: var(--space-1); }
+#seasons .se-track { position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 32px; }
+#seasons .se-item { display: grid; align-content: start; gap: 12px; }
+#seasons .se-year { font-family: var(--font-1); font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 800; line-height: 0.9; letter-spacing: -0.03em; }
+#seasons .se-item .m-text { font-size: 1rem; line-height: 1.5; max-width: 22rem; }
+#seasons .se-photo { aspect-ratio: 4 / 3; width: 100%; }
+#seasons .se-band { display: none; }
+#seasons .se-photo--ball img { object-position: 50% 30%; }
+@media (max-width: 899px) {
+  #seasons .se-head { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="scene-style:seasons">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #seasons.is-scened { height: calc(100svh + var(--se-run, 0px)); }
+  #seasons.is-scened .se-stage { position: sticky; top: 0; height: 100svh; min-height: 0; padding: clamp(84px, 12vh, 120px) 0 clamp(28px, 6vh, 64px); align-content: center; }
+  #seasons.is-scened .se-viewport { overflow: visible; }
+  #seasons.is-scened .se-track { display: flex; width: max-content; gap: clamp(40px, 5vw, 72px); padding-top: 34px; align-items: start; }
+  #seasons.is-scened .se-item { width: clamp(260px, 28vw, 400px); }
+  #seasons.is-scened .se-item--wide { width: clamp(300px, 38vw, 540px); }
+  #seasons.is-scened .se-year { font-size: clamp(3.25rem, 7vw, 6.5rem); }
+  #seasons.is-scened .se-band { display: block; position: absolute; left: 0; right: -40vw; top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-height: 760px) {
+  #seasons.is-scened .se-photo { max-height: 30vh; }
+}
+}
+</style>
+<style data-8b-part="section:parties">
+@layer sections {
+#parties { position: relative; background-color: var(--color-7); color: var(--color-3); padding: var(--space-2) 0; overflow: clip; }
+#parties .pa-top { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 32px 24px; align-items: end; }
+#parties .pa-head { grid-column: 1 / span 6; display: grid; gap: 22px; }
+#parties .pa-photo { grid-column: 8 / span 5; aspect-ratio: 3 / 2; }
+#parties .pa-panels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: clamp(48px, 7vw, 88px); }
+#parties .pa-panel { display: grid; align-content: start; gap: 14px; min-height: 340px; padding: 34px 84px 36px 72px; clip-path: polygon(64px 0, 100% 0, calc(100% - 64px) 100%, 0 100%); margin-right: -56px; }
+#parties .pa-panel:last-child { margin-right: 0; }
+#parties .pa-panel .m-text-6 { font-size: clamp(1.75rem, 2.6vw, 2.25rem); }
+#parties .pa-panel ul { display: grid; gap: 6px; }
+#parties .pa-panel li { font-size: 1rem; line-height: 1.4; }
+#parties .pa-panel .m-badge { margin-top: 8px; }
+#parties .pa-foot { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; margin-top: 40px; }
+@media (max-width: 899px) {
+  #parties .pa-head, #parties .pa-photo { grid-column: 1 / -1; }
+  #parties .pa-panels { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  #parties .pa-panel { min-height: 0; margin-right: 0; padding: 26px 26px 30px 44px; clip-path: polygon(32px 0, 100% 0, 100% 100%, 0 100%); }
+  #parties .pa-panel:last-child { padding-right: 26px; }
+}
+}
+</style>
+<style data-8b-part="section:booth">
+@layer sections {
+#booth { position: relative; background-color: var(--color-1); color: var(--color-3); padding: var(--space-2) 0; overflow: clip; }
+#booth .bo-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px clamp(32px, 5vw, 80px); align-items: start; }
+#booth .bo-intro { display: grid; gap: 24px; align-content: start; }
+#booth .bo-photo { aspect-ratio: 3 / 2; }
+#booth .bo-form { display: grid; gap: 14px; max-width: 30rem; }
+#booth .bo-form-row { display: flex; flex-wrap: wrap; gap: 12px; }
+#booth .bo-form .m-field { flex: 1 1 15rem; }
+#booth .bo-msg { min-height: 1.6em; color: var(--color-4); font-weight: 600; }
+#booth .bo-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+#booth .bo-sleeve { position: relative; display: grid; align-content: space-between; gap: 18px; aspect-ratio: 1; padding: clamp(22px, 2.6vw, 34px); overflow: hidden; }
+#booth .bo-sleeve .m-text { font-size: 1rem; line-height: 1.45; position: relative; }
+#booth .bo-sleeve .m-text-6 { position: relative; font-size: clamp(1.4rem, 2.2vw, 1.9rem); }
+#booth .bo-rings { position: absolute; right: -22%; bottom: -22%; width: 70%; aspect-ratio: 1; border-radius: 50%; border: 18px solid currentColor; opacity: .16; background: radial-gradient(circle, currentColor 0 12%, transparent 12% 40%, currentColor 40% 47%, transparent 47%); }
+@media (max-width: 899px) {
+  #booth .bo-grid { grid-template-columns: minmax(0, 1fr); }
+  #booth .bo-stack { grid-template-columns: minmax(0, 1fr); }
+  #booth .bo-sleeve { aspect-ratio: auto; min-height: 300px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:booth">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #booth.is-scened .bo-crates { display: block; height: 260svh; }
+  #booth.is-scened .bo-stage { position: sticky; top: 0; height: 100svh; display: grid; place-items: center; perspective: 1400px; }
+  #booth.is-scened .bo-stack { display: block; position: relative; width: min(100%, 31rem); aspect-ratio: 1; }
+  #booth.is-scened .bo-sleeve { position: absolute; inset: 0; transform-origin: 50% 100%; backface-visibility: hidden; min-height: 0; }
+  #booth.is-scened .bo-intro { position: sticky; top: 96px; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 899px) {
+  #booth.is-scened .bo-crates { height: 240svh; }
+  #booth.is-scened .bo-intro { position: static; }
+  #booth.is-scened .bo-stack { width: min(100%, 26rem); }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; background-color: var(--color-4); color: var(--color-7); padding: var(--space-2) 0; overflow: clip; }
+#faq :focus-visible { outline-color: var(--color-7); }
+#faq .fq-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; }
+#faq .fq-head { display: grid; gap: 22px; }
+#faq .fq-head .m-stripes { width: min(240px, 60%); }
+#faq .fq-list { border-top: 2px solid var(--color-7); }
+#faq details { border-bottom: 2px solid var(--color-7); }
+#faq summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary .m-text-6 { font-size: clamp(1.2rem, 1.8vw, 1.5rem); }
+#faq .fq-mark { flex: none; position: relative; width: 30px; height: 30px; }
+#faq .fq-mark::before, #faq .fq-mark::after { content: ""; position: absolute; left: 0; right: 0; top: 13px; height: 4px; background-color: var(--color-7); transition: transform .35s cubic-bezier(.3,.6,.3,1); }
+#faq .fq-mark::after { transform: rotate(90deg); }
+#faq details[open] .fq-mark::after { transform: rotate(0deg); }
+#faq details[open] .fq-mark::before { transform: skewX(-30deg); }
+#faq details p { padding: 0 0 24px; max-width: 40rem; }
+@media (max-width: 899px) {
+  #faq .fq-grid { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; background-color: var(--color-2); color: var(--color-3); padding: var(--space-2) 0; overflow: clip; }
+#contact .ct-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px clamp(32px, 6vw, 96px); align-items: center; }
+#contact .ct-info { display: grid; gap: 28px; }
+#contact .ct-blocks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; }
+#contact .ct-block { display: grid; gap: 8px; align-content: start; }
+#contact .ct-block .m-text-4 { color: var(--color-4); }
+#contact .ct-hours { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; }
+#contact .ct-hours dt { font-weight: 700; }
+#contact .ct-map { position: relative; aspect-ratio: 1; width: 100%; max-width: 560px; justify-self: end; }
+#contact .ct-map svg { width: 100%; height: 100%; overflow: visible; }
+#contact .ct-street { fill: none; stroke: color-mix(in srgb, var(--color-3) 32%, transparent); stroke-width: 3; }
+#contact .ct-street--main { stroke: color-mix(in srgb, var(--color-3) 60%, transparent); stroke-width: 6; }
+#contact .ct-rink-cream { fill: var(--color-4); stroke: var(--color-3); stroke-width: 44; }
+#contact .ct-rink-1 { fill: none; stroke: var(--color-7); stroke-width: 10; }
+#contact .ct-rink-2 { fill: none; stroke: var(--color-5); stroke-width: 10; }
+#contact .ct-rink-3 { fill: none; stroke: var(--color-6); stroke-width: 10; }
+#contact .ct-route-cream { fill: none; stroke: var(--color-3); stroke-width: 22; stroke-linejoin: round; stroke-linecap: butt; }
+#contact .ct-route-ink { fill: none; stroke: var(--color-5); stroke-width: 12; stroke-linejoin: round; stroke-linecap: butt; }
+#contact .ct-stop { fill: var(--color-4); stroke: var(--color-3); stroke-width: 5; }
+#contact .ct-label { color: var(--color-3); fill: currentColor; font-family: var(--font-2); font-size: 19px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+#contact .ct-label--rink { color: var(--color-7); font-family: var(--font-1); font-size: 30px; letter-spacing: -.01em; text-transform: none; }
+@media (max-width: 899px) {
+  #contact .ct-grid { grid-template-columns: minmax(0, 1fr); }
+  #contact .ct-blocks { grid-template-columns: minmax(0, 1fr); }
+  #contact .ct-map { justify-self: center; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; background-color: var(--color-7); color: var(--color-3); padding: clamp(64px, 9vw, 120px) 0 36px; overflow: clip; }
+#footer .ft-word { font-size: min(24vw, calc((min(100vw, 1360px) - 2 * var(--space-1)) / (var(--len) * 0.51))); line-height: 0.82; color: var(--color-4); white-space: nowrap; }
+#footer .m-stripes { margin: 18px 0 40px; }
+#footer .ft-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px 48px; }
+#footer .ft-links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+#footer .ft-small { margin-top: 36px; color: color-mix(in srgb, var(--color-3) 82%, transparent); font-size: 0.9375rem; }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#opening .op-text .op-actions { margin-top: 4px; }
+@media (max-width: 899px) {
+  #opening .op-screen--2 { align-content: start; padding-top: 92px; row-gap: 36px; }
+  #opening .op-text { gap: 18px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-photo { --op-sx: -60px; --op-sy: 104px; animation: op-in 1.1s cubic-bezier(.16, .7, .22, 1) .1s backwards; }
+  #opening .op-photo--b { animation-delay: .18s; }
+  #opening .op-text > * { animation: op-copy .8s cubic-bezier(.16, .7, .22, 1) backwards; }
+  #opening .op-text > :nth-child(2) { animation-delay: .06s; }
+  #opening .op-text > :nth-child(3) { animation-delay: .12s; }
+  #opening .op-text > :nth-child(4) { animation-delay: .18s; }
+  #opening .op-text > :nth-child(5) { animation-delay: .24s; }
+}</style>
+<style>html,body{max-width:100%;overflow-x:clip!important}.ub-ct{max-width:900px;margin:0 auto;padding:72px 6vw;text-align:center;font-family:inherit;color:inherit;position:relative;z-index:2}.ub-ct h2{margin:0 0 16px}.ub-ct p{margin:6px 0}.ub-qr{display:flex;gap:14px;justify-content:center;margin:20px 0;flex-wrap:wrap}.ub-btn{display:inline-block;padding:13px 24px;border:1.5px solid currentColor;border-radius:99px;text-decoration:none;color:inherit;margin:6px}.ub-credit{margin-top:36px!important;font-size:.78rem;opacity:.65}.ub-credit a{color:inherit}</style></head>
+<body>
+
+<header data-8b-section="navigation" id="nav">
+<a aria-label="{{name}}, back to the top" class="nav__logo" href="#opening">
+<svg aria-hidden="true" class="nav__mark" focusable="false" viewbox="0 0 34 26"><rect fill="var(--color-4)" height="6" width="34"></rect><rect fill="var(--color-5)" height="6" width="34" y="10"></rect><rect fill="var(--color-6)" height="6" width="34" y="20"></rect></svg>
+<span class="nav__name">{{t1|Spinway}}</span>
+</a>
+<nav aria-label="Main">
+<ul class="nav__links">
+{{#nv_sessions}}<li><a class="m-link-2" href="#sessions">{{t2|Sessions}}</a></li>{{/nv_sessions}}
+{{#nv_lessons}}<li><a class="m-link-2" href="#lessons">{{t3|Lessons}}</a></li>{{/nv_lessons}}
+{{#nv_seasons}}<li><a class="m-link-2" href="#seasons">{{t4|Fifty seasons}}</a></li>{{/nv_seasons}}
+{{#nv_booth}}<li><a class="m-link-2" href="#booth">{{t5|The booth}}</a></li>{{/nv_booth}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t6|Visit}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<a class="m-btn nav__cta" href="#parties"><span class="m-btn__label">{{t7|Book a party}}</span></a>
+<button aria-controls="menu" aria-expanded="false" class="m-icon-btn nav__toggle" type="button"><span aria-hidden="true" class="m-icon-btn__bars"><span></span><span></span><span></span></span><span class="sr-only">{{t8|Open the menu}}</span></button>
+<div class="menu" data-lenis-prevent="" hidden="" id="menu">
+<div class="menu__top">
+<span class="menu__name">{{t1|Spinway}}</span>
+<button class="m-icon-btn menu__close" type="button"><span aria-hidden="true" class="m-icon-btn__bars"><span></span><span></span><span></span></span><span class="sr-only">{{t9|Close the menu}}</span></button>
+</div>
+<ul class="menu__links">
+{{#nv_parties}}<li><a class="m-link-2" href="#parties">{{t7|Book a party}}</a></li>{{/nv_parties}}
+{{#nv_sessions}}<li><a class="m-link-2" href="#sessions">{{t2|Sessions}}</a></li>{{/nv_sessions}}
+{{#nv_lessons}}<li><a class="m-link-2" href="#lessons">{{t3|Lessons}}</a></li>{{/nv_lessons}}
+{{#nv_seasons}}<li><a class="m-link-2" href="#seasons">{{t4|Fifty seasons}}</a></li>{{/nv_seasons}}
+{{#nv_booth}}<li><a class="m-link-2" href="#booth">{{t5|The booth}}</a></li>{{/nv_booth}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t6|Visit}}</a></li>{{/nv_contact}}
+</ul>
+</div>
+</header>
+<main>
+
+{{#sec_opening}}<section aria-labelledby="opening-title" data-8b-section="opening" id="opening">
+<div class="op-screen op-screen--2 l-grain">
+<div class="op-photos">
+<figure class="m-frame op-photo op-photo--a"><div class="m-frame__clip"><img alt="A skater gliding backwards across a dark rink under red lights, arms spread" height="6000" loading="lazy" src="{{i1|https://images.unsplash.com/photo-1593029352436-fc27ee1104d1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cm9sbGVyJTIwc2thdGVzfGVufDF8MXx8fDE3OTEyOTg5MzF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=390&q=60}}" style="background:#402626" width="4000"/></div></figure>
+<figure class="m-frame op-photo op-photo--b"><div class="m-frame__clip"><img alt="The rink floor shining under ceiling lights, skaters circling past the snack bar" height="3581" loading="lazy" src="{{i2|https://images.unsplash.com/photo-1593029352324-5d8a5230d224?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cm9sbGVyJTIwcmlua3xlbnwxfDB8fHwxNzkxMjk4OTMxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60}}" style="background:#262626" width="5371"/></div></figure>
+</div>
+<div class="op-text">
+<h1 class="m-text-3" id="opening-title">{{t10|Season fifty, same maple floor}}</h1>
+<p class="m-text-5">{{t11|We laid sixteen hundred maple boards in the spring of 1976 and opened on the first warm Friday in May.}}</p>
+<p class="m-text">{{t12|The mirror ball went up three years later. Since then the floor has been sanded forty-nine times, the snack bar has changed its fryer twice, and Friday nights have never once been called off for lack of skaters. This summer the doors open for the fiftieth time.}}</p>
+<div class="op-actions"><a class="m-btn" href="#sessions"><span class="m-btn__label">{{t13|This week’s sessions}}</span></a><a class="m-btn-2" href="#parties"><span class="m-btn-2__label">{{t7|Book a party}}</span></a></div>
+<p><a class="m-link" href="#seasons">{{t14|Fifty seasons, year by year}}</a></p>
+</div>
+</div>
+</section>{{/sec_opening}}
+
+{{#sec_sessions}}<section aria-labelledby="sessions-title" class="l-grain" data-8b-section="sessions" id="sessions">
+<div class="ss-stage">
+<div class="ss-head l-wrap">
+<h2 class="m-text-3" id="sessions-title">{{t15|Five sessions a week}}</h2>
+<p class="m-text">{{t16|Skate rental is in every ticket. Bring your own quads and we will check the wheels and toe stops for free at the counter.}}</p>
+</div>
+<ol class="ss-list">
+<li class="ss-row m-surface">
+<p class="m-text-6 ss-day">{{t17|Tuesday}}</p>
+<div class="ss-what"><h3 class="m-text-6">{{t18|Adults Only}}</h3><p class="m-text">{{t19|Eighteen and over. Soul, funk and slow laps with the lights half down.}}</p></div>
+<p class="m-text-4 ss-time">{{t20|8–11 pm}}</p>
+<p class="m-badge">{{t21|$14}}</p>
+</li>
+<li class="ss-row m-surface-2">
+<p class="m-text-6 ss-day">{{t22|Wednesday}}</p>
+<div class="ss-what"><h3 class="m-text-6">{{t23|Learn to Skate}}</h3><p class="m-text">{{t24|Coaches on the floor, cones out, nobody rushing you.}}</p></div>
+<p class="m-text-4 ss-time">{{t25|5–7 pm}}</p>
+<p class="m-badge">{{t26|$12}}</p>
+</li>
+<li class="ss-row m-surface-3">
+<p class="m-text-6 ss-day">{{t27|Friday}}</p>
+<div class="ss-what"><h3 class="m-text-6">{{t28|Disco Night}}</h3><p class="m-text">{{t29|Mirror ball on, couples’ skate at ten, records all evening.}}</p></div>
+<p class="m-text-4 ss-time">{{t30|8 pm–midnight}}</p>
+<p class="m-badge">{{t31|$16}}</p>
+</li>
+<li class="ss-row m-surface-4">
+<p class="m-text-6 ss-day">{{t32|Saturday}}</p>
+<div class="ss-what"><h3 class="m-text-6">{{t33|Matinee}}</h3><p class="m-text">{{t34|All ages and the busiest floor of the week. Come early for rental sizes.}}</p></div>
+<p class="m-text-4 ss-time">{{t35|1–4 pm}}</p>
+<p class="m-badge">{{t26|$12}}</p>
+</li>
+<li class="ss-row m-surface-5">
+<p class="m-text-6 ss-day">{{t36|Sunday}}</p>
+<div class="ss-what"><h3 class="m-text-6">{{t37|Family Skate}}</h3><p class="m-text">{{t38|Under-sevens skate free with a paying adult. Walkers for first laps.}}</p></div>
+<p class="m-text-4 ss-time">{{t39|11 am–2 pm}}</p>
+<p class="m-badge">{{t40|$10}}</p>
+</li>
+</ol>
+<div class="ss-foot">
+<p class="m-text">{{t41|Tickets at the door, cash or card. Last entry an hour before close.}}</p>
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t42|Plan your visit}}</span></a>
+</div>
+</div>
+</section>{{/sec_sessions}}
+
+{{#sec_floor}}<section aria-labelledby="floor-title" class="l-grain" data-8b-section="floor" id="floor">
+<div class="fl-grid l-wrap">
+<figure class="m-frame fl-photo" data-8b-motion="drift"><div class="m-frame__clip"><img alt="Two pairs of worn white quad skates standing on old wooden boards" height="2002" loading="lazy" src="{{i3|https://images.unsplash.com/photo-1636504423407-e8d34a803a85?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHZpbnRhZ2UlMjByb2xsZXIlMjBza2F0aW5nfGVufDF8MHx8fDE3OTEyOTg5NTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=780&q=60}}" style="background:#402626" width="3000"/></div></figure>
+<div class="fl-text">
+<h2 class="m-text-3" id="floor-title">{{t43|Sixteen hundred boards of hard maple}}</h2>
+<span aria-hidden="true" class="m-stripes" data-8b-motion="stripes"></span>
+<p class="m-text-5">{{t44|The floor is the rink. Ours is northern hard maple, tongue and groove, laid over a sprung timber frame so your knees forgive the falls.}}</p>
+<ul class="fl-facts">
+<li data-8b-motion="slant"><h3 class="m-text-6">{{t45|Sprung, not slab}}</h3><p class="m-text">{{t46|Timber joists under every board give a softer landing than concrete.}}</p></li>
+<li data-8b-motion="slant"><h3 class="m-text-6">{{t47|Sealed every August}}</h3><p class="m-text">{{t48|We close from 4 to 18 August, sand it back and lay seven coats.}}</p></li>
+<li data-8b-motion="slant"><h3 class="m-text-6">{{t49|Skates only past the rail}}</h3><p class="m-text">{{t50|No street shoes on the maple, ever. Socks are fine for birthday photos.}}</p></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_floor}}
+
+{{#sec_lessons}}<section aria-labelledby="lessons-title" class="l-grain" data-8b-section="lessons" id="lessons">
+<div class="l-wrap">
+<div class="ls-head">
+<div class="ls-head-text">
+<h2 class="m-text-3" id="lessons-title">{{t51|Learn to skate in eight Wednesdays}}</h2>
+<p class="m-text-5">{{t52|Groups of eight, ages six and up, $96 for the course with rental included. Every course climbs the same four steps.}}</p>
+</div>
+<figure class="m-frame ls-photo"><div class="m-frame__clip"><img alt="A skater lacing up teal quad skates at the edge of the floor" height="3168" loading="lazy" src="{{i4|https://images.unsplash.com/photo-1578057183197-423269e14014?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cm9sbGVyJTIwcmlua3xlbnwxfDB8fHwxNzkxMjk4OTMxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#a6c0c0" width="4752"/></div></figure>
+</div>
+<div class="ls-floor">
+<ol class="ls-steps">
+<li class="ls-step m-surface" style="--ls-n:1"><span class="ls-ring">{{t53|1}}</span><h3 class="m-text-6">{{t54|Stand, then fall}}</h3><p class="m-text">{{t55|We teach the safe fall first, so the floor stops being scary.}}</p><p class="m-text-4">{{t56|Weeks 1–2}}</p></li>
+<li class="ls-step m-surface-2" style="--ls-n:2"><span class="ls-ring">{{t57|2}}</span><h3 class="m-text-6">{{t58|Glide}}</h3><p class="m-text">{{t59|Push, roll, recover. Long strides down the straight.}}</p><p class="m-text-4">{{t60|Weeks 3–4}}</p></li>
+<li class="ls-step m-surface-3" style="--ls-n:3"><span class="ls-ring">{{t61|3}}</span><h3 class="m-text-6">{{t62|Stop}}</h3><p class="m-text">{{t63|The toe stop, then the T-stop. Brakes before speed.}}</p><p class="m-text-4">{{t64|Weeks 5–6}}</p></li>
+<li class="ls-step m-surface-5" style="--ls-n:4"><span class="ls-ring">{{t65|4}}</span><h3 class="m-text-6">{{t66|Turn and cross over}}</h3><p class="m-text">{{t67|Lean into the curve and step over. That is a full lap.}}</p><p class="m-text-4">{{t68|Weeks 7–8}}</p></li>
+</ol>
+</div>
+<span aria-hidden="true" class="m-stripes ls-base"></span>
+<div class="ls-foot">
+<a class="m-btn" href="#contact"><span class="m-btn__label">{{t69|Join the next course}}</span></a>
+<p class="m-text">{{t70|Next course starts Wednesday 3 June. Coaches answer questions at every session.}}</p>
+</div>
+</div>
+</section>{{/sec_lessons}}
+
+{{#sec_skates}}<section aria-labelledby="skates-title" class="l-grain" data-8b-section="skates" id="skates">
+<div class="sk-grid l-wrap">
+<div class="sk-head">
+<h2 class="m-text-3" id="skates-title">{{t71|Two hundred and forty pairs on the wall}}</h2>
+<p class="m-text-5">{{t72|Rental quads in every size from kids’ 10 to adult 14, re-laced every week and re-wheeled every spring. The wheel colour tells the size at a glance.}}</p>
+</div>
+<figure class="m-frame sk-photo--wall" data-8b-motion="drift"><div class="m-frame__clip"><img alt="Rows of rental skates on numbered wooden shelves behind the counter" height="4125" loading="lazy" src="{{i5|https://images.unsplash.com/photo-1674247004472-1601a23df9c0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cm9sbGVyJTIwcmlua3xlbnwxfDB8fHwxNzkxMjk4OTMxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=760&q=60}}" style="background:#260c26" width="6188"/></div></figure>
+<ul class="sk-sizes">
+<li data-8b-motion="slant"><span aria-hidden="true" class="sk-wheel" style="--sk-c:var(--color-4)"></span><p class="m-text-6">{{t73|Yellow wheels}}</p><p class="m-text-4">{{t74|Kids 10–13}}</p></li>
+<li data-8b-motion="slant"><span aria-hidden="true" class="sk-wheel" style="--sk-c:var(--color-5)"></span><p class="m-text-6">{{t75|Orange wheels}}</p><p class="m-text-4">{{t76|Adult 1–5}}</p></li>
+<li data-8b-motion="slant"><span aria-hidden="true" class="sk-wheel" style="--sk-c:var(--color-6)"></span><p class="m-text-6">{{t77|Red wheels}}</p><p class="m-text-4">{{t78|Adult 6–10}}</p></li>
+<li data-8b-motion="slant"><span aria-hidden="true" class="sk-wheel" style="--sk-c:var(--color-1)"></span><p class="m-text-6">{{t79|Teal wheels}}</p><p class="m-text-4">{{t80|Adult 11–14}}</p></li>
+</ul>
+<figure class="m-frame sk-photo--pile" data-8b-motion="drift"><div class="m-frame__clip"><img alt="A heap of colourful quad skates with bright wheels, laces and toe stops" height="4000" loading="lazy" src="{{i6|https://images.unsplash.com/photo-1761089867735-abc1ce8e2eca?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cm9sbGVyJTIwcmlua3xlbnwxfDB8fHwxNzkxMjk4OTMxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#262626" width="6000"/></div></figure>
+<div class="sk-shop">
+<h3 class="m-text-6">{{t81|From the pro shop}}</h3>
+<ul>
+<li class="m-text"><span>{{t82|Outdoor wheels, set of eight}}</span><span>{{t83|$64}}</span></li>
+<li class="m-text"><span>{{t84|Toe stops, pair}}</span><span>{{t85|$18}}</span></li>
+<li class="m-text"><span>{{t86|Bearings, set of sixteen}}</span><span>{{t87|$38}}</span></li>
+<li class="m-text"><span>{{t88|Laces, 72 inch}}</span><span>{{t89|$6}}</span></li>
+<li class="m-text"><span>{{t90|Wheel and bearing check}}</span><span>{{t91|Free}}</span></li>
+</ul>
+</div>
+</div>
+</section>{{/sec_skates}}
+
+{{#sec_seasons}}<section aria-labelledby="seasons-title" class="l-grain" data-8b-section="seasons" id="seasons">
+<div class="se-stage">
+<div class="se-head l-wrap">
+<h2 class="m-text-3" id="seasons-title">{{t92|Fifty seasons on the same floor}}</h2>
+<p class="m-text">{{t93|A roof, two fryers, one rescue and a lot of records. The boards never changed.}}</p>
+</div>
+<div class="se-viewport">
+<ol class="se-track">
+<li class="se-item se-item--wide">
+<p class="se-year">{{t94|1976}}</p>
+<h3 class="m-text-6">{{t95|Doors open}}</h3>
+<p class="m-text">{{t96|The first Friday in May: four hundred skaters, an organ player and a floor that still smelled of sealant.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="Black and white photo of three skaters rolling side by side" height="2048" loading="lazy" src="{{i7|https://images.unsplash.com/photo-1603901966339-36b673efbb69?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHZpbnRhZ2UlMjByb2xsZXIlMjBza2F0aW5nfGVufDF8MHx8fDE3OTEyOTg5NTJ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#404040" width="3089"/></div></figure>
+</li>
+<li class="se-item">
+<p class="se-year">{{t97|1979}}</p>
+<h3 class="m-text-6">{{t98|The mirror ball goes up}}</h3>
+<p class="m-text">{{t99|Bought second-hand from a hotel ballroom. It still turns on its original motor.}}</p>
+<figure class="m-frame se-photo se-photo--ball"><div class="m-frame__clip"><img alt="A mirror ball above a roller rink washed in pink, blue and green light" height="6240" loading="lazy" src="{{i8|https://images.unsplash.com/photo-1638889417993-2455eed28f9a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cm9sbGVyJTIwc2thdGVzfGVufDF8MXx8fDE3OTEyOTg5MzF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60}}" style="background:#262626" width="4160"/></div></figure>
+</li>
+<li class="se-item se-item--wide">
+<p class="se-year">{{t100|1984}}</p>
+<h3 class="m-text-6">{{t101|Neon over the snack bar}}</h3>
+<p class="m-text">{{t102|Pink and teal tubes, a new fryer and the rule about no skates on the carpet.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="A pink and blue neon sign spelling ice cream, glowing in a window at night" height="4160" loading="lazy" src="{{i9|https://images.unsplash.com/photo-1789117985913-81b4fa1b77a3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG5lb24lMjBpY2UlMjBjcmVhbSUyMGJhcnxlbnwxfDB8fHwxNzkxMzc2NjYzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#260c0c" width="6240"/></div></figure>
+</li>
+<li class="se-item">
+<p class="se-year">{{t103|1993}}</p>
+<h3 class="m-text-6">{{t104|The inline summer}}</h3>
+<p class="m-text">{{t105|Everyone bought blades. By autumn half of them were back on quads.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="Feet in teal and black inline skates rolling across a blue court" height="3600" loading="lazy" src="{{i10|https://images.unsplash.com/photo-1770681370991-e99848a0f1c3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGlubGluZSUyMHNrYXRlc3xlbnwxfDB8fHwxNzkxMzc2NTkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#0c73a6" width="4800"/></div></figure>
+</li>
+<li class="se-item se-item--wide">
+<p class="se-year">{{t106|2008}}</p>
+<h3 class="m-text-6">{{t107|A new roof, the same floor}}</h3>
+<p class="m-text">{{t108|Three weeks closed, every board under tarpaulin, not one replaced.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="New timber roof trusses against a blue sky" height="3840" loading="lazy" src="{{i11|https://images.unsplash.com/photo-1676802540678-2dceb1820113?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cm9vZiUyMHJhZnRlcnN8ZW58MXwwfHx8MTc5MTM3NjU5M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#0c73c0" width="5760"/></div></figure>
+</li>
+<li class="se-item">
+<p class="se-year">{{t109|2014}}</p>
+<h3 class="m-text-6">{{t110|The rink is saved}}</h3>
+<p class="m-text">{{t111|The lease ran out. Six hundred regulars bought the building back, one share each.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="A crowd raising their hands together in front of a wooden building" height="3804" loading="lazy" src="{{i12|https://images.unsplash.com/photo-1631478650892-416c35c6e876?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGhhbmRzJTIwcmFpc2VkJTIwdm90ZSUyMG1lZXRpbmd8ZW58MXwwfHx8MTc5MTM3NjY3Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#262626" width="5706"/></div></figure>
+</li>
+<li class="se-item">
+<p class="se-year">{{t112|2020}}</p>
+<h3 class="m-text-6">{{t113|A quiet season}}</h3>
+<p class="m-text">{{t114|Closed from March to September. We sanded the floor twice out of boredom.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="Sunlight falling through a window across an empty wooden floor" height="2688" loading="lazy" src="{{i13|https://images.unsplash.com/photo-1774215915498-26022d889b34?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fHNhbmRpbmclMjB3b29kZW4lMjBmbG9vcnxlbnwxfDB8fHwxNzkxMzc2NjExfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=690&q=60}}" style="background:#59260c" width="4032"/></div></figure>
+</li>
+<li class="se-item se-item--wide">
+<p class="se-year">{{t115|2026}}</p>
+<h3 class="m-text-6">{{t116|Season fifty}}</h3>
+<p class="m-text">{{t117|Opening night on 1 May with the 1976 setlist and admission at 1976 prices.}}</p>
+<figure class="m-frame se-photo"><div class="m-frame__clip"><img alt="Close-up of white quad skates with rainbow stripes and blue and pink wheels" height="2657" loading="lazy" src="{{i14|https://images.unsplash.com/photo-1784399620949-e7da143e02d1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dmludGFnZSUyMHJvbGxlciUyMHNrYXRpbmd8ZW58MXwwfHx8MTc5MTI5ODk1Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60}}" style="background:#d9c0a6" width="3983"/></div></figure>
+</li>
+</ol>
+<span aria-hidden="true" class="m-stripes se-band"></span>
+</div>
+</div>
+</section>{{/sec_seasons}}
+
+{{#sec_parties}}<section aria-labelledby="parties-title" class="l-grain" data-8b-section="parties" id="parties">
+<div class="l-wrap">
+<div class="pa-top">
+<div class="pa-head">
+<h2 class="m-text-3" id="parties-title">{{t118|Your party, our floor}}</h2>
+<p class="m-text-5">{{t119|Birthdays, office nights and the odd wedding. Every package comes with skates, a host and the floor swept before you arrive.}}</p>
+</div>
+<figure class="m-frame pa-photo" data-8b-motion="drift"><div class="m-frame__clip"><img alt="Two girls laughing at a birthday party with balloons and a paper banner" height="4160" loading="lazy" src="{{i15|https://images.unsplash.com/photo-1644566498425-4a42cb7c4dcd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGtpZHMlMjBiaXJ0aGRheSUyMHBhcnR5JTIwc2thdGluZ3xlbnwxfDB8fHwxNzkxMjk4OTU0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#264040" width="6240"/></div></figure>
+</div>
+<ul class="pa-panels">
+<li class="pa-panel m-surface" data-8b-motion="slant">
+<h3 class="m-text-6">{{t120|The Lap}}</h3>
+<ul class="m-text"><li>{{t121|Up to 10 skaters}}</li><li>{{t122|Two hours on a public session}}</li><li>{{t123|Party table, rental and a slice each}}</li></ul>
+<p class="m-badge">{{t124|$180}}</p>
+</li>
+<li class="pa-panel m-surface-2" data-8b-motion="slant">
+<h3 class="m-text-6">{{t125|The Disco}}</h3>
+<ul class="m-text"><li>{{t126|Up to 20 skaters}}</li><li>{{t127|Two and a half hours, lights down}}</li><li>{{t128|A shout-out and one request from the booth}}</li></ul>
+<p class="m-badge">{{t129|$320}}</p>
+</li>
+<li class="pa-panel m-surface-3" data-8b-motion="slant">
+<h3 class="m-text-6">{{t130|The Whole Floor}}</h3>
+<ul class="m-text"><li>{{t131|Private hire for up to 250}}</li><li>{{t132|Three hours, your playlist, our DJ}}</li><li>{{t133|Snack bar open just for you}}</li></ul>
+<p class="m-badge">{{t134|from $1,400}}</p>
+</li>
+</ul>
+<div class="pa-foot">
+<a class="m-btn" data-8b-placeholder="email" href="#ub-contact"><span class="m-btn__label">{{t135|Ask for a date}}</span></a>
+<p class="m-text">{{t136|Weekend dates go about six weeks ahead. A $50 deposit holds the date.}}</p>
+</div>
+</div>
+</section>{{/sec_parties}}
+
+{{#sec_booth}}<section aria-labelledby="booth-title" class="l-grain" data-8b-section="booth" id="booth">
+<div class="bo-grid l-wrap">
+<div class="bo-intro">
+<h2 class="m-text-3" id="booth-title">{{t137|Records from the booth}}</h2>
+<p class="m-text-5">{{t138|Friday nights are vinyl only. Dee Marlowe has run the booth since 1988 and keeps four crates under the counter, one for each era of the rink.}}</p>
+<figure class="m-frame bo-photo"><div class="m-frame__clip"><img alt="A hand resting on a spinning record on a turntable in the booth" height="5304" loading="lazy" src="{{i16|https://images.unsplash.com/photo-1633379314499-d7e5a47c6ca7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fGRqJTIwdHVybnRhYmxlJTIwdmlueWx8ZW58MXwwfHx8MTc5MTI5ODk1MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60}}" style="background:#262626" width="7952"/></div></figure>
+
+</div>
+<div class="bo-crates">
+<div class="bo-stage">
+<ol class="bo-stack">
+<li class="bo-sleeve m-surface"><span aria-hidden="true" class="bo-rings"></span><h3 class="m-text-6">{{t139|Crate one: 1976 to 1983}}</h3><p class="m-text">{{t140|Disco, Philly soul and roller boogie. The couples’ skate always comes from this crate.}}</p></li>
+<li class="bo-sleeve m-surface-2"><span aria-hidden="true" class="bo-rings"></span><h3 class="m-text-6">{{t141|Crate two: the eighties}}</h3><p class="m-text">{{t142|Electro, freestyle and synth-pop. It plays when the lights go pink.}}</p></li>
+<li class="bo-sleeve m-surface-3"><span aria-hidden="true" class="bo-rings"></span><h3 class="m-text-6">{{t143|Crate three: the nineties}}</h3><p class="m-text">{{t144|House and hip-hop for the inline summer and every summer after.}}</p></li>
+<li class="bo-sleeve m-surface-5"><span aria-hidden="true" class="bo-rings"></span><h3 class="m-text-6">{{t145|Crate four: requests}}</h3><p class="m-text">{{t146|Anything you ask for, as long as it is on vinyl. Leave a card at the booth or send it from here.}}</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>{{/sec_booth}}
+
+{{#sec_faq}}<section aria-labelledby="faq-title" class="l-grain" data-8b-section="faq" id="faq">
+<div class="fq-grid l-wrap">
+<div class="fq-head">
+<h2 class="m-text-3" id="faq-title">{{t147|Before your first lap}}</h2>
+<span aria-hidden="true" class="m-stripes" data-8b-motion="stripes"></span>
+<p class="m-text-5">{{t148|Still wondering? Call the counter during any session and someone will pick up between songs.}}</p>
+</div>
+<div class="fq-list">
+<details data-8b-motion="slant"><summary><span class="m-text-6">{{t149|Do I need my own skates?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t150|No. Rental quads are included in every ticket. Your own quads or inline skates are welcome if the wheels are clean and the toe stops are not metal.}}</p></details>
+<details data-8b-motion="slant"><summary><span class="m-text-6">{{t151|Is there a minimum age?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t152|Children of any age can skate with an adult on the floor. Lessons start at six, and Tuesday nights are eighteen and over.}}</p></details>
+<details data-8b-motion="slant"><summary><span class="m-text-6">{{t153|Do I have to wear a helmet?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t154|Helmets are required for under-twelves and lent free at the counter. Wrist guards are a good idea for anyone on their first few sessions.}}</p></details>
+<details data-8b-motion="slant"><summary><span class="m-text-6">{{t155|Can I just watch?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t156|Yes, the benches along the rail are free for anyone with a skater in the family. The snack bar is open to everyone.}}</p></details>
+<details data-8b-motion="slant"><summary><span class="m-text-6">{{t157|Can I pay at the door?}}</span><span aria-hidden="true" class="fq-mark"></span></summary><p class="m-text">{{t158|Always. Cash or card, no booking needed for public sessions. Courses and parties are booked ahead.}}</p></details>
+</div>
+</div>
+</section>{{/sec_faq}}
+
+{{#sec_contact}}<section aria-labelledby="contact-title" class="l-grain" data-8b-section="contact" id="contact">
+<div class="ct-grid l-wrap">
+<div class="ct-info">
+<h2 class="m-text-3" id="contact-title">{{t159|Find the rink}}</h2>
+<p class="m-text-5">{{t160|Two blocks south of the 14 bus stop at Larkspur and Third. Free parking behind the building after six.}}</p>
+<div class="ct-blocks">
+<div class="ct-block">
+<p class="m-text-4">{{t161|Address}}</p>
+<p class="m-text">{{t162|100 Example Avenue}}<br/>{{t163|Bellmont, OR 97000}}</p>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t164|Call or write}}</p>
+<p class="m-text"><a class="m-link" data-8b-placeholder="phone" href="tel:{{telraw}}">{{t165|(555) 000-0000}}</a></p>
+<p class="m-text"><a class="m-link" data-8b-placeholder="email" href="#ub-contact">{{t166|hello@spinway.example}}</a></p>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t2|Sessions}}</p>
+<dl class="ct-hours m-text">
+<dt>{{t167|Tue}}</dt><dd>{{t20|8–11 pm}}</dd>
+<dt>{{t168|Wed}}</dt><dd>{{t25|5–7 pm}}</dd>
+<dt>{{t169|Fri}}</dt><dd>{{t30|8 pm–midnight}}</dd>
+<dt>{{t170|Sat}}</dt><dd>{{t35|1–4 pm}}</dd>
+<dt>{{t171|Sun}}</dt><dd>{{t39|11 am–2 pm}}</dd>
+</dl>
+</div>
+<div class="ct-block">
+<p class="m-text-4">{{t172|Box office}}</p>
+<p class="m-text">{{t173|Opens thirty minutes before each session. Closed Mondays and from 4 to 18 August.}}</p>
+</div>
+</div>
+</div>
+<div class="ct-map">
+<svg aria-labelledby="ct-map-title" role="img" viewbox="0 0 600 600">
+<title id="ct-map-title">Map: from the bus stop at Larkspur and Third, two blocks south to the rink</title>
+<g class="ct-zoom">
+<path class="ct-street" d="M0 120H600M0 300H600M0 470H600M150 0V600M450 0V600"></path>
+<path class="ct-street ct-street--main" d="M300 0V600M0 210H600"></path>
+<path class="ct-route-cream" d="M232 182V210H300V360"></path>
+<path class="ct-route-ink" d="M232 182V210H300V360"></path>
+<rect class="ct-stop" height="40" width="40" x="212" y="150"></rect>
+<rect class="ct-rink-cream" height="150" rx="75" width="250" x="190" y="380"></rect>
+<rect class="ct-rink-1" height="138" rx="69" width="238" x="196" y="386"></rect>
+<rect class="ct-rink-2" height="114" rx="57" width="214" x="208" y="398"></rect>
+<rect class="ct-rink-3" height="90" rx="45" width="190" x="220" y="410"></rect>
+<text class="ct-label" x="60" y="140">{{t174|Bus 14}}</text>
+<text class="ct-label" x="310" y="200">{{t175|Larkspur Ave}}</text>
+<text class="ct-label ct-label--rink" x="265" y="466">{{t1|Spinway}}</text>
+</g>
+</svg>
+</div>
+</div>
+</section>{{/sec_contact}}
+</main>
+
+<section class="ub-ct" id="ub-contact"><h2>Contact</h2><p>{{phone}}</p><p>{{address}}</p><p>{{hours}}</p><div class="ub-qr">{{{qrh}}}</div>{{#wa}}<a class="ub-btn" href="{{waurl}}">Message us</a>{{/wa}}<a class="ub-btn" href="tel:{{telraw}}">Call</a>{{#ig}}<a class="ub-btn" href="{{ig}}">Instagram</a>{{/ig}}{{#fb}}<a class="ub-btn" href="{{fb}}">Facebook</a>{{/fb}}<p class="ub-credit">Template: Roller Rink by <a href="https://github.com/8bsite/roller-rink-website-template">8B</a> (MIT) · Photos: <a href="https://unsplash.com">Unsplash</a> · Built with UseAlphaBiz</p></section><footer class="l-grain" data-8b-section="footer" id="footer">
+<div class="l-wrap">
+<p aria-hidden="true" class="m-text-2 ft-word" style="--len:7">{{t1|Spinway}}</p>
+<span aria-hidden="true" class="m-stripes" data-8b-motion="stripes"></span>
+<div class="ft-row">
+<nav aria-label="Footer">
+<ul class="ft-links">
+{{#nv_sessions}}<li><a class="m-link-2" href="#sessions">{{t2|Sessions}}</a></li>{{/nv_sessions}}
+{{#nv_lessons}}<li><a class="m-link-2" href="#lessons">{{t3|Lessons}}</a></li>{{/nv_lessons}}
+{{#nv_parties}}<li><a class="m-link-2" href="#parties">{{t176|Parties}}</a></li>{{/nv_parties}}
+{{#nv_faq}}<li><a class="m-link-2" href="#faq">{{t177|Questions}}</a></li>{{/nv_faq}}
+{{#nv_contact}}<li><a class="m-link-2" href="#contact">{{t6|Visit}}</a></li>{{/nv_contact}}
+</ul>
+</nav>
+<ul class="ft-links">
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.instagram.com/">{{t178|Instagram}}</a></li>
+<li><a class="m-link-2" data-8b-placeholder="social" href="https://www.facebook.com/">{{t179|Facebook}}</a></li>
+</ul>
+</div>
+<p class="ft-small">{{t180|© 2026 ⟦name⟧, 100 Example Avenue, Bellmont. Skating since 1976. · Design:}} <a data-8b-credit="" href="https://8b.com/" style="color:inherit">{{t181|8B}}</a></p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const menu = document.getElementById('menu');
+  if (!nav) return;
+  const toggle = nav.querySelector('.nav__toggle');
+  let lastY = window.scrollY, run = 0;
+  const onScroll = () => {
+    const y = window.scrollY, dy = y - lastY;
+    lastY = y;
+    nav.classList.toggle('is-solid', y > 40);
+    if (menu && !menu.hidden) return;
+    if (y < 80) { nav.classList.remove('is-hidden'); run = 0; return; }
+    if (dy === 0) return;
+    if (Math.sign(dy) !== Math.sign(run)) run = 0;
+    run += dy;
+    if (run > 30) nav.classList.add('is-hidden');
+    else if (run < -30) nav.classList.remove('is-hidden');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  onScroll();
+  if (!menu || !toggle) return;
+  const close = menu.querySelector('.menu__close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    if (open) { nav.classList.remove('is-hidden'); window.lenis?.stop(); (close || menu).focus(); }
+    else { window.lenis?.start(); toggle.focus({ preventScroll: true }); }
+  };
+  toggle.addEventListener('click', () => setOpen(menu.hidden));
+  close?.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    menu.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    document.documentElement.style.overflow = '';
+    window.lenis?.start();
+  }));
+})();
+</script>
+<script data-8b-part="section-script:booth">
+(() => {
+  const form = document.querySelector('#booth .bo-form');
+  if (!form) return;
+  const input = form.querySelector('input');
+  const msg = form.querySelector('.bo-msg');
+  const ok = form.querySelector('.bo-ok');
+  const empty = form.querySelector('.bo-empty');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!input.value.trim()) { msg.textContent = empty.content.textContent; input.focus(); return; }
+    msg.textContent = ok.content.textContent;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() {
+  const nav = document.getElementById('nav');
+  return nav ? nav.offsetHeight : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const DIAG = { x: 0.5, y: -Math.cos(Math.PI / 6) };
+const effects = {
+  slant(element, vars = {}) {
+    const k = vars.distance ?? 80;
+    return gsap.timeline(vars.timeline).from(element, { x: -DIAG.x * k, y: -DIAG.y * k, duration: vars.duration ?? 0.9, ease: vars.ease ?? 'power3.out', delay: vars.delay ?? 0 });
+  },
+  stripes(element, vars = {}) {
+    return gsap.timeline(vars.timeline).from(element, { scaleX: 0, duration: vars.duration ?? 1.1, ease: vars.ease ?? 'power3.inOut' });
+  },
+  drift(element, vars = {}) {
+    const img = element.querySelector('img') || element;
+    const k = vars.distance ?? 4;
+    return gsap.timeline(vars.timeline).fromTo(img, { xPercent: -DIAG.x * k * 0.8, yPercent: -DIAG.y * k }, { xPercent: DIAG.x * k * 0.8, yPercent: DIAG.y * k, ease: 'none' });
+  }
+};
+const motionBindings = {
+  slant: (elements, id) => elements.forEach((element, i) => ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top 90%', once: true, animation: effects.slant(element, { delay: (i % 4) * 0.07 }) })),
+  stripes: (elements, id) => elements.forEach((element, i) => ScrollTrigger.create({ id: `${id}:${i}`, trigger: element, start: 'top 92%', once: true, animation: effects.stripes(element) })),
+  drift: (elements, id) => elements.forEach((element, i) => gsap.timeline({ scrollTrigger: { id: `${id}:${i}`, trigger: element, start: 'top bottom', end: 'bottom top', scrub: 0.5 } }).add(effects.drift(element)))
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(motionBindings).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      motionBindings[name](elements, id);
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:sessions">
+queueMotion(() => {
+  const section = document.getElementById('sessions');
+  const list = section.querySelector('.ss-list');
+  const rows = [...list.querySelectorAll(':scope > .ss-row')];
+  const gap = 6, margin = 6;
+  const stripeOf = row => {
+    const along = [...row.querySelectorAll('.ss-day, .ss-time, .m-badge')];
+    const top = Math.max(0, Math.min(...along.map(el => el.offsetTop)) - margin);
+    const bottom = Math.min(row.offsetHeight, Math.max(...along.map(el => el.offsetTop + el.offsetHeight)) + margin);
+    return { top, bottom };
+  };
+  const packed = row => {
+    const stripes = rows.map(stripeOf);
+    const index = rows.indexOf(row);
+    const total = stripes.reduce((sum, s) => sum + s.bottom - s.top, 0) + gap * (rows.length - 1);
+    let slot = list.clientHeight / 2 - total / 2;
+    for (let i = 0; i < index; i++) slot += stripes[i].bottom - stripes[i].top + gap;
+    return slot - (row.offsetTop + stripes[index].top);
+  };
+  const inset = row => { const { top, bottom } = stripeOf(row); return `inset(${top}px 0px ${row.offsetHeight - bottom}px 0px)`; };
+  const angle = -58, clearance = 10;
+  const textNodes = [...section.querySelectorAll('.ss-head, .ss-foot')].flatMap(block => {
+    const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, { acceptNode: node => node.textContent.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    return nodes;
+  });
+  const fit = () => {
+    const parent = list.offsetParent || section;
+    const box = parent.getBoundingClientRect();
+    const cx = box.left + parent.clientLeft + list.offsetLeft + list.offsetWidth / 2;
+    const cy = box.top + parent.clientTop + list.offsetTop + list.offsetHeight / 2;
+    const stripes = rows.map(stripeOf);
+    const length = rows[0].offsetWidth / 2;
+    const width = (stripes.reduce((sum, s) => sum + s.bottom - s.top, 0) + gap * (rows.length - 1)) / 2;
+    const rad = angle * Math.PI / 180, u = [Math.cos(rad), Math.sin(rad)], v = [-u[1], u[0]];
+    const range = document.createRange();
+    const lines = textNodes.flatMap(node => { range.selectNodeContents(node); return [...range.getClientRects()]; });
+    const clear = scale => lines.every(r => {
+      const dx = (r.left + r.right) / 2 - cx, dy = (r.top + r.bottom) / 2 - cy;
+      const hx = r.width / 2 + clearance, hy = r.height / 2 + clearance, a = length * scale, b = width * scale;
+      return Math.abs(dx) > hx + a * Math.abs(u[0]) + b * Math.abs(v[0])
+        || Math.abs(dy) > hy + a * Math.abs(u[1]) + b * Math.abs(v[1])
+        || Math.abs(dx * u[0] + dy * u[1]) > a + hx * Math.abs(u[0]) + hy * Math.abs(u[1])
+        || Math.abs(dx * v[0] + dy * v[1]) > b + hx * Math.abs(v[0]) + hy * Math.abs(v[1]);
+    });
+    let scale = 1;
+    while (scale > 0.4 && !clear(scale)) scale -= 0.02;
+    return scale;
+  };
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 900px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 899px)' }, context => {
+    const { wide, narrow } = context.conditions;
+    if (!wide && !narrow) return;
+    if (wide) section.classList.add('is-scened');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: wide
+      ? { id: 'sessions', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true }
+      : { id: 'sessions', trigger: list, start: 'top 92%', end: 'top 22%', scrub: 0.6, invalidateOnRefresh: true } });
+    timeline.fromTo(list, { rotation: angle, scale: () => fit() }, { rotation: 0, scale: 1, duration: 0.55, ease: 'power2.inOut' }, 0);
+    rows.forEach((row, i) => {
+      const at = 0.3 + i * 0.04;
+      timeline.fromTo(row, { y: () => packed(row), clipPath: () => inset(row) }, { y: 0, clipPath: 'inset(0px 0px 0px 0px)', duration: 0.5, ease: 'power2.inOut' }, at)
+        .fromTo(row.querySelector('.ss-what'), { opacity: 0 }, { opacity: 1, duration: 0.24, ease: 'power1.out' }, at + 0.2);
+    });
+    if (wide) timeline.to({}, { duration: 0.12 }, 0.9);
+    return () => section.classList.remove('is-scened');
+  });
+});
+</script>
+<script data-8b-part="scene:lessons">
+queueMotion(() => {
+  const section = document.getElementById('lessons');
+  const list = section.querySelector('.ls-steps');
+  const steps = [...list.querySelectorAll(':scope > .ls-step')];
+  const rise = () => parseFloat(getComputedStyle(list).getPropertyValue('--ls-rise')) || 0;
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 900px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 899px)' }, context => {
+    const { wide, narrow } = context.conditions;
+    if (!wide && !narrow) return;
+    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'lessons', trigger: list, start: wide ? 'top 95%' : 'top 90%', end: wide ? 'bottom 62%' : 'bottom 55%', scrub: 0.6, invalidateOnRefresh: true } });
+    steps.forEach((step, i) => {
+      const from = wide ? { y: () => i * rise() } : { x: () => -i * rise() };
+      const to = wide ? { y: 0 } : { x: 0 };
+      timeline.fromTo(step, from, { ...to, duration: 0.4 }, i * 0.18);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:seasons">
+queueMotion(() => {
+  const section = document.getElementById('seasons');
+  const track = section.querySelector('.se-track');
+  const viewport = section.querySelector('.se-viewport');
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    section.classList.add('is-scened');
+    const distance = () => Math.max(0, track.scrollWidth - viewport.clientWidth + parseFloat(getComputedStyle(viewport).paddingLeft) * 2);
+    const measure = () => section.style.setProperty('--se-run', `${distance()}px`);
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    gsap.timeline({ scrollTrigger: { id: 'seasons', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true } })
+      .to(track, { x: () => -distance(), ease: 'none' });
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.classList.remove('is-scened');
+      section.style.removeProperty('--se-run');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:booth">
+queueMotion(() => {
+  const section = document.getElementById('booth');
+  const crates = section.querySelector('.bo-crates');
+  const sleeves = [...section.querySelectorAll('.bo-sleeve')];
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    section.classList.add('is-scened');
+    sleeves.forEach((sleeve, i) => gsap.set(sleeve, { zIndex: sleeves.length - i }));
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'booth', trigger: crates, start: 'top top', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true } });
+    sleeves.forEach((sleeve, i) => {
+      if (i > 0) timeline.fromTo(sleeve, { scale: 1 - Math.min(i, 2) * 0.06, y: -Math.min(i, 2) * 26 }, { scale: 1, y: 0, duration: 1, ease: 'power1.inOut' }, (i - 1) * 1);
+      if (i < sleeves.length - 1) timeline.to(sleeve, { rotationX: -100, y: 60, duration: 1, ease: 'power2.in' }, i * 1).to(sleeve, { opacity: 0, duration: 0.45, ease: 'power1.in' }, i * 1 + 0.5);
+    });
+    timeline.to({}, { duration: 0.6 });
+    return () => section.classList.remove('is-scened');
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  const section = document.getElementById('contact');
+  const map = section.querySelector('.ct-map');
+  const zoom = map.querySelector('.ct-zoom');
+  const route = [...map.querySelectorAll('.ct-route-cream, .ct-route-ink')];
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    route.forEach(path => { const length = path.getTotalLength(); gsap.set(path, { strokeDasharray: `${length} ${length}` }); });
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'contact', trigger: map, start: 'top 92%', end: 'center 50%', scrub: 0.6 } })
+      .fromTo(zoom, { scale: 0.72, rotation: -14, svgOrigin: '300 300' }, { scale: 1, rotation: 0, svgOrigin: '300 300', duration: 1, ease: 'power2.out' }, 0)
+      .fromTo(route, { strokeDashoffset: (i, path) => path.getTotalLength() }, { strokeDashoffset: 0, duration: 0.7, ease: 'power1.inOut' }, 0.3);
+  });
+});
+</script>
+</body>
+</html>
