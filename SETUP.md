@@ -80,3 +80,9 @@ On GitHub, edit `app.js` and fill in `SUPABASE_URL`, `SUPABASE_ANON` and `PAYSTA
 - Stripe is switched off (`STRIPE:false`) because Stripe does not open accounts for Nigerian companies.
 - `.ng` and `.com.ng` domains are not sold automatically.
 - Templates are free and MIT licensed (Start Bootstrap and 8B). Credits are in `legal.html`, in each site footer and in `LICENSES.txt`. Their demo photos load from Unsplash, so customers should upload their own.
+
+## Admin
+- The owner admin is hardcoded in `api/admin.js` as `alphastacks341@gmail.com`. The owner can add or remove other admins on the `/admin` page.
+- Create the owner account in Supabase: Authentication, Users, Add user, Create new user. Enter the email and a strong password, and tick Auto Confirm User. Then log in on your site and open `/admin`.
+- If you ran `supabase.sql` before the admins feature existed, run `supabase-admins.sql` once in the SQL Editor.
+- Domain search uses the real Cloudflare check once `CF_ACCOUNT_ID` and `CF_API_TOKEN` are set in Vercel. Until then it shows "Demo mode" and the results are only examples.

@@ -9,3 +9,7 @@ revoke insert,update on sites from authenticated,anon;
 grant insert(id,category,variant,data,domain),update(id,category,variant,data,domain) on sites to authenticated;
 create function lock_domain() returns trigger language plpgsql as $$ begin if old.status<>'draft' and new.domain is distinct from old.domain then raise exception 'domain locked'; end if; return new; end $$;
 create trigger lock before update on sites for each row execute function lock_domain();
+
+-- Extra admins (managed from the /admin page by the owner). Only the server key can read or write this table.
+create table if not exists admins(email text primary key,created timestamptz default now());
+alter table admins enable row level security;

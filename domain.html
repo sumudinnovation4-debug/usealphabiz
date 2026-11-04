@@ -7,10 +7,15 @@
 <div class="row"><b>Total today</b><span class="tot">₦26,999</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></aside></main>
 <script src="app.js"></script><script>
 const o=S.get('order',{});$('#cat').textContent=o.category||'Choose a template first';
-async function check(n){let L=[];try{const r=await fetch(CFG.API+'/domain?name='+n);if(r.ok)L=await r.json()}catch{}
- return L.length?L:[n+'.com',n+'.net'].map(d=>({d,ok:true}))}
+async function check(n){let r;try{r=await fetch(CFG.API+'/domain?name='+n)}catch{return{err:'No connection. Please try again.'}}
+ if(r.status==501)return{demo:1,L:[n+'.com',n+'.net'].map(d=>({d,ok:true}))};
+ if(!r.ok)return{err:'Domain search is unavailable right now. Please try again shortly.'};
+ return{L:await r.json()}}
 $('#s').onclick=async()=>{const n=$('#q').value.toLowerCase().replace(/[^a-z0-9]/g,'');if(!n)return;
- const L=await check(n);$('#res').innerHTML=`<b>Available domains for "${n}"</b>`+L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?'Available':'Taken'} · ₦26,999/year</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')};
+ $('#res').innerHTML='<span class="mut">Checking...</span>';const R=await check(n);
+ if(R.err){$('#res').innerHTML='<div class="card">'+R.err+'</div>';return}
+ const note=R.demo?'<div class="card" style="background:#fff7e0">Demo mode: availability is not checked yet, so these are examples only.</div>':'';
+ $('#res').innerHTML=`<b>Domains for "${n}"</b>`+note+R.L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?(R.demo?'Example':'Available')+' · ₦26,999/year':x.why=='price'?'Not available on this plan':'Taken'}</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')||'<div class="card">No results. Try another name.</div>'};
 $('#res').onclick=e=>{const d=e.target.dataset.d;if(!d)return;o.domain=d;S.set('order',o);$('#sel').textContent=d};
 $('#c').onclick=()=>{if(!o.domain)return alert('Select a domain first');location.href='checkout.html'};
 if(o.domain)$('#sel').textContent=o.domain;
