@@ -1,15 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Websites – UseAlphaBiz</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
 <main class="wrap"><div class="row" style="border:0"><h1>My Websites</h1><a class="btn" href="index.html#templates">+ Create New Website</a></div>
-<div class="card" style="background:var(--gl);margin:14px 0"><div class="grid g3" style="text-align:center"><div><b id="n"></b><br><span class="mut" id="n2"></span></div><div><b>Storage</b><br><span class="mut">120MB / 1GB</span></div><div><b>This Month</b><br><span class="mut">342 Visits · 18 Bookings</span></div></div></div>
+<div class="card" style="background:var(--gl);margin:14px 0"><div class="grid g3" style="text-align:center"><div><b id="n"></b><br><span class="mut" id="n2"></span></div><div><b id="n3">0</b><br><span class="mut">New orders &amp; bookings</span></div><div><b id="n4">0</b><br><span class="mut">New messages &amp; applications</span></div></div></div>
 <p><b>My Sites</b> · <a href="billing.html">Billing</a> · <a href="settings.html">Settings</a></p><div class="grid g3" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))" id="s"></div></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="engine.js"></script><script src="app.js"></script><script>
 (async()=>{const sb=SB();
 if(sb){const {data}=await sb.from('sites').select('id,category,variant,data,domain,status,live');if(data){const L=S.get('sites',[]);data.forEach(r=>{const i=L.findIndex(x=>x.id==r.id);i<0?L.push(r):L[i]={...L[i],...r}});S.set('sites',L)}}
+if(sb){try{const [o,b,f]=await Promise.all([sb.from('b_orders').select('id',{count:'exact',head:true}).eq('status','new'),sb.from('b_bookings').select('id',{count:'exact',head:true}).eq('status','pending'),sb.from('b_forms').select('id',{count:'exact',head:true}).eq('status','new')]);$('#n3').textContent=(o.count||0)+(b.count||0);$('#n4').textContent=f.count||0}catch{}}
 let sites=S.get('sites',[]);const dr=S.get('draft');if(dr)sites=sites.concat([{id:'',domain:'not published',category:CATS[dr.cat][1],data:dr.data,live:false}]);
 const live=sites.filter(x=>x.live).length,lab=x=>x.live?'Live':x.status=='failed'?'Needs attention':['paid','working','registering'].includes(x.status)?'Setting up':'Draft';
 $('#n').textContent=sites.length+' Sites';$('#n2').textContent=live+' Live · '+(sites.length-live)+' Other';
 $('#s').innerHTML=sites.map(x=>`<div class="card"><div class="row" style="border:0"><b>${esc(x.data&&x.data.name||x.domain)}</b><span class="pill ${x.live?'':'draft'}">${lab(x)}</span></div><p class="mut">${esc(x.domain)} · ${esc(x.category)}</p>
-<a class="btn out sm" href="editor.html${x.id?'?id='+x.id:''}">Edit Site</a> <a class="btn out sm" href="site.html${x.id?'?id='+x.id:''}">View</a></div>`).join('')||'<p class="mut">No sites yet. Create your first one.</p>';
+${(TPLS.find(t=>t.id===x.variant)||{}).sys&&x.id?'<a class="btn sm" href="manage.html?id='+x.id+'">Manage</a> ':''}<a class="btn out sm" href="editor.html${x.id?'?id='+x.id:''}">Edit Site</a> <a class="btn out sm" href="site.html${x.id?'?id='+x.id:''}">View</a></div>`).join('')||'<p class="mut">No sites yet. Create your first one.</p>';
 })();
 </script></body></html>

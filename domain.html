@@ -3,8 +3,8 @@
 <main class="wrap grid g2"><div><div class="card"><h1>Search Your Domain</h1><p class="mut">Enter your business name to see options.</p>
 <input id="q" placeholder="business name"><button class="btn block" id="s">Search</button></div><div id="res" style="margin-top:18px" class="grid"></div></div>
 <aside class="card"><h2>Your Site</h2><div class="pill" id="cat"></div><p class="mut">Selected domain</p><b id="sel" style="color:var(--g)">None yet</b>
-<div class="row"><span>Domain + hosting</span><b>₦26,999/year</b></div><p class="mut">✔ Custom domain ✔ SSL ✔ Hosting</p>
-<div class="row"><b>Total today</b><span class="tot">₦26,999</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></aside></main>
+<div class="row"><span>Domain + hosting</span><b>₦27,777/year</b></div><p class="mut">✔ Custom domain ✔ SSL ✔ Hosting</p>
+<div class="row"><b>Total today</b><span class="tot">₦27,777</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></aside></main>
 <script src="app.js"></script><script>
 const o=S.get('order',{});$('#cat').textContent=o.category||'Choose a template first';
 async function check(n){let r;try{r=await fetch(CFG.API+'/domain?name='+n)}catch{return{err:'No connection. Please try again.'}}
@@ -15,7 +15,7 @@ $('#s').onclick=async()=>{const n=$('#q').value.toLowerCase().replace(/[^a-z0-9]
  $('#res').innerHTML='<span class="mut">Checking...</span>';const R=await check(n);
  if(R.err){$('#res').innerHTML='<div class="card">'+R.err+'</div>';return}
  const note=R.demo?'<div class="card" style="background:#fff7e0">Demo mode: availability is not checked yet, so these are examples only.</div>':'';
- $('#res').innerHTML=`<b>Domains for "${n}"</b>`+note+R.L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?(R.demo?'Example':'Available')+' · ₦26,999/year':x.why=='price'?'Not available on this plan':'Taken'}</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')||'<div class="card">No results. Try another name.</div>'};
+ $('#res').innerHTML=`<b>Domains for "${n}"</b>`+note+R.L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?(R.demo?'Example':'Available')+' · ₦27,777/year':x.why=='price'?'Not available on this plan':'Taken'}</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')||'<div class="card">No results. Try another name.</div>'};
 $('#res').onclick=e=>{const d=e.target.dataset.d;if(!d)return;o.domain=d;S.set('order',o);$('#sel').textContent=d};
 $('#c').onclick=()=>{if(!o.domain)return alert('Select a domain first');location.href='checkout.html'};
 if(o.domain)$('#sel').textContent=o.domain;

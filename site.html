@@ -1,4 +1,4 @@
 <!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="engine.js"></script><script>
 (async()=>{const L=k=>{try{return JSON.parse(localStorage.getItem(k))}catch{}},i=new URLSearchParams(location.search).get('id'),s=i?(L('sites')||[]).find(x=>x.id==i):L('draft');let h='<p style="font-family:sans-serif;padding:30px">Site not found.</p>';
-if(s){const o={origin:location.origin,url:s.domain?'https://'+s.domain:''};if(isNaN(s.variant))o.tpl=await loadTpl(s.variant);h=render(s.data,s.variant,o)}document.open();document.write(h);document.close()})();
+if(s){const o={origin:location.origin,url:s.domain?'https://'+s.domain:'',sid:s.live?s.id:'',sburl:'https://yhlaxhsncqwqzhumrmvx.supabase.co',skey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobGF4aHNuY3F3cXpodW1ybXZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1Njc0MDUsImV4cCI6MjEwOTE0MzQwNX0.DiwOd4z4J9CnEUxL0A244zEMunIXL6VaPJhplRlUoR0'};if(isNaN(s.variant))o.tpl=await loadTpl(s.variant);h=render(s.data,s.variant,o)}document.open();document.write(h);document.close()})();
 </script>

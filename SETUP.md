@@ -86,3 +86,12 @@ On GitHub, edit `app.js` and fill in `SUPABASE_URL`, `SUPABASE_ANON` and `PAYSTA
 - Create the owner account in Supabase: Authentication, Users, Add user, Create new user. Enter the email and a strong password, and tick Auto Confirm User. Then log in on your site and open `/admin`.
 - If you ran `supabase.sql` before the admins feature existed, run `supabase-admins.sql` once in the SQL Editor.
 - Domain search uses the real Cloudflare check once `CF_ACCOUNT_ID` and `CF_API_TOKEN` are set in Vercel. Until then it shows "Demo mode" and the results are only examples.
+
+## Business systems (Restaurant, Store, School, Bookings)
+1. Supabase → SQL Editor → run, in this order: `supabase-systems.sql`, `supabase-systems-storage.sql`, `supabase-pay.sql` (all safe to re-run). Run `supabase-admins.sql` too if you haven't.
+2. Redeploy the Vercel site and the Cloudflare worker (`wrangler deploy`).
+3. Sign up at /login with alphastacks341@gmail.com, confirm the email; /admin.html then works.
+4. Customer flow: pick a "Full system" template → publish → open "Manage" on the dashboard (orders, menu, bookings, applications, settings).
+Payments: each business connects ITS OWN Paystack account in Manage → Settings (public + secret key). Customers can then pay online (orders, and booking deposits/full price). The server (`api/bz-pay.js`) asks Paystack to confirm every payment with that business's secret key before marking it paid. Optional backup: in their Paystack dashboard the business sets the webhook to `https://YOURDOMAIN/api/bz-webhook?site=SITE_ID` (shown in Settings). Bank transfer, cash and WhatsApp still work for businesses that don't connect Paystack.
+Vercel env needed for this: SUPABASE_URL and SUPABASE_SERVICE_KEY (already used by the other API files).
+Plan price is ₦27,777 per year.

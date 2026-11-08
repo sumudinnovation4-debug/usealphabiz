@@ -6,6 +6,6 @@
 <h2 style="margin-top:28px">Invoices</h2><div class="card" style="overflow-x:auto"><table style="min-width:420px"><tr><th>Date</th><th>Invoice</th><th>Amount</th><th>Status</th></tr><tbody id="inv"></tbody></table></div></main>
 <script src="app.js"></script><script>
 const p=S.get('paid',null),o=S.get('order',{}),d=p?new Date(p.date):null;
-$('#dm').textContent=o.domain||'—';$('#pl').textContent=d?`₦26,999/year · Renews ${new Date(d.getFullYear()+1,d.getMonth(),d.getDate()).toDateString()}`:'No active plan yet';
-$('#inv').innerHTML=d?`<tr><td>${d.toDateString()}</td><td>INV-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,0)}${String(d.getDate()).padStart(2,0)}</td><td>₦26,999</td><td><span class="pill">Paid</span></td></tr>`:'<tr><td colspan=4 class="mut">No invoices yet</td></tr>';
+$('#dm').textContent=o.domain||'—';$('#pl').textContent=d?`₦27,777/year · Renews ${new Date(d.getFullYear()+1,d.getMonth(),d.getDate()).toDateString()}`:'No active plan yet';
+$('#inv').innerHTML=d?`<tr><td>${d.toDateString()}</td><td>INV-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,0)}${String(d.getDate()).padStart(2,0)}</td><td>₦27,777</td><td><span class="pill">Paid</span></td></tr>`:'<tr><td colspan=4 class="mut">No invoices yet</td></tr>';
 </script></body></html>

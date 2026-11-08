@@ -2,7 +2,7 @@
 const CFG={PAYSTACK_PK:'pk_test_xxxxxxxx',SUPABASE_URL:'https://yhlaxhsncqwqzhumrmvx.supabase.co',SUPABASE_ANON:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlobGF4aHNuY3F3cXpodW1ybXZ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1Njc0MDUsImV4cCI6MjEwOTE0MzQwNX0.DiwOd4z4J9CnEUxL0A244zEMunIXL6VaPJhplRlUoR0',API:'/api',STRIPE:false,PAYSTACK_USD:false};
 const $=s=>document.querySelector(s);
 const S={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
-const PRICE=26999,fmt=n=>'₦'+n.toLocaleString();
+const PRICE=27777,fmt=n=>'₦'+n.toLocaleString();
 const CATS=[['🍽️','Restaurant'],['💈','Barber / Salon / Spa'],['👗','Fashion / Tailor / Boutique'],['⛪','Church / Mosque'],['🏫','School'],['🏠','Real Estate'],['🔧','Artisan'],['🛒','Supermarket / Shop'],['🏥','Clinic / Pharmacy'],['🏨','Hotel'],['💼','General / Portfolio'],['📄','CV']];
 document.body.insertAdjacentHTML('afterbegin',`<header class="nav"><a class="logo" href="index.html">◈ UseAlphaBiz.com</a><nav><a href="features.html">Features</a><a href="templates.html">Templates</a><a href="pricing.html">Pricing</a><a href="docs.html">Docs</a><a href="dashboard.html">My Sites</a><a class="only-m" href="login.html">Log in</a></nav><div class="nav-cta"><a class="btn dark sm hide-m" href="login.html">Log in</a><a class="btn sm" href="templates.html">Start<span class="xl">&nbsp;Building Free</span></a><button class="burger" aria-label="Menu">☰</button></div></header>`);
 document.querySelector('.burger').onclick=()=>document.querySelector('.nav nav').classList.toggle('open');document.querySelectorAll('.nav nav a').forEach(a=>a.onclick=()=>document.querySelector('.nav nav').classList.remove('open'));
