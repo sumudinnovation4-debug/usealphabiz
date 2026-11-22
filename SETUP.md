@@ -95,3 +95,23 @@ On GitHub, edit `app.js` and fill in `SUPABASE_URL`, `SUPABASE_ANON` and `PAYSTA
 Payments: each business connects ITS OWN Paystack account in Manage → Settings (public + secret key). Customers can then pay online (orders, and booking deposits/full price). The server (`api/bz-pay.js`) asks Paystack to confirm every payment with that business's secret key before marking it paid. Optional backup: in their Paystack dashboard the business sets the webhook to `https://YOURDOMAIN/api/bz-webhook?site=SITE_ID` (shown in Settings). Bank transfer, cash and WhatsApp still work for businesses that don't connect Paystack.
 Vercel env needed for this: SUPABASE_URL and SUPABASE_SERVICE_KEY (already used by the other API files).
 Plan price is ₦27,777 per year.
+
+## Part C. Free subdomains (yourname.usealphabiz.com)
+
+Free sites live on a subdomain of your main domain, with a small "Made free with UseAlphaBiz" badge. Paid sites use their own domain with no badge.
+
+1. **Supabase.** SQL Editor, paste everything from `supabase-free.sql`, Run.
+2. **Cloudflare DNS.** Open the `usealphabiz.com` zone, DNS, Add record: Type `A`, Name `*`, IPv4 `192.0.2.1`, Proxy status **Proxied** (orange cloud). Leave your existing `@` and `www` records for Vercel exactly as they are.
+3. **Cloudflare Worker.** `wrangler.toml` now has the route `*.usealphabiz.com/*`, so the next deploy of `alphabiz-sites` adds it by itself. Check: Workers & Pages, alphabiz-sites, Settings, Domains & Routes. If the route is not listed, tap Add, Route, enter `*.usealphabiz.com/*`, zone `usealphabiz.com`.
+4. **Vercel.** Nothing new to add. `/api/free` uses the same `SUPABASE_URL`, `SUPABASE_ANON` and `SUPABASE_SERVICE_KEY` you already set. Optional: `BASE_DOMAIN` (default `usealphabiz.com`) and `FREE_SITES_PER_USER` (default 3).
+5. **Test.** Build a site, tap Publish, choose Free subdomain, pick a name, publish, then open `https://yourname.usealphabiz.com`.
+
+Free sites can be upgraded from My Websites (Upgrade button). Paying attaches the custom domain to the same site and the free address keeps working.
+
+## What changed in the editor
+- Tap any text, photo, button, header or section on the page to edit it. Tap text twice to type.
+- Works on phone, tablet and desktop. The 📱 📟 💻 buttons switch screen size; big layouts are scaled down on small screens.
+- Style tab: header, page, footer and main colours, heading and body fonts, button shape.
+- Add tab: insert text, photo and text, cards, gallery, call to action, contact or space.
+- Preview opens instantly at full screen, before saving. The templates page has a Preview button on every design.
+- Your edits are saved inside the site data (`data.ed`), so they publish automatically. Switching to a different design clears them.

@@ -6,10 +6,11 @@
 <div class="card"><span class="pill">Payment Successful</span><p class="mut">Plan: Annual · Starter</p><div class="big" style="font-size:2.2rem">₦27,777 paid</div><p class="mut" id="dt"></p>
 <a class="btn" href="dashboard.html">Go to My Site</a> <a class="btn out" href="billing.html">Manage</a></div></div></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script><script>
-const o=S.get('order',{}),p=S.get('paid',{});const url='https://'+(o.domain||'yourbiz.com');$('#u').textContent=url;qr($('#q'),url);
-$('#dt').textContent='Paid on '+new Date(p.date||Date.now()).toDateString()+' · Invoice sent to your email';
+const FREE=new URLSearchParams(location.search).get('free'),o=S.get('order',{}),p=S.get('paid',{});let host=o.domain||'yourbiz.com';if(FREE){const s=S.get('sites',[]).find(z=>z.id==new URLSearchParams(location.search).get('site'));if(s)host=HOST(s)}const url='https://'+host;$('#u').innerHTML='<a href="'+url+'" target="_blank" style="color:var(--g)">'+url+'</a>';qr($('#q'),url);
+if(FREE){$('.pill').textContent='Free plan';document.querySelector('.card .mut').textContent='Your site has a small UseAlphaBiz badge. Upgrade to remove it and use your own domain.';document.querySelector('.card .big').textContent='₦0';$('#dt').textContent='Share your link with customers.';$('#u').nextElementSibling;document.querySelector('p.mut').textContent='It may take a minute to show everywhere';document.querySelector('.card .btn.out').outerHTML='<a class="btn out" href="domain.html?upgrade='+new URLSearchParams(location.search).get('site')+'">Upgrade to own domain</a>'}
+if(!FREE)$('#dt').textContent='Paid on '+new Date(p.date||Date.now()).toDateString()+' · Invoice sent to your email';
 </script><script>
-(async()=>{const sb=SB(),id=new URLSearchParams(location.search).get('site');if(!sb||!id)return;const h=$('h1');h.textContent='Setting up your site…';
+(async()=>{const sb=SB(),id=new URLSearchParams(location.search).get('site');if(!sb||!id||new URLSearchParams(location.search).get('free'))return;const h=$('h1');h.textContent='Setting up your site…';
 for(let i=0;i<40;i++){const {data}=await sb.from('sites').select('status,note,domain').eq('id',id).single();
 if(data&&data.status==='live'){h.textContent='Your site is live!';$('#u').textContent='https://'+data.domain;return}
 if(data&&data.status==='failed'){h.textContent='We hit a problem';$('#u').textContent=data.note||'Contact support.';return}

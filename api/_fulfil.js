@@ -4,7 +4,7 @@ const cf=(p,m='GET',b)=>fetch('https://api.cloudflare.com/client/v4'+p,{method:m
 const zone=async d=>((await cf('/zones?name='+d)).result||[])[0];
 async function fulfil(id){const cur=(await sb(`sites?id=eq.${id}&select=status`))[0];if(!cur)return;
  const c=await sb(`sites?id=eq.${id}&status=in.(paid,registering)`,'PATCH',{status:'working',updated:now()}),s=c[0];if(!s)return;
- const set=(status,note)=>sb(`sites?id=eq.${id}`,'PATCH',{status,note:note||'',live:status==='live',updated:now()});
+ const set=(status,note)=>sb(`sites?id=eq.${id}`,'PATCH',{status,note:note||'',live:status==='live'||!!s.sub,updated:now()});
  try{let z=await zone(s.domain);
   if(!z&&cur.status==='paid'){const ck=await cf(`/accounts/${A}/registrar/domain-check`,'POST',{domains:[s.domain]}),d=((ck.result||{}).domains||[])[0];
    if(!d||!d.registrable)return set('failed','Domain not available: '+((d&&d.reason)||'unknown'));

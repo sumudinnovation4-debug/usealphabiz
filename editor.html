@@ -1,48 +1,154 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editor – UseAlphaBiz</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-<main class="wrap" style="max-width:1200px"><div class="row" style="border:0"><div><h1 style="margin:0">Editor</h1><span class="mut" id="bc"></span></div><div><button class="btn out sm" id="dc">Discard</button> <button class="btn sm" id="sv">Save Changes</button> <button class="btn dark sm" id="nx">Next: Domain</button></div></div>
-<div class="tabs"><button class="on" data-p="f">Edit</button><button data-p="v">Preview</button></div><div class="grid ed" style="margin-top:14px"><div class="card fcard"><h2>Website Details</h2><div id="sysn" class="card" style="display:none;background:var(--gl);margin-bottom:12px"></div><div id="f"></div><label>Design</label><select id="vs"></select><div class="ubo"><label>Colour style</label><select id="sk"></select></div><div id="ct"></div><label>Logo (PNG/JPG)</label><input type="file" id="lg" accept="image/*">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Editor – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<style>
+body.e>.nav,body.e>.ft{display:none!important}body.e{margin:0;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.e-top{display:flex;align-items:center;gap:6px;padding:7px 10px;background:#fff;border-bottom:1px solid var(--bd);overflow-x:auto;flex:none}
+.e-top .btn,.e-top .tb{white-space:nowrap;flex:none}.e-top .sp{flex:1;min-width:6px}
+.tb{border:1px solid var(--bd);background:#fff;border-radius:9px;padding:7px 10px;font:600 .9rem Inter,sans-serif;cursor:pointer}.tb.on{background:var(--gl);border-color:var(--g)}.tb:disabled{opacity:.35}
+.e-main{flex:1;display:flex;min-height:0}
+.e-stage{flex:1;min-width:0;background:#e3e7e4;overflow:auto;display:flex;justify-content:center;align-items:flex-start}
+#fw{position:relative;height:100%}#fr{border:0;background:#fff;display:block;transform-origin:0 0}.e-stage.dev #fw{box-shadow:0 0 0 1px #0002,0 12px 40px #0003}
+.e-panel{width:370px;background:#fff;border-left:1px solid var(--bd);display:flex;flex-direction:column;min-height:0;flex:none}
+.e-tabs{display:flex;border-bottom:1px solid var(--bd);flex:none}.e-tabs button{flex:1;padding:11px 4px;border:0;background:none;font:600 .8rem Inter,sans-serif;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent}.e-tabs button.on{color:var(--gd);border-color:var(--g)}
+.e-body{flex:1;overflow:auto;padding:14px;-webkit-overflow-scrolling:touch}
+.e-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;align-items:center}.e-b{border:1px solid var(--bd);background:#fff;border-radius:10px;padding:10px 13px;font:600 .85rem Inter,sans-serif;cursor:pointer;color:var(--ink)}.e-b:active{background:var(--gl)}.e-b.d{color:#b42318}.e-b.p{background:var(--g);color:#fff;border-color:var(--g)}
+.e-lab{display:block;font-size:.78rem;color:var(--mut);font-weight:600;margin:14px 0 4px}.e-chip{display:inline-block;background:var(--gl);color:var(--gd);border-radius:99px;padding:4px 12px;font-size:.8rem;font-weight:700}
+.e-panel input[type=color]{width:48px;height:42px;padding:2px;margin:0;flex:none;border-radius:10px}.e-panel input:not([type=color]):not([type=file]):not([type=checkbox]),.e-panel select,.e-panel textarea{margin:4px 0 10px}
+.e-sw{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--bd)}.e-sw span{font-size:.9rem}
+.blk{display:grid;grid-template-columns:1fr 1fr;gap:10px}.blk button{border:1px solid var(--bd);background:#fff;border-radius:12px;padding:16px 8px;font:600 .85rem Inter,sans-serif;cursor:pointer}.blk button b{display:block;font-size:1.6rem;margin-bottom:4px}
+#done{display:none;position:fixed;top:60px;right:12px;z-index:30;box-shadow:0 6px 20px #0004}body.typing #done{display:block}body.typing .e-panel{display:none}
+.hint{background:var(--gl);border-radius:12px;padding:14px;color:var(--gd);line-height:1.6}
+@media(max-width:560px){[data-dv=t],.e-top .sp{display:none}#pv{font-size:0}#pv:before{content:'👁';font-size:1rem}}
+@media(max-width:900px){.e-main{flex-direction:column}.e-panel{width:100%;height:40vh;border-left:0;border-top:1px solid var(--bd)}.e-panel.min{height:auto}.e-panel.min .e-body{display:none}.e-b{padding:11px 14px}}
+</style></head><body class="e">
+<div class="e-top"><a class="tb" href="dashboard.html" title="Back">←</a><button class="tb" id="un" title="Undo" disabled>↶</button><button class="tb" id="re" title="Redo" disabled>↷</button><span class="sp"></span>
+<button class="tb" data-dv="p" title="Phone">📱</button><button class="tb" data-dv="t" title="Tablet">📟</button><button class="tb" data-dv="d" title="Desktop">💻</button><span class="sp"></span>
+<button class="tb" id="pv">👁 Preview</button><button class="btn out sm" id="sv">Save</button><button class="btn sm" id="nx">Publish ▸</button></div>
+<div class="e-main"><div class="e-stage" id="stage"><div id="fw"><iframe id="fr"></iframe></div></div>
+<div class="e-panel" id="panel"><div class="e-tabs" id="tabs"><button data-t="sel" class="on">✏️ Edit</button><button data-t="add">➕ Add</button><button data-t="style">🎨 Style</button><button data-t="det">⚙️ Details</button><button data-t="min" title="Show or hide panel">⌄</button></div>
+<div class="e-body" id="body">
+<div id="p-sel"></div><div id="p-add" style="display:none"></div><div id="p-style" style="display:none"></div>
+<div id="p-det" style="display:none"><div id="sysn" class="card" style="display:none;background:var(--gl);margin-bottom:12px"></div><p class="mut" style="margin-top:0" id="bc"></p><div id="f"></div>
+<label>Design</label><select id="vs"></select><div class="ubo"><label>Colour style</label><select id="sk"></select></div><div id="ct"></div>
+<label>Logo (PNG/JPG)</label><input type="file" id="lg" accept="image/*">
 <div class="row"><b>Services list</b></div><div id="sl"></div><div style="display:flex;gap:8px"><input id="ns" placeholder="Add a service"><button class="btn sm" id="as" style="height:46px;margin-top:6px">Add</button></div>
 <div class="row"><b>Photos upload</b><span class="mut" id="pc"></span></div><div id="ph" class="pg"></div><input type="file" id="pf" multiple accept="image/*"></div>
-<div class="card sticky vcard" style="position:sticky;top:70px"><div class="row" style="border:0"><h2 style="margin:0">Live Preview</h2><button class="btn out sm" id="dv">Mobile Preview</button></div>
-<div style="background:#e9ece9;padding:10px;border-radius:12px;text-align:center"><iframe id="fr" style="width:100%;height:540px;border:0;background:#fff;border-radius:8px"></iframe></div></div></div></main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script><script src="engine.js"></script><script>
+</div></div></div>
+<button class="btn" id="done">✓ Done typing</button><input type="file" id="pimg" accept="image/*" style="display:none">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="app.js"></script><script src="engine.js"></script><script src="preview.js"></script><script>
 const id=new URLSearchParams(location.search).get('id'),sites=S.get('sites',[]),st=id?sites.find(x=>x.id==id):S.get('draft');
-if(!st)location.href='templates.html';const d=st.data;d.services=d.services||[];d.photos=d.photos||[];
-const K=[['name','Business Name'],['tagline','Headline'],['about','About (one line)'],['phone','Phone'],['wa','WhatsApp'],['address','Address'],['hours','Opening hours'],['ig','Instagram link'],['fb','Facebook link'],['pay','Payment link (for Scan to Pay)']];
-$('#bc').textContent='Home / Edit Website / '+(CATS[st.cat]?CATS[st.cat][1]:'');if(st.live)$('#nx').style.display='none';
-$('#f').innerHTML=K.map(([k,l])=>`<label>${l}</label><input data-k="${k}" value="${esc(d[k])}">`).join('');
-$('#vs').innerHTML='<optgroup label="Free templates">'+TPLS.map(t=>`<option value="${t.id}">${t.name} (${t.tag})</option>`).join('')+'</optgroup>';$('#vs').value=st.variant;
-let t;const draw=()=>{clearTimeout(t);t=setTimeout(async()=>{const o={origin:location.origin,url:'https://'+(st.domain||'yourbusiness.com')};if(isNaN(st.variant))o.tpl=await loadTpl(st.variant);$('#fr').srcdoc=render(d,st.variant,o)},200)};
-const lists=()=>{$('#sl').innerHTML=d.services.map((s,i)=>`<div class="row"><span>${esc(s)}</span><button class="x" data-s="${i}">🗑</button></div>`).join('');
-$('#ph').innerHTML=d.photos.map((p,i)=>`<div><img src="${p}"><button data-p="${i}">🗑</button></div>`).join('');$('#pc').textContent=d.photos.length+' of 10 added'};
+if(!st)location.href='templates.html';const d=st.data;d.services=d.services||[];d.photos=d.photos||[];d.ed=d.ed||{o:[]};d.ed.o=d.ed.o||[];
+const ED=d.ed,fr=$('#fr'),stage=$('#stage'),fw=$('#fw');let API=null,SEL=null,hold=false,redoS=[],dev=innerWidth<900?'p':'d',tab='sel',mainOld=null;
+const FONTS=['Inter','Poppins','Montserrat','Playfair Display','Lora','Merriweather','DM Serif Display','Cormorant Garamond','Oswald','Raleway','Nunito','Work Sans','Roboto Slab','Quicksand'];
+/* ---------- device sizes (works on phones too: big layouts are scaled down) ---------- */
+function layout(){const sw=stage.clientWidth,sh=stage.clientHeight,want=dev=='p'?390:dev=='t'?820:Math.max(1200,sw);let w=dev=='d'?want:Math.min(want,sw),k=dev=='d'&&sw<want?sw/want:1;
+ fr.style.width=w+'px';fr.style.height=(sh/k)+'px';fr.style.transform='scale('+k+')';fw.style.width=(w*k)+'px';fw.style.height=sh+'px';stage.classList.toggle('dev',dev!='d'&&w<sw);
+ document.querySelectorAll('[data-dv]').forEach(b=>b.classList.toggle('on',b.dataset.dv==dev))}
+addEventListener('resize',layout);document.querySelectorAll('[data-dv]').forEach(b=>b.onclick=()=>{dev=b.dataset.dv;layout()});
+/* ---------- render the page inside the editor ---------- */
+let tm;function draw(now){clearTimeout(tm);tm=setTimeout(async()=>{const o={origin:location.origin,url:'https://'+(HOST(st)||'yourbusiness.'+BASE_DOMAIN),edit:1};if(isNaN(st.variant))o.tpl=await loadTpl(st.variant);
+ let y=0;try{y=fr.contentWindow.scrollY}catch{}fr.onload=()=>{try{fr.contentWindow.scrollTo(0,y)}catch{}};fr.srcdoc=render(d,st.variant,o);SEL=null;API=null;paintSel(null)},now?0:180)}
+/* ---------- log of edits (undo / redo, auto-save) ---------- */
+function btns(){$('#un').disabled=!ED.o.length;$('#re').disabled=!redoS.length}
+let at;function dirty(){btns();$('#sv').textContent='Save';clearTimeout(at);at=setTimeout(()=>{if(local())$('#sv').textContent='Saved ✓'},1200)}
+function compact(){const L=ED.o;for(let i=L.length-1;i>=0;i--){const a=L[i];if(a.t!=='im')continue;let dup=false;for(let j=i+1;j<L.length;j++)if(L[j].t==='dup')dup=true;if(!dup&&L.slice(i+1).some(b=>b.t==='im'&&b.id===a.id))L.splice(i,1)}}
+const host={log(op){const L=ED.o,l=L[L.length-1];
+ if(l&&op.id&&l.t===op.t&&l.id===op.id&&(op.t==='tx'||op.t==='im'||op.t==='at'))L[L.length-1]=op;
+ else if(l&&l.t==='st'&&op.t==='st'&&l.id===op.id&&!!l.deep===!!op.deep)l.s=Object.assign({},l.s,op.s);
+ else if(l&&l.t==='rule'&&op.t==='rule'&&l.k===op.k)l.p=Object.assign({},l.p,op.p);
+ else if(l&&l.t==='font'&&op.t==='font')Object.assign(l,op);
+ else if(l&&l.t==='cr'&&op.t==='cr'&&String(l.v).toLowerCase()===String(op.f).toLowerCase())l.v=op.v;
+ else L.push(op);redoS=[];dirty()},
+ sel(i){SEL=i;if(hold)return;if(i&&tab!=='sel')setTab('sel');if(i)$('#panel').classList.remove('min');paintSel(i);if(tab==='style')paintStyle()},
+ editing(b){document.body.classList.toggle('typing',!!b)},ready(a){API=a;if(!localStorage.getItem('abz_hint')){toast('Tap anything on your site to edit it');localStorage.setItem('abz_hint','1')}}};
+window.__abzHost=host;$('#done').onclick=()=>API&&API.deselect();
+$('#un').onclick=()=>{if(ED.o.length){redoS.push(ED.o.pop());dirty();draw(1)}};$('#re').onclick=()=>{if(redoS.length){ED.o.push(redoS.pop());dirty();draw(1)}};
+/* ---------- tabs ---------- */
+function setTab(t){if(t==='min'){$('#panel').classList.toggle('min');return}tab=t;$('#panel').classList.remove('min');document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));['sel','add','style','det'].forEach(k=>$('#p-'+k).style.display=k===t?'':'none');if(t==='style')paintStyle()}
+$('#tabs').onclick=e=>{const b=e.target.closest('button');if(b)setTab(b.dataset.t)};
+/* ---------- image helper ---------- */
 const rs=(f,m)=>new Promise(r=>{const i=new Image;i.onload=()=>{const k=Math.min(1,m/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL(m<400?'image/png':'image/jpeg',.72))};i.src=URL.createObjectURL(f)});
-$('#f').oninput=e=>{d[e.target.dataset.k]=e.target.value;draw()};$('#vs').onchange=e=>{const x=e.target.value;st.variant=isNaN(x)?x:+x;draw()};
-$('#as').onclick=()=>{const v=$('#ns').value.trim();if(v){d.services.push(v);$('#ns').value='';lists();draw()}};
-$('#sl').onclick=e=>{if(e.target.dataset.s){d.services.splice(+e.target.dataset.s,1);lists();draw()}};
-$('#ph').onclick=e=>{if(e.target.dataset.p){d.photos.splice(+e.target.dataset.p,1);lists();draw()}};
-$('#pf').onchange=async e=>{for(const f of e.target.files){if(d.photos.length>=10)break;d.photos.push(await rs(f,900))}e.target.value='';lists();draw()};
-$('#lg').onchange=async e=>{if(e.target.files[0]){d.logo=await rs(e.target.files[0],300);draw()}};
-function save(){try{id?(S.set('sites',sites),sync(st)):S.set('draft',st);toast('Saved');return true}catch{alert('Storage is full. Remove some photos and save again.');return false}}
-$('#sv').onclick=save;$('#dc').onclick=()=>location.reload();
-$('#nx').onclick=()=>{if(save()){S.set('order',{category:CATS[st.cat][1],variant:st.variant});location.href='domain.html'}};
-$('#dv').onclick=()=>{const m=$('#fr').style.width!='375px';$('#fr').style.width=m?'375px':'100%';$('#dv').textContent=m?'Desktop Preview':'Mobile Preview'};
+/* ---------- Edit tab: controls for the selected thing ---------- */
+const waUrl=()=>{let n=String(d.wa||d.phone||'').replace(/\D/g,'');if(n[0]=='0')n='234'+n.slice(1);return n?'https://wa.me/'+n:''};
+function paintSel(i){const p=$('#p-sel');if(!i){p.innerHTML='<div class="hint"><b>Tap anything to edit it</b><br>• Tap text, then tap it again to type<br>• Tap a photo to replace it<br>• Use <b>➕ Add</b> to insert new sections<br>• <b>🎨 Style</b> changes header, page and button colours<br>• 📱📟💻 switch screen size</div>';return}
+ const s=i.s,T=i.text,I=i.img,B=i.bg,box=!T&&!I,col=(k,v,l)=>`<span class="e-lab">${l}</span><div class="e-row"><input type="color" data-c="${k}" value="${v}"></div>`;let h=`<span class="e-chip">${esc(i.label)}</span>`;
+ if(T)h+=`<div class="e-row"><button class="e-b p" data-a="edit">✏️ Edit text</button><button class="e-b" data-a="fs-">A−</button><button class="e-b" data-a="fs+">A+</button><button class="e-b" data-a="bold"><b>B</b></button></div><div class="e-row"><button class="e-b" data-a="al-left">⇤ Left</button><button class="e-b" data-a="al-center">↔ Centre</button><button class="e-b" data-a="al-right">Right ⇥</button></div>`;
+ if(I||B)h+=`<div class="e-row"><button class="e-b p" data-a="photo">🖼 Replace photo</button>${B?'<button class="e-b d" data-a="rmphoto">Remove photo</button>':''}</div>`;
+ if(I)h+=`<span class="e-lab">Photo description (for Google)</span><input data-v="alt" value="${esc(i.alt)}" placeholder="Describe the photo">`;
+ if(i.photoInside)h+=`<div class="e-row"><button class="e-b" data-a="inphoto">🖼 Select the photo inside</button></div>`;
+ if(!I)h+=col(T?'color':'dcolor',s.color,'Text colour')+col('bg',s.bg,'Background colour')+(s.bgOwn?'<div class="e-row"><button class="e-b" data-a="clearbg">Clear background</button></div>':'');
+ if(i.link)h+=`<span class="e-lab">Where this ${i.label=='Button'?'button':'link'} goes</span><input data-v="href" value="${esc(i.href)}" placeholder="https://…"><div class="e-row"><button class="e-b" data-a="lk-wa">WhatsApp</button><button class="e-b" data-a="lk-tel">Call</button><button class="e-b" data-a="lk-top">Top of page</button></div>`;
+ if(box&&!i.isBody)h+=`<span class="e-lab">Space inside (top and bottom)</span><div class="e-row"><button class="e-b" data-a="pad-">Less</button><button class="e-b" data-a="pad+">More</button></div>`;
+ if(!I&&!i.isBody)h+=`<span class="e-lab">Corners</span><div class="e-row"><button class="e-b" data-a="br-">Square</button><button class="e-b" data-a="br+">Rounder</button></div>`;
+ if(!i.isBody)h+=`<span class="e-lab">This ${esc(i.label.toLowerCase())}</span><div class="e-row"><button class="e-b" data-a="parent">⬆ Bigger</button><button class="e-b" data-a="under">⬇ Under</button><button class="e-b" data-a="dup">⧉ Copy</button><button class="e-b" data-a="mv-1">↑</button><button class="e-b" data-a="mv1">↓</button><button class="e-b d" data-a="del">🗑 Delete</button></div>`;
+ if(i.hasSec)h+=`<span class="e-lab">The whole ${esc(i.secLabel.toLowerCase())}</span><div class="e-row"><button class="e-b" data-a="selsec">Select</button><button class="e-b" data-a="smv-1">↑ Up</button><button class="e-b" data-a="smv1">↓ Down</button><button class="e-b" data-a="sdup">⧉ Copy</button><button class="e-b d" data-a="sdel">🗑</button></div>`;
+ p.innerHTML=h}
+$('#p-sel').addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b||!API)return;const a=b.dataset.a,i=API.cur();if(!i)return;
+ if(a==='edit')API.edit();else if(a==='fs+'||a==='fs-')API.style({'font-size':Math.max(8,Math.round(i.s.fs+(a=='fs+'?2:-2)))+'px'});
+ else if(a==='bold')API.style({'font-weight':i.s.fw>=600?'400':'700'});else if(a.startsWith('al-'))API.style({'text-align':a.slice(3)});
+ else if(a==='photo')$('#pimg').click();else if(a==='rmphoto')API.image('');else if(a==='inphoto')API.photo();else if(a==='clearbg')API.style({'background-color':''});
+ else if(a==='lk-wa'){const u=waUrl();if(u)API.attr({href:u});else toast('Add a WhatsApp number in Details first')}else if(a==='lk-tel')API.attr({href:'tel:'+String(d.phone||'').replace(/[^\d+]/g,'')});else if(a==='lk-top')API.attr({href:'#top'});
+ else if(a==='pad+'||a==='pad-'){const k=a=='pad+'?16:-16;API.style({'padding-top':Math.max(0,i.s.pt+k)+'px','padding-bottom':Math.max(0,i.s.pb+k)+'px'})}
+ else if(a==='br+'||a==='br-')API.style({'border-radius':Math.max(0,Math.round(i.s.br+(a=='br+'?6:-6)))+'px'});
+ else if(a==='parent')API.parent();else if(a==='under')API.under();else if(a==='dup')API.dup();else if(a==='mv-1')API.mv(-1);else if(a==='mv1')API.mv(1);
+ else if(a==='del'){if(confirm('Delete this '+i.label.toLowerCase()+'?'))API.del()}
+ else if(a==='selsec')API.selSec();else if(a==='smv-1')API.secMv(-1);else if(a==='smv1')API.secMv(1);else if(a==='sdup')API.secDup();else if(a==='sdel'){if(confirm('Delete this whole section?'))API.secDel()}});
+$('#p-sel').addEventListener('input',e=>{const t=e.target;if(!API)return;if(t.dataset.c){hold=true;const v=t.value,k=t.dataset.c;if(k=='color')API.style({color:v});else if(k=='dcolor')API.style({color:v},true);else if(k=='bg')API.style({'background-color':v})}});
+$('#p-sel').addEventListener('change',e=>{const t=e.target;hold=false;if(!API)return;if(t.dataset.v==='href')API.attr({href:t.value});else if(t.dataset.v==='alt')API.attr({alt:t.value});else if(t.dataset.c)paintSel(API.cur())});
+$('#pimg').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(f&&API)API.image(await rs(f,1200))};
+/* ---------- Add tab ---------- */
+$('#p-add').innerHTML='<p class="mut" style="margin-top:0">Adds a new section below the one you selected (or at the end). Tap its text and photos to change them.</p><div class="blk">'+[['text','📝','Text'],['imgtext','🖼️','Photo & text'],['cards','🧩','3 cards'],['gallery','🏞️','Gallery'],['cta','📣','Call to action'],['contact','📞','Contact'],['spacer','↕️','Space']].map(x=>`<button data-k="${x[0]}"><b>${x[1]}</b>${x[2]}</button>`).join('')+'</div>';
+$('#p-add').onclick=e=>{const b=e.target.closest('[data-k]');if(b&&API){API.ins(b.dataset.k);setTab('sel')}};
+/* ---------- Style tab ---------- */
+function paintStyle(){if(!API){$('#p-style').innerHTML='<p class="mut">Loading…</p>';return}const w=API.swatches(),sw=(k,l,v)=>`<div class="e-sw"><span>${l}</span><input type="color" data-s="${k}" value="${v}"></div>`,opt=a=>a.map(f=>`<option>${f}</option>`).join('');
+ $('#p-style').innerHTML='<p class="mut" style="margin-top:0">Change colours and fonts for the whole site. Tap anything on the page to change just that one thing.</p>'+
+ (w.header?sw('hbg','Header colour',w.header.bg)+sw('hfg','Header text',w.header.fg):'')+sw('pbg','Page background',w.page.bg)+(w.footer?sw('fbg','Footer colour',w.footer.bg)+sw('ffg','Footer text',w.footer.fg):'')+(w.main?sw('main','Main colour (buttons, accents)',w.main):'')+
+ `<span class="e-lab">Heading font</span><select data-f="h"><option value="">Keep template font</option>${opt(FONTS)}</select><span class="e-lab">Body font</span><select data-f="b"><option value="">Keep template font</option>${opt(FONTS)}</select>
+ <span class="e-lab">Buttons</span><div class="e-row"><button class="e-b" data-r="0px">Square</button><button class="e-b" data-r="10px">Rounded</button><button class="e-b" data-r="999px">Pill</button></div>`;mainOld=w.main}
+$('#p-style').addEventListener('input',e=>{const t=e.target,k=t.dataset.s;if(!k||!API)return;hold=true;const w=API.swatches(),v=t.value;
+ if(k=='hbg')API.styleOn(w.header.id,{'background-color':v});else if(k=='hfg')API.styleOn(w.header.id,{color:v},true);else if(k=='pbg')API.styleOn('b',{'background-color':v});
+ else if(k=='fbg')API.styleOn(w.footer.id,{'background-color':v});else if(k=='ffg')API.styleOn(w.footer.id,{color:v},true);
+ else if(k=='main'&&mainOld){API.recolor(mainOld,v);mainOld=v}});
+$('#p-style').addEventListener('change',e=>{hold=false;const t=e.target;if(!API)return;if(t.dataset.f)API.font(t.dataset.f=='h'?t.value:'',t.dataset.f=='b'?t.value:'');
+ if(t.dataset.s=='main'){const w=API.swatches();if(w.main&&w.main.toLowerCase()!==t.value.toLowerCase())API.rule('btn',{'background-color':t.value,'border-color':t.value})}});
+$('#p-style').addEventListener('click',e=>{const b=e.target.closest('[data-r]');if(b&&API)API.rule('btn',{'border-radius':b.dataset.r})});
+/* ---------- Details tab (business info, design, services, photos) ---------- */
+const K=[['name','Business Name'],['tagline','Headline'],['about','About (one line)'],['phone','Phone'],['wa','WhatsApp'],['address','Address'],['hours','Opening hours'],['ig','Instagram link'],['fb','Facebook link'],['pay','Payment link (for Scan to Pay)']];
+$('#bc').textContent='Home / Edit Website / '+(CATS[st.cat]?CATS[st.cat][1]:'');const freeLive=st.live&&st.sub&&!(st.status==='live'&&st.domain);if(st.live&&!freeLive)$('#nx').style.display='none';if(freeLive)$('#nx').textContent='Upgrade ▸';
+$('#f').innerHTML=K.map(([k,l])=>`<label>${l}</label><input data-k="${k}" value="${esc(d[k])}">`).join('');
+$('#vs').innerHTML='<optgroup label="Templates">'+TPLS.map(t=>`<option value="${t.id}">${t.name} (${t.tag})</option>`).join('')+'</optgroup>';$('#vs').value=st.variant;
+const lists=()=>{$('#sl').innerHTML=d.services.map((s,i)=>`<div class="row"><span>${esc(s)}</span><button class="x" data-s="${i}">🗑</button></div>`).join('');
+ $('#ph').innerHTML=d.photos.map((p,i)=>`<div><img src="${p}"><button data-p="${i}">🗑</button></div>`).join('');$('#pc').textContent=d.photos.length+' of 10 added'};
+$('#f').oninput=e=>{d[e.target.dataset.k]=e.target.value;dirty();draw()};
+$('#vs').onchange=e=>{const x=e.target.value,nv=isNaN(x)?x:+x;if(ED.o.length&&!confirm('Changing the design removes your tap-to-edit changes (text, photos, colours you changed on the page). Continue?')){e.target.value=st.variant;return}
+ st.variant=nv;ED.o.length=0;redoS=[];dirty();draw()};
+$('#as').onclick=()=>{const v=$('#ns').value.trim();if(v){d.services.push(v);$('#ns').value='';lists();dirty();draw()}};
+$('#sl').onclick=e=>{if(e.target.dataset.s){d.services.splice(+e.target.dataset.s,1);lists();dirty();draw()}};
+$('#ph').onclick=e=>{if(e.target.dataset.p){d.photos.splice(+e.target.dataset.p,1);lists();dirty();draw()}};
+$('#pf').onchange=async e=>{for(const f of e.target.files){if(d.photos.length>=10)break;d.photos.push(await rs(f,900))}e.target.value='';lists();dirty();draw()};
+$('#lg').onchange=async e=>{if(e.target.files[0]){d.logo=await rs(e.target.files[0],300);dirty();draw()}};
 const isUB=()=>{const t=TPLS.find(x=>x.id===st.variant);return t&&t.ub},nm=x=>x.replace(/⟦name⟧/g,d.name||'').replace(/⟦NAME⟧/g,String(d.name||'').toUpperCase()).replace(/⟦phone⟧/g,d.phone||'');
 ['tagline','about'].forEach(k=>{const i=$('[data-k='+k+']');i.classList.add('gen');i.previousElementSibling.classList.add('gen')});
 [$('#sl').previousElementSibling,$('#sl'),$('#ns').parentElement,$('#pc').parentElement,$('#ph'),$('#pf')].forEach(e=>e.classList.add('gen'));
 function slots(h){const out=[],seen={};let cur='Header and menu',m;const re=/\{\{#sec_(\w+)\}\}|\{\{\/sec_(\w+)\}\}|\{\{([ti])(\d+)\|([\s\S]*?)\}\}/g;while(m=re.exec(h)){if(m[1])cur=m[1];else if(m[2])cur='Footer and other';else{const k=m[3]+m[4];if(seen[k])continue;seen[k]=1;out.push({k,t:m[3],sec:cur,def:m[5]})}}return out}
-$('#sk').innerHTML=SKINS.map(s=>`<option value="${s.id}">${s.name}</option>`).join('');$('#sk').onchange=e=>{d.skin=e.target.value;draw()};
+$('#sk').innerHTML=SKINS.map(s=>`<option value="${s.id}">${s.name}</option>`).join('');$('#sk').onchange=e=>{d.skin=e.target.value;dirty();draw()};
 function sysNote(){const t=TPLS.find(x=>x.id===st.variant),sv=t&&t.sys,box=$('#sysn');
  [$('#sl').previousElementSibling,$('#sl'),$('#ns').parentElement].forEach(e=>e.style.display=(sv&&sv!='school')?'none':(isUB()?'none':''));
  box.style.display=sv?'block':'none';if(sv)box.innerHTML='<b>⚙️ This is a full business system.</b><br><span class="mut">'+({restaurant:'Your menu, online orders and order tracking',store:'Your products, stock, online orders and tracking',school:'Admission applications and enquiries',booking:'Your services, calendar bookings and enquiries'}[sv])+' are managed in your dashboard, not here. '+(id?'<a href="manage.html?id='+id+'">Open dashboard</a>':'Save your site first, then open <b>Manage</b> from My Websites.')+'</span>'}
 async function content(){sysNote();const ub=isUB();$('#sk').value=d.skin||'orig';document.querySelectorAll('.ubo').forEach(e=>e.style.display=ub?'':'none');document.querySelectorAll('.gen').forEach(e=>e.style.display=ub?'none':'');const box=$('#ct');if(!ub){box.innerHTML='';return}
-const L=slots(await loadTpl(st.variant)),by={};d.t=d.t||{};d.i=d.i||{};d.hide=d.hide||[];L.forEach(x=>(by[x.sec]=by[x.sec]||[]).push(x));
-const f=x=>{const v=esc(d.t[x.k]??nm(x.def));return x.t=='t'?(x.def.length>70?`<textarea rows="3" data-t="${x.k}">${v}</textarea>`:`<input data-t="${x.k}" value="${v}">`):`<div class="im"><img src="${esc(d.i[x.k]||x.def)}"><input type="file" accept="image/*" data-im="${x.k}"></div>`};
-box.innerHTML='<p class="mut">Edit the text and photos of each section. Untick Show to hide a section you do not need.</p>'+Object.keys(by).map(s=>{const sec=!/^(Header and menu|Footer and other)$/.test(s);return `<details class="ac"><summary><b>${esc(s.replace(/_/g,' '))}</b>${sec?`<label style="float:right;font-weight:400"><input type="checkbox" data-h="${s}" ${d.hide.includes(s)?'':'checked'} style="width:auto;margin:0 4px 0 0">Show</label>`:''}</summary>${by[s].map(f).join('')}</details>`}).join('')}
-$('#ct').oninput=e=>{if(e.target.dataset.t){d.t[e.target.dataset.t]=e.target.value;draw()}};
-$('#ct').onchange=async e=>{const t=e.target;if(t.dataset.h){const i=d.hide.indexOf(t.dataset.h);t.checked?(i>=0&&d.hide.splice(i,1)):(i<0&&d.hide.push(t.dataset.h));draw()}
-if(t.dataset.im&&t.files[0]){d.i[t.dataset.im]=await rs(t.files[0],1000);t.previousElementSibling.src=d.i[t.dataset.im];draw()}};
+ const L=slots(await loadTpl(st.variant)),by={};d.t=d.t||{};d.i=d.i||{};d.hide=d.hide||[];L.forEach(x=>(by[x.sec]=by[x.sec]||[]).push(x));
+ const f=x=>{const v=esc(d.t[x.k]??nm(x.def));return x.t=='t'?(x.def.length>70?`<textarea rows="3" data-t="${x.k}">${v}</textarea>`:`<input data-t="${x.k}" value="${v}">`):`<div class="im"><img src="${esc(d.i[x.k]||x.def)}"><input type="file" accept="image/*" data-im="${x.k}"></div>`};
+ box.innerHTML='<p class="mut">Section list. Untick Show to hide a whole section. You can also just tap the text or photo on the page to change it.</p>'+Object.keys(by).map(s=>{const sec=!/^(Header and menu|Footer and other)$/.test(s);return `<details class="ac"><summary><b>${esc(s.replace(/_/g,' '))}</b>${sec?`<label style="float:right;font-weight:400"><input type="checkbox" data-h="${s}" ${d.hide.includes(s)?'':'checked'} style="width:auto;margin:0 4px 0 0">Show</label>`:''}</summary>${by[s].map(f).join('')}</details>`}).join('')}
+$('#ct').oninput=e=>{if(e.target.dataset.t){d.t[e.target.dataset.t]=e.target.value;dirty();draw()}};
+$('#ct').onchange=async e=>{const t=e.target;if(t.dataset.h){const i=d.hide.indexOf(t.dataset.h);t.checked?(i>=0&&d.hide.splice(i,1)):(i<0&&d.hide.push(t.dataset.h));dirty();draw()}
+ if(t.dataset.im&&t.files[0]){d.i[t.dataset.im]=await rs(t.files[0],1000);t.previousElementSibling.src=d.i[t.dataset.im];dirty();draw()}};
 $('#vs').addEventListener('change',content);
-document.querySelector('.tabs').onclick=ev=>{const b=ev.target.closest('button');if(!b)return;document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelector('.ed').classList.toggle('pvm',b.dataset.p==='v');if(b.dataset.p==='v')draw()};
-lists();content();draw();
+/* ---------- save, preview, publish ---------- */
+function local(){try{compact();id?S.set('sites',sites):S.set('draft',st);return true}catch{$('#sv').textContent='Storage full';return false}}
+function save(){if(!local()){alert('Storage is full. Remove some photos and save again.');return false}if(id)sync(st);toast('Saved');$('#sv').textContent='Saved ✓';return true}
+$('#sv').onclick=save;
+$('#pv').onclick=()=>abzPreview({title:(d.name||'Preview')+' · preview',html:async()=>{const o={origin:location.origin,url:'https://'+(HOST(st)||'yourbusiness.'+BASE_DOMAIN)};if(isNaN(st.variant))o.tpl=await loadTpl(st.variant);return render(d,st.variant,o)}});
+$('#nx').onclick=()=>{if(save()){S.set('order',{category:CATS[st.cat]?CATS[st.cat][1]:'',variant:st.variant});location.href='domain.html'+(freeLive?'?upgrade='+id:'')}};
+addEventListener('pagehide',()=>{local()});
+layout();setTab('sel');lists();content();btns();draw(1);
 </script></body></html>

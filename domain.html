@@ -1,12 +1,39 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search your domain – UseAlphaBiz</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-<main class="wrap grid g2"><div><div class="card"><h1>Search Your Domain</h1><p class="mut">Enter your business name to see options.</p>
-<input id="q" placeholder="business name"><button class="btn block" id="s">Search</button></div><div id="res" style="margin-top:18px" class="grid"></div></div>
-<aside class="card"><h2>Your Site</h2><div class="pill" id="cat"></div><p class="mut">Selected domain</p><b id="sel" style="color:var(--g)">None yet</b>
-<div class="row"><span>Domain + hosting</span><b>₦27,777/year</b></div><p class="mut">✔ Custom domain ✔ SSL ✔ Hosting</p>
-<div class="row"><b>Total today</b><span class="tot">₦27,777</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></aside></main>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Publish your site – UseAlphaBiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<style>.tabs2{display:flex;gap:8px;margin-bottom:14px}.tabs2 button{flex:1;padding:12px;border:1.5px solid var(--bd);background:#fff;border-radius:12px;font:600 .95rem Inter,sans-serif;cursor:pointer}.tabs2 button.on{border-color:var(--g);background:var(--gl);color:var(--gd)}
+.sub{display:flex;align-items:center;gap:0;margin:6px 0 8px}.sub input{margin:0;border-radius:10px 0 0 10px;text-align:right}.sub span{background:#e9ede9;border:1px solid var(--bd);border-left:0;border-radius:0 10px 10px 0;padding:13px 12px;white-space:nowrap;font-weight:600;color:var(--mut)}
+.ok{color:var(--g);font-weight:600}.no{color:#b33;font-weight:600}</style></head><body>
+<main class="wrap grid g2"><div><div class="tabs2"><button data-m="free" class="on">🆓 Free subdomain</button><button data-m="paid">🌐 Own domain</button></div>
+<div id="free" class="card"><h1>Publish for free</h1><p class="mut">Pick a web address. Your site goes live in seconds.</p>
+<div class="sub"><input id="sub" placeholder="gcchurch" autocapitalize="off" autocomplete="off" spellcheck="false"><span id="suf">.usealphabiz.com</span></div><p id="chk" class="mut" style="min-height:1.4em;margin:0 0 12px"></p>
+<button class="btn block" id="pf">Publish free site</button><p class="mut" style="font-size:.85rem">Free sites show a small “Made free with UseAlphaBiz” badge. Upgrade any time to use your own .com and remove it.</p></div>
+<div id="paid" style="display:none"><div class="card"><h1>Search Your Domain</h1><p class="mut">Enter your business name to see options.</p>
+<input id="q" placeholder="business name"><button class="btn block" id="s">Search</button></div><div id="res" style="margin-top:18px" class="grid"></div></div></div>
+<aside class="card"><h2>Your Site</h2><div class="pill" id="cat"></div><p class="mut">Address</p><b id="sel" style="color:var(--g);word-break:break-all">None yet</b>
+<div id="sfree"><div class="row"><span>Free subdomain</span><b>₦0</b></div><p class="mut">✔ Live in seconds ✔ SSL ✔ Hosting ✔ Edit any time</p><div class="row"><b>Total today</b><span class="tot">₦0</span></div></div>
+<div id="spaid" style="display:none"><div class="row"><span>Domain + hosting</span><b>₦27,777/year</b></div><p class="mut">✔ Your own .com ✔ No badge ✔ SSL ✔ Hosting</p><div class="row"><b>Total today</b><span class="tot">₦27,777</span></div><button class="btn block" id="c">Continue to Pay</button><p class="mut" style="text-align:center;font-size:.85rem">No card needed until you publish</p></div></aside></main>
 <script src="app.js"></script><script>
-const o=S.get('order',{});$('#cat').textContent=o.category||'Choose a template first';
+const qs=new URLSearchParams(location.search),up=qs.get('upgrade'),o=S.get('order',{});$('#cat').textContent=o.category||'Choose a template first';$('#suf').textContent='.'+BASE_DOMAIN;
+// Upgrading a free site to its own domain: reuse the same site id so the paid domain attaches to it
+if(up){const s=S.get('sites',[]).find(x=>x.id==up);if(s){S.set('sid',s.id);S.set('draft',{cat:s.cat,variant:s.variant,data:s.data});o.category=s.category;S.set('order',o);$('#cat').textContent=s.category||'';mode('paid')}}
+function mode(m){document.querySelectorAll('.tabs2 button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));$('#free').style.display=m=='free'?'':'none';$('#paid').style.display=m=='paid'?'':'none';$('#sfree').style.display=m=='free'?'':'none';$('#spaid').style.display=m=='paid'?'':'none';$('#sel').textContent=m=='free'?($('#sub').value?$('#sub').value+'.'+BASE_DOMAIN:'None yet'):(o.domain||'None yet')}
+document.querySelector('.tabs2').onclick=e=>{if(e.target.dataset.m)mode(e.target.dataset.m)};
+// ---- free subdomain ----
+let ok=false,tm;const msg=(t,c)=>{$('#chk').className=c||'mut';$('#chk').textContent=t};
+$('#sub').oninput=()=>{const v=$('#sub').value=$('#sub').value.toLowerCase().replace(/[^a-z0-9-]/g,'');ok=false;$('#sel').textContent=v?v+'.'+BASE_DOMAIN:'None yet';clearTimeout(tm);if(v.length<3){msg(v?'At least 3 characters.':'');return}msg('Checking…');
+ tm=setTimeout(async()=>{let r;try{r=await fetch(CFG.API+'/free?name='+encodeURIComponent(v))}catch{return msg('No connection. Try again.','no')}
+  if(r.status==501){ok=true;return msg('Demo mode: availability is not checked yet.')}if(!r.ok)return msg('Could not check right now.','no');
+  const j=await r.json();ok=!!j.ok;msg(j.ok?'✓ '+v+'.'+BASE_DOMAIN+' is available':j.why,j.ok?'ok':'no')},400)};
+$('#pf').onclick=async()=>{const sub=$('#sub').value;if(!sub||!ok)return msg('Pick an available name first.','no');
+ const sb=SB(),dr=S.get('draft'),sid=S.get('sid',null)||(()=>{const x=crypto.randomUUID();S.set('sid',x);return x})();if(!dr)return msg('Choose a template first.','no');
+ if(!sb)return msg('Accounts are not set up yet.','no');const tok=await authToken();if(!tok){msg('Log in or sign up to publish. Your work is saved.','no');setTimeout(()=>location.href='login.html?next=domain.html',900);return}
+ $('#pf').disabled=true;msg('Publishing…');
+ const {error}=await sb.from('sites').upsert({id:sid,category:o.category||'',variant:dr.variant,data:dr.data,domain:null});if(error){$('#pf').disabled=false;return msg(error.message,'no')}
+ let r,j={};try{r=await fetch(CFG.API+'/free',{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+tok},body:JSON.stringify({id:sid,sub})});j=await r.json().catch(()=>({}))}catch{$('#pf').disabled=false;return msg('No connection. Try again.','no')}
+ if(!r.ok){$('#pf').disabled=false;return msg(j.error||'Could not publish.','no')}
+ const L=S.get('sites',[]),rec={id:sid,sub:j.sub,domain:'',category:o.category||'',cat:dr.cat,variant:dr.variant,data:dr.data,live:true,status:'draft'},i=L.findIndex(x=>x.id==sid);i<0?L.push(rec):L[i]={...L[i],...rec};S.set('sites',L);S.set('draft',null);S.set('sid',null);location.href='success.html?site='+sid+'&free=1'};
+// ---- own domain (paid) ----
 async function check(n){let r;try{r=await fetch(CFG.API+'/domain?name='+n)}catch{return{err:'No connection. Please try again.'}}
  if(r.status==501)return{demo:1,L:[n+'.com',n+'.net'].map(d=>({d,ok:true}))};
  if(!r.ok)return{err:'Domain search is unavailable right now. Please try again shortly.'};
@@ -18,5 +45,4 @@ $('#s').onclick=async()=>{const n=$('#q').value.toLowerCase().replace(/[^a-z0-9]
  $('#res').innerHTML=`<b>Domains for "${n}"</b>`+note+R.L.map(x=>`<div class="card row"><div><b>${x.d}</b><br><span class="mut">${x.ok?(R.demo?'Example':'Available')+' · ₦27,777/year':x.why=='price'?'Not available on this plan':'Taken'}</span></div><button class="btn sm" data-d="${x.d}" ${x.ok?'':'disabled'}>Select</button></div>`).join('')||'<div class="card">No results. Try another name.</div>'};
 $('#res').onclick=e=>{const d=e.target.dataset.d;if(!d)return;o.domain=d;S.set('order',o);$('#sel').textContent=d};
 $('#c').onclick=()=>{if(!o.domain)return alert('Select a domain first');location.href='checkout.html'};
-if(o.domain)$('#sel').textContent=o.domain;
 </script></body></html>

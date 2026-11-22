@@ -15,7 +15,7 @@ const USD=CFG.PAYSTACK_USD&&Intl.DateTimeFormat().resolvedOptions().timeZone!=='
 const sid=S.get('sid',null)||(()=>{const x=crypto.randomUUID();S.set('sid',x);return x})(),real=!CFG.PAYSTACK_PK.includes('xxxx'),sb=CFG.SUPABASE_URL&&supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON);
 async function done(ref){
  if(real&&sb)await fetch(CFG.API+'/verify?ref='+ref).catch(()=>{});
- const sites=S.get('sites',[]);sites.push({id:sid,domain:o.domain,category:o.category,cat:dr.cat,variant:dr.variant,data:dr.data,live:!real,status:real?'paid':'live'});S.set('sites',sites);
+ const sites=S.get('sites',[]),ix=sites.findIndex(x=>x.id==sid),rec={id:sid,domain:o.domain,category:o.category,cat:dr.cat,variant:dr.variant,data:dr.data,live:!real||(ix>=0&&sites[ix].live),status:real?'paid':'live'};ix<0?sites.push(rec):sites[ix]={...sites[ix],...rec};S.set('sites',sites);
  S.set('paid',{ref,date:new Date().toISOString()});S.set('sid',null);S.set('draft',null);location.href='success.html?site='+sid}
 $('#pay').onclick=async()=>{const em=(S.get('user',{}).email)||prompt('Your email for the receipt:');if(!em)return;if(!real)return done('DEMO');
  if(sb){const {error}=await sb.from('sites').upsert({id:sid,category:o.category,variant:dr.variant,data:dr.data,domain:o.domain});if(error)return alert('Log in first, then pay. '+error.message)}
